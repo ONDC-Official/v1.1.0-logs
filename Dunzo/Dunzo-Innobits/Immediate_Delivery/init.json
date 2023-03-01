@@ -1,0 +1,105 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "init",
+        "core_version": "1.1.0",
+        "bap_id": "biz.test.enstore.com",
+        "bap_uri": "https://biz.test.enstore.com/ecc/ondc/logistics-bap",
+        "transaction_id": "LOG-C2303011813416900765899",
+        "message_id": "a1e81407-a92e-48d8-a237-05d5012e8346",
+        "timestamp": "2023-03-01T12:48:09.687Z",
+        "ttl": "PT5S",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/"
+    },
+    "message": {
+        "order": {
+            "billing": {
+                "address": {
+                    "name": "Chikkabanaswadi ",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560043",
+                    "building": "100"
+                },
+                "email": "",
+                "name": "customer",
+                "phone": "8073865965",
+                "tax_number": "",
+                "created_at": "2023-03-01T12:48:09.687Z",
+                "updated_at": "2023-03-01T12:48:09.687Z"
+            },
+            "fulfillments": [
+                {
+                    "end": {
+                        "contact": {
+                            "email": "",
+                            "phone": "8073865965"
+                        },
+                        "location": {
+                            "address": {
+                                "area_code": "560043",
+                                "city": "Bengaluru",
+                                "country": "IND",
+                                "locality": "",
+                                "name": "Chikkabanaswadi ",
+                                "state": "Karnataka",
+                                "building": "100"
+                            },
+                            "gps": "13.006479263306, 77.646034240723"
+                        }
+                    },
+                    "id": "FPA:1001:item-c06481d1-35e5-40e9-99ae-54be9f6ef55a:1446:201646",
+                    "start": {
+                        "contact": {
+                            "email": "test1@test.com",
+                            "phone": "9999999998"
+                        },
+                        "location": {
+                            "address": {
+                                "area_code": "560043",
+                                "city": "Bangalore",
+                                "country": "India",
+                                "locality": "Banaswadi, Bengaluru, Karnataka 560043",
+                                "name": "BANASWADI",
+                                "state": " Karnataka",
+                                "building": "BBMP North, No-2, Outer Ring Road, Ramamurthi Nagar Main Rd"
+                            },
+                            "gps": "13.0198, 77.64109999999999"
+                        }
+                    },
+                    "type": "Prepaid"
+                }
+            ],
+            "items": [
+                {
+                    "category_id": "Immediate Delivery",
+                    "id": "item-c06481d1-35e5-40e9-99ae-54be9f6ef55a",
+                    "descriptor": {
+                        "code": "P2P"
+                    },
+                }
+            ],
+            "payment": {
+                "@ondc/org/collection_amount": "",
+                "type": "Prepaid",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "buyer-app",
+                        "settlement_type": "rtgs",
+                        "settlement_bank_account_no": "922020043291840",
+                        "settlement_ifsc_code": "UTIB0003190"
+                    }
+                ],
+                "@ondc/org/settlement_window": "P7D",
+                "collected_by": "BAP"
+            },
+            "provider": {
+                "id": "18275-Provider"
+            }
+        }
+    }
+}

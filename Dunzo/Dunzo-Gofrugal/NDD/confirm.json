@@ -1,0 +1,190 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "ondc-qa.gofrugalretail.com",
+        "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+        "transaction_id": "7751413a-768c-4953-b27f-dcd0fd83fdb4",
+        "message_id": "38cc243e-5a96-42b2-947e-477d503f8db1",
+        "timestamp": "2023-03-01T15:53:22.584Z",
+        "ttl": "PT30S",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/"
+    },
+    "message": {
+        "order": {
+            "id": "4cbfcd19658bcbe9530bcbcb1e6af07b9d9db802",
+            "state": "",
+            "provider": {
+                "id": "18275-Provider"
+            },
+            "items": [
+                {
+                    "id": "item-8a461f75-91be-4890-ac68-c1c066c1c4e8",
+                    "category_id": "Next Day Delivery",
+                    "descriptor": {
+                        "code": "P2P",
+                        "name": "",
+                        "short_desc": "",
+                        "long_desc": ""
+                    },
+                    "quantity": {
+                        "count": 1,
+                        "measure": {
+                            "unit": "",
+                            "value": 0
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "38"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "item-8a461f75-91be-4890-ac68-c1c066c1c4e8",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "38"
+                        }
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "88E67184A2F1E3563A81D8C541F17A51",
+                    "type": "CoD",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending",
+                            "name": "Pending"
+                        }
+                    },
+                    "tracking": true,
+                    "start": {
+                        "person": {
+                            "name": "Abinaya"
+                        },
+                        "location": {
+                            "id": "19085-ONDC-1-3401_location",
+                            "gps": "12.9715987, 77.5945627",
+                            "address": {
+                                "name": "Abinaya",
+                                "locality": "kn",
+                                "city": "Banglore",
+                                "state": "Tamil Nadu",
+                                "country": "India",
+                                "area_code": "600117",
+                                "street": "45 1",
+                                "building": "12 ",
+                                "door": "1"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9898767675",
+                            "email": "abii@gmail.com"
+                        },
+                        "instructions": {
+                            "name": "",
+                            "short_desc": "2237",
+                            "long_desc": "QR code will be attached to package",
+                            "additional_desc": {
+                                "content_type": "",
+                                "url": ""
+                            },
+                            "images": null
+                        },
+                        "time": {
+                            "range": {
+                                "start": "",
+                                "end": ""
+                            }
+                        }
+                    },
+                    "end": {
+                        "person": {
+                            "name": "Kaviya"
+                        },
+                        "location": {
+                            "id": "",
+                            "gps": "12.9812430000001, 77.5950340000001",
+                            "address": {
+                                "name": "Kaviya",
+                                "locality": "45 1",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560001",
+                                "building": "Dominos"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9898767675",
+                            "email": "abii@gmail.com"
+                        },
+                        "instructions": {
+                            "name": "Status for drop",
+                            "short_desc": "8869",
+                            "long_desc": "",
+                            "additional_desc": {
+                                "content_type": "",
+                                "url": ""
+                            },
+                            "images": null
+                        },
+                        "time": null
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "no"
+                    }
+                }
+            ],
+            "billing": {
+                "address": {
+                    "name": "KRISP IT Park",
+                    "locality": "Kizhakottayur",
+                    "city": "Chennai",
+                    "state": "Tamil Nadu",
+                    "country": "India",
+                    "area_code": "600127",
+                    "building": "942, Kelambakkam - Vandalur Rd"
+                },
+                "email": "accounts@gofrugal.com",
+                "name": "Gofrugal Technologies Pvt Ltd",
+                "phone": "9840812985",
+                "tax_number": "33AACCG2423J1ZZ",
+                "created_at": "2023-03-01T15:53:22.586Z",
+                "updated_at": "2023-03-01T15:53:22.586Z"
+            },
+            "payment": {
+                "@ondc/org/collection_amount": "38",
+                "type": "ON-FULFILLMENT",
+                "@ondc/org/settlement_details": null,
+                "collected_by": "BAP"
+            },
+            "@ondc/org/linked_order": {
+                "items": null,
+                "provider": {
+                    "id": ""
+                },
+                "order": {
+                    "id": "",
+                    "weight": {
+                        "unit": "",
+                        "value": 0
+                    }
+                }
+            },
+            "cancellation_terms": null,
+            "tags": null,
+            "created_at": "2023-03-01T15:53:22.590Z",
+            "updated_at": "2023-03-01T15:53:22.590Z"
+        }
+    }
+}
