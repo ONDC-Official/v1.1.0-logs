@@ -1,0 +1,46 @@
+
+ {
+    "context": {
+      "key": "",
+      "ttl": "PT5S",
+      "city": "std:080",
+      "action": "update",
+      "bap_id": "biz.test.enstore.com",
+      "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+      "domain": "nic2004:60232",
+      "bap_uri": "https://biz.test.enstore.com/ecc/ondc/logistics-bap",
+      "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+      "country": "IND",
+      "timestamp": "2023-03-01T11:21:09.754Z",
+      "message_id": "5b3bdeb2-b008-4574-b27d-1b1a9570f37a",
+      "core_version": "1.1.0",
+      "transaction_id": "LOG-5facdb4a-4458-4316-83a4-93746da9b755"
+    },
+    "message": {
+      "order": {
+        "id": "2023-02-01-493246",
+        "items": [
+          {
+            "id": "item-59484a15-f9f2-4b27-acc3-2e9231f48976",
+            "category_id": "Immediate Delivery"
+          }
+        ],
+        "state": "Created",
+        "fulfillments": [
+          {
+            "id": "FPA:1001:item-59484a15-f9f2-4b27-acc3-2e9231f48976:1446:201646",
+            "tags": {
+              "@ondc/org/order_ready_to_ship": "yes"
+            },
+            "type": "Prepaid",
+            "start": {
+              "instructions": {
+                "short_desc": "1002-10737"
+              }
+            }
+          }
+        ]
+      },
+      "update_target": "fulfillment"
+    }
+  }
