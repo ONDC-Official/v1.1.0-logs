@@ -1,0 +1,231 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "biz.test.enstore.com",
+        "bap_uri": "https://biz.test.enstore.com/ecc/ondc/logistics-bap",
+        "transaction_id": "LOG-C2303011813416900765899",
+        "message_id": "379d36fc-e0c7-4a71-a278-98547623217e",
+        "timestamp": "2023-03-01T12:48:32.156Z",
+        "ttl": "PT5S",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/"
+    },
+    "message": {
+        "order": {
+            "id": "OD2303011818119256978158",
+            "state": "Created",
+            "provider": {
+                "id": "18275-Provider"
+            },
+            "items": [
+                {
+                    "id": "item-c06481d1-35e5-40e9-99ae-54be9f6ef55a",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P",
+                        "name": "",
+                        "short_desc": "",
+                        "long_desc": ""
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "38"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "item-c06481d1-35e5-40e9-99ae-54be9f6ef55a",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "38"
+                        }
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "FPA:1001:item-c06481d1-35e5-40e9-99ae-54be9f6ef55a:1446:201646",
+                    "type": "Prepaid",
+                    "state": {
+                        "descriptor": {
+                            "code": "",
+                            "name": ""
+                        }
+                    },
+                    "tracking": true,
+                    "start": {
+                        "person": {
+                            "name": "Mohan"
+                        },
+                        "location": {
+                            "id": "1000:1001",
+                            "gps": "13.0198, 77.64109999999999",
+                            "address": {
+                                "name": "BANASWADI",
+                                "locality": "Banaswadi, Bengaluru, Karnataka 560043",
+                                "city": "Bangalore",
+                                "state": " Karnataka",
+                                "country": "India",
+                                "area_code": "560043",
+                                "building": "BBMP North, No-2, Outer Ring Road, Ramamurthi Nagar Main Rd"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9999999998",
+                            "email": "test1@test.com"
+                        },
+                        "instructions": {
+                            "name": "",
+                            "short_desc": "",
+                            "long_desc": "",
+                            "additional_desc": {
+                                "content_type": "",
+                                "url": ""
+                            },
+                            "images": null
+                        }
+                    },
+                    "end": {
+                        "person": {
+                            "name": "Devika"
+                        },
+                        "location": {
+                            "id": "1000:1001",
+                            "gps": "13.006479263306, 77.646034240723",
+                            "address": {
+                                "name": "Chikkabanaswadi ",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560043",
+                                "building": "100"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8073865965",
+                            "email": ""
+                        },
+                        "instructions": {
+                            "name": "",
+                            "short_desc": "",
+                            "long_desc": "",
+                            "additional_desc": {
+                                "content_type": "",
+                                "url": ""
+                            },
+                            "images": null
+                        },
+                        "time": null
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "no"
+                    }
+                }
+            ],
+            "billing": {
+                "address": {
+                    "name": "INNOBITS SOLUTIONS PVT LTD",
+                    "building": "221",
+                    "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560085"
+                },
+                "email": "finance@bitsila.com",
+                "name": "Bitsila",
+                "phone": "8951898275",
+                "tax_number": "29AAFCI9011D1ZQ",
+                "created_at": "2023-03-01T12:48:32.157Z",
+                "updated_at": "2023-03-01T12:48:32.157Z"
+            },
+            "payment": {
+                "@ondc/org/collection_amount": "0.0",
+                "type": "POST-FULFILLMENT",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "026291800001191",
+                        "settlement_ifsc_code": "YESB0000262"
+                    }
+                ]
+            },
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "id": "",
+                        "category_id": "Fruits and Vegetables",
+                        "descriptor": {
+                            "name": "Apple Kashmir 2 KG",
+                            "short_desc": "",
+                            "long_desc": ""
+                        },
+                        "quantity": {
+                            "count": 2,
+                            "measure": {
+                                "unit": "Kilogram",
+                                "value": 0.5
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "594.00"
+                        }
+                    },
+                    {
+                        "id": "",
+                        "category_id": "Fruits and Vegetables",
+                        "descriptor": {
+                            "name": "banana 1 kg",
+                            "short_desc": "",
+                            "long_desc": ""
+                        },
+                        "quantity": {
+                            "count": 2,
+                            "measure": {
+                                "unit": "Kilogram",
+                                "value": 0.5
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "100.00"
+                        }
+                    }
+                ],
+                "provider": {
+                    "descriptor": {
+                        "name": "SABJI XPRESS PVT LTD - BANASWADI",
+                        "short_desc": "",
+                        "long_desc": ""
+                    },
+                    "address": {
+                        "name": "BANASWADI",
+                        "locality": "Banaswadi, Bengaluru, Karnataka 560043",
+                        "city": "Bangalore",
+                        "state": "Karnataka",
+                        "area_code": "560043",
+                        "street": "BBMP North, No-2, Outer Ring Road, Ramamurthi Nagar Main Rd"
+                    }
+                },
+                "order": {
+                    "id": "OD2303011818119256978158",
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 0.5
+                    }
+                }
+            },
+            "created_at": "2023-03-01T15:53:22.590Z",
+            "updated_at": "2023-03-01T15:53:22.590Z"
+        }
+    }
+}
