@@ -1,0 +1,136 @@
+{
+    "_id": {
+      "$oid": "63ff2ea40fed704ebe1f12b7"
+    },
+    "body": {
+      "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+        "transaction_id": "ab048674-4523-4a0c-b1ab-c0508cd58a30",
+        "message_id": "305d27d0-5655-4a41-b8d7-65c17dba7026",
+        "timestamp": "2023-03-01T10:53:23.718Z",
+        "bpp_id": "ondc.hulsecure.in",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "update_target": "item",
+        "order": {
+          "id": "2023-02-01-770379",
+          "state": "Completed",
+          "provider": {
+            "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
+          },
+          "items": [
+            {
+              "id": "39267805495477",
+              "quantity": {
+                "count": 1
+              },
+              "tags": {
+                "status": "Return_Approved"
+              },
+              "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e-ReverseQC"
+            }
+          ],
+          "payment": {
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "buyer",
+                "settlement_phase": "refund",
+                "settlement_type": "upi",
+                "settlement_amount": "0",
+                "settlement_timestamp": "2023-03-01T10:53:23.764Z"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "header": {
+      "host": "ondc.hulsecure.in",
+      "connection": "close",
+      "user-agent": "python-requests/2.23.0",
+      "accept-encoding": "gzip, deflate",
+      "accept": "*/*",
+      "authorization": "Signature keyId=\"buyer-app-preprod.ondc.org|96c81878-f327-457e-8835-5b35bb20f099|ed25519\",algorithm=\"ed25519\",created=\"1677668003\",expires=\"1677671603\",headers=\"(created) (expires) digest\",signature=\"8MoFbM5SCfSmsk9qR0lZpNudwKeUUrPDsP+9r1gi902a6AqyDf+naelyA/QPw4mbrM6APIU6WWnV6vpMdXxRBA==\"",
+      "content-type": "application/json",
+      "x-request-id": "e5f276bc-f59a-4b07-b8cd-71cf0a805b73",
+      "x-forwarded-for": "65.0.80.129",
+      "x-forwarded-proto": "https",
+      "x-forwarded-port": "443",
+      "via": "1.1 vegur",
+      "connect-time": "0",
+      "x-request-start": "1677668004333",
+      "total-route-time": "0",
+      "content-length": "965"
+    },
+    "response": {
+      "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+        "transaction_id": "ab048674-4523-4a0c-b1ab-c0508cd58a30",
+        "message_id": "305d27d0-5655-4a41-b8d7-65c17dba7026",
+        "timestamp": "2023-03-01T10:53:24.336Z",
+        "bpp_id": "ondc.hulsecure.in",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "id": "2023-02-01-770379",
+          "items": [
+            {
+              "id": "39267805495477",
+              "quantity": {
+                "count": 1
+              },
+              "tags": {
+                "status": "Return_Approved"
+              },
+              "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e-ReverseQC"
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e-ReverseQC",
+              "type": "Reverse QC",
+              "start": {
+                "time": {
+                  "range": {
+                    "start": "2022-06-14T10:00:00.000Z",
+                    "end": "2022-06-14T10:30:00.000Z"
+                  }
+                },
+                "instructions": {
+                  "short_desc": "XYZ1",
+                  "long_desc": "QR code will be attached to package",
+                  "images": [
+                    "URL or data string as per spec"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "resheader": "Signature keyId=\"ondc.hulsecure.in|e79d1b77-0906-4323-aa92-c7dc64861f14|ed25519\",algorithm=\"ed25519\",created=\"1677668004\",expires=\"1677671604\",headers=\"(created) (expires) digest\",signature=\"Z3OY1f+P9XMWIyUeU27DunTajOCH1C1ZDxjmNiT6SnDMVuJM+7CFErtp1V4Nq1zPcElqyz3u+osN2pRZYQSqBA==\"",
+    "createdAt": {
+      "$date": "2023-03-01T10:53:24.713Z"
+    },
+    "updatedAt": {
+      "$date": "2023-03-01T10:53:24.713Z"
+    },
+    "__v": 0
+  }
