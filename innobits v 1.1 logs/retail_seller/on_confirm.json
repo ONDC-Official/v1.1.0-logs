@@ -1,0 +1,165 @@
+
+{
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_confirm",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.enstore.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-03-01T11:18:50.117Z",
+      "message_id": "19132823-8715-4fc7-b68c-01ebbcd98d3d",
+      "core_version": "1.1.0",
+      "transaction_id": "5facdb4a-4458-4316-83a4-93746da9b755"
+    },
+    "message": {
+      "order": {
+        "id": "2023-02-01-493246",
+        "items": [
+          {
+            "id": "16",
+            "quantity": {
+              "count": 4
+            },
+            "fulfillment_id": "FPA:1001:item-59484a15-f9f2-4b27-acc3-2e9231f48976:1446:201646"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "482.8",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "100.8",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "16",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "price": {
+                "value": "360.0",
+                "currency": "INR"
+              },
+              "title": "Apple Washington 1 KG 28%tax",
+              "@ondc/org/item_id": "16",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 4
+              }
+            },
+            {
+              "price": {
+                "value": 22,
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:1001:item-59484a15-f9f2-4b27-acc3-2e9231f48976:1446:201646",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "state": "Created",
+        "billing": {
+          "name": "Darshan SR Sapphire",
+          "email": "darshan.s@innobits.com",
+          "phone": "8151000066",
+          "address": {
+            "city": "Bengaluru",
+            "name": "Darshan SR Sapphire",
+            "state": "Karnataka",
+            "country": "IND",
+            "building": "Bennigana Halli",
+            "locality": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043",
+            "area_code": "560043"
+          },
+          "created_at": "2023-03-01T11:18:42.736Z",
+          "updated_at": "2023-03-01T11:18:42.736Z"
+        },
+        "payment": {
+          "uri": "https://juspay.in/",
+          "type": "ON-FULFILLMENT",
+          "params": {
+            "amount": "482.8",
+            "currency": "INR"
+          },
+          "status": "NOT-PAID",
+          "tl_method": "http/get",
+          "collected_by": "BPP",
+          "@ondc/org/settlement_details": [
+            {
+              "bank_name": "Axis Bank",
+              "branch_name": "Kathriguppe",
+              "settlement_type": "rtgs",
+              "beneficiary_name": "Innobits Solutions Pvt Ltd Nodal Account",
+              "settlement_phase": "sale-amount",
+              "settlement_ifsc_code": "UTIB0003190",
+              "settlement_counterparty": "seller-app",
+              "settlement_bank_account_no": "922020043291840"
+            }
+          ],
+          "@ondc/org/buyer_app_finder_fee_type": "Percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+        },
+        "provider": {
+          "id": "1000:1001",
+          "rateable": true,
+          "locations": [
+            {
+              "id": "1000:1001"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "url": "https://biz.test.enstore.com/m/orders/tCZ718172dzM/print?_tkn_=8Nt0001sKv",
+            "label": "Invoice"
+          }
+        ],
+        "created_at": "2023-03-01T11:18:44.258Z",
+        "updated_at": "2023-03-01T11:18:44.258Z",
+        "fulfillments": [
+          {
+            "id": "FPA:1001:item-59484a15-f9f2-4b27-acc3-2e9231f48976:1446:201646",
+            "end": {
+              "person": {
+                "name": "Darshan SR Sapphire"
+              },
+              "contact": {
+                "email": "darshan.s@innobits.com",
+                "phone": "8151000066"
+              },
+              "location": {
+                "gps": "13.032943, 77.630862",
+                "address": {
+                  "city": "Bengaluru",
+                  "name": "Darshan SR Sapphire",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "building": "Bennigana Halli",
+                  "locality": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043",
+                  "area_code": "560043"
+                }
+              }
+            },
+            "type": "Delivery",
+            "state": {
+              "descriptor": {
+                "code": "Pending",
+                "name": "Pending"
+              }
+            },
+            "tracking": true
+          }
+        ]
+      }
+    }
+  },
+  

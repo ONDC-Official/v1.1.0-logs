@@ -1,0 +1,103 @@
+
+  {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.enstore.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-03-01T11:18:36.732Z",
+      "message_id": "da7f1ef9-76ec-411f-86ea-2a6899725c8d",
+      "core_version": "1.1.0",
+      "transaction_id": "5facdb4a-4458-4316-83a4-93746da9b755"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "16",
+            "fulfillment_id": "FPA:1001:item-59484a15-f9f2-4b27-acc3-2e9231f48976:1446:201646"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "482.8",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "100.8",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "16",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 4,
+                "price": {
+                  "value": "90.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": 24.0
+                  },
+                  "available": {
+                    "count": 24.0
+                  }
+                }
+              },
+              "price": {
+                "value": "360.0",
+                "currency": "INR"
+              },
+              "title": "Apple Washington 1 KG 28%tax",
+              "@ondc/org/item_id": "16",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 4.0
+              }
+            },
+            {
+              "price": {
+                "value": 22.0,
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:1001:item-59484a15-f9f2-4b27-acc3-2e9231f48976:1446:201646",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "provider": {
+          "id": "1000:1001"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:1001:item-59484a15-f9f2-4b27-acc3-2e9231f48976:1446:201646",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            },
+            "tracking": true,
+            "@ondc/org/TAT": "PT50M",
+            "@ondc/org/category": "Immediate Delivery",
+            "@ondc/org/provider_name": "ondc-wrapper-ondc.proxy.dev.dunzo.com"
+          }
+        ],
+        "provider_location": {
+          "id": "1000:1001"
+        }
+      }
+    }
+  }
