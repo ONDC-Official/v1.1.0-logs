@@ -1,0 +1,232 @@
+[{
+  "payload": {
+    "context": {
+      "action": "on_confirm",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "country": "IND",
+      "domain": "nic2004:52110",
+      "message_id": "cb41847a-767e-4579-9940-3e326117e667",
+      "timestamp": "2023-03-05T14:28:03.489Z",
+      "transaction_id": "666ed7e3-5f22-4706-8489-93ad3b746761",
+      "bpp_id": "ondc.uengage.in",
+      "bpp_uri": "https://ondc.uengage.in/",
+      "key": "MCowBQYDK2VuAyEAsosm57w/ca5Ghk1GmVu+YAB74Evs0RyKua4e0rXYzVA=",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-02-05-176274",
+        "state": "Created",
+        "provider": {
+          "id": "89",
+          "locations": [
+            {
+              "id": "123123"
+            }
+          ],
+          "rateable": true
+        },
+        "items": [
+          {
+            "quantity": {
+              "count": 1
+            },
+            "id": "2246216",
+            "fulfillment_id": "1"
+          }
+        ],
+        "add_ons": [],
+        "offers": [],
+        "billing": {
+          "address": {
+            "door": null,
+            "name": "shubham",
+            "building": "kormangle",
+            "locality": "kormangla",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "IND",
+            "area_code": "560034"
+          },
+          "phone": "9501058880",
+          "name": "shubham",
+          "email": "shubham@uengage.in",
+          "created_at": "2023-03-05T14:27:48.089Z",
+          "updated_at": "2023-03-05T14:27:49.081Z"
+        },
+        "fulfillments": [
+          {
+            "id": "1",
+            "type": "Delivery",
+            "state": {
+              "descriptor": {
+                "name": "Pending",
+                "code": "Pending"
+              }
+            },
+            "@ondc/org/provider_name": "La Pinoz and Pizza",
+            "tracking": true,
+            "start": {
+              "location": {
+                "id": "123123",
+                "descriptor": {
+                  "name": "La Pinoz and Pizza"
+                },
+                "gps": "77.6245,12.9352"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-05T14:28:03.098Z",
+                  "end": "2023-03-05T14:48:03.098Z"
+                }
+              },
+              "contact": {
+                "phone": "+919718345112",
+                "email": "hani@uengage.in"
+              }
+            },
+            "end": {
+              "contact": {
+                "email": null,
+                "phone": "9501058880"
+              },
+              "location": {
+                "gps": "12.927112, 77.626652",
+                "address": {
+                  "door": null,
+                  "building": "kormangle",
+                  "name": "shubham",
+                  "locality": "kormangla",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560034"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-05T14:48:03.098Z",
+                  "end": "2023-03-05T15:08:03.098Z"
+                }
+              }
+            },
+            "customer": {
+              "person": {
+                "name": "shubham"
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": 626.8
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "2246216",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "30"
+                  },
+                  "maximum": {
+                    "count": "30"
+                  }
+                },
+                "count": 1,
+                "price": {
+                  "currency": "INR",
+                  "value": "596"
+                }
+              },
+              "title": "Margherita Pizza-The Giant (serves 8, 45.7)",
+              "price": {
+                "currency": "INR",
+                "value": "596"
+              }
+            },
+            {
+              "@ondc/org/item_id": "2246216",
+              "@ondc/org/title_type": "tax",
+              "title": "Tax",
+              "price": {
+                "currency": "INR",
+                "value": "29.8"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "@ondc/org/title_type": "delivery",
+              "title": "Delivery Charges",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "@ondc/org/title_type": "packing",
+              "title": "Packaging  Charges",
+              "price": {
+                "currency": "INR",
+                "value": "1"
+              }
+            }
+          ]
+        },
+        "payment": {
+          "params": {
+            "currency": "INR",
+            "transaction_id": "ONDC-666ed7e3-5f22-4706-8489-93ad3b746761-1",
+            "amount": "626.8"
+          },
+          "status": "PAID",
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "044663400001161",
+              "settlement_ifsc_code": "YESB0000446"
+            }
+          ]
+        },
+        "created_at": "2023-03-05T14:27:48.008Z",
+        "updated_at": "2023-03-05T14:28:03.098Z"
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "action": "on_confirm",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "country": "IND",
+      "domain": "nic2004:52110",
+      "message_id": "cb41847a-767e-4579-9940-3e326117e667",
+      "timestamp": "2023-03-05T14:28:03.489Z",
+      "transaction_id": "666ed7e3-5f22-4706-8489-93ad3b746761",
+      "bpp_id": "ondc.uengage.in",
+      "bpp_uri": "https://ondc.uengage.in/",
+      "key": "MCowBQYDK2VuAyEAsosm57w/ca5Ghk1GmVu+YAB74Evs0RyKua4e0rXYzVA=",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}]

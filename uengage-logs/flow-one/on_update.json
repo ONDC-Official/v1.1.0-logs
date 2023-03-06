@@ -1,0 +1,80 @@
+{
+  "payload": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_update",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://ondc.uengage.in/",
+      "transaction_id": "666ed7e3-5f22-4706-8489-93ad3b746761",
+      "message_id": "5eda87c4-cf27-48e7-bebe-58d6130a4f2a",
+      "timestamp": "2023-03-05T14:30:05.552Z",
+      "bpp_id": "ondc.uengage.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-02-05-176274",
+        "state": "Completed",
+        "items": [
+          {
+            "id": "2246216",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": 1,
+            "tags": {
+              "status": "Liquidated"
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "745.00"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "2246216",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "745"
+                }
+              }
+            }
+          ]
+        },
+        "fulfillments": []
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_update",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://ondc.uengage.in/",
+      "transaction_id": "666ed7e3-5f22-4706-8489-93ad3b746761",
+      "message_id": "5eda87c4-cf27-48e7-bebe-58d6130a4f2a",
+      "timestamp": "2023-03-05T14:30:05.552Z",
+      "bpp_id": "ondc.uengage.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}
