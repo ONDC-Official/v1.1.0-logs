@@ -1,0 +1,78 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "timestamp": "2023-03-07T10:12:39.045Z",
+    "ttl": "PT30S",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-qa.gofrugalretail.com",
+    "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+    "bpp_id": "ondc-dev.delhivery.com",
+    "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/",
+    "transaction_id": "979f2406-1cfe-457d-b80e-4ce3f41dfd5e",
+    "message_id": "39d09623-3c16-424e-86b9-ecd15420a2c7"
+  },
+  "message": {
+    "order": {
+      "id": "e638641a546f7e2e9f8991af6edae8dd65ea3779",
+      "items": [
+        {
+          "descriptor": {
+            "code": "P2H2P"
+          },
+          "category_id": "Express Delivery",
+          "id": "c24a480e-7c6f-412e-be50-f86a1cadd0f9"
+        }
+      ],
+      "state": "Accepted",
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "12.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "c24a480e-7c6f-412e-be50-f86a1cadd0f9",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "12.00"
+            }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "CA58EE064C876BC50584A0FFA35D9CBB",
+          "type": "Prepaid",
+          "@ondc/org/awb_no": "352030210702",
+          "state": {
+            "descriptor": {
+              "code": "Searching-for-Agent",
+              "name": "Searching for Agent"
+            }
+          },
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-03-08T00:12:00.000Z",
+                "end": "2023-03-08T05:12:00.000Z"
+              }
+            },
+            "instructions": {
+              "name": "Shipping label or proof of pickup",
+              "short_desc": "proof of pickup details",
+              "long_desc": "Shipping label info or proof of pickup",
+              "images": [
+                "https://s3.ap-southeast-1.amazonaws.com/media.delhivery/tmp/shipping_label_ondc/352030210702.pdf?AWSAccessKeyId=ASIARIGS3RKBPCU5J4PV&Signature=8j6RXlT7JyYNhf%2FLBbjmZfn%2F1Pw%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEG8aDmFwLXNvdXRoZWFzdC0xIkcwRQIgPCVb%2FeDv53WLEr6XJDeEsGK1yXIpWMyscu1TRosw2z8CIQDNOVOi%2FocnzI0%2FVhCFhklLiP5ZxM3szFuXunXHBpfNQSrABQgoEAAaDDA4NjM0MTU1Mjc3MCIMqRAt%2BMAng%2BneuolZKp0FUYtIiqVEvw4H108P3r0G%2BMlalQ2vuBXVzY4gz3JhPkqBoZoi1jHTskMdhIp%2BwjVq08%2F374NS8%2FjGVr2j4tuk02mjWtB9ddJzPG3D0T6GSddK8iNQSHciFrbQe2r6hiaMrO0KKBLLNNsvhrB%2BVi5dBKDOrcSqkhTvkYBlObV7PkFQkgX2B3xp87KhLmUPphExK5O1znU0graGUJ8IHK7RbXqq9tZS4OT1C6TF7m2bRkzKwwDQV6kLstDyeFnz6Yw44AmyHYi72NM3ia%2FYShH9jXdIHVllfmaXV%2BDLeIVZSCShX1ESBo6X%2BkZ7R0c1l3nQhZwbD59C9P9drIkLmwCsnxD21Dr4av%2F0V4oEDEgGnRLmDGMVDLSTr6R21i9sNBLxbc3dfD2gSv6wuBD5vLO0DwwZoDMsoo7KO435syIfc8Bnku3uP0pMf3CqAbGszWbtkrRk%2FJmg5OWH5pPmt3jnMlLTVI2JynejMiU8OZYeXZrLQ3P5%2FqQJWQZJ6ijiVkv32NEHSV%2BrmP5R05S0C9Zfp5Q55K10QOvTJEq0azn76aZ0vzxbJExocJCFw6o1ilo16EBJE%2BIKfcRy0M1NmP72yhr%2BLvTyPe9YW13z7f9Hs%2FFnBHCAYJjKr6erHrJCtlarpgbMw5jmRVQf94kFyt13TGhv5IlH31ICiULh9dtvCxditEiqunoKoP%2BMktSaMLDKCCCWCai3B2dMGgZdsNqjypZieWJdVPcGkhVDYg6JSXLhs%2FXgIC7WzipTaQCphYlQFONSdmDUp9I0cN%2Bh0A%2BurIakVp0kIQxySUEyslrtfCTeLIxLxVo3hRjWFNk%2BLOb5nNdIVMTnLVM5I86%2FxkUWhbBb05CLotrtxPcN%2FJO3kFIm%2FS0Nza%2Buz5wmu5cuMMzGm6AGOrEBplS3DWXLSIU592bkne1Vrdo0N%2Fu6uHQI%2Fd7Bei%2B12RvkU49hIPtlld%2BOZJlgxJRp6oFQV3JQ6SmmkAXT9Q9SqnW8Ly%2B9ZB8UUj8Bm%2Bp%2BLr0uviOYz%2BX9xqMxAWAKkvOnmgQHdd4bQV%2F6lrfz5aY4NhFVp1MZ4CR6HMsMWeq5gzQ9nW2yDWRaPgTPUBriYBcyYbKVu8FMybYLnMlVK8J4LBaD%2FRpx1er9Mhe0JbCwjcGL&Expires=1678270355"
+              ]
+            }
+          }
+        }
+      ],
+      "updated_at": "2023-03-07T10:10:48.215Z"
+    }
+  }
+}
