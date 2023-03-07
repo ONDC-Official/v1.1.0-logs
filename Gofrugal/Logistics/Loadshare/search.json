@@ -1,0 +1,62 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "search",
+    "timestamp": "2023-03-06T11:34:22.852Z",
+    "ttl": "PT30S",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-qa.gofrugalretail.com",
+    "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+    "transaction_id": "af4f1e64-54a8-4663-afd1-81b8aeafee4a",
+    "message_id": "874af10e-b030-4d1a-a0b2-aff847b0c9be"
+  },
+  "message": {
+    "intent": {
+      "provider": {
+        "time": {
+          "range": {
+            "start": "0900",
+            "end": "2300"
+          },
+          "days": "2,3,4,5,6,1",
+          "schedule": {}
+        }
+      },
+      "category": {
+        "id": "Next Day Delivery"
+      },
+      "fulfillment": {
+        "type": "Prepaid",
+        "start": {
+          "location": {
+            "gps": "12.9138124, 77.68498679999999",
+            "address": {
+              "area_code": "560035"
+            }
+          }
+        },
+        "end": {
+          "location": {
+            "gps": "12.922941, 77.695571",
+            "address": {
+              "area_code": "560103"
+            }
+          }
+        }
+      },
+      "@ondc/org/payload_details": {
+        "weight": {
+          "value": 200.0,
+          "unit": "Gram"
+        },
+        "category": "Grocery",
+        "value": {
+          "currency": "INR",
+          "value": "300.0"
+        }
+      }
+    }
+  }
+}

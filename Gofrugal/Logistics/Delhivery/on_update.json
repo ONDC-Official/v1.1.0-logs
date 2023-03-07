@@ -1,0 +1,78 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "timestamp": "2023-03-07T10:12:39.045Z",
+    "ttl": "PT30S",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-qa.gofrugalretail.com",
+    "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+    "bpp_id": "ondc-dev.delhivery.com",
+    "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/",
+    "transaction_id": "979f2406-1cfe-457d-b80e-4ce3f41dfd5e",
+    "message_id": "39d09623-3c16-424e-86b9-ecd15420a2c7"
+  },
+  "message": {
+    "order": {
+      "id": "e638641a546f7e2e9f8991af6edae8dd65ea3779",
+      "items": [
+        {
+          "descriptor": {
+            "code": "P2H2P"
+          },
+          "category_id": "Express Delivery",
+          "id": "c24a480e-7c6f-412e-be50-f86a1cadd0f9"
+        }
+      ],
+      "state": "Accepted",
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "12.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "c24a480e-7c6f-412e-be50-f86a1cadd0f9",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "12.00"
+            }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "CA58EE064C876BC50584A0FFA35D9CBB",
+          "type": "Prepaid",
+          "@ondc/org/awb_no": "352030210702",
+          "state": {
+            "descriptor": {
+              "code": "Searching-for-Agent",
+              "name": "Searching for Agent"
+            }
+          },
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-03-08T00:12:00.000Z",
+                "end": "2023-03-08T05:12:00.000Z"
+              }
+            },
+            "instructions": {
+              "name": "Shipping label or proof of pickup",
+              "short_desc": "proof of pickup details",
+              "long_desc": "Shipping label info or proof of pickup",
+              "images": [
+                "https://s3.ap-southeast-1.amazonaws.com/media.delhivery/tmp/shipping_label_ondc/352030210702.pdf"
+              ]
+            }
+          }
+        }
+      ],
+      "updated_at": "2023-03-07T10:10:48.215Z"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_status",
+    "timestamp": "2023-03-06T11:41:44.340Z",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-qa.gofrugalretail.com",
+    "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+    "transaction_id": "af4f1e64-54a8-4663-afd1-81b8aeafee4a",
+    "message_id": "ljzyusei5ytpi65k"
+  },
+  "message": {
+    "order": {
+      "id": "720cace36e7ff4d66c330b743539ff460b4bb229",
+      "state": "Completed",
+      "provider": {
+        "id": "loadshare@ondc-preprod.loadshare.net"
+      },
+      "items": [
+        {
+          "id": "nextday",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "quantity": {
+            "count": 1
+          },
+          "category_id": "Next Day Delivery"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "42"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "nextday",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "42"
+            }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "BE11D1C993E616568A4E56A385D0B856",
+          "type": "Prepaid",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "@ondc/org/awb_no": null,
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-03-06T11:41:40.260Z",
+                "end": "2023-03-06T11:41:40.260Z"
+              },
+              "timestamp": "2023-03-06T11:41:38.000Z"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-03-06T11:55:40.263Z",
+                "end": "2023-03-06T12:16:40.263Z"
+              },
+              "timestamp": "2023-03-06T11:41:42.000Z"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "agent": {
+            "name": "elumal",
+            "phone": "8618529050"
+          }
+        }
+      ],
+      "billing": {
+        "name": "Gofrugal Technologies Pvt Ltd",
+        "address": {
+          "name": "KRISP IT Park",
+          "building": "942, Kelambakkam - Vandalur Rd",
+          "locality": "Kizhakottayur",
+          "city": "Chennai",
+          "state": "Tamil Nadu",
+          "country": "India",
+          "area_code": "600127"
+        },
+        "email": "accounts@gofrugal.com",
+        "phone": "9840812985",
+        "tax_number": "33AACCG2423J1ZZ",
+        "created_at": "2023-03-06T11:34:30.995Z",
+        "updated_at": "2023-03-06T11:34:30.995Z"
+      },
+      "updated_at": "2023-03-06T11:41:44.340Z"
+    }
+  }
+}
