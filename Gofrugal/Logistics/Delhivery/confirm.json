@@ -1,0 +1,195 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "timestamp": "2023-03-07T10:10:38.819Z",
+    "ttl": "PT30S",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-qa.gofrugalretail.com",
+    "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+    "bpp_id": "ondc-dev.delhivery.com",
+    "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/",
+    "transaction_id": "979f2406-1cfe-457d-b80e-4ce3f41dfd5e",
+    "message_id": "39d09623-3c16-424e-86b9-ecd15420a2c7"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "c24a480e-7c6f-412e-be50-f86a1cadd0f9",
+          "descriptor": {
+            "code": "P2H2P"
+          },
+          "quantity": {
+            "count": 1
+          },
+          "category_id": "Express Delivery"
+        }
+      ],
+      "billing": {
+        "name": "Gofrugal Technologies Pvt Ltd",
+        "address": {
+          "name": "KRISP IT Park",
+          "building": "942, Kelambakkam - Vandalur Rd",
+          "locality": "Kizhakottayur",
+          "city": "Chennai",
+          "state": "Tamil Nadu",
+          "country": "India",
+          "area_code": "600127"
+        },
+        "email": "accounts@gofrugal.com",
+        "phone": "9840812985",
+        "tax_number": "33AACCG2423J1ZZ",
+        "created_at": "2023-03-07T10:10:09.719Z",
+        "updated_at": "2023-03-07T10:10:09.719Z"
+      },
+      "fulfillments": [
+        {
+          "id": "CA58EE064C876BC50584A0FFA35D9CBB",
+          "type": "Prepaid",
+          "tracking": true,
+          "start": {
+            "location": {
+              "id": "5466-ONDC-1-3330_location",
+              "gps": "12.922811, 77.6952446",
+              "address": {
+                "door": "",
+                "name": "MARKETPLACE SELLER1",
+                "building": "block A",
+                "street": "I.P.Extension",
+                "locality": "near to gateway",
+                "city": "bangalore",
+                "state": "karnataka",
+                "country": "india",
+                "area_code": "560035"
+              }
+            },
+            "instructions": {
+              "short_desc": "8840",
+              "long_desc": "QR code will be attached to package"
+            },
+            "contact": {
+              "phone": "8881177221",
+              "email": "sherin.h@gofrugal.com"
+            },
+            "person": {
+              "name": "sherin shafa"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.9812430000001, 77.5950340000001",
+              "address": {
+                "name": "Shafa",
+                "building": "Sampangi Rama Nagar",
+                "locality": "Kasturba Rd, Sampangi Rama Nagar, Bengaluru",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560001"
+              }
+            },
+            "instructions": {
+              "name": "Status for drop",
+              "short_desc": "4952"
+            },
+            "contact": {
+              "phone": "9952291326",
+              "email": "sherin.h@gofrugal.com"
+            },
+            "person": {
+              "name": "Shafa"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "no"
+          },
+          "@ondc/org/provider_name": "Delhivery"
+        }
+      ],
+      "id": "e638641a546f7e2e9f8991af6edae8dd65ea3779",
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "12.00"
+        },
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "12.00"
+            },
+            "@ondc/org/item_id": "c24a480e-7c6f-412e-be50-f86a1cadd0f9",
+            "@ondc/org/title_type": "Delivery Charge"
+          }
+        ]
+      },
+      "state": "Created",
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_type": "neft",
+            "settlement_bank_account_no": "ACCTEST1234",
+            "settlement_ifsc_code": "IFSCTEST1234",
+            "beneficiary_name": "DELHIVERY LIMITED"
+          }
+        ],
+        "@ondc/org/collection_amount": "12.00"
+      },
+      "provider": {
+        "id": "Delhivery"
+      },
+      "created_at": "2023-03-07T10:10:38.819Z",
+      "updated_at": "2023-03-07T10:10:38.819Z",
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "descriptor": {
+              "name": "KIT KAT"
+            },
+            "quantity": {
+              "count": 4,
+              "measure": {
+                "value": 200,
+                "unit": "Gram"
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "400.00"
+            },
+            "category_id": "Grocery"
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "MARKETPLACE SELLER1"
+          },
+          "address": {
+            "door": "",
+            "name": "MARKETPLACE SELLER1",
+            "building": "block A",
+            "street": "I.P.Extension",
+            "locality": "near to gateway",
+            "city": "bangalore",
+            "state": "karnataka",
+            "country": "india",
+            "area_code": "560035"
+          }
+        },
+        "order": {
+          "id": "2023-02-07-494319",
+          "weight": {
+            "value": 200.0,
+            "unit": "Gram"
+          }
+        }
+      }
+    }
+  }
+}
