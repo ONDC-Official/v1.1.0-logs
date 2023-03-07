@@ -1,0 +1,148 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_select",
+        "bap_id": "shopping-api-testing.phonepe.com",
+        "bpp_id": "biz.test.enstore.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+        "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-03-07T06:41:04.386Z",
+        "message_id": "SELM2303071210515141018953",
+        "core_version": "1.1.0",
+        "transaction_id": "C2303071209361071018969"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "1000:1001"
+            },
+            "provider_location": {
+                "id": "1000:1001"
+            },
+            "items": [
+                {
+                    "id": "1257",
+                    "fulfillment_id": "FPA:1001:item-65ee68c0-889c-48ec-b560-c68241bf7229:1446:204140"
+                },
+                {
+                    "id": "1305",
+                    "fulfillment_id": "FPA:1001:item-65ee68c0-889c-48ec-b560-c68241bf7229:1446:204140"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "577.52"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "1257",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "23.17"
+                        }
+                    },
+                    {
+                        "title": "banana 1 kg",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_id": "1257",
+                        "@ondc/org/item_quantity": {
+                            "count": 9
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 9.0
+                                },
+                                "maximum": {
+                                    "count": 9.0
+                                }
+                            },
+                            "count": 9,
+                            "price": {
+                                "currency": "INR",
+                                "value": "51.5"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "463.5"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1305",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "4.33"
+                        }
+                    },
+                    {
+                        "title": "Red onion",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_id": "1305",
+                        "@ondc/org/item_quantity": {
+                            "count": 2.0
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 24.0
+                                },
+                                "maximum": {
+                                    "count": 24.0
+                                }
+                            },
+                            "count": 2,
+                            "price": {
+                                "currency": "INR",
+                                "value": "43.26"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "86.52"
+                        }
+                    },
+                    {
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "@ondc/org/item_id": "FPA:1001:item-65ee68c0-889c-48ec-b560-c68241bf7229:1446:204140",
+                        "price": {
+                            "currency": "INR",
+                            "value": 0
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            },
+            "fulfillments": [
+                {
+                    "id": "FPA:1001:item-65ee68c0-889c-48ec-b560-c68241bf7229:1446:204140",
+                    "@ondc/org/provider_name": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+                    "@ondc/org/category": "Immediate Delivery",
+                    "tracking": true,
+                    "@ondc/org/TAT": "PT50M",
+                    "state": {
+                        "descriptor": {
+                            "name": "Serviceable",
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "40002",
+        "path": "string",
+        "message": "banana 1 kg stock is not available, Available item quantity is less than requested quantity, Stock Unavailable, Oi-1257 banana 1 kg: Oops is no longer available, please remove the item from the cart to place the order"
+    }
+}

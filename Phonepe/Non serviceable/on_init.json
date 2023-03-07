@@ -1,0 +1,90 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_init",
+        "bap_id": "shopping-api-testing.phonepe.com",
+        "bpp_id": "biz.test.enstore.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+        "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-03-07T11:28:31.163Z",
+        "message_id": "INIM2303071658233086793923",
+        "core_version": "1.1.0",
+        "transaction_id": "C2303071658116662178292"
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "30011",
+        "path": "string",
+        "message": "Delivery Partners not available, please try again after some time"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "1258",
+                    "fulfillment_id": "F-30011"
+                }
+            ],
+            "quote": {
+                "ttl": "PT1H",
+                "price": {
+                    "value": "205.67",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "9.27",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "1258",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "185.4",
+                            "currency": "INR"
+                        },
+                        "title": "fig 1 kg",
+                        "@ondc/org/item_id": "1258",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1.0
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": 11.0,
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "FPA:1001:item-392085a3-8dd9-4aeb-873a-b99b5a76c08f:1446:204142",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "F-30011",
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Logsistics",
+                    "@ondc/org/category": "Same Day Delivery",
+                    "@ondc/org/TAT": "PT45M",
+                    "state": {
+                        "descriptor": {
+                            "name": "Non-serviceable",
+                            "code": "Non-serviceable"
+                        }
+                    }
+                }
+            ],
+            "provider": {
+                "id": "1000:1001"
+            }
+        }
+    }
+}

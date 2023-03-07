@@ -1,0 +1,86 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "init",
+        "core_version": "1.1.0",
+        "bap_id": "shopping-api-testing.phonepe.com",
+        "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+        "bpp_id": "biz.test.enstore.com",
+        "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+        "transaction_id": "C2303071133150001018039",
+        "message_id": "INIM2303071133316851115429",
+        "timestamp": "2023-03-07T06:03:31.690Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "1000:1001",
+                "locations": [
+                    {
+                        "id": "L:1000:1001"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "1256",
+                    "quantity": {
+                        "count": 3
+                    },
+                    "fulfillment_id": "FPA:1001:item-9eb1fc4e-779f-44f7-83f7-6e17b013fe01:1446:204140"
+                },
+                {
+                    "id": "1257",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "FPA:1001:item-9eb1fc4e-779f-44f7-83f7-6e17b013fe01:1446:204140"
+                }
+            ],
+            "billing": {
+                "name": "Nagawara",
+                "address": {
+                    "name": "100",
+                    "building": "Nagawara ",
+                    "locality": "AK Colony",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560045"
+                },
+                "phone": "8073865965",
+                "created_at": "Tue Mar 07 11:33:31 IST 2023",
+                "updated_at": "Tue Mar 07 11:33:31 IST 2023"
+            },
+            "fulfillments": [
+                {
+                    "id": "FPA:1001:item-9eb1fc4e-779f-44f7-83f7-6e17b013fe01:1446:204140",
+                    "type": "Delivery",
+                    "end": {
+                        "location": {
+                            "gps": "13.040118217468, 77.624290466309",
+                            "address": {
+                                "name": "100",
+                                "building": "Nagawara ",
+                                "locality": "AK Colony",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560045"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8073865965"
+                        }
+                    },
+                    "provider_id": "biz.test.enstore.com"
+                }
+            ],
+            "created_at": "Tue Mar 07 11:33:31 IST 2023",
+            "updated_at": "Tue Mar 07 11:33:31 IST 2023"
+        }
+    }
+}

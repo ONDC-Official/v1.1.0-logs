@@ -1,0 +1,142 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_select",
+        "bap_id": "shopping-api-testing.phonepe.com",
+        "bpp_id": "biz.test.enstore.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+        "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-03-07T07:01:59.272Z",
+        "message_id": "SELM2303071231575001018925",
+        "core_version": "1.1.0",
+        "transaction_id": "C2303071231493841018264"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "1000:1001"
+            },
+            "provider_location": {
+                "id": "1000:1001"
+            },
+            "items": [
+                {
+                    "id": "1260",
+                    "fulfillment_id": "FPA:1001:item-8a79ff51-b8d3-40ed-aa2f-303f17f47582:1446:204140"
+                },
+                {
+                    "id": "1303",
+                    "fulfillment_id": "FPA:1001:item-8a79ff51-b8d3-40ed-aa2f-303f17f47582:1446:204140"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "237.93"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "1260",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "6.18"
+                        }
+                    },
+                    {
+                        "title": "Green Banana 1 kg",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_id": "1260",
+                        "@ondc/org/item_quantity": {
+                            "count": 2.0
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 24.0
+                                },
+                                "maximum": {
+                                    "count": 24.0
+                                }
+                            },
+                            "count": 2,
+                            "price": {
+                                "currency": "INR",
+                                "value": "61.8"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "123.6"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1303",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.15"
+                        }
+                    },
+                    {
+                        "title": "cucumber",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_id": "1303",
+                        "@ondc/org/item_quantity": {
+                            "count": 2.0
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 24.0
+                                },
+                                "maximum": {
+                                    "count": 24.0
+                                }
+                            },
+                            "count": 2,
+                            "price": {
+                                "currency": "INR",
+                                "value": "51.5"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "103.0"
+                        }
+                    },
+                    {
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "@ondc/org/item_id": "FPA:1001:item-8a79ff51-b8d3-40ed-aa2f-303f17f47582:1446:204140",
+                        "price": {
+                            "currency": "INR",
+                            "value": 0
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            },
+            "fulfillments": [
+                {
+                    "id": "FPA:1001:item-8a79ff51-b8d3-40ed-aa2f-303f17f47582:1446:204140",
+                    "@ondc/org/provider_name": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+                    "@ondc/org/category": "Immediate Delivery",
+                    "tracking": true,
+                    "@ondc/org/TAT": "PT50M",
+                    "state": {
+                        "descriptor": {
+                            "name": "Serviceable",
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
