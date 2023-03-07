@@ -1,0 +1,51 @@
+{
+    "context": {
+      "key": "",
+      "ttl": "PT5S",
+      "city": "std:080",
+      "action": "update",
+      "bap_id": "biz.test.enstore.com",
+      "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+      "domain": "nic2004:60232",
+      "bap_uri": "https://biz.test.enstore.com/ecc/ondc/logistics-bap",
+      "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+      "country": "IND",
+      "timestamp": "2023-03-07T11:48:23.144Z",
+      "message_id": "d33d0dfb-741d-4c1f-b752-45ffdd3ff862",
+      "core_version": "1.1.0",
+      "transaction_id": "LOG-493ae1b2-f95d-4103-aed5-a946b45a516e"
+    },
+    "message": {
+      "order": {
+        "id": "2023-02-07-215916",
+        "items": [
+          {
+            "id": "item-624e9316-a1a2-4189-a5d3-c2c13a47581d",
+            "descriptor": {
+              "code": "P2P",
+              "name": "Dunzo",
+              "long_desc": "Dunzo",
+              "short_desc": "Dunzo"
+            },
+            "category_id": "Immediate Delivery"
+          }
+        ],
+        "state": "Created",
+        "fulfillments": [
+          {
+            "id": "1",
+            "tags": {
+              "@ondc/org/order_ready_to_ship": "yes"
+            },
+            "type": "Prepaid",
+            "start": {
+              "instructions": {
+                "short_desc": "1003-1004"
+              }
+            }
+          }
+        ]
+      },
+      "update_target": "fulfillment"
+    }
+  }
