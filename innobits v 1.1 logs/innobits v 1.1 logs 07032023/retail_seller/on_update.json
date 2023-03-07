@@ -1,0 +1,113 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_update",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "biz.test.enstore.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-03-07T11:48:22.795Z",
+        "message_id": "fc647c9c-a7d8-4ef2-82b3-722bf40dc2f4",
+        "core_version": "1.1.0",
+        "transaction_id": "493ae1b2-f95d-4103-aed5-a946b45a516e"
+    },
+    "message": {
+        "order": {
+            "id": "2023-02-07-215916",
+            "items": [
+                {
+                    "id": "5988",
+                    "quantity": {
+                        "count": 4.0
+                    },
+                    "fulfillment_id": "FPA:677:item-624e9316-a1a2-4189-a5d3-c2c13a47581d:1446:28256"
+                }
+            ],
+            "quote": {
+                "ttl": "PT1H",
+                "price": {
+                    "value": "2011.0",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "0.0",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "5988",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "500.0",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "2000.0",
+                            "currency": "INR"
+                        },
+                        "title": "Amul Ghee Pouch",
+                        "@ondc/org/item_id": "5988",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 4.0
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": 11,
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "FPA:677:item-624e9316-a1a2-4189-a5d3-c2c13a47581d:1446:28256",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "In-progress",
+            "billing": {
+                "name": "Darshan SR Sapphire",
+                "email": "darshan.s@innobits.com",
+                "phone": "8151000066",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "Darshan SR Sapphire",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "Bennigana Halli",
+                    "locality": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043",
+                    "area_code": "560043"
+                },
+                "created_at": "2023-03-07T11:45:13.821Z",
+                "updated_at": "2023-03-07T11:45:13.821Z"
+            },
+            "provider": {
+                "id": "1016:677",
+                "locations": [
+                    {
+                        "id": "1016:677"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "FPA:677:item-624e9316-a1a2-4189-a5d3-c2c13a47581d:1446:28256",
+                    "type": "Reverse QC",
+                    "state": {
+                        "descriptor": {
+                            "code": "Packed",
+                            "name": "Packed"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

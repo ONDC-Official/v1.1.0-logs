@@ -1,0 +1,115 @@
+{
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_status",
+      "bap_id": "biz.test.enstore.com",
+      "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+      "domain": "nic2004:60232",
+      "bap_uri": "https://biz.test.enstore.com/ecc/ondc/logistics-bap",
+      "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+      "country": "IND",
+      "timestamp": "2023-03-07T12:00:12.818Z",
+      "message_id": "47ee6494-7f65-4fa9-956e-90a61f03e0d4",
+      "core_version": "1.1.0",
+      "transaction_id": "LOG-493ae1b2-f95d-4103-aed5-a946b45a516e"
+    },
+    "message": {
+      "order": {
+        "id": "2023-02-07-215916",
+        "items": [
+          {
+            "id": "item-624e9316-a1a2-4189-a5d3-c2c13a47581d",
+            "descriptor": {
+              "code": "P2P",
+              "name": "Dunzo",
+              "long_desc": "Dunzo",
+              "short_desc": "Dunzo"
+            },
+            "category_id": "Immediate Delivery"
+          }
+        ],
+        "quote": {
+          "price": {
+            "value": "86",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "86",
+                "currency": "INR"
+              },
+              "@ondc/org/item_id": "item-624e9316-a1a2-4189-a5d3-c2c13a47581d",
+              "@ondc/org/title_type": "Delivery Charge"
+            }
+          ]
+        },
+        "state": "Created",
+        "billing": {
+          "name": "Bitsila",
+          "email": "finance@bitsila.com",
+          "phone": "8951898275",
+          "address": {
+            "city": "Bengaluru",
+            "name": "221, INNOBITS SOLUTIONS PVT LTD",
+            "state": "Karnataka",
+            "country": "India",
+            "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
+            "area_code": "560085"
+          },
+          "created_at": "2023-03-07T11:45:20.095Z",
+          "tax_number": "29AAFCI9011D1ZQ",
+          "updated_at": "2023-03-07T11:45:20.095Z"
+        },
+        "payment": {
+          "type": "POST-FULFILLMENT",
+          "collected_by": "BAP",
+          "@ondc/org/collection_amount": "0.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_type": "neft",
+              "settlement_ifsc_code": "YESB0000262",
+              "settlement_counterparty": "seller-app",
+              "settlement_bank_account_no": "026291800001191"
+            }
+          ]
+        },
+        "provider": {
+          "id": "dunzo-lsp"
+        },
+        "created_at": "2023-03-07T11:45:20.361Z",
+        "updated_at": "2023-03-07T12:00:12.815Z",
+        "fulfillments": [
+          {
+            "end": {
+              "time": {
+                "range": {
+                  "end": "2023-03-07T12:00:12.818Z",
+                  "start": "2023-03-07T12:00:12.818Z"
+                }
+              }
+            },
+            "tags": {
+            },
+            "type": "Prepaid",
+            "start": {
+              "time": {
+                "range": {
+                  "end": "2023-03-07T12:00:12.818Z",
+                  "start": "2023-03-07T12:00:12.818Z"
+                }
+              }
+            },
+            "state": {
+              "descriptor": {
+                "code": "Pending",
+                "name": "Pending"
+              }
+            },
+            "tracking": false
+          }
+        ]
+      }
+    }
+  }
