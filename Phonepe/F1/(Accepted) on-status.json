@@ -1,0 +1,186 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_status",
+        "bap_id": "shopping-api-testing.phonepe.com",
+        "bpp_id": "biz.test.enstore.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+        "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-03-07T06:08:28.305Z",
+        "message_id": "ff2dea1c-14ee-4091-9016-e18e2e67ed29",
+        "core_version": "1.1.0",
+        "transaction_id": "C2303071133150001018039"
+    },
+    "message": {
+        "order": {
+            "id": "OD2303071133342471322704",
+            "state": "Accepted",
+            "provider": {
+                "id": "1000:1001"
+            },
+            "items": [
+                {
+                    "id": "1256",
+                    "quantity": {
+                        "count": 3
+                    },
+                    "fulfillment_id": "FPA:1001:item-9eb1fc4e-779f-44f7-83f7-6e17b013fe01:1446:204140"
+                },
+                {
+                    "id": "1257",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "FPA:1001:item-9eb1fc4e-779f-44f7-83f7-6e17b013fe01:1446:204140"
+                }
+            ],
+            "billing": {
+                "name": "Nagawara",
+                "phone": "8073865965",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "100",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "Nagawara ",
+                    "locality": "AK Colony",
+                    "area_code": "560045"
+                }
+            },
+            "fulfillments": [
+                {
+                    "id": "FPA:1001:item-9eb1fc4e-779f-44f7-83f7-6e17b013fe01:1446:204140",
+                    "end": {
+                        "contact": {
+                            "phone": "8068727678"
+                        },
+                        "location": {
+                            "gps": "13.040118217468, 77.624290466309",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "100",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "Nagawara ",
+                                "locality": "AK Colony",
+                                "area_code": "560045"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "state": {
+                        "descriptor": {
+                            "name": "Pending",
+                            "code": "Pending"
+                        }
+                    },
+                    "tracking": true
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "731.09",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "66.74",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "1256",
+                        "@ondc/org/title_type": "tax",
+                        "@ondc/org/item_quantity": {
+                            "count": 0.0
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "556.20",
+                            "currency": "INR"
+                        },
+                        "title": "Avokada 1 kg",
+                        "@ondc/org/item_id": "1256",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 3.0
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "5.15",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "1257",
+                        "@ondc/org/title_type": "tax",
+                        "@ondc/org/item_quantity": {
+                            "count": 0.0
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "103.00",
+                            "currency": "INR"
+                        },
+                        "title": "banana 1 kg",
+                        "@ondc/org/item_id": "1257",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2.0
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "FPA:1001:item-9eb1fc4e-779f-44f7-83f7-6e17b013fe01:1446:204140",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "731.09",
+                    "currency": "INR",
+                    "transaction_id": "OMT2303071133342471322235",
+                    "transaction_status": "COMPLETED"
+                },
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/return_window": "0.0",
+                "@ondc/org/settlement_basis": "Collection",
+                "@ondc/org/settlement_window": "P2D",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "Axis Bank",
+                        "branch_name": "Kathriguppe",
+                        "settlement_type": "rtgs",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "UTIB0003190",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "922020043291840"
+                    }
+                ],
+                "@ondc/org/withholding_amount": "0.0",
+                "@ondc/org/buyer_app_finder_fee_type": "Percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
+            },
+            "created_at": "2023-03-07T06:03:48.787Z",
+            "updated_at": "2023-03-07T06:08:28.221Z",
+            "documents": [
+                {
+                    "url": "https://biz.test.enstore.com/m/orders/qL4659172qJ4/print?_tkn_=Dyb0001ZY9",
+                    "label": "Invoice"
+                }
+            ]
+        }
+    }
+}

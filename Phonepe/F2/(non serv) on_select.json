@@ -1,0 +1,96 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_select",
+        "bap_id": "shopping-api-testing.phonepe.com",
+        "bpp_id": "biz.test.enstore.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+        "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-03-07T06:20:18.449Z",
+        "message_id": "SELM2303071150065991018538",
+        "core_version": "1.1.0",
+        "transaction_id": "C2303071146046581018184"
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "30011",
+        "path": "string",
+        "message": "Delivery Partners not available, please try again after some time"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "1257",
+                    "fulfillment_id": "F-30011"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "103.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "1257",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.15"
+                        }
+                    },
+                    {
+                        "title": "banana 1 kg",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_id": "1257",
+                        "@ondc/org/item_quantity": {
+                            "count": 2.0
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 9.0
+                                },
+                                "maximum": {
+                                    "count": 9.0
+                                }
+                            },
+                            "count": 2,
+                            "price": {
+                                "currency": "INR",
+                                "value": "51.5"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "103.0"
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            },
+            "fulfillments": [
+                {
+                    "id": "F-30011",
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Logsistics",
+                    "@ondc/org/category": "Same Day Delivery",
+                    "@ondc/org/TAT": "PT45M",
+                    "state": {
+                        "descriptor": {
+                            "name": "Non-serviceable",
+                            "code": "Non-serviceable"
+                        }
+                    }
+                }
+            ],
+            "provider": {
+                "id": "1000:1001"
+            }
+        }
+    }
+}
