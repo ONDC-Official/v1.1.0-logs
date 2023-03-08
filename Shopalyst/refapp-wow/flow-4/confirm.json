@@ -1,0 +1,172 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
+        "transaction_id": "1a7bc755-aa17-4ef1-b550-04ff46a1f80f",
+        "message_id": "2c1e4820-fe5c-4c00-942d-87111587a8c1",
+        "timestamp": "2023-03-08T18:22:53.492Z",
+        "bpp_id": "preprod-wow-bpp.shopalyst.com",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-02-08-355507",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Kishor",
+                    "building": "Shopalyst",
+                    "locality": "288, 36th Cross road, 7th block Jayanagar",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560070"
+                },
+                "phone": "9123456789",
+                "name": "Kishor",
+                "email": "kishor.gandham@gmail.com",
+                "created_at": "2023-03-08T18:22:42.408Z",
+                "updated_at": "2023-03-08T18:22:42.408Z"
+            },
+            "items": [
+                {
+                    "id": "A13DE061F4E98CD7EF7A359F15FFAAAB_43459767697667_default",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9"
+                },
+                {
+                    "id": "32AE547A9C88B65D08D8A5FC8BAE79B0_43459841294595_default",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9"
+                }
+            ],
+            "provider": {
+                "id": "bcedc450f8481e89b1445069acdc3dd9",
+                "locations": [
+                    {
+                        "id": "bcedc450f8481e89b1445069acdc3dd9"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "bcedc450f8481e89b1445069acdc3dd9",
+                    "tracking": true,
+                    "end": {
+                        "contact": {
+                            "phone": "9123456789"
+                        },
+                        "person": {
+                            "name": "Kishor"
+                        },
+                        "location": {
+                            "gps": "12.923479, 77.564663",
+                            "address": {
+                                "name": "Kishor",
+                                "building": "Shopalyst",
+                                "locality": "288, 36th Cross road, 7th block Jayanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560070"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "1447",
+                    "currency": "INR",
+                    "transaction_id": "ONDC-1a7bc755-aa17-4ef1-b550-04ff46a1f80f-1"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1447.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Amla Shampoo",
+                        "price": {
+                            "currency": "INR",
+                            "value": "449.00"
+                        },
+                        "@ondc/org/item_id": "A13DE061F4E98CD7EF7A359F15FFAAAB_43459767697667_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "449.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Hair Strengthening Shampoo",
+                        "price": {
+                            "currency": "INR",
+                            "value": "998.00"
+                        },
+                        "@ondc/org/item_id": "32AE547A9C88B65D08D8A5FC8BAE79B0_43459841294595_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "499.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "created_at": "2023-03-08T18:22:53.492Z",
+            "updated_at": "2023-03-08T18:22:53.492Z"
+        }
+    }
+}
