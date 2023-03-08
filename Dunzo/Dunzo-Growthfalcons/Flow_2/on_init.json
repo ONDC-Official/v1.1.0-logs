@@ -1,0 +1,52 @@
+{
+    "context": {
+        "action": "on_init",
+        "bap_id": "falconsai.com",
+        "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "1cbf8f97-e8c2-4ed5-8644-e8968954fd1e",
+        "timestamp": "2023-03-07T10:10:42.903Z",
+        "transaction_id": "e820c1e2-b531-4066-a100-b52efe92173a",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "item-938e3a40-3db9-47f9-89f7-37ddab2094eb"
+                }
+            ],
+            "payment": {
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT"
+            },
+            "provider": {
+                "id": "dunzo-lsp"
+            },
+            "provider_location": {
+                "id": ""
+            },
+            "quote": {
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "item-938e3a40-3db9-47f9-89f7-37ddab2094eb",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "38"
+                        }
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "38"
+                }
+            }
+        }
+    }
+}

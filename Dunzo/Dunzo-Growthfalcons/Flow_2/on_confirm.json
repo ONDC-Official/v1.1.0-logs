@@ -1,0 +1,103 @@
+{
+    "context": {
+        "action": "on_confirm",
+        "bap_id": "falconsai.com",
+        "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "9d17c5e3-0d0e-4bc6-a123-e057f9320310",
+        "timestamp": "2023-03-07T10:11:08.252Z",
+        "transaction_id": "e820c1e2-b531-4066-a100-b52efe92173a",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "billing": {
+                "address": {
+                    "area_code": "560037",
+                    "building": "T-5, KBF",
+                    "city": "Bangalore",
+                    "country": "India",
+                    "locality": "AECS Layout, Kundalahalli",
+                    "name": "GrowthFalcons",
+                    "state": "Karnataka"
+                },
+                "created_at": "2023-03-07T10:10:42.081Z",
+                "email": "billing@growthfalcons.com",
+                "name": "Hitbyseo Digital Marketing & Innovations LLP",
+                "phone": "9845071842",
+                "tax_number": "29AAKFH0619N1ZZ",
+                "updated_at": "2023-03-07T10:10:42.081Z"
+            },
+            "created_at": "2023-03-07T10:11:08.252Z",
+            "fulfillments": [
+                {
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-07T10:46:08.252Z",
+                                "start": "2023-03-07T10:11:08.252Z"
+                            }
+                        }
+                    },
+                    "id": "1",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-07T10:26:08.252Z",
+                                "start": "2023-03-07T10:11:08.252Z"
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending",
+                            "name": "Pending"
+                        }
+                    },
+                    "tags": {},
+                    "tracking": true,
+                    "type": "Prepaid"
+                }
+            ],
+            "id": "b7fe14e7-36ff-42ad-93e0-164fa6decaba",
+            "items": [
+                {
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P",
+                        "long_desc": "Dunzo",
+                        "name": "Dunzo",
+                        "short_desc": "Dunzo"
+                    },
+                    "id": "item-938e3a40-3db9-47f9-89f7-37ddab2094eb"
+                }
+            ],
+            "provider": {
+                "id": "dunzo-lsp"
+            },
+            "quote": {
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "item-938e3a40-3db9-47f9-89f7-37ddab2094eb",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "38"
+                        }
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "38"
+                }
+            },
+            "state": "Created",
+            "updated_at": "2023-03-07T10:11:08.252Z"
+        }
+    }
+}

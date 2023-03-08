@@ -1,0 +1,110 @@
+{
+    "context": {
+        "action": "init",
+        "bap_id": "biz.test.enstore.com",
+        "bap_uri": "https://biz.test.enstore.com/ecc/ondc/logistics-bap",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "key": "",
+        "message_id": "58bf4bb4-ba37-44bf-8668-286a52c78076",
+        "timestamp": "2023-03-07T12:37:49.062Z",
+        "transaction_id": "LOG-c60a850c-9112-4d5d-8112-e44892d29e75",
+        "ttl": "PT5S"
+    },
+    "message": {
+        "order": {
+            "billing": {
+                "address": {
+                    "area_code": "560043",
+                    "building": "Bennigana Halli",
+                    "city": "Bengaluru",
+                    "country": "IND",
+                    "door": "",
+                    "locality": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043",
+                    "name": "Darshan SR Sapphire",
+                    "state": "Karnataka"
+                },
+                "created_at": "2023-03-07T12:37:49.062Z",
+                "email": "darshan.s@innobits.com",
+                "name": "customer",
+                "phone": "8151000066",
+                "updated_at": "2023-03-07T12:37:49.062Z"
+            },
+            "fulfillments": [
+                {
+                    "end": {
+                        "contact": {
+                            "email": "darshan.s@innobits.com",
+                            "phone": "8151000066"
+                        },
+                        "location": {
+                            "address": {
+                                "area_code": "560043",
+                                "building": "Bennigana Halli",
+                                "city": "Bengaluru",
+                                "country": "IND",
+                                "door": "",
+                                "locality": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043",
+                                "name": "Darshan SR Sapphire",
+                                "state": "Karnataka"
+                            },
+                            "gps": "13.032943, 77.630862",
+                            "id": "1016:677"
+                        }
+                    },
+                    "id": "1",
+                    "start": {
+                        "contact": {
+                            "email": "test1@test.com",
+                            "phone": "9999999998"
+                        },
+                        "location": {
+                            "address": {
+                                "area_code": "560043",
+                                "building": "Banaswadi Fire Station 2J5X+33V, 157/3, 2nd C Cross Rd, HRBR Layout 1st Block, Balaji Layout",
+                                "city": "Bengaluru",
+                                "country": "India",
+                                "locality": "Subbaiahnapalya, Banaswadi",
+                                "name": "DS super market banaswadi",
+                                "state": " Karnataka"
+                            },
+                            "gps": "13.011526, 77.6459584",
+                            "id": "1016:677"
+                        }
+                    },
+                    "type": "Prepaid"
+                }
+            ],
+            "items": [
+                {
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    },
+                    "id": "item-74587218-15e4-435c-ad3d-7cae9cd1d0f9"
+                }
+            ],
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_bank_account_no": "922020043291840",
+                        "settlement_counterparty": "buyer-app",
+                        "settlement_ifsc_code": "UTIB0003190",
+                        "settlement_type": "rtgs"
+                    }
+                ],
+                "@ondc/org/settlement_window": "P7D",
+                "collected_by": "BAP",
+                "type": "Prepaid"
+            },
+            "provider": {
+                "id": "dunzo-lsp",
+                "locations": null
+            }
+        }
+    }
+}

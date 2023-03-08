@@ -1,0 +1,178 @@
+{
+    "context": {
+        "action": "confirm",
+        "bap_id": "biz.test.enstore.com",
+        "bap_uri": "https://biz.test.enstore.com/ecc/ondc/logistics-bap",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "key": "",
+        "message_id": "c97d9d18-faec-4e5e-b9d8-7c1bc3811da4",
+        "timestamp": "2023-03-07T13:29:55.621Z",
+        "transaction_id": "LOG-dfb5d937-cd87-48e6-8e62-1e7abc76cbf1",
+        "ttl": "PT5S"
+    },
+    "message": {
+        "order": {
+            "@ondc/org/linked_order": {
+                "created_at": "2023-03-07T13:29:55.621Z",
+                "items": [
+                    {
+                        "category_id": "Packaged Foods",
+                        "descriptor": {
+                            "name": "Amul Ghee Pouch"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "2000.0"
+                        },
+                        "quantity": {
+                            "count": 4,
+                            "measure": {
+                                "unit": "Kilogram",
+                                "value": 0.5
+                            }
+                        }
+                    }
+                ],
+                "order": {
+                    "id": "2023-02-07-688480",
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 0.5
+                    }
+                },
+                "provider": {
+                    "address": {
+                        "area_code": "560043",
+                        "city": "Bengaluru",
+                        "locality": "Subbaiahnapalya, Banaswadi",
+                        "name": "DS super market banaswadi",
+                        "state": "Karnataka",
+                        "street": "Banaswadi Fire Station 2J5X+33V, 157/3, 2nd C Cross Rd, HRBR Layout 1st Block, Balaji Layout"
+                    },
+                    "descriptor": {
+                        "name": "DS super market - DS super market banaswadi"
+                    }
+                },
+                "updated_at": "2023-03-07T13:29:55.621Z"
+            },
+            "billing": {
+                "address": {
+                    "area_code": "560085",
+                    "city": "Bengaluru",
+                    "country": "India",
+                    "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
+                    "name": "221, INNOBITS SOLUTIONS PVT LTD",
+                    "state": "Karnataka"
+                },
+                "created_at": "2023-03-07T13:29:55.621Z",
+                "email": "finance@bitsila.com",
+                "name": "Bitsila",
+                "phone": "8951898275",
+                "tax_number": "29AAFCI9011D1ZQ",
+                "updated_at": "2023-03-07T13:29:55.621Z"
+            },
+            "fulfillments": [
+                {
+                    "end": {
+                        "contact": {
+                            "email": "darshan.s@innobits.com",
+                            "phone": "8151000066"
+                        },
+                        "instructions": {
+                            "long_desc": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043",
+                            "short_desc": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043"
+                        },
+                        "location": {
+                            "address": {
+                                "area_code": "560043",
+                                "building": "Bennigana Halli",
+                                "city": "Bengaluru",
+                                "country": "IND",
+                                "door": "",
+                                "locality": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043",
+                                "name": "Darshan SR Sapphire",
+                                "state": "Karnataka"
+                            },
+                            "gps": "13.032943, 77.630862",
+                            "id": "1016:677"
+                        },
+                        "person": {
+                            "name": "Darshan SR Sapphire"
+                        }
+                    },
+                    "id": "1",
+                    "start": {
+                        "contact": {
+                            "email": "test1@test.com",
+                            "phone": "9999999998"
+                        },
+                        "instructions": {
+                            "long_desc": "",
+                            "short_desc": ""
+                        },
+                        "location": {
+                            "address": {
+                                "area_code": "560043",
+                                "building": "Banaswadi Fire Station 2J5X+33V, 157/3, 2nd C Cross Rd, HRBR Layout 1st Block, Balaji Layout",
+                                "city": "Bengaluru",
+                                "country": "India",
+                                "locality": "Subbaiahnapalya, Banaswadi",
+                                "name": "DS super market banaswadi",
+                                "state": " Karnataka"
+                            },
+                            "gps": "13.011526, 77.6459584",
+                            "id": "1016:677"
+                        },
+                        "person": {
+                            "name": "Store manager"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "no"
+                    },
+                    "tracking": true,
+                    "type": "Prepaid"
+                }
+            ],
+            "id": "2023-02-07-688480",
+            "items": [
+                {
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    },
+                    "id": "item-3441a2f8-d442-454d-a776-6301adff1699"
+                }
+            ],
+            "payment": {
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT"
+            },
+            "provider": {
+                "id": "dunzo-lsp"
+            },
+            "quote": {
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "item-3441a2f8-d442-454d-a776-6301adff1699",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "86"
+                        }
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "86"
+                }
+            },
+            "state": "Created"
+        }
+    }
+}
