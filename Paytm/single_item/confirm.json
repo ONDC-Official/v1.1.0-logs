@@ -1,0 +1,355 @@
+{
+  "requestBody": {
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "confirm",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail",
+      "transaction_id": "96071eb8-ebcf-4fcd-ae7f-7e873b7f4af1",
+      "message_id": "retail::confirm::63795998::1028563",
+      "timestamp": "2023-03-09T04:57:48.222Z",
+      "bpp_id": "ondc-qa.gofrugalretail.com/ondc/5666",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc"
+    },
+    "message": {
+      "order": {
+        "id": "8468F6695E3E8889903DAE4C36A10449",
+        "items": [
+          {
+            "id": "5666-ONDC-1-28",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "6DEF93C3E4737BC1F642D867347FA02C"
+          }
+        ],
+        "billing": {
+          "name": "Ak",
+          "address": {
+            "building": "Bangalore",
+            "name": "Ak",
+            "locality": "Bangalore",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560035"
+          },
+          "phone": "8077045298",
+          "created_at": "2023-03-09T04:56:36.451Z",
+          "updated_at": "2023-03-09T04:56:36.451Z"
+        },
+        "provider": {
+          "id": "5666-ONDC-1",
+          "locations": [
+            {
+              "id": "5666-ONDC-1-3332_location"
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "6DEF93C3E4737BC1F642D867347FA02C",
+            "type": "Delivery",
+            "tracking": true,
+            "start": {
+              "location": {
+                "id": "5666-ONDC-1-3332_location",
+                "descriptor": {
+                  "name": "5666-ONDC-1-3332_location"
+                },
+                "gps": "12.96925675738446,77.59250276347653"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-09T06:57:48.224Z",
+                  "end": "2023-03-09T07:27:48.224Z"
+                }
+              },
+              "instructions": {
+                "name": "pick up instructions",
+                "short_desc": "Provide the order id"
+              },
+              "contact": {
+                "phone": "9876543210",
+                "email": "ondc@gmail.com"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "12.904071,77.673296",
+                "address": {
+                  "building": "Bangalore",
+                  "name": "Ak",
+                  "locality": "Bangalore",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560035"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-09T08:57:48.224Z",
+                  "end": "2023-03-09T09:27:48.224Z"
+                }
+              },
+              "instructions": {
+                "name": "drop off instructions",
+                "short_desc": "Leave at door step"
+              },
+              "contact": {
+                "phone": "8077045298"
+              },
+              "person": {
+                "name": "Ak"
+              }
+            },
+            "provider_id": "5666-ONDC-1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "199.00"
+          },
+          "breakup": [
+            {
+              "title": "FLAGGED CRAFT -28",
+              "price": {
+                "currency": "INR",
+                "value": "199.00"
+              },
+              "@ondc/org/title_type": "item",
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "199.00"
+                }
+              },
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/item_id": "5666-ONDC-1-28"
+            },
+            {
+              "title": "Delivery charges",
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              },
+              "@ondc/org/title_type": "delivery",
+              "@ondc/org/item_id": "6DEF93C3E4737BC1F642D867347FA02C"
+            }
+          ]
+        },
+        "payment": {
+          "uri": "https://ondc.transaction.com/payment",
+          "tl_method": "http/get",
+          "params": {
+            "currency": "INR",
+            "transaction_id": "20230309011690000840535174458310818",
+            "amount": "199",
+            "mode": "NB",
+            "vpa": "bpp@upi"
+          },
+          "type": "ON-ORDER",
+          "status": "PAID",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "Percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3"
+        },
+        "created_at": "2023-03-09T04:56:36.451Z",
+        "updated_at": "2023-03-09T04:56:36.451Z"
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_confirm",
+      "timestamp": "2023-03-09T04:57:48.752Z",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail/on_confirm",
+      "bpp_id": "ondc-qa.gofrugalretail.com",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+      "transaction_id": "96071eb8-ebcf-4fcd-ae7f-7e873b7f4af1",
+      "message_id": "retail::confirm::63795998::1028563"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "5666-ONDC-1-28",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "6DEF93C3E4737BC1F642D867347FA02C"
+          }
+        ],
+        "billing": {
+          "name": "Ak",
+          "address": {
+            "name": "Ak",
+            "building": "Bangalore",
+            "locality": "Bangalore",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560035"
+          },
+          "phone": "8077045298",
+          "created_at": "2023-03-09T04:56:36.451Z",
+          "updated_at": "2023-03-09T04:56:36.451Z"
+        },
+        "fulfillments": [
+          {
+            "id": "6DEF93C3E4737BC1F642D867347FA02C",
+            "type": "Delivery",
+            "provider_id": "5666-ONDC-1",
+            "state": {
+              "descriptor": {
+                "name": "Pending",
+                "code": "Pending"
+              }
+            },
+            "tracking": true,
+            "start": {
+              "location": {
+                "id": "5666-ONDC-1-3332_location",
+                "descriptor": {
+                  "name": "SS SHOP"
+                },
+                "gps": "12.8387524, 80.1540117",
+                "address": {
+                  "name": "SS SHOP",
+                  "street": "Swaminatha Asari Street",
+                  "city": "bangalore",
+                  "state": "karnataka",
+                  "country": "india",
+                  "area_code": "560036"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-09T04:57:48.749Z",
+                  "end": "2023-03-10T04:57:48.749Z"
+                }
+              },
+              "instructions": {
+                "name": "Status For Pickup",
+                "short_desc": " 628"
+              },
+              "contact": {
+                "phone": "8991234561",
+                "email": "sherin.h@gofrugal.com"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "12.904071,77.673296",
+                "address": {
+                  "name": "Ak",
+                  "building": "Bangalore",
+                  "locality": "Bangalore",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560035"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-16T04:57:48.749Z",
+                  "end": "2023-03-16T04:57:48.749Z"
+                }
+              },
+              "instructions": {
+                "name": "Status for drop",
+                "short_desc": "1704"
+              },
+              "contact": {
+                "phone": "8077045298"
+              },
+              "person": {
+                "name": "Ak"
+              }
+            },
+            "rateable": true,
+            "@ondc/org/provider_name": "SS SHOP"
+          }
+        ],
+        "id": "8468F6695E3E8889903DAE4C36A10449",
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "199.00"
+          },
+          "breakup": [
+            {
+              "title": "FLAGGED CRAFT -28",
+              "price": {
+                "currency": "INR",
+                "value": "199.00"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "199.00"
+                }
+              },
+              "@ondc/org/item_id": "5666-ONDC-1-28",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/title_type": "item"
+            },
+            {
+              "title": "Delivery Charges",
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              },
+              "@ondc/org/item_id": "6DEF93C3E4737BC1F642D867347FA02C",
+              "@ondc/org/title_type": "delivery"
+            }
+          ],
+          "ttl": "P6D"
+        },
+        "state": "Accepted",
+        "payment": {
+          "uri": "https://ondc.transaction.com/payment",
+          "params": {
+            "transaction_id": "20230309011690000840535174458310818",
+            "amount": "199",
+            "currency": "INR",
+            "mode": "NB",
+            "vpa": "bpp@upi"
+          },
+          "type": "ON-ORDER",
+          "status": "PAID",
+          "tl_method": "http/get",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "Percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3"
+        },
+        "provider": {
+          "id": "5666-ONDC-1",
+          "locations": [
+            {
+              "id": "5666-ONDC-1-3332_location"
+            }
+          ],
+          "rateable": true
+        },
+        "created_at": "2023-03-09T04:56:36.451Z",
+        "updated_at": "2023-03-09T04:57:48.749Z"
+      }
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "requestBody": {
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "init",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail",
+      "transaction_id": "96071eb8-ebcf-4fcd-ae7f-7e873b7f4af1",
+      "message_id": "1678337796425",
+      "timestamp": "2023-03-09T04:56:36.432Z",
+      "bpp_id": "ondc-qa.gofrugalretail.com/ondc/5666",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "5666-ONDC-1",
+          "locations": [
+            {
+              "id": "5666-ONDC-1-3332_location"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "5666-ONDC-1-28",
+            "fulfillment_id": "6DEF93C3E4737BC1F642D867347FA02C",
+            "quantity": {
+              "count": 1
+            }
+          }
+        ],
+        "billing": {
+          "name": "Ak",
+          "address": {
+            "building": "Bangalore",
+            "name": "Ak",
+            "locality": "Bangalore",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560035"
+          },
+          "phone": "8077045298",
+          "created_at": "2023-03-09T04:56:36.451Z",
+          "updated_at": "2023-03-09T04:56:36.451Z"
+        },
+        "fulfillments": [
+          {
+            "id": "6DEF93C3E4737BC1F642D867347FA02C",
+            "type": "Delivery",
+            "provider_id": "5666-ONDC-1",
+            "end": {
+              "location": {
+                "gps": "12.904071,77.673296",
+                "address": {
+                  "building": "Bangalore",
+                  "name": "Ak",
+                  "locality": "Bangalore",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560035"
+                }
+              },
+              "contact": {
+                "phone": "8077045298"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "responseBody": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_init",
+      "timestamp": "2023-03-09T04:56:36.938Z",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail/on_init",
+      "bpp_id": "ondc-qa.gofrugalretail.com",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+      "transaction_id": "96071eb8-ebcf-4fcd-ae7f-7e873b7f4af1",
+      "message_id": "1678337796425"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "5666-ONDC-1-28",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "6DEF93C3E4737BC1F642D867347FA02C"
+          }
+        ],
+        "billing": {
+          "name": "Ak",
+          "address": {
+            "name": "Ak",
+            "building": "Bangalore",
+            "locality": "Bangalore",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560035"
+          },
+          "phone": "8077045298",
+          "created_at": "2023-03-09T04:56:36.451Z",
+          "updated_at": "2023-03-09T04:56:36.451Z"
+        },
+        "fulfillments": [
+          {
+            "id": "6DEF93C3E4737BC1F642D867347FA02C",
+            "type": "Delivery",
+            "provider_id": "5666-ONDC-1",
+            "end": {
+              "location": {
+                "gps": "12.904071,77.673296",
+                "address": {
+                  "name": "Ak",
+                  "building": "Bangalore",
+                  "locality": "Bangalore",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560035"
+                }
+              },
+              "contact": {
+                "phone": "8077045298"
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "199.00"
+          },
+          "breakup": [
+            {
+              "title": "FLAGGED CRAFT -28",
+              "price": {
+                "currency": "INR",
+                "value": "199.00"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "199.00"
+                }
+              },
+              "@ondc/org/item_id": "5666-ONDC-1-28",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/title_type": "item"
+            },
+            {
+              "title": "Delivery charges",
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              },
+              "@ondc/org/item_id": "6DEF93C3E4737BC1F642D867347FA02C",
+              "@ondc/org/title_type": "delivery"
+            }
+          ],
+          "ttl": "P6D"
+        },
+        "payment": {
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "0.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "910020019889016",
+              "settlement_ifsc_code": "UTIB0000234",
+              "settlement_status": "NOT-PAID",
+              "beneficiary_name": "M/s Gofrugal Technologies Private Ltd",
+              "bank_name": "Axis Bank",
+              "branch_name": "Velachery-Chennai"
+            }
+          ]
+        },
+        "provider": {
+          "id": "5666-ONDC-1"
+        },
+        "provider_location": {
+          "id": "5666-ONDC-1-3332_location"
+        }
+      }
+    }
+  }
+}
