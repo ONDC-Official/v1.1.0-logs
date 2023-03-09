@@ -1,0 +1,408 @@
+{
+  "requestBody": {
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "confirm",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail",
+      "transaction_id": "9ec1f5f7-3bbf-427e-b488-178eacc0e7d4",
+      "message_id": "retail::confirm::63796058::1028709",
+      "timestamp": "2023-03-09T06:50:27.920Z",
+      "bpp_id": "ondc-qa.gofrugalretail.com",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc"
+    },
+    "message": {
+      "order": {
+        "id": "4073A75D45024B3D06D853F49FB7DBE8",
+        "items": [
+          {
+            "id": "5466-ONDC-1-12",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "F0B8DED998BF281BE01AAF9D4DD5B99D"
+          },
+          {
+            "id": "5466-ONDC-1-1",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "F0B8DED998BF281BE01AAF9D4DD5B99D"
+          }
+        ],
+        "billing": {
+          "name": "Ak",
+          "address": {
+            "building": "Bangalore",
+            "name": "Ak",
+            "locality": "Bangalore",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560035"
+          },
+          "phone": "8077045298",
+          "created_at": "2023-03-09T06:49:07.721Z",
+          "updated_at": "2023-03-09T06:49:07.721Z"
+        },
+        "provider": {
+          "id": "5466-ONDC-1",
+          "locations": [
+            {
+              "id": "5466-ONDC-1-3330_location"
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "F0B8DED998BF281BE01AAF9D4DD5B99D",
+            "type": "Delivery",
+            "tracking": true,
+            "start": {
+              "location": {
+                "id": "5466-ONDC-1-3330_location",
+                "descriptor": {
+                  "name": "5466-ONDC-1-3330_location"
+                },
+                "gps": "12.9731244,77.5948792"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-09T08:50:27.921Z",
+                  "end": "2023-03-09T09:20:27.921Z"
+                }
+              },
+              "instructions": {
+                "name": "pick up instructions",
+                "short_desc": "Provide the order id"
+              },
+              "contact": {
+                "phone": "9876543210",
+                "email": "ondc@gmail.com"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "12.904071,77.673296",
+                "address": {
+                  "building": "Bangalore",
+                  "name": "Ak",
+                  "locality": "Bangalore",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560035"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-09T10:50:27.921Z",
+                  "end": "2023-03-09T11:20:27.921Z"
+                }
+              },
+              "instructions": {
+                "name": "drop off instructions",
+                "short_desc": "Leave at door step"
+              },
+              "contact": {
+                "phone": "8077045298"
+              },
+              "person": {
+                "name": "Ak"
+              }
+            },
+            "provider_id": "5466-ONDC-1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "440.00"
+          },
+          "breakup": [
+            {
+              "title": "DAIRY MILK",
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              },
+              "@ondc/org/title_type": "item",
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "300.00"
+                }
+              },
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/item_id": "5466-ONDC-1-12"
+            },
+            {
+              "title": "KIT KAT",
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              },
+              "@ondc/org/title_type": "item",
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "100.00"
+                }
+              },
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/item_id": "5466-ONDC-1-1"
+            },
+            {
+              "title": "Delivery charges",
+              "price": {
+                "currency": "INR",
+                "value": "40.00"
+              },
+              "@ondc/org/title_type": "delivery",
+              "@ondc/org/item_id": "F0B8DED998BF281BE01AAF9D4DD5B99D"
+            }
+          ]
+        },
+        "payment": {
+          "uri": "https://ondc.transaction.com/payment",
+          "tl_method": "http/get",
+          "params": {
+            "currency": "INR",
+            "transaction_id": "20230309011690000840563514183452770",
+            "amount": "440",
+            "mode": "NB",
+            "vpa": "bpp@upi"
+          },
+          "type": "ON-ORDER",
+          "status": "PAID",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "Percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3"
+        },
+        "created_at": "2023-03-09T06:49:07.721Z",
+        "updated_at": "2023-03-09T06:49:07.721Z"
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_confirm",
+      "timestamp": "2023-03-09T06:50:28.432Z",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail/on_confirm",
+      "bpp_id": "ondc-qa.gofrugalretail.com",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+      "transaction_id": "9ec1f5f7-3bbf-427e-b488-178eacc0e7d4",
+      "message_id": "retail::confirm::63796058::1028709"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "5466-ONDC-1-12",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "F0B8DED998BF281BE01AAF9D4DD5B99D"
+          },
+          {
+            "id": "5466-ONDC-1-1",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "F0B8DED998BF281BE01AAF9D4DD5B99D"
+          }
+        ],
+        "billing": {
+          "name": "Ak",
+          "address": {
+            "name": "Ak",
+            "building": "Bangalore",
+            "locality": "Bangalore",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560035"
+          },
+          "phone": "8077045298",
+          "created_at": "2023-03-09T06:49:07.721Z",
+          "updated_at": "2023-03-09T06:49:07.721Z"
+        },
+        "fulfillments": [
+          {
+            "id": "F0B8DED998BF281BE01AAF9D4DD5B99D",
+            "type": "Delivery",
+            "provider_id": "5466-ONDC-1",
+            "state": {
+              "descriptor": {
+                "name": "Pending",
+                "code": "Pending"
+              }
+            },
+            "tracking": true,
+            "start": {
+              "location": {
+                "id": "5466-ONDC-1-3330_location",
+                "descriptor": {
+                  "name": "MARKETPLACE SELLER1"
+                },
+                "gps": "12.9731244, 77.5948792",
+                "address": {
+                  "door": "",
+                  "name": "MARKETPLACE SELLER1",
+                  "building": "block A",
+                  "street": "I.P.Extension",
+                  "locality": "near to gateway",
+                  "city": "bangalore",
+                  "state": "karnataka",
+                  "country": "india",
+                  "area_code": "560035"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-09T06:50:28.429Z",
+                  "end": "2023-03-10T06:50:28.429Z"
+                }
+              },
+              "instructions": {
+                "name": "Status For Pickup",
+                "short_desc": "9032"
+              },
+              "contact": {
+                "phone": "8881177221",
+                "email": "sherin.h@gofrugal.com"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "12.904071,77.673296",
+                "address": {
+                  "name": "Ak",
+                  "building": "Bangalore",
+                  "locality": "Bangalore",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560035"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-12T06:50:28.429Z",
+                  "end": "2023-03-12T06:50:28.429Z"
+                }
+              },
+              "instructions": {
+                "name": "Status for drop",
+                "short_desc": "1397"
+              },
+              "contact": {
+                "phone": "8077045298"
+              },
+              "person": {
+                "name": "Ak"
+              }
+            },
+            "rateable": true,
+            "@ondc/org/provider_name": "MARKETPLACE SELLER1"
+          }
+        ],
+        "id": "4073A75D45024B3D06D853F49FB7DBE8",
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "440.00"
+          },
+          "breakup": [
+            {
+              "title": "DAIRY MILK",
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "300.00"
+                }
+              },
+              "@ondc/org/item_id": "5466-ONDC-1-12",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/title_type": "item"
+            },
+            {
+              "title": "KIT KAT",
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "100.00"
+                }
+              },
+              "@ondc/org/item_id": "5466-ONDC-1-1",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/title_type": "item"
+            },
+            {
+              "title": "Delivery Charges",
+              "price": {
+                "currency": "INR",
+                "value": "40.00"
+              },
+              "@ondc/org/item_id": "F0B8DED998BF281BE01AAF9D4DD5B99D",
+              "@ondc/org/title_type": "delivery"
+            }
+          ],
+          "ttl": "P2D"
+        },
+        "state": "Accepted",
+        "payment": {
+          "uri": "https://ondc.transaction.com/payment",
+          "params": {
+            "transaction_id": "20230309011690000840563514183452770",
+            "amount": "440",
+            "currency": "INR",
+            "mode": "NB",
+            "vpa": "bpp@upi"
+          },
+          "type": "ON-ORDER",
+          "status": "PAID",
+          "tl_method": "http/get",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "Percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3"
+        },
+        "provider": {
+          "id": "5466-ONDC-1",
+          "locations": [
+            {
+              "id": "5466-ONDC-1-3330_location"
+            }
+          ],
+          "rateable": true
+        },
+        "created_at": "2023-03-09T06:49:07.721Z",
+        "updated_at": "2023-03-09T06:50:28.429Z"
+      }
+    }
+  }
+}

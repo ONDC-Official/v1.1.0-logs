@@ -1,0 +1,211 @@
+{
+  "requestBody": {
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "status",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail",
+      "transaction_id": "18ff7d9f-c6b7-4509-a896-bb3162337698",
+      "message_id": "40013_234955354959151_1678358733263",
+      "timestamp": "2023-03-09T10:45:33.263Z",
+      "bpp_id": "ondc-qa.gofrugalretail.com",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc"
+    },
+    "message": {
+      "order_id": "6CE3F6DB2E157AFFC375CFB2D55484B9"
+    }
+  },
+  "responseBody": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_status",
+      "timestamp": "2023-03-09T10:45:33.778Z",
+      "ttl": "PT30S",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail/on_status",
+      "bpp_id": "ondc-qa.gofrugalretail.com",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+      "transaction_id": "18ff7d9f-c6b7-4509-a896-bb3162337698",
+      "message_id": "615031bb-740b-4343-821b-9ff42b65b512"
+    },
+    "message": {
+      "order": {
+        "state": "Accepted",
+        "items": [
+          {
+            "id": "5466-ONDC-1-1",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "A8716324691C1D14E753A902BB33537F"
+          }
+        ],
+        "billing": {
+          "name": "Prasanth Balraj",
+          "address": {
+            "door": "",
+            "name": "Testingssss",
+            "building": "SCOM-1034 JIRA Retesting",
+            "locality": " JIRA Atlassian Group of Companies",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560071"
+          },
+          "email": "prasanth123@gmail.com",
+          "phone": "9047757688",
+          "created_at": "2023-03-09T10:13:37.489Z",
+          "updated_at": "2023-03-09T10:13:37.489Z"
+        },
+        "fulfillments": [
+          {
+            "id": "A8716324691C1D14E753A902BB33537F",
+            "type": "Delivery",
+            "state": {
+              "descriptor": {
+                "name": "Pending",
+                "code": "Pending"
+              }
+            },
+            "tracking": false,
+            "start": {
+              "location": {
+                "id": "5466-ONDC-1-3330_location",
+                "descriptor": {
+                  "name": "MARKETPLACE SELLER1",
+                  "images": [
+                    "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/5458/5458_OrderEasy_3_1639793053567.png"
+                  ]
+                },
+                "gps": "12.9731244, 77.5948792"
+              },
+              "time": {
+                "range": {}
+              },
+              "instructions": {
+                "name": "Proof of pickup",
+                "short_desc": "5025"
+              },
+              "contact": {
+                "phone": "8881177221",
+                "email": "sherin.h@gofrugal.com"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "12.966836,77.593904",
+                "address": {
+                  "door": "Testingssss",
+                  "name": "SCOM-1034 JIRA Retesting",
+                  "building": "JIRA Atlassian Group of Companies",
+                  "street": "Bengaluru",
+                  "locality": "Karnataka",
+                  "city": "India",
+                  "state": "560071",
+                  "country": "country",
+                  "area_code": "pin code"
+                }
+              },
+              "time": {
+                "range": {}
+              },
+              "instructions": {
+                "name": "Proof of delivery",
+                "short_desc": "8184"
+              },
+              "contact": {
+                "phone": "9047757688",
+                "email": "prasanth123@gmail.com"
+              }
+            },
+            "@ondc/org/provider_name": "MARKETPLACE SELLER1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "140.00"
+          },
+          "breakup": [
+            {
+              "title": "KIT KAT",
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              },
+              "@ondc/org/item_id": "5466-ONDC-1-1",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/title_type": "item"
+            },
+            {
+              "title": "Tax",
+              "price": {
+                "currency": "INR",
+                "value": "0.0"
+              },
+              "@ondc/org/item_id": "5466-ONDC-1-1",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "title": "Delivery charges",
+              "price": {
+                "currency": "INR",
+                "value": "40.00"
+              },
+              "@ondc/org/item_id": "A8716324691C1D14E753A902BB33537F",
+              "@ondc/org/title_type": "delivery"
+            },
+            {
+              "title": "Tax",
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              },
+              "@ondc/org/title_type": "tax"
+            }
+          ]
+        },
+        "payment": {
+          "uri": "https://ondc.transaction.com/payment",
+          "params": {
+            "transaction_id": "20230309011760000840614959523460617",
+            "amount": "140",
+            "currency": "INR"
+          },
+          "type": "ON-ORDER",
+          "status": "PAID",
+          "tl_method": "http/get",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "Percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3"
+        },
+        "provider": {
+          "id": "5466-ONDC-1",
+          "locations": [
+            {
+              "id": "5466-ONDC-1-3330_location",
+              "gps": "12.9731244, 77.5948792"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "url": "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/invoice/5466/6CE3F6DB2E157AFFC375CFB2D55484B9",
+            "label": "invoice"
+          }
+        ],
+        "id": "6CE3F6DB2E157AFFC375CFB2D55484B9",
+        "created_at": "2023-03-09T10:21:15.000Z",
+        "updated_at": "2023-03-09T10:45:33.761Z"
+      }
+    }
+  }
+}
