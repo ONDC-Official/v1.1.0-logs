@@ -1,0 +1,177 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc",
+        "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc",
+        "transaction_id": "692b6c3d-670b-44e5-bb27-fcde3352c01a",
+        "message_id": "2a5717e7-7d4f-4261-a571-705f1b8dc510",
+        "timestamp": "2023-03-09T13:51:27.489Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-02-09-606227",
+            "state": "Completed",
+            "items": [{
+                    "id": "253504971",
+                    "fulfillment_id": "189bfc3f-58a5-4007-8a39-7dc302bcc00d",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "tags": {
+                        "status": "Liquidated"
+                    }
+                },
+                {
+                    "id": "253504974",
+                    "fulfillment_id": "1b10ac4d-be4f-4749-8434-d93dfc02b2ab",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "546.00"
+                },
+                "breakup": [{
+                        "@ondc/org/item_id": "253504974",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Paneer Tikka",
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "520.00"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "520.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "253504974",
+                        "@ondc/org/title_type": "tax",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "26.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1b10ac4d-be4f-4749-8434-d93dfc02b2ab",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1b10ac4d-be4f-4749-8434-d93dfc02b2ab",
+                        "@ondc/org/title_type": "misc",
+                        "title": "Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "fulfillments": [{
+                    "id": "1b10ac4d-be4f-4749-8434-d93dfc02b2ab",
+                    "type": "Delivery",
+                    "@ondc/org/provider_name": "MAGICPIN",
+                    "state": {
+                        "descriptor": {
+                            "name": "Order-delivered",
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "38272871",
+                            "descriptor": {
+                                "name": "ONDC Test"
+                            },
+                            "gps": "12.986283,77.594839",
+                            "address": {
+                                "name": "ONDC Test",
+                                "locality": "Shivajinagar",
+                                "city": "Bangalore",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560051"
+                            }
+                        },
+                        "time": {
+                            "timestamp": "2023-03-09T13:49:41.833Z",
+                            "range": {
+                                "start": "2023-03-09T13:31:56.886Z",
+                                "end": "2023-03-09T14:01:56.886Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "919876543210"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.987171, 77.6041890000001",
+                            "address": {
+                                "name": "Tarosh",
+                                "building": "qwerty",
+                                "locality": "Abc",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560051"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-03-09T13:31:56.886Z",
+                                "end": "2023-03-09T14:01:56.886Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9090909090",
+                            "email": "tarosh.mathuria@magicpin.in"
+                        },
+                        "person": {
+                            "name": "Tarosh"
+                        },
+                        "rateable": true
+                    }
+                },
+                {
+                    "id": "189bfc3f-58a5-4007-8a39-7dc302bcc00d",
+                    "state": {
+                        "descriptor": {
+                            "name": "Liquidated",
+                            "code": "Liquidated"
+                        }
+                    },
+                    "tracking": false
+                }
+            ]
+        }
+    }
+}

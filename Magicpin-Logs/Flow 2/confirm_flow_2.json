@@ -1,0 +1,191 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc",
+        "transaction_id": "e5f6991a-8fc2-4b14-a27b-7dcc51434a00",
+        "message_id": "8a7317fc-0e06-4630-8292-3ab04a2086f6",
+        "timestamp": "2023-03-09T17:07:25.642Z",
+        "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-02-09-598628",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Tarosh",
+                    "building": "qwerty",
+                    "locality": "Abc",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560051"
+                },
+                "phone": "9090909090",
+                "name": "Tarosh",
+                "email": "tarosh.mathuria@magicpin.in",
+                "created_at": "2023-03-09T17:07:14.377Z",
+                "updated_at": "2023-03-09T17:07:14.377Z"
+            },
+            "items": [{
+                    "id": "253504971",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "db44908f-f112-49cf-84f4-7a00d09f50ee"
+                },
+                {
+                    "id": "253504974",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "db44908f-f112-49cf-84f4-7a00d09f50ee"
+                }
+            ],
+            "provider": {
+                "id": "38272871",
+                "locations": [{
+                    "id": "38272871"
+                }]
+            },
+            "fulfillments": [{
+                "id": "db44908f-f112-49cf-84f4-7a00d09f50ee",
+                "tracking": false,
+                "end": {
+                    "contact": {
+                        "email": "tarosh.mathuria@magicpin.in",
+                        "phone": "9090909090"
+                    },
+                    "person": {
+                        "name": "Tarosh"
+                    },
+                    "location": {
+                        "gps": "12.987171, 77.6041890000001",
+                        "address": {
+                            "name": "Tarosh",
+                            "building": "qwerty",
+                            "locality": "Abc",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560051"
+                        }
+                    }
+                },
+                "type": "Delivery"
+            }],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "780",
+                    "currency": "INR",
+                    "transaction_id": "ONDC-e5f6991a-8fc2-4b14-a27b-7dcc51434a00-1"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [{
+                    "settlement_counterparty": "seller-app",
+                    "settlement_phase": "sale-amount",
+                    "settlement_type": "neft",
+                    "settlement_bank_account_no": "50200011628734",
+                    "settlement_ifsc_code": "HDFC0001202",
+                    "bank_name": "HDFC Bank",
+                    "branch_name": "DLF Galleria, Gurgaon, 122009"
+                }]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "780.00"
+                },
+                "breakup": [{
+                        "@ondc/org/item_id": "253504971",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Chocolate Cake",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "247.00"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "247.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "253504971",
+                        "@ondc/org/title_type": "tax",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "13.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "253504974",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Paneer Tikka",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "494.00"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "494.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "253504974",
+                        "@ondc/org/title_type": "tax",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "26.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "db44908f-f112-49cf-84f4-7a00d09f50ee",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "db44908f-f112-49cf-84f4-7a00d09f50ee",
+                        "@ondc/org/title_type": "misc",
+                        "title": "Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "created_at": "2023-03-09T17:07:25.642Z",
+            "updated_at": "2023-03-09T17:07:25.642Z"
+        }
+    }
+}

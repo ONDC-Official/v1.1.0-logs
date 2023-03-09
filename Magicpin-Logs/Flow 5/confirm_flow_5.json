@@ -1,0 +1,156 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc",
+        "transaction_id": "00cb7332-5404-46e8-8ffc-8fe0b86dd41f",
+        "message_id": "9fc6b6d6-a2bc-4672-9cba-7e528d60c202",
+        "timestamp": "2023-03-09T18:44:48.891Z",
+        "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-02-09-422998",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Tarosh",
+                    "building": "qwerty",
+                    "locality": "Abc",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560051"
+                },
+                "phone": "9090909090",
+                "name": "Tarosh",
+                "email": "tarosh.mathuria@magicpin.in",
+                "created_at": "2023-03-09T18:44:35.174Z",
+                "updated_at": "2023-03-09T18:44:35.174Z"
+            },
+            "items": [{
+                "id": "253504971",
+                "quantity": {
+                    "count": 1
+                },
+                "fulfillment_id": "321cc5a6-af97-4e4c-89a6-5006b650c5ab"
+            }],
+            "provider": {
+                "id": "38272871",
+                "locations": [{
+                    "id": "38272871"
+                }]
+            },
+            "fulfillments": [{
+                "id": "321cc5a6-af97-4e4c-89a6-5006b650c5ab",
+                "tracking": false,
+                "end": {
+                    "contact": {
+                        "email": "tarosh.mathuria@magicpin.in",
+                        "phone": "9090909090"
+                    },
+                    "person": {
+                        "name": "Tarosh"
+                    },
+                    "location": {
+                        "gps": "12.987171, 77.6041890000001",
+                        "address": {
+                            "name": "Tarosh",
+                            "building": "qwerty",
+                            "locality": "Abc",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560051"
+                        }
+                    }
+                },
+                "type": "Delivery"
+            }],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "260",
+                    "currency": "INR",
+                    "transaction_id": "ONDC-00cb7332-5404-46e8-8ffc-8fe0b86dd41f-1"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [{
+                    "settlement_counterparty": "seller-app",
+                    "settlement_phase": "sale-amount",
+                    "settlement_type": "neft",
+                    "settlement_bank_account_no": "50200011628734",
+                    "settlement_ifsc_code": "HDFC0001202",
+                    "bank_name": "HDFC Bank",
+                    "branch_name": "DLF Galleria, Gurgaon, 122009"
+                }]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "260.00"
+                },
+                "breakup": [{
+                        "@ondc/org/item_id": "253504971",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Chocolate Cake",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "247.00"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "247.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "253504971",
+                        "@ondc/org/title_type": "tax",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "13.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "321cc5a6-af97-4e4c-89a6-5006b650c5ab",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "321cc5a6-af97-4e4c-89a6-5006b650c5ab",
+                        "@ondc/org/title_type": "misc",
+                        "title": "Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "created_at": "2023-03-09T18:44:48.891Z",
+            "updated_at": "2023-03-09T18:44:48.891Z"
+        }
+    }
+}
