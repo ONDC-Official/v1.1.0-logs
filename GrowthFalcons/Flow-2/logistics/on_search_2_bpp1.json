@@ -1,0 +1,66 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "falconsai.com",
+        "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
+        "transaction_id": "e820c1e2-b531-4066-a100-b52efe92173a",
+        "message_id": "7915fb5e-2362-4318-9939-16be1f7b5761",
+        "timestamp": "2023-03-07T10:10:18.984Z",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "bpp_id": "ondc-preprod.loadshare.net"
+    },
+    "message": {
+        "catalog": {
+            "bpp/fulfillments": [
+                {
+                    "id": "lsn_prepaid",
+                    "type": "Prepaid"
+                }
+            ],
+            "bpp/descriptor": {
+                "name": "LoadShare Delivery"
+            },
+            "bpp/providers": [
+                {
+                    "id": "loadshare@ondc-preprod.loadshare.net",
+                    "descriptor": {
+                        "name": "LoadShare Networks",
+                        "long_desc": "LoadShare Networks Private Limited",
+                        "short_desc": "LoadShare Networks Private Limited"
+                    },
+                    "categories": [
+                        {
+                            "id": "Immediate Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT1H"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "express",
+                            "parent_item_id": "",
+                            "category_id": "Immediate Delivery",
+                            "fulfillment_id": "lsn_prepaid",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "Immediate Delivery",
+                                "long_desc": "Upto 45 mins for Delivery",
+                                "short_desc": "Upto 45 mins for Delivery"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "42"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

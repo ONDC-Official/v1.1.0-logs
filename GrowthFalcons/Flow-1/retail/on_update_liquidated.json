@@ -1,0 +1,233 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "falconsai.com",
+        "bpp_uri": "https://falconsai.com/v1/ondc/ecomm/fnb",
+        "transaction_id": "c99b8974-3b1c-4208-9a4e-80821edb864b",
+        "message_id": "2a0403ee-6276-4aaf-a916-5100b644a7a1",
+        "timestamp": "2023-03-09T11:06:33.909Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-02-09-226142",
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
+                    "fulfillment_id": "2-ReverseQC",
+                    "tags": {
+                        "status": "Liquidated"
+                    },
+                    "quantity": {
+                        "count": 0
+                    }
+                },
+                {
+                    "id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
+                    "fulfillment_id": "2",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Sandeep Pai",
+                "address": {
+                    "name": "Sandeep Pai",
+                    "building": "560102 landmark",
+                    "locality": "HSR layout",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560102"
+                },
+                "email": "sandeep@gamil.com",
+                "phone": "9952445640",
+                "created_at": "2023-03-09T08:19:30.805Z",
+                "updated_at": "2023-03-09T08:19:30.805Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "2",
+                    "type": "Delivery",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": true,
+                    "person": {
+                        "name": "Sandeep Pai"
+                    },
+                    "start": {
+                        "location": {
+                            "id": "GFFBRTKI1664452131",
+                            "gps": "12.9076452868, 77.6352300637"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-03-09T08:53:40.884Z",
+                                "end": "2023-03-09T08:53:40.884Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "919296250006"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9140160000001, 77.6371740000001",
+                            "address": {
+                                "name": "Sandeep Pai",
+                                "building": "560102 landmark",
+                                "locality": "HSR layout",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560102"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-03-09T08:53:40.884Z",
+                                "end": "2023-03-09T08:53:40.884Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9952445640",
+                            "email": "sandeep@gamil.com"
+                        },
+                        "person": {
+                            "name": "Sandeep Pai"
+                        }
+                    },
+                    "@ondc/org/provider_name": "Dunzo"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "249.15"
+                },
+                "breakup": [
+                    {
+                        "title": "Paneer 65",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        },
+                        "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "230.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "title": "Chilli Paneer",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "230.0"
+                        },
+                        "@ondc/org/item_id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "230.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "11.5"
+                        },
+                        "@ondc/org/item_id": "6adb78a6-c13b-423a-ace9-851bff4cff88"
+                    },
+                    {
+                        "title": "Packing Charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "7.65"
+                        },
+                        "@ondc/org/item_id": "2"
+                    }
+                ],
+                "ttl": "PT6H"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "ONDC-c99b8974-3b1c-4208-9a4e-80821edb864b-1",
+                    "amount": "498.31"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "016905011967",
+                        "settlement_ifsc_code": "ICIC0000169",
+                        "upi_address": "",
+                        "beneficiary_name": "",
+                        "bank_name": "ICICI Bank",
+                        "branch_name": "Indiranagar"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "GFFBRTKI1664452131",
+                "locations": [
+                    {
+                        "id": "GFFBRTKI1664452131"
+                    }
+                ],
+                "rateable": true
+            },
+            "created_at": "2023-03-09T08:21:32.445Z",
+            "updated_at": "2023-03-09T11:06:33.915Z"
+        }
+    }
+}

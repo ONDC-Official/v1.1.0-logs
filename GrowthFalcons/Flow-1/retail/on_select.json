@@ -1,0 +1,137 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "falconsai.com",
+        "bpp_uri": "https://falconsai.com/v1/ondc/ecomm/fnb",
+        "transaction_id": "c99b8974-3b1c-4208-9a4e-80821edb864b",
+        "message_id": "f7f95eb0-03f8-4a1e-8213-fd103363daf3",
+        "timestamp": "2023-03-09T08:18:22.063Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
+                    "fulfillment_id": "2"
+                },
+                {
+                    "id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
+                    "fulfillment_id": "2"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "2",
+                    "state": {
+                        "descriptor": {
+                            "name": "Serviceable",
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Dunzo",
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "P0DT1H30M0S"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "498.31"
+                },
+                "breakup": [
+                    {
+                        "title": "Paneer 65",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "230.0"
+                        },
+                        "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
+                        "@ondc/org/item_quantity": {
+                            "count": "1"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "230.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "11.5"
+                        },
+                        "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f"
+                    },
+                    {
+                        "title": "Chilli Paneer",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "230.0"
+                        },
+                        "@ondc/org/item_id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
+                        "@ondc/org/item_quantity": {
+                            "count": "1"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "230.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "11.5"
+                        },
+                        "@ondc/org/item_id": "6adb78a6-c13b-423a-ace9-851bff4cff88"
+                    },
+                    {
+                        "title": "Packing Charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "15.31"
+                        },
+                        "@ondc/org/item_id": "2"
+                    }
+                ],
+                "ttl": "PT6H"
+            },
+            "provider": {
+                "id": "GFFBRTKI1664452131"
+            }
+        }
+    }
+}
