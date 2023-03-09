@@ -1,0 +1,226 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_confirm",
+    "timestamp": "2023-03-09T11:19:38.910Z",
+    "ttl": "PT30S",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1/on_confirm",
+    "bpp_id": "ondc-qa.gofrugalretail.com",
+    "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+    "transaction_id": "7a72f9ff-fee2-4176-8b36-9a38fbdb83f2",
+    "message_id": "9f1bcf6f-7ccb-46a8-bb47-2d1fee132727"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "5466-ONDC-1-12",
+          "quantity": {
+            "count": 3
+          },
+          "fulfillment_id": "951C5AC95016AEB9018633D53C8C1D67"
+        },
+        {
+          "id": "5466-ONDC-1-1",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "951C5AC95016AEB9018633D53C8C1D67"
+        }
+      ],
+      "billing": {
+        "name": "Sherin",
+        "address": {
+          "name": "Sherin",
+          "building": "bangalore",
+          "locality": "loadshare networks",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560095"
+        },
+        "email": "sherinshafa2016@gmail.com",
+        "phone": "8899112244",
+        "created_at": "2023-03-09T11:19:15.876Z",
+        "updated_at": "2023-03-09T11:19:15.876Z"
+      },
+      "fulfillments": [
+        {
+          "id": "951C5AC95016AEB9018633D53C8C1D67",
+          "type": "Delivery",
+          "state": {
+            "descriptor": {
+              "name": "Pending",
+              "code": "Pending"
+            }
+          },
+          "tracking": false,
+          "start": {
+            "location": {
+              "id": "5466-ONDC-1-3330_location",
+              "descriptor": {
+                "name": "MARKETPLACE SELLER1"
+              },
+              "gps": "12.9731244, 77.5948792",
+              "address": {
+                "door": "",
+                "name": "MARKETPLACE SELLER1",
+                "building": "block A",
+                "street": "I.P.Extension",
+                "locality": "near to gateway",
+                "city": "bangalore",
+                "state": "karnataka",
+                "country": "india",
+                "area_code": "560035"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-09T11:19:38.906Z",
+                "end": "2023-03-10T11:19:38.906Z"
+              }
+            },
+            "instructions": {
+              "name": "Status For Pickup",
+              "short_desc": "9020"
+            },
+            "contact": {
+              "phone": "8881177221",
+              "email": "sherin.h@gofrugal.com"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.938208, 77.619106",
+              "address": {
+                "name": "Sherin",
+                "building": "bangalore",
+                "locality": "loadshare networks",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560095"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-12T11:19:38.906Z",
+                "end": "2023-03-12T11:19:38.906Z"
+              }
+            },
+            "instructions": {
+              "name": "Status for drop",
+              "short_desc": "6542"
+            },
+            "contact": {
+              "phone": "8899112244",
+              "email": "sherinshafa2016@gmail.com"
+            },
+            "person": {
+              "name": "Sherin"
+            }
+          },
+          "rateable": true,
+          "@ondc/org/provider_name": "MARKETPLACE SELLER1"
+        }
+      ],
+      "id": "2023-02-09-738905",
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1200.00"
+        },
+        "breakup": [
+          {
+            "title": "DAIRY MILK",
+            "price": {
+              "currency": "INR",
+              "value": "900.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-12",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "KIT KAT",
+            "price": {
+              "currency": "INR",
+              "value": "200.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-1",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery Charges",
+            "price": {
+              "currency": "INR",
+              "value": "100.00"
+            },
+            "@ondc/org/item_id": "951C5AC95016AEB9018633D53C8C1D67",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "P2D"
+      },
+      "state": "Accepted",
+      "payment": {
+        "uri": "https://juspay.in/",
+        "params": {
+          "transaction_id": "ONDC-7a72f9ff-fee2-4176-8b36-9a38fbdb83f2-1",
+          "amount": "1200",
+          "currency": "INR"
+        },
+        "type": "ON-ORDER",
+        "status": "PAID",
+        "tl_method": "http/get",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "settlement_bank_account_no": "910020019889016",
+            "settlement_ifsc_code": "UTIB0000234",
+            "beneficiary_name": "M/s Gofrugal Technologies Private Ltd",
+            "bank_name": "Axis Bank",
+            "branch_name": "Velachery-Chennai"
+          }
+        ]
+      },
+      "provider": {
+        "id": "5466-ONDC-1",
+        "locations": [
+          {
+            "id": "5466-ONDC-1-3330_location"
+          }
+        ],
+        "rateable": true
+      },
+      "created_at": "2023-03-09T11:19:37.610Z",
+      "updated_at": "2023-03-09T11:19:38.906Z"
+    }
+  }
+}
