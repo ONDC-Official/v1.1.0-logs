@@ -1,0 +1,102 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "timestamp": "2023-03-09T11:14:21.976Z",
+    "ttl": "PT30S",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1/on_update",
+    "bpp_id": "ondc-qa.gofrugalretail.com",
+    "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+    "transaction_id": "b978ab96-55bc-43ac-8635-2e5d4e26507f",
+    "message_id": "78d2e1ac-71de-4457-9838-7a1d61b63bd4"
+  },
+  "message": {
+    "order": {
+      "id": "2023-02-09-203766",
+      "state": "Completed",
+      "items": [
+        {
+          "id": "5466-ONDC-1-12",
+          "tags": {
+            "status": "RETURN_REJECTED"
+          },
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "b978ab96-55bc-43ac-8635-2e5d4e26507f-ReverseQC"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "840.00"
+        },
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "200.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-1",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            }
+          },
+          {
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.0"
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-1",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "600.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-12",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            }
+          },
+          {
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.0"
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-12",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "title": "delivery charges",
+            "price": {
+              "currency": "INR",
+              "value": "40.00"
+            },
+            "@ondc/org/item_id": "b978ab96-55bc-43ac-8635-2e5d4e26507f",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      }
+    }
+  }
+}
