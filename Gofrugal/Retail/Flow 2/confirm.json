@@ -1,0 +1,192 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "timestamp": "2023-03-09T11:05:27.217Z",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-staging.paytm.com",
+    "bap_uri": "https://ondc-staging.paytm.com/retail",
+    "bpp_id": "ondc-qa.gofrugalretail.com",
+    "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+    "transaction_id": "e3b70b8c-c7ec-4cb1-a375-c30ef83aa2c0",
+    "message_id": "retail::confirm::63796058::1028709"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "5466-ONDC-1-12",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "4FE0B93CA53EA86CA514E382D1C588C2"
+        },
+        {
+          "id": "5466-ONDC-1-1",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "4FE0B93CA53EA86CA514E382D1C588C2"
+        }
+      ],
+      "billing": {
+        "name": "Sherin Shafa",
+        "address": {
+          "name": "Sherin Shafa",
+          "building": "Shree Kandhan Stores, Kodanda Reddy Layout",
+          "locality": "Ramamurthy Nagar",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "India",
+          "area_code": "560016"
+        },
+        "phone": "7904741400",
+        "created_at": "2023-03-09T11:05:02.546Z",
+        "updated_at": "2023-03-09T11:05:02.546Z"
+      },
+      "fulfillments": [
+        {
+          "id": "4FE0B93CA53EA86CA514E382D1C588C2",
+          "type": "Delivery",
+          "provider_id": "5466-ONDC-1",
+          "tracking": true,
+          "start": {
+            "location": {
+              "id": "5466-ONDC-1-3330_location",
+              "descriptor": {
+                "name": "5466-ONDC-1-3330_location"
+              },
+              "gps": "12.9731244,77.5948792"
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-09T13:05:27.218Z",
+                "end": "2023-03-09T13:35:27.218Z"
+              }
+            },
+            "instructions": {
+              "name": "pick up instructions",
+              "short_desc": "Provide the order id"
+            },
+            "contact": {
+              "phone": "9876543210",
+              "email": "ondc@gmail.com"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "13.01093701,77.66957670",
+              "address": {
+                "name": "Sherin Shafa",
+                "building": "Shree Kandhan Stores, Kodanda Reddy Layout",
+                "locality": "Ramamurthy Nagar",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560016"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-09T15:05:27.218Z",
+                "end": "2023-03-09T15:35:27.218Z"
+              }
+            },
+            "instructions": {
+              "name": "drop off instructions",
+              "short_desc": "Leave at door step"
+            },
+            "contact": {
+              "phone": "7904741400"
+            },
+            "person": {
+              "name": "Sherin Shafa"
+            }
+          }
+        }
+      ],
+      "id": "F5820B883671A654AD908D2F55520FF3",
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "740.00"
+        },
+        "breakup": [
+          {
+            "title": "KIT KAT",
+            "price": {
+              "currency": "INR",
+              "value": "100.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-1",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "DAIRY MILK",
+            "price": {
+              "currency": "INR",
+              "value": "600.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-12",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery charges",
+            "price": {
+              "currency": "INR",
+              "value": "40.00"
+            },
+            "@ondc/org/item_id": "4FE0B93CA53EA86CA514E382D1C588C2",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "payment": {
+        "uri": "https://ondc.transaction.com/payment",
+        "params": {
+          "transaction_id": "20230309011760000840627892554980850",
+          "amount": "740",
+          "currency": "INR",
+          "mode": "NB",
+          "vpa": "bpp@upi"
+        },
+        "type": "ON-ORDER",
+        "status": "PAID",
+        "tl_method": "http/get",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "Percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3"
+      },
+      "provider": {
+        "id": "5466-ONDC-1",
+        "locations": [
+          {
+            "id": "5466-ONDC-1-3330_location"
+          }
+        ]
+      },
+      "created_at": "2023-03-09T11:05:02.546Z",
+      "updated_at": "2023-03-09T11:05:02.546Z"
+    }
+  }
+}

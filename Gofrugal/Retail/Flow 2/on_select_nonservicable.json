@@ -1,0 +1,114 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "timestamp": "2023-03-09T11:04:12.289Z",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-staging.paytm.com",
+    "bap_uri": "https://ondc-staging.paytm.com/retail/on_select",
+    "bpp_id": "ondc-qa.gofrugalretail.com",
+    "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+    "transaction_id": "923e9a63-68b9-41ef-a9b1-9c7de372234a",
+    "message_id": "1678359851763"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "5466-ONDC-1"
+      },
+      "items": [
+        {
+          "id": "5466-ONDC-1-1",
+          "fulfillment_id": "C3CEEE9137161DA61B37BF4FF3223578"
+        },
+        {
+          "id": "5466-ONDC-1-12",
+          "fulfillment_id": "C3CEEE9137161DA61B37BF4FF3223578"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "C3CEEE9137161DA61B37BF4FF3223578",
+          "state": {
+            "descriptor": {
+              "code": "Non-serviceable"
+            }
+          },
+          "tracking": false,
+          "@ondc/org/category": "Next Day Delivery",
+          "@ondc/org/TAT": "PT0M",
+          "@ondc/org/provider_name": "MARKETPLACE SELLER1"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1000.00"
+        },
+        "breakup": [
+          {
+            "title": "KIT KAT",
+            "price": {
+              "currency": "INR",
+              "value": "100.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              },
+              "quantity": {
+                "available": {
+                  "count": 100
+                },
+                "maximum": {
+                  "count": 100
+                }
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-1",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "DAIRY MILK",
+            "price": {
+              "currency": "INR",
+              "value": "900.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              },
+              "quantity": {
+                "available": {
+                  "count": 100
+                },
+                "maximum": {
+                  "count": 100
+                }
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-12",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "@ondc/org/title_type": "item"
+          }
+        ],
+        "ttl": "PT0M"
+      }
+    }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "30010",
+    "path": "/on_select",
+    "message": "Radius more than 12.5 kilometers. Unserviceable location."
+  }
+}
