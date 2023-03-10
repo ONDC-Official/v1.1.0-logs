@@ -1,0 +1,66 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_search",
+		"core_version": "1.1.0",
+		"bap_id": "api3.eksecond.in",
+		"bap_uri": "https://api3.eksecond.in/ondc",
+		"transaction_id": "632839af4bea4df42dfe336b|e49d0500-91fd-41b8-9ba9-c80f9623e1ad",
+		"message_id": "cdc71afa-204b-4abe-b304-8769b10774e3",
+		"timestamp": "2023-03-10T07:12:29.674Z",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"bpp_id": "ondc-preprod.loadshare.net"
+	},
+	"message": {
+		"catalog": {
+			"bpp/fulfillments": [
+				{
+					"id": "lsn_prepaid",
+					"type": "Prepaid"
+				}
+			],
+			"bpp/descriptor": {
+				"name": "LoadShare Delivery"
+			},
+			"bpp/providers": [
+				{
+					"id": "loadshare@ondc-preprod.loadshare.net",
+					"descriptor": {
+						"name": "LoadShare Networks",
+						"long_desc": "LoadShare Networks Private Limited",
+						"short_desc": "LoadShare Networks Private Limited"
+					},
+					"categories": [
+						{
+							"id": "Immediate Delivery",
+							"time": {
+								"label": "TAT",
+								"duration": "PT1H"
+							}
+						}
+					],
+					"items": [
+						{
+							"id": "express",
+							"parent_item_id": "",
+							"category_id": "Immediate Delivery",
+							"fulfillment_id": "lsn_prepaid",
+							"descriptor": {
+								"code": "P2P",
+								"name": "Immediate Delivery",
+								"long_desc": "Upto 45 mins for Delivery",
+								"short_desc": "Upto 45 mins for Delivery"
+							},
+							"price": {
+								"currency": "INR",
+								"value": "39"
+							}
+						}
+					]
+				}
+			]
+		}
+	}
+}

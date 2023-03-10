@@ -1,0 +1,95 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "init",
+		"core_version": "1.1.0",
+		"bap_id": "api3.eksecond.in",
+		"bap_uri": "https://api3.eksecond.in/ondc",
+		"bpp_id": "ondc-preprod.loadshare.net",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"transaction_id": "632839af4bea4df42dfe336b|ba4dd610-8d4f-4056-9cd2-5b0cfce87e0b",
+		"message_id": "0c0a4685-7bc6-4793-ae3c-184ff0409845",
+		"timestamp": "2023-03-10T05:48:25.561Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"items": [
+				{
+					"id": "express",
+					"descriptor": {
+						"code": "P2P"
+					},
+					"category_id": "Immediate Delivery"
+				}
+			],
+			"provider": {
+				"id": "loadshare@ondc-preprod.loadshare.net"
+			},
+			"fulfillments": [
+				{
+					"id": "lsn_prepaid",
+					"type": "Prepaid",
+					"start": {
+						"location": {
+							"gps": "12.913371523733359,77.68308302883554",
+							"address": {
+								"name": "Rumaan",
+								"building": "1",
+								"locality": "Doddakannelli",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560035"
+							}
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "mohd@gmail.com"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.9075050000001, 77.695502",
+							"address": {
+								"name": "Najeeb",
+								"building": "New Malakpet",
+								"locality": "3rd Floor, Gold Sand, Ambalipura - Sarjapur Rd, Doddakannell",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560035"
+							}
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "masterblaster775@gmail.com"
+						}
+					}
+				}
+			],
+			"payment": {
+				"@ondc/org/settlement_details": []
+			},
+			"billing": {
+				"name": "Rumaan",
+				"email": "mohd@gmail.com",
+				"phone": "9000912423",
+				"created_at": "2023-03-10T05:48:25.561Z",
+				"updated_at": "2023-03-10T05:48:25.561Z",
+				"address": {
+					"name": "Rumaan",
+					"building": "1",
+					"locality": "Doddakannelli",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560035"
+				},
+				"tax_number": "ADFSDF34343"
+			}
+		}
+	}
+}
