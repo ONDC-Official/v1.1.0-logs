@@ -1,0 +1,209 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+    "transaction_id": "01802df6-97fe-48cd-81ad-fa3f7f2b328c",
+    "message_id": "0d4de386-4d97-466b-bf89-bfdf94ea5200",
+    "timestamp": "2023-03-10T14:06:45.606Z",
+    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-02-10-876359",
+      "state": "Accepted",
+      "provider": {
+        "id": "20971",
+        "locations": [
+          {
+            "id": "20971"
+          }
+        ],
+        "rateable": false
+      },
+      "items": [
+        {
+          "id": "135",
+          "fulfillment_id": "20971",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "473",
+          "fulfillment_id": "20971",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "billing": {
+        "address": {
+          "name": "Arunraj",
+          "building": "Banashankari",
+          "locality": "4th Phase, 7 th Block",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560005"
+        },
+        "phone": "9840857465",
+        "name": "Arunraj",
+        "email": "arunraj@nstore.in",
+        "created_at": "2023-03-10T14:06:45.605Z",
+        "updated_at": "2023-03-10T14:06:45.605Z"
+      },
+      "fulfillments": [
+        {
+          "id": "20971",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "20971",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Pending"
+            }
+          },
+          "start": {
+            "location": {
+              "id": "20971",
+              "descriptor": {
+                "name": "Evergreen SuperMarket"
+              },
+              "gps": "12.9953231,77.6139826"
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-10T14:06:45.605Z",
+                "end": "2023-03-11T14:06:45.606Z"
+              }
+            },
+            "instructions": {
+              "name": "",
+              "short_desc": ""
+            },
+            "contact": {
+              "phone": "9727288181",
+              "email": ""
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "13.0007580000001, 77.6165090000001",
+              "address": {
+                "name": "Arunraj",
+                "building": "Banashankari",
+                "locality": "4th Phase, 7 th Block",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560005"
+              }
+            },
+            "contact": {
+              "email": "arunraj@nstore.in",
+              "phone": "9840857465"
+            }
+          },
+          "rateable": true
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "488.75"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "135",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Maggi 2-Minute Masala Instant Noodles 560 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "101.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "101.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "473",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Saffola Classic Instant Masala Oats 1 Kg",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "375.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "375.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "20971",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "title": "Convenience Charge",
+            "@ondc/org/title_type": "convenience charge",
+            "price": {
+              "currency": "INR",
+              "value": 12.75
+            }
+          }
+        ]
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "488.75",
+          "currency": "INR",
+          "transaction_id": "ONDC-01802df6-97fe-48cd-81ad-fa3f7f2b328c-1"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "settlement_bank_account_no": "10112822953",
+            "settlement_ifsc_code": "IDFCB0040101",
+            "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+            "bank_name": "IDFC FIRST BANK LIMITED",
+            "branch_name": "BKC Naman Chambers Branch"
+          }
+        ]
+      },
+      "documents": [],
+      "created_at": "2023-03-10T14:06:45.606Z",
+      "updated_at": "2023-03-10T14:06:45.606Z"
+    }
+  }
+}

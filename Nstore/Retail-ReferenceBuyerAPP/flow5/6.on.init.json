@@ -1,0 +1,161 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+    "transaction_id": "e18bea8e-3d19-41d5-9b9e-5f1ce3c02118",
+    "message_id": "f307653d-1858-4fdd-b6bd-9c7c328e597e",
+    "timestamp": "2023-03-10T15:00:36.502Z",
+    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "20971"
+      },
+      "provider_location": {
+        "id": "20971"
+      },
+      "items": [
+        {
+          "id": "135",
+          "fulfillment_id": "20971",
+          "quantity": {
+            "count": 2
+          }
+        },
+        {
+          "id": "224",
+          "fulfillment_id": "20971",
+          "quantity": {
+            "count": 4
+          }
+        }
+      ],
+      "billing": {
+        "address": {
+          "building": "Banashankari",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560005",
+          "locality": "4th Phase, 7 th Block",
+          "name": "Arunraj"
+        },
+        "phone": "9840857465",
+        "name": "Arunraj",
+        "email": "arunraj@nstore.in",
+        "created_at": "2023-03-10T15:00:36.502Z",
+        "updated_at": "2023-03-10T15:00:36.502Z"
+      },
+      "fulfillments": [
+        {
+          "id": "20971",
+          "type": "Delivery",
+          "end": {
+            "location": {
+              "gps": "13.0007580000001, 77.6165090000001",
+              "address": {
+                "building": "Banashankari",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560005",
+                "locality": "4th Phase, 7 th Block",
+                "name": "Arunraj"
+              }
+            },
+            "contact": {
+              "email": "arunraj@nstore.in",
+              "phone": "9840857465"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "416.90"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "135",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Maggi 2-Minute Masala Instant Noodles 560 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "202.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "101.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "224",
+            "@ondc/org/item_quantity": {
+              "count": 4
+            },
+            "title": "Maggi Masala Penne Instant Pazzta Family Saver Pack 130 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "204.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "51.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "20971",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "title": "Convenience Charge",
+            "@ondc/org/title_type": "convenience charge",
+            "price": {
+              "currency": "INR",
+              "value": 10.9
+            }
+          }
+        ],
+        "ttl": "PT1D"
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "settlement_bank_account_no": "10112822953",
+            "settlement_ifsc_code": "IDFCB0040101",
+            "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+            "bank_name": "IDFC FIRST BANK LIMITED",
+            "branch_name": "BKC Naman Chambers Branch"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+    "transaction_id": "1a6d09ff-afd4-4ee3-bda8-d5d740b4ea05",
+    "message_id": "5bbd7017-3ca5-4607-ad81-2d7a42c10554",
+    "timestamp": "2023-03-10T14:25:05.494Z",
+    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-02-10-779790",
+      "state": "Created",
+      "billing": {
+        "address": {
+          "name": "Arunraj",
+          "building": "Banashankari",
+          "locality": "4th Phase, 7 th Block",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560005"
+        },
+        "phone": "9840857465",
+        "name": "Arunraj",
+        "email": "arunraj@nstore.in",
+        "created_at": "2023-03-10T14:24:13.891Z",
+        "updated_at": "2023-03-10T14:24:13.891Z"
+      },
+      "items": [
+        {
+          "id": "135",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "20971"
+        },
+        {
+          "id": "224",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "20971"
+        },
+        {
+          "id": "241",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "20971"
+        }
+      ],
+      "provider": {
+        "id": "20971",
+        "locations": [
+          {
+            "id": "20971"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "20971",
+          "end": {
+            "contact": {
+              "email": "arunraj@nstore.in",
+              "phone": "9840857465"
+            },
+            "person": {
+              "name": "Arunraj"
+            },
+            "location": {
+              "gps": "13.0007580000001, 77.6165090000001",
+              "address": {
+                "name": "Arunraj",
+                "building": "Banashankari",
+                "locality": "4th Phase, 7 th Block",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560005"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "327.55",
+          "currency": "INR",
+          "transaction_id": "ONDC-1a6d09ff-afd4-4ee3-bda8-d5d740b4ea05-1"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "settlement_bank_account_no": "10112822953",
+            "settlement_ifsc_code": "IDFCB0040101",
+            "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+            "bank_name": "IDFC FIRST BANK LIMITED",
+            "branch_name": "BKC Naman Chambers Branch"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "327.55"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "135",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Maggi 2-Minute Masala Instant Noodles 560 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "101.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "101.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "224",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Maggi Masala Penne Instant Pazzta Family Saver Pack 130 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "51.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "51.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "241",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Saffola Classic Instant Masala Oats 500 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "167.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "167.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "20971",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "title": "Convenience Charge",
+            "@ondc/org/title_type": "convenience charge",
+            "price": {
+              "currency": "INR",
+              "value": 8.55
+            }
+          }
+        ],
+        "ttl": "PT1D"
+      },
+      "created_at": "2023-03-10T14:25:05.494Z",
+      "updated_at": "2023-03-10T14:25:05.494Z"
+    }
+  }
+}
