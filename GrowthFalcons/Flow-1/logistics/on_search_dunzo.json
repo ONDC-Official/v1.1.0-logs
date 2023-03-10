@@ -1,0 +1,77 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "falconsai.com",
+        "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
+        "transaction_id": "c99b8974-3b1c-4208-9a4e-80821edb864b",
+        "message_id": "6581e4ee-bd68-45be-ad70-82fb1308a95a",
+        "timestamp": "2023-03-09T08:18:23.294Z",
+        "ttl": "PT30S",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "Dunzo"
+            },
+            "bpp/providers": [
+                {
+                    "id": "dunzo-lsp",
+                    "descriptor": {
+                        "code": "P2P",
+                        "name": "Dunzo",
+                        "short_desc": "Dunzo",
+                        "long_desc": "Dunzo"
+                    },
+                    "categories": [
+                        {
+                            "id": "Immediate Delivery",
+                            "time": {
+                                "duration": "PT50M",
+                                "label": "TAT"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "item-9cad7cb5-21d5-4257-9c86-f2e9ef38b1e8",
+                            "category_id": "Immediate Delivery",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "Dunzo",
+                                "short_desc": "Dunzo",
+                                "long_desc": "Dunzo"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "38"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT50M",
+                                "timestamp": "2023-03-09T09:08:23.294Z"
+                            },
+                            "fulfillment_id": "1"
+                        }
+                    ]
+                }
+            ],
+            "bpp/fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "2",
+                    "type": "CoD"
+                }
+            ]
+        }
+    },
+    "request_time": "2023-03-09T08:18:23.387Z"
+}
