@@ -6,21 +6,19 @@
     "action": "confirm",
     "core_version": "1.1.0",
     "bap_id": "ondc.eunimart.com",
-    "bap_uri": "https://ondc.eunimart.com/api/v1/ondc/lsp_bap/eunimart_lsp_bap",
-    "transaction_id": "76264358-47d1-4c23-b2fe-6412161a00d6",
+    "bap_uri": "https://ondc.eunimart.com/api/v1/ondc/lsp_bap/eunimart_lsp_bap/",
+    "transaction_id": "f3e3b16c-e5e7-43ba-b385-6c936041bf62",
     "ttl": "PT30S",
-    "message_id": "dedf56ab-600a-4aaf-8720-eac4c30d9535",
-    "timestamp": "2023-02-28T08:02:51.280Z",
+    "message_id": "78cb87be-afdb-4c8d-bbb3-8d0a5a4a1dd1",
+    "timestamp": "2023-03-10T12:11:12.884Z",
     "bpp_id": "ondc-preprod.loadshare.net",
     "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp"
   },
   "message": {
     "order": {
-      "id": "LoadShare0001",
-      "state": "Created",
       "fulfillments": [
         {
-          "id": "1",
+          "id": "2",
           "type": "Prepaid",
           "start": {
             "person": { "name": "Ramu" },
@@ -28,8 +26,8 @@
               "gps": "12.893308,77.586124",
               "address": {
                 "name": "Ashish",
-                "building": "A-101",
-                "locality": "Bank of Baroda (E Dena), 100 Feet Road, Anand Nagar, Jodhpur Village",
+                "building": "101",
+                "locality": "Bank of Baroda Jodhpur Village",
                 "city": "Bengaluru",
                 "state": "Karnataka",
                 "country": "India",
@@ -38,9 +36,9 @@
             },
             "contact": { "phone": "9894748270", "email": "arun@gmail.com" },
             "instructions": {
-              "short_desc": "XYZ1",
-              "long_desc": "QR code will be attached to package",
-              "images": ["URL or data string as per spec"]
+              "short_desc": "QR code attached to the package",
+              "long_desc": "QR code attached to the package",
+              "images": []
             }
           },
           "end": {
@@ -49,8 +47,8 @@
               "gps": "12.9127,77.6381",
               "address": {
                 "name": "Mayank Rai",
-                "building": "orchid white field makarba",
-                "street": "L-74",
+                "building": "102",
+                "locality": "Bank of BarodaJodhpur Village",
                 "city": "Bengaluru",
                 "state": "Karnataka",
                 "country": "India",
@@ -59,22 +57,13 @@
             },
             "contact": { "phone": "8056558432", "email": "jagan@gmail.com" },
             "instructions": {
-              "short_desc": "XYZ2",
-              "long_desc": "drop package at security gate",
-              "additional_desc": {
-                "content_type": "text/html",
-                "url": "URL for instructions"
-              }
+              "short_desc": "Drop package at security gate",
+              "long_desc": "Drop package at security gate",
+              "additional_desc": { "content_type": "text/plain", "url": "" }
             }
           }
         }
       ],
-      "payment": {
-        "collected_by": "BPP",
-        "type": "POST-FULFILLMENT",
-        "@ondc/org/settlement_details": null,
-        "@ondc/org/collection_amount": "300"
-      },
       "@ondc/org/linked_order": {
         "items": [
           {
@@ -104,20 +93,22 @@
         }
       },
       "provider": { "id": "loadshare@ondc-preprod.loadshare.net" },
+      "id": "0157101a-abbf-434b-8de7-507d4e02ca4b",
+      "state": "Created",
       "items": [
         {
-          "id": "nextday",
-          "category_id": "Next Day Delivery",
+          "id": "standard",
+          "category_id": "Standard Delivery",
           "descriptor": { "code": "P2P" }
         }
       ],
       "quote": {
-        "price": { "currency": "INR", "value": "39" },
+        "price": { "currency": "INR", "value": "78" },
         "breakup": [
           {
-            "@ondc/org/item_id": "nextday",
+            "@ondc/org/item_id": "standard",
             "@ondc/org/title_type": "Delivery Charge",
-            "price": { "currency": "INR", "value": "39" }
+            "price": { "currency": "INR", "value": "78" }
           }
         ]
       },
@@ -135,11 +126,16 @@
         "email": "manikgh@gmail.com",
         "phone": "9886098860",
         "tax_number": "29AAACU1901H1ZK",
-        "created_at": "2023-02-28T08:00:06.236Z",
-        "updated_at": "2023-02-28T08:00:06.236Z"
+        "created_at": "2023-03-10T12:11:04.368Z",
+        "updated_at": "2023-03-10T12:11:04.368Z"
       },
-      "created_at": "2023-02-28T08:02:51.280Z",
-      "updated_at": "2023-02-28T08:02:51.280Z"
+      "payment": {
+        "collected_by": "BAP",
+        "type": "POST-FULFILLMENT",
+        "@ondc/org/settlement_details": null
+      },
+      "created_at": "2023-03-10T12:11:12.884Z",
+      "updated_at": "2023-03-10T12:11:12.884Z"
     }
   }
 }
