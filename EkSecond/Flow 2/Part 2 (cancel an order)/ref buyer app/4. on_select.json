@@ -1,0 +1,114 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_select",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_id": "api3.eksecond.in",
+		"bpp_uri": "https://api3.eksecond.in/ondc",
+		"transaction_id": "e49d0500-91fd-41b8-9ba9-c80f9623e1ad",
+		"message_id": "52a0ebb3-bd0a-42df-9e38-3b88e9b24ee3",
+		"timestamp": "2023-03-10T07:12:39.775Z"
+	},
+	"message": {
+		"order": {
+			"items": [
+				{
+					"id": "6406d8476a4db5be4982126b",
+					"fulfillment_id": "a472e8fc-442e-4248-9672-428e63fdac34"
+				}
+			],
+			"provider": {
+				"id": "632839af4bea4df42dfe336b"
+			},
+			"fulfillments": [
+				{
+					"id": "a472e8fc-442e-4248-9672-428e63fdac34",
+					"@ondc/org/category": "Immediate Delivery",
+					"@ondc/org/TAT": "PT1H45M",
+					"@ondc/org/provider_name": "LoadShare Networks",
+					"state": {
+						"descriptor": {
+							"code": "Serviceable"
+						}
+					},
+					"tracking": false
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "322.51"
+				},
+				"breakup": [
+					{
+						"title": "Imperial Special Chicken Biryani",
+						"@ondc/org/item_id": "6406d8476a4db5be4982126b",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "250.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1"
+								},
+								"maximum": {
+									"count": "1"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "250"
+							}
+						}
+					},
+					{
+						"title": "Packing charges",
+						"@ondc/org/item_id": "a472e8fc-442e-4248-9672-428e63fdac34",
+						"@ondc/org/title_type": "packing",
+						"price": {
+							"currency": "INR",
+							"value": "2.5"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "6406d8476a4db5be4982126b",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "12.75"
+						}
+					},
+					{
+						"title": "Delivery charges",
+						"@ondc/org/item_id": "a472e8fc-442e-4248-9672-428e63fdac34",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						}
+					},
+					{
+						"title": "Convenience Fee",
+						"@ondc/org/item_id": "a472e8fc-442e-4248-9672-428e63fdac34",
+						"@ondc/org/title_type": "misc",
+						"price": {
+							"currency": "INR",
+							"value": "18.26"
+						}
+					}
+				],
+				"ttl": "PT10M"
+			}
+		}
+	}
+}

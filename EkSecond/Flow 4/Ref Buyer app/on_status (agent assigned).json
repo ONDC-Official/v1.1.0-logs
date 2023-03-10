@@ -1,0 +1,251 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_status",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_id": "api3.eksecond.in",
+		"bpp_uri": "https://api3.eksecond.in/ondc",
+		"transaction_id": "7b647b8b-e122-4d51-b98f-290aab12ac4f",
+		"message_id": "69ea8a1b-a777-4887-8ee6-d05c43ed191f",
+		"timestamp": "2023-03-10T03:16:03.366Z"
+	},
+	"message": {
+		"order": {
+			"id": "2023-02-10-588173",
+			"created_at": "2023-03-10T03:16:00.346Z",
+			"updated_at": "2023-03-10T03:16:00.346Z",
+			"items": [
+				{
+					"id": "63db97929cc68fbae328fa65",
+					"fulfillment_id": "8d6b1c3e-9a70-4e5f-968a-4107af391840",
+					"quantity": {
+						"count": 3
+					}
+				},
+				{
+					"id": "640843cb6a4db5be49821325",
+					"fulfillment_id": "8d6b1c3e-9a70-4e5f-968a-4107af391840",
+					"quantity": {
+						"count": 1
+					}
+				}
+			],
+			"provider": {
+				"id": "632839af4bea4df42dfe336b",
+				"locations": [
+					{
+						"id": "632839af4bea4df42dfe336b"
+					}
+				]
+			},
+			"fulfillments": [
+				{
+					"id": "8d6b1c3e-9a70-4e5f-968a-4107af391840",
+					"type": "Delivery",
+					"@ondc/org/provider_name": "LoadShare Networks",
+					"state": {
+						"descriptor": {
+							"code": "Agent-assigned"
+						}
+					},
+					"tracking": false,
+					"start": {
+						"location": {
+							"descriptor": {
+								"name": "Rumaan"
+							},
+							"gps": "12.913371523733359,77.68308302883554"
+						},
+						"time": {
+							"range": {
+								"start": "2023-03-10T03:31:02.000Z",
+								"end": "2023-03-10T03:41:02.000Z"
+							}
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "mohd@gmail.com"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.913371523733359,77.68308302883554",
+							"address": {
+								"name": "Rumaan",
+								"building": "1",
+								"locality": "Doddakannelli",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560035"
+							}
+						},
+						"time": {
+							"range": {
+								"start": "2023-03-10T04:01:02.000Z",
+								"end": "2023-03-10T04:16:02.000Z"
+							}
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "masterblaster775@gmail.com"
+						}
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1842.52"
+				},
+				"breakup": [
+					{
+						"title": "Imperial Special Mutton Biryani",
+						"@ondc/org/item_id": "63db97929cc68fbae328fa65",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "1317.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 3
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "3"
+								},
+								"maximum": {
+									"count": "3"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "439"
+							}
+						}
+					},
+					{
+						"title": "Chicken Biryani Plate",
+						"@ondc/org/item_id": "640843cb6a4db5be49821325",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "340.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1"
+								},
+								"maximum": {
+									"count": "1"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "340"
+							}
+						}
+					},
+					{
+						"title": "Packing charges",
+						"@ondc/org/item_id": "8d6b1c3e-9a70-4e5f-968a-4107af391840",
+						"@ondc/org/title_type": "packing",
+						"price": {
+							"currency": "INR",
+							"value": "2.5"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "63db97929cc68fbae328fa65",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "22.39"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821325",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "17.34"
+						}
+					},
+					{
+						"title": "Delivery charges",
+						"@ondc/org/item_id": "8d6b1c3e-9a70-4e5f-968a-4107af391840",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						}
+					},
+					{
+						"title": "Convenience Fee",
+						"@ondc/org/item_id": "8d6b1c3e-9a70-4e5f-968a-4107af391840",
+						"@ondc/org/title_type": "misc",
+						"price": {
+							"currency": "INR",
+							"value": "104.29"
+						}
+					}
+				],
+				"ttl": "PT10M"
+			},
+			"payment": {
+				"uri": "https://juspay.in/",
+				"tl_method": "http/get",
+				"params": {
+					"transaction_id": "ONDC-7b647b8b-e122-4d51-b98f-290aab12ac4f-1",
+					"amount": "1842.52",
+					"currency": "INR"
+				},
+				"type": "ON-ORDER",
+				"status": "PAID",
+				"collected_by": "BAP",
+				"@ondc/org/buyer_app_finder_fee_type": "percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_phase": "sale-amount",
+						"settlement_type": "neft",
+						"settlement_bank_account_no": "1234512345",
+						"settlement_ifsc_code": "15488ADEDD",
+						"beneficiary_name": "Najeeb",
+						"bank_name": "test",
+						"branch_name": "test"
+					}
+				]
+			},
+			"billing": {
+				"name": "Najeeb",
+				"email": "masterblaster775@gmail.com",
+				"phone": "9000912423",
+				"created_at": "2023-03-10T03:15:15.854Z",
+				"updated_at": "2023-03-10T03:15:15.854Z",
+				"address": {
+					"name": "Najeeb",
+					"building": "New Malakpet",
+					"locality": "3rd Floor, Gold Sand, Ambalipura - Sarjapur Rd, Doddakannell",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560035"
+				}
+			},
+			"state": "In-progress"
+		}
+	}
+}
