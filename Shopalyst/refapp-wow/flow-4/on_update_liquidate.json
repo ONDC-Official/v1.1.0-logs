@@ -3,73 +3,49 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_status",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
-        "transaction_id": "1678858a-3ad7-4dfd-b894-148efba09a9a",
-        "message_id": "ec483656-79bd-489a-8b62-529fb23071c4",
-        "timestamp": "2023-03-11T18:00:44.165Z"
+        "transaction_id": "3e75ca49-4e61-4863-8d0e-664c89ce2d5b",
+        "message_id": "95b839a7-b8d3-48f2-baea-c0bdd273b803",
+        "timestamp": "2023-03-11T19:15:31.573Z"
     },
     "message": {
         "order": {
-            "id": "2023-03-11-878352",
-            "state": "Accepted",
-            "provider": {
-                "id": "bcedc450f8481e89b1445069acdc3dd9",
-                "locations": [
-                    {
-                        "id": "bcedc450f8481e89b1445069acdc3dd9"
-                    }
-                ]
-            },
+            "id": "2023-03-11-586197",
+            "state": "Completed",
             "items": [
                 {
                     "id": "A13DE061F4E98CD7EF7A359F15FFAAAB_43459767697667_default",
-                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9.1",
                     "quantity": {
                         "count": 1
+                    },
+                    "tags": {
+                        "status": "Liquidated"
                     }
                 },
                 {
                     "id": "32AE547A9C88B65D08D8A5FC8BAE79B0_43459841294595_default",
                     "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9.1",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "948.00"
+                    "value": "998.00"
                 },
                 "breakup": [
-                    {
-                        "title": "Amla Shampoo",
-                        "price": {
-                            "currency": "INR",
-                            "value": "449.00"
-                        },
-                        "@ondc/org/item_id": "A13DE061F4E98CD7EF7A359F15FFAAAB_43459767697667_default",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "449.00"
-                            }
-                        },
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        },
-                        "@ondc/org/title_type": "item"
-                    },
                     {
                         "title": "Hair Strengthening Shampoo",
                         "price": {
                             "currency": "INR",
-                            "value": "499.00"
+                            "value": "998.00"
                         },
                         "@ondc/org/item_id": "32AE547A9C88B65D08D8A5FC8BAE79B0_43459841294595_default",
                         "item": {
@@ -79,7 +55,7 @@
                             }
                         },
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
                         "@ondc/org/title_type": "item"
                     },
@@ -92,24 +68,7 @@
                         "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9",
                         "@ondc/org/title_type": "delivery"
                     }
-                ],
-                "ttl": "PT15M"
-            },
-            "billing": {
-                "name": "Kishor",
-                "address": {
-                    "name": "Kishor",
-                    "building": "Shopalyst",
-                    "locality": "288, 36th Cross road, 7th block Jayanagar",
-                    "city": "Bengaluru",
-                    "state": "Karnataka",
-                    "country": "IND",
-                    "area_code": "560070"
-                },
-                "email": "kishor.gandham@gmail.com",
-                "phone": "9123456789",
-                "created_at": "2023-03-11T18:00:22.532Z",
-                "updated_at": "2023-03-11T18:00:22.532Z"
+                ]
             },
             "fulfillments": [
                 {
@@ -122,6 +81,13 @@
                                 "name": "bcedc450f8481e89b1445069acdc3dd9"
                             },
                             "gps": "12.9684397,77.6010378"
+                        },
+                        "time": {
+                            "timestamp": "2023-03-11T19:08:02.418Z",
+                            "range": {
+                                "start": "2023-03-11T19:07:02.418Z",
+                                "end": "2023-03-11T19:08:02.418Z"
+                            }
                         },
                         "contact": {
                             "phone": "8042896000",
@@ -141,46 +107,25 @@
                                 "area_code": "560070"
                             }
                         },
+                        "time": {
+                            "timestamp": "2023-03-11T19:13:56.707Z",
+                            "range": {
+                                "start": "2023-03-11T19:12:56.707Z",
+                                "end": "2023-03-11T19:13:56.707Z"
+                            }
+                        },
                         "contact": {
                             "phone": "9123456789"
                         }
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
                     "@ondc/org/provider_name": "Wow Skin Science"
                 }
-            ],
-            "payment": {
-                "uri": "https://juspay.in/",
-                "tl_method": "http/get",
-                "type": "ON-ORDER",
-                "status": "PAID",
-                "collected_by": "BAP",
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-                "@ondc/org/settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_phase": "sale-amount",
-                        "settlement_type": "neft",
-                        "settlement_bank_account_no": "1112220032274181",
-                        "settlement_ifsc_code": "RAZR0000001",
-                        "beneficiary_name": "Kishor",
-                        "bank_name": "sate bank of india",
-                        "branch_name": "manikonda"
-                    }
-                ],
-                "params": {
-                    "transaction_id": "ONDC-1678858a-3ad7-4dfd-b894-148efba09a9a-1",
-                    "amount": "948",
-                    "currency": "INR"
-                }
-            },
-            "created_at": "2023-03-11T18:00:39.100Z",
-            "updated_at": "2023-03-11T18:00:42.032Z"
+            ]
         }
     }
 }
