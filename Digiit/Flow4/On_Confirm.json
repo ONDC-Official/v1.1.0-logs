@@ -1,0 +1,223 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "transaction_id": "28ba2ea0-178e-4b2e-bf03-c039840106ac",
+    "message_id": "8176f7d9-fb75-4f7d-8eb7-8b79bb3d3125",
+    "timestamp": "2023-03-12T09:38:04.778Z",
+    "bpp_id": "preprod-bpp.dbs.digiit.io"
+  },
+  "message": {
+    "order": {
+      "id": "2023-03-12-674411",
+      "state": "Accepted",
+      "provider": {
+        "id": "171",
+        "locations": [
+          {
+            "id": "384"
+          }
+        ],
+        "rateable": true
+      },
+      "items": [
+        {
+          "id": "999",
+          "fulfillment_id": "13597738-2191-4087-8b51-18e294993415",
+          "quantity": {
+            "count": 5
+          }
+        },
+        {
+          "id": "1057",
+          "fulfillment_id": "13597738-2191-4087-8b51-18e294993415",
+          "quantity": {
+            "count": 5
+          }
+        }
+      ],
+      "billing": {
+        "name": "Clark Kent",
+        "address": {
+          "door": "-",
+          "name": "Clark Kent",
+          "building": "Akshayanagar",
+          "locality": "Block-D, NANDI CITADEL, Akshaya Vana,",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "India",
+          "area_code": "560076"
+        },
+        "email": "bruce@digiit.co",
+        "phone": "9843123383",
+        "created_at": "2023-03-12T09:37:57.42Z",
+        "updated_at": "2023-03-12T09:38:02.01Z"
+      },
+      "fulfillments": [
+        {
+          "id": "13597738-2191-4087-8b51-18e294993415",
+          "@ondc/org/provider_name": "Ganesh",
+          "type": "Delivery",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Pending"
+            }
+          },
+          "start": {
+            "location": {
+              "descriptor": {
+                "name": "Sridhivyam",
+                "images": [
+                  "https://97digiistorage183.blob.core.windows.net/organization/account/sridhivyam.jpg"
+                ]
+              },
+              "gps": "12.871414900,77.570119000",
+              "id": "384"
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-12T09:37:56.663Z",
+                "end": "2023-03-12T09:38:04.636Z"
+              }
+            },
+            "instructions": {
+              "name": "Pending",
+              "short_desc": "8964",
+              "long_desc": "8964"
+            },
+            "contact": {
+              "phone": "7760246669",
+              "email": "psriram78@yahoo.com"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.871414900,77.570119000",
+              "address": {
+                "door": "-",
+                "name": "Clark Kent",
+                "building": "Akshayanagar",
+                "locality": "Block-D, NANDI CITADEL, Akshaya Vana,",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560076"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-12T09:37:56.663Z",
+                "end": "2023-03-12T09:38:04.636Z"
+              }
+            },
+            "instructions": {
+              "name": "Pending",
+              "short_desc": "1724",
+              "long_desc": "1724"
+            },
+            "contact": {
+              "phone": "7760246669"
+            }
+          },
+          "rateable": true
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "624.75"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "999",
+            "@ondc/org/item_quantity": {
+              "count": "5"
+            },
+            "title": "Rice Flour",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "288.75"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "288.75"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1057",
+            "@ondc/org/item_quantity": {
+              "count": "5"
+            },
+            "title": "Coca-Cola PET Bottle, 750 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "236.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "236.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "13597738-2191-4087-8b51-18e294993415",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "uri": "https://ondc.transaction.com/payment",
+        "tl_method": "http/get",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "e8046aed-5370-4f3a-97cd-6a7ce8d34ea3",
+          "amount": "624.75"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "settlement_bank_account_no": "50200053156327",
+            "settlement_ifsc_code": "HDFC0004824",
+            "beneficiary_name": "Digiit Business Services Pvt Ltd",
+            "bank_name": "HDFC Bank",
+            "branch_name": "Vayalur Road, Trichy",
+            "settlement_status": "NOT-PAID"
+          }
+        ]
+      },
+      "documents": [
+        {
+          "url": "https://bpp.dbs.digiit.ai/2023-03-12-674411",
+          "label": "Invoice"
+        }
+      ],
+      "created_at": "2023-03-12T09:37:57.42Z",
+      "updated_at": "2023-03-12T09:38:02.01Z"
+    }
+  }
+}

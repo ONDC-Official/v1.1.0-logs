@@ -1,0 +1,117 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "transaction_id": "44fcbf6b-a71f-429c-a870-d49a35bd8383",
+    "message_id": "bff4dd3f-722a-4d4d-9a34-cc7e3d03aaf9",
+    "timestamp": "2023-03-11T06:34:27.986Z",
+    "bpp_id": "preprod-bpp.dbs.digiit.io"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "171"
+      },
+      "items": [
+        {
+          "fulfillment_id": "87d95b85-8516-467c-9598-2753fed1ab0d",
+          "id": "999"
+        },
+        {
+          "fulfillment_id": "87d95b85-8516-467c-9598-2753fed1ab0d",
+          "id": "1057"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "87d95b85-8516-467c-9598-2753fed1ab0d",
+          "@ondc/org/provider_name": "Sridhivyam",
+          "tracking": true,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT45M",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "204.95"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "999",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Rice Flour",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "57.75"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "0"
+                },
+                "maximum": {
+                  "count": "10"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "57.75"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1057",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Coca-Cola PET Bottle, 750 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "47.20"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "0"
+                },
+                "maximum": {
+                  "count": "10"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "47.20"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "87d95b85-8516-467c-9598-2753fed1ab0d",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      }
+    }
+  }
+}
