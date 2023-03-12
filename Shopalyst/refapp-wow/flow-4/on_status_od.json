@@ -9,14 +9,14 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
-        "transaction_id": "f6a2af6b-0121-4167-9048-68209b9e7276",
-        "message_id": "961b64e0-ecc5-4ea4-969e-5ae70aab65e6",
-        "timestamp": "2023-03-08T17:39:08.127Z"
+        "transaction_id": "3e75ca49-4e61-4863-8d0e-664c89ce2d5b",
+        "message_id": "5711f8e0-1a45-4c37-ab5a-4d67a19c94f8",
+        "timestamp": "2023-03-11T19:11:03.666Z"
     },
     "message": {
         "order": {
-            "id": "2023-02-08-715213",
-            "state": "Completed",
+            "id": "2023-03-11-586197",
+            "state": "In-progress",
             "provider": {
                 "id": "bcedc450f8481e89b1445069acdc3dd9",
                 "locations": [
@@ -28,32 +28,48 @@
             "items": [
                 {
                     "id": "A13DE061F4E98CD7EF7A359F15FFAAAB_43459767697667_default",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9.1",
                     "quantity": {
                         "count": 1
-                    },
-                    "tags": {
-                        "status": "Liquidated"
                     }
                 },
                 {
                     "id": "32AE547A9C88B65D08D8A5FC8BAE79B0_43459841294595_default",
-                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9.1",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "499.00"
+                    "value": "1447.00"
                 },
                 "breakup": [
+                    {
+                        "title": "Amla Shampoo",
+                        "price": {
+                            "currency": "INR",
+                            "value": "449.00"
+                        },
+                        "@ondc/org/item_id": "A13DE061F4E98CD7EF7A359F15FFAAAB_43459767697667_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "449.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
                     {
                         "title": "Hair Strengthening Shampoo",
                         "price": {
                             "currency": "INR",
-                            "value": "499.00"
+                            "value": "998.00"
                         },
                         "@ondc/org/item_id": "32AE547A9C88B65D08D8A5FC8BAE79B0_43459841294595_default",
                         "item": {
@@ -63,7 +79,7 @@
                             }
                         },
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
                         "@ondc/org/title_type": "item"
                     },
@@ -77,7 +93,7 @@
                         "@ondc/org/title_type": "delivery"
                     }
                 ],
-                "ttl": "P1D"
+                "ttl": "PT15M"
             },
             "documents": [
                 {
@@ -98,12 +114,12 @@
                 },
                 "email": "kishor.gandham@gmail.com",
                 "phone": "9123456789",
-                "created_at": "2023-03-08T17:08:54.999Z",
-                "updated_at": "2023-03-08T17:08:54.999Z"
+                "created_at": "2023-03-11T19:02:25.321Z",
+                "updated_at": "2023-03-11T19:02:25.321Z"
             },
             "fulfillments": [
                 {
-                    "id": "bcedc450f8481e89b1445069acdc3dd9",
+                    "id": "bcedc450f8481e89b1445069acdc3dd9.1",
                     "type": "Delivery",
                     "tracking": true,
                     "start": {
@@ -114,10 +130,10 @@
                             "gps": "12.9684397,77.6010378"
                         },
                         "time": {
-                            "timestamp": "2023-03-08T17:30:15.629Z",
+                            "timestamp": "2023-03-11T19:08:02.418Z",
                             "range": {
-                                "start": "2023-03-08T17:29:15.629Z",
-                                "end": "2023-03-08T17:30:15.629Z"
+                                "start": "2023-03-11T19:07:02.418Z",
+                                "end": "2023-03-11T19:08:02.418Z"
                             }
                         },
                         "contact": {
@@ -138,20 +154,13 @@
                                 "area_code": "560070"
                             }
                         },
-                        "time": {
-                            "timestamp": "2023-03-08T17:39:08.103Z",
-                            "range": {
-                                "start": "2023-03-08T17:38:08.103Z",
-                                "end": "2023-03-08T17:39:08.103Z"
-                            }
-                        },
                         "contact": {
                             "phone": "9123456789"
                         }
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Order-delivered"
+                            "code": "Out-for-delivery"
                         }
                     },
                     "@ondc/org/provider_name": "Wow Skin Science"
@@ -178,13 +187,13 @@
                     }
                 ],
                 "params": {
-                    "transaction_id": "ONDC-f6a2af6b-0121-4167-9048-68209b9e7276-1",
-                    "amount": "948",
+                    "transaction_id": "ONDC-3e75ca49-4e61-4863-8d0e-664c89ce2d5b-1",
+                    "amount": "1447",
                     "currency": "INR"
                 }
             },
-            "created_at": "2023-03-08T17:09:08.245Z",
-            "updated_at": "2023-03-08T17:39:08.103Z"
+            "created_at": "2023-03-11T19:02:37.131Z",
+            "updated_at": "2023-03-11T19:11:03.647Z"
         }
     }
 }

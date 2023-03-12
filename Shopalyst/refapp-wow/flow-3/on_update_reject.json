@@ -3,28 +3,20 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_status",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
-        "transaction_id": "e761fc10-d3ff-477d-a2bb-a8f4a3ecda3d",
-        "message_id": "8fd47f71-4473-4215-bbf0-cb82d0921307",
-        "timestamp": "2023-03-08T18:15:42.327Z"
+        "transaction_id": "5923fa50-b1ae-48d9-b69b-8415e099f4f0",
+        "message_id": "8c1821e6-a78b-4190-a989-681b189e808f",
+        "timestamp": "2023-03-11T18:43:46.731Z"
     },
     "message": {
         "order": {
-            "id": "2023-02-08-176661",
+            "id": "2023-03-11-390386",
             "state": "Completed",
-            "provider": {
-                "id": "bcedc450f8481e89b1445069acdc3dd9",
-                "locations": [
-                    {
-                        "id": "bcedc450f8481e89b1445069acdc3dd9"
-                    }
-                ]
-            },
             "items": [
                 {
                     "id": "A13DE061F4E98CD7EF7A359F15FFAAAB_43459767697667_default",
@@ -37,7 +29,7 @@
                 },
                 {
                     "id": "32AE547A9C88B65D08D8A5FC8BAE79B0_43459841294595_default",
-                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9.1",
                     "quantity": {
                         "count": 1
                     }
@@ -94,34 +86,11 @@
                         "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9",
                         "@ondc/org/title_type": "delivery"
                     }
-                ],
-                "ttl": "P1D"
-            },
-            "documents": [
-                {
-                    "url": "https://static.shopalyst.com/assets/campaigns/invoice_jajee.jpeg",
-                    "label": "Invoice"
-                }
-            ],
-            "billing": {
-                "name": "Kishor Gandham",
-                "address": {
-                    "name": "Kishor Gandham",
-                    "building": "Near APHB Colony",
-                    "locality": "Flat No 506 ARCA Sarovar Apartments",
-                    "city": "Hyderabad",
-                    "state": "Telangana",
-                    "country": "IND",
-                    "area_code": "500032"
-                },
-                "email": "g_kishor@yahoo.com",
-                "phone": "9123456789",
-                "created_at": "2023-03-08T17:55:20.788Z",
-                "updated_at": "2023-03-08T17:55:20.788Z"
+                ]
             },
             "fulfillments": [
                 {
-                    "id": "bcedc450f8481e89b1445069acdc3dd9",
+                    "id": "bcedc450f8481e89b1445069acdc3dd9.1",
                     "type": "Delivery",
                     "tracking": true,
                     "start": {
@@ -132,10 +101,10 @@
                             "gps": "12.9684397,77.6010378"
                         },
                         "time": {
-                            "timestamp": "2023-03-08T18:08:54.891Z",
+                            "timestamp": "2023-03-11T18:35:29.460Z",
                             "range": {
-                                "start": "2023-03-08T18:07:54.891Z",
-                                "end": "2023-03-08T18:08:54.891Z"
+                                "start": "2023-03-11T18:34:29.460Z",
+                                "end": "2023-03-11T18:35:29.460Z"
                             }
                         },
                         "contact": {
@@ -145,22 +114,22 @@
                     },
                     "end": {
                         "location": {
-                            "gps": "17.431186, 78.346778",
+                            "gps": "12.923479, 77.564663",
                             "address": {
-                                "name": "Kishor Gandham",
-                                "building": "Near APHB Colony",
-                                "locality": "Flat No 506 ARCA Sarovar Apartments",
-                                "city": "Hyderabad",
-                                "state": "Telangana",
+                                "name": "Kishor",
+                                "building": "Shopalyst",
+                                "locality": "288, 36th Cross road, 7th block Jayanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
                                 "country": "IND",
-                                "area_code": "500032"
+                                "area_code": "560070"
                             }
                         },
                         "time": {
-                            "timestamp": "2023-03-08T18:11:27.418Z",
+                            "timestamp": "2023-03-11T18:39:13.013Z",
                             "range": {
-                                "start": "2023-03-08T18:10:27.418Z",
-                                "end": "2023-03-08T18:11:27.418Z"
+                                "start": "2023-03-11T18:38:13.013Z",
+                                "end": "2023-03-11T18:39:13.013Z"
                             }
                         },
                         "contact": {
@@ -174,35 +143,7 @@
                     },
                     "@ondc/org/provider_name": "Wow Skin Science"
                 }
-            ],
-            "payment": {
-                "uri": "https://juspay.in/",
-                "tl_method": "http/get",
-                "type": "ON-ORDER",
-                "status": "PAID",
-                "collected_by": "BAP",
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-                "@ondc/org/settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_phase": "sale-amount",
-                        "settlement_type": "neft",
-                        "settlement_bank_account_no": "1112220032274181",
-                        "settlement_ifsc_code": "RAZR0000001",
-                        "beneficiary_name": "Kishor",
-                        "bank_name": "sate bank of india",
-                        "branch_name": "manikonda"
-                    }
-                ],
-                "params": {
-                    "transaction_id": "ONDC-e761fc10-d3ff-477d-a2bb-a8f4a3ecda3d-1",
-                    "amount": "948",
-                    "currency": "INR"
-                }
-            },
-            "created_at": "2023-03-08T17:55:32.210Z",
-            "updated_at": "2023-03-08T18:11:27.418Z"
+            ]
         }
     }
 }
