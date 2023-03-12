@@ -1,0 +1,137 @@
+{
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_init",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.enstore.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-03-11T09:23:41.935Z",
+      "message_id": "1c7b9064-da7e-49c2-b0f9-cc289af24515",
+      "core_version": "1.1.0",
+      "transaction_id": "12f1add3-d06b-4b06-a831-82819136a990"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "5988",
+            "quantity": {
+              "count": 4
+            },
+            "fulfillment_id": "FPA:699:express:258:31514"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "2000.0",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "5988",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "price": {
+                "value": "2000.0",
+                "currency": "INR"
+              },
+              "title": "Amul Ghee Pouch",
+              "@ondc/org/item_id": "5988",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 4.0
+              }
+            },
+            {
+              "price": {
+                "value": 0,
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:express:258:31514",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "billing": {
+          "name": "Darshan SR Sapphire",
+          "email": "darshan.s@innobits.com",
+          "phone": "8151000066",
+          "address": {
+            "city": "Bengaluru",
+            "name": "Darshan SR Sapphire",
+            "state": "Karnataka",
+            "country": "IND",
+            "building": "Bennigana Halli",
+            "locality": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043",
+            "area_code": "560043"
+          },
+          "created_at": "2023-03-11T09:23:38.675Z",
+          "updated_at": "2023-03-11T09:23:38.675Z"
+        },
+        "payment": {
+          "@ondc/org/return_window": "0.0",
+          "@ondc/org/settlement_basis": "Collection",
+          "@ondc/org/settlement_window": "P2D",
+          "@ondc/org/settlement_details": [
+            {
+              "bank_name": "Axis Bank",
+              "branch_name": "Kathriguppe",
+              "settlement_type": "rtgs",
+              "beneficiary_name": "Innobits Solutions Pvt Ltd Nodal Account",
+              "settlement_phase": "sale-amount",
+              "settlement_ifsc_code": "UTIB0003190",
+              "settlement_counterparty": "seller-app",
+              "settlement_bank_account_no": "922020043291840"
+            }
+          ],
+          "@ondc/org/withholding_amount": "0.0",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+        },
+        "provider": {
+          "id": "1016:699"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:express:258:31514",
+            "end": {
+              "contact": {
+                "email": "darshan.s@innobits.com",
+                "phone": "8151000066"
+              },
+              "location": {
+                "gps": "13.032943, 77.630862",
+                "address": {
+                  "city": "Bengaluru",
+                  "name": "Darshan SR Sapphire",
+                  "ward": null,
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "building": "Bennigana Halli",
+                  "locality": "M26+M6F, 1st A Cross Rd, East of NGEF Layout, Bennigana Halli, Bengaluru, Karnataka 560043",
+                  "area_code": "560043"
+                }
+              }
+            },
+            "type": "Delivery",
+            "tracking": true
+          }
+        ],
+        "provider_location": {
+          "id": "1016:699"
+        }
+      }
+    }
+  }
