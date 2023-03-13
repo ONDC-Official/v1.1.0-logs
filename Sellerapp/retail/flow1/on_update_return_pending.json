@@ -1,0 +1,160 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.sellerapp.in",
+        "bpp_uri": "https://ondcpreprod.sellerapp.in/bpp/u/",
+        "transaction_id": "8dee59d1-e56e-47f7-be05-c0d81dda9a24",
+        "message_id": "5ef2d3a9-feff-4c43-821d-9572631e3ebd",
+        "timestamp": "2023-03-13T15:04:23.588Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-03-13-278304",
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "77683598",
+                    "fulfillment_id": "b568be8a-cb3a-49ae-8e10-df95f3d66cf2"
+                },
+                {
+                    "id": "77683588",
+                    "fulfillment_id": "b568be8a-cb3a-49ae-8e10-df95f3d66cf2",
+                    "tags": {
+                        "status": "Return_Initiated"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "b568be8a-cb3a-49ae-8e10-df95f3d66cf2",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "start": {
+                        "instructions": {
+                            "long_desc": "Status for pickup",
+                            "short_desc": "8304"
+                        },
+                        "location": {
+                            "id": "tki-1000",
+                            "gps": "12.9704,77.6448023"
+                        },
+                        "contact": {
+                            "phone": "8088240386",
+                            "email": "sales@trykaro.in"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "timestamp": "2023-03-13T14:57:48.189Z"
+                        },
+                        "instructions": {
+                            "long_desc": "Status for drop",
+                            "short_desc": "8304"
+                        },
+                        "person": {
+                            "name": "Raja"
+                        },
+                        "location": {
+                            "gps": "12.9814010000001, 77.6409810000001",
+                            "address": {
+                                "name": "Raja",
+                                "building": "san jose",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560038",
+                                "locality": "12 main road"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9080739414",
+                            "email": "raja.mani@sellerapp.com"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "@ondc/org/provider_name": "LoadShare Networks"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "617"
+                },
+                "breakup": [
+                    {
+                        "title": "slrp-unique",
+                        "price": {
+                            "currency": "INR",
+                            "value": "475"
+                        },
+                        "@ondc/org/item_id": "77683598",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 100
+                                },
+                                "maximum": {
+                                    "count": 20
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "475"
+                            }
+                        }
+                    },
+                    {
+                        "title": "Sleepy Owl Salted Caramel Cold Brew Coffee - Bottle",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100"
+                        },
+                        "@ondc/org/item_id": "77683588",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 100
+                                },
+                                "maximum": {
+                                    "count": 20
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "100"
+                            }
+                        }
+                    },
+                    {
+                        "title": "Delivery Fees",
+                        "price": {
+                            "currency": "INR",
+                            "value": "42"
+                        },
+                        "@ondc/org/item_id": "b568be8a-cb3a-49ae-8e10-df95f3d66cf2",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            }
+        }
+    }
+}
