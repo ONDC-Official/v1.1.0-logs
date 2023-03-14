@@ -1,0 +1,96 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_status",
+		"core_version": "1.1.0",
+		"bap_id": "api3.eksecond.in",
+		"bap_uri": "https://api3.eksecond.in/ondc",
+		"bpp_id": "ondc-preprod.loadshare.net",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"transaction_id": "632839af4bea4df42dfe336b|4900c7f2-2d2e-4470-8185-8765fd25c96f",
+		"message_id": "rf5bqyb2ouabvsg3",
+		"timestamp": "2023-03-13T14:28:09.136Z"
+	},
+	"message": {
+		"order": {
+			"id": "4e001d06-bc87-4656-b794-de228aacb79d",
+			"state": "In-progress",
+			"provider": {
+				"id": "loadshare@ondc-preprod.loadshare.net"
+			},
+			"items": [
+				{
+					"id": "express",
+					"descriptor": {
+						"code": "P2P"
+					},
+					"category_id": "Immediate Delivery"
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "42"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "express",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "42"
+						}
+					}
+				]
+			},
+			"fulfillments": [
+				{
+					"id": "lsn_prepaid",
+					"type": "Prepaid",
+					"state": {
+						"descriptor": {
+							"code": "Searching-for-Agent"
+						}
+					},
+					"tracking": true,
+					"start": {
+						"time": {
+							"range": {
+								"start": "2023-03-13T14:43:05.000Z",
+								"end": "2023-03-13T14:53:05.000Z"
+							}
+						}
+					},
+					"end": {
+						"time": {
+							"range": {
+								"start": "2023-03-13T15:13:05.000Z",
+								"end": "2023-03-13T15:28:05.000Z"
+							}
+						}
+					}
+				}
+			],
+			"billing": {
+				"name": "Ek Second Technologies",
+				"email": "najeeb@eksecon.in",
+				"phone": "9000912423",
+				"created_at": "2023-03-13T14:27:34.901Z",
+				"updated_at": "2023-03-13T14:27:34.901Z",
+				"address": {
+					"name": "EkSecond Pvt Ltd",
+					"building": "8-7-171/10/14/B",
+					"locality": "Old Bowenpally",
+					"city": "secunderabad",
+					"state": "Telangana",
+					"country": "India",
+					"area_code": "500011"
+				},
+				"tax_number": "ADFSDF34343"
+			},
+			"updated_at": "2023-03-13T14:28:09.136Z"
+		}
+	}
+}
