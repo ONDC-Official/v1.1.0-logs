@@ -10,16 +10,16 @@
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_uri": "https://ondc.uengage.in/",
-      "transaction_id": "4f0b14a3-b412-47f5-973c-4d17f202241c",
-      "message_id": "d49c4713-ae13-49c6-80e6-5a14eb9d3adc",
-      "timestamp": "2023-03-10T12:54:05.793Z",
+      "transaction_id": "b8bdd62a-185f-4258-a8ce-6650a6f3a048",
+      "message_id": "b3abaab3-bb8e-4e91-924a-34a9b329c98d",
+      "timestamp": "2023-03-14T09:28:33.374Z",
       "bpp_id": "ondc.uengage.in",
       "ttl": "PT30S"
     },
     "message": {
       "update_target": "item",
       "order": {
-        "id": "2023-02-10-124562",
+        "id": "2023-03-14-649185",
         "state": "Completed",
         "provider": {
           "id": "89"
@@ -38,7 +38,18 @@
               "image": ""
             }
           }
-        ]
+        ],
+        "payment": {
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "buyer",
+              "settlement_phase": "refund",
+              "settlement_type": "upi",
+              "settlement_amount": "626",
+              "settlement_timestamp": "2023-03-14T09:28:33.469Z"
+            }
+          ]
+        }
       }
     }
   }
