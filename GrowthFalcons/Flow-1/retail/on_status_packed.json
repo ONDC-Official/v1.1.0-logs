@@ -9,18 +9,25 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "falconsai.com",
         "bpp_uri": "https://falconsai.com/v1/ondc/ecomm/fnb",
-        "transaction_id": "c99b8974-3b1c-4208-9a4e-80821edb864b",
-        "message_id": "c99b8974-3b1c-4208-9a4e-80821edb864b",
-        "timestamp": "2023-03-09T08:39:31.865Z",
+        "transaction_id": "6eaa0c31-d859-486c-8d60-5b9c761f34e8",
+        "message_id": "6eaa0c31-d859-486c-8d60-5b9c761f34e8",
+        "timestamp": "2023-03-14T14:28:13.484Z",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-02-09-226142",
+            "id": "2023-03-14-251142",
             "state": "Accepted",
             "items": [
                 {
                     "id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
+                    "fulfillment_id": "2",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "651eb42e-0eaf-4855-86c8-4c1501412fce",
                     "fulfillment_id": "2",
                     "quantity": {
                         "count": 1
@@ -47,8 +54,8 @@
                 },
                 "email": "sandeep@gamil.com",
                 "phone": "9952445640",
-                "created_at": "2023-03-09T08:19:30.805Z",
-                "updated_at": "2023-03-09T08:19:30.805Z"
+                "created_at": "2023-03-14T14:25:27.762Z",
+                "updated_at": "2023-03-14T14:25:27.762Z"
             },
             "fulfillments": [
                 {
@@ -66,16 +73,19 @@
                     "start": {
                         "location": {
                             "id": "GFFBRTKI1664452131",
-                            "gps": "12.9076452868, 77.6352300637"
+                            "gps": "12.9076452868, 77.6352300637",
+                            "descriptor": {
+                                "name": "HSR Test Store"
+                            }
                         },
                         "time": {
                             "range": {
-                                "start": "2023-03-09T08:21:37.900Z",
-                                "end": "2023-03-09T08:36:37.900Z"
+                                "start": "2023-03-14T14:26:58.387Z",
+                                "end": "2023-03-14T14:41:58.387Z"
                             }
                         },
                         "contact": {
-                            "phone": "919296250006"
+                            "phone": "9296250006"
                         }
                     },
                     "end": {
@@ -93,8 +103,8 @@
                         },
                         "time": {
                             "range": {
-                                "start": "2023-03-09T08:21:37.900Z",
-                                "end": "2023-03-09T08:56:37.900Z"
+                                "start": "2023-03-14T14:26:58.387Z",
+                                "end": "2023-03-14T15:01:58.387Z"
                             }
                         },
                         "contact": {
@@ -111,7 +121,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "498.31"
+                    "value": "787.49"
                 },
                 "breakup": [
                     {
@@ -123,7 +133,7 @@
                         },
                         "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
                         "@ondc/org/item_quantity": {
-                            "count": "1"
+                            "count": 1
                         },
                         "item": {
                             "quantity": {
@@ -150,6 +160,41 @@
                         "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f"
                     },
                     {
+                        "title": "Paneer Biryani",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "265.0"
+                        },
+                        "@ondc/org/item_id": "651eb42e-0eaf-4855-86c8-4c1501412fce",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "265.0"
+                            }
+                        }
+                    },
+                    {
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "13.24"
+                        },
+                        "@ondc/org/item_id": "651eb42e-0eaf-4855-86c8-4c1501412fce"
+                    },
+                    {
                         "title": "Chilli Paneer",
                         "@ondc/org/title_type": "item",
                         "price": {
@@ -158,7 +203,7 @@
                         },
                         "@ondc/org/item_id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
                         "@ondc/org/item_quantity": {
-                            "count": "1"
+                            "count": 1
                         },
                         "item": {
                             "quantity": {
@@ -189,7 +234,7 @@
                         "@ondc/org/title_type": "packing",
                         "price": {
                             "currency": "INR",
-                            "value": "15.31"
+                            "value": "26.25"
                         },
                         "@ondc/org/item_id": "2"
                     }
@@ -201,8 +246,8 @@
                 "tl_method": "http/get",
                 "params": {
                     "currency": "INR",
-                    "transaction_id": "ONDC-c99b8974-3b1c-4208-9a4e-80821edb864b-1",
-                    "amount": "498.31"
+                    "transaction_id": "ONDC-6eaa0c31-d859-486c-8d60-5b9c761f34e8-1",
+                    "amount": "787.49"
                 },
                 "type": "ON-ORDER",
                 "status": "PAID",
@@ -217,7 +262,7 @@
                         "settlement_bank_account_no": "016905011967",
                         "settlement_ifsc_code": "ICIC0000169",
                         "upi_address": "",
-                        "beneficiary_name": "",
+                        "beneficiary_name": "GrowthFalcons",
                         "bank_name": "ICICI Bank",
                         "branch_name": "Indiranagar"
                     }
@@ -232,8 +277,8 @@
                 ],
                 "rateable": true
             },
-            "created_at": "2023-03-09T08:21:32.445Z",
-            "updated_at": "2023-03-09T08:21:32.445Z"
+            "created_at": "2023-03-14T14:26:52.638Z",
+            "updated_at": "2023-03-14T14:28:13.484Z"
         }
     }
 }
