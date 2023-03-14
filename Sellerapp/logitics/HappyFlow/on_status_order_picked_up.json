@@ -1,0 +1,105 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "ondcpreprod.sellerapp.in",
+        "bap_uri": "https://ondcpreprod.sellerapp.in/bapl/u/",
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "transaction_id": "8dee59d1-e56e-47f7-be05-c0d81dda9a24",
+        "message_id": "lbueinq2pw2l5vg6",
+        "timestamp": "2023-03-13T14:57:18.125Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-03-13-278304",
+            "state": "In-progress",
+            "provider": {
+                "id": "loadshare@ondc-preprod.loadshare.net"
+            },
+            "items": [
+                {
+                    "id": "nextday",
+                    "descriptor": {
+                        "code": "P2P"
+                    },
+                    "category_id": "Next Day Delivery"
+                }
+            ],
+            "billing": {
+                "name": "SELLMETRIC PRIVATE LIMITED",
+                "phone": "9650439777",
+                "address": {
+                    "door": "1, 621/A",
+                    "name": "12th main road , Hal 2nd stage",
+                    "city": "Bangalore",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560038",
+                    "locality": "Indiranagar Bangalore"
+                },
+                "email": "billing@sellerapp.com",
+                "tax_number": "29ABDCS3411L1Z7",
+                "created_at": "2023-03-13T14:40:21.697Z",
+                "updated_at": "2023-03-13T14:40:21.697Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "b568be8a-cb3a-49ae-8e10-df95f3d66cf2",
+                    "agent": {
+                        "name": "Mahesh",
+                        "phone": "9900163002"
+                    },
+                    "type": "Prepaid",
+                    "tracking": true,
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-03-13T14:57:18.122Z",
+                                "end": "2023-03-13T14:57:18.122Z"
+                            },
+                            "timestamp": "2023-03-13T14:57:15.000Z"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-03-13T15:11:18.125Z",
+                                "end": "2023-03-13T15:32:18.125Z"
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "42"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "42"
+                        },
+                        "@ondc/org/item_id": "nextday",
+                        "@ondc/org/title_type": "Delivery Charge"
+                    }
+                ]
+            },
+            "updated_at": "2023-03-13T14:57:18.125Z"
+        }
+    },
+    "error": null
+}
