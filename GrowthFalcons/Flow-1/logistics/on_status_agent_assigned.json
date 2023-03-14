@@ -1,0 +1,118 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "falconsai.com",
+        "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
+        "transaction_id": "6eaa0c31-d859-486c-8d60-5b9c761f34e8",
+        "message_id": "60c9de87-d53d-4584-b265-c920ccf89fec",
+        "timestamp": "2023-03-14T16:16:30.060Z",
+        "ttl": "PT30S",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/"
+    },
+    "message": {
+        "order": {
+            "id": "2023-03-14-251142",
+            "state": "In-progress",
+            "provider": {
+                "id": "dunzo-lsp"
+            },
+            "items": [
+                {
+                    "id": "item-5205ad34-a784-40fa-9c2c-a31ef32fb06e",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P",
+                        "name": "Dunzo",
+                        "short_desc": "Dunzo",
+                        "long_desc": "Dunzo"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "38"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "item-5205ad34-a784-40fa-9c2c-a31ef32fb06e",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "38"
+                        }
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "type": "Prepaid",
+                    "state": {
+                        "descriptor": {
+                            "code": "Agent-assigned",
+                            "name": "Agent assigned"
+                        }
+                    },
+                    "tracking": false,
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-03-14T16:16:30.060Z",
+                                "end": "2023-03-14T16:21:30.060Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-03-14T16:16:30.060Z",
+                                "end": "2023-03-14T16:29:30.060Z"
+                            }
+                        }
+                    },
+                    "tags": {},
+                    "agent": {
+                        "name": "Yukta",
+                        "phone": "9368940246"
+                    }
+                }
+            ],
+            "billing": {
+                "address": {
+                    "name": "GrowthFalcons",
+                    "locality": "AECS Layout, Kundalahalli",
+                    "city": "Bangalore",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560037",
+                    "building": "T-5, KBF"
+                },
+                "email": "billing@growthfalcons.com",
+                "name": "Hitbyseo Digital Marketing & Innovations LLP",
+                "phone": "9845071842",
+                "tax_number": "29AAKFH0619N1ZZ",
+                "created_at": "2023-03-14T14:25:27.856Z",
+                "updated_at": "2023-03-14T14:25:27.856Z"
+            },
+            "created_at": "2023-03-14T14:26:53.77Z",
+            "updated_at": "2023-03-14T16:16:30.058Z",
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "026291800001191",
+                        "settlement_ifsc_code": "YESB0000262"
+                    }
+                ],
+                "collected_by": "BAP"
+            }
+        }
+    }
+}
