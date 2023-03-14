@@ -1,0 +1,51 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
+    "core_version": "1.1.0",
+    "bap_id": "ondcpreprod.sellerapp.in",
+    "bap_uri": "https://ondcpreprod.sellerapp.in/bapl/u/",
+    "bpp_id": "dev-ondc.shiprocket.in",
+    "bpp_uri": "https://dev-ondc.shiprocket.in/",
+    "transaction_id": "61999c5b-9b6a-4726-a22c-5521147203b8",
+    "message_id": "f2c190a3-45b2-4f0f-af58-44547e897a35",
+    "timestamp": "2023-03-13T19:46:59.707Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "60"
+      },
+      "provider_location": {
+        "id": "SR-Location"
+      },
+      "items": [
+        {
+          "id": "60"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "121.80"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "60",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "121.8"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP"
+      }
+    }
+  }
+}
