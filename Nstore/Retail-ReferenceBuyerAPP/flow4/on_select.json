@@ -1,0 +1,145 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_select",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-15T12:56:37.757Z",
+        "message_id": "4b7e7ced-e3e4-45e7-9307-a680b9afb3e2",
+        "core_version": "1.1.0",
+        "transaction_id": "b5b7d1f9-5081-4ec1-a83f-8b58fcaab471"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "102",
+                    "fulfillment_id": "20971"
+                },
+                {
+                    "id": "121",
+                    "fulfillment_id": "20971"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "1450.57",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "249.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "4"
+                                },
+                                "available": {
+                                    "count": "4"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "996.00",
+                            "currency": "INR"
+                        },
+                        "title": "Bagrrys Choco With 3 Great Grains 1.2 kg",
+                        "@ondc/org/item_id": "102",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 4
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "102",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "99.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "4"
+                                },
+                                "available": {
+                                    "count": "4"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "396.00",
+                            "currency": "INR"
+                        },
+                        "title": "Bagrrys Choco Fills 250 g",
+                        "@ondc/org/item_id": "121",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 4
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "121",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "58.57",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "20971"
+            },
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/TAT": "PT24H",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                }
+            ]
+        }
+    }
+}
