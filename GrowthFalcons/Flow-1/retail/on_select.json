@@ -9,9 +9,9 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "falconsai.com",
         "bpp_uri": "https://falconsai.com/v1/ondc/ecomm/fnb",
-        "transaction_id": "c99b8974-3b1c-4208-9a4e-80821edb864b",
-        "message_id": "f7f95eb0-03f8-4a1e-8213-fd103363daf3",
-        "timestamp": "2023-03-09T08:18:22.063Z",
+        "transaction_id": "6eaa0c31-d859-486c-8d60-5b9c761f34e8",
+        "message_id": "186a1137-d2a6-47d6-aa09-848b25086ed0",
+        "timestamp": "2023-03-14T14:24:44.742Z",
         "ttl": "PT30S"
     },
     "message": {
@@ -19,6 +19,10 @@
             "items": [
                 {
                     "id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
+                    "fulfillment_id": "2"
+                },
+                {
+                    "id": "651eb42e-0eaf-4855-86c8-4c1501412fce",
                     "fulfillment_id": "2"
                 },
                 {
@@ -31,7 +35,6 @@
                     "id": "2",
                     "state": {
                         "descriptor": {
-                            "name": "Serviceable",
                             "code": "Serviceable"
                         }
                     },
@@ -44,7 +47,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "498.31"
+                    "value": "787.49"
                 },
                 "breakup": [
                     {
@@ -81,6 +84,41 @@
                             "value": "11.5"
                         },
                         "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f"
+                    },
+                    {
+                        "title": "Paneer Biryani",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "265.0"
+                        },
+                        "@ondc/org/item_id": "651eb42e-0eaf-4855-86c8-4c1501412fce",
+                        "@ondc/org/item_quantity": {
+                            "count": "1"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "265.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "13.24"
+                        },
+                        "@ondc/org/item_id": "651eb42e-0eaf-4855-86c8-4c1501412fce"
                     },
                     {
                         "title": "Chilli Paneer",
@@ -122,7 +160,7 @@
                         "@ondc/org/title_type": "packing",
                         "price": {
                             "currency": "INR",
-                            "value": "15.31"
+                            "value": "26.25"
                         },
                         "@ondc/org/item_id": "2"
                     }

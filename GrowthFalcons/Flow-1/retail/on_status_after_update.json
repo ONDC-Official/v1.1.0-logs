@@ -9,26 +9,26 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "falconsai.com",
         "bpp_uri": "https://falconsai.com/v1/ondc/ecomm/fnb",
-        "transaction_id": "c99b8974-3b1c-4208-9a4e-80821edb864b",
-        "message_id": "30653f48-23a7-472f-9b5d-6c2f479a45a3",
-        "timestamp": "2023-03-09T11:11:41.007Z",
+        "transaction_id": "6eaa0c31-d859-486c-8d60-5b9c761f34e8",
+        "message_id": "27f8a372-5d2a-44f4-8e2a-cb133e0c1f00",
+        "timestamp": "2023-03-14T21:21:25.927Z",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-02-09-226142",
+            "id": "2023-03-14-251142",
             "state": "Completed",
             "items": [
                 {
                     "id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
                     "fulfillment_id": "2",
                     "quantity": {
-                        "count": 0
+                        "count": 1
                     }
                 },
                 {
-                    "id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
-                    "fulfillment_id": "2-ReverseQC",
+                    "id": "651eb42e-0eaf-4855-86c8-4c1501412fce",
+                    "fulfillment_id": "2",
                     "tags": {
                         "status": "Liquidated"
                     },
@@ -57,8 +57,8 @@
                 },
                 "email": "sandeep@gamil.com",
                 "phone": "9952445640",
-                "created_at": "2023-03-09T08:19:30.805Z",
-                "updated_at": "2023-03-09T08:19:30.805Z"
+                "created_at": "2023-03-14T14:25:27.762Z",
+                "updated_at": "2023-03-14T14:25:27.762Z"
             },
             "fulfillments": [
                 {
@@ -76,16 +76,20 @@
                     "start": {
                         "location": {
                             "id": "GFFBRTKI1664452131",
-                            "gps": "12.9076452868, 77.6352300637"
+                            "gps": "12.9076452868, 77.6352300637",
+                            "descriptor": {
+                                "name": "HSR Test Store"
+                            }
                         },
                         "time": {
+                            "timestamp": "2023-03-14T16:16:48.376Z",
                             "range": {
-                                "start": "2023-03-09T08:53:40.884Z",
-                                "end": "2023-03-09T08:53:40.884Z"
+                                "start": "2023-03-14T16:17:03.277Z",
+                                "end": "2023-03-14T16:17:03.277Z"
                             }
                         },
                         "contact": {
-                            "phone": "919296250006"
+                            "phone": "9296250006"
                         }
                     },
                     "end": {
@@ -102,9 +106,10 @@
                             }
                         },
                         "time": {
+                            "timestamp": "2023-03-14T16:17:03.358Z",
                             "range": {
-                                "start": "2023-03-09T08:53:40.884Z",
-                                "end": "2023-03-09T08:53:40.884Z"
+                                "start": "2023-03-14T16:17:03.277Z",
+                                "end": "2023-03-14T16:17:03.277Z"
                             }
                         },
                         "contact": {
@@ -121,7 +126,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "249.15"
+                    "value": "498.31"
                 },
                 "breakup": [
                     {
@@ -129,11 +134,11 @@
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "0.0"
+                            "value": "230.0"
                         },
                         "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
                         "@ondc/org/item_quantity": {
-                            "count": "0"
+                            "count": 1
                         },
                         "item": {
                             "quantity": {
@@ -151,6 +156,41 @@
                         }
                     },
                     {
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "11.5"
+                        },
+                        "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f"
+                    },
+                    {
+                        "title": "Paneer Biryani",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        },
+                        "@ondc/org/item_id": "651eb42e-0eaf-4855-86c8-4c1501412fce",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "265.0"
+                            }
+                        }
+                    },
+                    {
                         "title": "Chilli Paneer",
                         "@ondc/org/title_type": "item",
                         "price": {
@@ -159,7 +199,7 @@
                         },
                         "@ondc/org/item_id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
                         "@ondc/org/item_quantity": {
-                            "count": "1"
+                            "count": 1
                         },
                         "item": {
                             "quantity": {
@@ -190,7 +230,7 @@
                         "@ondc/org/title_type": "packing",
                         "price": {
                             "currency": "INR",
-                            "value": "7.65"
+                            "value": "15.31"
                         },
                         "@ondc/org/item_id": "2"
                     }
@@ -202,8 +242,8 @@
                 "tl_method": "http/get",
                 "params": {
                     "currency": "INR",
-                    "transaction_id": "ONDC-c99b8974-3b1c-4208-9a4e-80821edb864b-1",
-                    "amount": "498.31"
+                    "transaction_id": "ONDC-6eaa0c31-d859-486c-8d60-5b9c761f34e8-1",
+                    "amount": "787.49"
                 },
                 "type": "ON-ORDER",
                 "status": "PAID",
@@ -218,7 +258,7 @@
                         "settlement_bank_account_no": "016905011967",
                         "settlement_ifsc_code": "ICIC0000169",
                         "upi_address": "",
-                        "beneficiary_name": "",
+                        "beneficiary_name": "GrowthFalcons",
                         "bank_name": "ICICI Bank",
                         "branch_name": "Indiranagar"
                     }
@@ -233,8 +273,14 @@
                 ],
                 "rateable": true
             },
-            "created_at": "2023-03-09T08:21:32.445Z",
-            "updated_at": "2023-03-09T08:21:32.445Z"
+            "created_at": "2023-03-14T14:26:52.638Z",
+            "updated_at": "2023-03-14T14:26:53.286Z",
+            "documents": [
+                {
+                    "url": "https://ondcbilling.s3.ap-south-1.amazonaws.com/customer/6eaa0c31d859486c8d605b9c761f34e8.pdf",
+                    "label": "Invoice"
+                }
+            ]
         }
     }
 }
