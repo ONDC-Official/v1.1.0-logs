@@ -1,55 +1,44 @@
 {
-  
-  "payload": {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "update",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_uri": "https://ondc.uengage.in/",
-      "transaction_id": "b8bdd62a-185f-4258-a8ce-6650a6f3a048",
-      "message_id": "b3abaab3-bb8e-4e91-924a-34a9b329c98d",
-      "timestamp": "2023-03-14T09:28:33.374Z",
-      "bpp_id": "ondc.uengage.in",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "update_target": "item",
-      "order": {
-        "id": "2023-03-14-649185",
-        "state": "Completed",
-        "provider": {
-          "id": "89"
-        },
-        "items": [
-          {
-            "id": "2246216",
-            "quantity": {
-              "count": 1
-            },
-            "tags": {
-              "update_type": "return",
-              "reason_code": "004",
-              "ttl_approval": "P1D",
-              "ttl_reverseqc": "P3D",
-              "image": ""
-            }
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "update",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bpp_id": "ondc.uengage.in",
+    "bpp_uri": "https://ondc.uengage.in/",
+    "bap_id": "ondc.indiastack.cloud",
+    "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+    "transaction_id": "bf382c48-e956-4f19-a7a7-46322e2331e8",
+    "message_id": "f7810032-a24a-468f-8af9-a07f2e8cfce0",
+    "timestamp": "2023-03-15T18:59:17.532Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "update_target": "item",
+    "order": {
+      "id": "7a44fcae-5edc-4daf-9964-03b7d3a83499",
+      "state": "Delivered",
+      "provider": {
+        "id": "89"
+      },
+      "items": [
+        {
+          "id": "2947910",
+          "quantity": {
+            "count": 1
+          },
+          "tags": {
+            "update_type": "return",
+            "reason_code": "003",
+            "ttl_approval": "PT24H",
+            "ttl_reverseqc": "P3D",
+            "image": ""
           }
-        ],
-        "payment": {
-          "@ondc/org/settlement_details": [
-            {
-              "settlement_counterparty": "buyer",
-              "settlement_phase": "refund",
-              "settlement_type": "upi",
-              "settlement_amount": "626",
-              "settlement_timestamp": "2023-03-14T09:28:33.469Z"
-            }
-          ]
         }
+      ],
+      "payment": {
+        "@ondc/org/settlement_details": []
       }
     }
   }

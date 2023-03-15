@@ -1,38 +1,35 @@
 {
-  
-  "payload": {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "search",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "transaction_id": "b8bdd62a-185f-4258-a8ce-6650a6f3a048",
-      "message_id": "75f6efd1-340e-493f-a372-027501e156f8",
-      "timestamp": "2023-03-14T08:21:23.982Z",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "intent": {
-        "item": {
-          "descriptor": {
-            "name": "pizza"
-          }
-        },
-        "fulfillment": {
-          "type": "Delivery",
-          "end": {
-            "location": {
-              "gps": "12.935532,77.6244960000001"
-            }
-          }
-        },
-        "payment": {
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "search",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "ondc.indiastack.cloud",
+    "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+    "transaction_id": "a21eb6de-ce4e-4aae-80a5-e66210554eb7",
+    "message_id": "72cc58b9-7905-4853-b18e-a48fb647102e",
+    "timestamp": "2023-03-15T18:55:31.774Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "item": {
+        "descriptor": {
+          "name": "pizza"
         }
+      },
+      "fulfillment": {
+        "type": "Delivery",
+        "end": {
+          "location": {
+            "gps": "12.9261382,77.62210910000002"
+          }
+        }
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3"
       }
     }
   }

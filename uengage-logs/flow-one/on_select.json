@@ -1,173 +1,146 @@
 {
-  
-  "payload": {
-    "context": {
-      "action": "on_select",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "city": "std:080",
-      "core_version": "1.1.0",
-      "country": "IND",
-      "domain": "nic2004:52110",
-      "message_id": "48ae7be7-ea54-45f8-a304-be33c0967191",
-      "timestamp": "2023-03-14T08:21:59.965Z",
-      "transaction_id": "b8bdd62a-185f-4258-a8ce-6650a6f3a048",
-      "bpp_id": "ondc.uengage.in",
-      "bpp_uri": "https://ondc.uengage.in/",
-      "key": "MCowBQYDK2VuAyEAsosm57w/ca5Ghk1GmVu+YAB74Evs0RyKua4e0rXYzVA=",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "89"
+  "context": {
+    "action": "on_select",
+    "bap_id": "ondc.indiastack.cloud",
+    "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "country": "IND",
+    "domain": "nic2004:52110",
+    "message_id": "04134ba3-54da-449b-8c32-3c72596545e8",
+    "timestamp": "2023-03-15T18:55:44.759Z",
+    "transaction_id": "bf382c48-e956-4f19-a7a7-46322e2331e8",
+    "bpp_id": "ondc.uengage.in",
+    "bpp_uri": "https://ondc.uengage.in/",
+    "key": "MCowBQYDK2VuAyEAsosm57w/ca5Ghk1GmVu+YAB74Evs0RyKua4e0rXYzVA=",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "89"
+      },
+      "items": [
+        {
+          "fulfillment_id": "1",
+          "id": "2947910"
         },
-        "items": [
+        {
+          "fulfillment_id": "1",
+          "id": "2947906"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "723.4"
+        },
+        "breakup": [
           {
-            "fulfillment_id": "1",
-            "id": "2246216"
+            "@ondc/org/item_id": "2947910",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "30"
+                },
+                "maximum": {
+                  "count": "30"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "560"
+              }
+            },
+            "title": "Sweet Corns Pizza",
+            "price": {
+              "currency": "INR",
+              "value": "560"
+            }
           },
           {
-            "fulfillment_id": "1",
-            "id": "2246217"
+            "@ondc/org/item_id": "2947910",
+            "@ondc/org/title_type": "tax",
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "28"
+            }
+          },
+          {
+            "@ondc/org/item_id": "2947906",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "30"
+                },
+                "maximum": {
+                  "count": "30"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "128"
+              }
+            },
+            "title": "Exotic Tikka Pizza-Regular (serves 1, 17.7 Cm)",
+            "price": {
+              "currency": "INR",
+              "value": "128"
+            }
+          },
+          {
+            "@ondc/org/item_id": "2947906",
+            "@ondc/org/title_type": "tax",
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "6.4"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "delivery",
+            "title": "Delivery Charges",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "packing",
+            "title": "Packing charges",
+            "price": {
+              "currency": "INR",
+              "value": "1"
+            }
           }
         ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "1542.4"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "2246216",
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "30"
-                  },
-                  "maximum": {
-                    "count": "30"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "596"
-                }
-              },
-              "title": "Margherita Pizza-The Giant (serves 8, 45.7)",
-              "price": {
-                "currency": "INR",
-                "value": "596"
-              }
-            },
-            {
-              "@ondc/org/item_id": "2246216",
-              "@ondc/org/title_type": "tax",
-              "title": "Tax",
-              "price": {
-                "currency": "INR",
-                "value": "29.8"
-              }
-            },
-            {
-              "@ondc/org/item_id": "2246217",
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "30"
-                  },
-                  "maximum": {
-                    "count": "30"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "872"
-                }
-              },
-              "title": "Margherita Pizza-The Monster (serves 12, 61 Cm)",
-              "price": {
-                "currency": "INR",
-                "value": "872"
-              }
-            },
-            {
-              "@ondc/org/item_id": "2246217",
-              "@ondc/org/title_type": "tax",
-              "title": "Tax",
-              "price": {
-                "currency": "INR",
-                "value": "43.6"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "@ondc/org/title_type": "delivery",
-              "title": "Delivery Charges",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "@ondc/org/title_type": "packing",
-              "title": "Packaging  Charges",
-              "price": {
-                "currency": "INR",
-                "value": "1"
-              }
-            }
-          ],
-          "ttl": "P1D"
-        },
-        "fulfillments": [
-          {
-            "id": "1",
-            "@ondc/org/provider_name": "La Pinoz and Pizza",
-            "tracking": true,
-            "@ondc/org/category": "Immediate Delivery",
-            "@ondc/org/TAT": "PT45M",
-            "state": {
-              "descriptor": {
-                "code": "Serviceable"
-              }
+        "ttl": "PT60M"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "La Pinoz and Pizza",
+          "tracking": true,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT45M",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
             }
           }
-        ]
-      }
-    }
-  },
-  
-  "response": {
-    "context": {
-      "action": "on_select",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "city": "std:080",
-      "core_version": "1.1.0",
-      "country": "IND",
-      "domain": "nic2004:52110",
-      "message_id": "48ae7be7-ea54-45f8-a304-be33c0967191",
-      "timestamp": "2023-03-14T08:21:59.965Z",
-      "transaction_id": "b8bdd62a-185f-4258-a8ce-6650a6f3a048",
-      "bpp_id": "ondc.uengage.in",
-      "bpp_uri": "https://ondc.uengage.in/",
-      "key": "MCowBQYDK2VuAyEAsosm57w/ca5Ghk1GmVu+YAB74Evs0RyKua4e0rXYzVA=",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "ack": {
-        "status": "ACK"
-      }
+        }
+      ]
     }
   }
 }
