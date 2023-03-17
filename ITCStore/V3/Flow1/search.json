@@ -1,0 +1,58 @@
+"Request":{
+   "context":{
+      "domain":"nic2004:52110",
+      "country":"IND",
+      "city":"std:080",
+      "action":"search",
+      "core_version":"1.1.0",
+      "bap_id":"buyer-app-preprod.ondc.org",
+      "bap_uri":"https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+      "transaction_id":"8105407f-79ca-4522-abed-411e98bce58c",
+      "message_id":"d2f60550-f1ab-45a0-b3ef-2a5ba4d26551",
+      "timestamp":"2023-03-17T10:15:49.568Z",
+      "ttl":"PT30S"
+   },
+   "message":{
+      "intent":{
+         "item":{
+            "descriptor":{
+               "name":"Yippee"
+            }
+         },
+         "fulfillment":{
+            "type":"Delivery",
+            "end":{
+               "location":{
+                  "gps":"12.898463,77.600873"
+               }
+            }
+         },
+         "payment":{
+            "@ondc\/org\/buyer_app_finder_fee_type":"percent",
+            "@ondc\/org\/buyer_app_finder_fee_amount":"3.0"
+         }
+      }
+   }
+}
+
+"Response":{
+   "context":{
+      "domain":"nic2004:52110",
+      "country":"IND",
+      "city":"std:080",
+      "action":"search",
+      "core_version":"1.1.0",
+      "bap_id":"buyer-app-preprod.ondc.org",
+      "bap_uri":"https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+      "bpp_id":"retailconnect.co.in",
+      "bpp_uri":"https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+      "transaction_id":"8105407f-79ca-4522-abed-411e98bce58c",
+      "message_id":"d2f60550-f1ab-45a0-b3ef-2a5ba4d26551",
+      "timestamp":"2023-03-17T10:15:49.815Z"
+   },
+   "message":{
+      "ack":{
+         "status":"ACK"
+      }
+   }
+}
