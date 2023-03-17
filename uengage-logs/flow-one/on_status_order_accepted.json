@@ -1,108 +1,90 @@
 {
+  
  
-  "payload": {
     "context": {
       "domain": "nic2004:52110",
+      "action": "on_status",
       "country": "IND",
       "city": "std:080",
-      "action": "on_status",
       "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_uri": "https://ondc.uengage.in/",
-      "transaction_id": "4f0b14a3-b412-47f5-973c-4d17f202241c",
-      "message_id": "98dd449b-3565-4a26-b2f2-285ce8406f0f",
-      "timestamp": "2023-03-10T12:29:18.121Z",
       "bpp_id": "ondc.uengage.in",
+      "bpp_uri": "https://ondc.uengage.in/",
+      "bap_id": "ondc.indiastack.cloud",
+      "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+      "transaction_id": "d8d2d451-db06-4e5a-989c-e6af79a08455",
+      "message_id": "nc6o89r6rq",
+      "timestamp": "2023-03-16T07:45:36.351Z",
       "ttl": "PT30S"
     },
     "message": {
       "order": {
-        "id": "2023-02-10-124562",
+        "id": "63710d9d-972b-40d2-80c0-83492781ae4d",
         "state": "Accepted",
         "billing": {
           "address": {
-            "name": "shubham",
-            "building": "kormangle",
-            "locality": "kormangla",
-            "city": "Bengaluru",
-            "state": "Karnataka",
-            "country": "IND",
-            "area_code": "560034"
+            "area_code": "560034",
+            "city": "Bangalore",
+            "country": "IN",
+            "building": "-",
+            "door": "-",
+            "locality": "-",
+            "name": "kormangla bengluru",
+            "state": "KARNATAKA"
           },
-          "phone": "9501058880",
-          "name": "shubham",
+          "created_at": "2023-03-16T07:43:36.803Z",
           "email": "shubham@uengage.in",
-          "created_at": "2023-03-10T12:29:04.053Z",
-          "updated_at": "2023-03-10T12:29:04.053Z"
-        },
-        "items": [
-          {
-            "id": "2246216",
-            "quantity": {
-              "count": 1
-            },
-            "fulfillment_id": "1"
-          },
-          {
-            "id": "2246217",
-            "quantity": {
-              "count": 1
-            },
-            "fulfillment_id": "1"
-          }
-        ],
-        "provider": {
-          "id": "89",
-          "locations": [
-            {
-              "id": "123123"
-            }
-          ]
+          "name": "shubhamuengage",
+          "phone": "9501058880",
+          "updated_at": "2023-03-16T07:43:36.803Z",
+          "tax_number": ""
         },
         "fulfillments": [
           {
-            "id": "1",
-            "tracking": true,
             "end": {
               "contact": {
+                "email": "shubham@uengage.in",
                 "phone": "9501058880"
               },
-              "person": {
-                "name": "shubham"
-              },
               "location": {
-                "gps": "12.927112, 77.626652",
                 "address": {
-                  "name": "shubham",
-                  "building": "kormangle",
-                  "locality": "kormangla",
-                  "city": "Bengaluru",
-                  "state": "Karnataka",
-                  "country": "IND",
-                  "area_code": "560034"
-                }
+                  "area_code": "560034",
+                  "city": "Bangalore",
+                  "country": "IN",
+                  "building": "-",
+                  "door": "-",
+                  "locality": "-",
+                  "name": "kormangla bengluru",
+                  "state": "KARNATAKA"
+                },
+                "gps": "12.9261382,77.62210910000002"
+              },
+              "person": {
+                "name": "shubham uengage"
               },
               "time": {
                 "range": {
-                  "start": "2023-03-10T07:29:14.055Z",
-                  "end": "2023-03-10T07:49:14.055Z"
+                  "start": "2023-03-16T02:35:36.035Z",
+                  "end": "2023-03-16T02:55:36.035Z"
                 }
               }
             },
+            "id": "1",
+            "tracking": false,
             "type": "Delivery",
+            "provider_id": "89",
             "state": {
               "descriptor": {
-                "name": "Serviceable",
-                "code": "Serviceable"
+               
+                "code": "Pending"
               }
             },
+            "@ondc/org/provider_name": "Dunzo",
             "start": {
-              "locations": {
+              "location": {
                 "descriptor": {
                   "name": "La Pinoz and Pizza",
                   "images": [
-                    "https://static.uengage.in/uploads/5/image-9511-1654761689.jpg"
+                    "https://www.uengage.in/images/addo/logos/lapinoz-logo.png"
                   ]
                 },
                 "gps": "77.6245,12.9352"
@@ -113,26 +95,137 @@
               },
               "time": {
                 "range": {
-                  "start": "2023-03-10T07:09:14.055Z",
-                  "end": "2023-03-10T07:29:14.055Z"
+                  "start": "2023-03-16T02:15:36.035Z",
+                  "end": "2023-03-16T02:35:36.035Z"
                 }
               }
             }
           }
         ],
-        "payment": {
-          "uri": "https://juspay.in/",
-          "tl_method": "http/get",
-          "params": {
-            "amount": "1542.4",
+        "quote": {
+          "breakup": [
+            {
+              "title": "Exotic Tikka Pizza-Regular (serves 1, 17.7 Cm)",
+              "price": {
+                "currency": "INR",
+                "value": "128"
+              },
+              "@ondc/org/title_type": "item",
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "128"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "30"
+                  },
+                  "maximum": {
+                    "count": "30"
+                  }
+                }
+              },
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/item_id": "2947906"
+            },
+            {
+              "@ondc/org/item_id": "2947906",
+              "price": {
+                "currency": "INR",
+                "value": "6.4"
+              },
+              "@ondc/org/title_type": "tax",
+              "title": "Tax"
+            },
+            {
+              "title": "Sweet Corns Pizza",
+              "price": {
+                "currency": "INR",
+                "value": "560"
+              },
+              "@ondc/org/title_type": "item",
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "560"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "30"
+                  },
+                  "maximum": {
+                    "count": "30"
+                  }
+                }
+              },
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/item_id": "2947910"
+            },
+            {
+              "@ondc/org/item_id": "2947910",
+              "price": {
+                "currency": "INR",
+                "value": "28"
+              },
+              "@ondc/org/title_type": "tax",
+              "title": "Tax"
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "@ondc/org/title_type": "delivery",
+              "title": "Delivery Charges"
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "price": {
+                "currency": "INR",
+                "value": "1"
+              },
+              "@ondc/org/title_type": "packing",
+              "title": "Packing charges"
+            }
+          ],
+          "price": {
             "currency": "INR",
-            "transaction_id": "ONDC-4f0b14a3-b412-47f5-973c-4d17f202241c-1"
+            "value": "723.4"
+          },
+          "ttl": "PT60M"
+        },
+        "items": [
+          {
+            "fulfillment_id": "1",
+            "id": "2947906",
+            "quantity": {
+              "count": 1
+            }
+          },
+          {
+            "fulfillment_id": "1",
+            "id": "2947910",
+            "quantity": {
+              "count": 1
+            }
+          }
+        ],
+        "payment": {
+          "type": "ON-ORDER",
+          "params": {
+            "amount": "723.4",
+            "currency": "INR",
+            "transaction_id": "order_LS7LbE1uO1idmv"
           },
           "status": "PAID",
-          "type": "ON-ORDER",
           "collected_by": "BAP",
           "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
           "@ondc/org/settlement_details": [
             {
               "settlement_counterparty": "seller-app",
@@ -143,128 +236,17 @@
             }
           ]
         },
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "1542.4"
-          },
-          "breakup": [
+        "created_at": "2023-03-16T07:43:53.319Z",
+        "updated_at": "2023-03-16T07:45:36.351Z",
+        "provider": {
+          "id": "89",
+          "locations": [
             {
-              "@ondc/org/item_id": "2246216",
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "30"
-                  },
-                  "maximum": {
-                    "count": "30"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "596"
-                }
-              },
-              "title": "Margherita Pizza-The Giant (serves 8, 45.7)",
-              "price": {
-                "currency": "INR",
-                "value": "596"
-              }
-            },
-            {
-              "@ondc/org/item_id": "2246216",
-              "@ondc/org/title_type": "tax",
-              "title": "Tax",
-              "price": {
-                "currency": "INR",
-                "value": "29.8"
-              }
-            },
-            {
-              "@ondc/org/item_id": "2246217",
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "30"
-                  },
-                  "maximum": {
-                    "count": "30"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "872"
-                }
-              },
-              "title": "Margherita Pizza-The Monster (serves 12, 61 Cm)",
-              "price": {
-                "currency": "INR",
-                "value": "872"
-              }
-            },
-            {
-              "@ondc/org/item_id": "2246217",
-              "@ondc/org/title_type": "tax",
-              "title": "Tax",
-              "price": {
-                "currency": "INR",
-                "value": "43.6"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "@ondc/org/title_type": "delivery",
-              "title": "Delivery Charges",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "@ondc/org/title_type": "packing",
-              "title": "Packaging  Charges",
-              "price": {
-                "currency": "INR",
-                "value": "1"
-              }
+              "id": "123123"
             }
           ]
-        },
-        "created_at": "2023-03-10T12:29:18.121Z",
-        "updated_at": "2023-03-10T12:39:14.055Z"
+        }
       }
     }
-  },
   
-  "response": {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_status",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_uri": "https://ondc.uengage.in/",
-      "transaction_id": "4f0b14a3-b412-47f5-973c-4d17f202241c",
-      "message_id": "98dd449b-3565-4a26-b2f2-285ce8406f0f",
-      "timestamp": "2023-03-10T12:29:18.121Z",
-      "bpp_id": "ondc.uengage.in",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "ack": {
-        "status": "ACK"
-      }
-    }
-  }
 }

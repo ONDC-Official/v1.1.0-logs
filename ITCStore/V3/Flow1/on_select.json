@@ -1,0 +1,140 @@
+{
+   "context":{
+      "domain":"nic2004:52110",
+      "country":"IND",
+      "city":"std:080",
+      "action":"on_select",
+      "core_version":"1.1.0",
+      "bap_id":"buyer-app-preprod.ondc.org",
+      "bap_uri":"https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+      "bpp_id":"retailconnect.co.in",
+      "bpp_uri":"https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+      "transaction_id":"8105407f-79ca-4522-abed-411e98bce58c",
+      "message_id":"ddc6d53f-7ea0-45ce-97a8-312b44657f96",
+      "timestamp":"2023-03-17T10:16:27.741Z"
+   },
+   "message":{
+      "order":{
+         "provider":{
+            "id":"ONDC-STORE-BGLR"
+         },
+         "items":[
+            {
+               "fulfillment_id":"ba6baaac-a09e-43bb-8e4c-5530db53f89b",
+               "id":"QM VEGGIE 70-PK"
+            },
+            {
+               "fulfillment_id":"ba6baaac-a09e-43bb-8e4c-5530db53f89b",
+               "id":"MAGIC MASALA 93"
+            }
+         ],
+         "fulfillments":[
+            {
+               "id":"ba6baaac-a09e-43bb-8e4c-5530db53f89b",
+               "@ondc\/org\/provider_name":"ITC Store",
+               "tracking":false,
+               "@ondc\/org\/category":"Standard Delivery",
+               "@ondc\/org\/TAT":"P1D",
+               "state":{
+                  "descriptor":{
+                     "code":"Serviceable"
+                  }
+               }
+            }
+         ],
+         "quote":{
+            "price":{
+               "currency":"INR",
+               "value":"209"
+            },
+            "breakup":[
+               {
+                  "@ondc\/org\/item_id":"QM VEGGIE 70-PK",
+                  "@ondc\/org\/item_quantity":{
+                     "count":1
+                  },
+                  "item":{
+                     "quantity":{
+                        "available":{
+                           "count":"1"
+                        },
+                        "maximum":{
+                           "count":"1"
+                        }
+                     },
+                     "price":{
+                        "currency":"INR",
+                        "value":"50"
+                     }
+                  },
+                  "title":"Sunfeast YiPPee! Quik Mealz Veggie Delight, 70g",
+                  "@ondc\/org\/title_type":"item",
+                  "price":{
+                     "currency":"INR",
+                     "value":"50"
+                  }
+               },
+               {
+                  "@ondc\/org\/item_id":"MAGIC MASALA 93",
+                  "@ondc\/org\/item_quantity":{
+                     "count":1
+                  },
+                  "item":{
+                     "quantity":{
+                        "available":{
+                           "count":"1"
+                        },
+                        "maximum":{
+                           "count":"1"
+                        }
+                     },
+                     "price":{
+                        "currency":"INR",
+                        "value":"109"
+                     }
+                  },
+                  "title":"Sunfeast YiPPee Magic Masala 560g",
+                  "@ondc\/org\/title_type":"item",
+                  "price":{
+                     "currency":"INR",
+                     "value":"109"
+                  }
+               },
+               {
+                  "@ondc\/org\/item_id":"ba6baaac-a09e-43bb-8e4c-5530db53f89b",
+                  "title":"Delivery charges",
+                  "@ondc\/org\/title_type":"delivery",
+                  "price":{
+                     "currency":"INR",
+                     "value":"50.0"
+                  }
+               }
+            ],
+            "ttl":"P1D"
+         }
+      }
+   }
+}
+
+"Response":
+{
+   "context":{
+      "domain":"nic2004:52110",
+      "country":"IND",
+      "city":"std:080",
+      "action":"on_select",
+      "core_version":"1.1.0",
+      "bap_id":"buyer-app-preprod.ondc.org",
+      "bap_uri":"https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id":"retailconnect.co.in",
+      "bpp_uri":"https://retailconnect.co.in/ondc/public/OndcPreProd/callback",
+      "transaction_id":"8105407f-79ca-4522-abed-411e98bce58c",
+      "message_id":"ddc6d53f-7ea0-45ce-97a8-312b44657f96",
+      "timestamp":"2023-03-17T10:16:27.741Z"
+   },
+   "message":{
+      "ack":{
+         "status":"ACK"
+      }
+   }
+}

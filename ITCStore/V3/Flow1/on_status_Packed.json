@@ -1,0 +1,227 @@
+{
+   "context":{
+      "domain":"nic2004:52110",
+      "action":"on_status",
+      "core_version":"1.0.0",
+      "bap_id":"buyer-app-preprod.ondc.org",
+      "bap_uri":"https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+      "bpp_id":"retailconnect.co.in",
+      "bpp_uri":"https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+      "transaction_id":"8105407f-79ca-4522-abed-411e98bce58c",
+      "message_id":"f366579a-c5fa-468c-8e25-b5f4d53599ef",
+      "city":"std:080",
+      "country":"IND",
+      "timestamp":"2023-03-17T10:18:33.471Z"
+   },
+   "message":{
+      "order":{
+         "id":"2023-03-17-672252",
+         "state":"In-progress",
+         "provider":{
+            "id":"ONDC-STORE-BGLR",
+            "locations":[
+               {
+                  "id":"12.995210,77.717659"
+               }
+            ]
+         },
+         "items":[
+            {
+               "id":"QM VEGGIE 70-PK",
+               "fulfillment_id":"ba6baaac-a09e-43bb-8e4c-5530db53f89b",
+               "quantity":{
+                  "count":1
+               }
+            },
+            {
+               "id":"MAGIC MASALA 93",
+               "fulfillment_id":"ba6baaac-a09e-43bb-8e4c-5530db53f89b",
+               "quantity":{
+                  "count":1
+               }
+            }
+         ],
+         "billing":{
+            "name":"Nandita saini",
+            "address":{
+               "building":"kurgan",
+               "name":"Nandita saini",
+               "locality":"m403 sector 49",
+               "city":"Bengaluru",
+               "state":"Karnataka",
+               "country":"IND",
+               "area_code":"560076"
+            },
+            "email":"n.singh@thetechtonic.in",
+            "phone":"9818470079",
+            "created_at":"2023-03-17T10:16:33.834Z",
+            "updated_at":"2023-03-17T10:16:33.834Z"
+         },
+         "fulfillments":[
+            {
+               "id":"ba6baaac-a09e-43bb-8e4c-5530db53f89b",
+               "@ondc\/org\/provider_name":"ITC Store",
+               "type":"Delivery",
+               "state":{
+                  "descriptor":{
+                     "code":"Packed"
+                  }
+               },
+               "tracking":false,
+               "start":{
+                  "location":{
+                     "descriptor":{
+                        "name":"ONDC-STORE-BGLR"
+                     },
+                     "gps":"12.995210,77.717659"
+                  },
+                  "time":{
+                     "range":{
+                        "start":"2023-03-17T10:17:30.375Z",
+                        "end":"2023-03-19T10:17:31.470Z"
+                     }
+                  },
+                  "contact":{
+                     "phone":"1800-309-8994",
+                     "email":"support@itcstore.in"
+                  }
+               },
+               "end":{
+                  "location":{
+                     "gps":"12.898463, 77.600873",
+                     "address":{
+                        "building":"kurgan",
+                        "name":"Nandita saini",
+                        "locality":"m403 sector 49",
+                        "city":"Bengaluru",
+                        "state":"Karnataka",
+                        "country":"IND",
+                        "area_code":"560076"
+                     }
+                  },
+                  "time":{
+                     "range":{
+                        "start":"2023-03-17T10:17:30.375Z",
+                        "end":"2023-03-19T10:17:31.470Z"
+                     }
+                  },
+                  "contact":{
+                     "phone":"9818470079"
+                  }
+               }
+            }
+         ],
+         "quote":{
+            "price":{
+               "currency":"INR",
+               "value":"209"
+            },
+            "breakup":[
+               {
+                  "@ondc\/org\/item_id":"QM VEGGIE 70-PK",
+                  "@ondc\/org\/item_quantity":{
+                     "count":1
+                  },
+                  "title":"Sunfeast YiPPee! Quik Mealz Veggie Delight, 70g",
+                  "@ondc\/org\/title_type":"item",
+                  "price":{
+                     "currency":"INR",
+                     "value":"50"
+                  },
+                  "item":{
+                     "price":{
+                        "currency":"INR",
+                        "value":"50"
+                     }
+                  }
+               },
+               {
+                  "@ondc\/org\/item_id":"MAGIC MASALA 93",
+                  "@ondc\/org\/item_quantity":{
+                     "count":1
+                  },
+                  "title":"Sunfeast YiPPee Magic Masala 560g",
+                  "@ondc\/org\/title_type":"item",
+                  "price":{
+                     "currency":"INR",
+                     "value":"109"
+                  },
+                  "item":{
+                     "price":{
+                        "currency":"INR",
+                        "value":"109"
+                     }
+                  }
+               },
+               {
+                  "@ondc\/org\/item_id":"ba6baaac-a09e-43bb-8e4c-5530db53f89b",
+                  "title":"Delivery charges",
+                  "@ondc\/org\/title_type":"delivery",
+                  "price":{
+                     "currency":"INR",
+                     "value":"50.0"
+                  }
+               }
+            ]
+         },
+         "payment":{
+            "uri":"https:\/\/ondc.transaction.com\/payment",
+            "tl_method":"http\/get",
+            "params":{
+               "currency":"INR",
+               "amount":"209",
+               "transaction_id":"ONDC-8105407f-79ca-4522-abed-411e98bce58c-1"
+            },
+            "status":"PAID",
+            "type":"ON-ORDER",
+            "collected_by":"BAP",
+            "@ondc\/org\/buyer_app_finder_fee_type":"percent",
+            "@ondc\/org\/buyer_app_finder_fee_amount":"3.0",
+            "@ondc\/org\/settlement_details":[
+               {
+                  "settlement_counterparty":"seller-app",
+                  "settlement_phase":"sale-amount",
+                  "settlement_type":"Bank",
+                  "upi_address":"",
+                  "settlement_bank_account_no":"114605000635",
+                  "settlement_ifsc_code":"ICIC0000396",
+                  "beneficiary_name":"THE TECH TONIC",
+                  "bank_name":"ICICI BANK",
+                  "branch_name":"ICICI Bank Ltd, South Extension-II, New Delhi"
+               }
+            ]
+         },
+         "documents":[
+            {
+               "url":"https:\/\/retailconnect.co.in\/itcestore\/ONDC_INV\/ONDCBLR22ES00010.pdf",
+               "label":"Invoice"
+            }
+         ],
+         "created_at":"2023-03-17T10:17:30.375Z",
+         "updated_at":"2023-03-17T10:18:20.784Z"
+      }
+   }
+}
+
+"Response": 
+{
+   "context":{
+      "domain":"nic2004:52110",
+      "action":"on_status",
+      "core_version":"1.0.0",
+      "bap_id":"buyer-app-preprod.ondc.org",
+      "bap_uri":"https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id":"retailconnect.co.in",
+      "bpp_uri":"https://retailconnect.co.in/ondc/public/OndcPreProd/callback",
+      "transaction_id":"8105407f-79ca-4522-abed-411e98bce58c",
+      "message_id":"f366579a-c5fa-468c-8e25-b5f4d53599ef",
+      "city":"std:080",
+      "country":"IND",
+      "timestamp":"2023-03-17T10:18:33.471Z"
+   },
+   "message":{
+      "ack":{
+         "status":"ACK"
+      }
+   }
+}

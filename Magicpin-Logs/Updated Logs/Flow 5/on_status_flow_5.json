@@ -1,0 +1,205 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc",
+        "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc",
+        "transaction_id": "a2428ebf-4a60-4f2b-ad0e-4960ebdbda70",
+        "message_id": "1b9f7c0d-7151-4eac-bfc5-ef7b2677e185",
+        "timestamp": "2023-03-14T17:20:07.137Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-03-14-338673",
+            "state": "Created",
+            "provider": {
+                "id": "38272871",
+                "locations": [{
+                    "id": "38272871"
+                }],
+                "rateable": true
+            },
+            "items": [{
+                "id": "253504974",
+                "quantity": {
+                    "count": 1
+                },
+                "fulfillment_id": "7ca2b3dc-80ec-4164-bc49-d1c9bf3099e1"
+            }],
+            "documents": [{
+                "url": "https://dummy/invoice",
+                "label": "Invoice"
+            }],
+            "billing": {
+                "name": "Tarosh",
+                "address": {
+                    "name": "Tarosh",
+                    "building": "qwerty",
+                    "locality": "Abc",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560051"
+                },
+                "email": "tarosh.mathuria@magicpin.in",
+                "phone": "9090909090",
+                "created_at": "2023-03-14T17:19:51.100Z",
+                "updated_at": "2023-03-14T17:19:51.100Z"
+            },
+            "fulfillments": [{
+                "id": "7ca2b3dc-80ec-4164-bc49-d1c9bf3099e1",
+                "type": "Delivery",
+                "@ondc/org/provider_name": "MAGICPIN",
+                "state": {
+                    "descriptor": {
+                        "name": "Pending",
+                        "code": "Pending"
+                    }
+                },
+                "tracking": false,
+                "start": {
+                    "location": {
+                        "id": "38272871",
+                        "descriptor": {
+                            "name": "ONDC Test",
+                            "images": [
+                                "http://lh3.googleusercontent.com/-qmMJbt00xtHPz3VwpuWHRWOh34XSr08ZR32etA2L9yLTBZ8wA3g2WI-Fvy6leyyrisSAgwgK-FzGmMYkETuB3DnOAEd=s750"
+                            ]
+                        },
+                        "gps": "12.986283,77.594839",
+                        "address": {
+                            "name": "ONDC Test",
+                            "locality": "Shivajinagar",
+                            "city": "Bangalore",
+                            "state": "Karnataka",
+                            "country": "India",
+                            "area_code": "560051"
+                        }
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-03-14T17:20:02.462Z",
+                            "end": "2023-03-14T17:50:02.462Z"
+                        }
+                    },
+                    "contact": {
+                        "phone": "919876543210"
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.987171, 77.6041890000001",
+                        "address": {
+                            "name": "Tarosh",
+                            "building": "qwerty",
+                            "locality": "Abc",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560051"
+                        }
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-03-14T17:20:02.462Z",
+                            "end": "2023-03-14T17:50:02.462Z"
+                        }
+                    },
+                    "contact": {
+                        "phone": "9090909090",
+                        "email": "tarosh.mathuria@magicpin.in"
+                    },
+                    "person": {
+                        "name": "Tarosh"
+                    },
+                    "rateable": true
+                }
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "546.00"
+                },
+                "breakup": [{
+                        "@ondc/org/item_id": "253504974",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Paneer Tikka",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "520.00"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "520.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "253504974",
+                        "@ondc/org/title_type": "tax",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "26.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "7ca2b3dc-80ec-4164-bc49-d1c9bf3099e1",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "7ca2b3dc-80ec-4164-bc49-d1c9bf3099e1",
+                        "@ondc/org/title_type": "misc",
+                        "title": "Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "params": {
+                    "transaction_id": "ONDC-a2428ebf-4a60-4f2b-ad0e-4960ebdbda70-1",
+                    "amount": "546",
+                    "currency": "INR"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/collected_by_status": "Agree",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_basis": "Collection",
+                "@ondc/org/settlement_window": "P2D",
+                "@ondc/org/settlement_details": [{
+                    "settlement_counterparty": "seller-app",
+                    "settlement_phase": "sale-amount",
+                    "settlement_type": "neft",
+                    "settlement_bank_account_no": "50200011628734",
+                    "settlement_ifsc_code": "HDFC0001202",
+                    "bank_name": "HDFC Bank",
+                    "branch_name": "DLF Galleria, Gurgaon, 122009"
+                }]
+            },
+            "created_at": "2023-03-14T17:20:01.649Z",
+            "updated_at": "2023-03-14T17:20:02.462Z"
+        }
+    }
+}

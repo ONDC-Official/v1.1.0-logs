@@ -1,0 +1,103 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_update",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+      "transaction_id": "61350cbf-fe39-48c8-ba18-ae2af9e40c6b",
+      "message_id": "a5222641-1961-4c6a-8071-23b63f0ccb6f",
+      "timestamp": "2023-03-17T10:14:15.162Z",
+      "bpp_id": "ondc.hulsecure.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-03-17-723256",
+        "items": [
+          {
+            "id": "37970604785845",
+            "quantity": {
+              "count": 2
+            },
+            "tags": {
+              "status": "Return_Initiated"
+            },
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e-ReverseQC"
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e-ReverseQC",
+            "type": "Reverse QC",
+            "state": {
+              "descriptor": {
+                "code": "Pending"
+              }
+            },
+            "start": {
+              "time": {
+                "range": {
+                  "start": "2023-03-17T10:14:15.752Z",
+                  "end": "2023-03-17T10:14:15.752Z"
+                }
+              },
+              "instructions": {
+                "short_desc": "XYZ1",
+                "long_desc": "QR code will be attached to package",
+                "images": [
+                  "URL or data string as per spec"
+                ]
+              }
+            }
+          }
+        ],
+        "payment": {
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
+          "params": {
+            "amount": "748",
+            "currency": "INR",
+            "transaction_id": "ONDC-61350cbf-fe39-48c8-ba18-ae2af9e40c6b-1"
+          },
+          "status": "PAID",
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "JHAKAAS RETAIL PRIVATE LIMITED",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "upi_address": "",
+              "settlement_bank_account_no": "623905034810",
+              "settlement_ifsc_code": "ICIC0006239",
+              "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+              "bank_name": "ICICI BANK",
+              "branch_name": "Mumbai Chembur branch"
+            }
+          ]
+        },
+        "quote": {
+          "breakup": [
+            {
+              "@ondc/org/item_id": "37970604785845",
+              "@ondc/org/item_quantity": {
+                "count": "4"
+              },
+              "title": "Pond's Bright Beauty Spot-less Glow SPF 15 Day Cream 50 g",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "748"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }

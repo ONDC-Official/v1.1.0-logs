@@ -1,0 +1,140 @@
+{
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_update",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.enstore.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-03-15T10:41:26.478Z",
+      "message_id": "f1d83d06-f5cd-4396-9a9a-e94b36d454c1",
+      "core_version": "1.1.0",
+      "transaction_id": "6850f22d-1624-47ad-86e5-c2dfe3e4234d"
+    },
+    "message": {
+      "order": {
+        "id": "2023-03-15-641287",
+        "items": [
+          {
+            "id": "8103",
+            "tags": {
+              "status": "Return_Rejected"
+            },
+            "quantity": {
+              "count": 4
+            },
+            "fulfillment_id": "FPA:699:express:258:33005"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "3680.32",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "5988",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 5,
+                "price": {
+                  "value": "530.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": 24
+                  },
+                  "available": {
+                    "count": 24
+                  }
+                }
+              },
+              "price": {
+                "value": "2650.0",
+                "currency": "INR"
+              },
+              "title": "Amul Ghee Pouch",
+              "@ondc/org/item_id": "5988",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 5
+              }
+            },
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "8103",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 4,
+                "price": {
+                  "value": "257.58",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": 24
+                  },
+                  "available": {
+                    "count": 24
+                  }
+                }
+              },
+              "price": {
+                "value": "1030.32",
+                "currency": "INR"
+              },
+              "title": "Amul Pure Ghee Jar",
+              "@ondc/org/item_id": "8103",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 4
+              }
+            },
+            {
+              "price": {
+                "value": 0,
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:express:258:33005",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "state": "Created",
+        "provider": {
+          "id": "1016:699"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:express:258:33005",
+            "type": "Reverse QC",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }

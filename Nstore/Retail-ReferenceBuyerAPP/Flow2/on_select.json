@@ -1,0 +1,145 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_select",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-15T12:09:37.852Z",
+        "message_id": "42c943bc-1b45-431f-b795-0874568bb96f",
+        "core_version": "1.1.0",
+        "transaction_id": "1a16a4d0-814e-401e-b1dd-266d4477c564"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "115",
+                    "fulfillment_id": "20978"
+                },
+                {
+                    "id": "128",
+                    "fulfillment_id": "20978"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "1047.51",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "499.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "499.00",
+                            "currency": "INR"
+                        },
+                        "title": "Grilled Chicken Full",
+                        "@ondc/org/item_id": "115",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "115",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "259.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "2"
+                                },
+                                "available": {
+                                    "count": "2"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "518.00",
+                            "currency": "INR"
+                        },
+                        "title": "Chicken Nachos",
+                        "@ondc/org/item_id": "128",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "128",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20978",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "30.51",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20978",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "20978"
+            },
+            "fulfillments": [
+                {
+                    "id": "20978",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/TAT": "PT24H",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Evergreen Restaurant"
+                }
+            ]
+        }
+    }
+}
