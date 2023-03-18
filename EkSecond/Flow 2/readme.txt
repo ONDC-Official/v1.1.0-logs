@@ -1,1 +1,0 @@
-ONDC Ref buyer app doesn't let you change address after a different address is selected and "non-serviceable" error is sent to it. Hence as discussed over phone, we are doing flow 2 in two different transactions.
