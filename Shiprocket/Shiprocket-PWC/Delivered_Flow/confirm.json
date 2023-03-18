@@ -1,0 +1,173 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "sit.mytra.money",
+    "bap_uri": "https://sit.mytra.money/api/method/ondc_logistics_buyer/",
+    "bpp_id": "dev-ondc.shiprocket.in",
+    "bpp_uri": "https://dev-ondc.shiprocket.in/",
+    "transaction_id": "ONDC-LOG-BUY-REQ-00311",
+    "message_id": "ONDC-LOGBUYERCOMM-00667",
+    "timestamp": "2023-03-11T19:30:06.635107Z"
+  },
+  "message": {
+    "order": {
+      "id": "ONDC-LOG-BUY-REQ-00311",
+      "state": "Created",
+      "provider": {
+        "id": "1"
+      },
+      "items": [
+        {
+          "category_id": "Express Delivery",
+          "descriptor": {
+            "code": "P2H2P",
+            "long_desc": "Express Delivery",
+            "name": "Express Delivery",
+            "short_desc": "Express Delivery"
+          },
+          "fulfillment_id": "1",
+          "id": "1",
+          "parent_item_id": "",
+          "price": {
+            "currency": "INR",
+            "value": "51.00"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "51.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "51"
+            }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid",
+          "tracking": false,
+          "start": {
+            "person": {
+              "name": "Harsh Agrawal"
+            },
+            "location": {
+              "gps": "17.456417,78.376666",
+              "address": {
+                "name": "Test Warehouse-Billing",
+                "building": "Bizness Square",
+                "locality": "Hitech City",
+                "city": "Hyderabad",
+                "state": "Telangana",
+                "country": "India",
+                "area_code": "500081"
+              }
+            },
+            "contact": {
+              "phone": "9703525310",
+              "email": ""
+            }
+          },
+          "end": {
+            "person": {
+              "name": "Harsh Agrawal Agrawal"
+            },
+            "location": {
+              "gps": "17.439332, 78.457702",
+              "address": {
+                "name": "Harsh Agrawal - 4-Billing",
+                "building": " Opp Sister Niveditha School",
+                "locality": " Sridevi Apartment, Ameerpet",
+                "city": "Hyderabad",
+                "state": "Telangana",
+                "country": "India",
+                "area_code": "500016"
+              }
+            },
+            "contact": {
+              "phone": "9991112223",
+              "email": "harsh.agrawal1991@gmail.com"
+            }
+          }
+        }
+      ],
+      "billing": {
+        "name": "PwcTech Technologies Pvt Ltd",
+        "address": {
+          "name": "Test Warehouse-Billing",
+          "building": "Bizness Square",
+          "locality": "Hitech City",
+          "city": "Hyderabad",
+          "state": "Telangana",
+          "country": "India",
+          "area_code": "500081"
+        },
+        "phone": "9703525310",
+        "email": "",
+        "created_at": "2023-03-11T19:30:06.635107Z",
+        "updated_at": "2023-03-11T19:30:06.635107Z"
+      },
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Electronics",
+            "descriptor": {
+              "name": "Electronics"
+            },
+            "quantity": {
+              "count": 1,
+              "measure": {
+                "unit": "Kilogram",
+                "value": 1
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "1000"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "PwcTech Technologies Pvt Ltd"
+          },
+          "address": {
+            "name": "Test Warehouse-Billing",
+            "building": "Bizness Square",
+            "locality": "Hitech City",
+            "city": "Hyderabad",
+            "state": "Telangana",
+            "country": "India",
+            "area_code": "500081"
+          }
+        },
+        "order": {
+          "id": "SHIPMENT-00016",
+          "weight": {
+            "unit": "Kilogram",
+            "value": 1
+          }
+        }
+      },
+      "payment": {
+        "@ondc/org/collection_amount": "51.00",
+        "collected_by": "BAP",
+        "type": "ON-FULFILLMENT"
+      },
+      "created_at": "2023-03-11T19:30:06.635107Z",
+      "updated_at": "2023-03-11T19:30:06.635107Z"
+    }
+  }
+}

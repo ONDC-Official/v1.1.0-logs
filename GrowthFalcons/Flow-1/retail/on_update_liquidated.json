@@ -9,31 +9,31 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "falconsai.com",
         "bpp_uri": "https://falconsai.com/v1/ondc/ecomm/fnb",
-        "transaction_id": "c99b8974-3b1c-4208-9a4e-80821edb864b",
-        "message_id": "2a0403ee-6276-4aaf-a916-5100b644a7a1",
-        "timestamp": "2023-03-09T11:06:33.909Z",
+        "transaction_id": "7b4096d6-38e6-4299-aa8a-3154a4abb030",
+        "message_id": "9596670a-90e9-4a21-b812-726c67361c58",
+        "timestamp": "2023-03-16T16:30:00.937Z",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-02-09-226142",
+            "id": "2023-03-16-752359",
             "state": "Completed",
             "items": [
                 {
                     "id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
-                    "fulfillment_id": "2-ReverseQC",
+                    "fulfillment_id": "2",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "651eb42e-0eaf-4855-86c8-4c1501412fce",
+                    "fulfillment_id": "2",
                     "tags": {
                         "status": "Liquidated"
                     },
                     "quantity": {
                         "count": 0
-                    }
-                },
-                {
-                    "id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
-                    "fulfillment_id": "2",
-                    "quantity": {
-                        "count": 1
                     }
                 }
             ],
@@ -50,8 +50,8 @@
                 },
                 "email": "sandeep@gamil.com",
                 "phone": "9952445640",
-                "created_at": "2023-03-09T08:19:30.805Z",
-                "updated_at": "2023-03-09T08:19:30.805Z"
+                "created_at": "2023-03-16T11:23:06.085Z",
+                "updated_at": "2023-03-16T11:23:06.085Z"
             },
             "fulfillments": [
                 {
@@ -62,7 +62,7 @@
                             "code": "Order-delivered"
                         }
                     },
-                    "tracking": true,
+                    "tracking": false,
                     "person": {
                         "name": "Sandeep Pai"
                     },
@@ -72,13 +72,14 @@
                             "gps": "12.9076452868, 77.6352300637"
                         },
                         "time": {
+                            "timestamp": "2023-03-16T14:09:11.000Z",
                             "range": {
-                                "start": "2023-03-09T08:53:40.884Z",
-                                "end": "2023-03-09T08:53:40.884Z"
+                                "start": "2023-03-16T14:09:25.655Z",
+                                "end": "2023-03-16T14:09:25.655Z"
                             }
                         },
                         "contact": {
-                            "phone": "919296250006"
+                            "phone": "9296250006"
                         }
                     },
                     "end": {
@@ -95,9 +96,10 @@
                             }
                         },
                         "time": {
+                            "timestamp": "2023-03-16T14:09:23.000Z",
                             "range": {
-                                "start": "2023-03-09T08:53:40.884Z",
-                                "end": "2023-03-09T08:53:40.884Z"
+                                "start": "2023-03-16T14:09:25.655Z",
+                                "end": "2023-03-16T14:09:25.655Z"
                             }
                         },
                         "contact": {
@@ -122,35 +124,9 @@
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "0.0"
-                        },
-                        "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
-                        "@ondc/org/item_quantity": {
-                            "count": 0
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "230.0"
-                            },
-                            "quantity": {
-                                "available": {
-                                    "count": "10"
-                                },
-                                "maximum": {
-                                    "count": "10"
-                                }
-                            }
-                        }
-                    },
-                    {
-                        "title": "Chilli Paneer",
-                        "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
                             "value": "230.0"
                         },
-                        "@ondc/org/item_id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
+                        "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         },
@@ -176,7 +152,33 @@
                             "currency": "INR",
                             "value": "11.5"
                         },
-                        "@ondc/org/item_id": "6adb78a6-c13b-423a-ace9-851bff4cff88"
+                        "@ondc/org/item_id": "dcc8ac07-a934-46c4-9369-50d4d99b074f"
+                    },
+                    {
+                        "title": "Paneer Biryani",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        },
+                        "@ondc/org/item_id": "651eb42e-0eaf-4855-86c8-4c1501412fce",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "265.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
                     },
                     {
                         "title": "Packing Charges",
@@ -195,8 +197,8 @@
                 "tl_method": "http/get",
                 "params": {
                     "currency": "INR",
-                    "transaction_id": "ONDC-c99b8974-3b1c-4208-9a4e-80821edb864b-1",
-                    "amount": "498.31"
+                    "transaction_id": "ONDC-7b4096d6-38e6-4299-aa8a-3154a4abb030-1",
+                    "amount": "538.34"
                 },
                 "type": "ON-ORDER",
                 "status": "PAID",
@@ -211,7 +213,7 @@
                         "settlement_bank_account_no": "016905011967",
                         "settlement_ifsc_code": "ICIC0000169",
                         "upi_address": "",
-                        "beneficiary_name": "",
+                        "beneficiary_name": "GrowthFalcons",
                         "bank_name": "ICICI Bank",
                         "branch_name": "Indiranagar"
                     }
@@ -226,8 +228,8 @@
                 ],
                 "rateable": true
             },
-            "created_at": "2023-03-09T08:21:32.445Z",
-            "updated_at": "2023-03-09T11:06:33.915Z"
+            "created_at": "2023-03-16T11:25:55.950Z",
+            "updated_at": "2023-03-16T16:30:00.937Z"
         }
     }
 }

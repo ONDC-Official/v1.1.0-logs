@@ -1,0 +1,49 @@
+{
+    "context": {
+        "city": "std:080",
+        "action": "on_init",
+        "bap_id": "stagingapigateway.bizom.in/ondc",
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "domain": "nic2004:60232",
+        "bap_uri": "https://stagingapigateway.bizom.in/ondc",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-17T05:56:44.113Z",
+        "message_id": "3380998f-6f8e-46e3-89a1-4773cbae859b",
+        "core_version": "1.1.0",
+        "transaction_id": "17c01445-1c4a-428c-ae05-ad78b2ba7244"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "nextday"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "78",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "78",
+                            "currency": "INR"
+                        },
+                        "@ondc/org/item_id": "nextday",
+                        "@ondc/org/title_type": "Delivery Charge"
+                    }
+                ]
+            },
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": null
+            },
+            "provider": {
+                "id": "loadshare@ondc-preprod.loadshare.net"
+            }
+        }
+    }
+}

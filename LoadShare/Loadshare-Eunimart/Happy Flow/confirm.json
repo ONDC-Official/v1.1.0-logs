@@ -1,0 +1,141 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "ondc.eunimart.com",
+    "bap_uri": "https://ondc.eunimart.com/api/v1/ondc/lsp_bap/eunimart_lsp_bap/",
+    "transaction_id": "ad699547-2782-42b0-a85a-2cdebab27ae8",
+    "ttl": "PT30S",
+    "message_id": "2012ba7a-137a-4c95-89af-840e9d00770f",
+    "timestamp": "2023-03-10T12:07:45.431Z",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "id": "2",
+          "type": "Prepaid",
+          "start": {
+            "person": { "name": "Ramu" },
+            "location": {
+              "gps": "12.893308,77.586124",
+              "address": {
+                "name": "Ashish",
+                "building": "101",
+                "locality": "Bank of Baroda Jodhpur Village",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560078"
+              }
+            },
+            "contact": { "phone": "9894748270", "email": "arun@gmail.com" },
+            "instructions": {
+              "short_desc": "QR code attached to the package",
+              "long_desc": "QR code attached to the package",
+              "images": []
+            }
+          },
+          "end": {
+            "person": { "name": "Ramu" },
+            "location": {
+              "gps": "12.9127,77.6381",
+              "address": {
+                "name": "Mayank Rai",
+                "building": "102",
+                "locality": "Bank of BarodaJodhpur Village",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560102"
+              }
+            },
+            "contact": { "phone": "8056558432", "email": "jagan@gmail.com" },
+            "instructions": {
+              "short_desc": "Drop package at security gate",
+              "long_desc": "Drop package at security gate",
+              "additional_desc": { "content_type": "text/plain", "url": "" }
+            }
+          }
+        }
+      ],
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Grocery",
+            "descriptor": { "name": "Atta" },
+            "quantity": {
+              "count": 2,
+              "measure": { "unit": "Kilogram", "value": 0.35 }
+            },
+            "price": { "currency": "INR", "value": "300" }
+          }
+        ],
+        "provider": {
+          "descriptor": { "name": "Siva Store" },
+          "address": {
+            "name": "KHB Towers",
+            "street": "6th Block",
+            "locality": "Koramangala",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "area_code": "560070"
+          }
+        },
+        "order": {
+          "id": "SO/709/01",
+          "weight": { "unit": "Kilogram", "value": 0.7 }
+        }
+      },
+      "provider": { "id": "loadshare@ondc-preprod.loadshare.net" },
+      "id": "dbb693cd-4064-405e-a5c0-564bbef574a5",
+      "state": "Created",
+      "items": [
+        {
+          "id": "standard",
+          "category_id": "Standard Delivery",
+          "descriptor": { "code": "P2P" }
+        }
+      ],
+      "quote": {
+        "price": { "currency": "INR", "value": "78" },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "standard",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": { "currency": "INR", "value": "78" }
+          }
+        ]
+      },
+      "billing": {
+        "name": "Manik",
+        "address": {
+          "name": "D000, Prestige Towers",
+          "building": "My house or building name",
+          "locality": "Bannerghatta Road",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "India",
+          "area_code": "560078"
+        },
+        "email": "manikgh@gmail.com",
+        "phone": "9886098860",
+        "tax_number": "29AAACU1901H1ZK",
+        "created_at": "2023-03-10T12:07:36.153Z",
+        "updated_at": "2023-03-10T12:07:36.153Z"
+      },
+      "payment": {
+        "collected_by": "BAP",
+        "type": "POST-FULFILLMENT",
+        "@ondc/org/settlement_details": null
+      },
+      "created_at": "2023-03-10T12:07:45.431Z",
+      "updated_at": "2023-03-10T12:07:45.431Z"
+    }
+  }
+}

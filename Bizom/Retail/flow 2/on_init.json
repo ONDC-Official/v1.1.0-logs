@@ -1,0 +1,157 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_init",
+        "bap_id": "ondc.indiastack.cloud",
+        "bpp_id": "stagingapigateway.bizom.in/ondc",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "bpp_uri": "https://stagingapigateway.bizom.in/ondc",
+        "country": "IND",
+        "timestamp": "2023-03-17T05:56:46.960Z",
+        "message_id": "baf9457b-6b82-49eb-87a8-e488cb3e0438",
+        "core_version": "1.1.0",
+        "transaction_id": "fb687101-e8c2-4b14-b28e-64669fc2e828"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "47",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "17c01445-1c4a-428c-ae05-ad78b2ba7244"
+                },
+                {
+                    "id": "55",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "17c01445-1c4a-428c-ae05-ad78b2ba7244"
+                }
+            ],
+            "quote": {
+                "ttl": "P1D",
+                "price": {
+                    "value": "1123.73",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "598.15",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "598.15",
+                            "currency": "INR"
+                        },
+                        "title": "LuvIt Chocorich Classic Eclairs Chocolate | Birthday Party Pack | Bars (6 x 390 g)",
+                        "@ondc/org/item_id": "55",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "444.72",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "444.72",
+                            "currency": "INR"
+                        },
+                        "title": "LuvIt Chocorich Classic Eclairs Chocolate | Birthday Party Pack | Bars (4 x 390 g)",
+                        "@ondc/org/item_id": "47",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "80.86",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "17c01445-1c4a-428c-ae05-ad78b2ba7244",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "billing": {
+                "name": "SamarthPatel",
+                "email": "samarth.patel@iiitb.org",
+                "phone": "9898141644",
+                "address": {
+                    "city": "Bangalore",
+                    "door": "-",
+                    "name": "IIIT Bangalore",
+                    "state": "KARNATAKA",
+                    "country": "IN",
+                    "building": "IIITB",
+                    "locality": "Electronics City",
+                    "area_code": "560100"
+                },
+                "created_at": "2023-03-17T05:56:43.839Z",
+                "tax_number": "",
+                "updated_at": "2023-03-17T05:56:43.839Z"
+            },
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "HSBC",
+                        "branch_name": "Bangalore",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "Mobisy Technologies Pvt Ltd",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "HSBC0560002",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "073404378001"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "provider": {
+                "id": "3"
+            },
+            "fulfillments": [
+                {
+                    "id": "17c01445-1c4a-428c-ae05-ad78b2ba7244",
+                    "end": {
+                        "contact": {
+                            "phone": "9898141644"
+                        },
+                        "location": {
+                            "gps": "12.8449599,77.6632162",
+                            "address": {
+                                "city": "Bangalore",
+                                "door": "-",
+                                "name": "IIIT Bangalore",
+                                "state": "KARNATAKA",
+                                "country": "IN",
+                                "building": "IIITB",
+                                "locality": "Electronics City",
+                                "area_code": "560100"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": true,
+                    "provider_id": "3"
+                }
+            ],
+            "provider_location": {
+                "id": "3"
+            }
+        }
+    }
+}
