@@ -7,114 +7,100 @@
         "core_version": "1.1.0",
         "bap_id": "falconsai.com",
         "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
-        "transaction_id": "7b4096d6-38e6-4299-aa8a-3154a4abb030",
-        "message_id": "6da9428b-d0fd-4321-960e-3637814451bd",
-        "timestamp": "2023-03-16T14:09:21.715Z",
-        "ttl": "PT30S",
-        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
-        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/"
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "transaction_id": "4efdb805-836e-4480-a775-5137749e1103",
+        "message_id": "4838e7fd-1516-43ae-a13f-99131a635762",
+        "timestamp": "2023-03-17T10:53:30.945Z"
     },
     "message": {
         "order": {
-            "id": "2023-03-16-752359",
+            "id": "2023-03-17-443840",
             "state": "In-progress",
             "provider": {
-                "id": "dunzo-lsp"
+                "id": "loadshare@ondc-preprod.loadshare.net"
             },
             "items": [
                 {
-                    "id": "item-1e37a3bf-9a04-46a7-b8fb-ea2fe26a3ddd",
-                    "category_id": "Immediate Delivery",
+                    "id": "express",
                     "descriptor": {
-                        "code": "P2P",
-                        "name": "Dunzo",
-                        "short_desc": "Dunzo",
-                        "long_desc": "Dunzo"
-                    }
+                        "code": "P2P"
+                    },
+                    "category_id": "Immediate Delivery"
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "38"
+                    "value": "39"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "item-1e37a3bf-9a04-46a7-b8fb-ea2fe26a3ddd",
+                        "@ondc/org/item_id": "express",
                         "@ondc/org/title_type": "Delivery Charge",
                         "price": {
                             "currency": "INR",
-                            "value": "38"
+                            "value": "39"
                         }
                     }
                 ]
             },
             "fulfillments": [
                 {
+                    "id": "1",
                     "type": "Prepaid",
                     "state": {
                         "descriptor": {
-                            "code": "Order-picked-up",
-                            "name": "Order picked up"
+                            "code": "Order-picked-up"
                         }
                     },
-                    "tracking": false,
+                    "tracking": true,
                     "start": {
                         "time": {
                             "range": {
-                                "start": "2023-03-16T14:09:21.715Z",
-                                "end": "2023-03-16T14:09:21.715Z"
+                                "start": "2023-03-17T10:52:57.289Z",
+                                "end": "2023-03-17T10:52:57.289Z"
                             },
-                            "timestamp": "2023-03-16T14:09:11.000Z"
+                            "timestamp": "2023-03-17T10:52:55.000Z"
                         }
                     },
                     "end": {
                         "time": {
                             "range": {
-                                "start": "2023-03-16T14:09:21.715Z",
-                                "end": "2023-03-16T14:22:21.715Z"
-                            },
-                            "timestamp": ""
+                                "start": "2023-03-17T10:59:57.292Z",
+                                "end": "2023-03-17T11:08:30.945Z"
+                            }
                         }
                     },
-                    "tags": {},
                     "agent": {
-                        "name": "Yukta",
-                        "phone": "9368940246"
+                        "name": "Mahesh",
+                        "phone": "9900163002"
                     }
                 }
             ],
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP"
+            },
             "billing": {
+                "name": "Hitbyseo Digital Marketing & Innovations LLP",
                 "address": {
                     "name": "GrowthFalcons",
+                    "building": "T-5, KBF",
                     "locality": "AECS Layout, Kundalahalli",
                     "city": "Bangalore",
                     "state": "Karnataka",
                     "country": "India",
-                    "area_code": "560037",
-                    "building": "T-5, KBF"
+                    "area_code": "560037"
                 },
                 "email": "billing@growthfalcons.com",
-                "name": "Hitbyseo Digital Marketing & Innovations LLP",
                 "phone": "9845071842",
                 "tax_number": "29AAKFH0619N1ZZ",
-                "created_at": "2023-03-16T11:23:06.182Z",
-                "updated_at": "2023-03-16T11:23:06.182Z"
+                "created_at": "2023-03-17T10:31:42.942Z",
+                "updated_at": "2023-03-17T10:31:42.942Z"
             },
-            "created_at": "2023-03-16T11:25:57.569Z",
-            "updated_at": "2023-03-16T14:09:21.711Z",
-            "payment": {
-                "type": "POST-FULFILLMENT",
-                "@ondc/org/settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_type": "neft",
-                        "settlement_bank_account_no": "026291800001191",
-                        "settlement_ifsc_code": "YESB0000262"
-                    }
-                ],
-                "collected_by": "BAP"
-            }
+            "updated_at": "2023-03-17T10:52:57.293Z"
         }
-    }
+    },
+    "request_time": "2023-03-17T10:53:30.961Z"
 }

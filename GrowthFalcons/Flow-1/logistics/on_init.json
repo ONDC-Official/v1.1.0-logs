@@ -7,53 +7,42 @@
         "core_version": "1.1.0",
         "bap_id": "falconsai.com",
         "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
-        "transaction_id": "7b4096d6-38e6-4299-aa8a-3154a4abb030",
-        "message_id": "0daa99a0-2265-45f0-9fdc-378d6d754e70",
-        "timestamp": "2023-03-16T11:23:06.672Z",
-        "ttl": "PT30S",
-        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
-        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/"
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "transaction_id": "4efdb805-836e-4480-a775-5137749e1103",
+        "message_id": "60c3f9af-e824-40f6-b059-7e18cfa4d1f1",
+        "timestamp": "2023-03-17T10:31:42.974Z"
     },
     "message": {
         "order": {
+            "provider": {
+                "id": "loadshare@ondc-preprod.loadshare.net"
+            },
             "items": [
                 {
-                    "id": "item-1e37a3bf-9a04-46a7-b8fb-ea2fe26a3ddd"
+                    "id": "express"
                 }
             ],
-            "payment": {
-                "type": "POST-FULFILLMENT",
-                "@ondc/org/settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_type": "neft",
-                        "settlement_bank_account_no": "026291800001191",
-                        "settlement_ifsc_code": "YESB0000262"
-                    }
-                ],
-                "collected_by": "BAP"
-            },
-            "provider": {
-                "id": "dunzo-lsp"
-            },
-            "provider_location": {
-                "id": ""
-            },
             "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "39"
+                },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "item-1e37a3bf-9a04-46a7-b8fb-ea2fe26a3ddd",
+                        "@ondc/org/item_id": "express",
                         "@ondc/org/title_type": "Delivery Charge",
                         "price": {
                             "currency": "INR",
-                            "value": "38"
+                            "value": "39"
                         }
                     }
-                ],
-                "price": {
-                    "currency": "INR",
-                    "value": "38"
-                }
+                ]
+            },
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": null
             }
         }
     }
