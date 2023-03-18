@@ -1,0 +1,114 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_select",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_id": "api3.eksecond.in",
+		"bpp_uri": "https://api3.eksecond.in/ondc",
+		"transaction_id": "a5aad14e-ded9-4798-b2d3-0144743ce959",
+		"message_id": "1239579c-b050-42ce-82e3-907607f46841",
+		"timestamp": "2023-03-17T12:34:54.565Z"
+	},
+	"message": {
+		"order": {
+			"items": [
+				{
+					"id": "640843cb6a4db5be49821329",
+					"fulfillment_id": "c52124f9-2e65-474d-9bee-87be53e48d90"
+				}
+			],
+			"provider": {
+				"id": "632839af4bea4df42dfe336b"
+			},
+			"fulfillments": [
+				{
+					"id": "c52124f9-2e65-474d-9bee-87be53e48d90",
+					"@ondc/org/category": "Immediate Delivery",
+					"@ondc/org/TAT": "PT1H45M",
+					"@ondc/org/provider_name": "LoadShare Networks",
+					"state": {
+						"descriptor": {
+							"code": "Serviceable"
+						}
+					},
+					"tracking": false
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "400.49"
+				},
+				"breakup": [
+					{
+						"title": "Mutton Biryani Plate",
+						"@ondc/org/item_id": "640843cb6a4db5be49821329",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "320.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1"
+								},
+								"maximum": {
+									"count": "1"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						}
+					},
+					{
+						"title": "Packing charges",
+						"@ondc/org/item_id": "c52124f9-2e65-474d-9bee-87be53e48d90",
+						"@ondc/org/title_type": "packing",
+						"price": {
+							"currency": "INR",
+							"value": "2.5"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821329",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "16.32"
+						}
+					},
+					{
+						"title": "Delivery charges",
+						"@ondc/org/item_id": "c52124f9-2e65-474d-9bee-87be53e48d90",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						}
+					},
+					{
+						"title": "Convenience Fee",
+						"@ondc/org/item_id": "c52124f9-2e65-474d-9bee-87be53e48d90",
+						"@ondc/org/title_type": "misc",
+						"price": {
+							"currency": "INR",
+							"value": "22.67"
+						}
+					}
+				],
+				"ttl": "PT10M"
+			}
+		}
+	}
+}
