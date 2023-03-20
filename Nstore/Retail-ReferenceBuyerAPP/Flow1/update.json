@@ -1,0 +1,53 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "update",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-20T15:09:03.375Z",
+        "message_id": "3bc5c000-ea3e-4c99-9dd6-6002aca7e091",
+        "core_version": "1.1.0",
+        "transaction_id": "be3128b3-a896-48dd-8dea-94d6f8f1a68c"
+    },
+    "message": {
+        "order": {
+            "id": "2023-03-20-592155",
+            "items": [
+                {
+                    "id": "101",
+                    "tags": {
+                        "image": "",
+                        "reason_code": "001",
+                        "update_type": "return",
+                        "ttl_approval": "P2D",
+                        "ttl_reverseqc": "P3D"
+                    },
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "state": "Completed",
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_type": "upi",
+                        "settlement_phase": "refund",
+                        "settlement_amount": "20",
+                        "settlement_timestamp": "2023-03-20T15:09:03.397Z",
+                        "settlement_counterparty": "buyer"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "20971"
+            }
+        },
+        "update_target": "item"
+    }
+}

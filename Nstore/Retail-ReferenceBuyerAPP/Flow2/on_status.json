@@ -1,86 +1,112 @@
 {
     "context": {
         "ttl": "PT30S",
-        "city": "*",
-        "action": "on_update",
+        "city": "std:080",
+        "action": "on_status",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-15T13:00:10.943Z",
-        "message_id": "7743f29e-754a-442f-849e-84e548fedf12",
+        "timestamp": "2023-03-20T13:18:28.442Z",
+        "message_id": "f20defc2-f30e-4d8d-9083-05f30cfb623d",
         "core_version": "1.1.0",
-        "transaction_id": "b5b7d1f9-5081-4ec1-a83f-8b58fcaab471"
+        "transaction_id": "2790595e-98f2-471e-8d90-859fd3904745"
     },
     "message": {
         "order": {
-            "id": "2023-03-15-873586",
+            "id": "2023-03-20-295218",
+            "tags": {},
             "items": [
                 {
-                    "id": "102",
-                    "tags": {
-                        "status": "Return_Approved",
-                        "reason_code": 1,
-                        "update_type": "return",
-                        "ttl_approval": "P2D",
-                        "ttl_reverseqc": "P3D"
-                    },
+                    "id": "104",
                     "quantity": {
-                        "count": 4
-                    }
+                        "count": 1
+                    },
+                    "fulfillment_id": "20978"
                 },
                 {
-                    "id": "102",
-                    "tags": {
-                        "status": "Return_Approved",
-                        "reason_code": 1,
-                        "update_type": "return",
-                        "ttl_approval": "P2D",
-                        "ttl_reverseqc": "P3D"
-                    },
+                    "id": "106",
                     "quantity": {
-                        "count": 4
-                    }
-                },
-                {
-                    "id": "121",
-                    "price": {
-                        "value": "523.32",
-                        "currency": "INR"
+                        "count": 1
                     },
-                    "title": "Bagrrys Choco Fills 250 g",
-                    "quantity": {
-                        "count": 4
-                    },
-                    "fulfillment_id": "20971",
-                    "@ondc/org/title_type": "item"
+                    "fulfillment_id": "20978"
                 }
             ],
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "523.32",
+                    "value": "348.14",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
+                        "item": {
+                            "price": {
+                                "value": "169.00",
+                                "currency": "INR"
+                            }
+                        },
                         "price": {
-                            "value": "523.32",
+                            "value": "169.00",
                             "currency": "INR"
                         },
-                        "title": "Bagrrys Choco Fills 250 g",
-                        "fulfillment_id": "20971",
-                        "@ondc/org/item_id": "121",
+                        "title": "Chicken Manchow",
+                        "@ondc/org/item_id": "104",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
-                            "count": 4
+                            "count": 1
                         }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "169.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "169.00",
+                            "currency": "INR"
+                        },
+                        "title": "Chicken Sweet Corn",
+                        "@ondc/org/item_id": "106",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "106",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20978",
+                        "@ondc/org/title_type": "delivery"
                     }
                 ]
             },
-            "state": "Completed",
+            "state": "Cancelled",
             "billing": {
                 "name": "GirisutaA",
                 "email": "girisuta@nstore.in",
@@ -94,16 +120,16 @@
                     "locality": "8th Cross 5th Block Koramangala",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-15T12:57:42.000Z",
-                "updated_at": "2023-03-15T12:58:51.000Z"
+                "created_at": "2023-03-20T13:17:33.000Z",
+                "updated_at": "2023-03-20T13:05:44.000Z"
             },
             "payment": {
-                "uri": "",
+                "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "523.32",
+                    "amount": "348.14",
                     "currency": "INR",
-                    "transaction_id": ""
+                    "transaction_id": "ONDC-2790595e-98f2-471e-8d90-859fd3904745-1"
                 },
                 "status": "PAID",
                 "tl_method": "http/get",
@@ -124,31 +150,25 @@
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0"
             },
             "provider": {
-                "id": "20971",
+                "id": "20978",
                 "locations": [
                     {
-                        "id": "20971"
+                        "id": "20978"
                     }
                 ]
             },
-            "documents": [
-                {
-                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0MTE=",
-                    "label": "Invoice"
-                }
-            ],
-            "created_at": "2023-03-15T12:57:42.000Z",
-            "updated_at": "2023-03-15T12:58:51.000Z",
+            "documents": [],
+            "created_at": "2023-03-20T13:17:33.000Z",
+            "updated_at": "2023-03-20T13:05:44.000Z",
             "fulfillments": [
                 {
-                    "id": "20971",
+                    "id": "20978",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-15T12:58:52.000Z",
-                                "start": "2023-03-15T12:58:17.000Z"
-                            },
-                            "timestamp": "2023-03-15T12:58:52.000Z"
+                                "end": "2023-03-21T14:17:33.000Z",
+                                "start": "2023-03-21T13:17:33.000Z"
+                            }
                         },
                         "contact": {
                             "phone": "8447407778"
@@ -172,22 +192,21 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-15T12:58:17.000Z",
-                                "start": "2023-03-15T12:57:43.000Z"
-                            },
-                            "timestamp": "2023-03-15T12:58:17.000Z"
+                                "end": "2023-03-21T13:17:33.000Z",
+                                "start": "2023-03-20T13:17:33.000Z"
+                            }
                         },
                         "contact": {
                             "email": "aleeminuk@gmail.com",
-                            "phone": "9727288181"
+                            "phone": "9100000000"
                         },
                         "location": {
-                            "id": "20971",
-                            "gps": "12.9953231,77.6139826",
+                            "id": "20978",
+                            "gps": "12.9723902,77.6259991",
                             "descriptor": {
-                                "name": "Evergreen SuperMarket",
+                                "name": "Evergreen Restaurant",
                                 "images": [
-                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                    "https://nstoreassets.s3.amazonaws.com/20978/store_logo/20978_b8j21b3qley0w7ff.png"
                                 ]
                             }
                         },
@@ -198,13 +217,12 @@
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Order-delivered",
-                            "name": "Order-delivered"
+                            "code": "Cancelled"
                         }
                     },
                     "vehicle": {},
                     "tracking": false,
-                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                    "@ondc/org/provider_name": "Evergreen Restaurant"
                 }
             ]
         }
