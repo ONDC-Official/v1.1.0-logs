@@ -1,0 +1,148 @@
+{
+    "error": {
+      "code": "40002",
+      "path": "string",
+      "type": "DOMAIN-ERROR",
+      "message": "Apple - Washington stock is not available, Stock Unavailable, Oi-9424 Apple - Washington: Oops is no longer available, please remove the item from the cart to place the order"
+    },
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.enstore.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-03-11T09:40:08.885Z",
+      "message_id": "b2a7133a-de78-4304-9650-11113f7c9042",
+      "core_version": "1.1.0",
+      "transaction_id": "96ffccb5-126b-4f9a-8e7d-55493d7df311"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "5988",
+            "fulfillment_id": "FPA:699:express:258:31514"
+          },
+          {
+            "id": "9424",
+            "fulfillment_id": "FPA:699:express:258:31514"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "2000.0",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "5988",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 4,
+                "price": {
+                  "value": "500.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": 24.0
+                  },
+                  "available": {
+                    "count": 24.0
+                  }
+                }
+              },
+              "price": {
+                "value": "2000.0",
+                "currency": "INR"
+              },
+              "title": "Amul Ghee Pouch",
+              "@ondc/org/item_id": "5988",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 4.0
+              }
+            },
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "9424",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 0.0,
+                "price": {
+                  "value": "180.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": 24.0
+                  },
+                  "available": {
+                    "count": 0.0
+                  }
+                }
+              },
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Apple - Washington",
+              "@ondc/org/item_id": "9424",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 0.0
+              }
+            },
+            {
+              "price": {
+                "value": 0,
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:express:258:31514",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "provider": {
+          "id": "1016:699"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:express:258:31514",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            },
+            "tracking": true,
+            "@ondc/org/TAT": "PT1H",
+            "@ondc/org/category": "Immediate Delivery",
+            "@ondc/org/provider_name": "ondc-preprod.loadshare.net"
+          }
+        ],
+        "provider_location": {
+          "id": "1016:699"
+        }
+      }
+    }
+  }

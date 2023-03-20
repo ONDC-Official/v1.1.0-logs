@@ -1,0 +1,39 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bpp_id": "ondcpp.yaarilabs.com",
+    "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+    "transaction_id": "ONDC-LOG-BUY-REQ-00316",
+    "message_id": "ONDC-LOGBUYERCOMM-00676",
+    "bap_id": "sit.mytra.money",
+    "bap_uri": "https://sit.mytra.money/api/method/ondc_logistics_buyer",
+    "timestamp": "2023-03-13T15:43:48.723171Z",
+    "ttl": "PT30S",
+    "action": "update"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "ONDC-LOG-BUY-REQ-00316",
+      "state": "Created",
+      "items": [
+        {
+          "descriptor": { "code": "P2H2P" },
+          "id": "YAARI-2-D3ODMQD692",
+          "category_id": "Express Delivery"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid",
+          "tags": { "@ondc/org/order_ready_to_ship": "yes" }
+        }
+      ],
+      "updated_at": "2023-03-13T15:43:48.723171Z"
+    }
+  }
+}

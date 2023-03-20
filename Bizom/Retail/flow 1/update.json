@@ -1,0 +1,53 @@
+{
+	"context": {
+		"ttl": "PT30S",
+		"city": "std:080",
+		"action": "select",
+		"bap_id": "ondc.indiastack.cloud",
+		"bpp_id": "stagingapigateway.bizom.in/ondc",
+		"domain": "nic2004:52110",
+		"bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+		"bpp_uri": "https://stagingapigateway.bizom.in/ondc",
+		"country": "IND",
+		"timestamp": "2023-03-17T07:40:35.908Z",
+		"message_id": "59a6b4e0-6495-4a82-9362-030e31c6a0e9",
+		"core_version": "1.1.0",
+		"transaction_id": "e152cf78-b9d7-4960-b883-e6e476d6d10b"
+	},
+	"message": {
+		"order": {
+			"id": "0875e076-3289-4cfb-9f78-4e3df6b41b78",
+			"items": [
+				{
+					"id": "47",
+					"tags": {
+						"image": "",
+						"reason_code": "003",
+						"update_type": "return",
+						"ttl_approval": "",
+						"ttl_reverseqc": "P3D"
+					},
+					"quantity": {
+						"count": 1
+					}
+				}
+			],
+			"state": "Completed",
+			"payment": {
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_type": "upi",
+						"settlement_phase": "refund",
+						"settlement_amount": "444.72",
+						"settlement_timestamp": "2023-03-17T07:40:35.908Z",
+						"settlement_counterparty": "buyer"
+					}
+				]
+			},
+			"provider": {
+				"id": "3"
+			}
+		},
+		"update_target": "item"
+	}
+}

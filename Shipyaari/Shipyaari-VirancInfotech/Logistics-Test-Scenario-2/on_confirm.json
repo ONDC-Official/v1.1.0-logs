@@ -1,0 +1,71 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:022",
+    "core_version": "1.1.0",
+    "bpp_id": "ondcpp.yaarilabs.com",
+    "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+    "transaction_id": "f841d91b-007b-5399-866a-0ef9fa8c78fa",
+    "message_id": "a351c77a-5569-55ff-a7a7-0c26c6a24103",
+    "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+    "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+    "timestamp": "2023-03-13T12:11:42.506Z",
+    "ttl": "PT30S",
+    "action": "on_confirm"
+  },
+  "message": {
+    "order": {
+      "id": "f841d91b-007b-5399-866a-0ef9fa8c78fa",
+      "state": "Accepted",
+      "provider": { "id": "19550" },
+      "items": [
+        {
+          "descriptor": { "code": "P2H2P" },
+          "id": "YAARI-19550-X2HG4C5TJ2",
+          "category_id": "Express Delivery"
+        }
+      ],
+      "quote": {
+        "price": { "currency": "INR", "value": "590" },
+        "breakup": [
+          {
+            "price": { "currency": "INR", "value": "590" },
+            "@ondc/org/item_id": "YAARI-19550-X2HG4C5TJ2",
+            "@ondc/org/title_type": "Delivery Charge"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "state": { "descriptor": { "code": "Pending", "name": "Pending" } },
+          "id": "1",
+          "type": "Prepaid",
+          "tracking": true,
+          "@ondc/org/ewaybillno": "",
+          "@ondc/org/ebnexpirydate": "",
+          "@ondc/org/awb_no": "322916132171"
+        }
+      ],
+      "billing": {
+        "address": {
+          "name": "ONDC Test Seller Store",
+          "building": "Fort",
+          "locality": "Fort",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "India",
+          "area_code": "400001"
+        },
+        "name": "ONDC Test Seller Store",
+        "phone": "9999999999",
+        "email": "test@gmail.com",
+        "tax_number": "pan_number",
+        "created_at": "2023-03-13T12:11:35.747Z",
+        "updated_at": "2023-03-13T12:11:35.747Z"
+      },
+      "created_at": "2023-03-13T12:11:35.747Z",
+      "updated_at": "2023-03-13T12:11:42.506Z"
+    }
+  }
+}

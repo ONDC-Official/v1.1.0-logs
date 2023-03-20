@@ -4,15 +4,15 @@
     "country": "IND",
     "city": "std:080",
     "action": "confirm",
-    "timestamp": "2023-03-06T11:41:17.643Z",
+    "timestamp": "2023-03-10T10:11:39.207Z",
     "ttl": "PT30S",
     "core_version": "1.1.0",
     "bap_id": "ondc-qa.gofrugalretail.com",
     "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
     "bpp_id": "ondc-preprod.loadshare.net",
     "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
-    "transaction_id": "8fb24c07-c1e8-4d8b-84ec-76298dc88bcf",
-    "message_id": "retail::confirm::63796058::1028709"
+    "transaction_id": "c8705cef-bd66-4e39-b4b0-b8547a113f4f",
+    "message_id": "29b00565-55f6-42bd-ab08-16c393f1d8ab"
   },
   "message": {
     "order": {
@@ -38,19 +38,18 @@
         "email": "accounts@gofrugal.com",
         "phone": "9840812985",
         "tax_number": "33AACCG2423J1ZZ",
-        "created_at": "2023-03-06T11:40:49.573Z",
-        "updated_at": "2023-03-06T11:40:49.573Z"
+        "created_at": "2023-03-10T10:11:11.212Z",
+        "updated_at": "2023-03-10T10:11:11.212Z"
       },
       "fulfillments": [
         {
-          "id": "955CEFD793CC58FA5467A78A8CC281D6",
+          "id": "lsn_prepaid",
           "type": "Prepaid",
-          "provider_id": "5466-ONDC-1",
           "tracking": true,
           "start": {
             "location": {
               "id": "5466-ONDC-1-3330_location",
-              "gps": "12.9138124, 77.68498679999999",
+              "gps": "12.9731244, 77.5948792",
               "address": {
                 "door": "",
                 "name": "MARKETPLACE SELLER1",
@@ -63,14 +62,8 @@
                 "area_code": "560035"
               }
             },
-            "time": {
-              "range": {
-                "start": "2023-03-06T13:41:17.073Z",
-                "end": "2023-03-06T14:11:17.073Z"
-              }
-            },
             "instructions": {
-              "short_desc": "9894",
+              "short_desc": "4192",
               "long_desc": "QR code will be attached to package"
             },
             "contact": {
@@ -81,40 +74,34 @@
           },
           "end": {
             "location": {
-              "gps": "12.966836,77.593904",
+              "gps": "12.938208, 77.619106",
               "address": {
-                "name": "JIRA Atlassian Group of Companies",
-                "building": "SCOM-1034 JIRA Retesting",
-                "locality": "JIRA Atlassian Group of Companies",
+                "name": "Sherin",
+                "building": "bangalore",
+                "locality": "loadshare networks",
                 "city": "Bengaluru",
                 "state": "Karnataka",
-                "country": "India",
-                "area_code": "560071"
+                "country": "IND",
+                "area_code": "560095"
               }
             },
-            "time": {
-              "range": {
-                "start": "2023-03-06T15:41:17.073Z",
-                "end": "2023-03-06T16:11:17.073Z"
-              }
-            },
-            "instructions": { "name": "Status for drop", "short_desc": "1644" },
+            "instructions": { "name": "Status for drop", "short_desc": "1751" },
             "contact": {
-              "phone": "9047757688",
-              "email": "prasanth123@gmail.com"
+              "phone": "8899112244",
+              "email": "sherinshafa2016@gmail.com"
             },
-            "person": { "name": "Testingssss" }
+            "person": { "name": "Sherin" }
           },
           "tags": { "@ondc/org/order_ready_to_ship": "no" },
           "@ondc/org/provider_name": "LoadShare Networks"
         }
       ],
-      "id": "50486edc696dfe6361f1869ab1476e8519ef41ac",
+      "id": "fc803cf71a2aa48e3d569bda7c7ce4055b7c857e",
       "quote": {
-        "price": { "currency": "INR", "value": "96" },
+        "price": { "currency": "INR", "value": "78" },
         "breakup": [
           {
-            "price": { "currency": "INR", "value": "96" },
+            "price": { "currency": "INR", "value": "78" },
             "@ondc/org/item_id": "nextday",
             "@ondc/org/title_type": "Delivery Charge"
           }
@@ -123,21 +110,21 @@
       "state": "Created",
       "payment": {
         "type": "POST-FULFILLMENT",
-        "collected_by": "BPP",
-        "@ondc/org/collection_amount": "96"
+        "collected_by": "BAP",
+        "@ondc/org/collection_amount": "78"
       },
       "provider": { "id": "loadshare@ondc-preprod.loadshare.net" },
-      "created_at": "2023-03-06T11:41:17.643Z",
-      "updated_at": "2023-03-06T11:41:17.643Z",
+      "created_at": "2023-03-10T10:11:39.207Z",
+      "updated_at": "2023-03-10T10:11:39.207Z",
       "@ondc/org/linked_order": {
         "items": [
           {
             "descriptor": { "name": "KIT KAT" },
             "quantity": {
-              "count": 1,
+              "count": 3,
               "measure": { "value": 200, "unit": "Gram" }
             },
-            "price": { "currency": "INR", "value": "100.00" },
+            "price": { "currency": "INR", "value": "300.00" },
             "category_id": "Grocery"
           }
         ],
@@ -156,7 +143,7 @@
           }
         },
         "order": {
-          "id": "CFCAF0EFEE08D6F81FABB417C770E2B9",
+          "id": "2023-02-10-245747",
           "weight": { "value": 200.0, "unit": "Gram" }
         }
       }

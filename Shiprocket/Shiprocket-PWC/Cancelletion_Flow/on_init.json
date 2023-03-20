@@ -1,0 +1,51 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
+    "core_version": "1.1.0",
+    "bap_id": "sit.mytra.money",
+    "bap_uri": "https://sit.mytra.money/api/method/ondc_logistics_buyer/",
+    "bpp_id": "dev-ondc.shiprocket.in",
+    "bpp_uri": "https://dev-ondc.shiprocket.in/",
+    "transaction_id": "ONDC-LOG-BUY-REQ-00307",
+    "message_id": "ONDC-LOGBUYERCOMM-00649",
+    "timestamp": "2023-03-11T13:40:12.143Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "1"
+      },
+      "provider_location": {
+        "id": "SR-Location"
+      },
+      "items": [
+        {
+          "id": "1"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "51.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "51"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP"
+      }
+    }
+  }
+}
