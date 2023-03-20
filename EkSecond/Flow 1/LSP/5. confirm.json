@@ -1,0 +1,194 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "confirm",
+		"core_version": "1.1.0",
+		"bap_id": "api3.eksecond.in",
+		"bap_uri": "https://api3.eksecond.in/ondc",
+		"bpp_id": "ondc-preprod.loadshare.net",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"transaction_id": "632839af4bea4df42dfe336b|6b3e90b8-55fe-46f9-b867-cf924caacfa0",
+		"message_id": "812daf14-a38a-4726-82ad-95465fb68529",
+		"timestamp": "2023-03-20T05:13:58.110Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"@ondc/org/linked_order": {
+				"items": [
+					{
+						"descriptor": {
+							"name": "Mutton Biryani Plate"
+						},
+						"price": {
+							"currency": "INR",
+							"value": "640.00"
+						},
+						"category_id": "F&B",
+						"quantity": {
+							"count": 2,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 1
+							}
+						}
+					},
+					{
+						"descriptor": {
+							"name": "Imperial Special Mutton Biryani"
+						},
+						"price": {
+							"currency": "INR",
+							"value": "1317.00"
+						},
+						"category_id": "F&B",
+						"quantity": {
+							"count": 3,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 1
+							}
+						}
+					}
+				],
+				"provider": {
+					"descriptor": {
+						"name": "Rumaan"
+					},
+					"address": {
+						"name": "Rumaan",
+						"street": "3rd Floor, Gold Sand, Ambalipura - Sarjapur Rd",
+						"building": "1",
+						"locality": "Doddakannelli",
+						"city": "Bengaluru",
+						"state": "Karnataka",
+						"country": "IND",
+						"area_code": "560035"
+					}
+				},
+				"order": {
+					"id": "2023-03-20-981755",
+					"weight": {
+						"unit": "Kilogram",
+						"value": 1
+					}
+				}
+			},
+			"id": "005a4120-848c-4a9f-a35c-c0fd07d8386b",
+			"created_at": "2023-03-20T05:13:58.110Z",
+			"updated_at": "2023-03-20T05:13:58.110Z",
+			"items": [
+				{
+					"id": "express",
+					"descriptor": {
+						"code": "P2P"
+					},
+					"category_id": "Immediate Delivery"
+				}
+			],
+			"provider": {
+				"id": "loadshare@ondc-preprod.loadshare.net"
+			},
+			"fulfillments": [
+				{
+					"id": "lsn_prepaid",
+					"type": "Prepaid",
+					"start": {
+						"location": {
+							"gps": "12.913371523733359,77.68308302883554",
+							"address": {
+								"name": "Rumaan",
+								"building": "1",
+								"locality": "Doddakannelli",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560035"
+							}
+						},
+						"instructions": {
+							"short_desc": "O5SA",
+							"long_desc": "Ensure to display pickup code on counter before pickup"
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "mohd@gmail.com"
+						},
+						"person": {
+							"name": "Manager"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.9075050000001, 77.695502",
+							"address": {
+								"name": "Abdul Aziz",
+								"building": "Ambalipura- sarjapur Rd",
+								"locality": "3rd Floor, Gold Sand",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560035"
+							}
+						},
+						"instructions": {
+							"short_desc": "5KTF",
+							"long_desc": "Ensure to display pickup code on counter before pickup"
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "syedabdul12696@gmail.com"
+						},
+						"person": {
+							"name": "Abdul Aziz"
+						}
+					},
+					"tags": {
+						"@ondc/org/order_ready_to_ship": "yes"
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "42"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "express",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "42"
+						}
+					}
+				]
+			},
+			"payment": {
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc/org/settlement_details": []
+			},
+			"billing": {
+				"name": "Ek Second Technologies",
+				"email": "najeeb@eksecon.in",
+				"phone": "9000912423",
+				"created_at": "2023-03-20T05:12:35.875Z",
+				"updated_at": "2023-03-20T05:12:35.875Z",
+				"address": {
+					"name": "EkSecond Pvt Ltd",
+					"building": "8-7-171/10/14/B",
+					"locality": "Old Bowenpally",
+					"city": "secunderabad",
+					"state": "Telangana",
+					"country": "India",
+					"area_code": "500011"
+				},
+				"tax_number": "ADFSDF34343"
+			},
+			"state": "Created"
+		}
+	}
+}
