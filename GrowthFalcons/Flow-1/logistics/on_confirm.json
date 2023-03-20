@@ -7,44 +7,40 @@
         "core_version": "1.1.0",
         "bap_id": "falconsai.com",
         "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
-        "transaction_id": "7b4096d6-38e6-4299-aa8a-3154a4abb030",
-        "message_id": "5349bcb0-9580-43f0-bac9-93bd08682313",
-        "timestamp": "2023-03-16T11:26:00.568Z",
-        "ttl": "PT30S",
-        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
-        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/"
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "transaction_id": "4efdb805-836e-4480-a775-5137749e1103",
+        "message_id": "4e176b84-eb73-47f7-8a9e-02321d9be06e",
+        "timestamp": "2023-03-17T10:32:28.379Z"
     },
     "message": {
         "order": {
-            "id": "2023-03-16-752359",
-            "state": "Created",
+            "id": "2023-03-17-443840",
+            "state": "Accepted",
             "provider": {
-                "id": "dunzo-lsp"
+                "id": "loadshare@ondc-preprod.loadshare.net"
             },
             "items": [
                 {
-                    "id": "item-1e37a3bf-9a04-46a7-b8fb-ea2fe26a3ddd",
-                    "category_id": "Immediate Delivery",
+                    "id": "express",
                     "descriptor": {
-                        "code": "P2P",
-                        "name": "Dunzo",
-                        "short_desc": "Dunzo",
-                        "long_desc": "Dunzo"
-                    }
+                        "code": "P2P"
+                    },
+                    "category_id": "Immediate Delivery"
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "38"
+                    "value": "39"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "item-1e37a3bf-9a04-46a7-b8fb-ea2fe26a3ddd",
+                        "@ondc/org/item_id": "express",
                         "@ondc/org/title_type": "Delivery Charge",
                         "price": {
                             "currency": "INR",
-                            "value": "38"
+                            "value": "39"
                         }
                     }
                 ]
@@ -55,49 +51,51 @@
                     "type": "Prepaid",
                     "state": {
                         "descriptor": {
-                            "code": "Pending",
-                            "name": "Pending"
+                            "code": "Pending"
                         }
                     },
-                    "tracking": false,
+                    "tracking": true,
                     "start": {
                         "time": {
                             "range": {
-                                "start": "2023-03-16T11:26:00.568Z",
-                                "end": "2023-03-16T11:41:00.568Z"
+                                "start": "2023-03-17T10:47:29.000Z",
+                                "end": "2023-03-17T10:57:29.000Z"
                             }
                         }
                     },
                     "end": {
                         "time": {
                             "range": {
-                                "start": "2023-03-16T11:26:00.568Z",
-                                "end": "2023-03-16T12:01:00.568Z"
+                                "start": "2023-03-17T11:17:29.000Z",
+                                "end": "2023-03-17T11:32:29.000Z"
                             }
                         }
-                    },
-                    "tags": {}
+                    }
                 }
             ],
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP"
+            },
             "billing": {
+                "name": "Hitbyseo Digital Marketing & Innovations LLP",
                 "address": {
                     "name": "GrowthFalcons",
+                    "building": "T-5, KBF",
                     "locality": "AECS Layout, Kundalahalli",
                     "city": "Bangalore",
                     "state": "Karnataka",
                     "country": "India",
-                    "area_code": "560037",
-                    "building": "T-5, KBF"
+                    "area_code": "560037"
                 },
                 "email": "billing@growthfalcons.com",
-                "name": "Hitbyseo Digital Marketing & Innovations LLP",
                 "phone": "9845071842",
                 "tax_number": "29AAKFH0619N1ZZ",
-                "created_at": "2023-03-16T11:23:06.182Z",
-                "updated_at": "2023-03-16T11:23:06.182Z"
+                "created_at": "2023-03-17T10:31:42.942Z",
+                "updated_at": "2023-03-17T10:31:42.942Z"
             },
-            "created_at": "2023-03-16T11:23:06.405Z",
-            "updated_at": "2023-03-16T11:23:06.405Z"
+            "created_at": "2023-03-17T10:32:28.342Z",
+            "updated_at": "2023-03-17T10:32:28.379Z"
         }
     }
 }

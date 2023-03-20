@@ -1,0 +1,117 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.sellerapp.in",
+        "bpp_uri": "https://ondcpreprod.sellerapp.in/bpp/u/",
+        "transaction_id": "4ffc1ded-d1f6-4b76-94bf-640cff3e0cea",
+        "message_id": "dbdff8d5-d885-45ea-ae34-99397828f028",
+        "timestamp": "2023-03-18T16:38:15.415Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "slrp-1276898"
+            },
+            "items": [
+                {
+                    "id": "77683588",
+                    "fulfillment_id": "ce456490-c264-4140-94d7-ea3fe4a67628"
+                },
+                {
+                    "id": "77683598",
+                    "fulfillment_id": "ce456490-c264-4140-94d7-ea3fe4a67628"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ce456490-c264-4140-94d7-ea3fe4a67628",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "@ondc/org/category": "Next Day Delivery",
+                    "@ondc/org/TAT": "P1D",
+                    "@ondc/org/provider_name": "LoadShare Networks"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "614"
+                },
+                "breakup": [
+                    {
+                        "title": "Sleepy Owl Salted Caramel Cold Brew Coffee - Bottle",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100"
+                        },
+                        "@ondc/org/item_id": "77683588",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "100"
+                                },
+                                "maximum": {
+                                    "count": "20"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "100"
+                            }
+                        }
+                    },
+                    {
+                        "title": "slrp-unique",
+                        "price": {
+                            "currency": "INR",
+                            "value": "475"
+                        },
+                        "@ondc/org/item_id": "77683598",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "1"
+                                },
+                                "maximum": {
+                                    "count": "20"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "475"
+                            }
+                        }
+                    },
+                    {
+                        "title": "Delivery Fees",
+                        "price": {
+                            "currency": "INR",
+                            "value": "39"
+                        },
+                        "@ondc/org/item_id": "ce456490-c264-4140-94d7-ea3fe4a67628",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}

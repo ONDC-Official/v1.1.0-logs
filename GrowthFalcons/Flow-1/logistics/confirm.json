@@ -7,20 +7,20 @@
         "core_version": "1.1.0",
         "bap_id": "falconsai.com",
         "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
-        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
-        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
-        "transaction_id": "7b4096d6-38e6-4299-aa8a-3154a4abb030",
-        "message_id": "5349bcb0-9580-43f0-bac9-93bd08682313",
-        "timestamp": "2023-03-16T11:25:56.597Z",
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "transaction_id": "4efdb805-836e-4480-a775-5137749e1103",
+        "message_id": "4e176b84-eb73-47f7-8a9e-02321d9be06e",
+        "timestamp": "2023-03-17T10:32:28.342Z",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-03-16-752359",
+            "id": "2023-03-17-443840",
             "state": "Created",
             "items": [
                 {
-                    "id": "item-1e37a3bf-9a04-46a7-b8fb-ea2fe26a3ddd",
+                    "id": "express",
                     "descriptor": {
                         "code": "P2P"
                     },
@@ -41,14 +41,14 @@
                 "email": "billing@growthfalcons.com",
                 "phone": "9845071842",
                 "tax_number": "29AAKFH0619N1ZZ",
-                "created_at": "2023-03-16T11:23:06.182Z",
-                "updated_at": "2023-03-16T11:23:06.182Z"
+                "created_at": "2023-03-17T10:31:42.942Z",
+                "updated_at": "2023-03-17T10:31:42.942Z"
             },
             "fulfillments": [
                 {
                     "id": "1",
                     "type": "Prepaid",
-                    "tracking": false,
+                    "tracking": true,
                     "start": {
                         "location": {
                             "gps": "12.9076452868,77.6352300637",
@@ -63,7 +63,7 @@
                             }
                         },
                         "instructions": {
-                            "short_desc": "7597175906",
+                            "short_desc": "5461137463",
                             "long_desc": ""
                         },
                         "contact": {
@@ -107,39 +107,29 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "38"
+                    "value": "39"
                 },
                 "breakup": [
                     {
                         "@ondc/org/title_type": "Delivery Charge",
                         "price": {
                             "currency": "INR",
-                            "value": "38"
+                            "value": "39"
                         },
-                        "@ondc/org/item_id": "item-1e37a3bf-9a04-46a7-b8fb-ea2fe26a3ddd"
+                        "@ondc/org/item_id": "express"
                     }
                 ]
             },
             "payment": {
                 "type": "POST-FULFILLMENT",
                 "collected_by": "BAP",
-                "@ondc/org/settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_bank_account_no": "026291800001191",
-                        "settlement_ifsc_code": "YESB0000262",
-                        "settlement_type": "neft"
-                    }
-                ]
+                "@ondc/org/settlement_details": null
             },
             "provider": {
-                "id": "dunzo-lsp"
+                "id": "loadshare@ondc-preprod.loadshare.net"
             },
-            "provider_location": {
-                "location_id": ""
-            },
-            "created_at": "2023-03-16T11:25:56.597Z",
-            "updated_at": "2023-03-16T11:25:56.597Z",
+            "created_at": "2023-03-17T10:32:28.342Z",
+            "updated_at": "2023-03-17T10:32:28.342Z",
             "@ondc/org/linked_order": {
                 "items": [
                     {
@@ -156,25 +146,25 @@
                             "count": 1,
                             "measure": {
                                 "value": 1,
-                                "unit": null
+                                "unit": "Kilogram"
                             }
                         }
                     },
                     {
-                        "id": "651eb42e-0eaf-4855-86c8-4c1501412fce",
+                        "id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
                         "descriptor": {
-                            "name": "Paneer Biryani"
+                            "name": "Chilli Paneer"
                         },
                         "price": {
                             "currency": "INR",
-                            "value": "265"
+                            "value": "230"
                         },
                         "category_id": "F&B",
                         "quantity": {
                             "count": 1,
                             "measure": {
                                 "value": 1,
-                                "unit": null
+                                "unit": "Kilogram"
                             }
                         }
                     }
@@ -195,7 +185,7 @@
                     }
                 },
                 "order": {
-                    "id": "2023-03-16-752359",
+                    "id": "2023-03-17-443840",
                     "weight": {
                         "value": 5,
                         "unit": "Kilogram"
