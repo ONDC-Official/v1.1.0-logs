@@ -1,0 +1,153 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_update",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_id": "api3.eksecond.in",
+		"bpp_uri": "https://api3.eksecond.in/ondc",
+		"transaction_id": "6b3e90b8-55fe-46f9-b867-cf924caacfa0",
+		"message_id": "71a09408-6ed8-44b6-b785-886a3a90649c",
+		"timestamp": "2023-03-20T05:31:15.432Z"
+	},
+	"message": {
+		"order": {
+			"id": "2023-03-20-981755",
+			"items": [
+				{
+					"id": "640843cb6a4db5be49821329",
+					"fulfillment_id": "1a524372-ddbd-4a3a-9dad-e157847ab494",
+					"quantity": {
+						"count": 2
+					}
+				},
+				{
+					"id": "63db97929cc68fbae328fa65",
+					"fulfillment_id": "1a524372-ddbd-4a3a-9dad-e157847ab494",
+					"quantity": {
+						"count": 0
+					}
+				},
+				{
+					"id": "63db97929cc68fbae328fa65",
+					"quantity": {
+						"count": 3
+					},
+					"tags": {
+						"status": "Liquidated"
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "820.05"
+				},
+				"breakup": [
+					{
+						"title": "Imperial Special Mutton Biryani",
+						"@ondc/org/item_id": "63db97929cc68fbae328fa65",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "0.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 0
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "3"
+								},
+								"maximum": {
+									"count": "3"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "439"
+							}
+						}
+					},
+					{
+						"title": "Mutton Biryani Plate",
+						"@ondc/org/item_id": "640843cb6a4db5be49821329",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "640.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 2
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "2"
+								},
+								"maximum": {
+									"count": "2"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						}
+					},
+					{
+						"title": "Packing charges",
+						"@ondc/org/item_id": "1a524372-ddbd-4a3a-9dad-e157847ab494",
+						"@ondc/org/title_type": "packing",
+						"price": {
+							"currency": "INR",
+							"value": "2.5"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "63db97929cc68fbae328fa65",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "0"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821329",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "16.32"
+						}
+					},
+					{
+						"title": "Delivery charges",
+						"@ondc/org/item_id": "1a524372-ddbd-4a3a-9dad-e157847ab494",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						}
+					},
+					{
+						"title": "Convenience Fee",
+						"@ondc/org/item_id": "1a524372-ddbd-4a3a-9dad-e157847ab494",
+						"@ondc/org/title_type": "misc",
+						"price": {
+							"currency": "INR",
+							"value": "122.23"
+						}
+					}
+				],
+				"ttl": "PT10M"
+			},
+			"state": "Completed"
+		}
+	}
+}
