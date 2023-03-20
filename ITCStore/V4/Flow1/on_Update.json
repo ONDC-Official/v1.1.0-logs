@@ -1,0 +1,97 @@
+{
+   "context":{
+      "domain":"nic2004:52110",
+      "action":"on_update",
+      "core_version":"1.1.0",
+      "bap_id":"buyer-app-preprod.ondc.org",
+      "bap_uri":"https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+      "bpp_id":"retailconnect.co.in",
+      "bpp_uri":"https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+      "transaction_id":"f6fedccb-fc9c-4b32-88e4-a47dc5080e6d",
+      "message_id":"17f14fcf-ec23-46a4-a83a-4a2355aebeee",
+      "city":"std:080",
+      "country":"IND",
+      "timestamp":"2023-03-20T07:59:20.374Z"
+   },
+   "message":{
+      "order":{
+         "id":"2023-03-20-712685",
+         "state":"Completed",
+         "items":[
+            {
+               "id":"QM VEGGIE 70-PK",
+               "fulfillment_id":"d8144329-e495-4cc5-90c9-e2482eed8727",
+               "quantity":{
+                  "count":1
+               }
+            },
+            {
+               "id":"QM VEGGIE 70-PK",
+               "quantity":{
+                  "count":"1"
+               },
+               "tags":{
+                  "status":"Liquidated"
+               }
+            }
+         ],
+         "quote":{
+            "price":{
+               "currency":"INR",
+               "value":"159"
+            },
+            "breakup":[
+               {
+                  "@ondc\/org\/item_id":"MAGIC MASALA 93",
+                  "@ondc\/org\/title_type":"item",
+                  "@ondc\/org\/item_quantity":{
+                     "count":"1"
+                  },
+                  "item":{
+                     "price":{
+                        "currency":"INR",
+                        "value":"109"
+                     }
+                  },
+                  "price":{
+                     "currency":"INR",
+                     "value":"109"
+                  }
+               },
+               {
+                  "@ondc\/org\/item_id":"d8144329-e495-4cc5-90c9-e2482eed8727",
+                  "title":"Delivery charges",
+                  "@ondc\/org\/title_type":"delivery",
+                  "price":{
+                     "currency":"INR",
+                     "value":"50.0"
+                  }
+               }
+            ]
+         }
+      }
+   }
+}
+
+"Response":
+{
+   "context":{
+      "domain":"nic2004:52110",
+      "action":"on_update",
+      "core_version":"1.1.0",
+      "bap_id":"buyer-app-preprod.ondc.org",
+      "bap_uri":"https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id":"retailconnect.co.in",
+      "bpp_uri":"https://retailconnect.co.in/ondc/public/OndcPreProd/callback",
+      "transaction_id":"f6fedccb-fc9c-4b32-88e4-a47dc5080e6d",
+      "message_id":"17f14fcf-ec23-46a4-a83a-4a2355aebeee",
+      "city":"std:080",
+      "country":"IND",
+      "timestamp":"2023-03-20T07:59:20.374Z"
+   },
+   "message":{
+      "ack":{
+         "status":"ACK"
+      }
+   }
+}
