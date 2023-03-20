@@ -1,7 +1,7 @@
 {
     "context": {
         "ttl": "PT30S",
-        "city": "std:080",
+        "city": "*",
         "action": "on_update",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
@@ -9,50 +9,52 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-15T12:31:07.818Z",
-        "message_id": "4e656f98-04a3-4a24-94f7-c9c1d8086aed",
+        "timestamp": "2023-03-20T15:40:57.183Z",
+        "message_id": "9816c2a1-40a6-452e-9e76-09c81da87b49",
         "core_version": "1.1.0",
-        "transaction_id": "aa2f2a49-4f44-41bb-8ba2-c78f68add300"
+        "transaction_id": "e8298cbd-be13-4424-92e9-d633e24de8b2"
     },
     "message": {
         "order": {
-            "id": "2023-03-15-887231",
+            "id": "2023-03-20-238443",
             "items": [
                 {
-                    "id": "238",
+                    "id": "101",
                     "tags": {
-                        "status": "Return_Approved",
-                        "reason_code": 1,
+                        "status": "Return_Picked",
+                        "reason_code": 3,
                         "update_type": "return",
                         "ttl_approval": "P2D",
                         "ttl_reverseqc": "P3D"
                     },
                     "quantity": {
                         "count": 1
-                    }
+                    },
+                    "fulfillment_id": "20971-ReverseQC"
                 },
                 {
-                    "id": "238",
+                    "id": "101",
                     "tags": {
-                        "status": "Return_Approved",
-                        "reason_code": 1,
+                        "status": "Return_Picked",
+                        "reason_code": 3,
                         "update_type": "return",
                         "ttl_approval": "P2D",
                         "ttl_reverseqc": "P3D"
                     },
                     "quantity": {
                         "count": 1
-                    }
+                    },
+                    "fulfillment_id": "20971-ReverseQC"
                 },
                 {
-                    "id": "241",
+                    "id": "224",
                     "price": {
-                        "value": "167.00",
+                        "value": "112.92",
                         "currency": "INR"
                     },
-                    "title": "Saffola Classic Instant Masala Oats 500 g",
+                    "title": "Maggi Masala Penne Instant Pazzta Family Saver Pack 130 g",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     },
                     "fulfillment_id": "20971",
                     "@ondc/org/title_type": "item"
@@ -61,21 +63,21 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "167.00",
+                    "value": "112.92",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "price": {
-                            "value": "167.00",
+                            "value": "112.92",
                             "currency": "INR"
                         },
-                        "title": "Saffola Classic Instant Masala Oats 500 g",
+                        "title": "Maggi Masala Penne Instant Pazzta Family Saver Pack 130 g",
                         "fulfillment_id": "20971",
-                        "@ondc/org/item_id": "241",
+                        "@ondc/org/item_id": "224",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         }
                     }
                 ]
@@ -94,16 +96,16 @@
                     "locality": "8th Cross 5th Block Koramangala",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-15T12:23:35.000Z",
-                "updated_at": "2023-03-15T12:24:45.000Z"
+                "created_at": "2023-03-20T15:35:58.000Z",
+                "updated_at": "2023-03-10T08:04:42.000Z"
             },
             "payment": {
-                "uri": "",
+                "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "167.00",
+                    "amount": "112.92",
                     "currency": "INR",
-                    "transaction_id": ""
+                    "transaction_id": "ONDC-e8298cbd-be13-4424-92e9-d633e24de8b2-1"
                 },
                 "status": "PAID",
                 "tl_method": "http/get",
@@ -133,22 +135,22 @@
             },
             "documents": [
                 {
-                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0MDY=",
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0NjU=",
                     "label": "Invoice"
                 }
             ],
-            "created_at": "2023-03-15T12:23:35.000Z",
-            "updated_at": "2023-03-15T12:24:45.000Z",
+            "created_at": "2023-03-20T15:35:58.000Z",
+            "updated_at": "2023-03-10T08:04:42.000Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-15T12:24:45.000Z",
-                                "start": "2023-03-15T12:24:08.000Z"
+                                "end": "2023-03-20T15:36:33.000Z",
+                                "start": "2023-03-20T15:36:13.000Z"
                             },
-                            "timestamp": "2023-03-15T12:24:45.000Z"
+                            "timestamp": "2023-03-20T15:36:33.000Z"
                         },
                         "contact": {
                             "phone": "8447407778"
@@ -172,10 +174,10 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-15T12:24:08.000Z",
-                                "start": "2023-03-15T12:23:35.000Z"
+                                "end": "2023-03-20T15:36:13.000Z",
+                                "start": "2023-03-20T15:35:59.000Z"
                             },
-                            "timestamp": "2023-03-15T12:24:08.000Z"
+                            "timestamp": "2023-03-20T15:36:13.000Z"
                         },
                         "contact": {
                             "email": "aleeminuk@gmail.com",
@@ -198,11 +200,75 @@
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Order-delivered",
-                            "name": "Order-delivered"
+                            "code": "Order-delivered"
                         }
                     },
                     "vehicle": {},
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                },
+                {
+                    "id": "20971-ReverseQC",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-20T15:40:57.094Z",
+                                "start": "2023-03-20T15:40:34.000Z"
+                            },
+                            "timestamp": "2023-03-20T15:40:57.094Z"
+                        },
+                        "contact": {
+                            "email": "aleeminuk@gmail.com",
+                            "phone": "9727288181"
+                        },
+                        "location": {
+                            "gps": "12.9953231,77.6139826",
+                            "descriptor": {
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
+                            }
+                        },
+                        "instructions": {
+                            "name": "",
+                            "long_desc": "",
+                            "short_desc": ""
+                        }
+                    },
+                    "type": "Reverse QC",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-20T15:40:14.000Z",
+                                "start": "2023-03-20T15:40:34.000Z"
+                            },
+                            "timestamp": "2023-03-20T15:40:14.000Z"
+                        },
+                        "contact": {
+                            "email": "aleeminuk@gmail.com",
+                            "phone": "9727288181"
+                        },
+                        "location": {
+                            "gps": "12.9953231,77.6139826",
+                            "descriptor": {
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
+                            }
+                        },
+                        "instructions": {
+                            "name": "",
+                            "long_desc": "",
+                            "short_desc": ""
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
                     "tracking": false,
                     "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }
