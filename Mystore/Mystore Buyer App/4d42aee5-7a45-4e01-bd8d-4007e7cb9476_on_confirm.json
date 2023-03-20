@@ -2,45 +2,46 @@
   "request": {
     "context": {
       "domain": "nic2004:52110",
-      "action": "on_status",
+      "action": "on_confirm",
       "core_version": "1.1.0",
       "bap_id": "beta.mystore.in",
       "bap_uri": "https://beta.mystore.in/ondc/1.0/",
       "bpp_id": "retailconnect.co.in",
       "bpp_uri": "https://retailconnect.co.in/ondc/public/OndcPreProd/callback",
-      "transaction_id": "afac9ed1-58d6-467e-9012-38eba640679e",
-      "message_id": "4cdecd77-644f-42ab-b200-f0a775f892a1",
+      "transaction_id": "4d42aee5-7a45-4e01-bd8d-4007e7cb9476",
+      "message_id": "27961966-25d2-40c2-8382-84a326c34e34",
       "city": "std:080",
       "country": "IND",
-      "timestamp": "1970-01-01T05:30:00.270Z"
+      "timestamp": "2023-03-20T08:03:26.465Z"
     },
     "message": {
       "order": {
-        "id": "64146f818521df84487cb80f",
-        "state": "In-progress",
+        "id": "6418134bfbe6240002a96108",
+        "state": "Accepted",
         "provider": {
           "id": "ONDC-STORE-BGLR",
           "locations": [
             {
-              "id": "12.995210,77.717659"
+              "id": "ONDC-STORE-BGLR"
             }
           ]
         },
+        "rateable": true,
         "items": [
           {
             "id": "MD1253IN1",
-            "fulfillment_id": "e281005d-01dc-4f1d-99f8-eb2573c8e66e",
+            "fulfillment_id": "f74f8633-e968-4b56-8ed8-485f74a14e15",
             "quantity": {
-              "count": "1"
+              "count": 1
             }
           }
         ],
         "billing": {
           "name": "saurabh",
           "address": {
-            "building": " barkha road ",
-            "name": "saurabh",
-            "locality": " barkha road ",
+            "building": "mangol puri",
+            "name": "barkha road",
+            "locality": "barkha road",
             "city": "New Delhi",
             "state": "Delhi",
             "country": "IND",
@@ -48,32 +49,32 @@
           },
           "email": "saurabh.singh@hippoinnovations.com",
           "phone": "8368476734",
-          "created_at": "2023-03-17T08:01:55.267Z",
-          "updated_at": "2023-03-17T13:46:04.558Z"
+          "created_at": "2023-03-20T07:55:37.090Z",
+          "updated_at": "2023-03-20T07:55:37.090Z"
         },
         "fulfillments": [
           {
-            "id": "e281005d-01dc-4f1d-99f8-eb2573c8e66e",
+            "id": "f74f8633-e968-4b56-8ed8-485f74a14e15",
             "@ondc/org/provider_name": "ITC Store",
             "type": "Delivery",
             "state": {
               "descriptor": {
+                "name": "Pending",
                 "code": "Pending"
               }
             },
             "tracking": false,
             "start": {
               "location": {
+                "id": "ONDC-STORE-BGLR",
                 "descriptor": {
                   "name": "ONDC-STORE-BGLR"
                 },
                 "gps": "12.995210,77.717659"
               },
-              "time": {
-                "range": {
-                  "start": "1970-01-01T05:30:00.270Z",
-                  "end": "1970-01-01T05:30:00.270Z"
-                }
+              "instructions": {
+                "name": "Pending",
+                "short_desc": "Pending"
               },
               "contact": {
                 "phone": "1800-309-8994",
@@ -84,8 +85,8 @@
               "location": {
                 "gps": "12.97192,77.51281",
                 "address": {
-                  "building": " barkha road ",
-                  "name": "saurabh",
+                  "building": "mangol puri",
+                  "name": "barkha road",
                   "locality": "barkha road",
                   "city": "New Delhi",
                   "state": "Delhi",
@@ -93,16 +94,15 @@
                   "area_code": "110083"
                 }
               },
-              "time": {
-                "range": {
-                  "start": "1970-01-01T05:30:00.270Z",
-                  "end": "1970-01-01T05:30:00.270Z"
-                }
+              "instructions": {
+                "name": "Pending",
+                "short_desc": "Pending"
               },
               "contact": {
                 "phone": "8368476734"
               }
-            }
+            },
+            "rateable": true
           }
         ],
         "quote": {
@@ -114,7 +114,7 @@
             {
               "@ondc/org/item_id": "MD1253IN1",
               "@ondc/org/item_quantity": {
-                "count": "1"
+                "count": 1
               },
               "title": "Mangaldeep 3in1 Agarbatti - 3 unique, long lasting fragrances",
               "@ondc/org/title_type": "item",
@@ -130,8 +130,8 @@
               }
             },
             {
-              "@ondc/org/item_id": "e281005d-01dc-4f1d-99f8-eb2573c8e66e",
               "title": "Delivery charges",
+              "@ondc/org/item_id": "f74f8633-e968-4b56-8ed8-485f74a14e15",
               "@ondc/org/title_type": "delivery",
               "price": {
                 "currency": "INR",
@@ -141,56 +141,48 @@
           ]
         },
         "payment": {
-          "uri": "https://ondc.transaction.com/payment",
-          "tl_method": "http/get",
           "params": {
             "currency": "INR",
-            "amount": "175",
-            "transaction_id": "TXN-_4LBKr617"
+            "amount": "175.0000",
+            "transaction_id": "TXN-coWQLr188"
           },
           "status": "PAID",
           "type": "ON-ORDER",
           "collected_by": "BAP",
           "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
           "@ondc/org/settlement_details": [
             {
               "settlement_counterparty": "seller-app",
               "settlement_phase": "sale-amount",
               "settlement_type": "rtgs",
-              "settlement_bank_account_no": "114605000635",
-              "settlement_ifsc_code": "ICIC0000396",
-              "beneficiary_name": "THE TECH TONIC",
-              "bank_name": "ICICI BANK",
-              "branch_name": "ICICI Bank Ltd, South Extension-II, New Delhi"
+              "settlement_bank_account_no": "XXXXXXXXXX",
+              "settlement_ifsc_code": "XXXXXXXXX",
+              "beneficiary_name": "xxxxx",
+              "bank_name": "xxxx",
+              "branch_name": "xxxx"
             }
           ]
         },
-        "documents": [
-          {
-            "url": "",
-            "label": "Invoice"
-          }
-        ],
-        "created_at": "1970-01-01T05:30:00.270Z",
-        "updated_at": "1970-01-01T05:30:00.270Z"
+        "created_at": "2023-03-20T08:03:23.894Z",
+        "updated_at": "2023-03-20T08:03:26.465Z"
       }
     }
   },
   "response": {
     "context": {
       "domain": "nic2004:52110",
-      "action": "on_status",
+      "action": "on_confirm",
       "core_version": "1.1.0",
       "bap_id": "beta.mystore.in",
       "bap_uri": "https://beta.mystore.in/ondc/1.0/",
       "bpp_id": "retailconnect.co.in",
       "bpp_uri": "https://retailconnect.co.in/ondc/public/OndcPreProd/callback",
-      "transaction_id": "afac9ed1-58d6-467e-9012-38eba640679e",
-      "message_id": "4cdecd77-644f-42ab-b200-f0a775f892a1",
+      "transaction_id": "4d42aee5-7a45-4e01-bd8d-4007e7cb9476",
+      "message_id": "27961966-25d2-40c2-8382-84a326c34e34",
       "city": "std:080",
       "country": "IND",
-      "timestamp": "1970-01-01T05:30:00.270Z"
+      "timestamp": "2023-03-20T08:03:26.465Z"
     },
     "message": {
       "ack": {
