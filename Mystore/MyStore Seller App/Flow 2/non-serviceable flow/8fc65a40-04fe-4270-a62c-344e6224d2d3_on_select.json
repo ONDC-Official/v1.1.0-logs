@@ -1,0 +1,120 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.0.0",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "8fc65a40-04fe-4270-a62c-344e6224d2d3",
+      "message_id": "c273c1e6-f461-4a66-b009-b834cd0bf119",
+      "timestamp": "2023-03-21T13:39:54.591Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "62733ab9f1f53df939f25300"
+        },
+        "provider_location": {
+          "id": "62733ab9f1f53df939f25300"
+        },
+        "items": [
+          {
+            "id": "641435ce9e3780d6c5f3b609",
+            "location_id": "62733ab9f1f53df939f25300",
+            "fulfillment_id": "Fulfillment1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "290"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "641435ce9e3780d6c5f3b609",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "rice 100gm",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "240"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "40"
+                  },
+                  "maximum": {
+                    "count": "40"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "240"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50"
+              }
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "Fulfillment1",
+            "@ondc/org/provider_name": "mystore",
+            "tracking": true,
+            "state": {
+              "descriptor": {
+                "name": "Non-serviceable",
+                "code": "Non-serviceable"
+              }
+            },
+            "@ondc/org/category": "Standard Delivery",
+            "@ondc/org/TAT": "P2D"
+          }
+        ]
+      }
+    },
+    "error": {
+      "type": "DOMAIN-ERROR",
+      "code": "30009"
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.0.0",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "8fc65a40-04fe-4270-a62c-344e6224d2d3",
+      "message_id": "c273c1e6-f461-4a66-b009-b834cd0bf119",
+      "timestamp": "2023-03-21T13:39:54.591Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}
