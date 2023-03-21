@@ -1,0 +1,280 @@
+{
+    "_id": {
+      "$oid": "641815f419bfb1e2267cfda2"
+    },
+    "body": {
+      "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "status",
+        "core_version": "1.1.0",
+        "transaction_id": "a91d8529-4e19-4b21-9f61-a91460b1656f",
+        "message_id": "aaa03726-1f64-4a31-9c30-911918da5949",
+        "timestamp": "2023-03-20T08:14:43.061Z",
+        "bpp_id": "ondc.hulsecure.in",
+        "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+        "bap_id": "ondc.indiastack.cloud",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/"
+      },
+      "message": {
+        "order_id": "d1b8f007-9eaa-4937-b671-5fd681c2d8b1"
+      }
+    },
+    "header": {
+      "host": "ondc.hulsecure.in",
+      "connection": "close",
+      "user-agent": "python-requests/2.25.1",
+      "accept-encoding": "gzip, deflate",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "authorization": "Signature keyId=\"ondc.indiastack.cloud|00922f26-4021-4f79-98ca-6a269ee91c84|ed25519\",algorithm=\"ed25519\",created=\"1679300083\",expires=\"1679472883\",headers=\"(created) (expires) digest\",signature=\"zEglUW5Snw2lZt8tpFm9Zme21EGlaT3S2nbvL0A67DwE0IRauGor9im14lcOq9Qw6Q/kEqzHRW3R8TolzYhiDQ==\"",
+      "x-request-id": "3a093957-c0e0-407c-82bb-f7ceb74810cd",
+      "x-forwarded-for": "13.251.201.18",
+      "x-forwarded-proto": "https",
+      "x-forwarded-port": "443",
+      "via": "1.1 vegur",
+      "connect-time": "0",
+      "x-request-start": "1679300083821",
+      "total-route-time": "0",
+      "content-length": "490"
+    },
+    "response": {
+      "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "transaction_id": "a91d8529-4e19-4b21-9f61-a91460b1656f",
+        "message_id": "aaa03726-1f64-4a31-9c30-911918da5949",
+        "timestamp": "2023-03-20T08:14:43.822Z",
+        "bpp_id": "ondc.hulsecure.in",
+        "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+        "bap_id": "ondc.indiastack.cloud",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/"
+      },
+      "message": {
+        "order": {
+          "id": "d1b8f007-9eaa-4937-b671-5fd681c2d8b1",
+          "state": "Completed",
+          "provider": {
+            "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
+            "location": [
+              {
+                "id": "18275-ONDC-1-11094"
+              }
+            ],
+            "rateable": true
+          },
+          "items": [
+            {
+              "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "id": "40295033634997",
+              "quantity": {
+                "count": 1
+              }
+            },
+            {
+              "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e-ReverseQC",
+              "id": "41096805023925",
+              "quantity": {
+                "count": 1
+              },
+              "tags": {
+                "status": "Return_Delivered"
+              }
+            }
+          ],
+          "billing": {
+            "address": {
+              "area_code": "250004",
+              "city": "Meerut",
+              "country": "IN",
+              "building": "-",
+              "door": "-",
+              "locality": "-",
+              "name": "near medical college",
+              "state": "UTTAR PRADESH"
+            },
+            "created_at": "2023-03-20T06:32:10.788Z",
+            "email": "srishtisharma5445@gmail.com",
+            "name": "srishtisharma",
+            "phone": "9548319796",
+            "updated_at": "2023-03-20T06:32:10.788Z",
+            "tax_number": ""
+          },
+          "fulfillments": [
+            {
+              "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "type": "Delivery",
+              "tracking": true,
+              "state": {
+                "descriptor": {
+                  "code": "Order-delivered"
+                }
+              },
+              "start": {
+                "location": {
+                  "id": "5466-ONDC-1-3330_location",
+                  "descriptor": {
+                    "name": "The U Shop",
+                    "images": [
+                      "https://cdn.shopify.com/s/files/1/0521/3460/9077/files/abc_150x.png?v=1631895895"
+                    ]
+                  },
+                  "gps": "12.956399,77.636803"
+                },
+                "contact": {
+                  "phone": "18008330506",
+                  "email": "customercare@theushop.in"
+                }
+              },
+         "end": {
+                "location": {
+                  "id": "5466-ONDC-1-3330_location",
+                  "descriptor": {
+                    "name": "The U Shop",
+                    "images": [
+                      "https://cdn.shopify.com/s/files/1/0521/3460/9077/files/abc_150x.png?v=1631895895"
+                    ]
+                  },
+                  "gps": "12.956399,77.636803"
+                },
+                "contact": {
+                  "phone": "18008330506"
+                },
+                 "time": {
+                "timestamp": "2023-03-20T10:25:13.866Z",
+                "range": {
+                  "start": "2023-03-20T15:55:13.000Z",
+                  "end": "2023-03-23T15:55:13.000Z"
+                }
+              }
+              }
+            }
+          ],
+          "quote": {
+            "price": {
+              "currency": "INR",
+              "value": "394"
+            },
+            "breakup": [
+              {
+                "@ondc/org/item_id": "41096805023925",
+                "@ondc/org/item_quantity": {
+                  "count": "1"
+                },
+                "title": "Dove Healthy Ritual for Strengthening Hair Mask, 300ml",
+                "@ondc/org/title_type": "item",
+                "price": {
+                  "currency": "INR",
+                  "value": "394"
+                }
+              },
+              {
+                "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "title": "Delivery charges",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "0"
+                }
+              },
+              {
+                "@ondc/org/item_id": "41096805023925",
+                "@ondc/org/item_quantity": {
+                  "count": "1"
+                },
+                "title": "Dove Healthy Ritual for Strengthening Hair Mask, 300ml",
+                "@ondc/org/title_type": "item",
+                "price": {
+                  "currency": "INR",
+                  "value": "394"
+                }
+              },
+              {
+                "@ondc/org/item_id": "41096805023925",
+                "price": {
+                  "currency": "INR",
+                  "value": "00.00"
+                },
+                "@ondc/org/title_type": "tax",
+                "title": "Tax"
+              },
+              {
+                "@ondc/org/item_id": "41096805023925",
+                "price": {
+                  "currency": "INR",
+                  "value": "0.00"
+                },
+                "@ondc/org/title_type": "discount",
+                "title": "Discount"
+              },
+              {
+                "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "title": "Delivery charges",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "0"
+                }
+              },
+              {
+                "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "price": {
+                  "currency": "INR",
+                  "value": "00.00"
+                },
+                "@ondc/org/title_type": "misc",
+                "title": "Convenience Fee"
+              },
+              {
+                "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "price": {
+                  "currency": "INR",
+                  "value": "00.00"
+                },
+                "@ondc/org/title_type": "packing",
+                "title": "Packing charges"
+              }
+            ],
+            "ttl": "P1D"
+          },
+          "payment": {
+            "type": "ON-ORDER",
+            "params": {
+              "amount": "394",
+              "currency": "INR",
+              "transaction_id": "order_LTgGdBcnu3dF2T"
+            },
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_ifsc_code": "ICIC0006239",
+                "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+                "upi_address": "",
+                "settlement_bank_account_no": "623905034810",
+                "bank_name": "ICICI BANK",
+                "settlement_type": "neft",
+                "branch_name": "Mumbai Chembur branch",
+                "settlement_counterparty": "JHAKAAS RETAIL PRIVATE LIMITED",
+                "settlement_phase": "sale-amount"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "resheader": "Signature keyId=\"ondc.hulsecure.in|e79d1b77-0906-4323-aa92-c7dc64861f14|ed25519\",algorithm=\"ed25519\",created=\"1679300084\",expires=\"1679303684\",headers=\"(created) (expires) digest\",signature=\"yTy5f+Vs9hq6MAeS/qOXXsWM7A0HtJgLZz/GP26bjjRGLV5TwYIYOd4lELtdXjl6OCdNtMPNkXMdMRhLahIqBg==\"",
+    "createdAt": {
+      "$date": "2023-03-20T08:14:44.571Z"
+    },
+    "updatedAt": {
+      "$date": "2023-03-20T08:14:44.571Z"
+    },
+    "__v": 0
+  }

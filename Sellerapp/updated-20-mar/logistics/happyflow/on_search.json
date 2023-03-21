@@ -1,0 +1,98 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "ondcpreprod.sellerapp.in",
+        "bap_uri": "https://ondcpreprod.sellerapp.in/bapl/u/",
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "transaction_id": "f18492c7-f1f0-43e6-ad2f-64650143854a",
+        "message_id": "56be353c-9346-4e2d-bc68-ca951f81c5e6",
+        "timestamp": "2023-03-20T11:11:28.048Z"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "LoadShare Delivery"
+            },
+            "bpp/providers": [
+                {
+                    "id": "loadshare@ondc-preprod.loadshare.net",
+                    "descriptor": {
+                        "name": "LoadShare Networks",
+                        "long_desc": "LoadShare Networks Private Limited",
+                        "short_desc": "LoadShare Networks Private Limited"
+                    },
+                    "categories": [
+                        {
+                            "id": "Next Day Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P1D"
+                            }
+                        },
+                        {
+                            "id": "Immediate Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT1H"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "nextday",
+                            "price": {
+                                "currency": "INR",
+                                "value": "39"
+                            },
+                            "descriptor": {
+                                "name": "Next Day Delivery",
+                                "code": "P2P",
+                                "long_desc": "Upto 2 working days for Delivery",
+                                "short_desc": "Upto 2 working days for Delivery"
+                            },
+                            "category_id": "Next Day Delivery",
+                            "fulfillment_id": "lsn_prepaid",
+                            "time": {
+                                "range": {
+                                    "start": "2023-03-21T11:11:28.000Z",
+                                    "end": "2023-03-21T13:11:28.000Z"
+                                },
+                                "label": "TAT",
+                                "timestamp": "2023-03-21T13:11:28.000Z",
+                                "duration": "P1D"
+                            }
+                        },
+                        {
+                            "id": "express",
+                            "price": {
+                                "currency": "INR",
+                                "value": "39"
+                            },
+                            "descriptor": {
+                                "name": "Immediate Delivery",
+                                "code": "P2P",
+                                "long_desc": "Upto 45 mins for Delivery",
+                                "short_desc": "Upto 45 mins for Delivery"
+                            },
+                            "category_id": "Immediate Delivery",
+                            "fulfillment_id": "lsn_prepaid"
+                        }
+                    ]
+                }
+            ],
+            "bpp/fulfillments": [
+                {
+                    "id": "lsn_prepaid",
+                    "type": "Prepaid",
+                    "tracking": false
+                }
+            ]
+        }
+    },
+    "error": null
+}

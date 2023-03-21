@@ -1,0 +1,164 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "confirm",
+      "bap_id": "beta.mystore.in",
+      "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+      "bpp_id": "retailconnect.co.in",
+      "bpp_uri": "https://retailconnect.co.in/ondc/public/OndcPreProd/callback",
+      "transaction_id": "4d42aee5-7a45-4e01-bd8d-4007e7cb9476",
+      "message_id": "27961966-25d2-40c2-8382-84a326c34e34",
+      "timestamp": "2023-03-20T08:03:24.499Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "6418134bfbe6240002a96108",
+        "state": "Created",
+        "provider": {
+          "id": "ONDC-STORE-BGLR"
+        },
+        "items": [
+          {
+            "id": "MD1253IN1",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "f74f8633-e968-4b56-8ed8-485f74a14e15"
+          }
+        ],
+        "billing": {
+          "name": "saurabh",
+          "address": {
+            "name": "barkha road",
+            "building": "mangol puri",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "country": "IN",
+            "area_code": "110083",
+            "locality": "barkha road"
+          },
+          "email": "saurabh.singh@hippoinnovations.com",
+          "phone": "8368476734",
+          "created_at": "2023-03-20T08:03:23.894Z",
+          "updated_at": "2023-03-20T08:03:23.894Z"
+        },
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "175"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "MD1253IN1",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Mangaldeep 3in1 Agarbatti - 3 unique, long lasting fragrances",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "125"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "125"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "f74f8633-e968-4b56-8ed8-485f74a14e15",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50.0"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "payment": {
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "rtgs",
+              "settlement_bank_account_no": "XXXXXXXXXX",
+              "settlement_ifsc_code": "XXXXXXXXX",
+              "beneficiary_name": "xxxxx",
+              "bank_name": "xxxx",
+              "branch_name": "xxxx"
+            }
+          ],
+          "params": {
+            "transaction_id": "TXN-coWQLr188",
+            "amount": "175.0000",
+            "currency": "INR"
+          },
+          "type": "ON-ORDER",
+          "status": "PAID",
+          "collected_by": "BAP"
+        },
+        "created_at": "2023-03-20T08:03:23.894Z",
+        "updated_at": "2023-03-20T08:03:23.894Z",
+        "fulfillments": [
+          {
+            "id": "f74f8633-e968-4b56-8ed8-485f74a14e15",
+            "type": "Delivery",
+            "provider_id": "ONDC-STORE-BGLR",
+            "tracking": false,
+            "end": {
+              "location": {
+                "gps": "12.97192,77.51281",
+                "address": {
+                  "name": "barkha road",
+                  "locality": "barkha road",
+                  "building": "mangol puri",
+                  "city": "New Delhi",
+                  "state": "Delhi",
+                  "country": "IND",
+                  "area_code": "110083"
+                }
+              },
+              "contact": {
+                "phone": "8368476734"
+              },
+              "person": {
+                "name": "saurabh"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "confirm",
+      "core_version": "1.1.0",
+      "bap_id": "beta.mystore.in",
+      "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+      "bpp_id": "retailconnect.co.in",
+      "bpp_uri": "https://retailconnect.co.in/ondc/public/OndcPreProd/callback",
+      "transaction_id": "4d42aee5-7a45-4e01-bd8d-4007e7cb9476",
+      "message_id": "27961966-25d2-40c2-8382-84a326c34e34",
+      "timestamp": "2023-03-20T08:03:24.598Z"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}

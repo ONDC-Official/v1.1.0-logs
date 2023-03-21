@@ -1,0 +1,400 @@
+{
+    "_id": {
+      "$oid": "6417fdfd00cb9951d0e402b4"
+    },
+    "body": {
+      "context": {
+        "domain": "nic2004:52110",
+        "action": "confirm",
+        "country": "IND",
+        "city": "std:01189",
+        "core_version": "1.1.0",
+        "bpp_id": "ondc.hulsecure.in",
+        "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+        "bap_id": "ondc.indiastack.cloud",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "transaction_id": "a91d8529-4e19-4b21-9f61-a91460b1656f",
+        "message_id": "6abbd0e4-87bf-41b5-a487-8f4410cc3925",
+        "timestamp": "2023-03-20T06:32:28.321Z",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "id": "d1b8f007-9eaa-4937-b671-5fd681c2d8b1",
+          "state": "Created",
+          "billing": {
+            "address": {
+              "area_code": "250004",
+              "city": "Meerut",
+              "country": "IN",
+              "building": "-",
+              "door": "-",
+              "locality": "-",
+              "name": "near medical college",
+              "state": "UTTAR PRADESH"
+            },
+            "created_at": "2023-03-20T06:32:10.788Z",
+            "email": "srishtisharma5445@gmail.com",
+            "name": "srishtisharma",
+            "phone": "9548319796",
+            "updated_at": "2023-03-20T06:32:10.788Z",
+            "tax_number": ""
+          },
+          "fulfillments": [
+            {
+              "end": {
+                "contact": {
+                  "email": "srishtisharma5445@gmail.com",
+                  "phone": "9548319796"
+                },
+                "location": {
+                  "address": {
+                    "area_code": "250004",
+                    "city": "Meerut",
+                    "country": "IN",
+                    "building": "-",
+                    "door": "-",
+                    "locality": "-",
+                    "name": "near medical college",
+                    "state": "UTTAR PRADESH"
+                  },
+                  "gps": "28.9600155,77.7502617"
+                },
+                "person": {
+                  "name": "srishti sharma"
+                }
+              },
+              "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "tracking": false,
+              "type": "Delivery",
+              "provider_id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
+              "state": {
+                "descriptor": {
+                  "code": "Pending"
+                }
+              }
+            }
+          ],
+          "quote": {
+            "breakup": [
+              {
+                "title": "Dove Healthy Ritual for Growing Hair Shampoo, 650 ml and Dove Healthy Ritual for Growing Hair Conditioner, 180 ml (Combo Pack)",
+                "price": {
+                  "currency": "INR",
+                  "value": "528"
+                },
+                "@ondc/org/title_type": "item",
+                "item": {
+                  "price": {
+                    "currency": "INR",
+                    "value": "528"
+                  },
+                  "quantity": {
+                    "available": {
+                      "count": 100
+                    },
+                    "maximum": {
+                      "count": 100
+                    }
+                  }
+                },
+                "@ondc/org/item_quantity": {
+                  "count": "1"
+                },
+                "@ondc/org/item_id": "40295033634997"
+              },
+              {
+                "title": "Dove Healthy Ritual for Strengthening Hair Mask, 300ml",
+                "price": {
+                  "currency": "INR",
+                  "value": "394"
+                },
+                "@ondc/org/title_type": "item",
+                "item": {
+                  "price": {
+                    "currency": "INR",
+                    "value": "394"
+                  },
+                  "quantity": {
+                    "available": {
+                      "count": 100
+                    },
+                    "maximum": {
+                      "count": 100
+                    }
+                  }
+                },
+                "@ondc/org/item_quantity": {
+                  "count": "1"
+                },
+                "@ondc/org/item_id": "41096805023925"
+              },
+              {
+                "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "price": {
+                  "currency": "INR",
+                  "value": "0"
+                },
+                "@ondc/org/title_type": "delivery",
+                "title": "Delivery charges"
+              }
+            ],
+            "price": {
+              "currency": "INR",
+              "value": "922"
+            }
+          },
+          "items": [
+            {
+              "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "id": "40295033634997",
+              "quantity": {
+                "count": 1
+              }
+            },
+            {
+              "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "id": "41096805023925",
+              "quantity": {
+                "count": 1
+              }
+            }
+          ],
+          "payment": {
+            "type": "ON-ORDER",
+            "params": {
+              "amount": "922",
+              "currency": "INR",
+              "transaction_id": "order_LTgGdBcnu3dF2T"
+            },
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_ifsc_code": "ICIC0006239",
+                "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+                "upi_address": "",
+                "settlement_bank_account_no": "623905034810",
+                "bank_name": "ICICI BANK",
+                "settlement_type": "neft",
+                "branch_name": "Mumbai Chembur branch",
+                "settlement_counterparty": "JHAKAAS RETAIL PRIVATE LIMITED",
+                "settlement_phase": "sale-amount"
+              }
+            ]
+          },
+          "created_at": "2023-03-20T06:32:28.292Z",
+          "updated_at": "2023-03-20T06:32:28.292Z",
+          "provider": {
+            "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
+            "locations": [
+              {
+                "id": "65426587829"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "header": {
+      "host": "ondc.hulsecure.in",
+      "connection": "close",
+      "user-agent": "python-requests/2.25.1",
+      "accept-encoding": "gzip, deflate",
+      "accept": "application/json",
+      "content-type": "application/json",
+      "authorization": "Signature keyId=\"ondc.indiastack.cloud|00922f26-4021-4f79-98ca-6a269ee91c84|ed25519\",algorithm=\"ed25519\",created=\"1679293948\",expires=\"1679466748\",headers=\"(created) (expires) digest\",signature=\"NAxKKfs8jOMOSuZiAPD+7TBVrTpqLTwv4YZdz7OhNWJgtKXT2eirygheyWz3Wp2fVj4LbqYx2HzHlC1xmoDHCw==\"",
+      "x-request-id": "c2b4e5ac-19e5-4df9-a83e-9149d40487ed",
+      "x-forwarded-for": "13.251.201.18",
+      "x-forwarded-proto": "https",
+      "x-forwarded-port": "443",
+      "via": "1.1 vegur",
+      "connect-time": "0",
+      "x-request-start": "1679293949079",
+      "total-route-time": "0",
+      "content-length": "3292"
+    },
+    "response": [
+      {
+        "context": {
+          "domain": "nic2004:52110",
+          "action": "on_confirm",
+          "country": "IND",
+          "city": "std:01189",
+          "core_version": "1.1.0",
+          "bpp_id": "ondc.hulsecure.in",
+          "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+          "bap_id": "ondc.indiastack.cloud",
+          "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+          "transaction_id": "a91d8529-4e19-4b21-9f61-a91460b1656f",
+          "message_id": "6abbd0e4-87bf-41b5-a487-8f4410cc3925",
+          "timestamp": "2023-03-20T06:32:29.082Z",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "order": {
+            "id": "d1b8f007-9eaa-4937-b671-5fd681c2d8b1",
+            "state": "Created",
+            "provider": {
+              "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
+              "location": [
+                {
+                  "id": "18275-ONDC-1-11094"
+                }
+              ],
+              "rateable": true
+            },
+            "items": [
+              {
+                "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "id": "40295033634997",
+                "quantity": {
+                  "count": 1
+                }
+              },
+              {
+                "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "id": "41096805023925",
+                "quantity": {
+                  "count": 1
+                }
+              }
+            ],
+            "billing": {
+              "address": {
+                "area_code": "250004",
+                "city": "Meerut",
+                "country": "IN",
+                "building": "-",
+                "door": "-",
+                "locality": "-",
+                "name": "near medical college",
+                "state": "UTTAR PRADESH"
+              },
+              "created_at": "2023-03-20T06:32:10.788Z",
+              "email": "srishtisharma5445@gmail.com",
+              "name": "srishtisharma",
+              "phone": "9548319796",
+              "updated_at": "2023-03-20T06:32:10.788Z",
+              "tax_number": ""
+            },
+            "fulfillments": [
+              {
+                "end": {
+                  "contact": {
+                    "email": "srishtisharma5445@gmail.com",
+                    "phone": "9548319796"
+                  },
+                  "location": {
+                    "address": {
+                      "area_code": "250004",
+                      "city": "Meerut",
+                      "country": "IN",
+                      "building": "-",
+                      "door": "-",
+                      "locality": "-",
+                      "name": "near medical college",
+                      "state": "UTTAR PRADESH"
+                    },
+                    "gps": "28.9600155,77.7502617"
+                  },
+                  "person": {
+                    "name": "srishti sharma"
+                  }
+                },
+                "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "tracking": false,
+                "type": "Delivery",
+                "provider_id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
+                "state": {
+                  "descriptor": {
+                    "code": "Pending"
+                  }
+                }
+              }
+            ],
+            "quote": {
+              "price": {
+                "currency": "INR",
+                "value": "922"
+              },
+              "breakup": [
+                {
+                  "@ondc/org/item_id": "40295033634997",
+                  "@ondc/org/item_quantity": {
+                    "count": "1"
+                  },
+                  "title": "Dove Healthy Ritual for Growing Hair Shampoo, 650 ml and Dove Healthy Ritual for Growing Hair Conditioner, 180 ml (Combo Pack)",
+                  "@ondc/org/title_type": "item",
+                  "price": {
+                    "currency": "INR",
+                    "value": "528"
+                  }
+                },
+                {
+                  "@ondc/org/item_id": "41096805023925",
+                  "@ondc/org/item_quantity": {
+                    "count": "1"
+                  },
+                  "title": "Dove Healthy Ritual for Strengthening Hair Mask, 300ml",
+                  "@ondc/org/title_type": "item",
+                  "price": {
+                    "currency": "INR",
+                    "value": "394"
+                  }
+                },
+                {
+                  "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                  "title": "Delivery charges",
+                  "@ondc/org/title_type": "delivery",
+                  "price": {
+                    "currency": "INR",
+                    "value": "0"
+                  }
+                }
+              ],
+              "ttl": "P1D"
+            },
+            "payment": {
+              "type": "ON-ORDER",
+              "params": {
+                "amount": "922",
+                "currency": "INR",
+                "transaction_id": "order_LTgGdBcnu3dF2T"
+              },
+              "status": "PAID",
+              "collected_by": "BAP",
+              "@ondc/org/buyer_app_finder_fee_type": "percent",
+              "@ondc/org/buyer_app_finder_fee_amount": "3",
+              "@ondc/org/settlement_details": [
+                {
+                  "settlement_ifsc_code": "ICIC0006239",
+                  "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+                  "upi_address": "",
+                  "settlement_bank_account_no": "623905034810",
+                  "bank_name": "ICICI BANK",
+                  "settlement_type": "neft",
+                  "branch_name": "Mumbai Chembur branch",
+                  "settlement_counterparty": "JHAKAAS RETAIL PRIVATE LIMITED",
+                  "settlement_phase": "sale-amount"
+                }
+              ]
+            },
+            "created_at": "2023-03-20T06:32:29.082Z",
+            "updated_at": "2023-03-20T06:32:28.292Z"
+          }
+        }
+      },
+      "orderCreate.data.order.id"
+    ],
+    "resheader": "Signature keyId=\"ondc.hulsecure.in|e79d1b77-0906-4323-aa92-c7dc64861f14|ed25519\",algorithm=\"ed25519\",created=\"1679293949\",expires=\"1679297549\",headers=\"(created) (expires) digest\",signature=\"n3ffe9OeWbF5Edr4QSU+6mMjvEHYovbXM/EaZhKEnxBA82S0YU2fO5Miwo9H+O+I0wZkonnJrxskFRpyzojVBw==\"",
+    "createdAt": {
+      "$date": "2023-03-20T06:32:29.784Z"
+    },
+    "updatedAt": {
+      "$date": "2023-03-20T06:32:29.784Z"
+    },
+    "__v": 0
+  }

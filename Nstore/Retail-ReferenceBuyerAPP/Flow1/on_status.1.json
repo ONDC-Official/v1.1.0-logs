@@ -1,0 +1,235 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "*",
+        "action": "on_status",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-20T15:07:42.248Z",
+        "message_id": "55a2379a-2e33-4f11-9289-cca531d3e563",
+        "core_version": "1.1.0",
+        "transaction_id": "be3128b3-a896-48dd-8dea-94d6f8f1a68c"
+    },
+    "message": {
+        "order": {
+            "id": "2023-03-20-592155",
+            "items": [
+                {
+                    "id": "101",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "20971"
+                },
+                {
+                    "id": "sm124",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "20971"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "95.73",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "19.93",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "18.00",
+                            "currency": "INR"
+                        },
+                        "title": "Sunfeast Pasta Treat Instant Masala Pasta 65 g",
+                        "@ondc/org/item_id": "101",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "101",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "75.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "75.00",
+                            "currency": "INR"
+                        },
+                        "title": "Sakthi Biriyani Masala",
+                        "@ondc/org/item_id": "sm124",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "sm124",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "In-progress",
+            "billing": {
+                "name": "GirisutaA",
+                "email": "girisuta@nstore.in",
+                "phone": "8447407778",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "GirisutaA",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "building": "Bethany school",
+                    "locality": "8th Cross 5th Block Koramangala",
+                    "area_code": "560005"
+                },
+                "created_at": "2023-03-20T15:07:06.000Z",
+                "updated_at": "2023-03-10T08:04:42.000Z"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "95.73",
+                    "currency": "INR",
+                    "transaction_id": "ONDC-be3128b3-a896-48dd-8dea-94d6f8f1a68c-1"
+                },
+                "status": "PAID",
+                "tl_method": "http/get",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFCB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "provider": {
+                "id": "20971",
+                "locations": [
+                    {
+                        "id": "20971"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0NjI=",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-03-20T15:07:06.000Z",
+            "updated_at": "2023-03-10T08:04:42.000Z",
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-21T15:07:41.000Z",
+                                "start": "2023-03-20T15:07:41.000Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8447407778"
+                        },
+                        "location": {
+                            "gps": "13.0007580000001, 77.6165090000001",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "GirisutaA",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "building": "Bethany school",
+                                "locality": "8th Cross 5th Block Koramangala",
+                                "area_code": "560005"
+                            }
+                        },
+                        "instructions": {}
+                    },
+                    "type": "Delivery",
+                    "agent": {},
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-20T15:07:41.000Z",
+                                "start": "2023-03-20T15:07:30.000Z"
+                            },
+                            "timestamp": "2023-03-20T15:07:41.000Z"
+                        },
+                        "contact": {
+                            "email": "aleeminuk@gmail.com",
+                            "phone": "9727288181"
+                        },
+                        "location": {
+                            "id": "20971",
+                            "gps": "12.9953231,77.6139826",
+                            "descriptor": {
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
+                            }
+                        },
+                        "instructions": {
+                            "name": "",
+                            "short_desc": ""
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up"
+                        }
+                    },
+                    "vehicle": {},
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                }
+            ]
+        }
+    }
+}
