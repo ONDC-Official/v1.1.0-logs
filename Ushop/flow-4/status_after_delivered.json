@@ -1,6 +1,6 @@
 {
   "_id": {
-    "$oid": "64146cf2d4b5aaa34d778c8b"
+    "$oid": "6419817f1ce93c4afc6369cb"
   },
   "body": {
     "context": {
@@ -9,35 +9,36 @@
       "city": "std:080",
       "action": "status",
       "core_version": "1.1.0",
-      "transaction_id": "70103340-30cc-4cc6-8f5c-f4fb622cde6f",
-      "message_id": "4224f33b-a2e7-41fa-9339-cfa2e342b37c",
-      "timestamp": "2023-03-21T13:36:49.310Z",
-      "bpp_id": "ondc.hulsecure.in",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
-      "bap_id": "ondc.indiastack.cloud",
-      "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/"
+      "transaction_id": "a7942741-b101-493e-a107-dabda4fde169",
+      "message_id": "ce6729f4-0353-48d1-8235-21432510429c",
+      "timestamp": "2023-03-21T10:05:50.270Z",
+      "bpp_id": "ondc.hulsecure.in",
+      "ttl": "PT30S"
     },
     "message": {
-      "order_id": "fd7de626-5b68-476c-8cea-87cc2be2d9aa"
+      "order_id": "2023-03-21-101685"
     }
   },
   "header": {
     "host": "ondc.hulsecure.in",
     "connection": "close",
-    "user-agent": "python-requests/2.25.1",
+    "user-agent": "python-requests/2.23.0",
     "accept-encoding": "gzip, deflate",
-    "accept": "application/json",
+    "accept": "*/*",
+    "authorization": "Signature keyId=\"buyer-app-preprod.ondc.org|96c81878-f327-457e-8835-5b35bb20f099|ed25519\",algorithm=\"ed25519\",created=\"1679393150\",expires=\"1679396750\",headers=\"(created) (expires) digest\",signature=\"kJWuOYUewH6efmYhsmAJ0+buXc2cuburI1a1b4xs5POzlMVSFzNGU5agdl1TZpJJ00dXkmynjPvyX0k/sTylBw==\"",
     "content-type": "application/json",
-    "authorization": "Signature keyId=\"ondc.indiastack.cloud|00922f26-4021-4f79-98ca-6a269ee91c84|ed25519\",algorithm=\"ed25519\",created=\"1679060209\",expires=\"1679233009\",headers=\"(created) (expires) digest\",signature=\"bcFNe53jt31UOUpcrrvqsIYqo4YUKqCcnIjgcZlaPWLhso7cedTqrT+CpGN5WE0RRcFpgor3zL+5FNOElkOxCg==\"",
-    "x-request-id": "67f84018-c06d-4ed0-9e4b-278733bfb1ae",
-    "x-forwarded-for": "13.251.201.18",
+    "x-request-id": "6ef699b2-eadb-4040-a7dd-e933463a034b",
+    "x-forwarded-for": "65.0.80.129",
     "x-forwarded-proto": "https",
     "x-forwarded-port": "443",
     "via": "1.1 vegur",
     "connect-time": "0",
-    "x-request-start": "1679060210077",
+    "x-request-start": "1679393150839",
     "total-route-time": "0",
-    "content-length": "490"
+    "content-length": "491"
   },
   "response": {
     "context": {
@@ -46,60 +47,60 @@
       "city": "std:080",
       "action": "on_status",
       "core_version": "1.1.0",
-      "transaction_id": "70103340-30cc-4cc6-8f5c-f4fb622cde6f",
-      "message_id": "4224f33b-a2e7-41fa-9339-cfa2e342b37c",
-      "timestamp": "2023-03-21T13:36:50.072Z",
-      "bpp_id": "ondc.hulsecure.in",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
-      "bap_id": "ondc.indiastack.cloud",
-      "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/"
+      "transaction_id": "a7942741-b101-493e-a107-dabda4fde169",
+      "message_id": "ce6729f4-0353-48d1-8235-21432510429c",
+      "timestamp": "2023-03-21T10:05:50.841Z",
+      "bpp_id": "ondc.hulsecure.in",
+      "ttl": "PT30S"
     },
     "message": {
       "order": {
-        "id": "fd7de626-5b68-476c-8cea-87cc2be2d9aa",
-        "state": "Cancelled",
+        "id": "2023-03-21-101685",
+        "state": "Completed",
         "provider": {
           "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
           "location": [
             {
-              "id": "18275-ONDC-1-11094"
+              "id": "65426587829"
             }
           ],
           "rateable": true
         },
         "items": [
           {
-            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
-            "id": "40290146648245",
+            "id": "40901455741109",
             "quantity": {
               "count": 1
-            }
+            },
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
           },
           {
-            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
-            "id": "40130937979061",
+            "id": "40902111494325",
             "quantity": {
               "count": 1
-            }
+            },
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
           }
         ],
         "billing": {
           "address": {
-            "area_code": "250004",
+            "name": "srishti sharma",
+            "building": "test",
+            "locality": "meerut medical college",
+            "ward": "",
             "city": "Meerut",
-            "country": "IN",
-            "building": "-",
-            "door": "-",
-            "locality": "-",
-            "name": "near medical college",
-            "state": "UTTAR PRADESH"
+            "state": "Uttar Pradesh",
+            "country": "IND",
+            "area_code": "250004"
           },
-          "created_at": "2023-03-17T10:38:40.829Z",
-          "email": "srishtisharma5445@gmail.com",
-          "name": "srishtisharma",
           "phone": "9548319796",
-          "updated_at": "2023-03-17T10:38:40.829Z",
-          "tax_number": ""
+          "name": "srishti sharma",
+          "email": "srishti.sharma@ens.enterprises",
+          "created_at": "2023-03-21T09:52:11.887Z",
+          "updated_at": "2023-03-21T09:52:11.887Z"
         },
         "fulfillments": [
           {
@@ -108,7 +109,7 @@
             "tracking": true,
             "state": {
               "descriptor": {
-                "code": "Cancelled"
+                "code": "Order-delivered"
               }
             },
             "start": {
@@ -132,31 +133,31 @@
         "quote": {
           "price": {
             "currency": "INR",
-            "value": "1047"
+            "value": "936"
           },
           "breakup": [
             {
-              "@ondc/org/item_id": "40130937979061",
+              "@ondc/org/item_id": "40901455741109",
               "@ondc/org/item_quantity": {
                 "count": "1"
               },
-              "title": "Simple Kind To Skin Refreshing Facial Wash 150ml",
+              "title": "Lakme Absolute Argan Oil Radiance Oil-In Gel, 50 g",
               "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
-                "value": "385"
+                "value": "639"
               }
             },
             {
-              "@ondc/org/item_id": "40290146648245",
+              "@ondc/org/item_id": "40902111494325",
               "@ondc/org/item_quantity": {
                 "count": "1"
               },
-              "title": "Dove Healthy Ritual for Growing Hair Shampoo, 650ml",
+              "title": "Lakme 9 to 5 Naturale Day Crème SPF 20, 50 g",
               "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
-                "value": "662"
+                "value": "297"
               }
             },
             {
@@ -172,39 +173,41 @@
           "ttl": "P1D"
         },
         "payment": {
-          "type": "ON-ORDER",
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
           "params": {
-            "amount": "1047",
+            "amount": "936",
             "currency": "INR",
-            "transaction_id": "order_LSYrev9SJBwtjS"
+            "transaction_id": "ONDC-a7942741-b101-493e-a107-dabda4fde169-1"
           },
           "status": "PAID",
+          "type": "ON-ORDER",
           "collected_by": "BAP",
           "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
           "@ondc/org/settlement_details": [
             {
-              "settlement_ifsc_code": "ICIC0006239",
-              "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+              "settlement_counterparty": "JHAKAAS RETAIL PRIVATE LIMITED",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
               "upi_address": "",
               "settlement_bank_account_no": "623905034810",
+              "settlement_ifsc_code": "ICIC0006239",
+              "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
               "bank_name": "ICICI BANK",
-              "settlement_type": "neft",
-              "branch_name": "Mumbai Chembur branch",
-              "settlement_counterparty": "JHAKAAS RETAIL PRIVATE LIMITED",
-              "settlement_phase": "sale-amount"
+              "branch_name": "Mumbai Chembur branch"
             }
           ]
         }
       }
     }
   },
-  "resheader": "Signature keyId=\"ondc.hulsecure.in|e79d1b77-0906-4323-aa92-c7dc64861f14|ed25519\",algorithm=\"ed25519\",created=\"1679060210\",expires=\"1679063810\",headers=\"(created) (expires) digest\",signature=\"+mGpyYmhGVlIl3pSYclYPO+HaS3RNqvwk0sW3XK7POLDTJbdGdUwIO8d64vvrn/LadzK/buANQv2ULcwID6DDA==\"",
+  "resheader": "Signature keyId=\"ondc.hulsecure.in|e79d1b77-0906-4323-aa92-c7dc64861f14|ed25519\",algorithm=\"ed25519\",created=\"1679393151\",expires=\"1679396751\",headers=\"(created) (expires) digest\",signature=\"8eKPF+1UKsAnLOmJywRwGnXG+9FzZWTEvTR8STMD3mf2Ss2jwdoUc0QQKms7FQvQLzL0A97Sf76QEBKZid1NDw==\"",
   "createdAt": {
-    "$date": "2023-03-17T13:36:50.807Z"
+    "$date": "2023-03-21T10:05:51.758Z"
   },
   "updatedAt": {
-    "$date": "2023-03-17T13:36:50.807Z"
+    "$date": "2023-03-21T10:05:51.758Z"
   },
   "__v": 0
 }
