@@ -1,0 +1,197 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.0.0",
+      "action": "on_confirm",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "5bdb375f-221e-451d-8c2f-b226f182a990",
+      "message_id": "08496157-186c-47be-a1a9-edd9784c9251",
+      "timestamp": "2023-03-21T13:08:28.671Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "62733ab9f1f53df939f25300",
+          "locations": [
+            {
+              "id": "62733ab9f1f53df939f25300"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "63fd87f96b40654d77d701a3",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "Fulfillment1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "450"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "63fd87f96b40654d77d701a3",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "rice",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "400"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "581"
+                  },
+                  "maximum": {
+                    "count": "581"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "400"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50"
+              }
+            }
+          ]
+        },
+        "billing": {
+          "address": {
+            "name": "Saurabh",
+            "building": "barkha road",
+            "locality": "barkha",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "IND",
+            "area_code": "560001"
+          },
+          "phone": "8368476734",
+          "name": "Saurabh",
+          "email": "saurabh@test.com",
+          "created_at": "2023-03-21T13:08:03.642Z",
+          "updated_at": "2023-03-21T13:08:03.642Z"
+        },
+        "fulfillments": [
+          {
+            "state": {
+              "descriptor": {
+                "name": "Pending",
+                "code": "Pending"
+              }
+            },
+            "type": "Delivery",
+            "tracking": true,
+            "start": {
+              "location": {
+                "id": "62733ab9f1f53df939f25300",
+                "descriptor": {
+                  "name": "62733ab9f1f53df939f25300"
+                },
+                "gps": "12.972442,77.580643"
+              },
+              "contact": {
+                "phone": "+919898129898",
+                "email": "+919898129898"
+              }
+            },
+            "end": {
+              "contact": {
+                "email": "saurabh@test.com",
+                "phone": "8368476734"
+              },
+              "person": {
+                "name": "Saurabh"
+              },
+              "location": {
+                "gps": "12.9812430000001, 77.5950340000001",
+                "address": {
+                  "name": "Saurabh",
+                  "building": "barkha road",
+                  "locality": "barkha",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560001"
+                }
+              }
+            }
+          }
+        ],
+        "payment": {
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
+          "params": {
+            "amount": "450",
+            "currency": "INR",
+            "transaction_id": "ONDC-5bdb375f-221e-451d-8c2f-b226f182a990-1"
+          },
+          "status": "PAID",
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "test",
+              "settlement_ifsc_code": "123",
+              "bank_name": "SBI",
+              "branch_name": "gurgaon",
+              "beneficiary_name": "Test test",
+              "settlement_phase": "sale-amount"
+            }
+          ]
+        },
+        "id": "2023-03-21-990763",
+        "state": "Accepted",
+        "created_at": "2023-03-21T13:08:27.975Z",
+        "updated_at": "2023-03-21T13:08:27.975Z"
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.0.0",
+      "action": "on_confirm",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "5bdb375f-221e-451d-8c2f-b226f182a990",
+      "message_id": "08496157-186c-47be-a1a9-edd9784c9251",
+      "timestamp": "2023-03-21T13:08:28.671Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}
