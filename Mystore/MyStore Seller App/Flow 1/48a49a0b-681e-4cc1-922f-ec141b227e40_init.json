@@ -1,0 +1,109 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "init",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "48a49a0b-681e-4cc1-922f-ec141b227e40",
+      "message_id": "553b7053-2c08-4f82-b3e5-24b3aa0f7f08",
+      "timestamp": "2023-03-22T06:52:25.633Z",
+      "bpp_id": "beta.mystore.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "62733ab9f1f53df939f25300",
+          "locations": [
+            {
+              "id": "62733ab9f1f53df939f25300"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "6414365e9e3780d6c5f3b83d",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "Fulfillment1"
+          },
+          {
+            "id": "641435ce9e3780d6c5f3b609",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "Fulfillment1"
+          }
+        ],
+        "billing": {
+          "address": {
+            "building": "barkha road",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "IND",
+            "area_code": "560001",
+            "locality": "barkha",
+            "name": "Saurabh"
+          },
+          "phone": "8368476734",
+          "name": "Saurabh",
+          "email": "saurabh@test.com",
+          "created_at": "2023-03-22T06:52:25.633Z",
+          "updated_at": "2023-03-22T06:52:25.633Z"
+        },
+        "fulfillments": [
+          {
+            "id": "Fulfillment1",
+            "type": "Delivery",
+            "end": {
+              "contact": {
+                "email": "saurabh@test.com",
+                "phone": "8368476734"
+              },
+              "location": {
+                "gps": "12.9812430000001, 77.5950340000001",
+                "address": {
+                  "building": "barkha road",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560001",
+                  "locality": "barkha",
+                  "name": "Saurabh"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "init",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "48a49a0b-681e-4cc1-922f-ec141b227e40",
+      "message_id": "553b7053-2c08-4f82-b3e5-24b3aa0f7f08",
+      "timestamp": "2023-03-22T06:52:25.633Z",
+      "bpp_id": "beta.mystore.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}
