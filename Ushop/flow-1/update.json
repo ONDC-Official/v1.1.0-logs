@@ -1,6 +1,6 @@
 {
     "_id": {
-      "$oid": "641960fd1ce93c4afc6365a4"
+      "$oid": "641a9d8012cd50cf3f96bc7d"
     },
     "body": {
       "context": {
@@ -12,32 +12,51 @@
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
-        "transaction_id": "db7f56ee-ddb0-4cc7-9567-e33aec7ef51a",
-        "message_id": "91a5765d-01c6-42f4-884a-7e2902f5730e",
-        "timestamp": "2023-03-21T07:47:08.115Z",
+        "transaction_id": "78212223-5eca-4041-a044-a98ddcaceb9e",
+        "message_id": "b9fca960-d50c-4f66-8f2e-8b58124eb35d",
+        "timestamp": "2023-03-22T06:17:35.277Z",
         "bpp_id": "ondc.hulsecure.in",
         "ttl": "PT30S"
       },
       "message": {
         "update_target": "item",
         "order": {
-          "id": "2023-03-21-731929",
-          "state": "Completed",
+          "id": "2023-03-22-256454",
+          "state": "Accepted",
           "provider": {
             "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
           },
           "items": [
             {
-              "id": "37970466734261",
+              "id": "41539653959861",
               "quantity": {
                 "count": 1
               },
-              "tags": {
-                "status": "Return_Initiated"
-              },
+              "tags":  {
+                "update_type":"return",
+                "reason_code":"003",
+                "ttl_approval":"PT24H",
+                "ttl_reverseqc":"P3D",
+                "image":"https://image1.png,https://image2.png"
+              }
+    ,
               "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e-ReverseQC"
             }
-          ]
+          ],
+          "payment":
+          {
+            "@ondc/org/settlement_details":
+            [
+              {
+                "settlement_counterparty":"buyer",
+                "settlement_phase":"refund",
+                "settlement_type":"upi",
+                "settlement_amount":"499",
+                "settlement_timestamp":"2023-03-29T13:00:00.000Z"
+              }
+            ]
+          }
+    
         }
       }
     },
@@ -47,17 +66,17 @@
       "user-agent": "python-requests/2.23.0",
       "accept-encoding": "gzip, deflate",
       "accept": "*/*",
-      "authorization": "Signature keyId=\"buyer-app-preprod.ondc.org|96c81878-f327-457e-8835-5b35bb20f099|ed25519\",algorithm=\"ed25519\",created=\"1679384828\",expires=\"1679388428\",headers=\"(created) (expires) digest\",signature=\"SXxmy9qpUGLfgqtE6DQ03KHJfLAzxwjH3Kr6Ir4cq+lUXLHKW3STPF8KfexAUJ57qaOjzLYjP+KXBneg1KhGAw==\"",
+      "authorization": "Signature keyId=\"buyer-app-preprod.ondc.org|96c81878-f327-457e-8835-5b35bb20f099|ed25519\",algorithm=\"ed25519\",created=\"1679465855\",expires=\"1679469455\",headers=\"(created) (expires) digest\",signature=\"zjgwKDbACLbBCPkqaHdWyACmcFeIS2zxR9rArgbL33O28mPFbDbD65TszUFdCzAyAOuuHtzWKlYd9uf0eK6FBw==\"",
       "content-type": "application/json",
-      "x-request-id": "c09fbbae-0176-4ed2-b7be-0884be417f03",
+      "x-request-id": "2a6c1216-ea5f-4d54-932f-ed79e901c683",
       "x-forwarded-for": "65.0.80.129",
       "x-forwarded-proto": "https",
       "x-forwarded-port": "443",
       "via": "1.1 vegur",
       "connect-time": "0",
-      "x-request-start": "1679384828855",
+      "x-request-start": "1679465855828",
       "total-route-time": "0",
-      "content-length": "758"
+      "content-length": "757"
     },
     "response": {
       "context": {
@@ -69,18 +88,19 @@
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
-        "transaction_id": "db7f56ee-ddb0-4cc7-9567-e33aec7ef51a",
-        "message_id": "91a5765d-01c6-42f4-884a-7e2902f5730e",
-        "timestamp": "2023-03-21T07:47:08.857Z",
+        "transaction_id": "78212223-5eca-4041-a044-a98ddcaceb9e",
+        "message_id": "b9fca960-d50c-4f66-8f2e-8b58124eb35d",
+        "timestamp": "2023-03-22T06:17:35.829Z",
         "bpp_id": "ondc.hulsecure.in",
         "ttl": "PT30S"
       },
       "message": {
         "order": {
-          "id": "2023-03-21-731929",
+          "id": "2023-03-22-256454",
+          "state": "Accepted",
           "items": [
             {
-              "id": "37970466734261",
+              "id": "41539653959861",
               "quantity": {
                 "count": 1
               },
@@ -102,8 +122,8 @@
               "start": {
                 "time": {
                   "range": {
-                    "start": "2023-03-21T07:47:09.482Z",
-                    "end": "2023-03-21T07:47:09.482Z"
+                    "start": "2023-03-22T06:17:36.404Z",
+                    "end": "2023-03-22T06:17:36.404Z"
                   }
                 },
                 "instructions": {
@@ -122,7 +142,7 @@
             "params": {
               "amount": "1532",
               "currency": "INR",
-              "transaction_id": "ONDC-db7f56ee-ddb0-4cc7-9567-e33aec7ef51a-1"
+              "transaction_id": "ONDC-78212223-5eca-4041-a044-a98ddcaceb9e-1"
             },
             "status": "PAID",
             "type": "ON-ORDER",
@@ -146,15 +166,21 @@
           "quote": {
             "breakup": [
               {
-                "@ondc/org/item_id": "37970466734261",
+                "@ondc/org/item_id": "41539653959861",
                 "@ondc/org/item_quantity": {
-                  "count": "1"
+                  "count": 1
                 },
-                "title": "Dove Intense Repair Shampoo XXL Bottle",
+                "title": "Dove Body Love Pro Age Body Lotion for Mature Skin Paraben Free 400ml",
                 "@ondc/org/title_type": "item",
                 "price": {
                   "currency": "INR",
-                  "value": "849"
+                  "value": "499"
+                },
+                "item": {
+                  "price": {
+                    "currency": "INR",
+                    "value": "499"
+                  }
                 }
               }
             ]
@@ -162,15 +188,15 @@
         }
       }
     },
-    "resheader": "Signature keyId=\"ondc.hulsecure.in|e79d1b77-0906-4323-aa92-c7dc64861f14|ed25519\",algorithm=\"ed25519\",created=\"1679384829\",expires=\"1679388429\",headers=\"(created) (expires) digest\",signature=\"q0ePEjzzxY4jV37Kp6xAorMCLyMm5cQ5Snxt4wGsxYrhqyjLOM+omL+wmHK33OP6BpO7bUdJcLASjgmtO7arDg==\"",
+    "resheader": "Signature keyId=\"ondc.hulsecure.in|e79d1b77-0906-4323-aa92-c7dc64861f14|ed25519\",algorithm=\"ed25519\",created=\"1679465856\",expires=\"1679469456\",headers=\"(created) (expires) digest\",signature=\"g8CX8WSdvCiIxFBRqB88cmStGSBMUSBsF0gpJZbYe6HwmT0Z1oC6e67m1JZ5Kms6CzV5hxZqFS5L+4grtGH5Aw==\"",
     "createdAt": {
       "$date": {
-        "$numberLong": "1679384829483"
+        "$numberLong": "1679465856405"
       }
     },
     "updatedAt": {
       "$date": {
-        "$numberLong": "1679384829483"
+        "$numberLong": "1679465856405"
       }
     },
     "__v": 0
