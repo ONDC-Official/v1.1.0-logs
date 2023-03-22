@@ -1,7 +1,7 @@
 {
     "context": {
         "ttl": "PT30S",
-        "city": "*",
+        "city": "std:080",
         "action": "on_status",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
@@ -9,24 +9,24 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-20T15:21:18.587Z",
-        "message_id": "b00bc187-0811-4018-9ce4-eab648b3dbd6",
+        "timestamp": "2023-03-22T07:56:51.020Z",
+        "message_id": "f6a304cf-cf64-4bfd-a162-c11c08a23351",
         "core_version": "1.1.0",
-        "transaction_id": "0b797bc7-3bd3-464c-8e47-beec29a21ba6"
+        "transaction_id": "9f8210d9-395c-4e2e-a0a1-037af3a9e982"
     },
     "message": {
         "order": {
-            "id": "2023-03-20-838772",
+            "id": "2023-03-22-655048",
             "items": [
                 {
-                    "id": "238",
+                    "id": "sm123",
                     "quantity": {
                         "count": 1
                     },
                     "fulfillment_id": "20971"
                 },
                 {
-                    "id": "241",
+                    "id": "sm124",
                     "quantity": {
                         "count": 1
                     },
@@ -36,23 +36,23 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "186.87",
+                    "value": "159.58",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "item": {
                             "price": {
-                                "value": "16.61",
+                                "value": "80.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "15.00",
+                            "value": "80.00",
                             "currency": "INR"
                         },
-                        "title": "Saffola Classic Instant Masala Oats 38 g",
-                        "@ondc/org/item_id": "238",
+                        "title": "Sakthi Turmeric PowderMannjal Podi 100 g",
+                        "@ondc/org/item_id": "sm123",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -64,22 +64,22 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "238",
+                        "@ondc/org/item_id": "sm123",
                         "@ondc/org/title_type": "tax"
                     },
                     {
                         "item": {
                             "price": {
-                                "value": "184.89",
+                                "value": "75.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "167.00",
+                            "value": "75.00",
                             "currency": "INR"
                         },
-                        "title": "Saffola Classic Instant Masala Oats 500 g",
-                        "@ondc/org/item_id": "241",
+                        "title": "Sakthi Biriyani Masala",
+                        "@ondc/org/item_id": "sm124",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -91,7 +91,7 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "241",
+                        "@ondc/org/item_id": "sm124",
                         "@ondc/org/title_type": "tax"
                     },
                     {
@@ -102,6 +102,15 @@
                         "title": "Delivery charges",
                         "@ondc/org/item_id": "20971",
                         "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "4.58",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
                     }
                 ]
             },
@@ -119,16 +128,16 @@
                     "locality": "8th Cross 5th Block Koramangala",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-20T15:21:17.000Z",
-                "updated_at": "2023-03-10T08:04:42.000Z"
+                "created_at": "2023-03-22T07:56:49.000Z",
+                "updated_at": "2023-03-22T07:56:50.000Z"
             },
             "payment": {
                 "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "186.87",
+                    "amount": "159.58",
                     "currency": "INR",
-                    "transaction_id": "ONDC-0b797bc7-3bd3-464c-8e47-beec29a21ba6-1"
+                    "transaction_id": "ONDC-9f8210d9-395c-4e2e-a0a1-037af3a9e982-1"
                 },
                 "status": "PAID",
                 "tl_method": "http/get",
@@ -158,20 +167,20 @@
             },
             "documents": [
                 {
-                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0NjM=",
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0ODg=",
                     "label": "Invoice"
                 }
             ],
-            "created_at": "2023-03-20T15:21:17.000Z",
-            "updated_at": "2023-03-10T08:04:42.000Z",
+            "created_at": "2023-03-22T07:56:49.000Z",
+            "updated_at": "2023-03-22T07:56:50.000Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-21T16:21:17.000Z",
-                                "start": "2023-03-21T15:21:17.000Z"
+                                "end": "2023-03-23T08:56:49.000Z",
+                                "start": "2023-03-23T07:56:49.000Z"
                             }
                         },
                         "contact": {
@@ -196,8 +205,8 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-21T15:21:17.000Z",
-                                "start": "2023-03-20T15:21:17.000Z"
+                                "end": "2023-03-23T07:56:50.000Z",
+                                "start": "2023-03-22T07:56:50.000Z"
                             }
                         },
                         "contact": {
