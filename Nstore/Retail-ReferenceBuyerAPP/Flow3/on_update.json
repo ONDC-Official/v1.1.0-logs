@@ -9,21 +9,21 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-20T15:23:00.144Z",
-        "message_id": "feaa7ddb-4711-4424-b510-761aa5fe5f03",
+        "timestamp": "2023-03-22T08:00:31.159Z",
+        "message_id": "f3317501-5927-43c6-8f20-ffeae4448e7c",
         "core_version": "1.1.0",
-        "transaction_id": "0b797bc7-3bd3-464c-8e47-beec29a21ba6"
+        "transaction_id": "9f8210d9-395c-4e2e-a0a1-037af3a9e982"
     },
     "message": {
         "order": {
-            "id": "2023-03-20-838772",
+            "id": "2023-03-22-655048",
             "items": [
                 {
-                    "id": "238",
+                    "id": "sm123",
                     "tags": {
                         "image": "",
                         "status": "Return_Initiated",
-                        "reason_code": "004",
+                        "reason_code": "003",
                         "update_type": "return",
                         "ttl_approval": "P2D",
                         "ttl_reverseqc": "P3D"
@@ -31,15 +31,15 @@
                     "quantity": {
                         "count": 1
                     },
-                    "fulfillment_id": "20971-ReverseQC"
+                    "fulfillment_id": "20971"
                 },
                 {
-                    "id": "241",
+                    "id": "sm124",
                     "price": {
-                        "value": "167.00",
+                        "value": "75.00",
                         "currency": "INR"
                     },
-                    "title": "Saffola Classic Instant Masala Oats 500 g",
+                    "title": "Sakthi Biriyani Masala",
                     "quantity": {
                         "count": 1
                     },
@@ -50,18 +50,18 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "167.00",
+                    "value": "75.00",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "price": {
-                            "value": "167.00",
+                            "value": "75.00",
                             "currency": "INR"
                         },
-                        "title": "Saffola Classic Instant Masala Oats 500 g",
+                        "title": "Sakthi Biriyani Masala",
                         "fulfillment_id": "20971",
-                        "@ondc/org/item_id": "241",
+                        "@ondc/org/item_id": "sm124",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -83,16 +83,16 @@
                     "locality": "8th Cross 5th Block Koramangala",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-20T15:21:17.000Z",
-                "updated_at": "2023-03-10T08:04:42.000Z"
+                "created_at": "2023-03-22T07:56:49.000Z",
+                "updated_at": "2023-03-22T07:59:18.000Z"
             },
             "payment": {
                 "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "167.00",
+                    "amount": "75.00",
                     "currency": "INR",
-                    "transaction_id": "ONDC-0b797bc7-3bd3-464c-8e47-beec29a21ba6-1"
+                    "transaction_id": "ONDC-9f8210d9-395c-4e2e-a0a1-037af3a9e982-1"
                 },
                 "status": "PAID",
                 "tl_method": "http/get",
@@ -122,22 +122,22 @@
             },
             "documents": [
                 {
-                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0NjM=",
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0ODg=",
                     "label": "Invoice"
                 }
             ],
-            "created_at": "2023-03-20T15:21:17.000Z",
-            "updated_at": "2023-03-10T08:04:42.000Z",
+            "created_at": "2023-03-22T07:56:49.000Z",
+            "updated_at": "2023-03-22T07:59:18.000Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-20T15:22:28.000Z",
-                                "start": "2023-03-20T15:22:15.000Z"
+                                "end": "2023-03-22T07:59:18.000Z",
+                                "start": "2023-03-22T07:58:21.000Z"
                             },
-                            "timestamp": "2023-03-20T15:22:28.000Z"
+                            "timestamp": "2023-03-22T07:59:18.000Z"
                         },
                         "contact": {
                             "phone": "8447407778"
@@ -161,10 +161,10 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-20T15:22:15.000Z",
-                                "start": "2023-03-20T15:21:17.000Z"
+                                "end": "2023-03-22T07:58:21.000Z",
+                                "start": "2023-03-22T07:56:50.000Z"
                             },
-                            "timestamp": "2023-03-20T15:22:15.000Z"
+                            "timestamp": "2023-03-22T07:58:21.000Z"
                         },
                         "contact": {
                             "email": "aleeminuk@gmail.com",
@@ -191,44 +191,6 @@
                         }
                     },
                     "vehicle": {},
-                    "tracking": false,
-                    "@ondc/org/provider_name": "Evergreen SuperMarket"
-                },
-                {
-                    "id": "20971-ReverseQC",
-                    "type": "Reverse QC",
-                    "start": {
-                        "time": {
-                            "range": {
-                                "end": "2023-03-20T15:22:59.000Z",
-                                "start": "2023-03-20T15:22:58.000Z"
-                            },
-                            "timestamp": "2023-03-20T15:22:59.000Z"
-                        },
-                        "contact": {
-                            "email": "aleeminuk@gmail.com",
-                            "phone": "9727288181"
-                        },
-                        "location": {
-                            "gps": "12.9953231,77.6139826",
-                            "descriptor": {
-                                "name": "Evergreen SuperMarket",
-                                "images": [
-                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
-                                ]
-                            }
-                        },
-                        "instructions": {
-                            "name": "",
-                            "long_desc": "",
-                            "short_desc": ""
-                        }
-                    },
-                    "state": {
-                        "descriptor": {
-                            "code": "Pending"
-                        }
-                    },
                     "tracking": false,
                     "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }

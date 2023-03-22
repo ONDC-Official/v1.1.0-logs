@@ -1,7 +1,7 @@
 {
     "context": {
         "ttl": "PT30S",
-        "city": "*",
+        "city": "std:080",
         "action": "on_status",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
@@ -9,17 +9,17 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-20T15:07:31.132Z",
-        "message_id": "5b9d16ae-8ae1-42a6-bb85-7417cc56807e",
+        "timestamp": "2023-03-22T07:47:16.230Z",
+        "message_id": "52bcb9d9-214b-4baf-a690-ab761e678eca",
         "core_version": "1.1.0",
-        "transaction_id": "be3128b3-a896-48dd-8dea-94d6f8f1a68c"
+        "transaction_id": "6f384034-4ed8-436c-ade0-81a3ca226099"
     },
     "message": {
         "order": {
-            "id": "2023-03-20-592155",
+            "id": "2023-03-22-460238",
             "items": [
                 {
-                    "id": "101",
+                    "id": "sm123",
                     "quantity": {
                         "count": 1
                     },
@@ -36,23 +36,23 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "95.73",
+                    "value": "159.58",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "item": {
                             "price": {
-                                "value": "19.93",
+                                "value": "80.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "18.00",
+                            "value": "80.00",
                             "currency": "INR"
                         },
-                        "title": "Sunfeast Pasta Treat Instant Masala Pasta 65 g",
-                        "@ondc/org/item_id": "101",
+                        "title": "Sakthi Turmeric PowderMannjal Podi 100 g",
+                        "@ondc/org/item_id": "sm123",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -64,7 +64,7 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "101",
+                        "@ondc/org/item_id": "sm123",
                         "@ondc/org/title_type": "tax"
                     },
                     {
@@ -102,6 +102,15 @@
                         "title": "Delivery charges",
                         "@ondc/org/item_id": "20971",
                         "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "4.58",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
                     }
                 ]
             },
@@ -119,16 +128,16 @@
                     "locality": "8th Cross 5th Block Koramangala",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-20T15:07:06.000Z",
-                "updated_at": "2023-03-10T08:04:42.000Z"
+                "created_at": "2023-03-22T07:47:14.000Z",
+                "updated_at": "2023-03-22T07:47:15.000Z"
             },
             "payment": {
                 "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "95.73",
+                    "amount": "159.58",
                     "currency": "INR",
-                    "transaction_id": "ONDC-be3128b3-a896-48dd-8dea-94d6f8f1a68c-1"
+                    "transaction_id": "ONDC-6f384034-4ed8-436c-ade0-81a3ca226099-1"
                 },
                 "status": "PAID",
                 "tl_method": "http/get",
@@ -158,20 +167,20 @@
             },
             "documents": [
                 {
-                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0NjI=",
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0ODc=",
                     "label": "Invoice"
                 }
             ],
-            "created_at": "2023-03-20T15:07:06.000Z",
-            "updated_at": "2023-03-10T08:04:42.000Z",
+            "created_at": "2023-03-22T07:47:14.000Z",
+            "updated_at": "2023-03-22T07:47:15.000Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-21T16:07:06.000Z",
-                                "start": "2023-03-21T15:07:06.000Z"
+                                "end": "2023-03-23T08:47:14.000Z",
+                                "start": "2023-03-23T07:47:14.000Z"
                             }
                         },
                         "contact": {
@@ -196,8 +205,8 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-21T15:07:30.000Z",
-                                "start": "2023-03-20T15:07:30.000Z"
+                                "end": "2023-03-23T07:47:15.000Z",
+                                "start": "2023-03-22T07:47:15.000Z"
                             }
                         },
                         "contact": {

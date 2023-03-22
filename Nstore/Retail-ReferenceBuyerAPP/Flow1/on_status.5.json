@@ -2,24 +2,31 @@
     "context": {
         "ttl": "PT30S",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_status",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-20T15:01:18.146Z",
-        "message_id": "5ffa5586-6f5f-4bbe-b4c2-f9d0a2732ef8",
+        "timestamp": "2023-03-22T07:50:31.462Z",
+        "message_id": "051ae6a2-9bde-4218-94a8-b8fc42c6cff7",
         "core_version": "1.1.0",
-        "transaction_id": "55f895c1-b0ee-429f-8610-31cc0810dbe3"
+        "transaction_id": "6f384034-4ed8-436c-ade0-81a3ca226099"
     },
     "message": {
         "order": {
-            "id": "2023-03-20-975926",
+            "id": "2023-03-22-460238",
             "items": [
                 {
-                    "id": "241",
+                    "id": "sm123",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "20971"
+                },
+                {
+                    "id": "sm124",
                     "quantity": {
                         "count": 1
                     },
@@ -29,23 +36,23 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "171.47",
+                    "value": "159.58",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "item": {
                             "price": {
-                                "value": "167.00",
+                                "value": "80.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "167.00",
+                            "value": "80.00",
                             "currency": "INR"
                         },
-                        "title": "Saffola Classic Instant Masala Oats 500 g",
-                        "@ondc/org/item_id": "241",
+                        "title": "Sakthi Turmeric PowderMannjal Podi 100 g",
+                        "@ondc/org/item_id": "sm123",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -57,7 +64,34 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "241",
+                        "@ondc/org/item_id": "sm123",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "75.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "75.00",
+                            "currency": "INR"
+                        },
+                        "title": "Sakthi Biriyani Masala",
+                        "@ondc/org/item_id": "sm124",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "sm124",
                         "@ondc/org/title_type": "tax"
                     },
                     {
@@ -71,7 +105,7 @@
                     },
                     {
                         "price": {
-                            "value": "4.47",
+                            "value": "4.58",
                             "currency": "INR"
                         },
                         "title": "Convenience Fee",
@@ -80,30 +114,30 @@
                     }
                 ]
             },
-            "state": "Created",
+            "state": "Completed",
             "billing": {
                 "name": "GirisutaA",
-                "email": "girisutaarun@gmail.com",
+                "email": "girisuta@nstore.in",
                 "phone": "8447407778",
                 "address": {
                     "city": "Bengaluru",
                     "name": "GirisutaA",
                     "state": "Karnataka",
-                    "country": "IND",
+                    "country": "India",
                     "building": "Bethany school",
                     "locality": "8th Cross 5th Block Koramangala",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-20T15:00:35.743Z",
-                "updated_at": "2023-03-20T15:00:35.743Z"
+                "created_at": "2023-03-22T07:47:14.000Z",
+                "updated_at": "2023-03-22T07:48:25.000Z"
             },
             "payment": {
                 "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "171.47",
+                    "amount": "159.58",
                     "currency": "INR",
-                    "transaction_id": "ONDC-55f895c1-b0ee-429f-8610-31cc0810dbe3-1"
+                    "transaction_id": "ONDC-6f384034-4ed8-436c-ade0-81a3ca226099-1"
                 },
                 "status": "PAID",
                 "tl_method": "http/get",
@@ -125,28 +159,32 @@
             },
             "provider": {
                 "id": "20971",
-                "rateable": true,
                 "locations": [
                     {
                         "id": "20971"
                     }
                 ]
             },
-            "documents": [],
-            "created_at": "2023-03-20T15:01:15.476Z",
-            "updated_at": "2023-03-20T15:01:18.146Z",
+            "documents": [
+                {
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0ODc=",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-03-22T07:47:14.000Z",
+            "updated_at": "2023-03-22T07:48:25.000Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-21T16:01:18.146Z",
-                                "start": "2023-03-21T15:01:18.145Z"
-                            }
+                                "end": "2023-03-22T07:48:25.000Z",
+                                "start": "2023-03-22T07:47:51.000Z"
+                            },
+                            "timestamp": "2023-03-22T07:48:25.000Z"
                         },
                         "contact": {
-                            "email": "girisutaarun@gmail.com",
                             "phone": "8447407778"
                         },
                         "location": {
@@ -155,30 +193,36 @@
                                 "city": "Bengaluru",
                                 "name": "GirisutaA",
                                 "state": "Karnataka",
-                                "country": "IND",
+                                "country": "India",
                                 "building": "Bethany school",
                                 "locality": "8th Cross 5th Block Koramangala",
                                 "area_code": "560005"
                             }
-                        }
+                        },
+                        "instructions": {}
                     },
                     "type": "Delivery",
+                    "agent": {},
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-21T15:01:18.145Z",
-                                "start": "2023-03-20T15:01:18.145Z"
-                            }
+                                "end": "2023-03-22T07:47:51.000Z",
+                                "start": "2023-03-22T07:47:15.000Z"
+                            },
+                            "timestamp": "2023-03-22T07:47:51.000Z"
                         },
                         "contact": {
-                            "email": "",
+                            "email": "aleeminuk@gmail.com",
                             "phone": "9727288181"
                         },
                         "location": {
                             "id": "20971",
                             "gps": "12.9953231,77.6139826",
                             "descriptor": {
-                                "name": "Evergreen SuperMarket"
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
                             }
                         },
                         "instructions": {
@@ -188,12 +232,12 @@
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
-                    "rateable": true,
+                    "vehicle": {},
                     "tracking": false,
-                    "@ondc/org/provider_name": "20971"
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }
             ]
         }

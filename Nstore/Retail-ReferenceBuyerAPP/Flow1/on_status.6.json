@@ -1,84 +1,116 @@
 {
     "context": {
         "ttl": "PT30S",
-        "city": "*",
-        "action": "on_update",
+        "city": "std:080",
+        "action": "on_status",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-20T15:41:02.531Z",
-        "message_id": "e57c7aa2-bebb-4c81-801e-6d951a7ad623",
+        "timestamp": "2023-03-22T07:53:10.713Z",
+        "message_id": "ca3842b3-8955-4fb4-931e-83004d4515bb",
         "core_version": "1.1.0",
-        "transaction_id": "e8298cbd-be13-4424-92e9-d633e24de8b2"
+        "transaction_id": "6f384034-4ed8-436c-ade0-81a3ca226099"
     },
     "message": {
         "order": {
-            "id": "2023-03-20-238443",
+            "id": "2023-03-22-460238",
             "items": [
                 {
-                    "id": "101",
-                    "tags": {
-                        "status": "Return_Delivered",
-                        "reason_code": 3,
-                        "update_type": "return",
-                        "ttl_approval": "P2D",
-                        "ttl_reverseqc": "P3D"
-                    },
+                    "id": "sm123",
                     "quantity": {
                         "count": 1
                     },
-                    "fulfillment_id": "20971-ReverseQC"
+                    "fulfillment_id": "20971"
                 },
                 {
-                    "id": "101",
-                    "tags": {
-                        "status": "Return_Delivered",
-                        "reason_code": 3,
-                        "update_type": "return",
-                        "ttl_approval": "P2D",
-                        "ttl_reverseqc": "P3D"
-                    },
+                    "id": "sm124",
                     "quantity": {
                         "count": 1
                     },
-                    "fulfillment_id": "20971-ReverseQC"
-                },
-                {
-                    "id": "224",
-                    "price": {
-                        "value": "112.92",
-                        "currency": "INR"
-                    },
-                    "title": "Maggi Masala Penne Instant Pazzta Family Saver Pack 130 g",
-                    "quantity": {
-                        "count": 2
-                    },
-                    "fulfillment_id": "20971",
-                    "@ondc/org/title_type": "item"
+                    "fulfillment_id": "20971"
                 }
             ],
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "112.92",
+                    "value": "159.58",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
+                        "item": {
+                            "price": {
+                                "value": "80.00",
+                                "currency": "INR"
+                            }
+                        },
                         "price": {
-                            "value": "112.92",
+                            "value": "80.00",
                             "currency": "INR"
                         },
-                        "title": "Maggi Masala Penne Instant Pazzta Family Saver Pack 130 g",
-                        "fulfillment_id": "20971",
-                        "@ondc/org/item_id": "224",
+                        "title": "Sakthi Turmeric PowderMannjal Podi 100 g",
+                        "@ondc/org/item_id": "sm123",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
-                            "count": 2
+                            "count": 1
                         }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "sm123",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "75.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "75.00",
+                            "currency": "INR"
+                        },
+                        "title": "Sakthi Biriyani Masala",
+                        "@ondc/org/item_id": "sm124",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "sm124",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "4.58",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
                     }
                 ]
             },
@@ -96,16 +128,16 @@
                     "locality": "8th Cross 5th Block Koramangala",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-20T15:35:58.000Z",
-                "updated_at": "2023-03-10T08:04:42.000Z"
+                "created_at": "2023-03-22T07:47:14.000Z",
+                "updated_at": "2023-03-22T07:48:25.000Z"
             },
             "payment": {
                 "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "112.92",
+                    "amount": "159.58",
                     "currency": "INR",
-                    "transaction_id": "ONDC-e8298cbd-be13-4424-92e9-d633e24de8b2-1"
+                    "transaction_id": "ONDC-6f384034-4ed8-436c-ade0-81a3ca226099-1"
                 },
                 "status": "PAID",
                 "tl_method": "http/get",
@@ -135,22 +167,22 @@
             },
             "documents": [
                 {
-                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0NjU=",
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0ODc=",
                     "label": "Invoice"
                 }
             ],
-            "created_at": "2023-03-20T15:35:58.000Z",
-            "updated_at": "2023-03-10T08:04:42.000Z",
+            "created_at": "2023-03-22T07:47:14.000Z",
+            "updated_at": "2023-03-22T07:48:25.000Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-20T15:36:33.000Z",
-                                "start": "2023-03-20T15:36:13.000Z"
+                                "end": "2023-03-22T07:48:25.000Z",
+                                "start": "2023-03-22T07:47:51.000Z"
                             },
-                            "timestamp": "2023-03-20T15:36:33.000Z"
+                            "timestamp": "2023-03-22T07:48:25.000Z"
                         },
                         "contact": {
                             "phone": "8447407778"
@@ -174,10 +206,10 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-20T15:36:13.000Z",
-                                "start": "2023-03-20T15:35:59.000Z"
+                                "end": "2023-03-22T07:47:51.000Z",
+                                "start": "2023-03-22T07:47:15.000Z"
                             },
-                            "timestamp": "2023-03-20T15:36:13.000Z"
+                            "timestamp": "2023-03-22T07:47:51.000Z"
                         },
                         "contact": {
                             "email": "aleeminuk@gmail.com",
@@ -204,71 +236,6 @@
                         }
                     },
                     "vehicle": {},
-                    "tracking": false,
-                    "@ondc/org/provider_name": "Evergreen SuperMarket"
-                },
-                {
-                    "id": "20971-ReverseQC",
-                    "end": {
-                        "time": {
-                            "range": {
-                                "end": "2023-03-20T15:41:02.284Z",
-                                "start": "2023-03-20T15:40:34.000Z"
-                            },
-                            "timestamp": "2023-03-20T15:41:02.284Z"
-                        },
-                        "contact": {
-                            "email": "aleeminuk@gmail.com",
-                            "phone": "9727288181"
-                        },
-                        "location": {
-                            "gps": "12.9953231,77.6139826",
-                            "descriptor": {
-                                "name": "Evergreen SuperMarket",
-                                "images": [
-                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
-                                ]
-                            }
-                        },
-                        "instructions": {
-                            "name": "",
-                            "long_desc": "",
-                            "short_desc": ""
-                        }
-                    },
-                    "type": "Reverse QC",
-                    "start": {
-                        "time": {
-                            "range": {
-                                "end": "2023-03-20T15:40:14.000Z",
-                                "start": "2023-03-20T15:40:34.000Z"
-                            },
-                            "timestamp": "2023-03-20T15:40:14.000Z"
-                        },
-                        "contact": {
-                            "email": "aleeminuk@gmail.com",
-                            "phone": "9727288181"
-                        },
-                        "location": {
-                            "gps": "12.9953231,77.6139826",
-                            "descriptor": {
-                                "name": "Evergreen SuperMarket",
-                                "images": [
-                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
-                                ]
-                            }
-                        },
-                        "instructions": {
-                            "name": "",
-                            "long_desc": "",
-                            "short_desc": ""
-                        }
-                    },
-                    "state": {
-                        "descriptor": {
-                            "code": "Pending"
-                        }
-                    },
                     "tracking": false,
                     "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }
