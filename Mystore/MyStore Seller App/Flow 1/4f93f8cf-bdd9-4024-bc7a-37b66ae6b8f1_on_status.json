@@ -4,15 +4,15 @@
       "domain": "nic2004:52110",
       "country": "IND",
       "city": "std:080",
-      "core_version": "1.0.0",
+      "core_version": "1.1.0",
       "action": "on_status",
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_id": "beta.mystore.in",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "48a49a0b-681e-4cc1-922f-ec141b227e40",
-      "message_id": "90cdef73-7f72-4c8d-b907-08d70df3b93f",
-      "timestamp": "2023-03-22T06:54:03.236Z",
+      "transaction_id": "4f93f8cf-bdd9-4024-bc7a-37b66ae6b8f1",
+      "message_id": "49c42b55-3a2e-473e-8d4e-ab4adfb8308d",
+      "timestamp": "2023-03-23T14:19:35.737Z",
       "ttl": "PT30S"
     },
     "message": {
@@ -61,10 +61,10 @@
               "item": {
                 "quantity": {
                   "available": {
-                    "count": "396"
+                    "count": "392"
                   },
                   "maximum": {
-                    "count": "396"
+                    "count": "392"
                   }
                 },
                 "price": {
@@ -87,10 +87,10 @@
               "item": {
                 "quantity": {
                   "available": {
-                    "count": "100"
+                    "count": "5"
                   },
                   "maximum": {
-                    "count": "100"
+                    "count": "5"
                   }
                 },
                 "price": {
@@ -123,15 +123,15 @@
           "phone": "8368476734",
           "name": "Saurabh",
           "email": "saurabh@test.com",
-          "created_at": "2023-03-22T06:52:25.633Z",
-          "updated_at": "2023-03-22T06:52:25.633Z"
+          "created_at": "2023-03-23T14:18:58.981Z",
+          "updated_at": "2023-03-23T14:18:58.981Z"
         },
         "fulfillments": [
           {
             "state": {
               "descriptor": {
-                "name": "Order picked up",
-                "code": "Order-picked-up"
+                "name": "Pending",
+                "code": "Pending"
               }
             },
             "type": "Delivery",
@@ -142,14 +142,11 @@
                 "descriptor": {
                   "name": "62733ab9f1f53df939f25300"
                 },
-                "gps": "12.972442,77.580643"
+                "gps": "12.9812829,77.5951451"
               },
               "contact": {
                 "phone": "8010117117",
                 "email": "seller@mystore.in"
-              },
-              "time": {
-                "timestamp": "2023-03-22T06:54:03.197Z"
               }
             },
             "end": {
@@ -181,7 +178,7 @@
           "params": {
             "amount": "670",
             "currency": "INR",
-            "transaction_id": "ONDC-48a49a0b-681e-4cc1-922f-ec141b227e40-1"
+            "transaction_id": "ONDC-4f93f8cf-bdd9-4024-bc7a-37b66ae6b8f1-1"
           },
           "status": "PAID",
           "type": "ON-ORDER",
@@ -201,10 +198,10 @@
             }
           ]
         },
-        "id": "2023-03-22-492077",
-        "state": "Order picked up",
-        "created_at": "2023-03-22T06:52:45.022Z",
-        "updated_at": "2023-03-22T06:52:45.022Z"
+        "id": "2023-03-23-499923",
+        "state": "Accepted",
+        "created_at": "2023-03-23T14:19:23.306Z",
+        "updated_at": "2023-03-23T14:19:35.744Z"
       }
     }
   },
@@ -213,26 +210,21 @@
       "domain": "nic2004:52110",
       "country": "IND",
       "city": "std:080",
-      "core_version": "1.0.0",
+      "core_version": "1.1.0",
       "action": "on_status",
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_id": "beta.mystore.in",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "48a49a0b-681e-4cc1-922f-ec141b227e40",
-      "message_id": "90cdef73-7f72-4c8d-b907-08d70df3b93f",
-      "timestamp": "2023-03-22T06:54:03.236Z",
+      "transaction_id": "4f93f8cf-bdd9-4024-bc7a-37b66ae6b8f1",
+      "message_id": "49c42b55-3a2e-473e-8d4e-ab4adfb8308d",
+      "timestamp": "2023-03-23T14:19:35.737Z",
       "ttl": "PT30S"
     },
     "message": {
       "ack": {
-        "status": "NACK"
+        "status": "ACK"
       }
-    },
-    "error": {
-      "type": "JSON-SCHEMA-ERROR",
-      "code": "20000",
-      "message": "Validation error: 'Order picked up' is not one of ['Created', 'Accepted', 'In-progress', 'Completed', 'Cancelled', 'Packed', 'Out-for-delivery'] for path: ['message']['order']['state']"
     }
   }
 }
