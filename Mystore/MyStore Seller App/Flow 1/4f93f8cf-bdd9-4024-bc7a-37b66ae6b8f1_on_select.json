@@ -1,0 +1,147 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "4f93f8cf-bdd9-4024-bc7a-37b66ae6b8f1",
+      "message_id": "dc876dab-c9fd-4c78-b462-3d5924ba4757",
+      "timestamp": "2023-03-23T14:18:34.890Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "62733ab9f1f53df939f25300"
+        },
+        "provider_location": {
+          "id": "62733ab9f1f53df939f25300"
+        },
+        "items": [
+          {
+            "id": "6414365e9e3780d6c5f3b83d",
+            "location_id": "62733ab9f1f53df939f25300",
+            "fulfillment_id": "Fulfillment1"
+          },
+          {
+            "id": "641435ce9e3780d6c5f3b609",
+            "location_id": "62733ab9f1f53df939f25300",
+            "fulfillment_id": "Fulfillment1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "670"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "6414365e9e3780d6c5f3b83d",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "rice 2000gm",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "500"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "392"
+                  },
+                  "maximum": {
+                    "count": "392"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "500"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "641435ce9e3780d6c5f3b609",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "rice 100gm",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "120"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "5"
+                  },
+                  "maximum": {
+                    "count": "5"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "120"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50"
+              }
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "Fulfillment1",
+            "@ondc/org/provider_name": "mystore",
+            "tracking": true,
+            "state": {
+              "descriptor": {
+                "name": "Serviceable",
+                "code": "Serviceable"
+              }
+            },
+            "@ondc/org/category": "Standard Delivery",
+            "@ondc/org/TAT": "P2D"
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "4f93f8cf-bdd9-4024-bc7a-37b66ae6b8f1",
+      "message_id": "dc876dab-c9fd-4c78-b462-3d5924ba4757",
+      "timestamp": "2023-03-23T14:18:34.890Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}
