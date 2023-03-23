@@ -1,0 +1,226 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "confirm",
+		"country": "IND",
+		"city": "std:080",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https://ondc-staging.paytm.com/retail",
+		"transaction_id": "06c5db34-a8b0-4b71-9082-a0ebc3bff38f",
+		"message_id": ":SentTimeStamp:1679407064802:",
+		"timestamp": "2023-03-21T13:57:44.797Z",
+		"bpp_id": "api3.eksecond.in",
+		"bpp_uri": "https://api3.eksecond.in/ondc"
+	},
+	"message": {
+		"order": {
+			"id": "F4B89BDCB2BD5CE23CA618580AE34769",
+			"items": [
+				{
+					"id": "63db97929cc68fbae328fa65",
+					"quantity": {
+						"count": 2
+					},
+					"fulfillment_id": "38703088-bd5c-445f-9ad6-42508c7a48c8"
+				},
+				{
+					"id": "640843cb6a4db5be49821396",
+					"quantity": {
+						"count": 2
+					},
+					"fulfillment_id": "38703088-bd5c-445f-9ad6-42508c7a48c8"
+				}
+			],
+			"billing": {
+				"name": "Najeeb Ahmed",
+				"address": {
+					"building": "h1, apartment 2",
+					"name": "Najeeb Ahmed",
+					"locality": "sarjapur road",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "India",
+					"area_code": "560035"
+				},
+				"phone": "9000912423",
+				"created_at": "2023-03-21T13:56:10.777Z",
+				"updated_at": "2023-03-21T13:56:10.777Z"
+			},
+			"provider": {
+				"id": "632839af4bea4df42dfe336b",
+				"locations": [
+					{
+						"id": "632839af4bea4df42dfe336b"
+					}
+				]
+			},
+			"fulfillments": [
+				{
+					"id": "38703088-bd5c-445f-9ad6-42508c7a48c8",
+					"type": "Delivery",
+					"tracking": true,
+					"start": {
+						"location": {
+							"id": "632839af4bea4df42dfe336b",
+							"descriptor": {
+								"name": "632839af4bea4df42dfe336b"
+							},
+							"gps": "12.913371523733359,77.68308302883554"
+						},
+						"time": {
+							"range": {
+								"start": "2023-03-21T15:57:44.798Z",
+								"end": "2023-03-21T16:27:44.798Z"
+							}
+						},
+						"instructions": {
+							"name": "pick up instructions",
+							"short_desc": "Provide the order id"
+						},
+						"contact": {
+							"phone": "9876543210",
+							"email": "ondc@gmail.com"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.911397,77.680164",
+							"address": {
+								"building": "h1, apartment 2",
+								"name": "Najeeb Ahmed",
+								"locality": "sarjapur road",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "India",
+								"area_code": "560035"
+							}
+						},
+						"time": {
+							"range": {
+								"start": "2023-03-21T17:57:44.798Z",
+								"end": "2023-03-21T18:27:44.798Z"
+							}
+						},
+						"instructions": {
+							"name": "drop off instructions",
+							"short_desc": "Leave at door step"
+						},
+						"contact": {
+							"phone": "8885336235"
+						},
+						"person": {
+							"name": "Najeeb Ahmed"
+						}
+					},
+					"provider_id": "632839af4bea4df42dfe336b"
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1694.10"
+				},
+				"breakup": [
+					{
+						"title": "Imperial Special Mutton Biryani",
+						"price": {
+							"currency": "INR",
+							"value": "878.00"
+						},
+						"@ondc/org/title_type": "item",
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "439"
+							}
+						},
+						"@ondc/org/item_quantity": {
+							"count": 2
+						},
+						"@ondc/org/item_id": "63db97929cc68fbae328fa65"
+					},
+					{
+						"title": "Ginger Prawns",
+						"price": {
+							"currency": "INR",
+							"value": "640.00"
+						},
+						"@ondc/org/title_type": "item",
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						},
+						"@ondc/org/item_quantity": {
+							"count": 2
+						},
+						"@ondc/org/item_id": "640843cb6a4db5be49821396"
+					},
+					{
+						"title": "Packing charges",
+						"price": {
+							"currency": "INR",
+							"value": "2.5"
+						},
+						"@ondc/org/title_type": "packing",
+						"@ondc/org/item_id": "38703088-bd5c-445f-9ad6-42508c7a48c8"
+					},
+					{
+						"title": "Tax",
+						"price": {
+							"currency": "INR",
+							"value": "22.39"
+						},
+						"@ondc/org/title_type": "tax",
+						"@ondc/org/item_id": "63db97929cc68fbae328fa65"
+					},
+					{
+						"title": "Tax",
+						"price": {
+							"currency": "INR",
+							"value": "16.32"
+						},
+						"@ondc/org/title_type": "tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821396"
+					},
+					{
+						"title": "Delivery charges",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						},
+						"@ondc/org/title_type": "delivery",
+						"@ondc/org/item_id": "38703088-bd5c-445f-9ad6-42508c7a48c8"
+					},
+					{
+						"title": "Convenience Fee",
+						"price": {
+							"currency": "INR",
+							"value": "95.89"
+						},
+						"@ondc/org/title_type": "misc",
+						"@ondc/org/item_id": "38703088-bd5c-445f-9ad6-42508c7a48c8"
+					}
+				]
+			},
+			"payment": {
+				"uri": "https://ondc.transaction.com/payment",
+				"tl_method": "http/get",
+				"params": {
+					"currency": "INR",
+					"transaction_id": "20230321011770000845019666673619400",
+					"amount": "1694"
+				},
+				"type": "ON-ORDER",
+				"status": "PAID",
+				"collected_by": "BAP",
+				"@ondc/org/buyer_app_finder_fee_type": "percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3"
+			},
+			"created_at": "2023-03-21T13:57:44.797Z",
+			"updated_at": "2023-03-21T13:57:44.797Z"
+		}
+	}
+}

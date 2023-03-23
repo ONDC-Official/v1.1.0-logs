@@ -1,0 +1,49 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_init",
+		"core_version": "1.1.0",
+		"bap_id": "api3.eksecond.in",
+		"bap_uri": "https://api3.eksecond.in/ondc",
+		"bpp_id": "ondc-preprod.loadshare.net",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"transaction_id": "632839af4bea4df42dfe336b|a969370c-e820-4c88-a4e0-70a3c051faee",
+		"message_id": "91ea1f37-64cd-49e6-a5ec-418ec9d36b4b",
+		"timestamp": "2023-03-23T10:57:28.839Z"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "loadshare@ondc-preprod.loadshare.net"
+			},
+			"items": [
+				{
+					"id": "express"
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "39"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "express",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						}
+					}
+				]
+			},
+			"payment": {
+				"type": "POST-FULFILLMENT",
+				"collected_by": "BAP",
+				"@ondc/org/settlement_details": []
+			}
+		}
+	}
+}

@@ -1,0 +1,287 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_update",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https://ondc-staging.paytm.com/retail",
+		"bpp_id": "api3.eksecond.in",
+		"bpp_uri": "https://api3.eksecond.in/ondc",
+		"transaction_id": "63f2f4f2-372f-4197-a797-b28b52c9eda5",
+		"message_id": "1349568433783:1679401700802",
+		"timestamp": "2023-03-21T12:31:43.187Z"
+	},
+	"message": {
+		"order": {
+			"id": "F85A800A23773A7926CC207F186E4063",
+			"items": [
+				{
+					"id": "640843cb6a4db5be49821396",
+					"fulfillment_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+					"quantity": {
+						"count": 2
+					}
+				},
+				{
+					"id": "640843cb6a4db5be49821394",
+					"fulfillment_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+					"quantity": {
+						"count": 1
+					}
+				},
+				{
+					"id": "640843cb6a4db5be49821395",
+					"fulfillment_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+					"quantity": {
+						"count": 1
+					},
+					"tags": {
+						"status": "Liquidated"
+					}
+				}
+			],
+			"fulfillments": [
+				{
+					"id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+					"type": "Delivery",
+					"provider_id": "632839af4bea4df42dfe336b",
+					"@ondc/org/provider_name": "LoadShare Networks",
+					"state": {
+						"descriptor": {
+							"name": "Order-delivered",
+							"code": "Order-delivered"
+						}
+					},
+					"agent": {
+						"name": "Akhil borah",
+						"phone": "7892791741"
+					},
+					"start": {
+						"location": {
+							"id": "632839af4bea4df42dfe336b",
+							"descriptor": {
+								"name": "Rumaan"
+							},
+							"gps": "12.913371523733359,77.68308302883554",
+							"address": {
+								"name": "Rumaan",
+								"street": "3rd Floor, Gold Sand, Ambalipura - Sarjapur Rd",
+								"building": "1",
+								"locality": "Doddakannelli",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560035"
+							},
+							"circle": {
+								"gps": "12.9108368820838, 77.68566072642056",
+								"radius": {
+									"value": "25",
+									"unit": "km"
+								}
+							},
+							"time": {
+								"range": {
+									"start": "0600",
+									"end": "2300"
+								},
+								"days": "1,2,3,4,5,6,7"
+							}
+						},
+						"time": {
+							"timestamp": "2023-03-21T12:26:35.162Z",
+							"range": {
+								"start": "2023-03-21T12:37:13.000Z",
+								"end": "2023-03-21T12:47:13.000Z"
+							}
+						},
+						"instructions": {
+							"short_desc": "5JJM",
+							"long_desc": "Ensure to display pickup code on counter before pickup"
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "mohd@gmail.com"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.911397,77.680164",
+							"address": {
+								"name": "Najeeb Ahmed",
+								"building": "h1, apartment 2",
+								"locality": "sarjapur road",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "India",
+								"area_code": "560035"
+							}
+						},
+						"time": {
+							"timestamp": "2023-03-21T12:26:39.772Z",
+							"range": {
+								"start": "2023-03-21T13:07:13.000Z",
+								"end": "2023-03-21T13:22:13.000Z"
+							}
+						},
+						"instructions": {
+							"short_desc": "L237",
+							"long_desc": "Ensure to display pickup code on counter before pickup"
+						},
+						"contact": {
+							"phone": "8885336235"
+						},
+						"person": {
+							"name": "Najeeb Ahmed"
+						}
+					},
+					"rateable": true
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1116.37"
+				},
+				"breakup": [
+					{
+						"title": "Prawns Fry Roast",
+						"@ondc/org/item_id": "640843cb6a4db5be49821394",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "320.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1"
+								},
+								"maximum": {
+									"count": "1"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						}
+					},
+					{
+						"title": "Loose Prawns",
+						"@ondc/org/item_id": "640843cb6a4db5be49821395",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "0.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 0
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1"
+								},
+								"maximum": {
+									"count": "1"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						}
+					},
+					{
+						"title": "Ginger Prawns",
+						"@ondc/org/item_id": "640843cb6a4db5be49821396",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "640.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 2
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "2"
+								},
+								"maximum": {
+									"count": "2"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						}
+					},
+					{
+						"title": "Packing charges",
+						"@ondc/org/item_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+						"@ondc/org/title_type": "packing",
+						"price": {
+							"currency": "INR",
+							"value": "2.5"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821394",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "16.32"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821395",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "0"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821396",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "16.32"
+						}
+					},
+					{
+						"title": "Delivery charges",
+						"@ondc/org/item_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						}
+					},
+					{
+						"title": "Convenience Fee",
+						"@ondc/org/item_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+						"@ondc/org/title_type": "misc",
+						"price": {
+							"currency": "INR",
+							"value": "82.23"
+						}
+					}
+				],
+				"ttl": "PT10M"
+			},
+			"state": "Completed"
+		}
+	}
+}
