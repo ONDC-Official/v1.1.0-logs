@@ -1,0 +1,213 @@
+{
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_status",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+      "transaction_id": "433c57a5-901a-467b-a61d-ca8a627b15d6",
+      "message_id": "5e975a72-1a05-4c37-b7c9-6845f4ffcd1b",
+      "timestamp": "2023-03-27T06:05:12.625Z",
+      "bpp_id": "ondc.hulsecure.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-03-27-731083",
+        "state": "Completed",
+        "provider": {
+          "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
+          "locations": [
+            {
+              "id": "65426587829"
+            }
+          ],
+          "rateable": true
+        },
+        "items": [
+          {
+            "id": "44790347235628",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+          },
+          {
+            "id": "44790347366700",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+          }
+        ],
+        "billing": {
+          "address": {
+            "name": "Harish",
+            "building": "A133",
+            "locality": "A133 Noida sector 63",
+            "city": "Noida",
+            "state": "Uttar Pradesh",
+            "country": "IND",
+            "area_code": "201301"
+          },
+          "phone": "6393245616",
+          "name": "Harish",
+          "email": "harish.maurya@ens.enterprises",
+          "created_at": "2023-03-27T06:01:04.998Z",
+          "updated_at": "2023-03-27T06:01:04.998Z"
+        },
+        "fulfillments": [
+          {
+            "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+            "type": "Delivery",
+            "@ondc/org/provider_name": "The Ushop",
+            "tracking": true,
+            "state": {
+              "descriptor": {
+                "code": "Order-delivered"
+              }
+            },
+            "start": {
+              "location": {
+                "id": "65426587829",
+                "descriptor": {
+                  "name": "The U Shop",
+                  "images": [
+                    "https://cdn.shopify.com/s/files/1/0521/3460/9077/files/abc_150x.png?v=1631895895"
+                  ]
+                },
+                "gps": "12.956399,77.636803"
+              },
+              "contact": {
+                "phone": "18008330506",
+                "email": "customercare@theushop.in"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-27T06:05:12.625Z",
+                  "end": "2023-03-31T06:05:12.815Z"
+                },
+                "timestamp": "2023-03-27T06:05:12.815Z"
+              }
+            },
+            "end": {
+              "contact": {
+                "email": "harish.maurya@ens.enterprises",
+                "phone": "6393245616"
+              },
+              "person": {
+                "name": "Harish"
+              },
+              "location": {
+                "gps": "28.574981, 77.320812",
+                "address": {
+                  "name": "Harish",
+                  "building": "A133",
+                  "locality": "A133 Noida sector 63",
+                  "city": "Noida",
+                  "state": "Uttar Pradesh",
+                  "country": "IND",
+                  "area_code": "201301"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-03-27T06:05:12.625Z",
+                  "end": "2023-03-31T06:05:12.815Z"
+                },
+                "timestamp": "2023-03-27T06:05:12.815Z"
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "4444"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "44790347235628",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "Axe Dark Temptation Long Lasting Deodorant Bodyspray For Men 215 ml",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "2222"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "44790347366700",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "Axe Gold Temptation Long Lasting Deodorant Bodyspray For Men 215 ml",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "2222"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "payment": {
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
+          "params": {
+            "amount": "4444",
+            "currency": "INR",
+            "transaction_id": "ONDC-433c57a5-901a-467b-a61d-ca8a627b15d6-1"
+          },
+          "status": "PAID",
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "JHAKAAS RETAIL PRIVATE LIMITED",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "upi_address": "8860775669@paytm",
+              "settlement_bank_account_no": "623905034810",
+              "settlement_ifsc_code": "ICIC0006239",
+              "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+              "bank_name": "ICICI BANK",
+              "branch_name": "Mumbai Chembur branch"
+            }
+          ]
+        },
+        "created_at": "2023-03-27T06:01:21.453Z",
+        "updated_at": "2023-03-27T06:05:12.815Z"
+      }
+    }
+  }
+}
