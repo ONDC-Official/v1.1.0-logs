@@ -1,0 +1,180 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://sit.mytra.money/api/method/ondc/",
+        "transaction_id": "1b848086-db5c-439f-98ec-776107323f1c",
+        "message_id": "ee031b90-711c-4300-b2df-31e5e5185786",
+        "timestamp": "2023-03-28T05:04:44.248Z",
+        "bpp_id": "sit.mytra.money"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "Sleepy Owl Salted Caramel Cold Brew Coffee - Bottle",
+                    "location_id": "Finished Goods - Pwc",
+                    "fulfillment_id": "ONDC-REQ-37308"
+                },
+                {
+                    "id": "Nescafe Sunrise Premium Instant Coffee Powder 50 g",
+                    "location_id": "Finished Goods - Pwc",
+                    "fulfillment_id": "ONDC-REQ-37308"
+                },
+                {
+                    "id": "Dabur Honey, 500 gm",
+                    "location_id": "Finished Goods - Pwc",
+                    "fulfillment_id": "ONDC-REQ-37308"
+                }
+            ],
+            "provider": {
+                "id": "PwcTech Technologies Pvt Ltd",
+                "locations": [
+                    {
+                        "id": "Finished Goods - Pwc"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "end": {
+                        "location": {
+                            "gps": "17.439332, 78.457702",
+                            "address": {
+                                "area_code": "500016"
+                            }
+                        }
+                    },
+                    "id": "ONDC-REQ-37308",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "@ondc/org/provider_name": "PwcTech Technologies Pvt Ltd",
+                    "@ondc/org/TAT": "P2D",
+                    "@ondc/org/category": "Next Day Delivery"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "858.81"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Sleepy Owl Salted Caramel Cold Brew Coffee - Bottle",
+                        "@ondc/org/item_quantity": {
+                            "count": 2.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Sleepy Owl Salted Caramel Cold Brew Coffee - Bottle",
+                        "price": {
+                            "currency": "INR",
+                            "value": "161.02"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "2.0"
+                                },
+                                "maximum": {
+                                    "count": "2.0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "80.51"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Nescafe Sunrise Premium Instant Coffee Powder 50 g",
+                        "@ondc/org/item_quantity": {
+                            "count": 3.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Nescafe Sunrise Premium Instant Coffee Powder 50 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "212.55"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "3.0"
+                                },
+                                "maximum": {
+                                    "count": "3.0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "70.85"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Dabur Honey, 500 gm",
+                        "@ondc/org/item_quantity": {
+                            "count": 2.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Dabur Honey, 500 gm",
+                        "price": {
+                            "currency": "INR",
+                            "value": "354.24"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "2.0"
+                                },
+                                "maximum": {
+                                    "count": "2.0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "177.12"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Sleepy Owl Salted Caramel Cold Brew Coffee - Bottle",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "28.98"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Nescafe Sunrise Premium Instant Coffee Powder 50 g",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "38.26"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Dabur Honey, 500 gm",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "63.76"
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            }
+        }
+    }
+}

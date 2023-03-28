@@ -1,0 +1,131 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://sit.mytra.money/api/method/ondc/",
+        "transaction_id": "d590e398-7e7f-4d94-b67e-af4e7f87d51c",
+        "message_id": "74950e36-a811-4079-8c51-284f25461a79",
+        "timestamp": "2023-03-28T07:06:50.292Z",
+        "bpp_id": "sit.mytra.money"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "Lion Dates, 250g",
+                    "location_id": "Finished Goods - Pwc",
+                    "fulfillment_id": "ONDC-REQ-37433"
+                },
+                {
+                    "id": "Lion Dates/Kharjura - Deseeded, 500 g Pouch",
+                    "location_id": "Finished Goods - Pwc",
+                    "fulfillment_id": "ONDC-REQ-37433"
+                }
+            ],
+            "provider": {
+                "id": "PwcTech Technologies Pvt Ltd",
+                "locations": [
+                    {
+                        "id": "Finished Goods - Pwc"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "end": {
+                        "location": {
+                            "gps": "17.439332, 78.457702",
+                            "address": {
+                                "area_code": "500016"
+                            }
+                        }
+                    },
+                    "id": "ONDC-REQ-37433",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "@ondc/org/provider_name": "PwcTech Technologies Pvt Ltd",
+                    "@ondc/org/TAT": "P2D",
+                    "@ondc/org/category": "Next Day Delivery"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "188.08"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Lion Dates, 250g",
+                        "@ondc/org/item_quantity": {
+                            "count": 3.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Lion Dates, 250g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "159.39"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "3.0"
+                                },
+                                "maximum": {
+                                    "count": "3.0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "53.13"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Lion Dates/Kharjura - Deseeded, 500 g Pouch",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Lion Dates/Kharjura - Deseeded, 500 g Pouch",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "0"
+                                },
+                                "maximum": {
+                                    "count": "0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "0"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Lion Dates, 250g",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "28.69"
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            }
+        }
+    }
+}

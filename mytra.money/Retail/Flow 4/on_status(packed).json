@@ -1,0 +1,230 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://sit.mytra.money/api/method/ondc/",
+        "transaction_id": "d4c9b205-0fb1-4190-a718-cd8de822b1b7",
+        "message_id": "28a2eb10-16f7-4cdc-beac-fffbdaf95cf4",
+        "timestamp": "2023-03-28T06:35:39.640Z",
+        "bpp_id": "sit.mytra.money"
+    },
+    "message": {
+        "order": {
+            "id": "2023-03-28-225060",
+            "state": "Accepted",
+            "provider": {
+                "id": "PwcTech Technologies Pvt Ltd",
+                "locations": [
+                    {
+                        "id": "Test Warehouse-Billing"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "Lion Dates, 250g",
+                    "fulfillment_id": "MAT-DN-2023-00066",
+                    "quantity": {
+                        "count": 5.0
+                    }
+                },
+                {
+                    "id": "Lion Dates/Kharjura - Deseeded, 500 g Pouch",
+                    "fulfillment_id": "MAT-DN-2023-00066",
+                    "quantity": {
+                        "count": 2.0
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "587.06"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Lion Dates, 250g",
+                        "@ondc/org/item_quantity": {
+                            "count": 5.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Lion Dates, 250g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "265.65"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "5.0"
+                                },
+                                "maximum": {
+                                    "count": "5.0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "53.13"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Lion Dates/Kharjura - Deseeded, 500 g Pouch",
+                        "@ondc/org/item_quantity": {
+                            "count": 2.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Lion Dates/Kharjura - Deseeded, 500 g Pouch",
+                        "price": {
+                            "currency": "INR",
+                            "value": "231.86"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "2.0"
+                                },
+                                "maximum": {
+                                    "count": "2.0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "115.93"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Lion Dates, 250g",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "47.82"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Lion Dates/Kharjura - Deseeded, 500 g Pouch",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "41.73"
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            },
+            "billing": {
+                "address": {
+                    "name": "Juhi Agarwal",
+                    "building": "Opp Sister Niveditha School",
+                    "locality": "F No 302, Sridevi Apartment, Ameerpet",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "IND",
+                    "area_code": "500016"
+                },
+                "phone": "9883088662",
+                "name": "Juhi Agarwal",
+                "email": "cajuhiagarwal@gmail.com",
+                "created_at": "2023-03-28T06:34:16.372Z",
+                "updated_at": "2023-03-28T06:34:16.372Z"
+            },
+            "created_at": "2023-03-28T06:34:32.256Z",
+            "updated_at": "2023-03-28T06:35:39.117Z",
+            "fulfillments": [
+                {
+                    "id": "MAT-DN-2023-00066",
+                    "type": "Delivery",
+                    "@ondc/org/provider_name": "PwcTech Technologies Pvt Ltd",
+                    "tracking": false,
+                    "end": {
+                        "contact": {
+                            "email": "cajuhiagarwal@gmail.com",
+                            "phone": "9883088662"
+                        },
+                        "person": {
+                            "name": "Juhi Agarwal"
+                        },
+                        "location": {
+                            "gps": "17.439332, 78.457702",
+                            "address": {
+                                "name": "Juhi Agarwal",
+                                "building": "Opp Sister Niveditha School",
+                                "locality": "F No 302, Sridevi Apartment, Ameerpet",
+                                "ward": null,
+                                "city": "Hyderabad",
+                                "state": "Telangana",
+                                "country": "IND",
+                                "area_code": "500016"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-03-28T06:34:32.256Z",
+                                "end": "2023-03-30T06:34:32.256Z"
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Packed",
+                            "name": "Packed"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "id": "Finished Goods - Pwc",
+                            "descriptor": {
+                                "name": "PwcTech Technologies Pvt Ltd",
+                                "images": []
+                            },
+                            "gps": "17.456417,78.376666",
+                            "contact": {
+                                "phone": "9703525310",
+                                "email": ""
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-03-28T06:34:32.256Z",
+                                "end": "2023-03-30T06:34:32.256Z"
+                            }
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "587.06",
+                    "currency": "INR",
+                    "transaction_id": "ONDC-d4c9b205-0fb1-4190-a718-cd8de822b1b7-1"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "111222333444",
+                        "settlement_ifsc_code": "ICIC0001112",
+                        "beneficiary_name": "PwcTech Technologies Pvt Ltd",
+                        "bank_name": "ICICI BANK LIMITED"
+                    }
+                ]
+            }
+        }
+    }
+}

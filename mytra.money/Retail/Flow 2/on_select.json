@@ -1,0 +1,180 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://sit.mytra.money/api/method/ondc/",
+        "transaction_id": "9c54ac05-fb78-4201-a159-97a9cbc41cfe",
+        "message_id": "de6c31af-7e3f-4c0c-a9ee-6055f3dbbf1d",
+        "timestamp": "2023-03-28T05:41:14.411Z",
+        "bpp_id": "sit.mytra.money"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "Pillsburry Choco Chip Flavour Pancake Mix",
+                    "location_id": "Finished Goods - Pwc",
+                    "fulfillment_id": "ONDC-REQ-37328"
+                },
+                {
+                    "id": "Sleepy Owl Cold Brew Mocha Coffee - Bottle",
+                    "location_id": "Finished Goods - Pwc",
+                    "fulfillment_id": "ONDC-REQ-37328"
+                },
+                {
+                    "id": "Sleepy Owl Premium Hazelnut Instant Coffee",
+                    "location_id": "Finished Goods - Pwc",
+                    "fulfillment_id": "ONDC-REQ-37328"
+                }
+            ],
+            "provider": {
+                "id": "PwcTech Technologies Pvt Ltd",
+                "locations": [
+                    {
+                        "id": "Finished Goods - Pwc"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "end": {
+                        "location": {
+                            "gps": "17.439332, 78.457702",
+                            "address": {
+                                "area_code": "500016"
+                            }
+                        }
+                    },
+                    "id": "ONDC-REQ-37328",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "@ondc/org/provider_name": "PwcTech Technologies Pvt Ltd",
+                    "@ondc/org/TAT": "P2D",
+                    "@ondc/org/category": "Next Day Delivery"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1920.91"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Pillsburry Choco Chip Flavour Pancake Mix",
+                        "@ondc/org/item_quantity": {
+                            "count": 3.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Pillsburry Choco Chip Flavour Pancake Mix",
+                        "price": {
+                            "currency": "INR",
+                            "value": "239.13"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "3.0"
+                                },
+                                "maximum": {
+                                    "count": "3.0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "79.71"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Sleepy Owl Cold Brew Mocha Coffee - Bottle",
+                        "@ondc/org/item_quantity": {
+                            "count": 3.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Sleepy Owl Cold Brew Mocha Coffee - Bottle",
+                        "price": {
+                            "currency": "INR",
+                            "value": "241.53"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "3.0"
+                                },
+                                "maximum": {
+                                    "count": "3.0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "80.51"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Sleepy Owl Premium Hazelnut Instant Coffee",
+                        "@ondc/org/item_quantity": {
+                            "count": 3.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Sleepy Owl Premium Hazelnut Instant Coffee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1147.23"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "3.0"
+                                },
+                                "maximum": {
+                                    "count": "3.0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "382.41"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Pillsburry Choco Chip Flavour Pancake Mix",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "43.04"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Sleepy Owl Cold Brew Mocha Coffee - Bottle",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "43.48"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Sleepy Owl Premium Hazelnut Instant Coffee",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "206.5"
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            }
+        }
+    }
+}
