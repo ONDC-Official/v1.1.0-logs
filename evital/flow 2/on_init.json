@@ -1,0 +1,158 @@
+{
+       "context": {
+              "action": "on_init",
+              "transaction_id": "951fe7a2-0856-4dcc-bf06-898147e7a807",
+              "message_id": "8539595e-2ef8-47ab-94e5-00e2653e6a10",
+              "bap_id": "buyer-app-preprod.ondc.org",
+              "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+              "domain": "nic2004:52110",
+              "bpp_id": "dev-ondc.evitalrx.in",
+              "bpp_uri": "https://dev-ondc.evitalrx.in/",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "1.1.0",
+              "ttl": "PT30S",
+              "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
+              "timestamp": "2023-03-29T09:49:00.976Z"
+       },
+       "message": {
+              "order": {
+                     "provider": {
+                            "id": "atP8qfHIBNkwDsm8vMf9GQ=="
+                     },
+                     "provider_location": {
+                            "id": "atP8qfHIBNkwDsm8vMf9GQ=="
+                     },
+                     "items": [
+                            {
+                                   "id": "//nHC198X5FaTgAjNRp4fg==",
+                                   "quantity": {
+                                          "count": 4
+                                   },
+                                   "fulfillment_id": "1"
+                            },
+                            {
+                                   "id": "kJmeLa2lWgAVpok2pLaRfg==",
+                                   "quantity": {
+                                          "count": 1
+                                   },
+                                   "fulfillment_id": "1"
+                            }
+                     ],
+                     "billing": {
+                            "address": {
+                                   "building": "halasuru",
+                                   "city": "Bengaluru",
+                                   "state": "Karnataka",
+                                   "country": "IND",
+                                   "area_code": "560008",
+                                   "locality": "HSR layout, cambridge road, halasuru",
+                                   "name": "Manav Patel",
+                                   "door": "",
+                                   "street": "",
+                                   "ward": ""
+                            },
+                            "phone": "7043120038",
+                            "name": "Manav Patel",
+                            "email": "evital.manav@gmail.com",
+                            "created_at": "2023-03-29T09:49:00.880Z",
+                            "updated_at": "2023-03-29T09:49:00.880Z"
+                     },
+                     "fulfillments": [
+                            {
+                                   "id": "1",
+                                   "type": "Delivery",
+                                   "end": {
+                                          "contact": {
+                                                 "email": "evital.manav@gmail.com",
+                                                 "phone": "7043120038"
+                                          },
+                                          "location": {
+                                                 "gps": "12.977203, 77.631812",
+                                                 "address": {
+                                                        "name": "Manav Patel",
+                                                        "building": "halasuru",
+                                                        "locality": "HSR layout, cambridge road, halasuru",
+                                                        "ward": null,
+                                                        "city": "Bengaluru",
+                                                        "state": "Karnataka",
+                                                        "country": "IND",
+                                                        "area_code": "560008"
+                                                 }
+                                          }
+                                   }
+                            }
+                     ],
+                     "quote": {
+                            "price": {
+                                   "currency": "INR",
+                                   "value": "490"
+                            },
+                            "breakup": [
+                                   {
+                                          "@ondc/org/item_id": "//nHC198X5FaTgAjNRp4fg==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 4
+                                          },
+                                          "title": "MamyPoko Standard Pants L",
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": "400"
+                                          },
+                                          "item": {
+                                                 "price": {
+                                                        "currency": "INR",
+                                                        "value": "100"
+                                                 }
+                                          }
+                                   },
+                                   {
+                                          "@ondc/org/item_id": "kJmeLa2lWgAVpok2pLaRfg==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 1
+                                          },
+                                          "title": "MamyPoko Extra Absorb Pants L",
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": "40"
+                                          },
+                                          "item": {
+                                                 "price": {
+                                                        "currency": "INR",
+                                                        "value": "40"
+                                                 }
+                                          }
+                                   },
+                                   {
+                                          "@ondc/org/item_id": "1",
+                                          "title": "Delivery Charge",
+                                          "@ondc/org/title_type": "delivery",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": "50"
+                                          }
+                                   }
+                            ],
+                            "ttl": "P1D"
+                     },
+                     "payment": {
+                            "@ondc/org/buyer_app_finder_fee_type": "percent",
+                            "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                            "@ondc/org/settlement_details": [
+                                   {
+                                          "settlement_counterparty": "seller-app",
+                                          "settlement_phase": "sale-amount",
+                                          "settlement_type": "NEFT",
+                                          "settlement_bank_account_no": "921020012976061",
+                                          "settlement_ifsc_code": "UTIB0003256",
+                                          "beneficiary_name": "Equality Healthcare Pvt Ltd",
+                                          "bank_name": "Axis Bank",
+                                          "branch_name": "SABARMATI AHMEDABAD"
+                                   }
+                            ]
+                     }
+              }
+       }
+}
