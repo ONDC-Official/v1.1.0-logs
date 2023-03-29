@@ -1,0 +1,178 @@
+{
+       "context": {
+              "action": "on_status",
+              "transaction_id": "946eee8b-2ba5-4542-8617-08b3469df6b2",
+              "message_id": "1f83b632-b438-48a6-8eb3-a8f6ee96a236",
+              "bap_id": "buyer-app-preprod.ondc.org",
+              "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+              "domain": "nic2004:52110",
+              "bpp_id": "dev-ondc.evitalrx.in",
+              "bpp_uri": "https://dev-ondc.evitalrx.in/",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "1.1.0",
+              "ttl": "PT30S",
+              "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
+              "timestamp": "2023-03-29T09:04:39.278Z"
+       },
+       "message": {
+              "order": {
+                     "id": "2023-03-29-871120",
+                     "state": "In-progress",
+                     "provider": {
+                            "id": "atP8qfHIBNkwDsm8vMf9GQ==",
+                            "locations": [
+                                   {
+                                          "id": "atP8qfHIBNkwDsm8vMf9GQ=="
+                                   }
+                            ]
+                     },
+                     "items": [
+                            {
+                                   "id": "//nHC198X5FaTgAjNRp4fg==",
+                                   "fulfillment_id": "1",
+                                   "quantity": {
+                                          "count": 3
+                                   }
+                            },
+                            {
+                                   "id": "kJmeLa2lWgAVpok2pLaRfg==",
+                                   "fulfillment_id": "1",
+                                   "quantity": {
+                                          "count": 1
+                                   }
+                            }
+                     ],
+                     "billing": {
+                            "name": "Manav Patel",
+                            "address": {
+                                   "door": "Manav Patel, Hsr Layout, Cambridge Road, Halasuru",
+                                   "name": "home",
+                                   "locality": "",
+                                   "city": "Bengaluru",
+                                   "state": "Karnataka",
+                                   "country": "IND",
+                                   "area_code": "560008"
+                            },
+                            "email": "",
+                            "phone": "7043120038",
+                            "created_at": "2023-03-29T09:03:37.000Z",
+                            "updated_at": "2023-03-29T09:03:37.000Z"
+                     },
+                     "fulfillments": [
+                            {
+                                   "id": "1",
+                                   "@ondc/org/provider_name": "Mohit Pharma Admin loose",
+                                   "type": "Delivery",
+                                   "tracking": false,
+                                   "state": {
+                                          "descriptor": {
+                                                 "name": "Out for delivery",
+                                                 "code": "Out-for-delivery"
+                                          }
+                                   },
+                                   "start": {
+                                          "location": {
+                                                 "descriptor": {
+                                                        "name": "Mohit Pharma Admin loose",
+                                                        "images": [
+                                                               "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg"
+                                                        ]
+                                                 },
+                                                 "gps": "13.0355822,77.5573014"
+                                          },
+                                          "contact": {
+                                                 "phone": "9510720977",
+                                                 "email": "mohit.evital@gmail.com"
+                                          },
+                                          "time": {
+                                                 "timestamp": "2023-03-29T09:04:32.000Z"
+                                          }
+                                   },
+                                   "end": {
+                                          "location": {
+                                                 "gps": "12.9715979,77.6275356",
+                                                 "address": {
+                                                        "door": "Manav Patel, Hsr Layout, Cambridge Road, Halasuru",
+                                                        "name": "home",
+                                                        "locality": "",
+                                                        "city": "Bengaluru",
+                                                        "state": "Karnataka",
+                                                        "country": "IND",
+                                                        "area_code": "560008"
+                                                 }
+                                          },
+                                          "contact": {
+                                                 "phone": "7043120038"
+                                          }
+                                   }
+                            }
+                     ],
+                     "quote": {
+                            "price": {
+                                   "currency": "INR",
+                                   "value": "340"
+                            },
+                            "breakup": [
+                                   {
+                                          "@ondc/org/item_id": "//nHC198X5FaTgAjNRp4fg==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 3
+                                          },
+                                          "title": "MamyPoko Standard Pants L",
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": 300
+                                          }
+                                   },
+                                   {
+                                          "@ondc/org/item_id": "kJmeLa2lWgAVpok2pLaRfg==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 1
+                                          },
+                                          "title": "MamyPoko Extra Absorb Pants L",
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": 40
+                                          }
+                                   }
+                            ]
+                     },
+                     "payment": {
+                            "uri": "https://juspay.in/",
+                            "tl_method": "http/get",
+                            "params": {
+                                   "amount": "340",
+                                   "currency": "INR"
+                            },
+                            "status": "PAID",
+                            "type": "ON-ORDER",
+                            "collected_by": "BAP",
+                            "@ondc/org/buyer_app_finder_fee_type": "percent",
+                            "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                            "@ondc/org/settlement_details": [
+                                   {
+                                          "settlement_counterparty": "seller-app",
+                                          "settlement_phase": "sale-amount",
+                                          "settlement_type": "NEFT",
+                                          "settlement_bank_account_no": "921020012976061",
+                                          "settlement_ifsc_code": "UTIB0003256",
+                                          "beneficiary_name": "Equality Healthcare Pvt Ltd",
+                                          "bank_name": "Axis Bank",
+                                          "branch_name": "SABARMATI AHMEDABAD"
+                                   }
+                            ]
+                     },
+                     "documents": [
+                            {
+                                   "url": "https://dev.evital.in/invoice/TzRMRlRHTUNUUQ==/print/",
+                                   "label": "Invoice"
+                            }
+                     ],
+                     "created_at": "2023-03-29T09:03:37.000Z",
+                     "updated_at": "2023-03-29T09:04:32.000Z"
+              }
+       }
+}
