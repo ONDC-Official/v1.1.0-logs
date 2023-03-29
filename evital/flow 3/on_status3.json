@@ -1,8 +1,8 @@
 {
        "context": {
-              "action": "on_confirm",
+              "action": "on_status",
+              "message_id": "a88930f2-e918-43e7-8668-57de57bff5dc",
               "transaction_id": "946eee8b-2ba5-4542-8617-08b3469df6b2",
-              "message_id": "d3a96a3a-ecad-4f1a-b336-398515437db5",
               "bap_id": "buyer-app-preprod.ondc.org",
               "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
               "domain": "nic2004:52110",
@@ -13,12 +13,12 @@
               "core_version": "1.1.0",
               "ttl": "PT30S",
               "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
-              "timestamp": "2023-03-29T09:03:37.450Z"
+              "timestamp": "2023-03-29T09:04:46.139Z"
        },
        "message": {
               "order": {
                      "id": "2023-03-29-871120",
-                     "state": "Created",
+                     "state": "Completed",
                      "provider": {
                             "id": "atP8qfHIBNkwDsm8vMf9GQ==",
                             "locations": [
@@ -30,68 +30,83 @@
                      "items": [
                             {
                                    "id": "//nHC198X5FaTgAjNRp4fg==",
+                                   "fulfillment_id": "1",
                                    "quantity": {
                                           "count": 3
-                                   },
-                                   "fulfillment_id": "1"
+                                   }
                             },
                             {
                                    "id": "kJmeLa2lWgAVpok2pLaRfg==",
+                                   "fulfillment_id": "1",
                                    "quantity": {
                                           "count": 1
-                                   },
-                                   "fulfillment_id": "1"
+                                   }
                             }
                      ],
                      "billing": {
+                            "name": "Manav Patel",
                             "address": {
-                                   "name": "Manav Patel",
-                                   "building": "HSR layout",
-                                   "locality": "Cambridge road, halasuru",
-                                   "ward": "",
+                                   "door": "Manav Patel, Hsr Layout, Cambridge Road, Halasuru",
+                                   "name": "home",
+                                   "locality": "",
                                    "city": "Bengaluru",
                                    "state": "Karnataka",
                                    "country": "IND",
-                                   "area_code": "560008",
-                                   "door": "",
-                                   "street": ""
+                                   "area_code": "560008"
                             },
+                            "email": "",
                             "phone": "7043120038",
-                            "name": "Manav Patel",
-                            "email": "evital.manav@gmail.com",
-                            "created_at": "2023-03-29T09:03:22.168Z",
-                            "updated_at": "2023-03-29T09:03:22.168Z"
+                            "created_at": "2023-03-29T09:03:37.000Z",
+                            "updated_at": "2023-03-29T09:03:37.000Z"
                      },
                      "fulfillments": [
                             {
                                    "id": "1",
-                                   "end": {
-                                          "contact": {
-                                                 "email": "evital.manav@gmail.com",
-                                                 "phone": "7043120038"
-                                          },
-                                          "person": {
-                                                 "name": "Manav Patel"
-                                          },
+                                   "@ondc/org/provider_name": "Mohit Pharma Admin loose",
+                                   "type": "Delivery",
+                                   "tracking": false,
+                                   "state": {
+                                          "descriptor": {
+                                                 "name": "Order delivered",
+                                                 "code": "Order-delivered"
+                                          }
+                                   },
+                                   "start": {
                                           "location": {
-                                                 "gps": "12.977203, 77.631812",
+                                                 "descriptor": {
+                                                        "name": "Mohit Pharma Admin loose",
+                                                        "images": [
+                                                               "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg"
+                                                        ]
+                                                 },
+                                                 "gps": "13.0355822,77.5573014"
+                                          },
+                                          "contact": {
+                                                 "phone": "9510720977",
+                                                 "email": "mohit.evital@gmail.com"
+                                          },
+                                          "time": {
+                                                 "timestamp": "2023-03-29T09:04:32.000Z"
+                                          }
+                                   },
+                                   "end": {
+                                          "location": {
+                                                 "gps": "12.9715979,77.6275356",
                                                  "address": {
-                                                        "name": "Manav Patel",
-                                                        "building": "HSR layout",
-                                                        "locality": "Cambridge road, halasuru",
-                                                        "ward": null,
+                                                        "door": "Manav Patel, Hsr Layout, Cambridge Road, Halasuru",
+                                                        "name": "home",
+                                                        "locality": "",
                                                         "city": "Bengaluru",
                                                         "state": "Karnataka",
                                                         "country": "IND",
                                                         "area_code": "560008"
                                                  }
-                                          }
-                                   },
-                                   "type": "Delivery",
-                                   "state": {
-                                          "descriptor": {
-                                                 "name": "Pending",
-                                                 "code": "Pending"
+                                          },
+                                          "contact": {
+                                                 "phone": "7043120038"
+                                          },
+                                          "time": {
+                                                 "timestamp": "2023-03-29T09:04:46.000Z"
                                           }
                                    }
                             }
@@ -111,13 +126,7 @@
                                           "@ondc/org/title_type": "item",
                                           "price": {
                                                  "currency": "INR",
-                                                 "value": "300"
-                                          },
-                                          "item": {
-                                                 "price": {
-                                                        "currency": "INR",
-                                                        "value": "100"
-                                                 }
+                                                 "value": 300
                                           }
                                    },
                                    {
@@ -129,25 +138,17 @@
                                           "@ondc/org/title_type": "item",
                                           "price": {
                                                  "currency": "INR",
-                                                 "value": "40"
-                                          },
-                                          "item": {
-                                                 "price": {
-                                                        "currency": "INR",
-                                                        "value": "40"
-                                                 }
+                                                 "value": 40
                                           }
                                    }
-                            ],
-                            "ttl": "P1D"
+                            ]
                      },
                      "payment": {
                             "uri": "https://juspay.in/",
                             "tl_method": "http/get",
                             "params": {
                                    "amount": "340",
-                                   "currency": "INR",
-                                   "transaction_id": "ONDC-946eee8b-2ba5-4542-8617-08b3469df6b2-1"
+                                   "currency": "INR"
                             },
                             "status": "PAID",
                             "type": "ON-ORDER",
@@ -165,12 +166,16 @@
                                           "bank_name": "Axis Bank",
                                           "branch_name": "SABARMATI AHMEDABAD"
                                    }
-                            ],
-                            "@ondc/org/settlement_basis": "Collection",
-                            "@ondc/org/settlement_window": "P2D"
+                            ]
                      },
+                     "documents": [
+                            {
+                                   "url": "https://dev.evital.in/invoice/TzRMRlRHTUNUUQ==/print/",
+                                   "label": "Invoice"
+                            }
+                     ],
                      "created_at": "2023-03-29T09:03:37.000Z",
-                     "updated_at": "2023-03-29T09:03:37.000Z"
+                     "updated_at": "2023-03-29T09:04:46.000Z"
               }
        }
 }

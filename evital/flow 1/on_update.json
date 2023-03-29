@@ -1,8 +1,8 @@
 {
        "context": {
               "action": "on_update",
-              "transaction_id": "f4b0643f-3731-4590-84d8-1f55ab12ae17",
-              "message_id": "7243a9ae-b75b-47a2-80b2-9a7b717ccdb6",
+              "transaction_id": "5e45b719-fd5d-4497-aefe-b3acfd99eea6",
+              "message_id": "ea81672c-837b-40fc-afb4-8ad5b6651740",
               "bap_id": "buyer-app-preprod.ondc.org",
               "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
               "domain": "nic2004:52110",
@@ -13,21 +13,35 @@
               "core_version": "1.1.0",
               "ttl": "PT30S",
               "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
-              "timestamp": "2023-03-28T11:51:25.757Z"
+              "timestamp": "2023-03-29T06:34:36.934Z"
        },
        "message": {
               "order": {
-                     "id": "2023-03-28-409070",
+                     "id": "2023-03-29-626731",
                      "state": "Completed",
                      "items": [
                             {
                                    "id": "//nHC198X5FaTgAjNRp4fg==",
                                    "fulfillment_id": "F1",
                                    "quantity": {
-                                          "count": 0
+                                          "count": 2
                                    },
                                    "tags": {
                                           "status": "Return_Initiated"
+                                   }
+                            },
+                            {
+                                   "id": "//nHC198X5FaTgAjNRp4fg==",
+                                   "fulfillment_id": "F1",
+                                   "quantity": {
+                                          "count": 0
+                                   }
+                            },
+                            {
+                                   "id": "kJmeLa2lWgAVpok2pLaRfg==",
+                                   "fulfillment_id": "F1",
+                                   "quantity": {
+                                          "count": 1
                                    }
                             }
                      ],
@@ -38,7 +52,7 @@
                             },
                             "breakup": [
                                    {
-                                          "@ondc/org/item_id": "PUe/q5mC00cuci4cVAgiWg==",
+                                          "@ondc/org/item_id": "//nHC198X5FaTgAjNRp4fg==",
                                           "@ondc/org/title_type": "item",
                                           "@ondc/org/item_quantity": {
                                                  "count": 0
@@ -46,12 +60,12 @@
                                           "item": {
                                                  "price": {
                                                         "currency": "INR",
-                                                        "value": "40"
+                                                        "value": "100"
                                                  }
                                           }
                                    },
                                    {
-                                          "@ondc/org/item_id": "8orluEHZ13mtYr/kNuhTlA==",
+                                          "@ondc/org/item_id": "kJmeLa2lWgAVpok2pLaRfg==",
                                           "@ondc/org/title_type": "item",
                                           "@ondc/org/item_quantity": {
                                                  "count": 1
@@ -65,7 +79,17 @@
                                    }
                             ]
                      },
-                     "fulfillments": []
+                     "fulfillments": [
+                            {
+                                   "id": "F1",
+                                   "type": "Self-Pickup",
+                                   "state": {
+                                          "descriptor": {
+                                                 "code": "Pending"
+                                          }
+                                   }
+                            }
+                     ]
               }
        }
 }

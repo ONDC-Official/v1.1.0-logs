@@ -1,8 +1,8 @@
 {
        "context": {
               "action": "on_init",
-              "transaction_id": "f4b0643f-3731-4590-84d8-1f55ab12ae17",
-              "message_id": "128ee19b-f053-4b49-8484-48e40796b512",
+              "transaction_id": "5e45b719-fd5d-4497-aefe-b3acfd99eea6",
+              "message_id": "69d7fd7e-5765-41aa-805f-24f6da4c7cdf",
               "bap_id": "buyer-app-preprod.ondc.org",
               "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
               "domain": "nic2004:52110",
@@ -13,7 +13,7 @@
               "core_version": "1.1.0",
               "ttl": "PT30S",
               "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
-              "timestamp": "2023-03-28T11:43:04.592Z"
+              "timestamp": "2023-03-29T06:20:24.232Z"
        },
        "message": {
               "order": {
@@ -27,7 +27,7 @@
                             {
                                    "id": "//nHC198X5FaTgAjNRp4fg==",
                                    "quantity": {
-                                          "count": 1
+                                          "count": 2
                                    },
                                    "fulfillment_id": "1"
                             },
@@ -41,12 +41,12 @@
                      ],
                      "billing": {
                             "address": {
-                                   "building": "halasuru",
+                                   "building": "HSR layout",
                                    "city": "Bengaluru",
                                    "state": "Karnataka",
                                    "country": "IND",
                                    "area_code": "560008",
-                                   "locality": "HSR layout, cambridge road, halasuru",
+                                   "locality": "Cambridge road, halasuru",
                                    "name": "Manav Patel",
                                    "door": "",
                                    "street": "",
@@ -55,8 +55,8 @@
                             "phone": "7043120038",
                             "name": "Manav Patel",
                             "email": "evital.manav@gmail.com",
-                            "created_at": "2023-03-28T11:43:04.446Z",
-                            "updated_at": "2023-03-28T11:43:04.446Z"
+                            "created_at": "2023-03-29T06:20:24.105Z",
+                            "updated_at": "2023-03-29T06:20:24.105Z"
                      },
                      "fulfillments": [
                             {
@@ -71,8 +71,8 @@
                                                  "gps": "12.977203, 77.631812",
                                                  "address": {
                                                         "name": "Manav Patel",
-                                                        "building": "halasuru",
-                                                        "locality": "HSR layout, cambridge road, halasuru",
+                                                        "building": "HSR layout",
+                                                        "locality": "Cambridge road, halasuru",
                                                         "ward": null,
                                                         "city": "Bengaluru",
                                                         "state": "Karnataka",
@@ -86,19 +86,25 @@
                      "quote": {
                             "price": {
                                    "currency": "INR",
-                                   "value": "80"
+                                   "value": "240"
                             },
                             "breakup": [
                                    {
                                           "@ondc/org/item_id": "//nHC198X5FaTgAjNRp4fg==",
                                           "@ondc/org/item_quantity": {
-                                                 "count": 1
+                                                 "count": 2
                                           },
                                           "title": "MamyPoko Standard Pants L",
                                           "@ondc/org/title_type": "item",
                                           "price": {
                                                  "currency": "INR",
-                                                 "value": "40"
+                                                 "value": "200"
+                                          },
+                                          "item": {
+                                                 "price": {
+                                                        "currency": "INR",
+                                                        "value": "100"
+                                                 }
                                           }
                                    },
                                    {
@@ -111,19 +117,20 @@
                                           "price": {
                                                  "currency": "INR",
                                                  "value": "40"
+                                          },
+                                          "item": {
+                                                 "price": {
+                                                        "currency": "INR",
+                                                        "value": "40"
+                                                 }
                                           }
                                    }
                             ],
                             "ttl": "P1D"
                      },
                      "payment": {
-                            "@ondc/org/collected_by_status": "Agree",
-                            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+                            "@ondc/org/buyer_app_finder_fee_type": "percent",
                             "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-                            "@ondc/org/withholding_amount": "0.0",
-                            "@ondc/org/return_window": "0",
-                            "@ondc/org/settlement_basis": "Collection",
-                            "@ondc/org/settlement_window": "P2D",
                             "@ondc/org/settlement_details": [
                                    {
                                           "settlement_counterparty": "seller-app",

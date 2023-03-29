@@ -1,8 +1,8 @@
 {
        "context": {
               "action": "on_status",
-              "message_id": "3483bbe1-2f9a-4456-84c0-b3abad643dee",
-              "transaction_id": "c3c78df8-7f10-4c45-9d44-cbd4cac18d0f",
+              "transaction_id": "946eee8b-2ba5-4542-8617-08b3469df6b2",
+              "message_id": "1f83b632-b438-48a6-8eb3-a8f6ee96a236",
               "bap_id": "buyer-app-preprod.ondc.org",
               "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
               "domain": "nic2004:52110",
@@ -13,12 +13,12 @@
               "core_version": "1.1.0",
               "ttl": "PT30S",
               "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ=",
-              "timestamp": "2023-03-28T12:06:25.515Z"
+              "timestamp": "2023-03-29T09:04:39.278Z"
        },
        "message": {
               "order": {
-                     "id": "2023-03-28-404931",
-                     "state": "Completed",
+                     "id": "2023-03-29-871120",
+                     "state": "In-progress",
                      "provider": {
                             "id": "atP8qfHIBNkwDsm8vMf9GQ==",
                             "locations": [
@@ -32,7 +32,7 @@
                                    "id": "//nHC198X5FaTgAjNRp4fg==",
                                    "fulfillment_id": "1",
                                    "quantity": {
-                                          "count": 1
+                                          "count": 3
                                    }
                             },
                             {
@@ -46,18 +46,18 @@
                      "billing": {
                             "name": "Manav Patel",
                             "address": {
-                                   "door": "Manav Patel, Ganganagar, No 17, 1st  A Cross Binny Mill Road,",
+                                   "door": "Manav Patel, Hsr Layout, Cambridge Road, Halasuru",
                                    "name": "home",
                                    "locality": "",
                                    "city": "Bengaluru",
                                    "state": "Karnataka",
                                    "country": "IND",
-                                   "area_code": "560032"
+                                   "area_code": "560008"
                             },
                             "email": "",
                             "phone": "7043120038",
-                            "created_at": "2023-03-28T12:04:45.000Z",
-                            "updated_at": "2023-03-28T12:06:25.000Z"
+                            "created_at": "2023-03-29T09:03:37.000Z",
+                            "updated_at": "2023-03-29T09:03:37.000Z"
                      },
                      "fulfillments": [
                             {
@@ -67,8 +67,8 @@
                                    "tracking": false,
                                    "state": {
                                           "descriptor": {
-                                                 "name": "Order delivered",
-                                                 "code": "Order-delivered"
+                                                 "name": "Out for delivery",
+                                                 "code": "Out-for-delivery"
                                           }
                                    },
                                    "start": {
@@ -84,19 +84,22 @@
                                           "contact": {
                                                  "phone": "9510720977",
                                                  "email": "mohit.evital@gmail.com"
+                                          },
+                                          "time": {
+                                                 "timestamp": "2023-03-29T09:04:32.000Z"
                                           }
                                    },
                                    "end": {
                                           "location": {
-                                                 "gps": "12.9715987,77.5945627",
+                                                 "gps": "12.9715979,77.6275356",
                                                  "address": {
-                                                        "door": "Manav Patel, Ganganagar, No 17, 1st  A Cross Binny Mill Road,",
+                                                        "door": "Manav Patel, Hsr Layout, Cambridge Road, Halasuru",
                                                         "name": "home",
                                                         "locality": "",
                                                         "city": "Bengaluru",
                                                         "state": "Karnataka",
                                                         "country": "IND",
-                                                        "area_code": "560032"
+                                                        "area_code": "560008"
                                                  }
                                           },
                                           "contact": {
@@ -108,19 +111,19 @@
                      "quote": {
                             "price": {
                                    "currency": "INR",
-                                   "value": 80
+                                   "value": "340"
                             },
                             "breakup": [
                                    {
                                           "@ondc/org/item_id": "//nHC198X5FaTgAjNRp4fg==",
                                           "@ondc/org/item_quantity": {
-                                                 "count": 1
+                                                 "count": 3
                                           },
                                           "title": "MamyPoko Standard Pants L",
                                           "@ondc/org/title_type": "item",
                                           "price": {
                                                  "currency": "INR",
-                                                 "value": 40
+                                                 "value": 300
                                           }
                                    },
                                    {
@@ -141,7 +144,7 @@
                             "uri": "https://juspay.in/",
                             "tl_method": "http/get",
                             "params": {
-                                   "amount": 80,
+                                   "amount": "340",
                                    "currency": "INR"
                             },
                             "status": "PAID",
@@ -160,12 +163,16 @@
                                           "bank_name": "Axis Bank",
                                           "branch_name": "SABARMATI AHMEDABAD"
                                    }
-                            ],
-                            "@ondc/org/settlement_basis": "Collection",
-                            "@ondc/org/settlement_window": "P2D"
+                            ]
                      },
-                     "created_at": "2023-03-28T12:04:45.000Z",
-                     "updated_at": "2023-03-28T12:06:25.000Z"
+                     "documents": [
+                            {
+                                   "url": "https://dev.evital.in/invoice/TzRMRlRHTUNUUQ==/print/",
+                                   "label": "Invoice"
+                            }
+                     ],
+                     "created_at": "2023-03-29T09:03:37.000Z",
+                     "updated_at": "2023-03-29T09:04:32.000Z"
               }
        }
 }
