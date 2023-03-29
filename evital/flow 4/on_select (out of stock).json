@@ -1,0 +1,114 @@
+{
+       "context": {
+              "action": "on_select",
+              "timestamp": "2023-03-29T20:02:16.919Z",
+              "transaction_id": "51887093-6a09-4e9e-939c-a908cf47589c",
+              "message_id": "f1b1d640-49c1-4a06-90c2-16176e273feb",
+              "bap_id": "buyer-app-preprod.ondc.org",
+              "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+              "domain": "nic2004:52110",
+              "bpp_id": "dev-ondc.evitalrx.in",
+              "bpp_uri": "https://dev-ondc.evitalrx.in/",
+              "country": "IND",
+              "city": "std:080",
+              "core_version": "1.1.0",
+              "ttl": "PT30S",
+              "key": "IRhD+bmmOQNVyXKziYzr0jMDkeAzS3y3Vx6oqiEA3eQ="
+       },
+       "message": {
+              "order": {
+                     "provider": {
+                            "id": "atP8qfHIBNkwDsm8vMf9GQ=="
+                     },
+                     "items": [
+                            {
+                                   "fulfillment_id": "1",
+                                   "id": "//nHC198X5FaTgAjNRp4fg=="
+                            },
+                            {
+                                   "fulfillment_id": "1",
+                                   "id": "kJmeLa2lWgAVpok2pLaRfg=="
+                            }
+                     ],
+                     "fulfillments": [
+                            {
+                                   "id": "1",
+                                   "@ondc/org/provider_name": "Mohit Pharma Admin loose",
+                                   "tracking": false,
+                                   "@ondc/org/category": "Same Day Delivery",
+                                   "@ondc/org/TAT": "P1D",
+                                   "state": {
+                                          "descriptor": {
+                                                 "code": "Non-serviceable"
+                                          }
+                                   }
+                            }
+                     ],
+                     "quote": {
+                            "price": {
+                                   "currency": "INR",
+                                   "value": "280"
+                            },
+                            "breakup": [
+                                   {
+                                          "@ondc/org/item_id": "//nHC198X5FaTgAjNRp4fg==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 2
+                                          },
+                                          "title": "MamyPoko Standard Pants L",
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": "200"
+                                          },
+                                          "item": {
+                                                 "quantity": {
+                                                        "available": {
+                                                               "count": "4"
+                                                        },
+                                                        "maximum": {
+                                                               "count": "9"
+                                                        }
+                                                 },
+                                                 "price": {
+                                                        "currency": "INR",
+                                                        "value": "100"
+                                                 }
+                                          }
+                                   },
+                                   {
+                                          "@ondc/org/item_id": "kJmeLa2lWgAVpok2pLaRfg==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 2
+                                          },
+                                          "title": "MamyPoko Extra Absorb Pants L",
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": "80"
+                                          },
+                                          "item": {
+                                                 "quantity": {
+                                                        "available": {
+                                                               "count": "1"
+                                                        },
+                                                        "maximum": {
+                                                               "count": "2"
+                                                        }
+                                                 },
+                                                 "price": {
+                                                        "currency": "INR",
+                                                        "value": "40"
+                                                 }
+                                          }
+                                   }
+                            ],
+                            "ttl": "PT8H"
+                     }
+              }
+       },
+       "error": {
+              "type": "DOMAIN-ERROR",
+              "code": "40002"
+       }
+}
