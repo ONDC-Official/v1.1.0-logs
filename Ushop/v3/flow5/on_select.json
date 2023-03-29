@@ -1,0 +1,122 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+    "transaction_id": "0b224ce1-eeac-40a3-9b5c-ce45be98e4e4",
+    "message_id": "8d4b33bb-391d-4b04-8d62-669f7c53bf4d",
+    "timestamp": "2023-03-28T16:07:57.420Z",
+    "bpp_id": "ondc.hulsecure.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
+      },
+      "fulfillments": [
+        {
+          "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+          "@ondc/org/provider_name": "The U Shop",
+          "tracking": false,
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "P7D",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "2222"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "44790347366700",
+            "@ondc/org/item_quantity": {
+              "count": 0
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "1111"
+              },
+              "quantity": {
+                "available": {
+                  "count": "0"
+                },
+                "maximum": {
+                  "count": "0"
+                }
+              }
+            },
+            "title": "Axe Gold Temptation Long Lasting Deodorant Bodyspray For Men 215 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "44790347563308",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "1111"
+              },
+              "quantity": {
+                "available": {
+                  "count": "2"
+                },
+                "maximum": {
+                  "count": "2"
+                }
+              }
+            },
+            "title": "Axe Intense Long Lasting Deodorant Bodyspray For Men 215 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "2222"
+            }
+          },
+          {
+            "title": "Delivery charges",
+            "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "items": [
+        {
+          "id": "44790347366700",
+          "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+        },
+        {
+          "id": "44790347563308",
+          "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+        }
+      ]
+    }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "40002"
+  }
+}
