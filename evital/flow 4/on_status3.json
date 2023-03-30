@@ -1,9 +1,9 @@
 {
        "context": {
-              "action": "on_confirm",
-              "timestamp": "2023-03-30T11:44:47.093Z",
-              "transaction_id": "a0ed0699-193f-4f98-9b44-23674deb7793",
-              "message_id": "10b9a48e-42e9-4b9a-8d0f-257a3c1c1bca",
+              "action": "on_status",
+              "timestamp": "2023-03-30T11:36:59.784Z",
+              "message_id": "cfb00368-9632-49cd-a471-0f447c989fca",
+              "transaction_id": "03571d90-fce0-43b4-9d76-c6b6b0b3bfce",
               "bap_id": "buyer-app-preprod.ondc.org",
               "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
               "domain": "nic2004:52110",
@@ -17,8 +17,8 @@
        },
        "message": {
               "order": {
-                     "id": "2023-03-30-983494",
-                     "state": "Created",
+                     "id": "2023-03-30-563681",
+                     "state": "Completed",
                      "provider": {
                             "id": "atP8qfHIBNkwDsm8vMf9GQ==",
                             "locations": [
@@ -29,60 +29,53 @@
                      },
                      "items": [
                             {
+                                   "id": "//nHC198X5FaTgAjNRp4fg==",
+                                   "fulfillment_id": "1",
+                                   "quantity": {
+                                          "count": 1
+                                   }
+                            },
+                            {
                                    "id": "kJmeLa2lWgAVpok2pLaRfg==",
+                                   "fulfillment_id": "1",
                                    "quantity": {
                                           "count": 2
-                                   },
-                                   "fulfillment_id": "1"
+                                   }
                             }
                      ],
                      "billing": {
+                            "name": "Manav Patel",
                             "address": {
-                                   "name": "Manav Patel",
-                                   "building": "halasuru",
-                                   "locality": "No 17, 1st  a cross binny mill road, ganganagar",
+                                   "door": "Manav Patel, Ganganagar, No 17, 1st  A Cross Binny Mill",
+                                   "name": "home",
+                                   "locality": "Road,",
                                    "city": "Bengaluru",
                                    "state": "Karnataka",
                                    "country": "IND",
                                    "area_code": "560032"
                             },
+                            "email": "",
                             "phone": "7043120038",
-                            "name": "Manav Patel",
-                            "email": "evital.manav@gmail.com",
-                            "created_at": "2023-03-30T11:44:32.705Z",
-                            "updated_at": "2023-03-30T11:44:32.705Z"
+                            "created_at": "2023-03-30T11:27:18.633Z",
+                            "updated_at": "2023-03-30T11:27:18.633Z"
                      },
                      "fulfillments": [
                             {
                                    "id": "1",
-                                   "end": {
-                                          "contact": {
-                                                 "email": "evital.manav@gmail.com",
-                                                 "phone": "7043120038"
-                                          },
-                                          "person": {
-                                                 "name": "Manav Patel"
-                                          },
-                                          "location": {
-                                                 "gps": "13.021574, 77.5927590000001",
-                                                 "address": {
-                                                        "name": "Manav Patel",
-                                                        "building": "halasuru",
-                                                        "locality": "No 17, 1st  a cross binny mill road, ganganagar",
-                                                        "city": "Bengaluru",
-                                                        "state": "Karnataka",
-                                                        "country": "IND",
-                                                        "area_code": "560032"
-                                                 }
+                                   "@ondc/org/provider_name": "Mohit Pharma Admin loose",
+                                   "type": "Delivery",
+                                   "tracking": false,
+                                   "state": {
+                                          "descriptor": {
+                                                 "name": "Order delivered",
+                                                 "code": "Order-delivered"
                                           }
                                    },
-                                   "type": "Delivery",
                                    "start": {
                                           "location": {
                                                  "descriptor": {
                                                         "name": "Mohit Pharma Admin loose",
                                                         "images": [
-                                                               "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg",
                                                                "https://d1tu4pmhr82np8.cloudfront.net/storage/chemists/kyc/default.jpg"
                                                         ]
                                                  },
@@ -90,13 +83,30 @@
                                           },
                                           "contact": {
                                                  "phone": "9510720977",
-                                                 "email": ""
+                                                 "email": "mohit.evital@gmail.com"
+                                          },
+                                          "time": {
+                                                 "timestamp": "2023-03-30T11:36:37.000Z"
                                           }
                                    },
-                                   "state": {
-                                          "descriptor": {
-                                                 "name": "Pending",
-                                                 "code": "Pending"
+                                   "end": {
+                                          "location": {
+                                                 "gps": "12.9715987,77.5945627",
+                                                 "address": {
+                                                        "door": "Manav Patel, Ganganagar, No 17, 1st  A Cross Binny Mill",
+                                                        "name": "home",
+                                                        "locality": "Road,",
+                                                        "city": "Bengaluru",
+                                                        "state": "Karnataka",
+                                                        "country": "IND",
+                                                        "area_code": "560032"
+                                                 }
+                                          },
+                                          "contact": {
+                                                 "phone": "7043120038"
+                                          },
+                                          "time": {
+                                                 "timestamp": "2023-03-30T11:36:59.000Z"
                                           }
                                    }
                             }
@@ -104,9 +114,27 @@
                      "quote": {
                             "price": {
                                    "currency": "INR",
-                                   "value": "170"
+                                   "value": "280"
                             },
                             "breakup": [
+                                   {
+                                          "@ondc/org/item_id": "//nHC198X5FaTgAjNRp4fg==",
+                                          "@ondc/org/item_quantity": {
+                                                 "count": 1
+                                          },
+                                          "title": "MamyPoko Standard Pants L",
+                                          "@ondc/org/title_type": "item",
+                                          "price": {
+                                                 "currency": "INR",
+                                                 "value": "150"
+                                          },
+                                          "item": {
+                                                 "price": {
+                                                        "currency": "INR",
+                                                        "value": "150"
+                                                 }
+                                          }
+                                   },
                                    {
                                           "@ondc/org/item_id": "kJmeLa2lWgAVpok2pLaRfg==",
                                           "@ondc/org/item_quantity": {
@@ -116,34 +144,31 @@
                                           "@ondc/org/title_type": "item",
                                           "price": {
                                                  "currency": "INR",
-                                                 "value": "120"
+                                                 "value": "80"
                                           },
                                           "item": {
                                                  "price": {
                                                         "currency": "INR",
-                                                        "value": "60"
+                                                        "value": "40"
                                                  }
                                           }
                                    },
                                    {
-                                          "@ondc/org/item_id": "1",
-                                          "title": "Delivery Charge",
+                                          "title": "Delivery charges",
                                           "@ondc/org/title_type": "delivery",
                                           "price": {
                                                  "currency": "INR",
                                                  "value": "50"
                                           }
                                    }
-                            ],
-                            "ttl": "P1D"
+                            ]
                      },
                      "payment": {
                             "uri": "https://juspay.in/",
                             "tl_method": "http/get",
                             "params": {
-                                   "amount": "170",
-                                   "currency": "INR",
-                                   "transaction_id": "ONDC-a0ed0699-193f-4f98-9b44-23674deb7793-1"
+                                   "amount": "280",
+                                   "currency": "INR"
                             },
                             "status": "PAID",
                             "type": "ON-ORDER",
@@ -161,12 +186,16 @@
                                           "bank_name": "Axis Bank",
                                           "branch_name": "SABARMATI AHMEDABAD"
                                    }
-                            ],
-                            "@ondc/org/settlement_basis": "Collection",
-                            "@ondc/org/settlement_window": "P2D"
+                            ]
                      },
-                     "created_at": "2023-03-30T11:44:45.000Z",
-                     "updated_at": "2023-03-30T11:44:45.000Z"
+                     "documents": [
+                            {
+                                   "url": "https://dev.evital.in/invoice/T1VMRlYxN0JTVA==/print/",
+                                   "label": "Invoice"
+                            }
+                     ],
+                     "created_at": "2023-03-30T11:27:32.000Z",
+                     "updated_at": "2023-03-30T11:27:32.000Z"
               }
        }
 }
