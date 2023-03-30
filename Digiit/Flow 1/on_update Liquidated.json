@@ -1,0 +1,122 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "preprod-bpp.dbs.digiit.io",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_update",
+    "transaction_id": "8d63f6aa-9cc7-417d-8862-9e460b5c2c92",
+    "message_id": "4a05ff76-712b-4936-b78e-f300fab90b4e",
+    "timestamp": "2023-03-29T12:02:29.643Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-03-29-745320",
+      "state": "Completed",
+      "items": [
+        {
+          "id": "999",
+          "fulfillment_id": "80853bb6-48dd-49de-ac6b-d1d649e800fe",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "1057",
+          "quantity": {
+            "count": 1
+          },
+          "tags": {
+            "status": "Liquidated"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "157.75"
+        },
+        "breakup": [
+          {
+            "title": "Rice Flour",
+            "price": {
+              "currency": "INR",
+              "value": "57.75"
+            },
+            "ondc_org_item_id": "999",
+            "ondc_org_item_quantity": {
+              "count": 1
+            },
+            "ondc_org_title_type": "item",
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "57.75"
+              }
+            }
+          },
+          {
+            "title": "Delivery charges",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            },
+            "ondc_org_item_id": "80853bb6-48dd-49de-ac6b-d1d649e800fe",
+            "ondc_org_title_type": "delivery"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "80853bb6-48dd-49de-ac6b-d1d649e800fe",
+          "type": "Delivery",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "name": "Order delivered",
+              "code": "Order-delivered"
+            }
+          },
+          "start": {
+            "location": {
+              "descriptor": {
+                "name": "Sridhivyam"
+              },
+              "gps": "12.871414900,77.570119000"
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-29T11:54:47.123Z",
+                "end": "2023-03-29T12:09:47.123Z"
+              }
+            },
+            "contact": {
+              "phone": "7760246669",
+              "email": "psriram78@yahoo.com"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.898463, 77.600873"
+            },
+            "time": {
+              "timestamp": "2023-03-29T12:00:21.077Z",
+              "range": {
+                "start": "2023-03-29T12:24:47.123Z",
+                "end": "2023-03-29T12:39:47.123Z"
+              }
+            },
+            "contact": {
+              "phone": "9843123383"
+            }
+          },
+          "ondc_org_provider_name": "Ganesh"
+        }
+      ]
+    }
+  }
+}

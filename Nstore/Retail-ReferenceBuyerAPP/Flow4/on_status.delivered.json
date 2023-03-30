@@ -1,0 +1,235 @@
+{
+    "context": {
+        "city": "*",
+        "action": "on_status",
+        "bap_id": "ondc.indiastack.cloud",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-29T15:21:16.748Z",
+        "message_id": "450523a2-de75-4ff3-bfb7-2f0f10625bec",
+        "core_version": "1.1.0",
+        "transaction_id": "bc4499e0-f246-46d8-b2c1-3cd913a7aeda"
+    },
+    "message": {
+        "order": {
+            "id": "de952f98-d06e-4b6f-a2bb-91e182f18d80",
+            "items": [
+                {
+                    "id": "520",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "20971"
+                },
+                {
+                    "id": "524",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "20971"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "389.31",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "284.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "284.00",
+                            "currency": "INR"
+                        },
+                        "title": "Nutralite Calcium Choco Spread 275 g",
+                        "@ondc/org/item_id": "520",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "520",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "92.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "92.00",
+                            "currency": "INR"
+                        },
+                        "title": "Veeba Chilli Eggless Mayonnaise 275 g",
+                        "@ondc/org/item_id": "524",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "524",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "13.31",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "state": "Completed",
+            "billing": {
+                "name": "GirisutaA",
+                "email": "girisuta@nstore.in",
+                "phone": "8447407778",
+                "address": {
+                    "city": "Bangalore",
+                    "name": "Pulikeshi Nagar",
+                    "state": "KARNATAKA",
+                    "country": "India",
+                    "building": "1",
+                    "locality": "Cleveland Rd",
+                    "area_code": "560005"
+                },
+                "created_at": "2023-03-29T15:20:35.000Z",
+                "updated_at": "2023-03-29T15:20:35.000Z"
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "389.31",
+                    "currency": "INR",
+                    "transaction_id": "order_LXO4S5uIeAi93Y"
+                },
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFCB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
+            },
+            "provider": {
+                "id": "20971",
+                "locations": [
+                    {
+                        "id": "20971"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg1Mzk=",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-03-29T15:20:35.000Z",
+            "updated_at": "2023-03-29T15:21:16.000Z",
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-29T15:21:16.000Z",
+                                "start": "2023-03-29T15:20:49.000Z"
+                            },
+                            "timestamp": "2023-03-29T15:21:16.000Z"
+                        },
+                        "contact": {
+                            "phone": "8447407778"
+                        },
+                        "location": {
+                            "gps": "12.9953231,77.6139826",
+                            "address": {
+                                "city": "Bangalore",
+                                "name": "Pulikeshi Nagar",
+                                "state": "KARNATAKA",
+                                "country": "India",
+                                "building": "1",
+                                "locality": "Cleveland Rd",
+                                "area_code": "560005"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-29T15:20:49.000Z",
+                                "start": "2023-03-29T15:20:35.000Z"
+                            },
+                            "timestamp": "2023-03-29T15:20:49.000Z"
+                        },
+                        "contact": {
+                            "email": "aleeminuk@gmail.com",
+                            "phone": "9727288181"
+                        },
+                        "location": {
+                            "id": "20971",
+                            "gps": "12.9953231,77.6139826",
+                            "descriptor": {
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,235 @@
+{
+    "context": {
+        "city": "std:080",
+        "action": "on_status",
+        "bap_id": "ondc.indiastack.cloud",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-29T13:28:55.582Z",
+        "message_id": "a2c62754-e535-4cb7-b526-7b480b86b317",
+        "core_version": "1.1.0",
+        "transaction_id": "5a2d4946-9a90-48ac-8040-da96e96c309f"
+    },
+    "message": {
+        "order": {
+            "id": "1e0ec032-78a9-4a3e-84c2-0ddc376b26c1",
+            "items": [
+                {
+                    "id": "511",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "20971"
+                },
+                {
+                    "id": "defc2222",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "20971"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "144.95",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "117.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "117.00",
+                            "currency": "INR"
+                        },
+                        "title": "Mothers Recipe Punjabi Pachranga Pickle 400 g",
+                        "@ondc/org/item_id": "511",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "511",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "23.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "23.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tata Salt",
+                        "@ondc/org/item_id": "defc2222",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "defc2222",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "4.95",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "state": "Completed",
+            "billing": {
+                "name": "GirisutaA",
+                "email": "girisuta@nstore.in",
+                "phone": "8447407778",
+                "address": {
+                    "city": "Bangalore",
+                    "name": "Pulikeshi Nagar",
+                    "state": "KARNATAKA",
+                    "country": "India",
+                    "building": "1",
+                    "locality": "Cleveland Rd",
+                    "area_code": "560005"
+                },
+                "created_at": "2023-03-29T13:27:56.000Z",
+                "updated_at": "2023-03-29T13:27:56.000Z"
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "144.95",
+                    "currency": "INR",
+                    "transaction_id": "order_LXM9VjUqWoOsyC"
+                },
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFCB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
+            },
+            "provider": {
+                "id": "20971",
+                "locations": [
+                    {
+                        "id": "20971"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg1MzU=",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-03-29T13:27:56.000Z",
+            "updated_at": "2023-03-29T13:28:55.000Z",
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-29T13:28:55.000Z",
+                                "start": "2023-03-29T13:28:28.000Z"
+                            },
+                            "timestamp": "2023-03-29T13:28:55.000Z"
+                        },
+                        "contact": {
+                            "phone": "8447407778"
+                        },
+                        "location": {
+                            "gps": "12.9953231,77.6139826",
+                            "address": {
+                                "city": "Bangalore",
+                                "name": "Pulikeshi Nagar",
+                                "state": "KARNATAKA",
+                                "country": "India",
+                                "building": "1",
+                                "locality": "Cleveland Rd",
+                                "area_code": "560005"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-29T13:28:28.000Z",
+                                "start": "2023-03-29T13:27:57.000Z"
+                            },
+                            "timestamp": "2023-03-29T13:28:28.000Z"
+                        },
+                        "contact": {
+                            "email": "aleeminuk@gmail.com",
+                            "phone": "9727288181"
+                        },
+                        "location": {
+                            "id": "20971",
+                            "gps": "12.9953231,77.6139826",
+                            "descriptor": {
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "error": {
+        "code": "40002",
+        "type": "DOMAIN-ERROR"
+    },
+    "context": {
+        "city": "std:080",
+        "action": "on_select",
+        "bap_id": "ondc.indiastack.cloud",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-29T15:30:07.640Z",
+        "message_id": "2469aefe-648c-46cc-b638-6b8f8463bd49",
+        "core_version": "1.1.0",
+        "transaction_id": "ffcfecba-dec0-41df-806c-9624c83035e9"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "517",
+                    "fulfillment_id": "20971"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "129.42",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "125.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "125.00",
+                            "currency": "INR"
+                        },
+                        "title": "Veeba Sweet Chilli Sauce 350 g",
+                        "@ondc/org/item_id": "517",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "517",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "4.42",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "20971"
+            },
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/TAT": "PT24H",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                }
+            ]
+        }
+    }
+}

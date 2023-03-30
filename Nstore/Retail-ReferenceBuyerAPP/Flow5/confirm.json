@@ -1,0 +1,168 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "confirm",
+        "bap_id": "ondc.indiastack.cloud",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-29T15:30:48.444Z",
+        "message_id": "7de1f6c0-af59-4db6-93ef-ba6a4c76abcc",
+        "core_version": "1.1.0",
+        "transaction_id": "ffcfecba-dec0-41df-806c-9624c83035e9"
+    },
+    "message": {
+        "order": {
+            "id": "ba987f23-efef-4550-b939-b47bebe8d558",
+            "items": [
+                {
+                    "id": "517",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "20971"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "129.42",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "125.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "125.00",
+                            "currency": "INR"
+                        },
+                        "title": "Veeba Sweet Chilli Sauce 350 g",
+                        "@ondc/org/item_id": "517",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "517",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "4.42",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "state": "Created",
+            "billing": {
+                "name": "GirisutaA",
+                "email": "girisuta@nstore.in",
+                "phone": "8447407778",
+                "address": {
+                    "city": "Bangalore",
+                    "door": "-",
+                    "name": "Pulikeshi Nagar",
+                    "state": "KARNATAKA",
+                    "country": "IN",
+                    "building": "1",
+                    "locality": "Cleveland Rd",
+                    "area_code": "560005"
+                },
+                "created_at": "2023-03-29T15:30:19.426Z",
+                "tax_number": "",
+                "updated_at": "2023-03-29T15:30:19.426Z"
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "129.42",
+                    "currency": "INR",
+                    "transaction_id": "order_LXOFBRcNW8SKfT"
+                },
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFCB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
+            },
+            "provider": {
+                "id": "20971",
+                "locations": [
+                    {
+                        "id": "20971"
+                    }
+                ]
+            },
+            "created_at": "2023-03-29T15:30:48.383Z",
+            "updated_at": "2023-03-29T15:30:48.383Z",
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "end": {
+                        "person": {
+                            "name": "Girisuta A"
+                        },
+                        "contact": {
+                            "email": "girisuta@nstore.in",
+                            "phone": "8447407778"
+                        },
+                        "location": {
+                            "gps": "12.9953231,77.6139826",
+                            "address": {
+                                "city": "Bangalore",
+                                "door": "-",
+                                "name": "Pulikeshi Nagar",
+                                "state": "KARNATAKA",
+                                "country": "IN",
+                                "building": "1",
+                                "locality": "Cleveland Rd",
+                                "area_code": "560005"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false,
+                    "provider_id": "20971"
+                }
+            ]
+        }
+    }
+}
