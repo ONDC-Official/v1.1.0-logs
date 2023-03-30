@@ -1,0 +1,127 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "transaction_id": "79840155-4086-4638-9626-d4b9f505f2d4",
+    "message_id": "8984f297-2430-47dd-814f-12d49f40ed7f",
+    "timestamp": "2023-03-29T15:05:15.730Z",
+    "bpp_id": "preprod-bpp.dbs.digiit.io"
+  },
+  "message": {
+    "order": {
+      "id": "2023-03-29-992203",
+      "state": "Completed",
+      "items": [
+        {
+          "id": "1057",
+          "fulfillment_id": "b128446e-c101-437a-9fdb-5d20d41629a2",
+          "quantity": {
+            "count": 0
+          }
+        },
+        {
+          "id": "1057",
+          "fulfillment_id": "b128446e-c101-437a-9fdb-5d20d41629a2-ReverseQC",
+          "quantity": {
+            "count": 5
+          },
+          "tags": {
+            "status": "Return_Initiated"
+          }
+        },
+        {
+          "id": "999",
+          "fulfillment_id": "b128446e-c101-437a-9fdb-5d20d41629a2",
+          "quantity": {
+            "count": 5
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1443.75"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "1057",
+            "@ondc/org/item_quantity": {
+              "count": 0
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "47.20"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "999",
+            "@ondc/org/item_quantity": {
+              "count": 5
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "57.75"
+              }
+            }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "b128446e-c101-437a-9fdb-5d20d41629a2",
+          "type": "Delivery",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "name": "RTO Initiated",
+              "code": "RTO-Initiated"
+            }
+          },
+          "start": {
+            "location": {
+              "descriptor": {
+                "name": "Sridhivyam"
+              },
+              "gps": "12.871414900,77.570119000"
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-29T14:58:43.923Z",
+                "end": "2023-03-29T15:13:43.923Z"
+              }
+            },
+            "contact": {
+              "phone": "7760246669",
+              "email": "psriram78@yahoo.com"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.898463, 77.600873"
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-29T15:28:43.923Z",
+                "end": "2023-03-29T15:43:43.923Z"
+              }
+            },
+            "contact": {
+              "phone": "9843123383"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
