@@ -1,0 +1,172 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "transaction_id": "5030b48c-63a2-4664-ad8a-09cab0a92935",
+    "message_id": "7ddab72d-9bf5-4dcc-a0c9-8d70032cf711",
+    "timestamp": "2023-03-29T14:41:58.056Z",
+    "bpp_id": "preprod-bpp.dbs.digiit.io",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-03-29-374345",
+      "state": "Created",
+      "billing": {
+        "address": {
+          "name": "Clark kent",
+          "building": "Near Skypool",
+          "locality": "Nobel Residency Rd, Tejaswini Nagar",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560076"
+        },
+        "phone": "9843123383",
+        "name": "Clark kent",
+        "email": "clark@digiit.biz",
+        "created_at": "2023-03-29T14:41:42.766Z",
+        "updated_at": "2023-03-29T14:41:42.766Z"
+      },
+      "items": [
+        {
+          "id": "999",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "33f65bf7-7520-4dbb-afec-11c0feaf4de9"
+        },
+        {
+          "id": "1057",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "33f65bf7-7520-4dbb-afec-11c0feaf4de9"
+        }
+      ],
+      "provider": {
+        "id": "171",
+        "locations": [
+          {
+            "id": "384"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "33f65bf7-7520-4dbb-afec-11c0feaf4de9",
+          "tracking": false,
+          "end": {
+            "contact": {
+              "phone": "9843123383"
+            },
+            "person": {
+              "name": "Clark Kent"
+            },
+            "location": {
+              "gps": "12.898463, 77.600873",
+              "address": {
+                "name": "Clark Kent",
+                "building": "Akshayanagar",
+                "locality": "Block-D, NANDI CITADEL, Akshaya Vana,",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560076"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "204.95",
+          "currency": "INR",
+          "transaction_id": "ONDC-5030b48c-63a2-4664-ad8a-09cab0a92935-1"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "beneficiary_name": "Digiit Business Services Pvt Ltd",
+            "upi_address": "digiit@hdfcbank",
+            "settlement_bank_account_no": "50200053156327",
+            "settlement_ifsc_code": "HDFC0004824",
+            "bank_name": "HDFC Bank",
+            "branch_name": "Vayalur Road, Trichy"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "204.95"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "999",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Rice Flour",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "57.75"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "57.75"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1057",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Coca-Cola PET Bottle, 750 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "47.20"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "47.20"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "33f65bf7-7520-4dbb-afec-11c0feaf4de9",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            }
+          }
+        ]
+      },
+      "created_at": "2023-03-29T14:41:56.939Z",
+      "updated_at": "2023-03-29T14:41:56.939Z"
+    }
+  }
+}

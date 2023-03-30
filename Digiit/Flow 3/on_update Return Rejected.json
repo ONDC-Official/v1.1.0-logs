@@ -1,0 +1,140 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "preprod-bpp.dbs.digiit.io",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_update",
+    "transaction_id": "5030b48c-63a2-4664-ad8a-09cab0a92935",
+    "message_id": "7ddab72d-9bf5-4dcc-a0c9-8d70032cf711",
+    "timestamp": "2023-03-29T14:49:54.263Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-03-29-374345",
+      "state": "Completed",
+      "items": [
+        {
+          "id": "999",
+          "fulfillment_id": "33f65bf7-7520-4dbb-afec-11c0feaf4de9",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "1057",
+          "quantity": {
+            "count": 1
+          },
+          "tags": {
+            "status": "Return_Rejected"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "204.95"
+        },
+        "breakup": [
+          {
+            "title": "Rice Flour",
+            "price": {
+              "currency": "INR",
+              "value": "57.75"
+            },
+            "ondc_org_item_id": "999",
+            "ondc_org_item_quantity": {
+              "count": 1
+            },
+            "ondc_org_title_type": "item",
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "57.75"
+              }
+            }
+          },
+          {
+            "title": "Coca-Cola PET Bottle, 750 ml",
+            "price": {
+              "currency": "INR",
+              "value": "47.20"
+            },
+            "ondc_org_item_id": "1057",
+            "ondc_org_item_quantity": {
+              "count": 1
+            },
+            "ondc_org_title_type": "item",
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "47.20"
+              }
+            }
+          },
+          {
+            "title": "Delivery charges",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            },
+            "ondc_org_item_id": "33f65bf7-7520-4dbb-afec-11c0feaf4de9",
+            "ondc_org_title_type": "delivery"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "33f65bf7-7520-4dbb-afec-11c0feaf4de9",
+          "type": "Delivery",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "name": "Order delivered",
+              "code": "Order-delivered"
+            }
+          },
+          "start": {
+            "location": {
+              "descriptor": {
+                "name": "Sridhivyam"
+              },
+              "gps": "12.871414900,77.570119000"
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-29T14:42:02.167Z",
+                "end": "2023-03-29T14:57:02.167Z"
+              }
+            },
+            "contact": {
+              "phone": "7760246669",
+              "email": "psriram78@yahoo.com"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.898463, 77.600873"
+            },
+            "time": {
+              "timestamp": "2023-03-29T14:47:18.863Z",
+              "range": {
+                "start": "2023-03-29T15:12:02.167Z",
+                "end": "2023-03-29T15:27:02.167Z"
+              }
+            },
+            "contact": {
+              "phone": "9843123383"
+            }
+          },
+          "ondc_org_provider_name": "Ganesh"
+        }
+      ]
+    }
+  }
+}
