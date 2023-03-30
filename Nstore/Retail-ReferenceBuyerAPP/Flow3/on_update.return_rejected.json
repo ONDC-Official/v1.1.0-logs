@@ -1,15 +1,15 @@
 {
     "context": {
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_update",
         "bap_id": "ondc.indiastack.cloud",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
         "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-29T15:09:10.512Z",
-        "message_id": "2c8a541a-de59-450e-a574-d4bfbff5b007",
+        "timestamp": "2023-03-29T15:12:36.438Z",
+        "message_id": "4629df8b-17dd-4abd-b131-f33fbddff695",
         "core_version": "1.1.0",
         "transaction_id": "66ec780c-f833-40bc-8ef1-05c71e0f0045"
     },
@@ -26,16 +26,20 @@
                 },
                 {
                     "id": "253",
+                    "tags": {
+                        "status": "Return_Rejected"
+                    },
                     "quantity": {
                         "count": 1
                     },
-                    "fulfillment_id": "20971"
+                    "order_qty": 1,
+                    "fulfillment_id": "20971-ReverseQC"
                 }
             ],
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "320.98",
+                    "value": "150.98",
                     "currency": "INR"
                 },
                 "breakup": [
@@ -67,33 +71,6 @@
                         "@ondc/org/title_type": "tax"
                     },
                     {
-                        "item": {
-                            "price": {
-                                "value": "170.00",
-                                "currency": "INR"
-                            }
-                        },
-                        "price": {
-                            "value": "170.00",
-                            "currency": "INR"
-                        },
-                        "title": "Hersheys Chocolate Syrup 623 g",
-                        "@ondc/org/item_id": "253",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "253",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
                         "price": {
                             "value": "0.00",
                             "currency": "INR"
@@ -113,83 +90,28 @@
                     }
                 ]
             },
-            "state": "Created",
-            "billing": {
-                "name": "GirisutaA",
-                "email": "girisuta@nstore.in",
-                "phone": "8447407778",
-                "address": {
-                    "city": "Bangalore",
-                    "door": "-",
-                    "name": "Pulikeshi Nagar",
-                    "state": "KARNATAKA",
-                    "country": "IN",
-                    "building": "1",
-                    "locality": "Cleveland Rd",
-                    "area_code": "560005"
-                },
-                "created_at": "2023-03-29T15:08:49.352Z",
-                "tax_number": "",
-                "updated_at": "2023-03-29T15:08:49.352Z"
-            },
-            "payment": {
-                "type": "ON-ORDER",
-                "params": {
-                    "amount": "320.98",
-                    "currency": "INR",
-                    "transaction_id": "order_LXNsUNnKjx2GQq"
-                },
-                "status": "PAID",
-                "collected_by": "BAP",
-                "@ondc/org/settlement_details": [
-                    {
-                        "bank_name": "IDFC FIRST BANK LIMITED",
-                        "branch_name": "BKC Naman Chambers Branch",
-                        "settlement_type": "neft",
-                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
-                        "settlement_phase": "sale-amount",
-                        "settlement_ifsc_code": "IDFCB0040101",
-                        "settlement_counterparty": "seller-app",
-                        "settlement_bank_account_no": "10112822953"
-                    }
-                ],
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3"
-            },
-            "provider": {
-                "id": "20971",
-                "rateable": true,
-                "locations": [
-                    {
-                        "id": "20971"
-                    }
-                ]
-            },
-            "documents": [],
-            "created_at": "2023-03-29T15:09:07.381Z",
-            "updated_at": "2023-03-29T15:09:10.512Z",
+            "state": "Completed",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-30T16:09:10.512Z",
-                                "start": "2023-03-30T15:09:10.512Z"
-                            }
+                                "end": "2023-03-29T15:10:15.000Z",
+                                "start": "2023-03-29T15:09:36.000Z"
+                            },
+                            "timestamp": "2023-03-29T15:10:15.000Z"
                         },
                         "contact": {
-                            "email": "girisuta@nstore.in",
                             "phone": "8447407778"
                         },
                         "location": {
                             "gps": "12.9953231,77.6139826",
                             "address": {
                                 "city": "Bangalore",
-                                "door": "-",
                                 "name": "Pulikeshi Nagar",
                                 "state": "KARNATAKA",
-                                "country": "IN",
+                                "country": "India",
                                 "building": "1",
                                 "locality": "Cleveland Rd",
                                 "area_code": "560005"
@@ -200,19 +122,78 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-30T15:09:10.512Z",
-                                "start": "2023-03-29T15:09:10.512Z"
-                            }
+                                "end": "2023-03-29T15:09:36.000Z",
+                                "start": "2023-03-29T15:09:10.000Z"
+                            },
+                            "timestamp": "2023-03-29T15:09:36.000Z"
                         },
                         "contact": {
-                            "email": "",
+                            "email": "aleeminuk@gmail.com",
                             "phone": "9727288181"
                         },
                         "location": {
                             "id": "20971",
                             "gps": "12.9953231,77.6139826",
                             "descriptor": {
-                                "name": "Evergreen SuperMarket"
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                },
+                {
+                    "id": "20971-ReverseQC",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-29T15:12:36.292Z",
+                                "start": "2023-03-29T15:11:57.000Z"
+                            },
+                            "timestamp": "2023-03-29T15:12:36.292Z"
+                        },
+                        "contact": {
+                            "email": "aleeminuk@gmail.com",
+                            "phone": "9727288181"
+                        },
+                        "location": {
+                            "gps": "12.9953231,77.6139826",
+                            "descriptor": {
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
+                            }
+                        }
+                    },
+                    "type": "Reverse QC",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-03-29T15:11:58.000Z",
+                                "start": "2023-03-29T15:11:57.000Z"
+                            },
+                            "timestamp": "2023-03-29T15:11:58.000Z"
+                        },
+                        "contact": {
+                            "email": "aleeminuk@gmail.com",
+                            "phone": "9727288181"
+                        },
+                        "location": {
+                            "gps": "12.9953231,77.6139826",
+                            "descriptor": {
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
                             }
                         }
                     },
@@ -221,9 +202,8 @@
                             "code": "Pending"
                         }
                     },
-                    "rateable": true,
                     "tracking": false,
-                    "@ondc/org/provider_name": "20971"
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }
             ]
         }

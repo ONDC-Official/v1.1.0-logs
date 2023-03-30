@@ -1,32 +1,31 @@
 {
     "context": {
-        "ttl": "PT30S",
-        "city": "std:080",
+        "city": "*",
         "action": "on_status",
-        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_id": "ondc.indiastack.cloud",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
-        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-22T07:47:52.304Z",
-        "message_id": "26dd99f9-2b66-4fef-a563-e07beb941ca1",
+        "timestamp": "2023-03-29T13:27:57.602Z",
+        "message_id": "79860aea-ee69-4847-886c-30a11b721f2c",
         "core_version": "1.1.0",
-        "transaction_id": "6f384034-4ed8-436c-ade0-81a3ca226099"
+        "transaction_id": "5a2d4946-9a90-48ac-8040-da96e96c309f"
     },
     "message": {
         "order": {
-            "id": "2023-03-22-460238",
+            "id": "1e0ec032-78a9-4a3e-84c2-0ddc376b26c1",
             "items": [
                 {
-                    "id": "sm123",
+                    "id": "511",
                     "quantity": {
                         "count": 1
                     },
                     "fulfillment_id": "20971"
                 },
                 {
-                    "id": "sm124",
+                    "id": "defc2222",
                     "quantity": {
                         "count": 1
                     },
@@ -36,23 +35,23 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "159.58",
+                    "value": "144.95",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "item": {
                             "price": {
-                                "value": "80.00",
+                                "value": "117.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "80.00",
+                            "value": "117.00",
                             "currency": "INR"
                         },
-                        "title": "Sakthi Turmeric PowderMannjal Podi 100 g",
-                        "@ondc/org/item_id": "sm123",
+                        "title": "Mothers Recipe Punjabi Pachranga Pickle 400 g",
+                        "@ondc/org/item_id": "511",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -64,22 +63,22 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "sm123",
+                        "@ondc/org/item_id": "511",
                         "@ondc/org/title_type": "tax"
                     },
                     {
                         "item": {
                             "price": {
-                                "value": "75.00",
+                                "value": "23.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "75.00",
+                            "value": "23.00",
                             "currency": "INR"
                         },
-                        "title": "Sakthi Biriyani Masala",
-                        "@ondc/org/item_id": "sm124",
+                        "title": "Tata Salt",
+                        "@ondc/org/item_id": "defc2222",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -91,7 +90,7 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "sm124",
+                        "@ondc/org/item_id": "defc2222",
                         "@ondc/org/title_type": "tax"
                     },
                     {
@@ -105,7 +104,7 @@
                     },
                     {
                         "price": {
-                            "value": "4.58",
+                            "value": "4.95",
                             "currency": "INR"
                         },
                         "title": "Convenience Fee",
@@ -114,33 +113,31 @@
                     }
                 ]
             },
-            "state": "In-progress",
+            "state": "Accepted",
             "billing": {
                 "name": "GirisutaA",
                 "email": "girisuta@nstore.in",
                 "phone": "8447407778",
                 "address": {
-                    "city": "Bengaluru",
-                    "name": "GirisutaA",
-                    "state": "Karnataka",
+                    "city": "Bangalore",
+                    "name": "Pulikeshi Nagar",
+                    "state": "KARNATAKA",
                     "country": "India",
-                    "building": "Bethany school",
-                    "locality": "8th Cross 5th Block Koramangala",
+                    "building": "1",
+                    "locality": "Cleveland Rd",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-22T07:47:14.000Z",
-                "updated_at": "2023-03-22T07:47:52.000Z"
+                "created_at": "2023-03-29T13:27:56.000Z",
+                "updated_at": "2023-03-29T13:27:56.000Z"
             },
             "payment": {
-                "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "159.58",
+                    "amount": "144.95",
                     "currency": "INR",
-                    "transaction_id": "ONDC-6f384034-4ed8-436c-ade0-81a3ca226099-1"
+                    "transaction_id": "order_LXM9VjUqWoOsyC"
                 },
                 "status": "PAID",
-                "tl_method": "http/get",
                 "collected_by": "BAP",
                 "@ondc/org/settlement_details": [
                     {
@@ -155,7 +152,7 @@
                     }
                 ],
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
             },
             "provider": {
                 "id": "20971",
@@ -167,48 +164,45 @@
             },
             "documents": [
                 {
-                    "url": "https://receiptbeta.nstore.in/invoice/Mzg0ODc=",
+                    "url": "https://receiptbeta.nstore.in/invoice/Mzg1MzU=",
                     "label": "Invoice"
                 }
             ],
-            "created_at": "2023-03-22T07:47:14.000Z",
-            "updated_at": "2023-03-22T07:47:52.000Z",
+            "created_at": "2023-03-29T13:27:56.000Z",
+            "updated_at": "2023-03-29T13:27:57.000Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-23T07:47:51.000Z",
-                                "start": "2023-03-22T07:47:51.000Z"
+                                "end": "2023-03-30T14:27:56.000Z",
+                                "start": "2023-03-30T13:27:56.000Z"
                             }
                         },
                         "contact": {
                             "phone": "8447407778"
                         },
                         "location": {
-                            "gps": "13.0007580000001, 77.6165090000001",
+                            "gps": "12.9953231,77.6139826",
                             "address": {
-                                "city": "Bengaluru",
-                                "name": "GirisutaA",
-                                "state": "Karnataka",
+                                "city": "Bangalore",
+                                "name": "Pulikeshi Nagar",
+                                "state": "KARNATAKA",
                                 "country": "India",
-                                "building": "Bethany school",
-                                "locality": "8th Cross 5th Block Koramangala",
+                                "building": "1",
+                                "locality": "Cleveland Rd",
                                 "area_code": "560005"
                             }
-                        },
-                        "instructions": {}
+                        }
                     },
                     "type": "Delivery",
-                    "agent": {},
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-22T07:47:51.000Z",
-                                "start": "2023-03-22T07:47:15.000Z"
-                            },
-                            "timestamp": "2023-03-22T07:47:51.000Z"
+                                "end": "2023-03-30T13:27:57.000Z",
+                                "start": "2023-03-29T13:27:57.000Z"
+                            }
                         },
                         "contact": {
                             "email": "aleeminuk@gmail.com",
@@ -223,18 +217,13 @@
                                     "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
                                 ]
                             }
-                        },
-                        "instructions": {
-                            "name": "",
-                            "short_desc": ""
                         }
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Order-picked-up"
+                            "code": "Packed"
                         }
                     },
-                    "vehicle": {},
                     "tracking": false,
                     "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }
