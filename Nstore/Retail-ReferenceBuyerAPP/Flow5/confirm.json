@@ -2,30 +2,24 @@
     "context": {
         "ttl": "PT30S",
         "city": "std:080",
-        "action": "on_init",
-        "bap_id": "buyer-app-preprod.ondc.org",
+        "action": "confirm",
+        "bap_id": "ondc.indiastack.cloud",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
-        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-22T11:58:32.581Z",
-        "message_id": "5945065a-c267-4061-ad1b-3371278305fd",
+        "timestamp": "2023-03-29T15:30:48.444Z",
+        "message_id": "7de1f6c0-af59-4db6-93ef-ba6a4c76abcc",
         "core_version": "1.1.0",
-        "transaction_id": "e5b78995-502d-443f-9103-d924046c4dbb"
+        "transaction_id": "ffcfecba-dec0-41df-806c-9624c83035e9"
     },
     "message": {
         "order": {
+            "id": "ba987f23-efef-4550-b939-b47bebe8d558",
             "items": [
                 {
-                    "id": "135",
-                    "quantity": {
-                        "count": 2
-                    },
-                    "fulfillment_id": "20971"
-                },
-                {
-                    "id": "sm124",
+                    "id": "517",
                     "quantity": {
                         "count": 1
                     },
@@ -35,50 +29,23 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "286.80",
+                    "value": "129.42",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "item": {
                             "price": {
-                                "value": "101.00",
+                                "value": "125.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "202.00",
+                            "value": "125.00",
                             "currency": "INR"
                         },
-                        "title": "Maggi 2-Minute Masala Instant Noodles 560 g",
-                        "@ondc/org/item_id": "135",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "135",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "item": {
-                            "price": {
-                                "value": "75.00",
-                                "currency": "INR"
-                            }
-                        },
-                        "price": {
-                            "value": "75.00",
-                            "currency": "INR"
-                        },
-                        "title": "Sakthi Biriyani Masala",
-                        "@ondc/org/item_id": "sm124",
+                        "title": "Veeba Sweet Chilli Sauce 350 g",
+                        "@ondc/org/item_id": "517",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -90,7 +57,7 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "sm124",
+                        "@ondc/org/item_id": "517",
                         "@ondc/org/title_type": "tax"
                     },
                     {
@@ -104,7 +71,7 @@
                     },
                     {
                         "price": {
-                            "value": "9.80",
+                            "value": "4.42",
                             "currency": "INR"
                         },
                         "title": "Convenience Fee",
@@ -113,23 +80,34 @@
                     }
                 ]
             },
+            "state": "Created",
             "billing": {
                 "name": "GirisutaA",
-                "email": "girisutaarun@gmail.com",
+                "email": "girisuta@nstore.in",
                 "phone": "8447407778",
                 "address": {
-                    "city": "Bengaluru",
-                    "name": "GirisutaA",
-                    "state": "Karnataka",
-                    "country": "IND",
-                    "building": "Bethany school",
-                    "locality": "8th Cross 5th Block Koramangala",
+                    "city": "Bangalore",
+                    "door": "-",
+                    "name": "Pulikeshi Nagar",
+                    "state": "KARNATAKA",
+                    "country": "IN",
+                    "building": "1",
+                    "locality": "Cleveland Rd",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-22T11:58:30.352Z",
-                "updated_at": "2023-03-22T11:58:30.352Z"
+                "created_at": "2023-03-29T15:30:19.426Z",
+                "tax_number": "",
+                "updated_at": "2023-03-29T15:30:19.426Z"
             },
             "payment": {
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "129.42",
+                    "currency": "INR",
+                    "transaction_id": "order_LXOFBRcNW8SKfT"
+                },
+                "status": "PAID",
+                "collected_by": "BAP",
                 "@ondc/org/settlement_details": [
                     {
                         "bank_name": "IDFC FIRST BANK LIMITED",
@@ -143,38 +121,48 @@
                     }
                 ],
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
             },
             "provider": {
-                "id": "20971"
+                "id": "20971",
+                "locations": [
+                    {
+                        "id": "20971"
+                    }
+                ]
             },
+            "created_at": "2023-03-29T15:30:48.383Z",
+            "updated_at": "2023-03-29T15:30:48.383Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
+                        "person": {
+                            "name": "Girisuta A"
+                        },
                         "contact": {
-                            "email": "girisutaarun@gmail.com",
+                            "email": "girisuta@nstore.in",
                             "phone": "8447407778"
                         },
                         "location": {
-                            "gps": "13.0007580000001, 77.6165090000001",
+                            "gps": "12.9953231,77.6139826",
                             "address": {
-                                "city": "Bengaluru",
-                                "name": "GirisutaA",
-                                "state": "Karnataka",
-                                "country": "IND",
-                                "building": "Bethany school",
-                                "locality": "8th Cross 5th Block Koramangala",
+                                "city": "Bangalore",
+                                "door": "-",
+                                "name": "Pulikeshi Nagar",
+                                "state": "KARNATAKA",
+                                "country": "IN",
+                                "building": "1",
+                                "locality": "Cleveland Rd",
                                 "area_code": "560005"
                             }
                         }
                     },
-                    "type": "Delivery"
+                    "type": "Delivery",
+                    "tracking": false,
+                    "provider_id": "20971"
                 }
-            ],
-            "provider_location": {
-                "id": "20971"
-            }
+            ]
         }
     }
 }

@@ -1,31 +1,34 @@
 {
     "context": {
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_update",
         "bap_id": "ondc.indiastack.cloud",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
         "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-29T15:02:34.831Z",
-        "message_id": "e7488dba-c953-4b37-9d0a-cf53fc9ef006",
+        "timestamp": "2023-03-29T15:11:58.403Z",
+        "message_id": "4629df8b-17dd-4abd-b131-f33fbddff695",
         "core_version": "1.1.0",
-        "transaction_id": "78138d7f-599c-408d-bf12-3a53f0f3240e"
+        "transaction_id": "66ec780c-f833-40bc-8ef1-05c71e0f0045"
     },
     "message": {
         "order": {
-            "id": "fac61a31-9ffc-4c83-a208-b7be47221737",
+            "id": "03403a01-3b0d-4ba3-bb6b-3ab37d33e4cc",
             "items": [
                 {
-                    "id": "113",
+                    "id": "104",
                     "quantity": {
                         "count": 1
                     },
                     "fulfillment_id": "20971"
                 },
                 {
-                    "id": "510",
+                    "id": "253",
+                    "tags": {
+                        "status": "Return_Initiated"
+                    },
                     "quantity": {
                         "count": 1
                     },
@@ -35,50 +38,41 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "361.35",
+                    "value": "320.98",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "item": {
                             "price": {
-                                "value": "300.00",
+                                "value": "140.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "300.00",
+                            "value": "140.00",
                             "currency": "INR"
                         },
-                        "title": "Bagrrys Crunchy Muesli With Almonds Raisins and  Honey 500 g",
-                        "@ondc/org/item_id": "113",
+                        "title": "Bagrrys White Oats 1 kg",
+                        "@ondc/org/item_id": "104",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "113",
-                        "@ondc/org/title_type": "tax"
                     },
                     {
                         "item": {
                             "price": {
-                                "value": "49.00",
+                                "value": "170.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "49.00",
+                            "value": "170.00",
                             "currency": "INR"
                         },
-                        "title": "Mothers Recipe Bhelpuri Chutney 200 g",
-                        "@ondc/org/item_id": "510",
+                        "title": "Hersheys Chocolate Syrup 623 g",
+                        "@ondc/org/item_id": "253",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -90,7 +84,16 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "510",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "253",
                         "@ondc/org/title_type": "tax"
                     },
                     {
@@ -104,7 +107,7 @@
                     },
                     {
                         "price": {
-                            "value": "12.35",
+                            "value": "10.98",
                             "currency": "INR"
                         },
                         "title": "Convenience Fee",
@@ -113,83 +116,28 @@
                     }
                 ]
             },
-            "state": "Created",
-            "billing": {
-                "name": "GirisutaA",
-                "email": "girisuta@nstore.in",
-                "phone": "8447407778",
-                "address": {
-                    "city": "Bangalore",
-                    "door": "-",
-                    "name": "Pulikeshi Nagar",
-                    "state": "KARNATAKA",
-                    "country": "IN",
-                    "building": "1",
-                    "locality": "Cleveland Rd",
-                    "area_code": "560005"
-                },
-                "created_at": "2023-03-29T15:02:02.022Z",
-                "tax_number": "",
-                "updated_at": "2023-03-29T15:02:02.022Z"
-            },
-            "payment": {
-                "type": "ON-ORDER",
-                "params": {
-                    "amount": "361.35",
-                    "currency": "INR",
-                    "transaction_id": "order_LXNlOYURIqZ5CX"
-                },
-                "status": "PAID",
-                "collected_by": "BAP",
-                "@ondc/org/settlement_details": [
-                    {
-                        "bank_name": "IDFC FIRST BANK LIMITED",
-                        "branch_name": "BKC Naman Chambers Branch",
-                        "settlement_type": "neft",
-                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
-                        "settlement_phase": "sale-amount",
-                        "settlement_ifsc_code": "IDFCB0040101",
-                        "settlement_counterparty": "seller-app",
-                        "settlement_bank_account_no": "10112822953"
-                    }
-                ],
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3"
-            },
-            "provider": {
-                "id": "20971",
-                "rateable": true,
-                "locations": [
-                    {
-                        "id": "20971"
-                    }
-                ]
-            },
-            "documents": [],
-            "created_at": "2023-03-29T15:02:31.904Z",
-            "updated_at": "2023-03-29T15:02:34.831Z",
+            "state": "Completed",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-30T16:02:34.831Z",
-                                "start": "2023-03-30T15:02:34.831Z"
-                            }
+                                "end": "2023-03-29T15:10:15.000Z",
+                                "start": "2023-03-29T15:09:36.000Z"
+                            },
+                            "timestamp": "2023-03-29T15:10:15.000Z"
                         },
                         "contact": {
-                            "email": "girisuta@nstore.in",
                             "phone": "8447407778"
                         },
                         "location": {
                             "gps": "12.9953231,77.6139826",
                             "address": {
                                 "city": "Bangalore",
-                                "door": "-",
                                 "name": "Pulikeshi Nagar",
                                 "state": "KARNATAKA",
-                                "country": "IN",
+                                "country": "India",
                                 "building": "1",
                                 "locality": "Cleveland Rd",
                                 "area_code": "560005"
@@ -200,30 +148,33 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-30T15:02:34.831Z",
-                                "start": "2023-03-29T15:02:34.831Z"
-                            }
+                                "end": "2023-03-29T15:09:36.000Z",
+                                "start": "2023-03-29T15:09:10.000Z"
+                            },
+                            "timestamp": "2023-03-29T15:09:36.000Z"
                         },
                         "contact": {
-                            "email": "",
+                            "email": "aleeminuk@gmail.com",
                             "phone": "9727288181"
                         },
                         "location": {
                             "id": "20971",
                             "gps": "12.9953231,77.6139826",
                             "descriptor": {
-                                "name": "Evergreen SuperMarket"
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
                             }
                         }
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
-                    "rateable": true,
                     "tracking": false,
-                    "@ondc/org/provider_name": "20971"
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }
             ]
         }
