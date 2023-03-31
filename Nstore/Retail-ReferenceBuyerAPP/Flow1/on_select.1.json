@@ -1,35 +1,27 @@
 {
     "context": {
-        "ttl": "PT30S",
         "city": "std:080",
-        "action": "confirm",
+        "action": "on_select",
         "bap_id": "ondc.indiastack.cloud",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
         "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-31T07:58:15.886Z",
-        "message_id": "5b009081-ee7c-4a16-905a-ed5e705f7c6e",
+        "timestamp": "2023-03-31T07:57:55.609Z",
+        "message_id": "9c4173d3-fb43-4260-a64b-fe4c76fbe727",
         "core_version": "1.1.0",
         "transaction_id": "7331858d-0ee0-454a-bb3e-c7d771b450ff"
     },
     "message": {
         "order": {
-            "id": "67bd1cdb-e020-4a98-81fc-8c77a7126379",
             "items": [
                 {
                     "id": "102",
-                    "quantity": {
-                        "count": 1
-                    },
                     "fulfillment_id": "20971"
                 },
                 {
                     "id": "256",
-                    "quantity": {
-                        "count": 1
-                    },
                     "fulfillment_id": "20971"
                 }
             ],
@@ -45,6 +37,14 @@
                             "price": {
                                 "value": "249.00",
                                 "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
                             }
                         },
                         "price": {
@@ -72,6 +72,14 @@
                             "price": {
                                 "value": "167.00",
                                 "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
                             }
                         },
                         "price": {
@@ -114,87 +122,21 @@
                     }
                 ]
             },
-            "state": "Created",
-            "billing": {
-                "name": "Sathish Kumar A",
-                "email": "sathisha@nstore.in",
-                "phone": "9629295619",
-                "address": {
-                    "city": "Bangalore",
-                    "door": "-",
-                    "name": "Post Box No. 5857",
-                    "state": "KARNATAKA",
-                    "country": "IN",
-                    "building": "23/24, II Phase",
-                    "locality": "Jayanager",
-                    "area_code": "560058"
-                },
-                "created_at": "2023-03-31T07:58:00.328Z",
-                "tax_number": "",
-                "updated_at": "2023-03-31T07:58:00.328Z"
-            },
-            "payment": {
-                "type": "ON-ORDER",
-                "params": {
-                    "amount": "430.72",
-                    "currency": "INR",
-                    "transaction_id": "order_LY3beuJuv5uorw"
-                },
-                "status": "PAID",
-                "collected_by": "BAP",
-                "@ondc/org/settlement_details": [
-                    {
-                        "bank_name": "IDFC FIRST BANK LIMITED",
-                        "branch_name": "BKC Naman Chambers Branch",
-                        "settlement_type": "neft",
-                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
-                        "settlement_phase": "sale-amount",
-                        "settlement_ifsc_code": "IDFCB0040101",
-                        "settlement_counterparty": "seller-app",
-                        "settlement_bank_account_no": "10112822953"
-                    }
-                ],
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3"
-            },
             "provider": {
-                "id": "20971",
-                "locations": [
-                    {
-                        "id": "20971"
-                    }
-                ]
+                "id": "20971"
             },
-            "created_at": "2023-03-31T07:58:15.748Z",
-            "updated_at": "2023-03-31T07:58:15.748Z",
             "fulfillments": [
                 {
                     "id": "20971",
-                    "end": {
-                        "person": {
-                            "name": "Sathish Kumar A "
-                        },
-                        "contact": {
-                            "email": "sathisha@nstore.in",
-                            "phone": "9629295619"
-                        },
-                        "location": {
-                            "gps": "13.0280874,77.5120799",
-                            "address": {
-                                "city": "Bangalore",
-                                "door": "-",
-                                "name": "Post Box No. 5857",
-                                "state": "KARNATAKA",
-                                "country": "IN",
-                                "building": "23/24, II Phase",
-                                "locality": "Jayanager",
-                                "area_code": "560058"
-                            }
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
                         }
                     },
-                    "type": "Delivery",
                     "tracking": false,
-                    "provider_id": "20971"
+                    "@ondc/org/TAT": "PT24H",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }
             ]
         }

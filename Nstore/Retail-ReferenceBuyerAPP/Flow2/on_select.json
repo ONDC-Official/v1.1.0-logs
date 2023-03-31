@@ -1,144 +1,131 @@
 {
-    "context": {
-        "city": "std:080",
-        "action": "on_select",
-        "bap_id": "ondc.indiastack.cloud",
-        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
-        "domain": "nic2004:52110",
-        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
-        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
-        "country": "IND",
-        "timestamp": "2023-03-29T15:01:45.882Z",
-        "message_id": "80be4a45-3f84-4041-b382-2370afa80ec4",
-        "core_version": "1.1.0",
-        "transaction_id": "78138d7f-599c-408d-bf12-3a53f0f3240e"
-    },
-    "message": {
-        "order": {
-            "items": [
-                {
-                    "id": "113",
-                    "fulfillment_id": "20971"
-                },
-                {
-                    "id": "510",
-                    "fulfillment_id": "20971"
-                }
-            ],
-            "quote": {
-                "ttl": "PT30M",
-                "price": {
-                    "value": "361.35",
-                    "currency": "INR"
-                },
-                "breakup": [
-                    {
-                        "item": {
-                            "price": {
-                                "value": "300.00",
-                                "currency": "INR"
-                            },
-                            "quantity": {
-                                "maximum": {
-                                    "count": "1"
-                                },
-                                "available": {
-                                    "count": "1"
-                                }
-                            }
-                        },
-                        "price": {
-                            "value": "300.00",
-                            "currency": "INR"
-                        },
-                        "title": "Bagrrys Crunchy Muesli With Almonds Raisins and  Honey 500 g",
-                        "@ondc/org/item_id": "113",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "113",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "item": {
-                            "price": {
-                                "value": "49.00",
-                                "currency": "INR"
-                            },
-                            "quantity": {
-                                "maximum": {
-                                    "count": "1"
-                                },
-                                "available": {
-                                    "count": "1"
-                                }
-                            }
-                        },
-                        "price": {
-                            "value": "49.00",
-                            "currency": "INR"
-                        },
-                        "title": "Mothers Recipe Bhelpuri Chutney 200 g",
-                        "@ondc/org/item_id": "510",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "510",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Delivery charges",
-                        "@ondc/org/item_id": "20971",
-                        "@ondc/org/title_type": "delivery"
-                    },
-                    {
-                        "price": {
-                            "value": "12.35",
-                            "currency": "INR"
-                        },
-                        "title": "Convenience Fee",
-                        "@ondc/org/item_id": "20971",
-                        "@ondc/org/title_type": "misc"
-                    }
-                ]
-            },
-            "provider": {
-                "id": "20971"
-            },
-            "fulfillments": [
-                {
-                    "id": "20971",
-                    "state": {
-                        "descriptor": {
-                            "code": "Serviceable"
-                        }
-                    },
-                    "tracking": false,
-                    "@ondc/org/TAT": "PT24H",
-                    "@ondc/org/category": "Standard Delivery",
-                    "@ondc/org/provider_name": "Evergreen SuperMarket"
-                }
-            ]
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_select",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+    "bap_id": "ondc.indiastack.cloud",
+    "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+    "transaction_id": "5e9c127f-0ec3-4be6-b873-995bb89d1d49",
+    "message_id": "9b1ece51-8d54-429e-ad29-65ddd73f95f5",
+    "timestamp": "2023-03-31T08:11:29.604Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "20971"
+      },
+      "items": [
+        {
+          "fulfillment_id": "20971",
+          "id": "512"
+        },
+        {
+          "fulfillment_id": "20971",
+          "id": "519"
         }
+      ],
+      "fulfillments": [
+        {
+          "id": "20971",
+          "@ondc/org/provider_name": "Evergreen SuperMarket",
+          "tracking": false,
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "PT24H",
+          "state": {
+            "descriptor": {
+              "code": "Non-Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "296.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "512",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Veeba Eggless Mayonnaise 875 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "204.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "1"
+                },
+                "maximum": {
+                  "count": "1"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "204.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "512",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "519",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Veeba Thousand Island Sandwich Spread 280 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "92.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "1"
+                },
+                "maximum": {
+                  "count": "1"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "92.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "519",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        ],
+        "ttl": "PT30M"
+      }
     }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "30009",
+    "message": "Delivery distance is beyond the allowed 5 km"
+  }
 }
