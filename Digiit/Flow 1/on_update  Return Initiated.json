@@ -8,26 +8,18 @@
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
-    "transaction_id": "8d63f6aa-9cc7-417d-8862-9e460b5c2c92",
-    "message_id": "9344fc9f-e569-4ac1-984c-4b8f390aa6c1",
-    "timestamp": "2023-03-29T12:01:40.467Z",
+    "transaction_id": "c362f59a-21e6-43a1-9691-ba38ddf25e0d",
+    "message_id": "cc4d1516-d23b-485b-8a47-0707c93ce699",
+    "timestamp": "2023-04-01T05:23:53.699Z",
     "bpp_id": "preprod-bpp.dbs.digiit.io"
   },
   "message": {
     "order": {
-      "id": "2023-03-29-745320",
+      "id": "2023-04-01-534444",
       "state": "Completed",
       "items": [
         {
           "id": "1057",
-          "fulfillment_id": "80853bb6-48dd-49de-ac6b-d1d649e800fe",
-          "quantity": {
-            "count": 0
-          }
-        },
-        {
-          "id": "1057",
-          "fulfillment_id": "80853bb6-48dd-49de-ac6b-d1d649e800fe-ReverseQC",
           "quantity": {
             "count": 1
           },
@@ -37,7 +29,7 @@
         },
         {
           "id": "999",
-          "fulfillment_id": "80853bb6-48dd-49de-ac6b-d1d649e800fe",
+          "fulfillment_id": "af24c25e-fdb6-4e51-86a8-8887867f80d7",
           "quantity": {
             "count": 1
           }
@@ -46,15 +38,38 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "57.75"
+          "value": "204.95"
         },
         "breakup": [
           {
+            "@ondc/org/item_id": "999",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Rice Flour",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "57.75"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "57.75"
+              }
+            }
+          },
+          {
             "@ondc/org/item_id": "1057",
             "@ondc/org/item_quantity": {
-              "count": 0
+              "count": 1
             },
+            "title": "Coca-Cola PET Bottle, 750 ml",
             "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "47.20"
+            },
             "item": {
               "price": {
                 "currency": "INR",
@@ -63,29 +78,27 @@
             }
           },
           {
-            "@ondc/org/item_id": "999",
-            "@ondc/org/item_quantity": {
-              "count": 1
+            "@ondc/org/item_id": "af24c25e-fdb6-4e51-86a8-8887867f80d7",
+            "@ondc/org/item_quantity": null,
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "100"
             },
-            "@ondc/org/title_type": "item",
-            "item": {
-              "price": {
-                "currency": "INR",
-                "value": "57.75"
-              }
-            }
+            "item": null
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "80853bb6-48dd-49de-ac6b-d1d649e800fe",
+          "id": "af24c25e-fdb6-4e51-86a8-8887867f80d7",
           "type": "Delivery",
           "tracking": false,
           "state": {
             "descriptor": {
-              "name": "RTO Initiated",
-              "code": "RTO-Initiated"
+              "name": "Order delivered",
+              "code": "Order-delivered"
             }
           },
           "start": {
@@ -97,8 +110,8 @@
             },
             "time": {
               "range": {
-                "start": "2023-03-29T11:54:47.123Z",
-                "end": "2023-03-29T12:09:47.123Z"
+                "start": "2023-04-01T05:16:44.690Z",
+                "end": "2023-04-01T05:31:44.690Z"
               }
             },
             "contact": {
@@ -112,9 +125,10 @@
             },
             "time": {
               "range": {
-                "start": "2023-03-29T12:24:47.123Z",
-                "end": "2023-03-29T12:39:47.123Z"
-              }
+                "start": "2023-04-01T05:46:44.690Z",
+                "end": "2023-04-01T06:01:44.690Z"
+              },
+              "timestamp": "2023-04-01T05:22:41.153Z"
             },
             "contact": {
               "phone": "9843123383"
