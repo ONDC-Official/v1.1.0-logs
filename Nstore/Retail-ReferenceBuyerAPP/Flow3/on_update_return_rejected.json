@@ -1,84 +1,84 @@
 {
     "context": {
-        "city": "*",
-        "action": "on_status",
+        "city": "std:080",
+        "action": "on_update",
         "bap_id": "ondc.indiastack.cloud",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
         "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-29T13:27:57.602Z",
-        "message_id": "79860aea-ee69-4847-886c-30a11b721f2c",
+        "timestamp": "2023-03-31T08:50:37.686Z",
+        "message_id": "8a6a9cc6-aff4-43ae-9b0f-bcd10f4b92b2",
         "core_version": "1.1.0",
-        "transaction_id": "5a2d4946-9a90-48ac-8040-da96e96c309f"
+        "transaction_id": "81b78875-272c-4c67-b053-49bbaa22c2f8"
     },
     "message": {
         "order": {
-            "id": "1e0ec032-78a9-4a3e-84c2-0ddc376b26c1",
+            "id": "806f402d-9b11-4321-ad1f-001bbcdcb718",
             "items": [
                 {
-                    "id": "511",
+                    "id": "CL123",
                     "quantity": {
                         "count": 1
                     },
                     "fulfillment_id": "20971"
                 },
                 {
-                    "id": "defc2222",
+                    "id": "dsf123",
                     "quantity": {
                         "count": 1
                     },
                     "fulfillment_id": "20971"
+                },
+                {
+                    "id": "kv921",
+                    "tags": {
+                        "status": "Return_Rejected"
+                    },
+                    "quantity": {
+                        "count": 1
+                    }
                 }
             ],
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "144.95",
+                    "value": "294.87",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "item": {
                             "price": {
-                                "value": "117.00",
+                                "value": "45.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "117.00",
+                            "value": "45.00",
                             "currency": "INR"
                         },
-                        "title": "Mothers Recipe Punjabi Pachranga Pickle 400 g",
-                        "@ondc/org/item_id": "511",
+                        "title": "Camel Water Colors",
+                        "@ondc/org/item_id": "CL123",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "511",
-                        "@ondc/org/title_type": "tax"
                     },
                     {
                         "item": {
                             "price": {
-                                "value": "23.00",
+                                "value": "235.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "23.00",
+                            "value": "235.00",
                             "currency": "INR"
                         },
-                        "title": "Tata Salt",
-                        "@ondc/org/item_id": "defc2222",
+                        "title": "Casio Calculator",
+                        "@ondc/org/item_id": "dsf123",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -90,7 +90,16 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "defc2222",
+                        "@ondc/org/item_id": "CL123",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "dsf123",
                         "@ondc/org/title_type": "tax"
                     },
                     {
@@ -104,7 +113,7 @@
                     },
                     {
                         "price": {
-                            "value": "4.95",
+                            "value": "14.87",
                             "currency": "INR"
                         },
                         "title": "Convenience Fee",
@@ -113,78 +122,23 @@
                     }
                 ]
             },
-            "state": "Accepted",
-            "billing": {
-                "name": "GirisutaA",
-                "email": "girisuta@nstore.in",
-                "phone": "8447407778",
-                "address": {
-                    "city": "Bangalore",
-                    "name": "Pulikeshi Nagar",
-                    "state": "KARNATAKA",
-                    "country": "India",
-                    "building": "1",
-                    "locality": "Cleveland Rd",
-                    "area_code": "560005"
-                },
-                "created_at": "2023-03-29T13:27:56.000Z",
-                "updated_at": "2023-03-29T13:27:56.000Z"
-            },
-            "payment": {
-                "type": "ON-ORDER",
-                "params": {
-                    "amount": "144.95",
-                    "currency": "INR",
-                    "transaction_id": "order_LXM9VjUqWoOsyC"
-                },
-                "status": "PAID",
-                "collected_by": "BAP",
-                "@ondc/org/settlement_details": [
-                    {
-                        "bank_name": "IDFC FIRST BANK LIMITED",
-                        "branch_name": "BKC Naman Chambers Branch",
-                        "settlement_type": "neft",
-                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
-                        "settlement_phase": "sale-amount",
-                        "settlement_ifsc_code": "IDFCB0040101",
-                        "settlement_counterparty": "seller-app",
-                        "settlement_bank_account_no": "10112822953"
-                    }
-                ],
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3"
-            },
-            "provider": {
-                "id": "20971",
-                "locations": [
-                    {
-                        "id": "20971"
-                    }
-                ]
-            },
-            "documents": [
-                {
-                    "url": "https://receiptbeta.nstore.in/invoice/Mzg1MzU=",
-                    "label": "Invoice"
-                }
-            ],
-            "created_at": "2023-03-29T13:27:56.000Z",
-            "updated_at": "2023-03-29T13:27:57.000Z",
+            "state": "Completed",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-03-30T14:27:56.000Z",
-                                "start": "2023-03-30T13:27:56.000Z"
-                            }
+                                "end": "2023-03-31T08:48:16.000Z",
+                                "start": "2023-03-31T08:47:28.000Z"
+                            },
+                            "timestamp": "2023-03-31T08:48:16.000Z"
                         },
                         "contact": {
                             "phone": "8447407778"
                         },
                         "location": {
-                            "gps": "12.9953231,77.6139826",
+                            "gps": "12.9970483,77.61440759999999",
                             "address": {
                                 "city": "Bangalore",
                                 "name": "Pulikeshi Nagar",
@@ -200,9 +154,10 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-03-30T13:27:57.000Z",
-                                "start": "2023-03-29T13:27:57.000Z"
-                            }
+                                "end": "2023-03-31T08:47:28.000Z",
+                                "start": "2023-03-31T08:46:32.000Z"
+                            },
+                            "timestamp": "2023-03-31T08:47:28.000Z"
                         },
                         "contact": {
                             "email": "aleeminuk@gmail.com",
@@ -210,7 +165,7 @@
                         },
                         "location": {
                             "id": "20971",
-                            "gps": "12.9953231,77.6139826",
+                            "gps": "12.9953402,77.61399999999999",
                             "descriptor": {
                                 "name": "Evergreen SuperMarket",
                                 "images": [
@@ -221,7 +176,7 @@
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Packed"
+                            "code": "Order-delivered"
                         }
                     },
                     "tracking": false,

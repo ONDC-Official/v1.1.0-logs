@@ -1,15 +1,15 @@
 {
     "context": {
         "city": "std:080",
-        "action": "on_init",
+        "action": "on_select",
         "bap_id": "ondc.indiastack.cloud",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
         "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-31T08:15:28.121Z",
-        "message_id": "a85f9ea1-a60f-41a7-a22b-9e91d3583293",
+        "timestamp": "2023-03-31T08:15:06.184Z",
+        "message_id": "f2943ac3-9e70-4845-81d5-93ed948520f8",
         "core_version": "1.1.0",
         "transaction_id": "8fb6c8ef-12c1-4d65-9b56-d55161f336fd"
     },
@@ -18,16 +18,10 @@
             "items": [
                 {
                     "id": "512",
-                    "quantity": {
-                        "count": 1
-                    },
                     "fulfillment_id": "20971"
                 },
                 {
                     "id": "519",
-                    "quantity": {
-                        "count": 1
-                    },
                     "fulfillment_id": "20971"
                 }
             ],
@@ -43,6 +37,14 @@
                             "price": {
                                 "value": "204.00",
                                 "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
                             }
                         },
                         "price": {
@@ -70,6 +72,14 @@
                             "price": {
                                 "value": "92.00",
                                 "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
                             }
                         },
                         "price": {
@@ -112,71 +122,23 @@
                     }
                 ]
             },
-            "billing": {
-                "name": "Sathishkumar",
-                "email": "sathisha@nstore.in",
-                "phone": "9629295619",
-                "address": {
-                    "city": "Bangalore",
-                    "door": "-",
-                    "name": "1, Cleveland Rd, Cleveland Town, Pulikeshi Nagar, Bengaluru, Karnataka 560005",
-                    "state": "KARNATAKA",
-                    "country": "IN",
-                    "building": "No 1, cleveland Road",
-                    "locality": "Cleveland Town",
-                    "area_code": "560005"
-                },
-                "created_at": "2023-03-31T08:15:25.699Z",
-                "tax_number": "",
-                "updated_at": "2023-03-31T08:15:25.699Z"
-            },
-            "payment": {
-                "@ondc/org/settlement_details": [
-                    {
-                        "bank_name": "IDFC FIRST BANK LIMITED",
-                        "branch_name": "BKC Naman Chambers Branch",
-                        "settlement_type": "neft",
-                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
-                        "settlement_phase": "sale-amount",
-                        "settlement_ifsc_code": "IDFCB0040101",
-                        "settlement_counterparty": "seller-app",
-                        "settlement_bank_account_no": "10112822953"
-                    }
-                ],
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3"
-            },
             "provider": {
                 "id": "20971"
             },
             "fulfillments": [
                 {
                     "id": "20971",
-                    "end": {
-                        "contact": {
-                            "phone": "9629295619"
-                        },
-                        "location": {
-                            "gps": "12.9953231,77.6139826",
-                            "address": {
-                                "city": "Bangalore",
-                                "door": "-",
-                                "name": "1, Cleveland Rd, Cleveland Town, Pulikeshi Nagar, Bengaluru, Karnataka 560005",
-                                "state": "KARNATAKA",
-                                "country": "IN",
-                                "building": "No 1, cleveland Road",
-                                "locality": "Cleveland Town",
-                                "area_code": "560005"
-                            }
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
                         }
                     },
-                    "type": "Delivery",
-                    "tracking": false
+                    "tracking": false,
+                    "@ondc/org/TAT": "PT24H",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }
-            ],
-            "provider_location": {
-                "id": "20971"
-            }
+            ]
         }
     }
 }
