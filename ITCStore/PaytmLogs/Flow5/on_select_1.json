@@ -1,0 +1,117 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_select",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https:\/\/ondc-staging.paytm.com\/retail",
+		"bpp_id": "retailconnect.co.in",
+		"bpp_uri": "https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "188abe59-f962-45f6-a988-926a7e918eb5",
+		"message_id": ":SentTimeStamp:1680513962047:",
+		"timestamp": "2023-04-03T09:26:04.145Z"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "ONDC-STORE-BGLR"
+			},
+			"items": [{
+				"fulfillment_id": "e373ea67-61b7-42f5-a29e-51d110a8138b",
+				"id": "YPPASTACHEESE83"
+			}, {
+				"fulfillment_id": "e373ea67-61b7-42f5-a29e-51d110a8138b",
+				"id": "MAGIC MASALA 93"
+			}],
+			"fulfillments": [{
+				"id": "e373ea67-61b7-42f5-a29e-51d110a8138b",
+				"@ondc\/org\/provider_name": "ITC Store",
+				"tracking": false,
+				"@ondc\/org\/category": "Standard Delivery",
+				"@ondc\/org\/TAT": "P1D",
+				"state": {
+					"descriptor": {
+						"code": "Serviceable"
+					}
+				}
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "292"
+				},
+				"breakup": [{
+					"@ondc\/org\/item_id": "YPPASTACHEESE83",
+					"@ondc\/org\/item_quantity": {
+						"count": 2
+					},
+					"item": {
+						"quantity": {
+							"available": {
+								"count": "2"
+							},
+							"maximum": {
+								"count": "2"
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "23"
+						}
+					},
+					"title": "Sunfeast YiPPee! Cheese Pasta Treat 65g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "46"
+					}
+				}, {
+					"@ondc\/org\/item_id": "MAGIC MASALA 93",
+					"@ondc\/org\/item_quantity": {
+						"count": 2
+					},
+					"item": {
+						"quantity": {
+							"available": {
+								"count": "2"
+							},
+							"maximum": {
+								"count": "2"
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "98"
+						}
+					},
+					"title": "Sunfeast YiPPee Magic Masala 560g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "196"
+					}
+				}, {
+					"@ondc\/org\/item_id": "e373ea67-61b7-42f5-a29e-51d110a8138b",
+					"title": "Delivery charges",
+					"@ondc\/org\/title_type": "delivery",
+					"price": {
+						"currency": "INR",
+						"value": "50.0"
+					}
+				}],
+				"ttl": "P1D"
+			}
+		}
+	}
+} 
+
+
+{
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}
