@@ -1,98 +1,189 @@
 {
-  "context": {
-    "domain": "nic2004:52110",
-    "action": "on_update",
-    "country": "IND",
-    "city": "std:0120",
-    "core_version": "1.1.0",
-    "bpp_id": "ondc.hulsecure.in",
-    "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
-    "bap_id": "ondc.indiastack.cloud",
-    "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
-    "transaction_id": "34b78dc5-3b9b-4f04-b730-a8188be99e44",
-    "message_id": "ff0e58ce-3297-4550-8c33-24293f69ee7b",
-    "timestamp": "2023-03-28T14:45:51.169Z",
-    "ttl": "PT30S"
-  },
-  "message": {
-    "order": {
-      "id": "b6b18865-31c2-4d25-b341-f2158475111c",
-      "state": "Completed",
-      "items": [
-        {
-          "id": "44790347563308",
-          "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
-          "quantity": {
-            "count": 1
-          }
-        },
-        {
-          "id": "44790347563308",
-          "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e-ReverseQC",
-          "quantity": {
-            "count": 1
-          },
-          "tags": {
-            "status": "Return_Initiated"
-          }
-        }
-      ],
-      "quote": {
-        "price": {
-          "currency": "INR",
-          "value": "1111"
-        },
-        "breakup": [
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "on_update",
+      "country": "IND",
+      "city": "std:011",
+      "core_version": "1.1.0",
+      "bpp_id": "ondc.hulsecure.in",
+      "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+      "bap_id": "ondc.indiastack.cloud",
+      "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+      "transaction_id": "dc7a2a5c-e163-407f-8fa2-281c543a2064",
+      "message_id": "e9f6d107-0c5a-4b5a-80fc-bb2b850d7b0a",
+      "timestamp": "2023-04-03T08:21:50.347Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "1edd5e73-3768-4dbb-ac34-7887f5a8def0",
+        "state": "Completed",
+        "items": [
           {
-            "@ondc/org/item_id": "44790347563308",
-            "@ondc/org/item_quantity": {
+            "id": "44790346383660",
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+            "quantity": {
+              "count": 1
+            }
+          },
+          {
+            "id": "44790346383660",
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+            "quantity": {
               "count": 1
             },
-            "title": "Axe Intense Long Lasting Deodorant Bodyspray For Men 215 ml",
-            "@ondc/org/title_type": "item",
-            "price": {
-              "currency": "INR",
-              "value": "1111"
-            },
-            "item": {
+            "tags": {
+              "status": "Return_Initiated"
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "2222"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "44790346383660",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Axe Body Spray Perfume for Men, Signature Champion & Dark Temptation 154ml (Pack Of 2)",
+              "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
                 "value": "1111"
-              }
-            }
-          }
-        ]
-      },
-      "fulfillments": [
-        {
-          "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e-ReverseQC",
-          "type": "Reverse QC",
-          "state": {
-            "descriptor": {
-              "code": "Pending"
-            }
-          },
-          "start": {
-            "time": {
-              "range": {
-                "start": "2023-03-28T14:45:51.169Z",
-                "end": "2023-04-01T14:45:51.751Z"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                }
               }
             },
-            "instructions": {
-              "short_desc": "Return QC",
-              "long_desc": "Product will be picked up soon",
-              "additional_desc": {
-                "content_type": "text/html",
-                "url": ""
+            {
+              "@ondc/org/item_id": "44790345892140",
+              "@ondc/org/item_quantity": {
+                "count": 2
               },
-              "images": [
-                "URL or data string as per spec"
-              ]
+              "title": "Axe Gold Temptation (Pack Of 2) And Dark Temptation Deodorant for Men( 3 Items In The Set )",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "2222"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "fulfillments": [
+          {
+            "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+            "type": "Delivery",
+            "@ondc/org/provider_name": "The U shop",
+            "tracking": true,
+            "state": {
+              "descriptor": {
+                "code": "Order-delivered"
+              }
+            },
+            "start": {
+              "location": {
+                "id": "65426587829",
+                "descriptor": {
+                  "name": "The U Shop",
+                  "images": [
+                    "https://cdn.shopify.com/s/files/1/0521/3460/9077/files/abc_150x.png?v=1631895895"
+                  ]
+                },
+                "gps": "12.956399,77.636803"
+              },
+              "contact": {
+                "phone": "18008330506",
+                "email": "customercare@theushop.in"
+              },
+              "state": "2023-04-03T08:21:50.347Z",
+              "time": {
+                "range": {
+                  "start": "2023-04-03T08:21:50.347Z",
+                  "end": "2023-04-07T08:21:51.289Z"
+                },
+                "timestamp": "2023-04-03T08:21:51.289Z"
+              }
+            },
+            "end": {
+              "contact": {
+                "email": "harish.maurya@ens.enterprises",
+                "phone": "6393245616"
+              },
+              "location": {
+                "address": {
+                  "area_code": "201301",
+                  "city": "Gautam Buddha Nagar",
+                  "country": "IN",
+                  "building": "123wer",
+                  "door": "-",
+                  "locality": "noida",
+                  "name": "A133",
+                  "state": "UTTAR PRADESH"
+                },
+                "gps": "28.5821195,77.3266991"
+              },
+              "person": {
+                "name": "HarishMaurya developer"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-04-03T08:21:50.347Z",
+                  "end": "2023-04-07T08:21:51.288Z"
+                },
+                "timestamp": "2023-04-03T08:21:51.288Z"
+              }
             }
           }
-        }
-      ]
+        ],
+        "payment": {
+          "type": "ON-ORDER",
+          "params": {
+            "amount": "3333",
+            "currency": "INR",
+            "transaction_id": "order_LZFV1Ihu55bsDV"
+          },
+          "status": "PAID",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_ifsc_code": "ICIC0006239",
+              "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+              "upi_address": "8860775669@paytm",
+              "settlement_bank_account_no": "623905034810",
+              "bank_name": "ICICI BANK",
+              "settlement_type": "neft",
+              "branch_name": "Mumbai Chembur branch",
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount"
+            }
+          ]
+        },
+        "created_at": "2023-04-03T08:15:21.843Z",
+        "updated_at": "2023-04-03T08:21:51.289Z"
+      }
     }
   }
-}
