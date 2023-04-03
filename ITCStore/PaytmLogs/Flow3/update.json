@@ -1,0 +1,72 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "update",
+		"country": "IND",
+		"city": "std:080",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https:\/\/ondc-staging.paytm.com\/retail",
+		"transaction_id": "39a339c8-2b22-4b38-ab87-0155dac4de87",
+		"message_id": "1349568983342:1680093847575",
+		"timestamp": "2023-03-29T12:44:07.575Z",
+		"bpp_id": "retailconnect.co.in",
+		"bpp_uri": "https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"update_target": "item",
+		"order": {
+			"id": "0EC3052539A756381B4E8B3946AA3FD4",
+			"state": "delivered",
+			"provider": {
+				"id": "ONDC-STORE-BGLR"
+			},
+			"items": [{
+				"id": "YPPASTATMCHSE83",
+				"quantity": {
+					"count": 1
+				},
+				"tags": {
+					"update_type": "return",
+					"reason_code": "005",
+					"ttl_approval": "PT24H",
+					"ttl_reverseqc": "P3D",
+					"image": "https:\/\/commerce-tech-paytmimg.s3.ap-south-1.amazonaws.com\/returns\/customer\/8444.jpg,https:\/\/commerce-tech-paytmimg.s3.ap-south-1.amazonaws.com\/returns\/customer\/8445.jpg"
+				}
+			}],
+			"payment": {
+				"@ondc\/org\/settlement_details": [{
+					"settlement_counterparty": "buyer",
+					"settlement_phase": "refund",
+					"settlement_type": "Paytm Wallet",
+					"settlement_amount": "171",
+					"settlement_timestamp": "2023-03-29T12:44:07.575Z"
+				}]
+			}
+		}
+	}
+}
+
+
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "update",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https:\/\/ondc-staging.paytm.com\/retail",
+		"bpp_id": "retailconnect.co.in",
+		"bpp_uri": "https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "39a339c8-2b22-4b38-ab87-0155dac4de87",
+		"message_id": "1349568983342:1680093847575",
+		"timestamp": "2023-03-29T12:44:07.712Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

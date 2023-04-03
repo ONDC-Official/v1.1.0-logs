@@ -1,0 +1,200 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "on_status",
+		"core_version": "1.0.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https:\/\/ondc-staging.paytm.com\/retail",
+		"bpp_id": "retailconnect.co.in",
+		"bpp_uri": "https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "39a339c8-2b22-4b38-ab87-0155dac4de87",
+		"message_id": "726e8915-a2b4-42b5-baf3-67717708719b",
+		"city": "std:080",
+		"country": "IND",
+		"timestamp": "2023-03-29T12:40:13.569Z"
+	},
+	"message": {
+		"order": {
+			"id": "0EC3052539A756381B4E8B3946AA3FD4",
+			"state": "In-progress",
+			"provider": {
+				"id": "ONDC-STORE-BGLR",
+				"locations": [{
+					"id": "12.995210,77.717659"
+				}]
+			},
+			"items": [{
+				"id": "YPPASTATMCHSE83",
+				"fulfillment_id": "5e220097-79fa-42f2-b6af-29d6767eb3c8",
+				"quantity": {
+					"count": 1
+				}
+			}, {
+				"id": "MAGIC MASALA 93",
+				"fulfillment_id": "5e220097-79fa-42f2-b6af-29d6767eb3c8",
+				"quantity": {
+					"count": 1
+				}
+			}],
+			"billing": {
+				"name": "Yogesh Goyal",
+				"address": {
+					"building": "Thirumalashettyhally",
+					"name": "Yogesh Goyal",
+					"locality": "Koralur",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560067"
+				},
+				"email": null,
+				"phone": "9818470079",
+				"created_at": "2023-03-29T12:38:09.110Z",
+				"updated_at": "2023-03-29T12:38:09.110Z"
+			},
+			"fulfillments": [{
+				"id": "5e220097-79fa-42f2-b6af-29d6767eb3c8",
+				"@ondc\/org\/provider_name": "ITC Store",
+				"type": "Delivery",
+				"state": {
+					"descriptor": {
+						"code": "Order-picked-up"
+					}
+				},
+				"tracking": false,
+				"start": {
+					"location": {
+						"id": "ONDC-STORE-BGLR",
+						"descriptor": {
+							"name": "ONDC-STORE-BGLR"
+						},
+						"gps": "12.995210,77.717659"
+					},
+					"time": {
+						"range": {
+							"start": "2023-03-29T12:38:50.146Z",
+							"end": "2023-03-31T12:38:51.568Z"
+						},
+						"timestamp": "2023-03-29T12:40:08.733Z"
+					},
+					"contact": {
+						"phone": "18003098994",
+						"email": "support@itcstore.in"
+					}
+				},
+				"end": {
+					"location": {
+						"gps": "12.981105,77.774329",
+						"address": {
+							"building": "Thirumalashettyhally",
+							"name": "Yogesh Goyal",
+							"locality": "Koralur",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "IND",
+							"area_code": "560067"
+						}
+					},
+					"time": {
+						"range": {
+							"start": "2023-03-29T12:38:50.146Z",
+							"end": "2023-03-31T12:38:51.568Z"
+						}
+					},
+					"contact": {
+						"phone": "9818470079"
+					}
+				}
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "171"
+				},
+				"breakup": [{
+					"@ondc\/org\/item_id": "YPPASTATMCHSE83",
+					"@ondc\/org\/item_quantity": {
+						"count": 1
+					},
+					"title": "Sunfeast YiPPee! Tomato Cheese Pasta Treat 65g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "23"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "23"
+						}
+					}
+				}, {
+					"@ondc\/org\/item_id": "MAGIC MASALA 93",
+					"@ondc\/org\/item_quantity": {
+						"count": 1
+					},
+					"title": "Sunfeast YiPPee Magic Masala 560g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "98"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "98"
+						}
+					}
+				}, {
+					"@ondc\/org\/item_id": "5e220097-79fa-42f2-b6af-29d6767eb3c8",
+					"title": "Delivery charges",
+					"@ondc\/org\/title_type": "delivery",
+					"price": {
+						"currency": "INR",
+						"value": "50.0"
+					}
+				}]
+			},
+			"payment": {
+				"uri": "https:\/\/ondc.transaction.com\/payment",
+				"tl_method": "http\/get",
+				"params": {
+					"currency": "INR",
+					"amount": "171",
+					"transaction_id": "20230329011690000847899096387172514"
+				},
+				"status": "PAID",
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc\/org\/buyer_app_finder_fee_type": "percent",
+				"@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
+				"@ondc\/org\/settlement_details": [{
+					"settlement_counterparty": "seller-app",
+					"settlement_phase": "sale-amount",
+					"settlement_type": "Bank",
+					"upi_address": "",
+					"settlement_bank_account_no": "114605000635",
+					"settlement_ifsc_code": "ICIC0000396",
+					"beneficiary_name": "THE TECH TONIC",
+					"bank_name": "ICICI BANK",
+					"branch_name": "ICICI Bank Ltd, South Extension-II, New Delhi"
+				}]
+			},
+			"documents": [{
+				"url": "https:\/\/retailconnect.co.in\/itcestore\/ONDC_INV\/ONDCBLR22ES00010.pdf",
+				"label": "Invoice"
+			}],
+			"created_at": "2023-03-29T12:38:50.146Z",
+			"updated_at": "2023-03-29T12:40:08.733Z"
+		}
+	}
+} 
+
+
+{
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}
