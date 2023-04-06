@@ -1,0 +1,157 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "on_init",
+      "country": "IND",
+      "city": "std:0120",
+      "core_version": "1.1.0",
+      "bpp_id": "ondc.hulsecure.in",
+      "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+      "bap_id": "ondc.indiastack.cloud",
+      "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+      "transaction_id": "87a29782-3525-41d8-a97f-883f7fd271d3",
+      "message_id": "20406470-3afe-4084-ad52-451c6beb4bf0",
+      "timestamp": "2023-04-04T18:14:38.545Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
+        },
+        "provider_location": {
+          "id": "65426587829"
+        },
+        "items": [
+          {
+            "id": "44790346481964",
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+            "quantity": {
+              "count": 2
+            }
+          },
+          {
+            "id": "44790345892140",
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+            "quantity": {
+              "count": 2
+            }
+          }
+        ],
+        "billing": {
+          "address": {
+            "area_code": "201301",
+            "city": "Gautam Buddha Nagar",
+            "country": "IN",
+            "building": "123wer",
+            "door": "-",
+            "locality": "noida",
+            "name": "A133",
+            "state": "UTTAR PRADESH"
+          },
+          "created_at": "2023-04-04T18:14:37.572Z",
+          "email": "harish.maurya@ens.enterprises",
+          "name": "HarishMauryadeveloper",
+          "phone": "6393245616",
+          "tax_number": "sdsds232",
+          "updated_at": "2023-04-04T18:14:37.572Z"
+        },
+        "fulfillments": [
+          {
+            "end": {
+              "contact": {
+                "phone": "6393245616"
+              },
+              "location": {
+                "address": {
+                  "area_code": "201301",
+                  "city": "Gautam Buddha Nagar",
+                  "country": "IN",
+                  "building": "123wer",
+                  "door": "-",
+                  "locality": "noida",
+                  "name": "A133",
+                  "state": "UTTAR PRADESH"
+                },
+                "gps": "28.5821195,77.3266991"
+              }
+            },
+            "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+            "type": "Delivery",
+            "provider_id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "4444"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "44790345892140",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "Axe Gold Temptation (Pack Of 2) And Dark Temptation Deodorant for Men( 3 Items In The Set )",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "2222"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "44790346481964",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "Axe Body Spray Perfume for Men, Signature Intense & Dark Temptation 154 ml (Pack Of 2)",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "2222"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                }
+              }
+            },
+            {
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "payment": {
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "upi_address": "8860775669@paytm",
+              "settlement_bank_account_no": "623905034810",
+              "settlement_ifsc_code": "ICIC0006239",
+              "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+              "bank_name": "ICICI BANK",
+              "branch_name": "Mumbai Chembur branch"
+            }
+          ]
+        }
+      }
+    }
+  }
