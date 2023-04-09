@@ -1,34 +1,36 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "action": "search",
-      "country": "IND",
-      "city": "std:080",
-      "core_version": "1.1.0",
-      "bap_id": "ondc.indiastack.cloud",
-      "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
-      "transaction_id": "d9e772c7-eed7-4bcb-9080-0a08e73a64df",
-      "message_id": "3886cda5-af23-4973-af98-856972becb1a",
-      "timestamp": "2023-04-04T12:00:58.124Z",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "intent": {
-        "fulfillment": {
-          "type": "Delivery",
-          "end": {
-            "location": {
-              "gps": "12.9121181,77.6445548",
-              "address": {
-                "area_code": "560102"
-              }
-            }
-          }
-        },
-        "payment": {
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3"
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "search",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "transaction_id": "1c7cb3df-75c9-4a73-a3f3-ddf0769fba58",
+    "message_id": "a33f67e2-3b40-4543-a7a1-1fc126f5f550",
+    "timestamp": "2023-04-09T12:59:10.613Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "item": {
+        "descriptor": {
+          "name": "axe"
         }
+      },
+      "fulfillment": {
+        "type": "Delivery",
+        "end": {
+          "location": {
+            "gps": "28.5859370000001,77.3825590000001"
+          }
+        }
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
       }
     }
   }
+}
