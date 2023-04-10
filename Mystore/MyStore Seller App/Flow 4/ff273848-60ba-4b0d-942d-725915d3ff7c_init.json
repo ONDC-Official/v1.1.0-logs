@@ -1,0 +1,110 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "init",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "ff273848-60ba-4b0d-942d-725915d3ff7c",
+      "message_id": "7b7fbda4-6aad-4005-8acf-7de251c3ae41",
+      "timestamp": "2023-04-10T06:08:34.285Z",
+      "bpp_id": "beta.mystore.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "62733ab9f1f53df939f25300",
+          "locations": [
+            {
+              "id": "62733ab9f1f53df939f25300"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "63fd87f96b40654d77d701a3",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "Fulfillment1"
+          },
+          {
+            "id": "641435ce9e3780d6c5f3b609",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "Fulfillment1"
+          }
+        ],
+        "billing": {
+          "address": {
+            "door": "near sanjay gandhi",
+            "building": "near sanjay gandhi",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "country": "IND",
+            "area_code": "110083",
+            "locality": "Mangolpuri",
+            "name": "Saurabh Singh"
+          },
+          "phone": "8368476734",
+          "name": "Saurabh Singh",
+          "email": "100rabbh@gmail.com",
+          "created_at": "2023-04-10T06:08:34.285Z",
+          "updated_at": "2023-04-10T06:08:34.285Z"
+        },
+        "fulfillments": [
+          {
+            "id": "Fulfillment1",
+            "type": "Delivery",
+            "end": {
+              "contact": {
+                "email": "100rabbh@gmail.com",
+                "phone": "8368476734"
+              },
+              "location": {
+                "gps": "28.6905790000001, 77.0822600000001",
+                "address": {
+                  "name": "Saurabh Singh",
+                  "building": "near sanjay gandhi",
+                  "locality": "Mangolpuri",
+                  "city": "New Delhi",
+                  "state": "Delhi",
+                  "country": "IND",
+                  "area_code": "110083"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "init",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "ff273848-60ba-4b0d-942d-725915d3ff7c",
+      "message_id": "7b7fbda4-6aad-4005-8acf-7de251c3ae41",
+      "timestamp": "2023-04-10T06:08:34.285Z",
+      "bpp_id": "beta.mystore.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}
