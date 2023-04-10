@@ -9,44 +9,44 @@
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "7461c87c-df81-41fb-bf58-3583e02c5b1b",
-      "message_id": "6fb980d7-b032-4a2e-a4c2-1775ee61822d",
-      "timestamp": "2023-03-31T09:02:40.796Z",
+      "transaction_id": "fc060e43-806c-4a70-8e2b-e296534fbb07",
+      "message_id": "cdfed76c-d2c1-414c-a2d0-aa686b0278c2",
+      "timestamp": "2023-04-10T05:37:02.749Z",
       "bpp_id": "beta.mystore.in",
       "ttl": "PT30S"
     },
     "message": {
       "order": {
-        "id": "2023-03-31-629694",
+        "id": "2023-04-10-865409",
         "state": "Created",
         "billing": {
           "address": {
-            "name": "Saurabh",
-            "building": "barkha road",
-            "locality": "barkha",
-            "city": "Bengaluru",
-            "state": "Karnataka",
+            "name": "Saurabh Singh",
+            "building": "near sanjay gandhi",
+            "locality": "Mangolpuri",
+            "city": "New Delhi",
+            "state": "Delhi",
             "country": "IND",
-            "area_code": "560001"
+            "area_code": "110083"
           },
           "phone": "8368476734",
-          "name": "Saurabh",
-          "email": "saurabh@test.com",
-          "created_at": "2023-03-31T09:01:46.143Z",
-          "updated_at": "2023-03-31T09:01:46.143Z"
+          "name": "Saurabh Singh",
+          "email": "100rabbh@gmail.com",
+          "created_at": "2023-04-10T05:36:20.099Z",
+          "updated_at": "2023-04-10T05:36:20.099Z"
         },
         "items": [
           {
-            "id": "6414365e9e3780d6c5f3b83d",
+            "id": "63fd87f96b40654d77d701a3",
             "quantity": {
-              "count": 2
+              "count": 1
             },
             "fulfillment_id": "Fulfillment1"
           },
           {
-            "id": "641435ce9e3780d6c5f3b609",
+            "id": "6414365e9e3780d6c5f3b83d",
             "quantity": {
-              "count": 2
+              "count": 1
             },
             "fulfillment_id": "Fulfillment1"
           }
@@ -64,22 +64,22 @@
             "id": "Fulfillment1",
             "end": {
               "contact": {
-                "email": "saurabh@test.com",
+                "email": "100rabbh@gmail.com",
                 "phone": "8368476734"
               },
               "person": {
-                "name": "Saurabh"
+                "name": "Saurabh Singh"
               },
               "location": {
-                "gps": "12.9812430000001, 77.5950340000001",
+                "gps": "28.6905790000001, 77.0822600000001",
                 "address": {
-                  "name": "Saurabh",
-                  "building": "barkha road",
-                  "locality": "barkha",
-                  "city": "Bengaluru",
-                  "state": "Karnataka",
+                  "name": "Saurabh Singh",
+                  "building": "near sanjay gandhi",
+                  "locality": "Mangolpuri",
+                  "city": "New Delhi",
+                  "state": "Delhi",
                   "country": "IND",
-                  "area_code": "560001"
+                  "area_code": "110083"
                 }
               }
             },
@@ -90,9 +90,9 @@
           "uri": "https://juspay.in/",
           "tl_method": "http/get",
           "params": {
-            "amount": "1290",
+            "amount": "751",
             "currency": "INR",
-            "transaction_id": "ONDC-7461c87c-df81-41fb-bf58-3583e02c5b1b-1"
+            "transaction_id": "ONDC-fc060e43-806c-4a70-8e2b-e296534fbb07-1"
           },
           "status": "PAID",
           "type": "ON-ORDER",
@@ -115,13 +115,39 @@
         "quote": {
           "price": {
             "currency": "INR",
-            "value": "1290"
+            "value": "751"
           },
           "breakup": [
             {
+              "@ondc/org/item_id": "63fd87f96b40654d77d701a3",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "rice",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "200"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "559"
+                  },
+                  "maximum": {
+                    "count": "559"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "200"
+                }
+              }
+            },
+            {
               "@ondc/org/item_id": "6414365e9e3780d6c5f3b83d",
               "@ondc/org/item_quantity": {
-                "count": 2
+                "count": 1
               },
               "title": "rice 2000gm",
               "@ondc/org/title_type": "item",
@@ -132,10 +158,10 @@
               "item": {
                 "quantity": {
                   "available": {
-                    "count": "377"
+                    "count": "89"
                   },
                   "maximum": {
-                    "count": "377"
+                    "count": "89"
                   }
                 },
                 "price": {
@@ -145,29 +171,12 @@
               }
             },
             {
-              "@ondc/org/item_id": "641435ce9e3780d6c5f3b609",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "rice 100gm",
-              "@ondc/org/title_type": "item",
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Packing charges",
+              "@ondc/org/title_type": "packing",
               "price": {
                 "currency": "INR",
-                "value": "120"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "2"
-                  },
-                  "maximum": {
-                    "count": "2"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "120"
-                }
+                "value": "1"
               }
             },
             {
@@ -181,8 +190,8 @@
             }
           ]
         },
-        "created_at": "2023-03-31T09:02:40.796Z",
-        "updated_at": "2023-03-31T09:02:40.796Z"
+        "created_at": "2023-04-10T05:37:02.749Z",
+        "updated_at": "2023-04-10T05:37:02.749Z"
       }
     }
   },
@@ -196,9 +205,9 @@
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "7461c87c-df81-41fb-bf58-3583e02c5b1b",
-      "message_id": "6fb980d7-b032-4a2e-a4c2-1775ee61822d",
-      "timestamp": "2023-03-31T09:02:40.796Z",
+      "transaction_id": "fc060e43-806c-4a70-8e2b-e296534fbb07",
+      "message_id": "cdfed76c-d2c1-414c-a2d0-aa686b0278c2",
+      "timestamp": "2023-04-10T05:37:02.749Z",
       "bpp_id": "beta.mystore.in",
       "ttl": "PT30S"
     },
