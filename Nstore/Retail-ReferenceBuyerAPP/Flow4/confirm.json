@@ -3,30 +3,23 @@
         "ttl": "PT30S",
         "city": "std:080",
         "action": "confirm",
-        "bap_id": "ondc.indiastack.cloud",
+        "bap_id": "buyer-app-preprod.ondc.org",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
-        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-31T09:11:26.531Z",
-        "message_id": "839d4203-cf39-4721-b548-2e18ee5e5a10",
+        "timestamp": "2023-04-11T16:35:46.750Z",
+        "message_id": "06b95776-74af-4dca-9025-ec3a098d39b2",
         "core_version": "1.1.0",
-        "transaction_id": "8986a943-6f4e-40e4-b0df-06629e116be1"
+        "transaction_id": "1c50ba93-d7ba-45c0-885a-58f00b891980"
     },
     "message": {
         "order": {
-            "id": "9b5126cf-cd96-48a1-8588-78c84ed61a55",
+            "id": "2023-04-11-630369",
             "items": [
                 {
-                    "id": "PRVNJ3",
-                    "quantity": {
-                        "count": 2
-                    },
-                    "fulfillment_id": "20971"
-                },
-                {
-                    "id": "VHTE22",
+                    "id": "473",
                     "quantity": {
                         "count": 1
                     },
@@ -36,50 +29,23 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "217.43",
+                    "value": "388.28",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "item": {
                             "price": {
-                                "value": "100.00",
+                                "value": "375.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "200.00",
+                            "value": "375.00",
                             "currency": "INR"
                         },
-                        "title": "Prestige Spoon",
-                        "@ondc/org/item_id": "PRVNJ3",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "PRVNJ3",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "item": {
-                            "price": {
-                                "value": "10.00",
-                                "currency": "INR"
-                            }
-                        },
-                        "price": {
-                            "value": "10.00",
-                            "currency": "INR"
-                        },
-                        "title": "White Chart",
-                        "@ondc/org/item_id": "VHTE22",
+                        "title": "Saffola Classic Instant Masala Oats 1 Kg",
+                        "@ondc/org/item_id": "473",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -91,7 +57,7 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "VHTE22",
+                        "@ondc/org/item_id": "473",
                         "@ondc/org/title_type": "tax"
                     },
                     {
@@ -105,7 +71,7 @@
                     },
                     {
                         "price": {
-                            "value": "7.43",
+                            "value": "13.28",
                             "currency": "INR"
                         },
                         "title": "Convenience Fee",
@@ -116,31 +82,32 @@
             },
             "state": "Created",
             "billing": {
-                "name": "GirisutaA",
-                "email": "girisuta@nstore.in",
-                "phone": "8447407778",
+                "name": "Sathish Kumar A",
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619",
                 "address": {
-                    "city": "Bangalore",
-                    "door": "-",
-                    "name": "Pulikeshi Nagar",
-                    "state": "KARNATAKA",
-                    "country": "IN",
-                    "building": "1",
-                    "locality": "Cleveland Rd",
-                    "area_code": "560005"
+                    "city": "Bengaluru",
+                    "door": "Peenya Industrial Area",
+                    "name": "Sathish Kumar A",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "Peenya Industrial Area",
+                    "locality": "Post Box No. 5857, 23/24, II Phase",
+                    "area_code": "560058"
                 },
-                "created_at": "2023-03-31T09:11:04.509Z",
-                "tax_number": "",
-                "updated_at": "2023-03-31T09:11:04.509Z"
+                "created_at": "2023-04-11T16:35:21.651Z",
+                "updated_at": "2023-04-11T16:35:21.651Z"
             },
             "payment": {
+                "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "217.43",
+                    "amount": "388.28",
                     "currency": "INR",
-                    "transaction_id": "order_LY4qsFfIc5YDjW"
+                    "transaction_id": "ONDC-1c50ba93-d7ba-45c0-885a-58f00b891980-1"
                 },
                 "status": "PAID",
+                "tl_method": "http/get",
                 "collected_by": "BAP",
                 "@ondc/org/settlement_details": [
                     {
@@ -149,13 +116,13 @@
                         "settlement_type": "neft",
                         "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
                         "settlement_phase": "sale-amount",
-                        "settlement_ifsc_code": "IDFCB0040101",
+                        "settlement_ifsc_code": "IDFB0040101",
                         "settlement_counterparty": "seller-app",
                         "settlement_bank_account_no": "10112822953"
                     }
                 ],
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3"
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
             },
             "provider": {
                 "id": "20971",
@@ -165,36 +132,34 @@
                     }
                 ]
             },
-            "created_at": "2023-03-31T09:11:26.467Z",
-            "updated_at": "2023-03-31T09:11:26.467Z",
+            "created_at": "2023-04-11T16:35:46.750Z",
+            "updated_at": "2023-04-11T16:35:46.750Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "person": {
-                            "name": "Girisuta A"
+                            "name": "Sathish Kumar A"
                         },
                         "contact": {
-                            "email": "girisuta@nstore.in",
-                            "phone": "8447407778"
+                            "email": "sathisha@nstore.in",
+                            "phone": "9629295619"
                         },
                         "location": {
-                            "gps": "12.9970483,77.61440759999999",
+                            "gps": "13.032975, 77.5203490000001",
                             "address": {
-                                "city": "Bangalore",
-                                "door": "-",
-                                "name": "Pulikeshi Nagar",
-                                "state": "KARNATAKA",
-                                "country": "IN",
-                                "building": "1",
-                                "locality": "Cleveland Rd",
-                                "area_code": "560005"
+                                "city": "Bengaluru",
+                                "name": "Sathish Kumar A",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "Peenya Industrial Area",
+                                "locality": "Post Box No. 5857, 23/24, II Phase",
+                                "area_code": "560058"
                             }
                         }
                     },
                     "type": "Delivery",
-                    "tracking": false,
-                    "provider_id": "20971"
+                    "tracking": false
                 }
             ]
         }

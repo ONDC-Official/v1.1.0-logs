@@ -2,32 +2,32 @@
     "context": {
         "city": "std:080",
         "action": "on_confirm",
-        "bap_id": "ondc.indiastack.cloud",
+        "bap_id": "buyer-app-preprod.ondc.org",
         "bpp_id": "b-ondc-seller-bpp.nlincs.in",
         "domain": "nic2004:52110",
-        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-03-31T08:15:48.918Z",
-        "message_id": "aa57e8dc-9b4b-4a13-9564-83e49ee8db57",
+        "timestamp": "2023-04-11T14:48:04.732Z",
+        "message_id": "e5222e3d-22a4-4290-8a9d-7a9d84c52f9c",
         "core_version": "1.1.0",
-        "transaction_id": "8fb6c8ef-12c1-4d65-9b56-d55161f336fd"
+        "transaction_id": "b1a1b227-aaf6-44cc-b3a7-6b5436b3cc6c"
     },
     "message": {
         "order": {
-            "id": "26666947-9d1c-4622-8da4-9da97a02c30d",
+            "id": "2023-04-11-933852",
             "items": [
                 {
-                    "id": "512",
+                    "id": "101",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     },
                     "fulfillment_id": "20971"
                 },
                 {
-                    "id": "519",
+                    "id": "219",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     },
                     "fulfillment_id": "20971"
                 }
@@ -35,26 +35,26 @@
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "306.48",
+                    "value": "68.33",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "item": {
                             "price": {
-                                "value": "204.00",
+                                "value": "18.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "204.00",
+                            "value": "36.00",
                             "currency": "INR"
                         },
-                        "title": "Veeba Eggless Mayonnaise 875 g",
-                        "@ondc/org/item_id": "512",
+                        "title": "Sunfeast Pasta Treat Instant Masala Pasta 65 g",
+                        "@ondc/org/item_id": "101",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         }
                     },
                     {
@@ -63,25 +63,25 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "512",
+                        "@ondc/org/item_id": "101",
                         "@ondc/org/title_type": "tax"
                     },
                     {
                         "item": {
                             "price": {
-                                "value": "92.00",
+                                "value": "15.00",
                                 "currency": "INR"
                             }
                         },
                         "price": {
-                            "value": "92.00",
+                            "value": "30.00",
                             "currency": "INR"
                         },
-                        "title": "Veeba Thousand Island Sandwich Spread 280 g",
-                        "@ondc/org/item_id": "519",
+                        "title": "Saffola Veggie Twist Instant Masala Oats 38 g",
+                        "@ondc/org/item_id": "219",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         }
                     },
                     {
@@ -90,7 +90,7 @@
                             "currency": "INR"
                         },
                         "title": "Tax",
-                        "@ondc/org/item_id": "519",
+                        "@ondc/org/item_id": "219",
                         "@ondc/org/title_type": "tax"
                     },
                     {
@@ -104,7 +104,7 @@
                     },
                     {
                         "price": {
-                            "value": "10.48",
+                            "value": "2.33",
                             "currency": "INR"
                         },
                         "title": "Convenience Fee",
@@ -115,31 +115,32 @@
             },
             "state": "Created",
             "billing": {
-                "name": "Sathishkumar",
+                "name": "Sathish Kumar",
                 "email": "sathisha@nstore.in",
                 "phone": "9629295619",
                 "address": {
-                    "city": "Bangalore",
-                    "door": "-",
-                    "name": "1, Cleveland Rd, Cleveland Town, Pulikeshi Nagar, Bengaluru, Karnataka 560005",
-                    "state": "KARNATAKA",
-                    "country": "IN",
-                    "building": "No 1, cleveland Road",
-                    "locality": "Cleveland Town",
+                    "city": "Bengaluru",
+                    "door": "Pulikeshi Nagar",
+                    "name": "Sathish Kumar",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "Pulikeshi Nagar",
+                    "locality": "No 20,MM Road",
                     "area_code": "560005"
                 },
-                "created_at": "2023-03-31T08:15:25.699Z",
-                "tax_number": "",
-                "updated_at": "2023-03-31T08:15:25.699Z"
+                "created_at": "2023-04-11T14:47:35.839Z",
+                "updated_at": "2023-04-11T14:47:35.839Z"
             },
             "payment": {
+                "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "306.48",
+                    "amount": "68.33",
                     "currency": "INR",
-                    "transaction_id": "order_LY3u3kjOpZ0f22"
+                    "transaction_id": "ONDC-b1a1b227-aaf6-44cc-b3a7-6b5436b3cc6c-1"
                 },
                 "status": "PAID",
+                "tl_method": "http/get",
                 "collected_by": "BAP",
                 "@ondc/org/settlement_details": [
                     {
@@ -148,13 +149,13 @@
                         "settlement_type": "neft",
                         "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
                         "settlement_phase": "sale-amount",
-                        "settlement_ifsc_code": "IDFCB0040101",
+                        "settlement_ifsc_code": "IDFB0040101",
                         "settlement_counterparty": "seller-app",
                         "settlement_bank_account_no": "10112822953"
                     }
                 ],
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3"
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
             },
             "provider": {
                 "id": "20971",
@@ -166,16 +167,16 @@
                 ]
             },
             "documents": [],
-            "created_at": "2023-03-31T08:15:45.709Z",
-            "updated_at": "2023-03-31T08:15:48.918Z",
+            "created_at": "2023-04-11T14:47:59.500Z",
+            "updated_at": "2023-04-11T14:48:04.732Z",
             "fulfillments": [
                 {
                     "id": "20971",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-04-01T09:15:48.917Z",
-                                "start": "2023-04-01T08:15:48.917Z"
+                                "end": "2023-04-12T15:48:04.732Z",
+                                "start": "2023-04-12T14:48:04.732Z"
                             }
                         },
                         "contact": {
@@ -183,15 +184,14 @@
                             "phone": "9629295619"
                         },
                         "location": {
-                            "gps": "12.9953231,77.6139826",
+                            "gps": "13.0007580000001, 77.6165090000001",
                             "address": {
-                                "city": "Bangalore",
-                                "door": "-",
-                                "name": "1, Cleveland Rd, Cleveland Town, Pulikeshi Nagar, Bengaluru, Karnataka 560005",
-                                "state": "KARNATAKA",
-                                "country": "IN",
-                                "building": "No 1, cleveland Road",
-                                "locality": "Cleveland Town",
+                                "city": "Bengaluru",
+                                "name": "Sathish Kumar",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "Pulikeshi Nagar",
+                                "locality": "No 20,MM Road",
                                 "area_code": "560005"
                             }
                         }
@@ -200,8 +200,8 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-04-01T08:15:48.917Z",
-                                "start": "2023-03-31T08:15:48.917Z"
+                                "end": "2023-04-12T14:48:04.732Z",
+                                "start": "2023-04-11T14:48:04.732Z"
                             }
                         },
                         "contact": {

@@ -1,131 +1,140 @@
 {
-  "context": {
-    "domain": "nic2004:52110",
-    "action": "on_select",
-    "country": "IND",
-    "city": "std:080",
-    "core_version": "1.1.0",
-    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
-    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
-    "bap_id": "ondc.indiastack.cloud",
-    "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
-    "transaction_id": "5e9c127f-0ec3-4be6-b873-995bb89d1d49",
-    "message_id": "9b1ece51-8d54-429e-ad29-65ddd73f95f5",
-    "timestamp": "2023-03-31T08:11:29.604Z"
-  },
-  "message": {
-    "order": {
-      "provider": {
-        "id": "20971"
-      },
-      "items": [
-        {
-          "fulfillment_id": "20971",
-          "id": "512"
-        },
-        {
-          "fulfillment_id": "20971",
-          "id": "519"
-        }
-      ],
-      "fulfillments": [
-        {
-          "id": "20971",
-          "@ondc/org/provider_name": "Evergreen SuperMarket",
-          "tracking": false,
-          "@ondc/org/category": "Standard Delivery",
-          "@ondc/org/TAT": "PT24H",
-          "state": {
-            "descriptor": {
-              "code": "Non-Serviceable"
-            }
-          }
-        }
-      ],
-      "quote": {
-        "price": {
-          "currency": "INR",
-          "value": "296.00"
-        },
-        "breakup": [
-          {
-            "@ondc/org/item_id": "512",
-            "@ondc/org/item_quantity": {
-              "count": 1
-            },
-            "title": "Veeba Eggless Mayonnaise 875 g",
-            "@ondc/org/title_type": "item",
-            "price": {
-              "currency": "INR",
-              "value": "204.00"
-            },
-            "item": {
-              "quantity": {
-                "available": {
-                  "count": "1"
+    "error": {
+        "code": "30009",
+        "type": "DOMAIN-ERROR",
+        "message": "Delivery distance is beyond the allowed 5 km"
+    },
+    "context": {
+        "city": "std:080",
+        "action": "on_select",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-04-11T14:47:17.715Z",
+        "message_id": "39222d6c-6f75-4ee2-9add-810a1d33e079",
+        "core_version": "1.1.0",
+        "transaction_id": "b1a1b227-aaf6-44cc-b3a7-6b5436b3cc6c"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "101",
+                    "fulfillment_id": "20971"
                 },
-                "maximum": {
-                  "count": "1"
+                {
+                    "id": "219",
+                    "fulfillment_id": "20971"
                 }
-              },
-              "price": {
-                "currency": "INR",
-                "value": "204.00"
-              }
-            }
-          },
-          {
-            "@ondc/org/item_id": "512",
-            "title": "Tax",
-            "@ondc/org/title_type": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "0.00"
-            }
-          },
-          {
-            "@ondc/org/item_id": "519",
-            "@ondc/org/item_quantity": {
-              "count": 1
-            },
-            "title": "Veeba Thousand Island Sandwich Spread 280 g",
-            "@ondc/org/title_type": "item",
-            "price": {
-              "currency": "INR",
-              "value": "92.00"
-            },
-            "item": {
-              "quantity": {
-                "available": {
-                  "count": "1"
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "68.33",
+                    "currency": "INR"
                 },
-                "maximum": {
-                  "count": "1"
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "18.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "2"
+                                },
+                                "available": {
+                                    "count": "2"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "36.00",
+                            "currency": "INR"
+                        },
+                        "title": "Sunfeast Pasta Treat Instant Masala Pasta 65 g",
+                        "@ondc/org/item_id": "101",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "101",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "15.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "2"
+                                },
+                                "available": {
+                                    "count": "2"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "30.00",
+                            "currency": "INR"
+                        },
+                        "title": "Saffola Veggie Twist Instant Masala Oats 38 g",
+                        "@ondc/org/item_id": "219",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "219",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "2.33",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "20971"
+            },
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "state": {
+                        "descriptor": {
+                            "code": "Non-serviceable"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/TAT": "PT24H",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
                 }
-              },
-              "price": {
-                "currency": "INR",
-                "value": "92.00"
-              }
-            }
-          },
-          {
-            "@ondc/org/item_id": "519",
-            "title": "Tax",
-            "@ondc/org/title_type": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "0.00"
-            }
-          }
-        ],
-        "ttl": "PT30M"
-      }
+            ]
+        }
     }
-  },
-  "error": {
-    "type": "DOMAIN-ERROR",
-    "code": "30009",
-    "message": "Delivery distance is beyond the allowed 5 km"
-  }
 }
