@@ -10,9 +10,9 @@
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_id": "beta.mystore.in",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "ff273848-60ba-4b0d-942d-725915d3ff7c",
-      "message_id": "71f6b374-b657-42c6-a0c5-e95858b698c3",
-      "timestamp": "2023-04-10T06:09:20.514Z",
+      "transaction_id": "494ff1d4-c76e-470b-904e-657245390def",
+      "message_id": "643f8f51-d5eb-4d6b-94a3-7592c2d4ee99",
+      "timestamp": "2023-04-13T13:03:03.149Z",
       "ttl": "PT30S"
     },
     "message": {
@@ -27,14 +27,14 @@
         },
         "items": [
           {
-            "id": "63fd87f96b40654d77d701a3",
+            "id": "6436b06013c4481e7c7023f7",
             "quantity": {
               "count": 2
             },
             "fulfillment_id": "Fulfillment1"
           },
           {
-            "id": "641435ce9e3780d6c5f3b609",
+            "id": "63fd87f96b40654d77d701a3",
             "quantity": {
               "count": 2
             },
@@ -44,15 +44,41 @@
         "quote": {
           "price": {
             "currency": "INR",
-            "value": "640"
+            "value": "1451"
           },
           "breakup": [
+            {
+              "@ondc/org/item_id": "6436b06013c4481e7c7023f7",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "peas 200gm",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "1000"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "2"
+                  },
+                  "maximum": {
+                    "count": "2"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "500"
+                }
+              }
+            },
             {
               "@ondc/org/item_id": "63fd87f96b40654d77d701a3",
               "@ondc/org/item_quantity": {
                 "count": 2
               },
-              "title": "rice",
+              "title": "peas",
               "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
@@ -61,10 +87,10 @@
               "item": {
                 "quantity": {
                   "available": {
-                    "count": "557"
+                    "count": "551"
                   },
                   "maximum": {
-                    "count": "557"
+                    "count": "551"
                   }
                 },
                 "price": {
@@ -74,29 +100,21 @@
               }
             },
             {
-              "@ondc/org/item_id": "641435ce9e3780d6c5f3b609",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "rice 100gm",
-              "@ondc/org/title_type": "item",
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Packing charges",
+              "@ondc/org/title_type": "packing",
               "price": {
                 "currency": "INR",
-                "value": "240"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "2"
-                  },
-                  "maximum": {
-                    "count": "2"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "120"
-                }
+                "value": "1"
+              }
+            },
+            {
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50"
               }
             }
           ]
@@ -114,11 +132,12 @@
           "phone": "8368476734",
           "name": "Saurabh Singh",
           "email": "100rabbh@gmail.com",
-          "created_at": "2023-04-10T06:08:34.285Z",
-          "updated_at": "2023-04-10T06:08:34.285Z"
+          "created_at": "2023-04-13T13:01:45.895Z",
+          "updated_at": "2023-04-13T13:01:45.895Z"
         },
         "fulfillments": [
           {
+            "id": "Fulfillment1",
             "state": {
               "descriptor": {
                 "name": "Order picked up",
@@ -140,7 +159,7 @@
                 "email": "seller@mystore.in"
               },
               "time": {
-                "timestamp": "2023-04-10T06:09:20.489Z"
+                "timestamp": "2023-04-13T13:03:03.127Z"
               }
             },
             "end": {
@@ -170,9 +189,9 @@
           "uri": "https://juspay.in/",
           "tl_method": "http/get",
           "params": {
-            "amount": "640",
+            "amount": "1451",
             "currency": "INR",
-            "transaction_id": "ONDC-ff273848-60ba-4b0d-942d-725915d3ff7c-1"
+            "transaction_id": "ONDC-494ff1d4-c76e-470b-904e-657245390def-1"
           },
           "status": "PAID",
           "type": "ON-ORDER",
@@ -192,10 +211,10 @@
             }
           ]
         },
-        "id": "2023-04-10-987625",
+        "id": "2023-04-13-389439",
         "state": "In-progress",
-        "created_at": "2023-04-10T06:08:52.292Z",
-        "updated_at": "2023-04-10T06:09:20.528Z"
+        "created_at": "2023-04-13T13:02:23.220Z",
+        "updated_at": "2023-04-13T13:03:03.156Z"
       }
     }
   },
@@ -210,9 +229,9 @@
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_id": "beta.mystore.in",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "ff273848-60ba-4b0d-942d-725915d3ff7c",
-      "message_id": "71f6b374-b657-42c6-a0c5-e95858b698c3",
-      "timestamp": "2023-04-10T06:09:20.514Z",
+      "transaction_id": "494ff1d4-c76e-470b-904e-657245390def",
+      "message_id": "643f8f51-d5eb-4d6b-94a3-7592c2d4ee99",
+      "timestamp": "2023-04-13T13:03:03.149Z",
       "ttl": "PT30S"
     },
     "message": {
