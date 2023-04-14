@@ -7,20 +7,20 @@
       "core_version": "1.1.0",
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
-      "transaction_id": "1c7cb3df-75c9-4a73-a3f3-ddf0769fba58",
-      "message_id": "579efab1-4fac-4bbb-b8b6-2f42b3a98073",
-      "timestamp": "2023-04-09T13:04:53.276Z",
+      "bpp_uri": "ondc.hulsecure.in/preprod/v1",
+      "transaction_id": "5837289b-7a94-45ea-996c-68a5f76b19c3",
+      "message_id": "b39c09d5-b246-4a7e-88af-84590b1b1061",
+      "timestamp": "2023-04-14T06:22:45.590Z",
       "bpp_id": "ondc.hulsecure.in",
       "ttl": "PT30S"
     },
     "message": {
       "order": {
-        "id": "2023-04-09-225862",
+        "id": "2023-04-14-233701",
         "state": "Completed",
         "items": [
           {
-            "id": "44790345892140",
+            "id": "44790345761068",
             "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
             "quantity": {
               "count": 1
@@ -30,7 +30,7 @@
             }
           },
           {
-            "id": "44790345662764",
+            "id": "44790345892140",
             "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
             "quantity": {
               "count": 1
@@ -44,15 +44,14 @@
           },
           "breakup": [
             {
-              "@ondc/org/item_id": "44790345892140",
+              "@ondc/org/item_id": "44790345761068",
               "@ondc/org/item_quantity": {
                 "count": 0
               },
-              "title": "Axe Gold Temptation (Pack Of 2) And Dark Temptation Deodorant for Men( 3 Items In The Set )",
               "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
-                "value": "0"
+                "value": 0
               },
               "item": {
                 "price": {
@@ -62,11 +61,10 @@
               }
             },
             {
-              "@ondc/org/item_id": "44790345662764",
+              "@ondc/org/item_id": "44790345892140",
               "@ondc/org/item_quantity": {
                 "count": 1
               },
-              "title": "Axe Chocolate Collection Gift For Men",
               "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
@@ -81,15 +79,13 @@
             },
             {
               "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
-              "title": "Delivery charges",
               "@ondc/org/title_type": "delivery",
               "price": {
                 "currency": "INR",
                 "value": "0"
               }
             }
-          ],
-          "ttl": "P1D"
+          ]
         },
         "fulfillments": [
           {
@@ -117,42 +113,41 @@
                 "phone": "18008330506",
                 "email": "customercare@theushop.in"
               },
-              "state": "2023-04-09T13:04:53.276Z",
               "time": {
                 "range": {
-                  "start": "2023-04-09T12:59:50.753Z",
-                  "end": "2023-04-09T13:02:45.481Z"
+                  "start": "2023-04-14T05:42:58.707Z",
+                  "end": "2023-04-16T05:45:12.066Z"
                 },
-                "timestamp": "2023-04-09T13:04:53.846Z"
+                "timestamp": "2023-04-14T05:45:12.066Z"
               }
             },
             "end": {
               "contact": {
-                "email": "avinash.singh@ens.enterprises",
-                "phone": "8860775669"
+                "email": "harish.maurya@ens.enterprises",
+                "phone": "6393245616"
               },
               "person": {
-                "name": "Avinash Kumar Singh"
+                "name": "Harish"
               },
               "location": {
-                "gps": "28.5859370000001, 77.3825590000001",
+                "gps": "28.574981, 77.320812",
                 "address": {
-                  "name": "Avinash Kumar Singh",
-                  "building": "Noida",
-                  "locality": "Second Floor, A 133, Sector 63",
+                  "name": "Harish",
+                  "building": "A133",
+                  "locality": "A133 Noida sector 63",
                   "city": "Noida",
                   "state": "Uttar Pradesh",
                   "country": "IND",
-                  "area_code": "201307"
+                  "area_code": "201301"
                 }
               },
               "time": {
                 "range": {
-                  "start": "2023-04-09T12:59:50.753Z",
-                  "end": "2023-04-09T13:02:45.481Z"
-                },
-                "timestamp": "2023-04-09T13:04:53.846Z"
-              }
+                  "start": "2023-04-14T05:42:57.401Z",
+                  "end": "2023-04-18T05:42:58.707Z"
+                }
+              }, 
+              "timestamp": "2023-04-14T06:00:36.745Z"
             }
           }
         ],
@@ -161,12 +156,11 @@
           "tl_method": "http/get",
           "params": {
             "amount": "2222",
-            "currency": "INR",
-            "transaction_id": "ONDC-1c7cb3df-75c9-4a73-a3f3-ddf0769fba58-1"
+            "currency": "INR"
           },
-          "status": "PAID",
-          "type": "ON-ORDER",
-          "collected_by": "BAP",
+          "status": "NOT-PAID",
+          "type": "ON-FULFILLMENT",
+          "collected_by": "BPP",
           "@ondc/org/buyer_app_finder_fee_type": "percent",
           "@ondc/org/buyer_app_finder_fee_amount": "3.0",
           "@ondc/org/settlement_details": [
@@ -183,8 +177,8 @@
             }
           ]
         },
-        "created_at": "2023-04-09T12:59:48.150Z",
-        "updated_at": "2023-04-09T13:04:53.846Z"
+        "created_at": "2023-04-14T05:42:56.395Z",
+        "updated_at": "2023-04-14T06:22:45.433Z"
       }
     }
   }
