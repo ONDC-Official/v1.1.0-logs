@@ -1,0 +1,172 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_update",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "90f03cd9-b15e-4be1-a6d2-f58a0cf974cc",
+      "message_id": "9db9c6f0-a97b-4cc0-b402-bd26faf4a46a",
+      "timestamp": "2023-04-20T09:16:54.620Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-04-20-128321",
+        "state": "Completed",
+        "items": [
+          {
+            "id": "6436b06013c4481e7c7023f7",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "Fulfillment1"
+          },
+          {
+            "id": "63fd87f96b40654d77d701a3",
+            "quantity": {
+              "count": 1
+            },
+            "tags": {
+              "status": "Liquidated"
+            },
+            "fulfillment_id": "Fulfillment1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "550"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "6436b06013c4481e7c7023f7",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "peas 200gm",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "500"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "500"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "63fd87f96b40654d77d701a3",
+              "@ondc/org/item_quantity": {
+                "count": "0.0"
+              },
+              "title": "peas",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "200"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50"
+              }
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "Fulfillment1",
+            "state": {
+              "descriptor": {
+                "name": "Order delivered",
+                "code": "Order-delivered"
+              }
+            },
+            "type": "Delivery",
+            "tracking": true,
+            "start": {
+              "location": {
+                "id": "62733ab9f1f53df939f25300",
+                "descriptor": {
+                  "name": "Mystore"
+                },
+                "gps": "12.9812829,77.5951451"
+              },
+              "contact": {
+                "phone": "8010117117",
+                "email": "seller@mystore.in"
+              },
+              "time": {
+                "timestamp": "2023-04-20T09:15:16.537Z"
+              }
+            },
+            "end": {
+              "contact": {
+                "email": "100rabbh@gmail.com",
+                "phone": "8368476734"
+              },
+              "person": {
+                "name": "Saurabh Singh"
+              },
+              "location": {
+                "gps": "28.6905790000001, 77.0822600000001",
+                "address": {
+                  "name": "Saurabh Singh",
+                  "building": "near sanjay gandhi",
+                  "locality": "Mangolpuri",
+                  "city": "New Delhi",
+                  "state": "Delhi",
+                  "country": "IND",
+                  "area_code": "110083"
+                }
+              },
+              "time": {
+                "timestamp": "2023-04-20T09:15:28.873Z"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_update",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "90f03cd9-b15e-4be1-a6d2-f58a0cf974cc",
+      "message_id": "9db9c6f0-a97b-4cc0-b402-bd26faf4a46a",
+      "timestamp": "2023-04-20T09:16:54.620Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}
