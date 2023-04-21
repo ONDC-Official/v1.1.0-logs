@@ -5,28 +5,38 @@
       "country": "IND",
       "city": "std:080",
       "core_version": "1.1.0",
-      "action": "on_update",
+      "action": "on_status",
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_id": "beta.mystore.in",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "eccf7183-f2b2-4a9f-b1cb-471146755613",
-      "message_id": "9935e65f-50c2-477e-b436-08096732284a",
-      "timestamp": "2023-04-18T12:34:13.026Z",
+      "transaction_id": "90f03cd9-b15e-4be1-a6d2-f58a0cf974cc",
+      "message_id": "3db3b069-8ce9-4de9-a7af-25aa41488be5",
+      "timestamp": "2023-04-20T09:15:28.958Z",
       "ttl": "PT30S"
     },
     "message": {
       "order": {
-        "id": "2023-04-18-816155",
-        "state": "Completed",
+        "provider": {
+          "id": "62733ab9f1f53df939f25300",
+          "locations": [
+            {
+              "id": "62733ab9f1f53df939f25300"
+            }
+          ]
+        },
         "items": [
+          {
+            "id": "6436b06013c4481e7c7023f7",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "Fulfillment1"
+          },
           {
             "id": "63fd87f96b40654d77d701a3",
             "quantity": {
               "count": 1
-            },
-            "tags": {
-              "status": "Liquidated"
             },
             "fulfillment_id": "Fulfillment1"
           }
@@ -34,7 +44,7 @@
         "quote": {
           "price": {
             "currency": "INR",
-            "value": 550
+            "value": "750"
           },
           "breakup": [
             {
@@ -49,6 +59,14 @@
                 "value": "500"
               },
               "item": {
+                "quantity": {
+                  "available": {
+                    "count": "96"
+                  },
+                  "maximum": {
+                    "count": "96"
+                  }
+                },
                 "price": {
                   "currency": "INR",
                   "value": "500"
@@ -58,15 +76,23 @@
             {
               "@ondc/org/item_id": "63fd87f96b40654d77d701a3",
               "@ondc/org/item_quantity": {
-                "count": "0.0"
+                "count": 1
               },
               "title": "peas",
               "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
-                "value": 0
+                "value": "200"
               },
               "item": {
+                "quantity": {
+                  "available": {
+                    "count": "537"
+                  },
+                  "maximum": {
+                    "count": "537"
+                  }
+                },
                 "price": {
                   "currency": "INR",
                   "value": "200"
@@ -83,6 +109,22 @@
               }
             }
           ]
+        },
+        "billing": {
+          "address": {
+            "name": "Saurabh Singh",
+            "building": "near sanjay gandhi",
+            "locality": "Mangolpuri",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "country": "IND",
+            "area_code": "110083"
+          },
+          "phone": "8368476734",
+          "name": "Saurabh Singh",
+          "email": "100rabbh@gmail.com",
+          "created_at": "2023-04-20T09:12:08.997Z",
+          "updated_at": "2023-04-20T09:12:08.997Z"
         },
         "fulfillments": [
           {
@@ -108,7 +150,7 @@
                 "email": "seller@mystore.in"
               },
               "time": {
-                "timestamp": "2023-04-18T12:33:13.631Z"
+                "timestamp": "2023-04-20T09:15:16.537Z"
               }
             },
             "end": {
@@ -132,11 +174,41 @@
                 }
               },
               "time": {
-                "timestamp": "2023-04-18T12:33:26.833Z"
+                "timestamp": "2023-04-20T09:15:28.873Z"
               }
             }
           }
-        ]
+        ],
+        "payment": {
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
+          "params": {
+            "amount": "750",
+            "currency": "INR",
+            "transaction_id": "ONDC-90f03cd9-b15e-4be1-a6d2-f58a0cf974cc-1"
+          },
+          "status": "PAID",
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "test",
+              "settlement_ifsc_code": "123",
+              "bank_name": "SBI",
+              "branch_name": "gurgaon",
+              "beneficiary_name": "Test test",
+              "settlement_phase": "sale-amount"
+            }
+          ]
+        },
+        "id": "2023-04-20-128321",
+        "state": "Completed",
+        "created_at": "2023-04-20T09:12:30.064Z",
+        "updated_at": "2023-04-20T09:15:28.986Z"
       }
     }
   },
@@ -146,14 +218,14 @@
       "country": "IND",
       "city": "std:080",
       "core_version": "1.1.0",
-      "action": "on_update",
+      "action": "on_status",
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_id": "beta.mystore.in",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "eccf7183-f2b2-4a9f-b1cb-471146755613",
-      "message_id": "9935e65f-50c2-477e-b436-08096732284a",
-      "timestamp": "2023-04-18T12:34:13.026Z",
+      "transaction_id": "90f03cd9-b15e-4be1-a6d2-f58a0cf974cc",
+      "message_id": "3db3b069-8ce9-4de9-a7af-25aa41488be5",
+      "timestamp": "2023-04-20T09:15:28.958Z",
       "ttl": "PT30S"
     },
     "message": {
