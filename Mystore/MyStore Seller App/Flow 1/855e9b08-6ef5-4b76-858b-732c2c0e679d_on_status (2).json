@@ -5,23 +5,25 @@
       "country": "IND",
       "city": "std:080",
       "core_version": "1.1.0",
-      "action": "on_init",
+      "action": "on_status",
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_id": "beta.mystore.in",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "90f03cd9-b15e-4be1-a6d2-f58a0cf974cc",
-      "message_id": "cba11cc6-f390-4c8d-a9ce-e70e1fd5553a",
-      "timestamp": "2023-04-20T09:12:09.071Z",
+      "transaction_id": "855e9b08-6ef5-4b76-858b-732c2c0e679d",
+      "message_id": "9eab05ee-3e1a-4783-81f9-8fef998cc04b",
+      "timestamp": "2023-04-22T06:58:07.972Z",
       "ttl": "PT30S"
     },
     "message": {
       "order": {
         "provider": {
-          "id": "62733ab9f1f53df939f25300"
-        },
-        "provider_location": {
-          "id": "62733ab9f1f53df939f25300"
+          "id": "62733ab9f1f53df939f25300",
+          "locations": [
+            {
+              "id": "62733ab9f1f53df939f25300"
+            }
+          ]
         },
         "items": [
           {
@@ -59,10 +61,10 @@
               "item": {
                 "quantity": {
                   "available": {
-                    "count": "96"
+                    "count": "95"
                   },
                   "maximum": {
-                    "count": "96"
+                    "count": "95"
                   }
                 },
                 "price": {
@@ -85,10 +87,10 @@
               "item": {
                 "quantity": {
                   "available": {
-                    "count": "537"
+                    "count": "533"
                   },
                   "maximum": {
-                    "count": "537"
+                    "count": "533"
                   }
                 },
                 "price": {
@@ -110,29 +112,54 @@
         },
         "billing": {
           "address": {
-            "door": "near sanjay gandhi",
+            "name": "Saurabh Singh",
             "building": "near sanjay gandhi",
+            "locality": "Mangolpuri",
             "city": "New Delhi",
             "state": "Delhi",
             "country": "IND",
-            "area_code": "110083",
-            "locality": "Mangolpuri",
-            "name": "Saurabh Singh"
+            "area_code": "110083"
           },
           "phone": "8368476734",
           "name": "Saurabh Singh",
           "email": "100rabbh@gmail.com",
-          "created_at": "2023-04-20T09:12:08.997Z",
-          "updated_at": "2023-04-20T09:12:08.997Z"
+          "created_at": "2023-04-22T06:55:44.205Z",
+          "updated_at": "2023-04-22T06:55:44.205Z"
         },
         "fulfillments": [
           {
             "id": "Fulfillment1",
+            "state": {
+              "descriptor": {
+                "name": "Order delivered",
+                "code": "Order-delivered"
+              }
+            },
             "type": "Delivery",
+            "tracking": true,
+            "start": {
+              "location": {
+                "id": "62733ab9f1f53df939f25300",
+                "descriptor": {
+                  "name": "Mystore"
+                },
+                "gps": "12.9812829,77.5951451"
+              },
+              "contact": {
+                "phone": "8010117117",
+                "email": "seller@mystore.in"
+              },
+              "time": {
+                "timestamp": "2023-04-22T06:57:36.938Z"
+              }
+            },
             "end": {
               "contact": {
                 "email": "100rabbh@gmail.com",
                 "phone": "8368476734"
+              },
+              "person": {
+                "name": "Saurabh Singh"
               },
               "location": {
                 "gps": "28.6905790000001, 77.0822600000001",
@@ -145,11 +172,26 @@
                   "country": "IND",
                   "area_code": "110083"
                 }
+              },
+              "time": {
+                "timestamp": "2023-04-22T06:58:07.886Z"
               }
             }
           }
         ],
         "payment": {
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
+          "params": {
+            "amount": "750",
+            "currency": "INR",
+            "transaction_id": "ONDC-855e9b08-6ef5-4b76-858b-732c2c0e679d-1"
+          },
+          "status": "PAID",
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
           "@ondc/org/settlement_details": [
             {
               "settlement_counterparty": "seller-app",
@@ -161,10 +203,12 @@
               "beneficiary_name": "Test test",
               "settlement_phase": "sale-amount"
             }
-          ],
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3"
-        }
+          ]
+        },
+        "id": "2023-04-22-381907",
+        "state": "Completed",
+        "created_at": "2023-04-22T06:56:09.736Z",
+        "updated_at": "2023-04-22T06:58:08.007Z"
       }
     }
   },
@@ -174,14 +218,14 @@
       "country": "IND",
       "city": "std:080",
       "core_version": "1.1.0",
-      "action": "on_init",
+      "action": "on_status",
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_id": "beta.mystore.in",
       "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
-      "transaction_id": "90f03cd9-b15e-4be1-a6d2-f58a0cf974cc",
-      "message_id": "cba11cc6-f390-4c8d-a9ce-e70e1fd5553a",
-      "timestamp": "2023-04-20T09:12:09.071Z",
+      "transaction_id": "855e9b08-6ef5-4b76-858b-732c2c0e679d",
+      "message_id": "9eab05ee-3e1a-4783-81f9-8fef998cc04b",
+      "timestamp": "2023-04-22T06:58:07.972Z",
       "ttl": "PT30S"
     },
     "message": {
