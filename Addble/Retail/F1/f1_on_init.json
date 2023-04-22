@@ -1,0 +1,201 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_init",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_uri": "https://preprod-ondc.addble.com/",
+		"transaction_id": "b21988aa-9a0c-4597-9914-7d8073d0a130",
+		"message_id": "814651ba-66a3-4f89-a74c-bfbca8416980",
+		"timestamp": "2023-04-21T15:54:55.781Z",
+		"bpp_id": "preprod-ondc.addble.com",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "EOKJBqid0zecXCvyQBCR"
+			},
+			"provider_location": {
+				"id": "EOKJBqid0zecXCvyQBCR"
+			},
+			"items": [
+				{
+					"id": "6baca9mHQ7NLhYhz2zey",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "8e95e0e0-db01-41e3-a7bd-95d42d846240"
+				},
+				{
+					"id": "H6xWCI1ofb5UMSMkVoP1",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "8e95e0e0-db01-41e3-a7bd-95d42d846240"
+				},
+				{
+					"id": "15KBwrYwll4U4NJlPpjR",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "8e95e0e0-db01-41e3-a7bd-95d42d846240"
+				}
+			],
+			"billing": {
+				"address": {
+					"door": "Shell Petrol Pump",
+					"building": "Shell Petrol Pump",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560103",
+					"locality": "Bellandur",
+					"name": "Yaikhomba Blr"
+				},
+				"phone": "6362944815",
+				"name": "Yaikhomba Blr",
+				"email": "adden.company@gmail.com",
+				"created_at": "2023-04-21T15:54:55.048Z",
+				"updated_at": "2023-04-21T15:54:55.048Z"
+			},
+			"fulfillments": [
+				{
+					"id": "8e95e0e0-db01-41e3-a7bd-95d42d846240",
+					"tracking": false,
+					"type": "Delivery",
+					"end": {
+						"location": {
+							"gps": "12.930037, 77.675391",
+							"address": {
+								"name": "Yaikhomba Blr",
+								"building": "Shell Petrol Pump",
+								"locality": "Bellandur",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560103"
+							}
+						},
+						"contact": {
+							"email": "adden.company@gmail.com",
+							"phone": "6362944815"
+						}
+					}
+				}
+			],
+			"payment": {
+				"@ondc/org/buyer_app_finder_fee_type": "Percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_phase": "sale-amount",
+						"settlement_type": "upi",
+						"upi_address": "test@okbizaxis",
+						"beneficiary_name": "Addble"
+					}
+				]
+			},
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "126.24"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "15KBwrYwll4U4NJlPpjR",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Cluster beans- क्लस्टर बीन्स",
+						"price": {
+							"currency": "INR",
+							"value": "40"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "40"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "6baca9mHQ7NLhYhz2zey",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Fava Beans- बाकला",
+						"price": {
+							"currency": "INR",
+							"value": "30"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "30"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "H6xWCI1ofb5UMSMkVoP1",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Runner beans- रनर बीन्स",
+						"price": {
+							"currency": "INR",
+							"value": "40"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "40"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "8e95e0e0-db01-41e3-a7bd-95d42d846240",
+						"title": "Delivery charges",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "16.24"
+						}
+					}
+				],
+				"ttl": "P1D"
+			}
+		}
+	}
+}
