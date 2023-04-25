@@ -1,0 +1,191 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "preprod-sleepyowl-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-sleepyowl-bpp.shopalyst.com/sleepyowl",
+        "transaction_id": "3717ed8e-fe88-4856-b1e7-7cfe063c6495",
+        "message_id": "84c2da3e-f316-4860-ae6a-11c4c15782d0",
+        "timestamp": "2023-04-25T08:36:58.170Z"
+    },
+    "message": {
+        "order": {
+            "id": "80",
+            "state": "Accepted",
+            "provider": {
+                "id": "preprod-sleepyowl-bpp.shopalyst.com",
+                "locations": [
+                    {
+                        "id": "d9269c09f83fb2cd93aa1359efb17fca"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "B753B9B8CD429FCE92EA5D039559F2FC_43509864464643_default",
+                    "fulfillment_id": "d9269c09f83fb2cd93aa1359efb17fca_1",
+                    "quantity": {
+                        "count": 15
+                    }
+                },
+                {
+                    "id": "DD4BB54332637FEEA519DF46764D0D85_43509884551427_default",
+                    "fulfillment_id": "d9269c09f83fb2cd93aa1359efb17fca_1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "24983.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Everything Gift Box Cinnamon - Cinnamon / Hot & Cold Brew + Mug",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20985.00"
+                        },
+                        "@ondc/org/item_id": "B753B9B8CD429FCE92EA5D039559F2FC_43509864464643_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1399.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 15
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Hot Brew Travel Kit Cinnamon - Cinnamon",
+                        "price": {
+                            "currency": "INR",
+                            "value": "3998.00"
+                        },
+                        "@ondc/org/item_id": "DD4BB54332637FEEA519DF46764D0D85_43509884551427_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1999.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "d9269c09f83fb2cd93aa1359efb17fca_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "billing": {
+                "name": "Rajiv Singh",
+                "address": {
+                    "name": "Rajiv Singh",
+                    "building": "15/11, KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                    "locality": "15/11, KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560001"
+                },
+                "phone": "+918302010971",
+                "created_at": "2023-04-25T08:31:35.186Z",
+                "updated_at": "2023-04-25T08:31:35.186Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "d9269c09f83fb2cd93aa1359efb17fca_1",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "d9269c09f83fb2cd93aa1359efb17fca"
+                            },
+                            "gps": "12.9236881,77.5750117"
+                        },
+                        "contact": {
+                            "phone": "8929908988",
+                            "email": "help@sleepyowl.co"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "descriptor": {},
+                            "gps": "12.971605934588519,77.59456269443035",
+                            "address": {
+                                "name": "RajivSingh",
+                                "building": "15/11,KGHalli,D'SouzaLayout,AshokNagar,Bengaluru,Karnataka560001,India",
+                                "locality": "15/11,KGHalli,D'SouzaLayout,AshokNagar,Bengaluru,Karnataka560001,India",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            },
+                            "circle": {},
+                            "time": {
+                                "range": {},
+                                "schedule": {
+                                    "holidays": []
+                                }
+                            }
+                        },
+                        "contact": {
+                            "phone": "+918302010971"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "@ondc/org/provider_name": "Sleepy Owl"
+                }
+            ],
+            "payment": {
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "Percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
+                    }
+                ],
+                "params": {
+                    "transaction_id": "1682411594672",
+                    "amount": "24983.00",
+                    "currency": "INR"
+                }
+            },
+            "created_at": "2023-04-25T08:33:20.003Z",
+            "updated_at": "2023-04-25T08:33:22.688Z"
+        }
+    }
+}

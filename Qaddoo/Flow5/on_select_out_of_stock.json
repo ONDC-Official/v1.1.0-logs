@@ -1,0 +1,121 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "preprod-sleepyowl-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-sleepyowl-bpp.shopalyst.com/sleepyowl",
+        "transaction_id": "3717ed8e-fe88-4856-b1e7-7cfe063c6495",
+        "message_id": "09ae39b0-86f2-418c-b2a1-0f2a75d36218",
+        "timestamp": "2023-04-25T08:26:46.981Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "preprod-sleepyowl-bpp.shopalyst.com"
+            },
+            "items": [
+                {
+                    "id": "B753B9B8CD429FCE92EA5D039559F2FC_43509864464643_default",
+                    "fulfillment_id": "d9269c09f83fb2cd93aa1359efb17fca_1"
+                },
+                {
+                    "id": "DD4BB54332637FEEA519DF46764D0D85_43509884551427_default",
+                    "fulfillment_id": "d9269c09f83fb2cd93aa1359efb17fca_1"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "27781.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Everything Gift Box Cinnamon",
+                        "price": {
+                            "currency": "INR",
+                            "value": "23783.00"
+                        },
+                        "@ondc/org/item_id": "B753B9B8CD429FCE92EA5D039559F2FC_43509864464643_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1399.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "17"
+                                },
+                                "maximum": {
+                                    "count": "17"
+                                }
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 17
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Hot Brew Travel Kit Cinnamon",
+                        "price": {
+                            "currency": "INR",
+                            "value": "3998.00"
+                        },
+                        "@ondc/org/item_id": "DD4BB54332637FEEA519DF46764D0D85_43509884551427_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1999.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "20"
+                                },
+                                "maximum": {
+                                    "count": "20"
+                                }
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "d9269c09f83fb2cd93aa1359efb17fca_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "fulfillments": [
+                {
+                    "id": "d9269c09f83fb2cd93aa1359efb17fca_1",
+                    "tracking": true,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/TAT": "P1D",
+                    "@ondc/org/provider_name": "Sleepy Owl"
+                }
+            ]
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "40002"
+    }
+}
