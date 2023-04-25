@@ -1,0 +1,189 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_status",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+      "transaction_id": "5d262036-26cb-4ad8-aab0-3d3a91d24da0",
+      "message_id": "278fc0e3-dcf6-4950-b897-ad79d8946ba1",
+      "timestamp": "2023-04-21T10:49:53.710Z",
+      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-04-21-586336",
+        "state": "Accepted",
+        "provider": {
+          "id": "7d06a3c5-8c86-4a93-ba7c-b1b6715a7489",
+          "locations": [
+            {
+              "id": "7d06a3c5-8c86-4a93-ba7c-b1b6715a7489"
+            }
+          ]
+        },
+        "billing": {
+          "name": "AJAY PANDIT",
+          "address": {
+            "name": "AJAY PANDIT",
+            "locality": "Test Addr",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "IND",
+            "area_code": "560001"
+          },
+          "email": "ajay.pandit@nowfloats.com",
+          "phone": "8208643713"
+        },
+        "items": [
+          {
+            "id": "c576311f-f8ca-4d95-8fcf-fa09b7572f9f",
+            "fulfillment_id": "6e0e9809-a791-4a7a-9e7a-c9f48798acfd",
+            "quantity": {
+              "count": 1
+            }
+          },
+          {
+            "id": "c75ee93c-9f3a-479c-b54d-46fb7f4bcd30",
+            "fulfillment_id": "6e0e9809-a791-4a7a-9e7a-c9f48798acfd",
+            "quantity": {
+              "count": 1
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "6e0e9809-a791-4a7a-9e7a-c9f48798acfd",
+            "type": "Delivery",
+            "state": {
+              "descriptor": {
+                "code": "Pending"
+              },
+              "updated_at": "2023-04-21T10:49:53.836Z",
+              "updated_by": "Customer"
+            },
+            "tracking": false,
+            "start": {
+              "time": {
+                "range": {
+                  "start": "2023-04-21T10:48:51.030Z",
+                  "end": "2023-04-21T10:48:51.031Z"
+                }
+              },
+              "instructions": {
+                "name": "Status for pickup"
+              },
+              "contact": {
+                "email": "ajay.pandit+2@nowfloats.com"
+              },
+              "location": {
+                "id": "7d06a3c5-8c86-4a93-ba7c-b1b6715a7489",
+                "descriptor": {},
+                "gps": "12.9715987,77.5945627"
+              }
+            },
+            "end": {
+              "contact": {
+                "phone": "8208643713",
+                "email": "ajay.pandit@nowfloats.com"
+              },
+              "location": {
+                "gps": "12.9812430000001, 77.5950340000001",
+                "address": {
+                  "name": "AJAY PANDIT",
+                  "building": "South Extension II, Masjid Moth Village",
+                  "locality": "Test Addr",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND"
+                }
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "787.44"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "c576311f-f8ca-4d95-8fcf-fa09b7572f9f",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Safe Harvest Sona Masuri Raw Rice 12 Months 5kg",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": 295.75
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": 974
+                  },
+                  "maximum": {
+                    "count": 974
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": 295.75
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "c75ee93c-9f3a-479c-b54d-46fb7f4bcd30",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Daawat Rozana Super, Naturally Aged, Rich Aroma,Perfect Fit for Everyday Consumption Basmati Rice, 5 Kg",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": 436.5
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": 966
+                  },
+                  "maximum": {
+                    "count": 966
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": 436.5
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "5d262036-26cb-4ad8-aab0-3d3a91d24da0",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "25.19"
+              }
+            },
+            {
+              "@ondc/org/item_id": "5d262036-26cb-4ad8-aab0-3d3a91d24da0",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "30"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        }
+      }
+    }
+  }
