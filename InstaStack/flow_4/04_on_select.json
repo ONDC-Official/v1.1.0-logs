@@ -1,117 +1,121 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "action": "on_select",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_id": "seller.instastack.io",
-      "bpp_uri": "https://seller.instastack.io/pre-prod",
-      "transaction_id": "bfcba96c-7ac6-4be7-ac77-1a9a4b6efd26",
-      "message_id": "8f087e46-ac16-4263-9532-2411cb007471",
-      "city": "std:080",
-      "country": "IND",
-      "timestamp": "2023-04-19T12:22:12.355Z"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "seller.instastack.io",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "630cfe42-605d-47a2-93ca-ea85d8f7a918",
+    "message_id": "e1aa15a7-7110-4ae7-b973-dca16c627dbf",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-05-04T10:53:35.717Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+      },
+      "items": [
+        {
+          "fulfillment_id": "1",
+          "id": "108668"
         },
-        "items": [
-          {
-            "fulfillment_id": "1",
-            "id": "3010"
-          },
-          {
-            "fulfillment_id": "1",
-            "id": "3616"
-          }
-        ],
-        "fulfillments": [
-          {
-            "id": "1",
-            "@ondc/org/provider_name": "Dunzo and others",
-            "tracking": false,
-            "@ondc/org/category": "Immediate Delivery",
-            "@ondc/org/TAT": "PT6H",
-            "state": {
-              "descriptor": {
-                "code": "Serviceable"
-              }
-            }
-          }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "519"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "3010",
-              "@ondc/org/item_quantity": {
-                "count": 5
-              },
-              "title": "Maggi Masala Instant Noodles, 420 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "410"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "5"
-                  },
-                  "maximum": {
-                    "count": "5"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "82.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "3616",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "Maggi Vegetable Masala Atta Noodles, 80 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "60"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "5"
-                  },
-                  "maximum": {
-                    "count": "5"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "30.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "49"
-              }
-            }
-          ],
-          "ttl": "P1D"
+        {
+          "fulfillment_id": "1",
+          "id": "143129"
         }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "Dunzo and others",
+          "tracking": false,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT6H",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "839"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "108668",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Maggi Coconut Milk Powder, 100 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "250"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "125.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "143129",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "title": "Maggi 2 Minute Instant Masala Noodles, 840 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "540"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "180.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          }
+        ],
+        "ttl": "P1D"
       }
     }
+  },
+  "error": {
+    "code": "40002",
+    "message": "Item quantity unavailable"
   }
+}

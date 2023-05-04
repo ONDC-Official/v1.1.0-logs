@@ -1,84 +1,93 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:022",
-      "action": "init",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "transaction_id": "bc6ea759-8046-4244-b53f-cc5d51806659",
-      "message_id": "e048f651-cd39-4b94-b786-1f5cf1ecb746",
-      "timestamp": "2023-04-19T07:52:18.892Z",
-      "ttl": "PT30S",
-      "bpp_id": "seller.instastack.io",
-      "bpp_uri": "https://seller.instastack.io/pre-prod"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e",
-          "locations": [
-            {
-              "id": "33159776-98ca-4f75-a24b-eee54d067540"
-            }
-          ]
-        },
-        "items": [
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "init",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "378ba29a-5057-47cb-846f-778413dbe360",
+    "message_id": "33a1b211-a876-44c9-887b-507d5165f67e",
+    "timestamp": "2023-05-04T08:58:48.295Z",
+    "bpp_id": "seller.instastack.io",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
+        "locations": [
           {
-            "id": "110764",
-            "quantity": {
-              "count": 4
-            },
-            "fulfillment_id": "1"
-          },
-          {
-            "id": "143129",
-            "quantity": {
-              "count": 5
-            },
-            "fulfillment_id": "1"
-          }
-        ],
-        "billing": {
-          "address": {
-            "name": "Ajinkya Shelar",
-            "building": "Rustomjee Azziano",
-            "locality": null,
-            "city": "Konkan Division",
-            "state": "Maharashtra",
-            "country": "IND",
-            "area_code": "400601"
-          },
-          "phone": "9892216536",
-          "name": "Ajinkya Shelar",
-          "email": "ajinkya@instastack.io",
-          "created_at": "2023-04-19T07:52:18.892Z",
-          "updated_at": "2023-04-19T07:52:18.892Z"
-        },
-        "fulfillments": [
-          {
-            "id": "1",
-            "end": {
-              "contact": {
-                "phone": "9892216536"
-              },
-              "location": {
-                "gps": "19.2010502,72.97853529999999",
-                "address": {
-                  "name": "Ajinkya Shelar",
-                  "building": "Rustomjee Azziano",
-                  "locality": null,
-                  "city": "Konkan Division",
-                  "state": "Maharashtra",
-                  "country": "IND",
-                  "area_code": "400601"
-                }
-              }
-            },
-            "type": "Delivery"
+            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
           }
         ]
-      }
+      },
+      "items": [
+        {
+          "id": "1328",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "3126",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "3350",
+          "quantity": {
+            "count": 3
+          },
+          "fulfillment_id": "1"
+        }
+      ],
+      "billing": {
+        "address": {
+          "door": "Rustomjee Azziano",
+          "building": "Rustomjee Azziano",
+          "city": "Thane",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400601",
+          "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+          "name": "Ajinkya Shelar"
+        },
+        "phone": "9833875151",
+        "name": "Ajinkya Shelar",
+        "email": "ajinkya@instastack.io",
+        "created_at": "2023-05-04T08:58:48.295Z",
+        "updated_at": "2023-05-04T08:58:48.295Z"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "end": {
+            "contact": {
+              "email": "ajinkya@instastack.io",
+              "phone": "9833875151"
+            },
+            "location": {
+              "gps": "19.199325, 72.978958",
+              "address": {
+                "name": "Ajinkya Shelar",
+                "building": "Rustomjee Azziano",
+                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                "city": "Thane",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400601"
+              }
+            }
+          }
+        }
+      ]
     }
   }
+}

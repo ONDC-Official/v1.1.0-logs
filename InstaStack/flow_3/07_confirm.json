@@ -1,222 +1,208 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "confirm",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "transaction_id": "69bf13a1-bcbf-4579-b34c-f1d5ef259e35",
-      "message_id": "da4c415d-f2fa-4e1d-a948-d86c1188f8a3",
-      "timestamp": "2023-04-19T10:05:31.048Z",
-      "ttl": "PT30S",
-      "bpp_id": "seller.instastack.io",
-      "bpp_uri": "https://seller.instastack.io/pre-prod"
-    },
-    "message": {
-      "order": {
-        "id": "7423d089-defa-4583-b091-8f220345097d",
-        "state": "Created",
-        "billing": {
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "38216f2b-9ebd-46a6-97b6-51f93dbc2bcb",
+    "message_id": "08cf43ce-af35-4130-9d85-ac93e849c9dc",
+    "timestamp": "2023-05-04T10:33:01.082Z",
+    "bpp_id": "seller.instastack.io",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-05-04-308137",
+      "state": "Created",
+      "billing": {
+        "address": {
           "name": "Ajinkya Shelar",
-          "address": {
-            "name": "Ajinkya Shelar",
-            "building": "Some Landmark",
-            "locality": "Mumbai",
-            "city": "Konkan Division",
-            "state": "Maharashtra",
-            "country": "IND",
-            "area_code": "400076"
-          },
-          "email": "ajinkya@instastack.io",
-          "phone": "9892216536",
-          "created_at": "2023-04-19T10:03:49.074Z",
-          "updated_at": "2023-04-19T10:03:49.074Z"
+          "building": "Rustomjee Azziano",
+          "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+          "city": "Thane",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400601"
         },
-        "items": [
+        "phone": "9833875151",
+        "name": "Ajinkya Shelar",
+        "email": "ajinkya@instastack.io",
+        "created_at": "2023-05-04T10:32:37.104Z",
+        "updated_at": "2023-05-04T10:32:37.104Z"
+      },
+      "items": [
+        {
+          "id": "109442",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "143141",
+          "quantity": {
+            "count": 4
+          },
+          "fulfillment_id": "1"
+        }
+      ],
+      "provider": {
+        "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e",
+        "locations": [
           {
-            "fulfillment_id": "1",
-            "id": "3010",
-            "quantity": {
-              "count": 1
+            "id": "33159776-98ca-4f75-a24b-eee54d067540"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "end": {
+            "contact": {
+              "phone": "9833875151"
+            },
+            "person": {
+              "name": "Ajinkya Shelar"
+            },
+            "location": {
+              "gps": "19.199325, 72.978958",
+              "address": {
+                "name": "Ajinkya Shelar",
+                "building": "Rustomjee Azziano",
+                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                "city": "Thane",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400601"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "251",
+          "currency": "INR",
+          "transaction_id": "ONDC-38216f2b-9ebd-46a6-97b6-51f93dbc2bcb-1"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "thor@okicicicicic",
+            "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+            "settlement_ifsc_code": "someIFSC",
+            "beneficiary_name": "Thor",
+            "bank_name": "Marvels Bank",
+            "branch_name": "Asgard"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "251"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "109442",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Maggi Rich Tomato Ketchup, 200 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "130"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "65.00"
+              }
             }
           },
           {
-            "fulfillment_id": "1",
-            "id": "109442",
-            "quantity": {
-              "count": 1
+            "@ondc/org/item_id": "109442",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "143141",
+            "@ondc/org/item_quantity": {
+              "count": 4
+            },
+            "title": "Maggi 2 Minute Chicken Noodles, 76 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "72"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "18.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "143141",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "0"
             }
           }
         ],
-        "provider": {
-          "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e",
-          "locations": [
-            {
-              "id": "33159776-98ca-4f75-a24b-eee54d067540"
-            }
-          ]
-        },
-        "fulfillments": [
-          {
-            "id": "1",
-            "end": {
-              "person": {
-                "name": "Ajinkya Shelar"
-              },
-              "contact": {
-                "phone": "9892216536"
-              },
-              "location": {
-                "gps": "19.1239285,72.90944069999999",
-                "address": {
-                  "name": "Ajinkya Shelar",
-                  "building": "Some Landmark",
-                  "locality": "Mumbai",
-                  "city": "Konkan Division",
-                  "state": "Maharashtra",
-                  "country": "IND",
-                  "area_code": "400076"
-                }
-              }
-            },
-            "type": "Delivery"
-          }
-        ],
-        "payment": {
-          "params": {
-            "amount": "196",
-            "currency": "INR",
-            "transaction_id": "20230419011610000855470751766974464"
-          },
-          "status": "PAID",
-          "type": "ON-ORDER",
-          "collected_by": "BAP",
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "2",
-          "@ondc/org/settlement_details": [
-            {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "upi",
-              "settlement_type": "seller-app",
-              "upi_address": "thor @okicicicicic",
-              "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
-              "settlement_ifsc_code": "someIFSC",
-              "beneficiary_name": "Thor",
-              "bank_name": "Marvels Bank",
-              "branch_name": "Asgard"
-            }
-          ]
-        },
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "196"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "3010",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "title": "Maggi Masala Instant Noodles, 420 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "82"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "100"
-                  },
-                  "maximum": {
-                    "count": "100"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "82.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "3010",
-              "title": "Tax",
-              "@ondc/org/title_type": "tax",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "109442",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "title": "Maggi Rich Tomato Ketchup, 200 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "65"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "100"
-                  },
-                  "maximum": {
-                    "count": "100"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "65.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "109442",
-              "title": "Tax",
-              "@ondc/org/title_type": "tax",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "49"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Packing charges",
-              "@ondc/org/title_type": "packing",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Convenience Fee",
-              "@ondc/org/title_type": "misc",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            }
-          ],
-          "ttl": "P1D"
-        },
-        "created_at": "2023-04-19T10:05:31.048Z",
-        "updated_at": "2023-04-19T10:05:31.048Z"
-      }
+        "ttl": "P1D"
+      },
+      "created_at": "2023-05-04T10:33:01.082Z",
+      "updated_at": "2023-05-04T10:33:01.082Z"
     }
   }
+}
