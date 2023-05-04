@@ -9,14 +9,14 @@
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
-        "transaction_id": "177e203b-177f-4d9f-b452-89d07c789912",
-        "message_id": "e66eb98c-7ac7-4ea6-8182-5f488a037800",
-        "timestamp": "2023-05-04T03:09:00.271705Z"
+        "transaction_id": "cee4dd01-13c6-484d-8f5a-a07a1d429197",
+        "message_id": "12cc4062-cd3a-4c29-a254-8de636fb3ed0",
+        "timestamp": "2023-05-02T09:16:10.167012Z"
     },
     "message": {
         "update_target": "item",
         "order": {
-            "id": "117",
+            "id": "112",
             "state": "Completed",
             "provider": {
                 "id": "preprod-wow-bpp.shopalyst.com"
@@ -25,17 +25,28 @@
                 {
                     "id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
                     "quantity": {
-                        "count": 2
+                        "count": 3
                     },
                     "tags": {
                         "update_type": "return",
-                        "reason_code": "001",
+                        "reason_code": "010",
                         "ttl_approval": "PT24H",
                         "ttl_reverseqc": "P3D",
-                        "image": "https://d36aq2y4y4uhxn.cloudfront.net/1683169729839_cropped255635600229950301.jpg"
+                        "image": "https://d36aq2y4y4uhxn.cloudfront.net/1683018825160_cropped5987181441201852908.jpg"
                     }
                 }
-            ]
+            ],
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "buyer",
+                        "settlement_phase": "refund",
+                        "settlement_type": "upi",
+                        "settlement_amount": "897.0",
+                        "settlement_timestamp": "2023-05-02T09:16:10.173533Z"
+                    }
+                ]
+            }
         }
     }
 }
