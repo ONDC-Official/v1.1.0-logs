@@ -1,0 +1,48 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_init",
+		"core_version": "1.1.0",
+		"bap_id": "b-ondc-seller-bpp.nlincs.in",
+		"bap_uri": "https://b-ondc-seller-bpp.nlincs.in/lbap",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "21340_232097100177_20971_00000000-6d59-29d4-ffff-ffff9abaa189_CwPKXl",
+		"message_id": "CWy3q2HINaWXiQmlOdn0VZ7gCUgHXhcl",
+		"timestamp": "2023-04-27T05:42:11.825Z"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "grab-logistics"
+			},
+			"items": [
+				{
+					"id": "same-day-delivery"
+				}
+			],
+			"payment": {
+				"type": "ON-ORDER",
+				"collected_by": "BAP"
+			},
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1.0"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "same-day-delivery",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "1.0"
+						}
+					}
+				]
+			}
+		}
+	}
+}
