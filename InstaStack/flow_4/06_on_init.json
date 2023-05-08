@@ -1,0 +1,211 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_init",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://seller.instastack.io/pre-prod",
+      "transaction_id": "b0926212-f444-47e6-8ee1-cd26ed8b9a97",
+      "message_id": "81044d8c-8a21-437d-beb2-ddb0a4cff5fd",
+      "timestamp": "2023-04-19T12:27:30.184Z",
+      "bpp_id": "seller.instastack.io",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+        },
+        "provider_location": {
+          "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+        },
+        "items": [
+          {
+            "id": "3010",
+            "quantity": {
+              "count": 5
+            },
+            "fulfillment_id": "1"
+          },
+          {
+            "id": "3616",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "1"
+          }
+        ],
+        "billing": {
+          "name": "Ajinkya Shelar",
+          "address": {
+            "name": "Ajinkya Shelar",
+            "building": "Rustomjee Azziano",
+            "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+            "city": "Thane",
+            "state": "Maharashtra",
+            "country": "IND",
+            "area_code": "400601"
+          },
+          "email": "ajinkya@instastack.io",
+          "phone": "9833875151",
+          "created_at": "2023-04-19T12:27:19.747Z",
+          "updated_at": "2023-04-19T12:27:19.747Z"
+        },
+        "fulfillments": [
+          {
+            "id": "1",
+            "type": "Delivery",
+            "end": {
+              "location": {
+                "gps": "19.199325, 72.978958",
+                "address": {
+                  "name": "Ajinkya Shelar",
+                  "building": "Rustomjee Azziano",
+                  "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                  "city": "Thane",
+                  "state": "Maharashtra",
+                  "country": "IND",
+                  "area_code": "400601"
+                }
+              },
+              "contact": {
+                "phone": "9833875151"
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "519"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "3010",
+              "@ondc/org/item_quantity": {
+                "count": 5
+              },
+              "title": "Maggi Masala Instant Noodles, 420 g",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "410"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "5"
+                  },
+                  "maximum": {
+                    "count": "5"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "82.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "3010",
+              "title": "Tax",
+              "@ondc/org/title_type": "tax",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            },
+            {
+              "@ondc/org/item_id": "3616",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "Maggi Vegetable Masala Atta Noodles, 80 g",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "60"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "5"
+                  },
+                  "maximum": {
+                    "count": "5"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "30.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "3616",
+              "title": "Tax",
+              "@ondc/org/title_type": "tax",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "49"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "title": "Packing charges",
+              "@ondc/org/title_type": "packing",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "payment": {
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "Percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
+          "@ondc/org/withholding_amount": "0.0",
+          "@ondc/org/return_window": "0",
+          "@ondc/org/settlement_basis": "Collection",
+          "@ondc/org/settlement_window": "P2D",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "upi",
+              "settlement_type": "seller-app",
+              "upi_address": "thor @okicicicicic",
+              "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+              "settlement_ifsc_code": "someIFSC",
+              "beneficiary_name": "Thor",
+              "bank_name": "Marvels Bank",
+              "branch_name": "Asgard"
+            }
+          ]
+        }
+      }
+    }
+  } 

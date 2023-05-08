@@ -1,0 +1,117 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "on_select",
+      "core_version": "1.1.0",
+      "bap_id": "ondc.indiastack.cloud",
+      "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+      "bpp_id": "seller.instastack.io",
+      "bpp_uri": "https://seller.instastack.io/pre-prod",
+      "transaction_id": "ff33ee2e-ae53-4144-8d16-5a8b93a01592",
+      "message_id": "4abb02df-fac2-4de8-a995-4d952fbe0296",
+      "city": "std:02162",
+      "country": "IND",
+      "timestamp": "2023-04-19T09:43:23.548Z"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+        },
+        "items": [
+          {
+            "fulfillment_id": "1",
+            "id": "3010"
+          },
+          {
+            "fulfillment_id": "1",
+            "id": "110626"
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "1",
+            "@ondc/org/provider_name": "Dunzo and others",
+            "tracking": false,
+            "@ondc/org/category": "Immediate Delivery",
+            "@ondc/org/TAT": "PT6H",
+            "state": {
+              "descriptor": {
+                "code": "Non-serviceable"
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "211"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "3010",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Maggi Masala Instant Noodles, 420 g",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "82"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "100"
+                  },
+                  "maximum": {
+                    "count": "100"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "82.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "110626",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Maggi Tomato Ketchup, 200 g",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "80"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "100"
+                  },
+                  "maximum": {
+                    "count": "100"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "80.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "49"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        }
+      }
+    }
+  }
