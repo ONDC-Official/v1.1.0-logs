@@ -3,79 +3,76 @@
     "domain": "nic2004:52110",
     "country": "IND",
     "city": "std:080",
-    "action": "on_confirm",
+    "action": "on_status",
     "core_version": "1.1.0",
-    "bap_id": "buyer-app-preprod.ondc.org",
-    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
     "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
     "transaction_id": "fa9b87b1-af7d-4644-9926-f15e0cf3bfb8",
-    "message_id": "3923a7a8-62a5-4cbe-a0a3-c849ccc9bca9",
-    "timestamp": "2023-05-08T08:47:25.530Z",
-    "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+    "message_id": "4e62bd2a-ceab-40aa-99dc-3c079911d67d",
+    "timestamp": "2023-05-08T08:48:49.533Z",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "id": "2023-05-08-202847",
+      "state": "In-progress",
       "provider": {
         "id": "735b849d-f802-49c7-b768-f83219ac312e",
         "locations": [
           {
             "id": "735b849d-f802-49c7-b768-f83219ac312e"
           }
-        ],
-        "rateable": true
+        ]
       },
-      "state": "Accepted",
-      "items": [
-        {
-          "quantity": {
-            "count": 4
-          },
-          "fulfillment_id": "fa9b87b1-af7d-4644-9926-f15e0cf3bfb8",
-          "id": "de25cd31-4bfc-4a09-938b-e219e972344d"
-        },
-        {
-          "quantity": {
-            "count": 2
-          },
-          "fulfillment_id": "fa9b87b1-af7d-4644-9926-f15e0cf3bfb8",
-          "id": "1368410b-fca7-4271-92e4-e137c6bef7a3"
-        }
-      ],
       "billing": {
+        "name": "Vijay Test",
         "address": {
           "name": "Vijay Test",
-          "building": "Near temple",
           "locality": "Maruti Nagar",
           "city": "Hyderabad",
           "state": "Telangana",
           "country": "IND",
           "area_code": "501505"
         },
-        "phone": "9133793692",
-        "name": "Vijay Test",
         "email": "vijay.borker@nowfloats.com",
-        "created_at": "2023-05-08T08:46:52.836Z",
-        "updated_at": "2023-05-08T08:46:52.836Z"
+        "phone": "9133793692"
       },
+      "items": [
+        {
+          "id": "de25cd31-4bfc-4a09-938b-e219e972344d",
+          "fulfillment_id": "e36e2c9f-bdd8-4306-bb0b-5c00404bd6e3",
+          "quantity": {
+            "count": 4
+          }
+        },
+        {
+          "id": "1368410b-fca7-4271-92e4-e137c6bef7a3",
+          "fulfillment_id": "e36e2c9f-bdd8-4306-bb0b-5c00404bd6e3",
+          "quantity": {
+            "count": 2
+          }
+        }
+      ],
       "fulfillments": [
         {
           "id": "e36e2c9f-bdd8-4306-bb0b-5c00404bd6e3",
           "type": "Delivery",
           "state": {
             "descriptor": {
-              "code": "Pending"
+              "code": "Out-for-delivery"
             },
-            "updated_at": "2023-05-08T08:47:25.750Z",
+            "updated_at": "2023-05-08T08:48:49.672Z",
             "updated_by": "Customer"
           },
           "tracking": false,
           "start": {
             "time": {
+              "timestamp": "2023-05-08T08:48:49.494Z",
               "range": {
-                "start": "2023-05-08T08:47:25.713Z",
-                "end": "2023-05-08T08:47:25.713Z"
+                "start": "2023-05-08T08:48:49.494Z",
+                "end": "2023-05-08T08:48:49.494Z"
               }
             },
             "instructions": {
@@ -168,7 +165,7 @@
             }
           },
           {
-            "@ondc/org/item_id": "e36e2c9f-bdd8-4306-bb0b-5c00404bd6e3",
+            "@ondc/org/item_id": "fa9b87b1-af7d-4644-9926-f15e0cf3bfb8",
             "title": "Convenience Fee",
             "@ondc/org/title_type": "misc",
             "price": {
@@ -177,7 +174,7 @@
             }
           },
           {
-            "@ondc/org/item_id": "e36e2c9f-bdd8-4306-bb0b-5c00404bd6e3",
+            "@ondc/org/item_id": "fa9b87b1-af7d-4644-9926-f15e0cf3bfb8",
             "title": "Delivery charges",
             "@ondc/org/title_type": "delivery",
             "price": {
@@ -187,38 +184,7 @@
           }
         ],
         "ttl": "P1D"
-      },
-      "payment": {
-        "uri": "https://juspay.in/",
-        "tl_method": "http/get",
-        "params": {
-          "amount": "3556.8199999999997",
-          "currency": "INR"
-        },
-        "status": "NOT-PAID",
-        "type": "ON-FULFILLMENT",
-        "collected_by": "BPP",
-        "@ondc/org/buyer_app_finder_fee_type": "percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-        "@ondc/org/settlement_details": [
-          {
-            "settlement_counterparty": "seller-app",
-            "settlement_phase": "sale-amount",
-            "settlement_type": "NEFT",
-            "settlement_bank_account_no": "026291800001191",
-            "settlement_ifsc_code": "YESB0000262",
-            "beneficiary_name": "Vijay ONDC"
-          }
-        ]
-      },
-      "documents": [
-        {
-          "url": "https://jiw-ozed-as-staging.azurewebsites.net/invoice/bf4251ab-304d-4729-9792-bbdbdbe4a103/download",
-          "label": "Invoice"
-        }
-      ],
-      "created_at": "2023-05-08T08:47:25.002Z",
-      "updated_at": "2023-05-08T08:47:25.562Z"
+      }
     }
   }
 }

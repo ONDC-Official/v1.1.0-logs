@@ -9,8 +9,8 @@
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
       "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
       "transaction_id": "9f96b2d1-74b1-47eb-9656-1fe100e9f352",
-      "message_id": "6a0f5897-291c-4359-83a0-5918860b08dc",
-      "timestamp": "2023-05-08T10:42:16.884Z",
+      "message_id": "4873eff2-a9ea-4718-9389-4e0242b5e527",
+      "timestamp": "2023-05-08T10:41:01.897Z",
       "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
       "ttl": "PT30S"
     },
@@ -23,10 +23,6 @@
           {
             "fulfillment_id": "87778aa6-89c1-4e22-8232-6790fce24171",
             "id": "1368410b-fca7-4271-92e4-e137c6bef7a3"
-          },
-          {
-            "fulfillment_id": "87778aa6-89c1-4e22-8232-6790fce24171",
-            "id": "b2e5fc2b-422b-4403-bd54-ccc5d7348d7a"
           }
         ],
         "fulfillments": [
@@ -38,28 +34,29 @@
             "@ondc/org/TAT": "PT45M",
             "state": {
               "descriptor": {
-                "name": "Pending",
-                "code": "Pending"
-              }
+                "code": "Serviceable"
+              },
+              "updated_at": "2023-05-08T10:41:01.982Z",
+              "updated_by": "Customer"
             }
           }
         ],
         "quote": {
           "price": {
             "currency": "INR",
-            "value": "19812.01"
+            "value": "6865.19"
           },
           "breakup": [
             {
               "@ondc/org/item_id": "1368410b-fca7-4271-92e4-e137c6bef7a3",
               "@ondc/org/item_quantity": {
-                "count": 2
+                "count": 8
               },
               "title": "Fabric",
               "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
-                "value": 1708.1
+                "value": 6832.4
               },
               "item": {
                 "quantity": {
@@ -77,38 +74,12 @@
               }
             },
             {
-              "@ondc/org/item_id": "b2e5fc2b-422b-4403-bd54-ccc5d7348d7a",
-              "@ondc/org/item_quantity": {
-                "count": 8
-              },
-              "title": "Pure cloth",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": 18000
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": 19
-                  },
-                  "maximum": {
-                    "count": 19
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": 2250
-                }
-              }
-            },
-            {
               "@ondc/org/item_id": "87778aa6-89c1-4e22-8232-6790fce24171",
               "title": "Convenience Fee",
               "@ondc/org/title_type": "misc",
               "price": {
                 "currency": "INR",
-                "value": "99.91"
+                "value": "28.79"
               }
             },
             {
@@ -124,5 +95,9 @@
           "ttl": "P1D"
         }
       }
+    },
+    "error": {
+      "type": "DOMAIN-ERROR",
+      "code": 40002
     }
   }
