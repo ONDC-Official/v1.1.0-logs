@@ -1,0 +1,118 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "timestamp": "2023-04-25T02:56:13.251Z",
+        "ttl": "PT30S",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc/on_select",
+        "bpp_id": "ondc-qa.gofrugalretail.com",
+        "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+        "transaction_id": "5ae54b50-c5ba-4aea-a20b-0c9e1a0a1331",
+        "message_id": "92eaf0c1-0974-460e-9e32-511bb85bab10"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "5466-ONDC-1"
+            },
+            "items": [
+                {
+                    "id": "5466-ONDC-1-1",
+                    "fulfillment_id": "3908FF04D336D828908AF90D2C820164"
+                },
+                {
+                    "id": "5466-ONDC-1-12",
+                    "fulfillment_id": "3908FF04D336D828908AF90D2C820164"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "3908FF04D336D828908AF90D2C820164",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/category": "Next Day Delivery",
+                    "@ondc/org/TAT": "P5D",
+                    "@ondc/org/provider_name": "MARKETPLACE SELLER1"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1200.00"
+                },
+                "breakup": [
+                    {
+                        "title": "KIT KAT",
+                        "price": {
+                            "currency": "INR",
+                            "value": "400.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "100.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "1578"
+                                },
+                                "maximum": {
+                                    "count": "1578"
+                                }
+                            }
+                        },
+                        "@ondc/org/item_id": "5466-ONDC-1-1",
+                        "@ondc/org/item_quantity": {
+                            "count": 4
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "DAIRY MILK",
+                        "price": {
+                            "currency": "INR",
+                            "value": "600.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "300.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "269"
+                                },
+                                "maximum": {
+                                    "count": "269"
+                                }
+                            }
+                        },
+                        "@ondc/org/item_id": "5466-ONDC-1-12",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "200.00"
+                        },
+                        "@ondc/org/item_id": "3908FF04D336D828908AF90D2C820164",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "P5D"
+            }
+        }
+    }
+}

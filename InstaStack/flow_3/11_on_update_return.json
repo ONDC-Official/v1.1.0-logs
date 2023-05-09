@@ -1,0 +1,225 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_update",
+      "core_version": "1.1.0",
+      "bap_id": "jiomart-buyer.ondcz5.de",
+      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+      "bpp_id": "seller.instastack.io",
+      "bpp_uri": "https://seller.instastack.io/pre-prod",
+      "transaction_id": "69bf13a1-bcbf-4579-b34c-f1d5ef259e35",
+      "message_id": "da4c415d-f2fa-4e1d-a948-d86c1188f8a3",
+      "timestamp": "2023-04-19T10:13:47.386Z"
+    },
+    "message": {
+      "order": {
+        "id": "7423d089-defa-4583-b091-8f220345097d",
+        "state": "Completed",
+        "items": [
+          {
+            "id": "3010",
+            "fulfillment_id": "1",
+            "quantity": {
+              "count": 1
+            },
+            "tags": {
+              "status": "Order-delivered"
+            }
+          },
+          {
+            "id": "109442",
+            "fulfillment_id": "1",
+            "quantity": {
+              "count": 1
+            },
+            "tags": {
+              "status": "Return_Initiated"
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "196"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "3010",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Maggi Masala Instant Noodles, 420 g",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "82"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "100"
+                  },
+                  "maximum": {
+                    "count": "100"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "82.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "3010",
+              "title": "Tax",
+              "@ondc/org/title_type": "tax",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            },
+            {
+              "@ondc/org/item_id": "109442",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Maggi Rich Tomato Ketchup, 200 g",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "65"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "100"
+                  },
+                  "maximum": {
+                    "count": "100"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "65.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "109442",
+              "title": "Tax",
+              "@ondc/org/title_type": "tax",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "49"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "title": "Packing charges",
+              "@ondc/org/title_type": "packing",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "fulfillments": [
+          {
+            "id": "1",
+            "@ondc/org/provider_name": "Dunzo and others",
+            "state": {
+              "descriptor": {
+                "code": "Order-delivered"
+              }
+            },
+            "type": "Delivery",
+            "tracking": false,
+            "start": {
+              "location": {
+                "id": "33159776-98ca-4f75-a24b-eee54d067540",
+                "descriptor": {
+                  "name": "Wellness Forever - Powai",
+                  "images": [
+                    "https://gf-integration/images/5.png"
+                  ]
+                },
+                "gps": "19.116802,72.909812"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-04-19T10:05:31.755Z",
+                  "end": "2023-04-19T10:05:31.756Z"
+                }
+              },
+              "instructions": {
+                "name": "Proof of pickup",
+                "short_desc": "Proof of pickup details",
+                "long_desc": "Proof of pickup details",
+                "images": [
+                  "https://image1_url.png"
+                ]
+              },
+              "contact": {
+                "phone": "merchant_phone_no",
+                "email": "merchant_email_address"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "19.1239285,72.90944069999999",
+                "address": {
+                  "name": "Ajinkya Shelar",
+                  "building": "Some Landmark",
+                  "locality": "Mumbai",
+                  "city": "Konkan Division",
+                  "state": "Maharashtra",
+                  "country": "IND",
+                  "area_code": "400076"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-04-19T10:05:31.756Z",
+                  "end": "2023-04-19T10:05:31.756Z"
+                }
+              },
+              "instructions": {
+                "name": "Proof of delivery",
+                "short_desc": "Proof of delivery details",
+                "long_desc": "Proof of delivery details",
+                "images": [
+                  "https://image1_url.png"
+                ]
+              },
+              "contact": {
+                "phone": "rider_mobile_no"
+              }
+            },
+            "rateable": true
+          }
+        ]
+      }
+    }
+  }

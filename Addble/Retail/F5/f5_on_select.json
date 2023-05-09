@@ -1,0 +1,152 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_select",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_uri": "https://preprod-ondc.addble.com/",
+		"transaction_id": "04a3136f-17ba-41c9-9339-3765598f7846",
+		"message_id": "fbd05948-abf2-4cbb-ba1d-c6a6424b81d8",
+		"timestamp": "2023-04-21T17:52:39.814Z",
+		"bpp_id": "preprod-ondc.addble.com",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "EOKJBqid0zecXCvyQBCR"
+			},
+			"items": [
+				{
+					"fulfillment_id": "5a0f5e36-5a98-4172-9aaa-f1b53dc23250",
+					"id": "6baca9mHQ7NLhYhz2zey"
+				},
+				{
+					"fulfillment_id": "5a0f5e36-5a98-4172-9aaa-f1b53dc23250",
+					"id": "H6xWCI1ofb5UMSMkVoP1"
+				},
+				{
+					"fulfillment_id": "5a0f5e36-5a98-4172-9aaa-f1b53dc23250",
+					"id": "zk9uwZl25DRK1WfGCreu"
+				}
+			],
+			"fulfillments": [
+				{
+					"id": "5a0f5e36-5a98-4172-9aaa-f1b53dc23250",
+					"@ondc/org/provider_name": "Syngenta",
+					"tracking": false,
+					"@ondc/org/category": "Standard Delivery",
+					"@ondc/org/TAT": "P1D",
+					"state": {
+						"descriptor": {
+							"code": "Serviceable"
+						}
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "156.24"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "6baca9mHQ7NLhYhz2zey",
+						"@ondc/org/item_quantity": {
+							"count": 2
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Fava Beans- बाकला",
+						"price": {
+							"currency": "INR",
+							"value": "60"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "30"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "H6xWCI1ofb5UMSMkVoP1",
+						"@ondc/org/item_quantity": {
+							"count": 2
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Runner beans- रनर बीन्स",
+						"price": {
+							"currency": "INR",
+							"value": "80"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "40"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "zk9uwZl25DRK1WfGCreu",
+						"@ondc/org/item_quantity": {
+							"count": 0
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Black Beans- काले सेम",
+						"price": {
+							"currency": "INR",
+							"value": "0"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "0"
+								},
+								"maximum": {
+									"count": "0"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "40"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "5a0f5e36-5a98-4172-9aaa-f1b53dc23250",
+						"title": "Delivery charges",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "16.24"
+						}
+					}
+				],
+				"ttl": "P1D"
+			}
+		}
+	},
+	"error": {
+		"type": "DOMAIN-ERROR",
+		"code": "40002"
+	}
+}

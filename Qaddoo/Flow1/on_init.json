@@ -1,0 +1,152 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:040",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc/",
+        "bpp_id": "preprod-wow-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
+        "transaction_id": "8cf87d90-f5b5-407c-bb1d-2b9a84fc84a6",
+        "message_id": "1ee58fc9-63e4-4d81-b92e-24d8e22981f2",
+        "timestamp": "2023-04-19T07:56:02.465Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "preprod-wow-bpp.shopalyst.com"
+            },
+            "provider_location": {
+                "id": "bcedc450f8481e89b1445069acdc3dd9"
+            },
+            "items": [
+                {
+                    "id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                    "quantity": {
+                        "count": 3
+                    }
+                },
+                {
+                    "id": "8408AA096BB46217DA023FDA3A32A754_43459772023043_default",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1695.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Cherrylicious Body Lotion By Body Cupid - 200 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "897.00"
+                        },
+                        "@ondc/org/item_id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "299.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Anti Pollution SPF40 Water Resistant No Parabens & Mineral Oil Sunscreen Lotion - 100 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "798.00"
+                        },
+                        "@ondc/org/item_id": "8408AA096BB46217DA023FDA3A32A754_43459772023043_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "399.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "billing": {
+                "name": "RajivSingh",
+                "address": {
+                    "name": "RajivSingh",
+                    "building": "Site3NNRPURAMcolony,HashmathGunj,SubhashNagar,BadiChowdi,Kachiguda,Hyderabad,Telangana500018,India",
+                    "locality": "Site3NNRPURAMcolony,HashmathGunj,SubhashNagar,BadiChowdi,Kachiguda,Hyderabad,Telangana500018,India",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "area_code": "500018"
+                },
+                "phone": "+917768006561",
+                "created_at": "2023-04-19T07:56:01.141132Z",
+                "updated_at": "2023-04-19T07:56:01.141170Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                    "type": "Delivery",
+                    "provider_id": "bcedc450f8481e89b1445069acdc3dd9",
+                    "tracking": true,
+                    "end": {
+                        "location": {
+                            "gps": "17.38504756401194,78.48667111247778",
+                            "address": {
+                                "name": "RajivSingh",
+                                "building": "Site3NNRPURAMcolony,HashmathGunj,SubhashNagar,BadiChowdi,Kachiguda,Hyderabad,Telangana500018,India",
+                                "locality": "Site3NNRPURAMcolony,HashmathGunj,SubhashNagar,BadiChowdi,Kachiguda,Hyderabad,Telangana500018,India",
+                                "city": "Hyderabad",
+                                "state": "Telangana",
+                                "country": "India",
+                                "area_code": "500018"
+                            }
+                        },
+                        "contact": {
+                            "phone": "+917768006561"
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "Percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_search",
+		"core_version": "1.1.0",
+		"transaction_id": "e35bfed0-8e6f-4586-aea0-c3c0bf011147",
+		"bap_id": "preprod-ondc.addble.com",
+		"bap_uri": "https://preprod-ondc.addble.com/",
+		"message_id": "f7e96d75-f8a3-4226-8a96-e8a1f49eaadd",
+		"timestamp": "2023-04-21T11:24:04.880Z",
+		"ttl": "PT30S",
+		"bpp_id": "ondc-dev.delhivery.com",
+		"bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/"
+	},
+	"message": {
+		"catalog": {
+			"bpp/fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid"
+				},
+				{
+					"id": "2",
+					"type": "CoD"
+				},
+				{
+					"id": "3",
+					"type": "RTO"
+				},
+				{
+					"id": "4",
+					"type": "Reverse QC"
+				}
+			],
+			"bpp/descriptor": {
+				"name": "Delhivery"
+			},
+			"bpp/providers": [
+				{
+					"id": "Delhivery",
+					"descriptor": {
+						"name": "Delhivery",
+						"short_desc": "Delhivery",
+						"long_desc": "Delhivery"
+					},
+					"categories": [
+						{
+							"id": "Express Delivery",
+							"time": {
+								"label": "TAT",
+								"duration": "P2D"
+							}
+						}
+					],
+					"items": [
+						{
+							"id": "29567aad-a893-4d75-b1ae-b79be937000c",
+							"parent_item_id": "",
+							"category_id": "Express Delivery",
+							"fulfillment_id": "1",
+							"descriptor": {
+								"code": "P2H2P",
+								"name": "Express Delivery",
+								"short_desc": "Delhivery Express",
+								"long_desc": "Delhivery Express"
+							},
+							"price": {
+								"currency": "INR",
+								"value": "12.00"
+							}
+						},
+						{
+							"id": "765471f8-c259-4594-8dcf-2ade798dfcc7",
+							"parent_item_id": "29567aad-a893-4d75-b1ae-b79be937000c",
+							"category_id": "Express Delivery",
+							"fulfillment_id": "3",
+							"descriptor": {
+								"code": "P2H2P",
+								"name": "Express Delivery",
+								"short_desc": "Delhivery Express RTO charge",
+								"long_desc": "Delhivery Express RTO charge"
+							},
+							"price": {
+								"currency": "INR",
+								"value": "34.00"
+							}
+						}
+					]
+				}
+			]
+		}
+	}
+}

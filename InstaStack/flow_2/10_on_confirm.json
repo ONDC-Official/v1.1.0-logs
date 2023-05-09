@@ -1,0 +1,286 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "on_confirm",
+      "country": "IND",
+      "city": "std:022",
+      "core_version": "1.1.0",
+      "bpp_id": "seller.instastack.io",
+      "bpp_uri": "https://seller.instastack.io/pre-prod",
+      "bap_id": "ondc.indiastack.cloud",
+      "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+      "transaction_id": "e904dcdd-27c7-47b0-8e0e-fad4617ac751",
+      "message_id": "06e611ec-5f14-44da-9202-7d444ecaca0e",
+      "timestamp": "2023-04-19T09:48:42.888Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "ae5e21bb-062d-4b39-b5ad-4cebd0260377",
+        "state": "Accepted",
+        "items": [
+          {
+            "id": "3010",
+            "fulfillment_id": "1",
+            "quantity": {
+              "count": 1
+            },
+            "tags": {
+              "status": "Pending"
+            }
+          },
+          {
+            "id": "110626",
+            "fulfillment_id": "1",
+            "quantity": {
+              "count": 1
+            },
+            "tags": {
+              "status": "Pending"
+            }
+          }
+        ],
+        "provider": {
+          "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
+          "locations": [
+            {
+              "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+            }
+          ],
+          "rateable": true
+        },
+        "billing": {
+          "name": "AjinkyaShelar",
+          "address": {
+            "area_code": "400601",
+            "city": "Thane",
+            "country": "IN",
+            "building": "Rustomjee Azziano",
+            "door": "-",
+            "locality": "Thane",
+            "name": "K-1905, Rustomjee Azziano, Thane",
+            "state": "MAHARASHTRA"
+          },
+          "phone": "9892216536",
+          "email": "ajinkya@instastack.io",
+          "created_at": "2023-04-19T09:48:24.172Z",
+          "updated_at": "2023-04-19T09:48:24.172Z"
+        },
+        "fulfillments": [
+          {
+            "id": "1",
+            "@ondc/org/provider_name": "Dunzo and others",
+            "state": {
+              "descriptor": {
+                "code": "Pending"
+              }
+            },
+            "type": "Delivery",
+            "tracking": false,
+            "start": {
+              "location": {
+                "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
+                "descriptor": {
+                  "name": "Wellness Forever - Powai",
+                  "images": [
+                    "https://gf-integration/images/5.png"
+                  ]
+                },
+                "gps": "19.116802,72.909812"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-04-19T09:48:42.888Z",
+                  "end": "2023-04-19T09:48:42.888Z"
+                }
+              },
+              "instructions": {
+                "name": "Proof of pickup",
+                "short_desc": "Proof of pickup details",
+                "long_desc": "Proof of pickup details",
+                "images": [
+                  "https://image1_url.png"
+                ]
+              },
+              "contact": {
+                "phone": "merchant_phone_no",
+                "email": "merchant_email_address"
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "19.2087061,72.9885003",
+                "address": {
+                  "name": "K-1905, Rustomjee Azziano, Thane",
+                  "building": "Rustomjee Azziano",
+                  "locality": "Thane",
+                  "city": "Thane",
+                  "state": "MAHARASHTRA",
+                  "country": "IN",
+                  "area_code": "400601"
+                }
+              },
+              "time": {
+                "range": {
+                  "start": "2023-04-19T09:48:42.889Z",
+                  "end": "2023-04-19T09:48:42.889Z"
+                }
+              },
+              "instructions": {
+                "name": "Proof of delivery",
+                "short_desc": "Proof of delivery details",
+                "long_desc": "Proof of delivery details",
+                "images": [
+                  "https://image1_url.png"
+                ]
+              },
+              "contact": {
+                "phone": "rider_mobile_no"
+              }
+            },
+            "rateable": true
+          }
+        ],
+        "documents": [
+          {
+            "url": "https://invoice_will_be_available_here",
+            "label": "invoice for order #ae5e21bb-062d-4b39-b5ad-4cebd0260377"
+          }
+        ],
+        "quote": {
+          "breakup": [
+            {
+              "title": "Maggi Masala Instant Noodles, 420 g",
+              "price": {
+                "currency": "INR",
+                "value": "82"
+              },
+              "@ondc/org/title_type": "item",
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "82.00"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "100"
+                  },
+                  "maximum": {
+                    "count": "100"
+                  }
+                }
+              },
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/item_id": "3010"
+            },
+            {
+              "@ondc/org/item_id": "3010",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "@ondc/org/title_type": "tax",
+              "title": "Tax"
+            },
+            {
+              "title": "Maggi Tomato Ketchup, 200 g",
+              "price": {
+                "currency": "INR",
+                "value": "80"
+              },
+              "@ondc/org/title_type": "item",
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "80.00"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "100"
+                  },
+                  "maximum": {
+                    "count": "100"
+                  }
+                }
+              },
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/item_id": "110626"
+            },
+            {
+              "@ondc/org/item_id": "110626",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "@ondc/org/title_type": "tax",
+              "title": "Tax"
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "price": {
+                "currency": "INR",
+                "value": "49"
+              },
+              "@ondc/org/title_type": "delivery",
+              "title": "Delivery charges"
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "@ondc/org/title_type": "packing",
+              "title": "Packing charges"
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "@ondc/org/title_type": "misc",
+              "title": "Convenience Fee"
+            }
+          ],
+          "price": {
+            "currency": "INR",
+            "value": "211"
+          },
+          "ttl": "P1D"
+        },
+        "payment": {
+          "type": "ON-ORDER",
+          "params": {
+            "amount": "211",
+            "currency": "INR",
+            "transaction_id": "order_LfbdWIQyZngExR"
+          },
+          "status": "PAID",
+          "tl_method": "http/get",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_ifsc_code": "someIFSC",
+              "beneficiary_name": "Thor",
+              "upi_address": "thor @okicicicicic",
+              "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+              "bank_name": "Marvels Bank",
+              "settlement_type": "seller-app",
+              "branch_name": "Asgard",
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "upi"
+            }
+          ]
+        },
+        "created_at": "2023-04-19T09:48:42.889Z",
+        "updated_at": "2023-04-19T09:48:42.889Z"
+      }
+    }
+  }
