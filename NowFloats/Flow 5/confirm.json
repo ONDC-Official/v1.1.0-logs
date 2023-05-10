@@ -1,0 +1,194 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "confirm",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+      "transaction_id": "9f96b2d1-74b1-47eb-9656-1fe100e9f352",
+      "message_id": "0ae98d3e-97c1-483e-958c-6a95fc629e5a",
+      "timestamp": "2023-05-08T10:44:18.800Z",
+      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-05-08-122879",
+        "state": "Created",
+        "billing": {
+          "address": {
+            "name": "Vijay Test",
+            "building": "Near temple",
+            "locality": "Maruti Nagar",
+            "city": "Hyderabad",
+            "state": "Telangana",
+            "country": "IND",
+            "area_code": "501505"
+          },
+          "phone": "9133793692",
+          "name": "Vijay Test",
+          "email": "vijay.borker@nowfloats.com",
+          "created_at": "2023-05-08T10:43:42.858Z",
+          "updated_at": "2023-05-08T10:43:42.858Z"
+        },
+        "items": [
+          {
+            "id": "1368410b-fca7-4271-92e4-e137c6bef7a3",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "87778aa6-89c1-4e22-8232-6790fce24171"
+          },
+          {
+            "id": "b2e5fc2b-422b-4403-bd54-ccc5d7348d7a",
+            "quantity": {
+              "count": 8
+            },
+            "fulfillment_id": "87778aa6-89c1-4e22-8232-6790fce24171"
+          }
+        ],
+        "provider": {
+          "id": "735b849d-f802-49c7-b768-f83219ac312e",
+          "locations": [
+            {
+              "id": "735b849d-f802-49c7-b768-f83219ac312e"
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "87778aa6-89c1-4e22-8232-6790fce24171",
+            "end": {
+              "contact": {
+                "email": "vijay.borker@nowfloats.com",
+                "phone": "9133793692"
+              },
+              "person": {
+                "name": "Vijay Test"
+              },
+              "location": {
+                "gps": "17.3273360000001, 78.6064710000001",
+                "address": {
+                  "name": "Vijay Test",
+                  "building": "Near temple",
+                  "locality": "Maruti Nagar",
+                  "city": "Hyderabad",
+                  "state": "Telangana",
+                  "country": "IND",
+                  "area_code": "501505"
+                }
+              }
+            },
+            "type": "Delivery"
+          }
+        ],
+        "payment": {
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
+          "params": {
+            "amount": "19812.01",
+            "currency": "INR"
+          },
+          "status": "NOT-PAID",
+          "type": "ON-FULFILLMENT",
+          "collected_by": "BPP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "NEFT",
+              "settlement_bank_account_no": "026291800001191",
+              "settlement_ifsc_code": "YESB0000262",
+              "beneficiary_name": "Vijay ONDC"
+            }
+          ]
+        },
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "19812.01"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "1368410b-fca7-4271-92e4-e137c6bef7a3",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "Fabric",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": 1708.1
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": 2
+                  },
+                  "maximum": {
+                    "count": 2
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": 854.05
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "b2e5fc2b-422b-4403-bd54-ccc5d7348d7a",
+              "@ondc/org/item_quantity": {
+                "count": 8
+              },
+              "title": "Pure cloth",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": 18000
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": 19
+                  },
+                  "maximum": {
+                    "count": 19
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": 2250
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "9f96b2d1-74b1-47eb-9656-1fe100e9f352",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "99.91"
+              }
+            },
+            {
+              "@ondc/org/item_id": "9f96b2d1-74b1-47eb-9656-1fe100e9f352",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "4"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "created_at": "2023-05-08T10:44:18.366Z",
+        "updated_at": "2023-05-08T10:44:18.366Z"
+      }
+    }
+  }
