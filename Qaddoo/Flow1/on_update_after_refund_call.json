@@ -3,29 +3,20 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
         "transaction_id": "177e203b-177f-4d9f-b452-89d07c789912",
-        "message_id": "1e6b8dc3-3274-40aa-b9d8-3aaa1395550a",
-        "timestamp": "2023-05-04T03:04:57.625Z"
+        "message_id": "e66eb98c-7ac7-4ea6-8182-5f488a037800",
+        "timestamp": "2023-05-04T03:10:57.177Z"
     },
     "message": {
         "order": {
             "id": "117",
-            "state": "Accepted",
-            "provider": {
-                "id": "preprod-wow-bpp.shopalyst.com",
-                "locations": [
-                    {
-                        "id": "bcedc450f8481e89b1445069acdc3dd9"
-                    }
-                ],
-                "rateable": true
-            },
+            "state": "Completed",
             "items": [
                 {
                     "id": "7945DA7F78F5CC8879548D89B9540249_43459794338051_default",
@@ -39,13 +30,16 @@
                     "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
                         "count": 2
+                    },
+                    "tags": {
+                        "status": "Liquidated"
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1795.00"
+                    "value": "1197.00"
                 },
                 "breakup": [
                     {
@@ -67,24 +61,6 @@
                         "@ondc/org/title_type": "item"
                     },
                     {
-                        "title": "Cherrylicious Shower Gel By Body Cupid - 200 ml",
-                        "price": {
-                            "currency": "INR",
-                            "value": "598.00"
-                        },
-                        "@ondc/org/item_id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "299.00"
-                            }
-                        },
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item"
-                    },
-                    {
                         "title": "Delivery Charges",
                         "price": {
                             "currency": "INR",
@@ -93,36 +69,26 @@
                         "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                         "@ondc/org/title_type": "delivery"
                     }
-                ],
-                "ttl": "PT15M"
-            },
-            "billing": {
-                "name": "Rajiv Singh",
-                "address": {
-                    "name": "Rajiv Singh",
-                    "building": "15/11, KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-                    "locality": "15/11, KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-                    "city": "Bengaluru",
-                    "state": "Karnataka",
-                    "country": "India",
-                    "area_code": "560001"
-                },
-                "phone": "+918302010971",
-                "created_at": "2023-05-04T03:04:26.012Z",
-                "updated_at": "2023-05-04T03:04:26.012Z"
+                ]
             },
             "fulfillments": [
                 {
                     "id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "type": "Delivery",
-                    "tracking": false,
+                    "tracking": true,
                     "start": {
                         "location": {
-                            "id": "bcedc450f8481e89b1445069acdc3dd9",
                             "descriptor": {
-                                "name": "Wow Skin Science"
+                                "name": "bcedc450f8481e89b1445069acdc3dd9"
                             },
                             "gps": "12.9684397,77.6010378"
+                        },
+                        "time": {
+                            "timestamp": "0001-01-01T00:00:00.000Z",
+                            "range": {
+                                "start": "0001-01-01T00:00:00.000Z",
+                                "end": "0001-01-01T00:00:00.000Z"
+                            }
                         },
                         "contact": {
                             "phone": "8042896000",
@@ -142,45 +108,24 @@
                                 "area_code": "560001"
                             }
                         },
+                        "time": {
+                            "timestamp": "2023-05-04T03:07:18.305Z",
+                            "range": {
+                                "end": "2023-05-04T03:07:18.305Z"
+                            }
+                        },
                         "contact": {
                             "phone": "+918302010971"
                         }
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
-                    "@ondc/org/provider_name": "Wow Skin Science",
-                    "rateable": true
+                    "@ondc/org/provider_name": "Wow Skin Science"
                 }
-            ],
-            "payment": {
-                "type": "ON-ORDER",
-                "status": "PAID",
-                "collected_by": "BAP",
-                "@ondc/org/buyer_app_finder_fee_type": "Percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3",
-                "@ondc/org/settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_phase": "sale-amount",
-                        "settlement_type": "neft",
-                        "settlement_bank_account_no": "1112220032274181",
-                        "settlement_ifsc_code": "RAZR0000001",
-                        "beneficiary_name": "Kishor",
-                        "bank_name": "sate bank of india",
-                        "branch_name": "manikonda"
-                    }
-                ],
-                "params": {
-                    "transaction_id": "1683169490870",
-                    "amount": "1795.00",
-                    "currency": "INR"
-                }
-            },
-            "created_at": "2023-05-04T03:04:54.839886Z",
-            "updated_at": "2023-05-04T03:04:57.611Z"
+            ]
         }
     }
 }

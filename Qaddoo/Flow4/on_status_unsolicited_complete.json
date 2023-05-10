@@ -2,53 +2,76 @@
     "context": {
         "domain": "nic2004:52110",
         "country": "IND",
-        "city": "std:040",
-        "action": "on_update",
+        "city": "std:080",
+        "action": "on_status",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
-        "transaction_id": "8cf87d90-f5b5-407c-bb1d-2b9a84fc84a6",
-        "message_id": "1466b862-9201-43a4-84ee-6b84e6655e2d",
-        "timestamp": "2023-04-20T04:13:46.645Z"
+        "transaction_id": "cee4dd01-13c6-484d-8f5a-a07a1d429197",
+        "message_id": "400aa4d4-9769-4ac0-a329-591c8b811e37",
+        "timestamp": "2023-05-02T09:10:55.448Z"
     },
     "message": {
         "order": {
-            "id": "39",
+            "id": "112",
             "state": "Completed",
+            "provider": {
+                "id": "preprod-wow-bpp.shopalyst.com",
+                "locations": [
+                    {
+                        "id": "bcedc450f8481e89b1445069acdc3dd9"
+                    }
+                ]
+            },
             "items": [
                 {
                     "id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
                     "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
-                        "count": 3
-                    },
-                    "tags": {
-                        "status": "Return_Initiated"
+                        "count": 10
                     }
                 },
                 {
-                    "id": "8408AA096BB46217DA023FDA3A32A754_43459772023043_default",
+                    "id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
                     "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
-                        "count": 2
+                        "count": 3
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1695.00"
+                    "value": "3887.00"
                 },
                 "breakup": [
                     {
                         "title": "Cherrylicious Body Lotion By Body Cupid - 200 ml",
                         "price": {
                             "currency": "INR",
-                            "value": "897.00"
+                            "value": "2990.00"
                         },
                         "@ondc/org/item_id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "299.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 10
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Cherrylicious Shower Gel By Body Cupid - 200 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "897.00"
+                        },
+                        "@ondc/org/item_id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
                         "item": {
                             "price": {
                                 "currency": "INR",
@@ -61,24 +84,6 @@
                         "@ondc/org/title_type": "item"
                     },
                     {
-                        "title": "Anti Pollution SPF40 Water Resistant No Parabens & Mineral Oil Sunscreen Lotion - 100 ml",
-                        "price": {
-                            "currency": "INR",
-                            "value": "798.00"
-                        },
-                        "@ondc/org/item_id": "8408AA096BB46217DA023FDA3A32A754_43459772023043_default",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "399.00"
-                            }
-                        },
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item"
-                    },
-                    {
                         "title": "Delivery Charges",
                         "price": {
                             "currency": "INR",
@@ -87,7 +92,29 @@
                         "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                         "@ondc/org/title_type": "delivery"
                     }
-                ]
+                ],
+                "ttl": "PT15M"
+            },
+            "documents": [
+                {
+                    "url": "https://static.shopalyst.com/assets/campaigns/invoice_jajee.jpeg",
+                    "label": "Invoice"
+                }
+            ],
+            "billing": {
+                "name": "Rajiv Rawat",
+                "address": {
+                    "name": "Rajiv Rawat",
+                    "building": "H.No-564, Gali No-18, Deep Darshan Colony, Somalpur Rd, behind H.M.T. Power House, Chandra Vardai Nagar, Ajmer, Rajasthan 305003, India",
+                    "locality": "H.No-564, Gali No-18, Deep Darshan Colony, Somalpur Rd, behind H.M.T. Power House, Chandra Vardai Nagar, Ajmer, Rajasthan 305003, India",
+                    "city": "Ajmer",
+                    "state": "Rajasthan",
+                    "country": "India",
+                    "area_code": "305003"
+                },
+                "phone": "+918302010971",
+                "created_at": "2023-05-02T09:06:59.101Z",
+                "updated_at": "2023-05-02T09:06:59.101Z"
             },
             "fulfillments": [
                 {
@@ -116,15 +143,15 @@
                     "end": {
                         "location": {
                             "descriptor": {},
-                            "gps": "17.38504756401194,78.48667111247778",
+                            "gps": "26.409675878914022,74.6213336661458",
                             "address": {
-                                "name": "RajivSingh",
-                                "building": "Site3NNRPURAMcolony,HashmathGunj,SubhashNagar,BadiChowdi,Kachiguda,Hyderabad,Telangana500018,India",
-                                "locality": "Site3NNRPURAMcolony,HashmathGunj,SubhashNagar,BadiChowdi,Kachiguda,Hyderabad,Telangana500018,India",
-                                "city": "Hyderabad",
-                                "state": "Telangana",
+                                "name": "RajivRawat",
+                                "building": "H.No-564,GaliNo-18,DeepDarshanColony,SomalpurRd,behindH.M.T.PowerHouse,ChandraVardaiNagar,Ajmer,Rajasthan305003,India",
+                                "locality": "H.No-564,GaliNo-18,DeepDarshanColony,SomalpurRd,behindH.M.T.PowerHouse,ChandraVardaiNagar,Ajmer,Rajasthan305003,India",
+                                "city": "Ajmer",
+                                "state": "Rajasthan",
                                 "country": "India",
-                                "area_code": "500018"
+                                "area_code": "305003"
                             },
                             "circle": {},
                             "time": {
@@ -135,13 +162,13 @@
                             }
                         },
                         "time": {
-                            "timestamp": "2023-04-19T08:25:31.295Z",
+                            "timestamp": "2023-05-02T09:10:55.426Z",
                             "range": {
-                                "end": "2023-04-19T08:25:31.295Z"
+                                "end": "2023-05-02T09:10:55.426Z"
                             }
                         },
                         "contact": {
-                            "phone": "+917768006561"
+                            "phone": "+918302010971"
                         }
                     },
                     "state": {
@@ -171,13 +198,13 @@
                     }
                 ],
                 "params": {
-                    "transaction_id": "1681891003914",
-                    "amount": "1695.00",
+                    "transaction_id": "1683018450391",
+                    "amount": "3887.00",
                     "currency": "INR"
                 }
             },
-            "created_at": "2023-04-19T07:56:48.425383Z",
-            "updated_at": "2023-04-19T08:25:31.295Z"
+            "created_at": "2023-05-02T09:07:34.739707Z",
+            "updated_at": "2023-05-02T09:10:55.426Z"
         }
     }
 }
