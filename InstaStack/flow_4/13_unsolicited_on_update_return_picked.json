@@ -1,253 +1,266 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_update",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_id": "seller.instastack.io",
-      "bpp_uri": "https://seller.instastack.io/pre-prod",
-      "transaction_id": "b0926212-f444-47e6-8ee1-cd26ed8b9a97",
-      "message_id": "57fdf2e5-c468-407f-a80e-8a9e893213bc",
-      "timestamp": "2023-04-19T12:45:00.319Z"
-    },
-    "message": {
-      "order": {
-        "id": "2023-04-19-230080",
-        "state": "Completed",
-        "items": [
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "seller.instastack.io",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "630cfe42-605d-47a2-93ca-ea85d8f7a918",
+    "message_id": "f7a62524-9516-48ac-ad01-23096139204d",
+    "timestamp": "2023-05-04T11:05:01.027Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-05-04-538032",
+      "state": "Completed",
+      "items": [
+        {
+          "id": "108668",
+          "fulfillment_id": "REVERSE-QC",
+          "quantity": {
+            "count": 2
+          },
+          "tags": {
+            "status": "Return_Picked"
+          }
+        },
+        {
+          "id": "143129",
+          "fulfillment_id": "1",
+          "quantity": {
+            "count": 3
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "589"
+        },
+        "breakup": [
           {
-            "id": "3010",
-            "fulfillment_id": "1",
-            "quantity": {
-              "count": 5
+            "@ondc/org/item_id": "108668",
+            "@ondc/org/item_quantity": {
+              "count": 0
             },
-            "tags": {
-              "status": "Order-delivered"
+            "title": "Maggi Coconut Milk Powder, 100 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "125.00"
+              }
             }
           },
           {
-            "id": "3616",
-            "fulfillment_id": "REVERSE-QC",
-            "quantity": {
-              "count": 2
+            "@ondc/org/item_id": "108668",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "143129",
+            "@ondc/org/item_quantity": {
+              "count": 3
             },
-            "tags": {
-              "status": "Return_Picked"
+            "title": "Maggi 2 Minute Instant Masala Noodles, 840 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "540"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "180.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "143129",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "0"
             }
           }
         ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "459"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "3010",
-              "@ondc/org/item_quantity": {
-                "count": 5
-              },
-              "title": "Maggi Masala Instant Noodles, 420 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "410"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "5"
-                  },
-                  "maximum": {
-                    "count": "5"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "82.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "3010",
-              "title": "Tax",
-              "@ondc/org/title_type": "tax",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "3616",
-              "@ondc/org/item_quantity": {
-                "count": 0
-              },
-              "title": "Maggi Vegetable Masala Atta Noodles, 80 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "5"
-                  },
-                  "maximum": {
-                    "count": "5"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "30.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "3616",
-              "title": "Tax",
-              "@ondc/org/title_type": "tax",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "49"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Packing charges",
-              "@ondc/org/title_type": "packing",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Convenience Fee",
-              "@ondc/org/title_type": "misc",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
+        "ttl": "P1D"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "Dunzo and others",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
             }
-          ],
-          "ttl": "P1D"
-        },
-        "fulfillments": [
-          {
-            "id": "1",
-            "@ondc/org/provider_name": "Dunzo and others",
-            "state": {
-              "descriptor": {
-                "code": "Order-delivered"
-              }
-            },
-            "type": "Delivery",
-            "tracking": false,
-            "start": {
-              "location": {
-                "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
-                "descriptor": {
-                  "name": "Wellness Forever - Powai",
-                  "images": [
-                    "https://gf-integration/images/5.png"
-                  ]
-                },
-                "gps": "19.116802,72.909812"
-              },
-              "time": {
-                "range": {
-                  "start": "2023-04-19T12:27:59.535Z",
-                  "end": "2023-04-19T12:27:59.535Z"
-                }
-              },
-              "instructions": {
-                "name": "Proof of pickup",
-                "short_desc": "Proof of pickup details",
-                "long_desc": "Proof of pickup details",
-                "images": [
-                  "https://image1_url.png"
-                ]
-              },
-              "contact": {
-                "phone": "merchant_phone_no",
-                "email": "merchant_email_address"
-              }
-            },
-            "end": {
-              "location": {
-                "gps": "19.199325, 72.978958",
-                "address": {
-                  "name": "Ajinkya Shelar",
-                  "building": "Rustomjee Azziano",
-                  "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
-                  "city": "Thane",
-                  "state": "Maharashtra",
-                  "country": "IND",
-                  "area_code": "400601"
-                }
-              },
-              "time": {
-                "range": {
-                  "start": "2023-04-19T12:27:59.535Z",
-                  "end": "2023-04-19T12:27:59.535Z"
-                }
-              },
-              "instructions": {
-                "name": "Proof of delivery",
-                "short_desc": "Proof of delivery details",
-                "long_desc": "Proof of delivery details",
-                "images": [
-                  "https://image1_url.png"
-                ]
-              },
-              "contact": {
-                "phone": "rider_mobile_no"
-              }
-            },
-            "rateable": true
           },
-          {
-            "id": "REVERSE-QC",
-            "type": "Reverse QC",
-            "state": {
+          "type": "Delivery",
+          "tracking": false,
+          "start": {
+            "location": {
+              "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
               "descriptor": {
-                "code": "Order-picked-up"
+                "name": "Wellness Forever - Powai",
+                "images": [
+                  "https://gf-integration/images/5.png"
+                ]
+              },
+              "gps": "19.116802,72.909812"
+            },
+            "time": {
+              "range": {
+                "start": "2023-05-04T10:54:15.194Z",
+                "end": "2023-05-04T11:54:15.194Z"
+              },
+              "timestamp": "2023-05-04T10:56:00.760Z"
+            },
+            "instructions": {
+              "name": "Proof of pickup",
+              "short_desc": "Proof of pickup details",
+              "long_desc": "Proof of pickup details",
+              "images": [
+                "https://image1_url.png"
+              ]
+            },
+            "contact": {
+              "phone": "merchant_phone_no",
+              "email": "merchant_email_address"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "19.199325, 72.978958",
+              "address": {
+                "name": "Ajinkya Shelar",
+                "building": "Rustomjee Azziano",
+                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                "city": "Thane",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400601"
               }
             },
-            "start": {
-              "time": {
-                "range": {
-                  "start": "2023-04-19T12:45:00.289Z",
-                  "end": "2023-04-19T12:45:00.289Z"
-                }
+            "time": {
+              "range": {
+                "start": "2023-05-04T10:54:15.194Z",
+                "end": "2023-05-04T16:54:15.194Z"
               },
-              "instructions": {
-                "short_desc": "pickup code",
-                "long_desc": "reverse qc details",
-                "additional_desc": {
-                  "content_type": "text/html",
-                  "url": "URL for instructions"
-                },
-                "images": [
-                  "proof of pickup"
-                ]
-              }
+              "timestamp": "2023-05-04T10:57:00.795Z"
+            },
+            "instructions": {
+              "name": "Proof of delivery",
+              "short_desc": "Proof of delivery details",
+              "long_desc": "Proof of delivery details",
+              "images": [
+                "https://image1_url.png"
+              ]
+            },
+            "contact": {
+              "phone": "rider_mobile_no"
+            }
+          },
+          "rateable": true
+        },
+        {
+          "id": "REVERSE-QC",
+          "type": "Reverse QC",
+          "state": {
+            "descriptor": {
+              "code": "Order-picked-up"
+            }
+          },
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-05-04T11:05:00.930Z",
+                "end": "2023-05-04T13:05:00.930Z"
+              },
+              "timestamp": "2023-05-04T12:05:00.930Z"
+            },
+            "instructions": {
+              "short_desc": "pickup code",
+              "long_desc": "reverse qc details",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "URL for instructions"
+              },
+              "images": [
+                "proof of pickup"
+              ]
             }
           }
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "839",
+          "currency": "INR",
+          "transaction_id": "ONDC-630cfe42-605d-47a2-93ca-ea85d8f7a918-1"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "thor@okicicicicic",
+            "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+            "settlement_ifsc_code": "someIFSC",
+            "beneficiary_name": "Thor",
+            "bank_name": "Marvels Bank",
+            "branch_name": "Asgard"
+          }
         ]
-      }
+      },
+      "created_at": "2023-05-04T10:54:14.668Z",
+      "updated_at": "2023-05-04T10:54:14.668Z"
     }
   }
+}

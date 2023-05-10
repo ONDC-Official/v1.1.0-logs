@@ -1,241 +1,233 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_confirm",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_uri": "https://seller.instastack.io/pre-prod",
-      "transaction_id": "f764ceab-6bfc-4fb7-837a-7cb82a733676",
-      "message_id": "dac13c86-e368-4b99-95a4-4abcb98f63ec",
-      "timestamp": "2023-04-19T17:27:27.980Z",
-      "bpp_id": "seller.instastack.io",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "order": {
-        "id": "2023-04-19-994644",
-        "state": "Accepted",
-        "items": [
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "ab7b2599-3d8a-4ebd-afc0-9ee331d3f8e2",
+    "message_id": "cc095aee-ae79-4e2b-9624-6d533908416b",
+    "timestamp": "2023-05-04T11:10:12.157Z",
+    "bpp_id": "seller.instastack.io",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-05-04-822628",
+      "state": "Accepted",
+      "items": [
+        {
+          "id": "143141",
+          "fulfillment_id": "1",
+          "quantity": {
+            "count": 5
+          },
+          "tags": {
+            "status": "Pending"
+          }
+        }
+      ],
+      "provider": {
+        "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e",
+        "locations": [
           {
-            "id": "3616",
-            "fulfillment_id": "1",
-            "quantity": {
-              "count": 4
-            },
-            "tags": {
-              "status": "Pending"
-            }
+            "id": "33159776-98ca-4f75-a24b-eee54d067540"
           }
         ],
-        "provider": {
-          "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
-          "locations": [
-            {
-              "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
-            }
-          ],
-          "rateable": true
-        },
-        "billing": {
+        "rateable": true
+      },
+      "billing": {
+        "name": "Ajinkya Shelar",
+        "address": {
           "name": "Ajinkya Shelar",
-          "address": {
-            "name": "Ajinkya Shelar",
-            "building": "Rustomjee Azziano",
-            "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
-            "city": "Thane",
-            "state": "Maharashtra",
-            "country": "IND",
-            "area_code": "400601"
-          },
-          "phone": "9833875151",
-          "email": "ajinkya@instastack.io",
-          "created_at": "2023-04-19T17:26:52.128Z",
-          "updated_at": "2023-04-19T17:26:52.128Z"
+          "building": "Rustomjee Azziano",
+          "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+          "city": "Thane",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400601"
         },
-        "fulfillments": [
-          {
-            "id": "1",
-            "@ondc/org/provider_name": "Dunzo and others",
-            "state": {
+        "phone": "9833875151",
+        "email": "ajinkya@instastack.io",
+        "created_at": "2023-05-04T11:09:54.738Z",
+        "updated_at": "2023-05-04T11:09:54.738Z"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "Dunzo and others",
+          "state": {
+            "descriptor": {
+              "code": "Pending"
+            }
+          },
+          "type": "Delivery",
+          "tracking": false,
+          "start": {
+            "location": {
+              "id": "33159776-98ca-4f75-a24b-eee54d067540",
               "descriptor": {
-                "code": "Pending"
-              }
-            },
-            "type": "Delivery",
-            "tracking": false,
-            "start": {
-              "location": {
-                "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
-                "descriptor": {
-                  "name": "Wellness Forever - Powai",
-                  "images": [
-                    "https://gf-integration/images/5.png"
-                  ]
-                },
-                "gps": "19.116802,72.909812"
-              },
-              "time": {
-                "range": {
-                  "start": "2023-04-19T17:27:27.980Z",
-                  "end": "2023-04-19T17:27:27.981Z"
-                }
-              },
-              "instructions": {
-                "name": "Proof of pickup",
-                "short_desc": "Proof of pickup details",
-                "long_desc": "Proof of pickup details",
+                "name": "Wellness Forever - Powai",
                 "images": [
-                  "https://image1_url.png"
+                  "https://gf-integration/images/5.png"
                 ]
               },
-              "contact": {
-                "phone": "merchant_phone_no",
-                "email": "merchant_email_address"
+              "gps": "19.116802,72.909812"
+            },
+            "time": {
+              "range": {
+                "start": "2023-05-04T11:10:12.648Z",
+                "end": "2023-05-04T12:10:12.648Z"
               }
             },
-            "end": {
-              "location": {
-                "gps": "19.199325, 72.978958",
-                "address": {
-                  "name": "Ajinkya Shelar",
-                  "building": "Rustomjee Azziano",
-                  "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
-                  "city": "Thane",
-                  "state": "Maharashtra",
-                  "country": "IND",
-                  "area_code": "400601"
-                }
-              },
-              "time": {
-                "range": {
-                  "start": "2023-04-19T17:27:27.981Z",
-                  "end": "2023-04-19T17:27:27.981Z"
-                }
-              },
-              "instructions": {
-                "name": "Proof of delivery",
-                "short_desc": "Proof of delivery details",
-                "long_desc": "Proof of delivery details",
-                "images": [
-                  "https://image1_url.png"
-                ]
-              },
-              "contact": {
-                "phone": "rider_mobile_no"
+            "instructions": {
+              "name": "Proof of pickup",
+              "short_desc": "Proof of pickup details",
+              "long_desc": "Proof of pickup details",
+              "images": [
+                "https://image1_url.png"
+              ]
+            },
+            "contact": {
+              "phone": "merchant_phone_no",
+              "email": "merchant_email_address"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "19.199325, 72.978958",
+              "address": {
+                "name": "Ajinkya Shelar",
+                "building": "Rustomjee Azziano",
+                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                "city": "Thane",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400601"
               }
             },
-            "rateable": true
-          }
-        ],
-        "documents": [
+            "time": {
+              "range": {
+                "start": "2023-05-04T11:10:12.648Z",
+                "end": "2023-05-04T17:10:12.648Z"
+              }
+            },
+            "instructions": {
+              "name": "Proof of delivery",
+              "short_desc": "Proof of delivery details",
+              "long_desc": "Proof of delivery details",
+              "images": [
+                "https://image1_url.png"
+              ]
+            },
+            "contact": {
+              "phone": "rider_mobile_no"
+            }
+          },
+          "rateable": true
+        }
+      ],
+      "documents": [
+        {
+          "url": "https://invoice_will_be_available_here",
+          "label": "Invoice"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "139"
+        },
+        "breakup": [
           {
-            "url": "https://invoice_will_be_available_here",
-            "label": "invoice for order #2023-04-19-994644"
+            "@ondc/org/item_id": "143141",
+            "@ondc/org/item_quantity": {
+              "count": 5
+            },
+            "title": "Maggi 2 Minute Chicken Noodles, 76 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "90"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "18.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "143141",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
           }
         ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "169"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "3616",
-              "@ondc/org/item_quantity": {
-                "count": 4
-              },
-              "title": "Maggi Vegetable Masala Atta Noodles, 80 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "120"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "100"
-                  },
-                  "maximum": {
-                    "count": "100"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "30.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "3616",
-              "title": "Tax",
-              "@ondc/org/title_type": "tax",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "49"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Packing charges",
-              "@ondc/org/title_type": "packing",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Convenience Fee",
-              "@ondc/org/title_type": "misc",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            }
-          ],
-          "ttl": "P1D"
+        "ttl": "P1D"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "139",
+          "currency": "INR",
+          "transaction_id": "ONDC-ab7b2599-3d8a-4ebd-afc0-9ee331d3f8e2-1"
         },
-        "payment": {
-          "uri": "https://juspay.in/",
-          "tl_method": "http/get",
-          "params": {
-            "amount": "169",
-            "currency": "INR",
-            "transaction_id": "ONDC-f764ceab-6bfc-4fb7-837a-7cb82a733676-1"
-          },
-          "status": "PAID",
-          "type": "ON-ORDER",
-          "collected_by": "BAP",
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-          "@ondc/org/settlement_details": [
-            {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "upi",
-              "settlement_type": "seller-app",
-              "upi_address": "thor @okicicicicic",
-              "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
-              "settlement_ifsc_code": "someIFSC",
-              "beneficiary_name": "Thor",
-              "bank_name": "Marvels Bank",
-              "branch_name": "Asgard"
-            }
-          ]
-        },
-        "created_at": "2023-04-19T17:27:27.981Z",
-        "updated_at": "2023-04-19T17:27:27.981Z"
-      }
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "thor@okicicicicic",
+            "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+            "settlement_ifsc_code": "someIFSC",
+            "beneficiary_name": "Thor",
+            "bank_name": "Marvels Bank",
+            "branch_name": "Asgard"
+          }
+        ]
+      },
+      "created_at": "2023-05-04T11:10:12.157Z",
+      "updated_at": "2023-05-04T11:10:12.157Z"
     }
   }
+}

@@ -1,220 +1,242 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:022",
-      "action": "confirm",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "transaction_id": "bc6ea759-8046-4244-b53f-cc5d51806659",
-      "message_id": "a5d0913d-f54f-40a7-a31e-d19df3c5baf5",
-      "timestamp": "2023-04-19T07:53:21.561Z",
-      "ttl": "PT30S",
-      "bpp_id": "seller.instastack.io",
-      "bpp_uri": "https://seller.instastack.io/pre-prod"
-    },
-    "message": {
-      "order": {
-        "id": "ba925993-fa15-4912-8eb7-5f667483b397",
-        "state": "Created",
-        "billing": {
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "378ba29a-5057-47cb-846f-778413dbe360",
+    "message_id": "cccaf6ea-d1e0-4417-9881-a5324b4320c6",
+    "timestamp": "2023-05-04T08:59:23.652Z",
+    "bpp_id": "seller.instastack.io",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-05-04-560575",
+      "state": "Created",
+      "billing": {
+        "address": {
           "name": "Ajinkya Shelar",
-          "address": {
-            "name": "Ajinkya Shelar",
-            "building": "Rustomjee Azziano",
-            "city": "Konkan Division",
-            "state": "Maharashtra",
-            "country": "IND",
-            "area_code": "400601"
-          },
-          "email": "ajinkya@instastack.io",
-          "phone": "9892216536",
-          "created_at": "2023-04-19T07:52:18.892Z",
-          "updated_at": "2023-04-19T07:52:18.892Z"
+          "building": "Rustomjee Azziano",
+          "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+          "city": "Thane",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400601"
         },
-        "items": [
+        "phone": "9833875151",
+        "name": "Ajinkya Shelar",
+        "email": "ajinkya@instastack.io",
+        "created_at": "2023-05-04T08:58:48.295Z",
+        "updated_at": "2023-05-04T08:58:48.295Z"
+      },
+      "items": [
+        {
+          "id": "1328",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "3126",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "3350",
+          "quantity": {
+            "count": 3
+          },
+          "fulfillment_id": "1"
+        }
+      ],
+      "provider": {
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
+        "locations": [
           {
-            "fulfillment_id": "1",
-            "id": "110764",
-            "quantity": {
-              "count": 4
+            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "end": {
+            "contact": {
+              "phone": "9833875151"
+            },
+            "person": {
+              "name": "Ajinkya Shelar"
+            },
+            "location": {
+              "gps": "19.199325, 72.978958",
+              "address": {
+                "name": "Ajinkya Shelar",
+                "building": "Rustomjee Azziano",
+                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                "city": "Thane",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400601"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "924",
+          "currency": "INR",
+          "transaction_id": "ONDC-378ba29a-5057-47cb-846f-778413dbe360-1"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "thor@okicicicicic",
+            "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+            "settlement_ifsc_code": "someIFSC",
+            "beneficiary_name": "Thor",
+            "bank_name": "Marvels Bank",
+            "branch_name": "Asgard"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "924"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "1328",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Red Bull Yellow Edition Energy Drink, 250 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "145"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "145.00"
+              }
             }
           },
           {
-            "fulfillment_id": "1",
-            "id": "143129",
-            "quantity": {
-              "count": 5
+            "@ondc/org/item_id": "1328",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "3126",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Red Bull Energy Drink, Sugar Free, 250 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "250"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "125.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "3126",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "3350",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "title": "Red Bull Energy Drink, 350 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "480"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "160.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "3350",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "0"
             }
           }
         ],
-        "provider": {
-          "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e",
-          "locations": [
-            {
-              "id": "33159776-98ca-4f75-a24b-eee54d067540"
-            }
-          ]
-        },
-        "fulfillments": [
-          {
-            "id": "1",
-            "end": {
-              "person": {
-                "name": "Ajinkya Shelar"
-              },
-              "contact": {
-                "phone": "9892216536"
-              },
-              "location": {
-                "gps": "19.2010502,72.97853529999999",
-                "address": {
-                  "name": "Ajinkya Shelar",
-                  "building": "Rustomjee Azziano",
-                  "city": "Konkan Division",
-                  "state": "Maharashtra",
-                  "country": "IND",
-                  "area_code": "400601"
-                }
-              }
-            },
-            "type": "Delivery"
-          }
-        ],
-        "payment": {
-          "params": {
-            "amount": "1409",
-            "currency": "INR",
-            "transaction_id": "20230419011610000855437476478488577"
-          },
-          "status": "PAID",
-          "type": "ON-ORDER",
-          "collected_by": "BAP",
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "2",
-          "@ondc/org/settlement_details": [
-            {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "upi",
-              "settlement_type": "seller-app",
-              "upi_address": "thor @okicicicicic",
-              "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
-              "settlement_ifsc_code": "someIFSC",
-              "beneficiary_name": "Thor",
-              "bank_name": "Marvels Bank",
-              "branch_name": "Asgard"
-            }
-          ]
-        },
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "1409"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "110764",
-              "@ondc/org/item_quantity": {
-                "count": 4
-              },
-              "title": "Maggi Tomato Ketchup, 500 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "460"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "100"
-                  },
-                  "maximum": {
-                    "count": "100"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "115.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "110764",
-              "title": "Tax",
-              "@ondc/org/title_type": "tax",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "143129",
-              "@ondc/org/item_quantity": {
-                "count": 5
-              },
-              "title": "Maggi 2 Minute Instant Masala Noodles, 840 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "900"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "100"
-                  },
-                  "maximum": {
-                    "count": "100"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "180.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "143129",
-              "title": "Tax",
-              "@ondc/org/title_type": "tax",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "49"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Packing charges",
-              "@ondc/org/title_type": "packing",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Convenience Fee",
-              "@ondc/org/title_type": "misc",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            }
-          ],
-          "ttl": "P1D"
-        },
-        "created_at": "2023-04-19T07:53:21.561Z",
-        "updated_at": "2023-04-19T07:53:21.561Z"
-      }
+        "ttl": "P1D"
+      },
+      "created_at": "2023-05-04T08:59:23.652Z",
+      "updated_at": "2023-05-04T08:59:23.652Z"
     }
   }
+}
