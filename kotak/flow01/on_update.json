@@ -3,20 +3,20 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_status",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "cloud-adaptor.proteantech.in/kotak",
         "bap_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/buyer-v4/buyer/adaptor",
         "bpp_id": "preprod-jajee-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
-        "transaction_id": "416796066629344640",
-        "message_id": "b8525216-94eb-4833-83e4-a46c522dea3d",
-        "timestamp": "2023-05-12T06:36:14.913Z"
+        "transaction_id": "342968510013730050",
+        "message_id": "4444cfd9-c05b-4813-8abc-e6464631e440",
+        "timestamp": "2023-05-11T10:48:45.940Z"
     },
     "message": {
         "order": {
-            "id": "K177D4CD7",
-            "state": "Accepted",
+            "id": "KBA7E7089",
+            "state": "Completed",
             "provider": {
                 "id": "preprod-jajee-bpp.shopalyst.com",
                 "locations": [
@@ -123,29 +123,36 @@
             "billing": {
                 "name": "null null",
                 "address": {
-                    "door": "2051",
-                    "name": "null null Bengaluru Shanti Nagar Karnataka 560027",
-                    "building": "Shanti Nagar",
-                    "locality": "Shanti Nagar",
-                    "city": "Bengaluru",
+                    "door": "1-2-3",
+                    "name": "null null Kalaburagi Brahmapur Karnataka 585101",
+                    "building": "Brahmapur",
+                    "locality": "Brahmapur",
+                    "city": "Kalaburagi",
                     "state": "Karnataka",
                     "country": "IND",
-                    "area_code": "560027"
+                    "area_code": "585101"
                 },
-                "created_at": "2023-05-12T12:06:11.107Z",
-                "updated_at": "2023-05-12T12:06:11.107Z"
+                "created_at": "2023-05-11T15:49:08.211Z",
+                "updated_at": "2023-05-11T15:49:08.211Z"
             },
             "fulfillments": [
                 {
                     "id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
                     "type": "Delivery",
-                    "tracking": false,
+                    "tracking": true,
                     "start": {
                         "location": {
                             "descriptor": {
                                 "name": "5692eae837b7a1d2b7ebd8e6bd251b51"
                             },
                             "gps": "17.3371562,76.8311261"
+                        },
+                        "time": {
+                            "timestamp": "2023-05-11T10:24:21.538Z",
+                            "range": {
+                                "start": "2023-05-11T10:23:21.538Z",
+                                "end": "2023-05-11T10:24:21.538Z"
+                            }
                         },
                         "contact": {
                             "phone": "9164607070",
@@ -154,23 +161,30 @@
                     },
                     "end": {
                         "location": {
-                            "gps": "12.958205,77.595118",
+                            "gps": "17.341391,76.8344680000001",
                             "address": {
-                                "door": "2051",
-                                "name": "null null Bengaluru Shanti Nagar Karnataka 560027",
-                                "building": "Shanti Nagar",
-                                "locality": "Shanti Nagar",
-                                "city": "Bengaluru",
+                                "door": "1-2-3",
+                                "name": "null null Kalaburagi Brahmapur Karnataka 585101",
+                                "building": "Brahmapur",
+                                "locality": "Brahmapur",
+                                "city": "Kalaburagi",
                                 "state": "Karnataka",
                                 "country": "IND",
-                                "area_code": "560027"
+                                "area_code": "585101"
+                            }
+                        },
+                        "time": {
+                            "timestamp": "2023-05-11T10:24:36.342Z",
+                            "range": {
+                                "start": "2023-05-11T10:24:24.354Z",
+                                "end": "2023-05-11T10:24:36.342Z"
                             }
                         },
                         "contact": {}
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
                     "@ondc/org/provider_name": "Jajee"
@@ -192,16 +206,24 @@
                         "beneficiary_name": "Kishor",
                         "bank_name": "sate bank of india",
                         "branch_name": "manikonda"
+                    },
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
                     }
                 ],
                 "params": {
-                    "transaction_id": "416796066629344640",
+                    "transaction_id": "342968510013730050",
                     "amount": "700.00",
                     "currency": "INR"
                 }
-            },
-            "created_at": "2023-05-12T12:06:11.107Z",
-            "updated_at": "2023-05-12T06:36:13.299Z"
+            }
         }
     }
 }
