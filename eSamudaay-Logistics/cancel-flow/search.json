@@ -1,0 +1,89 @@
+{
+  "context": {
+    "action": "search",
+    "transaction_id": "a9650ca2-90b7-49b5-8cde-fc37b5c44d2b",
+    "message_id": "47d0aa3f-7095-4607-a3ab-aa3d5c1e04fa",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-05-12T16:32:07.740Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "fulfillment": {
+        "type": "CoD",
+        "start": {
+          "location": {
+            "gps": "12.4535445,77.9283792",
+            "address": {
+              "area_code": "560041"
+            }
+          }
+        },
+        "end": {
+          "location": {
+            "gps": "12.4535445,77.9283792",
+            "address": {
+              "area_code": "12.4535445,77.9283792"
+            }
+          }
+        }
+      },
+      "@ondc/org/payload_details": {
+        "weight": {
+          "unit": "Kilogram",
+          "value": 10
+        },
+        "dimensions": {
+          "length": {
+            "unit": "meter",
+            "value": 1
+          },
+          "breadth": {
+            "unit": "meter",
+            "value": 1
+          },
+          "height": {
+            "unit": "meter",
+            "value": 1
+          }
+        },
+        "category": "Electronics"
+      },
+      "value": {
+        "currency": "INR",
+        "value": "30000"
+      },
+      "category": {
+        "id": "Immediate Delivery"
+      },
+      "payment": {
+        "@ondc/org/collection_amount": "30000"
+      },
+      "provider": {
+        "time": {
+          "days": "1,2,3,4,5,6,7",
+          "schedule": {
+            "holidays": [
+              "2022-08-15",
+              "2022-08-19"
+            ],
+            "frequency": "PT4H",
+            "times": [
+              "1100",
+              "1900"
+            ]
+          },
+          "range": {
+            "start": "1100",
+            "end": "2100"
+          }
+        }
+      }
+    }
+  }
+}
