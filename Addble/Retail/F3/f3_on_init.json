@@ -1,23 +1,23 @@
 {
 	"context": {
 		"domain": "nic2004:52110",
-		"action": "on_init",
 		"country": "IND",
-		"city": "std:0821",
+		"city": "std:080",
+		"action": "on_init",
 		"core_version": "1.1.0",
-		"bpp_id": "preprod-ondc.addble.com",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
 		"bpp_uri": "https://preprod-ondc.addble.com/",
-		"bap_id": "ondc.indiastack.cloud",
-		"bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
-		"transaction_id": "1d30de87-7690-487c-b7db-73320c1ca8db",
-		"message_id": "e022a444-629c-4e46-b1e4-d3b62e2c97ec",
-		"timestamp": "2023-04-21T16:36:49.251Z",
+		"transaction_id": "204f0a73-a314-4aeb-b72d-021333f47e9e",
+		"message_id": "e7df60b0-4cb6-4a41-b50c-6fc762c587e1",
+		"timestamp": "2023-05-13T15:51:57.940Z",
+		"bpp_id": "preprod-ondc.addble.com",
 		"ttl": "PT30S"
 	},
 	"message": {
 		"order": {
 			"provider": {
-				"id": "EOKJBqid0zecXCvyQBCR"
+				"id": "UBzw4QGewWquuLE8brUS"
 			},
 			"provider_location": {
 				"id": "EOKJBqid0zecXCvyQBCR"
@@ -25,64 +25,61 @@
 			"items": [
 				{
 					"id": "6baca9mHQ7NLhYhz2zey",
-					"fulfillment_id": "d24f5c03-15d0-4190-bda0-1bb6776ce242",
 					"quantity": {
 						"count": 1
-					}
-				},
-				{
-					"id": "15KBwrYwll4U4NJlPpjR",
-					"fulfillment_id": "d24f5c03-15d0-4190-bda0-1bb6776ce242",
-					"quantity": {
-						"count": 1
-					}
+					},
+					"fulfillment_id": "fdcb3f52-bcbf-4045-b9d8-e8ca1d53fdc8"
 				},
 				{
 					"id": "H6xWCI1ofb5UMSMkVoP1",
-					"fulfillment_id": "d24f5c03-15d0-4190-bda0-1bb6776ce242",
 					"quantity": {
 						"count": 1
-					}
+					},
+					"fulfillment_id": "fdcb3f52-bcbf-4045-b9d8-e8ca1d53fdc8"
+				},
+				{
+					"id": "15KBwrYwll4U4NJlPpjR",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "fdcb3f52-bcbf-4045-b9d8-e8ca1d53fdc8"
 				}
 			],
 			"billing": {
 				"address": {
-					"area_code": "570010",
-					"city": "Mysore",
-					"country": "IN",
-					"building": "#25",
-					"door": "-",
-					"locality": " Hyderali Road",
-					"name": "#25, opp Chamundi Vihara Stadium, Hyderali Road, Vasantha Mahal Rd, Doora, Mysuru, Karnataka 570010",
-					"state": "KARNATAKA"
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560001",
+					"locality": "36, Church Street, Mahatma Gandhi Rd",
+					"name": "Yaikhomba Church Street"
 				},
-				"created_at": "2023-04-21T16:36:45.273Z",
-				"email": "adden.company@gmail.com",
-				"name": "YaikhombaMys V",
 				"phone": "6362944815",
-				"tax_number": "",
-				"updated_at": "2023-04-21T16:36:45.273Z"
+				"name": "Yaikhomba Church Street",
+				"email": "adden.company@gmail.com",
+				"created_at": "2023-05-13T15:51:57.662Z",
+				"updated_at": "2023-05-13T15:51:57.662Z"
 			},
 			"fulfillments": [
 				{
-					"id": "d24f5c03-15d0-4190-bda0-1bb6776ce242",
+					"id": "fdcb3f52-bcbf-4045-b9d8-e8ca1d53fdc8",
 					"tracking": false,
 					"type": "Delivery",
 					"end": {
 						"location": {
+							"gps": "12.9812430000001, 77.5950340000001",
 							"address": {
-								"area_code": "570010",
-								"city": "Mysore",
-								"country": "IN",
-								"building": "#25",
-								"door": "-",
-								"locality": " Hyderali Road",
-								"name": "#25, opp Chamundi Vihara Stadium, Hyderali Road, Vasantha Mahal Rd, Doora, Mysuru, Karnataka 570010",
-								"state": "KARNATAKA"
-							},
-							"gps": "12.3069493,76.6673036"
+								"name": "Yaikhomba Church Street",
+								"building": "",
+								"locality": "36, Church Street, Mahatma Gandhi Rd",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560001"
+							}
 						},
 						"contact": {
+							"email": "adden.company@gmail.com",
 							"phone": "6362944815"
 						}
 					}
@@ -90,7 +87,7 @@
 			],
 			"payment": {
 				"@ondc/org/buyer_app_finder_fee_type": "percent",
-				"@ondc/org/buyer_app_finder_fee_amount": "3",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
 				"@ondc/org/settlement_details": [
 					{
 						"settlement_counterparty": "seller-app",
@@ -104,7 +101,7 @@
 			"quote": {
 				"price": {
 					"currency": "INR",
-					"value": "110.25"
+					"value": "111.19"
 				},
 				"breakup": [
 					{
@@ -119,14 +116,6 @@
 							"value": "40"
 						},
 						"item": {
-							"quantity": {
-								"available": {
-									"count": "1000"
-								},
-								"maximum": {
-									"count": "1000"
-								}
-							},
 							"price": {
 								"currency": "INR",
 								"value": "40"
@@ -145,14 +134,6 @@
 							"value": "30"
 						},
 						"item": {
-							"quantity": {
-								"available": {
-									"count": "1000"
-								},
-								"maximum": {
-									"count": "1000"
-								}
-							},
 							"price": {
 								"currency": "INR",
 								"value": "30"
@@ -171,14 +152,6 @@
 							"value": "40"
 						},
 						"item": {
-							"quantity": {
-								"available": {
-									"count": "1000"
-								},
-								"maximum": {
-									"count": "1000"
-								}
-							},
 							"price": {
 								"currency": "INR",
 								"value": "40"
@@ -186,12 +159,12 @@
 						}
 					},
 					{
-						"@ondc/org/item_id": "d24f5c03-15d0-4190-bda0-1bb6776ce242",
+						"@ondc/org/item_id": "fdcb3f52-bcbf-4045-b9d8-e8ca1d53fdc8",
 						"title": "Delivery charges",
 						"@ondc/org/title_type": "delivery",
 						"price": {
 							"currency": "INR",
-							"value": "0.25"
+							"value": "1.19"
 						}
 					}
 				],

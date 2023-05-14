@@ -3,35 +3,24 @@
 		"domain": "nic2004:52110",
 		"country": "IND",
 		"city": "std:080",
-		"action": "on_init",
+		"action": "on_update",
 		"core_version": "1.1.0",
 		"bap_id": "buyer-app-preprod.ondc.org",
 		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
 		"bpp_uri": "https://preprod-ondc.addble.com/",
 		"transaction_id": "7cbf25ec-2f82-43da-936a-f72c37cb6cb3",
-		"message_id": "1d0e725c-1675-47a5-a201-a7081c12ea98",
-		"timestamp": "2023-05-13T16:10:12.394Z",
+		"message_id": "a89404f1-b9f2-4107-b57a-5d9eb6fe3e1f",
+		"timestamp": "2023-05-13T16:11:34.247Z",
 		"bpp_id": "preprod-ondc.addble.com",
 		"ttl": "PT30S"
 	},
 	"message": {
 		"order": {
-			"provider": {
-				"id": "UBzw4QGewWquuLE8brUS"
-			},
-			"provider_location": {
-				"id": "EOKJBqid0zecXCvyQBCR"
-			},
+			"id": "2023-05-13-762630",
+			"state": "Completed",
 			"items": [
 				{
 					"id": "6baca9mHQ7NLhYhz2zey",
-					"quantity": {
-						"count": 2
-					},
-					"fulfillment_id": "30386b40-7fe3-433f-88a5-163e906eccd8"
-				},
-				{
-					"id": "H6xWCI1ofb5UMSMkVoP1",
 					"quantity": {
 						"count": 2
 					},
@@ -43,67 +32,51 @@
 						"count": 3
 					},
 					"fulfillment_id": "30386b40-7fe3-433f-88a5-163e906eccd8"
+				},
+				{
+					"id": "H6xWCI1ofb5UMSMkVoP1",
+					"quantity": {
+						"count": 2
+					},
+					"tags": {
+						"status": "Return_Initiated"
+					},
+					"fulfillment_id": "30386b40-7fe3-433f-88a5-163e906eccd8"
 				}
 			],
-			"billing": {
-				"address": {
-					"door": "Shell Petrol Pump",
-					"building": "Shell Petrol Pump",
-					"city": "Bengaluru",
-					"state": "Karnataka",
-					"country": "IND",
-					"area_code": "560001",
-					"locality": "Bellandur",
-					"name": "Yaikhomba Blr"
-				},
-				"phone": "6362944815",
-				"name": "Yaikhomba Blr",
-				"email": "adden.company@gmail.com",
-				"created_at": "2023-05-13T16:10:12.175Z",
-				"updated_at": "2023-05-13T16:10:12.175Z"
-			},
 			"fulfillments": [
 				{
 					"id": "30386b40-7fe3-433f-88a5-163e906eccd8",
-					"tracking": false,
 					"type": "Delivery",
+					"state": {
+						"descriptor": {
+							"code": "Order-delivered"
+						}
+					},
+					"start": {
+						"time": {
+							"range": {
+								"start": "2023-05-13T16:55:26.947Z",
+								"end": "2023-05-13T17:05:26.947Z"
+							},
+							"timestamp": "2023-05-13T16:11:19.993Z"
+						}
+					},
 					"end": {
-						"location": {
-							"gps": "12.9812430000001, 77.5950340000001",
-							"address": {
-								"name": "Yaikhomba Blr",
-								"building": "Shell Petrol Pump",
-								"locality": "Bellandur",
-								"city": "Bengaluru",
-								"state": "Karnataka",
-								"country": "IND",
-								"area_code": "560001"
-							}
-						},
-						"contact": {
-							"email": "adden.company@gmail.com",
-							"phone": "6362944815"
+						"time": {
+							"range": {
+								"start": "2023-05-14T16:10:26.947Z",
+								"end": "2023-05-14T16:20:26.947Z"
+							},
+							"timestamp": "2023-05-13T16:11:19.993Z"
 						}
 					}
 				}
 			],
-			"payment": {
-				"@ondc/org/buyer_app_finder_fee_type": "percent",
-				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
-				"@ondc/org/settlement_details": [
-					{
-						"settlement_counterparty": "seller-app",
-						"settlement_phase": "sale-amount",
-						"settlement_type": "upi",
-						"upi_address": "test@okbizaxis",
-						"beneficiary_name": "Addble"
-					}
-				]
-			},
 			"quote": {
 				"price": {
 					"currency": "INR",
-					"value": "261.19"
+					"value": "181.19"
 				},
 				"breakup": [
 					{
@@ -121,24 +94,6 @@
 							"price": {
 								"currency": "INR",
 								"value": "30"
-							}
-						}
-					},
-					{
-						"@ondc/org/item_id": "H6xWCI1ofb5UMSMkVoP1",
-						"@ondc/org/item_quantity": {
-							"count": 2
-						},
-						"@ondc/org/title_type": "item",
-						"title": "Runner beans- रनर बीन्स",
-						"price": {
-							"currency": "INR",
-							"value": "80"
-						},
-						"item": {
-							"price": {
-								"currency": "INR",
-								"value": "40"
 							}
 						}
 					},
@@ -171,7 +126,9 @@
 					}
 				],
 				"ttl": "P1D"
-			}
+			},
+			"created_at": "2023-05-13T16:10:26.947Z",
+			"updated_at": "2023-05-13T16:11:34.247Z"
 		}
 	}
 }
