@@ -7,46 +7,47 @@
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "bpp_id": "ondc-qa.gofrugalretail.com",
-        "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
-        "transaction_id": "5ae54b50-c5ba-4aea-a20b-0c9e1a0a1331",
-        "message_id": "5f56a350-ed79-4f43-8744-61d61c6b70b6",
-        "timestamp": "2023-04-25T02:59:11.002Z"
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "transaction_id": "fea6263c-0242-4b28-a829-9f739d959af7",
+        "message_id": "b9b36909-1430-4945-baa8-ea177cf74928",
+        "timestamp": "2023-05-16T03:59:55.145Z",
+        "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "72",
+            "id": "174",
             "state": "Created",
             "provider": {
-                "id": "5466-ONDC-1",
+                "id": "20978",
                 "locations": [
                     {
-                        "id": "5466-ONDC-1-3330_location"
+                        "id": "20978"
                     }
                 ]
             },
             "items": [
                 {
-                    "fulfillment_id": "1",
-                    "id": "5466-ONDC-1-1",
+                    "id": "103",
                     "quantity": {
-                        "count": 4
-                    }
+                        "count": 3
+                    },
+                    "fulfillment_id": "20978"
                 },
                 {
-                    "fulfillment_id": "1",
-                    "id": "5466-ONDC-1-12",
+                    "id": "104",
                     "quantity": {
                         "count": 2
-                    }
+                    },
+                    "fulfillment_id": "20978"
                 }
             ],
             "billing": {
-                "name": "Rajiv Singh",
+                "name": "RajivSingh",
                 "address": {
-                    "name": "Rajiv Singh",
-                    "building": "15/11, KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-                    "locality": "15/11, KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                    "name": "RajivSingh",
+                    "building": "15/11,KGHalli,D'SouzaLayout,AshokNagar,Bengaluru,Karnataka560001,India",
+                    "locality": "15/11,KGHalli,D'SouzaLayout,AshokNagar,Bengaluru,Karnataka560001,India",
                     "city": "Bengaluru",
                     "state": "Karnataka",
                     "country": "India",
@@ -54,8 +55,8 @@
                 },
                 "phone": "+918302010971",
                 "email": "",
-                "created_at": "2023-04-25T02:57:58.364Z",
-                "updated_at": "2023-04-25T02:57:58.364Z"
+                "created_at": "2023-05-16T03:59:04.888Z",
+                "updated_at": "2023-05-16T03:59:04.888Z"
             },
             "fulfillments": [
                 {
@@ -73,107 +74,114 @@
                                 "name": "RajivSingh",
                                 "state": "Karnataka"
                             },
-                            "circle": {},
-                            "descriptor": {},
-                            "gps": "12.971605934588519,77.59456269443035",
-                            "time": {
-                                "range": {},
-                                "schedule": {
-                                    "holidays": [],
-                                    "times": []
-                                }
-                            }
+                            "gps": "12.971609528512422,77.59456269443035"
+                        },
+                        "person": {
+                            "name": "Rajiv Singh"
                         }
                     },
-                    "id": "1",
-                    "provider_id": "5466-ONDC-1",
+                    "id": "20978",
                     "tracking": false,
                     "type": "Delivery"
                 }
             ],
             "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "785.00"
+                },
                 "breakup": [
                     {
+                        "@ondc/org/item_id": "103",
                         "@ondc/org/item_quantity": {
-                            "count": 4
+                            "count": 3
                         },
+                        "@ondc/org/title_type": "ITEM",
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "100.00"
+                                "value": "149.00"
                             }
                         },
-                        "@ondc/org/item_id": "5466-ONDC-1-1",
+                        "title": "Veg Manchow",
                         "price": {
                             "currency": "INR",
-                            "value": "400.00"
-                        },
-                        "title": "KIT KAT",
-                        "@ondc/org/title_type": "item"
+                            "value": "447.00"
+                        }
                     },
                     {
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/title_type": "TAX",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "104",
                         "@ondc/org/item_quantity": {
                             "count": 2
                         },
+                        "@ondc/org/title_type": "ITEM",
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "300.00"
+                                "value": "169.00"
                             }
                         },
-                        "@ondc/org/item_id": "5466-ONDC-1-12",
+                        "title": "Chicken Manchow",
                         "price": {
                             "currency": "INR",
-                            "value": "600.00"
-                        },
-                        "title": "DAIRY MILK",
-                        "@ondc/org/title_type": "item"
+                            "value": "338.00"
+                        }
                     },
                     {
-                        "@ondc/org/item_quantity": {},
-                        "item": {},
-                        "@ondc/org/item_id": "3908FF04D336D828908AF90D2C820164",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "TAX",
+                        "title": "Tax",
                         "price": {
                             "currency": "INR",
-                            "value": "200.00"
-                        },
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "20978",
+                        "@ondc/org/title_type": "DELIVERY",
                         "title": "Delivery charges",
-                        "@ondc/org/title_type": "delivery"
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
                     }
                 ],
-                "price": {
-                    "currency": "INR",
-                    "value": "1200.00"
-                },
-                "ttl": "P5D"
+                "ttl": "PT30M"
             },
             "payment": {
                 "params": {
-                    "amount": "1200.00",
+                    "amount": "785.00",
                     "currency": "INR",
-                    "transaction_id": "1682391509089"
+                    "transaction_id": "1684209590823"
                 },
                 "type": "ON-ORDER",
                 "status": "PAID",
                 "collected_by": "BAP",
-                "@ondc/org/buyer_app_finder_fee_type": "Percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3",
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
                         "settlement_phase": "sale-amount",
                         "settlement_type": "neft",
-                        "settlement_bank_account_no": "910020019889016",
-                        "settlement_ifsc_code": "UTIB0000234",
-                        "bank_name": "Axis Bank",
-                        "branch_name": "Velachery-Chennai",
-                        "beneficiary_name": "M/s Gofrugal Technologies Private Ltd",
-                        "settlement_status": "NOT-PAID"
+                        "settlement_bank_account_no": "10112822953",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED"
                     }
                 ]
             },
-            "created_at": "2023-04-25T02:59:11.020Z",
-            "updated_at": "2023-04-25T02:59:11.020Z"
+            "created_at": "2023-05-16T03:59:55.145Z",
+            "updated_at": "2023-05-16T03:59:55.145Z"
         }
     }
 }

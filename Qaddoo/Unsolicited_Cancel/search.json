@@ -7,19 +7,30 @@
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "transaction_id": "fb993206-c155-499f-a4bc-b37436957758",
-        "message_id": "4ffc6b1e-39c1-4217-b15a-4dd24d7d2007",
-        "timestamp": "2023-04-25T10:35:58.126Z",
+        "transaction_id": "558f454c-7700-4ff0-9ce0-4f8ec2270e3b",
+        "message_id": "7425697f-9e3c-4f23-9c59-8124de1e3c9d",
+        "timestamp": "2023-05-16T03:48:46.480Z",
         "ttl": "PT30S"
     },
     "message": {
         "intent": {
             "fulfillment": {
-                "type": "Delivery"
+                "type": "Delivery",
+                "tracking": false,
+                "end": {
+                    "location": {
+                        "gps": "12.9715987,77.5945627"
+                    }
+                }
             },
             "payment": {
-                "@ondc/org/buyer_app_finder_fee_type": "Percent",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3"
+            },
+            "item": {
+                "descriptor": {
+                    "name": "cherrylicious"
+                }
             }
         }
     }
