@@ -1,0 +1,192 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "preprod-sellerapp.shiprocket.com",
+        "bpp_uri": "https://preprod-sellerapp.shiprocket.com/shiprocket",
+        "transaction_id": "7596a29e-bd31-48f7-9e09-f7eaf207f632",
+        "message_id": "ffb9cf46-8198-4ef9-8e23-0fcbc9011347",
+        "timestamp": "2023-05-16T17:26:35.606Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-05-16-402080",
+            "state": "In-progress",
+            "provider": {
+                "id": "b083db8904c8bcba29b97f071ba733d5",
+                "locations": [
+                    {
+                        "id": "b083db8904c8bcba29b97f071ba733d5"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
+                    "fulfillment_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "quantity": {
+                        "count": 2
+                    }
+                },
+                {
+                    "id": "61D478C41B717F704FDCA19E381C58A4_43914034970883_default",
+                    "fulfillment_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1899.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Shanaya Luxury Attar Perfume - 12 ML",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1300.00"
+                        },
+                        "@ondc/org/item_id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "650.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Leader Luxury Attar Perfume - 6 ML",
+                        "price": {
+                            "currency": "INR",
+                            "value": "599.00"
+                        },
+                        "@ondc/org/item_id": "61D478C41B717F704FDCA19E381C58A4_43914034970883_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "599.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "documents": [
+                {
+                    "url": "https://static.shopalyst.com/assets/campaigns/invoice_jajee.jpeg",
+                    "label": "Invoice"
+                }
+            ],
+            "billing": {
+                "name": "Kishor",
+                "address": {
+                    "name": "Kishor",
+                    "building": "Shopalyst",
+                    "locality": "288, 36th Cross road, 7th block Jayanagar",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560070"
+                },
+                "email": "kishor.gandham@gmail.com",
+                "phone": "9123456789",
+                "created_at": "2023-05-16T17:16:49.772Z",
+                "updated_at": "2023-05-16T17:16:49.772Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "type": "Delivery",
+                    "tracking": true,
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "b083db8904c8bcba29b97f071ba733d5"
+                            },
+                            "gps": "12.9236881,77.5750117"
+                        },
+                        "contact": {
+                            "phone": "8128613466",
+                            "email": "info@adilqadri.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.923479, 77.564663",
+                            "address": {
+                                "name": "Kishor",
+                                "building": "Shopalyst",
+                                "locality": "288, 36th Cross road, 7th block Jayanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560070"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9123456789"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Packed"
+                        }
+                    },
+                    "@ondc/org/provider_name": "Adilqadri"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
+                    }
+                ],
+                "params": {
+                    "transaction_id": "ONDC-7596a29e-bd31-48f7-9e09-f7eaf207f632-1",
+                    "amount": "1899",
+                    "currency": "INR"
+                }
+            },
+            "created_at": "2023-05-16T17:17:03.970Z",
+            "updated_at": "2023-05-16T17:26:35.585Z"
+        }
+    }
+}

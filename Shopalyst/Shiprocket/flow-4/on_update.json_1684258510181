@@ -1,0 +1,132 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "preprod-sellerapp.shiprocket.com",
+        "bpp_uri": "https://preprod-sellerapp.shiprocket.com/shiprocket",
+        "transaction_id": "7596a29e-bd31-48f7-9e09-f7eaf207f632",
+        "message_id": "a0893fe4-d931-4299-8301-4f23f895990a",
+        "timestamp": "2023-05-16T17:34:18.732Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-05-16-402080",
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
+                    "fulfillment_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "quantity": {
+                        "count": 2
+                    }
+                },
+                {
+                    "id": "61D478C41B717F704FDCA19E381C58A4_43914034970883_default",
+                    "fulfillment_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "tags": {
+                        "status": "Liquidated"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1300.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Shanaya Luxury Attar Perfume - 12 ML",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1300.00"
+                        },
+                        "@ondc/org/item_id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "650.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "type": "Delivery",
+                    "tracking": true,
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "b083db8904c8bcba29b97f071ba733d5"
+                            },
+                            "gps": "12.9236881,77.5750117"
+                        },
+                        "time": {
+                            "timestamp": "2023-05-16T17:29:25.153Z",
+                            "range": {
+                                "start": "2023-05-16T17:28:25.153Z",
+                                "end": "2023-05-16T17:29:25.153Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8128613466",
+                            "email": "info@adilqadri.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.923479, 77.564663",
+                            "address": {
+                                "name": "Kishor",
+                                "building": "Shopalyst",
+                                "locality": "288, 36th Cross road, 7th block Jayanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560070"
+                            }
+                        },
+                        "time": {
+                            "timestamp": "2023-05-16T17:33:28.132Z",
+                            "range": {
+                                "start": "2023-05-16T17:31:14.737Z",
+                                "end": "2023-05-16T17:33:28.132Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9123456789"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "@ondc/org/provider_name": "Adilqadri"
+                }
+            ]
+        }
+    }
+}
