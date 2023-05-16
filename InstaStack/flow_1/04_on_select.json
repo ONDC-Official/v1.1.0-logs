@@ -1,117 +1,147 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "action": "on_select",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "bpp_id": "seller.instastack.io",
-      "bpp_uri": "https://seller.instastack.io/pre-prod",
-      "transaction_id": "bc6ea759-8046-4244-b53f-cc5d51806659",
-      "message_id": "de12a033-4786-4a4b-a736-ad381a848112",
-      "city": "std:022",
-      "country": "IND",
-      "timestamp": "2023-04-19T07:52:07.849Z"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e"
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "seller.instastack.io",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "378ba29a-5057-47cb-846f-778413dbe360",
+    "message_id": "ea7fec7a-af0c-4e19-8967-5933940d50a2",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-05-04T08:58:28.370Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+      },
+      "items": [
+        {
+          "fulfillment_id": "1",
+          "id": "1328"
         },
-        "items": [
-          {
-            "fulfillment_id": "1",
-            "id": "110764"
-          },
-          {
-            "fulfillment_id": "1",
-            "id": "143129"
-          }
-        ],
-        "fulfillments": [
-          {
-            "id": "1",
-            "@ondc/org/provider_name": "Dunzo and others",
-            "tracking": false,
-            "@ondc/org/category": "Immediate Delivery",
-            "@ondc/org/TAT": "PT6H",
-            "state": {
-              "descriptor": {
-                "code": "Serviceable"
-              }
-            }
-          }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "1409"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "110764",
-              "@ondc/org/item_quantity": {
-                "count": 4
-              },
-              "title": "Maggi Tomato Ketchup, 500 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "460"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "100"
-                  },
-                  "maximum": {
-                    "count": "100"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "115.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "143129",
-              "@ondc/org/item_quantity": {
-                "count": 5
-              },
-              "title": "Maggi 2 Minute Instant Masala Noodles, 840 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "900"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "100"
-                  },
-                  "maximum": {
-                    "count": "100"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "180.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "49"
-              }
-            }
-          ],
-          "ttl": "P1D"
+        {
+          "fulfillment_id": "1",
+          "id": "3126"
+        },
+        {
+          "fulfillment_id": "1",
+          "id": "3350"
         }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "Dunzo and others",
+          "tracking": false,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT6H",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "924"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "1328",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Red Bull Yellow Edition Energy Drink, 250 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "145"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "145.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "3126",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Red Bull Energy Drink, Sugar Free, 250 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "250"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "125.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "3350",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "title": "Red Bull Energy Drink, 350 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "480"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "160.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          }
+        ],
+        "ttl": "P1D"
       }
     }
   }
+}

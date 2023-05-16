@@ -1,182 +1,174 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "confirm",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_uri": "https://seller.instastack.io/pre-prod",
-      "transaction_id": "f764ceab-6bfc-4fb7-837a-7cb82a733676",
-      "message_id": "dac13c86-e368-4b99-95a4-4abcb98f63ec",
-      "timestamp": "2023-04-19T17:27:27.447Z",
-      "bpp_id": "seller.instastack.io",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "order": {
-        "id": "2023-04-19-994644",
-        "state": "Created",
-        "billing": {
-          "address": {
-            "name": "Ajinkya Shelar",
-            "building": "Rustomjee Azziano",
-            "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
-            "city": "Thane",
-            "state": "Maharashtra",
-            "country": "IND",
-            "area_code": "400601"
-          },
-          "phone": "9833875151",
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "ab7b2599-3d8a-4ebd-afc0-9ee331d3f8e2",
+    "message_id": "cc095aee-ae79-4e2b-9624-6d533908416b",
+    "timestamp": "2023-05-04T11:10:12.157Z",
+    "bpp_id": "seller.instastack.io",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-05-04-822628",
+      "state": "Created",
+      "billing": {
+        "address": {
           "name": "Ajinkya Shelar",
-          "email": "ajinkya@instastack.io",
-          "created_at": "2023-04-19T17:26:52.128Z",
-          "updated_at": "2023-04-19T17:26:52.128Z"
+          "building": "Rustomjee Azziano",
+          "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+          "city": "Thane",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400601"
         },
-        "items": [
+        "phone": "9833875151",
+        "name": "Ajinkya Shelar",
+        "email": "ajinkya@instastack.io",
+        "created_at": "2023-05-04T11:09:54.738Z",
+        "updated_at": "2023-05-04T11:09:54.738Z"
+      },
+      "items": [
+        {
+          "id": "143141",
+          "quantity": {
+            "count": 5
+          },
+          "fulfillment_id": "1"
+        }
+      ],
+      "provider": {
+        "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e",
+        "locations": [
           {
-            "id": "3616",
-            "quantity": {
-              "count": 4
+            "id": "33159776-98ca-4f75-a24b-eee54d067540"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "end": {
+            "contact": {
+              "phone": "9833875151"
             },
-            "fulfillment_id": "1"
+            "person": {
+              "name": "Ajinkya Shelar"
+            },
+            "location": {
+              "gps": "19.199325, 72.978958",
+              "address": {
+                "name": "Ajinkya Shelar",
+                "building": "Rustomjee Azziano",
+                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                "city": "Thane",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400601"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "139",
+          "currency": "INR",
+          "transaction_id": "ONDC-ab7b2599-3d8a-4ebd-afc0-9ee331d3f8e2-1"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "thor@okicicicicic",
+            "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+            "settlement_ifsc_code": "someIFSC",
+            "beneficiary_name": "Thor",
+            "bank_name": "Marvels Bank",
+            "branch_name": "Asgard"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "139"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "143141",
+            "@ondc/org/item_quantity": {
+              "count": 5
+            },
+            "title": "Maggi 2 Minute Chicken Noodles, 76 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "90"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "18.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "143141",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
           }
         ],
-        "provider": {
-          "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
-          "locations": [
-            {
-              "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
-            }
-          ]
-        },
-        "fulfillments": [
-          {
-            "id": "1",
-            "end": {
-              "contact": {
-                "phone": "9833875151"
-              },
-              "person": {
-                "name": "Ajinkya Shelar"
-              },
-              "location": {
-                "gps": "19.199325, 72.978958",
-                "address": {
-                  "name": "Ajinkya Shelar",
-                  "building": "Rustomjee Azziano",
-                  "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
-                  "city": "Thane",
-                  "state": "Maharashtra",
-                  "country": "IND",
-                  "area_code": "400601"
-                }
-              }
-            },
-            "type": "Delivery"
-          }
-        ],
-        "payment": {
-          "uri": "https://juspay.in/",
-          "tl_method": "http/get",
-          "params": {
-            "amount": "169",
-            "currency": "INR",
-            "transaction_id": "ONDC-f764ceab-6bfc-4fb7-837a-7cb82a733676-1"
-          },
-          "status": "PAID",
-          "type": "ON-ORDER",
-          "collected_by": "BAP",
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-          "@ondc/org/settlement_details": [
-            {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "upi",
-              "settlement_type": "seller-app",
-              "upi_address": "thor @okicicicicic",
-              "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
-              "settlement_ifsc_code": "someIFSC",
-              "beneficiary_name": "Thor",
-              "bank_name": "Marvels Bank",
-              "branch_name": "Asgard"
-            }
-          ]
-        },
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "169"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "3616",
-              "@ondc/org/item_quantity": {
-                "count": 4
-              },
-              "title": "Maggi Vegetable Masala Atta Noodles, 80 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "120"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "100"
-                  },
-                  "maximum": {
-                    "count": "100"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "30.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "3616",
-              "title": "Tax",
-              "@ondc/org/title_type": "tax",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "49"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Packing charges",
-              "@ondc/org/title_type": "packing",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Convenience Fee",
-              "@ondc/org/title_type": "misc",
-              "price": {
-                "currency": "INR",
-                "value": "0"
-              }
-            }
-          ],
-          "ttl": "P1D"
-        },
-        "created_at": "2023-04-19T17:27:27.447Z",
-        "updated_at": "2023-04-19T17:27:27.447Z"
-      }
+        "ttl": "P1D"
+      },
+      "created_at": "2023-05-04T11:10:12.157Z",
+      "updated_at": "2023-05-04T11:10:12.157Z"
     }
   }
+}

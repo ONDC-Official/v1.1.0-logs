@@ -1,0 +1,50 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "update",
+		"core_version": "1.1.0",
+		"transaction_id": "b733e0ca-2408-4977-9c18-7dc6e36fcb46",
+		"bap_id": "preprod-ondc.addble.com",
+		"bap_uri": "https://preprod-ondc.addble.com/",
+		"message_id": "c0009fb6-4091-4b3a-956a-9ca0134e32b4",
+		"timestamp": "2023-05-13T14:06:14.654Z",
+		"ttl": "PT30S",
+		"bpp_id": "ondc-dev.delhivery.com",
+		"bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/"
+	},
+	"message": {
+		"update_target": "fulfillment",
+		"order": {
+			"id": "b7bd105b-7f4e-4ec9-8c90-137158f56015",
+			"state": "Accepted",
+			"fulfillments": [
+				{
+					"id": "1",
+					"tags": {
+						"@ondc/org/order_ready_to_ship": "yes"
+					},
+					"type": "Delivery",
+					"start": {
+						"instructions": {
+							"short_desc": "556734",
+							"long_desc": "Scan QR Code attached to package"
+						}
+					},
+					"@ondc/org/awb_no": "352030577572"
+				}
+			],
+			"items": [
+				{
+					"id": "f27a0e45-a47b-4ab2-8679-ba1664fd1e7b",
+					"category_id": "Express Delivery",
+					"descriptor": {
+						"code": "P2H2P"
+					}
+				}
+			],
+			"updated_at": "2023-05-13T14:06:14.654Z"
+		}
+	}
+}
