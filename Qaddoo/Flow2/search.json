@@ -7,19 +7,30 @@
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "transaction_id": "5ae54b50-c5ba-4aea-a20b-0c9e1a0a1331",
-        "message_id": "845b2421-a503-4be4-8155-0fc66a4197a3",
-        "timestamp": "2023-04-25T02:52:12.318Z",
+        "transaction_id": "fea6263c-0242-4b28-a829-9f739d959af7",
+        "message_id": "ab177a50-7c16-494c-90f5-217317036963",
+        "timestamp": "2023-05-16T03:55:18.084Z",
         "ttl": "PT30S"
     },
     "message": {
         "intent": {
             "fulfillment": {
-                "type": "Delivery"
+                "type": "Delivery",
+                "tracking": false,
+                "end": {
+                    "location": {
+                        "gps": "12.9715987,77.5945627"
+                    }
+                }
             },
             "payment": {
-                "@ondc/org/buyer_app_finder_fee_type": "Percent",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3"
+            },
+            "item": {
+                "descriptor": {
+                    "name": "manchow"
+                }
             }
         }
     }
