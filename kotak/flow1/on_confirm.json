@@ -3,27 +3,28 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_update",
+        "action": "on_confirm",
         "core_version": "1.1.0",
         "bap_id": "cloud-adaptor.proteantech.in/kotak",
         "bap_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/buyer-v4/buyer/adaptor",
         "bpp_id": "preprod-jajee-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
-        "transaction_id": "431078277942226200",
-        "message_id": "947e69bf-e53c-4c21-a070-d4fd9c1cc714",
-        "timestamp": "2023-05-12T07:32:04.056Z"
+        "transaction_id": "631492584855805700",
+        "message_id": "b50e2876-bec9-4fe3-9849-0ee828f4a693",
+        "timestamp": "2023-05-16T12:12:57.047Z"
     },
     "message": {
         "order": {
-            "id": "KC715345E",
-            "state": "Completed",
+            "id": "KE1E90A9D",
+            "state": "Accepted",
             "provider": {
                 "id": "preprod-jajee-bpp.shopalyst.com",
                 "locations": [
                     {
                         "id": "5692eae837b7a1d2b7ebd8e6bd251b51"
                     }
-                ]
+                ],
+                "rateable": true
             },
             "items": [
                 {
@@ -41,13 +42,6 @@
                     }
                 },
                 {
-                    "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043596035_default",
-                    "fulfillment_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
-                    "quantity": {
-                        "count": 1
-                    }
-                },
-                {
                     "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043694339_default",
                     "fulfillment_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
                     "quantity": {
@@ -58,11 +52,11 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "740.00"
+                    "value": "700.00"
                 },
                 "breakup": [
                     {
-                        "title": "RAISINS/KHISMISH/MANUKKA - 500g",
+                        "title": "RAISINS/KHISMISH/MANUKKA 500g",
                         "price": {
                             "currency": "INR",
                             "value": "200.00"
@@ -80,7 +74,7 @@
                         "@ondc/org/title_type": "item"
                     },
                     {
-                        "title": "RAISINS/KHISMISH/MANUKKA - 250g",
+                        "title": "RAISINS/KHISMISH/MANUKKA 250g",
                         "price": {
                             "currency": "INR",
                             "value": "100.00"
@@ -98,25 +92,7 @@
                         "@ondc/org/title_type": "item"
                     },
                     {
-                        "title": "RAISINS/KHISMISH/MANUKKA - 100g",
-                        "price": {
-                            "currency": "INR",
-                            "value": "40.00"
-                        },
-                        "@ondc/org/item_id": "55EA20538A3151ABD81510BBB42C9CE3_43540043596035_default",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "40.00"
-                            }
-                        },
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        },
-                        "@ondc/org/title_type": "item"
-                    },
-                    {
-                        "title": "RAISINS/KHISMISH/MANUKKA - 1kg",
+                        "title": "RAISINS/KHISMISH/MANUKKA 1kg",
                         "price": {
                             "currency": "INR",
                             "value": "400.00"
@@ -146,38 +122,33 @@
                 "ttl": "PT15M"
             },
             "billing": {
-                "name": "null null",
+                "name": "Samaksh Rawat",
                 "address": {
-                    "door": "2051",
-                    "name": "null null Bengaluru Shanti Nagar Karnataka 560027",
-                    "building": "Shanti Nagar",
-                    "locality": "Shanti Nagar",
-                    "city": "Bengaluru",
+                    "door": "S - 905",
+                    "name": "Samaksh Rawat Kalaburagi Brahmapur Karnataka 585101",
+                    "building": "Brahmapur",
+                    "locality": "Brahmapur",
+                    "city": "Kalaburagi",
                     "state": "Karnataka",
                     "country": "IND",
-                    "area_code": "560027"
+                    "area_code": "585101"
                 },
-                "created_at": "2023-05-11T18:11:09.110Z",
-                "updated_at": "2023-05-11T18:11:09.110Z"
+				"phone":"9873151667",
+                "created_at": "2023-05-16T12:12:57.047Z",
+                "updated_at": "2023-05-16T12:12:57.047Z"
             },
             "fulfillments": [
                 {
                     "id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
                     "type": "Delivery",
-                    "tracking": true,
+                    "tracking": false,
                     "start": {
                         "location": {
+                            "id": "5692eae837b7a1d2b7ebd8e6bd251b51",
                             "descriptor": {
-                                "name": "5692eae837b7a1d2b7ebd8e6bd251b51"
+                                "name": "Jajee"
                             },
                             "gps": "17.3371562,76.8311261"
-                        },
-                        "time": {
-                            "timestamp": "2023-05-12T07:23:14.305Z",
-                            "range": {
-                                "start": "2023-05-12T07:22:14.305Z",
-                                "end": "2023-05-12T07:23:14.305Z"
-                            }
                         },
                         "contact": {
                             "phone": "9164607070",
@@ -186,52 +157,41 @@
                     },
                     "end": {
                         "location": {
-                            "gps": "12.958205,77.595118",
+                            "gps": "17.341391,76.8344680000001",
                             "address": {
-                                "door": "2051",
-                                "name": "null null Bengaluru Shanti Nagar Karnataka 560027",
-                                "building": "Shanti Nagar",
-                                "locality": "Shanti Nagar",
-                                "city": "Bengaluru",
+                                "door": "S - 905",
+                                "name": "Samaksh Rawat Kalaburagi Brahmapur Karnataka 585101",
+                                "building": "Brahmapur",
+                                "locality": "Brahmapur",
+                                "city": "Kalaburagi",
                                 "state": "Karnataka",
                                 "country": "IND",
-                                "area_code": "560027"
+                                "area_code": "585101"
                             }
                         },
-                        "time": {
-                            "timestamp": "2023-05-12T07:23:22.874Z",
-                            "range": {
-                                "start": "2023-05-12T07:23:17.048Z",
-                                "end": "2023-05-12T07:23:22.874Z"
-                            }
+                        "contact": {
+                            "phone": "9873151667"
                         },
-                        "contact": {}
+                        "person": {
+                            "name": "Samaksh Rawat"
+                        }
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Order-delivered"
+                            "code": "Pending"
                         }
                     },
-                    "@ondc/org/provider_name": "Jajee"
+                    "@ondc/org/provider_name": "Jajee",
+                    "rateable": true
                 }
             ],
             "payment": {
                 "type": "ON-ORDER",
                 "status": "PAID",
                 "collected_by": "BAP",
-                "@ondc/org/collected_by_status": "Agree",
-                "@ondc/org/buyer_app_finder_fee_amount": "",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
                 "@ondc/org/settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_phase": "sale-amount",
-                        "settlement_type": "neft",
-                        "settlement_bank_account_no": "1112220032274181",
-                        "settlement_ifsc_code": "RAZR0000001",
-                        "beneficiary_name": "Kishor",
-                        "bank_name": "sate bank of india",
-                        "branch_name": "manikonda"
-                    },
                     {
                         "settlement_counterparty": "seller-app",
                         "settlement_phase": "sale-amount",
@@ -244,11 +204,13 @@
                     }
                 ],
                 "params": {
-                    "transaction_id": "431078277942226200",
-                    "amount": "740.00",
+                    "transaction_id": "631492584855805700",
+                    "amount": "700.00",
                     "currency": "INR"
                 }
-            }
+            },
+            "created_at": "2023-05-16T12:12:57.047Z",
+            "updated_at": "2023-05-16T12:12:57.047Z"
         }
     }
 }
