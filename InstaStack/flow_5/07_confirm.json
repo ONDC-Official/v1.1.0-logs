@@ -8,15 +8,15 @@
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
-    "transaction_id": "ab7b2599-3d8a-4ebd-afc0-9ee331d3f8e2",
-    "message_id": "cc095aee-ae79-4e2b-9624-6d533908416b",
-    "timestamp": "2023-05-04T11:10:12.157Z",
+    "transaction_id": "ce81f73e-e1ca-4226-8e3a-f60ae2e2f977",
+    "message_id": "c9891581-3aab-44e5-92a8-2d57f0bbc9dd",
+    "timestamp": "2023-05-17T05:46:38.130Z",
     "bpp_id": "seller.instastack.io",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "2023-05-04-822628",
+      "id": "2023-05-17-221940",
       "state": "Created",
       "billing": {
         "address": {
@@ -31,23 +31,30 @@
         "phone": "9833875151",
         "name": "Ajinkya Shelar",
         "email": "ajinkya@instastack.io",
-        "created_at": "2023-05-04T11:09:54.738Z",
-        "updated_at": "2023-05-04T11:09:54.738Z"
+        "created_at": "2023-05-17T05:46:14.491Z",
+        "updated_at": "2023-05-17T05:46:14.491Z"
       },
       "items": [
         {
-          "id": "143141",
+          "id": "3350",
           "quantity": {
-            "count": 5
+            "count": 10
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "104910",
+          "quantity": {
+            "count": 2
           },
           "fulfillment_id": "1"
         }
       ],
       "provider": {
-        "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e",
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
         "locations": [
           {
-            "id": "33159776-98ca-4f75-a24b-eee54d067540"
+            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
           }
         ]
       },
@@ -81,9 +88,9 @@
         "uri": "https://juspay.in/",
         "tl_method": "http/get",
         "params": {
-          "amount": "139",
+          "amount": "2609",
           "currency": "INR",
-          "transaction_id": "ONDC-ab7b2599-3d8a-4ebd-afc0-9ee331d3f8e2-1"
+          "transaction_id": "ONDC-ce81f73e-e1ca-4226-8e3a-f60ae2e2f977-1"
         },
         "status": "PAID",
         "type": "ON-ORDER",
@@ -107,29 +114,56 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "139"
+          "value": "2609"
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "143141",
+            "@ondc/org/item_id": "3350",
             "@ondc/org/item_quantity": {
-              "count": 5
+              "count": 10
             },
-            "title": "Maggi 2 Minute Chicken Noodles, 76 g",
+            "title": "Red Bull Energy Drink, 350 ml",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "90"
+              "value": "1600"
             },
             "item": {
               "price": {
                 "currency": "INR",
-                "value": "18.00"
+                "value": "160.00"
               }
             }
           },
           {
-            "@ondc/org/item_id": "143141",
+            "@ondc/org/item_id": "3350",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "104910",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Red Bull Energy Drink, 4x250 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "960"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "480.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "104910",
             "title": "Tax",
             "@ondc/org/title_type": "tax",
             "price": {
@@ -167,8 +201,8 @@
         ],
         "ttl": "P1D"
       },
-      "created_at": "2023-05-04T11:10:12.157Z",
-      "updated_at": "2023-05-04T11:10:12.157Z"
+      "created_at": "2023-05-17T05:46:38.130Z",
+      "updated_at": "2023-05-17T05:46:38.130Z"
     }
   }
 }
