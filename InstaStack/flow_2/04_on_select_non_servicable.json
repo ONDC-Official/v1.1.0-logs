@@ -7,11 +7,11 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_id": "seller.instastack.io",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
-    "transaction_id": "0df5dda9-1779-4100-8907-33f7fd68813c",
-    "message_id": "1dd7f976-0d4a-44c3-92e9-6e919a2c5c2b",
+    "transaction_id": "c043e55b-9c28-4577-a0cc-380464d0c52b",
+    "message_id": "a69c8923-a7b7-4c20-8432-bc394d90af71",
     "city": "std:080",
     "country": "IND",
-    "timestamp": "2023-05-16T15:08:25.192Z"
+    "timestamp": "2023-05-18T08:36:04.402Z"
   },
   "message": {
     "order": {
@@ -25,10 +25,6 @@
         },
         {
           "fulfillment_id": "1",
-          "id": "102688"
-        },
-        {
-          "fulfillment_id": "1",
           "id": "150059"
         }
       ],
@@ -38,7 +34,7 @@
           "@ondc/org/provider_name": "Dunzo and others",
           "tracking": false,
           "@ondc/org/category": "Immediate Delivery",
-          "@ondc/org/TAT": "PT6H",
+          "@ondc/org/TAT": "PT1H",
           "state": {
             "descriptor": {
               "code": "Non-serviceable"
@@ -49,7 +45,7 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1310"
+          "value": "580"
         },
         "breakup": [
           {
@@ -66,10 +62,10 @@
             "item": {
               "quantity": {
                 "available": {
-                  "count": "10"
+                  "count": "100"
                 },
                 "maximum": {
-                  "count": "10"
+                  "count": "100"
                 }
               },
               "price": {
@@ -88,58 +84,23 @@
             }
           },
           {
-            "@ondc/org/item_id": "102688",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            },
-            "title": "Cadbury Bournvita Refill, 1 kg",
-            "@ondc/org/title_type": "item",
-            "price": {
-              "currency": "INR",
-              "value": "850"
-            },
-            "item": {
-              "quantity": {
-                "available": {
-                  "count": "10"
-                },
-                "maximum": {
-                  "count": "10"
-                }
-              },
-              "price": {
-                "currency": "INR",
-                "value": "425.00"
-              }
-            }
-          },
-          {
-            "@ondc/org/item_id": "102688",
-            "title": "Tax",
-            "@ondc/org/title_type": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "0"
-            }
-          },
-          {
             "@ondc/org/item_id": "150059",
             "@ondc/org/item_quantity": {
-              "count": 2
+              "count": 6
             },
             "title": "Kwality Wall's Cadbury Gems Cup, 55 ml",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "60"
+              "value": "180"
             },
             "item": {
               "quantity": {
                 "available": {
-                  "count": "10"
+                  "count": "100"
                 },
                 "maximum": {
-                  "count": "10"
+                  "count": "100"
                 }
               },
               "price": {
@@ -182,7 +143,7 @@
   },
   "error": {
     "code": "30010",
-    "type": "Seller App",
+    "type": "DOMAIN-ERROR",
     "message": "Delivery distance exceeds the maximum serviceability distance"
   }
 }
