@@ -4,189 +4,204 @@
         "country": "IND",
         "city": "std:080",
         "action": "on_confirm",
+        "timestamp": "2023-05-19T06:44:40.642Z",
+        "ttl": "PT30S",
         "core_version": "1.1.0",
         "bap_id": "cloud-adaptor.proteantech.in/kotak",
         "bap_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/buyer-v4/buyer/adaptor",
-        "bpp_id": "preprod-jajee-bpp.shopalyst.com",
-        "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
-        "transaction_id": "689841117655996400",
-        "message_id": "5e585c9e-9aac-491f-bf30-7790fb2f3493",
-        "timestamp": "2023-05-18T05:21:41.775Z"
+        "bpp_id": "vlccpreprod.thesellerapp.com",
+        "bpp_uri": "https://vlccpreprod.thesellerapp.com/preprod/v1",
+        "transaction_id": "653937692929852500",
+        "message_id": "c21eeb0f-702a-4b01-979e-e69cdafef438"
     },
     "message": {
         "order": {
-            "id": "K87128FDD",
-            "state": "Accepted",
+            "id": "KA2A9710D",
+            "state": "Created",
             "provider": {
-                "id": "preprod-jajee-bpp.shopalyst.com",
+                "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
                 "locations": [
                     {
-                        "id": "5692eae837b7a1d2b7ebd8e6bd251b51"
+                        "id": "81410916650"
                     }
                 ],
                 "rateable": true
             },
             "items": [
                 {
-                    "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043661571_default",
-                    "fulfillment_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
+                    "id": "44618414653738",
                     "quantity": {
                         "count": 1
-                    }
+                    },
+                    "fulfillment_id": "cbd118f4-5d74-438b-a405-3a39055ca181"
                 },
                 {
-                    "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043628803_default",
-                    "fulfillment_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
+                    "id": "44623943696682",
                     "quantity": {
-                        "count": 2
+                        "count": 1
+                    },
+                    "fulfillment_id": "cbd118f4-5d74-438b-a405-3a39055ca181"
+                }
+            ],
+            "billing": {
+                "name": "Taukil Ali",
+                "address": {
+                    "name": "Taukil Ali ITPL Main Road, EOIZ Industrial Area, Bengaluru, Karnataka. Pin-560066 (India)",
+                    "building": "EOIZ Industrial Area",
+                    "locality": "EOIZ Industrial Area",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "door": "T/507",
+                    "area_code": "560066"
+                },
+                "email": "taukil.ali@kotak.com",
+                "phone": "9958452908",
+                "updated_at": "2023-05-19T06:44:33.069Z",
+                "created_at": "2023-05-19T06:44:33.069Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "cbd118f4-5d74-438b-a405-3a39055ca181",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "end": {
+                        "location": {
+                            "gps": "12.9872810000001,77.7321000000001",
+                            "address": {
+                                "name": "Taukil Ali ITPL Main Road, EOIZ Industrial Area, Bengaluru, Karnataka. Pin-560066 (India)",
+                                "building": "EOIZ Industrial Area",
+                                "locality": "EOIZ Industrial Area",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "door": "T/507",
+                                "area_code": "560066"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9958452908",
+                            "email": "taukil.ali@kotak.com"
+                        },
+                        "person": {
+                            "name": "Taukil Ali"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-05-19T06:44:40.642Z",
+                                "end": "2023-05-25T06:44:42.061Z"
+                            }
+                        }
+                    },
+                    "provider_id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
+                    "@ondc/org/provider_name": "VLCC Personal Care",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "id": "81410916650",
+                            "descriptor": {
+                                "name": "VLCC Personal Care"
+                            },
+                            "gps": "13.0722683, 77.3231792"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-05-19T06:44:40.642Z",
+                                "end": "2023-05-25T06:44:42.061Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "18001028522",
+                            "email": "customercare@vlccpersonalcare.com"
+                        }
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "420.00"
+                    "value": "710"
                 },
                 "breakup": [
                     {
-                        "title": "RAISINS/KHISMISH/MANUKKA 500g",
-                        "price": {
-                            "currency": "INR",
-                            "value": "200.00"
-                        },
-                        "@ondc/org/item_id": "55EA20538A3151ABD81510BBB42C9CE3_43540043661571_default",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "200.00"
-                            }
-                        },
+                        "@ondc/org/item_id": "44623943696682",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         },
-                        "@ondc/org/title_type": "item"
-                    },
-                    {
-                        "title": "RAISINS/KHISMISH/MANUKKA 250g",
+                        "title": "VLCC Eternal Youth Skin Firming Day Cream SPF 15 (50gm)",
+                        "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "200.00"
+                            "value": "280"
                         },
-                        "@ondc/org/item_id": "55EA20538A3151ABD81510BBB42C9CE3_43540043628803_default",
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "100.00"
+                                "value": "280"
                             }
-                        },
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item"
+                        }
                     },
                     {
-                        "title": "Delivery Charges",
+                        "@ondc/org/item_id": "44618414653738",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "VLCC Pedi Glow Foot Care Kit(295gm)",
+                        "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "20.00"
+                            "value": "430"
                         },
-                        "@ondc/org/item_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
-                        "@ondc/org/title_type": "delivery"
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "430"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "cbd118f4-5d74-438b-a405-3a39055ca181",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
                     }
                 ],
-                "ttl": "PT15M"
+                "ttl": "P1D"
             },
-            "billing": {
-                "name": "Taukil Ali",
-                "address": {
-                    "door": "S - 905",
-                    "name": "Taukil Ali Kalaburagi Brahmapur Karnataka 585101",
-                    "building": "Brahmapur",
-                    "locality": "Brahmapur",
-                    "city": "Kalaburagi",
-                    "state": "Karnataka",
-                    "country": "IND",
-                    "area_code": "585101"
-                },
-                "email": "taukil.ali@kotak.com",
-                "phone": "9958452908",
-                "created_at": "2023-05-18T05:21:31.570Z",
-                "updated_at": "2023-05-18T05:21:31.570Z"
-            },
-            "fulfillments": [
-                {
-                    "id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
-                    "type": "Delivery",
-                    "tracking": false,
-                    "start": {
-                        "location": {
-                            "id": "5692eae837b7a1d2b7ebd8e6bd251b51",
-                            "descriptor": {
-                                "name": "Jajee"
-                            },
-                            "gps": "17.3371562,76.8311261"
-                        },
-                        "contact": {
-                            "phone": "9164607070",
-                            "email": "support@jajee.in"
-                        }
-                    },
-                    "end": {
-                        "location": {
-                            "gps": "17.341391,76.8344680000001",
-                            "address": {
-                                "door": "S - 905",
-                                "name": "Taukil Ali Kalaburagi Brahmapur Karnataka 585101",
-                                "building": "Brahmapur",
-                                "locality": "Brahmapur",
-                                "city": "Kalaburagi",
-                                "state": "Karnataka",
-                                "country": "IND",
-                                "area_code": "585101"
-                            }
-                        },
-                        "contact": {
-                            "phone": "9958452908"
-                        },
-                        "person": {
-                            "name": "Taukil Ali"
-                        }
-                    },
-                    "state": {
-                        "descriptor": {
-                            "code": "Pending"
-                        }
-                    },
-                    "@ondc/org/provider_name": "Jajee",
-                    "rateable": true
-                }
-            ],
             "payment": {
+                "params": {
+                    "amount": "710",
+                    "currency": "INR",
+                    "transaction_id": "M222406"
+                },
                 "type": "ON-ORDER",
                 "status": "PAID",
                 "collected_by": "BAP",
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3",
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
                         "settlement_phase": "sale-amount",
                         "settlement_type": "neft",
-                        "settlement_bank_account_no": "1112220032274181",
-                        "settlement_ifsc_code": "RAZR0000001",
-                        "beneficiary_name": "Kishor",
-                        "bank_name": "sate bank of india",
-                        "branch_name": "manikonda"
+                        "upi_address": "8860775669@paytm",
+                        "settlement_bank_account_no": "533435045860",
+                        "settlement_ifsc_code": "ICIC0006239",
+                        "beneficiary_name": "VLCC PERSONAL CARE PRIVATE LIMITED",
+                        "bank_name": "ICICI BANK",
+                        "branch_name": "Gurugram  Chembur branch"
                     }
                 ],
-                "params": {
-                    "transaction_id": "689841117655996400",
-                    "amount": "420.00",
-                    "currency": "INR"
-                }
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
             },
-            "created_at": "2023-05-18T05:21:38.605Z",
-            "updated_at": "2023-05-18T05:21:41.775Z"
+            "created_at": "2023-05-19T06:44:40.268Z",
+            "updated_at": "2023-05-19T06:44:40.642Z"
         }
     }
 }
