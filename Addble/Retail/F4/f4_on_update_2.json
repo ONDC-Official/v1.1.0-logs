@@ -8,45 +8,53 @@
 		"bap_id": "buyer-app-preprod.ondc.org",
 		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
 		"bpp_uri": "https://preprod-ondc.addble.com/",
-		"transaction_id": "7cbf25ec-2f82-43da-936a-f72c37cb6cb3",
-		"message_id": "a89404f1-b9f2-4107-b57a-5d9eb6fe3e1f",
-		"timestamp": "2023-05-13T16:12:18.042Z",
+		"transaction_id": "ccdac321-58d6-45c6-ac80-ef3a74a18138",
+		"message_id": "83dbfd82-151f-47af-9761-bcecd13b0730",
+		"timestamp": "2023-05-21T11:12:13.341Z",
 		"bpp_id": "preprod-ondc.addble.com",
 		"ttl": "PT30S"
 	},
 	"message": {
 		"order": {
-			"id": "2023-05-13-762630",
+			"id": "2023-05-21-172358",
 			"state": "Completed",
+			"provider": {
+				"id": "UBzw4QGewWquuLE8brUS",
+				"locations": [
+					{
+						"id": "EOKJBqid0zecXCvyQBCR"
+					}
+				]
+			},
 			"items": [
 				{
 					"id": "6baca9mHQ7NLhYhz2zey",
 					"quantity": {
-						"count": 2
+						"count": 3
 					},
-					"fulfillment_id": "30386b40-7fe3-433f-88a5-163e906eccd8"
+					"fulfillment_id": "86d09585-85e0-45b3-9ace-7620666c8b5e"
 				},
 				{
 					"id": "iiMGW8nY9scWHDlhlMRx",
 					"quantity": {
 						"count": 3
 					},
-					"fulfillment_id": "30386b40-7fe3-433f-88a5-163e906eccd8"
+					"fulfillment_id": "86d09585-85e0-45b3-9ace-7620666c8b5e"
 				},
 				{
 					"id": "H6xWCI1ofb5UMSMkVoP1",
 					"quantity": {
-						"count": 2
+						"count": 3
 					},
 					"tags": {
 						"status": "Liquidated"
 					},
-					"fulfillment_id": "30386b40-7fe3-433f-88a5-163e906eccd8"
+					"fulfillment_id": "86d09585-85e0-45b3-9ace-7620666c8b5e"
 				}
 			],
 			"fulfillments": [
 				{
-					"id": "30386b40-7fe3-433f-88a5-163e906eccd8",
+					"id": "86d09585-85e0-45b3-9ace-7620666c8b5e",
 					"type": "Delivery",
 					"state": {
 						"descriptor": {
@@ -56,19 +64,19 @@
 					"start": {
 						"time": {
 							"range": {
-								"start": "2023-05-13T16:55:26.947Z",
-								"end": "2023-05-13T17:05:26.947Z"
+								"start": "2023-05-21T11:54:16.426Z",
+								"end": "2023-05-21T12:04:16.426Z"
 							},
-							"timestamp": "2023-05-13T16:11:19.993Z"
+							"timestamp": "2023-05-21T11:10:01.775Z"
 						}
 					},
 					"end": {
 						"time": {
 							"range": {
-								"start": "2023-05-14T16:10:26.947Z",
-								"end": "2023-05-14T16:20:26.947Z"
+								"start": "2023-05-21T14:24:16.426Z",
+								"end": "2023-05-21T14:34:16.426Z"
 							},
-							"timestamp": "2023-05-13T16:11:19.993Z"
+							"timestamp": "2023-05-21T11:10:15.323Z"
 						}
 					}
 				}
@@ -76,19 +84,19 @@
 			"quote": {
 				"price": {
 					"currency": "INR",
-					"value": "181.19"
+					"value": "211.19"
 				},
 				"breakup": [
 					{
 						"@ondc/org/item_id": "6baca9mHQ7NLhYhz2zey",
 						"@ondc/org/item_quantity": {
-							"count": 2
+							"count": 3
 						},
 						"@ondc/org/title_type": "item",
 						"title": "Fava Beans- बाकला",
 						"price": {
 							"currency": "INR",
-							"value": "60"
+							"value": "90"
 						},
 						"item": {
 							"price": {
@@ -134,7 +142,7 @@
 						}
 					},
 					{
-						"@ondc/org/item_id": "30386b40-7fe3-433f-88a5-163e906eccd8",
+						"@ondc/org/item_id": "86d09585-85e0-45b3-9ace-7620666c8b5e",
 						"title": "Delivery charges",
 						"@ondc/org/title_type": "delivery",
 						"price": {
@@ -144,8 +152,54 @@
 					}
 				]
 			},
-			"created_at": "2023-05-13T16:10:26.947Z",
-			"updated_at": "2023-05-13T16:12:18.042Z"
+			"payment": {
+				"@ondc/org/buyer_app_finder_fee_type": "percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_phase": "sale-amount",
+						"settlement_type": "upi",
+						"upi_address": "test@okbizaxis",
+						"beneficiary_name": "Addble"
+					}
+				],
+				"uri": "https://juspay.in/",
+				"tl_method": "http/get",
+				"params": {
+					"amount": "331.19",
+					"currency": "INR",
+					"transaction_id": "ONDC-ccdac321-58d6-45c6-ac80-ef3a74a18138-1"
+				},
+				"status": "PAID",
+				"type": "ON-ORDER",
+				"collected_by": "BAP"
+			},
+			"billing": {
+				"address": {
+					"door": "Shell Petrol Pump",
+					"building": "Shell Petrol Pump",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560001",
+					"locality": "Bellandur",
+					"name": "Yaikhomba Blr"
+				},
+				"phone": "6362944815",
+				"name": "Yaikhomba Blr",
+				"email": "adden.company@gmail.com",
+				"created_at": "2023-05-21T11:08:53.681Z",
+				"updated_at": "2023-05-21T11:08:53.681Z"
+			},
+			"documents": [
+				{
+					"url": "https://preprod-invoices.addble.com/v1/ondc/2023-05-21-172358",
+					"label": "Invoice"
+				}
+			],
+			"created_at": "2023-05-21T11:09:16.426Z",
+			"updated_at": "2023-05-21T11:12:13.341Z"
 		}
 	}
 }
