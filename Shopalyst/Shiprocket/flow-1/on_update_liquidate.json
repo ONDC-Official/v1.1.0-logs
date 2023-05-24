@@ -9,22 +9,15 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "preprod-sellerapp.shiprocket.com",
         "bpp_uri": "https://preprod-sellerapp.shiprocket.com/shiprocket",
-        "transaction_id": "adb576a6-693f-4d15-a41a-4f136fdf9527",
-        "message_id": "db2e7d59-44e6-4358-aecb-947435c55e50",
-        "timestamp": "2023-05-16T15:40:12.990Z"
+        "transaction_id": "1d908528-fe07-47e3-b1cb-4c3e79ea754c",
+        "message_id": "c3edf005-a274-4b49-a35a-47ae61f1e960",
+        "timestamp": "2023-05-24T20:28:14.765Z"
     },
     "message": {
         "order": {
-            "id": "2023-05-16-703039",
+            "id": "2023-05-24-366690",
             "state": "Completed",
             "items": [
-                {
-                    "id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
-                    "fulfillment_id": "b083db8904c8bcba29b97f071ba733d5_1",
-                    "quantity": {
-                        "count": 1
-                    }
-                },
                 {
                     "id": "61D478C41B717F704FDCA19E381C58A4_43914034970883_default",
                     "fulfillment_id": "b083db8904c8bcba29b97f071ba733d5_1",
@@ -34,25 +27,32 @@
                     "tags": {
                         "status": "Liquidated"
                     }
+                },
+                {
+                    "id": "61D478C41B717F704FDCA19E381C58A4_43914035003651_default",
+                    "fulfillment_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "quantity": {
+                        "count": 1
+                    }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "599.00"
+                    "value": "999.00"
                 },
                 "breakup": [
                     {
-                        "title": "Shanaya Luxury Attar Perfume - 12 ML",
+                        "title": "Leader Luxury Attar Perfume - 20 ML",
                         "price": {
                             "currency": "INR",
-                            "value": "599.00"
+                            "value": "999.00"
                         },
-                        "@ondc/org/item_id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
+                        "@ondc/org/item_id": "61D478C41B717F704FDCA19E381C58A4_43914035003651_default",
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "599.00"
+                                "value": "999.00"
                             }
                         },
                         "@ondc/org/item_quantity": {
@@ -84,10 +84,10 @@
                             "gps": "12.9236881,77.5750117"
                         },
                         "time": {
-                            "timestamp": "2023-05-16T15:24:18.989Z",
+                            "timestamp": "2023-05-24T20:23:11.917Z",
                             "range": {
-                                "start": "2023-05-16T15:23:18.989Z",
-                                "end": "2023-05-16T15:24:18.989Z"
+                                "start": "2023-05-24T20:22:11.917Z",
+                                "end": "2023-05-24T20:23:11.917Z"
                             }
                         },
                         "contact": {
@@ -109,10 +109,10 @@
                             }
                         },
                         "time": {
-                            "timestamp": "2023-05-16T15:39:00.366Z",
+                            "timestamp": "2023-05-24T20:25:01.090Z",
                             "range": {
-                                "start": "2023-05-16T15:26:24.172Z",
-                                "end": "2023-05-16T15:39:00.366Z"
+                                "start": "2023-05-24T20:24:53.181Z",
+                                "end": "2023-05-24T20:25:01.090Z"
                             }
                         },
                         "contact": {
@@ -126,7 +126,35 @@
                     },
                     "@ondc/org/provider_name": "Adilqadri"
                 }
-            ]
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
+                    }
+                ],
+                "params": {
+                    "transaction_id": "ONDC-1d908528-fe07-47e3-b1cb-4c3e79ea754c-1",
+                    "amount": "1598",
+                    "currency": "INR"
+                }
+            },
+            "created_at": "2023-05-24T20:19:52.423Z",
+            "updated_at": "2023-05-24T20:27:46.328Z"
         }
     }
 }
