@@ -3,8 +3,8 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "select",
-        "timestamp": "2023-05-24T09:16:25.470Z",
+        "action": "update",
+        "timestamp": "2023-05-24T09:50:26.153Z",
         "ttl": "PT30S",
         "core_version": "1.1.0",
         "bap_id": "cloud-adaptor.proteantech.in/kotak",
@@ -12,53 +12,61 @@
         "bpp_id": "preprod-jajee-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
         "transaction_id": "898205215952078000",
-        "message_id": "830884085974282"
+        "message_id": "b9d94f20-7c5c-4c57-8af7-d271962cd626"
     },
     "message": {
         "order": {
+            "state": "Completed",
             "items": [
                 {
                     "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043661571_default",
                     "quantity": {
                         "count": 1
                     },
-                    "location_id": "5692eae837b7a1d2b7ebd8e6bd251b51"
+                    "tags": {
+                        "update_type": "return",
+                        "ttl_approval": "PT24H",
+                        "ttl_reverseqc": "P3D"
+                    }
                 },
                 {
                     "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043628803_default",
                     "quantity": {
                         "count": 1
                     },
-                    "location_id": "5692eae837b7a1d2b7ebd8e6bd251b51"
+                    "tags": {
+                        "update_type": "return",
+                        "ttl_approval": "PT24H",
+                        "ttl_reverseqc": "P3D"
+                    }
                 },
                 {
                     "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043596035_default",
                     "quantity": {
                         "count": 1
                     },
-                    "location_id": "5692eae837b7a1d2b7ebd8e6bd251b51"
-                }
-            ],
-            "fulfillments": [
-                {
-                    "end": {
-                        "location": {
-                            "gps": "17.341391,76.8344680000001",
-                            "address": {
-                                "area_code": "585101"
-                            }
-                        }
+                    "tags": {
+                        "update_type": "return",
+                        "ttl_approval": "PT24H",
+                        "ttl_reverseqc": "P3D"
                     }
                 }
             ],
-            "provider": {
-                "id": "preprod-jajee-bpp.shopalyst.com",
-                "locations": [
+            "payment": {
+                "@ondc/org/settlement_details": [
                     {
-                        "id": "5692eae837b7a1d2b7ebd8e6bd251b51"
+                        "settlement_counterparty": "buyer",
+                        "settlement_phase": "refund",
+                        "settlement_amount": "340.0",
+                        "settlement_timestamp": "2023-05-24T09:50:26.153Z",
+                        "settlement_type": "neft"
                     }
                 ]
+            },
+            "provider": {
+                "id": "preprod-jajee-bpp.shopalyst.com"
             }
-        }
+        },
+        "update_target": "item"
     }
 }
