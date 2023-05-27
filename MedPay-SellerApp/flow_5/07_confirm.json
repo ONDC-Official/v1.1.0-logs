@@ -8,15 +8,15 @@
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
-    "transaction_id": "95451f06-9bad-47c5-bad1-6f7ed363c894",
-    "message_id": "2c04ba4c-7f35-449f-89c6-83f56b04e7b6",
-    "timestamp": "2023-05-20T09:32:52.285Z",
+    "transaction_id": "609f8e28-53b4-46a4-84aa-305c8f0769fa",
+    "message_id": "7768fcdf-1f79-44d3-b737-1d493e9acfee",
+    "timestamp": "2023-05-27T10:06:43.558Z",
     "bpp_id": "ondc.uat.medpay.in",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "2023-05-20-903295",
+      "id": "2023-05-27-296794",
       "state": "Created",
       "billing": {
         "address": {
@@ -31,19 +31,19 @@
         "phone": "8178482517",
         "name": "Vishal Gupta",
         "email": "vishal.kumar@medpay.in",
-        "created_at": "2023-05-20T09:31:22.694Z",
-        "updated_at": "2023-05-20T09:31:22.694Z"
+        "created_at": "2023-05-27T10:06:29.932Z",
+        "updated_at": "2023-05-27T10:06:29.932Z"
       },
       "items": [
         {
           "id": "1002-3810-3036-9631_384348",
-          "quantity": { "count": 3 },
-          "fulfillment_id": "333476973879864459130341685187425773679"
+          "quantity": { "count": 2 },
+          "fulfillment_id": "148829474364487941756174476900933519924"
         },
         {
           "id": "1002-3810-3036-9631_384255",
           "quantity": { "count": 1 },
-          "fulfillment_id": "333476973879864459130341685187425773679"
+          "fulfillment_id": "148829474364487941756174476900933519924"
         }
       ],
       "provider": {
@@ -52,7 +52,7 @@
       },
       "fulfillments": [
         {
-          "id": "333476973879864459130341685187425773679",
+          "id": "148829474364487941756174476900933519924",
           "tracking": false,
           "end": {
             "contact": {
@@ -80,9 +80,9 @@
         "uri": "https://juspay.in/",
         "tl_method": "http/get",
         "params": {
-          "amount": "4372",
+          "amount": "600",
           "currency": "INR",
-          "transaction_id": "ONDC-95451f06-9bad-47c5-bad1-6f7ed363c894-1"
+          "transaction_id": "ONDC-609f8e28-53b4-46a4-84aa-305c8f0769fa-1"
         },
         "status": "PAID",
         "type": "ON-ORDER",
@@ -98,28 +98,23 @@
             "settlement_ifsc_code": "SBIN0002001",
             "upi_address": "72873729780@upi",
             "bank_name": "State Bank Of India",
-            "branch_name": "Andaman Nicobar",
-            "settlement_status": "NOT-PAID"
+            "branch_name": "Andaman Nicobar"
           }
         ]
       },
       "quote": {
-        "price": { "currency": "INR", "value": "4372.0" },
+        "price": { "currency": "INR", "value": "600.0" },
         "breakup": [
           {
             "@ondc/org/item_id": "1002-3810-3036-9631_384348",
-            "@ondc/org/item_quantity": { "count": 3 },
+            "@ondc/org/item_quantity": { "count": 2 },
             "@ondc/org/title_type": "item",
             "item": {
               "id": "1002-3810-3036-9631_384348",
-              "price": { "currency": "INR", "value": "1199" },
-              "quantity": {
-                "available": { "count": 100 },
-                "maximum": { "count": 10 }
-              }
+              "price": { "currency": "INR", "value": "200" }
             },
-            "title": "pampers active baby diapers large",
-            "price": { "currency": "INR", "value": "3597.0" }
+            "title": "Pampers Active Baby Diaper Large",
+            "price": { "currency": "INR", "value": "400.0" }
           },
           {
             "@ondc/org/item_id": "1002-3810-3036-9631_384255",
@@ -127,37 +122,22 @@
             "@ondc/org/title_type": "item",
             "item": {
               "id": "1002-3810-3036-9631_384255",
-              "price": { "currency": "INR", "value": "775" },
-              "quantity": {
-                "available": { "count": 100 },
-                "maximum": { "count": 10 }
-              }
+              "price": { "currency": "INR", "value": "200" }
             },
-            "title": "pampers active baby diapers small",
-            "price": { "currency": "INR", "value": "775.0" }
+            "title": "Pampers Active Baby Diaper Small",
+            "price": { "currency": "INR", "value": "200.0" }
           },
           {
-            "@ondc/org/item_id": "333476973879864459130341685187425773679",
-            "@ondc/org/title_type": "packing",
-            "title": "Packaging charges",
-            "price": { "currency": "INR", "value": "0.0" }
-          },
-          {
-            "@ondc/org/item_id": "333476973879864459130341685187425773679",
+            "@ondc/org/item_id": "148829474364487941756174476900933519924",
             "@ondc/org/title_type": "delivery",
             "title": "Delivery charges",
             "price": { "currency": "INR", "value": "0.0" }
-          },
-          {
-            "@ondc/org/title_type": "tax",
-            "title": "Tax",
-            "price": { "currency": "INR", "value": "524.64" }
           }
         ],
         "ttl": "P1D"
       },
-      "created_at": "2023-05-20T09:32:52.285Z",
-      "updated_at": "2023-05-20T09:32:52.285Z"
+      "created_at": "2023-05-27T10:06:43.558Z",
+      "updated_at": "2023-05-27T10:06:43.558Z"
     }
   }
 }
