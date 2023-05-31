@@ -1,0 +1,117 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "seller.instastack.io",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "3577269f-6e44-43b8-81ce-cfec5ef2912a",
+    "message_id": "5ce70205-0d7b-48ea-9b4e-8e5c1eee641e",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-05-31T10:22:08.270Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e"
+      },
+      "items": [
+        {
+          "fulfillment_id": "1",
+          "id": "4676"
+        },
+        {
+          "fulfillment_id": "1",
+          "id": "102266"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "Dunzo and others",
+          "tracking": false,
+          "@ondc/org/category": "Same Day Delivery",
+          "@ondc/org/TAT": "PT6H",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1572"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "4676",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "title": "Cadbury Bournvita Health Drink, 500 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "723"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "241.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "102266",
+            "@ondc/org/item_quantity": {
+              "count": 4
+            },
+            "title": "Cadbury Milk Chocolate Spready, 200 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "800"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      }
+    }
+  }
+}

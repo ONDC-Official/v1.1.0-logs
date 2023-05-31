@@ -1,0 +1,171 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "abb7d01d-96bd-4901-b60a-e4ab4566aa00",
+    "message_id": "baa1a532-2c36-48e2-a510-2df92a69dd1d",
+    "timestamp": "2023-05-31T11:54:29.997Z",
+    "bpp_id": "seller.instastack.io",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-05-31-159308",
+      "state": "Created",
+      "billing": {
+        "address": {
+          "name": "Ajinkya Shelar",
+          "building": "Rustomjee Azziano",
+          "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+          "city": "Thane",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400601"
+        },
+        "phone": "9833875151",
+        "name": "Ajinkya Shelar",
+        "email": "ajinkya@instastack.io",
+        "created_at": "2023-05-31T11:54:16.148Z",
+        "updated_at": "2023-05-31T11:54:16.148Z"
+      },
+      "items": [
+        {
+          "id": "3174",
+          "quantity": {
+            "count": 5
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "199370",
+          "quantity": {
+            "count": 4
+          },
+          "fulfillment_id": "1"
+        }
+      ],
+      "provider": {
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
+        "locations": [
+          {
+            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "end": {
+            "contact": {
+              "phone": "9833875151"
+            },
+            "person": {
+              "name": "Ajinkya Shelar"
+            },
+            "location": {
+              "gps": "19.199325, 72.978958",
+              "address": {
+                "name": "Ajinkya Shelar",
+                "building": "Rustomjee Azziano",
+                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                "city": "Thane",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400601"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "1345",
+          "currency": "INR"
+        },
+        "status": "NOT-PAID",
+        "type": "ON-FULFILLMENT",
+        "collected_by": "BPP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "thor@okicicicicic",
+            "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+            "settlement_ifsc_code": "someIFSC",
+            "beneficiary_name": "Thor",
+            "bank_name": "Marvels Bank",
+            "branch_name": "Asgard"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1345"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "3174",
+            "@ondc/org/item_quantity": {
+              "count": 5
+            },
+            "title": "Lay's American Style Cream And Onion Potato Chips, 52 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "20.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "199370",
+            "@ondc/org/item_quantity": {
+              "count": 4
+            },
+            "title": "Lay's Stax Salt and Vinegar Potato Crisps, 155.9 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "1196"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "299.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "created_at": "2023-05-31T11:54:29.997Z",
+      "updated_at": "2023-05-31T11:54:29.997Z"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "seller.instastack.io",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "abb7d01d-96bd-4901-b60a-e4ab4566aa00",
+    "message_id": "f85be561-a2bb-4aba-a7ee-fdbb7bca5f62",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-05-31T11:53:32.472Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+      },
+      "items": [
+        {
+          "fulfillment_id": "1",
+          "id": "3174"
+        },
+        {
+          "fulfillment_id": "1",
+          "id": "199370"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "Dunzo and others",
+          "tracking": false,
+          "@ondc/org/category": "Same Day Delivery",
+          "@ondc/org/TAT": "PT6H",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1345"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "3174",
+            "@ondc/org/item_quantity": {
+              "count": 5
+            },
+            "title": "Lay's American Style Cream And Onion Potato Chips, 52 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "20.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "199370",
+            "@ondc/org/item_quantity": {
+              "count": 4
+            },
+            "title": "Lay's Stax Salt and Vinegar Potato Crisps, 155.9 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "1196"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "299.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      }
+    }
+  }
+}
