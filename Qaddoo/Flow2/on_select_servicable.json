@@ -4,114 +4,131 @@
         "country": "IND",
         "city": "std:080",
         "action": "on_select",
-        "timestamp": "2023-04-25T02:56:13.251Z",
-        "ttl": "PT30S",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
-        "bap_uri": "https://pre-prod.qaddoo.com/ondc/on_select",
-        "bpp_id": "ondc-qa.gofrugalretail.com",
-        "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
-        "transaction_id": "5ae54b50-c5ba-4aea-a20b-0c9e1a0a1331",
-        "message_id": "92eaf0c1-0974-460e-9e32-511bb85bab10"
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "transaction_id": "8875cfef-a07e-4627-8126-34940ff2bdf8",
+        "message_id": "c9d1d265-c624-4700-a121-68cf98339101",
+        "timestamp": "2023-05-18T06:58:42.499Z"
     },
     "message": {
         "order": {
             "provider": {
-                "id": "5466-ONDC-1"
+                "id": "20978"
             },
             "items": [
                 {
-                    "id": "5466-ONDC-1-1",
-                    "fulfillment_id": "3908FF04D336D828908AF90D2C820164"
+                    "fulfillment_id": "20978",
+                    "id": "103"
                 },
                 {
-                    "id": "5466-ONDC-1-12",
-                    "fulfillment_id": "3908FF04D336D828908AF90D2C820164"
+                    "fulfillment_id": "20978",
+                    "id": "104"
                 }
             ],
             "fulfillments": [
                 {
-                    "id": "3908FF04D336D828908AF90D2C820164",
+                    "id": "20978",
+                    "@ondc/org/provider_name": "Evergreen Restaurant",
+                    "tracking": false,
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/TAT": "PT24H",
                     "state": {
                         "descriptor": {
                             "code": "Serviceable"
                         }
-                    },
-                    "tracking": false,
-                    "@ondc/org/category": "Next Day Delivery",
-                    "@ondc/org/TAT": "P5D",
-                    "@ondc/org/provider_name": "MARKETPLACE SELLER1"
+                    }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1200.00"
+                    "value": "785.00"
                 },
                 "breakup": [
                     {
-                        "title": "KIT KAT",
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "title": "Veg Manchow",
+                        "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "400.00"
+                            "value": "447.00"
                         },
                         "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "100.00"
-                            },
                             "quantity": {
                                 "available": {
-                                    "count": "1578"
+                                    "count": "3"
                                 },
                                 "maximum": {
-                                    "count": "1578"
+                                    "count": "3"
                                 }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "149.00"
                             }
-                        },
-                        "@ondc/org/item_id": "5466-ONDC-1-1",
-                        "@ondc/org/item_quantity": {
-                            "count": 4
-                        },
-                        "@ondc/org/title_type": "item"
+                        }
                     },
                     {
-                        "title": "DAIRY MILK",
+                        "@ondc/org/item_id": "103",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
                         "price": {
                             "currency": "INR",
-                            "value": "600.00"
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "300.00"
-                            },
-                            "quantity": {
-                                "available": {
-                                    "count": "269"
-                                },
-                                "maximum": {
-                                    "count": "269"
-                                }
-                            }
-                        },
-                        "@ondc/org/item_id": "5466-ONDC-1-12",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "104",
                         "@ondc/org/item_quantity": {
                             "count": 2
                         },
-                        "@ondc/org/title_type": "item"
-                    },
-                    {
-                        "title": "Delivery charges",
+                        "title": "Chicken Manchow",
+                        "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "200.00"
+                            "value": "338.00"
                         },
-                        "@ondc/org/item_id": "3908FF04D336D828908AF90D2C820164",
-                        "@ondc/org/title_type": "delivery"
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "2"
+                                },
+                                "maximum": {
+                                    "count": "2"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "169.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "104",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "20978",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
                     }
                 ],
-                "ttl": "P5D"
+                "ttl": "PT30M"
             }
         }
     }

@@ -1,0 +1,136 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_select",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "ba139d1b-a4b8-466c-b45b-ea5f0255c9ee",
+		"message_id": "5de5cf50-d3f6-4908-a7c6-d5a21983957c",
+		"timestamp": "2023-05-23T17:50:08.114Z"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111"
+			},
+			"items": [{
+				"fulfillment_id": "301a6b55-a3a8-4da3-9c4f-91413c78e404",
+				"id": "57759"
+			}, {
+				"fulfillment_id": "301a6b55-a3a8-4da3-9c4f-91413c78e404",
+				"id": "59823"
+			}],
+			"fulfillments": [{
+				"id": "301a6b55-a3a8-4da3-9c4f-91413c78e404",
+				"@ondc\/org\/provider_name": "Pepsi Store - Sansi Grocery And Foods",
+				"tracking": false,
+				"@ondc\/org\/category": "Standard Delivery",
+				"@ondc\/org\/TAT": "P2D",
+				"state": {
+					"descriptor": {
+						"code": "Serviceable"
+					}
+				}
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "110"
+				},
+				"breakup": [{
+					"@ondc\/org\/item_id": "57759",
+					"@ondc\/org\/item_quantity": {
+						"count": 2
+					},
+					"item": {
+						"quantity": {
+							"available": {
+								"count": "2"
+							},
+							"maximum": {
+								"count": "2"
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "20"
+						}
+					},
+					"title": "Lay's Potato Chips 50g, Classic Salted Flavour, Crunchy Chips & Snacks",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "40"
+					}
+				}, {
+					"@ondc\/org\/item_id": "59823",
+					"@ondc\/org\/item_quantity": {
+						"count": 1
+					},
+					"item": {
+						"quantity": {
+							"available": {
+								"count": "1"
+							},
+							"maximum": {
+								"count": "1"
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "20"
+						}
+					},
+					"title": "Lay's Potato Chips 50g, American Style Cream & Onion Flavour, Crunchy Chips & Snacks",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "20"
+					}
+				}, {
+					"@ondc\/org\/item_id": "301a6b55-a3a8-4da3-9c4f-91413c78e404",
+					"title": "Delivery charges",
+					"@ondc\/org\/title_type": "delivery",
+					"price": {
+						"currency": "INR",
+						"value": "50.0"
+					}
+				}],
+				"ttl": "P1D"
+			}
+		}
+	},
+	"error": {
+		"type": "DOMAIN-ERROR",
+		"code": "40002",
+		"path": "string",
+		"message": "Item quantity unavailable"
+	}
+} 
+
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_select",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https://stage.pep1.in/ondc/public/OndcPreProd/callback",
+		"transaction_id": "ba139d1b-a4b8-466c-b45b-ea5f0255c9ee",
+		"message_id": "5de5cf50-d3f6-4908-a7c6-d5a21983957c",
+		"timestamp": "2023-05-23T17:50:08.114Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

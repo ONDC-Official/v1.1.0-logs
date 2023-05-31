@@ -1,0 +1,85 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "search",
+		"bap_id": "b-ondc-seller-bpp.nlincs.in",
+		"bap_uri": "https://b-ondc-seller-bpp.nlincs.in/lbap",
+		"transaction_id": "21340_232097100177_20971_00000000-6d59-29d4-ffff-ffff9abaa189_CwPKXl",
+		"message_id": "OU8uZ19H2xiGJneAC0oGayNlV2N5q0ez",
+		"timestamp": "2023-04-27T05:41:59.996Z",
+		"core_version": "1.1.0",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"intent": {
+			"category": {
+				"id": "Same Day Delivery"
+			},
+			"fulfillment": {
+				"type": "Prepaid",
+				"start": {
+					"location": {
+						"gps": "12.9953231,77.6139826",
+						"address": {
+							"area_code": "560005"
+						}
+					}
+				},
+				"end": {
+					"location": {
+						"gps": "12.9924834,77.5632792",
+						"address": {
+							"area_code": "560058"
+						}
+					}
+				}
+			},
+			"payment": {
+				"@ondc/org/collection_amount": "172.91"
+			},
+			"provider": {
+				"time": {
+					"days": "1,2,3,4,5,6,7",
+					"schedule": {
+						"holidays": [
+							"2023-03-12"
+						],
+						"frequency": "",
+						"times": []
+					},
+					"range": {
+						"start": "0900",
+						"end": "2000"
+					}
+				}
+			},
+			"@ondc/org/payload_details": {
+				"weight": {
+					"unit": "Kilogram",
+					"value": 1
+				},
+				"category": "Grocery",
+				"value": {
+					"currency": "INR",
+					"value": "172.91"
+				},
+				"dimensions": {
+					"length": {
+						"unit": "centimeter",
+						"value": 2
+					},
+					"breadth": {
+						"unit": "centimeter",
+						"value": 2
+					},
+					"height": {
+						"unit": "centimeter",
+						"value": 2
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+"Request": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "init",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "db96563b-3cc7-48e7-ad01-b0bfe4f2a94c",
+		"message_id": "e415ddeb-dd86-407f-b1fd-9dd6e03a2d92",
+		"timestamp": "2023-05-23T16:07:47.396Z",
+		"bpp_id": "stage.pep1.in",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111",
+				"locations": [{
+					"id": "S01425801-BGLR"
+				}]
+			},
+			"items": [{
+				"id": "57759",
+				"quantity": {
+					"count": 1
+				},
+				"fulfillment_id": "db8799a3-9b5a-444f-a528-411f64f27803"
+			}, {
+				"id": "59823",
+				"quantity": {
+					"count": 1
+				},
+				"fulfillment_id": "db8799a3-9b5a-444f-a528-411f64f27803"
+			}],
+			"billing": {
+				"address": {
+					"door": "span road",
+					"building": "span road",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560067",
+					"locality": "m403 sispal vihar",
+					"name": "Nandita"
+				},
+				"phone": "9818470079",
+				"name": "Nandita",
+				"email": "nandita@technobibble.co.in",
+				"created_at": "2023-05-23T16:07:47.396Z",
+				"updated_at": "2023-05-23T16:07:47.396Z"
+			},
+			"fulfillments": [{
+				"id": "db8799a3-9b5a-444f-a528-411f64f27803",
+				"type": "Delivery",
+				"end": {
+					"contact": {
+						"email": "nandita@technobibble.co.in",
+						"phone": "9818470079"
+					},
+					"location": {
+						"gps": "12.9977050000001, 77.7599290000001",
+						"address": {
+							"name": "Nandita",
+							"building": "span road",
+							"locality": "m403 sispal vihar",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "IND",
+							"area_code": "560067"
+						}
+					}
+				}
+			}]
+		}
+	}
+}
+"Response": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "init",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "db96563b-3cc7-48e7-ad01-b0bfe4f2a94c",
+		"message_id": "e415ddeb-dd86-407f-b1fd-9dd6e03a2d92",
+		"timestamp": "2023-05-23T16:07:47.455Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

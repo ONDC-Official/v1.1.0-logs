@@ -1,0 +1,164 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc.uat.medpay.in",
+    "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+    "transaction_id": "fcafa276-02b7-48b6-831d-ab92d23ffeaf",
+    "message_id": "c52b7d39-4c5a-4e64-bf66-064d132e3289",
+    "timestamp": "2023-05-27T09:28:42.640Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "1001-0801-3631-0214",
+        "provider_location": {
+          "id": "1002-3810-3036-9631"
+        }
+      },
+      "items": [
+        {
+          "id": "1002-3810-3036-9631_384348",
+          "fulfillment_id": "74850662922233497108190498195876289405",
+          "quantity": {
+            "count": 2
+          }
+        },
+        {
+          "id": "1002-3810-3036-9631_384255",
+          "fulfillment_id": "74850662922233497108190498195876289405",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "billing": {
+        "name": "Aryan Gupta",
+        "address": {
+          "door": "Mohan Estate",
+          "name": "Aryan Gupta",
+          "building": "Mohan Estate",
+          "locality": "B3-H4, Sarita Vihar",
+          "city": "New Delhi",
+          "state": "Delhi",
+          "country": "IND",
+          "area_code": "110044"
+        },
+        "email": "aryan@gmail.com",
+        "phone": "8178482517",
+        "created_at": "2023-05-27T09:28:41.640Z",
+        "updated_at": "2023-05-27T09:28:41.640Z"
+      },
+      "fulfillments": [
+        {
+          "id": "74850662922233497108190498195876289405",
+          "type": "Delivery",
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "P2D",
+          "@ondc/org/provider_name": "Medpay - Amit pharmacy",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          },
+          "tracking": false,
+          "end": {
+            "location": {
+              "gps": "28.508205, 77.327888",
+              "address": {
+                "name": "Aryan Gupta",
+                "building": "Mohan Estate",
+                "locality": "B3-H4, Sarita Vihar",
+                "city": "New Delhi",
+                "state": "Delhi",
+                "country": "IND",
+                "area_code": "110044"
+              }
+            },
+            "contact": {
+              "phone": "8178482517",
+              "email": "aryan@gmail.com"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "600.0"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "1002-3810-3036-9631_384348",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "id": "1002-3810-3036-9631_384348",
+              "price": {
+                "currency": "INR",
+                "value": "200"
+              }
+            },
+            "title": "Pampers Active Baby Diaper Large",
+            "price": {
+              "currency": "INR",
+              "value": "400.0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1002-3810-3036-9631_384255",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "id": "1002-3810-3036-9631_384255",
+              "price": {
+                "currency": "INR",
+                "value": "200"
+              }
+            },
+            "title": "Pampers Active Baby Diaper Small",
+            "price": {
+              "currency": "INR",
+              "value": "200.0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "74850662922233497108190498195876289405",
+            "@ondc/org/title_type": "delivery",
+            "title": "Delivery charges",
+            "price": {
+              "currency": "INR",
+              "value": "0.0"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "settlement_bank_account_no": "29837293879283",
+            "settlement_ifsc_code": "SBIN0002001",
+            "upi_address": "72873729780@upi",
+            "bank_name": "State Bank Of India",
+            "branch_name": "Andaman Nicobar"
+          }
+        ]
+      }
+    }
+  }
+}

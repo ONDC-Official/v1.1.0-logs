@@ -1,0 +1,140 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+    "transaction_id": "fcafa276-02b7-48b6-831d-ab92d23ffeaf",
+    "message_id": "d95366ef-b916-4441-8cff-c20b3e7bd024",
+    "timestamp": "2023-05-27T09:28:55.735Z",
+    "bpp_id": "ondc.uat.medpay.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-05-27-440070",
+      "state": "Created",
+      "billing": {
+        "address": {
+          "name": "Aryan Gupta",
+          "building": "Mohan Estate",
+          "locality": "B3-H4, Sarita Vihar",
+          "city": "New Delhi",
+          "state": "Delhi",
+          "country": "IND",
+          "area_code": "110044"
+        },
+        "phone": "8178482517",
+        "name": "Aryan Gupta",
+        "email": "aryan@gmail.com",
+        "created_at": "2023-05-27T09:28:41.640Z",
+        "updated_at": "2023-05-27T09:28:41.640Z"
+      },
+      "items": [
+        {
+          "id": "1002-3810-3036-9631_384348",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "74850662922233497108190498195876289405"
+        },
+        {
+          "id": "1002-3810-3036-9631_384255",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "74850662922233497108190498195876289405"
+        }
+      ],
+      "provider": {
+        "id": "1001-0801-3631-0214",
+        "locations": [{ "id": "1002-3810-3036-9631" }]
+      },
+      "fulfillments": [
+        {
+          "id": "74850662922233497108190498195876289405",
+          "tracking": false,
+          "end": {
+            "contact": { "email": "aryan@gmail.com", "phone": "8178482517" },
+            "person": { "name": "Aryan Gupta" },
+            "location": {
+              "gps": "28.508205, 77.327888",
+              "address": {
+                "name": "Aryan Gupta",
+                "building": "Mohan Estate",
+                "locality": "B3-H4, Sarita Vihar",
+                "city": "New Delhi",
+                "state": "Delhi",
+                "country": "IND",
+                "area_code": "110044"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "600",
+          "currency": "INR",
+          "transaction_id": "ONDC-fcafa276-02b7-48b6-831d-ab92d23ffeaf-1"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "settlement_bank_account_no": "29837293879283",
+            "settlement_ifsc_code": "SBIN0002001",
+            "upi_address": "72873729780@upi",
+            "bank_name": "State Bank Of India",
+            "branch_name": "Andaman Nicobar"
+          }
+        ]
+      },
+      "quote": {
+        "price": { "currency": "INR", "value": "600.0" },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "1002-3810-3036-9631_384348",
+            "@ondc/org/item_quantity": { "count": 2 },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "id": "1002-3810-3036-9631_384348",
+              "price": { "currency": "INR", "value": "200" }
+            },
+            "title": "Pampers Active Baby Diaper Large",
+            "price": { "currency": "INR", "value": "400.0" }
+          },
+          {
+            "@ondc/org/item_id": "1002-3810-3036-9631_384255",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "id": "1002-3810-3036-9631_384255",
+              "price": { "currency": "INR", "value": "200" }
+            },
+            "title": "Pampers Active Baby Diaper Small",
+            "price": { "currency": "INR", "value": "200.0" }
+          },
+          {
+            "@ondc/org/item_id": "74850662922233497108190498195876289405",
+            "@ondc/org/title_type": "delivery",
+            "title": "Delivery charges",
+            "price": { "currency": "INR", "value": "0.0" }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "created_at": "2023-05-27T09:28:55.735Z",
+      "updated_at": "2023-05-27T09:28:55.735Z"
+    }
+  }
+}
