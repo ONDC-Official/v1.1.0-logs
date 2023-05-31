@@ -8,15 +8,15 @@
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
-    "transaction_id": "2778cf30-86ad-4a34-a1fe-9b5a2bebaa80",
-    "message_id": "0717c01f-bef6-4d22-8795-7f2ff28cbab3",
-    "timestamp": "2023-05-24T13:19:13.538Z",
+    "transaction_id": "4f906a5f-cf71-4122-96a0-f22f9e5fc565",
+    "message_id": "25ff7129-78d5-4477-9f9c-6fb9e806a2c7",
+    "timestamp": "2023-05-31T12:26:51.540Z",
     "bpp_id": "seller.instastack.io",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "2023-05-24-968456",
+      "id": "2023-05-31-372174",
       "state": "Created",
       "billing": {
         "address": {
@@ -31,30 +31,30 @@
         "phone": "9833875151",
         "name": "Ajinkya Shelar",
         "email": "ajinkya@instastack.io",
-        "created_at": "2023-05-24T13:18:52.026Z",
-        "updated_at": "2023-05-24T13:18:52.026Z"
+        "created_at": "2023-05-31T12:26:40.327Z",
+        "updated_at": "2023-05-31T12:26:40.327Z"
       },
       "items": [
         {
           "id": "3350",
           "quantity": {
-            "count": 10
+            "count": 5
           },
           "fulfillment_id": "1"
         },
         {
           "id": "104910",
           "quantity": {
-            "count": 5
+            "count": 2
           },
           "fulfillment_id": "1"
         }
       ],
       "provider": {
-        "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e",
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
         "locations": [
           {
-            "id": "33159776-98ca-4f75-a24b-eee54d067540"
+            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
           }
         ]
       },
@@ -88,13 +88,12 @@
         "uri": "https://juspay.in/",
         "tl_method": "http/get",
         "params": {
-          "amount": "4049",
-          "currency": "INR",
-          "transaction_id": "ONDC-2778cf30-86ad-4a34-a1fe-9b5a2bebaa80-1"
+          "amount": "1809",
+          "currency": "INR"
         },
-        "status": "PAID",
-        "type": "ON-ORDER",
-        "collected_by": "BAP",
+        "status": "NOT-PAID",
+        "type": "ON-FULFILLMENT",
+        "collected_by": "BPP",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
         "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/settlement_details": [
@@ -114,19 +113,19 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "4049"
+          "value": "1809"
         },
         "breakup": [
           {
             "@ondc/org/item_id": "3350",
             "@ondc/org/item_quantity": {
-              "count": 10
+              "count": 5
             },
             "title": "Red Bull Energy Drink, 350 ml",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "1600"
+              "value": "800"
             },
             "item": {
               "price": {
@@ -138,13 +137,13 @@
           {
             "@ondc/org/item_id": "104910",
             "@ondc/org/item_quantity": {
-              "count": 5
+              "count": 2
             },
             "title": "Red Bull Energy Drink, 4x250 ml",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "2400"
+              "value": "960"
             },
             "item": {
               "price": {
@@ -165,8 +164,8 @@
         ],
         "ttl": "P1D"
       },
-      "created_at": "2023-05-24T13:19:13.538Z",
-      "updated_at": "2023-05-24T13:19:13.538Z"
+      "created_at": "2023-05-31T12:26:51.540Z",
+      "updated_at": "2023-05-31T12:26:51.540Z"
     }
   }
 }

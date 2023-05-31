@@ -8,29 +8,29 @@
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
-    "transaction_id": "d1b95490-518e-462f-ad81-76881cbcffa4",
-    "message_id": "2ef3c9bd-ad4e-4f00-9d8a-47b24b94bbb8",
-    "timestamp": "2023-05-24T13:00:08.596Z",
+    "transaction_id": "abb7d01d-96bd-4901-b60a-e4ab4566aa00",
+    "message_id": "baa1a532-2c36-48e2-a510-2df92a69dd1d",
+    "timestamp": "2023-05-31T11:54:30.469Z",
     "bpp_id": "seller.instastack.io",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "2023-05-24-929457",
+      "id": "2023-05-31-159308",
       "state": "Accepted",
       "items": [
         {
-          "id": "3626",
+          "id": "3174",
           "fulfillment_id": "1",
           "quantity": {
-            "count": 2
+            "count": 5
           }
         },
         {
-          "id": "199234",
+          "id": "199370",
           "fulfillment_id": "1",
           "quantity": {
-            "count": 3
+            "count": 4
           }
         }
       ],
@@ -56,8 +56,8 @@
         },
         "phone": "9833875151",
         "email": "ajinkya@instastack.io",
-        "created_at": "2023-05-24T12:59:41.242Z",
-        "updated_at": "2023-05-24T12:59:41.242Z"
+        "created_at": "2023-05-31T11:54:16.148Z",
+        "updated_at": "2023-05-31T11:54:16.148Z"
       },
       "fulfillments": [
         {
@@ -74,26 +74,18 @@
             "location": {
               "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
               "descriptor": {
-                "name": "Wellness Forever - Powai",
+                "name": "InstaStack Store Powai",
                 "images": [
-                  "https://gf-integration/images/5.png"
+                  "https://cdn-icons-png.flaticon.com/512/1137/1137143.png"
                 ]
               },
               "gps": "19.116802,72.909812"
             },
             "time": {
               "range": {
-                "start": "2023-05-24T13:00:08.596Z",
-                "end": "2023-05-24T14:00:08.596Z"
+                "start": "2023-05-31T11:54:30.469Z",
+                "end": "2023-05-31T12:54:30.469Z"
               }
-            },
-            "instructions": {
-              "name": "Proof of pickup",
-              "short_desc": "Proof of pickup details",
-              "long_desc": "Proof of pickup details",
-              "images": [
-                "https://image1_url.png"
-              ]
             },
             "contact": {
               "phone": "9892216537",
@@ -115,17 +107,9 @@
             },
             "time": {
               "range": {
-                "start": "2023-05-24T13:00:08.596Z",
-                "end": "2023-05-24T19:00:08.596Z"
+                "start": "2023-05-31T11:54:30.469Z",
+                "end": "2023-05-31T17:54:30.469Z"
               }
-            },
-            "instructions": {
-              "name": "Proof of delivery",
-              "short_desc": "Proof of delivery details",
-              "long_desc": "Proof of delivery details",
-              "images": [
-                "https://image1_url.png"
-              ]
             },
             "contact": {
               "phone": "9833875151"
@@ -134,51 +118,45 @@
           "rateable": true
         }
       ],
-      "documents": [
-        {
-          "url": "https://invoice_will_be_available_here",
-          "label": "Invoice"
-        }
-      ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "4039"
+          "value": "1345"
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "3626",
+            "@ondc/org/item_id": "3174",
             "@ondc/org/item_quantity": {
-              "count": 2
+              "count": 5
             },
-            "title": "Twix Chocolate Bar, 58 g",
+            "title": "Lay's American Style Cream And Onion Potato Chips, 52 g",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "120"
+              "value": "100"
             },
             "item": {
               "price": {
                 "currency": "INR",
-                "value": "60.00"
+                "value": "20.00"
               }
             }
           },
           {
-            "@ondc/org/item_id": "199234",
+            "@ondc/org/item_id": "199370",
             "@ondc/org/item_quantity": {
-              "count": 3
+              "count": 4
             },
-            "title": "Twix Minis Pouch, 500 g",
+            "title": "Lay's Stax Salt and Vinegar Potato Crisps, 155.9 g",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "3870"
+              "value": "1196"
             },
             "item": {
               "price": {
                 "currency": "INR",
-                "value": "1290.00"
+                "value": "299.00"
               }
             }
           },
@@ -198,13 +176,12 @@
         "uri": "https://juspay.in/",
         "tl_method": "http/get",
         "params": {
-          "amount": "4039",
-          "currency": "INR",
-          "transaction_id": "ONDC-d1b95490-518e-462f-ad81-76881cbcffa4-1"
+          "amount": "1345",
+          "currency": "INR"
         },
-        "status": "PAID",
-        "type": "ON-ORDER",
-        "collected_by": "BAP",
+        "status": "NOT-PAID",
+        "type": "ON-FULFILLMENT",
+        "collected_by": "BPP",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
         "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/settlement_details": [
@@ -221,8 +198,8 @@
           }
         ]
       },
-      "created_at": "2023-05-24T13:00:08.012Z",
-      "updated_at": "2023-05-24T13:00:08.596Z"
+      "created_at": "2023-05-31T11:54:29.997Z",
+      "updated_at": "2023-05-31T11:54:30.469Z"
     }
   }
 }

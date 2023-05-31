@@ -8,15 +8,15 @@
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
-    "transaction_id": "0d12cb12-d976-4d1d-a47a-62b6e8e78510",
-    "message_id": "7487c060-4b50-4759-bcbd-20d62939431d",
-    "timestamp": "2023-05-24T13:30:51.358Z",
+    "transaction_id": "987ec309-884a-4c06-b504-755ee5a9f928",
+    "message_id": "60a126b0-8dc7-4691-a907-85db3625aa46",
+    "timestamp": "2023-05-31T12:41:00.216Z",
     "bpp_id": "seller.instastack.io",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "2023-05-24-495532",
+      "id": "2023-05-31-711092",
       "state": "Created",
       "billing": {
         "address": {
@@ -31,14 +31,14 @@
         "phone": "9833875151",
         "name": "Ajinkya Shelar",
         "email": "ajinkya@instastack.io",
-        "created_at": "2023-05-24T13:30:32.417Z",
-        "updated_at": "2023-05-24T13:30:32.417Z"
+        "created_at": "2023-05-31T12:40:48.642Z",
+        "updated_at": "2023-05-31T12:40:48.642Z"
       },
       "items": [
         {
-          "id": "110626",
+          "id": "3616",
           "quantity": {
-            "count": 2
+            "count": 4
           },
           "fulfillment_id": "1"
         }
@@ -81,13 +81,12 @@
         "uri": "https://juspay.in/",
         "tl_method": "http/get",
         "params": {
-          "amount": "209",
-          "currency": "INR",
-          "transaction_id": "ONDC-0d12cb12-d976-4d1d-a47a-62b6e8e78510-1"
+          "amount": "169",
+          "currency": "INR"
         },
-        "status": "PAID",
-        "type": "ON-ORDER",
-        "collected_by": "BAP",
+        "status": "NOT-PAID",
+        "type": "ON-FULFILLMENT",
+        "collected_by": "BPP",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
         "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/settlement_details": [
@@ -107,24 +106,24 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "209"
+          "value": "169"
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "110626",
+            "@ondc/org/item_id": "3616",
             "@ondc/org/item_quantity": {
-              "count": 2
+              "count": 4
             },
-            "title": "Maggi Tomato Ketchup, 200 g",
+            "title": "Maggi Vegetable Masala Atta Noodles, 80 g",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "160"
+              "value": "120"
             },
             "item": {
               "price": {
                 "currency": "INR",
-                "value": "80.00"
+                "value": "30.00"
               }
             }
           },
@@ -140,8 +139,8 @@
         ],
         "ttl": "P1D"
       },
-      "created_at": "2023-05-24T13:30:51.358Z",
-      "updated_at": "2023-05-24T13:30:51.358Z"
+      "created_at": "2023-05-31T12:41:00.216Z",
+      "updated_at": "2023-05-31T12:41:00.216Z"
     }
   }
 }
