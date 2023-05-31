@@ -7,29 +7,25 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_id": "seller.instastack.io",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
-    "transaction_id": "03721c57-8b5f-499b-abc8-2020dd6c928b",
-    "message_id": "3f15b911-40e9-422e-b6dc-97be1fa0af35",
+    "transaction_id": "3577269f-6e44-43b8-81ce-cfec5ef2912a",
+    "message_id": "5ce70205-0d7b-48ea-9b4e-8e5c1eee641e",
     "city": "std:080",
     "country": "IND",
-    "timestamp": "2023-05-24T12:43:41.189Z"
+    "timestamp": "2023-05-31T10:22:08.270Z"
   },
   "message": {
     "order": {
       "provider": {
-        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+        "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e"
       },
       "items": [
         {
           "fulfillment_id": "1",
+          "id": "4676"
+        },
+        {
+          "fulfillment_id": "1",
           "id": "102266"
-        },
-        {
-          "fulfillment_id": "1",
-          "id": "165772"
-        },
-        {
-          "fulfillment_id": "1",
-          "id": "211926"
         }
       ],
       "fulfillments": [
@@ -37,8 +33,8 @@
           "id": "1",
           "@ondc/org/provider_name": "Dunzo and others",
           "tracking": false,
-          "@ondc/org/category": "Immediate Delivery",
-          "@ondc/org/TAT": "PT1H",
+          "@ondc/org/category": "Same Day Delivery",
+          "@ondc/org/TAT": "PT6H",
           "state": {
             "descriptor": {
               "code": "Serviceable"
@@ -49,19 +45,45 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "2964"
+          "value": "1572"
         },
         "breakup": [
           {
+            "@ondc/org/item_id": "4676",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "title": "Cadbury Bournvita Health Drink, 500 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "723"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "100"
+                },
+                "maximum": {
+                  "count": "100"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "241.00"
+              }
+            }
+          },
+          {
             "@ondc/org/item_id": "102266",
             "@ondc/org/item_quantity": {
-              "count": 2
+              "count": 4
             },
             "title": "Cadbury Milk Chocolate Spready, 200 g",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "400"
+              "value": "800"
             },
             "item": {
               "quantity": {
@@ -75,58 +97,6 @@
               "price": {
                 "currency": "INR",
                 "value": "200.00"
-              }
-            }
-          },
-          {
-            "@ondc/org/item_id": "165772",
-            "@ondc/org/item_quantity": {
-              "count": 3
-            },
-            "title": "Cadbury Pure Cocoa Powder, 125 g",
-            "@ondc/org/title_type": "item",
-            "price": {
-              "currency": "INR",
-              "value": "690"
-            },
-            "item": {
-              "quantity": {
-                "available": {
-                  "count": "100"
-                },
-                "maximum": {
-                  "count": "100"
-                }
-              },
-              "price": {
-                "currency": "INR",
-                "value": "230.00"
-              }
-            }
-          },
-          {
-            "@ondc/org/item_id": "211926",
-            "@ondc/org/item_quantity": {
-              "count": 5
-            },
-            "title": "Cadbury Bournvita Pouch, 750 g",
-            "@ondc/org/title_type": "item",
-            "price": {
-              "currency": "INR",
-              "value": "1825"
-            },
-            "item": {
-              "quantity": {
-                "available": {
-                  "count": "100"
-                },
-                "maximum": {
-                  "count": "100"
-                }
-              },
-              "price": {
-                "currency": "INR",
-                "value": "365.00"
               }
             }
           },
