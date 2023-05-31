@@ -1,0 +1,86 @@
+{
+  "context": {
+    "action": "search",
+    "transaction_id": "fd945074-9403-4f95-a42c-30652b4f6397",
+    "message_id": "418c2b59-5a10-4ec1-98d0-a71396c8a5e7",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-05-31T08:50:24.759Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "fulfillment": {
+        "type": "Prepaid",
+        "start": {
+          "location": {
+            "gps": "12.968651,77.648966",
+            "address": {
+              "area_code": "560038"
+            }
+          }
+        },
+        "end": {
+          "location": {
+            "gps": "12.9675847,77.6419487",
+            "address": {
+              "area_code": "560034"
+            }
+          }
+        }
+      },
+      "@ondc/org/payload_details": {
+        "weight": {
+          "value": 200,
+          "unit": "Gram"
+        },
+        "dimensions": {
+          "length": {
+            "unit": "meter",
+            "value": 1
+          },
+          "breadth": {
+            "unit": "meter",
+            "value": 1
+          },
+          "height": {
+            "unit": "meter",
+            "value": 1
+          }
+        },
+        "category": "Grocery",
+        "value": {
+          "currency": "INR",
+          "value": "300"
+        }
+      },
+      "category": {
+        "id": "Next Day Delivery"
+      },
+      "provider": {
+        "time": {
+          "days": "1,2,3,4,5,6,7",
+          "schedule": {
+            "holidays": [
+              "2022-08-15",
+              "2022-08-19"
+            ],
+            "frequency": "PT4H",
+            "times": [
+              "1100",
+              "1900"
+            ]
+          },
+          "range": {
+            "start": "1100",
+            "end": "2100"
+          }
+        }
+      }
+    }
+  }
+}
