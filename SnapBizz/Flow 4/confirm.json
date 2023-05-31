@@ -1,0 +1,197 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "confirm",
+      "core_version": "1.1.0",
+      "bap_id": "jiomart-buyer.ondcz5.de",
+      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+      "transaction_id": "5792a67d-76db-4ed1-9222-a69b52ae74ae",
+      "message_id": "b990c96e-a8f2-45fe-a9c6-27b077cab2d3",
+      "timestamp": "2023-05-30T05:59:24.308Z",
+      "ttl": "PT30S",
+      "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+      "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz"
+    },
+    "message": {
+      "order": {
+        "id": "2a7eff71-c554-4693-a103-16d2dd910df4",
+        "state": "Created",
+        "billing": {
+          "address": {
+            "name": "alice",
+            "building": "abc building",
+            "city": "Bengaluru",
+            "locality": "abc area",
+            "state": "Karnataka",
+            "country": "IND",
+            "area_code": "560001"
+          },
+          "name": "alice",
+          "email": "alice@gmail.com",
+          "phone": "7627635764",
+          "created_at": "2023-05-30T05:58:52.768Z",
+          "updated_at": "2023-05-30T05:58:52.768Z"
+        },
+        "items": [
+          {
+            "fulfillment_id": "776f457b-0041-533e-99af-3d056bdc8727",
+            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+            "quantity": {
+              "count": 2
+            }
+          },
+          {
+            "fulfillment_id": "776f457b-0041-533e-99af-3d056bdc8727",
+            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+            "quantity": {
+              "count": 2
+            }
+          }
+        ],
+        "provider": {
+          "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
+          "locations": [
+            {
+              "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "776f457b-0041-533e-99af-3d056bdc8727",
+            "tracking": false,
+            "end": {
+              "person": {
+                "name": "alice"
+              },
+              "contact": {
+                "email": "alice@gmail.com",
+                "phone": "7627635764"
+              },
+              "location": {
+                "gps": "12.9765944,77.5992708",
+                "address": {
+                  "name": "alice",
+                  "building": "abc building",
+                  "locality": "abc area",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560001"
+                }
+              }
+            },
+            "type": "Delivery"
+          }
+        ],
+        "payment": {
+          "params": {
+            "amount": "280",
+            "currency": "INR",
+            "transaction_id": "20230530011650000870266714897201585"
+          },
+          "status": "PAID",
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "2",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "upi",
+              "upi_address": "success@upi",
+              "beneficiary_name": "-",
+              "bank_name": "xxxx",
+              "branch_name": "xxxx",
+              "settlement_bank_account_no": "xxxx",
+              "settlement_ifsc_code": "xxxxxxxxx"
+            }
+          ]
+        },
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "280.00"
+          },
+          "ttl": "PT10M",
+          "breakup": [
+            {
+              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "@ondc/org/title_type": "item",
+              "title": "snapbizz neo",
+              "price": {
+                "currency": "INR",
+                "value": "140.00"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "70"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "2"
+                  },
+                  "maximum": {
+                    "count": "2"
+                  }
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "@ondc/org/title_type": "item",
+              "title": "snapbizz turbo",
+              "price": {
+                "currency": "INR",
+                "value": "140.00"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "70"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "2"
+                  },
+                  "maximum": {
+                    "count": "2"
+                  }
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+              "@ondc/org/title_type": "item",
+              "title": "snapbizz neo",
+              "price": {
+                "currency": "INR",
+                "value": "0.0"
+              }
+            },
+            {
+              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+              "@ondc/org/title_type": "item",
+              "title": "snapbizz turbo",
+              "price": {
+                "currency": "INR",
+                "value": "0.0"
+              }
+            }
+          ]
+        },
+        "created_at": "2023-05-30T05:59:24.308Z",
+        "updated_at": "2023-05-30T05:59:24.308Z"
+      }
+    }
+  }
