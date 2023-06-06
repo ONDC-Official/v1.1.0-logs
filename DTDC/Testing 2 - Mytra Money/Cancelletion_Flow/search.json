@@ -1,0 +1,53 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/ondc_logistics_buyer/",
+        "ttl": "PT30S",
+        "transaction_id": "cf24fba5-6c0e-4e68-8589-66790fe29844",
+        "message_id": "bc6dfa34-2e9f-40e1-b0d1-39c47abe33e8",
+        "timestamp": "2023-06-05T13:10:24.264Z"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "id": "Express Delivery"
+            },
+            "provider": {},
+            "fulfillment": {
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "gps": "17.456417,78.376666",
+                        "address": {
+                            "area_code": "500081"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "22.5735340000001, 88.346549",
+                        "address": {
+                            "area_code": "700001"
+                        }
+                    }
+                }
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "unit": "Kilogram",
+                    "value": 2
+                },
+                "category": "Grocery",
+                "value": {
+                    "currency": "INR",
+                    "value": "715.05"
+                }
+            }
+        }
+    }
+}
