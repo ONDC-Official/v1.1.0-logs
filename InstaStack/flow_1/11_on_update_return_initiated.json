@@ -1,184 +1,185 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_update",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_id": "seller.instastack.io",
-      "bpp_uri": "https://seller.instastack.io/pre-prod",
-      "transaction_id": "3577269f-6e44-43b8-81ce-cfec5ef2912a",
-      "message_id": "7d1c5e0a-2077-4ac8-a14f-bed0ef84174a",
-      "timestamp": "2023-05-31T10:28:22.046Z"
-    },
-    "message": {
-      "order": {
-        "id": "2023-05-31-193369",
-        "state": "Completed",
-        "items": [
-          {
-            "id": "4676",
-            "fulfillment_id": "1",
-            "quantity": {
-              "count": 3
-            },
-            "tags": {
-              "status": "Return_Initiated"
-            }
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "seller.instastack.io",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "d7077cbd-c0b2-4630-a012-926271853529",
+    "message_id": "c671a2c8-93b0-4e58-8120-39604d42c888",
+    "timestamp": "2023-06-04T13:29:14.370Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-06-04-939253",
+      "state": "Completed",
+      "items": [
+        {
+          "id": "1328",
+          "fulfillment_id": "1",
+          "quantity": {
+            "count": 4
           },
+          "tags": {
+            "status": "Return_Initiated"
+          }
+        },
+        {
+          "id": "239251",
+          "fulfillment_id": "1",
+          "quantity": {
+            "count": 4
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1129"
+        },
+        "breakup": [
           {
-            "id": "102266",
-            "fulfillment_id": "1",
-            "quantity": {
+            "@ondc/org/item_id": "1328",
+            "@ondc/org/item_quantity": {
               "count": 4
+            },
+            "title": "Red Bull Yellow Edition Energy Drink, 250 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "580"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "145.00"
+              }
             }
-          }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "1572"
           },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "4676",
-              "@ondc/org/item_quantity": {
-                "count": 3
-              },
-              "title": "Cadbury Bournvita Health Drink, 500 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "723"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "241.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "102266",
-              "@ondc/org/item_quantity": {
-                "count": 4
-              },
-              "title": "Cadbury Milk Chocolate Spready, 200 g",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "800"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "200.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "49"
-              }
-            }
-          ],
-          "ttl": "P1D"
-        },
-        "fulfillments": [
           {
-            "id": "1",
-            "@ondc/org/provider_name": "Dunzo and others",
-            "state": {
-              "descriptor": {
-                "code": "Order-delivered"
-              }
+            "@ondc/org/item_id": "239251",
+            "@ondc/org/item_quantity": {
+              "count": 4
             },
-            "type": "Delivery",
-            "tracking": false,
-            "start": {
-              "location": {
-                "id": "33159776-98ca-4f75-a24b-eee54d067540",
-                "descriptor": {
-                  "name": "InstaStack Store - Thane",
-                  "images": [
-                    "https://cdn-icons-png.flaticon.com/512/1137/1137143.png"
-                  ]
-                },
-                "gps": "19.20745,72.987917"
-              },
-              "time": {
-                "range": {
-                  "start": "2023-05-31T10:22:42.521Z",
-                  "end": "2023-05-31T11:22:42.522Z"
-                },
-                "timestamp": "2023-05-31T10:24:00.148Z"
-              },
-              "contact": {
-                "phone": "9892216537",
-                "email": "info@instastack.io"
-              }
+            "title": "Red Bull Energy Drink, The Summer Edition, Apricot-Strawberry, 250 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "500"
             },
-            "end": {
-              "location": {
-                "gps": "19.199325, 72.978958",
-                "address": {
-                  "name": "Ajinkya Shelar",
-                  "building": "Rustomjee Azziano",
-                  "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
-                  "city": "Thane",
-                  "state": "Maharashtra",
-                  "country": "IND",
-                  "area_code": "400601"
-                }
-              },
-              "time": {
-                "range": {
-                  "start": "2023-05-31T10:22:42.521Z",
-                  "end": "2023-05-31T16:22:42.522Z"
-                },
-                "timestamp": "2023-05-31T10:25:00.248Z"
-              },
-              "contact": {
-                "phone": "9833875151"
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "125.00"
               }
-            },
-            "rateable": true
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
           }
         ],
-        "payment": {
-          "uri": "https://juspay.in/",
-          "tl_method": "http/get",
-          "params": {
-            "amount": "1572",
-            "currency": "INR"
-          },
-          "status": "NOT-PAID",
-          "type": "ON-FULFILLMENT",
-          "collected_by": "BPP",
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-          "@ondc/org/settlement_details": [
-            {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "sale-amount",
-              "settlement_type": "upi",
-              "upi_address": "thor@okicicicicic",
-              "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
-              "settlement_ifsc_code": "someIFSC",
-              "beneficiary_name": "Thor",
-              "bank_name": "Marvels Bank",
-              "branch_name": "Asgard"
+        "ttl": "P1D"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "Dunzo and others",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
             }
-          ]
+          },
+          "type": "Delivery",
+          "tracking": false,
+          "start": {
+            "location": {
+              "id": "33159776-98ca-4f75-a24b-eee54d067540",
+              "descriptor": {
+                "name": "InstaStack Store - Thane",
+                "images": [
+                  "https://cdn-icons-png.flaticon.com/512/1137/1137143.png"
+                ]
+              },
+              "gps": "19.20745,72.987917"
+            },
+            "time": {
+              "range": {
+                "start": "2023-06-04T13:26:14.265Z",
+                "end": "2023-06-04T14:26:14.265Z"
+              },
+              "timestamp": "2023-06-04T13:28:00.193Z"
+            },
+            "contact": {
+              "phone": "9892216537",
+              "email": "info@instastack.io"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "19.199325, 72.978958",
+              "address": {
+                "name": "Ajinkya Shelar",
+                "building": "Rustomjee Azziano",
+                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                "city": "Thane",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400601"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-06-04T13:26:14.265Z",
+                "end": "2023-06-04T19:26:14.265Z"
+              },
+              "timestamp": "2023-06-04T13:29:00.210Z"
+            },
+            "contact": {
+              "phone": "9833875151"
+            }
+          },
+          "rateable": true
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "1129",
+          "currency": "INR",
+          "transaction_id": "d7077cbd-c0b2-4630-a012-926271853529"
         },
-        "created_at": "2023-05-31T10:22:42.115Z",
-        "updated_at": "2023-05-31T10:28:22.046Z"
-      }
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "thor@okicicicicic",
+            "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+            "settlement_ifsc_code": "someIFSC",
+            "beneficiary_name": "Thor",
+            "bank_name": "Marvels Bank",
+            "branch_name": "Asgard"
+          }
+        ]
+      },
+      "created_at": "2023-06-04T13:26:14.128Z",
+      "updated_at": "2023-06-04T13:29:14.370Z"
     }
   }
+}
