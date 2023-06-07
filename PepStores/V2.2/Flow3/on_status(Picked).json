@@ -1,0 +1,215 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+        "transaction_id": "4782338a-6b63-4a62-a4d7-2a71c8be7feb",
+        "message_id": "9c3dbfe0-a897-461c-bb5c-560a2b0320ee",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-06T15:02:19.668Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-06-06-613652",
+            "state": "In-progress",
+            "provider": {
+                "id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111",
+                "locations": [{
+                    "id": "S01425801-BGLR"
+                }]
+            },
+            "items": [{
+                "id": "57759",
+                "fulfillment_id": "4bb25c67-d159-495c-ac44-c1e483dca544",
+                "quantity": {
+                    "count": 2
+                }
+            }, {
+                "id": "59823",
+                "fulfillment_id": "4bb25c67-d159-495c-ac44-c1e483dca544",
+                "quantity": {
+                    "count": 2
+                }
+            }],
+            "billing": {
+                "name": "Nandita saini",
+                "address": {
+                    "building": "Hulikal",
+                    "name": "Nandita saini",
+                    "locality": "m403 sector 49",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560100"
+                },
+                "email": "n.singh@thetechtonic.in",
+                "phone": "9818470079",
+                "created_at": "2023-06-06T14:58:59.543Z",
+                "updated_at": "2023-06-06T14:58:59.543Z"
+            },
+            "fulfillments": [{
+                "id": "4bb25c67-d159-495c-ac44-c1e483dca544",
+                "@ondc\/org\/provider_name": "Pepsi Store - Sansi Grocery And Foods",
+                "type": "Delivery",
+                "state": {
+                    "descriptor": {
+                        "code": "Order-picked-up"
+                    }
+                },
+                "tracking": false,
+                "start": {
+                    "location": {
+                        "id": "S01425801-BGLR",
+                        "descriptor": {
+                            "name": "S01425801-BGLR"
+                        },
+                        "gps": "12.8389239,77.6860114"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-06-06T17:59:24.791Z",
+                            "end": "2023-06-07T14:59:24.666Z"
+                        },
+                        "timestamp": "2023-06-06T15:02:12.242Z"
+                    },
+                    "contact": {
+                        "phone": "18003098994",
+                        "email": "contact@quantumach.in"
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.839749, 77.6628660000001",
+                        "address": {
+                            "building": "Hulikal",
+                            "name": "Nandita saini",
+                            "locality": "m403 sector 49",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560100"
+                        }
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-06-06T14:59:24.135Z",
+                            "end": "2023-06-08T14:59:24.666Z"
+                        }
+                    },
+                    "contact": {
+                        "phone": "9818470079"
+                    }
+                }
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "130"
+                },
+                "breakup": [{
+                    "@ondc\/org\/item_id": "57759",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 2
+                    },
+                    "title": "Lay's Potato Chips 50g, Classic Salted Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "40"
+                    },
+                    "item": {
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "59823",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 2
+                    },
+                    "title": "Lay's Potato Chips 50g, American Style Cream & Onion Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "40"
+                    },
+                    "item": {
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "4bb25c67-d159-495c-ac44-c1e483dca544",
+                    "title": "Delivery charges",
+                    "@ondc\/org\/title_type": "delivery",
+                    "price": {
+                        "currency": "INR",
+                        "value": "50.0"
+                    }
+                }],
+                "ttl": "PT1H"
+            },
+            "payment": {
+                "uri": "https:\/\/juspay.in\/",
+                "tl_method": "http\/get",
+                "params": {
+                    "currency": "INR",
+                    "amount": "130",
+                    "transaction_id": "4782338a-6b63-4a62-a4d7-2a71c8be7feb"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+                "@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
+                "@ondc\/org\/settlement_details": [{
+                    "settlement_counterparty": "seller-app",
+                    "settlement_phase": "sale-amount",
+                    "settlement_type": "rtgs",
+                    "upi_address": "",
+                    "settlement_bank_account_no": "114605000635",
+                    "settlement_ifsc_code": "ICIC0000396",
+                    "beneficiary_name": "THE TECH TONIC",
+                    "bank_name": "ICICI BANK",
+                    "branch_name": "ICICI Bank Ltd, South Extension-II, New Delhi"
+                }]
+            },
+            "documents": [{
+                "url": "https:\/\/stage.pep1.in\/itcestore\/ONDC_INV2023\/.pdf",
+                "label": "Invoice"
+            }],
+            "created_at": "2023-06-06T14:59:23.582Z",
+            "updated_at": "2023-06-06T15:02:19.668Z"
+        }
+    }
+}
+
+
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https://stage.pep1.in/ondc/public/OndcPreProd/callback",
+        "transaction_id": "4782338a-6b63-4a62-a4d7-2a71c8be7feb",
+        "message_id": "9c3dbfe0-a897-461c-bb5c-560a2b0320ee",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-06T15:02:19.668Z"
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}
