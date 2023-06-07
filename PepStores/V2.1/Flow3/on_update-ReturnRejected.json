@@ -1,0 +1,212 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "on_update",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "030ec225-ba51-4b22-8c15-82fd9f20e348",
+		"message_id": "afb8efcd-24c1-421b-8c8c-988d90d0be4f",
+		"city": "std:080",
+		"country": "IND",
+		"timestamp": "2023-06-03T16:03:52.711Z"
+	},
+	"message": {
+		"order": {
+			"id": "2023-06-03-574327",
+			"state": "Completed",
+			"items": [{
+				"id": "57759",
+				"fulfillment_id": "b1a1bc79-0693-45f2-8961-0004e5a182db",
+				"quantity": {
+					"count": 1
+				}
+			}, {
+				"id": "57759",
+				"fulfillment_id": "b1a1bc79-0693-45f2-8961-0004e5a182db",
+				"quantity": {
+					"count": 1
+				},
+				"tags": {
+					"status": "Return_Rejected"
+				}
+			}, {
+				"id": "59823",
+				"fulfillment_id": "b1a1bc79-0693-45f2-8961-0004e5a182db",
+				"quantity": {
+					"count": 2
+				}
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "130"
+				},
+				"breakup": [{
+					"@ondc\/org\/item_id": "57759",
+					"@ondc\/org\/title_type": "item",
+					"@ondc\/org\/item_quantity": {
+						"count": 2
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "20"
+						}
+					},
+					"price": {
+						"currency": "INR",
+						"value": "40"
+					}
+				}, {
+					"@ondc\/org\/item_id": "59823",
+					"@ondc\/org\/title_type": "item",
+					"@ondc\/org\/item_quantity": {
+						"count": 2
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "20"
+						}
+					},
+					"price": {
+						"currency": "INR",
+						"value": "40"
+					}
+				}, {
+					"@ondc\/org\/item_id": "b1a1bc79-0693-45f2-8961-0004e5a182db",
+					"title": "Delivery charges",
+					"@ondc\/org\/title_type": "delivery",
+					"price": {
+						"currency": "INR",
+						"value": "50.0"
+					}
+				}],
+				"ttl": "PT1H"
+			},
+			"billing": {
+				"name": "Nandita saini",
+				"address": {
+					"building": "Hulikal",
+					"name": "Nandita saini",
+					"locality": "m403 sector 49",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560100"
+				},
+				"email": "n.singh@thetechtonic.in",
+				"phone": "9818470079",
+				"created_at": "2023-06-03T15:44:16.677Z",
+				"updated_at": "2023-06-03T15:44:16.677Z"
+			},
+			"fulfillments": [{
+				"id": "b1a1bc79-0693-45f2-8961-0004e5a182db",
+				"@ondc\/org\/provider_name": "ITC Store",
+				"type": "Delivery",
+				"tracking": false,
+				"state": {
+					"descriptor": {
+						"code": "Order-delivered"
+					}
+				},
+				"start": {
+					"time": {
+						"timestamp": "2023-06-03T15:46:24.224Z",
+						"range": {
+							"start": "2023-06-03T15:44:21.021Z",
+							"end": "2023-06-05T15:44:22.697Z"
+						}
+					},
+					"location": {
+						"descriptor": {
+							"name": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111"
+						},
+						"gps": "12.8389239,77.6860114"
+					},
+					"contact": {
+						"phone": "18003098994",
+						"email": "contact@quantumach.in"
+					}
+				},
+				"end": {
+					"location": {
+						"gps": "12.839749, 77.6628660000001",
+						"address": {
+							"building": "Hulikal",
+							"name": "Nandita saini",
+							"locality": "m403 sector 49",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "IND",
+							"area_code": "560100"
+						}
+					},
+					"time": {
+						"timestamp": "2023-06-03T15:47:45.828Z",
+						"range": {
+							"start": "2023-06-03T15:44:21.021Z",
+							"end": "2023-06-05T15:44:22.697Z"
+						}
+					},
+					"contact": {
+						"phone": "9818470079"
+					}
+				}
+			}],
+			"payment": {
+				"uri": "https:\/\/juspay.in\/",
+				"tl_method": "http\/get",
+				"params": {
+					"currency": "INR",
+					"amount": "130",
+					"transaction_id": "030ec225-ba51-4b22-8c15-82fd9f20e348"
+				},
+				"status": "PAID",
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc\/org\/buyer_app_finder_fee_type": "percent",
+				"@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
+				"@ondc\/org\/settlement_details": [{
+					"settlement_counterparty": "seller-app",
+					"settlement_phase": "sale-amount",
+					"settlement_type": "rtgs",
+					"upi_address": "",
+					"settlement_bank_account_no": "114605000635",
+					"settlement_ifsc_code": "ICIC0000396",
+					"beneficiary_name": "THE TECH TONIC",
+					"bank_name": "ICICI BANK",
+					"branch_name": "ICICI Bank Ltd, South Extension-II, New Delhi"
+				}]
+			},
+			"created_at": "2023-06-03T15:44:21.021Z",
+			"updated_at": "2023-06-03T16:03:52.711Z"
+		}
+	}
+} 
+
+
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "on_update",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https://stage.pep1.in/ondc/public/OndcPreProd/callback",
+		"transaction_id": "030ec225-ba51-4b22-8c15-82fd9f20e348",
+		"message_id": "0193d013-8d48-4b06-97fb-1ffaafe28a14",
+		"city": "std:080",
+		"country": "IND",
+		"timestamp": "2023-06-03T16:03:52.711Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

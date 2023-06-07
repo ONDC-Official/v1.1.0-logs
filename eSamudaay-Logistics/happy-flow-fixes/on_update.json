@@ -1,0 +1,56 @@
+{
+  "context": {
+    "action": "on_update",
+    "transaction_id": "fd945074-9403-4f95-a42c-30652b4f6397",
+    "message_id": "db3e05f4-b45b-4f54-84c0-814f75b8e47f",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-05-31T09:01:23.318Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp"
+  },
+  "message": {
+    "order": {
+      "id": "f37026d0-b283-4475-9f36-9d65db73041e",
+      "state": "Accepted",
+      "items": [
+        {
+          "id": "nextday",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "category_id": "Next Day Delivery"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "Fulfillment1",
+          "type": "Prepaid",
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-06-01T09:01:23.000Z",
+                "end": "2023-06-01T10:01:23.000Z"
+              }
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-06-01T11:01:23.000Z",
+                "end": "2023-06-01T12:01:23.000Z"
+              }
+            }
+          },
+          "agent": null
+        }
+      ],
+      "updated_at": "2023-05-31T09:01:23.318Z",
+      "created_at": "2023-05-31T08:58:23.180Z"
+    }
+  }
+}

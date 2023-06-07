@@ -1,0 +1,95 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "init",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+        "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
+        "bpp_uri": " https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
+        "transaction_id": "a44b3562-e96a-5a96-b465-5776733bce66",
+        "message_id": "2521f97e-f3a2-53f0-b609-486f10c03fb6",
+        "timestamp": "2023-05-30T07:21:06.979Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "DTDC"
+            },
+            "items": [
+                {
+                    "id": "B2C PRIORITY",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "start": {
+                        "location": {
+                            "gps": "12.96774,77.588913",
+                            "address": {
+                                "name": "ONDC Test Seller Store",
+                                "building": "Kasturba Rd",
+                                "locality": "Kasturba Rd",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9999999999",
+                            "email": "test@test.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.927112,77.626652",
+                            "address": {
+                                "name": "Sarthak Farkya",
+                                "building": "test address",
+                                "locality": "TEST ADDRESS LINE 1, TEST ADDRESS LINE 2",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560034"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9999991234",
+                            "email": "example@gmail.com"
+                        }
+                    }
+                }
+            ],
+            "billing": {
+                "name": "ONDC Test Seller Store",
+                "address": {
+                    "name": "ONDC Test Seller Store",
+                    "building": "Fort",
+                    "locality": "Fort",
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India",
+                    "area_code": "400001"
+                },
+                "tax_number": "gst_number",
+                "phone": "9999999999",
+                "email": "test@gmail.com",
+                "created_at": "2023-05-30T07:21:06.979Z",
+                "updated_at": "2023-05-30T07:21:06.979Z"
+            },
+            "payment": {
+                "@ondc/org/settlement_details": []
+            }
+        }
+    }
+}

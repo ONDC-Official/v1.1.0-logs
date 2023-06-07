@@ -1,0 +1,117 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl/",
+        "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
+        "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
+        "transaction_id": "4c0bd511-010e-5c94-b20c-c3a00348b2b6",
+        "message_id": 1685423064499,
+        "timestamp": "2023-05-30T05:04:24.510Z"
+    },
+    "message": {
+        "order": {
+            "id": "88883de0-f3cb-4dd2-a98a-6adcae5b8c8c",
+            "state": "In-progress",
+            "provider": {
+                "id": "DTDC"
+            },
+            "items": [
+                {
+                    "id": "B2C PRIORITY",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "888",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "728.16",
+                            "currency": "INR"
+                        },
+                        "@ondc/org/item_id": "B2C PRIORITY",
+                        "@ondc/org/title_type": "Delivery Charge"
+                    },
+                    {
+                        "price": {
+                            "value": "159.84",
+                            "currency": "INR"
+                        },
+                        "@ondc/org/item_id": "B2C PRIORITY",
+                        "@ondc/org/title_type": "Tax"
+                    }
+                ]
+            },
+            "billing": {
+                "name": "ONDC Test Seller Store",
+                "address": {
+                    "name": "ONDC Test Seller Store",
+                    "building": "Fort",
+                    "locality": "Fort",
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India",
+                    "area_code": "400001"
+                },
+                "tax_number": "gst_number",
+                "phone": "9999999999",
+                "email": "test@gmail.com"
+            },
+            "payment": {
+                "@ondc/org/collection_amount": "2509.08",
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT",
+                "@ondc/org/settlement_details": [
+                    {
+                        "upi_address": "gft@oksbi",
+                        "settlement_type": "upi",
+                        "settlement_ifsc_code": "XXXXXXXXX",
+                        "settlement_counterparty": "buyer-app",
+                        "settlement_bank_account_no": "XXXXXXXXXX"
+                    }
+                ]
+            },
+            "tags": {},
+            "fulfillments": [
+                {
+                    "type": "PREPAID",
+                    "@ondc/org/awb_no": "7X1394671",
+                    "tracking": true,
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-05-30T05:30:00.014Z",
+                                "end": "2023-05-30T13:30:00.014Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-06-03T05:30:00.014Z",
+                                "end": "2023-06-03T13:30:00.014Z"
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Agent-assigned",
+                            "name": "Agent assigned"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "update",
+        "timestamp": "2023-05-30T05:50:26.025Z",
+        "ttl": "PT30S",
+        "core_version": "1.1.0",
+        "bap_id": "cloud-adaptor.proteantech.in/kotak",
+        "bap_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/buyer-v4/buyer/adaptor",
+        "bpp_id": "preprod-jajee-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
+        "transaction_id": "809251594416224600",
+        "message_id": "b3433b6d-5633-4cac-84dc-37d0c4cec651"
+    },
+    "message": {
+        "order": {
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043661571_default",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "tags": {
+                        "update_type": "return",
+                        "reason_code": "002",
+                        "ttl_approval": "PT24H",
+                        "ttl_reverseqc": "P3D"
+                    }
+                }
+            ],
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "buyer",
+                        "settlement_phase": "refund",
+                        "settlement_amount": "200.0",
+                        "settlement_timestamp": "2023-05-30T05:50:26.025Z",
+                        "settlement_type": "neft"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "preprod-jajee-bpp.shopalyst.com"
+            }
+        },
+        "update_target": "item"
+    }
+}

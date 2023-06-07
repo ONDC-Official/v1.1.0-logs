@@ -1,0 +1,211 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "seller.instastack.io",
+        "bpp_uri": "https://seller.instastack.io/pre-prod",
+        "transaction_id": "d7077cbd-c0b2-4630-a012-926271853529",
+        "message_id": "700e4f34-5704-4208-abd7-433bc354e8e3",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-04T13:27:00.165Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-06-04-939253",
+            "state": "In-progress",
+            "provider": {
+                "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e",
+                "locations": [
+                    {
+                        "id": "33159776-98ca-4f75-a24b-eee54d067540"
+                    }
+                ],
+                "rateable": true
+            },
+            "items": [
+                {
+                    "id": "1328",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 4
+                    },
+                    "tags": {
+                        "status": "Packed"
+                    }
+                },
+                {
+                    "id": "239251",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 4
+                    },
+                    "tags": {
+                        "status": "Packed"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Ajinkya Shelar",
+                "address": {
+                    "name": "Ajinkya Shelar",
+                    "building": "Rustomjee Azziano",
+                    "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                    "city": "Thane",
+                    "state": "Maharashtra",
+                    "country": "IND",
+                    "area_code": "400601"
+                },
+                "phone": "9833875151",
+                "email": "ajinkya@instastack.io",
+                "created_at": "2023-06-04T13:26:12.004Z",
+                "updated_at": "2023-06-04T13:26:12.004Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Dunzo and others",
+                    "state": {
+                        "descriptor": {
+                            "code": "Packed"
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "33159776-98ca-4f75-a24b-eee54d067540",
+                            "descriptor": {
+                                "name": "InstaStack Store - Thane",
+                                "images": [
+                                    "https://cdn-icons-png.flaticon.com/512/1137/1137143.png"
+                                ]
+                            },
+                            "gps": "19.20745,72.987917"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-04T13:26:14.265Z",
+                                "end": "2023-06-04T14:26:14.265Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9892216537",
+                            "email": "info@instastack.io"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "19.199325, 72.978958",
+                            "address": {
+                                "name": "Ajinkya Shelar",
+                                "building": "Rustomjee Azziano",
+                                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                                "city": "Thane",
+                                "state": "Maharashtra",
+                                "country": "IND",
+                                "area_code": "400601"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-04T13:26:14.265Z",
+                                "end": "2023-06-04T19:26:14.265Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9833875151"
+                        }
+                    },
+                    "rateable": true
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1129"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "1328",
+                        "@ondc/org/item_quantity": {
+                            "count": 4
+                        },
+                        "title": "Red Bull Yellow Edition Energy Drink, 250 ml",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "580"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "145.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "239251",
+                        "@ondc/org/item_quantity": {
+                            "count": 4
+                        },
+                        "title": "Red Bull Energy Drink, The Summer Edition, Apricot-Strawberry, 250 ml",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "500"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "125.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "49"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "1129",
+                    "currency": "INR",
+                    "transaction_id": "d7077cbd-c0b2-4630-a012-926271853529"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "upi_address": "thor@okicicicicic",
+                        "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+                        "settlement_ifsc_code": "someIFSC",
+                        "beneficiary_name": "Thor",
+                        "bank_name": "Marvels Bank",
+                        "branch_name": "Asgard"
+                    }
+                ]
+            },
+            "created_at": "2023-06-04T13:26:14.128Z",
+            "updated_at": "2023-06-04T13:27:00.165Z"
+        }
+    }
+}
