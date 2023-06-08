@@ -1,0 +1,166 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/ondc_logistics_buyer/",
+        "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
+        "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
+        "transaction_id": "ebe1065d-4ce9-44b6-9b03-4717c746cfe1",
+        "message_id": "7a0690de-57f3-4afd-acd8-249e8ba3f7a3",
+        "timestamp": "2023-06-05T13:05:18.712Z"
+    },
+    "message": {
+        "catalog": {
+            "bpp/fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "2",
+                    "type": "CoD"
+                },
+                {
+                    "id": "3",
+                    "type": "RTO"
+                },
+                {
+                    "id": "4",
+                    "type": "Reverse QC"
+                }
+            ],
+            "bpp/descriptor": {
+                "name": "DTDC"
+            },
+            "bpp/providers": [
+                {
+                    "id": "DTDC",
+                    "descriptor": {
+                        "name": "DTDC",
+                        "short_desc": "DTDC",
+                        "long_desc": "DTDC"
+                    },
+                    "categories": [
+                        {
+                            "id": "Express Delivery"
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "B2C PRIORITY",
+                            "category_id": "Express Delivery",
+                            "parent_item_id": "",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "Express Delivery",
+                                "short_desc": "B2C PRIORITY",
+                                "long_desc": "3 - 4 Day/s"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "888"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P4D"
+                            },
+                            "fulfillment_id": "1"
+                        },
+                        {
+                            "id": "B2C PRIORITY - RTO",
+                            "category_id": "Express Delivery",
+                            "parent_item_id": "B2C PRIORITY",
+                            "fulfillment_id": "3",
+                            "descriptor": {
+                                "name": "RTO quote",
+                                "code": "P2H2P",
+                                "short_desc": "B2C PRIORITY RTO quote",
+                                "long_desc": "B2C PRIORITY RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "177.6"
+                            }
+                        },
+                        {
+                            "id": "B2C SMART EXPRESS",
+                            "category_id": "Express Delivery",
+                            "parent_item_id": "",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "Express Delivery",
+                                "short_desc": "B2C SMART EXPRESS",
+                                "long_desc": "1 - 2 Day/s"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "888"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P2D"
+                            },
+                            "fulfillment_id": "1"
+                        },
+                        {
+                            "id": "B2C SMART EXPRESS - RTO",
+                            "category_id": "Express Delivery",
+                            "parent_item_id": "B2C SMART EXPRESS",
+                            "fulfillment_id": "3",
+                            "descriptor": {
+                                "name": "RTO quote",
+                                "code": "P2H2P",
+                                "short_desc": "B2C SMART EXPRESS RTO quote",
+                                "long_desc": "B2C SMART EXPRESS RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "177.6"
+                            }
+                        },
+                        {
+                            "id": "PREMIUM",
+                            "category_id": "Express Delivery",
+                            "parent_item_id": "",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "Express Delivery",
+                                "short_desc": "PREMIUM",
+                                "long_desc": "1 Day/s"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "888"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P1D"
+                            },
+                            "fulfillment_id": "1"
+                        },
+                        {
+                            "id": "PREMIUM - RTO",
+                            "category_id": "Express Delivery",
+                            "parent_item_id": "PREMIUM",
+                            "fulfillment_id": "3",
+                            "descriptor": {
+                                "name": "RTO quote",
+                                "code": "P2H2P",
+                                "short_desc": "PREMIUM RTO quote",
+                                "long_desc": "PREMIUM RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "177.6"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

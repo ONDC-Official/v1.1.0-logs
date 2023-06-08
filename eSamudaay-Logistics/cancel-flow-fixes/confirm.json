@@ -1,0 +1,158 @@
+{
+  "context": {
+    "action": "confirm",
+    "transaction_id": "3ddbe514-6a31-4583-b3b5-a925857c7f18",
+    "message_id": "c57eb863-5961-4dd6-b86b-c5da20545148",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-05-31T08:19:16.768Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp/",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "loadshare@ondc-preprod.loadshare.net"
+      },
+      "items": [
+        {
+          "id": "nextday",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "category_id": "Next Day Delivery"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "Fulfillment1",
+          "type": "Prepaid",
+          "start": {
+            "location": {
+              "gps": "12.968651,77.648966",
+              "address": {
+                "city": "bengaluru",
+                "name": "WORK",
+                "state": "karnataka",
+                "country": "india",
+                "building": "177 swathi",
+                "locality": "Indiranagar",
+                "area_code": "560038"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            },
+            "person": {
+              "name": "test"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.9675847,77.6419487",
+              "address": {
+                "city": "bengaluru",
+                "name": "WORK",
+                "state": "karnataka",
+                "country": "india",
+                "building": "177 swathi",
+                "locality": "Kormangala",
+                "area_code": "560034"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "Yes"
+          }
+        }
+      ],
+      "billing": {
+        "name": "Bharath",
+        "email": "bharath@gogappi.com",
+        "phone": "+917259814228",
+        "address": {
+          "city": "Bengaluru",
+          "name": "HOME",
+          "state": "Karnataka",
+          "country": "India",
+          "building": "255, Nivas",
+          "locality": "Jayanagar",
+          "area_code": "560098"
+        },
+        "created_at": "2023-05-31T08:17:46.596Z",
+        "updated_at": "2023-05-31T08:17:46.596Z"
+      },
+      "id": "d29539ab-7886-4c7c-b2df-39276b76b5e1",
+      "state": "Created",
+      "quote": {
+        "price": {
+          "value": "1.00",
+          "currency": "INR"
+        },
+        "breakup": [
+          {
+            "price": {
+              "value": "1.00",
+              "currency": "INR"
+            },
+            "@ondc/org/item_id": "nextday",
+            "@ondc/org/title_type": "Delivery Charge"
+          }
+        ]
+      },
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Grocery",
+            "descriptor": {
+              "name": "Atta Powder"
+            },
+            "quantity": {
+              "count": "2",
+              "measure": {
+                "unit": "Kilogram",
+                "value": 5
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "300"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "Aadishwar Store"
+          },
+          "address": {
+            "name": "KHB Towers",
+            "street": "6th Block",
+            "locality": "Koramangala",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "area_code": "560070"
+          }
+        },
+        "order": {
+          "id": "ABCDEFGH",
+          "weight": {
+            "unit": "Kilogram",
+            "value": 10
+          }
+        }
+      },
+      "created_at": "2023-05-31T08:19:16.768Z",
+      "updated_at": "2023-05-31T08:19:16.768Z"
+    }
+  }
+}

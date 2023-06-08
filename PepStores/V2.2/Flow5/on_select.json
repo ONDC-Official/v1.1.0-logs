@@ -1,0 +1,136 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+        "transaction_id": "7c49b00c-7614-4cd7-98fc-87979ecfca85",
+        "message_id": "0d7e3e1f-5d1d-4abe-9a83-162681053cf3",
+        "timestamp": "2023-06-06T17:37:37.488Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111"
+            },
+            "items": [{
+                "fulfillment_id": "2045b3f5-bf11-46bb-a0f3-0914fe341001",
+                "id": "57759"
+            }, {
+                "fulfillment_id": "2045b3f5-bf11-46bb-a0f3-0914fe341001",
+                "id": "59823"
+            }],
+            "fulfillments": [{
+                "id": "2045b3f5-bf11-46bb-a0f3-0914fe341001",
+                "@ondc\/org\/provider_name": "Pepsi Store - Sansi Grocery And Foods",
+                "tracking": false,
+                "@ondc\/org\/category": "Standard Delivery",
+                "@ondc\/org\/TAT": "P2D",
+                "state": {
+                    "descriptor": {
+                        "code": "Serviceable"
+                    }
+                }
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "90"
+                },
+                "breakup": [{
+                    "@ondc\/org\/item_id": "57759",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 0
+                    },
+                    "item": {
+                        "quantity": {
+                            "available": {
+                                "count": "0"
+                            },
+                            "maximum": {
+                                "count": "0"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    },
+                    "title": "Lay's Potato Chips 50g, Classic Salted Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "0"
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "59823",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 2
+                    },
+                    "item": {
+                        "quantity": {
+                            "available": {
+                                "count": "2"
+                            },
+                            "maximum": {
+                                "count": "2"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    },
+                    "title": "Lay's Potato Chips 50g, American Style Cream & Onion Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "40"
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "2045b3f5-bf11-46bb-a0f3-0914fe341001",
+                    "title": "Delivery charges",
+                    "@ondc\/org\/title_type": "delivery",
+                    "price": {
+                        "currency": "INR",
+                        "value": "50.0"
+                    }
+                }],
+                "ttl": "PT1H"
+            }
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "40002",
+        "path": "string",
+        "message": "Item quantity unavailable"
+    }
+}
+
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https://stage.pep1.in/ondc/public/OndcPreProd/callback",
+        "transaction_id": "7c49b00c-7614-4cd7-98fc-87979ecfca85",
+        "message_id": "0d7e3e1f-5d1d-4abe-9a83-162681053cf3",
+        "timestamp": "2023-06-06T17:37:37.488Z"
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}

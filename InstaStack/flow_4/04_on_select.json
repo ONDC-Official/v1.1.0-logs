@@ -7,16 +7,16 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_id": "seller.instastack.io",
     "bpp_uri": "https://seller.instastack.io/pre-prod",
-    "transaction_id": "2778cf30-86ad-4a34-a1fe-9b5a2bebaa80",
-    "message_id": "2e179055-ba9c-466a-9cfc-27041ac42454",
+    "transaction_id": "7b0ba1b0-9c28-4cd1-bdfb-10850ed900ef",
+    "message_id": "279a0b37-f9a4-4d9c-b948-5c70f8a3542d",
     "city": "std:080",
     "country": "IND",
-    "timestamp": "2023-05-24T13:18:42.415Z"
+    "timestamp": "2023-06-05T04:16:23.245Z"
   },
   "message": {
     "order": {
       "provider": {
-        "id": "dc8141ca-24be-4a4f-9061-41b4113c4a1e"
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
       },
       "items": [
         {
@@ -25,7 +25,7 @@
         },
         {
           "fulfillment_id": "1",
-          "id": "104910"
+          "id": "3126"
         }
       ],
       "fulfillments": [
@@ -33,8 +33,8 @@
           "id": "1",
           "@ondc/org/provider_name": "Dunzo and others",
           "tracking": false,
-          "@ondc/org/category": "Immediate Delivery",
-          "@ondc/org/TAT": "PT1H",
+          "@ondc/org/category": "Same Day Delivery",
+          "@ondc/org/TAT": "PT6H",
           "state": {
             "descriptor": {
               "code": "Serviceable"
@@ -45,27 +45,27 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "4049"
+          "value": "1099"
         },
         "breakup": [
           {
             "@ondc/org/item_id": "3350",
             "@ondc/org/item_quantity": {
-              "count": 10
+              "count": 5
             },
             "title": "Red Bull Energy Drink, 350 ml",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "1600"
+              "value": "800"
             },
             "item": {
               "quantity": {
                 "available": {
-                  "count": "10"
+                  "count": "5"
                 },
                 "maximum": {
-                  "count": "10"
+                  "count": "5"
                 }
               },
               "price": {
@@ -75,15 +75,15 @@
             }
           },
           {
-            "@ondc/org/item_id": "104910",
+            "@ondc/org/item_id": "3126",
             "@ondc/org/item_quantity": {
-              "count": 5
+              "count": 2
             },
-            "title": "Red Bull Energy Drink, 4x250 ml",
+            "title": "Red Bull Energy Drink, Sugar Free, 250 ml",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "2400"
+              "value": "250"
             },
             "item": {
               "quantity": {
@@ -96,7 +96,7 @@
               },
               "price": {
                 "currency": "INR",
-                "value": "480.00"
+                "value": "125.00"
               }
             }
           },
@@ -113,5 +113,10 @@
         "ttl": "P1D"
       }
     }
+  },
+  "error": {
+    "code": "40002",
+    "type": "DOMAIN-ERROR",
+    "message": "Item quantity unavailable"
   }
 }
