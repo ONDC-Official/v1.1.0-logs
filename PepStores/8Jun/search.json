@@ -1,0 +1,57 @@
+"Request": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "search",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"transaction_id": "773916b3-5458-4d94-b354-990ac99a9978",
+		"message_id": "4cb7a094-c77a-4401-a674-05650d2c159d",
+		"timestamp": "2023-06-08T13:39:52.688Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"intent": {
+			"item": {
+				"descriptor": {
+					"name": "chips"
+				}
+			},
+			"fulfillment": {
+				"type": "Delivery",
+				"end": {
+					"location": {
+						"gps": "12.9977050000001,77.7599290000001"
+					}
+				}
+			},
+			"payment": {
+				"@ondc\/org\/buyer_app_finder_fee_type": "percent",
+				"@ondc\/org\/buyer_app_finder_fee_amount": "3.0"
+			}
+		}
+	}
+}
+"Response": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "search",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "773916b3-5458-4d94-b354-990ac99a9978",
+		"message_id": "4cb7a094-c77a-4401-a674-05650d2c159d",
+		"timestamp": "2023-06-08T13:39:53.297Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}
