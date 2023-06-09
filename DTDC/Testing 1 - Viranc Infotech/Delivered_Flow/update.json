@@ -9,19 +9,20 @@
         "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
         "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
         "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
-        "transaction_id": "4c0bd511-010e-5c94-b20c-c3a00348b2b6",
-        "message_id": "a0aa6acc-7b1a-49d8-9c39-b4a399617232",
-        "timestamp": "2023-05-30T05:04:23.014Z",
-        "ttl": "PT30S"
+        "transaction_id": "3e8aafe1-bd37-5c11-b7ef-48500c51ba9b",
+        "message_id": "d46df215-52ac-4b4f-889d-fcc7553af378",
+        "timestamp": "2023-06-09T11:35:52.987Z",
+        "ttl": "PT30S",
+        "signature": "Signature keyId=\"preprod-ondc.viranc.com/p/v1/store|06f1420b-5430-4b6e-8ffa-56865cf81835|ed25519\",algorithm=\"ed25519\",created=\"1686310552\",expires=\"1686314152\",headers=\"(created) (expires) digest\",signature=\"bwk9e7ePyyTEiRXOV9Qy7TqGU4l5Q2nIWfU6+yWsVQfOiUTEJt1uZGg+mvj9hTlkQuLe/dM82YIjkvx2eqD8AQ==\""
     },
     "message": {
         "update_target": "fulfillment",
         "order": {
-            "id": "88883de0-f3cb-4dd2-a98a-6adcae5b8c8c",
+            "id": "f627fcd1-1047-43cd-aaa5-b2f49d6b6cf6",
             "state": "Accepted",
             "items": [
                 {
-                    "id": "B2C PRIORITY",
+                    "id": "B2C SMART EXPRESS",
                     "category_id": "Standard Delivery",
                     "descriptor": {
                         "code": "P2H2P"
@@ -32,27 +33,20 @@
                 {
                     "id": "1",
                     "type": "Prepaid",
-                    "start": {
-                        "instructions": {
-                            "name": "Status for pickup",
-                            "long_desc": "Pickup Confirmation Code",
-                            "short_desc": "7437374"
-                        }
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
                     },
                     "end": {
                         "instructions": {
                             "name": "Status for drop",
                             "long_desc": "Delivery Confirmation Code",
-                            "short_desc": "5236587"
+                            "short_desc": "4079061"
                         }
-                    },
-                    "tags": {
-                        "@ondc/org/order_ready_to_ship": "yes"
                     }
                 }
             ],
             "payment": {
-                "@ondc/org/collection_amount": "2509.08",
+                "@ondc/org/collection_amount": "1364.75",
                 "collected_by": "BAP",
                 "type": "POST-FULFILLMENT"
             },
@@ -64,7 +58,7 @@
                             "name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
                         },
                         "quantity": {
-                            "count": 3,
+                            "count": 1,
                             "measure": {
                                 "unit": "Kilogram",
                                 "value": 10
@@ -72,24 +66,7 @@
                         },
                         "price": {
                             "currency": "INR",
-                            "value": "1311.00"
-                        }
-                    },
-                    {
-                        "category_id": "Grocery",
-                        "descriptor": {
-                            "name": "Pillsbury Chakki Fresh Whole Wheat Atta, 1 kg"
-                        },
-                        "quantity": {
-                            "count": 3,
-                            "measure": {
-                                "unit": "Kilogram",
-                                "value": 1
-                            }
-                        },
-                        "price": {
-                            "currency": "INR",
-                            "value": "237.00"
+                            "value": "437.00"
                         }
                     }
                 ],
@@ -107,14 +84,14 @@
                     }
                 },
                 "order": {
-                    "id": "2023-05-30-255654",
+                    "id": "2023-06-09-683522",
                     "weight": {
                         "unit": "Kilogram",
-                        "value": 33
+                        "value": 10
                     }
                 }
             },
-            "updated_at": "2023-05-30T05:04:23.014Z"
+            "updated_at": "2023-06-09T11:35:52.987Z"
         }
     }
 }
