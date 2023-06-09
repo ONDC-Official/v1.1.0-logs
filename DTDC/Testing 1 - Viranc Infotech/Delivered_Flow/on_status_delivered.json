@@ -2,27 +2,27 @@
     "context": {
         "domain": "nic2004:60232",
         "country": "IND",
-        "city": "std:080",
+        "city": "*",
         "action": "on_status",
         "core_version": "1.1.0",
         "bap_id": "preprod-ondc.viranc.com/p/v1/store",
         "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl/",
         "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
         "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
-        "transaction_id": "4c0bd511-010e-5c94-b20c-c3a00348b2b6",
-        "message_id": 1685424148233,
-        "timestamp": "2023-05-30T05:22:28.239Z"
+        "transaction_id": "3e8aafe1-bd37-5c11-b7ef-48500c51ba9b",
+        "message_id": "1686310923647",
+        "timestamp": "2023-06-09T11:42:03.656Z"
     },
     "message": {
         "order": {
-            "id": "88883de0-f3cb-4dd2-a98a-6adcae5b8c8c",
+            "id": "f627fcd1-1047-43cd-aaa5-b2f49d6b6cf6",
             "state": "Completed",
             "provider": {
                 "id": "DTDC"
             },
             "items": [
                 {
-                    "id": "B2C PRIORITY",
+                    "id": "B2C SMART EXPRESS",
                     "category_id": "Standard Delivery",
                     "descriptor": {
                         "code": "P2H2P"
@@ -37,19 +37,11 @@
                 "breakup": [
                     {
                         "price": {
-                            "value": "728.16",
+                            "value": "888",
                             "currency": "INR"
                         },
-                        "@ondc/org/item_id": "B2C PRIORITY",
+                        "@ondc/org/item_id": "B2C SMART EXPRESS",
                         "@ondc/org/title_type": "Delivery Charge"
-                    },
-                    {
-                        "price": {
-                            "value": "159.84",
-                            "currency": "INR"
-                        },
-                        "@ondc/org/item_id": "B2C PRIORITY",
-                        "@ondc/org/title_type": "Tax"
                     }
                 ]
             },
@@ -66,10 +58,12 @@
                 },
                 "tax_number": "gst_number",
                 "phone": "9999999999",
-                "email": "test@gmail.com"
+                "email": "test@gmail.com",
+                "created_at": "2023-06-09T11:33:44.305Z",
+                "updated_at": "2023-06-09T11:33:44.305Z"
             },
             "payment": {
-                "@ondc/org/collection_amount": "2509.08",
+                "@ondc/org/collection_amount": "1364.75",
                 "collected_by": "BAP",
                 "type": "POST-FULFILLMENT",
                 "@ondc/org/settlement_details": [
@@ -77,44 +71,46 @@
                         "upi_address": "gft@oksbi",
                         "settlement_type": "upi",
                         "settlement_ifsc_code": "XXXXXXXXX",
-                        "settlement_counterparty": "buyer-app",
+                        "settlement_counterparty": "seller-app",
                         "settlement_bank_account_no": "XXXXXXXXXX"
                     }
                 ]
             },
             "tags": {},
+            "created_at": "2023-06-09T11:33:50.949Z",
+            "updated_at": "2023-06-09T11:39:36.774Z",
             "fulfillments": [
                 {
                     "type": "PREPAID",
-                    "@ondc/org/awb_no": "7X1394671",
+                    "@ondc/org/awb_no": "7D2320959",
                     "tracking": true,
                     "start": {
                         "time": {
                             "range": {
-                                "start": "2023-05-30T05:30:00.014Z",
-                                "end": "2023-05-30T13:30:00.014Z"
+                                "start": "2023-06-09T05:30:00.987Z",
+                                "end": "2023-06-09T13:30:00.987Z"
                             },
-                            "timestamp": "2023-05-30T05:14:30.451Z"
+                            "timestamp": "2023-06-09T11:39:27.789Z"
                         },
                         "instructions": {
                             "name": "Proof Of Pickup",
                             "images": [
-                                "https://shipsy.s3.amazonaws.com/1/poc/2023-05-30/pickupcompleted/poc_d42v89_1685423671945"
+                                "https://shipsy.s3.amazonaws.com/1/poc/2023-06-09/pickupcompleted/poc_7i5k6u_1686310768595"
                             ]
                         }
                     },
                     "end": {
                         "time": {
                             "range": {
-                                "start": "2023-06-03T05:30:00.014Z",
-                                "end": "2023-06-03T13:30:00.014Z"
+                                "start": "2023-06-11T05:30:00.987Z",
+                                "end": "2023-06-11T13:30:00.987Z"
                             },
-                            "timestamp": "2023-05-30T05:21:43.439Z"
+                            "timestamp": "2023-06-09T11:40:50.691Z"
                         },
                         "instructions": {
                             "name": "Proof Of Delivery",
                             "images": [
-                                "https://shipsy.s3.amazonaws.com/1/poc/2023-05-30/delivery/poc_n4gi8d_1685424145988"
+                                "https://shipsy.s3.amazonaws.com/1/poc/2023-06-09/delivery/poc_s3mezi_1686310921332"
                             ]
                         }
                     },
