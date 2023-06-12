@@ -2,16 +2,16 @@
     "context": {
         "domain": "nic2004:60232",
         "country": "IND",
-        "city": "std:080",
+        "city": "*",
         "action": "on_init",
         "core_version": "1.1.0",
         "bap_id": "preprod-ondc.viranc.com/p/v1/store",
         "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl/",
         "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
         "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
-        "transaction_id": "4c0bd511-010e-5c94-b20c-c3a00348b2b6",
-        "message_id": "47a8ed50-c606-5d75-958b-f3d28ea917ee",
-        "timestamp": "2023-05-30T05:02:04.891Z"
+        "transaction_id": "3e8aafe1-bd37-5c11-b7ef-48500c51ba9b",
+        "message_id": "71d6d814-0356-587f-b0e4-c27ca18bf9be",
+        "timestamp": "2023-06-09T11:33:45.311Z"
     },
     "message": {
         "order": {
@@ -20,7 +20,7 @@
             },
             "items": [
                 {
-                    "id": "B2C PRIORITY"
+                    "id": "B2C SMART EXPRESS"
                 }
             ],
             "quote": {
@@ -30,19 +30,11 @@
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "B2C PRIORITY",
+                        "@ondc/org/item_id": "B2C SMART EXPRESS",
                         "@ondc/org/title_type": "Delivery Charge",
                         "price": {
                             "currency": "INR",
-                            "value": "728.16"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "B2C PRIORITY",
-                        "@ondc/org/title_type": "Tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "159.84"
+                            "value": "888"
                         }
                     }
                 ]
@@ -52,7 +44,7 @@
                 "collected_by": "BAP",
                 "@ondc/org/settlement_details": [
                     {
-                        "settlement_counterparty": "buyer-app",
+                        "settlement_counterparty": "seller-app",
                         "settlement_type": "upi",
                         "upi_address": "gft@oksbi",
                         "settlement_bank_account_no": "XXXXXXXXXX",
