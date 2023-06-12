@@ -1,0 +1,253 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_status",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_uri": "https://preprod-ondc.addble.com/",
+		"transaction_id": "083acae9-184e-4edc-8a94-44da86da133b",
+		"message_id": "d58f8bfa-3608-4a2e-8e8a-d44db7e852ef",
+		"timestamp": "2023-04-21T11:24:45.539Z",
+		"bpp_id": "preprod-ondc.addble.com",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"id": "2023-04-21-429472",
+			"state": "Accepted",
+			"provider": {
+				"id": "EOKJBqid0zecXCvyQBCR",
+				"locations": [
+					{
+						"id": "EOKJBqid0zecXCvyQBCR"
+					}
+				]
+			},
+			"items": [
+				{
+					"id": "vcprTtA2z8GVno1w5RU1",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "896b9d88-b534-432b-b004-0aebe3eb60b6"
+				},
+				{
+					"id": "ZT024kNUKV5nGuxddRQM",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "896b9d88-b534-432b-b004-0aebe3eb60b6"
+				},
+				{
+					"id": "yMXxw4dMgUjird1uGxD6",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "896b9d88-b534-432b-b004-0aebe3eb60b6"
+				}
+			],
+			"billing": {
+				"address": {
+					"door": "Today Homes",
+					"building": "Today Homes",
+					"city": "Noida",
+					"state": "Uttar Pradesh",
+					"country": "IND",
+					"area_code": "201304",
+					"locality": "Ridge Residency",
+					"name": "Yaikhomba Noida"
+				},
+				"phone": "6362944815",
+				"name": "Yaikhomba Noida",
+				"email": "adden.company@gmail.com",
+				"created_at": "2023-04-21T11:24:13.342Z",
+				"updated_at": "2023-04-21T11:24:13.342Z"
+			},
+			"fulfillments": [
+				{
+					"id": "896b9d88-b534-432b-b004-0aebe3eb60b6",
+					"type": "Delivery",
+					"@ondc/org/provider_name": "Delhivery",
+					"tracking": false,
+					"state": {
+						"descriptor": {
+							"code": "Pending"
+						}
+					},
+					"start": {
+						"location": {
+							"id": "EOKJBqid0zecXCvyQBCR",
+							"descriptor": {
+								"name": "Syngenta",
+								"images": [
+									"https://media.istockphoto.com/id/1172109385/vector/pharmacy-cross-initial-ss-design-inspiration.jpg?s=1024x1024&w=is&k=20&c=4mjXZRSIaKpAV7MoqUiHLp1L1PzC1ojIfPR1X5sHFsc="
+								]
+							},
+							"gps": "12.914226159673353,77.63831781177403"
+						},
+						"instructions": {
+							"name": "OTP for pickup",
+							"short_desc": "987804"
+						},
+						"contact": {
+							"phone": "9954780440",
+							"email": "jane@addble.com"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "28.533647, 77.3851280000001",
+							"address": {
+								"name": "Yaikhomba Noida",
+								"building": "Today Homes",
+								"locality": "Ridge Residency",
+								"city": "Noida",
+								"state": "Uttar Pradesh",
+								"country": "IND",
+								"area_code": "201304"
+							}
+						},
+						"contact": {
+							"email": "adden.company@gmail.com",
+							"phone": "6362944815"
+						},
+						"instructions": {
+							"short_desc": "538685",
+							"long_desc": "Scan QR Code attached to package"
+						}
+					}
+				}
+			],
+			"payment": {
+				"@ondc/org/buyer_app_finder_fee_type": "Percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_phase": "sale-amount",
+						"settlement_type": "upi",
+						"upi_address": "test@okbizaxis",
+						"beneficiary_name": "Addble"
+					}
+				],
+				"uri": "https://juspay.in/",
+				"tl_method": "http/get",
+				"params": {
+					"amount": "248.36",
+					"currency": "INR",
+					"transaction_id": "ONDC-083acae9-184e-4edc-8a94-44da86da133b-1"
+				},
+				"status": "PAID",
+				"type": "ON-ORDER",
+				"collected_by": "BAP"
+			},
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "248.36"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "ZT024kNUKV5nGuxddRQM",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Carrot- गाजर",
+						"price": {
+							"currency": "INR",
+							"value": "68"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "68"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "vcprTtA2z8GVno1w5RU1",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "CARROT Seeds",
+						"price": {
+							"currency": "INR",
+							"value": "148"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "148"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "yMXxw4dMgUjird1uGxD6",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "PEA Seeds",
+						"price": {
+							"currency": "INR",
+							"value": "20"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "20"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "896b9d88-b534-432b-b004-0aebe3eb60b6",
+						"title": "Delivery charges",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "12.36"
+						}
+					}
+				],
+				"ttl": "P1D"
+			},
+			"documents": [
+				{
+					"url": "https://preprod-invoices.addble.com/v1/ondc/2023-04-21-429472",
+					"label": "Invoice"
+				}
+			],
+			"created_at": "2023-04-21T11:24:32.110Z",
+			"updated_at": "2023-04-21T11:24:45.539Z"
+		}
+	}
+}

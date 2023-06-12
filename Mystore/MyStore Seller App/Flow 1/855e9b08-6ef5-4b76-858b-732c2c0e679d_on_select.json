@@ -1,0 +1,145 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "855e9b08-6ef5-4b76-858b-732c2c0e679d",
+      "message_id": "26b92fc9-a436-4e3e-b84c-4563384f564d",
+      "timestamp": "2023-04-22T06:52:03.603Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "62733ab9f1f53df939f25300"
+        },
+        "provider_location": {
+          "id": "62733ab9f1f53df939f25300"
+        },
+        "items": [
+          {
+            "id": "6436b06013c4481e7c7023f7",
+            "fulfillment_id": "Fulfillment1"
+          },
+          {
+            "id": "63fd87f96b40654d77d701a3",
+            "fulfillment_id": "Fulfillment1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "750"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "6436b06013c4481e7c7023f7",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "peas 200gm",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "500"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "95"
+                  },
+                  "maximum": {
+                    "count": "95"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "500"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "63fd87f96b40654d77d701a3",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "peas",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "200"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "533"
+                  },
+                  "maximum": {
+                    "count": "533"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "200"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50"
+              }
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "Fulfillment1",
+            "@ondc/org/provider_name": "mystore",
+            "tracking": true,
+            "state": {
+              "descriptor": {
+                "name": "Serviceable",
+                "code": "Serviceable"
+              }
+            },
+            "@ondc/org/category": "Standard Delivery",
+            "@ondc/org/TAT": "P2D"
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "855e9b08-6ef5-4b76-858b-732c2c0e679d",
+      "message_id": "26b92fc9-a436-4e3e-b84c-4563384f564d",
+      "timestamp": "2023-04-22T06:52:03.603Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}

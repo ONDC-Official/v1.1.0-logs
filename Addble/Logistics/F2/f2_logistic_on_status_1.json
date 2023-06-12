@@ -1,0 +1,115 @@
+{
+	"message": {
+		"order": {
+			"id": "1e9d8200-528a-44f8-9aff-6243aa4709f4",
+			"state": "Accepted",
+			"provider": {
+				"id": "Delhivery"
+			},
+			"items": [
+				{
+					"descriptor": {
+						"code": "P2H2P"
+					},
+					"category_id": "Express Delivery",
+					"id": "29567aad-a893-4d75-b1ae-b79be937000c"
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "12.00"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "29567aad-a893-4d75-b1ae-b79be937000c",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "12.00"
+						}
+					}
+				]
+			},
+			"fulfillments": [
+				{
+					"id": "896b9d88-b534-432b-b004-0aebe3eb60b6",
+					"type": "Prepaid",
+					"@ondc/org/awb_no": "352030543493",
+					"state": {
+						"descriptor": {
+							"code": "Pending",
+							"name": "Pending"
+						}
+					},
+					"tracking": true,
+					"start": {
+						"time": {
+							"range": {
+								"start": "",
+								"end": ""
+							},
+							"timestamp": ""
+						}
+					},
+					"end": {
+						"time": {
+							"range": {
+								"start": "",
+								"end": ""
+							},
+							"timestamp": ""
+						}
+					},
+					"@ondc/org/ewaybillno": "",
+					"@ondc/org/ebnexpirydate": ""
+				}
+			],
+			"payments": {
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_ifsc_code": "IFSCTEST1234",
+						"beneficiary_name": "DELHIVERY LIMITED",
+						"settlement_bank_account_no": "ACCTEST1234",
+						"settlement_counterparty": "seller-app",
+						"settlement_type": "neft"
+					}
+				]
+			},
+			"billing": {
+				"address": {
+					"country": "India",
+					"city": "Imphal",
+					"area_code": "795146",
+					"name": "BTMC",
+					"locality": "Uripok Kangchup Road, Lamsang",
+					"state": "Manipur",
+					"building": "BTMC"
+				},
+				"updated_at": "2023-04-21T11:24:13.630Z",
+				"phone": "7085097856",
+				"tax_number": "14AAAAA0000A1Z5",
+				"name": "Addble",
+				"created_at": "2023-04-21T11:24:13.630Z",
+				"email": "support.ondc@addble.com"
+			},
+			"updated_at": "2023-04-21T11:24:45.355Z"
+		}
+	},
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_status",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.addble.com",
+		"bap_uri": "https://preprod-ondc.addble.com/",
+		"transaction_id": "e35bfed0-8e6f-4586-aea0-c3c0bf011147",
+		"message_id": "6a956b53-25be-4989-95ab-c1e8e870fff2",
+		"timestamp": "2023-04-21T11:24:45.355Z",
+		"bpp_id": "ondc-dev.delhivery.com",
+		"bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/"
+	}
+}

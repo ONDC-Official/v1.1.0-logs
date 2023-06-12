@@ -1,0 +1,173 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "on_update",
+		"country": "IND",
+		"city": "std:0821",
+		"core_version": "1.1.0",
+		"bpp_id": "preprod-ondc.addble.com",
+		"bpp_uri": "https://preprod-ondc.addble.com/",
+		"bap_id": "ondc.indiastack.cloud",
+		"bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+		"transaction_id": "1d30de87-7690-487c-b7db-73320c1ca8db",
+		"message_id": "3582909f-6b25-45af-89ef-3fbf0a7056a6",
+		"timestamp": "2023-04-21T16:45:51.047Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"id": "1016f60b-d8a8-483a-a589-3e0990815c5a",
+			"state": "Completed",
+			"items": [
+				{
+					"id": "15KBwrYwll4U4NJlPpjR",
+					"fulfillment_id": "d24f5c03-15d0-4190-bda0-1bb6776ce242",
+					"quantity": {
+						"count": 1
+					}
+				},
+				{
+					"id": "H6xWCI1ofb5UMSMkVoP1",
+					"fulfillment_id": "d24f5c03-15d0-4190-bda0-1bb6776ce242",
+					"quantity": {
+						"count": 1
+					}
+				},
+				{
+					"id": "6baca9mHQ7NLhYhz2zey",
+					"quantity": {
+						"count": 1
+					},
+					"tags": {
+						"status": "Return_Rejected"
+					},
+					"fulfillment_id": "d24f5c03-15d0-4190-bda0-1bb6776ce242"
+				}
+			],
+			"fulfillments": [
+				{
+					"id": "d24f5c03-15d0-4190-bda0-1bb6776ce242",
+					"type": "Delivery",
+					"state": {
+						"descriptor": {
+							"code": "Order-delivered"
+						}
+					},
+					"start": {
+						"time": {
+							"range": {
+								"start": "2023-04-21T17:24:24.718Z",
+								"end": "2023-04-21T17:34:24.718Z"
+							},
+							"timestamp": "2023-04-21T16:44:36.832Z"
+						}
+					},
+					"end": {
+						"time": {
+							"range": {
+								"start": "2023-04-22T16:39:24.718Z",
+								"end": "2023-04-22T16:49:24.718Z"
+							},
+							"timestamp": "2023-04-21T16:44:36.832Z"
+						}
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "110.25"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "15KBwrYwll4U4NJlPpjR",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Cluster beans- क्लस्टर बीन्स",
+						"price": {
+							"currency": "INR",
+							"value": "40"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "40"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "6baca9mHQ7NLhYhz2zey",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Fava Beans- बाकला",
+						"price": {
+							"currency": "INR",
+							"value": "30"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "30"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "H6xWCI1ofb5UMSMkVoP1",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Runner beans- रनर बीन्स",
+						"price": {
+							"currency": "INR",
+							"value": "40"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "1000"
+								},
+								"maximum": {
+									"count": "1000"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "40"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "d24f5c03-15d0-4190-bda0-1bb6776ce242",
+						"title": "Delivery charges",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "0.25"
+						}
+					}
+				]
+			}
+		}
+	}
+}
