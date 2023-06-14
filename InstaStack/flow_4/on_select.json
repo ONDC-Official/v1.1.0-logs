@@ -1,0 +1,122 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "seller.instastack.io",
+        "bpp_uri": "https://seller.instastack.io/pre-prod",
+        "transaction_id": "8e3a4d96-6bcf-4c97-a80c-97a5b75d8b99",
+        "message_id": "d2e1a18e-5709-4c9b-8d44-9b0c74ea1c53",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-14T10:55:44.756Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "3350"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "3126"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Dunzo and others",
+                    "tracking": false,
+                    "@ondc/org/category": "Same Day Delivery",
+                    "@ondc/org/TAT": "PT6H",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1124"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "3350",
+                        "@ondc/org/item_quantity": {
+                            "count": 5
+                        },
+                        "title": "Red Bull Energy Drink, 350 ml",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "825"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "165.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "5"
+                                },
+                                "maximum": {
+                                    "count": "5"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "3126",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Red Bull Energy Drink, Sugar Free, 250 ml",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "250"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "125.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "100"
+                                },
+                                "maximum": {
+                                    "count": "100"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "49"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    },
+    "error": {
+        "code": "40002",
+        "type": "DOMAIN-ERROR",
+        "message": "Item quantity unavailable"
+    }
+}
