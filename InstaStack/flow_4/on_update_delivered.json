@@ -1,0 +1,224 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "seller.instastack.io",
+        "bpp_uri": "https://seller.instastack.io/pre-prod",
+        "transaction_id": "8e3a4d96-6bcf-4c97-a80c-97a5b75d8b99",
+        "message_id": "fc8c71ed-9f4d-4b20-939b-f2cad86d60df",
+        "timestamp": "2023-06-14T11:03:00.802Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-06-14-583715",
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "3350",
+                    "fulfillment_id": "REVERSE-QC",
+                    "quantity": {
+                        "count": 5
+                    },
+                    "tags": {
+                        "status": "Return_Delivered"
+                    }
+                },
+                {
+                    "id": "3126",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "299"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "3350",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "title": "Red Bull Energy Drink, 350 ml",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "165.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "3126",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Red Bull Energy Drink, Sugar Free, 250 ml",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "250"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "125.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "49"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Dunzo and others",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
+                            "descriptor": {
+                                "name": "InstaStack Store Powai",
+                                "images": [
+                                    "https://cdn-icons-png.flaticon.com/512/1137/1137143.png"
+                                ]
+                            },
+                            "gps": "19.116802,72.909812"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-14T10:56:07.283Z",
+                                "end": "2023-06-14T11:56:07.284Z"
+                            },
+                            "timestamp": "2023-06-14T10:58:00.119Z"
+                        },
+                        "contact": {
+                            "phone": "9892216537",
+                            "email": "info@instastack.io"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "19.199325, 72.978958",
+                            "address": {
+                                "name": "Ajinkya Shelar",
+                                "building": "Rustomjee Azziano",
+                                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                                "city": "Thane",
+                                "state": "Maharashtra",
+                                "country": "IND",
+                                "area_code": "400601"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-14T10:56:07.283Z",
+                                "end": "2023-06-14T16:56:07.284Z"
+                            },
+                            "timestamp": "2023-06-14T11:00:00.320Z"
+                        },
+                        "contact": {
+                            "phone": "9833875151"
+                        }
+                    },
+                    "rateable": true
+                },
+                {
+                    "id": "REVERSE-QC",
+                    "type": "Reverse QC",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-06-14T11:01:00.526Z",
+                                "end": "2023-06-14T13:01:00.527Z"
+                            },
+                            "timestamp": "2023-06-14T11:02:00.778Z"
+                        },
+                        "instructions": {
+                            "short_desc": "Pickup tracking code: tos3x114mil",
+                            "long_desc": "Items have been picked up. Reverse tracking is available on RTO system",
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://seller.instastack.io/pickup/order/2023-06-14-583715"
+                            },
+                            "images": []
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "timestamp": "2023-06-14T11:03:00.802Z"
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "1124",
+                    "currency": "INR",
+                    "transaction_id": "8e3a4d96-6bcf-4c97-a80c-97a5b75d8b99"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "upi_address": "thor@okicicicicic",
+                        "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+                        "settlement_ifsc_code": "someIFSC",
+                        "beneficiary_name": "Thor",
+                        "bank_name": "Marvels Bank",
+                        "branch_name": "Asgard"
+                    },
+                    {
+                        "settlement_counterparty": "buyer",
+                        "settlement_phase": "refund",
+                        "settlement_type": "upi",
+                        "settlement_amount": "825",
+                        "settlement_timestamp": "2023-06-14T11:02:01.129Z"
+                    }
+                ]
+            },
+            "created_at": "2023-06-14T10:56:07.138Z",
+            "updated_at": "2023-06-14T11:03:00.802Z"
+        }
+    }
+}

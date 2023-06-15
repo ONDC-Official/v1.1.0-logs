@@ -1,0 +1,214 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+        "transaction_id": "c4a9d8b5-facd-48b6-945c-bd1f42b14553",
+        "message_id": "759a3aad-c3c5-42cd-bbc9-1a8d47cc8ba7",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-14T12:50:47.576Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-06-14-629205",
+            "state": "Completed",
+            "items": [{
+                "id": "57759",
+                "fulfillment_id": "33f30ed1-4569-495d-bc71-c16994ca8cc5",
+                "quantity": {
+                    "count": 1
+                }
+            }, {
+                "id": "57759",
+                "fulfillment_id": "33f30ed1-4569-495d-bc71-c16994ca8cc5",
+                "quantity": {
+                    "count": 1
+                },
+                "tags": {
+                    "status": "Liquidated"
+                }
+            }, {
+                "id": "59823",
+                "fulfillment_id": "33f30ed1-4569-495d-bc71-c16994ca8cc5",
+                "quantity": {
+                    "count": 2
+                }
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "110"
+                },
+                "breakup": [{
+                    "@ondc\/org\/item_id": "57759",
+                    "@ondc\/org\/title_type": "item",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 1
+                    },
+                    "title": "Lay's Potato Chips 50g, Classic Salted Flavour, Crunchy Chips & Snacks",
+                    "item": {
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "20"
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "59823",
+                    "@ondc\/org\/title_type": "item",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 2
+                    },
+                    "title": "Lay's Potato Chips 50g, American Style Cream & Onion Flavour, Crunchy Chips & Snacks",
+                    "item": {
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "40"
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "33f30ed1-4569-495d-bc71-c16994ca8cc5",
+                    "title": "Delivery charges",
+                    "@ondc\/org\/title_type": "delivery",
+                    "price": {
+                        "currency": "INR",
+                        "value": "50.0"
+                    }
+                }],
+                "ttl": "PT1H"
+            },
+            "billing": {
+                "name": "Nandita saini",
+                "address": {
+                    "building": "Hulikal",
+                    "name": "Nandita saini",
+                    "locality": "m403 sector 49",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560100"
+                },
+                "email": "n.singh@thetechtonic.in",
+                "phone": "9818470079",
+                "created_at": "2023-06-14T12:42:28.016Z",
+                "updated_at": "2023-06-14T12:42:28.016Z"
+            },
+            "fulfillments": [{
+                "id": "33f30ed1-4569-495d-bc71-c16994ca8cc5",
+                "@ondc\/org\/provider_name": "ITC Store",
+                "type": "Delivery",
+                "tracking": false,
+                "state": {
+                    "descriptor": {
+                        "code": "Order-delivered"
+                    }
+                },
+                "start": {
+                    "time": {
+                        "timestamp": "2023-06-14T12:45:39.287Z",
+                        "range": {
+                            "start": "2023-06-14T12:42:32.506Z",
+                            "end": "2023-06-15T12:42:32.571Z"
+                        }
+                    },
+                    "location": {
+                        "descriptor": {
+                            "name": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111"
+                        },
+                        "gps": "12.8389239,77.6860114"
+                    },
+                    "contact": {
+                        "phone": "18003098994",
+                        "email": "contact@quantumach.in"
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.839749, 77.6628660000001",
+                        "address": {
+                            "building": "Hulikal",
+                            "name": "Nandita saini",
+                            "locality": "m403 sector 49",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560100"
+                        }
+                    },
+                    "time": {
+                        "timestamp": "2023-06-14T12:47:33.816Z",
+                        "range": {
+                            "start": "2023-06-14T12:42:32.506Z",
+                            "end": "2023-06-16T12:42:32.571Z"
+                        }
+                    },
+                    "contact": {
+                        "phone": "9818470079"
+                    }
+                }
+            }],
+            "payment": {
+                "uri": "https:\/\/juspay.in\/",
+                "tl_method": "http\/get",
+                "params": {
+                    "currency": "INR",
+                    "amount": "130",
+                    "transaction_id": "c4a9d8b5-facd-48b6-945c-bd1f42b14553"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+                "@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
+                "@ondc\/org\/settlement_details": [{
+                    "settlement_counterparty": "seller-app",
+                    "settlement_phase": "sale-amount",
+                    "settlement_type": "rtgs",
+                    "upi_address": "",
+                    "settlement_bank_account_no": "114605000635",
+                    "settlement_ifsc_code": "ICIC0000396",
+                    "beneficiary_name": "THE TECH TONIC",
+                    "bank_name": "ICICI BANK",
+                    "branch_name": "ICICI Bank Ltd, South Extension-II, New Delhi"
+                }]
+            },
+            "created_at": "2023-06-14T12:42:31.678Z",
+            "updated_at": "2023-06-14T12:50:47.576Z"
+        }
+    }
+}
+
+
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https://stage.pep1.in/ondc/public/OndcPreProd/callback",
+        "transaction_id": "c4a9d8b5-facd-48b6-945c-bd1f42b14553",
+        "message_id": "90037f24-5f06-4824-ba27-e3157a498e7c",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-14T12:50:47.576Z"
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}
