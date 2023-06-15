@@ -1,0 +1,95 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "issue",
+    "timestamp": "2023-06-14T09:52:17.895Z",
+    "ttl": "PT30S",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc-qa.gofrugalretail.com",
+    "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+    "transaction_id": "e99f26ce-6aac-4d08-8dc9-5aa8f48624d1",
+    "message_id": "2b9d6f50-127c-4ff1-88e7-d6a75cd0274f"
+  },
+  "message": {
+    "issue": {
+      "source": {
+        "network_participant_id": "buyer-app-preprod.ondc.org",
+        "type": "CONSUMER"
+      },
+      "id": "c90bdfc2-322e-43c5-b51d-a0d0fe9d69d8",
+      "category": "ITEM",
+      "sub_category": "ITM01",
+      "complainant_info": {
+        "person": {
+          "name": "Abishek S"
+        },
+        "contact": {
+          "phone": "9091293128",
+          "email": "abishek@gmail.com"
+        }
+      },
+      "order_details": {
+        "id": "2023-06-14-273452",
+        "state": "Completed",
+        "items": [
+          {
+            "id": "5466-ONDC-1-1",
+            "quantity": 3
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "F32099C02D5893D9FF2A93667BF9F6D1",
+            "state": "Pending"
+          }
+        ],
+        "provider_id": "5466-ONDC-1"
+      },
+      "description": {
+        "short_desc": "Item missing",
+        "long_desc": "Only 2 is available. One item is missing",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        },
+        "images": []
+      },
+      "expected_response_time": {
+        "duration": "PT1H"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      },
+      "status": "OPEN",
+      "issue_type": "ISSUE",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "updated_at": "2023-06-14T09:52:17.895Z",
+            "updated_by": {
+              "org": {
+                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+              },
+              "contact": {
+                "phone": "6239083807",
+                "email": "Rishabhnand.singh@ondc.org"
+              },
+              "person": {
+                "name": "Rishabhnand Singh"
+              }
+            },
+            "short_desc": "Complaint created"
+          }
+        ],
+        "respondent_actions": []
+      },
+      "created_at": "2023-06-14T09:52:17.846Z",
+      "updated_at": "2023-06-14T09:52:17.846Z"
+    }
+  }
+}
