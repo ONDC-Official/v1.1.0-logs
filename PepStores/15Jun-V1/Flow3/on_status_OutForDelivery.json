@@ -1,0 +1,214 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+        "transaction_id": "055f474a-df24-45f2-92aa-649e16fa4c85",
+        "message_id": "f235eb83-a9c8-47b6-9265-17a50618ad2a",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-14T13:11:57.591Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-06-14-437456",
+            "state": "In-progress",
+            "provider": {
+                "id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111",
+                "locations": [{
+                    "id": "S01425801-BGLR"
+                }]
+            },
+            "items": [{
+                "id": "57759",
+                "fulfillment_id": "9c4d1922-2001-4a96-a1b8-23ccf8d74362",
+                "quantity": {
+                    "count": 2
+                }
+            }, {
+                "id": "59823",
+                "fulfillment_id": "9c4d1922-2001-4a96-a1b8-23ccf8d74362",
+                "quantity": {
+                    "count": 2
+                }
+            }],
+            "billing": {
+                "name": "Prakash Iyer",
+                "address": {
+                    "building": "Park Street",
+                    "name": "Prakash Iyer",
+                    "locality": "B712 victoria Haven",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560067"
+                },
+                "email": "nandita@technobibble.co.in",
+                "phone": "9818470079",
+                "created_at": "2023-06-14T13:09:35.200Z",
+                "updated_at": "2023-06-14T13:09:35.200Z"
+            },
+            "fulfillments": [{
+                "id": "9c4d1922-2001-4a96-a1b8-23ccf8d74362",
+                "@ondc\/org\/provider_name": "Pepsi Store - Sansi Grocery And Foods",
+                "type": "Delivery",
+                "state": {
+                    "descriptor": {
+                        "code": "Out-for-delivery"
+                    }
+                },
+                "tracking": false,
+                "start": {
+                    "location": {
+                        "id": "S01425801-BGLR",
+                        "descriptor": {
+                            "name": "S01425801-BGLR"
+                        },
+                        "gps": "12.8389239,77.6860114"
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-06-14T13:09:39.871Z",
+                            "end": "2023-06-15T13:09:39.590Z"
+                        },
+                        "timestamp": "2023-06-14T13:11:20.474Z"
+                    },
+                    "contact": {
+                        "phone": "18003098994",
+                        "email": "contact@quantumach.in"
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.9977050000001, 77.7599290000001",
+                        "address": {
+                            "building": "Park Street",
+                            "name": "Prakash Iyer",
+                            "locality": "B712 victoria Haven",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560067"
+                        }
+                    },
+                    "time": {
+                        "range": {
+                            "start": "2023-06-14T13:09:39.871Z",
+                            "end": "2023-06-16T13:09:39.590Z"
+                        }
+                    },
+                    "contact": {
+                        "phone": "9818470079"
+                    }
+                }
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "130"
+                },
+                "breakup": [{
+                    "@ondc\/org\/item_id": "57759",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 2
+                    },
+                    "title": "Lay's Potato Chips 50g, Classic Salted Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "40"
+                    },
+                    "item": {
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "59823",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 2
+                    },
+                    "title": "Lay's Potato Chips 50g, American Style Cream & Onion Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "40"
+                    },
+                    "item": {
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "9c4d1922-2001-4a96-a1b8-23ccf8d74362",
+                    "title": "Delivery charges",
+                    "@ondc\/org\/title_type": "delivery",
+                    "price": {
+                        "currency": "INR",
+                        "value": "50.0"
+                    }
+                }],
+                "ttl": "PT1H"
+            },
+            "payment": {
+                "uri": "https:\/\/juspay.in\/",
+                "tl_method": "http\/get",
+                "params": {
+                    "currency": "INR",
+                    "amount": "130",
+                    "transaction_id": "055f474a-df24-45f2-92aa-649e16fa4c85"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+                "@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
+                "@ondc\/org\/settlement_details": [{
+                    "settlement_counterparty": "seller-app",
+                    "settlement_phase": "sale-amount",
+                    "settlement_type": "rtgs",
+                    "upi_address": "",
+                    "settlement_bank_account_no": "114605000635",
+                    "settlement_ifsc_code": "ICIC0000396",
+                    "beneficiary_name": "THE TECH TONIC",
+                    "bank_name": "ICICI BANK",
+                    "branch_name": "ICICI Bank Ltd, South Extension-II, New Delhi"
+                }]
+            },
+            "documents": [{
+                "url": "https:\/\/stage.pep1.in\/itcestore\/ONDC_INV2023\/.pdf",
+                "label": "Invoice"
+            }],
+            "created_at": "2023-06-14T13:09:39.105Z",
+            "updated_at": "2023-06-14T13:11:57.591Z"
+        }
+    }
+}
+
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https://stage.pep1.in/ondc/public/OndcPreProd/callback",
+        "transaction_id": "055f474a-df24-45f2-92aa-649e16fa4c85",
+        "message_id": "f235eb83-a9c8-47b6-9265-17a50618ad2a",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-14T13:11:57.591Z"
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}
