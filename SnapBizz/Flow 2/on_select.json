@@ -1,123 +1,114 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_select",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "transaction_id": "0d04c1fe-3294-42aa-a44d-c7bba719d0aa",
-      "message_id": "aa029e02-19f9-4d12-afec-84ba0071f20d",
-      "timestamp": "2023-05-30T03:59:48.305Z",
-      "key": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "jiomart-buyer.ondcz5.de",
+    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "333e5e91-35ab-42eb-b5c2-bebac406487a",
+    "message_id": "0c122c98-93fd-48ab-a6dc-a40abe5a6ed5",
+    "timestamp": "2023-06-14T18:09:25.488Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
+        "locations": [
+          {
+            "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+          "fulfillment_id": "f0ea9e88-2252-5d8b-a8a3-50111985f2fe"
         },
-        "items": [
-          {
-            "fulfillment_id": "0cd5b8a5-9d5b-5817-bf5e-4efea5e52590",
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-            "@ondc/org/returnable": false,
-            "@ondc/org/cancellable": true
-          },
-          {
-            "fulfillment_id": "0cd5b8a5-9d5b-5817-bf5e-4efea5e52590",
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-            "@ondc/org/returnable": false,
-            "@ondc/org/cancellable": true
-          }
-        ],
-        "fulfillments": [
-          {
-            "id": "0cd5b8a5-9d5b-5817-bf5e-4efea5e52590",
-            "@ondc/org/provider_name": "Snapbizz Test store",
-            "tracking": false,
-            "@ondc/org/category": "Immediate Delivery",
-            "@ondc/org/TAT": "PT2H",
-            "type": "Delivery",
-            "state": {
-              "descriptor": {
-                "code": "Non-Serviceable"
-              }
-            },
-            "end": {
-              "location": {
-                "gps": "12.9765944,77.5992708",
-                "address": {
-                  "area_code": "560001"
-                }
-              }
-            }
-          }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "140.00"
-          },
-          "ttl": "PT10M",
-          "breakup": [
-            {
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "title": "snapbizz neo",
-              "price": {
-                "currency": "INR",
-                "value": "70.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                },
-                "quantity": {
-                  "available": {
-                    "count": "5"
-                  },
-                  "maximum": {
-                    "count": "5"
-                  }
-                }
-              }
-            },
-            {
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "title": "snapbizz turbo",
-              "price": {
-                "currency": "INR",
-                "value": "70.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                },
-                "quantity": {
-                  "available": {
-                    "count": "5"
-                  },
-                  "maximum": {
-                    "count": "5"
-                  }
-                }
-              }
-            }
-          ]
+        {
+          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+          "fulfillment_id": "f0ea9e88-2252-5d8b-a8a3-50111985f2fe"
         }
+      ],
+      "fulfillments": [
+        {
+          "id": "f0ea9e88-2252-5d8b-a8a3-50111985f2fe",
+          "type": "Delivery",
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "P2D",
+          "@ondc/org/provider_name": "Snapbizz Test store",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "140.00"
+        },
+        "ttl": "P1D",
+        "breakup": [
+          {
+            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "title": "snapbizz neo",
+            "price": {
+              "currency": "INR",
+              "value": "70.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "70"
+              },
+              "quantity": {
+                "available": {
+                  "count": "10"
+                },
+                "maximum": {
+                  "count": "5"
+                }
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "title": "snapbizz turbo",
+            "price": {
+              "currency": "INR",
+              "value": "70.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "70"
+              },
+              "quantity": {
+                "available": {
+                  "count": "10"
+                },
+                "maximum": {
+                  "count": "5"
+                }
+              }
+            }
+          }
+        ]
       }
     }
   }
+}

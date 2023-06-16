@@ -1,262 +1,194 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_status",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "transaction_id": "30d1042d-fe29-4b6b-9cc8-5b33f283262f",
-      "message_id": "a92fcde7-264c-445f-86d4-675decf6931e",
-      "timestamp": "2023-05-29T18:18:24.961Z",
-      "key": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "order": {
-        "id": "7e540ebf-6dec-45e9-a8b7-f863f095398f",
-        "state": "In-progress",
-        "provider": {
-          "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
-          "locations": [
-            {
-              "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
-            }
-          ]
-        },
-        "items": [
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_status",
+    "core_version": "1.1.0",
+    "bap_id": "jiomart-buyer.ondcz5.de",
+    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "cefdb2c8-eee3-44ed-bf3d-c38872f7a3ef",
+    "message_id": "84cbed85-d560-42cc-bb69-5ecb6a69c68f",
+    "timestamp": "2023-06-14T16:39:48.926Z"
+  },
+  "message": {
+    "order": {
+      "id": "71d7db5f-08b4-4909-8833-deb090ce44c0",
+      "state": "In-progress",
+      "provider": {
+        "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
+        "locations": [
           {
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-            "tags": {
-              "status": "Return_Approved"
-            },
-            "quantity": {
-              "count": 1
-            },
-            "fulfillment_id": "659184d3-954b-502d-afca-c4c6a1c1762d"
-          },
-          {
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-            "tags": {
-              "status": "Return_Approved"
-            },
-            "quantity": {
-              "count": 1
-            },
-            "fulfillment_id": "659184d3-954b-502d-afca-c4c6a1c1762d"
+            "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
           }
         ],
-        "billing": {
-          "name": "alice",
-          "address": {
-            "name": "alice",
-            "door": "abc building",
-            "building": "abc building",
-            "street": "abc building",
-            "city": "Bengaluru",
-            "locality": "Bengaluru",
-            "state": "Karnataka",
-            "country": "IND",
-            "area_code": "560001"
+        "rateable": true
+      },
+      "items": [
+        {
+          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+          "quantity": {
+            "count": 1
           },
-          "email": "alice@gmail.com",
-          "phone": "7627635764",
-          "created_at": "2023-05-29T18:13:39.355146+00:00",
-          "updated_at": "2023-05-29T18:13:33.283023"
+          "fulfillment_id": "7de790c3-cc65-5593-85a6-ae737363a856"
         },
-        "fulfillments": [
-          {
-            "id": "659184d3-954b-502d-afca-c4c6a1c1762d",
-            "type": "Delivery",
-            "@ondc/org/category": "Immediate Delivery",
-            "@ondc/org/TAT": "PT2H",
-            "@ondc/org/provider_name": "Snapbizz Test store",
-            "state": {
+        {
+          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "7de790c3-cc65-5593-85a6-ae737363a856"
+        }
+      ],
+      "billing": {
+        "name": "alice",
+        "address": {
+          "name": "alice",
+          "building": "abc building",
+          "city": "Bengaluru",
+          "locality": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560001"
+        },
+        "email": "alice@gmail.com",
+        "phone": "7627635764",
+        "created_at": "2023-06-14T16:37:59.0299Z",
+        "updated_at": "2023-06-14T16:37:48.0377Z"
+      },
+      "fulfillments": [
+        {
+          "id": "7de790c3-cc65-5593-85a6-ae737363a856",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "Snapbizz Test store",
+          "state": {
+            "descriptor": {
+              "code": "Out-for-delivery"
+            }
+          },
+          "tracking": false,
+          "start": {
+            "location": {
+              "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
+              "gps": "12.96774,77.588913",
               "descriptor": {
-                "name": "Out-for-delivery",
-                "code": "Out-for-delivery"
+                "name": "Snapbizz Test store"
               }
             },
-            "tracking": false,
-            "start": {
-              "id": 1052,
-              "location": {
-                "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
-                "gps": "12.96774,77.588913",
-                "descriptor": {
-                  "name": "Snapbizz Test store",
-                  "images": [
-                    "https://snaporder-v2.sgp1.digitaloceanspaces.com/uploads/banners/default-banner.jpg"
-                  ]
-                }
-              },
-              "time": {
-                "range": {
-                  "start": "2023-05-29T18:18:24+00:00",
-                  "end": "2023-05-31T18:18:24+00:00"
-                },
-                "timestamp": "2023-05-29T18:18:24+00:00"
-              },
-              "instructions": {
-                "name": "Proof of pickup",
-                "short_desc": "-",
-                "long_desc": "-",
-                "images": []
-              },
-              "contact": {
-                "phone": "7172737475",
-                "email": "test@email.com"
+            "time": {
+              "range": {
+                "start": "2023-06-14T16:39:48+00:00",
+                "end": "2023-06-16T16:39:48+00:00"
               }
             },
-            "end": {
-              "location": {
-                "gps": "12.9765944,77.5992708",
-                "address": {
-                  "name": "alice",
-                  "door": "abc building",
-                  "locality": "Bengaluru",
-                  "city": "Bengaluru",
-                  "state": "Karnataka",
-                  "country": "IND",
-                  "area_code": "560001",
-                  "building": "abc building",
-                  "street": "abc building"
-                },
-                "contact": {
-                  "phone": "7627635764"
-                }
-              },
-              "time": {
-                "range": {
-                  "start": "2023-05-29T18:18:24+00:00",
-                  "end": "2023-05-31T18:18:24+00:00"
-                },
-                "timestamp": "2023-05-29T18:18:24+00:00"
-              },
-              "instructions": {
-                "name": "Proof of pickup",
-                "short_desc": "-",
-                "long_desc": "-",
-                "images": []
+            "contact": {
+              "phone": "7172737475"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.9765944,77.5992708",
+              "address": {
+                "name": "alice",
+                "locality": "Bengaluru",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560001",
+                "building": "abc building"
               },
               "contact": {
                 "phone": "7627635764"
+              },
+              "person": {
+                "name": "alice"
               }
-            },
-            "agent": {
-              "name": "Snapbizz Test store",
-              "phone": "7172737475"
-            },
-            "vehicle": {
-              "category": "mini-truck",
-              "size": "small",
-              "registration": "2022"
             }
           }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "140.00"
-          },
-          "ttl": "P1D",
-          "breakup": [
-            {
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "@ondc/org/title_type": "item",
-              "title": "snapbizz neo",
-              "price": {
-                "currency": "INR",
-                "value": "70.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "@ondc/org/title_type": "item",
-              "title": "snapbizz turbo",
-              "price": {
-                "currency": "INR",
-                "value": "70.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-              "title": "snapbizz neo",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "0.0"
-              }
-            },
-            {
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-              "title": "snapbizz turbo",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "0.0"
-              }
-            }
-          ]
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "140.00"
         },
-        "payment": {
-          "status": "PAID",
-          "params": {
-            "currency": "INR",
-            "transaction_id": "20230529011650000870090122396912241",
-            "amount": "140"
-          },
-          "type": "ON-ORDER",
-          "collected_by": "BAP",
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "0.0",
-          "@ondc/org/withholding_amount": "0.0",
-          "@ondc/org/return_window": "0",
-          "@ondc/org/settlement_basis": "Collection",
-          "@ondc/org/settlement_window": "P2D",
-          "@ondc/org/settlement_details": [
-            {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "sale-amount",
-              "settlement_type": "upi",
-              "upi_address": "success@upi",
-              "beneficiary_name": "-",
-              "bank_name": "xxxx",
-              "branch_name": "xxxx",
-              "settlement_bank_account_no": "xxxx",
-              "settlement_ifsc_code": "xxxxxxxxx"
-            }
-          ]
-        },
-        "created_at": "2023-05-29T18:13:39.355146+00:00",
-        "updated_at": "2023-05-29T18:13:39.355146+00:00",
-        "documents": [
+        "ttl": "P1D",
+        "breakup": [
           {
-            "url": "https://firebasestorage.googleapis.com/v0/b/zadinga-dev.appspot.com/o/Invoices%2F4865783f-1f1f-4f45-b73b-f4ff4e9939fd%2F0f368bfb-0839-460b-aab2-79c204642a00%2Ffac2cebb-8b40-4d07-a7b5-c8b9171b721c.pdf?alt=media",
-            "label": "Invoice"
+            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "title": "snapbizz neo",
+            "price": {
+              "currency": "INR",
+              "value": "70.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "70"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "title": "snapbizz turbo",
+            "price": {
+              "currency": "INR",
+              "value": "70.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "70"
+              }
+            }
           }
         ]
-      }
+      },
+      "payment": {
+        "status": "PAID",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "20230614011650000875863411152819390",
+          "amount": "140"
+        },
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "2",
+        "@ondc/org/settlement_basis": "Collection",
+        "@ondc/org/settlement_window": "P2D",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "success@upi",
+            "beneficiary_name": "-",
+            "bank_name": "State Bank Of India",
+            "branch_name": "Andaman Nicobar",
+            "settlement_bank_account_no": "29837293879283",
+            "settlement_ifsc_code": "SBIN0002001"
+          }
+        ]
+      },
+      "created_at": "2023-06-14T16:37:59.0299Z",
+      "updated_at": "2023-06-14T16:37:48.0377Z",
+      "documents": [
+        {
+          "url": "https://firebasestorage.googleapis.com/v0/b/zadinga-dev.appspot.com/o/Invoices%2F4865783f-1f1f-4f45-b73b-f4ff4e9939fd%2F0f368bfb-0839-460b-aab2-79c204642a00%2Ffac2cebb-8b40-4d07-a7b5-c8b9171b721c.pdf?alt=media",
+          "label": "Invoice"
+        }
+      ]
     }
   }
+}
