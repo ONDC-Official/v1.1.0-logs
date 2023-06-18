@@ -1,0 +1,81 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_search",
+    "core_version": "1.1.0",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "transaction_id": "3ddbe514-6a31-4583-b3b5-a925857c7f18",
+    "message_id": "5ddc848c-109d-468a-8c8e-7011906fcd28",
+    "timestamp": "2023-05-31T08:16:00.083Z",
+    "ttl": "PT30S",
+    "bpp_id": "",
+    "bpp_uri": ""
+  },
+  "message": {
+    "catalog": {
+      "bpp/descriptor": {
+        "name": "Dunzo"
+      },
+      "bpp/providers": [
+        {
+          "id": "dunzo-lsp",
+          "descriptor": {
+            "code": "P2P",
+            "name": "Dunzo",
+            "short_desc": "Dunzo",
+            "long_desc": "Dunzo"
+          },
+          "categories": [
+            {
+              "id": "Next Day Delivery",
+              "time": {
+                "duration": "PT50M",
+                "label": "TAT"
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "item-68ea3a0a-f673-475b-b487-2ef018582c9a",
+              "parent_item_id": "",
+              "category_id": "Next Day Delivery",
+              "descriptor": {
+                "code": "P2P",
+                "name": "Dunzo",
+                "short_desc": "Dunzo",
+                "long_desc": "Dunzo"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "time": {
+                "label": "TAT",
+                "duration": "PT50M",
+                "timestamp": "2023-05-31T09:06:00.083Z"
+              },
+              "fulfillment_id": "2"
+            }
+          ]
+        }
+      ],
+      "bpp/fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid"
+        },
+        {
+          "id": "2",
+          "type": "CoD"
+        },
+        {
+          "id": "3",
+          "type": "RTO"
+        }
+      ]
+    }
+  }
+}

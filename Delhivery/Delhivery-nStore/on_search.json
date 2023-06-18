@@ -1,0 +1,94 @@
+{
+  "message": {
+    "catalog": {
+      "bpp/fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid"
+        },
+        {
+          "id": "2",
+          "type": "CoD"
+        },
+        {
+          "id": "3",
+          "type": "RTO"
+        },
+        {
+          "id": "4",
+          "type": "Reverse QC"
+        }
+      ],
+      "bpp/descriptor": {
+        "name": "Delhivery"
+      },
+      "bpp/providers": [
+        {
+          "id": "Delhivery",
+          "descriptor": {
+            "name": "Delhivery",
+            "short_desc": "Delhivery",
+            "long_desc": "Delhivery"
+          },
+          "categories": [
+            {
+              "id": "Standard Delivery",
+              "time": {
+                "label": "TAT",
+                "duration": "P2D"
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "64072035-ee45-4cad-bdd5-0f1e67dd7d10",
+              "parent_item_id": "",
+              "category_id": "Standard Delivery",
+              "fulfillment_id": "1",
+              "descriptor": {
+                "code": "P2H2P",
+                "name": "Standard Delivery",
+                "short_desc": "Delhivery Surface",
+                "long_desc": "Delhivery Surface"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "12.00"
+              }
+            },
+            {
+              "id": "077389d5-4836-4bfc-9721-2b773f8c724b",
+              "parent_item_id": "64072035-ee45-4cad-bdd5-0f1e67dd7d10",
+              "category_id": "Standard Delivery",
+              "fulfillment_id": "3",
+              "descriptor": {
+                "code": "P2H2P",
+                "name": "Standard Delivery",
+                "short_desc": "Delhivery Surface RTO charge",
+                "long_desc": "Delhivery Surface RTO charge"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "34.00"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_search",
+    "bap_id": "b-ondc-seller-bpp.nlincs.in",
+    "bap_uri": "https://b-ondc-seller-bpp.nlincs.in/lbap",
+    "transaction_id": "20669_222035400239_20354_00000000-6d59-29d4-ffff-ffff9abaa189_ll2dSs",
+    "message_id": "ilcnQbzZMnPRAettS84L2tDmNhJTRK2P",
+    "timestamp": "2023-03-07T11:12:43.059Z",
+    "core_version": "1.1.0",
+    "ttl": "PT30S",
+    "bpp_id": "ondc-dev.delhivery.com",
+    "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/"
+  }

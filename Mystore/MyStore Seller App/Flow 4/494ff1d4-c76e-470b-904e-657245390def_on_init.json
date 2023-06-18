@@ -1,0 +1,202 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_init",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "494ff1d4-c76e-470b-904e-657245390def",
+      "message_id": "2088a298-c981-4b30-88bd-2b290112c03f",
+      "timestamp": "2023-04-13T13:01:45.945Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "62733ab9f1f53df939f25300"
+        },
+        "provider_location": {
+          "id": "62733ab9f1f53df939f25300"
+        },
+        "items": [
+          {
+            "id": "6436b06013c4481e7c7023f7",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "Fulfillment1"
+          },
+          {
+            "id": "63fd87f96b40654d77d701a3",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "Fulfillment1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "1451"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "6436b06013c4481e7c7023f7",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "peas 200gm",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "1000"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "2"
+                  },
+                  "maximum": {
+                    "count": "2"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "500"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "63fd87f96b40654d77d701a3",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "peas",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "400"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "551"
+                  },
+                  "maximum": {
+                    "count": "551"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "200"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Packing charges",
+              "@ondc/org/title_type": "packing",
+              "price": {
+                "currency": "INR",
+                "value": "1"
+              }
+            },
+            {
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50"
+              }
+            }
+          ]
+        },
+        "billing": {
+          "address": {
+            "door": "near sanjay gandhi",
+            "building": "near sanjay gandhi",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "country": "IND",
+            "area_code": "110083",
+            "locality": "Mangolpuri",
+            "name": "Saurabh Singh"
+          },
+          "phone": "8368476734",
+          "name": "Saurabh Singh",
+          "email": "100rabbh@gmail.com",
+          "created_at": "2023-04-13T13:01:45.895Z",
+          "updated_at": "2023-04-13T13:01:45.895Z"
+        },
+        "fulfillments": [
+          {
+            "id": "Fulfillment1",
+            "type": "Delivery",
+            "end": {
+              "contact": {
+                "email": "100rabbh@gmail.com",
+                "phone": "8368476734"
+              },
+              "location": {
+                "gps": "28.6905790000001, 77.0822600000001",
+                "address": {
+                  "name": "Saurabh Singh",
+                  "building": "near sanjay gandhi",
+                  "locality": "Mangolpuri",
+                  "city": "New Delhi",
+                  "state": "Delhi",
+                  "country": "IND",
+                  "area_code": "110083"
+                }
+              }
+            }
+          }
+        ],
+        "payment": {
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "test",
+              "settlement_ifsc_code": "123",
+              "bank_name": "SBI",
+              "branch_name": "gurgaon",
+              "beneficiary_name": "Test test",
+              "settlement_phase": "sale-amount"
+            }
+          ],
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3"
+        }
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "on_init",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "beta.mystore.in",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "494ff1d4-c76e-470b-904e-657245390def",
+      "message_id": "2088a298-c981-4b30-88bd-2b290112c03f",
+      "timestamp": "2023-04-13T13:01:45.945Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "core_version": "1.1.0",
+    "bap_id": "logistics_buyer.com",
+    "bap_uri": "https://logistics_buyer.com/ondc",
+    "bpp_id": "uat.grab.in",
+    "bpp_uri": "https://uat.grab.in/beckn/bpp/",
+    "transaction_id": "ONDC_MON_3",
+    "message_id": "999tttdd",
+    "timestamp": "2023-06-12T07:59:02.828Z"
+  },
+  "message": {
+    "order": {
+      "id": "ONDC_Monday_3",
+      "items": [
+        {
+          "id": "I1",
+          "category_id": "Same Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "CoD",
+          "@ondc/org/awb_no": "1227262193237777",
+          "@ondc/org/ewaybillno": "EBN1",
+          "@ondc/org/ebnexpirydate": "2023-03-31T12:00:00.000Z",
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-06-12T08:09:07.690Z",
+                "end": "2023-06-12T08:44:07.367Z"
+              }
+            },
+            "instructions": {
+              "short_desc": "1234",
+              "long_desc": "pickup code"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-06-12T11:59:07.963Z",
+                "end": "2023-06-12T11:59:07.273Z"
+              }
+            },
+            "instructions": {
+              "short_desc": "5678",
+              "long_desc": "delivery code"
+            }
+          }
+        }
+      ],
+      "updated_at": "2023-06-12T07:59:07.769Z",
+      "state": "Accepted"
+    }
+  }
+}

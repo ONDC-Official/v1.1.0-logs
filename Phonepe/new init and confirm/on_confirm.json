@@ -1,0 +1,163 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_confirm",
+        "bap_id": "shopping-api-testing.phonepe.com",
+        "bpp_id": "biz.test.enstore.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+        "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-03-10T14:58:48.870Z",
+        "message_id": "CONOMS2303102028467393071951",
+        "core_version": "1.1.0",
+        "transaction_id": "C2303102028130462259048"
+    },
+    "message": {
+        "order": {
+            "id": "OD2303102028382023071923",
+            "provider": {
+                "id": "1000:1001",
+                "locations": [
+                    {
+                        "id": "1000:1001"
+                    }
+                ],
+                "rateable": true
+            },
+            "items": [
+                {
+                    "id": "1257",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "FPA:1001:nextday:258:205821"
+                }
+            ],
+            "billing": {
+                "name": "Devika",
+                "phone": "8073865965",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "Nagawara",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "100",
+                    "locality": "AK Colony",
+                    "area_code": "560045"
+                },
+                "created_at": "2023-01-06T14:58:33.000Z",
+                "updated_at": "2023-01-06T14:58:33.000Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "FPA:1001:nextday:258:205821",
+                    "end": {
+                        "contact": {
+                            "phone": "8068727678"
+                        },
+                        "location": {
+                            "gps": "13.040118, 77.624288",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "Nagawara",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "100",
+                                "locality": "AK Colony",
+                                "area_code": "560045"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "person": {
+                        "name": "Devika"
+                    },
+                    "tracking": true,
+                    "state": {
+                        "descriptor": {
+                            "name": "Pending",
+                            "code": "Pending"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "54.08",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "2.58",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "1257",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "51.50",
+                            "currency": "INR"
+                        },
+                        "title": "banana 1 kg",
+                        "@ondc/org/item_id": "1257",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "FPA:1001:nextday:258:205821",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "54.08",
+                    "currency": "INR",
+                    "transaction_id": "OMT2303102028382023071267",
+                    "transaction_status": "COMPLETED"
+                },
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/return_window": "0.0",
+                "@ondc/org/settlement_basis": "Collection",
+                "@ondc/org/settlement_window": "P2D",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "Axis Bank",
+                        "branch_name": "Kathriguppe",
+                        "settlement_type": "rtgs",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "UTIB0003190",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "922020043291840"
+                    }
+                ],
+                "@ondc/org/withholding_amount": "0.0",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
+            },
+            "documents": [
+                {
+                    "url": "https://biz.test.enstore.com/m/orders/Hva950272imK/print?_tkn_=52n0001w0z",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-03-10T14:58:46.900Z",
+            "updated_at": "2023-03-10T14:58:46.900Z",
+            "state": "Created"
+        }
+    }
+}

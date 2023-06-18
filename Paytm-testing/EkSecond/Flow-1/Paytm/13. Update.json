@@ -1,0 +1,53 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "update",
+		"country": "IND",
+		"city": "std:080",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https://ondc-staging.paytm.com/retail",
+		"transaction_id": "63f2f4f2-372f-4197-a797-b28b52c9eda5",
+		"message_id": "1349568433783:1679401700802",
+		"timestamp": "2023-03-21T12:28:20.802Z",
+		"bpp_id": "api3.eksecond.in",
+		"bpp_uri": "https://api3.eksecond.in/ondc",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"update_target": "item",
+		"order": {
+			"id": "F85A800A23773A7926CC207F186E4063",
+			"state": "delivered",
+			"provider": {
+				"id": "632839af4bea4df42dfe336b"
+			},
+			"items": [
+				{
+					"id": "640843cb6a4db5be49821395",
+					"quantity": {
+						"count": 1
+					},
+					"tags": {
+						"update_type": "return",
+						"reason_code": "005",
+						"ttl_approval": "PT24H",
+						"ttl_reverseqc": "P3D",
+						"image": "https://commerce-tech-paytmimg.s3.ap-south-1.amazonaws.com/returns/customer/8406.png"
+					}
+				}
+			],
+			"payment": {
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "buyer",
+						"settlement_phase": "refund",
+						"settlement_type": "NET_BANKING",
+						"settlement_amount": "364.56",
+						"settlement_timestamp": "2023-03-21T12:28:20.802Z"
+					}
+				]
+			}
+		}
+	}
+}

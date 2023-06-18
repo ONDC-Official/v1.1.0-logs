@@ -1,0 +1,81 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "search",
+    "timestamp": "2023-03-20T08:50:14.589Z",
+    "ttl": "PT30S",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-qa.gofrugalretail.com",
+    "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+    "transaction_id": "3ec7d300-f6ac-4cba-aeb3-4da08ece367b",
+    "message_id": "34794fa7-4bf0-4e37-8018-d02ffc3f2d55"
+  },
+  "message": {
+    "intent": {
+      "provider": {
+        "time": {
+          "range": {
+            "start": "0900",
+            "end": "2300"
+          },
+          "days": "2,3,4,5,6,1",
+          "schedule": {
+            "holidays": [
+              "2023-03-26",
+              "2023-03-25"
+            ]
+          }
+        }
+      },
+      "category": {
+        "id": "Express Delivery"
+      },
+      "fulfillment": {
+        "type": "Prepaid",
+        "start": {
+          "location": {
+            "gps": "12.922811, 77.6952446",
+            "address": {
+              "area_code": "560035"
+            }
+          }
+        },
+        "end": {
+          "location": {
+            "gps": "12.9812430000001, 77.5950340000001",
+            "address": {
+              "area_code": "560001"
+            }
+          }
+        }
+      },
+      "@ondc/org/payload_details": {
+        "weight": {
+          "value": 200,
+          "unit": "Gram"
+        },
+        "dimensions": {
+          "length": {
+            "value": 10,
+            "unit": "meter"
+          },
+          "breadth": {
+            "value": 12,
+            "unit": "meter"
+          },
+          "height": {
+            "value": 20,
+            "unit": "meter"
+          }
+        },
+        "category": "Grocery",
+        "value": {
+          "currency": "INR",
+          "value": "400.0"
+        }
+      }
+    }
+  }
+}

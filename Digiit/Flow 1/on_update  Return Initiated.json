@@ -1,0 +1,141 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "transaction_id": "5be9fbdc-570f-43fb-bedf-75b1a4928972",
+    "message_id": "db989fb5-3b43-419e-9d57-535d2785b0d4",
+    "timestamp": "2023-04-19T11:57:24.002Z",
+    "bpp_id": "preprod-bpp.dbs.digiit.io"
+  },
+  "message": {
+    "order": {
+      "id": "2023-04-19-592615",
+      "state": "Completed",
+      "items": [
+        {
+          "id": "1057",
+          "fulfillment_id": "fdcb3959-7d88-49b3-891a-39c857e1cc27",
+          "quantity": {
+            "count": 1
+          },
+          "tags": {
+            "status": "Return_Initiated"
+          }
+        },
+        {
+          "id": "999",
+          "fulfillment_id": "fdcb3959-7d88-49b3-891a-39c857e1cc27",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "204.95"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "999",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Rice Flour",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "57.75"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "57.75"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1057",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Coca-Cola PET Bottle, 750 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "47.20"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "47.20"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "fdcb3959-7d88-49b3-891a-39c857e1cc27",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "fdcb3959-7d88-49b3-891a-39c857e1cc27",
+          "type": "Delivery",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "name": "Order delivered",
+              "code": "Order-delivered"
+            }
+          },
+          "start": {
+            "location": {
+              "descriptor": {
+                "name": "Sridhivyam"
+              },
+              "gps": "12.871414900,77.570119000"
+            },
+            "time": {
+              "range": {
+                "start": "2023-04-19T11:47:25.337Z",
+                "end": "2023-04-19T12:02:25.337Z"
+              },
+              "timestamp": "2023-04-19T11:51:59.493Z"
+            },
+            "contact": {
+              "phone": "7760246669",
+              "email": "psriram78@yahoo.com"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.861736, 77.506438"
+            },
+            "time": {
+              "range": {
+                "start": "2023-04-19T12:17:25.337Z",
+                "end": "2023-04-19T12:32:25.337Z"
+              },
+              "timestamp": "2023-04-19T11:56:07.360Z"
+            },
+            "contact": {
+              "phone": "9843123383"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

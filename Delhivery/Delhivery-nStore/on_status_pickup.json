@@ -1,0 +1,120 @@
+{
+  "message": {
+    "order": {
+      "id": "20669_222035400239_20354_ll2dSs",
+      "state": "In-progress",
+      "provider": {
+        "id": "Delhivery"
+      },
+      "items": [
+        {
+          "descriptor": {
+            "code": "P2H2P"
+          },
+          "category_id": "Standard Delivery",
+          "id": "64072035-ee45-4cad-bdd5-0f1e67dd7d10"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "12.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "64072035-ee45-4cad-bdd5-0f1e67dd7d10",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "12.00"
+            }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid",
+          "@ondc/org/awb_no": "352030210724",
+          "state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "name": "Order picked up"
+            }
+          },
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-03-08T01:13:00.000Z",
+                "end": "2023-03-08T06:13:00.000Z"
+              },
+              "timestamp": "2023-03-07T11:17:40.784Z"
+            },
+            "instructions": {
+              "name": "Shipping label or proof of pickup",
+              "short_desc": "Shipping label or proof of delivery details",
+              "long_desc": "Shipping label info or proof of pickup",
+              "images": [
+                "https://s3.ap-southeast-1.amazonaws.com/media.delhivery/tmp/shipping_label_ondc/352030210724.pdf?"
+              ]
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-03-11T16:47:40.000",
+                "end": "2023-03-11T16:47:40.000"
+              },
+              "timestamp": ""
+            }
+          },
+          "@ondc/org/ewaybillno": ""
+        }
+      ],
+      "payments": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_ifsc_code": "IFSCTEST1234",
+            "beneficiary_name": "DELHIVERY LIMITED",
+            "settlement_bank_account_no": "ACCTEST1234",
+            "settlement_counterparty": "seller-app",
+            "settlement_type": "neft"
+          }
+        ]
+      },
+      "billing": {
+        "address": {
+          "country": "India",
+          "city": "Chennai",
+          "area_code": "600028",
+          "name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+          "locality": "Chamiers Road, R.A. Puram",
+          "state": "Tamil Nadu",
+          "building": "No. 105, Third floor, Black orchid building"
+        },
+        "updated_at": "2023-03-07T11:12:50.209Z",
+        "phone": "9884553980",
+        "tax_number": "33AAFCN4837J1ZB",
+        "name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+        "created_at": "2023-03-07T11:12:50.209Z",
+        "email": "accounts@nstore.in"
+      },
+      "updated_at": "2023-03-07T11:17:48.593Z"
+    }
+  },
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_status",
+    "core_version": "1.1.0",
+    "bap_id": "b-ondc-seller-bpp.nlincs.in",
+    "bap_uri": "https://b-ondc-seller-bpp.nlincs.in/lbap",
+    "transaction_id": "20669_222035400239_20354_00000000-6d59-29d4-ffff-ffff9abaa189_ll2dSs",
+    "message_id": "da4c96b3-9394-4feb-bedd-1d9782d5db57",
+    "timestamp": "2023-03-07T11:17:48.593Z",
+    "bpp_id": "ondc-dev.delhivery.com",
+    "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/"
+  }

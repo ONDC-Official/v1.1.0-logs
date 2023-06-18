@@ -1,0 +1,208 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "confirm",
+		"core_version": "1.1.0",
+		"transaction_id": "b733e0ca-2408-4977-9c18-7dc6e36fcb46",
+		"bap_id": "preprod-ondc.addble.com",
+		"bap_uri": "https://preprod-ondc.addble.com/",
+		"message_id": "631d28e0-1fc5-40b7-8217-caa655c6bd2f",
+		"timestamp": "2023-05-13T14:05:45.747Z",
+		"ttl": "PT30S",
+		"bpp_id": "ondc-dev.delhivery.com",
+		"bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/"
+	},
+	"message": {
+		"order": {
+			"id": "b7bd105b-7f4e-4ec9-8c90-137158f56015",
+			"state": "Created",
+			"provider": {
+				"id": "Delhivery"
+			},
+			"items": [
+				{
+					"id": "f27a0e45-a47b-4ab2-8679-ba1664fd1e7b",
+					"category_id": "Express Delivery",
+					"descriptor": {
+						"code": "P2H2P"
+					}
+				}
+			],
+			"billing": {
+				"name": "Addble",
+				"address": {
+					"name": "BTMC",
+					"building": "BTMC",
+					"locality": "Uripok Kangchup Road, Lamsang",
+					"city": "Imphal",
+					"state": "Manipur",
+					"country": "India",
+					"area_code": "795146"
+				},
+				"tax_number": "14AAAAA0000A1Z5",
+				"phone": "7085097856",
+				"email": "support.ondc@addble.com",
+				"created_at": "2023-05-13T14:05:28.460Z",
+				"updated_at": "2023-05-13T14:05:28.460Z"
+			},
+			"fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid",
+					"start": {
+						"location": {
+							"gps": "12.8959396,77.5824389",
+							"address": {
+								"name": "Syngenta",
+								"building": "35/A, B D A Complex, Near-DTDC Courier Hsr Layout",
+								"locality": "Sector 6, HSR Layout",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "India",
+								"area_code": "560001"
+							}
+						},
+						"contact": {
+							"phone": "9954780440",
+							"email": "jane@addble.com"
+						},
+						"person": {
+							"name": "Jane"
+						},
+						"instructions": {
+							"short_desc": "556734",
+							"long_desc": "Scan QR Code attached to package"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "28.533647, 77.3851280000001",
+							"address": {
+								"name": "Yaikhomba Noida",
+								"building": "Today Homes",
+								"locality": "Ridge Residency",
+								"city": "Noida",
+								"state": "Uttar Pradesh",
+								"country": "IND",
+								"area_code": "201304"
+							}
+						},
+						"contact": {
+							"email": "adden.company@gmail.com",
+							"phone": "6362944815"
+						},
+						"person": {
+							"name": "Yaikhomba Noida"
+						},
+						"instructions": {
+							"short_desc": "258550",
+							"long_desc": "Scan QR Code attached to package"
+						}
+					},
+					"tags": {
+						"@ondc/org/order_ready_to_ship": "No"
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1.00"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "f27a0e45-a47b-4ab2-8679-ba1664fd1e7b",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "1.00"
+						}
+					}
+				]
+			},
+			"@ondc/org/linked_order": {
+				"items": [
+					{
+						"category_id": "Grocery",
+						"descriptor": {
+							"name": "CARROT Seeds 100 gm"
+						},
+						"quantity": {
+							"count": 1,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 0.1
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "148"
+						}
+					},
+					{
+						"category_id": "Grocery",
+						"descriptor": {
+							"name": "Carrot- गाजर 250 gm"
+						},
+						"quantity": {
+							"count": 1,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 0.25
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "68"
+						}
+					},
+					{
+						"category_id": "Grocery",
+						"descriptor": {
+							"name": "PEA Seeds 100 gm"
+						},
+						"quantity": {
+							"count": 1,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 0.1
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "20"
+						}
+					}
+				],
+				"provider": {
+					"descriptor": {
+						"name": "Syngenta"
+					},
+					"address": {
+						"name": "Syngenta",
+						"locality": "Sector 6, HSR Layout",
+						"street": "Sector 6, HSR Layout",
+						"area_code": "560001",
+						"city": "Bengaluru",
+						"state": "Karnataka"
+					}
+				},
+				"order": {
+					"id": "2023-05-13-742088",
+					"weight": {
+						"unit": "Kilogram",
+						"value": 0.45
+					}
+				}
+			},
+			"payment": {
+				"collected_by": "BPP",
+				"type": "POST-FULFILLMENT"
+			},
+			"created_at": "2023-05-13T14:05:45.747Z",
+			"updated_at": "2023-05-13T14:05:45.747Z"
+		}
+	}
+}

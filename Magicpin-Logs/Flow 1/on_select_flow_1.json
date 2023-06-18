@@ -1,0 +1,142 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc",
+        "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc",
+        "transaction_id": "692b6c3d-670b-44e5-bb27-fcde3352c01a",
+        "message_id": "b223bf17-5dbb-4ebe-81c7-bb3de6d550e8",
+        "timestamp": "2023-03-09T13:31:40.620Z",
+        "key": "Iafh/LuKvNFJ9U7IoeW4CDlqB64RG8w6qqRmbcswz3w=",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "38272871"
+            },
+            "items": [{
+                    "id": "253504971",
+                    "fulfillment_id": "1b10ac4d-be4f-4749-8434-d93dfc02b2ab"
+                },
+                {
+                    "id": "253504974",
+                    "fulfillment_id": "1b10ac4d-be4f-4749-8434-d93dfc02b2ab"
+                }
+            ],
+            "fulfillments": [{
+                "id": "1b10ac4d-be4f-4749-8434-d93dfc02b2ab",
+                "@ondc/org/category": "Immediate Delivery",
+                "@ondc/org/TAT": "PT33M",
+                "@ondc/org/provider_name": "MAGICPIN",
+                "state": {
+                    "descriptor": {
+                        "code": "Serviceable"
+                    }
+                },
+                "tracking": false
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "780.00"
+                },
+                "breakup": [{
+                        "@ondc/org/item_id": "253504971",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Chocolate Cake",
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "247.00"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "247.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "253504971",
+                        "@ondc/org/title_type": "tax",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "13.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "253504974",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Paneer Tikka",
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "494.00"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "494.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "253504974",
+                        "@ondc/org/title_type": "tax",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "26.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1b10ac4d-be4f-4749-8434-d93dfc02b2ab",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1b10ac4d-be4f-4749-8434-d93dfc02b2ab",
+                        "@ondc/org/title_type": "misc",
+                        "title": "Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}

@@ -1,0 +1,183 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "transaction_id": "cd7d88e0-2840-46a0-a6e4-0905bee236b2",
+        "message_id": "aa5bb24b-9abc-4353-8979-96f4b180b9ef",
+        "timestamp": "2023-06-03T11:12:30.403Z",
+        "bpp_id": "ondc-preprod.zeppstore.in",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-06-03-220765",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "abhik",
+                    "building": "Enter Landmark",
+                    "locality": "Enter Street",
+                    "city": "Koteshwar",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "576222"
+                },
+                "phone": "7899435265",
+                "name": "abhik",
+                "email": "abhik@gmail.com",
+                "created_at": "2023-06-03T11:11:33.671Z",
+                "updated_at": "2023-06-03T11:11:33.671Z"
+            },
+            "items": [
+                {
+                    "id": "6327",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "ZRPL50e8a442-c1f0-42b3-b531-46d9cb234927"
+                }
+            ],
+            "provider": {
+                "id": "ZEPP",
+                "locations": [
+                    {
+                        "id": "wfhlb-1000"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "ZRPL50e8a442-c1f0-42b3-b531-46d9cb234927",
+                    "end": {
+                        "contact": {
+                            "phone": "7899435265"
+                        },
+                        "person": {
+                            "name": "abhik"
+                        },
+                        "location": {
+                            "gps": "13.593628, 74.693289",
+                            "address": {
+                                "name": "abhik",
+                                "building": "Enter Landmark",
+                                "locality": "Enter Street",
+                                "city": "Koteshwar",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "576222"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "1290",
+                    "currency": "INR",
+                    "transaction_id": "cd7d88e0-2840-46a0-a6e4-0905bee236b2"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "beneficiary_name": "xxxx",
+                        "upi_address": "gft@oksbi",
+                        "settlement_bank_account_no": "xxxx",
+                        "settlement_ifsc_code": "xxxx",
+                        "bank_name": "xxxx",
+                        "branch_name": "xxxx"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1290"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "6327",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 10",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1290"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1290"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL50e8a442-c1f0-42b3-b531-46d9cb234927",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL50e8a442-c1f0-42b3-b531-46d9cb234927",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6327",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6327",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL50e8a442-c1f0-42b3-b531-46d9cb234927",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "created_at": "2023-06-03T11:12:30.403Z",
+            "updated_at": "2023-06-03T11:12:30.403Z"
+        }
+    }
+}

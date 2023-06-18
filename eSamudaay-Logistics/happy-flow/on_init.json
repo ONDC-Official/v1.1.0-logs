@@ -1,0 +1,58 @@
+{
+  "context": {
+    "action": "on_init",
+    "transaction_id": "ea6971cc-fe92-4c35-ba2b-479dc146ab4c",
+    "message_id": "c5063a91-1fdb-4f62-838a-4730a712dd04",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-05-14T04:22:41.456Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "loadshare@ondc-preprod.loadshare.net"
+      },
+      "items": [
+        {
+          "id": "nextday"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "39.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "nextday",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "39.00"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "buyer-app",
+            "settlement_type": "upi",
+            "beneficiary_name": "xxxxx",
+            "upi_address": "gft@oksbi",
+            "settlement_bank_account_no": "XXXXXXXXXX",
+            "settlement_ifsc_code": "XXXXXXXXX"
+          }
+        ]
+      }
+    }
+  }
+}

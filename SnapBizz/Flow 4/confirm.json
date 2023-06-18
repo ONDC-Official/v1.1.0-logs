@@ -1,0 +1,161 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "jiomart-buyer.ondcz5.de",
+    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+    "transaction_id": "2f62fff9-bd6a-4949-8fc7-dfb50d7944c5",
+    "message_id": "54452ed8-9ddf-4876-a9dd-515493f56746",
+    "timestamp": "2023-06-14T19:39:22.332Z",
+    "ttl": "PT30S",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz"
+  },
+  "message": {
+    "order": {
+      "id": "a30f9a28-2229-46c1-bcd0-cdc9a5eaf3a6",
+      "state": "Created",
+      "billing": {
+        "name": "alice",
+        "address": {
+          "door": "abc building",
+          "name": "alice",
+          "building": "abc building",
+          "locality": "abc area",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560001"
+        },
+        "email": "alice@gmail.com",
+        "phone": "7627635764",
+        "created_at": "2023-06-14T19:38:47.137Z",
+        "updated_at": "2023-06-14T19:38:47.137Z"
+      },
+      "items": [
+        {
+          "fulfillment_id": "c3b70565-9a2b-5386-b16a-715ef72fbd17",
+          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+          "quantity": {
+            "count": 10
+          }
+        },
+        {
+          "fulfillment_id": "c3b70565-9a2b-5386-b16a-715ef72fbd17",
+          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "provider": {
+        "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
+        "locations": [
+          {
+            "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "c3b70565-9a2b-5386-b16a-715ef72fbd17",
+          "tracking": false,
+          "end": {
+            "person": {
+              "name": "alice"
+            },
+            "contact": {
+              "email": "alice@gmail.com",
+              "phone": "7627635764"
+            },
+            "location": {
+              "gps": "12.9765944,77.5992708",
+              "address": {
+                "name": "alice",
+                "building": "abc building",
+                "locality": "abc area",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560001"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "params": {
+          "amount": "770",
+          "currency": "INR",
+          "transaction_id": "20230615011650000875908879434025352"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "2",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "success@upi",
+            "bank_name": "State Bank Of India",
+            "branch_name": "Andaman Nicobar",
+            "settlement_bank_account_no": "29837293879283",
+            "settlement_ifsc_code": "SBIN0002001"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "770.00"
+        },
+        "ttl": "P1D",
+        "breakup": [
+          {
+            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": 10,
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "70"
+              }
+            },
+            "title": "snapbizz neo",
+            "price": {
+              "currency": "INR",
+              "value": "700.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": 1,
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "70"
+              }
+            },
+            "title": "snapbizz turbo",
+            "price": {
+              "currency": "INR",
+              "value": "70.00"
+            }
+          },
+          {},
+          {}
+        ]
+      },
+      "created_at": "2023-06-14T19:39:22.332Z",
+      "updated_at": "2023-06-14T19:39:22.332Z"
+    }
+  }
+}

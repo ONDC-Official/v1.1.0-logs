@@ -1,0 +1,170 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_update",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bpp_id": "ondc.uengage.in",
+    "bpp_uri": "https://ondc.uengage.in/",
+    "bap_id": "ondc.indiastack.cloud",
+    "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+    "transaction_id": "bf382c48-e956-4f19-a7a7-46322e2331e8",
+    "message_id": "f7810032-a24a-468f-8af9-a07f2e8cfce0",
+    "timestamp": "2023-03-15T19:13:55.894Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "7a44fcae-5edc-4daf-9964-03b7d3a83499",
+      "state": "Completed",
+      "items": [
+        {
+          "fulfillment_id": "1",
+          "id": "2947910",
+          "quantity": {
+            "count": 1
+          },
+          "tags": {
+            "status": "Liquidated"
+          }
+        },
+        {
+          "fulfillment_id": "1",
+          "id": "2947906",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "135.40"
+        },
+        "breakup": [
+          {
+            "title": "Exotic Tikka Pizza-Regular (serves 1, 17.7 Cm)",
+            "price": {
+              "currency": "INR",
+              "value": "128"
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "128"
+              },
+              "quantity": {
+                "available": {
+                  "count": "30"
+                },
+                "maximum": {
+                  "count": "30"
+                }
+              }
+            },
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/item_id": "2947906"
+          },
+          {
+            "@ondc/org/item_id": "2947906",
+            "price": {
+              "currency": "INR",
+              "value": "6.4"
+            },
+            "@ondc/org/title_type": "tax",
+            "title": "Tax"
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "@ondc/org/title_type": "delivery",
+            "title": "Delivery Charges"
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "price": {
+              "currency": "INR",
+              "value": "1"
+            },
+            "@ondc/org/title_type": "packing",
+            "title": "Packing charges"
+          }
+        ],
+        "ttl": "PT60M"
+      },
+      "fulfillments": [
+        {
+          "end": {
+            "contact": {
+              "email": "shubham@uengage.in",
+              "phone": "9501058880"
+            },
+            "location": {
+              "address": {
+                "area_code": "560034",
+                "city": "Bangalore",
+                "country": "IN",
+                "building": "-",
+                "door": "-",
+                "locality": "-",
+                "name": "kormangla bengluru",
+                "state": "KARNATAKA"
+              },
+              "gps": "12.9261382,77.62210910000002"
+            },
+            "person": {
+              "name": "shubham uengage"
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-15T13:48:36.098Z",
+                "end": "2023-03-15T14:08:36.098Z"
+              },
+              "timestamp": "2023-03-15T18:58:36.978Z"
+            }
+          },
+          "id": "1",
+          "tracking": false,
+          "type": "Delivery",
+          "provider_id": "89",
+          "state": {
+            "descriptor": {
+              "name": "Order delivered",
+              "code": "Order-delivered"
+            }
+          },
+          "@ondc/org/provider_name": "Dunzo",
+          "start": {
+            "location": {
+              "descriptor": {
+                "name": "La Pinoz and Pizza",
+                "images": [
+                  "https://www.uengage.in/images/addo/logos/lapinoz-logo.png"
+                ]
+              },
+              "gps": "77.6245,12.9352"
+            },
+            "contact": {
+              "phone": "9718345112",
+              "email": "hani@uengage.in"
+            },
+            "time": {
+              "range": {
+                "start": "2023-03-15T13:28:36.098Z",
+                "end": "2023-03-15T13:48:36.098Z"
+              },
+              "timestamp": "2023-03-15T18:57:52.710Z"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

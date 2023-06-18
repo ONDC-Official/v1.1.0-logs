@@ -1,0 +1,83 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_search",
+    "timestamp": "2023-03-10T10:11:01.046Z",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-qa.gofrugalretail.com",
+    "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+    "transaction_id": "c8705cef-bd66-4e39-b4b0-b8547a113f4f",
+    "message_id": "a8b49fb8-2370-4366-9483-c960c9969d01"
+  },
+  "message": {
+    "catalog": {
+      "bpp/descriptor": {
+        "name": "LoadShare Delivery"
+      },
+      "bpp/fulfillments": [
+        {
+          "id": "lsn_prepaid",
+          "type": "Prepaid",
+          "tracking": false
+        }
+      ],
+      "bpp/providers": [
+        {
+          "id": "loadshare@ondc-preprod.loadshare.net",
+          "descriptor": {
+            "name": "LoadShare Networks",
+            "short_desc": "LoadShare Networks Private Limited",
+            "long_desc": "LoadShare Networks Private Limited"
+          },
+          "categories": [
+            {
+              "id": "Next Day Delivery",
+              "time": {
+                "label": "TAT",
+                "duration": "P1D"
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "nextday",
+              "parent_item_id": "",
+              "descriptor": {
+                "name": "Next Day Delivery",
+                "code": "P2P",
+                "short_desc": "Upto 2 working days for Delivery",
+                "long_desc": "Upto 2 working days for Delivery"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "78"
+              },
+              "time": {
+                "label": "TAT",
+                "timestamp": "2023-03-11T12:11:01.000Z",
+                "duration": "P1D",
+                "range": {
+                  "start": "2023-03-11T10:11:01.000Z",
+                  "end": "2023-03-11T12:11:01.000Z"
+                }
+              },
+              "matched": false,
+              "related": false,
+              "recommended": false,
+              "category_id": "Next Day Delivery",
+              "fulfillment_id": "lsn_prepaid",
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": false,
+              "@ondc/org/seller_pickup_return": false,
+              "@ondc/org/available_on_cod": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

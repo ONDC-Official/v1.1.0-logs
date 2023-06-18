@@ -1,0 +1,122 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_select",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+      "transaction_id": "9e268ab4-4b44-4576-a52f-15365087d805",
+      "message_id": "650348c4-cba3-4350-9aa0-e5b9b1da8899",
+      "timestamp": "2023-03-27T08:03:05.034Z",
+      "bpp_id": "ondc.hulsecure.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
+        },
+        "fulfillments": [
+          {
+            "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+            "@ondc/org/provider_name": "The U Shop",
+            "tracking": false,
+            "@ondc/org/category": "Standard Delivery",
+            "@ondc/org/TAT": "P7D",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable"
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "3333"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "44790346678572",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "1"
+                  },
+                  "maximum": {
+                    "count": "1"
+                  }
+                }
+              },
+              "title": "AXE Ultra Smooth After Shave Balm, 100 g",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "1111"
+              }
+            },
+            {
+              "@ondc/org/item_id": "44790347235628",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                },
+                "quantity": {
+                  "available": {
+                    "count": "10"
+                  },
+                  "maximum": {
+                    "count": "10"
+                  }
+                }
+              },
+              "title": "Axe Dark Temptation Long Lasting Deodorant Bodyspray For Men 215 ml",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "2222"
+              }
+            },
+            {
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "items": [
+          {
+            "id": "44790346678572",
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+          },
+          {
+            "id": "44790347235628",
+            "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+          }
+        ]
+      }
+    },
+    "error": {
+      "type": "DOMAIN-ERROR",
+      "code": "40002"
+    }
+  }

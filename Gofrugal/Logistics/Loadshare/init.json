@@ -1,0 +1,108 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "init",
+    "timestamp": "2023-03-10T10:11:11.212Z",
+    "ttl": "PT30S",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-qa.gofrugalretail.com",
+    "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+    "transaction_id": "c8705cef-bd66-4e39-b4b0-b8547a113f4f",
+    "message_id": "13c75ed7-53ae-4131-b9e6-d709e5a668da"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "nextday",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "quantity": {
+            "count": 1
+          },
+          "category_id": "Next Day Delivery"
+        }
+      ],
+      "billing": {
+        "name": "Gofrugal Technologies Pvt Ltd",
+        "address": {
+          "name": "KRISP IT Park",
+          "building": "942, Kelambakkam - Vandalur Rd",
+          "locality": "Kizhakottayur",
+          "city": "Chennai",
+          "state": "Tamil Nadu",
+          "country": "India",
+          "area_code": "600127"
+        },
+        "email": "accounts@gofrugal.com",
+        "phone": "9840812985",
+        "tax_number": "33AACCG2423J1ZZ",
+        "created_at": "2023-03-10T10:11:11.212Z",
+        "updated_at": "2023-03-10T10:11:11.212Z"
+      },
+      "fulfillments": [
+        {
+          "id": "lsn_prepaid",
+          "type": "Prepaid",
+          "start": {
+            "location": {
+              "id": "5466-ONDC-1-3330_location",
+              "gps": "12.9731244, 77.5948792",
+              "address": {
+                "door": "",
+                "name": "MARKETPLACE SELLER1",
+                "building": "block A",
+                "street": "I.P.Extension",
+                "locality": "near to gateway",
+                "city": "bangalore",
+                "state": "karnataka",
+                "country": "india",
+                "area_code": "560035"
+              }
+            },
+            "contact": {
+              "phone": "8881177221",
+              "email": "sherin.h@gofrugal.com"
+            },
+            "person": {
+              "name": "sherin shafa"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.938208, 77.619106",
+              "address": {
+                "name": "Sherin",
+                "building": "bangalore",
+                "locality": "loadshare networks",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560095"
+              }
+            },
+            "contact": {
+              "phone": "8899112244",
+              "email": "sherinshafa2016@gmail.com"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "no"
+          }
+        }
+      ],
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP"
+      },
+      "provider": {
+        "id": "loadshare@ondc-preprod.loadshare.net"
+      }
+    }
+  }
+}

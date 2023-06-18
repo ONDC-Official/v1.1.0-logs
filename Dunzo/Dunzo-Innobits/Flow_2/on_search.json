@@ -1,0 +1,179 @@
+{
+    "context": {
+        "action": "on_search",
+        "bap_id": "biz.test.enstore.com",
+        "bap_uri": "https://biz.test.enstore.com/ecc/ondc/logistics-bap",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "country": "IND",
+        "domain": "nic2004:60232",
+        "message_id": "5634b544-7ff9-4a9a-a2f2-9758c7d6eac9",
+        "timestamp": "2023-03-07T12:37:43.421Z",
+        "transaction_id": "LOG-c60a850c-9112-4d5d-8112-e44892d29e75",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "Dunzo"
+            },
+            "bpp/fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "2",
+                    "type": "CoD"
+                },
+                {
+                    "id": "3",
+                    "type": "RTO"
+                }
+            ],
+            "bpp/providers": [
+                {
+                    "categories": [
+                        {
+                            "id": "Immediate Delivery",
+                            "time": {
+                                "duration": "PT50M",
+                                "label": "TAT"
+                            }
+                        },
+                        {
+                            "id": "Same Day Delivery",
+                            "time": {
+                                "duration": "PT4H",
+                                "label": "TAT"
+                            }
+                        },
+                        {
+                            "id": "Next Day Delivery",
+                            "time": {
+                                "duration": "PT24H",
+                                "label": "TAT"
+                            }
+                        }
+                    ],
+                    "descriptor": {
+                        "code": "P2P",
+                        "long_desc": "Dunzo",
+                        "name": "Dunzo",
+                        "short_desc": "Dunzo"
+                    },
+                    "id": "dunzo-lsp",
+                    "items": [
+                        {
+                            "category_id": "Immediate Delivery",
+                            "parent_item_id": "",
+                            "descriptor": {
+                                "code": "P2P",
+                                "long_desc": "Dunzo",
+                                "name": "Dunzo",
+                                "short_desc": "Dunzo"
+                            },
+                            "fulfillment_id": "1",
+                            "id": "item-74587218-15e4-435c-ad3d-7cae9cd1d0f9",
+                            "price": {
+                                "currency": "INR",
+                                "value": "86"
+                            },
+                            "time": {
+                                "duration": "PT50M",
+                                "label": "TAT",
+                                "timestamp": "2023-03-07T13:27:43.421Z"
+                            }
+                        },
+                        {
+                            "category_id": "Same Day Delivery",
+                            "parent_item_id": "",
+                            "descriptor": {
+                                "code": "P2P",
+                                "long_desc": "Dunzo",
+                                "name": "Dunzo",
+                                "short_desc": "Dunzo"
+                            },
+                            "fulfillment_id": "1",
+                            "id": "item-fd25f26f-d30a-4940-b76d-377a05771e75",
+                            "price": {
+                                "currency": "INR",
+                                "value": "86"
+                            },
+                            "time": {
+                                "duration": "PT4H",
+                                "label": "TAT",
+                                "timestamp": "2023-03-07T16:37:43.421Z"
+                            }
+                        },
+                        {
+                            "category_id": "Same Day Delivery",
+                            "parent_item_id": "item-fd25f26f-d30a-4940-b76d-377a05771e75",
+                            "descriptor": {
+                                "code": "P2P",
+                                "long_desc": "Dunzo",
+                                "name": "Dunzo",
+                                "short_desc": "Dunzo"
+                            },
+                            "fulfillment_id": "3",
+                            "id": "item-0aedfa55-ac78-41ea-94c3-c0dfb7e65818",
+                            "price": {
+                                "currency": "INR",
+                                "value": "86"
+                            },
+                            "time": {
+                                "duration": "PT4H",
+                                "label": "TAT",
+                                "timestamp": "2023-03-07T16:37:43.421Z"
+                            }
+                        },
+                        {
+                            "category_id": "Next Day Delivery",
+                            "parent_item_id": "",
+                            "descriptor": {
+                                "code": "P2P",
+                                "long_desc": "Dunzo",
+                                "name": "Dunzo",
+                                "short_desc": "Dunzo"
+                            },
+                            "fulfillment_id": "1",
+                            "id": "item-66224cdf-f671-431b-90a4-ab20da1a4b58",
+                            "price": {
+                                "currency": "INR",
+                                "value": "86"
+                            },
+                            "time": {
+                                "duration": "PT24H",
+                                "label": "TAT",
+                                "timestamp": "2023-03-08T12:37:43.421Z"
+                            }
+                        },
+                        {
+                            "category_id": "Next Day Delivery",
+                            "parent_item_id": "item-66224cdf-f671-431b-90a4-ab20da1a4b58",
+                            "descriptor": {
+                                "code": "P2P",
+                                "long_desc": "Dunzo",
+                                "name": "Dunzo",
+                                "short_desc": "Dunzo"
+                            },
+                            "fulfillment_id": "3",
+                            "id": "item-23b676dd-8714-40a8-a10e-b34e8b95bf95",
+                            "price": {
+                                "currency": "INR",
+                                "value": "86"
+                            },
+                            "time": {
+                                "duration": "PT24H",
+                                "label": "TAT",
+                                "timestamp": "2023-03-08T12:37:43.421Z"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

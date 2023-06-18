@@ -1,0 +1,49 @@
+{
+  "context": {
+    "action": "on_init",
+    "transaction_id": "fd945074-9403-4f95-a42c-30652b4f6397",
+    "message_id": "8b1207cb-9d2a-4904-9f57-4ecc5b9499db",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-05-31T08:56:47.937Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "loadshare@ondc-preprod.loadshare.net"
+      },
+      "items": [
+        {
+          "id": "nextday"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "nextday",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "1.00"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": null
+      }
+    }
+  }
+}

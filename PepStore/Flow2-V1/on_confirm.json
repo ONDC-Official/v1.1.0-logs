@@ -1,0 +1,207 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "on_confirm",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "db96563b-3cc7-48e7-ad01-b0bfe4f2a94c",
+		"message_id": "721fd2f4-842b-402b-9789-a78427d5783c",
+		"city": "std:080",
+		"country": "IND",
+		"timestamp": "2023-05-23T16:08:11.97Z"
+	},
+	"message": {
+		"order": {
+			"id": "2023-05-23-589463",
+			"state": "Accepted",
+			"provider": {
+				"id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111",
+				"locations": [{
+					"id": "S01425801-BGLR"
+				}]
+			},
+			"rateable": true,
+			"items": [{
+				"id": "57759",
+				"fulfillment_id": "db8799a3-9b5a-444f-a528-411f64f27803",
+				"quantity": {
+					"count": 1
+				}
+			}, {
+				"id": "59823",
+				"fulfillment_id": "db8799a3-9b5a-444f-a528-411f64f27803",
+				"quantity": {
+					"count": 1
+				}
+			}],
+			"billing": {
+				"name": "Nandita",
+				"address": {
+					"building": "span road",
+					"name": "Nandita",
+					"locality": "m403 sispal vihar",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560067"
+				},
+				"email": "nandita@technobibble.co.in",
+				"phone": "9818470079",
+				"created_at": "2023-05-23T16:07:47.396Z",
+				"updated_at": "2023-05-23T16:07:47.396Z"
+			},
+			"fulfillments": [{
+				"id": "db8799a3-9b5a-444f-a528-411f64f27803",
+				"@ondc\/org\/provider_name": "Pepsi Store - Sansi Grocery And Foods",
+				"type": "Delivery",
+				"state": {
+					"descriptor": {
+						"name": "Pending",
+						"code": "Pending"
+					}
+				},
+				"tracking": false,
+				"start": {
+					"location": {
+						"id": "S01425801-BGLR",
+						"descriptor": {
+							"name": "S01425801-BGLR"
+						},
+						"gps": "12.8389239,77.6860114"
+					},
+					"instructions": {
+						"name": "Pending",
+						"short_desc": "Pending"
+					},
+					"contact": {
+						"phone": "18003098994",
+						"email": "contact@quantumach.in"
+					}
+				},
+				"end": {
+					"location": {
+						"gps": "12.9977050000001, 77.7599290000001",
+						"address": {
+							"building": "span road",
+							"name": "Nandita",
+							"locality": "m403 sispal vihar",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "IND",
+							"area_code": "560067"
+						}
+					},
+					"instructions": {
+						"name": "Pending",
+						"short_desc": "Pending"
+					},
+					"contact": {
+						"phone": "9818470079"
+					}
+				},
+				"rateable": true
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "90"
+				},
+				"breakup": [{
+					"@ondc\/org\/item_id": "57759",
+					"@ondc\/org\/item_quantity": {
+						"count": 1
+					},
+					"title": "Lay's Potato Chips 50g, Classic Salted Flavour, Crunchy Chips & Snacks",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "20"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "20"
+						}
+					}
+				}, {
+					"@ondc\/org\/item_id": "59823",
+					"@ondc\/org\/item_quantity": {
+						"count": 1
+					},
+					"title": "Lay's Potato Chips 50g, American Style Cream & Onion Flavour, Crunchy Chips & Snacks",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "20"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "20"
+						}
+					}
+				}, {
+					"title": "Delivery charges",
+					"@ondc\/org\/item_id": "db8799a3-9b5a-444f-a528-411f64f27803",
+					"@ondc\/org\/title_type": "delivery",
+					"price": {
+						"currency": "INR",
+						"value": "50.0"
+					}
+				}]
+			},
+			"payment": {
+				"uri": "https:\/\/juspay.in\/",
+				"tl_method": "http\/get",
+				"params": {
+					"currency": "INR",
+					"amount": "90",
+					"transaction_id": "ONDC-db96563b-3cc7-48e7-ad01-b0bfe4f2a94c-1"
+				},
+				"status": "PAID",
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc\/org\/buyer_app_finder_fee_type": "percent",
+				"@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
+				"@ondc\/org\/settlement_details": [{
+					"settlement_counterparty": "seller-app",
+					"settlement_phase": "sale-amount",
+					"settlement_type": "rtgs",
+					"settlement_bank_account_no": "039605004605",
+					"settlement_ifsc_code": "ICIC0000396",
+					"beneficiary_name": "THE TECH TONIC",
+					"bank_name": "ICICI BANK",
+					"branch_name": "ICICI Bank Ltd, South Extension-II, New Delhi"
+				}]
+			},
+			"created_at": "2023-05-23T16:08:09.328Z",
+			"updated_at": "2023-05-23T16:08:11.97Z"
+		}
+	}
+} 
+
+
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "on_confirm",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https://stage.pep1.in/ondc/public/OndcPreProd/callback",
+		"transaction_id": "db96563b-3cc7-48e7-ad01-b0bfe4f2a94c",
+		"message_id": "721fd2f4-842b-402b-9789-a78427d5783c",
+		"city": "std:080",
+		"country": "IND",
+		"timestamp": "2023-05-23T16:08:11.97Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

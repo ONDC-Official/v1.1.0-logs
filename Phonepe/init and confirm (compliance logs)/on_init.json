@@ -1,0 +1,134 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_init",
+        "bap_id": "shopping-api-testing.phonepe.com",
+        "bpp_id": "biz.test.enstore.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+        "bpp_uri": "https://biz.test.enstore.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-03-09T08:27:56.499Z",
+        "message_id": "INIM2303091357548597008781",
+        "core_version": "1.1.0",
+        "transaction_id": "C2303091317540872178518"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "1000:1001"
+            },
+            "provider_location": {
+                "id": "1000:1001"
+            },
+            "items": [
+                {
+                    "id": "1256",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "FPA:1001:item-88b60751-4676-45bb-a8e5-1d66457798a3:1446:204991"
+                }
+            ],
+            "billing": {
+                "name": "Nagawara",
+                "phone": "8073865965",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "100",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "Nagawara ",
+                    "locality": "AK Colony",
+                    "area_code": "560045"
+                },
+                "created_at": "2023-03-09T08:27:56.499Z",
+                "updated_at": "2023-03-09T08:27:56.499Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "FPA:1001:item-88b60751-4676-45bb-a8e5-1d66457798a3:1446:204991",
+                    "end": {
+                        "contact": {
+                            "phone": "8073865965"
+                        },
+                        "location": {
+                            "gps": "13.040118217468, 77.624290466309",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "100",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "Nagawara ",
+                                "locality": "AK Colony",
+                                "area_code": "560045"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "provider_id": "biz.test.enstore.com"
+                }
+            ],
+            "quote": {
+                "ttl": "PT1H",
+                "price": {
+                    "value": "207.65",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "22.25",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "1256",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "185.4",
+                            "currency": "INR"
+                        },
+                        "title": "Avokada 1 kg",
+                        "@ondc/org/item_id": "1256",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1.0
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": 0,
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "FPA:1001:item-88b60751-4676-45bb-a8e5-1d66457798a3:1446:204991",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/withholding_amount": "0.0",
+                "@ondc/org/return_window": "0.0",
+                "@ondc/org/settlement_basis": "Collection",
+                "@ondc/org/settlement_window": "P2D",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "rtgs",
+                        "settlement_bank_account_no": "922020043291840",
+                        "settlement_ifsc_code": "UTIB0003190",
+                        "beneficiary_name": "Innobits Solutions Pvt Ltd Nodal Account",
+                        "bank_name": "Axis Bank",
+                        "branch_name": "Kathriguppe"
+                    }
+                ]
+            }
+        }
+    }
+}

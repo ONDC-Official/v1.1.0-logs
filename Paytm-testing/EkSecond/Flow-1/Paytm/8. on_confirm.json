@@ -1,0 +1,277 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_confirm",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https://ondc-staging.paytm.com/retail",
+		"bpp_id": "api3.eksecond.in",
+		"bpp_uri": "https://api3.eksecond.in/ondc",
+		"transaction_id": "63f2f4f2-372f-4197-a797-b28b52c9eda5",
+		"message_id": ":SentTimeStamp:1679401329960:",
+		"timestamp": "2023-03-21T12:22:13.438Z"
+	},
+	"message": {
+		"order": {
+			"id": "F85A800A23773A7926CC207F186E4063",
+			"created_at": "2023-03-21T12:22:09.956Z",
+			"updated_at": "2023-03-21T12:22:13.438Z",
+			"items": [
+				{
+					"id": "640843cb6a4db5be49821396",
+					"fulfillment_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+					"quantity": {
+						"count": 2
+					}
+				},
+				{
+					"id": "640843cb6a4db5be49821395",
+					"fulfillment_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+					"quantity": {
+						"count": 1
+					}
+				},
+				{
+					"id": "640843cb6a4db5be49821394",
+					"fulfillment_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+					"quantity": {
+						"count": 1
+					}
+				}
+			],
+			"provider": {
+				"id": "632839af4bea4df42dfe336b",
+				"locations": [
+					{
+						"id": "632839af4bea4df42dfe336b"
+					}
+				],
+				"rateable": true
+			},
+			"fulfillments": [
+				{
+					"id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+					"type": "Delivery",
+					"@ondc/org/provider_name": "LoadShare Networks",
+					"state": {
+						"descriptor": {
+							"code": "Pending"
+						}
+					},
+					"start": {
+						"location": {
+							"id": "632839af4bea4df42dfe336b",
+							"descriptor": {
+								"name": "Rumaan"
+							},
+							"gps": "12.913371523733359,77.68308302883554"
+						},
+						"time": {
+							"range": {
+								"start": "2023-03-21T12:37:13.000Z",
+								"end": "2023-03-21T12:47:13.000Z"
+							}
+						},
+						"instructions": {
+							"short_desc": "5JJM",
+							"long_desc": "Ensure to display pickup code on counter before pickup"
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "mohd@gmail.com"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.911397,77.680164",
+							"address": {
+								"name": "Najeeb Ahmed",
+								"building": "h1, apartment 2",
+								"locality": "sarjapur road",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "India",
+								"area_code": "560035"
+							}
+						},
+						"time": {
+							"range": {
+								"start": "2023-03-21T13:07:13.000Z",
+								"end": "2023-03-21T13:22:13.000Z"
+							}
+						},
+						"instructions": {
+							"short_desc": "L237",
+							"long_desc": "Ensure to display pickup code on counter before pickup"
+						},
+						"contact": {
+							"phone": "8885336235"
+						}
+					},
+					"rateable": true
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1452.69"
+				},
+				"breakup": [
+					{
+						"title": "Prawns Fry Roast",
+						"@ondc/org/item_id": "640843cb6a4db5be49821394",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "320.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						}
+					},
+					{
+						"title": "Loose Prawns",
+						"@ondc/org/item_id": "640843cb6a4db5be49821395",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "320.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						}
+					},
+					{
+						"title": "Ginger Prawns",
+						"@ondc/org/item_id": "640843cb6a4db5be49821396",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "640.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 2
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						}
+					},
+					{
+						"title": "Packing charges",
+						"@ondc/org/item_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+						"@ondc/org/title_type": "packing",
+						"price": {
+							"currency": "INR",
+							"value": "2.5"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821394",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "16.32"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821395",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "16.32"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821396",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "16.32"
+						}
+					},
+					{
+						"title": "Delivery charges",
+						"@ondc/org/item_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						}
+					},
+					{
+						"title": "Convenience Fee",
+						"@ondc/org/item_id": "ebf7d0b8-67f4-4dd8-9474-147ddc9bbe9c",
+						"@ondc/org/title_type": "misc",
+						"price": {
+							"currency": "INR",
+							"value": "82.23"
+						}
+					}
+				],
+				"ttl": "PT10M"
+			},
+			"payment": {
+				"uri": "https://ondc.transaction.com/payment",
+				"tl_method": "http/get",
+				"params": {
+					"transaction_id": "20230321011770000844995403816167216",
+					"amount": "1452",
+					"currency": "INR"
+				},
+				"type": "ON-ORDER",
+				"status": "PAID",
+				"collected_by": "BAP",
+				"@ondc/org/buyer_app_finder_fee_type": "percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_phase": "sale-amount",
+						"settlement_type": "neft",
+						"settlement_bank_account_no": "1234512345",
+						"settlement_ifsc_code": "15488ADEDD",
+						"beneficiary_name": "Najeeb",
+						"bank_name": "test",
+						"branch_name": "test"
+					}
+				]
+			},
+			"billing": {
+				"name": "Najeeb Ahmed",
+				"phone": "9000912423",
+				"created_at": "2023-03-21T12:19:44.055Z",
+				"updated_at": "2023-03-21T12:19:44.055Z",
+				"address": {
+					"name": "Najeeb Ahmed",
+					"building": "h1, apartment 2",
+					"locality": "sarjapur road",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "India",
+					"area_code": "560035"
+				}
+			},
+			"state": "Accepted"
+		}
+	}
+}

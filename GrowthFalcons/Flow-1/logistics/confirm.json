@@ -1,0 +1,197 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "falconsai.com",
+        "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "transaction_id": "4efdb805-836e-4480-a775-5137749e1103",
+        "message_id": "4e176b84-eb73-47f7-8a9e-02321d9be06e",
+        "timestamp": "2023-03-17T10:32:28.342Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-03-17-443840",
+            "state": "Created",
+            "items": [
+                {
+                    "id": "express",
+                    "descriptor": {
+                        "code": "P2P"
+                    },
+                    "category_id": "Immediate Delivery"
+                }
+            ],
+            "billing": {
+                "name": "Hitbyseo Digital Marketing & Innovations LLP",
+                "address": {
+                    "name": "GrowthFalcons",
+                    "building": "T-5, KBF",
+                    "locality": "AECS Layout, Kundalahalli",
+                    "city": "Bangalore",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560037"
+                },
+                "email": "billing@growthfalcons.com",
+                "phone": "9845071842",
+                "tax_number": "29AAKFH0619N1ZZ",
+                "created_at": "2023-03-17T10:31:42.942Z",
+                "updated_at": "2023-03-17T10:31:42.942Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "tracking": true,
+                    "start": {
+                        "location": {
+                            "gps": "12.9076452868,77.6352300637",
+                            "address": {
+                                "name": "HSR Test Store",
+                                "building": "No 392, 3rd Floor, 9th Main, 7th Sector, HSR Layout, Bangalore, Karnataka - 560102",
+                                "locality": "SULEMANI CHICHAS",
+                                "city": "Bangalore",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560102"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "5461137463",
+                            "long_desc": ""
+                        },
+                        "contact": {
+                            "phone": "9296250006"
+                        },
+                        "person": {
+                            "name": "HSR Test Store"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9140160000001, 77.6371740000001",
+                            "address": {
+                                "name": "Sandeep Pai",
+                                "building": "560102 landmark",
+                                "locality": "HSR layout",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560102"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "",
+                            "long_desc": "",
+                            "images": []
+                        },
+                        "contact": {
+                            "phone": "9952445640",
+                            "email": "sandeep@gamil.com"
+                        },
+                        "person": {
+                            "name": "Sandeep Pai"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "39"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "39"
+                        },
+                        "@ondc/org/item_id": "express"
+                    }
+                ]
+            },
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": null
+            },
+            "provider": {
+                "id": "loadshare@ondc-preprod.loadshare.net"
+            },
+            "created_at": "2023-03-17T10:32:28.342Z",
+            "updated_at": "2023-03-17T10:32:28.342Z",
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "id": "dcc8ac07-a934-46c4-9369-50d4d99b074f",
+                        "descriptor": {
+                            "name": "Paneer 65"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "230"
+                        },
+                        "category_id": "F&B",
+                        "quantity": {
+                            "count": 1,
+                            "measure": {
+                                "value": 1,
+                                "unit": "Kilogram"
+                            }
+                        }
+                    },
+                    {
+                        "id": "6adb78a6-c13b-423a-ace9-851bff4cff88",
+                        "descriptor": {
+                            "name": "Chilli Paneer"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "230"
+                        },
+                        "category_id": "F&B",
+                        "quantity": {
+                            "count": 1,
+                            "measure": {
+                                "value": 1,
+                                "unit": "Kilogram"
+                            }
+                        }
+                    }
+                ],
+                "provider": {
+                    "id": "GFFBRTKI1664452131",
+                    "descriptor": {
+                        "name": "HSR Test Store"
+                    },
+                    "address": {
+                        "name": "HSR Test Store",
+                        "building": "No 392, 3rd Floor, 9th Main, 7th Sector, HSR Layout, Bangalore, Karnataka - 560102",
+                        "locality": "SULEMANI CHICHAS",
+                        "city": "Bangalore",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560102"
+                    }
+                },
+                "order": {
+                    "id": "2023-03-17-443840",
+                    "weight": {
+                        "value": 5,
+                        "unit": "Kilogram"
+                    }
+                }
+            }
+        }
+    }
+}

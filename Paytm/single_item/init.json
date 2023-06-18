@@ -1,0 +1,206 @@
+{
+  "requestBody": {
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "init",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail",
+      "transaction_id": "06e69479-5d0a-4ccf-b515-b7807a0562a2",
+      "message_id": "1678770454829",
+      "timestamp": "2023-03-14T05:07:34.836Z",
+      "bpp_id": "ondc-qa.gofrugalretail.com/ondc/5666",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "5666-ONDC-1",
+          "locations": [
+            {
+              "id": "5666-ONDC-1-3332_location"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "5666-ONDC-1-28",
+            "fulfillment_id": "7F139232BFF749C41A5E3956918DF74A",
+            "quantity": {
+              "count": 1
+            }
+          }
+        ],
+        "billing": {
+          "name": "Prasanth Balraj",
+          "address": {
+            "building": "SCOM-1034 JIRA Retesting",
+            "name": "Testingssss",
+            "locality": "JIRA Atlassian Group of Companies",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560071"
+          },
+          "email": "prasanth123@gmail.com",
+          "phone": "9047757688",
+          "created_at": "2023-03-14T05:07:34.836Z",
+          "updated_at": "2023-03-14T05:07:34.836Z"
+        },
+        "fulfillments": [
+          {
+            "id": "7F139232BFF749C41A5E3956918DF74A",
+            "type": "Delivery",
+            "provider_id": "5666-ONDC-1",
+            "end": {
+              "location": {
+                "gps": "12.966836,77.593904",
+                "address": {
+                  "building": "SCOM-1034 JIRA Retesting",
+                  "name": "Testingssss",
+                  "locality": "JIRA Atlassian Group of Companies",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560071"
+                }
+              },
+              "contact": {
+                "phone": "9047757688"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "responseBody": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_init",
+      "timestamp": "2023-03-14T05:07:35.340Z",
+      "core_version": "1.1.0",
+      "bap_id": "ondc-staging.paytm.com",
+      "bap_uri": "https://ondc-staging.paytm.com/retail/on_init",
+      "bpp_id": "ondc-qa.gofrugalretail.com",
+      "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+      "transaction_id": "06e69479-5d0a-4ccf-b515-b7807a0562a2",
+      "message_id": "1678770454829"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "5666-ONDC-1-28",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "7F139232BFF749C41A5E3956918DF74A"
+          }
+        ],
+        "billing": {
+          "name": "Prasanth Balraj",
+          "address": {
+            "name": "Testingssss",
+            "building": "SCOM-1034 JIRA Retesting",
+            "locality": "JIRA Atlassian Group of Companies",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560071"
+          },
+          "email": "prasanth123@gmail.com",
+          "phone": "9047757688",
+          "created_at": "2023-03-14T05:07:34.836Z",
+          "updated_at": "2023-03-14T05:07:34.836Z"
+        },
+        "fulfillments": [
+          {
+            "id": "7F139232BFF749C41A5E3956918DF74A",
+            "type": "Delivery",
+            "provider_id": "5666-ONDC-1",
+            "end": {
+              "location": {
+                "gps": "12.966836,77.593904",
+                "address": {
+                  "name": "Testingssss",
+                  "building": "SCOM-1034 JIRA Retesting",
+                  "locality": "JIRA Atlassian Group of Companies",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560071"
+                }
+              },
+              "contact": {
+                "phone": "9047757688"
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "199.00"
+          },
+          "breakup": [
+            {
+              "title": "FLAGGED CRAFT -28",
+              "price": {
+                "currency": "INR",
+                "value": "199.00"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "199.00"
+                }
+              },
+              "@ondc/org/item_id": "5666-ONDC-1-28",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "@ondc/org/title_type": "item"
+            },
+            {
+              "title": "Delivery charges",
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              },
+              "@ondc/org/item_id": "7F139232BFF749C41A5E3956918DF74A",
+              "@ondc/org/title_type": "delivery"
+            }
+          ],
+          "ttl": "P6D"
+        },
+        "payment": {
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "0.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "910020019889016",
+              "settlement_ifsc_code": "UTIB0000234",
+              "beneficiary_name": "M/s Gofrugal Technologies Private Ltd",
+              "bank_name": "Axis Bank",
+              "branch_name": "Velachery-Chennai"
+            }
+          ]
+        },
+        "provider": {
+          "id": "5666-ONDC-1"
+        },
+        "provider_location": {
+          "id": "5666-ONDC-1-3332_location"
+        }
+      }
+    }
+  }
+}

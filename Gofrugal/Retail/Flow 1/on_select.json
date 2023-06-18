@@ -1,0 +1,118 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "timestamp": "2023-03-14T05:27:48.068Z",
+    "ttl": "PT30S",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1/on_select",
+    "bpp_id": "ondc-qa.gofrugalretail.com",
+    "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+    "transaction_id": "e0d6aba9-f1ae-4106-a930-912e171a0c41",
+    "message_id": "07ab8813-a2bd-4150-8ea6-8a63522147ec"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "5466-ONDC-1"
+      },
+      "items": [
+        {
+          "id": "5466-ONDC-1-22",
+          "fulfillment_id": "FBD632270823751B4B54C027A332A686"
+        },
+        {
+          "id": "5466-ONDC-1-1",
+          "fulfillment_id": "FBD632270823751B4B54C027A332A686"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "FBD632270823751B4B54C027A332A686",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          },
+          "tracking": false,
+          "@ondc/org/category": "Next Day Delivery",
+          "@ondc/org/TAT": "P2D",
+          "@ondc/org/provider_name": "MARKETPLACE SELLER1"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1200.00"
+        },
+        "breakup": [
+          {
+            "title": "5STAR",
+            "price": {
+              "currency": "INR",
+              "value": "900.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              },
+              "quantity": {
+                "available": {
+                  "count": 796
+                },
+                "maximum": {
+                  "count": 796
+                }
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-22",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "KIT KAT",
+            "price": {
+              "currency": "INR",
+              "value": "200.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              },
+              "quantity": {
+                "available": {
+                  "count": 100
+                },
+                "maximum": {
+                  "count": 100
+                }
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-1",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery charges",
+            "price": {
+              "currency": "INR",
+              "value": "100.00"
+            },
+            "@ondc/org/item_id": "FBD632270823751B4B54C027A332A686",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "P2D"
+      }
+    }
+  }
+}

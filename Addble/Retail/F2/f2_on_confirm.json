@@ -1,0 +1,230 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_confirm",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_uri": "https://preprod-ondc.addble.com/",
+		"transaction_id": "bd2a85ec-a5cc-4d9d-97ac-e5c6f104d537",
+		"message_id": "97c4ed51-49cd-4c58-a30f-d583244452f6",
+		"timestamp": "2023-05-21T10:44:26.666Z",
+		"bpp_id": "preprod-ondc.addble.com",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"id": "2023-05-21-204642",
+			"state": "Accepted",
+			"provider": {
+				"id": "Y7q1u5IV1VwHoDVBCBDt",
+				"locations": [
+					{
+						"id": "za1reR5dndibBzj7kEEC"
+					}
+				],
+				"rateable": true
+			},
+			"items": [
+				{
+					"id": "yiHrQxh7xEiSTIE9vUl0",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "24ccb987-33e7-48b6-bcfc-0e653ec0b518"
+				},
+				{
+					"id": "zNbYNsiJKduIUCiJ1NR0",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "24ccb987-33e7-48b6-bcfc-0e653ec0b518"
+				},
+				{
+					"id": "uPttSpRFY1o5e0D3QR31",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "24ccb987-33e7-48b6-bcfc-0e653ec0b518"
+				}
+			],
+			"billing": {
+				"address": {
+					"name": "Yaikhomba Blr",
+					"building": "Shell Petrol Pump",
+					"locality": "Bellandur",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560001"
+				},
+				"phone": "6362944815",
+				"name": "Yaikhomba Blr",
+				"email": "adden.company@gmail.com",
+				"created_at": "2023-05-21T10:43:57.903Z",
+				"updated_at": "2023-05-21T10:43:57.903Z"
+			},
+			"fulfillments": [
+				{
+					"id": "24ccb987-33e7-48b6-bcfc-0e653ec0b518",
+					"type": "Delivery",
+					"@ondc/org/provider_name": "Cafe Shop Indiranagar",
+					"tracking": false,
+					"state": {
+						"descriptor": {
+							"code": "Pending"
+						}
+					},
+					"start": {
+						"location": {
+							"id": "za1reR5dndibBzj7kEEC",
+							"descriptor": {
+								"name": "Cafe Shop Indiranagar"
+							},
+							"gps": "12.962629784285113,77.641461789608"
+						},
+						"contact": {
+							"phone": "6362944815"
+						},
+						"time": {
+							"range": {
+								"start": "2023-05-21T11:29:18.280Z",
+								"end": "2023-05-21T11:39:18.280Z"
+							}
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.9812430000001, 77.5950340000001",
+							"address": {
+								"name": "Yaikhomba Blr",
+								"building": "Shell Petrol Pump",
+								"locality": "Bellandur",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560001"
+							}
+						},
+						"contact": {
+							"email": "adden.company@gmail.com",
+							"phone": "6362944815"
+						},
+						"time": {
+							"range": {
+								"start": "2023-05-21T11:44:18.280Z",
+								"end": "2023-05-21T11:54:18.280Z"
+							}
+						}
+					},
+					"rateable": true
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "836.42"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "uPttSpRFY1o5e0D3QR31",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Texas BBQ Brisket Nachos",
+						"price": {
+							"currency": "INR",
+							"value": "360"
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "360"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "yiHrQxh7xEiSTIE9vUl0",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": " Arroz con Frijoles (rice with beans)",
+						"price": {
+							"currency": "INR",
+							"value": "330"
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "330"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "zNbYNsiJKduIUCiJ1NR0",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Taco Shepherd’s Pie",
+						"price": {
+							"currency": "INR",
+							"value": "125"
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "125"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "24ccb987-33e7-48b6-bcfc-0e653ec0b518",
+						"title": "Delivery charges",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "21.42"
+						}
+					}
+				],
+				"ttl": "P1D"
+			},
+			"payment": {
+				"uri": "https://juspay.in/",
+				"tl_method": "http/get",
+				"params": {
+					"amount": "836.42",
+					"currency": "INR",
+					"transaction_id": "ONDC-bd2a85ec-a5cc-4d9d-97ac-e5c6f104d537-1"
+				},
+				"status": "PAID",
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc/org/buyer_app_finder_fee_type": "percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_phase": "sale-amount",
+						"settlement_type": "upi",
+						"upi_address": "test@okbizaxis",
+						"beneficiary_name": "Addble"
+					}
+				]
+			},
+			"documents": [
+				{
+					"url": "https://preprod-invoices.addble.com/v1/ondc/2023-05-21-204642",
+					"label": "Invoice"
+				}
+			],
+			"created_at": "2023-05-21T10:44:18.280Z",
+			"updated_at": "2023-05-21T10:44:26.666Z"
+		}
+	}
+}

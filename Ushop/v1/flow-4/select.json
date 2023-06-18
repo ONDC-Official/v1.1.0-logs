@@ -1,0 +1,173 @@
+{
+    "_id": {
+      "$oid": "641c40f66d9bbf27fb58f3ba"
+    },
+    "body": {
+      "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+        "transaction_id": "cea8668a-9ea6-4fe4-aad8-971aa32e34b6",
+        "message_id": "0802e54d-f9a8-4d55-a570-f35deb3225c8",
+        "timestamp": "2023-03-23T12:07:17.896Z",
+        "bpp_id": "ondc.hulsecure.in",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "items": [
+            {
+              "id": "44790345662764",
+              "quantity": {
+                "count": 1
+              },
+              "location_id": "65426587829"
+            }
+          ],
+          "provider": {
+            "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e",
+            "locations": [
+              {
+                "id": "65426587829"
+              }
+            ]
+          },
+          "fulfillments": [
+            {
+              "end": {
+                "location": {
+                  "gps": "28.574981, 77.320812",
+                  "address": {
+                    "area_code": "201301"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "header": {
+      "host": "ondc.hulsecure.in",
+      "connection": "close",
+      "user-agent": "python-requests/2.23.0",
+      "accept-encoding": "gzip, deflate",
+      "accept": "*/*",
+      "authorization": "Signature keyId=\"buyer-app-preprod.ondc.org|96c81878-f327-457e-8835-5b35bb20f099|ed25519\",algorithm=\"ed25519\",created=\"1679573237\",expires=\"1679576837\",headers=\"(created) (expires) digest\",signature=\"YZUToVsEVFI7edo805QoZxDkz1nvJgVP8O5nizDIsDng+c72MQIuiZhSjplAJoTf5dsMe+2MnADm2uFRaWXMDg==\"",
+      "content-type": "application/json",
+      "x-request-id": "d21395f2-32ab-4111-94cc-c17ce6cd5f60",
+      "x-forwarded-for": "65.0.80.129",
+      "x-forwarded-proto": "https",
+      "x-forwarded-port": "443",
+      "via": "1.1 vegur",
+      "connect-time": "0",
+      "x-request-start": "1679573238471",
+      "total-route-time": "0",
+      "content-length": "749"
+    },
+    "response": {
+      "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+        "transaction_id": "cea8668a-9ea6-4fe4-aad8-971aa32e34b6",
+        "message_id": "0802e54d-f9a8-4d55-a570-f35deb3225c8",
+        "timestamp": "2023-03-23T12:07:18.474Z",
+        "bpp_id": "ondc.hulsecure.in",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "provider": {
+            "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
+          },
+          "fulfillments": [
+            {
+              "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "@ondc/org/provider_name": "The U Shop",
+              "tracking": false,
+              "@ondc/org/category": "Standard Delivery",
+              "@ondc/org/TAT": "P7D",
+              "state": {
+                "descriptor": {
+                  "code": "Serviceable"
+                }
+              }
+            }
+          ],
+          "quote": {
+            "price": {
+              "currency": "INR",
+              "value": "650"
+            },
+            "breakup": [
+              {
+                "@ondc/org/item_id": "44790345662764",
+                "@ondc/org/item_quantity": {
+                  "count": 0
+                },
+                "item": {
+                  "price": {
+                    "currency": "INR",
+                    "value": "650"
+                  },
+                  "quantity": {
+                    "available": {
+                      "count": 0
+                    },
+                    "maximum": {
+                      "count": 0
+                    }
+                  }
+                },
+                "title": "Axe Chocolate Collection Gift For Men",
+                "@ondc/org/title_type": "item",
+                "price": {
+                  "currency": "INR",
+                  "value": "650"
+                }
+              },
+              {
+                "title": "Delivery charges",
+                "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "0"
+                }
+              }
+            ],
+            "ttl": "P7D"
+          },
+          "items": [
+            {
+              "id": "44790345662764",
+              "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+            }
+          ]
+        }
+      },
+      "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "40002"
+      }
+    },
+    "resheader": "Signature keyId=\"ondc.hulsecure.in|e79d1b77-0906-4323-aa92-c7dc64861f14|ed25519\",algorithm=\"ed25519\",created=\"1679573238\",expires=\"1679576838\",headers=\"(created) (expires) digest\",signature=\"VOsb5sJKz9HyeQz49txW4bnl+84m656n1oZFraYjBmUlHJbrjHqZoTF2uceBVdS7U3h6juhHtyJ8tbZCcFUzDA==\"",
+    "createdAt": {
+      "$date": "2023-03-23T12:07:18.803Z"
+    },
+    "updatedAt": {
+      "$date": "2023-03-23T12:07:18.803Z"
+    },
+    "__v": 0
+  }

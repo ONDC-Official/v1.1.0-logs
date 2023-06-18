@@ -1,0 +1,167 @@
+{
+  
+  "payload": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_update",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://ondc.uengage.in/",
+      "transaction_id": "9d920a95-c5fc-4ee1-b894-9be537a69252",
+      "message_id": "ba7ad1a6-21d5-443a-8248-2f1e26946cc8",
+      "timestamp": "2023-03-06T10:55:15.326Z",
+      "bpp_id": "ondc.uengage.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-02-06-458585",
+        "state": "Completed",
+        "items": [
+          {
+            "id": "2246217",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "1",
+            "tags": {
+              "status": "Return_Rejected"
+            }
+          },
+          {
+            "id": "2246215",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "1"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "1273.60"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "2246217",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "30"
+                  },
+                  "maximum": {
+                    "count": "30"
+                  }
+                },
+                "count": 1,
+                "price": {
+                  "currency": "INR",
+                  "value": "872"
+                }
+              },
+              "title": "Margherita Pizza-The Monster (serves 12, 61 Cm)",
+              "price": {
+                "currency": "INR",
+                "value": "872"
+              }
+            },
+            {
+              "@ondc/org/item_id": "2246217",
+              "@ondc/org/title_type": "tax",
+              "title": "Tax",
+              "price": {
+                "currency": "INR",
+                "value": "43.6"
+              }
+            },
+            {
+              "@ondc/org/item_id": "2246215",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "30"
+                  },
+                  "maximum": {
+                    "count": "30"
+                  }
+                },
+                "count": 1,
+                "price": {
+                  "currency": "INR",
+                  "value": "340"
+                }
+              },
+              "title": "Margherita Pizza-Large (serves 4 33 Cm)",
+              "price": {
+                "currency": "INR",
+                "value": "340"
+              }
+            },
+            {
+              "@ondc/org/item_id": "2246215",
+              "@ondc/org/title_type": "tax",
+              "title": "Tax",
+              "price": {
+                "currency": "INR",
+                "value": "17"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "@ondc/org/title_type": "delivery",
+              "title": "Delivery Charges",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1",
+              "@ondc/org/title_type": "packing",
+              "title": "Packaging  Charges",
+              "price": {
+                "currency": "INR",
+                "value": "1"
+              }
+            }
+          ]
+        },
+        "fulfillments": []
+      }
+    }
+  },
+
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_update",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://ondc.uengage.in/",
+      "transaction_id": "9d920a95-c5fc-4ee1-b894-9be537a69252",
+      "message_id": "ba7ad1a6-21d5-443a-8248-2f1e26946cc8",
+      "timestamp": "2023-03-06T10:55:15.326Z",
+      "bpp_id": "ondc.uengage.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}

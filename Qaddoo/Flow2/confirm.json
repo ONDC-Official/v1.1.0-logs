@@ -1,0 +1,188 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "transaction_id": "8875cfef-a07e-4627-8126-34940ff2bdf8",
+        "message_id": "4081f283-c203-43b9-bd94-2d761bbce465",
+        "timestamp": "2023-05-18T07:00:51.864Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "189",
+            "state": "Created",
+            "provider": {
+                "id": "20978",
+                "locations": [
+                    {
+                        "id": "20978"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "103",
+                    "quantity": {
+                        "count": 3
+                    },
+                    "fulfillment_id": "20978"
+                },
+                {
+                    "id": "104",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "20978"
+                }
+            ],
+            "billing": {
+                "name": "RajivSingh",
+                "address": {
+                    "name": "RajivSingh",
+                    "building": "15/11,KGHalli,D'SouzaLayout,AshokNagar,Bengaluru,Karnataka560001,India",
+                    "locality": "15/11,KGHalli,D'SouzaLayout,AshokNagar,Bengaluru,Karnataka560001,India",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560001"
+                },
+                "phone": "+918302010971",
+                "email": "",
+                "created_at": "2023-05-18T06:59:51.189Z",
+                "updated_at": "2023-05-18T06:59:51.189Z"
+            },
+            "fulfillments": [
+                {
+                    "end": {
+                        "contact": {
+                            "phone": "+918302010971"
+                        },
+                        "location": {
+                            "address": {
+                                "area_code": "560001",
+                                "building": "15/11,KGHalli,D'SouzaLayout,AshokNagar,Bengaluru,Karnataka560001,India",
+                                "city": "Bengaluru",
+                                "country": "India",
+                                "locality": "15/11,KGHalli,D'SouzaLayout,AshokNagar,Bengaluru,Karnataka560001,India",
+                                "name": "RajivSingh",
+                                "state": "Karnataka"
+                            },
+                            "gps": "12.971609528512422,77.59456269443035"
+                        },
+                        "person": {
+                            "name": "Rajiv Singh"
+                        }
+                    },
+                    "id": "20978",
+                    "tracking": false,
+                    "type": "Delivery"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "785.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "149.00"
+                            }
+                        },
+                        "title": "Veg Manchow",
+                        "price": {
+                            "currency": "INR",
+                            "value": "447.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/title_type": "tax",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "169.00"
+                            }
+                        },
+                        "title": "Chicken Manchow",
+                        "price": {
+                            "currency": "INR",
+                            "value": "338.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "tax",
+                        "title": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "20978",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    }
+                ],
+                "ttl": "PT30M"
+            },
+            "payment": {
+                "params": {
+                    "amount": "785.00",
+                    "currency": "INR",
+                    "transaction_id": "1684393232214"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "10112822953",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED"
+                    }
+                ]
+            },
+            "created_at": "2023-05-18T07:00:51.864Z",
+            "updated_at": "2023-05-18T07:00:51.864Z"
+        }
+    }
+}

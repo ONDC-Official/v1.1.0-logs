@@ -1,0 +1,210 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "confirm",
+		"core_version": "1.1.0",
+		"bap_id": "api3.eksecond.in",
+		"bap_uri": "https://api3.eksecond.in/ondc",
+		"bpp_id": "ondc-preprod.loadshare.net",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"transaction_id": "632839af4bea4df42dfe336b|63f2f4f2-372f-4197-a797-b28b52c9eda5",
+		"message_id": "e8da8d8d-0f3f-405a-b174-8d6201ca18e5",
+		"timestamp": "2023-03-21T12:22:09.956Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"@ondc/org/linked_order": {
+				"items": [
+					{
+						"descriptor": {
+							"name": "Ginger Prawns"
+						},
+						"price": {
+							"currency": "INR",
+							"value": "640.00"
+						},
+						"category_id": "F&B",
+						"quantity": {
+							"count": 2,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 1
+							}
+						}
+					},
+					{
+						"descriptor": {
+							"name": "Loose Prawns"
+						},
+						"price": {
+							"currency": "INR",
+							"value": "320.00"
+						},
+						"category_id": "F&B",
+						"quantity": {
+							"count": 1,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 1
+							}
+						}
+					},
+					{
+						"descriptor": {
+							"name": "Prawns Fry Roast"
+						},
+						"price": {
+							"currency": "INR",
+							"value": "320.00"
+						},
+						"category_id": "F&B",
+						"quantity": {
+							"count": 1,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 1
+							}
+						}
+					}
+				],
+				"provider": {
+					"descriptor": {
+						"name": "Rumaan"
+					},
+					"address": {
+						"name": "Rumaan",
+						"street": "3rd Floor, Gold Sand, Ambalipura - Sarjapur Rd",
+						"building": "1",
+						"locality": "Doddakannelli",
+						"city": "Bengaluru",
+						"state": "Karnataka",
+						"country": "IND",
+						"area_code": "560035"
+					}
+				},
+				"order": {
+					"id": "F85A800A23773A7926CC207F186E4063",
+					"weight": {
+						"unit": "Kilogram",
+						"value": 1
+					}
+				}
+			},
+			"id": "b3462c50-8ad5-4add-92c6-905bb9739aed",
+			"created_at": "2023-03-21T12:22:09.956Z",
+			"updated_at": "2023-03-21T12:22:09.956Z",
+			"items": [
+				{
+					"id": "express",
+					"descriptor": {
+						"code": "P2P"
+					},
+					"category_id": "Immediate Delivery"
+				}
+			],
+			"provider": {
+				"id": "loadshare@ondc-preprod.loadshare.net"
+			},
+			"fulfillments": [
+				{
+					"id": "lsn_prepaid",
+					"type": "Prepaid",
+					"start": {
+						"location": {
+							"gps": "12.913371523733359,77.68308302883554",
+							"address": {
+								"name": "Rumaan",
+								"building": "1",
+								"locality": "Doddakannelli",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560035"
+							}
+						},
+						"instructions": {
+							"short_desc": "5JJM",
+							"long_desc": "Ensure to display pickup code on counter before pickup"
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "mohd@gmail.com"
+						},
+						"person": {
+							"name": "Manager"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.911397,77.680164",
+							"address": {
+								"name": "Najeeb Ahmed",
+								"building": "h1, apartment 2",
+								"locality": "sarjapur road",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "India",
+								"area_code": "560035"
+							}
+						},
+						"instructions": {
+							"short_desc": "L237",
+							"long_desc": "Ensure to display pickup code on counter before pickup"
+						},
+						"contact": {
+							"phone": "8885336235"
+						},
+						"person": {
+							"name": "Najeeb Ahmed"
+						}
+					},
+					"tags": {
+						"@ondc/org/order_ready_to_ship": "yes"
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "39"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "express",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						}
+					}
+				]
+			},
+			"payment": {
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc/org/settlement_details": []
+			},
+			"billing": {
+				"name": "Ek Second Technologies",
+				"email": "najeeb@eksecon.in",
+				"phone": "9000912423",
+				"created_at": "2023-03-21T12:19:44.375Z",
+				"updated_at": "2023-03-21T12:19:44.375Z",
+				"address": {
+					"name": "EkSecond Pvt Ltd",
+					"building": "8-7-171/10/14/B",
+					"locality": "Old Bowenpally",
+					"city": "secunderabad",
+					"state": "Telangana",
+					"country": "India",
+					"area_code": "500011"
+				},
+				"tax_number": "ADFSDF34343"
+			},
+			"state": "Created"
+		}
+	}
+}
