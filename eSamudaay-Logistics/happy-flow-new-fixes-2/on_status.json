@@ -1,0 +1,109 @@
+{
+  "context": {
+    "action": "on_status",
+    "transaction_id": "33c6e164-8998-4b28-ae24-cc625919c45b",
+    "message_id": "816bcb7b-261d-41d4-bda1-cd9aff5541fa",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-06-08T11:33:40.344Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp"
+  },
+  "message": {
+    "order": {
+      "id": "e57ffb21-7b03-44c6-ba4d-5bbfcada1b76",
+      "state": "Completed",
+      "provider": {
+        "id": "loadshare@ondc-preprod.loadshare.net"
+      },
+      "items": [
+        {
+          "id": "nextday",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "category_id": "Next Day Delivery"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "nextday",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "1.00"
+            }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "Fulfillment1",
+          "type": "Prepaid",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-06-08T11:30:26.416Z",
+                "end": "2023-06-08T11:30:26.416Z"
+              },
+              "timestamp": "2023-06-08T11:30:23.000Z"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-06-08T11:44:26.481Z",
+                "end": "2023-06-08T11:48:40.344Z"
+              },
+              "timestamp": "2023-06-08T11:30:39.000Z"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "agent": {
+            "name": "Mahesh",
+            "phone": "9900163002"
+          }
+        }
+      ],
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP"
+      },
+      "billing": {
+        "name": "Bharath",
+        "email": "bharath@gogappi.com",
+        "phone": "+917259814228",
+        "address": {
+          "city": "Bengaluru",
+          "door": "255, Nivas",
+          "name": "HOME",
+          "state": "Karnataka",
+          "country": "India",
+          "locality": "Jayanagar",
+          "area_code": "560098"
+        },
+        "created_at": "2023-06-08T11:03:08.219Z",
+        "updated_at": "2023-06-08T11:03:08.219Z"
+      },
+      "created_at": "2023-06-08T11:07:05.550Z",
+      "updated_at": "2023-06-08T11:30:41.949Z"
+    }
+  }
+}

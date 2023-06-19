@@ -1,0 +1,172 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "02d4135a-7d02-4731-8725-8894833e050c",
+    "message_id": "c30630c9-37ba-4cc0-8fb8-bfa4609f463a",
+    "timestamp": "2023-06-14T10:36:58.882Z",
+    "bpp_id": "seller.instastack.io",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-06-14-886459",
+      "state": "Created",
+      "billing": {
+        "address": {
+          "name": "Ajinkya Shelar",
+          "building": "Rustomjee Azziano",
+          "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+          "city": "Thane",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400601"
+        },
+        "phone": "9833875151",
+        "name": "Ajinkya Shelar",
+        "email": "ajinkya@instastack.io",
+        "created_at": "2023-06-14T10:36:49.816Z",
+        "updated_at": "2023-06-14T10:36:49.816Z"
+      },
+      "items": [
+        {
+          "id": "239537",
+          "quantity": {
+            "count": 3
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "239447",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "1"
+        }
+      ],
+      "provider": {
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
+        "locations": [
+          {
+            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "end": {
+            "contact": {
+              "phone": "9833875151"
+            },
+            "person": {
+              "name": "Ajinkya Shelar"
+            },
+            "location": {
+              "gps": "19.199325, 72.978958",
+              "address": {
+                "name": "Ajinkya Shelar",
+                "building": "Rustomjee Azziano",
+                "locality": "K-1905, Rustomjee Azziano, Majiwada, Thane",
+                "city": "Thane",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400601"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "799",
+          "currency": "INR",
+          "transaction_id": "02d4135a-7d02-4731-8725-8894833e050c"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "thor@okicicicicic",
+            "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+            "settlement_ifsc_code": "someIFSC",
+            "beneficiary_name": "Thor",
+            "bank_name": "Marvels Bank",
+            "branch_name": "Asgard"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "799"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "239537",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "title": "TruNativ x Ditch The Guilt Roasted Hazelnuts Vegan Protein Chocolate, 60 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "450"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "150.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "239447",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "TruNativ x Ditch The Guilt Roasted Almonds Vegan Protein Chocolate, 60 g",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "300"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "150.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "49"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "created_at": "2023-06-14T10:36:58.882Z",
+      "updated_at": "2023-06-14T10:36:58.882Z"
+    }
+  }
+}
