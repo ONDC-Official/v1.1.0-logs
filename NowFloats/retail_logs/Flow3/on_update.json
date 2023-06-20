@@ -1,0 +1,238 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_update",
+      "core_version": "1.1.0",
+      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+      "transaction_id": "9ab0482e-c05e-4d79-8a35-054189762126",
+      "message_id": "eda51994-06dc-4159-a4ed-787e8f6392a1",
+      "timestamp": "2023-06-20T12:43:30.168Z",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-06-20-961856",
+        "state": "Completed",
+        "items": [
+          {
+            "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+            "fulfillment_id": "bd6af512-0d86-40d0-9190-fcfa16b5e656",
+            "quantity": {
+              "count": 1
+            },
+            "tags": {
+              "status": "Return_Initiated"
+            }
+          },
+          {
+            "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+            "fulfillment_id": "849714d5-d06a-42a1-b1ad-677ad09ffbbe",
+            "quantity": {
+              "count": 1
+            },
+            "tags": {
+              "status": "Return_Initiated"
+            }
+          },
+          {
+            "id": "66d697f7-2937-475c-9520-8ae56a51bb4c",
+            "fulfillment_id": "849714d5-d06a-42a1-b1ad-677ad09ffbbe",
+            "quantity": {
+              "count": 3
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "849714d5-d06a-42a1-b1ad-677ad09ffbbe",
+            "type": "Delivery",
+            "@ondc/org/provider_name": "ashutosh123",
+            "state": {
+              "descriptor": {
+                "code": "Order-delivered"
+              },
+              "updated_at": "2023-06-20T12:43:30.403Z",
+              "updated_by": "Customer"
+            },
+            "tracking": false,
+            "start": {
+              "time": {
+                "timestamp": "2023-06-20T12:42:56.658Z",
+                "range": {
+                  "start": "2023-06-20T12:42:56.658Z",
+                  "end": "2023-06-20T12:42:56.658Z"
+                }
+              },
+              "instructions": {
+                "name": "Status for pickup"
+              },
+              "contact": {
+                "phone": "8742905882",
+                "email": "v-ashutosh.bharti@nowfloats.com"
+              },
+              "location": {
+                "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+                "gps": "28.5682594,77.391035",
+                "descriptor": {
+                  "name": "ashutosh123"
+                }
+              }
+            },
+            "end": {
+              "contact": {
+                "phone": "9999999999",
+                "email": "ps@ps.com"
+              },
+              "location": {
+                "gps": "28.574981, 77.320812",
+                "address": {
+                  "name": "ps",
+                  "locality": "1",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560001"
+                }
+              }
+            }
+          },
+          {
+            "id": "bd6af512-0d86-40d0-9190-fcfa16b5e656",
+            "type": "Delivery",
+            "state": {
+              "descriptor": {
+                "code": "Return_Initiated"
+              },
+              "updated_at": "2023-06-20T12:43:30.404Z",
+              "updated_by": "Customer"
+            },
+            "tracking": false,
+            "start": {
+              "time": {
+                "timestamp": "2023-06-20T12:43:30.273Z",
+                "range": {
+                  "start": "2023-06-20T12:42:56.658Z",
+                  "end": "2023-06-20T12:42:56.658Z"
+                }
+              },
+              "instructions": {
+                "name": "Status for pickup"
+              },
+              "contact": {
+                "phone": "8742905882",
+                "email": "v-ashutosh.bharti@nowfloats.com"
+              },
+              "location": {
+                "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+                "gps": "28.5682594,77.391035",
+                "descriptor": {
+                  "name": "ashutosh123"
+                }
+              }
+            },
+            "end": {
+              "contact": {
+                "phone": "9999999999",
+                "email": "ps@ps.com"
+              },
+              "location": {
+                "gps": "28.574981, 77.320812",
+                "address": {
+                  "name": "ps",
+                  "locality": "1",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560001"
+                }
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "2734.45"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "66d697f7-2937-475c-9520-8ae56a51bb4c",
+              "@ondc/org/item_quantity": {
+                "count": 3
+              },
+              "title": "GoodDay Biscuit",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "2700"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "985"
+                  },
+                  "maximum": {
+                    "count": "985"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "900"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "745c49be-fb17-488b-81e5-7eda31af8186",
+              "@ondc/org/item_quantity": {
+                "count": 0
+              },
+              "title": "ashutosh product",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "1"
+                  },
+                  "maximum": {
+                    "count": "1"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "171"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "9ab0482e-c05e-4d79-8a35-054189762126",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "28.450000000000003"
+              }
+            },
+            {
+              "@ondc/org/item_id": "9ab0482e-c05e-4d79-8a35-054189762126",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "6"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        }
+      }
+    }
+  }

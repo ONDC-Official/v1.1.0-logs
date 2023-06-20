@@ -1,0 +1,194 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "Noida",
+      "action": "on_status",
+      "core_version": "1.1.0",
+      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+      "transaction_id": "a3b2299e-5080-4e1f-bc9e-221f8174650f",
+      "message_id": "06845434-f427-4bdc-8863-fe89cfe35922",
+      "timestamp": "2023-06-20T11:46:12.809Z",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-06-20-520573",
+        "state": "Completed",
+        "provider": {
+          "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+          "locations": [
+            {
+              "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c"
+            }
+          ]
+        },
+        "billing": {
+          "name": "ps",
+          "address": {
+            "name": "ps",
+            "locality": "1",
+            "city": "Noida",
+            "state": "Uttar Pradesh",
+            "country": "IND",
+            "area_code": "201301"
+          },
+          "email": "ps@ps.com",
+          "phone": "9999999999"
+        },
+        "items": [
+          {
+            "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+            "fulfillment_id": "1845fbed-7c99-4121-b195-fb5e6f19ef6d",
+            "quantity": {
+              "count": 1
+            }
+          },
+          {
+            "id": "66d697f7-2937-475c-9520-8ae56a51bb4c",
+            "fulfillment_id": "1845fbed-7c99-4121-b195-fb5e6f19ef6d",
+            "quantity": {
+              "count": 2
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "1845fbed-7c99-4121-b195-fb5e6f19ef6d",
+            "type": "Delivery",
+            "@ondc/org/provider_name": "ashutosh123",
+            "state": {
+              "descriptor": {
+                "code": "Order-delivered"
+              },
+              "updated_at": "2023-06-20T11:46:13.211Z",
+              "updated_by": "Customer"
+            },
+            "tracking": false,
+            "start": {
+              "time": {
+                "timestamp": "2023-06-20T11:46:12.745Z",
+                "range": {
+                  "start": "2023-06-20T11:46:12.745Z",
+                  "end": "2023-06-20T11:46:12.745Z"
+                }
+              },
+              "instructions": {
+                "name": "Status for pickup"
+              },
+              "contact": {
+                "phone": "8742905882",
+                "email": "v-ashutosh.bharti@nowfloats.com"
+              },
+              "location": {
+                "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+                "gps": "28.5682594,77.391035",
+                "descriptor": {
+                  "name": "ashutosh123"
+                }
+              }
+            },
+            "end": {
+              "contact": {
+                "phone": "9999999999",
+                "email": "ps@ps.com"
+              },
+              "location": {
+                "gps": "28.574981, 77.320812",
+                "address": {
+                  "name": "ps",
+                  "locality": "1",
+                  "city": "Noida",
+                  "state": "Uttar Pradesh",
+                  "country": "IND",
+                  "area_code": "201301"
+                }
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "2010.85"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "ashutosh product",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "171"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "1"
+                  },
+                  "maximum": {
+                    "count": "1"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "171"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "66d697f7-2937-475c-9520-8ae56a51bb4c",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "GoodDay Biscuit",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "1800"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "994"
+                  },
+                  "maximum": {
+                    "count": "994"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "900"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "1845fbed-7c99-4121-b195-fb5e6f19ef6d",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "33.85"
+              }
+            },
+            {
+              "@ondc/org/item_id": "1845fbed-7c99-4121-b195-fb5e6f19ef6d",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "6"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        }
+      }
+    }
+  }
