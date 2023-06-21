@@ -1,0 +1,53 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "update",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://seller.instastack.io/pre-prod",
+    "transaction_id": "ec29cd6c-a566-433d-b601-7f290580863d",
+    "message_id": "c1bec300-98be-4cdd-bdca-aa8c5864ae1d",
+    "timestamp": "2023-06-14T07:04:01.263Z",
+    "bpp_id": "seller.instastack.io",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "update_target": "billing",
+    "order": {
+      "id": "2023-06-14-115746",
+      "state": "Completed",
+      "provider": {
+        "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+      },
+      "items": [
+        {
+          "id": "1328",
+          "quantity": {
+            "count": 3
+          },
+          "tags": {
+            "update_type": "return",
+            "reason_code": "003",
+            "ttl_approval": "P7D",
+            "ttl_reverseqc": "P3D",
+            "image": ""
+          }
+        }
+      ],
+      "payment": {
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "buyer",
+            "settlement_phase": "refund",
+            "settlement_type": "upi",
+            "settlement_amount": "375",
+            "settlement_timestamp": "2023-06-14T07:04:01.265Z"
+          }
+        ]
+      }
+    }
+  }
+}

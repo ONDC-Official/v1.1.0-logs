@@ -1,0 +1,131 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "issue",
+    "timestamp": "2023-06-14T06:15:12.879Z",
+    "ttl": "PT30S",
+    "core_version": "1.0.0",
+    "bap_id": "ondc-qa.gofrugalretail.com",
+    "bap_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc/logistics",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+    "transaction_id": "8f8d7282-e84f-4e20-b005-1ada2045d56f",
+    "message_id": "a01956e7-8768-481d-8acb-d8b9d4b5e6ce"
+  },
+  "message": {
+    "issue": {
+      "source": {
+        "network_participant_id": "buyer-app-preprod.ondc.org",
+        "type": "CONSUMER"
+      },
+      "id": "c46f347c-0c2e-4857-9e96-4a53727cb7a2",
+      "category": "FULFILLMENT",
+      "sub_category": "FLM02",
+      "complainant_info": {
+        "person": {
+          "name": "Abishek S"
+        },
+        "contact": {
+          "phone": "9091293128"
+        }
+      },
+      "order_details": {
+        "id": "b8e723fcd8bbb642c25213181eb254304c271acb",
+        "state": "In-progress",
+        "items": [
+          {
+            "id": "5466-ONDC-1-1",
+            "quantity": 3
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "93B019AA9879F7614D043E1D21389429",
+            "state": "Searching-for-Agent"
+          }
+        ],
+        "provider_id": "5466-ONDC-1"
+      },
+      "description": {
+        "short_desc": "Delivery is delayed",
+        "long_desc": "Delay iin delivaery testing with logistics",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        },
+        "images": []
+      },
+      "expected_response_time": {
+        "duration": "PT2H"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      },
+      "status": "OPEN",
+      "issue_type": "ISSUE",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "updated_at": "2023-06-14T06:14:07.079Z",
+            "updated_by": {
+              "org": {
+                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+              },
+              "contact": {
+                "phone": "6239083807",
+                "email": "Rishabhnand.singh@ondc.org"
+              },
+              "person": {
+                "name": "Rishabhnand Singh"
+              }
+            },
+            "short_desc": "Complaint created"
+          }
+        ],
+        "respondent_actions": [
+          {
+            "respondent_action": "CASCADED",
+            "updated_at": "2023-06-14T06:15:12.861Z",
+            "updated_by": {
+              "org": {
+                "name": "ondc-qa.gofrugalretail.com::nic2004:52110"
+              },
+              "contact": {
+                "phone": "8881177221",
+                "email": "sherin.h@gofrugal.com"
+              },
+              "person": {
+                "name": "sherin shafa"
+              }
+            },
+            "cascaded_level": 2,
+            "short_desc": "cascading to logistics"
+          },
+          {
+            "respondent_action": "PROCESSING",
+            "updated_at": "2023-06-14T06:14:59.500Z",
+            "updated_by": {
+              "org": {
+                "name": "ondc-qa.gofrugalretail.com::nic2004:52110"
+              },
+              "contact": {
+                "phone": "8881177221",
+                "email": "sherin.h@gofrugal.com"
+              },
+              "person": {
+                "name": "sherin shafa"
+              }
+            },
+            "cascaded_level": 1,
+            "short_desc": "Acknowledged"
+          }
+        ]
+      },
+      "created_at": "2023-06-14T06:15:12.879Z",
+      "updated_at": "2023-06-14T06:15:12.879Z"
+    }
+  }
+}
