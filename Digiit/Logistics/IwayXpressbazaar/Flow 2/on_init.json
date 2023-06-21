@@ -1,0 +1,68 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
+    "core_version": "1.1.0",
+    "bap_id": "preprod.xpressbaazaar.com",
+    "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "transaction_id": "1b5be960-215b-4dab-925f-45bec3d1aaa6",
+    "message_id": "f536e87a-075c-43d4-a3a8-0ba2563d6a5c",
+    "timestamp": "2023-06-17T06:51:10.214Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "107-Account-DER-292"
+      },
+      "provider_location": {
+        "id": "107-41c25527-eafc-42d9-abb2-03"
+      },
+      "items": [
+        {
+          "id": "20"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1360.0"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "20",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "1320.0"
+            }
+          },
+          {
+            "@ondc/org/title_type": "RTO Charge",
+            "price": {
+              "currency": "INR",
+              "value": "40.0"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": null,
+        "collected_type": null,
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_type": "neft",
+            "beneficiary_anme": null,
+            "upi_address": null,
+            "settlement_bank_account_no": "ACCT000001",
+            "settlement_ifsc_code": null
+          }
+        ]
+      }
+    }
+  }
+}
