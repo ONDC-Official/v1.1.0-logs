@@ -1,0 +1,228 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_confirm",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+      "transaction_id": "8395263b-4072-4e7f-9877-6651e39f4aac",
+      "message_id": "af965d45-3490-4263-9ca0-6ce9eeb846e4",
+      "timestamp": "2023-06-20T13:13:27.010Z",
+      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-06-20-691311",
+        "provider": {
+          "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+          "locations": [
+            {
+              "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c"
+            }
+          ],
+          "rateable": true
+        },
+        "state": "Accepted",
+        "items": [
+          {
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "8395263b-4072-4e7f-9877-6651e39f4aac",
+            "id": "66d697f7-2937-475c-9520-8ae56a51bb4c"
+          },
+          {
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "8395263b-4072-4e7f-9877-6651e39f4aac",
+            "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5"
+          }
+        ],
+        "billing": {
+          "address": {
+            "name": "ps",
+            "locality": "1",
+            "city": "Noida",
+            "state": "Uttar Pradesh",
+            "country": "IND",
+            "area_code": "201301"
+          },
+          "phone": "9999999999",
+          "name": "ps",
+          "email": "ps@ps.com",
+          "created_at": "2023-06-20T13:13:23.555Z",
+          "updated_at": "2023-06-20T13:13:23.555Z"
+        },
+        "fulfillments": [
+          {
+            "id": "782e3a72-cbc3-4bf0-9a11-488cf352c779",
+            "type": "Delivery",
+            "@ondc/org/provider_name": "ashutosh123",
+            "state": {
+              "descriptor": {
+                "code": "Pending"
+              },
+              "updated_at": "2023-06-20T13:13:27.432Z",
+              "updated_by": "Customer"
+            },
+            "tracking": false,
+            "start": {
+              "time": {
+                "range": {
+                  "start": "2023-06-20T13:13:27.381Z",
+                  "end": "2023-06-20T13:13:27.381Z"
+                }
+              },
+              "instructions": {
+                "name": "Status for pickup"
+              },
+              "contact": {
+                "phone": "8742905882",
+                "email": "v-ashutosh.bharti@nowfloats.com"
+              },
+              "location": {
+                "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+                "gps": "28.5682594,77.391035",
+                "descriptor": {
+                  "name": "ashutosh123"
+                }
+              }
+            },
+            "end": {
+              "contact": {
+                "phone": "9999999999",
+                "email": "ps@ps.com"
+              },
+              "location": {
+                "gps": "28.574981, 77.320812",
+                "address": {
+                  "name": "ps",
+                  "locality": "1",
+                  "city": "Noida",
+                  "state": "Uttar Pradesh",
+                  "country": "IND",
+                  "area_code": "201301"
+                }
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "2010.85"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "66d697f7-2937-475c-9520-8ae56a51bb4c",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "GoodDay Biscuit",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "1800"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "983"
+                  },
+                  "maximum": {
+                    "count": "983"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "900"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "ashutosh product",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "171"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "1"
+                  },
+                  "maximum": {
+                    "count": "1"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "171"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "782e3a72-cbc3-4bf0-9a11-488cf352c779",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "33.85"
+              }
+            },
+            {
+              "@ondc/org/item_id": "782e3a72-cbc3-4bf0-9a11-488cf352c779",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "6"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "payment": {
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
+          "params": {
+            "amount": "2010.85",
+            "currency": "INR",
+            "transaction_id": "8395263b-4072-4e7f-9877-6651e39f4aac"
+          },
+          "status": "NOT-PAID",
+          "type": "ON-FULFILLMENT",
+          "collected_by": "BPP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "021000021",
+              "settlement_ifsc_code": "SBIN0011514",
+              "beneficiary_name": "Ashutosh Kumar Bharti"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "url": "https://jiw-ozed-as-staging.azurewebsites.net/invoice/fd03b97f-dd5f-4883-847e-f01be640968b/download",
+            "label": "Invoice"
+          }
+        ],
+        "created_at": "2023-06-20T13:13:26.831Z",
+        "updated_at": "2023-06-20T13:13:27.010Z"
+      }
+    }
+  }
