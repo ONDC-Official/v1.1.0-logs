@@ -1,0 +1,181 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_init",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+      "transaction_id": "b653c2f8-0652-46a1-a48b-120756430bbf",
+      "message_id": "935d20e5-63fc-42ac-8406-072decc81bd8",
+      "timestamp": "2023-06-21T06:46:45.802Z",
+      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c"
+        },
+        "provider_location": {
+          "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c"
+        },
+        "items": [
+          {
+            "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "33476535-8ffe-4ee0-acd5-5b46674b6940"
+          },
+          {
+            "id": "66d697f7-2937-475c-9520-8ae56a51bb4c",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "33476535-8ffe-4ee0-acd5-5b46674b6940"
+          }
+        ],
+        "billing": {
+          "address": {
+            "city": "Hyderabad",
+            "state": "Telangana",
+            "country": "IND",
+            "area_code": "500001",
+            "locality": "1",
+            "name": "ps1"
+          },
+          "phone": "9888888888",
+          "name": "ps1",
+          "email": "ps1@ps.com",
+          "created_at": "2023-06-21T06:46:45.601Z",
+          "updated_at": "2023-06-21T06:46:45.601Z"
+        },
+        "fulfillments": [
+          {
+            "id": "33476535-8ffe-4ee0-acd5-5b46674b6940",
+            "type": "Delivery",
+            "end": {
+              "contact": {
+                "email": "ps1@ps.com",
+                "phone": "9888888888"
+              },
+              "location": {
+                "gps": "17.388182, 78.476589",
+                "address": {
+                  "name": "ps1",
+                  "building": "",
+                  "locality": "1",
+                  "city": "Hyderabad",
+                  "state": "Telangana",
+                  "country": "IND",
+                  "area_code": "500001"
+                }
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "2010.85"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "ashutosh product",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "171"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "117"
+                  },
+                  "maximum": {
+                    "count": "117"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "171"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "66d697f7-2937-475c-9520-8ae56a51bb4c",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "title": "GoodDay Biscuit",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "1800"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "982"
+                  },
+                  "maximum": {
+                    "count": "982"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "900"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "b653c2f8-0652-46a1-a48b-120756430bbf",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "33.85"
+              }
+            },
+            {
+              "@ondc/org/item_id": "b653c2f8-0652-46a1-a48b-120756430bbf",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "6"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "payment": {
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/withholding_amount": "0.0",
+          "@ondc/org/return_window": 4,
+          "@ondc/org/settlement_basis": "DELIVERY",
+          "@ondc/org/settlement_window": "P4D",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "021000021",
+              "settlement_ifsc_code": "SBIN0011514",
+              "beneficiary_name": "Ashutosh Kumar Bharti"
+            }
+          ]
+        }
+      }
+    }
+  }
