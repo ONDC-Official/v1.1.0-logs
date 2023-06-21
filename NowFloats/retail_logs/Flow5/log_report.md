@@ -1,63 +1,58 @@
 **/on_search**
-- /message/catalog/bpp~1providers/0/items/0 "@ondc/org/mandatory_reqs_veggies_fruits" is mandatory for "Fruits and Vegetables" category
-- /bpp/providers[0]/locations[0]/gps coordinates must be specified with at least six decimal places of precision.
-- Either one of fixed (range) or split (frequency and times) timings should be provided in /bpp/providers[0]/locations[0]/time
-- location in serviceability construct should be one of the location ids bpp/providers[0]/locations
-- category in serviceability construct should be one of the category ids bpp/providers[0]/items/category_id
+- /context/action must be equal to constant (on_search)
+- /message must have required property 'catalog'
+- context.action should be on_search
+- context/timestamp difference between /on_search and /search should be smaller than 5 sec
+- Message Id for /search and /on_search api should be same
 
 **/select**
-- Item Id e9511f3c-4592-4d7b-b038-ae5b6b1a58e5 does not exist in /on_search
+- Timestamp for /on_search api cannot be greater than or equal to /select api
 
 **/on_select**
-- /fulfillments/0/state/descriptor/code must be equal to one of the allowed values (Serviceable,Non-serviceable)
-- /fulfillments[0]/@ondc/org/TAT (O2D) in /on_select can't be smaller than @ondc/org/time_ship (O2S) in /on_search
-- Pre-order fulfillment state codes should be used in fulfillments[].state.descriptor.code
-- item with id: e9511f3c-4592-4d7b-b038-ae5b6b1a58e5 is not present in /on_search
+- /quote/breakup/2/price/value must match pattern "^(\d*.?\d{1,2})$"
+- Message Id cannot be same for different sets of APIs
+- provider.id mismatches in /on_search and /on_select
 
 **/init**
-- /message/order/billing/address must have required property 'building'
-- /message/order/fulfillments/0/end/location/address must have required property 'building'
-- /message/order/fulfillments/0/end/location/address/name must NOT have fewer than 3 characters
-- /message/order/fulfillments/0/end/location/address/locality must NOT have fewer than 3 characters
+- Provider Id mismatches in /select and /init
+- Provider.locations[0].id mismatches in /select and /init
 - billing/created_at should match context.timestamp
 - billing/updated_at should match context.timestamp
-- address.area_code in fulfillments[0].end.location mismatch in /select & /init
 
 **/on_init**
-- /billing/address must have required property 'building'
-- /fulfillments/0/end/location/address must have required property 'building'
+- /quote/breakup/2/price/value must match pattern "^(\d*.?\d{1,2})$"
 - /payment/@ondc~1org~1settlement_details/0 must have required property 'bank_name'
 - /payment/@ondc~1org~1settlement_details/0 must have required property 'branch_name'
-- address.area_code in fulfillments[0].end.location mismatch in /select & /on_init
+- Provider Id mismatches in /on_search and /on_init
+- provider_location.id mismatches in /on_search and /on_init
+- Quoted Price in /on_init INR 90466.86 does not match with the quoted price in /on_select INR undefined
 - Discrepancies between the quote object in /on_select and /on_init
 
 **/confirm**
-- /message/order/billing/address must have required property 'building'
-- /message/order/fulfillments/0/end/location/address must have required property 'building'
+- /message/order/quote/breakup/2/price/value must match pattern "^(\d*.?\d{1,2})$"
 - /message/order/payment/status must be equal to constant (PAID)
 - /message/order/payment/type must be equal to constant (ON-ORDER)
 - /message/order/payment/collected_by must be equal to constant (BAP)
 - /message/order/payment/@ondc~1org~1settlement_details/0 must have required property 'bank_name'
 - /message/order/payment/@ondc~1org~1settlement_details/0 must have required property 'branch_name'
-- fulfillments[0].end.location.address.area_code is not matching with area_code in /select
+- Provider Id mismatches in /on_search and /confirm
+- provider.locations[0].id mismatches in /on_search and /confirm
+- address/door mismatches in /billing in /init and /confirm
 - order.created_at timestamp should match context.timestamp
 - Discrepancies between the quote object in /on_select and /confirm
+- Quoted Price in /confirm INR 90466.86 does not match with the quoted price in /on_select INR undefined
 
 **/on_confirm**
-- /billing/address must have required property 'building'
-- /fulfillments/0/end/location/address must have required property 'building'
+- /quote/breakup/2/price/value must match pattern "^(\d*.?\d{1,2})$"
 - /payment/status must be equal to constant (PAID)
 - /payment/type must be equal to constant (ON-ORDER)
 - /payment/collected_by must be equal to constant (BAP)
 - /payment/@ondc~1org~1settlement_details/0 must have required property 'bank_name'
 - /payment/@ondc~1org~1settlement_details/0 must have required property 'branch_name'
-- items[0].fulfillment_id mismatches for Item e9511f3c-4592-4d7b-b038-ae5b6b1a58e5 in /on_select and /on_confirm
-- items[1].fulfillment_id mismatches for Item 66d697f7-2937-475c-9520-8ae56a51bb4c in /on_select and /on_confirm
-- store gps location /fulfillments[0]/start/location/gps can't change
+- Provider Id mismatches in /on_search and /on_confirm
+- provider.locations[0].id mismatches in /on_search and /on_confirm
+- items[0].fulfillment_id mismatches for Item f1207bbd-034f-4044-940c-67f4dc692c5c in /on_select and /on_confirm
 - store name  /fulfillments[0]/start/location/descriptor/name can't change
-- fulfillments[0].end.location.address.area_code is not matching with area_code in /select
 - Discrepancies between the quote object /on_select and /on_confirm
-
-**/update**
-- /message/order/items/0/tags/ttl_approval must match format "duration"
+- Quoted Price in /on_confirm 90466.86 does not match with the quoted price in /on_select undefined
 
