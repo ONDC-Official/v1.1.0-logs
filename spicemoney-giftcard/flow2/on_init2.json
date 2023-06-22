@@ -9,26 +9,23 @@
         "code": "IND"
       }
     },
-    "action": "on_confirm",
+    "action": "on_init",
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp/",
     "bpp_id": "vistar.com",
     "version": "1.0.0",
-    "message_id": "79172db7-2be2-46de-861a-a76eb076b30c",
-    "timestamp": "2023-06-20T10:41:54.920Z",
-    "transaction_id": "2886cddc-d446-4d1f-9b1c-31526574f623",
+    "message_id": "a37b5a87-a5c6-4db2-8fe9-28f4b6268b8b",
+    "timestamp": "2023-06-20T10:58:03.281Z",
+    "transaction_id": "b273088b-38b8-4d37-8e5b-f4c2bac5014c",
     "ttl": "PT30S",
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
   },
   "message": {
     "order": {
-      "id": "cdbe4ca5-f5c9-4cd2-8c60-99d70732f76d",
-      "status": "ACCEPTED",
       "fulfillments": [
         {
           "id": "F1",
           "type": "ONLINE_EMAIL_SMS",
-          "tracking": false,
           "customer": {
             "person": {
               "name": "Sagar"
@@ -62,14 +59,13 @@
           },
           "price": {
             "currency": "INR",
-            "value": "1000"
+            "value": 1000
           },
           "fulfillment_ids": [
             "F1"
           ],
           "tags": [
             {
-              "display": true,
               "descriptor": {
                 "code": "DENOMINATION"
               },
@@ -83,7 +79,6 @@
               ]
             },
             {
-              "display": true,
               "descriptor": {
                 "code": "CUSTOMIZATION"
               },
@@ -122,20 +117,20 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "900"
+          "value": 900
         },
         "breakup": [
           {
             "item": {
               "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
-              "price": {
-                "currency": "INR",
-                "value": "1000"
-              },
               "quantity": {
                 "selected": {
                   "count": 1
                 }
+              },
+              "price": {
+                "currency": "INR",
+                "value": 1000
               }
             },
             "title": "item",
@@ -179,17 +174,11 @@
       },
       "payments": [
         {
-          "collected_by": "BAP",
-          "params": {
-            "transaction_id": "order_M49eb13yuaByIs",
-            "amount": "900",
-            "currency": "INR"
-          },
           "type": "ON-ORDER",
-          "status": "PAID",
+          "collected_by": "BAP",
+          "status": "NOT-PAID",
           "tags": [
             {
-              "display": true,
               "descriptor": {
                 "code": "BUYER_FINDER_FEES"
               },
@@ -203,7 +192,6 @@
               ]
             },
             {
-              "display": true,
               "descriptor": {
                 "code": "SETTLEMENT_DETAILS"
               },
@@ -260,9 +248,7 @@
             }
           ]
         }
-      ],
-      "created_at": "2023-06-20T10:41:54.920Z",
-      "updated_at": "2023-06-20T10:41:54.920Z"
+      ]
     }
   }
 }

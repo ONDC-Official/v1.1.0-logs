@@ -9,26 +9,25 @@
         "code": "IND"
       }
     },
-    "action": "on_confirm",
+    "action": "on_status",
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp/",
     "bpp_id": "vistar.com",
     "version": "1.0.0",
-    "message_id": "79172db7-2be2-46de-861a-a76eb076b30c",
-    "timestamp": "2023-06-20T10:41:54.920Z",
-    "transaction_id": "2886cddc-d446-4d1f-9b1c-31526574f623",
+    "message_id": "eff6a23b-e1fa-412c-97ab-cb3e1701e385",
+    "timestamp": "2023-06-20T10:58:10.263Z",
+    "transaction_id": "b273088b-38b8-4d37-8e5b-f4c2bac5014c",
     "ttl": "PT30S",
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
   },
   "message": {
     "order": {
-      "id": "cdbe4ca5-f5c9-4cd2-8c60-99d70732f76d",
-      "status": "ACCEPTED",
+      "id": "e4173000-bcbf-429d-ad98-afd82918e77b",
+      "status": "CONFIRMED",
       "fulfillments": [
         {
           "id": "F1",
           "type": "ONLINE_EMAIL_SMS",
-          "tracking": false,
           "customer": {
             "person": {
               "name": "Sagar"
@@ -60,16 +59,11 @@
               "count": 1
             }
           },
-          "price": {
-            "currency": "INR",
-            "value": "1000"
-          },
           "fulfillment_ids": [
             "F1"
           ],
           "tags": [
             {
-              "display": true,
               "descriptor": {
                 "code": "DENOMINATION"
               },
@@ -83,7 +77,6 @@
               ]
             },
             {
-              "display": true,
               "descriptor": {
                 "code": "CUSTOMIZATION"
               },
@@ -179,14 +172,14 @@
       },
       "payments": [
         {
-          "collected_by": "BAP",
-          "params": {
-            "transaction_id": "order_M49eb13yuaByIs",
-            "amount": "900",
-            "currency": "INR"
-          },
           "type": "ON-ORDER",
+          "collected_by": "BAP",
           "status": "PAID",
+          "params": {
+            "currency": "INR",
+            "transaction_id": "order_M44PrMYMux5BSr",
+            "amount": "900"
+          },
           "tags": [
             {
               "display": true,
@@ -261,8 +254,8 @@
           ]
         }
       ],
-      "created_at": "2023-06-20T10:41:54.920Z",
-      "updated_at": "2023-06-20T10:41:54.920Z"
+      "created_at": "2023-06-20T05:33:39.185Z",
+      "updated_at": "2023-06-20T05:33:39.185Z"
     }
   }
 }

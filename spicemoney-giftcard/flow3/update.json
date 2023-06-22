@@ -1,13 +1,6 @@
 {
   "context": {
     "domain": "FIS10",
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
-    "message_id": "06b4a7e2-0708-4cf4-8fbf-4e08b486dc6b",
-    "transaction_id": "2886cddc-d446-4d1f-9b1c-31526574f623",
-    "bpp_id": "vistar.com",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp/",
     "location": {
       "city": {
         "code": "std:080"
@@ -16,19 +9,33 @@
         "code": "IND"
       }
     },
-    "action": "init",
+    "action": "update",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp/",
+    "bpp_id": "vistar.com",
     "version": "1.0.0",
-    "timestamp": "2023-06-20T10:41:03.492Z"
+    "message_id": "a3e14a04-19ac-4161-8102-2256433dca41",
+    "timestamp": "2023-06-20T08:23:49.892Z",
+    "transaction_id": "11d14dee-495d-4350-942c-ba68668ec78c",
+    "ttl": "PT30S",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
   },
   "message": {
+    "update_target": "FULFILLMENT_END",
     "order": {
+      "id": "8e9eec02-8ac6-4cb5-b677-bdd39eb5b89a",
+      "status": "CONFIRMED",
+      "provider": {
+        "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
       "items": [
         {
           "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
-          "price": {
-            "currency": "INR",
-            "value": "1000"
-          },
           "quantity": {
             "selected": {
               "count": 1
@@ -45,7 +52,7 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "FIXED_AMOUNT"
+                    "code": "CUSTOM_AMOUNT"
                   },
                   "value": "1000"
                 }
@@ -60,56 +67,52 @@
                   "descriptor": {
                     "code": "RECEIVER_NAME"
                   },
-                  "value": "sagar"
+                  "value": "Anshuman Chhapolia"
                 },
                 {
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Good luck"
+                  "value": "Test"
                 }
               ]
             }
           ]
         }
       ],
-      "billing": {
-        "name": "100",
-        "address": "Apartment Building",
-        "state": {
-          "name": "Telangana",
-          "code": "TE"
-        },
-        "city": {
-          "name": "Hyderabad",
-          "code": "HY"
-        },
-        "email": "sagar@google.com",
-        "phone": "1234567890"
-      },
       "fulfillments": [
         {
-          "id": "F1",
-          "type": "ONLINE_EMAIL_SMS",
-          "customer": {
-            "person": {
-              "name": "Sagar"
-            },
-            "contact": {
-              "phone": "9988776655",
-              "email": "sagar@google.com"
-            }
-          },
           "stops": [
             {
               "id": "0",
               "contact": {
-                "phone": "9999888867",
+                "phone": "9964453579",
                 "email": "sagar.revanna@eminds.ai"
               },
               "person": {
-                "name": "test"
+                "name": "Sagar R"
               }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "UPDATE_INFORMATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "UPDATE_TYPE"
+                  },
+                  "value": "Retry"
+                },
+                {
+                  "descriptor": {
+                    "code": "UPDATE_RECEIVER_INFO"
+                  },
+                  "value": "01"
+                }
+              ]
             }
           ]
         }
