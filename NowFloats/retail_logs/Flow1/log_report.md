@@ -48,4 +48,3 @@
 
 **/update**
 - /message/order/items/0/tags/ttl_approval must match format "duration"
-

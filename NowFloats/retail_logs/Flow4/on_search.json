@@ -1,161 +1,156 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_search",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "transaction_id": "8395263b-4072-4e7f-9877-6651e39f4aac",
-      "message_id": "68912d00-8d1b-40d4-b621-b07ce2285866",
-      "timestamp": "2023-06-20T13:12:44.891Z",
-      "ttl": "PT30S",
-      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
-      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/"
-    },
-    "message": {
-      "catalog": {
-        "bpp/fulfillments": [
-          {
-            "id": "1",
-            "type": "Delivery"
-          }
-        ],
-        "bpp/descriptor": {
-          "name": "Adani Wilmar",
-          "symbol": "https://kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg",
-          "short_desc": "Kitsune Nowfloats Test Seller",
-          "long_desc": "Kitsune Nowfloats test seller",
-          "images": [
-            "https://kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg",
-            "https://kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg",
-            "https://kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg"
-          ]
-        },
-        "bpp/providers": [
-          {
-            "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
-            "descriptor": {
-              "name": "Ashutosh enterprises",
-              "code": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
-              "symbol": "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/42551662377332633-logo.jpeg",
-              "short_desc": "Adani Wilmar Seller",
-              "long_desc": "Adani Wilmar Seller",
-              "images": []
-            },
-            "ttl": "P1D",
-            "time": {
-              "label": "enable",
-              "timestamp": "2023-06-20T13:12:44.891Z"
-            },
-            "locations": [
-              {
-                "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
-                "gps": "2,8",
-                "address": {
-                  "street": "Near Banjara hills",
-                  "city": "Noida",
-                  "area_code": "201301",
-                  "state": "UP"
-                },
-                "time": {
-                  "days": "1,2,3,4,5,6,7",
-                  "schedule": {
-                    "holidays": [],
-                    "frequency": "PT9H",
-                    "times": [
-                      "1000",
-                      "1900"
-                    ]
-                  },
-                  "range": {
-                    "start": "1000",
-                    "end": "2100"
-                  }
-                }
-              }
-            ],
-            "items": [
-              {
-                "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
-                "descriptor": {
-                  "name": "ashutosh product",
-                  "symbol": "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/012853054742462566-acm-boxshot.png",
-                  "short_desc": "ashutosh product",
-                  "long_desc": "ashutosh product",
-                  "images": [
-                    "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/012853054742462566-acm-boxshot.png",
-                    "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/012853054742462566-acm-boxshot.png",
-                    "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/08770165603310187-acm-boxshot.png",
-                    "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/08770165603310187-acm-boxshot.png"
-                  ]
-                },
-                "quantity": {
-                  "available": {
-                    "count": "1"
-                  },
-                  "maximum": {
-                    "count": "1"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "171",
-                  "maximum_value": "190"
-                },
-                "category_id": "Nutrition and Supplements",
-                "fulfillment_id": "1",
-                "location_id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
-                "@ondc/org/returnable": true,
-                "@ondc/org/cancellable": true,
-                "@ondc/org/seller_pickup_return": true,
-                "@ondc/org/time_to_ship": "P1D",
-                "@ondc/org/available_on_cod": false,
-                "@ondc/org/contact_details_consumer_care": "Adani Wilmar,p.soniya@nowfloats.com,7671917337",
-                "tags": {
-                  "veg": "yes",
-                  "non_veg": "no"
-                }
-              }
-            ],
-            "fulfillments": [
-              {
-                "contact": {
-                  "phone": "8742905882",
-                  "email": "v-ashutosh.bharti@nowfloats.com"
-                }
-              }
-            ],
-            "tags": [
-              {
-                "code": "serviceability",
-                "list": [
-                  {
-                    "code": "location",
-                    "value": "8395263b-4072-4e7f-9877-6651e39f4aac"
-                  },
-                  {
-                    "code": "category",
-                    "value": "Grocery"
-                  },
-                  {
-                    "code": "type",
-                    "value": "10"
-                  },
-                  {
-                    "code": "val",
-                    "value": "20"
-                  },
-                  {
-                    "code": "unit",
-                    "value": "km"
-                  }
-                ]
-              }
-            ]
-          }
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_search",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "transaction_id": "7fd387fd-a5e7-41e7-8612-60ae39ceb6e5",
+    "message_id": "7471fbf5-4840-4306-881b-7559e2a378de",
+    "timestamp": "2023-06-23T03:51:13.460Z",
+    "ttl": "PT30S",
+    "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+    "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/"
+  },
+  "message": {
+    "catalog": {
+      "bpp/fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery"
+        }
+      ],
+      "bpp/descriptor": {
+        "name": "Adani Wilmar",
+        "symbol": "https://kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg",
+        "short_desc": "Kitsune Nowfloats Test Seller",
+        "long_desc": "Kitsune Nowfloats test seller",
+        "images": [
+          "https://kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg",
+          "https://kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg",
+          "https://kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg"
         ]
-      }
+      },
+      "bpp/providers": [
+        {
+          "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+          "descriptor": {
+            "name": "Ashutosh enterprises",
+            "code": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+            "symbol": "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/42551662377332633-logo.jpeg",
+            "short_desc": "Adani Wilmar Seller",
+            "long_desc": "Adani Wilmar Seller",
+            "images": []
+          },
+          "ttl": "P1D",
+          "time": {
+            "label": "enable",
+            "timestamp": "2023-06-23T03:51:13.460Z"
+          },
+          "locations": [
+            {
+              "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+              "gps": "28.5682594,77.391035",
+              "address": {
+                "street": "Near Banjara hills",
+                "city": "Noida",
+                "area_code": "201301",
+                "state": "UP"
+              },
+              "time": {
+                "days": "1,2,3,4,5,6,7",
+                "schedule": {
+                  "holidays": []
+                },
+                "range": {
+                  "start": "1000",
+                  "end": "2100"
+                }
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+              "descriptor": {
+                "name": "ashutosh product",
+                "symbol": "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/012853054742462566-acm-boxshot.png",
+                "short_desc": "ashutosh product",
+                "long_desc": "ashutosh product",
+                "images": [
+                  "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/012853054742462566-acm-boxshot.png",
+                  "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/012853054742462566-acm-boxshot.png",
+                  "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/08770165603310187-acm-boxshot.png",
+                  "https://jiwkoimagesaccstaging.blob.core.windows.net/a2620894-26e1-4925-8d08-18422ca6bacf/08770165603310187-acm-boxshot.png"
+                ]
+              },
+              "quantity": {
+                "available": {
+                  "count": "110"
+                },
+                "maximum": {
+                  "count": "110"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "171",
+                "maximum_value": "190"
+              },
+              "category_id": "Nutrition and Supplements",
+              "fulfillment_id": "1",
+              "location_id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+              "@ondc/org/returnable": true,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/seller_pickup_return": true,
+              "@ondc/org/time_to_ship": "PT45M",
+              "@ondc/org/available_on_cod": false,
+              "@ondc/org/contact_details_consumer_care": "Adani Wilmar,p.soniya@nowfloats.com,7671917337",
+              "tags": {
+                "veg": "yes",
+                "non_veg": "no"
+              }
+            }
+          ],
+          "fulfillments": [
+            {
+              "contact": {
+                "phone": "8742905882",
+                "email": "v-ashutosh.bharti@nowfloats.com"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "code": "serviceability",
+              "list": [
+                {
+                  "code": "location",
+                  "value": "4c3881c0-34bd-4367-8c8b-43c05fd9901c"
+                },
+                {
+                  "code": "category",
+                  "value": "Nutrition and Supplements"
+                },
+                {
+                  "code": "type",
+                  "value": "10"
+                },
+                {
+                  "code": "val",
+                  "value": "20"
+                },
+                {
+                  "code": "unit",
+                  "value": "km"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
+}
