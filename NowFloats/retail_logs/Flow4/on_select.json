@@ -1,128 +1,133 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_select",
-      "core_version": "1.1.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
-      "transaction_id": "8395263b-4072-4e7f-9877-6651e39f4aac",
-      "message_id": "5ea7e2b2-86dd-49e2-932d-67b0da4b36c8",
-      "timestamp": "2023-06-20T13:13:16.003Z",
-      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c"
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+    "transaction_id": "7fd387fd-a5e7-41e7-8612-60ae39ceb6e5",
+    "message_id": "cb06d2c2-b6b5-4bfd-9abd-6bd6b71e40a9",
+    "timestamp": "2023-06-23T03:51:34.736Z",
+    "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c"
+      },
+      "items": [
+        {
+          "fulfillment_id": "2f67f63d-a0e3-49cc-91f0-3ad8dad7a521",
+          "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5"
         },
-        "items": [
-          {
-            "fulfillment_id": "782e3a72-cbc3-4bf0-9a11-488cf352c779",
-            "id": "66d697f7-2937-475c-9520-8ae56a51bb4c"
-          },
-          {
-            "fulfillment_id": "782e3a72-cbc3-4bf0-9a11-488cf352c779",
-            "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5"
-          }
-        ],
-        "fulfillments": [
-          {
-            "id": "782e3a72-cbc3-4bf0-9a11-488cf352c779",
-            "@ondc/org/provider_name": "Ashutosh enterprises",
-            "tracking": true,
-            "@ondc/org/category": "Immediate Delivery",
-            "@ondc/org/TAT": "PT45M",
-            "state": {
-              "descriptor": {
-                "name": "Pending",
-                "code": "Pending"
-              }
-            }
-          }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "2010.85"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "66d697f7-2937-475c-9520-8ae56a51bb4c",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "GoodDay Biscuit",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "1800"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "985"
-                  },
-                  "maximum": {
-                    "count": "985"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "900"
-                }
-              }
+        {
+          "fulfillment_id": "2f67f63d-a0e3-49cc-91f0-3ad8dad7a521",
+          "id": "66d697f7-2937-475c-9520-8ae56a51bb4c"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "2f67f63d-a0e3-49cc-91f0-3ad8dad7a521",
+          "@ondc/org/provider_name": "Ashutosh enterprises",
+          "tracking": true,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT60M",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
             },
-            {
-              "@ondc/org/item_id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
-              "@ondc/org/item_quantity": {
-                "count": 1
+            "updated_at": "2023-06-23T03:51:35.410Z",
+            "updated_by": "Customer"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "7410.85"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "ashutosh product",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "171"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "108"
+                },
+                "maximum": {
+                  "count": "108"
+                }
               },
-              "title": "ashutosh product",
-              "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
                 "value": "171"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "1"
-                  },
-                  "maximum": {
-                    "count": "1"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "171"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "782e3a72-cbc3-4bf0-9a11-488cf352c779",
-              "title": "Convenience Fee",
-              "@ondc/org/title_type": "misc",
-              "price": {
-                "currency": "INR",
-                "value": "33.85"
-              }
-            },
-            {
-              "@ondc/org/item_id": "782e3a72-cbc3-4bf0-9a11-488cf352c779",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "6"
               }
             }
-          ],
-          "ttl": "P1D"
-        }
+          },
+          {
+            "@ondc/org/item_id": "66d697f7-2937-475c-9520-8ae56a51bb4c",
+            "@ondc/org/item_quantity": {
+              "count": 8
+            },
+            "title": "GoodDay Biscuit",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "7200"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "7"
+                },
+                "maximum": {
+                  "count": "7"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "900"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "2f67f63d-a0e3-49cc-91f0-3ad8dad7a521",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "33.85"
+            }
+          },
+          {
+            "@ondc/org/item_id": "2f67f63d-a0e3-49cc-91f0-3ad8dad7a521",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "6"
+            }
+          }
+        ],
+        "ttl": "P1D"
       }
     }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": 40002
   }
+}
