@@ -5,82 +5,81 @@
     "city": "std:080",
     "action": "confirm",
     "core_version": "1.1.0",
-    "bap_id": "jiomart-buyer.ondcz5.de",
-    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-    "transaction_id": "cefdb2c8-eee3-44ed-bf3d-c38872f7a3ef",
-    "message_id": "e5f465a3-e075-49f6-baf7-f555a17ef4b8",
-    "timestamp": "2023-06-14T16:38:41.597Z",
-    "ttl": "PT30S",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "f5f11de3-3811-4af1-acab-971fd0d1e43b",
+    "message_id": "19af6ff8-0707-499f-a775-8fd35647c0cd",
+    "timestamp": "2023-06-24T09:14:20.985Z",
     "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz"
+    "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "71d7db5f-08b4-4909-8833-deb090ce44c0",
+      "id": "2023-06-24-128231",
       "state": "Created",
       "billing": {
-        "name": "alice",
         "address": {
-          "door": "abc building",
-          "name": "alice",
-          "building": "abc building",
-          "locality": "abc area",
+          "name": "Krishna B",
+          "building": "Near LG",
+          "locality": "SnapBizz Street",
           "city": "Bengaluru",
           "state": "Karnataka",
           "country": "IND",
-          "area_code": "560001"
+          "area_code": "560037"
         },
-        "email": "alice@gmail.com",
-        "phone": "7627635764",
-        "created_at": "2023-06-14T16:38:08.549Z",
-        "updated_at": "2023-06-14T16:38:08.549Z"
+        "phone": "9916784000",
+        "name": "Krishna B",
+        "email": "krishna.b@snapbizz.com",
+        "created_at": "2023-06-24T09:14:18.877Z",
+        "updated_at": "2023-06-24T09:14:18.877Z"
       },
       "items": [
         {
-          "fulfillment_id": "7de790c3-cc65-5593-85a6-ae737363a856",
-          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+          "id": "22222222-616b-5599-87e2-6cb80782d953",
           "quantity": {
             "count": 1
-          }
+          },
+          "fulfillment_id": "0b429b03-4864-5953-a8ad-e3fcb26e036b"
         },
         {
-          "fulfillment_id": "7de790c3-cc65-5593-85a6-ae737363a856",
-          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+          "id": "11111111-616b-5599-87e2-6cb80782d953",
           "quantity": {
             "count": 1
-          }
+          },
+          "fulfillment_id": "0b429b03-4864-5953-a8ad-e3fcb26e036b"
         }
       ],
       "provider": {
         "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
         "locations": [
           {
-            "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+            "id": "00000000-61af-58b2-a809-08a67d09e1f5"
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "7de790c3-cc65-5593-85a6-ae737363a856",
+          "id": "0b429b03-4864-5953-a8ad-e3fcb26e036b",
           "tracking": false,
           "end": {
-            "person": {
-              "name": "alice"
-            },
             "contact": {
-              "email": "alice@gmail.com",
-              "phone": "7627635764"
+              "email": "krishna.b@snapbizz.com",
+              "phone": "9916784000"
+            },
+            "person": {
+              "name": "Krishna B"
             },
             "location": {
-              "gps": "12.9765944,77.5992708",
+              "gps": "12.964319, 77.6810060000001",
               "address": {
-                "name": "alice",
-                "building": "abc building",
-                "locality": "abc area",
+                "name": "Krishna B",
+                "building": "Near LG",
+                "locality": "SnapBizz Street",
                 "city": "Bengaluru",
                 "state": "Karnataka",
                 "country": "IND",
-                "area_code": "560001"
+                "area_code": "560037"
               }
             }
           },
@@ -88,16 +87,18 @@
         }
       ],
       "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
         "params": {
-          "amount": "140",
+          "amount": "6289",
           "currency": "INR",
-          "transaction_id": "20230614011650000875863411152819390"
+          "transaction_id": "f5f11de3-3811-4af1-acab-971fd0d1e43b"
         },
         "status": "PAID",
         "type": "ON-ORDER",
         "collected_by": "BAP",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "2",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "seller-app",
@@ -114,48 +115,59 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "140.00"
+          "value": "6289.00"
         },
         "ttl": "P1D",
         "breakup": [
           {
-            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": 1,
             "item": {
               "price": {
-                "currency": "INR",
-                "value": "70"
+                "value": "5990",
+                "currency": "INR"
               }
             },
-            "title": "snapbizz neo",
             "price": {
-              "currency": "INR",
-              "value": "70.00"
+              "value": "5990.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Brilrider AF Balance Bike",
+            "@ondc/org/item_id": "22222222-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
             }
           },
           {
-            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": 1,
             "item": {
               "price": {
-                "currency": "INR",
-                "value": "70"
+                "value": "299",
+                "currency": "INR"
               }
             },
-            "title": "snapbizz turbo",
             "price": {
-              "currency": "INR",
-              "value": "70.00"
+              "value": "299.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Bril Liquid Detergent 1 Litre - Buy One Get One",
+            "@ondc/org/item_id": "11111111-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
             }
           },
-          {},
-          {}
+          {
+            "price": {
+              "value": "0.0",
+              "currency": "INR"
+            },
+            "title": "Delivery charges",
+            "@ondc/org/item_id": "0b429b03-4864-5953-a8ad-e3fcb26e036b",
+            "@ondc/org/title_type": "delivery"
+          }
         ]
       },
-      "created_at": "2023-06-14T16:38:41.597Z",
-      "updated_at": "2023-06-14T16:38:41.597Z"
+      "created_at": "2023-06-24T09:14:20.985Z",
+      "updated_at": "2023-06-24T09:14:20.985Z"
     }
   }
 }
