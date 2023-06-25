@@ -1,83 +1,79 @@
 {
     "context": {
-        "domain": "nic2004:60232",
-        "country": "IND",
-        "city": "std:080",
-        "action": "search",
-        "core_version": "1.1.0",
-        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
-        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
-        "transaction_id": "27a557d6-dd35-59e8-a211-e93d10ae8d7e",
-        "message_id": "4597a449-d0da-53d3-9dc1-2b14825a82fc",
-        "timestamp": "2023-06-19T08:15:29.941Z",
-        "ttl": "PT30S",
-        "signature": "Signature keyId=\"preprod-ondc.viranc.com/p/v1/store|06f1420b-5430-4b6e-8ffa-56865cf81835|ed25519\",algorithm=\"ed25519\",created=\"1687162529\",expires=\"1687166129\",headers=\"(created) (expires) digest\",signature=\"95aEotuoEBbqj/8pfHA31JKT8h4dib+MqxxYGlBJo6S+8PY5zzMYeg71+QOU61eBmdzLr8tWzSbk/8YUZMXnDQ==\""
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "action": "search",
+      "core_version": "1.1.0",
+      "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+      "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+      "transaction_id": "033d2a69-56b4-5827-81f8-30dedd920624",
+      "message_id": "8f25c644-c3f4-5838-a7f2-ac13aad0f84b",
+      "timestamp": "2023-06-23T13:26:37.017Z",
+      "ttl": "PT30S",
+      "signature": "Signature keyId=\"preprod-ondc.viranc.com/p/v1/store|06f1420b-5430-4b6e-8ffa-56865cf81835|ed25519\",algorithm=\"ed25519\",created=\"1687526797\",expires=\"1687530397\",headers=\"(created) (expires) digest\",signature=\"tp9hfgIxRWSgieZizvaHbJFjQO8yKE4jqp1Y3gu8fjF/XlXueC9wnGOAH9eiqO4/Knraxt9GNBTdfdoaJrMnDw==\""
     },
     "message": {
-        "intent": {
-            "category": {
-                "id": "Standard Delivery",
-                "time": {
-                    "label": "TAT",
-                    "duration": "P2D"
-                }
+      "intent": {
+        "category": {
+          "id": "Express Delivery"
+        },
+        "provider": {
+          "time": {
+            "days": "1,2,3,4,5,6,7",
+            "range": {
+              "end": "2359",
+              "start": "0000"
             },
-            "provider": {
-                "time": {
-                    "days": "1,2,3,4,5,6,7",
-                    "range": {
-                        "end": "2359",
-                        "start": "0000"
-                    },
-                    "schedule": {
-                        "holidays": []
-                    }
-                }
-            },
-            "fulfillment": {
-                "type": "Prepaid",
-                "start": {
-                    "location": {
-                        "gps": "12.96774,77.588913",
-                        "address": {
-                            "area_code": "560001"
-                        }
-                    }
-                },
-                "end": {
-                    "location": {
-                        "gps": "18.949981,72.825748",
-                        "address": {
-                            "area_code": "400002"
-                        }
-                    }
-                }
-            },
-            "@ondc/org/payload_details": {
-                "weight": {
-                    "unit": "Kilogram",
-                    "value": 20
-                },
-                "category": "Grocery",
-                "value": {
-                    "currency": "INR",
-                    "value": "900.22"
-                },
-                "dimensions": {
-                    "height": {
-                        "unit": "centimeter",
-                        "value": 40
-                    },
-                    "length": {
-                        "unit": "centimeter",
-                        "value": 40
-                    },
-                    "breadth": {
-                        "unit": "centimeter",
-                        "value": 40
-                    }
-                }
+            "schedule": {
+              "holidays": []
             }
+          }
+        },
+        "fulfillment": {
+          "type": "Prepaid",
+          "start": {
+            "location": {
+              "gps": "12.96774,77.588913",
+              "address": {
+                "area_code": "560001"
+              }
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "18.949981,72.825748",
+              "address": {
+                "area_code": "400002"
+              }
+            }
+          }
+        },
+        "@ondc/org/payload_details": {
+          "weight": {
+            "unit": "Kilogram",
+            "value": 10
+          },
+          "category": "Grocery",
+          "value": {
+            "currency": "INR",
+            "value": "450.11"
+          },
+          "dimensions": {
+            "height": {
+              "unit": "centimeter",
+              "value": 40
+            },
+            "length": {
+              "unit": "centimeter",
+              "value": 40
+            },
+            "breadth": {
+              "unit": "centimeter",
+              "value": 40
+            }
+          }
         }
+      }
     }
-}
+  }
