@@ -9,14 +9,15 @@
     "city": "std:080",
     "country": "IND",
     "action": "on_status",
-    "transaction_id": "df94dc98-724f-48a7-948d-cd733527ab35",
-    "message_id": "0b349428-9adc-4e77-9cf5-96e67eece762",
-    "timestamp": "2023-06-15T06:43:11.028Z",
+    "transaction_id": "25bfa468-0d45-4a8a-b6e5-43d770d2ed32",
+    "message_id": "e85880b3-e31f-4b66-8f1f-f61e2e9aa7e4",
+    "timestamp": "2023-06-26T07:53:04.909Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "55fe4aaf-243f-45a4-afb5-2fcebe835274",
+      "id": "91207a0f-0fca-4706-abf8-00dfa8eec35d",
+      "state": "In-progress",
       "provider": {
         "id": "107-Account-DER-292",
         "locations": [
@@ -27,7 +28,7 @@
       },
       "items": [
         {
-          "id": "19",
+          "id": "20",
           "category_id": "Standard Delivery",
           "descriptor": {
             "code": "P2P"
@@ -37,30 +38,28 @@
       "fulfillments": [
         {
           "type": "Prepaid",
-          "@ondc/org/awb_no": "2023061580554820",
+          "@ondc/org/awb_no": "2023062632823442",
           "state": {
             "descriptor": {
-              "name": "Out For Delivery",
-              "code": "Out-for-delivery"
+              "code": "OutForDelivery"
             }
           },
           "tracking": true,
           "start": {
             "time": {
               "range": {
-                "start": "2023-06-15T12:18:47.936Z",
-                "end": "2023-06-15T12:38:47.936Z"
+                "start": "2023-06-26T13:28:33.016Z",
+                "end": "2023-06-26T13:48:33.016Z"
               },
-              "timestamp": "0001-01-01T00:00:00.000Z"
+              "timestamp": "2023-06-26T07:52:27.328Z"
             }
           },
           "end": {
             "time": {
               "range": {
-                "start": "2023-06-15T13:08:47.936Z",
-                "end": "2023-06-15T13:23:47.936Z"
-              },
-              "timestamp": "0001-01-01T00:00:00.000Z"
+                "start": "2023-06-26T14:18:33.016Z",
+                "end": "2023-06-26T14:33:33.016Z"
+              }
             }
           },
           "agent": {
@@ -72,43 +71,43 @@
             "size": "500.0000",
             "registration": "TN56NS8282"
           },
-          "@ondc/org/ewaybillno": "0090bac6-b288-49f6-9284-d08e55039886",
-          "@ondc/org/ebexpirydate": "2023-06-17T06:38:43.543Z"
+          "@ondc/org/ewaybillno": "4f4a753a-2877-415b-bb3b-1a9003e5ff85",
+          "@ondc/org/ebexpirydate": "2023-06-28T07:48:28.199Z"
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1030.0"
+          "value": "1250.0"
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "19",
+            "@ondc/org/item_id": "20",
             "@ondc/org/title_type": "Delivery Charge",
             "price": {
               "currency": "INR",
-              "value": "1010.0"
+              "value": "1210.0"
             }
           },
           {
             "@ondc/org/title_type": "RTO Charge",
             "price": {
               "currency": "INR",
-              "value": "20.0"
+              "value": "40.0"
             }
           }
         ]
       },
       "payment": {
-        "type": null,
-        "collected_by": null,
+        "type": "ON_ORDER",
+        "collected_by": "BAP",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "seller-app",
             "settlement_type": "neft",
             "upi_address": null,
-            "settlement_bank_account_no": "ACCT000001",
-            "settlement_ifsc_code": null,
+            "settlement_bank_account_no": "107_ACCT000001",
+            "settlement_ifsc_code": "HDFC100010",
             "settlement_status": null,
             "settlement_reference": null,
             "settlement_timestamp": null
@@ -119,10 +118,10 @@
         "name": "Yumfood",
         "address": {
           "name": "Yumfood",
-          "building": "Hoskote, Hosakote taluk, Bangalore Rural, Karnataka, 562114, India",
-          "locality": "Hoskote, Hosakote taluk, Bangalore Rural, Karnataka, 562114, India",
-          "city": "Bengaluru",
-          "state": "KA",
+          "building": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
+          "locality": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
+          "city": "Nelamangala",
+          "state": "kA",
           "country": "India",
           "area_code": "560061"
         },
