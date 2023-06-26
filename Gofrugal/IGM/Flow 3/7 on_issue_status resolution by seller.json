@@ -1,0 +1,170 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_issue_status",
+        "timestamp": "2023-06-26T12:15:04.159Z",
+        "core_version": "1.0.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondc-qa.gofrugalretail.com",
+        "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
+        "transaction_id": "4af620a0-23a4-4492-b6dc-e47f9e478436",
+        "message_id": "79916c17-21dc-438e-8a3c-0b30e7ad0ce0"
+    },
+    "message": {
+        "issue": {
+            "resolution": {
+                "action_triggered": "CANCEL",
+                "refund_amount": "1200.0",
+                "short_desc": "Cancelled",
+                "long_desc": "Order is cancelled delivery partner will pickup the order"
+            },
+            "id": "eb847ef6-df4b-4cda-9dd7-96616b6fd071",
+            "issue_actions": {
+                "respondent_actions": [
+                    {
+                        "respondent_action": "RESOLVED",
+                        "updated_at": "2023-06-26T12:15:02.434Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc-qa.gofrugalretail.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "8881177221",
+                                "email": "sherin.h@gofrugal.com"
+                            },
+                            "person": {
+                                "name": "sherin shafa"
+                            }
+                        },
+                        "cascaded_level": 1,
+                        "short_desc": "Cancelled"
+                    },
+                    {
+                        "respondent_action": "RESOLVED",
+                        "updated_at": "2023-06-26T12:10:45.000Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc-preprod.loadshare.net::nic2004:60232"
+                            },
+                            "contact": {
+                                "phone": "7760277716",
+                                "email": "satish.k@loadshare.net"
+                            },
+                            "person": {
+                                "name": "Satish K."
+                            }
+                        },
+                        "cascaded_level": 2,
+                        "short_desc": "Test ticket with GoFrugal resolved"
+                    },
+                    {
+                        "respondent_action": "PROCESSING",
+                        "updated_at": "2023-06-26T12:06:20.893Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc-preprod.loadshare.net::nic2004:60232"
+                            },
+                            "contact": {
+                                "phone": "7760277716",
+                                "email": "satish.k@loadshare.net"
+                            },
+                            "person": {
+                                "name": "Satish K."
+                            }
+                        },
+                        "cascaded_level": 2,
+                        "short_desc": "Complaint is being processed"
+                    },
+                    {
+                        "respondent_action": "CASCADED",
+                        "updated_at": "2023-06-26T12:06:20.084Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc-qa.gofrugalretail.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "8881177221",
+                                "email": "sherin.h@gofrugal.com"
+                            },
+                            "person": {
+                                "name": "sherin shafa"
+                            }
+                        },
+                        "cascaded_level": 2,
+                        "short_desc": "Cascaded to Logistics"
+                    },
+                    {
+                        "respondent_action": "PROCESSING",
+                        "updated_at": "2023-06-26T12:06:13.800Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc-qa.gofrugalretail.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "8881177221",
+                                "email": "sherin.h@gofrugal.com"
+                            },
+                            "person": {
+                                "name": "sherin shafa"
+                            }
+                        },
+                        "cascaded_level": 1,
+                        "short_desc": "Processing"
+                    }
+                ]
+            },
+            "created_at": "2023-06-26T12:05:43.498Z",
+            "updated_at": "2023-06-26T12:15:02.434Z",
+            "resolution_provider": {
+                "respondent_info": {
+                    "type": "TRANSACTION-COUNTERPARTY-NP",
+                    "organization": {
+                        "org": {
+                            "name": "ondc-qa.gofrugalretail.com::nic2004:52110"
+                        },
+                        "contact": {
+                            "phone": "7418066617",
+                            "email": "pema.d@gofrugal.com"
+                        },
+                        "person": {
+                            "name": "Pema Doma Lama"
+                        }
+                    },
+                    "resolution_support": {
+                        "respondentEmail": "sherin.h@gofrugal.com",
+                        "gros": [
+                            {
+                                "person": {
+                                    "name": "Pema Doma Lama"
+                                },
+                                "contact": {
+                                    "phone": "7418066617",
+                                    "email": "pema.d@gofrugal.com"
+                                },
+                                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+                            },
+                            {
+                                "person": {
+                                    "name": "Grievance Officer"
+                                },
+                                "contact": {
+                                    "phone": "7760277716",
+                                    "email": "grievances@loadshare.net"
+                                },
+                                "gro_type": "CASCADED-COUNTERPARTY-NP-GRO"
+                            }
+                        ],
+                        "contact": {
+                            "name": "sherin shafa",
+                            "phone": "8881177221",
+                            "email": "sherin.h@gofrugal.com"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
