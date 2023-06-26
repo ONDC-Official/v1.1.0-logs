@@ -1,0 +1,111 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "action": "on_cancel",
+    "core_version": "1.1.0",
+    "bap_id": "preprod.xpressbaazaar.com",
+    "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "transaction_id": "e27ac51b-81e1-4994-a63d-a3b85fa4e5f3",
+    "message_id": "fb8ad38f-c7bb-4777-816b-ccd158477112",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-06-26T08:00:34.746Z"
+  },
+  "message": {
+    "order": {
+      "id": "6a02b598-03db-4467-9182-f6545554e704",
+      "state": "Cancelled",
+      "fulfillments": [
+        {
+          "id": "4e7c6bee-69f7-4cd9-a9ad-1eb0ab4be887",
+          "type": "Prepaid",
+          "state": {
+            "descriptor": {
+              "name": "Cancelled",
+              "code": "Cancelled"
+            }
+          },
+          "rtOtags": [
+            {
+              "code": "rto",
+              "list": [
+                {
+                  "code": "retry_count",
+                  "value": "3"
+                },
+                {
+                  "code": "rto_id",
+                  "value": "4e7c6bee-69f7-4cd9-a9ad-1eb0ab4be887-RTO"
+                }
+              ]
+            }
+          ],
+          "start": null,
+          "tags": null
+        },
+        {
+          "id": "4e7c6bee-69f7-4cd9-a9ad-1eb0ab4be887-RTO",
+          "type": "RTO",
+          "state": {
+            "descriptor": {
+              "name": "RTO Initiated",
+              "code": "RTO-Initiated"
+            }
+          },
+          "rtOtags": null,
+          "start": {
+            "location": null,
+            "time": {
+              "range": {
+                "start": "2023-06-26T02:30:33.8939325Z",
+                "end": "2023-06-26T03:00:33.8939342Z"
+              },
+              "timestamp": null
+            },
+            "contact": null
+          },
+          "tags": null
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1250.0"
+        },
+        "breakup": [
+          {
+            "title": null,
+            "ondc_org_item_id": "20",
+            "ondc_org_title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "1210.0"
+            }
+          },
+          {
+            "title": null,
+            "ondc_org_item_id": null,
+            "ondc_org_title_type": "RTO Charge",
+            "price": {
+              "currency": "INR",
+              "value": "40.0"
+            }
+          }
+        ]
+      },
+      "cancellation": {
+        "time": "2023-06-26T08:00:33.8940863",
+        "cancelled_by": "iway_0_InternalAccount",
+        "reason": {
+          "id": "013",
+          "additional_description": {
+            "name": "AWB",
+            "code": "2023062618840612"
+          }
+        }
+      }
+    }
+  }
+}
