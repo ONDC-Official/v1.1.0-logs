@@ -1,0 +1,121 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl/",
+        "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
+        "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
+        "transaction_id": "1c4f616d-c266-59f4-bd87-02e981d46c89",
+        "message_id": "8b5892c4-804c-453d-b464-d5eace684fdc",
+        "timestamp": "2023-06-23T13:42:25.361Z"
+    },
+    "message": {
+        "order": {
+            "id": "7ea9df2c-6c8c-45da-a780-fd65db04d844",
+            "state": "In-progress",
+            "items": [
+                {
+                    "id": "B2C PRIORITY",
+                    "category_id": "Express Delivery",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "@ondc/org/awb_no": "7X1394742",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-06-23T13:47:00.305Z",
+                                "end": "2023-06-23T17:30:00.305Z"
+                            }
+                        },
+                        "instructions": {
+                            "name": "Shipping Label",
+                            "short_desc": "Shipping Label",
+                            "images": [
+                                "https://elabel.shipsy.in/printExternalShippingLabel?reference_number=7X1394742&organisation_id=1&hash=7233dc50da0f959d64a2f52696ae3f2d5224eab6d313d52f18ce9a2602acbc82&isSmall=false"
+                            ]
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-06-27T13:47:00.305Z",
+                                "end": "2023-06-27T17:30:00.305Z"
+                            }
+                        }
+                    }
+                }
+            ],
+            "updated_at": "2023-06-23T13:42:25.361Z",
+            "created_at": "2023-06-23T13:40:21.898Z",
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "Grocery",
+                        "descriptor": {
+                            "name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
+                        },
+                        "quantity": {
+                            "count": 1,
+                            "measure": {
+                                "unit": "Kilogram",
+                                "value": 10
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "437.00"
+                        }
+                    }
+                ],
+                "provider": {
+                    "descriptor": {
+                        "name": "ONDC Test Seller Store"
+                    },
+                    "address": {
+                        "name": "ONDC Test Seller Store",
+                        "street": "Kasturba Rd",
+                        "locality": "Kasturba Rd",
+                        "city": "Bengaluru",
+                        "state": "Karnataka",
+                        "area_code": "560001"
+                    }
+                },
+                "order": {
+                    "id": "2023-06-23-860802",
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 10
+                    }
+                }
+            },
+            "billing": {
+                "name": "ONDC Test Seller Store",
+                "address": {
+                    "name": "ONDC Test Seller Store",
+                    "building": "Fort",
+                    "locality": "Fort",
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India",
+                    "area_code": "400001"
+                },
+                "tax_number": "gst_number",
+                "phone": "9999999999",
+                "email": "test@gmail.com",
+                "created_at": "2023-06-23T13:40:16.351Z",
+                "updated_at": "2023-06-23T13:40:16.351Z"
+            }
+        }
+    }
+}

@@ -1,97 +1,97 @@
 {
     "context": {
-        "domain": "nic2004:60232",
-        "country": "IND",
-        "city": "std:080",
-        "action": "update",
-        "core_version": "1.1.0",
-        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
-        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
-        "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
-        "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
-        "transaction_id": "27a557d6-dd35-59e8-a211-e93d10ae8d7e",
-        "message_id": "3afabc19-ee88-4d3f-b6ac-cba4a5ed66d8",
-        "timestamp": "2023-06-19T08:17:44.475Z",
-        "ttl": "PT30S",
-        "signature": "Signature keyId=\"preprod-ondc.viranc.com/p/v1/store|06f1420b-5430-4b6e-8ffa-56865cf81835|ed25519\",algorithm=\"ed25519\",created=\"1687162664\",expires=\"1687166264\",headers=\"(created) (expires) digest\",signature=\"uDIBVPf36/C2ihjo1EcqhS+oUxHeVcaPmOqW1sgeUKU/cJvN+s5ZmRrZ6pSAA5Hq97T5ceRPD1HS8Qlk9qb8CA==\""
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "action": "update",
+      "core_version": "1.1.0",
+      "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+      "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+      "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
+      "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
+      "transaction_id": "033d2a69-56b4-5827-81f8-30dedd920624",
+      "message_id": "01246189-1e1b-4581-8d2e-f35d00963f8c",
+      "timestamp": "2023-06-23T13:28:51.314Z",
+      "ttl": "PT30S",
+      "signature": "Signature keyId=\"preprod-ondc.viranc.com/p/v1/store|06f1420b-5430-4b6e-8ffa-56865cf81835|ed25519\",algorithm=\"ed25519\",created=\"1687526931\",expires=\"1687530531\",headers=\"(created) (expires) digest\",signature=\"xQiCGAmD6oGGRnICT7rQmN2lAFf3YsdZYLNgOaRQn38Kf/QhMO2YEEhhGitz2TXtSYLBrmv6BA6tmc8s8gOECQ==\""
     },
     "message": {
-        "update_target": "fulfillment",
-        "order": {
-            "id": "4a7b55bf-ab89-47ab-86e3-3ae3f9443ac1",
-            "state": "Accepted",
-            "items": [
-                {
-                    "id": "B2C SMART EXPRESS",
-                    "category_id": "Standard Delivery",
-                    "descriptor": {
-                        "code": "P2H2P"
-                    }
-                }
-            ],
-            "fulfillments": [
-                {
-                    "id": "1",
-                    "type": "Prepaid",
-                    "tags": {
-                        "@ondc/org/order_ready_to_ship": "yes"
-                    },
-                    "end": {
-                        "instructions": {
-                            "name": "Status for drop",
-                            "long_desc": "Delivery Confirmation Code",
-                            "short_desc": "8594097"
-                        }
-                    }
-                }
-            ],
-            "payment": {
-                "@ondc/org/collection_amount": "1814.86",
-                "collected_by": "BAP",
-                "type": "POST-FULFILLMENT"
+      "update_target": "fulfillment",
+      "order": {
+        "id": "de085c9c-d3ae-4614-a03a-6fc3c3a7a086",
+        "state": "Accepted",
+        "items": [
+          {
+            "id": "B2C PRIORITY",
+            "category_id": "Express Delivery",
+            "descriptor": {
+              "code": "P2H2P"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "1",
+            "type": "Prepaid",
+            "tags": {
+              "@ondc/org/order_ready_to_ship": "yes"
             },
-            "@ondc/org/linked_order": {
-                "items": [
-                    {
-                        "category_id": "Grocery",
-                        "descriptor": {
-                            "name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
-                        },
-                        "quantity": {
-                            "count": 2,
-                            "measure": {
-                                "unit": "Kilogram",
-                                "value": 10
-                            }
-                        },
-                        "price": {
-                            "currency": "INR",
-                            "value": "874.00"
-                        }
-                    }
-                ],
-                "provider": {
-                    "descriptor": {
-                        "name": "ONDC Test Seller Store"
-                    },
-                    "address": {
-                        "name": "ONDC Test Seller Store",
-                        "street": "Kasturba Rd",
-                        "locality": "Kasturba Rd",
-                        "city": "Bengaluru",
-                        "state": "Karnataka",
-                        "area_code": "560001"
-                    }
-                },
-                "order": {
-                    "id": "2023-06-19-940653",
-                    "weight": {
-                        "unit": "Kilogram",
-                        "value": 20
-                    }
+            "end": {
+              "instructions": {
+                "name": "Status for drop",
+                "long_desc": "Delivery Confirmation Code",
+                "short_desc": "6558088"
+              }
+            }
+          }
+        ],
+        "payment": {
+          "@ondc/org/collection_amount": "1364.75",
+          "collected_by": "BAP",
+          "type": "POST-FULFILLMENT"
+        },
+        "@ondc/org/linked_order": {
+          "items": [
+            {
+              "category_id": "Grocery",
+              "descriptor": {
+                "name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
+              },
+              "quantity": {
+                "count": 1,
+                "measure": {
+                  "unit": "Kilogram",
+                  "value": 10
                 }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "437.00"
+              }
+            }
+          ],
+          "provider": {
+            "descriptor": {
+              "name": "ONDC Test Seller Store"
             },
-            "updated_at": "2023-06-19T08:17:44.475Z"
-        }
+            "address": {
+              "name": "ONDC Test Seller Store",
+              "street": "Kasturba Rd",
+              "locality": "Kasturba Rd",
+              "city": "Bengaluru",
+              "state": "Karnataka",
+              "area_code": "560001"
+            }
+          },
+          "order": {
+            "id": "2023-06-23-900143",
+            "weight": {
+              "unit": "Kilogram",
+              "value": 10
+            }
+          }
+        },
+        "updated_at": "2023-06-23T13:28:51.314Z"
+      }
     }
-}
+  }

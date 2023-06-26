@@ -5,14 +5,14 @@
     "city": "std:080",
     "action": "init",
     "core_version": "1.1.0",
-    "bap_id": "jiomart-buyer.ondcz5.de",
-    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-    "transaction_id": "2f62fff9-bd6a-4949-8fc7-dfb50d7944c5",
-    "message_id": "ad160d56-1a7c-4b6b-a170-64e15f8ab4ea",
-    "timestamp": "2023-06-14T19:38:47.137Z",
-    "ttl": "PT30S",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "3fa5fdc4-1139-4c3a-a766-4f53691ab24b",
+    "message_id": "49ba2ca3-e85a-4fd0-b43b-f9d9aff3e81b",
+    "timestamp": "2023-06-24T12:07:06.750Z",
     "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz"
+    "ttl": "PT30S"
   },
   "message": {
     "order": {
@@ -20,64 +20,65 @@
         "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
         "locations": [
           {
-            "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+            "id": "00000000-61af-58b2-a809-08a67d09e1f5"
           }
         ]
       },
       "items": [
         {
-          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-          "quantity": {
-            "count": 10
-          },
-          "fulfillment_id": "c3b70565-9a2b-5386-b16a-715ef72fbd17"
-        },
-        {
-          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+          "id": "22222222-616b-5599-87e2-6cb80782d953",
           "quantity": {
             "count": 1
           },
-          "fulfillment_id": "c3b70565-9a2b-5386-b16a-715ef72fbd17"
+          "fulfillment_id": "6e9e4492-ad04-5ab0-be50-49c9a5715983"
+        },
+        {
+          "id": "11111111-616b-5599-87e2-6cb80782d953",
+          "quantity": {
+            "count": 10
+          },
+          "fulfillment_id": "6e9e4492-ad04-5ab0-be50-49c9a5715983"
         }
       ],
       "billing": {
         "address": {
-          "name": "alice",
-          "building": "abc building",
-          "locality": "abc area",
+          "door": "Test Landmark",
+          "building": "Test Landmark",
           "city": "Bengaluru",
           "state": "Karnataka",
           "country": "IND",
-          "area_code": "560001"
+          "area_code": "560037",
+          "locality": "Test Street",
+          "name": "Alice Bob"
         },
-        "phone": "7627635764",
-        "name": "alice",
+        "phone": "9988776655",
+        "name": "Alice Bob",
         "email": "alice@gmail.com",
-        "created_at": "2023-06-14T19:38:47.137Z",
-        "updated_at": "2023-06-14T19:38:47.137Z"
+        "created_at": "2023-06-24T12:07:06.750Z",
+        "updated_at": "2023-06-24T12:07:06.750Z"
       },
       "fulfillments": [
         {
-          "id": "c3b70565-9a2b-5386-b16a-715ef72fbd17",
+          "id": "6e9e4492-ad04-5ab0-be50-49c9a5715983",
+          "type": "Delivery",
           "end": {
             "contact": {
-              "phone": "7627635764"
+              "email": "alice@gmail.com",
+              "phone": "9988776655"
             },
             "location": {
-              "gps": "12.9765944,77.5992708",
+              "gps": "12.964319, 77.6810060000001",
               "address": {
-                "name": "alice",
-                "building": "abc building",
-                "locality": "abc area",
+                "name": "Alice Bob",
+                "building": "Test Landmark",
+                "locality": "Test Street",
                 "city": "Bengaluru",
                 "state": "Karnataka",
                 "country": "IND",
-                "areaCode": "560001",
-                "area_code": "560001"
+                "area_code": "560037"
               }
             }
-          },
-          "type": "Delivery"
+          }
         }
       ]
     }

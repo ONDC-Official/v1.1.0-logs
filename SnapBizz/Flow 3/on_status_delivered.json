@@ -1,195 +1,214 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_status",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "transaction_id": "8b506564-e2e7-404d-82a1-3b1f4af75dc7",
-      "message_id": "c62d9c6e-291d-4714-bd9c-e37c87171ffa",
-      "timestamp": "2023-06-14T18:52:26.787Z"
-    },
-    "message": {
-      "order": {
-        "id": "59394370-cdfa-467e-8c05-35160948b210",
-        "state": "Accepted",
-        "provider": {
-          "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
-          "locations": [
-            {
-              "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
-            }
-          ],
-          "rateable": true
-        },
-        "items": [
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_status",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "befade41-d30d-4831-85e5-ef22d0828520",
+    "message_id": "303ab1ff-b319-4d39-b87f-8d9b19c11b9c",
+    "timestamp": "2023-06-24T17:32:44.261Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-06-24-175246",
+      "state": "Completed",
+      "provider": {
+        "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
+        "locations": [
           {
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-            "quantity": {
-              "count": 1
-            },
-            "fulfillment_id": "91ed5736-7466-596f-97b4-145170325b14"
-          },
-          {
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-            "quantity": {
-              "count": 1
-            },
-            "fulfillment_id": "91ed5736-7466-596f-97b4-145170325b14"
+            "id": "00000000-61af-58b2-a809-08a67d09e1f5"
           }
         ],
-        "billing": {
-          "name": "john",
-          "address": {
-            "name": "john",
-            "building": "john villa",
-            "city": "Bengaluru",
-            "locality": "Bengaluru",
-            "state": "Karnataka",
-            "country": "IND",
-            "area_code": "560001"
+        "rateable": true
+      },
+      "items": [
+        {
+          "id": "22222222-616b-5599-87e2-6cb80782d953",
+          "quantity": {
+            "count": 1
           },
-          "email": "john@gmail.com",
-          "phone": "7896543677",
-          "created_at": "2023-06-14T18:49:05.2589Z",
-          "updated_at": "2023-06-14T18:48:53.3862Z"
+          "fulfillment_id": "1b8018e2-6d9c-5199-8c81-301d970c63a4"
         },
-        "fulfillments": [
-          {
-            "id": "91ed5736-7466-596f-97b4-145170325b14",
-            "type": "Delivery",
-            "@ondc/org/provider_name": "Snapbizz Test store",
-            "state": {
+        {
+          "id": "11111111-616b-5599-87e2-6cb80782d953",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "1b8018e2-6d9c-5199-8c81-301d970c63a4"
+        }
+      ],
+      "billing": {
+        "name": "Alice Bob",
+        "address": {
+          "door": "Near LG",
+          "building": "Near LG",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560037",
+          "locality": "SnapBizz Street",
+          "name": "Alice Bob"
+        },
+        "email": "alice@snapbizz.com",
+        "phone": "9916784111",
+        "created_at": "2023-06-24T17:31:52.157Z",
+        "updated_at": "2023-06-24T17:31:52.157Z"
+      },
+      "fulfillments": [
+        {
+          "id": "1b8018e2-6d9c-5199-8c81-301d970c63a4",
+          "type": "Delivery",
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/provider_name": "SnapBizz Alice",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "tracking": false,
+          "start": {
+            "location": {
+              "id": "00000000-61af-58b2-a809-08a67d09e1f5",
+              "gps": "12.967744,77.588913",
               "descriptor": {
-                "code": "Order-delivered"
+                "name": "SnapBizz ONDC"
               }
             },
-            "tracking": false,
-            "start": {
-              "id": 1052,
-              "location": {
-                "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
-                "gps": "12.96774,77.588913",
-                "descriptor": {
-                  "name": "Snapbizz Test store"
-                }
+            "time": {
+              "range": {
+                "start": "2023-06-24T17:32:44+00:00",
+                "end": "2023-06-26T17:32:44+00:00"
               },
-              "time": {
-                "range": {
-                  "start": "2023-06-14T18:52:26+00:00",
-                  "end": "2023-06-16T18:52:26+00:00"
-                }
-              },
-              "contact": {
-                "phone": "7172737475"
+              "timestamp": "2023-06-24T17:32:27.165Z"
+            },
+            "contact": {
+              "phone": "9916784000"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.964319, 77.6810060000001",
+              "address": {
+                "name": "Alice Bob",
+                "building": "Near LG",
+                "locality": "SnapBizz Street",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560037"
               }
             },
-            "end": {
-              "location": {
-                "gps": "12.9765944,77.5992708",
-                "address": {
-                  "name": "john",
-                  "locality": "Bengaluru",
-                  "city": "Bengaluru",
-                  "state": "Karnataka",
-                  "country": "IND",
-                  "area_code": "560001",
-                  "building": "john villa"
-                },
-                "contact": {
-                  "phone": "7896543677"
-                },
-                "person": {
-                  "name": "john"
-                }
-              }
+            "time": {
+              "range": {
+                "start": "2023-06-24T17:32:44+00:00",
+                "end": "2023-06-26T17:32:44+00:00"
+              },
+              "timestamp": "2023-06-24T17:32:40.962Z"
+            },
+            "contact": {
+              "email": "alice@snapbizz.com",
+              "phone": "9916784111"
+            },
+            "person": {
+              "name": "Alice Bob"
             }
           }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "140.00"
-          },
-          "ttl": "P1D",
-          "breakup": [
-            {
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "@ondc/org/title_type": "item",
-              "title": "snapbizz neo",
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "6289.00"
+        },
+        "ttl": "P1D",
+        "breakup": [
+          {
+            "item": {
               "price": {
-                "currency": "INR",
-                "value": "70.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                }
+                "value": "5990",
+                "currency": "INR"
               }
             },
-            {
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-              "@ondc/org/item_quantity": {
-                "count": 1
-              },
-              "@ondc/org/title_type": "item",
-              "title": "snapbizz turbo",
-              "price": {
-                "currency": "INR",
-                "value": "70.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                }
-              }
+            "price": {
+              "value": "5990.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Brilrider AF Balance Bike",
+            "@ondc/org/item_id": "22222222-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
             }
-          ]
-        },
-        "payment": {
-          "status": "PAID",
-          "params": {
-            "currency": "INR",
-            "transaction_id": "925643754396357647",
-            "amount": "140"
           },
-          "type": "ON-ORDER",
-          "collected_by": "BAP",
-          "@ondc/org/buyer_app_finder_fee_type": "percent",
-          "@ondc/org/buyer_app_finder_fee_amount": "2",
-          "@ondc/org/settlement_basis": "Collection",
-          "@ondc/org/settlement_window": "P2D",
-          "@ondc/org/settlement_details": [
-            {
-              "settlement_counterparty": "seller-app",
-              "settlement_phase": "sale-amount",
-              "settlement_type": "upi",
-              "upi_address": "success@upi",
-              "beneficiary_name": "-",
-              "bank_name": "State Bank Of India",
-              "branch_name": "Andaman Nicobar",
-              "settlement_bank_account_no": "29837293879283",
-              "settlement_ifsc_code": "SBIN0002001"
-            }
-          ]
-        },
-        "created_at": "2023-06-14T18:49:05.2589Z",
-        "updated_at": "2023-06-14T18:52:26.787Z",
-        "documents": [
           {
-            "url": "https://firebasestorage.googleapis.com/v0/b/zadinga-dev.appspot.com/o/Invoices%2F4865783f-1f1f-4f45-b73b-f4ff4e9939fd%2F0f368bfb-0839-460b-aab2-79c204642a00%2Ffac2cebb-8b40-4d07-a7b5-c8b9171b721c.pdf?alt=media",
-            "label": "Invoice"
+            "item": {
+              "price": {
+                "value": "299",
+                "currency": "INR"
+              }
+            },
+            "price": {
+              "value": "299.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Bril Liquid Detergent 1 Litre - Buy One Get One",
+            "@ondc/org/item_id": "11111111-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "price": {
+              "value": "0.0",
+              "currency": "INR"
+            },
+            "title": "Delivery charges",
+            "@ondc/org/item_id": "1b8018e2-6d9c-5199-8c81-301d970c63a4",
+            "@ondc/org/title_type": "delivery"
           }
         ]
-      }
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "befade41-d30d-4831-85e5-ef22d0828520",
+          "amount": "6289.00"
+        },
+        "type": "ON-ORDER",
+        "status": "PAID",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "9916784111@upi",
+            "beneficiary_name": "-",
+            "bank_name": "State Bank Of India",
+            "branch_name": "Andaman Nicobar",
+            "settlement_bank_account_no": "29837293879283",
+            "settlement_ifsc_code": "SBIN0002001"
+          }
+        ]
+      },
+      "created_at": "2023-06-24T17:31:54.230Z",
+      "updated_at": "2023-06-24T17:32:44.261Z",
+      "documents": [
+        {
+          "url": "https://snapmerchant-test.snapbizz.com/order-details/7061",
+          "label": "Invoice"
+        }
+      ]
     }
   }
+}
