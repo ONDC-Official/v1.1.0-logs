@@ -1,0 +1,119 @@
+{
+  "context": {
+    "domain": "FIS10",
+    "ttl": "PT30S",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "dff7c601-92cc-44ed-b373-1c09b37330d7",
+    "transaction_id": "3b9f390f-f2ab-48dd-9851-d514ff7710d1",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "init",
+    "version": "1.0.0",
+    "timestamp": "2023-06-26T15:52:28.323Z"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "price": {
+            "currency": "INR",
+            "value": "1000"
+          },
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "fulfillment_ids": [
+            "F3"
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "DENOMINATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "FIXED_AMOUNT"
+                  },
+                  "value": "1000"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "CUSTOMIZATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "RECEIVER_NAME"
+                  },
+                  "value": "sagar"
+                },
+                {
+                  "descriptor": {
+                    "code": "MESSAGE"
+                  },
+                  "value": "Good luck"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "billing": {
+        "name": "100",
+        "address": "Apartment Building",
+        "state": {
+          "name": "Telangana",
+          "code": "TE"
+        },
+        "city": {
+          "name": "Hyderabad",
+          "code": "HY"
+        },
+        "email": "sagar@google.com",
+        "phone": "1234567890"
+      },
+      "fulfillments": [
+        {
+          "id": "F3",
+          "type": "ONLINE_EMAIL_SMS",
+          "customer": {
+            "person": {
+              "name": "Sagar"
+            },
+            "contact": {
+              "phone": "9999888867",
+              "email": "sagar@google.com"
+            }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "contact": {
+                "phone": "9999888867",
+                "email": "sagar.revanna@eminds.ai"
+              },
+              "person": {
+                "name": "test"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
