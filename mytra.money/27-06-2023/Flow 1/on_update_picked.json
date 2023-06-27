@@ -1,0 +1,272 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:040",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/buyer_ondc/",
+        "transaction_id": "118fe83e-7451-4cf2-ae9a-27aa2eb77d84",
+        "message_id": "3faf384eb4",
+        "timestamp": "2023-06-26T16:13:24.400Z",
+        "bpp_id": "sit.mytra.money",
+        "bpp_uri": "https://sit.mytra.money/api/method/ondc/"
+    },
+    "message": {
+        "order": {
+            "id": "7a702bc9d8",
+            "state": "Completed",
+            "provider": {
+                "id": "sit.mytra.money",
+                "locations": [
+                    {
+                        "id": "Finished Goods - Pwc"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "Lion Dates, 250g:Finished Goods - Pwc",
+                    "fulfillment_id": "DN-23-00076",
+                    "quantity": {
+                        "count": 2.0
+                    },
+                    "tags": {
+                        "status": "Return_Picked"
+                    }
+                },
+                {
+                    "id": "Pureheart Fruit & Nut Nutmix:Finished Goods - Pwc",
+                    "fulfillment_id": "ONDC-REQ-118635",
+                    "quantity": {
+                        "count": 2.0
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "839.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Lion Dates, 250g:Finished Goods - Pwc",
+                        "@ondc/org/item_quantity": {
+                            "count": 0.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Lion Dates, 250g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "75.99"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Pureheart Fruit & Nut Nutmix:Finished Goods - Pwc",
+                        "@ondc/org/item_quantity": {
+                            "count": 2.0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Pureheart Fruit & Nut Nutmix",
+                        "price": {
+                            "currency": "INR",
+                            "value": "750.5"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "375.25"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ONDC-REQ-118635",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "88.5"
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            },
+            "billing": {
+                "address": {
+                    "name": "Pushparekha Pujari",
+                    "building": "Dwaraka heights, jubilee enclave",
+                    "locality": "Hitec city",
+                    "city": "Hyderabad City",
+                    "state": "Telangana",
+                    "country": "IND",
+                    "area_code": "500081"
+                },
+                "phone": "9441192970",
+                "name": "Pushparekha Pujari",
+                "email": "pushparekha1999@gmail.com",
+                "created_at": "2023-06-26T16:09:12.239Z",
+                "updated_at": "2023-06-26T16:09:12.239Z"
+            },
+            "created_at": "2023-06-26T16:09:37.659Z",
+            "updated_at": "2023-06-26T16:13:23.698Z",
+            "fulfillments": [
+                {
+                    "id": "ONDC-REQ-118635",
+                    "type": "Delivery",
+                    "@ondc/org/provider_name": "PwcTech Technologies Pvt Ltd",
+                    "tracking": false,
+                    "end": {
+                        "contact": {
+                            "email": "pushparekha1999@gmail.com",
+                            "phone": "9441192970"
+                        },
+                        "location": {
+                            "gps": "17.456648118550298,78.37524762377143",
+                            "address": {
+                                "name": "Pushparekha Pujari",
+                                "building": "Dwaraka heights, jubilee enclave",
+                                "locality": "Hitec city",
+                                "city": "Hyderabad City",
+                                "state": "Telangana",
+                                "country": "IND",
+                                "area_code": "500081"
+                            }
+                        },
+                        "person": {
+                            "name": "Pushparekha Pujari"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-26T16:09:37.659Z",
+                                "end": "2137-07-28T08:09:37.659Z"
+                            },
+                            "timestamp": "2023-06-26T16:10:43.000Z"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "id": "Finished Goods - Pwc",
+                            "descriptor": {
+                                "name": "mytra store",
+                                "images": []
+                            },
+                            "gps": "17.456417,78.376666"
+                        },
+                        "contact": {
+                            "phone": "9703525310",
+                            "email": "ha@pwctech.in"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-26T16:09:37.659Z",
+                                "end": "2137-07-28T08:09:37.659Z"
+                            },
+                            "timestamp": "2023-06-26T16:10:16.000Z"
+                        }
+                    }
+                },
+                {
+                    "id": "DN-23-00076",
+                    "type": "Reverse QC",
+                    "@ondc/org/provider_name": "sit.mytra.money",
+                    "tracking": false,
+                    "end": {
+                        "location": {
+                            "id": "Finished Goods - Pwc",
+                            "descriptor": {
+                                "name": "mytra store",
+                                "images": []
+                            },
+                            "gps": "17.456417,78.376666"
+                        },
+                        "contact": {
+                            "phone": "9703525310",
+                            "email": "ha@pwctech.in"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-26T16:13:23.698Z",
+                                "end": "2137-07-28T08:13:23.698Z"
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up"
+                        }
+                    },
+                    "start": {
+                        "contact": {
+                            "email": "pushparekha1999@gmail.com",
+                            "phone": "9441192970"
+                        },
+                        "location": {
+                            "gps": "17.456648118550298,78.37524762377143",
+                            "address": {
+                                "name": "Pushparekha Pujari",
+                                "building": "Dwaraka heights, jubilee enclave",
+                                "locality": "Hitec city",
+                                "city": "Hyderabad City",
+                                "state": "Telangana",
+                                "country": "IND",
+                                "area_code": "500081"
+                            }
+                        },
+                        "person": {
+                            "name": "Pushparekha Pujari"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-26T16:13:23.698Z",
+                                "end": "2137-07-28T08:13:23.698Z"
+                            },
+                            "timestamp": "2023-06-26T16:12:14.000Z"
+                        }
+                    }
+                }
+            ],
+            "documents": [
+                {
+                    "url": "https://sit.mytra.money/files/SINV-23-001399c2f8c.pdf",
+                    "label": "Invoice"
+                }
+            ],
+            "payment": {
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "5d86220261",
+                    "amount": "990.98"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "111222333444",
+                        "settlement_ifsc_code": "ICIC0001112",
+                        "beneficiary_name": "PwcTech Technologies Pvt Ltd",
+                        "bank_name": "ICICI BANK LIMITED",
+                        "branch_name": "ICICI BANK LIMITED"
+                    }
+                ]
+            }
+        }
+    }
+}
