@@ -1,0 +1,60 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:040",
+        "action": "select",
+        "core_version": "1.1.0",
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/buyer_ondc/",
+        "ttl": "PT30S",
+        "transaction_id": "34ba13cd-ac02-41c2-b9e7-582d52fb13c3",
+        "message_id": "306e21293d",
+        "timestamp": "2023-06-27T05:12:49.576Z",
+        "bpp_id": "sit.mytra.money",
+        "bpp_uri": "https://sit.mytra.money/api/method/ondc/"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "Lion Dates, 250g:Finished Goods - Pwc",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "location_id": "Finished Goods - Pwc"
+                },
+                {
+                    "id": "Pureheart Fruit & Nut Nutmix:Finished Goods - Pwc",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "location_id": "Finished Goods - Pwc"
+                }
+            ],
+            "provider": {
+                "id": "sit.mytra.money",
+                "locations": [
+                    {
+                        "id": "Finished Goods - Pwc"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "end": {
+                        "location": {
+                            "gps": "17.456390011750962,78.37635973468423",
+                            "address": {
+                                "area_code": "500081"
+                            }
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "type": "ON-ORDER"
+            }
+        }
+    }
+}
