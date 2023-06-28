@@ -1,30 +1,29 @@
 {
 	"context": {
-		"domain": "nic2004:52110",
+		"domain": "nic2004:60232",
 		"country": "IND",
 		"city": "std:022",
 		"action": "on_issue_status",
 		"core_version": "1.0.0",
-		"bap_id": "buyer-app-preprod.ondc.org",
-		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-		"bpp_uri": "https://integrations-preprod.channelier.com/ondc",
-		"transaction_id": "5b7d8e65-5cc4-4a39-8fc3-7c902db6045e",
-		"message_id": "c2a57bdd-595d-4bf3-8f7f-a79255434a84",
-		"timestamp": "2023-06-22T08:37:28.211Z",
-		"bpp_id": "integrations-preprod.channelier.com",
-		"ttl": "PT30S"
+		"bap_id": "integrations-preprod.channelier.com",
+		"bap_uri": "https://integrations-preprod.channelier.com/ondc",
+		"bpp_id": "ondc.yaarilabs.com",
+		"bpp_uri": "https://ondc.yaarilabs.com/",
+		"transaction_id": "a40c4880-ffb8-43ee-a5c9-4f3312fdbfad",
+		"message_id": "8b73180f-90cc-4c6a-829e-8f81e631962e",
+		"timestamp": "2023-06-28T02:37:27.894Z"
 	},
 	"message": {
 		"issue": {
-			"id": "3297109e-8316-4eb2-a10e-a4bbaa972292",
+			"id": "a5200dab-2a11-4e1a-bd36-7af4e9472d95",
 			"issue_actions": {
 				"respondent_actions": [
 					{
 						"respondent_action": "PROCESSING",
-						"remarks": "Complaint is being processed",
+						"short_desc": "Complaint is being processed",
 						"updated_by": {
 							"org": {
-								"name": "integrations-preprod.channelier.com::undefined"
+								"name": "integrations-preprod.channelier.com::nic2004:52110"
 							},
 							"contact": {
 								"phone": "9999999999",
@@ -35,14 +34,14 @@
 							}
 						},
 						"cascaded_level": 1,
-						"updated_at": "2023-06-22T08:30:48.033Z"
+						"updated_at": "2023-06-28T02:30:48.033Z"
 					},
 					{
 						"respondent_action": "CASCADED",
-						"remarks": "Complaint cascaded to transaction counterparty",
+						"short_desc": "Complaint cascaded to transaction counterparty",
 						"updated_by": {
 							"org": {
-								"name": "integrations-preprod.channelier.com::undefined"
+								"name": "integrations-preprod.channelier.com::nic2004:52110"
 							},
 							"contact": {
 								"phone": "9999999999",
@@ -53,11 +52,11 @@
 							}
 						},
 						"cascaded_level": 2,
-						"updated_at": "2023-06-22T08:30:48.035Z"
+						"updated_at": "2023-06-28T02:30:48.035Z"
 					},
 					{
 						"respondent_action": "PROCESSING",
-						"remarks": "Complaint is being processed",
+						"short_desc": "Complaint is being processed",
 						"updated_by": {
 							"org": {
 								"name": "ondc.yaarilabs.com::nic2004:60232"
@@ -71,11 +70,11 @@
 							}
 						},
 						"cascaded_level": 2,
-						"updated_at": "2023-06-22T08:33:01.215Z"
+						"updated_at": "2023-06-28T02:33:01.215Z"
 					},
 					{
 						"respondent_action": "RESOLVED",
-						"remarks": "resolution string",
+						"short_desc": "resolution string",
 						"updated_by": {
 							"org": {
 								"name": "ondc.yaarilabs.com::nic2004:60232"
@@ -89,7 +88,7 @@
 							}
 						},
 						"cascaded_level": 2,
-						"updated_at": "2023-06-22T08:37:27.209Z"
+						"updated_at": "2023-06-28T02:37:27.209Z"
 					}
 				]
 			},
@@ -110,7 +109,10 @@
 					}
 				},
 				"resolution_support": {
-					"respondentEmail": "customer_care@yaarilabs.com",
+					"contact": {
+								"phone": "9896903456",
+								"email": "customer_care@yaarilabs.com"
+							},
 					"gros": [
 						{
 							"contact": {
@@ -121,16 +123,6 @@
 								"name": "abcd"
 							},
 							"gro_type": "CASCADED-COUNTERPARTY-NP-GRO"
-						},
-						{
-							"contact": {
-								"phone": "9999999999",
-								"email": "respondent@channelier.com"
-							},
-							"person": {
-								"name": "John discovery"
-							},
-							"gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
 						}
 					]
 				}
@@ -138,12 +130,11 @@
 			"resolution": {
 				"action_triggered": "REFUND",
 				"short_desc": "resolution string",
-				"resolution": "resolution string",
+				"long_desc": "resolution string",
 				"refund_amount": "50"
 			},
-			"status": "OPEN",
-			"created_at": "2023-06-22T08:30:47.044Z",
-			"updated_at": "2023-06-22T08:37:28.211Z"
+			"created_at": "2023-06-28T02:30:47.044Z",
+			"updated_at": "2023-06-28T02:37:27.209Z"
 		}
 	}
 }
