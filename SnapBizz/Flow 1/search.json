@@ -1,36 +1,36 @@
 {
-  "context": {
-    "domain": "nic2004:52110",
-    "country": "IND",
-    "city": "std:080",
-    "action": "search",
-    "core_version": "1.1.0",
-    "bap_id": "buyer-app-preprod.ondc.org",
-    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-    "transaction_id": "eacea82f-e836-4630-9d31-985af902a2ce",
-    "message_id": "5e6fdb54-0107-4d04-98ac-0447a07256c0",
-    "timestamp": "2023-06-27T20:49:07.697Z",
-    "ttl": "PT30S"
-  },
-  "message": {
-    "intent": {
-      "item": {
-        "descriptor": {
-          "name": "snapbizz"
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "transaction_id": "a660d32d-891a-49f5-b3af-c7d12de0c808",
+        "message_id": "62dd4708-f13f-4a40-a396-dba975e5d31d",
+        "timestamp": "2023-06-30T19:38:49.159Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "item": {
+                "descriptor": {
+                    "name": "snapbizz"
+                }
+            },
+            "fulfillment": {
+                "type": "Delivery",
+                "end": {
+                    "location": {
+                        "gps": "12.964319,77.6810060000001"
+                    }
+                }
+            },
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            }
         }
-      },
-      "fulfillment": {
-        "type": "Delivery",
-        "end": {
-          "location": {
-            "gps": "12.964319,77.6810060000001"
-          }
-        }
-      },
-      "payment": {
-        "@ondc/org/buyer_app_finder_fee_type": "percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
-      }
     }
-  }
 }
