@@ -13,62 +13,39 @@
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "bpp_id": "ondc.vistar.solutions",
     "version": "1.0.0",
-    "message_id": "a3e14a04-19ac-4161-8102-2256433dca41",
-    "timestamp": "2023-06-20T14:09:09.406Z",
-
-
-    "transaction_id": "11d14dee-495d-4350-942c-ba68668ec78c",
-
-    "transaction_id": "c72556b5-9767-4c28-8f55-ad96fe5ec74b",
-
-
-    "transaction_id": "11d14dee-495d-4350-942c-ba68668ec78c",
-
-    "message_id": "bb2597d1-2b69-43d1-8f05-6e3bbe80bc6d",
-    "timestamp": "2023-06-26T15:55:08.970Z",
-    "transaction_id": "00693963-f30d-4e17-b8fd-49c0d47ceae7",
+    "message_id": "26831567-24a2-4ca7-a815-47a1fffb858a",
+    "timestamp": "2023-07-05T13:18:36.588Z",
+    "transaction_id": "41094fc9-f496-440b-bf9b-cca3704be84f",
     "ttl": "PT30S",
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
   },
   "message": {
     "order": {
-      "id": "556c4c26-8c0c-4844-bf07-4376d76f2822",
+      "id": "f37dd04f-2ee4-4e06-8cc7-1e464d595bee",
       "status": "COMPLETED",
       "fulfillments": [
         {
-          "id": "F1",
-          "type": "ONLINE_EMAIL_SMS",
+          "id": "F2",
+          "type": "EMAIL",
           "customer": {
             "person": {
-              "name": "Chandrasekhar Samanta"
+              "name": "Sagar"
             },
             "contact": {
-              "phone": "chandrasekhar.jagannath+0111@eminds.ai",
-              "email": "chandrasekhar.jagannath+0111@eminds.ai"
-            },
-            "stops": [
-              {
-                "id": "0",
-                "contact": {
-                  "phone": "9964453579",
-                  "email": "sagar.revanna@eminds.ai"
-                },
-                "person": {
-                  "name": "Sagar R"
-                }
-              }
-            ]
+              "phone": "1234567890",
+              "email": "sagar@google.com"
+            }
           },
           "stops": [
             {
               "id": "0",
               "contact": {
-                "phone": "9964453579",
+                "phone": "9999888867",
                 "email": "sagar.revanna@eminds.ai"
               },
               "person": {
-                "name": "Sagar R"
+                "name": "Test receiver"
               }
             }
           ]
@@ -83,7 +60,7 @@
             }
           },
           "fulfillment_ids": [
-            "F1"
+            "F2"
           ],
           "tags": [
             {
@@ -93,7 +70,7 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "CUSTOM_AMOUNT"
+                    "code": "FIXED_AMOUNT"
                   },
                   "value": "1000"
                 }
@@ -108,13 +85,13 @@
                   "descriptor": {
                     "code": "RECEIVER_NAME"
                   },
-                  "value": "Anshuman Chhapolia"
+                  "value": "Sagar"
                 },
                 {
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Test"
+                  "value": "Good luck"
                 }
               ]
             }
@@ -122,23 +99,23 @@
         }
       ],
       "billing": {
-        "name": "123",
-        "address": "mansarovar",
+        "name": "100",
+        "address": "Apartment Building",
         "state": {
-          "name": "Bihar",
-          "code": "BI"
+          "name": "Telangana",
+          "code": "TE"
         },
         "city": {
-          "name": "Patna",
-          "code": "PA"
+          "name": "Hyderabad",
+          "code": "HY"
         },
-        "email": "chandrasekhar.jagannath+0111@eminds.ai",
-        "phone": "7064032212"
+        "email": "sagar@google.com",
+        "phone": "1234567890"
       },
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "900"
+          "value": "1000"
         },
         "breakup": [
           {
@@ -177,7 +154,7 @@
             "title": "offer",
             "price": {
               "currency": "INR",
-              "value": "100"
+              "value": "-0"
             }
           },
           {
@@ -200,12 +177,11 @@
           "status": "PAID",
           "params": {
             "currency": "INR",
-            "transaction_id": "order_M4BmFnkl0zun1j",
-            "amount": "900"
+            "transaction_id": "order_MA8KYB4PQzysYQ",
+            "amount": "1000"
           },
           "tags": [
             {
-              "display": true,
               "descriptor": {
                 "code": "BUYER_FINDER_FEES"
               },
@@ -214,12 +190,11 @@
                   "descriptor": {
                     "code": "BUYER_FINDER_FEES_PERCENTAGE"
                   },
-                  "value": "0.6"
+                  "value": "3"
                 }
               ]
             },
             {
-              "display": true,
               "descriptor": {
                 "code": "SETTLEMENT_DETAILS"
               },
@@ -232,12 +207,6 @@
                 },
                 {
                   "descriptor": {
-                    "code": "upi_address"
-                  },
-                  "value": "awnisH@odic"
-                },
-                {
-                  "descriptor": {
                     "code": "settlement_bank_account_no"
                   },
                   "value": "298201100008016"
@@ -246,7 +215,7 @@
                   "descriptor": {
                     "code": "beneficiary_name"
                   },
-                  "value": "Anish"
+                  "value": "Meri Saving"
                 },
                 {
                   "descriptor": {
@@ -258,7 +227,7 @@
                   "descriptor": {
                     "code": "branch_name"
                   },
-                  "value": "awnisH@odic"
+                  "value": "Sarita vihar"
                 },
                 {
                   "descriptor": {
@@ -277,8 +246,8 @@
           ]
         }
       ],
-      "created_at": "2023-06-20T12:45:42.375Z",
-      "updated_at": "2023-06-20T12:45:42.375Z"
+      "created_at": "2023-07-05T13:17:24.648Z",
+      "updated_at": "2023-07-05T13:17:24.648Z"
     }
   }
 }
