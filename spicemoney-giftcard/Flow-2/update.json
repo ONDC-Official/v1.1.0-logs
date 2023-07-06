@@ -1,0 +1,105 @@
+{
+  "context": {
+    "domain": "FIS10",
+    "ttl": "PT30S",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "23e1e87c-d922-4823-b50e-c52defb2179e",
+    "transaction_id": "2b5bbbff-9d9e-41eb-a388-7e1dce48ceaa",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "update",
+    "version": "1.0.0",
+    "timestamp": "2023-07-05T13:43:54.474Z"
+  },
+  "message": {
+    "update_target": "FULFILLMENT_END",
+    "order": {
+      "id": "425ad6ac-b130-435f-b778-89bcd02442cb",
+      "status": "IN-PROGRESS",
+      "items": [
+        {
+          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "fulfillment_ids": [
+            "F2"
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "DENOMINATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "FIXED_AMOUNT"
+                  },
+                  "value": "1000"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "CUSTOMIZATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "RECEIVER_NAME"
+                  },
+                  "value": "Sagar"
+                },
+                {
+                  "descriptor": {
+                    "code": "MESSAGE"
+                  },
+                  "value": "Good luck"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL",
+          "tracking": false,
+          "customer": {
+            "person": {
+              "name": "Sagar"
+            },
+            "contact": {
+              "phone": "1234567890",
+              "email": "sagar@google.com"
+            }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "contact": {
+                "phone": "999988867",
+                "email": "sagar.revanna@goog.ai"
+              },
+              "person": {
+                "name": "Test receiver"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

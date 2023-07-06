@@ -1,0 +1,97 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:079",
+        "action": "issue",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "ondcpreprod.marico.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondcpreprod.marico.in/retail/",
+        "country": "IND",
+        "timestamp": "2023-07-05T09:35:33.038Z",
+        "message_id": "18be70a4-ca97-4974-b983-150bdac06448",
+        "core_version": "1.0.0",
+        "transaction_id": "a1e7e03a-0663-4e90-bbc3-654b017be390"
+    },
+    "message": {
+        "issue": {
+            "id": "1603730b-3c9d-4036-9c16-0f7538f75069",
+            "source": {
+                "type": "CONSUMER",
+                "network_participant_id": "buyer-app-preprod.ondc.org"
+            },
+            "status": "OPEN",
+            "category": "ITEM",
+            "created_at": "2023-07-05T09:35:32.877Z",
+            "issue_type": "ISSUE",
+            "updated_at": "2023-07-05T09:35:32.877Z",
+            "description": {
+                "images": [
+                    "https://buyer-app-preprod.ondc.org/issueApis/uploads/1688549733038.png"
+                ],
+                "long_desc": "My order item is not matching ",
+                "short_desc": "My order item is not matching ",
+                "additional_desc": {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                }
+            },
+            "sub_category": "ITM03",
+            "issue_actions": {
+                "respondent_actions": [],
+                "complainant_actions": [
+                    {
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-07-05T09:35:33.038Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+                            },
+                            "person": {
+                                "name": "Rishabhnand Singh"
+                            },
+                            "contact": {
+                                "email": "Rishabhnand.singh@ondc.org",
+                                "phone": "6239083807"
+                            }
+                        },
+                        "complainant_action": "OPEN"
+                    }
+                ]
+            },
+            "order_details": {
+                "id": "2023-07-05-274271",
+                "items": [
+                    {
+                        "id": "8901088129824",
+                        "quantity": 1
+                    }
+                ],
+                "state": "Completed",
+                "provider_id": "ondcpreprod.marico.in",
+                "fulfillments": [
+                    {
+                        "id": "1",
+                        "state": "Pending"
+                    }
+                ]
+            },
+            "complainant_info": {
+                "person": {
+                    "name": "jak Bhavsar"
+                },
+                "contact": {
+                    "email": "jak@jetbro.in",
+                    "phone": "9898547799"
+                }
+            },
+            "expected_response_time": {
+                "duration": "PT1H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            }
+        }
+    }
+}

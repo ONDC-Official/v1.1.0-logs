@@ -1,0 +1,105 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_issue_status",
+        "core_version": "1.0.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://api.staging.nearshop.in/bpp/api/v1",
+        "transaction_id": "bc30c11e-b15f-41ce-9a76-96bb3dece62e",
+        "message_id": "97e657c9-80f8-4e3a-a2f9-61b3c1e3b1ba",
+        "timestamp": "2023-07-05T13:11:39.270Z",
+        "bpp_id": "api.staging.nearshop.in"
+    },
+    "message": {
+        "issue": {
+            "id": "12c23d44-daf6-4be6-8a3f-dd4f2f8f9abb",
+            "issue_actions": {
+                "respondent_actions": [
+                    {
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-07-05T13:10:37.933Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "api.staging.nearshop.in::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "09049249012",
+                                "email": "sales@nearshop.in"
+                            },
+                            "person": {
+                                "name": "Ronit Kumar"
+                            }
+                        },
+                        "cascaded_level": 1
+                    },
+                    {
+                        "respondent_action": "RESOLVED",
+                        "short_desc": "Complaint is resolved sucessfully",
+                        "updated_at": "2023-07-05T13:11:33.185Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "api.staging.nearshop.in::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "09049249012",
+                                "email": "sales@nearshop.in"
+                            },
+                            "person": {
+                                "name": "Ronit Kumar"
+                            }
+                        },
+                        "cascaded_level": 1
+                    }
+                ]
+            },
+            "resolution": {
+                "short_desc": "Refund is to be initiated",
+                "long_desc": "For this complaint, refund is to be initiated",
+                "action_triggered": "REFUND",
+                "refund_amount": "105"
+            },
+            "resolution_provider": {
+                "respondent_info": {
+                    "type": "TRANSACTION-COUNTERPARTY-NP",
+                    "organization": {
+                        "org": {
+                            "name": "api.staging.nearshop.in::nic2004:52110"
+                        },
+                        "contact": {
+                            "phone": "09049249012",
+                            "email": "sales@nearshop.in"
+                        },
+                        "person": {
+                            "name": "Ronit Kumar"
+                        }
+                    },
+                    "resolution_support": {
+                        "chat_link": "http://chat-link/respondent",
+                        "contact": {
+                            "phone": "09049249012",
+                            "email": "sales@nearshop.in"
+                        },
+                        "gros": [
+                            {
+                                "person": {
+                                    "name": "Ronit"
+                                },
+                                "contact": {
+                                    "phone": "6395035690",
+                                    "email": "email@gro.com"
+                                },
+                                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+                            }
+                        ]
+                    }
+                }
+            },
+            "created_at": "2023-07-05T13:10:37.790Z",
+            "updated_at": "2023-07-05T13:11:33.185Z"
+        }
+    }
+}
