@@ -1,0 +1,95 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_issue_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://api.staging.nearshop.in/bpp/api/v1",
+        "transaction_id": "53753a9b-59dd-4bd6-8418-23b68e6e42ed",
+        "message_id": "7b126b0f-32b8-46c1-a6f2-6f911ab0b7ac",
+        "timestamp": "2023-06-26T11:57:03.121Z",
+        "bpp_id": "api.staging.nearshop.in",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "issue": {
+            "id": "dcf95dcc-9d6c-40b6-ae99-d14f3cd946ae",
+            "category": "ITEM",
+            "sub_category": "ITM01",
+            "complainant_info": {
+                "person": {
+                    "name": "sumit kumar"
+                },
+                "contact": {
+                    "phone": "9898989898",
+                    "email": "sumitait5219@gmail.com"
+                }
+            },
+            "order_details": {
+                "id": "2023-06-26-748332",
+                "state": "Accepted",
+                "items": [
+                    {
+                        "id": "184ac88f-0c41-419d-be32-994879631e18",
+                        "quantity": 1
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "44f1a436-8eb8-5bb7-93e7-39e2324efcb7",
+                        "state": "Pending"
+                    }
+                ],
+                "provider_id": "44f1a436-8eb8-5bb7-93e7-39e2324efcb7"
+            },
+            "description": {
+                "short_desc": "missing items",
+                "long_desc": "missing items",
+                "additional_desc": {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images": []
+            },
+            "source": {
+                "network_participant_id": "buyer-app-preprod.ondc.org",
+                "type": "CONSUMER"
+            },
+            "expected_response_time": {
+                "duration": "PT1H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_type": "ISSUE",
+            "issue_actions": {
+                "respondent_actions": [
+                    {
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-06-26T11:56:49.024Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "api.staging.nearshop.in::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "09049249012",
+                                "email": "sales@nearshop.in"
+                            },
+                            "person": {
+                                "name": "Ronit Kumar"
+                            }
+                        },
+                        "cascaded_level": 1
+                    }
+                ]
+            },
+            "created_at": "2023-06-26T11:56:49.024Z",
+            "updated_at": "2023-06-26T11:56:49.024Z"
+        }
+    }
+}
