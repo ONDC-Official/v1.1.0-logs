@@ -1,1 +1,0 @@
-Unable to execute this test case as paytm PG is failing to complete payments.
