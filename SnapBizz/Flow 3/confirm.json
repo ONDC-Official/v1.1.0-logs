@@ -5,82 +5,81 @@
     "city": "std:080",
     "action": "confirm",
     "core_version": "1.1.0",
-    "bap_id": "jiomart-buyer.ondcz5.de",
-    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-    "transaction_id": "8b506564-e2e7-404d-82a1-3b1f4af75dc7",
-    "message_id": "c16c6a10-5b6b-4136-bdd9-3e2bc243acf4",
-    "timestamp": "2023-06-14T18:50:15.841Z",
-    "ttl": "PT30S",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "e8cc4faf-3f40-4b5b-87c8-fca6a72daacf",
+    "message_id": "32c39436-202c-4fb7-96d6-9146e5380ad9",
+    "timestamp": "2023-07-04T16:16:47.369Z",
     "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz"
+    "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "59394370-cdfa-467e-8c05-35160948b210",
+      "id": "2023-07-04-879619",
       "state": "Created",
       "billing": {
-        "name": "john",
         "address": {
-          "door": "john villa",
-          "name": "john",
-          "building": "john villa",
-          "locality": "school",
+          "name": "Bob Charles",
+          "building": "Rabit Mall",
+          "locality": "Bob Street",
           "city": "Bengaluru",
           "state": "Karnataka",
           "country": "IND",
-          "area_code": "560001"
+          "area_code": "560037"
         },
-        "email": "john@gmail.com",
-        "phone": "7896543677",
-        "created_at": "2023-06-14T18:49:13.986Z",
-        "updated_at": "2023-06-14T18:49:13.986Z"
+        "phone": "9998887744",
+        "name": "Bob Charles",
+        "email": "bob@gmail.com",
+        "created_at": "2023-07-04T16:16:22.527Z",
+        "updated_at": "2023-07-04T16:16:22.527Z"
       },
       "items": [
         {
-          "fulfillment_id": "91ed5736-7466-596f-97b4-145170325b14",
-          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
+          "id": "22222222-616b-5599-87e2-6cb80782d953",
           "quantity": {
             "count": 1
-          }
+          },
+          "fulfillment_id": "e9343461-017f-5ed2-acab-0c4eeea628eb"
         },
         {
-          "fulfillment_id": "91ed5736-7466-596f-97b4-145170325b14",
-          "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
+          "id": "11111111-616b-5599-87e2-6cb80782d953",
           "quantity": {
             "count": 1
-          }
+          },
+          "fulfillment_id": "e9343461-017f-5ed2-acab-0c4eeea628eb"
         }
       ],
       "provider": {
         "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
         "locations": [
           {
-            "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+            "id": "00000000-61af-58b2-a809-08a67d09e1f5"
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "91ed5736-7466-596f-97b4-145170325b14",
+          "id": "e9343461-017f-5ed2-acab-0c4eeea628eb",
           "tracking": false,
           "end": {
-            "person": {
-              "name": "john"
-            },
             "contact": {
-              "email": "john@gmail.com",
-              "phone": "7896543677"
+              "email": "bob@gmail.com",
+              "phone": "9998887744"
+            },
+            "person": {
+              "name": "Bob Charles"
             },
             "location": {
-              "gps": "12.9765944,77.5992708",
+              "gps": "12.964319, 77.6810060000001",
               "address": {
-                "name": "john",
-                "building": "john villa",
-                "locality": "school",
+                "name": "Bob Charles",
+                "building": "Rabit Mall",
+                "locality": "Bob Street",
                 "city": "Bengaluru",
                 "state": "Karnataka",
                 "country": "IND",
-                "area_code": "560001"
+                "area_code": "560037"
               }
             }
           },
@@ -88,16 +87,18 @@
         }
       ],
       "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
         "params": {
-          "amount": "140",
+          "amount": "6289",
           "currency": "INR",
-          "transaction_id": "20230615011650000875896516714598825"
+          "transaction_id": "e8cc4faf-3f40-4b5b-87c8-fca6a72daacf"
         },
         "status": "PAID",
         "type": "ON-ORDER",
         "collected_by": "BAP",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "2",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "seller-app",
@@ -114,48 +115,59 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "140.00"
+          "value": "6289.00"
         },
         "ttl": "P1D",
         "breakup": [
           {
-            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": 1,
             "item": {
               "price": {
-                "currency": "INR",
-                "value": "70"
+                "value": "5990",
+                "currency": "INR"
               }
             },
-            "title": "snapbizz neo",
             "price": {
-              "currency": "INR",
-              "value": "70.00"
+              "value": "5990.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Brilrider AF Balance Bike",
+            "@ondc/org/item_id": "22222222-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
             }
           },
           {
-            "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": 1,
             "item": {
               "price": {
-                "currency": "INR",
-                "value": "70"
+                "value": "299",
+                "currency": "INR"
               }
             },
-            "title": "snapbizz turbo",
             "price": {
-              "currency": "INR",
-              "value": "70.00"
+              "value": "299.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Bril Liquid Detergent 1 Litre - Buy One Get One",
+            "@ondc/org/item_id": "11111111-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
             }
           },
-          {},
-          {}
+          {
+            "price": {
+              "value": "0.0",
+              "currency": "INR"
+            },
+            "title": "Delivery charges",
+            "@ondc/org/item_id": "e9343461-017f-5ed2-acab-0c4eeea628eb",
+            "@ondc/org/title_type": "delivery"
+          }
         ]
       },
-      "created_at": "2023-06-14T18:50:15.841Z",
-      "updated_at": "2023-06-14T18:50:15.841Z"
+      "created_at": "2023-07-04T16:16:47.369Z",
+      "updated_at": "2023-07-04T16:16:47.369Z"
     }
   }
 }
