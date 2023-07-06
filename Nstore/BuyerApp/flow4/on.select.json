@@ -1,0 +1,139 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_select",
+    "country": "IND",
+    "city": "std:*",
+    "core_version": "1.1.0",
+    "bap_id": "b-ondcbap.nlincs.in",
+    "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+    "transaction_id": "2f1194a9c61aec8fc8a5e826510c2400",
+    "message_id": "qsyZu2bkbjGyNwB2tJDfDRJR0HlKv6P2",
+    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+    "timestamp": "2023-07-06T19:43:29.093Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "21165"
+      },
+      "items": [
+        {
+          "fulfillment_id": "21165",
+          "id": "103"
+        },
+        {
+          "fulfillment_id": "21165",
+          "id": "104"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "21165",
+          "@ondc/org/provider_name": "Classic Grocery",
+          "tracking": false,
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "PT6H",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "5000.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "103",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Preethi Zodiac",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "3000.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "2"
+                },
+                "maximum": {
+                  "count": "2"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "1500.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "103",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "104",
+            "@ondc/org/item_quantity": {
+              "count": 5
+            },
+            "title": "Preethi Zodiac Cosmo",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "2000.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "5"
+                },
+                "maximum": {
+                  "count": "5"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "400.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "104",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "21165",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        ],
+        "ttl": "PT30M"
+      }
+    }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "40002"
+  }
+}

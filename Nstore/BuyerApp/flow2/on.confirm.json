@@ -1,0 +1,218 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_confirm",
+    "country": "IND",
+    "city": "std:*",
+    "core_version": "1.1.0",
+    "bap_id": "b-ondcbap.nlincs.in",
+    "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+    "transaction_id": "b95a5fe7928b5396bef69adfcdd79d00",
+    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+    "timestamp": "2023-07-06T18:46:18.075Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-59456-54110",
+      "state": "Accepted",
+      "provider": {
+        "id": "21165",
+        "locations": [
+          {
+            "id": "21165"
+          }
+        ],
+        "rateable": true
+      },
+      "items": [
+        {
+          "id": "103",
+          "fulfillment_id": "21165",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "104",
+          "fulfillment_id": "21165",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "billing": {
+        "name": "Arunraj",
+        "address": {
+          "name": "105",
+          "building": "World Trade Center",
+          "locality": "Contonment",
+          "city": "Bengaluru",
+          "state": "KA",
+          "area_code": "560005"
+        },
+        "phone": "9840857465",
+        "email": "",
+        "created_at": "2023-07-06T18:45:13.392Z",
+        "updated_at": "2023-07-06T18:45:13.392Z"
+      },
+      "fulfillments": [
+        {
+          "id": "21165",
+          "type": "Standard Delivery",
+          "@ondc/org/provider_name": "Classic Grocery",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Pending"
+            }
+          },
+          "start": {
+            "location": {
+              "id": "21165",
+              "descriptor": {
+                "name": "Classic Grocery"
+              },
+              "gps": "12.9953231,77.6139826"
+            },
+            "time": {
+              "range": {
+                "start": "2023-07-06T18:46:18.074Z",
+                "end": "2023-07-07T18:46:18.074Z"
+              }
+            },
+            "contact": {
+              "phone": "5555544444",
+              "email": ""
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "13.1989089, 77.70681309999999",
+              "address": {
+                "name": "105",
+                "building": "World Trade Center",
+                "locality": "Contonment",
+                "city": "Bengaluru",
+                "state": "KA",
+                "area_code": "560005"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-07-07T18:46:18.075Z",
+                "end": "2023-07-07T19:46:18.075Z"
+              }
+            },
+            "contact": {
+              "name": "Arunraj",
+              "phone": "9840857465"
+            }
+          },
+          "rateable": true
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1900.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "103",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Preethi Zodiac",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "1500.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "1500.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "103",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "104",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Preethi Zodiac Cosmo",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "400.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "400.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "104",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "21165",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        ],
+        "ttl": "PT30M"
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "1",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "settlement_bank_account_no": "10112822953",
+            "settlement_ifsc_code": "IDFB0040101",
+            "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+            "bank_name": "IDFC FIRST BANK LIMITED",
+            "branch_name": "BKC Naman Chambers Branch"
+          }
+        ],
+        "uri": "https://api.razorpay.com",
+        "tl_method": "http/get",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "order_MAcSi0h6jfyFVT",
+          "amount": "1900.00"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP"
+      },
+      "documents": [],
+      "created_at": "2023-07-06T18:46:06.403Z",
+      "updated_at": "2023-07-06T18:46:18.075Z"
+    }
+  }
+}

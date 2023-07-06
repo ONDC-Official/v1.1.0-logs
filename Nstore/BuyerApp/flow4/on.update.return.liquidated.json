@@ -1,0 +1,173 @@
+{
+  "context": {
+    "city": "std:*",
+    "transaction_id": "0994766790b93a1d73e46c37e143a700",
+    "message_id": "2iZLqAPYuE1FFqIFX1T8uK4Hndfj7US9",
+    "action": "on_update",
+    "bap_id": "b-ondcbap.nlincs.in",
+    "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+    "timestamp": "2023-07-06T19:51:08.721Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-59556-82926",
+      "state": "Completed",
+      "items": [
+        {
+          "id": "103",
+          "quantity": {
+            "count": 2
+          },
+          "tags": {
+            "status": "Liquidated"
+          },
+          "fulfillment_id": "21165"
+        },
+        {
+          "id": "104",
+          "fulfillment_id": "21165",
+          "quantity": {
+            "count": 5
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "21165",
+          "@ondc/org/provider_name": "Classic Grocery",
+          "type": "Delivery",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "start": {
+            "location": {
+              "id": "21165",
+              "descriptor": {
+                "name": "Classic Grocery",
+                "images": [
+                  "https://nstoreassets.s3.amazonaws.com/21165/store_logo/21165_b8j2337limy40jp.jpeg"
+                ]
+              },
+              "gps": "12.9953231,77.6139826"
+            },
+            "time": {
+              "range": {
+                "start": "2023-07-06T19:47:56.000Z",
+                "end": "2023-07-06T19:48:21.000Z"
+              },
+              "timestamp": "2023-07-06T19:48:21.000Z"
+            },
+            "contact": {
+              "phone": "5555544444",
+              "email": "hariprasa49@gmail.com"
+            }
+          },
+          "end": {
+            "location": {
+              "address": {
+                "name": "105",
+                "building": "World Trade Center",
+                "locality": "Contonment",
+                "city": "Bengaluru",
+                "state": "KA",
+                "country": "India",
+                "area_code": "560005"
+              },
+              "gps": "13.1989089, 77.70681309999999"
+            },
+            "time": {
+              "range": {
+                "start": "2023-07-06T19:48:21.000Z",
+                "end": "2023-07-06T19:48:46.000Z"
+              },
+              "timestamp": "2023-07-06T19:48:46.000Z"
+            },
+            "contact": {
+              "phone": "9840857465"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "2000.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_id": "103",
+            "title": "Preethi Zodiac",
+            "@ondc/org/item_quantity": {
+              "count": 0
+            },
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "1500.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "104",
+            "@ondc/org/title_type": "item",
+            "title": "Preethi Zodiac Cosmo",
+            "@ondc/org/item_quantity": {
+              "count": 5
+            },
+            "price": {
+              "currency": "INR",
+              "value": "2000.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "400.00"
+              }
+            }
+          },
+          {
+            "price": {
+              "value": "0.00",
+              "currency": "INR"
+            },
+            "title": "Tax",
+            "@ondc/org/item_id": "103",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": {
+              "value": "0.00",
+              "currency": "INR"
+            },
+            "title": "Tax",
+            "@ondc/org/item_id": "104",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": {
+              "value": "0.00",
+              "currency": "INR"
+            },
+            "title": "Delivery charges",
+            "@ondc/org/item_id": "21165",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT30M"
+      }
+    }
+  }
+}
