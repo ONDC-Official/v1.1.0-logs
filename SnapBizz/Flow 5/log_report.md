@@ -9,5 +9,4 @@
 
 **/on_confirm**
 - Warning: items[2].quantity.count for item 33333333-616b-5599-87e2-6cb80782d953 mismatches with the items quantity selected in /select
-- address/door mismatches in /billing in /confirm and /on_confirm
 

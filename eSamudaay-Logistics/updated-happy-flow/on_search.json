@@ -1,0 +1,75 @@
+{
+  "context": {
+    "action": "on_search",
+    "transaction_id": "b1bc7650-bc02-48b7-8c17-b30689508e01",
+    "message_id": "9f6e174e-5cfe-49d0-b817-9ec1b60be718",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-07-07T05:29:15.746Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+    "bpp_id": "ondc-preprod.loadshare.net"
+  },
+  "message": {
+    "catalog": {
+      "bpp/fulfillments": [
+        {
+          "id": "lsn_prepaid",
+          "type": "Prepaid"
+        }
+      ],
+      "bpp/descriptor": {
+        "name": "LoadShare Delivery"
+      },
+      "bpp/providers": [
+        {
+          "id": "loadshare@ondc-preprod.loadshare.net",
+          "descriptor": {
+            "name": "LoadShare Networks",
+            "long_desc": "LoadShare Networks Private Limited",
+            "short_desc": "LoadShare Networks Private Limited"
+          },
+          "categories": [
+            {
+              "id": "Next Day Delivery",
+              "time": {
+                "label": "TAT",
+                "duration": "P1D"
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "nextday",
+              "parent_item_id": "",
+              "category_id": "Next Day Delivery",
+              "fulfillment_id": "lsn_prepaid",
+              "descriptor": {
+                "code": "P2P",
+                "name": "Next Day Delivery",
+                "long_desc": "Upto 2 working days for Delivery",
+                "short_desc": "Upto 2 working days for Delivery"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "1.00"
+              },
+              "time": {
+                "label": "TAT",
+                "duration": "P1D",
+                "timestamp": "2023-07-08T07:29:15.000Z",
+                "range": {
+                  "start": "2023-07-08T05:29:15.000Z",
+                  "end": "2023-07-08T07:29:15.000Z"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
