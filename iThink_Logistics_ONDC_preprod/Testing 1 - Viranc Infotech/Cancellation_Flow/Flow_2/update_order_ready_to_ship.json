@@ -1,0 +1,93 @@
+{
+  "context": {
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "action": "update",
+      "core_version": "1.1.0",
+      "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+      "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+      "bpp_id": "my.ithinklogistics.com/ondc/preprod",
+      "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
+      "transaction_id": "ca48dcf2-2140-51c2-b99a-7e29f362ac40",
+      "message_id": "ef60bc9e-5b70-4b11-bb29-742f0fd117ed",
+      "timestamp": "2023-07-06T06:26:32.969Z",
+      "ttl": "PT30S"
+  },
+  "message": {
+      "update_target": "fulfillment",
+      "order": {
+          "id": "dcec15a1-4260-4d70-b9b8-39bcc3ac0dd2",
+          "state": "Created",
+          "items": [{
+                  "id": "3I1",
+                  "category_id": "Next Day Delivery",
+                  "descriptor": {
+                      "code": "P2H2P"
+                  }
+              }
+          ],
+          "fulfillments": [{
+                  "id": "1",
+                  "type": "Prepaid",
+                  "tags": {
+                      "@ondc/org/order_ready_to_ship": "yes"
+                  },
+                  "end": {
+                      "instructions": {
+                          "name": "Status for drop",
+                          "long_desc": "Delivery Confirmation Code",
+                          "short_desc": "8855866"
+                      }
+                  }
+              }
+          ],
+          "payment": {
+              "@ondc/org/collection_amount": "1093.06",
+              "collected_by": "BAP",
+              "type": "POST-FULFILLMENT"
+          },
+          "@ondc/org/linked_order": {
+              "items": [{
+                      "category_id": "Grocery",
+                      "descriptor": {
+                          "name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
+                      },
+                      "quantity": {
+                          "count": 1,
+                          "measure": {
+                              "unit": "Kilogram",
+                              "value": 10
+                          }
+                      },
+                      "price": {
+                          "currency": "INR",
+                          "value": "437.00"
+                      }
+                  }
+              ],
+              "provider": {
+                  "descriptor": {
+                      "name": "ONDC Test Seller Store"
+                  },
+                  "address": {
+                      "name": "ONDC Test Seller Store",
+                      "street": "Kasturba Rd",
+                      "locality": "Kasturba Rd",
+                      "city": "Bengaluru",
+                      "state": "Karnataka",
+                      "area_code": "560001"
+                  }
+              },
+              "order": {
+                  "id": "2023-07-06-191055",
+                  "weight": {
+                      "unit": "Kilogram",
+                      "value": 10
+                  }
+              }
+          },
+          "updated_at": "2023-07-06T06:26:32.969Z"
+      }
+  }
+}
