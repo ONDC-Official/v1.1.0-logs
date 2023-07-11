@@ -1,0 +1,81 @@
+{
+  "context": {
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_confirm",
+      "core_version": "1.1.0",
+      "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+      "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+      "bpp_id": "my.ithinklogistics.com/ondc/preprod",
+      "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
+      "transaction_id": "6a009014-341c-575a-a7c6-da056bdc29bd",
+      "message_id": "42eee587-363a-5905-bc69-5800f6c9a300",
+      "timestamp": "2023-07-06T05:54:17.197Z"
+  },
+  "message": {
+      "order": {
+          "id": "6457e680-5d4c-474a-97b4-4a6b4d26dfa5",
+          "state": "Created",
+          "provider": {
+              "id": "3"
+          },
+          "items": [{
+                  "id": "3I1",
+                  "category_id": "Next Day Delivery",
+                  "descriptor": {
+                      "code": "P2H2P"
+                  }
+              }
+          ],
+          "quote": {
+              "price": {
+                  "currency": "INR",
+                  "value": "1032.50"
+              },
+              "breakup": [{
+                      "@ondc/org/item_id": "3I1",
+                      "@ondc/org/title_type": "Delivery Charge",
+                      "price": {
+                          "currency": "INR",
+                          "value": "1032.50"
+                      }
+                  }
+              ]
+          },
+          "fulfillments": [{
+                  "id": "1",
+                  "type": "Prepaid",
+                  "state": {
+                      "descriptor": {
+                          "code": "Pending"
+                      }
+                  },
+                  "@ondc/org/awb_no": "XSE27851995001",
+                  "tracking": true,
+                  "@ondc/org/ewaybillno": "XSE27851995001",
+                  "@ondc/org/ebnexpirydate": "2023-07-11T11:24:17.000Z"
+              }
+          ],
+          "billing": {
+              "name": "ONDC Test Seller Store",
+              "address": {
+                  "name": "ONDC Test Seller Store",
+                  "building": "Fort",
+                  "locality": "Fort",
+                  "city": "Mumbai",
+                  "state": "Maharashtra",
+                  "country": "India",
+                  "area_code": "400001"
+              },
+              "tax_number": "gst_number",
+              "phone": "9999999999",
+              "email": "test@gmail.com",
+              "created_at": "2023-07-06T05:54:06.144Z",
+              "updated_at": "2023-07-06T05:54:06.144Z"
+          },
+          "created_at": "2023-07-06T05:54:16.486Z",
+          "updated_at": "2023-07-06T05:54:17.197Z"
+      }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "context": {
+    "action": "update",
+    "transaction_id": "2017b60c-6a08-401c-82a7-c1f0a4a3b9e3",
+    "message_id": "34d449a3-8115-4f0f-bf9c-e1d45aa4a921",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-07-10T11:25:09.338Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "provider": {
+        "id": "loadshare1"
+      },
+      "fulfillments": [
+        {
+          "id": "lsn_prepaid",
+          "type": "Prepaid",
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "start": {
+            "instructions": {
+              "short_desc": "near tvs showroom",
+              "long_desc": "1st link road",
+              "additional_desc": {
+                "content_type": "White building",
+                "url": "https://www.google.com/maps/"
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "nextday",
+          "category_id": "Next Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "id": "3ed66813-e7a1-44de-ad2b-a0f7821f019a",
+      "state": "Created",
+      "updated_at": "2023-07-10T11:25:09.338Z"
+    }
+  }
+}

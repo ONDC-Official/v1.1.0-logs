@@ -1,0 +1,47 @@
+{
+  "context": {
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_init",
+      "core_version": "1.1.0",
+      "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+      "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+      "bpp_id": "my.ithinklogistics.com/ondc/preprod",
+      "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
+      "transaction_id": "ca48dcf2-2140-51c2-b99a-7e29f362ac40",
+      "message_id": "aa5451a3-3c77-5ea0-8295-117bead064ef",
+      "timestamp": "2023-07-06T06:24:10.290Z"
+  },
+  "message": {
+      "order": {
+          "provider": {
+              "id": "3"
+          },
+          "items": [{
+                  "id": "3I1"
+              }
+          ],
+          "quote": {
+              "price": {
+                  "currency": "INR",
+                  "value": "624.22"
+              },
+              "breakup": [{
+                      "@ondc/org/item_id": "3I1",
+                      "@ondc/org/title_type": "Delivery Charge",
+                      "price": {
+                          "currency": "INR",
+                          "value": "624.22"
+                      }
+                  }
+              ]
+          },
+          "payment": {
+              "type": "POST-FULFILLMENT",
+              "collected_by": "BAP",
+              "@ondc/org/settlement_details": []
+          }
+      }
+  }
+}
