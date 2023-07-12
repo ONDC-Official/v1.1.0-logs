@@ -13,17 +13,17 @@
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "bpp_id": "ondc.vistar.solutions",
     "version": "1.0.0",
-    "message_id": "23e1e87c-d922-4823-b50e-c52defb2179e",
-    "timestamp": "2023-07-05T13:43:54.799Z",
-    "transaction_id": "2b5bbbff-9d9e-41eb-a388-7e1dce48ceaa",
+    "message_id": "6ba57b73-be9c-4442-af9d-9d97f79aa961",
+    "timestamp": "2023-07-12T07:59:22.562Z",
+    "transaction_id": "c19f3c11-2140-498c-a781-dec9edc96174",
     "ttl": "PT30S",
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
   },
   "message": {
     "order": {
-      "id": "425ad6ac-b130-435f-b778-89bcd02442cb",
-      "status": "IN_PROGRESS",
+      "id": "8d7786b8-3eb8-4f7f-9214-0daddcf2b5a3",
+      "status": "IN-PROGRESS",
       "tags": [
         {
           "descriptor": {
@@ -34,13 +34,13 @@
               "descriptor": {
                 "code": "EMAIL"
               },
-              "value": "sagar.revanna@goog.ai"
+              "value": "sagar.revanna@eminds.ai"
             },
             {
               "descriptor": {
                 "code": "PHONE"
               },
-              "value": "999988867"
+              "value": "9964453579"
             }
           ]
         }
@@ -49,7 +49,6 @@
         {
           "id": "F2",
           "type": "EMAIL",
-          "tracking": false,
           "customer": {
             "person": {
               "name": "Sagar"
@@ -57,30 +56,39 @@
             "contact": {
               "phone": "1234567890",
               "email": "sagar@google.com"
-            },
-            "stops": [
-              {
-                "id": "0",
-                "contact": {
-                  "phone": "999988867",
-                  "email": "sagar.revanna@goog.ai"
-                },
-                "person": {
-                  "name": "Test receiver"
-                }
-              }
-            ]
+            }
           },
           "stops": [
             {
               "id": "0",
               "contact": {
-                "phone": "999988867",
-                "email": "sagar.revanna@goog.ai"
+                "phone": "9964453579",
+                "email": "sagar.revanna@eminds.ai"
               },
               "person": {
                 "name": "Test receiver"
               }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "UPDATE_RECEIVER_INFO"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "EMAIL"
+                  },
+                  "value": "sagar.revanna@eminds.ai"
+                },
+                {
+                  "descriptor": {
+                    "code": "PHONE"
+                  },
+                  "value": "9964453579"
+                }
+              ]
             }
           ]
         }
@@ -107,25 +115,6 @@
                     "code": "FIXED_AMOUNT"
                   },
                   "value": "1000"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "CUSTOMIZATION"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "RECEIVER_NAME"
-                  },
-                  "value": "Sagar"
-                },
-                {
-                  "descriptor": {
-                    "code": "MESSAGE"
-                  },
-                  "value": "Good luck"
                 }
               ]
             }
@@ -211,7 +200,7 @@
           "status": "PAID",
           "params": {
             "currency": "INR",
-            "transaction_id": "order_MA8liR5PYQf5BB",
+            "transaction_id": "order_MCoWjvJCrdJ5VF",
             "amount": "1000"
           },
           "tags": [
@@ -280,8 +269,8 @@
           ]
         }
       ],
-      "created_at": "2023-07-05T13:43:07.770Z",
-      "updated_at": "2023-07-05T13:43:54.831Z"
+      "created_at": "2023-07-12T07:52:04.938Z",
+      "updated_at": "2023-07-12T07:59:22.607Z"
     }
   }
 }
