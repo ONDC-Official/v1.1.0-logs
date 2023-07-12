@@ -1,13 +1,19 @@
-**/select**
-- City code mismatch in /search and /select
-- Timestamp for /on_search api cannot be greater than or equal to /select api
+**/search**
+- /message/intent must have required property 'item'
 
-**/on_select**
-- City code mismatch in /search and /on_select
+**/init**
+- City code mismatch in /search and /init
+
+**/on_init**
+- City code mismatch in search & on_init
 
 **/confirm**
+- City code mismatch in /search and /confirm
 - address/door mismatches in /billing in /init and /confirm
 
 **/on_confirm**
-- context/timestamp difference between /on_confirm and /confirm should be smaller than 5 sec
+- City code mismatch in /search and /on_confirm
+
+**/on_cancel**
+- City code mismatch in /search and /on_cancel
 
