@@ -9,15 +9,15 @@
     "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
     "bpp_uri": "https://preprod-bpp.iway.digiit.io",
     "bpp_id": "preprod-bpp.iway.digiit.io",
-    "transaction_id": "e27ac51b-81e1-4994-a63d-a3b85fa4e5f3",
-    "message_id": "fb8ad38f-c7bb-4777-816b-ccd158477112",
-    "timestamp": "2023-06-26T07:58:42.566Z",
+    "transaction_id": "ac6040e4-2347-4c38-9afb-41e4d03a1687",
+    "message_id": "7f1eca06-efb4-4786-9aa3-b1d11c431158",
+    "timestamp": "2023-07-13T09:11:56.699Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "6a02b598-03db-4467-9182-f6545554e704",
-      "state": "Accepted",
+      "id": "e311d475-06ca-4e36-abc9-93dc157c2fd5",
+      "state": "Created",
       "provider": {
         "id": "107-Account-DER-292",
         "locations": [
@@ -28,7 +28,7 @@
       },
       "items": [
         {
-          "id": "20",
+          "id": "18",
           "category_id": "Standard Delivery",
           "descriptor": {
             "code": "P2P"
@@ -38,31 +38,24 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1250.0"
+          "value": "1205.0"
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "20",
+            "@ondc/org/item_id": "18",
             "@ondc/org/title_type": "Delivery Charge",
             "price": {
               "currency": "INR",
-              "value": "1210.0"
-            }
-          },
-          {
-            "@ondc/org/title_type": "RTO Charge",
-            "price": {
-              "currency": "INR",
-              "value": "40.0"
+              "value": "1205.0"
             }
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "4e7c6bee-69f7-4cd9-a9ad-1eb0ab4be887",
+          "id": "d8d670db-c5f7-46a5-b885-b876f56eb504",
           "type": "Prepaid",
-          "@ondc/org/awb_no": "2023062618840612",
+          "@ondc/org/awb_no": "2023071395070703",
           "start": {
             "person": {
               "name": "Yumfood"
@@ -110,10 +103,18 @@
             "contact": {
               "phone": "9556789011",
               "email": "n@gmail.com"
+            },
+            "instructions": {
+              "short_desc": "drop package at security gate",
+              "long_desc": "drop package at security gate",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "https://docs.google.com/document/d/109QZntPo0zQeqh4Il2T__blfNduLBb9MIibGlqlH8PU/edit?usp=sharing"
+              }
             }
           },
-          "@ondc/org/ewaybillno": "5cd253a3-05d9-41e5-b939-f3241e07bf24",
-          "@ondc/org/ebnexpirydate": "2023-06-28T07:58:41.510Z",
+          "@ondc/org/ewaybillno": "3b4b8f46-52d2-4257-be83-c4511ede987b",
+          "@ondc/org/ebnexpirydate": "2023-07-15T09:11:56.699Z",
           "tags": {
             "@ondc/org/order_ready_to_ship": "no"
           }
@@ -133,8 +134,22 @@
         "tax_number": "98798798798",
         "phone": "8978909876",
         "email": "abcd.efgh@gmail.com",
-        "created_at": "2023-06-26T07:58:22.514Z",
-        "updated_at": "2023-06-26T07:58:22.514Z"
+        "created_at": "2023-07-13T09:11:15.232Z",
+        "updated_at": "2023-07-13T09:11:15.232Z"
+      },
+      "payment": {
+        "@ondc/org/collection_amount": "55",
+        "collected_by": "BAP",
+        "type": "ON-ORDER",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "buyer-app",
+            "settlement_type": "upi",
+            "upi_address": "shikharseller@oksbi",
+            "settlement_bank_account_no": "32828742093",
+            "settlement_ifsc_code": "SBIN0000691"
+          }
+        ]
       },
       "@ondc/org/linked_order": {
         "items": [
@@ -144,7 +159,7 @@
               "name": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml"
             },
             "quantity": {
-              "count": "1",
+              "count": 1,
               "measure": {
                 "unit": "Kilogram",
                 "value": 1
@@ -170,15 +185,15 @@
           }
         },
         "order": {
-          "id": "2023-06-26-984939",
+          "id": "2023-07-13-752828",
           "weight": {
             "unit": "Gram",
-            "value": "100"
+            "value": 100
           }
         }
       },
-      "created_at": "2023-06-26T07:58:41.510Z",
-      "updated_at": "2023-06-26T07:58:41.510Z"
+      "created_at": "2023-07-13T09:11:56.699Z",
+      "updated_at": "2023-07-13T09:11:56.699Z"
     }
   }
 }
