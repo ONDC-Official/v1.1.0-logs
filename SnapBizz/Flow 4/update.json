@@ -8,16 +8,16 @@
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-    "transaction_id": "1357ca34-9fc2-4154-ae0d-c3219fbadfda",
-    "message_id": "7da47b91-0334-4af8-92da-e4fe575a2564",
-    "timestamp": "2023-07-04T16:28:59.160Z",
+    "transaction_id": "693e3217-73d5-4a40-9e03-7d5dbc6388f2",
+    "message_id": "9a9d477b-d797-4deb-be22-da07273081a5",
+    "timestamp": "2023-07-12T21:02:22.698Z",
     "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
     "ttl": "PT30S"
   },
   "message": {
-    "update_target": "item",
+    "update_target": "billing",
     "order": {
-      "id": "2023-07-04-619620",
+      "id": "2023-07-12-177706",
       "state": "Accepted",
       "provider": {
         "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
@@ -36,7 +36,18 @@
             "image": ""
           }
         }
-      ]
+      ],
+      "payment": {
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "buyer",
+            "settlement_phase": "refund",
+            "settlement_type": "upi",
+            "settlement_amount": "5990",
+            "settlement_timestamp": "2023-07-12T21:02:22.700Z"
+          }
+        ]
+      }
     }
   }
 }
