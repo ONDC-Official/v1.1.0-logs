@@ -1,18 +1,17 @@
 {
   "context": {
     "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
     "core_version": "1.1.0",
     "bap_id": "preprod.xpressbaazaar.com",
     "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
     "bpp_id": "preprod-bpp.iway.digiit.io",
     "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-    "city": "std:080",
-    "country": "IND",
-    "action": "on_init",
-    "transaction_id": "25bfa468-0d45-4a8a-b6e5-43d770d2ed32",
-    "message_id": "e85880b3-e31f-4b66-8f1f-f61e2e9aa7e4",
-    "timestamp": "2023-06-26T07:47:44.381Z",
-    "ttl": "PT30S"
+    "transaction_id": "81530859-010c-4f90-b205-c93966adfe5d",
+    "message_id": "2a227ef8-014e-4dd7-8cab-93d70bb916bc",
+    "timestamp": "2023-07-13T08:55:35.218Z"
   },
   "message": {
     "order": {
@@ -24,28 +23,21 @@
       },
       "items": [
         {
-          "id": "20"
+          "id": "18"
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1250.0"
+          "value": "1205.0"
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "20",
+            "@ondc/org/item_id": "18",
             "@ondc/org/title_type": "Delivery Charge",
             "price": {
               "currency": "INR",
-              "value": "1210.0"
-            }
-          },
-          {
-            "@ondc/org/title_type": "RTO Charge",
-            "price": {
-              "currency": "INR",
-              "value": "40.0"
+              "value": "1205.0"
             }
           }
         ]
@@ -55,12 +47,12 @@
         "collected_by": "BAP",
         "@ondc/org/settlement_details": [
           {
-            "settlement_counterparty": "seller-app",
-            "settlement_type": "neft",
-            "beneficiary_name": "Jagadeesan",
-            "upi_address": null,
-            "settlement_bank_account_no": "107_ACCT000001",
-            "settlement_ifsc_code": "HDFC100010"
+            "settlement_counterparty": "buyer-app",
+            "settlement_type": "upi",
+            "beneficiary_name": "Shikhar Seller",
+            "upi_address": "shikharseller@oksbi",
+            "settlement_bank_account_no": "32828742093",
+            "settlement_ifsc_code": "SBIN0000691"
           }
         ]
       }
