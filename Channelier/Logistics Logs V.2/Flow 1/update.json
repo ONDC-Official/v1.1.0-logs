@@ -1,0 +1,98 @@
+{
+    "context": {
+        "bap_id": "integrations-preprod.channelier.com",
+        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "bpp_id": "ondcpp.yaarilabs.com",
+        "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+        "transaction_id": "69cec0bf-3d9e-4d4c-b021-33b3edd9aef7",
+        "message_id": "47a0e328-77f5-44e5-b776-735ba61504b0",
+        "country": "IND",
+        "city": "std:080",
+        "timestamp": "2023-07-12T13:52:30.188Z",
+        "action": "update"
+    },
+    "message": {
+        "update_target": "fulfillment",
+        "order": {
+            "id": "ed28c662-4afa-4dc9-80ec-9e105b123884",
+            "state": "Accepted",
+            "items": [
+                {
+                    "id": "YAARI-2-3232DC8EGT",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "start": {
+                        "location": {
+                            "gps": "28.6138954,77.2090057",
+                            "address": {
+                                "door": "1",
+                                "name": "My building #",
+                                "building": "My building name",
+                                "street": "Rajpath",
+                                "locality": "My street name",
+                                "ward": "10",
+                                "city": "New Delhi",
+                                "state": "DELHI",
+                                "country": "IND",
+                                "area_code": "110018"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "XYZ1",
+                            "long_desc": "QR code will be attached to package",
+                            "images": [
+                                "URL or data string as per spec"
+                            ]
+                        },
+                        "contact": {
+                            "phone": "9479319331",
+                            "email": "techpvec2@gmail.com"
+                        },
+                        "person": {
+                            "name": "Name"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "28.513993, 77.1655220000001",
+                            "address": {
+                                "name": "Ravinder",
+                                "building": "Near Mahipalpur",
+                                "locality": "Vasant Kunj, sector E-2",
+                                "city": "New Delhi",
+                                "state": "Delhi",
+                                "country": "IND",
+                                "area_code": "110070"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9897989798",
+                            "email": "techpvec18@gmail.com"
+                        },
+                        "person": {
+                            "name": "Ravinder"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    },
+                    "@ondc/org/ewaybillno": "EBN1",
+                    "@ondc/org/ebnexpirydate": "2023-03-31T12:00:00.000Z",
+                    "@ondc/org/awb_no": "1223344556677"
+                }
+            ],
+            "updated_at": "2023-07-12T13:52:30.188Z"
+        }
+    }
+}

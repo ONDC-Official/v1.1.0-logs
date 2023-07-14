@@ -1,0 +1,118 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bpp_id": "ondcpp.yaarilabs.com",
+    "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+    "transaction_id": "69cec0bf-3d9e-4d4c-b021-33b3edd9aef7",
+    "message_id": "fd3c92f7-9ece-4997-863f-05b9b61954d9",
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "action": "on_status",
+    "timestamp": "2023-07-12T13:55:36.288Z"
+  },
+  "message": {
+    "order": {
+      "id": "ed28c662-4afa-4dc9-80ec-9e105b123884",
+      "state": "In-progress",
+      "provider": {
+        "id": "2"
+      },
+      "items": [
+        {
+          "id": "YAARI-2-3232DC8EGT",
+          "category_id": "Standard Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "type": "Prepaid",
+          "state": {
+            "descriptor": {
+              "code": "OrderPickedUp"
+            }
+          },
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-07-13T01:30:00.000Z",
+                "end": "2023-07-13T16:30:00.000Z"
+              },
+              "timestamp": "2023-07-12T13:55:36.288Z"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-07-13T01:30:00.000Z",
+                "end": "2023-07-13T16:30:00.000Z"
+              }
+            }
+          },
+          "agent": {
+            "name": "RamLal",
+            "phone": "8435435336"
+          },
+          "vehicle": {
+            "category": "TwoWheeler",
+            "size": "500.0000",
+            "registration": "DL05NP7782"
+          },
+          "@ondc/org/awb_no": "X75562993",
+          "@ondc/org/ewaybillno": "EBN1",
+          "@ondc/org/ebnexpirydate": "2023-03-31T12:00:00.000Z"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1"
+        },
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "1"
+            },
+            "@ondc/org/item_id": "YAARI-2-3232DC8EGT",
+            "@ondc/org/title_type": "Delivery Charge"
+          }
+        ]
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_type": "upi",
+            "settlement_bank_account_no": "XXXXXXXXXX",
+            "settlement_ifsc_code": "XXXXXXXXX",
+            "upi_address": "gft@oksbi"
+          }
+        ]
+      },
+      "billing": {
+        "name": "ONDC sellerapp",
+        "address": {
+          "name": "My house or building no",
+          "building": "My house or building name",
+          "locality": "My street name",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "India",
+          "area_code": "560076"
+        },
+        "email": "abcd.efgh@gmail.com",
+        "phone": "9886098860",
+        "tax_number": "XXXXXXXXXXXXXXX"
+      }
+    }
+  }
+}
