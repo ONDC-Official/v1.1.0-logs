@@ -2780,11 +2780,6 @@
 
 **/confirm**
 - address/door mismatches in /billing in /init and /confirm
-- payment settlement_details mismatch in /on_init & /confirm
-
-**/on_confirm**
-- store name  /fulfillments[0]/start/location/descriptor/name can't change
-- payment object mismatches in /confirm & /on_confirm
 
 **/on_status (Pending)**
 - address/door mismatches in /billing in /confirm and /on_status_pending
