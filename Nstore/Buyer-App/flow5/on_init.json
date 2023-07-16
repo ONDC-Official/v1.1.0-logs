@@ -1,0 +1,138 @@
+{
+    "context": {
+        "city": "std:*",
+        "action": "on_init",
+        "bap_id": "b-ondcbap.nlincs.in",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-11T16:27:12.380Z",
+        "message_id": "QCtPQYaz0ffqfBIjURM7lwRnacZSFFCz",
+        "core_version": "1.1.0",
+        "transaction_id": "3fc6de0e7fadc438d2b9108fb9aced00"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "104",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "21165"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "800.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "400.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "800.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Zodiac Cosmo",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "21165",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "billing": {
+                "name": "Arunraj",
+                "email": "arunraj@nstore.in",
+                "phone": "9840857465",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "8",
+                    "state": "KA",
+                    "country": "IND",
+                    "building": "Mosque Road",
+                    "locality": "Pulikeshi Nagar",
+                    "area_code": "560005"
+                },
+                "created_at": "2023-07-11T16:27:10.571Z",
+                "updated_at": "2023-07-11T16:27:10.571Z"
+            },
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "1"
+            },
+            "provider": {
+                "id": "21165"
+            },
+            "fulfillments": [
+                {
+                    "id": "21165",
+                    "end": {
+                        "contact": {
+                            "name": "Arunraj",
+                            "email": "arunraj@nstore.in",
+                            "phone": "9840857465"
+                        },
+                        "location": {
+                            "gps": "12.9994421, 77.6197371",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "8",
+                                "state": "KA",
+                                "country": "IND",
+                                "building": "Mosque Road",
+                                "locality": "Pulikeshi Nagar",
+                                "area_code": "560005"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false
+                }
+            ],
+            "provider_location": {
+                "id": "21165"
+            }
+        }
+    }
+}
