@@ -1,0 +1,67 @@
+{
+  "context": {
+    "action": "search",
+    "transaction_id": "d82d8bdb-0899-437c-abc2-bfa6bd16fdad",
+    "message_id": "9bc82016-66e8-4fad-8911-871ef4afd990",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-07-10T11:09:51.569Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "fulfillment": {
+        "type": "Prepaid",
+        "start": {
+          "location": {
+            "gps": "12.905488,77.645337",
+            "address": {
+              "area_code": "560102"
+            }
+          }
+        },
+        "end": {
+          "location": {
+            "gps": "12.897732,77.643900",
+            "address": {
+              "area_code": "560068"
+            }
+          }
+        }
+      },
+      "@ondc/org/payload_details": {
+        "weight": {
+          "value": 200,
+          "unit": "Gram"
+        },
+        "category": "Grocery",
+        "value": {
+          "currency": "INR",
+          "value": "3000"
+        }
+      },
+      "category": {
+        "id": "Next Day Delivery"
+      },
+      "provider": {
+        "time": {
+          "days": "1,2,3,4,5,6,7",
+          "schedule": {
+            "holidays": [
+              "2023-08-17",
+              "2023-08-16"
+            ]
+          },
+          "range": {
+            "start": "1100",
+            "end": "2100"
+          }
+        }
+      }
+    }
+  }
+}
