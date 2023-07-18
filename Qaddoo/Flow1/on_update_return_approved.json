@@ -9,57 +9,39 @@
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "seller.instastack.io",
         "bpp_uri": "https://seller.instastack.io/pre-prod",
-        "transaction_id": "af8781c3-8f5b-48f9-8a86-eb078f9ab2b8",
-        "message_id": "fef7c91a-588b-4b61-8f3c-83c11dc958ff",
-        "timestamp": "2023-07-14T11:21:07.324Z"
+        "transaction_id": "75822fce-f6fa-47ee-8eb4-f1f5892c4047",
+        "message_id": "c1c5fdf2-bbc7-4e3c-a03b-f015743c81ef",
+        "timestamp": "2023-07-14T06:57:03.698Z"
     },
     "message": {
         "order": {
-            "id": "671",
+            "id": "664",
             "state": "Completed",
             "items": [
-                {
-                    "id": "223253",
-                    "fulfillment_id": "1",
-                    "quantity": {
-                        "count": 4
-                    }
-                },
                 {
                     "id": "223251",
                     "quantity": {
                         "count": 2
                     },
-                    "fulfillment_id": "1",
+                    "fulfillment_id": "REVERSE-QC",
                     "tags": {
-                        "status": "Return_Initiated"
+                        "status": "Return_Approved"
+                    }
+                },
+                {
+                    "id": "218",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 2
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "2643.00"
+                    "value": "1565.00"
                 },
                 "breakup": [
-                    {
-                        "@ondc/org/item_id": "223253",
-                        "@ondc/org/item_quantity": {
-                            "count": 4
-                        },
-                        "@ondc/org/title_type": "item",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "549.00"
-                            }
-                        },
-                        "title": "Seni Care Wet Wipes, 80 pcs",
-                        "price": {
-                            "currency": "INR",
-                            "value": "2196.00"
-                        }
-                    },
                     {
                         "@ondc/org/item_id": "223251",
                         "@ondc/org/item_quantity": {
@@ -76,6 +58,24 @@
                         "price": {
                             "currency": "INR",
                             "value": "398.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "218",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "559.00"
+                            }
+                        },
+                        "title": "Mamaearth Onion Conditioner, 400 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1118.00"
                         }
                     },
                     {
@@ -114,10 +114,10 @@
                         },
                         "time": {
                             "range": {
-                                "start": "2023-07-14T11:18:58.543Z",
-                                "end": "2023-07-14T12:18:58.543Z"
+                                "start": "2023-07-13T17:05:19.845Z",
+                                "end": "2023-07-13T18:05:19.845Z"
                             },
-                            "timestamp": "2023-07-14T11:20:16.318Z"
+                            "timestamp": "2023-07-13T17:05:45.147Z"
                         },
                         "contact": {
                             "phone": "9892216537",
@@ -139,23 +139,49 @@
                         },
                         "time": {
                             "range": {
-                                "start": "2023-07-14T11:18:58.543Z",
-                                "end": "2023-07-14T17:18:58.543Z"
+                                "start": "2023-07-13T17:05:19.845Z",
+                                "end": "2023-07-13T23:05:19.846Z"
                             },
-                            "timestamp": "2023-07-14T11:20:28.226Z"
+                            "timestamp": "2023-07-13T17:05:59.946Z"
                         },
                         "contact": {
                             "phone": "8302010971"
                         }
                     },
                     "rateable": true
+                },
+                {
+                    "id": "REVERSE-QC",
+                    "type": "Reverse QC",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-07-14T06:57:03.698Z",
+                                "end": "2023-07-14T08:57:03.710Z"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "Pickup item: Seni Care Wet Wipes, 10 pcs, quantity of pickup: 2",
+                            "long_desc": "Please check items for physical damage before pickup. Refer to link for more instructions. Reach out to merchant teams for confirmation if required.",
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://seller.instastack.io/pickup/order/664"
+                            },
+                            "images": []
+                        }
+                    }
                 }
             ],
             "payment": {
                 "params": {
-                    "amount": "2643.00",
+                    "amount": "1565.00",
                     "currency": "INR",
-                    "transaction_id": "1689333512339"
+                    "transaction_id": "1689267914584"
                 },
                 "type": "ON-ORDER",
                 "status": "PAID",
@@ -176,8 +202,8 @@
                     }
                 ]
             },
-            "created_at": "2023-07-14T11:18:58.345Z",
-            "updated_at": "2023-07-14T11:21:07.324Z"
+            "created_at": "2023-07-13T17:05:19.683Z",
+            "updated_at": "2023-07-14T06:57:03.698Z"
         }
     }
 }

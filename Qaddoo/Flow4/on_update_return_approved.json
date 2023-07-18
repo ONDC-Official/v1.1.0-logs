@@ -11,7 +11,7 @@
         "bpp_uri": "https://seller.instastack.io/pre-prod",
         "transaction_id": "af8781c3-8f5b-48f9-8a86-eb078f9ab2b8",
         "message_id": "fef7c91a-588b-4b61-8f3c-83c11dc958ff",
-        "timestamp": "2023-07-14T11:21:07.324Z"
+        "timestamp": "2023-07-18T04:36:38.625Z"
     },
     "message": {
         "order": {
@@ -30,9 +30,9 @@
                     "quantity": {
                         "count": 2
                     },
-                    "fulfillment_id": "1",
+                    "fulfillment_id": "REVERSE-QC",
                     "tags": {
-                        "status": "Return_Initiated"
+                        "status": "Return_Approved"
                     }
                 }
             ],
@@ -149,6 +149,32 @@
                         }
                     },
                     "rateable": true
+                },
+                {
+                    "id": "REVERSE-QC",
+                    "type": "Reverse QC",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-07-18T04:36:38.625Z",
+                                "end": "2023-07-18T06:36:38.632Z"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "Pickup item: Seni Care Wet Wipes, 10 pcs, quantity of pickup: 2",
+                            "long_desc": "Please check items for physical damage before pickup. Refer to link for more instructions. Reach out to merchant teams for confirmation if required.",
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://seller.instastack.io/pickup/order/671"
+                            },
+                            "images": []
+                        }
+                    }
                 }
             ],
             "payment": {
@@ -177,7 +203,7 @@
                 ]
             },
             "created_at": "2023-07-14T11:18:58.345Z",
-            "updated_at": "2023-07-14T11:21:07.324Z"
+            "updated_at": "2023-07-18T04:36:38.625Z"
         }
     }
 }
