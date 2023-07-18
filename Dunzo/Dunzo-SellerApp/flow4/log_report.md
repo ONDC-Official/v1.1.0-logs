@@ -2797,3 +2797,6 @@
 **/on_status (Order-Delivered)**
 - address/door mismatches in /billing in /confirm and /on_status_delivered
 
+**/update**
+- Timestamp for /on_confirm api cannot be greater than or equal to /update api
+
