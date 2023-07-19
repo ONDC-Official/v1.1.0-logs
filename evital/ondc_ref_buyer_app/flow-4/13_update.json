@@ -1,0 +1,57 @@
+{
+    "headers": {
+        "x-forwarded-for": "43.205.208.46",
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "dev-ondc.evitalrx.in",
+        "x-amzn-trace-id": "Root=1-64b7eea7-6d9576f041befd79139c27e2",
+        "content-length": "752",
+        "user-agent": "python-requests/2.23.0",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "authorization": "Signature keyId=\"buyer-app-preprod.ondc.org|96c81878-f327-457e-8835-5b35bb20f099|ed25519\",algorithm=\"ed25519\",created=\"1689775783\",expires=\"1689779383\",headers=\"(created) (expires) digest\",signature=\"C04tac70IoXn85GFgUn9DBb7uUYmTg2N9SMsb21cyLGIeGHA+V7gVvhRGioIlTJGCoyhaCZnaWYRcWjFMSaZDQ==\"",
+        "content-type": "application/json"
+    },
+    "body": {
+        "context": {
+            "domain": "nic2004:52110",
+            "country": "IND",
+            "city": "std:080",
+            "action": "update",
+            "core_version": "1.1.0",
+            "bap_id": "buyer-app-preprod.ondc.org",
+            "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+            "bpp_uri": "https://dev-ondc.evitalrx.in/",
+            "transaction_id": "463014d7-d10a-4991-a7e2-8e0cd04b1630",
+            "message_id": "aaf4b2ba-2351-433e-b6b9-70a096e74895",
+            "timestamp": "2023-07-19T14:09:43.492Z",
+            "bpp_id": "dev-ondc.evitalrx.in",
+            "ttl": "PT30S"
+        },
+        "message": {
+            "update_target": "item",
+            "order": {
+                "id": "2023-07-19-458755",
+                "state": "Completed",
+                "provider": {
+                    "id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                },
+                "items": [
+                    {
+                        "id": "lxomkrXjeoO9jqJrt+6yIA==",
+                        "quantity": {
+                            "count": 7
+                        },
+                        "tags": {
+                            "update_type": "return",
+                            "reason_code": "002",
+                            "ttl_approval": "P7D",
+                            "ttl_reverseqc": "P3D",
+                            "image": ""
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
