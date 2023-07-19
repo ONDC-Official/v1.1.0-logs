@@ -1,38 +1,38 @@
 **/on_search**
 - /message/catalog/bpp~1providers/0/items/0/descriptor/images must NOT have more than 3 items
+- /message/catalog/bpp~1providers/0/items/1/descriptor/images must NOT have more than 3 items
+- /message/catalog/bpp~1providers/1/items/0/descriptor/images must NOT have more than 3 items
+- /message/catalog/bpp~1providers/1/items/1/descriptor/images must NOT have more than 3 items
+- /message/catalog/bpp~1providers/1/items/2/descriptor/images must NOT have more than 3 items
+- /message/catalog/bpp~1providers/1/items/3/descriptor/images must NOT have more than 3 items
+- /message/catalog/bpp~1providers/1/items/4/descriptor/images must NOT have more than 3 items
 
 **/init**
-- /message/order/billing/address must have required property 'building'
-- /message/order/fulfillments/0/end/location/address/building must NOT have fewer than 3 characters
-- /message/order/fulfillments/0/end/location/address/locality must NOT have fewer than 3 characters
 - billing/created_at should match context.timestamp
 - billing/updated_at should match context.timestamp
-- address.building should be more than 3 chars
-- address.locality should be more than 3 chars
-
-**/on_init**
-- /billing/address must have required property 'building'
-- Discrepancies between the quote object in /on_select and /on_init
+- value of address.name, address.building and address.locality should be unique
 
 **/confirm**
-- /message/order/billing/address must have required property 'building'
+- payment settlement_details mismatch in /on_init & /confirm
 - order.created_at timestamp should match context.timestamp
 - Discrepancies between the quote object in /on_select and /confirm
 
 **/on_confirm**
-- /billing/address must have required property 'building'
-- /fulfillments/0/end/location/address must have required property 'building'
 - Discrepancies between the quote object /on_select and /on_confirm
+
+**/on_status (Order-picked-up)**
+- /fulfillments/0/end/time delivery time should not be present until order is delivered
+
 
 **/update**
 - /message/order/items/0/tags/ttl_approval must match format "duration"
+- Timestamp for /on_confirm api cannot be greater than or equal to /update api
 
-**/on_update (Initiated)**
--  must have required property 'payment'
--  must have required property 'created_at'
--  must have required property 'updated_at'
-- /fulfillments/0/end must have required property 'time'
-- /fulfillments/0/end/location/address must have required property 'building'
-- Invalid quantity of items present in /order/items (returned & non-returned) for item: e9511f3c-4592-4d7b-b038-ae5b6b1a58e5
-- order/created_at timestamp can't change (should remain same as in /confirm)
+
+**/on_update (Return_Approved)**
+- /fulfillments/1/state/descriptor/code must be equal to one of the allowed values (Pending,Packed,Order-picked-up,Out-for-delivery,Order-delivered,RTO-Initiated,RTO-Delivered,RTO-Disposed,Cancelled)
+- message_id of all unsolicited /on_update calls should be same for a particular /update request
+
+
+
 

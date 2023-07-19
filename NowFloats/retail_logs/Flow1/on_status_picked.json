@@ -3,97 +3,106 @@
       "domain": "nic2004:52110",
       "country": "IND",
       "city": "std:080",
-      "action": "on_confirm",
+      "action": "on_status",
       "core_version": "1.1.0",
+      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+      "transaction_id": "75c42600-b396-4655-9432-aae0b15df37d",
+      "message_id": "c84bbb1b-6af4-4eb0-9d1b-d6fdc98fa2b3",
+      "timestamp": "2023-07-14T03:24:57.389Z",
       "bap_id": "buyer-app-preprod.ondc.org",
       "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
-      "transaction_id": "1590dc09-2603-4b8a-8025-ba7ee935cb1b",
-      "message_id": "4d107ae6-013e-4139-a21b-7a72f221ded4",
-      "timestamp": "2023-07-14T09:21:28.506Z",
-      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
       "ttl": "PT30S"
     },
     "message": {
       "order": {
-        "id": "2023-07-14-119929",
+        "id": "2023-07-13-321298",
+        "state": "In-progress",
         "provider": {
-          "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+          "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51",
           "locations": [
             {
-              "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c"
+              "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51"
             }
-          ],
-          "rateable": true
+          ]
         },
-        "state": "Accepted",
-        "items": [
-          {
-            "quantity": {
-              "count": 1
-            },
-            "fulfillment_id": "978896a4-28a1-42b8-b924-e08319fff8e1",
-            "id": "cae57369-9776-4e0d-9ec0-4c5b748de999"
-          },
-          {
-            "quantity": {
-              "count": 1
-            },
-            "fulfillment_id": "978896a4-28a1-42b8-b924-e08319fff8e1",
-            "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5"
-          }
-        ],
         "billing": {
           "address": {
-            "name": "ps",
-            "locality": "1",
+            "door": "Bangalore",
+            "building": "Bangalore",
             "city": "Bengaluru",
             "state": "Karnataka",
             "country": "IND",
-            "area_code": "560001"
+            "area_code": "560001",
+            "locality": "Bangalore",
+            "name": "Soumyadeep Bhadra"
           },
           "phone": "9748270530",
-          "name": "soumyadeepbhadra",
+          "name": "Soumyadeep Bhadra",
           "email": "soumyadeep.bhadra@nowfloats.com",
-          "created_at": "2023-07-14T09:21:24.397Z",
-          "updated_at": "2023-07-14T09:21:24.397Z"
+          "created_at": "2023-07-13T04:13:31.609Z",
+          "updated_at": "2023-07-13T04:13:31.609Z"
         },
+        "items": [
+          {
+            "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+            "fulfillment_id": "2ec1aa24-2e0c-4718-90c3-4dbe42500d00",
+            "quantity": {
+              "count": 2
+            }
+          },
+          {
+            "id": "c71b4800-1e8d-4186-82db-eff8ded9a337",
+            "fulfillment_id": "2ec1aa24-2e0c-4718-90c3-4dbe42500d00",
+            "quantity": {
+              "count": 2
+            }
+          }
+        ],
         "fulfillments": [
           {
-            "id": "978896a4-28a1-42b8-b924-e08319fff8e1",
+            "id": "2ec1aa24-2e0c-4718-90c3-4dbe42500d00",
             "type": "Delivery",
-            "@ondc/org/provider_name": "ankit123",
+            "@ondc/org/provider_name": "Ankit Sharma",
             "state": {
               "descriptor": {
-                "code": "Pending"
+                "code": "Order-picked-up"
               },
-              "updated_at": "2023-07-14T09:21:28.845Z",
+              "updated_at": "2023-07-07T08:24:57.704Z",
               "updated_by": "Customer"
             },
             "tracking": false,
             "start": {
               "time": {
                 "range": {
-                  "start": "2023-04-14T09:21:28.819Z",
-                  "end": "2023-04-14T09:21:28.819Z"
-                }
+                  "start": "2023-07-07T08:24:57.704Z",
+                  "end": "2023-07-07T08:54:57.704Z"
+                },
+                "timestamp": "2023-07-07T08:24:57.704Z"
               },
               "instructions": {
                 "name": "Status for pickup"
               },
               "contact": {
-                "phone": "8742905882",
-                "email": "v-ankit.bharti@nowfloats.com"
+                "phone": "9796812567",
+                "email": "v-ankit.sharma@nowfloats.com"
               },
               "location": {
-                "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
-                "gps": "28.5682594,77.391035",
+                "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51",
+                "gps": "12.9715987,77.5945627",
                 "descriptor": {
-                  "name": "Ankit enterprises"
+                  "name": "Ankit Grocery"
                 }
               }
             },
             "end": {
+              "time": {
+                "range": {
+                  "start": "2023-07-07T08:24:57.704Z",
+                  "end": "2023-07-07T08:54:57.704Z"
+                },
+                "timestamp": "2023-07-07T08:24:57.704Z"
+              },
               "contact": {
                 "phone": "9748270530",
                 "email": "soumyadeep.bhadra@nowfloats.com"
@@ -101,8 +110,9 @@
               "location": {
                 "gps": "12.9812430000001, 77.5950340000001",
                 "address": {
-                  "name": "ps",
-                  "locality": "1",
+                  "name": "Soumyadeep Bhadra",
+                  "building": "Bangalore",
+                  "locality": "Bangalore",
                   "city": "Bengaluru",
                   "state": "Karnataka",
                   "country": "IND",
@@ -115,77 +125,77 @@
         "quote": {
           "price": {
             "currency": "INR",
-            "value": "491.48"
+            "value": "431.94"
           },
           "breakup": [
             {
-              "@ondc/org/item_id": "cae57369-9776-4e0d-9ec0-4c5b748de999",
+              "@ondc/org/item_id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
               "@ondc/org/item_quantity": {
-                "count": 1
+                "count": 2
               },
-              "title": "Ankit 2",
+              "title": "parle Chair",
               "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
-                "value": "299"
+                "value": "180"
               },
               "item": {
                 "quantity": {
                   "available": {
-                    "count": "1497"
+                    "count": "146"
                   },
                   "maximum": {
-                    "count": "1497"
+                    "count": "146"
                   }
                 },
                 "price": {
                   "currency": "INR",
-                  "value": "299"
+                  "value": "90"
                 }
               }
             },
             {
-              "@ondc/org/item_id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+              "@ondc/org/item_id": "c71b4800-1e8d-4186-82db-eff8ded9a337",
               "@ondc/org/item_quantity": {
-                "count": 1
+                "count": 2
               },
-              "title": "ankit product",
+              "title": "unibic Chair",
               "@ondc/org/title_type": "item",
               "price": {
                 "currency": "INR",
-                "value": "171"
+                "value": "216"
               },
               "item": {
                 "quantity": {
                   "available": {
-                    "count": "100"
+                    "count": "113"
                   },
                   "maximum": {
-                    "count": "100"
+                    "count": "113"
                   }
                 },
                 "price": {
                   "currency": "INR",
-                  "value": "171"
+                  "value": "108"
                 }
               }
             },
             {
-              "@ondc/org/item_id": "978896a4-28a1-42b8-b924-e08319fff8e1",
+              "@ondc/org/item_id": "2ec1aa24-2e0c-4718-90c3-4dbe42500d00",
               "title": "Convenience Fee",
               "@ondc/org/title_type": "misc",
               "price": {
                 "currency": "INR",
-                "value": "15.48"
+                "value": "5.94"
               }
             },
             {
-              "@ondc/org/item_id": "978896a4-28a1-42b8-b924-e08319fff8e1",
+              "@ondc/org/item_id": "2ec1aa24-2e0c-4718-90c3-4dbe42500d00",
               "title": "Delivery charges",
               "@ondc/org/title_type": "delivery",
               "price": {
                 "currency": "INR",
-                "value": "6"
+                "value": "30"
               }
             }
           ],
@@ -195,9 +205,9 @@
           "uri": "https://juspay.in/",
           "tl_method": "http/get",
           "params": {
-            "amount": "491.48",
+            "amount": "431.94",
             "currency": "INR",
-            "transaction_id": "1590dc09-2603-4b8a-8025-ba7ee935cb1b"
+            "transaction_id": "b975ec06-6678-45bb-b440-b77c4067808b"
           },
           "status": "PAID",
           "type": "ON-ORDER",
@@ -208,23 +218,19 @@
             {
               "settlement_counterparty": "seller-app",
               "settlement_phase": "sale-amount",
-              "settlement_type": "neft",
-              "settlement_bank_account_no": "021000021",
-              "settlement_ifsc_code": "SBIN0011514",
-              "beneficiary_name": "Ankit Kumar Bharti",
-              "bank_name": "SBI Bank",
-              "branch_name": "Noida"
+              "settlement_type": "upi",
+              "upi_address": "ankit@success"
             }
           ]
         },
+        "created_at": "2023-07-13T04:13:34.478Z",
+        "updated_at": "2023-07-13T04:13:36.609Z",
         "documents": [
           {
-            "url": "https://jiw-ozed-as-staging.azurewebsites.net/invoice/ffed3a35-0b5a-474f-9b00-f8ec448e4a6b/download",
+            "url": "https://jiw-ozed-as-staging.azurewebsites.net/invoice/0dce0235-d92e-4f2a-97aa-cd3eeea43353/download",
             "label": "Invoice"
           }
-        ],
-        "created_at": "2023-07-14T09:21:28.280Z",
-        "updated_at": "2023-07-14T09:21:28.506Z"
+        ]
       }
     }
   }
