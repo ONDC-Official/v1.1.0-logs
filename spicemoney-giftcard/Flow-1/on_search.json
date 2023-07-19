@@ -13,9 +13,16 @@
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "bpp_id": "ondc.vistar.solutions",
     "version": "1.0.0",
+
     "message_id": "7f9e1c85-2e77-49d4-8dc6-aa02fcd74b99",
     "timestamp": "2023-07-12T06:12:55.506Z",
     "transaction_id": "cfcb62c3-da3b-4b69-a61c-e87e2594e2e5",
+
+    "message_id": "937a5e0f-2be1-4157-a18c-91663c1be490",
+    "timestamp": "2023-07-05T12:39:56.070Z",
+    "transaction_id": "239f4c6d-ca78-4c67-9d09-e32d3a37ac7a",
+    "ttl": "PT30S",
+
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
   },
@@ -23,8 +30,13 @@
     "catalog": {
       "fulfillments": [
         {
+
           "id": "F2",
           "type": "EMAIL"
+
+          "id": "F3",
+          "type": "SMS"
+
         }
       ],
       "descriptor": {
@@ -42,7 +54,11 @@
           "ttl": "P1D",
           "time": {
             "label": "enable",
+
             "timestamp": "2023-07-12T06:12:55.500Z"
+
+            "timestamp": "2023-07-05T12:39:56.067Z"
+
           },
           "descriptor": {
             "name": "Meri Saving",
@@ -59,7 +75,12 @@
               "descriptor": {
                 "code": "ONLINE"
               }
+
             }
+
+            },
+            null
+
           ],
           "offers": [],
           "items": [
@@ -98,7 +119,49 @@
                 "C1"
               ],
               "fulfillment_ids": [
+
                 "F2"
+
+                "F3"
+              ]
+            },
+            {
+              "id": "c4349d52-38f6-4a9d-be9a-e9b33187dc76",
+              "descriptor": {
+                "name": "",
+                "symbol": "https://catalogueproductfiles.s3.ap-south-1.amazonaws.com/brands/amazon%2B%286%29.jfif",
+                "short_desc": "SHORT",
+                "long_desc": "https://catalogueproductfiles.s3.ap-south-1.amazonaws.com/brands/amazon%2B%286%29.jfif",
+                "images": [
+                  "https://catalogueproductfiles.s3.ap-south-1.amazonaws.com/brands/image2.jfif"
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "minimum_value": "100",
+                "maximum_value": "10000"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "BRAND_DETAILS"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "BRAND_NAME"
+                      },
+                      "value": "NADITA"
+                    }
+                  ]
+                }
+              ],
+              "category_ids": [
+                "gift card"
+              ],
+              "fulfillment_ids": [
+                "F3"
+
               ]
             }
           ]

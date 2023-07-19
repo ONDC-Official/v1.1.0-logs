@@ -1,0 +1,130 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+        "transaction_id": "25958e8b-10ff-4dd3-8008-9db7bc6fb0a5",
+        "message_id": "5cd1a656-b74e-4b59-bf90-761ae18c80f6",
+        "timestamp": "2023-06-16T08:03:17.867Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111"
+            },
+            "items": [{
+                "fulfillment_id": "2f26220d-94b4-4501-aacf-c4eeaa998d2d",
+                "id": "57759"
+            }, {
+                "fulfillment_id": "2f26220d-94b4-4501-aacf-c4eeaa998d2d",
+                "id": "59823"
+            }],
+            "fulfillments": [{
+                "id": "2f26220d-94b4-4501-aacf-c4eeaa998d2d",
+                "@ondc\/org\/provider_name": "Pepsi Store - Sansi Grocery And Foods",
+                "tracking": false,
+                "@ondc\/org\/category": "Immediate Delivery",
+                "@ondc\/org\/TAT": "PT2H",
+                "state": {
+                    "descriptor": {
+                        "name": "Non serviceable",
+                        "code": "Non-serviceable"
+                    }
+                }
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "40"
+                },
+                "breakup": [{
+                    "@ondc\/org\/item_id": "57759",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 1
+                    },
+                    "item": {
+                        "quantity": {
+                            "available": {
+                                "count": "1"
+                            },
+                            "maximum": {
+                                "count": "1"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    },
+                    "title": "Lay's Potato Chips 50g, Classic Salted Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "20"
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "59823",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 1
+                    },
+                    "item": {
+                        "quantity": {
+                            "available": {
+                                "count": "1"
+                            },
+                            "maximum": {
+                                "count": "1"
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    },
+                    "title": "Lay's Potato Chips 50g, American Style Cream & Onion Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "20"
+                    }
+                }],
+                "ttl": "PT1H"
+            }
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "30009",
+        "path": "string",
+        "message": "Non-serviceable"
+    }
+}
+
+
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https://stage.pep1.in/ondc/public/OndcPreProd/callback",
+        "transaction_id": "25958e8b-10ff-4dd3-8008-9db7bc6fb0a5",
+        "message_id": "5cd1a656-b74e-4b59-bf90-761ae18c80f6",
+        "timestamp": "2023-06-16T08:03:17.867Z"
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}

@@ -1,0 +1,172 @@
+{
+    "context": {
+        "city": "std:*",
+        "action": "on_init",
+        "bap_id": "b-ondcbap.nlincs.in",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-11T16:20:48.811Z",
+        "message_id": "iiVzzBfEgKUJ7qAT0uDR5XBQOxqb7go0",
+        "core_version": "1.1.0",
+        "transaction_id": "8b85db8cf682a6653747001079c26200"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "102",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "21165"
+                },
+                {
+                    "id": "103",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21165"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "5500.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "2000.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "4000.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Gas Stove",
+                        "@ondc/org/item_id": "102",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "102",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "1500.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "1500.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Zodiac",
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "21165",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "billing": {
+                "name": "Arunraj",
+                "email": "arunraj@nstore.in",
+                "phone": "9840857465",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "8",
+                    "state": "KA",
+                    "country": "IND",
+                    "building": "Mosque Road",
+                    "locality": "Pulikeshi Nagar",
+                    "area_code": "560005"
+                },
+                "created_at": "2023-07-11T16:20:47.701Z",
+                "updated_at": "2023-07-11T16:20:47.701Z"
+            },
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "1"
+            },
+            "provider": {
+                "id": "21165"
+            },
+            "fulfillments": [
+                {
+                    "id": "21165",
+                    "end": {
+                        "contact": {
+                            "name": "Arunraj",
+                            "email": "arunraj@nstore.in",
+                            "phone": "9840857465"
+                        },
+                        "location": {
+                            "gps": "12.9994421, 77.6197371",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "8",
+                                "state": "KA",
+                                "country": "IND",
+                                "building": "Mosque Road",
+                                "locality": "Pulikeshi Nagar",
+                                "area_code": "560005"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false
+                }
+            ],
+            "provider_location": {
+                "id": "21165"
+            }
+        }
+    }
+}

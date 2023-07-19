@@ -1,0 +1,141 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+        "transaction_id": "416c9d14-9808-4c02-8565-2fdc12703a8b",
+        "message_id": "4b3bf69c-01ab-479d-a0ba-c5ea9b814969",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-16T08:44:20.087Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111"
+            },
+            "provider_location": {
+                "id": "S01425801-BGLR"
+            },
+            "items": [{
+                "id": "59823",
+                "quantity": {
+                    "count": 2
+                },
+                "fulfillment_id": "2122a4bb-7188-4637-8fa4-040c7b972d09"
+            }],
+            "billing": {
+                "name": "Nandita saini",
+                "address": {
+                    "name": "Nandita saini",
+                    "locality": "m403 sector 49",
+                    "building": "Hulikal",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560100"
+                },
+                "email": "n.singh@thetechtonic.in",
+                "phone": "9818470079",
+                "created_at": "2023-06-16T08:44:19.914Z",
+                "updated_at": "2023-06-16T08:44:19.914Z"
+            },
+            "fulfillments": [{
+                "id": "2122a4bb-7188-4637-8fa4-040c7b972d09",
+                "type": "Delivery",
+                "tracking": false,
+                "end": {
+                    "location": {
+                        "gps": "12.839749, 77.6628660000001",
+                        "address": {
+                            "name": "Nandita saini",
+                            "locality": "m403 sector 49",
+                            "building": "Hulikal",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560100"
+                        }
+                    },
+                    "contact": {
+                        "phone": "9818470079"
+                    }
+                }
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "90"
+                },
+                "breakup": [{
+                    "@ondc\/org\/item_id": "59823",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 2
+                    },
+                    "title": "Lay's Potato Chips 50g, American Style Cream & Onion Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "40"
+                    },
+                    "item": {
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "2122a4bb-7188-4637-8fa4-040c7b972d09",
+                    "title": "Delivery charges",
+                    "@ondc\/org\/title_type": "delivery",
+                    "price": {
+                        "currency": "INR",
+                        "value": "50.0"
+                    }
+                }],
+                "ttl": "PT1H"
+            },
+            "payment": {
+                "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+                "@ondc\/org\/buyer_app_finder_fee_amount": "3",
+                "@ondc\/org\/settlement_details": [{
+                    "settlement_counterparty": "seller-app",
+                    "settlement_phase": "sale-amount",
+                    "settlement_type": "rtgs",
+                    "settlement_bank_account_no": "114605000635",
+                    "settlement_ifsc_code": "ICIC0000396",
+                    "beneficiary_name": "THE TECH TONIC",
+                    "bank_name": "ICICI BANK",
+                    "branch_name": "ICICI Bank Ltd, South Extension-II, New Delhi"
+                }]
+            }
+        }
+    }
+}
+
+
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https://stage.pep1.in/ondc/public/OndcPreProd/callback",
+        "transaction_id": "416c9d14-9808-4c02-8565-2fdc12703a8b",
+        "message_id": "4b3bf69c-01ab-479d-a0ba-c5ea9b814969",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-16T08:44:20.087Z"
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}
