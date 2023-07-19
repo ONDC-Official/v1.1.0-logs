@@ -1,6 +1,12 @@
 {
   "context": {
     "domain": "FIS10",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "ad37af1a-8f9d-460f-9ebd-7b916972bb05",
+    "transaction_id": "d6f39503-efac-49f3-985c-85b8c84104e5",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "location": {
       "city": {
         "code": "std:080"
@@ -9,148 +15,27 @@
         "code": "IND"
       }
     },
-
-
-<<<<<<<< HEAD:spicemoney-giftcard/Flow-2/on_update.json
-    "action": "on_update",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "bpp_id": "ondc.vistar.solutions",
-    "version": "1.0.0",
-    "message_id": "6ba57b73-be9c-4442-af9d-9d97f79aa961",
-    "timestamp": "2023-07-12T07:59:22.562Z",
-    "transaction_id": "c19f3c11-2140-498c-a781-dec9edc96174",
-
-
     "action": "on_confirm",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "bpp_id": "ondc.vistar.solutions",
     "version": "1.0.0",
-
-    "message_id": "c1545700-f70d-49e2-8006-997ac710f708",
-    "timestamp": "2023-07-12T06:16:50.810Z",
-    "transaction_id": "c578ed83-b14d-4ad4-b957-26ee26736c4e",
-
-    "message_id": "3fadfdcb-842b-4726-81d5-ac4fd1473032",
-    "timestamp": "2023-07-05T13:18:36.588Z",
-    "transaction_id": "41094fc9-f496-440b-bf9b-cca3704be84f",
->>>>>>>> upstream/main:spicemoney-giftcard/Flow-1/on_confirm1.json
-
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
+    "timestamp": "2023-07-19T08:46:07.557Z"
   },
   "message": {
     "order": {
-
-      "id": "ecd07986-905c-494e-ac18-245f2d20b22a",
+      "id": "9a88ec54-d1ae-4ba8-a22a-27b08ece1e55",
       "status": "ACCEPTED",
-
-<<<<<<<< HEAD:spicemoney-giftcard/Flow-2/on_update.json
-      "id": "8d7786b8-3eb8-4f7f-9214-0daddcf2b5a3",
-      "status": "IN-PROGRESS",
-      "tags": [
-        {
-          "descriptor": {
-            "code": "UPDATE_RECEIVER_INFO"
-          },
-          "list": [
-            {
-              "descriptor": {
-                "code": "EMAIL"
-              },
-              "value": "sagar.revanna@eminds.ai"
-            },
-            {
-              "descriptor": {
-                "code": "PHONE"
-              },
-              "value": "9964453579"
-            }
-          ]
-        }
-      ],
-
-      "id": "f37dd04f-2ee4-4e06-8cc7-1e464d595bee",
-      "status": "ACCEPTED",
->>>>>>>> upstream/main:spicemoney-giftcard/Flow-1/on_confirm1.json
-
-      "fulfillments": [
-        {
-          "id": "F2",
-          "type": "EMAIL",
-
-
-<<<<<<<< HEAD:spicemoney-giftcard/Flow-2/on_update.json
-
-          "tracking": false,
->>>>>>>> upstream/main:spicemoney-giftcard/Flow-1/on_confirm1.json
-
-          "customer": {
-            "person": {
-              "name": "Sagar"
-            },
-            "contact": {
-              "phone": "1234567890",
-              "email": "sagar@google.com"
-            }
-          },
-          "stops": [
-            {
-              "id": "0",
-              "contact": {
-
-                "phone": "9999888670",
-
-                "phone": "9964453579",
-
-                "email": "sagar.revanna@eminds.ai"
-              },
-              "person": {
-                "name": "Test receiver"
-              }
-            }
-
-
-          ],
-          "tags": [
-            {
-              "descriptor": {
-                "code": "UPDATE_RECEIVER_INFO"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "EMAIL"
-                  },
-                  "value": "sagar.revanna@eminds.ai"
-                },
-                {
-                  "descriptor": {
-                    "code": "PHONE"
-                  },
-                  "value": "9964453579"
-                }
-              ]
-            }
-
-          ]
-        }
-      ],
+      "type": "DEFAULT",
       "items": [
         {
-          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89",
+          "price": {
+            "currency": "INR",
+            "value": "2500"
+          },
           "quantity": {
             "selected": {
               "count": 1
             }
           },
-
-          "price": {
-            "currency": "INR",
-            "value": "1000"
-          },
-
-
           "fulfillment_ids": [
             "F2"
           ],
@@ -164,13 +49,9 @@
                   "descriptor": {
                     "code": "FIXED_AMOUNT"
                   },
-                  "value": "1000"
+                  "value": "2500"
                 }
               ]
-
-
-<<<<<<<< HEAD:spicemoney-giftcard/Flow-2/on_update.json
-
             },
             {
               "descriptor": {
@@ -187,17 +68,15 @@
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Good luck"
+                  "value": "Happy Birthday"
                 }
               ]
->>>>>>>> upstream/main:spicemoney-giftcard/Flow-1/on_confirm1.json
-
             }
           ]
         }
       ],
       "billing": {
-        "name": "100",
+        "name": "Phani Mahidhar",
         "address": "Apartment Building",
         "state": {
           "name": "Telangana",
@@ -207,21 +86,48 @@
           "name": "Hyderabad",
           "code": "HY"
         },
-        "email": "sagar@google.com",
+        "email": "sagar.revanna@eminds.ai",
         "phone": "1234567890"
       },
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL",
+          "customer": {
+            "person": {
+              "name": "Sagar"
+            },
+            "contact": {
+              "phone": "1234567890",
+              "email": "sagar.revanna@eminds.ai"
+            }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "contact": {
+                "phone": "9999888670",
+                "email": "sagar.revanna@eminds.ai"
+              },
+              "person": {
+                "name": "Sagar R"
+              }
+            }
+          ]
+        }
+      ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1000"
+          "value": "2250"
         },
         "breakup": [
           {
             "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89",
               "price": {
                 "currency": "INR",
-                "value": "1000"
+                "value": "2500"
               },
               "quantity": {
                 "selected": {
@@ -232,12 +138,12 @@
             "title": "item",
             "price": {
               "currency": "INR",
-              "value": "1000"
+              "value": "2500"
             }
           },
           {
             "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89"
             },
             "title": "convenience fee",
             "price": {
@@ -247,17 +153,17 @@
           },
           {
             "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89"
             },
             "title": "offer",
             "price": {
               "currency": "INR",
-              "value": "-0"
+              "value": "-250"
             }
           },
           {
             "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89"
             },
             "title": "tax",
             "price": {
@@ -270,34 +176,14 @@
       },
       "payments": [
         {
-
           "collected_by": "BAP",
           "params": {
-            "transaction_id": "order_MCmtykHc4cIe8I",
-            "amount": "1000",
+            "transaction_id": "order_MFbBUumfAmld8R",
+            "amount": "2250",
             "currency": "INR"
           },
           "type": "ON-ORDER",
           "status": "PAID",
-
-<<<<<<<< HEAD:spicemoney-giftcard/Flow-2/on_update.json
-
-          "collected_by": "BAP",
-          "params": {
-            "transaction_id": "order_MA8KYB4PQzysYQ",
-            "amount": "1000",
-            "currency": "INR"
-          },
->>>>>>>> upstream/main:spicemoney-giftcard/Flow-1/on_confirm1.json
-          "type": "ON-ORDER",
-          "collected_by": "BAP",
-          "status": "PAID",
-          "params": {
-            "currency": "INR",
-            "transaction_id": "order_MCoWjvJCrdJ5VF",
-            "amount": "1000"
-          },
-
           "tags": [
             {
               "descriptor": {
@@ -333,25 +219,25 @@
                   "descriptor": {
                     "code": "beneficiary_name"
                   },
-                  "value": "Meri Saving"
+                  "value": "1111212122121212121212121212121121212121212221"
                 },
                 {
                   "descriptor": {
                     "code": "bank_name"
                   },
-                  "value": "SONARI"
+                  "value": "11111111111"
                 },
                 {
                   "descriptor": {
                     "code": "branch_name"
                   },
-                  "value": "Sarita vihar"
+                  "value": "rererereff"
                 },
                 {
                   "descriptor": {
                     "code": "ifsc_code"
                   },
-                  "value": "BARB0SONARI"
+                  "value": "1111111111111111111"
                 },
                 {
                   "descriptor": {
@@ -364,18 +250,7 @@
           ]
         }
       ],
-
-      "created_at": "2023-07-12T06:16:50.814Z",
-      "updated_at": "2023-07-12T06:16:50.814Z"
-
-<<<<<<<< HEAD:spicemoney-giftcard/Flow-2/on_update.json
-      "created_at": "2023-07-12T07:52:04.938Z",
-      "updated_at": "2023-07-12T07:59:22.607Z"
-
-      "created_at": "2023-07-05T13:18:36.591Z",
-      "updated_at": "2023-07-05T13:18:36.591Z"
->>>>>>>> upstream/main:spicemoney-giftcard/Flow-1/on_confirm1.json
-
+      "updated_at": "2023-07-19T08:46:07.567Z"
     }
   }
 }

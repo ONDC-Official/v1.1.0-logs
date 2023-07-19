@@ -1,6 +1,12 @@
 {
   "context": {
     "domain": "FIS10",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "c01a8847-304c-41ed-afb4-8eb514c085bc",
+    "transaction_id": "5d6cc15e-17f7-40d7-adba-1b9022217404",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "location": {
       "city": {
         "code": "std:080"
@@ -10,70 +16,22 @@
       }
     },
     "action": "on_init",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "bpp_id": "ondc.vistar.solutions",
     "version": "1.0.0",
-
-    "message_id": "44c6709c-3254-4189-8499-27878bdcbe58",
-    "timestamp": "2023-07-12T07:52:04.724Z",
-    "transaction_id": "c19f3c11-2140-498c-a781-dec9edc96174",
-
-<<<<<<<< HEAD:spicemoney-giftcard/Flow-1/on_init1.json
-    "message_id": "b77fe2c4-d16d-431c-91cd-a85da9d1ee06",
-    "timestamp": "2023-07-12T06:16:41.768Z",
-    "transaction_id": "c578ed83-b14d-4ad4-b957-26ee26736c4e",
-
-    "message_id": "5571b558-8c3a-4c3c-887b-40628a61d2d4",
-    "timestamp": "2023-07-05T13:43:07.577Z",
-    "transaction_id": "2b5bbbff-9d9e-41eb-a388-7e1dce48ceaa",
->>>>>>>> upstream/main:spicemoney-giftcard/Flow-2/on_init.json
-
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
+    "timestamp": "2023-07-19T08:56:29.211Z"
   },
   "message": {
     "order": {
-      "fulfillments": [
-        {
-          "id": "F2",
-          "type": "EMAIL",
-          "customer": {
-            "person": {
-              "name": "Sagar"
-            },
-            "contact": {
-              "phone": "1234567890",
-              "email": "sagar@google.com"
-            }
-          },
-          "stops": [
-            {
-              "id": "0",
-              "contact": {
-
-                "phone": "9999888670",
-                "email": "sagar.revanna435345345345@eminds.ai"
-
-<<<<<<<< HEAD:spicemoney-giftcard/Flow-1/on_init1.json
-                "phone": "9999888670",
-                "email": "sagar.revanna@eminds.ai"
-
-                "phone": "999988867",
-                "email": "sagar.revanna@goog.ai"
->>>>>>>> upstream/main:spicemoney-giftcard/Flow-2/on_init.json
-
-              },
-              "person": {
-                "name": "Test receiver"
-              }
-            }
-          ]
-        }
-      ],
+      "type": "DEFAULT",
+      "provider": {
+        "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
+      },
       "items": [
         {
           "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "price": {
+            "currency": "INR",
+            "value": "1000"
+          },
           "quantity": {
             "selected": {
               "count": 1
@@ -95,10 +53,6 @@
                   "value": "1000"
                 }
               ]
-
-
-<<<<<<<< HEAD:spicemoney-giftcard/Flow-1/on_init1.json
-
             },
             {
               "descriptor": {
@@ -115,21 +69,15 @@
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Good luck"
+                  "value": "Happy Birthday"
                 }
               ]
->>>>>>>> upstream/main:spicemoney-giftcard/Flow-2/on_init.json
-
             }
-          ],
-          "price": {
-            "currency": "INR",
-            "value": 1000
-          }
+          ]
         }
       ],
       "billing": {
-        "name": "100",
+        "name": "Phani Mahidhar",
         "address": "Apartment Building",
         "state": {
           "name": "Telangana",
@@ -139,26 +87,53 @@
           "name": "Hyderabad",
           "code": "HY"
         },
-        "email": "sagar@google.com",
+        "email": "sagar.revanna@eminds.ai",
         "phone": "1234567890"
       },
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL",
+          "customer": {
+            "person": {
+              "name": "Sagar"
+            },
+            "contact": {
+              "phone": "1234567890",
+              "email": "sagar.revanna@eminds.ai"
+            }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "contact": {
+                "phone": "9999888670",
+                "email": "sagar.revanna3453453535353@eminds.ai"
+              },
+              "person": {
+                "name": "Sagar R"
+              }
+            }
+          ]
+        }
+      ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": 1000
+          "value": "900"
         },
         "breakup": [
           {
             "item": {
               "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+              "price": {
+                "currency": "INR",
+                "value": "1000"
+              },
               "quantity": {
                 "selected": {
                   "count": 1
                 }
-              },
-              "price": {
-                "currency": "INR",
-                "value": 1000
               }
             },
             "title": "item",
@@ -184,17 +159,7 @@
             "title": "offer",
             "price": {
               "currency": "INR",
-              "value": "-0"
-            }
-          },
-          {
-            "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
-            },
-            "title": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "0"
+              "value": "-100"
             }
           }
         ],
@@ -202,8 +167,8 @@
       },
       "payments": [
         {
-          "type": "ON-ORDER",
           "collected_by": "BAP",
+          "type": "ON-ORDER",
           "status": "NOT-PAID",
           "tags": [
             {
@@ -240,25 +205,25 @@
                   "descriptor": {
                     "code": "beneficiary_name"
                   },
-                  "value": "Meri Saving"
+                  "value": "1111212122121212121212121212121121212121212221"
                 },
                 {
                   "descriptor": {
                     "code": "bank_name"
                   },
-                  "value": "SONARI"
+                  "value": "11111111111"
                 },
                 {
                   "descriptor": {
                     "code": "branch_name"
                   },
-                  "value": "Sarita vihar"
+                  "value": "rererereff"
                 },
                 {
                   "descriptor": {
                     "code": "ifsc_code"
                   },
-                  "value": "BARB0SONARI"
+                  "value": "1111111111111111111"
                 },
                 {
                   "descriptor": {
@@ -270,10 +235,7 @@
             }
           ]
         }
-      ],
-      "provider": {
-        "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
-      }
+      ]
     }
   }
 }

@@ -1,6 +1,13 @@
 {
   "context": {
     "domain": "FIS10",
+    "ttl": "PT30S",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "3507f1dc-a149-4c38-a816-529d074c5cfa",
+    "transaction_id": "359a5e63-1f40-4543-b5d4-b27ee4b30305",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "location": {
       "city": {
         "code": "std:080"
@@ -10,49 +17,25 @@
       }
     },
     "action": "on_select",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "bpp_id": "ondc.vistar.solutions",
     "version": "1.0.0",
-
-    "message_id": "2bc0c95e-ec96-435f-bc39-4d451c31e9fd",
-    "timestamp": "2023-07-12T06:13:16.898Z",
-    "transaction_id": "70f1d1ee-ce29-4287-93cf-475423e07d41",
-
-    "message_id": "5a520edf-2bcc-4213-acec-aa46183567cf",
-    "timestamp": "2023-07-05T12:40:54.278Z",
-    "transaction_id": "e77343d4-181c-4694-8584-0032f03aa0cf",
-
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
+    "timestamp": "2023-07-19T08:35:38.938Z"
   },
   "message": {
     "order": {
-      "fulfillments": [
-        {
-          "id": "F2",
-          "type": "EMAIL"
-        }
-      ],
+      "type": "DEFAULT",
       "provider": {
         "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec",
-        "ttl": "P1D",
-        "time": {
-          "label": "enable",
-
-          "timestamp": "2023-07-12T06:13:16.895Z"
-
-          "timestamp": "2023-07-05T12:40:54.275Z"
-
-        },
         "descriptor": {
-          "name": "Meri Saving",
-          "symbol": "https://giftcard.com/images/1-image",
+          "name": "hjhj",
           "short_desc": "Online Gift Card Store",
           "long_desc": "Online Gift Card Store",
           "images": [
             "https://giftcard.com/images/store-image"
           ]
+        },
+        "time": {
+          "label": "enable",
+          "timestamp": "2023-07-19T08:35:38.977Z"
         },
         "categories": [
           {
@@ -61,14 +44,14 @@
               "code": "ONLINE"
             }
           }
-        ]
+        ],
+        "ttl": "P1D"
       },
       "items": [
         {
           "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
           "descriptor": {
             "name": "Amazon Gift Card",
-            "symbol": "https://i.imgur.com/LaA58IU.png",
             "short_desc": "Amazon Shopping Voucher is just what you need if you want to shop on a budget. Amazon Shopping Vouchers help you buy hundreds of products at amazing discounts.",
             "long_desc": "Amazon Shopping Voucher is just what you need if you want to shop on a budget. Amazon Shopping Vouchers help you buy hundreds of products at amazing discounts.",
             "images": [
@@ -80,6 +63,12 @@
             "minimum_value": "1000",
             "maximum_value": "10000"
           },
+          "category_ids": [
+            "C1"
+          ],
+          "fulfillment_ids": [
+            "F2"
+          ],
           "tags": [
             {
               "descriptor": {
@@ -102,7 +91,7 @@
                   "descriptor": {
                     "code": "EXPIRY_PERIOD"
                   },
-                  "value": "P5M"
+                  "value": "3M"
                 },
                 {
                   "descriptor": {
@@ -121,7 +110,22 @@
                   "descriptor": {
                     "code": "Enabled"
                   },
-                  "value": "false"
+                  "value": "true"
+                },
+                {
+                  "descriptor": {
+                    "code": "RECEIVER_NAME"
+                  }
+                },
+                {
+                  "descriptor": {
+                    "code": "MESSAGE"
+                  }
+                },
+                {
+                  "descriptor": {
+                    "code": "PREVIEW_IMAGE"
+                  }
                 }
               ]
             },
@@ -165,43 +169,41 @@
                   "descriptor": {
                     "code": "FIXED_AMOUNT"
                   },
+                  "value": "600"
+                },
+                {
+                  "descriptor": {
+                    "code": "FIXED_AMOUNT"
+                  },
                   "value": "1000"
                 },
                 {
                   "descriptor": {
                     "code": "FIXED_AMOUNT"
                   },
-
-                  "value": "300"
+                  "value": "2000"
                 },
                 {
                   "descriptor": {
                     "code": "FIXED_AMOUNT"
                   },
-                  "value": "200"
-
-                  "value": "2000"
-
+                  "value": "4000"
                 }
               ]
             }
-          ],
-          "category_ids": [
-            "C1"
-          ],
-          "fulfillment_ids": [
-            "F2"
           ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL"
         }
       ],
       "quote": {
         "price": {
-
-          "value": "1000",
-
-          "value": 1000,
-
-          "currency": "INR"
+          "currency": "INR",
+          "value": "900"
         },
         "breakup": [
           {
@@ -223,31 +225,31 @@
             "item": {
               "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
             },
+            "title": "tax",
             "price": {
               "currency": "INR",
-              "value": 0
-            },
-            "title": "tax"
+              "value": "0"
+            }
           },
           {
             "item": {
               "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
             },
+            "title": "convenience fee",
             "price": {
               "currency": "INR",
-              "value": 0
-            },
-            "title": "convenience fee"
+              "value": "0"
+            }
           },
           {
             "item": {
               "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
             },
+            "title": "offer",
             "price": {
               "currency": "INR",
-              "value": 0
-            },
-            "title": "offer"
+              "value": "-100"
+            }
           }
         ],
         "ttl": "P1D"
