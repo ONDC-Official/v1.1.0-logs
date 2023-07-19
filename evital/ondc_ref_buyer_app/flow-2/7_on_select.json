@@ -1,0 +1,122 @@
+{
+    "url": "https://buyer-app-preprod.ondc.org/protocol/v1/on_select",
+    "header": {
+        "Authorization": "Signature keyId=\"dev-ondc.evitalrx.in|effcc10c-3318-4a1f-9996-89804f5c9a69|ed25519\",algorithm=\"ed25519\",created=\"1689769616\",expires=\"1689773816\",headers=\"(created) (expires) digest\",signature=\"u+zw3c6dNxEp8h6WhqTjMaRxQUAzK4INbLKemZwbOUPwqWpIlLN31l7P2jYL6Vrjwxc+DFC2pvLV6dZBOxMKAg==\"",
+        "content-type": "application/json",
+        "accept": "application/json"
+    },
+    "body": {
+        "context": {
+            "action": "on_select",
+            "timestamp": "2023-07-19T12:31:56.556Z",
+            "domain": "nic2004:52110",
+            "bpp_id": "dev-ondc.evitalrx.in",
+            "bpp_uri": "https://dev-ondc.evitalrx.in/",
+            "country": "IND",
+            "city": "std:079",
+            "core_version": "1.1.0",
+            "ttl": "PT30S",
+            "transaction_id": "81ef6330-7479-4f07-a403-93dd8759904e",
+            "message_id": "51f56b23-8ff9-48db-978d-8069bd290b50",
+            "bap_id": "buyer-app-preprod.ondc.org",
+            "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+            "key": "uutMeFk16yHrCm38TEUsLe2hN6aDDUlMIyFPlKXadfw="
+        },
+        "message": {
+            "order": {
+                "provider": {
+                    "id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                },
+                "items": [
+                    {
+                        "fulfillment_id": "1",
+                        "id": "lxomkrXjeoO9jqJrt+6yIA=="
+                    },
+                    {
+                        "fulfillment_id": "1",
+                        "id": "fIeVk5qnT/SYcU7t2IGtvg=="
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "1",
+                        "@ondc/org/provider_name": "Monika Medical Loose Master Admin",
+                        "tracking": false,
+                        "@ondc/org/category": "Same Day Delivery",
+                        "@ondc/org/TAT": "P1D",
+                        "state": {
+                            "descriptor": {
+                                "code": "Non-serviceable"
+                            }
+                        }
+                    }
+                ],
+                "quote": {
+                    "price": {
+                        "currency": "INR",
+                        "value": "400"
+                    },
+                    "breakup": [
+                        {
+                            "@ondc/org/item_id": "lxomkrXjeoO9jqJrt+6yIA==",
+                            "@ondc/org/item_quantity": {
+                                "count": 2
+                            },
+                            "title": "Dove Baby Lotion Rich Moisture",
+                            "@ondc/org/title_type": "item",
+                            "price": {
+                                "currency": "INR",
+                                "value": "200"
+                            },
+                            "item": {
+                                "quantity": {
+                                    "available": {
+                                        "count": "104"
+                                    },
+                                    "maximum": {
+                                        "count": "104"
+                                    }
+                                },
+                                "price": {
+                                    "currency": "INR",
+                                    "value": "100"
+                                }
+                            }
+                        },
+                        {
+                            "@ondc/org/item_id": "fIeVk5qnT/SYcU7t2IGtvg==",
+                            "@ondc/org/item_quantity": {
+                                "count": 2
+                            },
+                            "title": "MamyPoko Extra Absorb Pants L",
+                            "@ondc/org/title_type": "item",
+                            "price": {
+                                "currency": "INR",
+                                "value": "200"
+                            },
+                            "item": {
+                                "quantity": {
+                                    "available": {
+                                        "count": "99"
+                                    },
+                                    "maximum": {
+                                        "count": "99"
+                                    }
+                                },
+                                "price": {
+                                    "currency": "INR",
+                                    "value": "100"
+                                }
+                            }
+                        }
+                    ],
+                    "ttl": "PT8H"
+                }
+            }
+        },
+        "error": {
+            "type": "DOMAIN-ERROR",
+            "code": "30009"
+        }
+    }
+}

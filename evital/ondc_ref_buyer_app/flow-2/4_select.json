@@ -1,0 +1,72 @@
+{
+    "headers": {
+        "x-forwarded-for": "43.205.208.46",
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "dev-ondc.evitalrx.in",
+        "x-amzn-trace-id": "Root=1-64b7d7b9-2f31404a37eab0453f823982",
+        "content-length": "867",
+        "user-agent": "python-requests/2.23.0",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "authorization": "Signature keyId=\"buyer-app-preprod.ondc.org|96c81878-f327-457e-8835-5b35bb20f099|ed25519\",algorithm=\"ed25519\",created=\"1689769913\",expires=\"1689773513\",headers=\"(created) (expires) digest\",signature=\"E5FR9qLHxMpW8CbD5HF5axagK/QgtsBK15qF+IrcDcFAM/dNw4VKhWLsOTanEPwYbIZsCwzkC99kXHSa6bWqBQ==\"",
+        "content-type": "application/json"
+    },
+    "body": {
+        "context": {
+            "domain": "nic2004:52110",
+            "country": "IND",
+            "city": "std:080",
+            "action": "select",
+            "core_version": "1.1.0",
+            "bap_id": "buyer-app-preprod.ondc.org",
+            "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+            "bpp_uri": "https://dev-ondc.evitalrx.in/",
+            "transaction_id": "81ef6330-7479-4f07-a403-93dd8759904e",
+            "message_id": "266dbed3-77b0-4ac2-a254-5fd7134e08c3",
+            "timestamp": "2023-07-19T12:31:53.904Z",
+            "bpp_id": "dev-ondc.evitalrx.in",
+            "ttl": "PT30S"
+        },
+        "message": {
+            "order": {
+                "items": [
+                    {
+                        "id": "lxomkrXjeoO9jqJrt+6yIA==",
+                        "quantity": {
+                            "count": 2
+                        },
+                        "location_id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                    },
+                    {
+                        "id": "fIeVk5qnT/SYcU7t2IGtvg==",
+                        "quantity": {
+                            "count": 2
+                        },
+                        "location_id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                    }
+                ],
+                "provider": {
+                    "id": "XTGvKjq5Kv+Ybrn3YY7smw==",
+                    "locations": [
+                        {
+                            "id": "XTGvKjq5Kv+Ybrn3YY7smw=="
+                        }
+                    ]
+                },
+                "fulfillments": [
+                    {
+                        "end": {
+                            "location": {
+                                "gps": "12.942671, 77.397846",
+                                "address": {
+                                    "area_code": "562130"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
