@@ -1,6 +1,12 @@
 {
   "context": {
     "domain": "FIS10",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "c01a8847-304c-41ed-afb4-8eb514c085bc",
+    "transaction_id": "5d6cc15e-17f7-40d7-adba-1b9022217404",
+    "bpp_id": "ondc.vistar.com",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp/",
     "location": {
       "city": {
         "code": "std:080"
@@ -10,47 +16,14 @@
       }
     },
     "action": "on_status",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp/",
-    "bpp_id": "vistar.com",
     "version": "1.0.0",
-    "message_id": "5571b558-8c3a-4c3c-887b-40628a61d2d4",
-    "timestamp": "2023-07-05T13:43:16.499Z",
-    "transaction_id": "2b5bbbff-9d9e-41eb-a388-7e1dce48ceaa",
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
+    "timestamp": "2023-07-19T08:57:53.882Z"
   },
   "message": {
     "order": {
-      "id": "425ad6ac-b130-435f-b778-89bcd02442cb",
-      "status": "IN-PROGRESS",
-      "fulfillments": [
-        {
-          "id": "F2",
-          "type": "EMAIL",
-          "customer": {
-            "person": {
-              "name": "Sagar"
-            },
-            "contact": {
-              "phone": "1234567890",
-              "email": "sagar@google.com"
-            }
-          },
-          "stops": [
-            {
-              "id": "0",
-              "contact": {
-                "phone": "999988867",
-                "email": "sagar.revanna@goog.ai"
-              },
-              "person": {
-                "name": "Test receiver"
-              }
-            }
-          ]
-        }
-      ],
+      "id": "4f8c5a2e-44f4-44da-b7f8-d9eb865f607d",
+      "status": "COMPLETED",
+      "type": "DEFAULT",
       "items": [
         {
           "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
@@ -91,7 +64,7 @@
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Good luck"
+                  "value": "Happy Birthday"
                 }
               ]
             }
@@ -99,7 +72,7 @@
         }
       ],
       "billing": {
-        "name": "100",
+        "name": "Phani Mahidhar",
         "address": "Apartment Building",
         "state": {
           "name": "Telangana",
@@ -109,13 +82,61 @@
           "name": "Hyderabad",
           "code": "HY"
         },
-        "email": "sagar@google.com",
+        "email": "sagar.revanna@eminds.ai",
         "phone": "1234567890"
       },
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL",
+          "customer": {
+            "person": {
+              "name": "Sagar"
+            },
+            "contact": {
+              "phone": "1234567890",
+              "email": "sagar.revanna@eminds.ai"
+            }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "contact": {
+                "phone": "9964453579",
+                "email": "sagar.revanna@eminds.ai"
+              },
+              "person": {
+                "name": "Sagar R"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "UPDATE_RECEIVER_INFO"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "EMAIL"
+                  },
+                  "value": "sagar.revanna@eminds.ai"
+                },
+                {
+                  "descriptor": {
+                    "code": "PHONE"
+                  },
+                  "value": "9964453579"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1000"
+          "value": "900"
         },
         "breakup": [
           {
@@ -154,17 +175,7 @@
             "title": "offer",
             "price": {
               "currency": "INR",
-              "value": "-0"
-            }
-          },
-          {
-            "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
-            },
-            "title": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "0"
+              "value": "-100"
             }
           }
         ],
@@ -172,14 +183,14 @@
       },
       "payments": [
         {
-          "type": "ON-ORDER",
           "collected_by": "BAP",
-          "status": "PAID",
           "params": {
-            "currency": "INR",
-            "transaction_id": "order_MA8liR5PYQf5BB",
-            "amount": "1000"
+            "transaction_id": "order_MFbMcin1I0vrbc",
+            "amount": "900",
+            "currency": "INR"
           },
+          "type": "ON-ORDER",
+          "status": "PAID",
           "tags": [
             {
               "descriptor": {
@@ -215,25 +226,25 @@
                   "descriptor": {
                     "code": "beneficiary_name"
                   },
-                  "value": "Meri Saving"
+                  "value": "1111212122121212121212121212121121212121212221"
                 },
                 {
                   "descriptor": {
                     "code": "bank_name"
                   },
-                  "value": "SONARI"
+                  "value": "11111111111"
                 },
                 {
                   "descriptor": {
                     "code": "branch_name"
                   },
-                  "value": "Sarita vihar"
+                  "value": "rererereff"
                 },
                 {
                   "descriptor": {
                     "code": "ifsc_code"
                   },
-                  "value": "BARB0SONARI"
+                  "value": "1111111111111111111"
                 },
                 {
                   "descriptor": {
@@ -246,27 +257,8 @@
           ]
         }
       ],
-      "created_at": "2023-07-05T13:43:07.770Z",
-      "updated_at": "2023-07-05T13:43:07.770Z",
-      "tags": [
-        {
-          "descriptor": {
-            "code": "UPDATE_RECEIVER_INFO"
-          },
-          "list": [
-            {
-              "descriptor": {
-                "code": "EMAIL"
-              }
-            },
-            {
-              "descriptor": {
-                "code": "PHONE"
-              }
-            }
-          ]
-        }
-      ]
+      "created_at": "2023-07-19T08:56:29.597Z",
+      "updated_at": "2023-07-19T08:57:53.996Z"
     }
   }
 }

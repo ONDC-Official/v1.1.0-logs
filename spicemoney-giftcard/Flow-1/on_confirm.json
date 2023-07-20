@@ -1,6 +1,12 @@
 {
   "context": {
     "domain": "FIS10",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "8c721a06-7c5e-40f4-a7ad-44ec2979f823",
+    "transaction_id": "359a5e63-1f40-4543-b5d4-b27ee4b30305",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "location": {
       "city": {
         "code": "std:080"
@@ -10,59 +16,25 @@
       }
     },
     "action": "on_confirm",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "bpp_id": "ondc.vistar.solutions",
     "version": "1.0.0",
-    "message_id": "17f071e1-b418-410b-b86a-55232d774102",
-    "timestamp": "2023-07-05T12:53:15.926Z",
-    "transaction_id": "e77343d4-181c-4694-8584-0032f03aa0cf",
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
+    "timestamp": "2023-07-19T08:36:10.061Z"
   },
   "message": {
     "order": {
-      "id": "0c39b37c-dad3-4bc2-8eb3-3d2c03f8f4ff",
+      "id": "2edbeefa-ebc7-459f-b152-15755824a182",
       "status": "ACCEPTED",
-      "fulfillments": [
-        {
-          "id": "F2",
-          "type": "EMAIL",
-          "tracking": false,
-          "customer": {
-            "person": {
-              "name": "Sagar"
-            },
-            "contact": {
-              "phone": "1234567890",
-              "email": "sagar@google.com"
-            }
-          },
-          "stops": [
-            {
-              "id": "0",
-              "contact": {
-                "phone": "9999888867",
-                "email": "sagar.revanna@eminds.ai"
-              },
-              "person": {
-                "name": "Test receiver"
-              }
-            }
-          ]
-        }
-      ],
+      "type": "DEFAULT",
       "items": [
         {
           "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "price": {
+            "currency": "INR",
+            "value": "1000"
+          },
           "quantity": {
             "selected": {
               "count": 1
             }
-          },
-          "price": {
-            "currency": "INR",
-            "value": "1000"
           },
           "fulfillment_ids": [
             "F2"
@@ -96,7 +68,7 @@
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Good luck"
+                  "value": "Happy Birthday"
                 }
               ]
             }
@@ -104,7 +76,7 @@
         }
       ],
       "billing": {
-        "name": "100",
+        "name": "Phani Mahidhar",
         "address": "Apartment Building",
         "state": {
           "name": "Telangana",
@@ -114,13 +86,40 @@
           "name": "Hyderabad",
           "code": "HY"
         },
-        "email": "sagar@google.com",
+        "email": "sagar.revanna@eminds.ai",
         "phone": "1234567890"
       },
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL",
+          "customer": {
+            "person": {
+              "name": "Sagar"
+            },
+            "contact": {
+              "phone": "1234567890",
+              "email": "sagar.revanna@eminds.ai"
+            }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "contact": {
+                "phone": "9999888670",
+                "email": "sagar.revanna@eminds.ai"
+              },
+              "person": {
+                "name": "Sagar R"
+              }
+            }
+          ]
+        }
+      ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1000"
+          "value": "900"
         },
         "breakup": [
           {
@@ -159,17 +158,7 @@
             "title": "offer",
             "price": {
               "currency": "INR",
-              "value": "-0"
-            }
-          },
-          {
-            "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
-            },
-            "title": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "0"
+              "value": "-100"
             }
           }
         ],
@@ -179,8 +168,8 @@
         {
           "collected_by": "BAP",
           "params": {
-            "transaction_id": "order_MA7j43fP0pazG4",
-            "amount": "1000",
+            "transaction_id": "order_MFb0n4HrThGyK1",
+            "amount": "900",
             "currency": "INR"
           },
           "type": "ON-ORDER",
@@ -220,25 +209,25 @@
                   "descriptor": {
                     "code": "beneficiary_name"
                   },
-                  "value": "Meri Saving"
+                  "value": "1111212122121212121212121212121121212121212221"
                 },
                 {
                   "descriptor": {
                     "code": "bank_name"
                   },
-                  "value": "SONARI"
+                  "value": "11111111111"
                 },
                 {
                   "descriptor": {
                     "code": "branch_name"
                   },
-                  "value": "Sarita vihar"
+                  "value": "rererereff"
                 },
                 {
                   "descriptor": {
                     "code": "ifsc_code"
                   },
-                  "value": "BARB0SONARI"
+                  "value": "1111111111111111111"
                 },
                 {
                   "descriptor": {
@@ -251,8 +240,7 @@
           ]
         }
       ],
-      "created_at": "2023-07-05T12:53:15.929Z",
-      "updated_at": "2023-07-05T12:53:15.929Z"
+      "updated_at": "2023-07-19T08:36:10.076Z"
     }
   }
 }
