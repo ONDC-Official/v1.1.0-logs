@@ -1,12 +1,3 @@
-**/on_search**
-- /message/catalog/bpp~1providers/0/items/0/descriptor/images must NOT have more than 3 items
-- /message/catalog/bpp~1providers/0/items/1/descriptor/images must NOT have more than 3 items
-- /message/catalog/bpp~1providers/1/items/0/descriptor/images must NOT have more than 3 items
-- /message/catalog/bpp~1providers/1/items/1/descriptor/images must NOT have more than 3 items
-- /message/catalog/bpp~1providers/1/items/2/descriptor/images must NOT have more than 3 items
-- /message/catalog/bpp~1providers/1/items/3/descriptor/images must NOT have more than 3 items
-- /message/catalog/bpp~1providers/1/items/4/descriptor/images must NOT have more than 3 items
-
 **/init**
 - billing/created_at should match context.timestamp
 - billing/updated_at should match context.timestamp
