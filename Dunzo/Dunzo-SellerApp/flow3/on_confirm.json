@@ -1,0 +1,216 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "transaction_id": "835172f4-6be6-4da2-bd59-860fc663c816",
+    "message_id": "18052664-5421-426c-afb8-7ba144933a5c",
+    "timestamp": "2023-07-13T22:12:28.581Z",
+    "ttl": "PT30S",
+    "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com/seller-app/pincode",
+    "bpp_uri": "https://api-gateway-oak91dye.proxy.dev.dunzo.com/api/gateway/proxy/ondc/v1/seller-app/pincode"
+  },
+  "message": {
+    "order": {
+      "id": "2023-07-13-635913",
+      "state": "Created",
+      "provider": {
+        "id": "85a788de-fd19-9039-a0ad-29774e63069b",
+        "locations": [
+          {
+            "id": "85a788de-fd19-9039-a0ad-29774e63069b"
+          }
+        ],
+        "rateable": true
+      },
+      "fulfillments": [
+        {
+          "id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "Dunzo",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Pending"
+            }
+          },
+          "start": {
+            "location": {
+              "id": "85a788de-fd19-9039-a0ad-29774e63069b",
+              "descriptor": {
+                "name": "Green Mart Indiranagar"
+              },
+              "gps": "12.972090,77.647080",
+              "address": {
+                "locality": "Indiranagar-Egl",
+                "city": "Bengaluru",
+                "state": "KA",
+                "area_code": "560035"
+              }
+            },
+            "contact": {
+              "phone": "9333333333"
+            },
+            "time": {
+              "range": {
+                "start": "2023-07-13T22:12:28.581Z",
+                "end": "2023-07-13T22:27:28.581Z"
+              }
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.9814010000001, 77.6409810000001",
+              "address": {
+                "name": "Prajwal Gowda",
+                "building": "Mi show room",
+                "locality": "#284, Hothur Square, 1st Floor, 100 Feet Rd",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560038"
+              }
+            },
+            "contact": {
+              "phone": "9113915662"
+            },
+            "time": {
+              "range": {
+                "start": "2023-07-13T22:27:28.581Z",
+                "end": "2023-07-13T22:47:28.581Z"
+              }
+            }
+          },
+          "rateable": true
+        }
+      ],
+      "items": [
+        {
+          "fulfillment_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+          "id": "5bc87ae20d298a283c297895",
+          "quantity": {
+            "count": 2
+          }
+        },
+        {
+          "fulfillment_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+          "id": "5bc87ae20d298a283c2981c9",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "591"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "5bc87ae20d298a283c297895",
+            "title": "India Gate Classic Basmati Rice",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "432"
+            },
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "216"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "5bc87ae20d298a283c2981c9",
+            "title": "Pringles Sour Cream And Onion Crisp Chips",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "99"
+            },
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "99"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "60.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          }
+        ],
+        "ttl": "PT15M"
+      },
+      "billing": {
+        "name": "Prajwal Gowda",
+        "address": {
+          "name": "Prajwal Gowda",
+          "building": "Mi show room",
+          "locality": "#284, Hothur Square, 1st Floor, 100 Feet Rd",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560038"
+        },
+        "email": "prajwal.gowda@ext.dunzo.in",
+        "phone": "9113915662",
+        "created_at": "2023-07-13T22:11:01.230Z",
+        "updated_at": "2023-07-13T22:11:01.230Z"
+      },
+      "payment": {
+        "params": {
+          "currency": "INR",
+          "transaction_id": "835172f4-6be6-4da2-bd59-860fc663c816",
+          "amount": "591",
+          "transaction_status": ""
+        },
+        "status": "PAID",
+        "collected_by": "BAP",
+        "type": "ON-ORDER",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "beneficiary_name": "",
+            "upi_address": "",
+            "settlement_bank_account_no": "",
+            "settlement_ifsc_code": "",
+            "bank_name": "",
+            "branch_name": ""
+          }
+        ]
+      },
+      "created_at": "2023-07-13T22:12:26.193Z",
+      "updated_at": "2023-07-13T22:12:28.581Z"
+    }
+  }
+}
