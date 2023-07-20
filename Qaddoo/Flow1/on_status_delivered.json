@@ -1,39 +1,22 @@
 {
     "context": {
         "domain": "nic2004:52110",
-        "country": "IND",
-        "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_status",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "seller.instastack.io",
         "bpp_uri": "https://seller.instastack.io/pre-prod",
-        "transaction_id": "3ddf9c29-7d9b-4f57-a1ee-8fdf0795b04a",
-        "message_id": "05a8ae1c-3c53-4070-9571-fb00b60cc31c",
-        "timestamp": "2023-07-11T04:14:16.614Z",
-        "ttl": "PT30S"
+        "transaction_id": "75822fce-f6fa-47ee-8eb4-f1f5892c4047",
+        "message_id": "1e67df98-ad58-43a5-ba28-0349880d6d89",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-07-13T17:05:59.946Z"
     },
     "message": {
         "order": {
-            "id": "630",
-            "state": "Accepted",
-            "items": [
-                {
-                    "id": "884",
-                    "fulfillment_id": "1",
-                    "quantity": {
-                        "count": 2
-                    }
-                },
-                {
-                    "id": "159562",
-                    "fulfillment_id": "1",
-                    "quantity": {
-                        "count": 2
-                    }
-                }
-            ],
+            "id": "664",
+            "state": "Completed",
             "provider": {
                 "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
                 "locations": [
@@ -43,6 +26,22 @@
                 ],
                 "rateable": true
             },
+            "items": [
+                {
+                    "id": "223251",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 2
+                    }
+                },
+                {
+                    "id": "218",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
             "billing": {
                 "name": "Rajiv Singh",
                 "address": {
@@ -55,8 +54,8 @@
                     "area_code": "560001"
                 },
                 "phone": "8302010971",
-                "created_at": "2023-07-11T04:13:43.006Z",
-                "updated_at": "2023-07-11T04:13:43.006Z"
+                "created_at": "2023-07-13T17:04:39.773Z",
+                "updated_at": "2023-07-13T17:04:39.773Z"
             },
             "fulfillments": [
                 {
@@ -64,7 +63,7 @@
                     "@ondc/org/provider_name": "Dunzo and others",
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
                     "type": "Delivery",
@@ -82,9 +81,10 @@
                         },
                         "time": {
                             "range": {
-                                "start": "2023-07-11T04:14:16.614Z",
-                                "end": "2023-07-11T05:14:16.615Z"
-                            }
+                                "start": "2023-07-13T17:05:19.845Z",
+                                "end": "2023-07-13T18:05:19.845Z"
+                            },
+                            "timestamp": "2023-07-13T17:05:45.147Z"
                         },
                         "contact": {
                             "phone": "9892216537",
@@ -106,9 +106,10 @@
                         },
                         "time": {
                             "range": {
-                                "start": "2023-07-11T04:14:16.614Z",
-                                "end": "2023-07-11T10:14:16.615Z"
-                            }
+                                "start": "2023-07-13T17:05:19.845Z",
+                                "end": "2023-07-13T23:05:19.846Z"
+                            },
+                            "timestamp": "2023-07-13T17:05:59.946Z"
                         },
                         "contact": {
                             "phone": "8302010971"
@@ -120,11 +121,11 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1146.80"
+                    "value": "1565.00"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "884",
+                        "@ondc/org/item_id": "223251",
                         "@ondc/org/item_quantity": {
                             "count": 2
                         },
@@ -132,17 +133,17 @@
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "173.90"
+                                "value": "199.00"
                             }
                         },
-                        "title": "Cadbury Dairy Milk Silk Hazelnut, 143 g",
+                        "title": "Seni Care Wet Wipes, 10 pcs",
                         "price": {
                             "currency": "INR",
-                            "value": "347.80"
+                            "value": "398.00"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "159562",
+                        "@ondc/org/item_id": "218",
                         "@ondc/org/item_quantity": {
                             "count": 2
                         },
@@ -150,13 +151,13 @@
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "375.00"
+                                "value": "559.00"
                             }
                         },
-                        "title": "Cadbury Celebration Premium Selections Chocolates, 281 g",
+                        "title": "Mamaearth Onion Conditioner, 400 ml",
                         "price": {
                             "currency": "INR",
-                            "value": "750.00"
+                            "value": "1118.00"
                         }
                     },
                     {
@@ -173,9 +174,9 @@
             },
             "payment": {
                 "params": {
-                    "amount": "1146.80",
+                    "amount": "1565.00",
                     "currency": "INR",
-                    "transaction_id": "1689048647801"
+                    "transaction_id": "1689267914584"
                 },
                 "type": "ON-ORDER",
                 "status": "PAID",
@@ -196,8 +197,15 @@
                     }
                 ]
             },
-            "created_at": "2023-07-11T04:14:16.457Z",
-            "updated_at": "2023-07-11T04:14:16.614Z"
+            "documents": [
+                {
+                    "url": "https://seller.instastack.io/invoice/664",
+                    "label": "Invoice"
+                }
+            ],
+            "tags": {},
+            "created_at": "2023-07-13T17:05:19.683Z",
+            "updated_at": "2023-07-13T17:05:59.946Z"
         }
     }
 }

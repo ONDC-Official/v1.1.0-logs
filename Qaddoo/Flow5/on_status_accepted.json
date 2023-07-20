@@ -3,33 +3,38 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_update",
+        "action": "on_status",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
-        "transaction_id": "8f92176f-7119-4347-95b7-302aad69b7ee",
-        "message_id": "47b6d1b1-9ddb-45a6-9e33-7113971d3c09",
-        "timestamp": "2023-05-18T05:06:42.482Z"
+        "transaction_id": "2126b3a8-5154-47a5-9d47-dc5490fddbdf",
+        "message_id": "33b2933c-09f7-41bb-bf57-1c9d4fa95a38",
+        "timestamp": "2023-07-19T10:14:40.068Z"
     },
     "message": {
         "order": {
-            "id": "185",
-            "state": "Completed",
+            "id": "675",
+            "state": "Accepted",
+            "provider": {
+                "id": "preprod-wow-bpp.shopalyst.com",
+                "locations": [
+                    {
+                        "id": "bcedc450f8481e89b1445069acdc3dd9"
+                    }
+                ]
+            },
             "items": [
                 {
                     "id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
                     "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
-                        "count": 2
-                    },
-                    "tags": {
-                        "status": "Return_Initiated"
+                        "count": 10
                     }
                 },
                 {
-                    "id": "7945DA7F78F5CC8879548D89B9540249_43459794338051_default",
+                    "id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
                     "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
                         "count": 4
@@ -39,14 +44,14 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "2194.00"
+                    "value": "4186.00"
                 },
                 "breakup": [
                     {
                         "title": "Cherrylicious Body Lotion By Body Cupid - 200 ml",
                         "price": {
                             "currency": "INR",
-                            "value": "598.00"
+                            "value": "2990.00"
                         },
                         "@ondc/org/item_id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
                         "item": {
@@ -56,21 +61,21 @@
                             }
                         },
                         "@ondc/org/item_quantity": {
-                            "count": 2
+                            "count": 10
                         },
                         "@ondc/org/title_type": "item"
                     },
                     {
-                        "title": "Cherrylicious Bath Salt By Body Cupid - 200 ml",
+                        "title": "Cherrylicious Shower Gel By Body Cupid - 200 ml",
                         "price": {
                             "currency": "INR",
-                            "value": "1596.00"
+                            "value": "1196.00"
                         },
-                        "@ondc/org/item_id": "7945DA7F78F5CC8879548D89B9540249_43459794338051_default",
+                        "@ondc/org/item_id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "399.00"
+                                "value": "299.00"
                             }
                         },
                         "@ondc/org/item_quantity": {
@@ -87,26 +92,35 @@
                         "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                         "@ondc/org/title_type": "delivery"
                     }
-                ]
+                ],
+                "ttl": "PT15M"
+            },
+            "billing": {
+                "name": "Rajiv Singh",
+                "address": {
+                    "name": "Rajiv Singh",
+                    "building": "15/11",
+                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560001"
+                },
+                "phone": "8302010971",
+                "created_at": "2023-07-19T10:13:51.692Z",
+                "updated_at": "2023-07-19T10:13:51.692Z"
             },
             "fulfillments": [
                 {
                     "id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "type": "Delivery",
-                    "tracking": true,
+                    "tracking": false,
                     "start": {
                         "location": {
                             "descriptor": {
                                 "name": "bcedc450f8481e89b1445069acdc3dd9"
                             },
                             "gps": "12.9684397,77.6010378"
-                        },
-                        "time": {
-                            "timestamp": "0001-01-01T00:00:00.000Z",
-                            "range": {
-                                "start": "0001-01-01T00:00:00.000Z",
-                                "end": "0001-01-01T00:00:00.000Z"
-                            }
                         },
                         "contact": {
                             "phone": "8042896000",
@@ -115,30 +129,24 @@
                     },
                     "end": {
                         "location": {
-                            "gps": "26.409675878914022,74.6213336661458",
+                            "gps": "12.971609528512422,77.59456269443035",
                             "address": {
-                                "name": "RajivRawat",
-                                "building": "H.No-564,GaliNo-18,DeepDarshanColony,SomalpurRd,behindH.M.T.PowerHouse,ChandraVardaiNagar,Ajmer,Rajasthan305003,India",
-                                "locality": "H.No-564,GaliNo-18,DeepDarshanColony,SomalpurRd,behindH.M.T.PowerHouse,ChandraVardaiNagar,Ajmer,Rajasthan305003,India",
-                                "city": "Ajmer",
-                                "state": "Rajasthan",
+                                "name": "Rajiv Singh",
+                                "building": "15/11",
+                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
                                 "country": "India",
-                                "area_code": "305003"
-                            }
-                        },
-                        "time": {
-                            "timestamp": "2023-05-18T05:05:10.002Z",
-                            "range": {
-                                "end": "2023-05-18T05:05:10.002Z"
+                                "area_code": "560001"
                             }
                         },
                         "contact": {
-                            "phone": "+918302010971"
+                            "phone": "8302010971"
                         }
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Order-delivered"
+                            "code": "Pending"
                         }
                     },
                     "@ondc/org/provider_name": "Wow Skin Science"
@@ -163,13 +171,13 @@
                     }
                 ],
                 "params": {
-                    "transaction_id": "1684386113816",
-                    "amount": "2194.00",
+                    "transaction_id": "1689761446252",
+                    "amount": "4186.00",
                     "currency": "INR"
                 }
             },
-            "created_at": "2023-05-18T05:01:59.597Z",
-            "updated_at": "2023-05-18T05:05:10.002Z"
+            "created_at": "2023-07-19T10:14:34.118Z",
+            "updated_at": "2023-07-19T10:14:38.278Z"
         }
     }
 }

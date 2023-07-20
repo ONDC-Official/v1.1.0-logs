@@ -3,27 +3,29 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "seller.instastack.io",
         "bpp_uri": "https://seller.instastack.io/pre-prod",
-        "transaction_id": "9fb26b5c-1d1a-44c6-86db-2102617c06e6",
-        "message_id": "a325f6c3-af43-4c0d-9a81-908748e6b876",
-        "timestamp": "2023-07-14T04:39:44.084Z",
-        "ttl": "PT30S"
+        "transaction_id": "75822fce-f6fa-47ee-8eb4-f1f5892c4047",
+        "message_id": "c1c5fdf2-bbc7-4e3c-a03b-f015743c81ef",
+        "timestamp": "2023-07-14T08:19:17.554Z"
     },
     "message": {
         "order": {
-            "id": "670",
-            "state": "Accepted",
+            "id": "664",
+            "state": "Completed",
             "items": [
                 {
                     "id": "223251",
-                    "fulfillment_id": "1",
                     "quantity": {
                         "count": 2
+                    },
+                    "fulfillment_id": "REVERSE-QC",
+                    "tags": {
+                        "status": "Return_Picked"
                     }
                 },
                 {
@@ -34,99 +36,16 @@
                     }
                 }
             ],
-            "provider": {
-                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
-                "locations": [
-                    {
-                        "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
-                    }
-                ],
-                "rateable": true
-            },
-            "billing": {
-                "name": "Rajiv Singh",
-                "address": {
-                    "name": "Rajiv Singh",
-                    "building": "15/11",
-                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-                    "city": "Bengaluru",
-                    "state": "Karnataka",
-                    "country": "India",
-                    "area_code": "560001"
-                },
-                "phone": "8302010971",
-                "created_at": "2023-07-14T04:39:15.243Z",
-                "updated_at": "2023-07-14T04:39:15.243Z"
-            },
-            "fulfillments": [
-                {
-                    "id": "1",
-                    "@ondc/org/provider_name": "Dunzo and others",
-                    "state": {
-                        "descriptor": {
-                            "code": "Pending"
-                        }
-                    },
-                    "type": "Delivery",
-                    "tracking": false,
-                    "start": {
-                        "location": {
-                            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
-                            "descriptor": {
-                                "name": "InstaStack Store Powai",
-                                "images": [
-                                    "https://www.wellnessforever.com/assets/img/logo/cmy_logo_full.webp"
-                                ]
-                            },
-                            "gps": "19.116802,72.909812"
-                        },
-                        "time": {
-                            "range": {
-                                "start": "2023-07-14T04:39:44.084Z",
-                                "end": "2023-07-14T05:39:44.084Z"
-                            }
-                        },
-                        "contact": {
-                            "phone": "9892216537",
-                            "email": "info@instastack.io"
-                        }
-                    },
-                    "end": {
-                        "location": {
-                            "gps": "12.971609528512422,77.59456269443035",
-                            "address": {
-                                "name": "Rajiv Singh",
-                                "building": "15/11",
-                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-                                "city": "Bengaluru",
-                                "state": "Karnataka",
-                                "country": "India",
-                                "area_code": "560001"
-                            }
-                        },
-                        "time": {
-                            "range": {
-                                "start": "2023-07-14T04:39:44.084Z",
-                                "end": "2023-07-14T10:39:44.084Z"
-                            }
-                        },
-                        "contact": {
-                            "phone": "8302010971"
-                        }
-                    },
-                    "rateable": true
-                }
-            ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1565.00"
+                    "value": "1167.00"
                 },
                 "breakup": [
                     {
                         "@ondc/org/item_id": "223251",
                         "@ondc/org/item_quantity": {
-                            "count": 2
+                            "count": 0
                         },
                         "@ondc/org/title_type": "item",
                         "item": {
@@ -138,7 +57,7 @@
                         "title": "Seni Care Wet Wipes, 10 pcs",
                         "price": {
                             "currency": "INR",
-                            "value": "398.00"
+                            "value": "0.00"
                         }
                     },
                     {
@@ -171,11 +90,99 @@
                 ],
                 "ttl": "P1D"
             },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Dunzo and others",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
+                            "descriptor": {
+                                "name": "InstaStack Store Powai",
+                                "images": [
+                                    "https://www.wellnessforever.com/assets/img/logo/cmy_logo_full.webp"
+                                ]
+                            },
+                            "gps": "19.116802,72.909812"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-13T17:05:19.845Z",
+                                "end": "2023-07-13T18:05:19.845Z"
+                            },
+                            "timestamp": "2023-07-13T17:05:45.147Z"
+                        },
+                        "contact": {
+                            "phone": "9892216537",
+                            "email": "info@instastack.io"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.971609528512422,77.59456269443035",
+                            "address": {
+                                "name": "Rajiv Singh",
+                                "building": "15/11",
+                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-13T17:05:19.845Z",
+                                "end": "2023-07-13T23:05:19.846Z"
+                            },
+                            "timestamp": "2023-07-13T17:05:59.946Z"
+                        },
+                        "contact": {
+                            "phone": "8302010971"
+                        }
+                    },
+                    "rateable": true
+                },
+                {
+                    "id": "REVERSE-QC",
+                    "type": "Reverse QC",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-07-14T06:57:03.698Z",
+                                "end": "2023-07-14T08:57:03.710Z"
+                            },
+                            "timestamp": "2023-07-14T08:19:17.554Z"
+                        },
+                        "instructions": {
+                            "short_desc": "Pickup tracking code: c7l6y3bj3nl",
+                            "long_desc": "Items have been picked up. Reverse tracking is available on RTO system",
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://seller.instastack.io/pickup/order/664"
+                            },
+                            "images": []
+                        }
+                    }
+                }
+            ],
             "payment": {
                 "params": {
                     "amount": "1565.00",
                     "currency": "INR",
-                    "transaction_id": "1689309371608"
+                    "transaction_id": "1689267914584"
                 },
                 "type": "ON-ORDER",
                 "status": "PAID",
@@ -196,8 +203,8 @@
                     }
                 ]
             },
-            "created_at": "2023-07-14T04:39:43.508Z",
-            "updated_at": "2023-07-14T04:39:44.084Z"
+            "created_at": "2023-07-13T17:05:19.683Z",
+            "updated_at": "2023-07-14T08:19:17.554Z"
         }
     }
 }

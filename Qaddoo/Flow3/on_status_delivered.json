@@ -1,23 +1,31 @@
 {
     "context": {
         "domain": "nic2004:52110",
-        "country": "IND",
-        "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_status",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "seller.instastack.io",
         "bpp_uri": "https://seller.instastack.io/pre-prod",
         "transaction_id": "3ddf9c29-7d9b-4f57-a1ee-8fdf0795b04a",
-        "message_id": "05a8ae1c-3c53-4070-9571-fb00b60cc31c",
-        "timestamp": "2023-07-11T04:14:16.614Z",
-        "ttl": "PT30S"
+        "message_id": "b1b1e4cd-6135-41f2-a2ec-5bfbfdcd309e",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-07-11T04:27:52.185Z"
     },
     "message": {
         "order": {
             "id": "630",
-            "state": "Accepted",
+            "state": "Completed",
+            "provider": {
+                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
+                "locations": [
+                    {
+                        "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+                    }
+                ],
+                "rateable": true
+            },
             "items": [
                 {
                     "id": "884",
@@ -34,15 +42,6 @@
                     }
                 }
             ],
-            "provider": {
-                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
-                "locations": [
-                    {
-                        "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
-                    }
-                ],
-                "rateable": true
-            },
             "billing": {
                 "name": "Rajiv Singh",
                 "address": {
@@ -64,7 +63,7 @@
                     "@ondc/org/provider_name": "Dunzo and others",
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
                     "type": "Delivery",
@@ -84,7 +83,8 @@
                             "range": {
                                 "start": "2023-07-11T04:14:16.614Z",
                                 "end": "2023-07-11T05:14:16.615Z"
-                            }
+                            },
+                            "timestamp": "2023-07-11T04:27:15.066Z"
                         },
                         "contact": {
                             "phone": "9892216537",
@@ -108,7 +108,8 @@
                             "range": {
                                 "start": "2023-07-11T04:14:16.614Z",
                                 "end": "2023-07-11T10:14:16.615Z"
-                            }
+                            },
+                            "timestamp": "2023-07-11T04:27:52.185Z"
                         },
                         "contact": {
                             "phone": "8302010971"
@@ -196,8 +197,15 @@
                     }
                 ]
             },
+            "documents": [
+                {
+                    "url": "https://seller.instastack.io/invoice/630",
+                    "label": "Invoice"
+                }
+            ],
+            "tags": {},
             "created_at": "2023-07-11T04:14:16.457Z",
-            "updated_at": "2023-07-11T04:14:16.614Z"
+            "updated_at": "2023-07-11T04:27:52.185Z"
         }
     }
 }

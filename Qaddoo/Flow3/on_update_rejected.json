@@ -3,27 +3,29 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "seller.instastack.io",
         "bpp_uri": "https://seller.instastack.io/pre-prod",
         "transaction_id": "3ddf9c29-7d9b-4f57-a1ee-8fdf0795b04a",
-        "message_id": "05a8ae1c-3c53-4070-9571-fb00b60cc31c",
-        "timestamp": "2023-07-11T04:14:16.614Z",
-        "ttl": "PT30S"
+        "message_id": "3da7b79d-e166-4b6f-9d7b-caf9a5a28429",
+        "timestamp": "2023-07-11T04:46:58.318Z"
     },
     "message": {
         "order": {
             "id": "630",
-            "state": "Accepted",
+            "state": "Completed",
             "items": [
                 {
                     "id": "884",
-                    "fulfillment_id": "1",
                     "quantity": {
                         "count": 2
+                    },
+                    "fulfillment_id": "1",
+                    "tags": {
+                        "status": "Return_Rejected"
                     }
                 },
                 {
@@ -32,89 +34,6 @@
                     "quantity": {
                         "count": 2
                     }
-                }
-            ],
-            "provider": {
-                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
-                "locations": [
-                    {
-                        "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
-                    }
-                ],
-                "rateable": true
-            },
-            "billing": {
-                "name": "Rajiv Singh",
-                "address": {
-                    "name": "Rajiv Singh",
-                    "building": "15/11",
-                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-                    "city": "Bengaluru",
-                    "state": "Karnataka",
-                    "country": "India",
-                    "area_code": "560001"
-                },
-                "phone": "8302010971",
-                "created_at": "2023-07-11T04:13:43.006Z",
-                "updated_at": "2023-07-11T04:13:43.006Z"
-            },
-            "fulfillments": [
-                {
-                    "id": "1",
-                    "@ondc/org/provider_name": "Dunzo and others",
-                    "state": {
-                        "descriptor": {
-                            "code": "Pending"
-                        }
-                    },
-                    "type": "Delivery",
-                    "tracking": false,
-                    "start": {
-                        "location": {
-                            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
-                            "descriptor": {
-                                "name": "InstaStack Store Powai",
-                                "images": [
-                                    "https://www.wellnessforever.com/assets/img/logo/cmy_logo_full.webp"
-                                ]
-                            },
-                            "gps": "19.116802,72.909812"
-                        },
-                        "time": {
-                            "range": {
-                                "start": "2023-07-11T04:14:16.614Z",
-                                "end": "2023-07-11T05:14:16.615Z"
-                            }
-                        },
-                        "contact": {
-                            "phone": "9892216537",
-                            "email": "info@instastack.io"
-                        }
-                    },
-                    "end": {
-                        "location": {
-                            "gps": "12.971609528512422,77.59456269443035",
-                            "address": {
-                                "name": "Rajiv Singh",
-                                "building": "15/11",
-                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-                                "city": "Bengaluru",
-                                "state": "Karnataka",
-                                "country": "India",
-                                "area_code": "560001"
-                            }
-                        },
-                        "time": {
-                            "range": {
-                                "start": "2023-07-11T04:14:16.614Z",
-                                "end": "2023-07-11T10:14:16.615Z"
-                            }
-                        },
-                        "contact": {
-                            "phone": "8302010971"
-                        }
-                    },
-                    "rateable": true
                 }
             ],
             "quote": {
@@ -171,6 +90,67 @@
                 ],
                 "ttl": "P1D"
             },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Dunzo and others",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
+                            "descriptor": {
+                                "name": "InstaStack Store Powai",
+                                "images": [
+                                    "https://www.wellnessforever.com/assets/img/logo/cmy_logo_full.webp"
+                                ]
+                            },
+                            "gps": "19.116802,72.909812"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-11T04:14:16.614Z",
+                                "end": "2023-07-11T05:14:16.615Z"
+                            },
+                            "timestamp": "2023-07-11T04:27:15.066Z"
+                        },
+                        "contact": {
+                            "phone": "9892216537",
+                            "email": "info@instastack.io"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.971609528512422,77.59456269443035",
+                            "address": {
+                                "name": "Rajiv Singh",
+                                "building": "15/11",
+                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-11T04:14:16.614Z",
+                                "end": "2023-07-11T10:14:16.615Z"
+                            },
+                            "timestamp": "2023-07-11T04:27:52.185Z"
+                        },
+                        "contact": {
+                            "phone": "8302010971"
+                        }
+                    },
+                    "rateable": true
+                }
+            ],
             "payment": {
                 "params": {
                     "amount": "1146.80",
@@ -197,7 +177,7 @@
                 ]
             },
             "created_at": "2023-07-11T04:14:16.457Z",
-            "updated_at": "2023-07-11T04:14:16.614Z"
+            "updated_at": "2023-07-11T04:46:58.318Z"
         }
     }
 }

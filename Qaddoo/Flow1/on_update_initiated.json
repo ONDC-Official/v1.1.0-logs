@@ -3,60 +3,92 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "seller.instastack.io",
         "bpp_uri": "https://seller.instastack.io/pre-prod",
-        "transaction_id": "3ddf9c29-7d9b-4f57-a1ee-8fdf0795b04a",
-        "message_id": "05a8ae1c-3c53-4070-9571-fb00b60cc31c",
-        "timestamp": "2023-07-11T04:14:16.614Z",
-        "ttl": "PT30S"
+        "transaction_id": "75822fce-f6fa-47ee-8eb4-f1f5892c4047",
+        "message_id": "c1c5fdf2-bbc7-4e3c-a03b-f015743c81ef",
+        "timestamp": "2023-07-13T17:09:04.123Z"
     },
     "message": {
         "order": {
-            "id": "630",
-            "state": "Accepted",
+            "id": "664",
+            "state": "Completed",
             "items": [
                 {
-                    "id": "884",
-                    "fulfillment_id": "1",
+                    "id": "223251",
                     "quantity": {
                         "count": 2
+                    },
+                    "fulfillment_id": "1",
+                    "tags": {
+                        "status": "Return_Initiated"
                     }
                 },
                 {
-                    "id": "159562",
+                    "id": "218",
                     "fulfillment_id": "1",
                     "quantity": {
                         "count": 2
                     }
                 }
             ],
-            "provider": {
-                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
-                "locations": [
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1565.00"
+                },
+                "breakup": [
                     {
-                        "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+                        "@ondc/org/item_id": "223251",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "199.00"
+                            }
+                        },
+                        "title": "Seni Care Wet Wipes, 10 pcs",
+                        "price": {
+                            "currency": "INR",
+                            "value": "398.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "218",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "559.00"
+                            }
+                        },
+                        "title": "Mamaearth Onion Conditioner, 400 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1118.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "49.00"
+                        }
                     }
                 ],
-                "rateable": true
-            },
-            "billing": {
-                "name": "Rajiv Singh",
-                "address": {
-                    "name": "Rajiv Singh",
-                    "building": "15/11",
-                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-                    "city": "Bengaluru",
-                    "state": "Karnataka",
-                    "country": "India",
-                    "area_code": "560001"
-                },
-                "phone": "8302010971",
-                "created_at": "2023-07-11T04:13:43.006Z",
-                "updated_at": "2023-07-11T04:13:43.006Z"
+                "ttl": "P1D"
             },
             "fulfillments": [
                 {
@@ -64,7 +96,7 @@
                     "@ondc/org/provider_name": "Dunzo and others",
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
                     "type": "Delivery",
@@ -82,9 +114,10 @@
                         },
                         "time": {
                             "range": {
-                                "start": "2023-07-11T04:14:16.614Z",
-                                "end": "2023-07-11T05:14:16.615Z"
-                            }
+                                "start": "2023-07-13T17:05:19.845Z",
+                                "end": "2023-07-13T18:05:19.845Z"
+                            },
+                            "timestamp": "2023-07-13T17:05:45.147Z"
                         },
                         "contact": {
                             "phone": "9892216537",
@@ -106,9 +139,10 @@
                         },
                         "time": {
                             "range": {
-                                "start": "2023-07-11T04:14:16.614Z",
-                                "end": "2023-07-11T10:14:16.615Z"
-                            }
+                                "start": "2023-07-13T17:05:19.845Z",
+                                "end": "2023-07-13T23:05:19.846Z"
+                            },
+                            "timestamp": "2023-07-13T17:05:59.946Z"
                         },
                         "contact": {
                             "phone": "8302010971"
@@ -117,65 +151,11 @@
                     "rateable": true
                 }
             ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": "1146.80"
-                },
-                "breakup": [
-                    {
-                        "@ondc/org/item_id": "884",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "173.90"
-                            }
-                        },
-                        "title": "Cadbury Dairy Milk Silk Hazelnut, 143 g",
-                        "price": {
-                            "currency": "INR",
-                            "value": "347.80"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "159562",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "375.00"
-                            }
-                        },
-                        "title": "Cadbury Celebration Premium Selections Chocolates, 281 g",
-                        "price": {
-                            "currency": "INR",
-                            "value": "750.00"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "1",
-                        "@ondc/org/title_type": "delivery",
-                        "title": "Delivery charges",
-                        "price": {
-                            "currency": "INR",
-                            "value": "49.00"
-                        }
-                    }
-                ],
-                "ttl": "P1D"
-            },
             "payment": {
                 "params": {
-                    "amount": "1146.80",
+                    "amount": "1565.00",
                     "currency": "INR",
-                    "transaction_id": "1689048647801"
+                    "transaction_id": "1689267914584"
                 },
                 "type": "ON-ORDER",
                 "status": "PAID",
@@ -196,8 +176,8 @@
                     }
                 ]
             },
-            "created_at": "2023-07-11T04:14:16.457Z",
-            "updated_at": "2023-07-11T04:14:16.614Z"
+            "created_at": "2023-07-13T17:05:19.683Z",
+            "updated_at": "2023-07-13T17:09:04.123Z"
         }
     }
 }
