@@ -3,24 +3,20 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_init",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
-        "transaction_id": "2126b3a8-5154-47a5-9d47-dc5490fddbdf",
-        "message_id": "c80b4ce3-6a11-40db-a065-d62b0477f0fe",
-        "timestamp": "2023-07-19T10:13:53.129Z"
+        "transaction_id": "717b2285-89a7-4928-93ea-3eabb9996c55",
+        "message_id": "f381d528-cf21-4acf-953a-5b8bb5f35fdc",
+        "timestamp": "2023-07-20T03:50:03.384Z"
     },
     "message": {
         "order": {
-            "provider": {
-                "id": "preprod-wow-bpp.shopalyst.com"
-            },
-            "provider_location": {
-                "id": "bcedc450f8481e89b1445069acdc3dd9"
-            },
+            "id": "676",
+            "state": "Completed",
             "items": [
                 {
                     "id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
@@ -33,14 +29,17 @@
                     "id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
                     "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
-                        "count": 4
+                        "count": 3
+                    },
+                    "tags": {
+                        "status": "Liquidated"
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "4186.00"
+                    "value": "2990.00"
                 },
                 "breakup": [
                     {
@@ -65,17 +64,17 @@
                         "title": "Cherrylicious Shower Gel By Body Cupid - 200 ml",
                         "price": {
                             "currency": "INR",
-                            "value": "1196.00"
+                            "value": "0.00"
                         },
                         "@ondc/org/item_id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "299.00"
+                                "value": "0.00"
                             }
                         },
                         "@ondc/org/item_quantity": {
-                            "count": 4
+                            "count": 0
                         },
                         "@ondc/org/title_type": "item"
                     },
@@ -88,30 +87,32 @@
                         "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                         "@ondc/org/title_type": "delivery"
                     }
-                ],
-                "ttl": "PT15M"
-            },
-            "billing": {
-                "name": "Rajiv Singh",
-                "address": {
-                    "name": "Rajiv Singh",
-                    "building": "15/11",
-                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
-                    "city": "Bengaluru",
-                    "state": "Karnataka",
-                    "country": "India",
-                    "area_code": "560001"
-                },
-                "phone": "8302010971",
-                "created_at": "2023-07-19T10:13:51.692Z",
-                "updated_at": "2023-07-19T10:13:51.692Z"
+                ]
             },
             "fulfillments": [
                 {
                     "id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "type": "Delivery",
-                    "provider_id": "bcedc450f8481e89b1445069acdc3dd9",
                     "tracking": true,
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "bcedc450f8481e89b1445069acdc3dd9"
+                            },
+                            "gps": "12.9684397,77.6010378"
+                        },
+                        "time": {
+                            "timestamp": "2023-07-20T03:47:32.650Z",
+                            "range": {
+                                "start": "2023-07-20T03:46:32.650Z",
+                                "end": "2023-07-20T03:47:32.650Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8042896000",
+                            "email": "support@buywow.in"
+                        }
+                    },
                     "end": {
                         "location": {
                             "gps": "12.971609528512422,77.59456269443035",
@@ -125,13 +126,29 @@
                                 "area_code": "560001"
                             }
                         },
+                        "time": {
+                            "timestamp": "2023-07-20T03:48:23.975Z",
+                            "range": {
+                                "start": "2023-07-20T03:48:14.036Z",
+                                "end": "2023-07-20T03:48:23.975Z"
+                            }
+                        },
                         "contact": {
                             "phone": "8302010971"
                         }
-                    }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "@ondc/org/provider_name": "Wow Skin Science"
                 }
             ],
             "payment": {
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3",
                 "@ondc/org/settlement_details": [
@@ -145,8 +162,15 @@
                         "bank_name": "sate bank of india",
                         "branch_name": "manikonda"
                     }
-                ]
-            }
+                ],
+                "params": {
+                    "transaction_id": "1689824594789",
+                    "amount": "3887.00",
+                    "currency": "INR"
+                }
+            },
+            "created_at": "2023-07-20T03:46:53.779Z",
+            "updated_at": "2023-07-20T03:49:30.229Z"
         }
     }
 }

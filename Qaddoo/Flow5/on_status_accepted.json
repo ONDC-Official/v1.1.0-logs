@@ -3,23 +3,27 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_init",
+        "action": "on_status",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
         "transaction_id": "2126b3a8-5154-47a5-9d47-dc5490fddbdf",
-        "message_id": "c80b4ce3-6a11-40db-a065-d62b0477f0fe",
-        "timestamp": "2023-07-19T10:13:53.129Z"
+        "message_id": "33b2933c-09f7-41bb-bf57-1c9d4fa95a38",
+        "timestamp": "2023-07-19T10:14:40.068Z"
     },
     "message": {
         "order": {
+            "id": "675",
+            "state": "Accepted",
             "provider": {
-                "id": "preprod-wow-bpp.shopalyst.com"
-            },
-            "provider_location": {
-                "id": "bcedc450f8481e89b1445069acdc3dd9"
+                "id": "preprod-wow-bpp.shopalyst.com",
+                "locations": [
+                    {
+                        "id": "bcedc450f8481e89b1445069acdc3dd9"
+                    }
+                ]
             },
             "items": [
                 {
@@ -110,8 +114,19 @@
                 {
                     "id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "type": "Delivery",
-                    "provider_id": "bcedc450f8481e89b1445069acdc3dd9",
-                    "tracking": true,
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "bcedc450f8481e89b1445069acdc3dd9"
+                            },
+                            "gps": "12.9684397,77.6010378"
+                        },
+                        "contact": {
+                            "phone": "8042896000",
+                            "email": "support@buywow.in"
+                        }
+                    },
                     "end": {
                         "location": {
                             "gps": "12.971609528512422,77.59456269443035",
@@ -128,10 +143,19 @@
                         "contact": {
                             "phone": "8302010971"
                         }
-                    }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "@ondc/org/provider_name": "Wow Skin Science"
                 }
             ],
             "payment": {
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3",
                 "@ondc/org/settlement_details": [
@@ -145,8 +169,15 @@
                         "bank_name": "sate bank of india",
                         "branch_name": "manikonda"
                     }
-                ]
-            }
+                ],
+                "params": {
+                    "transaction_id": "1689761446252",
+                    "amount": "4186.00",
+                    "currency": "INR"
+                }
+            },
+            "created_at": "2023-07-19T10:14:34.118Z",
+            "updated_at": "2023-07-19T10:14:38.278Z"
         }
     }
 }
