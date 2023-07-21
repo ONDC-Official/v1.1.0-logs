@@ -19,6 +19,7 @@
 
 **/on_confirm**
 - City code mismatch in /search and /on_confirm
+- context/timestamp difference between /on_confirm and /confirm should be smaller than 5 sec
 
 **/on_status (Pending)**
 - City code mismatch in search and /on_status_pending

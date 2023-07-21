@@ -1,0 +1,133 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_select",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "transaction_id": "9f5554f9-d2fb-4b4a-8b85-dd83bb393712",
+      "message_id": "9f77e4dd-8754-4129-83a4-0f11f765d7f1",
+      "timestamp": "2023-07-13T19:42:54.345Z",
+      "ttl": "PT30S",
+      "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com/seller-app/pincode",
+      "bpp_uri": "https://api-gateway-oak91dye.proxy.dev.dunzo.com/api/gateway/proxy/ondc/v1/seller-app/pincode"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "85a788de-fd19-9039-a0ad-29774e63069b"
+        },
+        "fulfillments": [
+          {
+            "id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+            "type": "Delivery",
+            "@ondc/org/provider_name": "Dunzo",
+            "tracking": false,
+            "@ondc/org/category": "Immediate Delivery",
+            "@ondc/org/TAT": "PT50M",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable"
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "fulfillment_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+            "id": "5bc87ae20d298a283c297895"
+          },
+          {
+            "fulfillment_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+            "id": "5bc87ae20d298a283c2981c9"
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "946"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "5bc87ae20d298a283c297895",
+              "title": "India Gate Classic Basmati Rice",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "648"
+              },
+              "@ondc/org/item_quantity": {
+                "count": 3
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "3"
+                  },
+                  "maximum": {
+                    "count": "3"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "216"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "5bc87ae20d298a283c2981c9",
+              "title": "Pringles Sour Cream And Onion Crisp Chips",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "198"
+              },
+              "@ondc/org/item_quantity": {
+                "count": 2
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "3"
+                  },
+                  "maximum": {
+                    "count": "3"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "99"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+              "title": "Packing charges",
+              "@ondc/org/title_type": "packing",
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              }
+            },
+            {
+              "@ondc/org/item_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            }
+          ],
+          "ttl": "PT15M"
+        }
+      }
+    },
+    "error": {
+      "type": "DOMAIN-ERROR",
+      "code": "40002",
+      "message": "Item quantity unavailable"
+    }
+  }

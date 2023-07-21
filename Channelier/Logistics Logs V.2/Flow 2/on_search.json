@@ -1,0 +1,90 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "bpp_id": "ondcpp.yaarilabs.com",
+        "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+        "transaction_id": "28ca9abe-dbd3-4f53-aca7-e8d9d3854941",
+        "message_id": "db0d9839-ccad-495a-be3b-e5acfee0c721",
+        "bap_id": "integrations-preprod.channelier.com",
+        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+        "timestamp": "2023-07-12T13:02:14.738Z",
+        "action": "on_search"
+    },
+    "message": {
+        "catalog": {
+            "bpp/fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "2",
+                    "type": "CoD"
+                },
+                {
+                    "id": "3",
+                    "type": "RTO"
+                }
+            ],
+            "bpp/descriptor": {
+                "name": "Shipyaari"
+            },
+            "bpp/providers": [
+                {
+                    "id": "2",
+                    "descriptor": {
+                        "name": "DTDC",
+                        "short_desc": "DTDC",
+                        "long_desc": "DTDC"
+                    },
+                    "categories": [
+                        {
+                            "id": "Standard Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P4D"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "YAARI-2-Y053QHO46G",
+                            "parent_item_id": "",
+                            "category_id": "Standard Delivery",
+                            "fulfillment_id": "1",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "DTDC",
+                                "short_desc": "DTDC",
+                                "long_desc": "DTDC"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "id": "YAARI-2-Y053QHO46G-RTO",
+                            "parent_item_id": "YAARI-2-Y053QHO46G",
+                            "category_id": "Standard Delivery",
+                            "fulfillment_id": "3",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "DTDC-RTO quote",
+                                "short_desc": "RTO quote",
+                                "long_desc": "RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "1"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
