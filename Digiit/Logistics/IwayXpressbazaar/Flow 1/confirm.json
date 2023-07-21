@@ -9,15 +9,15 @@
     "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
     "bpp_uri": "https://preprod-bpp.iway.digiit.io",
     "bpp_id": "preprod-bpp.iway.digiit.io",
-    "transaction_id": "25bfa468-0d45-4a8a-b6e5-43d770d2ed32",
-    "message_id": "e85880b3-e31f-4b66-8f1f-f61e2e9aa7e4",
-    "timestamp": "2023-06-26T07:48:29.338Z",
+    "transaction_id": "37841656-c89d-46e2-b582-f7df28cc12db",
+    "message_id": "46f35ff5-b8c0-4858-8dd3-472124eeb41f",
+    "timestamp": "2023-07-16T09:25:44.614Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "91207a0f-0fca-4706-abf8-00dfa8eec35d",
-      "state": "Accepted",
+      "id": "801ee6a7-47ac-473c-ba39-437f52825b15",
+      "state": "Created",
       "provider": {
         "id": "107-Account-DER-292",
         "locations": [
@@ -28,7 +28,7 @@
       },
       "items": [
         {
-          "id": "20",
+          "id": "18",
           "category_id": "Standard Delivery",
           "descriptor": {
             "code": "P2P"
@@ -38,31 +38,24 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1250.0"
+          "value": "1205.0"
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "20",
+            "@ondc/org/item_id": "18",
             "@ondc/org/title_type": "Delivery Charge",
             "price": {
               "currency": "INR",
-              "value": "1210.0"
-            }
-          },
-          {
-            "@ondc/org/title_type": "RTO Charge",
-            "price": {
-              "currency": "INR",
-              "value": "40.0"
+              "value": "1205.0"
             }
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "d58dae99-290c-4792-a44d-556995d88f55",
+          "id": "efea58ba-1ebb-421e-aba8-72b2ab246932",
           "type": "Prepaid",
-          "@ondc/org/awb_no": "2023062632823442",
+          "@ondc/org/awb_no": "2023071601283843",
           "start": {
             "person": {
               "name": "Yumfood"
@@ -84,10 +77,10 @@
               "email": "abcd.efgh@gmail.com"
             },
             "instructions": {
-              "short_desc": "Ayush Hair Shampoo Anti Dandruff Neem 330ml",
-              "long_desc": "Ayush Hair Shampoo Anti Dandruff Neem 330ml",
+              "short_desc": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml",
+              "long_desc": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml",
               "images": [
-                "https://shikhar-cms.s3.ap-south-1.amazonaws.com/CMS-PROD-HERO/26076.png"
+                "https://shikhar-cms.s3.ap-south-1.amazonaws.com/CMS-PROD-HERO/17213.png"
               ]
             }
           },
@@ -110,10 +103,18 @@
             "contact": {
               "phone": "9556789011",
               "email": "n@gmail.com"
+            },
+            "instructions": {
+              "short_desc": "drop package at security gate",
+              "long_desc": "drop package at security gate",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "https://docs.google.com/document/d/109QZntPo0zQeqh4Il2T__blfNduLBb9MIibGlqlH8PU/edit?usp=sharing"
+              }
             }
           },
-          "@ondc/org/ewaybillno": "4f4a753a-2877-415b-bb3b-1a9003e5ff85",
-          "@ondc/org/ebnexpirydate": "2023-06-28T07:48:28.199Z",
+          "@ondc/org/ewaybillno": "531c2ecb-c35a-4e27-ad05-fa01b11bd7c3",
+          "@ondc/org/ebnexpirydate": "2023-07-18T09:25:44.614Z",
           "tags": {
             "@ondc/org/order_ready_to_ship": "no"
           }
@@ -133,18 +134,24 @@
         "tax_number": "98798798798",
         "phone": "8978909876",
         "email": "abcd.efgh@gmail.com",
-        "created_at": "2023-06-26T07:47:42.212Z",
-        "updated_at": "2023-06-26T07:47:42.212Z"
+        "created_at": "2023-07-16T09:24:36.683Z",
+        "updated_at": "2023-07-16T09:24:36.683Z"
+      },
+      "payment": {
+        "@ondc/org/collection_amount": "55",
+        "collected_by": "BAP",
+        "type": "ON-ORDER",
+        "@ondc/org/settlement_details": []
       },
       "@ondc/org/linked_order": {
         "items": [
           {
             "category_id": "Grocery",
             "descriptor": {
-              "name": "Ayush Hair Shampoo Anti Dandruff Neem 330ml"
+              "name": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml"
             },
             "quantity": {
-              "count": "1",
+              "count": 1,
               "measure": {
                 "unit": "Kilogram",
                 "value": 1
@@ -152,7 +159,7 @@
             },
             "price": {
               "currency": "INR",
-              "value": "210"
+              "value": "45"
             }
           }
         ],
@@ -170,15 +177,15 @@
           }
         },
         "order": {
-          "id": "2023-06-26-881298",
+          "id": "2023-07-16-594805",
           "weight": {
             "unit": "Gram",
-            "value": "100"
+            "value": 100
           }
         }
       },
-      "created_at": "2023-06-26T07:48:28.199Z",
-      "updated_at": "2023-06-26T07:48:28.199Z"
+      "created_at": "2023-07-16T09:25:44.614Z",
+      "updated_at": "2023-07-16T09:25:44.614Z"
     }
   }
 }

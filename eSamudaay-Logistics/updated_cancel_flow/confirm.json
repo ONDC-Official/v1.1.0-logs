@@ -1,0 +1,165 @@
+{
+  "context": {
+    "action": "confirm",
+    "transaction_id": "d4d11252-f352-4307-afd5-816536ff8ec8",
+    "message_id": "89587038-3b77-4006-a63f-331fdb740c32",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-07-20T07:09:51.845Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp/",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "loadshare@ondc-preprod.loadshare.net"
+      },
+      "items": [
+        {
+          "id": "nextday",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "category_id": "Next Day Delivery"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "lsn_prepaid",
+          "type": "Prepaid",
+          "start": {
+            "location": {
+              "gps": "12.905488,77.645337",
+              "address": {
+                "city": "Bengaluru",
+                "name": "ONDC Test Seller Store",
+                "state": "Karnataka",
+                "country": "India",
+                "building": "Kasturba Rd",
+                "locality": "Kasturba Rd",
+                "area_code": "560102"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            },
+            "person": {
+              "name": "test"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.897732,77.6439",
+              "address": {
+                "city": "Bengaluru",
+                "name": "shubham cholke",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "near bus stop",
+                "locality": "ABC street, Demo address",
+                "area_code": "560068"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            },
+            "person": {
+              "name": "test1"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "no"
+          }
+        }
+      ],
+      "billing": {
+        "name": "ONDC Test Seller Store",
+        "phone": "9999999999",
+        "address": {
+          "city": "Mumbai",
+          "name": "ONDC Test Seller Store",
+          "state": "Maharashtra",
+          "country": "India",
+          "building": "Fort",
+          "locality": "Fort",
+          "area_code": "400001"
+        },
+        "created_at": "2023-07-20T07:09:47.217Z",
+        "tax_number": "33AACCG2423J1ZZ",
+        "updated_at": "2023-07-20T07:09:47.217Z"
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP"
+      },
+      "id": "4f3aad49-698c-4d8b-9a97-053a0a2dbc85",
+      "state": "Created",
+      "quote": {
+        "price": {
+          "value": "1.00",
+          "currency": "INR"
+        },
+        "breakup": [
+          {
+            "price": {
+              "value": "1.00",
+              "currency": "INR"
+            },
+            "@ondc/org/item_id": "nextday",
+            "@ondc/org/title_type": "Delivery Charge"
+          }
+        ]
+      },
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Grocery",
+            "descriptor": {
+              "name": "KIT KAT PREMIUM"
+            },
+            "quantity": {
+              "count": 2,
+              "measure": {
+                "unit": "Gram",
+                "value": 200
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "3000.00"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "Aadishwar Store"
+          },
+          "address": {
+            "name": "KHB Towers",
+            "street": "6th Block",
+            "locality": "Koramangala",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "area_code": "560102"
+          }
+        },
+        "order": {
+          "id": "ABCDEFGH",
+          "weight": {
+            "unit": "Gram",
+            "value": 200
+          }
+        }
+      },
+      "created_at": "2023-07-20T07:09:51.845Z",
+      "updated_at": "2023-07-20T07:09:51.845Z"
+    }
+  }
+}

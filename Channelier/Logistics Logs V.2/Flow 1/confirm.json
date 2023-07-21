@@ -1,0 +1,179 @@
+{
+    "context": {
+        "bap_id": "integrations-preprod.channelier.com",
+        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "bpp_id": "ondcpp.yaarilabs.com",
+        "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+        "transaction_id": "69cec0bf-3d9e-4d4c-b021-33b3edd9aef7",
+        "message_id": "5e1d5b95-dbf0-41e1-a508-c2bd689f7862",
+        "country": "IND",
+        "city": "std:080",
+        "timestamp": "2023-07-12T13:48:18.118Z",
+        "action": "confirm"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "2"
+            },
+            "items": [
+                {
+                    "id": "YAARI-2-3232DC8EGT",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "ONDC sellerapp",
+                "address": {
+                    "name": "My house or building no",
+                    "building": "My house or building name",
+                    "locality": "My street name",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560076"
+                },
+                "email": "abcd.efgh@gmail.com",
+                "phone": "9886098860",
+                "tax_number": "XXXXXXXXXXXXXXX",
+                "created_at": "2023-07-12T13:48:10.815Z",
+                "updated_at": "2023-07-12T13:48:10.815Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "start": {
+                        "person": {
+                            "name": "Name"
+                        },
+                        "location": {
+                            "gps": "28.6138954,77.2090057",
+                            "address": {
+                                "door": "1",
+                                "name": "My building #",
+                                "building": "My building name",
+                                "street": "Rajpath",
+                                "locality": "My street name",
+                                "ward": "10",
+                                "city": "New Delhi",
+                                "state": "DELHI",
+                                "country": "IND",
+                                "area_code": "110018"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9479319331",
+                            "email": "techpvec2@gmail.com"
+                        },
+                        "instructions": {
+                            "short_desc": "XYZ1",
+                            "long_desc": "QR code will be attached to package",
+                            "images": [
+                                "URL or data string as per spec"
+                            ]
+                        }
+                    },
+                    "end": {
+                        "contact": {
+                            "email": "techpvec18@gmail.com",
+                            "phone": "9897989798"
+                        },
+                        "person": {
+                            "name": "Ravinder"
+                        },
+                        "location": {
+                            "gps": "28.513993, 77.1655220000001",
+                            "address": {
+                                "name": "Ravinder",
+                                "building": "Near Mahipalpur",
+                                "locality": "Vasant Kunj, sector E-2",
+                                "city": "New Delhi",
+                                "state": "Delhi",
+                                "country": "IND",
+                                "area_code": "110070"
+                            }
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "upi",
+                        "settlement_bank_account_no": "XXXXXXXXXX",
+                        "settlement_ifsc_code": "XXXXXXXXX",
+                        "upi_address": "gft@oksbi"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "YAARI-2-3232DC8EGT",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1"
+                        }
+                    }
+                ]
+            },
+            "id": "ed28c662-4afa-4dc9-80ec-9e105b123884",
+            "state": "Created",
+            "created_at": "2023-07-12T13:48:18.035Z",
+            "updated_at": "2023-07-12T13:48:18.035Z",
+            "delivery_type": "Prepaid",
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "Grocery",
+                        "descriptor": {
+                            "name": "Agnesi Pasta - Le Penne Rigate N.19, 500 g Pouch"
+                        },
+                        "quantity": {
+                            "count": 1,
+                            "measure": {
+                                "unit": "Gram",
+                                "value": 100
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "299.00"
+                        }
+                    }
+                ],
+                "provider": {
+                    "name": "Arachnomesh Super Store",
+                    "symbol": "https://play-lh.googleusercontent.com/4iFePUtS2o6Sw24ogR2ZaQGERUg3rZKN7hYOR6Bn8kJkCTFrfpxJZhwqfMAg5KgS9OY",
+                    "short_desc": "a retail store that primarily retails a general range of food products, which may be fresh or packaged.",
+                    "long_desc": "a retail store that primarily retails a general range of food products, which may be fresh or packaged.",
+                    "images": [
+                        "https://play-lh.googleusercontent.com/4iFePUtS2o6Sw24ogR2ZaQGERUg3rZKN7hYOR6Bn8kJkCTFrfpxJZhwqfMAg5KgS9OY"
+                    ]
+                },
+                "order": {
+                    "id": "2023-07-12-732218",
+                    "weight": {
+                        "unit": "Gram",
+                        "value": 500
+                    }
+                }
+            }
+        }
+    }
+}

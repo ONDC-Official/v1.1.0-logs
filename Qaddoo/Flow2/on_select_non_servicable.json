@@ -1,43 +1,43 @@
 {
     "context": {
         "domain": "nic2004:52110",
-        "country": "IND",
-        "city": "std:080",
         "action": "on_select",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
-        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
-        "transaction_id": "8875cfef-a07e-4627-8126-34940ff2bdf8",
-        "message_id": "ad9837cb-2ef7-4802-9915-0e65996488b7",
-        "timestamp": "2023-05-18T06:57:48.787Z"
+        "bpp_id": "seller.instastack.io",
+        "bpp_uri": "https://seller.instastack.io/pre-prod",
+        "transaction_id": "9fb26b5c-1d1a-44c6-86db-2102617c06e6",
+        "message_id": "49c5325e-7db5-4039-bc5c-588ab7d35186",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-07-14T04:39:04.839Z"
     },
     "message": {
         "order": {
             "provider": {
-                "id": "20978"
+                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
             },
             "items": [
                 {
-                    "fulfillment_id": "20978",
-                    "id": "103"
+                    "fulfillment_id": "1",
+                    "id": "223251"
                 },
                 {
-                    "fulfillment_id": "20978",
-                    "id": "104"
+                    "fulfillment_id": "1",
+                    "id": "218"
                 }
             ],
             "fulfillments": [
                 {
-                    "id": "20978",
-                    "@ondc/org/provider_name": "Evergreen Restaurant",
+                    "id": "1",
+                    "@ondc/org/provider_name": "Dunzo and others",
                     "tracking": false,
-                    "@ondc/org/category": "Standard Delivery",
-                    "@ondc/org/TAT": "PT24H",
+                    "@ondc/org/category": "Same Day Delivery",
+                    "@ondc/org/TAT": "PT6H",
                     "state": {
                         "descriptor": {
-                            "code": "Non-Serviceable"
+                            "code": "Non-serviceable"
                         }
                     }
                 }
@@ -45,87 +45,78 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "785.00"
+                    "value": "1565.00"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "103",
-                        "@ondc/org/item_quantity": {
-                            "count": 3
-                        },
-                        "title": "Veg Manchow",
-                        "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": "447.00"
-                        },
-                        "item": {
-                            "quantity": {
-                                "available": {
-                                    "count": "3"
-                                },
-                                "maximum": {
-                                    "count": "3"
-                                }
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "149.00"
-                            }
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "103",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0.00"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "104",
+                        "@ondc/org/item_id": "223251",
                         "@ondc/org/item_quantity": {
                             "count": 2
                         },
-                        "title": "Chicken Manchow",
+                        "title": "Seni Care Wet Wipes, 10 pcs",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "338.00"
+                            "value": "398.00"
                         },
                         "item": {
-                            "quantity": {
-                                "available": {
-                                    "count": "2"
-                                },
-                                "maximum": {
-                                    "count": "2"
-                                }
-                            },
                             "price": {
                                 "currency": "INR",
-                                "value": "169.00"
+                                "value": "199.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "100"
+                                },
+                                "maximum": {
+                                    "count": "100"
+                                }
                             }
                         }
                     },
                     {
-                        "@ondc/org/item_id": "104",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
+                        "@ondc/org/item_id": "218",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Mamaearth Onion Conditioner, 400 ml",
+                        "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "0.00"
+                            "value": "1118.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "559.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "100"
+                                },
+                                "maximum": {
+                                    "count": "100"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "49.00"
                         }
                     }
                 ],
-                "ttl": "PT30M"
+                "ttl": "P1D"
             }
         }
     },
     "error": {
+        "code": "30010",
         "type": "DOMAIN-ERROR",
-        "code": "30009",
-        "message": "Delivery distance is beyond the allowed 5 km"
+        "message": "Delivery distance exceeds the maximum serviceability distance"
     }
 }

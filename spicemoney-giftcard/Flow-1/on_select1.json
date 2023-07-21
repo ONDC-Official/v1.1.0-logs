@@ -1,6 +1,13 @@
 {
   "context": {
     "domain": "FIS10",
+    "ttl": "PT30S",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "0dedcf76-770d-4743-aec3-79d9c129002c",
+    "transaction_id": "d6f39503-efac-49f3-985c-85b8c84104e5",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "location": {
       "city": {
         "code": "std:080"
@@ -10,39 +17,25 @@
       }
     },
     "action": "on_select",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "bpp_id": "ondc.vistar.solutions",
     "version": "1.0.0",
-    "message_id": "7b792d8c-a100-4064-9d1d-d65e0281b360",
-    "timestamp": "2023-07-05T13:15:26.528Z",
-    "transaction_id": "41094fc9-f496-440b-bf9b-cca3704be84f",
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
+    "timestamp": "2023-07-19T08:45:42.056Z"
   },
   "message": {
     "order": {
-      "fulfillments": [
-        {
-          "id": "F2",
-          "type": "EMAIL"
-        }
-      ],
+      "type": "DEFAULT",
       "provider": {
         "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec",
-        "ttl": "P1D",
-        "time": {
-          "label": "enable",
-          "timestamp": "2023-07-05T13:15:26.525Z"
-        },
         "descriptor": {
-          "name": "Meri Saving",
-          "symbol": "https://giftcard.com/images/1-image",
+          "name": "hjhj",
           "short_desc": "Online Gift Card Store",
           "long_desc": "Online Gift Card Store",
           "images": [
             "https://giftcard.com/images/store-image"
           ]
+        },
+        "time": {
+          "label": "enable",
+          "timestamp": "2023-07-19T08:45:42.094Z"
         },
         "categories": [
           {
@@ -51,18 +44,19 @@
               "code": "ONLINE"
             }
           }
-        ]
+        ],
+        "ttl": "P1D"
       },
       "items": [
         {
-          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89",
           "descriptor": {
-            "name": "Amazon Gift Card",
-            "symbol": "https://i.imgur.com/LaA58IU.png",
-            "short_desc": "Amazon Shopping Voucher is just what you need if you want to shop on a budget. Amazon Shopping Vouchers help you buy hundreds of products at amazing discounts.",
-            "long_desc": "Amazon Shopping Voucher is just what you need if you want to shop on a budget. Amazon Shopping Vouchers help you buy hundreds of products at amazing discounts.",
+            "name": "ITC Hotels Gift Card",
+            "short_desc": "Give the gift of indigenous experiences to someone special that they'll treasure for life. \nITC Hotels Gift Card offers you a gateway to create long lasting",
+            "long_desc": "Give the gift of indigenous experiences to someone special that they'll treasure for life. \r\nITC Hotels Gift Card offers you a gateway to create long lasting memories.",
             "images": [
-              "https://meribachatassets.s3.ap-south-1.amazonaws.com/mbimages/d492c6c8e8a203bb5a1a25e0731f710e9ed7db2be732775054e2573896d47b1c.jpeg"
+              "https://meribachatassets.s3.ap-south-1.amazonaws.com/mbimages/a6a5fd956f186456d07d49decd3d6d0227fb00525fd75963225eab569fd7704b.jpg",
+              "https://catalogueproductfiles.s3.ap-south-1.amazonaws.com/brands/dummypicture.png-1689598381026"
             ]
           },
           "price": {
@@ -70,6 +64,12 @@
             "minimum_value": "1000",
             "maximum_value": "10000"
           },
+          "category_ids": [
+            "C1"
+          ],
+          "fulfillment_ids": [
+            "F2"
+          ],
           "tags": [
             {
               "descriptor": {
@@ -80,7 +80,7 @@
                   "descriptor": {
                     "code": "OCCASION"
                   },
-                  "value": "FESTIVAL"
+                  "value": "BIRTHDAY"
                 },
                 {
                   "descriptor": {
@@ -92,13 +92,13 @@
                   "descriptor": {
                     "code": "EXPIRY_PERIOD"
                   },
-                  "value": "P5M"
+                  "value": "3M"
                 },
                 {
                   "descriptor": {
                     "code": "USAGE_TERMS_CONDITION"
                   },
-                  "value": "https://ondc.vistar.solutions/catalogue/catalouge/terms/bf6506a7-5ff8-47da-8d5a-c3c029414264"
+                  "value": "https://ondc.vistar.solutions/catalogue/catalouge/terms/b88e30b4-72b6-4ef8-a488-007f308f5c89"
                 }
               ]
             },
@@ -111,7 +111,22 @@
                   "descriptor": {
                     "code": "Enabled"
                   },
-                  "value": "false"
+                  "value": "true"
+                },
+                {
+                  "descriptor": {
+                    "code": "RECEIVER_NAME"
+                  }
+                },
+                {
+                  "descriptor": {
+                    "code": "MESSAGE"
+                  }
+                },
+                {
+                  "descriptor": {
+                    "code": "PREVIEW_IMAGE"
+                  }
                 }
               ]
             },
@@ -124,7 +139,7 @@
                   "descriptor": {
                     "code": "BRAND_NAME"
                   },
-                  "value": "Amazon"
+                  "value": "ITC Hotels"
                 },
                 {
                   "descriptor": {
@@ -149,40 +164,34 @@
                   "descriptor": {
                     "code": "FIXED_AMOUNT"
                   },
-                  "value": "500"
+                  "value": "200"
                 },
                 {
                   "descriptor": {
                     "code": "FIXED_AMOUNT"
                   },
-                  "value": "1000"
-                },
-                {
-                  "descriptor": {
-                    "code": "FIXED_AMOUNT"
-                  },
-                  "value": "2000"
+                  "value": "2500"
                 }
               ]
             }
-          ],
-          "category_ids": [
-            "C1"
-          ],
-          "fulfillment_ids": [
-            "F2"
           ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL"
         }
       ],
       "quote": {
         "price": {
-          "value": 1000,
-          "currency": "INR"
+          "currency": "INR",
+          "value": "900"
         },
         "breakup": [
           {
             "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89",
               "quantity": {
                 "selected": {
                   "count": 1
@@ -197,33 +206,33 @@
           },
           {
             "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89"
             },
+            "title": "tax",
             "price": {
               "currency": "INR",
-              "value": 0
-            },
-            "title": "tax"
+              "value": "0"
+            }
           },
           {
             "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89"
             },
+            "title": "convenience fee",
             "price": {
               "currency": "INR",
-              "value": 0
-            },
-            "title": "convenience fee"
+              "value": "0"
+            }
           },
           {
             "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89"
             },
+            "title": "offer",
             "price": {
               "currency": "INR",
-              "value": 0
-            },
-            "title": "offer"
+              "value": "-100"
+            }
           }
         ],
         "ttl": "P1D"

@@ -9,15 +9,15 @@
     "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
     "bpp_uri": "https://preprod-bpp.iway.digiit.io",
     "bpp_id": "preprod-bpp.iway.digiit.io",
-    "transaction_id": "e27ac51b-81e1-4994-a63d-a3b85fa4e5f3",
-    "message_id": "fb8ad38f-c7bb-4777-816b-ccd158477112",
-    "timestamp": "2023-06-26T07:58:42.566Z",
+    "transaction_id": "342f1fa1-b30d-40bb-93b7-a386b509c9f1",
+    "message_id": "6ec2d836-d93e-4252-b061-d3dd57bffe20",
+    "timestamp": "2023-07-17T04:41:38.603Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "6a02b598-03db-4467-9182-f6545554e704",
-      "state": "Accepted",
+      "id": "06bab141-a0c1-4d12-8e9b-5ac16edd9426",
+      "state": "Created",
       "provider": {
         "id": "107-Account-DER-292",
         "locations": [
@@ -28,7 +28,7 @@
       },
       "items": [
         {
-          "id": "20",
+          "id": "18",
           "category_id": "Standard Delivery",
           "descriptor": {
             "code": "P2P"
@@ -38,31 +38,24 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1250.0"
+          "value": "1205.0"
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "20",
+            "@ondc/org/item_id": "18",
             "@ondc/org/title_type": "Delivery Charge",
             "price": {
               "currency": "INR",
-              "value": "1210.0"
-            }
-          },
-          {
-            "@ondc/org/title_type": "RTO Charge",
-            "price": {
-              "currency": "INR",
-              "value": "40.0"
+              "value": "1205.0"
             }
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "4e7c6bee-69f7-4cd9-a9ad-1eb0ab4be887",
+          "id": "d602f9c6-b8a2-484b-9ac6-db45d65a8697",
           "type": "Prepaid",
-          "@ondc/org/awb_no": "2023062618840612",
+          "@ondc/org/awb_no": "2023071779119488",
           "start": {
             "person": {
               "name": "Yumfood"
@@ -110,10 +103,18 @@
             "contact": {
               "phone": "9556789011",
               "email": "n@gmail.com"
+            },
+            "instructions": {
+              "short_desc": "drop package at security gate",
+              "long_desc": "drop package at security gate",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "https://docs.google.com/document/d/109QZntPo0zQeqh4Il2T__blfNduLBb9MIibGlqlH8PU/edit?usp=sharing"
+              }
             }
           },
-          "@ondc/org/ewaybillno": "5cd253a3-05d9-41e5-b939-f3241e07bf24",
-          "@ondc/org/ebnexpirydate": "2023-06-28T07:58:41.510Z",
+          "@ondc/org/ewaybillno": "06bb7309-600e-4a3d-94a1-9ce820ef483b",
+          "@ondc/org/ebnexpirydate": "2023-07-19T04:41:38.602Z",
           "tags": {
             "@ondc/org/order_ready_to_ship": "no"
           }
@@ -133,8 +134,14 @@
         "tax_number": "98798798798",
         "phone": "8978909876",
         "email": "abcd.efgh@gmail.com",
-        "created_at": "2023-06-26T07:58:22.514Z",
-        "updated_at": "2023-06-26T07:58:22.514Z"
+        "created_at": "2023-07-17T04:41:14.610Z",
+        "updated_at": "2023-07-17T04:41:14.610Z"
+      },
+      "payment": {
+        "@ondc/org/collection_amount": "55",
+        "collected_by": "BAP",
+        "type": "ON-ORDER",
+        "@ondc/org/settlement_details": []
       },
       "@ondc/org/linked_order": {
         "items": [
@@ -144,7 +151,7 @@
               "name": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml"
             },
             "quantity": {
-              "count": "1",
+              "count": 1,
               "measure": {
                 "unit": "Kilogram",
                 "value": 1
@@ -170,15 +177,15 @@
           }
         },
         "order": {
-          "id": "2023-06-26-984939",
+          "id": "2023-07-17-795312",
           "weight": {
             "unit": "Gram",
-            "value": "100"
+            "value": 100
           }
         }
       },
-      "created_at": "2023-06-26T07:58:41.510Z",
-      "updated_at": "2023-06-26T07:58:41.510Z"
+      "created_at": "2023-07-17T04:41:38.603Z",
+      "updated_at": "2023-07-17T04:41:38.603Z"
     }
   }
 }

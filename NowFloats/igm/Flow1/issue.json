@@ -1,0 +1,97 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "issue",
+        "core_version": "1.0.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+        "transaction_id": "666bab0f-496d-44b7-afe6-8a1783b2acce",
+        "message_id": "064d44c1-b540-448a-bec3-625e9ae22332",
+        "timestamp": "2023-07-19T07:31:36.591Z",
+        "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "issue": {
+            "id": "814a902f-61d4-491e-8815-47677d3a056c",
+            "category": "ITEM",
+            "sub_category": "ITM01",
+            "complainant_info": {
+                "person": {
+                    "name": "Sankalp Gupta"
+                },
+                "contact": {
+                    "phone": "8860603729",
+                    "email": "sankalp.gupta@nowfloats.com"
+                }
+            },
+            "order_details": {
+                "id": "2023-07-19-707180",
+                "state": "Accepted",
+                "items": [
+                    {
+                        "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+                        "quantity": 1
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "57b1a299-a66e-49ae-8fb0-71fc08ecc53b",
+                        "state": "Pending"
+                    }
+                ],
+                "provider_id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51"
+            },
+            "description": {
+                "short_desc": "missing item",
+                "long_desc": "the item is missing",
+                "additional_desc": {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images": [
+                    "https://buyer-app-preprod.ondc.org/issueApis/uploads/1689751896595.png"
+                ]
+            },
+            "source": {
+                "network_participant_id": "buyer-app-preprod.ondc.org",
+                "type": "CONSUMER"
+            },
+            "expected_response_time": {
+                "duration": "PT1H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_type": "ISSUE",
+            "issue_actions": {
+                "complainant_actions": [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-07-19T07: 31: 36.595Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "buyer-app-preprod.ondc.org: :nic2004: 52110"
+                            },
+                            "contact": {
+                                "phone": "6239083807",
+                                "email": "Rishabhnand.singh@ondc.org"
+                            },
+                            "person": {
+                                "name": "Rishabhnand Singh"
+                            }
+                        }
+                    }
+                ],
+                "respondent_actions": []
+            },
+            "created_at": "2023-07-19T07: 31: 36.970Z",
+            "updated_at": "2023-07-19T07: 31: 36.970Z"
+        }
+    }
+}
