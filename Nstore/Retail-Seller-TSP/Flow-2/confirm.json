@@ -1,0 +1,192 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "confirm",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondctsp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondctsp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-13T14:31:37.582Z",
+        "message_id": "9c566842-55c5-4eb7-b473-3bdf915932d9",
+        "core_version": "1.1.0",
+        "transaction_id": "7c627901-f755-4aba-8029-697bb1ac2583"
+    },
+    "message": {
+        "order": {
+            "id": "2023-07-13-401589",
+            "items": [
+                {
+                    "id": "14574",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21222"
+                },
+                {
+                    "id": "14577",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21222"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "540.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "200.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "200.00",
+                            "currency": "INR"
+                        },
+                        "title": "Himalaya Ashvagandha",
+                        "@ondc/org/item_id": "14574",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "14574",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "340.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "340.00",
+                            "currency": "INR"
+                        },
+                        "title": "Himalaya gentle baby shampoo",
+                        "@ondc/org/item_id": "14577",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "14577",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "21222",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "Created",
+            "billing": {
+                "name": "Sathish Kumar",
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619",
+                "address": {
+                    "city": "Chennai",
+                    "door": "maduvinkarai",
+                    "name": "Sathish Kumar",
+                    "state": "Tamil Nadu",
+                    "country": "IND",
+                    "building": "maduvinkarai",
+                    "locality": "25/20A",
+                    "area_code": "600032"
+                },
+                "created_at": "2023-07-13T14:31:34.040Z",
+                "updated_at": "2023-07-13T14:31:34.040Z"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "540",
+                    "currency": "INR",
+                    "transaction_id": "7c627901-f755-4aba-8029-697bb1ac2583"
+                },
+                "status": "PAID",
+                "tl_method": "http/get",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "provider": {
+                "id": "21222",
+                "locations": [
+                    {
+                        "id": "21222"
+                    }
+                ]
+            },
+            "created_at": "2023-07-13T14:31:37.582Z",
+            "updated_at": "2023-07-13T14:31:37.582Z",
+            "fulfillments": [
+                {
+                    "id": "21222",
+                    "end": {
+                        "person": {
+                            "name": "Sathish Kumar"
+                        },
+                        "contact": {
+                            "email": "sathisha@nstore.in",
+                            "phone": "9629295619"
+                        },
+                        "location": {
+                            "gps": "13.0096060000001, 80.2113430000001",
+                            "address": {
+                                "city": "Chennai",
+                                "name": "Sathish Kumar",
+                                "state": "Tamil Nadu",
+                                "country": "IND",
+                                "building": "maduvinkarai",
+                                "locality": "25/20A",
+                                "area_code": "600032"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false
+                }
+            ]
+        }
+    }
+}
