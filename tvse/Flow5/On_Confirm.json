@@ -1,0 +1,182 @@
+{
+  "context": {
+    "action": "on_confirm",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc-preprod.tvs-e.in",
+    "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
+    "city": "std:080,std:044",
+    "core_version": "1.1.0",
+    "country": "IND",
+    "domain": "nic2004:52110",
+    "message_id": "6fe7c298-9477-4486-982c-5f2c1b0612a4",
+    "timestamp": "2023-07-22T18:33:56.729Z",
+    "transaction_id": "864a918f-21fb-405c-9025-0f1fa566327e",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "billing": {
+        "address": {
+          "area_code": "560034",
+          "city": "Bengaluru",
+          "country": "IND",
+          "door": "Bangalore",
+          "name": "Rajagopal",
+          "state": "Karnataka",
+          "street": "Bangalore"
+        },
+        "email": "s.rajagopal@tvs-e.in",
+        "name": "Rajagopal",
+        "phone": "9865569388"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "TVS Electronics Ltd",
+          "state": {
+            "descriptor": {
+              "name": "pending",
+              "code": "pending"
+            }
+          },
+          "tracking": true,
+          "end": {
+            "contact": {
+              "email": "s.rajagopal@tvs-e.in",
+              "phone": "9865569388"
+            },
+            "location": {
+              "address": {
+                "area_code": "560034",
+                "city": "Bengaluru",
+                "country": "IND",
+                "door": "Bangalore",
+                "name": "Rajagopal",
+                "state": "Karnataka",
+                "street": "Bangalore"
+              },
+              "gps": "13.006289, 77.699349"
+            }
+          },
+          "start": {
+            "location": {
+              "address": {
+                "area_code": "560034",
+                "city": "Bengaluru",
+                "country": "IND",
+                "door": "Bangalore",
+                "name": "Rajagopal",
+                "state": "Karnataka",
+                "street": "Bangalore"
+              },
+              "gps": "12.7123114,77.8106458",
+              "descriptor": {
+                "name": "TVS Electronics Ltd"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-07-22T10:00:00",
+                "end": "2023-07-22T19:00:00"
+              }
+            }
+          },
+          "rateable": false
+        }
+      ],
+      "id": "2023-07-22-240527",
+      "items": [
+        {
+          "@ondc/org/cancellable": true,
+          "@ondc/org/returnable": true,
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+          "quantity": {
+            "count": 2
+          }
+        }
+      ],
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/buyer_app_finder_fee_type": "Percent",
+        "@ondc/org/return_window": "0",
+        "@ondc/org/settlement_basis": "Collection",
+        "@ondc/org/settlement_details": [
+          {
+            "bank_name": "HDFC",
+            "branch_name": "Adayar",
+            "settlement_bank_account_no": "1234567890",
+            "settlement_counterparty": "seller-app",
+            "settlement_ifsc_code": "IFSC00001",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "NEFT"
+          }
+        ],
+        "@ondc/org/settlement_window": "P2D",
+        "@ondc/org/withholding_amount": "0",
+        "collected_by": "BAP",
+        "params": {
+          "amount": "25248.00",
+          "currency": "INR"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER"
+      },
+      "provider": {
+        "id": "ondc-preprod.tvs-e.in",
+        "locations": [
+          {
+            "id": "1"
+          }
+        ],
+        "rateable": false
+      },
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "21354.24"
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "21354.24"
+            },
+            "title": "MSP 250 Star Dot Matrix Printer"
+          },
+          {
+            "@ondc/org/item_id": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "3843.76"
+            },
+            "title": "Tax"
+          },
+          {
+            "@ondc/org/item_id": "Delivery",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "50.00"
+            },
+            "title": "Delivery Charge"
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "25248.00"
+        }
+      },
+      "state": "Accepted"
+    }
+  }
+}
