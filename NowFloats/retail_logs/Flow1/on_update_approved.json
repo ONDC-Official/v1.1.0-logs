@@ -3,63 +3,50 @@
     "domain": "nic2004:52110",
     "country": "IND",
     "city": "std:080",
-    "action": "on_confirm",
+    "action": "on_update",
     "core_version": "1.1.0",
-    "bap_id": "buyer-app-preprod.ondc.org",
-    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
     "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
     "transaction_id": "75c42600-b396-4655-9432-aae0b15df37d",
-    "message_id": "3bd8e50e-97f5-4536-a67c-fff7e7c71068",
-    "timestamp": "2023-07-13T04:13:34.702Z",
-    "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+    "message_id": "5a60bcff-87b8-4e69-b3a1-3830959c9dac",
+    "timestamp": "2023-07-13T10:20:13.166Z",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "id": "2023-07-13-321298",
-      "provider": {
-        "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51",
-        "locations": [
-          {
-            "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51"
-          }
-        ],
-        "rateable": true
-      },
-      "state": "Accepted",
+      "state": "Completed",
       "items": [
         {
+          "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+          "fulfillment_id": "ef62ed2c-fa56-415a-a83b-0feba2b9876b",
           "quantity": {
             "count": 1
           },
-          "fulfillment_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
-          "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8"
+          "tags": {
+            "status": "Return_Approved"
+          }
         },
         {
+          "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+          "fulfillment_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
           "quantity": {
             "count": 1
           },
+          "tags": {
+            "status": "Return_Approved"
+          }
+        },
+        {
+          "id": "c71b4800-1e8d-4186-82db-eff8ded9a337",
           "fulfillment_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
-          "id": "c71b4800-1e8d-4186-82db-eff8ded9a337"
+          "quantity": {
+            "count": 1
+          }
         }
       ],
-      "billing": {
-        "address": {
-          "door": "Bangalore",
-          "building": "Bangalore",
-          "city": "Bengaluru",
-          "state": "Karnataka",
-          "country": "IND",
-          "area_code": "560001",
-          "locality": "Bangalore",
-          "name": "Soumyadeep Bhadra"
-        },
-        "phone": "9748270530",
-        "name": "Soumyadeep Bhadra",
-        "email": "soumyadeep.bhadra@nowfloats.com",
-        "created_at": "2023-07-13T04:13:31.609Z",
-        "updated_at": "2023-07-13T04:13:31.609Z"
-      },
       "fulfillments": [
         {
           "id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
@@ -67,19 +54,19 @@
           "@ondc/org/provider_name": "Ankit Sharma",
           "state": {
             "descriptor": {
-              "code": "Pending"
+              "code": "Order-delivered"
             },
-            "updated_at": "2023-07-13T04:13:35.120Z",
+            "updated_at": "2023-07-13T10:20:13.505Z",
             "updated_by": "Customer"
           },
           "tracking": false,
           "start": {
             "time": {
               "range": {
-                "start": "2023-07-13T04:13:35.120Z",
-                "end": "2023-07-13T04:43:35.120Z"
+                "start": "2023-07-13T10:20:13.505Z",
+                "end": "2023-07-13T10:50:13.505Z"
               },
-              "timestamp": "2023-07-13T04:13:35.120Z"
+              "timestamp": "2023-07-13T10:20:13.505Z"
             },
             "instructions": {
               "name": "Status for pickup"
@@ -99,10 +86,70 @@
           "end": {
             "time": {
               "range": {
-                "start": "2023-07-13T04:13:35.120Z",
-                "end": "2023-07-13T04:43:35.120Z"
+                "start": "2023-07-13T10:20:13.505Z",
+                "end": "2023-07-13T10:50:13.505Z"
               },
-              "timestamp": "2023-07-13T04:13:35.120Z"
+              "timestamp": "2023-07-13T10:20:13.505Z"
+            },
+            "contact": {
+              "phone": "9748270530",
+              "email": "soumyadeep.bhadra@nowfloats.com"
+            },
+            "location": {
+              "gps": "12.9812430000001, 77.5950340000001",
+              "address": {
+                "name": "Soumyadeep Bhadra",
+                "building": "Bangalore",
+                "locality": "Bangalore",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560001"
+              }
+            }
+          }
+        },
+        {
+          "id": "ef62ed2c-fa56-415a-a83b-0feba2b9876b",
+          "type": "Delivery",
+          "state": {
+            "descriptor": {
+              "code": "Return_Approved"
+            },
+            "updated_at": "2023-07-13T10:20:13.505Z",
+            "updated_by": "Customer"
+          },
+          "tracking": false,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-07-13T10:20:13.505Z",
+                "end": "2023-07-13T10:50:13.505Z"
+              },
+              "timestamp": "2023-07-13T10:20:13.505Z"
+            },
+            "instructions": {
+              "name": "Status for pickup"
+            },
+            "contact": {
+              "phone": "9796812567",
+              "email": "v-ankit.sharma@nowfloats.com"
+            },
+            "location": {
+              "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51",
+              "gps": "12.9715987,77.5945627",
+              "descriptor": {
+                "name": "Ankit Grocery"
+              }
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-07-13T10:20:13.505Z",
+                "end": "2023-07-13T10:50:13.505Z"
+              },
+              "timestamp": "2023-07-13T10:20:13.505Z"
             },
             "contact": {
               "phone": "9748270530",
@@ -130,32 +177,6 @@
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
-            "@ondc/org/item_quantity": {
-              "count": 1
-            },
-            "title": "parle Chair",
-            "@ondc/org/title_type": "item",
-            "price": {
-              "currency": "INR",
-              "value": "90"
-            },
-            "item": {
-              "quantity": {
-                "available": {
-                  "count": "133"
-                },
-                "maximum": {
-                  "count": "133"
-                }
-              },
-              "price": {
-                "currency": "INR",
-                "value": "90"
-              }
-            }
-          },
-          {
             "@ondc/org/item_id": "c71b4800-1e8d-4186-82db-eff8ded9a337",
             "@ondc/org/item_quantity": {
               "count": 1
@@ -169,10 +190,10 @@
             "item": {
               "quantity": {
                 "available": {
-                  "count": "102"
+                  "count": "100"
                 },
                 "maximum": {
-                  "count": "102"
+                  "count": "100"
                 }
               },
               "price": {
@@ -182,7 +203,33 @@
             }
           },
           {
-            "@ondc/org/item_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+            "@ondc/org/item_id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "parle Chair",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "90"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "1"
+                },
+                "maximum": {
+                  "count": "1"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "90"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "ef62ed2c-fa56-415a-a83b-0feba2b9876b",
             "title": "Convenience Fee",
             "@ondc/org/title_type": "misc",
             "price": {
@@ -191,7 +238,7 @@
             }
           },
           {
-            "@ondc/org/item_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+            "@ondc/org/item_id": "ef62ed2c-fa56-415a-a83b-0feba2b9876b",
             "title": "Delivery charges",
             "@ondc/org/title_type": "delivery",
             "price": {

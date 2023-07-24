@@ -4,12 +4,6 @@
 
 **/init**
 - /message/order/billing/address must have required property 'building'
-- /message/order/fulfillments/0/end/location/address/building must NOT have fewer than 3 characters
-- /message/order/fulfillments/0/end/location/address/locality must NOT have fewer than 3 characters
-- billing/created_at should match context.timestamp
-- billing/updated_at should match context.timestamp
-- address.building should be more than 3 chars
-- address.locality should be more than 3 chars
 
 **/on_init**
 - /billing/address must have required property 'building'
