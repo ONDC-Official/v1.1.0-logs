@@ -1,21 +1,21 @@
 {
 	"context": {
-		"domain": "nic2004:60232",
+		"domain": "nic2004:52110",
 		"country": "IND",
 		"city": "std:022",
 		"action": "on_issue_status",
 		"core_version": "1.0.0",
-		"bap_id": "integrations-preprod.channelier.com",
-		"bap_uri": "https://integrations-preprod.channelier.com/ondc",
-		"bpp_id": "ShipWithAmazon",
-		"bpp_uri": "https://yklb2c73rj.execute-api.ap-south-1.amazonaws.com/sandbox/",
-		"transaction_id": "8247d8b4-e749-4f8b-8dcd-6fe61ea9aafc",
-		"message_id": "9a8150ed-5844-4e8a-9723-7758f3a65859",
-		"timestamp": "2023-07-14T22:44:25.581Z"
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_uri": "https://integrations-preprod.channelier.com/ondc",
+		"transaction_id": "efeafdbf-0f69-4a94-aa8c-4ba35ac0e4d6",
+		"message_id": "221efe87-9059-4dbb-86e5-ad21c91b28fe",
+		"timestamp": "2023-07-21T19:47:36.581Z",
+		"bpp_id": "integrations-preprod.channelier.com"
 	},
 	"message": {
 		"issue": {
-			"id": "5fd359ca-a754-4138-b8bd-f3d4bc9bd150",
+			"id": "8363ebff-e095-4dfa-81e1-d0c258ef979f",
 			"issue_actions": {
 				"respondent_actions": [
 					{
@@ -34,7 +34,7 @@
 							}
 						},
 						"cascaded_level": 1,
-						"updated_at": "2023-07-14T22:38:38.382Z"
+						"updated_at": "2023-07-21T19:38:38.382Z"
 					},
 					{
 						"respondent_action": "CASCADED",
@@ -52,7 +52,7 @@
 							}
 						},
 						"cascaded_level": 2,
-						"updated_at": "2023-07-14T22:38:41.899Z"
+						"updated_at": "2023-07-21T19:38:41.899Z"
 					},
 					{
 						"respondent_action": "PROCESSING",
@@ -70,7 +70,7 @@
 							}
 						},
 						"cascaded_level": 2,
-						"updated_at": "2023-07-14T22:38:42.781Z"
+						"updated_at": "2023-07-21T19:38:42.781Z"
 					},
 					{
 						"respondent_action": "RESOLVED",
@@ -88,29 +88,47 @@
 							}
 						},
 						"cascaded_level": 2,
-						"updated_at": "2023-07-14T22:44:25.581Z"
+						"updated_at": "2023-07-21T19:44:25.581Z"
+					},
+					{
+						"respondent_action": "RESOLVED",
+						"short_desc": "refund will be initiated for this order",
+						"updated_by": {
+							"org": {
+								"name": "integrations-preprod.channelier.com::nic2004:52110"
+							},
+							"contact": {
+								"phone": "9896910499",
+								"email": "respondent@channelier.com"
+							},
+							"person": {
+								"name": "John discovery"
+							}
+						},
+						"cascaded_level": 1,
+						"updated_at": "2023-07-21T19:47:36.581Z"
 					}
 				]
 			},
 			"resolution_provider": {
 				"respondent_info": {
-					"type": "CASCADED-COUNTERPARTY-NP",
+					"type": "TRANSACTION-COUNTERPARTY-NP",
 					"organization": {
 						"org": {
-							"name": "ShipWithAmazon::nic2004:60232"
+							"name": "integrations-preprod.channelier.com::nic2004:52110"
 						},
 						"contact": {
-							"phone": "8898889870",
-							"email": "responder@ShipWithAmazon.com"
+							"phone": "9896910499",
+							"email": "respondent@channelier.com"
 						},
 						"person": {
-							"name": "Philiphs"
+							"name": "John discovery"
 						}
 					},
 					"resolution_support": {
 						"contact": {
-							"phone": "8898889870",
-							"email": "responder@ShipWithAmazon.com"
+							"phone": "9896910499",
+							"email": "respondent@channelier.com"
 						},
 						"gros": [
 							{
@@ -122,6 +140,16 @@
 									"name": "Smith"
 								},
 								"gro_type": "CASCADED-COUNTERPARTY-NP-GRO"
+							},
+							{
+								"contact": {
+									"phone": "8788901245",
+									"email": "respondent@channelier.com"
+								},
+								"person": {
+									"name": "Naveen Singh"
+								},
+								"gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
 							}
 						]
 					}
@@ -129,12 +157,12 @@
 			},
 			"resolution": {
 				"action_triggered": "REFUND",
-				"short_desc": "resolution is provided",
-				"long_desc": "resolution is provided",
+				"short_desc": "refund will be initiated for this order",
+				"long_desc": "refund will be initiated for this order",
 				"refund_amount": "50"
 			},
-			"created_at": "2023-07-14T22:38:37.491Z",
-			"updated_at": "2023-07-14T22:44:25.581Z"
+			"created_at": "2023-07-21T19:38:37.491Z",
+			"updated_at": "2023-07-21T19:47:36.581Z"
 		}
 	}
 }
