@@ -1,0 +1,117 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "seller.instastack.io",
+        "bpp_uri": "https://seller.instastack.io/pre-prod",
+        "transaction_id": "9fb26b5c-1d1a-44c6-86db-2102617c06e6",
+        "message_id": "c06783d3-6b69-4b3a-a6e9-fcb1d9866a8f",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-07-14T04:39:10.632Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "223251"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "218"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Dunzo and others",
+                    "tracking": false,
+                    "@ondc/org/category": "Same Day Delivery",
+                    "@ondc/org/TAT": "PT6H",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1565.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "223251",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Seni Care Wet Wipes, 10 pcs",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "398.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "199.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "100"
+                                },
+                                "maximum": {
+                                    "count": "100"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "218",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Mamaearth Onion Conditioner, 400 ml",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1118.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "559.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "100"
+                                },
+                                "maximum": {
+                                    "count": "100"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "49.00"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}

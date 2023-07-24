@@ -1,0 +1,180 @@
+"Request": {
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+        "bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+        "transaction_id": "d83cfe14-3a9a-441d-a25c-eb83a0c1a3ae",
+        "message_id": "bf8c5fa3-3b52-404a-800d-4b3fbc81c621",
+        "timestamp": "2023-06-16T08:19:01.592Z",
+        "bpp_id": "stage.pep1.in",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-06-16-279665",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Prakash Iyer",
+                    "building": "Park Street",
+                    "locality": "B712 victoria Haven",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560099"
+                },
+                "phone": "9818470079",
+                "name": "Prakash Iyer",
+                "email": "nandita@technobibble.co.in",
+                "created_at": "2023-06-16T08:18:58.622Z",
+                "updated_at": "2023-06-16T08:18:58.622Z"
+            },
+            "items": [{
+                "id": "57759",
+                "quantity": {
+                    "count": 2
+                },
+                "fulfillment_id": "99f14430-c370-4e97-a8ee-c25f37dc6d8b"
+            }, {
+                "id": "59823",
+                "quantity": {
+                    "count": 2
+                },
+                "fulfillment_id": "99f14430-c370-4e97-a8ee-c25f37dc6d8b"
+            }],
+            "provider": {
+                "id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111",
+                "locations": [{
+                    "id": "S01425801-BGLR"
+                }]
+            },
+            "fulfillments": [{
+                "id": "99f14430-c370-4e97-a8ee-c25f37dc6d8b",
+                "tracking": false,
+                "end": {
+                    "contact": {
+                        "phone": "9818470079"
+                    },
+                    "person": {
+                        "name": "Prakash Iyer"
+                    },
+                    "location": {
+                        "gps": "12.8191810000001, 77.6878290000001",
+                        "address": {
+                            "name": "Prakash Iyer",
+                            "building": "Park Street",
+                            "locality": "B712 victoria Haven",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560099"
+                        }
+                    }
+                },
+                "type": "Delivery"
+            }],
+            "payment": {
+                "uri": "https:\/\/juspay.in\/",
+                "tl_method": "http\/get",
+                "params": {
+                    "amount": "130",
+                    "currency": "INR",
+                    "transaction_id": "d83cfe14-3a9a-441d-a25c-eb83a0c1a3ae"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc\/org\/buyer_app_finder_fee_type": "percent",
+                "@ondc\/org\/buyer_app_finder_fee_amount": "3.0",
+                "@ondc\/org\/settlement_details": [{
+                    "settlement_counterparty": "seller-app",
+                    "settlement_phase": "sale-amount",
+                    "settlement_type": "rtgs",
+                    "settlement_bank_account_no": "114605000635",
+                    "settlement_ifsc_code": "ICIC0000396",
+                    "beneficiary_name": "THE TECH TONIC",
+                    "bank_name": "ICICI BANK",
+                    "branch_name": "ICICI Bank Ltd, South Extension-II, New Delhi"
+                }]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "130"
+                },
+                "breakup": [{
+                    "@ondc\/org\/item_id": "57759",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 2
+                    },
+                    "title": "Lay's Potato Chips 50g, Classic Salted Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "40"
+                    },
+                    "item": {
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "59823",
+                    "@ondc\/org\/item_quantity": {
+                        "count": 2
+                    },
+                    "title": "Lay's Potato Chips 50g, American Style Cream & Onion Flavour, Crunchy Chips & Snacks",
+                    "@ondc\/org\/title_type": "item",
+                    "price": {
+                        "currency": "INR",
+                        "value": "40"
+                    },
+                    "item": {
+                        "price": {
+                            "currency": "INR",
+                            "value": "20"
+                        }
+                    }
+                }, {
+                    "@ondc\/org\/item_id": "99f14430-c370-4e97-a8ee-c25f37dc6d8b",
+                    "title": "Delivery charges",
+                    "@ondc\/org\/title_type": "delivery",
+                    "price": {
+                        "currency": "INR",
+                        "value": "50.0"
+                    }
+                }],
+                "ttl": "PT1H"
+            },
+            "created_at": "2023-06-16T08:19:01.592Z",
+            "updated_at": "2023-06-16T08:19:01.592Z"
+        }
+    }
+}
+"Response": {
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+        "bpp_id": "stage.pep1.in",
+        "bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+        "transaction_id": "d83cfe14-3a9a-441d-a25c-eb83a0c1a3ae",
+        "message_id": "bf8c5fa3-3b52-404a-800d-4b3fbc81c621",
+        "timestamp": "2023-06-16T08:19:01.688Z"
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}

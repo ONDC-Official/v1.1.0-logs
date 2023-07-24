@@ -1,0 +1,105 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_issue",
+        "core_version": "1.0.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+        "transaction_id": "666bab0f-496d-44b7-afe6-8a1783b2acce",
+        "message_id": "064d44c1-b540-448a-bec3-625e9ae22332",
+        "timestamp": "2023-07-19T07:33:16.752Z",
+        "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net"
+    },
+    "message": {
+        "issue": {
+            "id": "814a902f-61d4-491e-8815-47677d3a056c",
+            "created_at": "2023-07-19T07:31:36.970Z",
+            "updated_at": "2023-07-19T07:33:16.691Z",
+            "issue_actions": {
+                "respondent_actions": [
+                    {
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-07-19T07:31:37.168Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "jiw-ko-seller-ondc-as-staging.azurewebsites.net::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "+919796812567",
+                                "email": "v-ankit.sharma@nowfloats.com"
+                            },
+                            "person": {
+                                "name": "Ankit Sharma"
+                            }
+                        },
+                        "cascaded_level": 1
+                    },
+                    {
+                        "respondent_action": "RESOLVED",
+                        "short_desc": "Hey,\nYour order is being processed. We'll send a tracking number once it's shipped. Contact us with any questions. \nThank you for choosing us!",
+                        "updated_at": "2023-07-19T07:33:16.691Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "jiw-ko-seller-ondc-as-staging.azurewebsites.net::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "+919796812567",
+                                "email": "v-ankit.sharma@nowfloats.com"
+                            },
+                            "person": {
+                                "name": "Ankit Sharma"
+                            }
+                        },
+                        "cascaded_level": 1
+                    }
+                ]
+            },
+            "resolution": {
+                "short_desc": "Refund for Order c37ff120-63a3-4f4b-ad49-5200a7b99148",
+                "long_desc": "Hey,\nYour order is being processed. We'll send a tracking number once it's shipped. Contact us with any questions. \nThank you for choosing us!",
+                "action_triggered": "REFUND",
+                "refund_amount": "80"
+            },
+            "resolution_provider": {
+                "respondent_info": {
+                    "type": "TRANSACTION-COUNTERPARTY-NP",
+                    "organization": {
+                        "org": {
+                            "name": "jiw-ko-seller-ondc-as-staging.azurewebsites.net::nic2004:52110"
+                        },
+                        "contact": {
+                            "phone": "+919796812567",
+                            "email": "v-ankit.sharma@nowfloats.com"
+                        },
+                        "person": {
+                            "name": "Ankit Sharma"
+                        }
+                    },
+                    "resolution_support": {
+                        "respondentEmail": "v-ankit.sharma@nowfloats.com",
+                        "contact": {
+                            "phone": "+919796812567",
+                            "email": "v-ankit.sharma@nowfloats.com"
+                        },
+                        "gros": [
+                            {
+                                "person": {
+                                    "name": "Junaid Khan"
+                                },
+                                "contact": {
+                                    "phone": "7795003201",
+                                    "email": "junaid@transteel.com"
+                                },
+                                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

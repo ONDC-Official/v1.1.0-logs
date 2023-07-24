@@ -1,0 +1,102 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_confirm",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.viranc.com/p/v1/store",
+		"bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "3fd492de-b539-5bab-b205-f88dd78f294b",
+		"message_id": "acaf4c2d-669a-5153-95ab-5d384a5a1398",
+		"timestamp": "2023-07-21T13:34:26.656Z"
+	},
+	"message": {
+		"order": {
+			"billing": {
+				"address": {
+					"area_code": "400001",
+					"building": "Fort",
+					"city": "Mumbai",
+					"country": "India",
+					"locality": "Fort",
+					"name": "ONDC Test Seller Store",
+					"state": "Maharashtra"
+				},
+				"created_at": "2023-07-21T13:34:06.262Z",
+				"email": "test@gmail.com",
+				"name": "ONDC Test Seller Store",
+				"phone": "9999999999",
+				"tax_number": "22AAAAA0000A1Z5",
+				"updated_at": "2023-07-21T13:34:06.262Z"
+			},
+			"created_at": "2023-07-21T13:34:26.649Z",
+			"fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid",
+					"state": {
+						"descriptor": {
+							"code": "Pending"
+						}
+					},
+					"tracking": true,
+					"start": {
+						"time": {
+							"range": {
+								"start": "",
+								"end": ""
+							}
+						}
+					},
+					"end": {
+						"time": {
+							"range": {
+								"start": "",
+								"end": ""
+							}
+						}
+					}
+				}
+			],
+			"items": [
+				{
+					"category_id": "Same Day Delivery",
+					"descriptor": {
+						"code": "P2P"
+					},
+					"id": "G79776-52821H"
+				}
+			],
+			"provider": {
+				"id": "grab-logistics",
+				"locations": [
+					{
+						"id": ""
+					}
+				]
+			},
+			"updated_at": "2023-07-21T13:34:26.649Z",
+			"id": "eb405db6-952e-4e55-bedc-81a1c1f7b37f",
+			"state": "Accepted",
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1.0"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "G79776-52821H",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "1.0"
+						}
+					}
+				]
+			}
+		}
+	}
+}
