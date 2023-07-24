@@ -1,0 +1,196 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "confirm",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+      "transaction_id": "b2d41c89-3b37-4077-b624-ba66a3d243bb",
+      "message_id": "334f2dc1-91fb-43bb-b6f2-82d572898a0f",
+      "timestamp": "2023-07-14T09:58:45.750Z",
+      "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-07-14-608276",
+        "state": "Created",
+        "billing": {
+          "address": {
+            "name": "SoumyadeepBhadra",
+            "locality": "1",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "IND",
+            "area_code": "560001"
+          },
+          "phone": "9748270530",
+          "name": "SoumyadeepBhadra",
+          "email": "soumyadeep.bhadra@nowfloats.com",
+          "created_at": "2023-07-14T09:58:36.729Z",
+          "updated_at": "2023-07-14T09:58:36.729Z"
+        },
+        "items": [
+          {
+            "id": "cae57369-9776-4e0d-9ec0-4c5b748de999",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "181cd156-d11f-4364-9c67-4d8380c2fb61"
+          },
+          {
+            "id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "181cd156-d11f-4364-9c67-4d8380c2fb61"
+          }
+        ],
+        "provider": {
+          "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c",
+          "locations": [
+            {
+              "id": "4c3881c0-34bd-4367-8c8b-43c05fd9901c"
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "181cd156-d11f-4364-9c67-4d8380c2fb61",
+            "end": {
+              "contact": {
+                "email": "soumyadeep.bhadra@nowfloats.com",
+                "phone": "9748270530"
+              },
+              "person": {
+                "name": "SoumyadeepBhadra"
+              },
+              "location": {
+                "gps": "12.9812430000001, 77.5950340000001",
+                "address": {
+                  "name": "SoumyadeepBhadra",
+                  "building": "",
+                  "locality": "1",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560001"
+                }
+              }
+            },
+            "type": "Delivery"
+          }
+        ],
+        "payment": {
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
+          "params": {
+            "amount": "491.48",
+            "currency": "INR",
+            "transaction_id": "b2d41c89-3b37-4077-b624-ba66a3d243bb"
+          },
+          "status": "PAID",
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "021000021",
+              "settlement_ifsc_code": "SBIN0011514",
+              "beneficiary_name": "Ankit Kumar Bharti",
+              "bank_name": "SBI Bank",
+              "branch_name": "Noida"
+            }
+          ]
+        },
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "491.48"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "cae57369-9776-4e0d-9ec0-4c5b748de999",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Ankit 2",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "299"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "1497"
+                  },
+                  "maximum": {
+                    "count": "1497"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "299"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "e9511f3c-4592-4d7b-b038-ae5b6b1a58e5",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Ankit product",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "171"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "100"
+                  },
+                  "maximum": {
+                    "count": "100"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "171"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "181cd156-d11f-4364-9c67-4d8380c2fb61",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "15.48"
+              }
+            },
+            {
+              "@ondc/org/item_id": "181cd156-d11f-4364-9c67-4d8380c2fb61",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "6"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "created_at": "2023-07-14T09:58:45.611Z",
+        "updated_at": "2023-07-14T09:58:45.611Z"
+      }
+    }
+  }

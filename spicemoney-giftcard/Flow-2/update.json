@@ -1,0 +1,126 @@
+{
+  "context": {
+    "domain": "FIS10",
+    "ttl": "PT30S",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "58a1929c-39f3-4e02-98a4-6c62e0411055",
+    "transaction_id": "5d6cc15e-17f7-40d7-adba-1b9022217404",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "update",
+    "version": "1.0.0",
+    "timestamp": "2023-07-19T08:57:50.654Z"
+  },
+  "message": {
+    "update_target": "FULFILLMENT_END",
+    "order": {
+      "id": "4f8c5a2e-44f4-44da-b7f8-d9eb865f607d",
+      "status": "IN-PROGRESS",
+      "type": "DEFAULT",
+      "items": [
+        {
+          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "fulfillment_ids": [
+            "F2"
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "DENOMINATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "FIXED_AMOUNT"
+                  },
+                  "value": "1000"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "CUSTOMIZATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "RECEIVER_NAME"
+                  },
+                  "value": "Sagar"
+                },
+                {
+                  "descriptor": {
+                    "code": "MESSAGE"
+                  },
+                  "value": "Happy Birthday"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL",
+          "customer": {
+            "person": {
+              "name": "Sagar"
+            },
+            "contact": {
+              "phone": "1234567890",
+              "email": "sagar.revanna@eminds.ai"
+            }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "contact": {
+                "phone": "9999888670",
+                "email": "sagar.revanna3453453535353@eminds.ai"
+              },
+              "person": {
+                "name": "Sagar R"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "UPDATE_RECEIVER_INFO"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "EMAIL"
+                  },
+                  "value": "sagar.revanna@eminds.ai"
+                },
+                {
+                  "descriptor": {
+                    "code": "PHONE"
+                  },
+                  "value": "9964453579"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

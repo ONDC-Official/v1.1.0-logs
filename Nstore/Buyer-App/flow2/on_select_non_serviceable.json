@@ -1,0 +1,131 @@
+{
+    "error": {
+        "code": "30009",
+        "type": "DOMAIN-ERROR",
+        "message": "Delivery distance is beyond the allowed 50 km"
+    },
+    "context": {
+        "city": "std:*",
+        "action": "on_select",
+        "bap_id": "b-ondcbap.nlincs.in",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-11T16:08:41.973Z",
+        "message_id": "AQQePgQ8veBRHtPRke0wMdyznMnpDtjN",
+        "core_version": "1.1.0",
+        "transaction_id": "8c21510c0fac0d00b9f73dd082678600"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "103",
+                    "fulfillment_id": "21165"
+                },
+                {
+                    "id": "104",
+                    "fulfillment_id": "21165"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "1900.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "1500.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "1500.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Zodiac",
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "400.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "400.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Zodiac Cosmo",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "tax"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "21165"
+            },
+            "fulfillments": [
+                {
+                    "id": "21165",
+                    "state": {
+                        "descriptor": {
+                            "code": "Non-Serviceable"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/TAT": "PT6H",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Classic Grocery"
+                }
+            ]
+        }
+    }
+}

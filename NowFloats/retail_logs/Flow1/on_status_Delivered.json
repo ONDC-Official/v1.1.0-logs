@@ -1,0 +1,236 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_status",
+    "core_version": "1.1.0",
+    "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+    "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+    "transaction_id": "75c42600-b396-4655-9432-aae0b15df37d",
+    "message_id": "5cfc6521-8c6d-4ed7-abed-47af7463bd67",
+    "timestamp": "2023-07-15T04:14:40.199Z",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-07-13-321298",
+      "state": "Completed",
+      "provider": {
+        "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51",
+        "locations": [
+          {
+            "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51"
+          }
+        ]
+      },
+      "billing": {
+        "address": {
+          "door": "Bangalore",
+          "building": "Bangalore",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560001",
+          "locality": "Bangalore",
+          "name": "Soumyadeep Bhadra"
+        },
+        "phone": "9748270530",
+        "name": "Soumyadeep Bhadra",
+        "email": "soumyadeep.bhadra@nowfloats.com",
+        "created_at": "2023-07-13T04:13:31.609Z",
+        "updated_at": "2023-07-13T04:13:31.609Z"
+      },
+      "items": [
+        {
+          "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+          "fulfillment_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "c71b4800-1e8d-4186-82db-eff8ded9a337",
+          "fulfillment_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "Ankit Sharma",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            },
+            "updated_at": "2023-07-13T04:14:40.509Z",
+            "updated_by": "Customer"
+          },
+          "tracking": false,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-07-15T04:14:40.199Z",
+                "end": "2023-07-15T04:14:40.509Z"
+              },
+              "timestamp": "2023-07-15T04:14:40.509Z"
+            },
+            "instructions": {
+              "name": "Status for pickup"
+            },
+            "contact": {
+              "phone": "9796812567",
+              "email": "v-ankit.sharma@nowfloats.com"
+            },
+            "location": {
+              "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51",
+              "gps": "12.9715987,77.5945627",
+              "descriptor": {
+                "name": "Ankit Grocery"
+              }
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-07-15T04:14:40.509Z",
+                "end": "2023-07-15T04:44:40.509Z"
+              },
+              "timestamp": "2023-07-15T04:44:40.199Z"
+            },
+            "contact": {
+              "phone": "9748270530",
+              "email": "soumyadeep.bhadra@nowfloats.com"
+            },
+            "location": {
+              "gps": "12.9812430000001, 77.5950340000001",
+              "address": {
+                "name": "Soumyadeep Bhadra",
+                "building": "Bangalore",
+                "locality": "Bangalore",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560001"
+              }
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "233.94"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "parle Chair",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "90"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "132"
+                },
+                "maximum": {
+                  "count": "132"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "90"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "c71b4800-1e8d-4186-82db-eff8ded9a337",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "unibic Chair",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "108"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "101"
+                },
+                "maximum": {
+                  "count": "101"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "108"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "5.94"
+            }
+          },
+          {
+            "@ondc/org/item_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "30"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "233.94",
+          "currency": "INR",
+          "transaction_id": "75c42600-b396-4655-9432-aae0b15df37d"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "ankit@success"
+          }
+        ]
+      },
+      "created_at": "2023-07-13T04:13:34.478Z",
+      "updated_at": "2023-07-15T04:14:40.509Z",
+      "documents": [
+        {
+          "url": "https://jiw-ozed-as-staging.azurewebsites.net/invoice/df8679df-1a42-4af5-8084-f2736d208ac0/download",
+          "label": "Invoice"
+        }
+      ]
+    }
+  }
+}

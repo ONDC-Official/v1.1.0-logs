@@ -1,0 +1,117 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "seller.instastack.io",
+        "bpp_uri": "https://seller.instastack.io/pre-prod",
+        "transaction_id": "02d4135a-7d02-4731-8725-8894833e050c",
+        "message_id": "5652a1de-1b2a-491e-ba9c-37ca127aeab7",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-06-14T10:36:45.673Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "239537"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "239447"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Dunzo and others",
+                    "tracking": false,
+                    "@ondc/org/category": "Same Day Delivery",
+                    "@ondc/org/TAT": "PT6H",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "799"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "239537",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "title": "TruNativ x Ditch The Guilt Roasted Hazelnuts Vegan Protein Chocolate, 60 g",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "450"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "150.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "100"
+                                },
+                                "maximum": {
+                                    "count": "100"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "239447",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "TruNativ x Ditch The Guilt Roasted Almonds Vegan Protein Chocolate, 60 g",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "300"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "150.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "100"
+                                },
+                                "maximum": {
+                                    "count": "100"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "49"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}

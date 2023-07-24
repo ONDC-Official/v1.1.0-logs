@@ -1,0 +1,201 @@
+{
+    "context": {
+        "city": "std:*",
+        "action": "on_update",
+        "bap_id": "b-ondcbap.nlincs.in",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-11T15:53:23.872Z",
+        "message_id": "xIczacWuD8wtMULX4IXIWVTHvuWn3oA8",
+        "core_version": "1.1.0",
+        "transaction_id": "8d84179f26bfb963ba977a6a438fa900"
+    },
+    "message": {
+        "order": {
+            "id": "2023-36026-76359",
+            "items": [
+                {
+                    "id": "103",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21165"
+                },
+                {
+                    "id": "104",
+                    "tags": {
+                        "status": "Return_Initiated"
+                    },
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21165"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "1900.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "1500.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "1500.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Zodiac",
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "400.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "400.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Zodiac Cosmo",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "21165",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "Completed",
+            "payment": {
+                "uri": "https://api.razorpay.com",
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "1900.00",
+                    "currency": "INR",
+                    "transaction_id": "order_MCYAfJxGDKzYYT"
+                },
+                "status": "PAID",
+                "tl_method": "http/get",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "1"
+            },
+            "created_at": "2023-07-11T15:52:15.129Z",
+            "updated_at": "2023-07-11T15:53:23.872Z",
+            "fulfillments": [
+                {
+                    "id": "21165",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-07-11T15:53:04.000Z",
+                                "start": "2023-07-11T15:52:50.000Z"
+                            },
+                            "timestamp": "2023-07-11T15:53:04.000Z"
+                        },
+                        "contact": {
+                            "phone": "9840857465"
+                        },
+                        "location": {
+                            "gps": "12.9994421, 77.6197371",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "8",
+                                "state": "KA",
+                                "country": "IND",
+                                "building": "Mosque Road",
+                                "locality": "Pulikeshi Nagar",
+                                "area_code": "560005"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-07-11T15:52:50.000Z",
+                                "start": "2023-07-11T15:52:38.000Z"
+                            },
+                            "timestamp": "2023-07-11T15:52:50.000Z"
+                        },
+                        "contact": {
+                            "email": "hariprasa49@gmail.com",
+                            "phone": "5555544444"
+                        },
+                        "location": {
+                            "id": "21165",
+                            "gps": "12.9953231,77.6139826",
+                            "descriptor": {
+                                "name": "Classic Grocery",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/21165/store_logo/21165_b8j2337limy40jp.jpeg"
+                                ]
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Classic Grocery"
+                }
+            ]
+        }
+    }
+}

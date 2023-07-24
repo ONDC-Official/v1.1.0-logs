@@ -1,0 +1,130 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+    "transaction_id": "0b224ce1-eeac-40a3-9b5c-ce45be98e4e4",
+    "message_id": "9fba7e63-822a-437c-9fcb-1d4ea9088892",
+    "timestamp": "2023-03-28T16:08:09.868Z",
+    "bpp_id": "ondc.hulsecure.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
+      },
+      "provider_location": {
+        "id": "65426587829"
+      },
+      "items": [
+        {
+          "id": "44790347563308",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+        }
+      ],
+      "billing": {
+        "address": {
+          "building": "Noida",
+          "city": "Noida",
+          "state": "Uttar Pradesh",
+          "country": "IND",
+          "area_code": "201307",
+          "locality": "Second Floor, A 133, Sector 63",
+          "name": "Avinash Kumar Singh"
+        },
+        "phone": "8860775669",
+        "name": "Avinash Kumar Singh",
+        "email": "avinash.singh@ens.enterprises",
+        "created_at": "2023-03-28T16:08:09.121Z",
+        "updated_at": "2023-03-28T16:08:09.121Z"
+      },
+      "fulfillments": [
+        {
+          "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+          "type": "Delivery",
+          "end": {
+            "contact": {
+              "email": "avinash.singh@ens.enterprises",
+              "phone": "8860775669"
+            },
+            "location": {
+              "gps": "28.5859370000001, 77.3825590000001",
+              "address": {
+                "name": "Avinash Kumar Singh",
+                "building": "Noida",
+                "locality": "Second Floor, A 133, Sector 63",
+                "ward": null,
+                "city": "Noida",
+                "state": "Uttar Pradesh",
+                "country": "IND",
+                "area_code": "201307"
+              }
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "2222"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "44790347563308",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Axe Intense Long Lasting Deodorant Bodyspray For Men 215 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "2222"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "1111"
+              }
+            }
+          },
+          {
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "upi_address": "8860775669@paytm",
+            "settlement_bank_account_no": "623905034810",
+            "settlement_ifsc_code": "ICIC0006239",
+            "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+            "bank_name": "ICICI BANK",
+            "branch_name": "Mumbai Chembur branch"
+          }
+        ]
+      }
+    }
+  }
+}

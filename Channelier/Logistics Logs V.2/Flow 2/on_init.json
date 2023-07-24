@@ -1,0 +1,58 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "bpp_id": "ondcpp.yaarilabs.com",
+        "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+        "transaction_id": "28ca9abe-dbd3-4f53-aca7-e8d9d3854941",
+        "message_id": "6bf694ef-796c-4dfa-af9c-87f6a627e221",
+        "bap_id": "integrations-preprod.channelier.com",
+        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+        "timestamp": "2023-07-12T13:04:22.801Z",
+        "action": "on_init"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "2"
+            },
+            "items": [
+                {
+                    "category_id": "Standard Delivery",
+                    "id": "YAARI-2-Y053QHO46G"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "1"
+                        },
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "@ondc/org/item_id": "YAARI-2-Y053QHO46G"
+                    }
+                ]
+            },
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "upi",
+                        "upi_address": "gft@oksbi",
+                        "settlement_bank_account_no": "XXXXXXXXXX",
+                        "settlement_ifsc_code": "XXXXXXXXX"
+                    }
+                ]
+            }
+        }
+    }
+}

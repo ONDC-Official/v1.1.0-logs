@@ -1,0 +1,85 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc.uat.medpay.in",
+    "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+    "transaction_id": "faa99b02-db1a-4274-9809-876f4b80ee1e",
+    "message_id": "e1954628-795c-4faf-a73c-156b898a6d3d",
+    "timestamp": "2023-06-09T06:06:11.451Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "1001-0801-3631-0214",
+        "locations": [{ "id": "1002-3810-3036-9631" }]
+      },
+      "items": [
+        {
+          "id": "1002-3810-3036-9631_384348",
+          "fulfillment_id": "90614253076281124329280294879540757756"
+        },
+        {
+          "id": "1002-3810-3036-9631_384255",
+          "fulfillment_id": "90614253076281124329280294879540757756"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "90614253076281124329280294879540757756",
+          "type": "Delivery",
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "P2D",
+          "@ondc/org/provider_name": "Medpay - Amit pharmacy",
+          "state": { "descriptor": { "code": "Serviceable" } },
+          "tracking": false
+        }
+      ],
+      "quote": {
+        "price": { "currency": "INR", "value": "1258.0" },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "1002-3810-3036-9631_384348",
+            "@ondc/org/item_quantity": { "count": 2 },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "price": { "currency": "INR", "value": "449" },
+              "quantity": {
+                "available": { "count": "10" },
+                "maximum": { "count": "10" }
+              }
+            },
+            "title": "Pampers Active Baby Diaper Large",
+            "price": { "currency": "INR", "value": "898.0" }
+          },
+          {
+            "@ondc/org/item_id": "1002-3810-3036-9631_384255",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "price": { "currency": "INR", "value": "360" },
+              "quantity": {
+                "available": { "count": "10" },
+                "maximum": { "count": "10" }
+              }
+            },
+            "title": "Pampers Active Baby Diaper Small",
+            "price": { "currency": "INR", "value": "360.0" }
+          },
+          {
+            "@ondc/org/item_id": "90614253076281124329280294879540757756",
+            "@ondc/org/title_type": "delivery",
+            "title": "Delivery charges",
+            "price": { "currency": "INR", "value": "0.0" }
+          }
+        ],
+        "ttl": "P1D"
+      }
+    }
+  }
+}
