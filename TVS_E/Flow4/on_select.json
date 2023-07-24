@@ -1,0 +1,120 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080,std:044",
+		"action": "on_select",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
+		"transaction_id": "9b9b8a1e-55c1-4323-9535-62bf1bb54660",
+		"message_id": "df672c28-2eb1-4e9e-92bd-cedf802621c5",
+		"timestamp": "2023-07-22T18:03:43.016Z",
+		"bpp_id": "ondc-preprod.tvs-e.in"
+	},
+	"message": {
+		"order": {
+			"fulfillments": [{
+				"id": "1",
+				"tracking": true,
+				"@ondc/org/TAT": "PT2H",
+				"type": "Delivery",
+				"state": {
+					"descriptor": {}
+				}
+			}],
+			"items": [{
+					"id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+					"fulfillment_id": "1"
+				},
+				{
+					"id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+					"fulfillment_id": "1"
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "67865.00"
+				},
+				"breakup": [{
+						"@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+						"@ondc/org/item_quantity": {
+							"count": 3
+						},
+						"title": "MSP 250 Star Dot Matrix Printer",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "32031.36"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "10"
+								},
+								"maximum": {
+									"count": "5"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "32031.36"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+						"@ondc/org/item_quantity": {
+							"count": 2
+						},
+						"title": "LP 46 Lite Thermal Label Printer",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "25438.98"
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "2"
+								},
+								"maximum": {
+									"count": "5"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "25438.98"
+							}
+						}
+					},
+					{
+						"title": "Tax",
+						"price": {
+							"currency": "INR",
+							"value": "10344.66"
+						}
+					},
+					{
+						"title": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "50"
+						}
+					}
+				],
+				"ttl": "P4D"
+			},
+			"provider": {
+				"id": "ondc-preprod.tvs-e.in"
+			}
+		}
+	},
+	"error": {
+		"type": "DOMAIN-ERROR",
+		"code": "40002",
+		"message": "Item quantity unavailable"
+	}
+}

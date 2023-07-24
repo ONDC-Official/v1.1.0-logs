@@ -1,0 +1,170 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:044",
+    "action": "on_init",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc-preprod.tvs-e.in",
+    "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
+    "message_id": "12775377-fe7e-48d0-81ef-c71ac4585a71",
+    "timestamp": "2023-07-22T16:06:06.733Z",
+    "transaction_id": "6787514a-cff2-44eb-a8aa-3627a8bc7805"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+          "quantity": {
+            "count": 1
+          },
+          "@ondc/org/returnable": true,
+          "@ondc/org/cancellable": true
+        },
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+          "quantity": {
+            "count": 1
+          },
+          "@ondc/org/returnable": true,
+          "@ondc/org/cancellable": true
+        }
+      ],
+      "billing": {
+        "name": "Rajagopal",
+        "address": {
+          "door": "test",
+          "name": "Rajagopal",
+          "building": "test",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560036"
+        },
+        "email": "rajasaran22@gmail.com",
+        "phone": "9865569388"
+      },
+      "fulfillments": [
+        {
+          "type": "Delivery",
+          "provider_id": "ondc-preprod.tvs-e.in",
+          "tracking": true,
+          "end": {
+            "location": {
+              "gps": "12.927112, 77.626652",
+              "address": {
+                "door": "test",
+                "name": "Rajagopal",
+                "building": "test",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560036"
+              }
+            },
+            "contact": {
+              "phone": "9865569388",
+              "email": "test@gmail.com"
+            }
+          },
+          "id": "1"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "27658.00"
+        },
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "12719.49"
+              }
+            },
+            "title": "LP 46 Lite Thermal Label Printer",
+            "price": {
+              "currency": "INR",
+              "value": "12719.49"
+            },
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "Item"
+          },
+          {
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "10677.12"
+              }
+            },
+            "title": "MSP 250 Star Dot Matrix Printer",
+            "price": {
+              "currency": "INR",
+              "value": "10677.12"
+            },
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "Item"
+          },
+          {
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "4211.39"
+            },
+            "@ondc/org/item_id": "Tax",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "title": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "50"
+            },
+            "@ondc/org/item_id": "Delivery",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT30M"
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00",
+        "@ondc/org/withholding_amount": "0.0",
+        "@ondc/org/return_window": "0",
+        "@ondc/org/settlement_basis": "Collection",
+        "@ondc/org/settlement_window": "P2D",
+        "@ondc/org/settlement_details": [
+          {
+            "bank_name": "HDFC",
+            "beneficiary_name": "TVSE",
+            "branch_name": "Adayar",
+            "settlement_bank_account_no": "1234567890",
+            "settlement_counterparty": "seller-app",
+            "settlement_ifsc_code": "IFSC00001",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "NEFT",
+            "upi_address": ""
+          }
+        ]
+      },
+      "provider": {
+        "id": "ondc-preprod.tvs-e.in"
+      },
+      "provider_location": {
+        "id": "1"
+      }
+    }
+  }
+}
