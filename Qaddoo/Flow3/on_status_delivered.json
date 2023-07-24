@@ -1,0 +1,211 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "seller.instastack.io",
+        "bpp_uri": "https://seller.instastack.io/pre-prod",
+        "transaction_id": "3ddf9c29-7d9b-4f57-a1ee-8fdf0795b04a",
+        "message_id": "b1b1e4cd-6135-41f2-a2ec-5bfbfdcd309e",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-07-11T04:27:52.185Z"
+    },
+    "message": {
+        "order": {
+            "id": "630",
+            "state": "Completed",
+            "provider": {
+                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
+                "locations": [
+                    {
+                        "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+                    }
+                ],
+                "rateable": true
+            },
+            "items": [
+                {
+                    "id": "884",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 2
+                    }
+                },
+                {
+                    "id": "159562",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Rajiv Singh",
+                "address": {
+                    "name": "Rajiv Singh",
+                    "building": "15/11",
+                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560001"
+                },
+                "phone": "8302010971",
+                "created_at": "2023-07-11T04:13:43.006Z",
+                "updated_at": "2023-07-11T04:13:43.006Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Dunzo and others",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
+                            "descriptor": {
+                                "name": "InstaStack Store Powai",
+                                "images": [
+                                    "https://www.wellnessforever.com/assets/img/logo/cmy_logo_full.webp"
+                                ]
+                            },
+                            "gps": "19.116802,72.909812"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-11T04:14:16.614Z",
+                                "end": "2023-07-11T05:14:16.615Z"
+                            },
+                            "timestamp": "2023-07-11T04:27:15.066Z"
+                        },
+                        "contact": {
+                            "phone": "9892216537",
+                            "email": "info@instastack.io"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.971609528512422,77.59456269443035",
+                            "address": {
+                                "name": "Rajiv Singh",
+                                "building": "15/11",
+                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-11T04:14:16.614Z",
+                                "end": "2023-07-11T10:14:16.615Z"
+                            },
+                            "timestamp": "2023-07-11T04:27:52.185Z"
+                        },
+                        "contact": {
+                            "phone": "8302010971"
+                        }
+                    },
+                    "rateable": true
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1146.80"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "884",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "173.90"
+                            }
+                        },
+                        "title": "Cadbury Dairy Milk Silk Hazelnut, 143 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "347.80"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "159562",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "375.00"
+                            }
+                        },
+                        "title": "Cadbury Celebration Premium Selections Chocolates, 281 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "750.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "49.00"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "params": {
+                    "amount": "1146.80",
+                    "currency": "INR",
+                    "transaction_id": "1689048647801"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+                        "settlement_ifsc_code": "someIFSC",
+                        "upi_address": "thor@okicicicicic",
+                        "bank_name": "Marvels Bank",
+                        "branch_name": "Asgard",
+                        "beneficiary_name": "Thor"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "https://seller.instastack.io/invoice/630",
+                    "label": "Invoice"
+                }
+            ],
+            "tags": {},
+            "created_at": "2023-07-11T04:14:16.457Z",
+            "updated_at": "2023-07-11T04:27:52.185Z"
+        }
+    }
+}
