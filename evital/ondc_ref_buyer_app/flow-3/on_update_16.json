@@ -1,0 +1,158 @@
+{
+    "context": {
+        "action": "on_update",
+        "timestamp": "2023-07-24T11:49:42.772Z",
+        "domain": "nic2004:52110",
+        "bpp_id": "dev-ondc.evitalrx.in",
+        "bpp_uri": "https://dev-ondc.evitalrx.in/",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "transaction_id": "7bfd89e5-e78e-438f-ad14-163e2fde0207",
+        "message_id": "988722d1-5442-4d25-9052-09a7792da8c8",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "key": "gZFGTih00MIUZbL8u0y+Zaxd2SJRVAyuTTX6s6qD/vY="
+    },
+    "message": {
+        "order": {
+            "id": "2023-07-24-198165",
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "UDls67/FRA0bmeWwUyR+1g==",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 2
+                    }
+                },
+                {
+                    "id": "Mq22MYifFMezl/djO+9bDw==",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "tags": {
+                        "status": "Return_Rejected"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "585"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "UDls67/FRA0bmeWwUyR+1g==",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "MamyPoko Standard Pants L",
+                        "price": {
+                            "currency": "INR",
+                            "value": "390"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Mq22MYifFMezl/djO+9bDw==",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "MamyPoko Standard Pants Large",
+                        "price": {
+                            "currency": "INR",
+                            "value": "195"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Manav Medical GJ",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "name": "Order delivered",
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "Manav Medical GJ",
+                                "images": [
+                                    "https://ondc.evitalrx.in/images/pharmacylogo.png"
+                                ]
+                            },
+                            "gps": "13.0035068,77.5890953"
+                        },
+                        "contact": {
+                            "phone": "7043120038",
+                            "email": "evital.manav@gmail.com"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-24T11:46:28.000Z",
+                                "end": "2023-07-25T11:46:28.000Z"
+                            },
+                            "timestamp": "2023-07-24T11:47:04.000Z"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "13.021574,77.5927590000001",
+                            "address": {
+                                "door": "Ganganagar",
+                                "building": "Ganganagar",
+                                "name": "Arth Raval",
+                                "locality": "No 17, 1st  A Cross Binny Mill Road",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560032"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9845746574"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-24T11:46:28.000Z",
+                                "end": "2023-07-25T11:46:28.000Z"
+                            },
+                            "timestamp": "2023-07-24T11:48:53.000Z"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

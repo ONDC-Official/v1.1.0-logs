@@ -1,0 +1,114 @@
+{
+    "context": {
+        "action": "on_select",
+        "timestamp": "2023-07-24T11:38:07.455Z",
+        "domain": "nic2004:52110",
+        "bpp_id": "dev-ondc.evitalrx.in",
+        "bpp_uri": "https://dev-ondc.evitalrx.in/",
+        "country": "IND",
+        "city": "std:079",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "transaction_id": "c6a0a4f9-2d49-4993-9e13-2901006d0d7d",
+        "message_id": "f1f7f254-6b23-4e94-a1ce-0548a41147e4",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "key": "gZFGTih00MIUZbL8u0y+Zaxd2SJRVAyuTTX6s6qD/vY="
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "YT3/3PEAnmEolCPrStruew=="
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "Mq22MYifFMezl/djO+9bDw=="
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "UDls67/FRA0bmeWwUyR+1g=="
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Manav Medical GJ",
+                    "tracking": false,
+                    "@ondc/org/category": "Same Day Delivery",
+                    "@ondc/org/TAT": "P1D",
+                    "state": {
+                        "descriptor": {
+                            "code": "Non-serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "585"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Mq22MYifFMezl/djO+9bDw==",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "MamyPoko Standard Pants Large",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "195"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "5"
+                                },
+                                "maximum": {
+                                    "count": "5"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "UDls67/FRA0bmeWwUyR+1g==",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "MamyPoko Standard Pants L",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "390"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "321"
+                                },
+                                "maximum": {
+                                    "count": "321"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "30009"
+    }
+}

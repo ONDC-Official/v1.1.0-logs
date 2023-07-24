@@ -1,0 +1,160 @@
+{
+    "context": {
+        "action": "on_update",
+        "timestamp": "2023-07-24T11:14:09.936Z",
+        "domain": "nic2004:52110",
+        "bpp_id": "dev-ondc.evitalrx.in",
+        "bpp_uri": "https://dev-ondc.evitalrx.in/",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "transaction_id": "135840f5-13ab-4114-8150-a6ad8e6ee21d",
+        "message_id": "99d1f7a1-58fe-407d-bc99-1ada8fefa246",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "key": "gZFGTih00MIUZbL8u0y+Zaxd2SJRVAyuTTX6s6qD/vY="
+    },
+    "message": {
+        "order": {
+            "id": "2023-07-24-688158",
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "UDls67/FRA0bmeWwUyR+1g==",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 3
+                    },
+                    "tags": {
+                        "status": "Return_Initiated"
+                    }
+                },
+                {
+                    "id": "Mq22MYifFMezl/djO+9bDw==",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "975"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "UDls67/FRA0bmeWwUyR+1g==",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "title": "MamyPoko Standard Pants L",
+                        "price": {
+                            "currency": "INR",
+                            "value": "585"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Mq22MYifFMezl/djO+9bDw==",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "MamyPoko Standard Pants Large",
+                        "price": {
+                            "currency": "INR",
+                            "value": "390"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Manav Medical GJ",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "name": "Order delivered",
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "Manav Medical GJ",
+                                "images": [
+                                    "https://ondc.evitalrx.in/images/pharmacylogo.png"
+                                ]
+                            },
+                            "gps": "13.0035068,77.5890953"
+                        },
+                        "contact": {
+                            "phone": "7043120038",
+                            "email": "evital.manav@gmail.com"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-24T11:13:01.000Z",
+                                "end": "2023-07-25T11:13:01.000Z"
+                            },
+                            "timestamp": "2023-07-24T11:13:42.000Z"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "13.062801,77.467741",
+                            "address": {
+                                "door": "Kurubarahalli",
+                                "building": "Kurubarahalli",
+                                "name": "Arth Raval",
+                                "locality": "1st Cross, Main Road",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "562162"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9845746574"
+                        },
+                        "range": {
+                            "start": "2023-07-24T11:13:01.000Z",
+                            "end": "2023-07-25T11:13:01.000Z"
+                        },
+                        "time": {
+                            "timestamp": "2023-07-24T11:13:48.000Z"
+                        }
+                    }
+                }
+            ],
+            "created_at": "2023-07-24T11:13:01.000Z",
+            "updated_at": "2023-07-24T11:13:48.000Z"
+        }
+    }
+}
