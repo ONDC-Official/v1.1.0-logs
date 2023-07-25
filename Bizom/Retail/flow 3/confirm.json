@@ -1,0 +1,175 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "confirm",
+        "bap_id": "ondc.indiastack.cloud",
+        "bpp_id": "stagingapigateway.bizom.in/ondc",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "bpp_uri": "https://stagingapigateway.bizom.in/ondc",
+        "country": "IND",
+        "timestamp": "2023-03-17T06:59:44.917Z",
+        "message_id": "29f89ce6-d7b3-41cd-b0b1-0175625215a8",
+        "core_version": "1.1.0",
+        "transaction_id": "d7ebdc4c-a094-43ca-a47b-eca986d25d90"
+    },
+    "message": {
+        "order": {
+            "id": "5b9f778c-96cc-4265-8235-b43cabc452d0",
+            "items": [
+                {
+                    "id": "81",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "671c0fa9-9802-43fe-b8df-834d32c4754b"
+                },
+                {
+                    "id": "75",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "671c0fa9-9802-43fe-b8df-834d32c4754b"
+                }
+            ],
+            "quote": {
+                "ttl": "P1D",
+                "price": {
+                    "value": "1321.73",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "485.15",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "970.3",
+                            "currency": "INR"
+                        },
+                        "title": "LuvIt Chocorich Assorted Eclairs Hazelnut, Dark Choco & Classic Flavours Toffee Bars (4 x 480 g)",
+                        "@ondc/org/item_id": "81",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "270.57",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "270.57",
+                            "currency": "INR"
+                        },
+                        "title": "LuvIt Chocorich Assorted Eclairs Hazelnut, Dark Choco & Classic Flavours Toffee Bars (2 x 480 g)",
+                        "@ondc/org/item_id": "75",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "80.86",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "671c0fa9-9802-43fe-b8df-834d32c4754b",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "Created",
+            "billing": {
+                "name": "SamarthPatel",
+                "email": "samarth.patel@iiitb.org",
+                "phone": "9898141644",
+                "address": {
+                    "city": "Bangalore",
+                    "door": "-",
+                    "name": "IIIT Bangalore",
+                    "state": "KARNATAKA",
+                    "country": "IN",
+                    "building": "IIITB",
+                    "locality": "Electronics City",
+                    "area_code": "560100"
+                },
+                "created_at": "2023-03-17T06:59:28.202Z",
+                "tax_number": "",
+                "updated_at": "2023-03-17T06:59:28.202Z"
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "1321.73",
+                    "currency": "INR",
+                    "transaction_id": "order_LSV88OE4UAifKT"
+                },
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "HSBC",
+                        "branch_name": "Bangalore",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "Mobisy Technologies Pvt Ltd",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "HSBC0560002",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "073404378001"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
+            },
+            "provider": {
+                "id": "3",
+                "locations": [
+                    {
+                        "id": "3"
+                    }
+                ]
+            },
+            "created_at": "2023-03-17T06:59:44.879Z",
+            "updated_at": "2023-03-17T06:59:44.879Z",
+            "fulfillments": [
+                {
+                    "id": "671c0fa9-9802-43fe-b8df-834d32c4754b",
+                    "end": {
+                        "person": {
+                            "name": "Samarth Patel"
+                        },
+                        "contact": {
+                            "email": "samarth.patel@iiitb.org",
+                            "phone": "9898141644"
+                        },
+                        "location": {
+                            "gps": "12.8449599,77.6632162",
+                            "address": {
+                                "city": "Bangalore",
+                                "door": "-",
+                                "name": "IIIT Bangalore",
+                                "state": "KARNATAKA",
+                                "country": "IN",
+                                "building": "IIITB",
+                                "locality": "Electronics City",
+                                "area_code": "560100"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false,
+                    "provider_id": "3"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,209 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "transaction_id": "29f956fb-3f7d-4492-bb87-56cbb7ec9609",
+    "message_id": "61d1c4de-25ed-44ed-b891-d882b78ad9ed",
+    "timestamp": "2023-05-01T03:04:51.481Z",
+    "bpp_id": "preprod-bpp.dbs.digiit.io"
+  },
+  "message": {
+    "order": {
+      "id": "2023-05-01-336280",
+      "state": "Accepted",
+      "provider": {
+        "id": "171",
+        "locations": [
+          {
+            "id": "384"
+          }
+        ],
+        "rateable": true
+      },
+      "items": [
+        {
+          "id": "999",
+          "fulfillment_id": "ef2752d5-be0d-468c-85b9-b4d71a3fd754",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "1057",
+          "fulfillment_id": "ef2752d5-be0d-468c-85b9-b4d71a3fd754",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "billing": {
+        "name": "Clark Kent",
+        "address": {
+          "name": "Clark Kent",
+          "building": "Near Park",
+          "locality": "Sridhivyam Street",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "India",
+          "area_code": "560062"
+        },
+        "email": "clark@digiit.biz",
+        "phone": "9843123383",
+        "created_at": "2023-05-01T08:34:28.652Z",
+        "updated_at": "2023-05-01T08:34:28.652Z"
+      },
+      "fulfillments": [
+        {
+          "id": "ef2752d5-be0d-468c-85b9-b4d71a3fd754",
+          "@ondc/org/provider_name": "Sridhivyam",
+          "type": "Delivery",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Pending"
+            }
+          },
+          "start": {
+            "location": {
+              "descriptor": {
+                "name": "Sridhivyam"
+              },
+              "gps": "12.8714149,77.570119"
+            },
+            "time": {
+              "range": {
+                "start": "2023-05-01T03:04:45.042Z",
+                "end": "2023-05-01T03:19:45.042Z"
+              }
+            },
+            "instructions": {
+              "name": "Pending",
+              "short_desc": "3029"
+            },
+            "contact": {
+              "phone": "7760246669",
+              "email": "psriram78@yahoo.com"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.861736, 77.506438",
+              "address": {
+                "name": "Clark Kent",
+                "building": "Near Park",
+                "locality": "Sridhivyam Street",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560062"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-05-01T03:34:45.042Z",
+                "end": "2023-05-01T03:49:45.042Z"
+              }
+            },
+            "instructions": {
+              "name": "Pending",
+              "short_desc": "8852"
+            },
+            "contact": {
+              "phone": "9843123383"
+            }
+          },
+          "rateable": true
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "204.95"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "999",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Rice Flour",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "57.75"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "57.75"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1057",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Coca-Cola PET Bottle, 750 ml",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "47.20"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "47.20"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "ef2752d5-be0d-468c-85b9-b4d71a3fd754",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "ONDC-29f956fb-3f7d-4492-bb87-56cbb7ec9609-1",
+          "amount": "204.95"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "beneficiary_name": "Digiit Business Services Pvt Ltd",
+            "settlement_type": "neft",
+            "upi_address": "digiit@hdfcbank",
+            "settlement_bank_account_no": "50200053156327",
+            "settlement_ifsc_code": "HDFC0004824",
+            "bank_name": "HDFC Bank",
+            "branch_name": "Vayalur Road, Trichy"
+          }
+        ]
+      },
+      "created_at": "2023-05-01T03:04:45.042Z",
+      "updated_at": "2023-05-01T03:04:51.481Z"
+    }
+  }
+}

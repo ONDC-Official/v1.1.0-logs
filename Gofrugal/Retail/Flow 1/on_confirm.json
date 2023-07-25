@@ -4,32 +4,32 @@
     "country": "IND",
     "city": "std:080",
     "action": "on_confirm",
-    "timestamp": "2023-03-09T10:43:40.110Z",
+    "timestamp": "2023-03-14T05:28:20.644Z",
     "ttl": "PT30S",
     "core_version": "1.1.0",
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1/on_confirm",
     "bpp_id": "ondc-qa.gofrugalretail.com",
     "bpp_uri": "https://ondc-qa.gofrugalretail.com/ondc-service_1_0/ondc",
-    "transaction_id": "384a3fde-877f-4356-9bb4-b626458a399c",
-    "message_id": "09ddcafa-6d50-482a-bf22-66b65f40eca6"
+    "transaction_id": "e0d6aba9-f1ae-4106-a930-912e171a0c41",
+    "message_id": "44b1d69c-1c8a-4155-9b8b-7566f7fe1221"
   },
   "message": {
     "order": {
       "items": [
         {
+          "id": "5466-ONDC-1-22",
+          "quantity": {
+            "count": 3
+          },
+          "fulfillment_id": "FBD632270823751B4B54C027A332A686"
+        },
+        {
           "id": "5466-ONDC-1-1",
           "quantity": {
             "count": 2
           },
-          "fulfillment_id": "841532C3E9EB2B08375D9A6E017C2EB2"
-        },
-        {
-          "id": "5466-ONDC-1-12",
-          "quantity": {
-            "count": 2
-          },
-          "fulfillment_id": "841532C3E9EB2B08375D9A6E017C2EB2"
+          "fulfillment_id": "FBD632270823751B4B54C027A332A686"
         }
       ],
       "billing": {
@@ -45,12 +45,12 @@
         },
         "email": "sherinshafa2016@gmail.com",
         "phone": "8899112244",
-        "created_at": "2023-03-09T10:43:13.544Z",
-        "updated_at": "2023-03-09T10:43:13.544Z"
+        "created_at": "2023-03-14T05:27:54.864Z",
+        "updated_at": "2023-03-14T05:27:54.864Z"
       },
       "fulfillments": [
         {
-          "id": "841532C3E9EB2B08375D9A6E017C2EB2",
+          "id": "FBD632270823751B4B54C027A332A686",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -65,7 +65,7 @@
               "descriptor": {
                 "name": "MARKETPLACE SELLER1"
               },
-              "gps": "12.9731244, 77.5948792",
+              "gps": "12.9048022, 77.6821069",
               "address": {
                 "door": "",
                 "name": "MARKETPLACE SELLER1",
@@ -80,13 +80,13 @@
             },
             "time": {
               "range": {
-                "start": "2023-03-09T10:43:40.082Z",
-                "end": "2023-03-10T10:43:40.082Z"
+                "start": "2023-03-14T05:28:20.640Z",
+                "end": "2023-03-15T05:28:20.640Z"
               }
             },
             "instructions": {
               "name": "Status For Pickup",
-              "short_desc": "1267"
+              "short_desc": "7131"
             },
             "contact": {
               "phone": "8881177221",
@@ -108,13 +108,13 @@
             },
             "time": {
               "range": {
-                "start": "2023-03-12T10:43:40.082Z",
-                "end": "2023-03-12T10:43:40.082Z"
+                "start": "2023-03-17T05:28:20.640Z",
+                "end": "2023-03-17T05:28:20.640Z"
               }
             },
             "instructions": {
               "name": "Status for drop",
-              "short_desc": "6584"
+              "short_desc": "5728"
             },
             "contact": {
               "phone": "8899112244",
@@ -128,13 +128,31 @@
           "@ondc/org/provider_name": "MARKETPLACE SELLER1"
         }
       ],
-      "id": "2023-02-09-661533",
+      "id": "2023-03-14-983701",
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "840.00"
+          "value": "1200.00"
         },
         "breakup": [
+          {
+            "title": "5STAR",
+            "price": {
+              "currency": "INR",
+              "value": "900.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              }
+            },
+            "@ondc/org/item_id": "5466-ONDC-1-22",
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "@ondc/org/title_type": "item"
+          },
           {
             "title": "KIT KAT",
             "price": {
@@ -154,30 +172,12 @@
             "@ondc/org/title_type": "item"
           },
           {
-            "title": "DAIRY MILK",
-            "price": {
-              "currency": "INR",
-              "value": "600.00"
-            },
-            "item": {
-              "price": {
-                "currency": "INR",
-                "value": "300.00"
-              }
-            },
-            "@ondc/org/item_id": "5466-ONDC-1-12",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            },
-            "@ondc/org/title_type": "item"
-          },
-          {
             "title": "Delivery Charges",
             "price": {
               "currency": "INR",
-              "value": "40.00"
+              "value": "100.00"
             },
-            "@ondc/org/item_id": "841532C3E9EB2B08375D9A6E017C2EB2",
+            "@ondc/org/item_id": "FBD632270823751B4B54C027A332A686",
             "@ondc/org/title_type": "delivery"
           }
         ],
@@ -187,14 +187,14 @@
       "payment": {
         "uri": "https://juspay.in/",
         "params": {
-          "transaction_id": "ONDC-384a3fde-877f-4356-9bb4-b626458a399c-1",
-          "amount": "840",
+          "transaction_id": "ONDC-e0d6aba9-f1ae-4106-a930-912e171a0c41-1",
+          "amount": "1200",
           "currency": "INR"
         },
-        "type": "ON-FULFILLMENT",
-        "status": "NOT-PAID",
+        "type": "ON-ORDER",
+        "status": "PAID",
         "tl_method": "http/get",
-        "collected_by": "BPP",
+        "collected_by": "BAP",
         "@ondc/org/buyer_app_finder_fee_type": "percent",
         "@ondc/org/buyer_app_finder_fee_amount": "3.0",
         "@ondc/org/settlement_details": [
@@ -219,8 +219,8 @@
         ],
         "rateable": true
       },
-      "created_at": "2023-03-09T10:43:38.264Z",
-      "updated_at": "2023-03-09T10:43:40.081Z"
+      "created_at": "2023-03-14T05:28:19.425Z",
+      "updated_at": "2023-03-14T05:28:20.640Z"
     }
   }
 }

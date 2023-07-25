@@ -1,0 +1,156 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "on_init",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https:\/\/ondc-staging.paytm.com\/retail",
+		"bpp_id": "retailconnect.co.in",
+		"bpp_uri": "https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "188abe59-f962-45f6-a988-926a7e918eb5",
+		"message_id": ":SentTimeStamp:1680514022122:",
+		"city": "std:080",
+		"country": "IND",
+		"timestamp": "2023-04-03T09:27:02.252Z"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "ONDC-STORE-BGLR"
+			},
+			"provider_location": {
+				"id": "ONDC-STORE-BGLR"
+			},
+			"items": [{
+				"id": "YPPASTACHEESE83",
+				"quantity": {
+					"count": "0"
+				},
+				"fulfillment_id": "e373ea67-61b7-42f5-a29e-51d110a8138b"
+			}, {
+				"id": "MAGIC MASALA 93",
+				"quantity": {
+					"count": 2
+				},
+				"fulfillment_id": "e373ea67-61b7-42f5-a29e-51d110a8138b"
+			}],
+			"billing": {
+				"name": "Prakash Iyer",
+				"address": {
+					"name": "Prakash Iyer",
+					"building": "B303, Victorian haven, 7th cross",
+					"locality": "Patel Rama Reddy road",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560067"
+				},
+				"email": null,
+				"phone": "9818470079",
+				"created_at": "2023-04-03T09:27:02.252Z",
+				"updated_at": "2023-04-03T09:27:02.252Z"
+			},
+			"fulfillments": [{
+				"id": "e373ea67-61b7-42f5-a29e-51d110a8138b",
+				"type": "Delivery",
+				"provider_id": "ONDC-STORE-BGLR",
+				"tracking": false,
+				"end": {
+					"location": {
+						"gps": "12.999995,77.737714",
+						"address": {
+							"name": "Prakash Iyer",
+							"locality": "Patel Rama Reddy road",
+							"building": "B303, Victorian haven, 7th cross",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "IND",
+							"area_code": "560067"
+						}
+					},
+					"contact": {
+						"phone": "9818470079"
+					}
+				}
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "246"
+				},
+				"breakup": [{
+					"@ondc\/org\/item_id": "YPPASTACHEESE83",
+					"@ondc\/org\/item_quantity": {
+						"count": 0
+					},
+					"title": "Sunfeast YiPPee! Cheese Pasta Treat 65g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "0"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "23"
+						}
+					}
+				}, {
+					"@ondc\/org\/item_id": "MAGIC MASALA 93",
+					"@ondc\/org\/item_quantity": {
+						"count": 2
+					},
+					"title": "Sunfeast YiPPee Magic Masala 560g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "196"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "98"
+						}
+					}
+				}, {
+					"@ondc\/org\/item_id": "e373ea67-61b7-42f5-a29e-51d110a8138b",
+					"title": "Delivery charges",
+					"@ondc\/org\/title_type": "delivery",
+					"price": {
+						"currency": "INR",
+						"value": "50.0"
+					}
+				}],
+				"ttl": "P1D"
+			},
+			"payment": {
+				"@ondc\/org\/buyer_app_finder_fee_type": "percent",
+				"@ondc\/org\/buyer_app_finder_fee_amount": "3",
+				"@ondc\/org\/settlement_details": [{
+					"settlement_counterparty": "seller-app",
+					"settlement_phase": "sale-amount",
+					"settlement_type": "rtgs",
+					"settlement_bank_account_no": "XXXXXXXXXX",
+					"settlement_ifsc_code": "XXXXXXXXX",
+					"beneficiary_name": "xxxxx",
+					"bank_name": "xxxx",
+					"branch_name": "xxxx"
+				}]
+			}
+		}
+	},
+	"error": {
+		"type": "DOMAIN-ERROR",
+		"code": "40002",
+		"path": "string",
+		"message": "item quantity unavailable"
+	}
+} 
+
+
+{
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

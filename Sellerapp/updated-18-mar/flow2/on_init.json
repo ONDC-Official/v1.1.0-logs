@@ -1,0 +1,169 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.sellerapp.in",
+        "bpp_uri": "https://ondcpreprod.sellerapp.in/bpp/u/",
+        "transaction_id": "82a98b54-8158-43b4-98e0-1a18a2d6fd08",
+        "message_id": "1dbed8ee-f53b-4845-a904-70613088c593",
+        "timestamp": "2023-03-18T19:16:27.091Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "slrp-1276898"
+            },
+            "items": [
+                {
+                    "id": "77683588",
+                    "fulfillment_id": "3fc1bba0-a184-4a72-ae2d-9e1f684c657b"
+                },
+                {
+                    "id": "77683598",
+                    "fulfillment_id": "3fc1bba0-a184-4a72-ae2d-9e1f684c657b"
+                }
+            ],
+            "billing": {
+                "name": "Raja",
+                "phone": "9080739414",
+                "address": {
+                    "name": "Raja",
+                    "building": "san jose",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560038",
+                    "locality": "12 main road"
+                },
+                "email": "raja.mani@sellerapp.com",
+                "created_at": "2023-03-18T19:16:25.724Z",
+                "updated_at": "2023-03-18T19:16:25.724Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "3fc1bba0-a184-4a72-ae2d-9e1f684c657b",
+                    "provider_id": "loadshare@ondc-preprod.loadshare.net",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "end": {
+                        "location": {
+                            "gps": "12.9814010000001, 77.6409810000001",
+                            "address": {
+                                "name": "Raja",
+                                "building": "san jose",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560038",
+                                "locality": "12 main road"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9080739414",
+                            "email": "raja.mani@sellerapp.com"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Non-serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "617"
+                },
+                "breakup": [
+                    {
+                        "title": "Sleepy Owl Salted Caramel Cold Brew Coffee - Bottle",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100"
+                        },
+                        "@ondc/org/item_id": "77683588",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "100"
+                                },
+                                "maximum": {
+                                    "count": "20"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "100"
+                            }
+                        }
+                    },
+                    {
+                        "title": "slrp-unique",
+                        "price": {
+                            "currency": "INR",
+                            "value": "475"
+                        },
+                        "@ondc/org/item_id": "77683598",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "1"
+                                },
+                                "maximum": {
+                                    "count": "20"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "475"
+                            }
+                        }
+                    },
+                    {
+                        "title": "Delivery Fees",
+                        "price": {
+                            "currency": "INR",
+                            "value": "42"
+                        },
+                        "@ondc/org/item_id": "3fc1bba0-a184-4a72-ae2d-9e1f684c657b",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "272305001134",
+                        "settlement_ifsc_code": "ICIC0002723",
+                        "settlement_timestamp": "0001-01-01T00:00:00Z",
+                        "beneficiary_name": "SELLMETRIC PRIVATE LIMITED"
+                    }
+                ]
+            },
+            "provider_location": {
+                "id": "tki-1000"
+            }
+        }
+    }
+}

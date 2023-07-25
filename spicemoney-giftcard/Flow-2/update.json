@@ -1,0 +1,129 @@
+{
+  "context": {
+    "domain": "FIS10",
+    "ttl": "PT30S",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "2f87f2b0-698f-4be0-ab40-c6e020fc4700",
+    "transaction_id": "f2ec6fb1-4349-47d1-93a5-864d7de01fdb",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "update",
+    "version": "1.0.0",
+    "timestamp": "2023-07-24T15:04:26.768Z"
+  },
+  "message": {
+    "update_target": "FULFILLMENT_END",
+    "order": {
+      "id": "c72df20a-9ef0-4140-992d-02f640c2854b",
+      "status": "IN-PROGRESS",
+      "items": [
+        {
+          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "price": {
+            "currency": "INR",
+            "value": "1000000"
+          },
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "fulfillment_ids": [
+            "F2"
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "DENOMINATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "CUSTOM_AMOUNT"
+                  },
+                  "value": "1000"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "CUSTOMIZATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "RECEIVER_NAME"
+                  },
+                  "value": "Sagar"
+                },
+                {
+                  "descriptor": {
+                    "code": "MESSAGE"
+                  },
+                  "value": "Test"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL",
+          "customer": {
+            "person": {
+              "name": "chandrasekhar"
+            },
+            "contact": {
+              "phone": "+917064032212",
+              "email": "TestNum@gmail.com"
+            }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "contact": {
+                "phone": "9988776655",
+                "email": "sagar1231231312412@eminds.ai"
+              },
+              "person": {
+                "name": "Sagar"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "UPDATE_RECEIVER_INFO"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "EMAIL"
+                  },
+                  "value": "sagar.revanna@eminds.ai"
+                },
+                {
+                  "descriptor": {
+                    "code": "PHONE"
+                  },
+                  "value": "998877665"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

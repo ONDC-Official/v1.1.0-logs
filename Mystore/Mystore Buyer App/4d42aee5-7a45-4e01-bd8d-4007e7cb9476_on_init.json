@@ -1,0 +1,151 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "on_init",
+      "core_version": "1.1.0",
+      "bap_id": "beta.mystore.in",
+      "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+      "bpp_id": "retailconnect.co.in",
+      "bpp_uri": "https://retailconnect.co.in/ondc/public/OndcPreProd/callback",
+      "transaction_id": "4d42aee5-7a45-4e01-bd8d-4007e7cb9476",
+      "message_id": "0c68d42c-6211-44a6-af66-2e35ea41391d",
+      "city": "std:080",
+      "country": "IND",
+      "timestamp": "2023-03-20T07:55:38.327Z"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "ONDC-STORE-BGLR"
+        },
+        "provider_location": {
+          "id": "ONDC-STORE-BGLR"
+        },
+        "items": [
+          {
+            "id": "MD1253IN1",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "f74f8633-e968-4b56-8ed8-485f74a14e15"
+          }
+        ],
+        "billing": {
+          "name": "saurabh",
+          "address": {
+            "name": "barkha road",
+            "locality": "barkha road",
+            "building": "mangol puri",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "country": "IND",
+            "area_code": "110083"
+          },
+          "email": "saurabh.singh@hippoinnovations.com",
+          "phone": "8368476734",
+          "created_at": "2023-03-20T07:55:37.090Z",
+          "updated_at": "2023-03-20T07:55:37.090Z"
+        },
+        "fulfillments": [
+          {
+            "id": "f74f8633-e968-4b56-8ed8-485f74a14e15",
+            "type": "Delivery",
+            "provider_id": "ONDC-STORE-BGLR",
+            "tracking": false,
+            "end": {
+              "location": {
+                "gps": "12.97192,77.51281",
+                "address": {
+                  "name": "barkha road",
+                  "locality": "barkha road",
+                  "building": "mangol puri",
+                  "city": "New Delhi",
+                  "state": "Delhi",
+                  "country": "IND",
+                  "area_code": "110083"
+                }
+              },
+              "contact": {
+                "phone": "8368476734"
+              }
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "175"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "MD1253IN1",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "Mangaldeep 3in1 Agarbatti - 3 unique, long lasting fragrances",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "125"
+              },
+              "item": {
+                "price": {
+                  "currency": "INR",
+                  "value": "125"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "f74f8633-e968-4b56-8ed8-485f74a14e15",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50.0"
+              }
+            }
+          ],
+          "ttl": "P1D"
+        },
+        "payment": {
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "rtgs",
+              "settlement_bank_account_no": "XXXXXXXXXX",
+              "settlement_ifsc_code": "XXXXXXXXX",
+              "beneficiary_name": "xxxxx",
+              "bank_name": "xxxx",
+              "branch_name": "xxxx"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "on_init",
+      "core_version": "1.1.0",
+      "bap_id": "beta.mystore.in",
+      "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+      "bpp_id": "retailconnect.co.in",
+      "bpp_uri": "https://retailconnect.co.in/ondc/public/OndcPreProd/callback",
+      "transaction_id": "4d42aee5-7a45-4e01-bd8d-4007e7cb9476",
+      "message_id": "0c68d42c-6211-44a6-af66-2e35ea41391d",
+      "city": "std:080",
+      "country": "IND",
+      "timestamp": "2023-03-20T07:55:38.327Z"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}

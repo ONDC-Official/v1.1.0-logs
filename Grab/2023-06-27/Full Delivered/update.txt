@@ -1,0 +1,94 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "update",
+    "core_version": "1.1.0",
+    "bap_id": "logistics_buyer.com",
+    "bap_uri": "https://logistics_buyer.com/ondc",
+    "bpp_id": "lsp.com",
+    "bpp_uri": "https://lsp.com/ondc",
+    "transaction_id": "22034_232116100055_21161_00000000-6d59-29d4-ffff-ffff9abaa189_qeqKcS",
+    "message_id": "8JUXNNV6YzRs6n29IDmTv23I8r5QhrrIIW",
+    "timestamp": "2023-06-27T23:00:00.000Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "22034_232116100055_21161_qeqKcS",
+      "state": "Created",
+      "items": [
+        {
+          "id": "G79776-52821H",
+          "category_id": "Same Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "CoD",
+          "@ondc/org/awb_no": "1227262193237777",
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "start": {
+            "instructions": {
+              "short_desc": "1234",
+              "long_desc": "pickup code",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "URL for instructions"
+              }
+            }
+          },
+          "end": {
+            "instructions": {
+              "short_desc": "5678",
+              "long_desc": "delivery code",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "URL for instructions"
+              }
+            }
+          },
+          "@ondc/org/ewaybillno": "EBN1",
+          "@ondc/org/ebnexpirydate": "2023-03-31T12:00:00.000Z"
+        }
+      ],
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Grocery",
+            "descriptor": {
+              "name": "Atta"
+            },
+            "quantity": {
+              "count": 1,
+              "measure": {
+                "unit": "Kilogram",
+                "value": 5
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "200"
+            }
+          }
+        ],
+        "order": {
+          "id": "O1",
+          "weight": {
+            "unit": "Kilogram",
+            "value": 5
+          }
+        }
+      },
+      "updated_at": "2023-02-06T23:00:00.000Z"
+    }
+  }
+}

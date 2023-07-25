@@ -1,0 +1,264 @@
+{
+  "context": {
+    "domain": "FIS10",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "66c860e4-972e-4564-b6fe-616d0d085bdd",
+    "transaction_id": "f2ec6fb1-4349-47d1-93a5-864d7de01fdb",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "on_select",
+    "version": "1.0.0",
+    "timestamp": "2023-07-24T15:02:42.994Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec",
+        "descriptor": {
+          "name": "earnest",
+          "symbol": "https://giftcard.com/images/1-image",
+          "short_desc": "Online Gift Card Store",
+          "long_desc": "Online Gift Card Store",
+          "images": [
+            "https://giftcard.com/images/store-image"
+          ]
+        },
+        "categories": [
+          {
+            "id": "C1",
+            "descriptor": {
+              "code": "ONLINE"
+            }
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "descriptor": {
+            "name": "Amazon Gift Card",
+            "symbol": "https://i.imgur.com/LaA58IU.png",
+            "short_desc": "Amazon Shopping Voucher is just what you need if you want to shop on a budget. Amazon Shopping Vouchers help you buy hundreds of products at amazing discounts.",
+            "long_desc": "Amazon Shopping Voucher is just what you need if you want to shop on a budget. Amazon Shopping Vouchers help you buy hundreds of products at amazing discounts.",
+            "images": [
+              "https://meribachatassets.s3.ap-south-1.amazonaws.com/mbimages/d492c6c8e8a203bb5a1a25e0731f710e9ed7db2be732775054e2573896d47b1c.jpeg"
+            ]
+          },
+          "price": {
+            "currency": "INR",
+            "minimum_value": "500",
+            "maximum_value": "10000"
+          },
+          "category_ids": [
+            "C1"
+          ],
+          "fulfillment_ids": [
+            "F2"
+          ],
+          "cancellation_terms": [
+            {
+              "cancel_eligible": false
+            }
+          ],
+          "return_terms": [
+            {
+              "return_eligible": false
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "ITEM_DETAILS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "OCCASION"
+                  },
+                  "value": "FESTIVAL"
+                },
+                {
+                  "descriptor": {
+                    "code": "USABILITY"
+                  },
+                  "value": "online and offline"
+                },
+                {
+                  "descriptor": {
+                    "code": "EXPIRY_PERIOD"
+                  },
+                  "value": "3M"
+                },
+                {
+                  "descriptor": {
+                    "code": "USAGE_TERMS_CONDITION"
+                  },
+                  "value": "https://ondc.vistar.solutions/catalogue/catalouge/terms/bf6506a7-5ff8-47da-8d5a-c3c029414264"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "CUSTOMIZATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "Enabled"
+                  },
+                  "value": "true"
+                },
+                {
+                  "descriptor": {
+                    "code": "RECEIVER_NAME"
+                  }
+                },
+                {
+                  "descriptor": {
+                    "code": "MESSAGE"
+                  }
+                },
+                {
+                  "descriptor": {
+                    "code": "PREVIEW_IMAGE"
+                  }
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "BRAND_DETAILS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "BRAND_NAME"
+                  },
+                  "value": "Amazon"
+                },
+                {
+                  "descriptor": {
+                    "code": "BRAND_PHONE"
+                  },
+                  "value": "1800 419 2282"
+                },
+                {
+                  "descriptor": {
+                    "code": "BRAND_EMAIL"
+                  },
+                  "value": "in-customer.service@bata.com"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "DENOMINATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "FIXED_AMOUNT"
+                  },
+                  "value": "500"
+                },
+                {
+                  "descriptor": {
+                    "code": "FIXED_AMOUNT"
+                  },
+                  "value": "600"
+                },
+                {
+                  "descriptor": {
+                    "code": "FIXED_AMOUNT"
+                  },
+                  "value": "1000"
+                },
+                {
+                  "descriptor": {
+                    "code": "FIXED_AMOUNT"
+                  },
+                  "value": "2000"
+                },
+                {
+                  "descriptor": {
+                    "code": "FIXED_AMOUNT"
+                  },
+                  "value": "4000"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "450"
+        },
+        "breakup": [
+          {
+            "item": {
+              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              }
+            },
+            "title": "item",
+            "price": {
+              "currency": "INR",
+              "value": "500"
+            }
+          },
+          {
+            "item": {
+              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+            },
+            "title": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "item": {
+              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+            },
+            "title": "convenience fee",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "item": {
+              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+            },
+            "title": "offer",
+            "price": {
+              "currency": "INR",
+              "value": "-50"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      }
+    }
+  }
+}

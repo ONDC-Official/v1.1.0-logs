@@ -1,0 +1,211 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "confirm",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "fc5de3a0-e774-4895-a217-22f6d012f4f1",
+      "message_id": "04e4e242-b80c-4710-bce6-c12bb034c366",
+      "timestamp": "2023-03-31T08:39:16.993Z",
+      "bpp_id": "beta.mystore.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "id": "2023-03-31-995990",
+        "state": "Created",
+        "billing": {
+          "address": {
+            "name": "Saurabh",
+            "building": "barkha road",
+            "locality": "barkha",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "IND",
+            "area_code": "560001"
+          },
+          "phone": "8368476734",
+          "name": "Saurabh",
+          "email": "saurabh@test.com",
+          "created_at": "2023-03-31T08:38:46.795Z",
+          "updated_at": "2023-03-31T08:38:46.795Z"
+        },
+        "items": [
+          {
+            "id": "6414365e9e3780d6c5f3b83d",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "Fulfillment1"
+          },
+          {
+            "id": "641435ce9e3780d6c5f3b609",
+            "quantity": {
+              "count": 1
+            },
+            "fulfillment_id": "Fulfillment1"
+          }
+        ],
+        "provider": {
+          "id": "62733ab9f1f53df939f25300",
+          "locations": [
+            {
+              "id": "62733ab9f1f53df939f25300"
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "Fulfillment1",
+            "end": {
+              "contact": {
+                "email": "saurabh@test.com",
+                "phone": "8368476734"
+              },
+              "person": {
+                "name": "Saurabh"
+              },
+              "location": {
+                "gps": "12.9812430000001, 77.5950340000001",
+                "address": {
+                  "name": "Saurabh",
+                  "building": "barkha road",
+                  "locality": "barkha",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560001"
+                }
+              }
+            },
+            "type": "Delivery"
+          }
+        ],
+        "payment": {
+          "uri": "https://juspay.in/",
+          "tl_method": "http/get",
+          "params": {
+            "amount": "670",
+            "currency": "INR",
+            "transaction_id": "ONDC-fc5de3a0-e774-4895-a217-22f6d012f4f1-1"
+          },
+          "status": "PAID",
+          "type": "ON-ORDER",
+          "collected_by": "BAP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_type": "neft",
+              "settlement_bank_account_no": "test",
+              "settlement_ifsc_code": "123",
+              "bank_name": "SBI",
+              "branch_name": "gurgaon",
+              "beneficiary_name": "Test test",
+              "settlement_phase": "sale-amount"
+            }
+          ]
+        },
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "670"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "6414365e9e3780d6c5f3b83d",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "rice 2000gm",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "500"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "378"
+                  },
+                  "maximum": {
+                    "count": "378"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "500"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "641435ce9e3780d6c5f3b609",
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "title": "rice 100gm",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "120"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "4"
+                  },
+                  "maximum": {
+                    "count": "4"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "120"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "Fulfillment1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "50"
+              }
+            }
+          ]
+        },
+        "created_at": "2023-03-31T08:39:16.993Z",
+        "updated_at": "2023-03-31T08:39:16.993Z"
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "confirm",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "fc5de3a0-e774-4895-a217-22f6d012f4f1",
+      "message_id": "04e4e242-b80c-4710-bce6-c12bb034c366",
+      "timestamp": "2023-03-31T08:39:16.993Z",
+      "bpp_id": "beta.mystore.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}

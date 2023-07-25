@@ -1,0 +1,205 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_confirm",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_uri": "https://preprod-ondc.addble.com/",
+		"transaction_id": "9fb7438e-63cb-4626-9912-9ea9b61a9f04",
+		"message_id": "51f6b568-6686-4aec-a23d-f54a286d48cd",
+		"timestamp": "2023-05-21T10:28:27.312Z",
+		"bpp_id": "preprod-ondc.addble.com",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"id": "2023-05-21-885562",
+			"state": "Accepted",
+			"provider": {
+				"id": "UBzw4QGewWquuLE8brUS",
+				"locations": [
+					{
+						"id": "EOKJBqid0zecXCvyQBCR"
+					}
+				],
+				"rateable": true
+			},
+			"items": [
+				{
+					"id": "vcprTtA2z8GVno1w5RU1",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "f53a1b9e-ef42-431b-af33-64e8ba1b6813"
+				},
+				{
+					"id": "ZT024kNUKV5nGuxddRQM",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "f53a1b9e-ef42-431b-af33-64e8ba1b6813"
+				}
+			],
+			"billing": {
+				"address": {
+					"name": "Yaikhomba Blr",
+					"building": "Shell Petrol Pump",
+					"locality": "Bellandur",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560001"
+				},
+				"phone": "6362944815",
+				"name": "Yaikhomba Blr",
+				"email": "adden.company@gmail.com",
+				"created_at": "2023-05-21T10:27:56.530Z",
+				"updated_at": "2023-05-21T10:27:56.530Z"
+			},
+			"fulfillments": [
+				{
+					"id": "f53a1b9e-ef42-431b-af33-64e8ba1b6813",
+					"type": "Delivery",
+					"@ondc/org/provider_name": "Syngenta",
+					"tracking": false,
+					"state": {
+						"descriptor": {
+							"code": "Pending"
+						}
+					},
+					"start": {
+						"location": {
+							"id": "EOKJBqid0zecXCvyQBCR",
+							"descriptor": {
+								"name": "Syngenta"
+							},
+							"gps": "12.8959396,77.5824389"
+						},
+						"contact": {
+							"phone": "9954780440"
+						},
+						"time": {
+							"range": {
+								"start": "2023-05-21T11:13:26.492Z",
+								"end": "2023-05-21T11:23:26.492Z"
+							}
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.9812430000001, 77.5950340000001",
+							"address": {
+								"name": "Yaikhomba Blr",
+								"building": "Shell Petrol Pump",
+								"locality": "Bellandur",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560001"
+							}
+						},
+						"contact": {
+							"email": "adden.company@gmail.com",
+							"phone": "6362944815"
+						},
+						"time": {
+							"range": {
+								"start": "2023-05-21T13:43:26.492Z",
+								"end": "2023-05-21T13:53:26.492Z"
+							}
+						}
+					},
+					"rateable": true
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "217.19"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "ZT024kNUKV5nGuxddRQM",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Carrot- गाजर",
+						"price": {
+							"currency": "INR",
+							"value": "68"
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "68"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "vcprTtA2z8GVno1w5RU1",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "CARROT Seeds",
+						"price": {
+							"currency": "INR",
+							"value": "148"
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "148"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "f53a1b9e-ef42-431b-af33-64e8ba1b6813",
+						"title": "Delivery charges",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "1.19"
+						}
+					}
+				],
+				"ttl": "P1D"
+			},
+			"payment": {
+				"uri": "https://juspay.in/",
+				"tl_method": "http/get",
+				"params": {
+					"amount": "217.19",
+					"currency": "INR",
+					"transaction_id": "ONDC-9fb7438e-63cb-4626-9912-9ea9b61a9f04-1"
+				},
+				"status": "PAID",
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc/org/buyer_app_finder_fee_type": "percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_phase": "sale-amount",
+						"settlement_type": "upi",
+						"upi_address": "test@okbizaxis",
+						"beneficiary_name": "Addble"
+					}
+				]
+			},
+			"documents": [
+				{
+					"url": "https://preprod-invoices.addble.com/v1/ondc/2023-05-21-885562",
+					"label": "Invoice"
+				}
+			],
+			"created_at": "2023-05-21T10:28:26.492Z",
+			"updated_at": "2023-05-21T10:28:27.312Z"
+		}
+	}
+}

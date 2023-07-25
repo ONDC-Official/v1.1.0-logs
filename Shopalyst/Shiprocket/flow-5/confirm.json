@@ -1,0 +1,147 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://preprod-sellerapp.shiprocket.com/shiprocket",
+        "transaction_id": "2a312111-2207-4cd4-9a91-77adfb3dc0e3",
+        "message_id": "1f3e1bd4-101e-46be-ab00-6bad47023f8d",
+        "timestamp": "2023-05-24T20:58:10.825Z",
+        "bpp_id": "preprod-sellerapp.shiprocket.com",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-05-24-483501",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Kishor",
+                    "building": "Shopalyst",
+                    "locality": "288, 36th Cross road, 7th block Jayanagar",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560070"
+                },
+                "phone": "9123456789",
+                "name": "Kishor",
+                "email": "kishor.gandham@gmail.com",
+                "created_at": "2023-05-24T20:57:58.055Z",
+                "updated_at": "2023-05-24T20:57:58.055Z"
+            },
+            "items": [
+                {
+                    "id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "b083db8904c8bcba29b97f071ba733d5_1"
+                }
+            ],
+            "provider": {
+                "id": "b083db8904c8bcba29b97f071ba733d5",
+                "locations": [
+                    {
+                        "id": "b083db8904c8bcba29b97f071ba733d5"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "tracking": true,
+                    "end": {
+                        "contact": {
+                            "phone": "9123456789"
+                        },
+                        "person": {
+                            "name": "Kishor"
+                        },
+                        "location": {
+                            "gps": "12.923479, 77.564663",
+                            "address": {
+                                "name": "Kishor",
+                                "building": "Shopalyst",
+                                "locality": "288, 36th Cross road, 7th block Jayanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560070"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "1300",
+                    "currency": "INR",
+                    "transaction_id": "ONDC-2a312111-2207-4cd4-9a91-77adfb3dc0e3-1"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1300.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Shanaya Luxury Attar Perfume 12 ML",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1300.00"
+                        },
+                        "@ondc/org/item_id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "650.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "created_at": "2023-05-24T20:58:10.825Z",
+            "updated_at": "2023-05-24T20:58:10.825Z"
+        }
+    }
+}

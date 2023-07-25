@@ -1,0 +1,79 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "search",
+    "core_version": "1.1.0",
+    "bap_id": "preprod.xpressbaazaar.com",
+    "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
+    "transaction_id": "342f1fa1-b30d-40bb-93b7-a386b509c9f1",
+    "message_id": "14a308de-94a2-4efe-89f7-b2a9e89a0d17",
+    "timestamp": "2023-07-17T04:39:49.686Z",
+    "ttl": "PT30S",
+    "bpp_id": "preprod-bpp.iway.digiit.io"
+  },
+  "message": {
+    "intent": {
+      "category": {
+        "id": "Standard Delivery"
+      },
+      "provider": {
+        "time": {
+          "days": "2,3,4,5,6,1",
+          "schedule": {
+            "holidays": []
+          },
+          "range": {
+            "start": "1050",
+            "end": "2251"
+          }
+        }
+      },
+      "fulfillment": {
+        "type": "Prepaid",
+        "start": {
+          "location": {
+            "gps": "13.105620,77.382700",
+            "address": {
+              "area_code": "560061"
+            }
+          }
+        },
+        "end": {
+          "location": {
+            "gps": "12.9088400000001, 77.549113",
+            "address": {
+              "area_code": "560061"
+            }
+          }
+        }
+      },
+      "@ondc/org/payload_details": {
+        "weight": {
+          "unit": "Gram",
+          "value": 100
+        },
+        "dimensions": {
+          "length": {
+            "unit": "centimeter",
+            "value": 10
+          },
+          "breadth": {
+            "unit": "centimeter",
+            "value": 12
+          },
+          "height": {
+            "unit": "centimeter",
+            "value": 13
+          }
+        },
+        "category": "Grocery",
+        "value": {
+          "currency": "INR",
+          "value": "55"
+        }
+      }
+    }
+  }
+}

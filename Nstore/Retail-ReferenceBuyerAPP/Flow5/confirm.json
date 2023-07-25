@@ -1,0 +1,167 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "confirm",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-04-11T16:42:51.680Z",
+        "message_id": "4a309f2d-2ed6-49d8-ae4a-f94954854731",
+        "core_version": "1.1.0",
+        "transaction_id": "e6dd647b-2e8e-4cda-8721-855859a76497"
+    },
+    "message": {
+        "order": {
+            "id": "2023-04-11-224634",
+            "items": [
+                {
+                    "id": "473",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "20971"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "388.28",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "375.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "375.00",
+                            "currency": "INR"
+                        },
+                        "title": "Saffola Classic Instant Masala Oats 1 Kg",
+                        "@ondc/org/item_id": "473",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "473",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "13.28",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "state": "Created",
+            "billing": {
+                "name": "Sathish Kumar A",
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619",
+                "address": {
+                    "city": "Bengaluru",
+                    "door": "Peenya Industrial Area",
+                    "name": "Sathish Kumar A",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "Peenya Industrial Area",
+                    "locality": "Post Box No. 5857, 23/24, II Phase",
+                    "area_code": "560058"
+                },
+                "created_at": "2023-04-11T16:42:28.648Z",
+                "updated_at": "2023-04-11T16:42:28.648Z"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "388.28",
+                    "currency": "INR",
+                    "transaction_id": "ONDC-e6dd647b-2e8e-4cda-8721-855859a76497-1"
+                },
+                "status": "PAID",
+                "tl_method": "http/get",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "provider": {
+                "id": "20971",
+                "locations": [
+                    {
+                        "id": "20971"
+                    }
+                ]
+            },
+            "created_at": "2023-04-11T16:42:51.680Z",
+            "updated_at": "2023-04-11T16:42:51.680Z",
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "end": {
+                        "person": {
+                            "name": "Sathish Kumar A"
+                        },
+                        "contact": {
+                            "email": "sathisha@nstore.in",
+                            "phone": "9629295619"
+                        },
+                        "location": {
+                            "gps": "13.032975, 77.5203490000001",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "Sathish Kumar A",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "Peenya Industrial Area",
+                                "locality": "Post Box No. 5857, 23/24, II Phase",
+                                "area_code": "560058"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false
+                }
+            ]
+        }
+    }
+}

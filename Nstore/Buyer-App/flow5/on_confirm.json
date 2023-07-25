@@ -1,0 +1,188 @@
+{
+    "context": {
+        "city": "std:*",
+        "action": "on_confirm",
+        "bap_id": "b-ondcbap.nlincs.in",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-11T16:27:51.266Z",
+        "message_id": "6v51AhThwHYGouiKY6SHLLfruEV9GIaL",
+        "core_version": "1.1.0",
+        "transaction_id": "3fc6de0e7fadc438d2b9108fb9aced00"
+    },
+    "message": {
+        "order": {
+            "id": "2023-36061-25356",
+            "items": [
+                {
+                    "id": "104",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "21165"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "800.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "400.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "800.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Zodiac Cosmo",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "21165",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "Created",
+            "billing": {
+                "name": "Arunraj",
+                "email": "arunraj@nstore.in",
+                "phone": "9840857465",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "8",
+                    "state": "KA",
+                    "country": "IND",
+                    "building": "Mosque Road",
+                    "locality": "Pulikeshi Nagar",
+                    "area_code": "560005"
+                },
+                "created_at": "2023-07-11T16:27:10.571Z",
+                "updated_at": "2023-07-11T16:27:10.571Z"
+            },
+            "payment": {
+                "uri": "https://api.razorpay.com",
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "800.00",
+                    "currency": "INR",
+                    "transaction_id": "order_MCYlnNffD4uAOd"
+                },
+                "status": "PAID",
+                "tl_method": "http/get",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "1"
+            },
+            "provider": {
+                "id": "21165",
+                "rateable": true,
+                "locations": [
+                    {
+                        "id": "21165"
+                    }
+                ]
+            },
+            "documents": [],
+            "created_at": "2023-07-11T16:27:48.152Z",
+            "updated_at": "2023-07-11T16:27:51.266Z",
+            "fulfillments": [
+                {
+                    "id": "21165",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-07-12T17:27:51.265Z",
+                                "start": "2023-07-12T16:27:51.265Z"
+                            }
+                        },
+                        "contact": {
+                            "name": "Arunraj",
+                            "email": "arunraj@nstore.in",
+                            "phone": "9840857465"
+                        },
+                        "location": {
+                            "gps": "12.9994421, 77.6197371",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "8",
+                                "state": "KA",
+                                "country": "IND",
+                                "building": "Mosque Road",
+                                "locality": "Pulikeshi Nagar",
+                                "area_code": "560005"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-07-12T16:27:51.265Z",
+                                "start": "2023-07-11T16:27:51.265Z"
+                            }
+                        },
+                        "contact": {
+                            "email": "",
+                            "phone": "5555544444"
+                        },
+                        "location": {
+                            "id": "21165",
+                            "gps": "12.9953231,77.6139826",
+                            "descriptor": {
+                                "name": "Classic Grocery"
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "rateable": true,
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Classic Grocery"
+                }
+            ]
+        }
+    }
+}

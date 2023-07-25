@@ -1,0 +1,97 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "init",
+        "core_version": "1.1.0",
+        "bap_id": "falconsai.com",
+        "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "transaction_id": "4efdb805-836e-4480-a775-5137749e1103",
+        "message_id": "60c3f9af-e824-40f6-b059-7e18cfa4d1f1",
+        "timestamp": "2023-03-17T10:31:42.942Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "express",
+                    "descriptor": {
+                        "code": "P2P"
+                    },
+                    "category_id": "Immediate Delivery",
+                    "fulfillment_id": "lsn_prepaid"
+                }
+            ],
+            "billing": {
+                "name": "Hitbyseo Digital Marketing & Innovations LLP",
+                "address": {
+                    "name": "GrowthFalcons",
+                    "building": "T-5, KBF",
+                    "locality": "AECS Layout, Kundalahalli",
+                    "city": "Bangalore",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560037"
+                },
+                "email": "billing@growthfalcons.com",
+                "phone": "9845071842",
+                "tax_number": "29AAKFH0619N1ZZ",
+                "created_at": "2023-03-17T10:31:42.942Z",
+                "updated_at": "2023-03-17T10:31:42.942Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "lsn_prepaid",
+                    "type": "Prepaid",
+                    "tracking": true,
+                    "start": {
+                        "location": {
+                            "gps": "12.9076452868,77.6352300637",
+                            "address": {
+                                "name": "HSR Test Store",
+                                "building": "No 392, 3rd Floor, 9th Main, 7th Sector, HSR Layout, Bangalore, Karnataka - 560102",
+                                "locality": "SULEMANI CHICHAS",
+                                "city": "Bangalore",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560102"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9296250006"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9140160000001, 77.6371740000001",
+                            "address": {
+                                "name": "Sandeep Pai",
+                                "building": "560102 landmark",
+                                "locality": "HSR layout",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560102"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9952445640",
+                            "email": "sandeep@gamil.com"
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP"
+            },
+            "provider": {
+                "id": "loadshare@ondc-preprod.loadshare.net"
+            }
+        }
+    }
+}

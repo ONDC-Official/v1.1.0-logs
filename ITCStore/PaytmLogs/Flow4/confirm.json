@@ -1,0 +1,202 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "confirm",
+		"country": "IND",
+		"city": "std:080",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https:\/\/ondc-staging.paytm.com\/retail",
+		"transaction_id": "71d82702-52d0-4978-91df-6d940fa5558a",
+		"message_id": ":SentTimeStamp:1680090917205:",
+		"timestamp": "2023-03-29T11:55:17.201Z",
+		"bpp_id": "retailconnect.co.in",
+		"bpp_uri": "https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback"
+	},
+	"message": {
+		"order": {
+			"id": "2F1B92A6E62CD18E4BD09DC9511AF7A5",
+			"items": [{
+				"id": "QM VEGGIE 70-PK",
+				"quantity": {
+					"count": 1
+				},
+				"fulfillment_id": "0e87a6ee-02e2-4ed9-8fcd-c5adf22379be"
+			}, {
+				"id": "MAGIC MASALA 93",
+				"quantity": {
+					"count": 2
+				},
+				"fulfillment_id": "0e87a6ee-02e2-4ed9-8fcd-c5adf22379be"
+			}],
+			"billing": {
+				"name": "Yogesh Goyal",
+				"address": {
+					"building": "Thirumalashettyhally",
+					"name": "Yogesh Goyal",
+					"locality": "Koralur",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560067"
+				},
+				"phone": "9818470079",
+				"created_at": "2023-03-29T11:49:41.476Z",
+				"updated_at": "2023-03-29T11:49:41.476Z"
+			},
+			"provider": {
+				"id": "ONDC-STORE-BGLR",
+				"locations": [{
+					"id": "ONDC-STORE-BGLR"
+				}]
+			},
+			"fulfillments": [{
+				"id": "0e87a6ee-02e2-4ed9-8fcd-c5adf22379be",
+				"type": "Delivery",
+				"tracking": true,
+				"start": {
+					"location": {
+						"id": "ONDC-STORE-BGLR",
+						"descriptor": {
+							"name": "ONDC-STORE-BGLR"
+						},
+						"gps": "12.99521,77.71766"
+					},
+					"time": {
+						"range": {
+							"start": "2023-03-29T13:55:17.203Z",
+							"end": "2023-03-29T14:25:17.203Z"
+						}
+					},
+					"instructions": {
+						"name": "pick up instructions",
+						"short_desc": "Provide the order id"
+					},
+					"contact": {
+						"phone": "9876543210",
+						"email": "ondc@gmail.com"
+					}
+				},
+				"end": {
+					"location": {
+						"gps": "12.981105,77.774329",
+						"address": {
+							"building": "Thirumalashettyhally",
+							"name": "Yogesh Goyal",
+							"locality": "Koralur",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "India",
+							"area_code": "560067"
+						}
+					},
+					"time": {
+						"range": {
+							"start": "2023-03-29T15:55:17.203Z",
+							"end": "2023-03-29T16:25:17.203Z"
+						}
+					},
+					"instructions": {
+						"name": "drop off instructions",
+						"short_desc": "Leave at door step"
+					},
+					"contact": {
+						"phone": "9818470079"
+					},
+					"person": {
+						"name": "Yogesh Goyal"
+					}
+				},
+				"provider_id": "ONDC-STORE-BGLR"
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "291"
+				},
+				"breakup": [{
+					"title": "Sunfeast YiPPee! Quik Mealz Veggie Delight, 70g",
+					"price": {
+						"currency": "INR",
+						"value": "45"
+					},
+					"@ondc\/org\/title_type": "item",
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "45"
+						}
+					},
+					"@ondc\/org\/item_quantity": {
+						"count": 1
+					},
+					"@ondc\/org\/item_id": "QM VEGGIE 70-PK"
+				}, {
+					"title": "Sunfeast YiPPee Magic Masala 560g",
+					"price": {
+						"currency": "INR",
+						"value": "196"
+					},
+					"@ondc\/org\/title_type": "item",
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "98"
+						}
+					},
+					"@ondc\/org\/item_quantity": {
+						"count": 2
+					},
+					"@ondc\/org\/item_id": "MAGIC MASALA 93"
+				}, {
+					"title": "Delivery charges",
+					"price": {
+						"currency": "INR",
+						"value": "50.0"
+					},
+					"@ondc\/org\/title_type": "delivery",
+					"@ondc\/org\/item_id": "0e87a6ee-02e2-4ed9-8fcd-c5adf22379be"
+				}]
+			},
+			"payment": {
+				"uri": "https:\/\/ondc.transaction.com\/payment",
+				"tl_method": "http\/get",
+				"params": {
+					"currency": "INR",
+					"transaction_id": "20230329011690000847886906619869208",
+					"amount": "291"
+				},
+				"type": "ON-ORDER",
+				"status": "PAID",
+				"collected_by": "BAP",
+				"@ondc\/org\/buyer_app_finder_fee_type": "percent",
+				"@ondc\/org\/buyer_app_finder_fee_amount": "3"
+			},
+			"created_at": "2023-03-29T11:55:17.201Z",
+			"updated_at": "2023-03-29T11:55:17.201Z"
+		}
+	}
+}
+
+
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "confirm",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https:\/\/ondc-staging.paytm.com\/retail",
+		"bpp_id": "retailconnect.co.in",
+		"bpp_uri": "https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "71d82702-52d0-4978-91df-6d940fa5558a",
+		"message_id": ":SentTimeStamp:1680090917205:",
+		"timestamp": "2023-03-29T11:55:17.252Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}
