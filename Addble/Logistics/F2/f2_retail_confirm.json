@@ -1,0 +1,195 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "confirm",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_uri": "https://preprod-ondc.addble.com/",
+		"transaction_id": "fadf9c7a-765d-4216-8980-80fd034d6ff1",
+		"message_id": "8364a8c3-9b43-456d-91f9-6ad0aaff3194",
+		"timestamp": "2023-05-13T14:05:44.990Z",
+		"bpp_id": "preprod-ondc.addble.com",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"id": "2023-05-13-742088",
+			"state": "Created",
+			"billing": {
+				"address": {
+					"name": "Yaikhomba Noida",
+					"building": "Today Homes",
+					"locality": "Ridge Residency",
+					"city": "Noida",
+					"state": "Uttar Pradesh",
+					"country": "IND",
+					"area_code": "201304"
+				},
+				"phone": "6362944815",
+				"name": "Yaikhomba Noida",
+				"email": "adden.company@gmail.com",
+				"created_at": "2023-05-13T14:05:27.700Z",
+				"updated_at": "2023-05-13T14:05:27.700Z"
+			},
+			"items": [
+				{
+					"id": "vcprTtA2z8GVno1w5RU1",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "84cdd6dc-507c-4269-9b8d-04833d368edf"
+				},
+				{
+					"id": "ZT024kNUKV5nGuxddRQM",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "84cdd6dc-507c-4269-9b8d-04833d368edf"
+				},
+				{
+					"id": "yMXxw4dMgUjird1uGxD6",
+					"quantity": {
+						"count": 1
+					},
+					"fulfillment_id": "84cdd6dc-507c-4269-9b8d-04833d368edf"
+				}
+			],
+			"provider": {
+				"id": "UBzw4QGewWquuLE8brUS",
+				"locations": [
+					{
+						"id": "EOKJBqid0zecXCvyQBCR"
+					}
+				]
+			},
+			"fulfillments": [
+				{
+					"id": "84cdd6dc-507c-4269-9b8d-04833d368edf",
+					"tracking": false,
+					"end": {
+						"contact": {
+							"email": "adden.company@gmail.com",
+							"phone": "6362944815"
+						},
+						"person": {
+							"name": "Yaikhomba Noida"
+						},
+						"location": {
+							"gps": "28.533647, 77.3851280000001",
+							"address": {
+								"name": "Yaikhomba Noida",
+								"building": "Today Homes",
+								"locality": "Ridge Residency",
+								"city": "Noida",
+								"state": "Uttar Pradesh",
+								"country": "IND",
+								"area_code": "201304"
+							}
+						}
+					},
+					"type": "Delivery"
+				}
+			],
+			"payment": {
+				"uri": "https://juspay.in/",
+				"tl_method": "http/get",
+				"params": {
+					"amount": "237.03",
+					"currency": "INR",
+					"transaction_id": "ONDC-fadf9c7a-765d-4216-8980-80fd034d6ff1-1"
+				},
+				"status": "PAID",
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc/org/buyer_app_finder_fee_type": "percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_phase": "sale-amount",
+						"settlement_type": "upi",
+						"upi_address": "test@okbizaxis",
+						"beneficiary_name": "Addble"
+					}
+				]
+			},
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "237.03"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "ZT024kNUKV5nGuxddRQM",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "Carrot- गाजर",
+						"price": {
+							"currency": "INR",
+							"value": "68"
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "68"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "vcprTtA2z8GVno1w5RU1",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "CARROT Seeds",
+						"price": {
+							"currency": "INR",
+							"value": "148"
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "148"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "yMXxw4dMgUjird1uGxD6",
+						"@ondc/org/item_quantity": {
+							"count": 1
+						},
+						"@ondc/org/title_type": "item",
+						"title": "PEA Seeds",
+						"price": {
+							"currency": "INR",
+							"value": "20"
+						},
+						"item": {
+							"price": {
+								"currency": "INR",
+								"value": "20"
+							}
+						}
+					},
+					{
+						"@ondc/org/item_id": "84cdd6dc-507c-4269-9b8d-04833d368edf",
+						"title": "Delivery charges",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "1.03"
+						}
+					}
+				],
+				"ttl": "P1D"
+			},
+			"created_at": "2023-05-13T14:05:44.990Z",
+			"updated_at": "2023-05-13T14:05:44.990Z"
+		}
+	}
+}

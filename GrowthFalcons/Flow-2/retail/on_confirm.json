@@ -1,0 +1,246 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_confirm",
+        "core_version": "1.1.0",
+        "bap_id": "ondc.indiastack.cloud",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "bpp_id": "falconsai.com",
+        "bpp_uri": "https://falconsai.com/v1/ondc/ecomm/fnb",
+        "transaction_id": "aeb1e29a-8498-4662-9187-7b572ee91c7e",
+        "message_id": "44ae569d-956f-463d-a425-643c2768ff25",
+        "timestamp": "2023-03-14T20:06:53.758Z",
+        "ttl": "PT3S"
+    },
+    "message": {
+        "order": {
+            "id": "0e6524f8-4542-4fb5-91e6-d5b1987e0e26",
+            "state": "Created",
+            "items": [
+                {
+                    "id": "154701be-c38a-4e7f-ae1a-22b46541d820",
+                    "fulfillment_id": "2",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "ac670904-b9a1-4c53-a066-9ebab2ddf54d",
+                    "fulfillment_id": "2",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "billing": {
+                "name": "SandeepPai",
+                "address": {
+                    "door": "-",
+                    "name": "Indiranagar",
+                    "building": "-",
+                    "locality": "-",
+                    "city": "Bangalore",
+                    "state": "KARNATAKA",
+                    "country": "IN",
+                    "area_code": "560038"
+                },
+                "email": "sandeep@gmail.com",
+                "phone": "7019540003",
+                "tax_number": "",
+                "created_at": "2023-03-14T20:06:34.408Z",
+                "updated_at": "2023-03-14T20:06:34.408Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "2",
+                    "provider_id": "GFFBRTFO1649756234",
+                    "type": "Delivery",
+                    "state": {
+                        "descriptor": {
+                            "name": "Pending",
+                            "code": "Pending"
+                        }
+                    },
+                    "tracking": true,
+                    "person": {
+                        "name": "Sandeep Pai"
+                    },
+                    "start": {
+                        "location": {
+                            "id": "GFFBRTFO1649756234",
+                            "gps": "12.968651, 77.648966",
+                            "descriptor": {
+                                "name": "Foodism.in - Indiranagar"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-03-14T20:06:57.580Z",
+                                "end": "2023-03-14T20:21:57.580Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7019614002"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9783692,77.6408356",
+                            "address": {
+                                "door": "-",
+                                "name": "Indiranagar",
+                                "building": "-",
+                                "locality": "-",
+                                "city": "Bangalore",
+                                "state": "KARNATAKA",
+                                "country": "IN",
+                                "area_code": "560038"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-03-14T20:06:57.580Z",
+                                "end": "2023-03-14T20:41:57.580Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7019540003",
+                            "email": "sandeep@gmail.com"
+                        },
+                        "person": {
+                            "name": "Sandeep Pai"
+                        },
+                        "rateable": true
+                    },
+                    "@ondc/org/provider_name": "Dunzo"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "298.66"
+                },
+                "breakup": [
+                    {
+                        "title": "Gobi Manchurian Gravy",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "137.0"
+                        },
+                        "@ondc/org/item_id": "154701be-c38a-4e7f-ae1a-22b46541d820",
+                        "@ondc/org/item_quantity": {
+                            "count": "1"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "137.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "6.86"
+                        },
+                        "@ondc/org/item_id": "154701be-c38a-4e7f-ae1a-22b46541d820"
+                    },
+                    {
+                        "title": "Gobi Chilli Dry",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "137.0"
+                        },
+                        "@ondc/org/item_id": "ac670904-b9a1-4c53-a066-9ebab2ddf54d",
+                        "@ondc/org/item_quantity": {
+                            "count": "1"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "137.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "6.86"
+                        },
+                        "@ondc/org/item_id": "ac670904-b9a1-4c53-a066-9ebab2ddf54d"
+                    },
+                    {
+                        "title": "Packing Charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10.94"
+                        },
+                        "@ondc/org/item_id": "2"
+                    }
+                ],
+                "ttl": "PT6H"
+            },
+            "payment": {
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "order_LRWwD2grHbsp1C",
+                    "amount": "298.66"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "upi_address": "",
+                        "settlement_bank_account_no": "016905011967",
+                        "settlement_ifsc_code": "ICIC0000169",
+                        "beneficiary_name": "GrowthFalcons",
+                        "bank_name": "ICICI Bank",
+                        "branch_name": "Indiranagar"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "GFFBRTFO1649756234",
+                "locations": [
+                    {
+                        "id": "GFFBRTFO1649756234"
+                    }
+                ],
+                "rateable": true
+            },
+            "created_at": "2023-03-14T20:06:53.522Z",
+            "updated_at": "2023-03-14T20:06:53.758Z"
+        }
+    }
+}

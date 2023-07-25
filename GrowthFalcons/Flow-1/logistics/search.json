@@ -1,0 +1,66 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "falconsai.com",
+        "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
+        "transaction_id": "4efdb805-836e-4480-a775-5137749e1103",
+        "message_id": "3a9ddb20-32cf-49c0-90f4-fafd93a3e7a0",
+        "timestamp": "2023-03-17T10:31:00.256Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "provider": {
+                "time": {
+                    "range": {
+                        "start": "0000",
+                        "end": "2359"
+                    },
+                    "days": "1,2,3,4,5,6,7",
+                    "schedule": {
+                        "holidays": [
+                            "2023-08-15"
+                        ]
+                    }
+                }
+            },
+            "fulfillment": {
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "gps": "12.9076452868, 77.6352300637",
+                        "address": {
+                            "area_code": "560102"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.9140160000001, 77.6371740000001",
+                        "address": {
+                            "area_code": "560102"
+                        }
+                    }
+                }
+            },
+            "category": {
+                "id": "Immediate Delivery"
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "value": 10,
+                    "unit": "Kilogram"
+                },
+                "category": "F&B",
+                "value": {
+                    "currency": "INR",
+                    "value": "0"
+                }
+            }
+        }
+    }
+}

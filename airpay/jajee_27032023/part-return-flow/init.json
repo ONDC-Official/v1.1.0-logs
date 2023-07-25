@@ -1,0 +1,48 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "init",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.airpay.ninja",
+        "bap_uri": "https://preprod-ondc.airpay.ninja/",
+        "bpp_id":"preprod-jajee-bpp.shopalyst.com",
+        "bpp_uri":"https://preprod-jajee-bpp.shopalyst.com/jajee",
+        "transaction_id": "6f5be537581608855f10566e759f6badbisg",
+        "message_id": "5d23ed5701fc9a9cbee748d7b6690733",
+        "ttl": "PT30S",
+        "timestamp": "2023-03-27T09:20:08.000Z"
+    },
+    "message": {
+        "order": {
+          "provider": {
+            "id": "preprod-jajee-bpp.shopalyst.com",
+            "locations": [
+                {
+                  "id": "5692eae837b7a1d2b7ebd8e6bd251b51"
+                }
+              ]
+          },
+          "items":[{"id":"CBE44A9BDF3C10A61A3227A41688E82C_43540035404035_default","quantity":{"count":3},"provider":{"id":"preprod-jajee-bpp.shopalyst.com","locations":["5692eae837b7a1d2b7ebd8e6bd251b51"]},"fulfilment_id":"1"}],
+          "billing": {"address":{"door":"2nd Floor, Gala Impecca","name":"Neha Churi","building":"2nd Floor, Gala Impecca","street":"Andheri","locality":"Andheri","ward":"","city":"Mumbai","state":"Maharashtra","country":"India","area_code":"400059"},"phone":"9619865113","name":"Neha Churi","email":"","created_at":"2023-03-27T09:20:08.000Z","updated_at":"2023-03-27T09:20:08.000Z"},
+          "fulfillments": [
+            {
+              "id": "1",
+              "type": "Delivery",
+              "end": {
+                "location": {"gps":"19.1118641, 72.8790282","address":{"door":"2nd Floor, Gala Impecca","name":"Neha Churi","building":"2nd Floor, Gala Impecca","street":"Andheri","locality":"Andheri","ward":"","city":"Mumbai","state":"Maharashtra","country":"India","area_code":"400059"}},
+                "contact": {
+                  "phone": "9619865113",
+                  "email": ""
+                }
+              },
+              "customer": {},
+              "@ondc/org/category": "",
+              "@ondc/org/TAT": "",
+              "@ondc/org/provider_name": ""
+            }
+          ]
+        }
+      }
+}

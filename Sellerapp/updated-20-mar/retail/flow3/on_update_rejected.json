@@ -1,0 +1,135 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.sellerapp.in",
+        "bpp_uri": "https://ondcpreprod.sellerapp.in/bpp/u/",
+        "transaction_id": "f18492c7-f1f0-43e6-ad2f-64650143854a",
+        "message_id": "a127f9c8-f4fe-44db-9b2f-9e0f70337237",
+        "timestamp": "2023-03-20T11:15:24.013Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-03-20-139437",
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "77683598",
+                    "fulfillment_id": "8943a69b-aab2-4925-a671-f84aa31e0e17"
+                },
+                {
+                    "id": "77683588",
+                    "fulfillment_id": "8943a69b-aab2-4925-a671-f84aa31e0e17",
+                    "tags": {
+                        "status": "Return_Rejected"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "8943a69b-aab2-4925-a671-f84aa31e0e17",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "start": {
+                        "instructions": {
+                            "long_desc": "Status for pickup",
+                            "short_desc": "9437"
+                        },
+                        "location": {
+                            "id": "tki-1000",
+                            "gps": "12.9704,77.6448023"
+                        },
+                        "contact": {
+                            "phone": "8088240386",
+                            "email": "sales@trykaro.in"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "timestamp": "2023-03-20T11:13:38.7Z"
+                        },
+                        "instructions": {
+                            "long_desc": "Status for drop",
+                            "short_desc": "9437"
+                        },
+                        "person": {
+                            "name": "Raja"
+                        },
+                        "location": {
+                            "gps": "12.9814010000001, 77.6409810000001",
+                            "address": {
+                                "name": "Raja",
+                                "building": "san jose",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560038",
+                                "locality": "12 main road"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9080739414",
+                            "email": "raja.mani@sellerapp.com"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "@ondc/org/provider_name": "LoadShare Networks"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "617"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "77683598",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "475"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "77683588",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "100"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "8943a69b-aab2-4925-a671-f84aa31e0e17",
+                        "@ondc/org/title_type": "delivery",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "42"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

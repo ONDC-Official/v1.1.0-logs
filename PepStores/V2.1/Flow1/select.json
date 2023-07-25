@@ -1,0 +1,71 @@
+"Request": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "select",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "21d8cce3-5eeb-49b3-93ba-d9ac7d7e000f",
+		"message_id": "07ed7c17-8193-4a21-b4de-eb846e819b56",
+		"timestamp": "2023-06-03T15:15:54.592Z",
+		"bpp_id": "stage.pep1.in",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"items": [{
+				"id": "57759",
+				"quantity": {
+					"count": 2
+				},
+				"location_id": "S01425801-BGLR"
+			}, {
+				"id": "59823",
+				"quantity": {
+					"count": 2
+				},
+				"location_id": "S01425801-BGLR"
+			}],
+			"provider": {
+				"id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111",
+				"locations": [{
+					"id": "S01425801-BGLR"
+				}]
+			},
+			"fulfillments": [{
+				"end": {
+					"location": {
+						"gps": "12.9977050000001, 77.7599290000001",
+						"address": {
+							"area_code": "560067"
+						}
+					}
+				}
+			}]
+		}
+	}
+}
+"Response": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "select",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "21d8cce3-5eeb-49b3-93ba-d9ac7d7e000f",
+		"message_id": "07ed7c17-8193-4a21-b4de-eb846e819b56",
+		"timestamp": "2023-06-03T15:15:54.712Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

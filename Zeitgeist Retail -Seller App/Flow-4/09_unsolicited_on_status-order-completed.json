@@ -1,0 +1,314 @@
+{
+    "context": {
+        "transaction_id": "d2e58566-26d7-43c5-a852-727e1b861aca",
+        "message_id": "9bc758c1-9c68-4be2-96d2-e217934516e1",
+        "bap_id": "jiomart-buyer.ondcz5.de",
+        "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "bpp_id": "ondc-preprod.zeppstore.in",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "ttl": "PT30S",
+        "key": "yoMpOP7a4G+seicCqmYvb52xRFhpYgGtXrss1/6jqg4=",
+        "action": "on_status",
+        "timestamp": "2023-06-02T06:51:00.212Z"
+    },
+    "message": {
+        "order": {
+            "id": "00ec209b-af54-4ad7-8ee2-bf6de9a2f982",
+            "state": "Completed",
+            "provider": {
+                "id": "ZEPP",
+                "locations": [
+                    {
+                        "id": "wfhlb-1000"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "6332",
+                    "fulfillment_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "6333",
+                    "fulfillment_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                    "quantity": {
+                        "count": 3
+                    }
+                }
+            ],
+            "billing": {
+                "name": "reevant",
+                "address": {
+                    "door": "hebbal",
+                    "name": "hebbal",
+                    "building": "hebbal",
+                    "locality": "hebbal",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560102"
+                },
+                "email": "revant@gmail.com",
+                "phone": "9980292362",
+                "created_at": "2023-06-02 06:36:38",
+                "updated_at": "2023-06-02 06:36:50"
+            },
+            "fulfillments": [
+                {
+                    "id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                    "@ondc/org/provider_name": "ZEPP",
+                    "type": "Delivery",
+                    "tracking": true,
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "Zeitgeist Retail",
+                                "images": [
+                                    "https://gf-ig-integration-qa-c0nn3c7.s3.amazonaws.com/images/5458/5458_OrderEasy_3_1639793053567.png"
+                                ]
+                            },
+                            "gps": "12.914261,77.638611"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-10T06:36:38.000Z",
+                                "end": "2023-06-10T06:36:38.000Z"
+                            },
+                            "timestamp": "2023-06-02T06:50:52.800Z"
+                        },
+                        "instructions": {
+                            "name": "Proof of pickup",
+                            "short_desc": "Proof of pickup details",
+                            "long_desc": "Proof of pickup details",
+                            "images": [
+                                "https://image1_url.png"
+                            ]
+                        },
+                        "contact": {
+                            "phone": "9606397001",
+                            "email": "support@zrpl.co.in"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9492953,77.7019878",
+                            "address": {
+                                "door": " ",
+                                "building": "",
+                                "name": "hebbal",
+                                "locality": "hebbal",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "Karnataka",
+                                "area_code": "560102"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-06-10T06:36:38.000Z",
+                                "end": "2023-06-10T06:36:38.000Z"
+                            },
+                            "timestamp": "2023-02-03T11:35:00.000Z"
+                        },
+                        "instructions": {
+                            "name": "Proof of delivery",
+                            "short_desc": "Proof of delivery details",
+                            "long_desc": "Proof of delivery details",
+                            "images": [
+                                "https://image1_url.png"
+                            ]
+                        },
+                        "contact": {
+                            "phone": "9886098860"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "180"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "6332",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Rice Biscuits",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "60"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "60"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6332",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6332",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6333",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "title": "Rice Papad",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "120"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "40"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6333",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6333",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "uri": "https://ondc.transaction.com/payment",
+                "tl_method": "http/get",
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "d2e58566-26d7-43c5-a852-727e1b861aca",
+                    "amount": "180"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "beneficiary_name": "xxxx",
+                        "settlement_reference": "xxxx",
+                        "settlement_status": "PAID",
+                        "settlement_timestamp": "2023-02-04T10:00:00.000Z",
+                        "settlement_type": "upi",
+                        "upi_address": "gft@oksbi",
+                        "settlement_bank_account_no": "xxxx",
+                        "settlement_ifsc_code": "xxxx",
+                        "bank_name": "xxxx",
+                        "branch_name": "xxxx"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "https://invoice_url",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-06-02 06:36:38",
+            "updated_at": "2023-06-02T06:51:00.213Z"
+        }
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "preprod-wow-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
+        "transaction_id": "2126b3a8-5154-47a5-9d47-dc5490fddbdf",
+        "message_id": "c80b4ce3-6a11-40db-a065-d62b0477f0fe",
+        "timestamp": "2023-07-19T10:13:53.129Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "preprod-wow-bpp.shopalyst.com"
+            },
+            "provider_location": {
+                "id": "bcedc450f8481e89b1445069acdc3dd9"
+            },
+            "items": [
+                {
+                    "id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                    "quantity": {
+                        "count": 10
+                    }
+                },
+                {
+                    "id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                    "quantity": {
+                        "count": 4
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "4186.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Cherrylicious Body Lotion By Body Cupid - 200 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2990.00"
+                        },
+                        "@ondc/org/item_id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "299.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 10
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Cherrylicious Shower Gel By Body Cupid - 200 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1196.00"
+                        },
+                        "@ondc/org/item_id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "299.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 4
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "billing": {
+                "name": "Rajiv Singh",
+                "address": {
+                    "name": "Rajiv Singh",
+                    "building": "15/11",
+                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560001"
+                },
+                "phone": "8302010971",
+                "created_at": "2023-07-19T10:13:51.692Z",
+                "updated_at": "2023-07-19T10:13:51.692Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                    "type": "Delivery",
+                    "provider_id": "bcedc450f8481e89b1445069acdc3dd9",
+                    "tracking": true,
+                    "end": {
+                        "location": {
+                            "gps": "12.971609528512422,77.59456269443035",
+                            "address": {
+                                "name": "Rajiv Singh",
+                                "building": "15/11",
+                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8302010971"
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
+                    }
+                ]
+            }
+        }
+    }
+}

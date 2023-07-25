@@ -1,0 +1,206 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "b489f50b-ec14-419a-a2d9-0bca88eb1f16",
+    "message_id": "ae9e927e-4bcc-4479-91ed-6c18d04f6a5c",
+    "timestamp": "2023-07-17T15:55:00.903Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-07-17-682604",
+      "state": "Accepted",
+      "provider": {
+        "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
+        "locations": [
+          {
+            "id": "00000000-61af-58b2-a809-08a67d09e1f5"
+          }
+        ],
+        "rateable": true
+      },
+      "items": [
+        {
+          "id": "22222222-616b-5599-87e2-6cb80782d953",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "ab4fbff3-7d31-582b-a07b-b6730a56daac"
+        },
+        {
+          "id": "11111111-616b-5599-87e2-6cb80782d953",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "ab4fbff3-7d31-582b-a07b-b6730a56daac"
+        }
+      ],
+      "billing": {
+        "name": "Bob Charles",
+        "address": {
+          "name": "Bob Charles",
+          "building": "Rabit Mall",
+          "locality": "Bob Street",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560037"
+        },
+        "email": "bob@gmail.com",
+        "phone": "9998887744",
+        "created_at": "2023-07-17T15:54:45.010Z",
+        "updated_at": "2023-07-17T15:54:45.010Z"
+      },
+      "fulfillments": [
+        {
+          "id": "ab4fbff3-7d31-582b-a07b-b6730a56daac",
+          "type": "Delivery",
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/provider_name": "SnapBizz ONDC",
+          "state": {
+            "descriptor": {
+              "code": "Pending"
+            }
+          },
+          "tracking": false,
+          "start": {
+            "location": {
+              "id": "00000000-61af-58b2-a809-08a67d09e1f5",
+              "descriptor": {
+                "name": "SnapBizz ONDC"
+              },
+              "gps": "12.9600347,77.6980748",
+              "time": {
+                "range": {
+                  "start": "2023-07-17T15:55:00.903Z",
+                  "end": "2023-07-18T15:55:00.903Z"
+                }
+              }
+            },
+            "contact": {
+              "phone": "9916784000"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.964319, 77.6810060000001",
+              "descriptor": {
+                "name": "Bob Charles"
+              },
+              "address": {
+                "name": "Bob Charles",
+                "building": "Rabit Mall",
+                "locality": "Bob Street",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560037"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-07-17T15:55:00.903Z",
+                "end": "2023-07-19T15:55:00.903Z"
+              }
+            },
+            "contact": {
+              "phone": "9998887744"
+            },
+            "person": {
+              "name": "Bob Charles"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "6289.00"
+        },
+        "ttl": "P1D",
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "value": "5990",
+                "currency": "INR"
+              }
+            },
+            "price": {
+              "value": "5990.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Brilrider AF Balance Bike",
+            "@ondc/org/item_id": "22222222-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "item": {
+              "price": {
+                "value": "299",
+                "currency": "INR"
+              }
+            },
+            "price": {
+              "value": "299.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Bril Liquid Detergent 1 Litre - Buy One Get One",
+            "@ondc/org/item_id": "11111111-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "price": {
+              "value": "0.0",
+              "currency": "INR"
+            },
+            "title": "Delivery charges",
+            "@ondc/org/item_id": "ab4fbff3-7d31-582b-a07b-b6730a56daac",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "6289",
+          "currency": "INR",
+          "transaction_id": "b489f50b-ec14-419a-a2d9-0bca88eb1f16"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "upi_address": "success@upi",
+            "bank_name": "State Bank Of India",
+            "branch_name": "Andaman Nicobar",
+            "settlement_bank_account_no": "29837293879283",
+            "settlement_ifsc_code": "SBIN0002001"
+          }
+        ]
+      },
+      "created_at": "2023-07-17T15:55:00.803Z",
+      "updated_at": "2023-07-17T15:55:00.903Z"
+    }
+  }
+}

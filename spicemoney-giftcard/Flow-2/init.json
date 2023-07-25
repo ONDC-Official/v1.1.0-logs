@@ -1,0 +1,118 @@
+{
+  "context": {
+    "domain": "FIS10",
+    "ttl": "PT30S",
+    "bap_id": "b2bapi-stage.spicesmartshop.com",
+    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+    "message_id": "8b2eab16-0501-414b-af48-72ca1d744246",
+    "transaction_id": "f2ec6fb1-4349-47d1-93a5-864d7de01fdb",
+    "bpp_id": "ondc.vistar.solutions",
+    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "init",
+    "version": "1.0.0",
+    "timestamp": "2023-07-24T15:03:28.887Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
+      },
+      "items": [
+        {
+          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "fulfillment_ids": [
+            "F2"
+          ]
+          "tags": [
+            {
+              "descriptor": {
+                "code": "DENOMINATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "CUSTOM_AMOUNT"
+                  },
+                  "value": "1000"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "CUSTOMIZATION"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "RECEIVER_NAME"
+                  },
+                  "value": "Sagar"
+                },
+                {
+                  "descriptor": {
+                    "code": "MESSAGE"
+                  },
+                  "value": "Test"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "billing": {
+        "name": "gari",
+        "address": "aaa",
+        "state": {
+          "name": "Odisha",
+          "code": "OD"
+        },
+        "city": {
+          "name": "Rourkela",
+          "code": "RO"
+        },
+        "email": "TestNum@gmail.com",
+        "phone": "7064032212"
+      },
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "EMAIL",
+          "customer": {
+            "person": {
+              "name": "chandrasekhar"
+            },
+            "contact": {
+              "phone": "+917064032212",
+              "email": "TestNum@gmail.com"
+            }
+          },
+          "stops": [
+            {
+              "id": "0",
+              "contact": {
+                "phone": "9988776655",
+                "email": "sagar1231231312412@eminds.ai"
+              },
+              "person": {
+                "name": "Sagar"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

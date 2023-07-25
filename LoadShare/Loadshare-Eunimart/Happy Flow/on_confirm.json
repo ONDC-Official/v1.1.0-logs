@@ -1,0 +1,83 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_confirm",
+    "core_version": "1.1.0",
+    "bap_id": "ondc.eunimart.com",
+    "bap_uri": "https://ondc.eunimart.com/api/v1/ondc/lsp_bap/eunimart_lsp_bap/",
+    "transaction_id": "ad699547-2782-42b0-a85a-2cdebab27ae8",
+    "message_id": "2012ba7a-137a-4c95-89af-840e9d00770f",
+    "timestamp": "2023-03-10T12:07:47.430Z",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp"
+  },
+  "message": {
+    "order": {
+      "id": "dbb693cd-4064-405e-a5c0-564bbef574a5",
+      "state": "Accepted",
+      "provider": { "id": "loadshare@ondc-preprod.loadshare.net" },
+      "items": [
+        {
+          "id": "standard",
+          "category_id": "Standard Delivery",
+          "descriptor": { "code": "P2P" }
+        }
+      ],
+      "quote": {
+        "price": { "currency": "INR", "value": "78" },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "standard",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": { "currency": "INR", "value": "78" }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "2",
+          "type": "Prepaid",
+          "state": { "descriptor": { "code": "Pending" } },
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-03-10T12:30:00.000Z",
+                "end": "2023-03-10T13:00:00.000Z"
+              }
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-03-10T14:00:00.000Z",
+                "end": "2023-03-10T14:30:00.000Z"
+              }
+            }
+          }
+        }
+      ],
+      "billing": {
+        "name": "Manik",
+        "address": {
+          "name": "D000, Prestige Towers",
+          "building": "My house or building name",
+          "locality": "Bannerghatta Road",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "India",
+          "area_code": "560078"
+        },
+        "email": "manikgh@gmail.com",
+        "phone": "9886098860",
+        "tax_number": "29AAACU1901H1ZK",
+        "created_at": "2023-03-10T12:07:36.153Z",
+        "updated_at": "2023-03-10T12:07:36.153Z"
+      },
+      "created_at": "2023-03-10T12:07:45.431Z",
+      "updated_at": "2023-03-10T12:07:47.430Z"
+    }
+  }
+}

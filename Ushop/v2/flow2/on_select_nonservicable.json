@@ -1,0 +1,122 @@
+ {
+      "context": {
+        "domain": "nic2004:52110",
+        "action": "on_select",
+        "country": "IND",
+        "city": "std:06252",
+        "core_version": "1.1.0",
+        "bpp_id": "ondc.hulsecure.in",
+        "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+        "bap_id": "ondc.indiastack.cloud",
+        "bap_uri": "https://ondc.indiastack.cloud/ondc/v1/163525/",
+        "transaction_id": "c2e99694-b348-4b2f-82d2-89b2cd0e2d48",
+        "message_id": "f6af0273-4dc1-4018-ac07-34af51b76e6d",
+        "timestamp": "2023-03-25T12:51:13.206Z",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "provider": {
+            "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
+          },
+          "fulfillments": [
+            {
+              "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+              "@ondc/org/provider_name": "The U Shop",
+              "tracking": false,
+              "@ondc/org/category": "Standard Delivery",
+              "@ondc/org/TAT": "P7D",
+              "state": {
+                "descriptor": {
+                  "code": "non-Serviceable"
+                }
+              }
+            }
+          ],
+          "quote": {
+            "price": {
+              "currency": "INR",
+              "value": "2222"
+            },
+            "breakup": [
+              {
+                "@ondc/org/item_id": "44790349103404",
+                "@ondc/org/item_quantity": {
+                  "count": 1
+                },
+                "item": {
+                  "price": {
+                    "currency": "INR",
+                    "value": "1111"
+                  },
+                  "quantity": {
+                    "available": {
+                      "count": "10"
+                    },
+                    "maximum": {
+                      "count": "10"
+                    }
+                  }
+                },
+                "title": "Dove Body Love Silky Pampering Body Cream Silky Soft Skin Paraben Free 300g",
+                "@ondc/org/title_type": "item",
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                }
+              },
+              {
+                "@ondc/org/item_id": "44790347563308",
+                "@ondc/org/item_quantity": {
+                  "count": 1
+                },
+                "item": {
+                  "price": {
+                    "currency": "INR",
+                    "value": "1111"
+                  },
+                  "quantity": {
+                    "available": {
+                      "count": "10"
+                    },
+                    "maximum": {
+                      "count": "10"
+                    }
+                  }
+                },
+                "title": "Axe Intense Long Lasting Deodorant Bodyspray For Men 215 ml",
+                "@ondc/org/title_type": "item",
+                "price": {
+                  "currency": "INR",
+                  "value": "1111"
+                }
+              },
+              {
+                "title": "Delivery charges",
+                "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+                "@ondc/org/title_type": "delivery",
+                "price": {
+                  "currency": "INR",
+                  "value": "0"
+                }
+              }
+            ],
+            "ttl": "P7D"
+          },
+          "items": [
+            {
+              "id": "44790349103404",
+              "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+            },
+            {
+              "id": "44790347563308",
+              "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+            }
+          ]
+        }
+      },
+      "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "30009"
+      }
+    }

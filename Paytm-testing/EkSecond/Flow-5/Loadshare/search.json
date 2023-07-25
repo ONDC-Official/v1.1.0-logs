@@ -1,0 +1,78 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "search",
+		"core_version": "1.1.0",
+		"bap_id": "api3.eksecond.in",
+		"bap_uri": "https://api3.eksecond.in/ondc",
+		"transaction_id": "632839af4bea4df42dfe336b|a969370c-e820-4c88-a4e0-70a3c051faee",
+		"message_id": "abfb8863-8471-4e32-923f-ea1233fd57cc",
+		"timestamp": "2023-03-23T10:57:05.703Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"intent": {
+			"provider": {
+				"time": {
+					"range": {
+						"start": "0600",
+						"end": "2100"
+					},
+					"days": "1,2,3,4,5,6,7"
+				}
+			},
+			"fulfillment": {
+				"type": "Prepaid",
+				"start": {
+					"location": {
+						"gps": "12.913371523733359,77.68308302883554",
+						"address": {
+							"area_code": "560035"
+						}
+					}
+				},
+				"end": {
+					"location": {
+						"gps": "12.911397,77.680164",
+						"address": {
+							"area_code": "560035"
+						}
+					}
+				}
+			},
+			"payment": {
+				"@ondc/org/settlement_details": []
+			},
+			"category": {
+				"id": "Immediate Delivery"
+			},
+			"@ondc/org/payload_details": {
+				"weight": {
+					"unit": "Kilogram",
+					"value": 1
+				},
+				"dimensions": {
+					"length": {
+						"unit": "meter",
+						"value": 1
+					},
+					"breadth": {
+						"unit": "meter",
+						"value": 1
+					},
+					"height": {
+						"unit": "meter",
+						"value": 1
+					}
+				},
+				"category": "F&B",
+				"value": {
+					"currency": "INR",
+					"value": "355.14"
+				}
+			}
+		}
+	}
+}

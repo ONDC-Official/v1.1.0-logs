@@ -1,0 +1,94 @@
+"Request": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "init",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "f5c00888-d20e-411b-ac58-be1ebb3c044c",
+		"message_id": "20373ba9-77c9-4b8e-bfb9-eef2ad576f53",
+		"timestamp": "2023-06-03T16:25:35.270Z",
+		"bpp_id": "stage.pep1.in",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "f2b959e0-4fd6-48ca-8cb1-2070e5b6d111",
+				"locations": [{
+					"id": "S01425801-BGLR"
+				}]
+			},
+			"items": [{
+				"id": "59823",
+				"quantity": {
+					"count": 2
+				},
+				"fulfillment_id": "e12d4e9f-8474-44e5-9fc8-19051b65862a"
+			}],
+			"billing": {
+				"address": {
+					"door": "Park Street",
+					"building": "Park Street",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560067",
+					"locality": "B712 victoria Haven",
+					"name": "Prakash Iyer"
+				},
+				"phone": "9818470079",
+				"name": "Prakash Iyer",
+				"email": "nandita@technobibble.co.in",
+				"created_at": "2023-06-03T16:25:35.270Z",
+				"updated_at": "2023-06-03T16:25:35.270Z"
+			},
+			"fulfillments": [{
+				"id": "e12d4e9f-8474-44e5-9fc8-19051b65862a",
+				"type": "Delivery",
+				"end": {
+					"contact": {
+						"email": "nandita@technobibble.co.in",
+						"phone": "9818470079"
+					},
+					"location": {
+						"gps": "12.9977050000001, 77.7599290000001",
+						"address": {
+							"name": "Prakash Iyer",
+							"building": "Park Street",
+							"locality": "B712 victoria Haven",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "IND",
+							"area_code": "560067"
+						}
+					}
+				}
+			}]
+		}
+	}
+}
+"Response": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "init",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "f5c00888-d20e-411b-ac58-be1ebb3c044c",
+		"message_id": "20373ba9-77c9-4b8e-bfb9-eef2ad576f53",
+		"timestamp": "2023-06-03T16:25:35.379Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

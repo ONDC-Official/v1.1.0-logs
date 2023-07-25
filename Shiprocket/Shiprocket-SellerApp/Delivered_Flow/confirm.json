@@ -1,0 +1,183 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "ondcpreprod.sellerapp.in",
+    "bap_uri": "https://ondcpreprod.sellerapp.in/bapl/u/",
+    "bpp_id": "dev-ondc.shiprocket.in",
+    "bpp_uri": "https://dev-ondc.shiprocket.in/",
+    "transaction_id": "61999c5b-9b6a-4726-a22c-5521147203b8",
+    "message_id": "886fcf95-ce01-4d7a-9c96-872736cbe95e",
+    "timestamp": "2023-03-13T19:47:02.891Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-03-13-945382",
+      "state": "Created",
+      "provider": {
+        "id": "60"
+      },
+      "items": [
+        {
+          "id": "60",
+          "descriptor": {
+            "code": "P2H2P"
+          },
+          "category_id": "Express Delivery"
+        }
+      ],
+      "billing": {
+        "name": "SELLMETRIC PRIVATE LIMITED",
+        "phone": "9650439777",
+        "address": {
+          "door": "1, 621/A",
+          "name": "12th main road , Hal 2nd stage",
+          "city": "Bangalore",
+          "state": "Karnataka",
+          "country": "India",
+          "area_code": "560038",
+          "locality": "Indiranagar Bangalore"
+        },
+        "email": "billing@sellerapp.com",
+        "tax_number": "29ABDCS3411L1Z7",
+        "created_at": "2023-03-13T19:46:59.588Z",
+        "updated_at": "2023-03-13T19:46:59.588Z"
+      },
+      "fulfillments": [
+        {
+          "id": "aadb68fc-9544-4881-9a1e-84b6fdc4f47b",
+          "type": "Prepaid",
+          "tracking": false,
+          "start": {
+            "instructions": {
+              "long_desc": "Status for pickup",
+              "short_desc": "5382"
+            },
+            "person": {
+              "name": "Gaurav"
+            },
+            "location": {
+              "gps": "12.9704,77.6448023",
+              "address": {
+                "door": "233",
+                "name": "san jose building",
+                "ward": "above Just Dogs",
+                "building": "san jose 3 floor",
+                "street": "12 main road",
+                "city": "Bangalore",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560038",
+                "locality": "Indiranagar"
+              }
+            },
+            "contact": {
+              "phone": "8088240386",
+              "email": "sales@trykaro.in"
+            }
+          },
+          "end": {
+            "instructions": {
+              "long_desc": "Status for drop",
+              "short_desc": "5382"
+            },
+            "person": {
+              "name": "Raja"
+            },
+            "location": {
+              "gps": "12.9814010000001, 77.6409810000001",
+              "address": {
+                "name": "Raja",
+                "building": "san jose",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560038",
+                "locality": "12 main road"
+              }
+            },
+            "contact": {
+              "phone": "9080739414",
+              "email": "raja.mani@sellerapp.com"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "no"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "121.8"
+        },
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "121.8"
+            },
+            "@ondc/org/item_id": "60",
+            "@ondc/org/title_type": "Delivery Charge"
+          }
+        ]
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "@ondc/org/settlement_window": "PT2D",
+        "@ondc/org/collection_amount": "596.8"
+      },
+      "created_at": "2023-03-13T19:47:02.891Z",
+      "updated_at": "2023-03-13T19:47:02.891Z",
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "descriptor": {
+              "name": "slrp-unique"
+            },
+            "category_id": "Packaged Commodities",
+            "quantity": {
+              "count": 1,
+              "measure": {
+                "value": 1000,
+                "unit": "gram"
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "475"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "TryKaro Indiranagar"
+          },
+          "address": {
+            "door": "233",
+            "name": "san jose building",
+            "ward": "above Just Dogs",
+            "building": "san jose 3 floor",
+            "street": "12 main road",
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "country": "India",
+            "area_code": "560038",
+            "locality": "Indiranagar"
+          }
+        },
+        "order": {
+          "id": "2023-03-13-945382",
+          "weight": {
+            "value": 1000,
+            "unit": "gram"
+          }
+        }
+      }
+    }
+  }
+}

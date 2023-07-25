@@ -1,0 +1,54 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bpp_id": "ondcpp.yaarilabs.com",
+    "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+    "transaction_id": "ONDC-LOG-BUY-REQ-00316",
+    "message_id": "SHIPMENT-00018",
+    "bap_id": "sit.mytra.money",
+    "bap_uri": "https://sit.mytra.money/api/method/ondc_logistics_buyer",
+    "timestamp": "2023-03-13T10:12:15.987Z",
+    "ttl": "PT30S",
+    "action": "on_search"
+  },
+  "message": {
+    "catalog": {
+      "bpp/fulfillments": [{ "id": "1", "type": "Prepaid" }],
+      "bpp/descriptor": { "name": "Shipyaari" },
+      "bpp/providers": [
+        {
+          "id": "2",
+          "descriptor": {
+            "name": "DTDC",
+            "short_desc": "DTDC",
+            "long_desc": "DTDC"
+          },
+          "categories": [
+            {
+              "id": "Express Delivery",
+              "time": { "label": "TAT", "duration": "P2D" }
+            }
+          ],
+          "items": [
+            {
+              "id": "YAARI-2-D3ODMQD692",
+              "parent_item_id": "",
+              "category_id": "Express Delivery",
+              "fulfillment_id": "1",
+              "descriptor": {
+                "code": "P2H2P",
+                "name": "DTDC",
+                "short_desc": "DTDC",
+                "long_desc": "DTDC"
+              },
+              "price": { "currency": "INR", "value": "118" }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

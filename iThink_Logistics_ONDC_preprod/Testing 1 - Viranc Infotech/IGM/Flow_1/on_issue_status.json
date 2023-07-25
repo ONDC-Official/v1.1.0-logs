@@ -1,0 +1,78 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_issue_status",
+        "core_version": "1.0.0",
+        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+        "bpp_id": "my.ithinklogistics.com/ondc/preprod",
+        "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
+        "transaction_id": "ce57ac46-2b6c-5707-a9aa-135d58155db9",
+        "message_id": "8329fd7f-2a01-4106-a1ff-30d2e82e7bf2",
+        "timestamp": "2023-07-20T11:36:50.965Z"
+    },
+    "message": {
+        "issue": {
+            "id": "15b8392b-c6e2-4dd8-8847-a37ffcb530ff",
+            "issue_actions": {
+                "respondent_actions": [{
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-07-20T11:36:37.117Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "preprod-ondc.viranc.com/p/v1/store::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9999999999",
+                                "email": "test@test.com"
+                            },
+                            "person": {
+                                "name": "Test"
+                            }
+                        },
+                        "cascaded_level": 1
+                    }, {
+                        "respondent_action": "CASCADED",
+                        "short_desc": "Complaint cascaded",
+                        "updated_at": "2023-07-20T11:36:37.278Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "preprod-ondc.viranc.com/p/v1/store::nic2004:60232"
+                            },
+                            "contact": {
+                                "phone": "9999999999",
+                                "email": "test@test.com"
+                            },
+                            "person": {
+                                "name": "Test"
+                            }
+                        },
+                        "cascaded_level": 2
+                    }, {
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-07-20T11:36:37.771Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "my.ithinklogistics.com/ondc/preprod::nic2004:60232"
+                            },
+                            "contact": {
+                                "phone": "9136951989",
+                                "email": "ikajal@ithinklogistics.com"
+                            },
+                            "person": {
+                                "name": "Kajal Ram"
+                            }
+                        },
+                        "cascaded_level": 2
+                    }
+                ]
+            },
+            "created_at": "2023-07-20T11:36:37.397Z",
+            "updated_at": "2023-07-20T11:36:37.771Z"
+        }
+    }
+}

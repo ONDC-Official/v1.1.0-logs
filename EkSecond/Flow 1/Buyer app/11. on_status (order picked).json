@@ -1,0 +1,255 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_status",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_id": "api3.eksecond.in",
+		"bpp_uri": "https://api3.eksecond.in/ondc",
+		"transaction_id": "98621e62-4586-40e9-863b-7602874cf065",
+		"message_id": "f6dd63c3-8dc2-4cb7-8364-a40fedd0f91d",
+		"timestamp": "2023-03-21T12:30:27.380Z"
+	},
+	"message": {
+		"order": {
+			"id": "2023-03-21-735576",
+			"created_at": "2023-03-21T12:29:13.382Z",
+			"updated_at": "2023-03-21T12:30:27.354Z",
+			"items": [
+				{
+					"id": "63db97929cc68fbae328fa65",
+					"fulfillment_id": "88f2bff7-366d-4d6e-adc4-8d81f13533fb",
+					"quantity": {
+						"count": 2
+					}
+				},
+				{
+					"id": "640843cb6a4db5be49821329",
+					"fulfillment_id": "88f2bff7-366d-4d6e-adc4-8d81f13533fb",
+					"quantity": {
+						"count": 3
+					}
+				}
+			],
+			"provider": {
+				"id": "632839af4bea4df42dfe336b",
+				"locations": [
+					{
+						"id": "632839af4bea4df42dfe336b"
+					}
+				]
+			},
+			"fulfillments": [
+				{
+					"id": "88f2bff7-366d-4d6e-adc4-8d81f13533fb",
+					"type": "Delivery",
+					"@ondc/org/provider_name": "LoadShare Networks",
+					"state": {
+						"descriptor": {
+							"code": "Order-picked-up"
+						}
+					},
+					"agent": {
+						"name": "Basavaraju R",
+						"phone": "7899715375"
+					},
+					"start": {
+						"location": {
+							"descriptor": {
+								"name": "Rumaan"
+							},
+							"gps": "12.913371523733359,77.68308302883554"
+						},
+						"time": {
+							"timestamp": "2023-03-21T12:30:27.354Z",
+							"range": {
+								"start": "2023-03-21T12:44:15.000Z",
+								"end": "2023-03-21T12:54:15.000Z"
+							}
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "mohd@gmail.com"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.9075050000001, 77.695502",
+							"address": {
+								"name": "Najeeb",
+								"building": "New Malakpet",
+								"locality": "3rd Floor, Gold Sand, Ambalipura - Sarjapur Rd, Doddakannell",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560035"
+							}
+						},
+						"time": {
+							"range": {
+								"start": "2023-03-21T13:14:15.000Z",
+								"end": "2023-03-21T13:29:15.000Z"
+							}
+						},
+						"contact": {
+							"phone": "9000912423",
+							"email": "masterblaster775@gmail.com"
+						}
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "2033.30"
+				},
+				"breakup": [
+					{
+						"title": "Imperial Special Mutton Biryani",
+						"@ondc/org/item_id": "63db97929cc68fbae328fa65",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "878.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 2
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "2"
+								},
+								"maximum": {
+									"count": "2"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "439"
+							}
+						}
+					},
+					{
+						"title": "Mutton Biryani Plate",
+						"@ondc/org/item_id": "640843cb6a4db5be49821329",
+						"@ondc/org/title_type": "item",
+						"price": {
+							"currency": "INR",
+							"value": "960.00"
+						},
+						"@ondc/org/item_quantity": {
+							"count": 3
+						},
+						"item": {
+							"quantity": {
+								"available": {
+									"count": "3"
+								},
+								"maximum": {
+									"count": "3"
+								}
+							},
+							"price": {
+								"currency": "INR",
+								"value": "320"
+							}
+						}
+					},
+					{
+						"title": "Packing charges",
+						"@ondc/org/item_id": "88f2bff7-366d-4d6e-adc4-8d81f13533fb",
+						"@ondc/org/title_type": "packing",
+						"price": {
+							"currency": "INR",
+							"value": "2.5"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "63db97929cc68fbae328fa65",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "22.39"
+						}
+					},
+					{
+						"title": "Tax",
+						"@ondc/org/item_id": "640843cb6a4db5be49821329",
+						"@ondc/org/title_type": "tax",
+						"price": {
+							"currency": "INR",
+							"value": "16.32"
+						}
+					},
+					{
+						"title": "Delivery charges",
+						"@ondc/org/item_id": "88f2bff7-366d-4d6e-adc4-8d81f13533fb",
+						"@ondc/org/title_type": "delivery",
+						"price": {
+							"currency": "INR",
+							"value": "39"
+						}
+					},
+					{
+						"title": "Convenience Fee",
+						"@ondc/org/item_id": "88f2bff7-366d-4d6e-adc4-8d81f13533fb",
+						"@ondc/org/title_type": "misc",
+						"price": {
+							"currency": "INR",
+							"value": "115.09"
+						}
+					}
+				],
+				"ttl": "PT10M"
+			},
+			"payment": {
+				"uri": "https://juspay.in/",
+				"tl_method": "http/get",
+				"params": {
+					"transaction_id": "ONDC-98621e62-4586-40e9-863b-7602874cf065-1",
+					"amount": "2033.3",
+					"currency": "INR"
+				},
+				"type": "ON-ORDER",
+				"status": "PAID",
+				"collected_by": "BAP",
+				"@ondc/org/buyer_app_finder_fee_type": "percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_phase": "sale-amount",
+						"settlement_type": "neft",
+						"settlement_bank_account_no": "1234512345",
+						"settlement_ifsc_code": "15488ADEDD",
+						"beneficiary_name": "Najeeb",
+						"bank_name": "test",
+						"branch_name": "test"
+					}
+				]
+			},
+			"billing": {
+				"name": "Najeeb",
+				"email": "masterblaster775@gmail.com",
+				"phone": "9000912423",
+				"created_at": "2023-03-21T12:29:01.334Z",
+				"updated_at": "2023-03-21T12:29:01.334Z",
+				"address": {
+					"name": "Najeeb",
+					"building": "New Malakpet",
+					"locality": "3rd Floor, Gold Sand, Ambalipura - Sarjapur Rd, Doddakannell",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560035"
+				}
+			},
+			"state": "In-progress"
+		}
+	}
+}

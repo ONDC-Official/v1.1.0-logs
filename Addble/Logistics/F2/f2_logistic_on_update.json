@@ -1,0 +1,78 @@
+{
+	"message": {
+		"order": {
+			"id": "b7bd105b-7f4e-4ec9-8c90-137158f56015",
+			"items": [
+				{
+					"descriptor": {
+						"code": "P2H2P"
+					},
+					"category_id": "Express Delivery",
+					"id": "f27a0e45-a47b-4ab2-8679-ba1664fd1e7b"
+				}
+			],
+			"state": "Accepted",
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1.00"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "f27a0e45-a47b-4ab2-8679-ba1664fd1e7b",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "1.00"
+						}
+					}
+				]
+			},
+			"fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid",
+					"@ondc/org/awb_no": "352030577572",
+					"state": {
+						"descriptor": {
+							"code": "Searching-for-Agent",
+							"name": "Searching for Agent"
+						}
+					},
+					"start": {
+						"time": {
+							"range": {
+								"start": "2023-05-14T10:03:00.000Z",
+								"end": "2023-05-14T15:03:00.000Z"
+							}
+						},
+						"instructions": {
+							"name": "Shipping label or proof of pickup",
+							"short_desc": "proof of pickup details",
+							"long_desc": "Shipping label info or proof of pickup",
+							"images": [
+								"https://s3.ap-southeast-1.amazonaws.com/media.delhivery/tmp/shipping_label_ondc/352030577572.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARIGS3RKBILQEEZEU%2F20230513%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230513T140616Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2e28a8da5c42c604d842ae26ab6cba10ad831dcc087e6f701a99579be06ae9f8"
+							]
+						}
+					}
+				}
+			],
+			"updated_at": "2023-05-13T14:06:17.958Z"
+		}
+	},
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_update",
+		"core_version": "1.1.0",
+		"transaction_id": "b733e0ca-2408-4977-9c18-7dc6e36fcb46",
+		"bap_id": "preprod-ondc.addble.com",
+		"bap_uri": "https://preprod-ondc.addble.com/",
+		"message_id": "c0009fb6-4091-4b3a-956a-9ca0134e32b4",
+		"timestamp": "2023-05-13T14:06:17.958Z",
+		"ttl": "PT30S",
+		"bpp_id": "ondc-dev.delhivery.com",
+		"bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/"
+	}
+}

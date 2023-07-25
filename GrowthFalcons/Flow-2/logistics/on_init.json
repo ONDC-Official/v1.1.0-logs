@@ -1,0 +1,60 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "falconsai.com",
+        "bap_uri": "https://falconsai.com/v1/ondc/ecomm/logistic",
+        "transaction_id": "aeb1e29a-8498-4662-9187-7b572ee91c7e",
+        "message_id": "370553f7-6e6a-4a51-a884-e23e8b01e947",
+        "timestamp": "2023-03-14T20:06:35.623Z",
+        "ttl": "PT30S",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "item-51a1973c-131b-4f38-bb35-b3d7adb7b6b8"
+                }
+            ],
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "026291800001191",
+                        "settlement_ifsc_code": "YESB0000262"
+                    }
+                ],
+                "collected_by": "BAP"
+            },
+            "provider": {
+                "id": "dunzo-lsp"
+            },
+            "provider_location": {
+                "id": ""
+            },
+            "quote": {
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "item-51a1973c-131b-4f38-bb35-b3d7adb7b6b8",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "38"
+                        }
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "38"
+                }
+            }
+        }
+    }
+}

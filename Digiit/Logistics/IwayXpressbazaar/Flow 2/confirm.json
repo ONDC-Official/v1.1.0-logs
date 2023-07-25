@@ -1,0 +1,191 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "preprod.xpressbaazaar.com",
+    "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "transaction_id": "342f1fa1-b30d-40bb-93b7-a386b509c9f1",
+    "message_id": "6ec2d836-d93e-4252-b061-d3dd57bffe20",
+    "timestamp": "2023-07-17T04:41:38.603Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "06bab141-a0c1-4d12-8e9b-5ac16edd9426",
+      "state": "Created",
+      "provider": {
+        "id": "107-Account-DER-292",
+        "locations": [
+          {
+            "id": "107-41c25527-eafc-42d9-abb2-03"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "18",
+          "category_id": "Standard Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1205.0"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "18",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "1205.0"
+            }
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "d602f9c6-b8a2-484b-9ac6-db45d65a8697",
+          "type": "Prepaid",
+          "@ondc/org/awb_no": "2023071779119488",
+          "start": {
+            "person": {
+              "name": "Yumfood"
+            },
+            "location": {
+              "gps": "13.105620,77.382700",
+              "address": {
+                "name": "Yumfood",
+                "building": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
+                "locality": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
+                "city": "Nelamangala",
+                "state": "kA",
+                "country": "India",
+                "area_code": "560061"
+              }
+            },
+            "contact": {
+              "phone": "8978909876",
+              "email": "abcd.efgh@gmail.com"
+            },
+            "instructions": {
+              "short_desc": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml",
+              "long_desc": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml",
+              "images": [
+                "https://shikhar-cms.s3.ap-south-1.amazonaws.com/CMS-PROD-HERO/17213.png"
+              ]
+            }
+          },
+          "end": {
+            "person": {
+              "name": "Nitank Jadaun"
+            },
+            "location": {
+              "gps": "12.9088400000001, 77.549113",
+              "address": {
+                "name": "Nitank Jadaun",
+                "building": "Hos",
+                "locality": "No 86, Korulur Village Kasaba Hobli, Hoskote Taluk",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560061"
+              }
+            },
+            "contact": {
+              "phone": "9556789011",
+              "email": "n@gmail.com"
+            },
+            "instructions": {
+              "short_desc": "drop package at security gate",
+              "long_desc": "drop package at security gate",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "https://docs.google.com/document/d/109QZntPo0zQeqh4Il2T__blfNduLBb9MIibGlqlH8PU/edit?usp=sharing"
+              }
+            }
+          },
+          "@ondc/org/ewaybillno": "06bb7309-600e-4a3d-94a1-9ce820ef483b",
+          "@ondc/org/ebnexpirydate": "2023-07-19T04:41:38.602Z",
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "no"
+          }
+        }
+      ],
+      "billing": {
+        "name": "Yumfood",
+        "address": {
+          "name": "Yumfood",
+          "building": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
+          "locality": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
+          "city": "Nelamangala",
+          "state": "kA",
+          "country": "India",
+          "area_code": "560061"
+        },
+        "tax_number": "98798798798",
+        "phone": "8978909876",
+        "email": "abcd.efgh@gmail.com",
+        "created_at": "2023-07-17T04:41:14.610Z",
+        "updated_at": "2023-07-17T04:41:14.610Z"
+      },
+      "payment": {
+        "@ondc/org/collection_amount": "55",
+        "collected_by": "BAP",
+        "type": "ON-ORDER",
+        "@ondc/org/settlement_details": []
+      },
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Grocery",
+            "descriptor": {
+              "name": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml"
+            },
+            "quantity": {
+              "count": 1,
+              "measure": {
+                "unit": "Kilogram",
+                "value": 1
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "45"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "Yumfood"
+          },
+          "address": {
+            "name": "Yumfood",
+            "street": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
+            "locality": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
+            "city": "Nelamangala",
+            "state": "kA",
+            "area_code": "560061"
+          }
+        },
+        "order": {
+          "id": "2023-07-17-795312",
+          "weight": {
+            "unit": "Gram",
+            "value": 100
+          }
+        }
+      },
+      "created_at": "2023-07-17T04:41:38.603Z",
+      "updated_at": "2023-07-17T04:41:38.603Z"
+    }
+  }
+}

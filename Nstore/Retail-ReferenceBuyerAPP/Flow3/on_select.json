@@ -1,0 +1,144 @@
+{
+    "context": {
+        "city": "std:080",
+        "action": "on_select",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-04-11T15:15:17.898Z",
+        "message_id": "ccc9cdc3-f268-4d39-b83b-e5e87fe2637b",
+        "core_version": "1.1.0",
+        "transaction_id": "c4f17caa-bf02-407b-bc34-7d1bcb03d83d"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "101",
+                    "fulfillment_id": "20971"
+                },
+                {
+                    "id": "219",
+                    "fulfillment_id": "20971"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "68.33",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "18.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "2"
+                                },
+                                "available": {
+                                    "count": "2"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "36.00",
+                            "currency": "INR"
+                        },
+                        "title": "Sunfeast Pasta Treat Instant Masala Pasta 65 g",
+                        "@ondc/org/item_id": "101",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "101",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "15.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "2"
+                                },
+                                "available": {
+                                    "count": "2"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "30.00",
+                            "currency": "INR"
+                        },
+                        "title": "Saffola Veggie Twist Instant Masala Oats 38 g",
+                        "@ondc/org/item_id": "219",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "219",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "2.33",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "20971"
+            },
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/TAT": "PT24H",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                }
+            ]
+        }
+    }
+}

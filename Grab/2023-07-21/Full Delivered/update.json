@@ -1,0 +1,123 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "update",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.viranc.com/p/v1/store",
+		"bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "3fd492de-b539-5bab-b205-f88dd78f294b",
+		"message_id": "195db90a-9c59-437e-872e-32b23e8e0f89",
+		"timestamp": "2023-07-21T13:36:27.983Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"update_target": "fulfillment",
+		"order": {
+			"id": "eb405db6-952e-4e55-bedc-81a1c1f7b37f",
+			"state": "Accepted",
+			"items": [
+				{
+					"id": "G79776-52821H",
+					"category_id": "Same Day Delivery",
+					"descriptor": {
+						"code": "P2P"
+					}
+				}
+			],
+			"fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid",
+					"tags": {
+						"@ondc/org/order_ready_to_ship": "yes"
+					},
+					"start": {
+						"instructions": {
+							"name": "Status for pickup",
+							"long_desc": "Pickup Confirmation Code",
+							"short_desc": "3374901"
+						}
+					},
+					"end": {
+						"instructions": {
+							"name": "Proof of delivery",
+							"images": [
+								""
+							],
+							"long_desc": "Proof of delivery details",
+							"short_desc": "Proof of delivery details"
+						}
+					}
+				}
+			],
+			"payment": {
+				"@ondc/org/collection_amount": "532.51",
+				"collected_by": "BAP",
+				"type": "ON-ORDER"
+			},
+			"@ondc/org/linked_order": {
+				"items": [
+					{
+						"category_id": "Grocery",
+						"descriptor": {
+							"name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
+						},
+						"quantity": {
+							"count": 1,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 10
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "437.00"
+						}
+					},
+					{
+						"category_id": "Grocery",
+						"descriptor": {
+							"name": "Pillsbury Chakki Fresh Whole Wheat Atta, 1 kg"
+						},
+						"quantity": {
+							"count": 1,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 1
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "79.00"
+						}
+					}
+				],
+				"provider": {
+					"descriptor": {
+						"name": "ONDC Test Seller Store"
+					},
+					"address": {
+						"name": "ONDC Test Seller Store",
+						"street": "Kasturba Rd",
+						"locality": "Kasturba Rd",
+						"city": "Bengaluru",
+						"state": "Karnataka",
+						"area_code": "560001"
+					}
+				},
+				"order": {
+					"id": "2023-07-21-584425",
+					"weight": {
+						"unit": "Kilogram",
+						"value": 11
+					}
+				}
+			},
+			"updated_at": "2023-07-21T13:36:27.983Z"
+		}
+	}
+}

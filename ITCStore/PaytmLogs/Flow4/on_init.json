@@ -1,0 +1,151 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"action": "on_init",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https:\/\/ondc-staging.paytm.com\/retail",
+		"bpp_id": "retailconnect.co.in",
+		"bpp_uri": "https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "71d82702-52d0-4978-91df-6d940fa5558a",
+		"message_id": ":SentTimeStamp:1680090581517:",
+		"city": "std:080",
+		"country": "IND",
+		"timestamp": "2023-03-29T11:49:43.668Z"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "ONDC-STORE-BGLR"
+			},
+			"provider_location": {
+				"id": "ONDC-STORE-BGLR"
+			},
+			"items": [{
+				"id": "QM VEGGIE 70-PK",
+				"quantity": {
+					"count": 1
+				},
+				"fulfillment_id": "0e87a6ee-02e2-4ed9-8fcd-c5adf22379be"
+			}, {
+				"id": "MAGIC MASALA 93",
+				"quantity": {
+					"count": 2
+				},
+				"fulfillment_id": "0e87a6ee-02e2-4ed9-8fcd-c5adf22379be"
+			}],
+			"billing": {
+				"name": "Yogesh Goyal",
+				"address": {
+					"name": "Yogesh Goyal",
+					"locality": "Koralur",
+					"building": "Thirumalashettyhally",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "IND",
+					"area_code": "560067"
+				},
+				"email": null,
+				"phone": "9818470079",
+				"created_at": "2023-03-29T11:49:41.476Z",
+				"updated_at": "2023-03-29T11:49:41.476Z"
+			},
+			"fulfillments": [{
+				"id": "0e87a6ee-02e2-4ed9-8fcd-c5adf22379be",
+				"type": "Delivery",
+				"provider_id": "ONDC-STORE-BGLR",
+				"tracking": false,
+				"end": {
+					"location": {
+						"gps": "12.981105,77.774329",
+						"address": {
+							"name": "Yogesh Goyal",
+							"locality": "Koralur",
+							"building": "Thirumalashettyhally",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "IND",
+							"area_code": "560067"
+						}
+					},
+					"contact": {
+						"phone": "9818470079"
+					}
+				}
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "291"
+				},
+				"breakup": [{
+					"@ondc\/org\/item_id": "QM VEGGIE 70-PK",
+					"@ondc\/org\/item_quantity": {
+						"count": 1
+					},
+					"title": "Sunfeast YiPPee! Quik Mealz Veggie Delight, 70g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "45"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "45"
+						}
+					}
+				}, {
+					"@ondc\/org\/item_id": "MAGIC MASALA 93",
+					"@ondc\/org\/item_quantity": {
+						"count": 2
+					},
+					"title": "Sunfeast YiPPee Magic Masala 560g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "196"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "98"
+						}
+					}
+				}, {
+					"@ondc\/org\/item_id": "0e87a6ee-02e2-4ed9-8fcd-c5adf22379be",
+					"title": "Delivery charges",
+					"@ondc\/org\/title_type": "delivery",
+					"price": {
+						"currency": "INR",
+						"value": "50.0"
+					}
+				}],
+				"ttl": "P1D"
+			},
+			"payment": {
+				"@ondc\/org\/buyer_app_finder_fee_type": "percent",
+				"@ondc\/org\/buyer_app_finder_fee_amount": "3",
+				"@ondc\/org\/settlement_details": [{
+					"settlement_counterparty": "seller-app",
+					"settlement_phase": "sale-amount",
+					"settlement_type": "rtgs",
+					"settlement_bank_account_no": "XXXXXXXXXX",
+					"settlement_ifsc_code": "XXXXXXXXX",
+					"beneficiary_name": "xxxxx",
+					"bank_name": "xxxx",
+					"branch_name": "xxxx"
+				}]
+			}
+		}
+	}
+} 
+
+
+{
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

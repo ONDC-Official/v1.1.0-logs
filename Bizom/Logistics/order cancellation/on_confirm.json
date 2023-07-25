@@ -1,0 +1,83 @@
+{
+    "context": {
+        "city": "std:080",
+        "action": "on_confirm",
+        "bap_id": "stagingapigateway.bizom.in/ondc",
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "domain": "nic2004:60232",
+        "bap_uri": "https://stagingapigateway.bizom.in/ondc",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "country": "IND",
+        "timestamp": "2023-03-17T05:57:00.756Z",
+        "message_id": "bdd513c8-782d-4857-8aa4-dfa2d3e9f17d",
+        "core_version": "1.1.0",
+        "transaction_id": "17c01445-1c4a-428c-ae05-ad78b2ba7244"
+    },
+    "message": {
+        "order": {
+            "id": "6f4ca8dc-172a-4e7f-9834-3ff23a6a080f",
+            "items": [
+                {
+                    "id": "nextday",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "78",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "78",
+                            "currency": "INR"
+                        },
+                        "@ondc/org/item_id": "nextday",
+                        "@ondc/org/title_type": "Delivery Charge"
+                    }
+                ]
+            },
+            "state": "Accepted",
+            "billing": {
+                "name": "Bizom",
+                "phone": "",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "Bizom",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "building": "Sri Arunachaleshwara Building",
+                    "locality": "Bellandur Main Rd",
+                    "area_code": "560103"
+                },
+                "created_at": "2023-03-17T05:56:44.081Z",
+                "tax_number": "29AAFCM4341L1Z6",
+                "updated_at": "2023-03-17T05:56:44.081Z"
+            },
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP"
+            },
+            "provider": {
+                "id": "loadshare@ondc-preprod.loadshare.net"
+            },
+            "created_at": "2023-03-17T05:57:00.729Z",
+            "updated_at": "2023-03-17T05:57:00.756Z",
+            "fulfillments": [
+                {
+                    "id": "17c01445-1c4a-428c-ae05-ad78b2ba7244",
+                    "type": "Prepaid",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "tracking": true
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "seller.instastack.io",
+        "bpp_uri": "https://seller.instastack.io/pre-prod",
+        "transaction_id": "75822fce-f6fa-47ee-8eb4-f1f5892c4047",
+        "message_id": "6dbc10e3-e72d-4103-8eeb-905789569b5b",
+        "timestamp": "2023-07-13T17:04:39.836Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+            },
+            "provider_location": {
+                "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "223251",
+                    "quantity": {
+                        "count": 2
+                    }
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "218",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Rajiv Singh",
+                "address": {
+                    "name": "Rajiv Singh",
+                    "building": "15/11",
+                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560001"
+                },
+                "phone": "8302010971",
+                "created_at": "2023-07-13T17:04:39.773Z",
+                "updated_at": "2023-07-13T17:04:39.773Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Delivery",
+                    "provider_id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
+                    "tracking": false,
+                    "end": {
+                        "location": {
+                            "gps": "12.971609528512422,77.59456269443035",
+                            "address": {
+                                "name": "Rajiv Singh",
+                                "building": "15/11",
+                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8302010971"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1565.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "223251",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Seni Care Wet Wipes, 10 pcs",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "398.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "199.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "218",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Mamaearth Onion Conditioner, 400 ml",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1118.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "559.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "49.00"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "upi_address": "thor@okicicicicic",
+                        "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
+                        "settlement_ifsc_code": "someIFSC",
+                        "beneficiary_name": "Thor",
+                        "bank_name": "Marvels Bank",
+                        "branch_name": "Asgard"
+                    }
+                ]
+            }
+        }
+    }
+}
