@@ -2,20 +2,20 @@
   "context": {
     "domain": "nic2004:52110",
     "country": "IND",
-    "city": "std:080,std:044",
+    "city": "std:080",
     "action": "on_update",
     "core_version": "1.1.0",
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_id": "ondc-preprod.tvs-e.in",
     "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
-    "transaction_id": "6787514a-cff2-44eb-a8aa-3627a8bc7805",
-    "message_id": "9386bc39-939f-4462-a563-57a523a847f9",
-    "timestamp": "2023-07-22T16:17:44.145Z"
+    "transaction_id": "17d1c1d1-29d7-4c98-9877-f09f7baf9897",
+    "message_id": "b63afe4a-3119-4799-bc32-315ebc2a70ce",
+    "timestamp": "2023-07-26T16:14:26.369Z"
   },
   "message": {
     "order": {
-      "id": "2023-07-22-889574",
+      "id": "2023-07-26-247021",
       "state": "Completed",
       "provider": {
         "id": "ondc-preprod.tvs-e.in",
@@ -29,15 +29,14 @@
       "items": [
         {
           "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+          "fulfillment_id": "1",
           "quantity": {
             "count": 1
-          },
-          "tags": {
-            "status": "Order-delivered"
           }
         },
         {
           "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+          "fulfillment_id": "1",
           "quantity": {
             "count": 1
           },
@@ -51,6 +50,7 @@
           "currency": "INR",
           "value": "27608.00"
         },
+        "ttl": "P1D",
         "breakup": [
           {
             "item": {
@@ -90,8 +90,36 @@
           }
         ]
       },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "status": "PAID",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "17d1c1d1-29d7-4c98-9877-f09f7baf9897",
+          "amount": "27608.00"
+        },
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "upi_address": "",
+            "bank_name": "HDFC",
+            "branch_name": "Adayar",
+            "settlement_bank_account_no": "1234567890",
+            "settlement_ifsc_code": "IFSC00001",
+            "beneficiary_name": "TVS Electronics Ltd"
+          }
+        ]
+      },
       "fulfillments": [
         {
+          "id": "1",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -102,6 +130,9 @@
           "start": {
             "location": {
               "gps": "12.7123114,77.8106458",
+              "descriptor": {
+                "name": "TVS Electronics Ltd"
+              },
               "address": {
                 "city": "Bengaluru",
                 "state": "Karnataka",
@@ -110,10 +141,10 @@
             },
             "time": {
               "range": {
-                "start": "2023-07-22T16:06:07.000Z",
-                "end": "2023-07-22T16:06:07.000Z"
+                "start": "2023-07-26T21:44:26.411Z",
+                "end": "2023-07-26T21:44:26.411Z"
               },
-              "timestamp": "2023-07-22T16:06:07.000Z"
+              "timestamp": "2023-07-26T16:09:30.385Z"
             }
           },
           "end": {
@@ -125,15 +156,15 @@
                 "city": "Bengaluru",
                 "state": "Karnataka",
                 "country": "IND",
-                "area_code": "560036"
+                "area_code": "560034"
               }
             },
             "time": {
               "range": {
-                "start": "2023-07-22T16:06:07.000Z",
-                "end": "2023-07-22T16:06:07.000Z"
+                "start": "2023-07-26T21:44:26.411Z",
+                "end": "2023-07-26T21:44:26.411Z"
               },
-              "timestamp": "2023-07-22T16:06:07.000Z"
+              "timestamp": "2023-07-26T16:09:57.708Z"
             },
             "contact": {
               "email": "test@gmail.com",
@@ -142,8 +173,8 @@
           }
         }
       ],
-      "created_at": "2023-07-22T16:06:06.000Z",
-      "updated_at": "2023-07-22T16:06:07.000Z"
+      "created_at": "2023-07-26T16:04:53.893Z",
+      "updated_at": "2023-07-26T16:14:26.369Z"
     }
   }
 }

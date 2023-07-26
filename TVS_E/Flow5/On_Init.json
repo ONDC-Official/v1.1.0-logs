@@ -2,16 +2,16 @@
   "context": {
     "domain": "nic2004:52110",
     "country": "IND",
-    "city": "std:044",
+    "city": "std:080",
     "action": "on_init",
     "core_version": "1.0.0",
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_id": "ondc-preprod.tvs-e.in",
     "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
-    "message_id": "ab1827c3-4359-4764-93bd-50d45af61700",
-    "timestamp": "2023-07-22T18:33:53.364Z",
-    "transaction_id": "864a918f-21fb-405c-9025-0f1fa566327e"
+    "message_id": "cb4ccca5-c448-47c7-a5a0-225194a1e363",
+    "timestamp": "2023-07-26T16:43:39.566Z",
+    "transaction_id": "9520c0d9-5484-4cc8-88df-7c3764f8be78"
   },
   "message": {
     "order": {
@@ -22,20 +22,26 @@
             "count": 2
           },
           "@ondc/org/returnable": true,
-          "@ondc/org/cancellable": true
+          "@ondc/org/cancellable": true,
+          "fulfillment_id": "1"
         }
       ],
       "billing": {
         "name": "Rajagopal",
         "address": {
+          "door": "Test",
           "name": "Rajagopal",
+          "building": "Test",
           "city": "Bengaluru",
           "state": "Karnataka",
           "country": "IND",
-          "area_code": "560036"
+          "area_code": "560036",
+          "locality": "South"
         },
         "email": "s.rajagopal@tvs-e.in",
-        "phone": "9865569388"
+        "phone": "9865569388",
+        "updated_at": "2023-07-26T16:43:39.268Z",
+        "created_at": "2023-07-26T16:43:39.268Z"
       },
       "fulfillments": [
         {
@@ -46,11 +52,14 @@
             "location": {
               "gps": "13.006289, 77.699349",
               "address": {
+                "door": "Test",
                 "name": "Rajagopal",
+                "building": "Test",
                 "city": "Bengaluru",
                 "state": "Karnataka",
                 "country": "IND",
-                "area_code": "560036"
+                "area_code": "560036",
+                "locality": "South"
               }
             },
             "contact": {
@@ -68,43 +77,43 @@
         },
         "breakup": [
           {
-            "item": {
-              "price": {
-                "currency": "INR",
-                "value": "21354.24"
-              }
-            },
-            "title": "MSP 250 Star Dot Matrix Printer",
-            "price": {
-              "currency": "INR",
-              "value": "21354.24"
-            },
             "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
             "@ondc/org/item_quantity": {
               "count": 2
             },
-            "@ondc/org/title_type": "Item"
+            "title": "MSP 250 Star Dot Matrix Printer",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "21354.24"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "10677.12"
+              }
+            }
           },
           {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
             "title": "Tax",
+            "@ondc/org/title_type": "tax",
             "price": {
               "currency": "INR",
               "value": "3843.76"
-            },
-            "@ondc/org/item_id": "Tax",
-            "@ondc/org/title_type": "tax"
+            }
           },
           {
+            "@ondc/org/item_id": "1",
             "title": "Delivery Charge",
+            "@ondc/org/title_type": "delivery",
             "price": {
               "currency": "INR",
               "value": "50"
-            },
-            "@ondc/org/item_id": "Delivery",
-            "@ondc/org/title_type": "delivery"
+            }
           }
         ],
-        "ttl": "PT30M"
+        "ttl": "P4D"
       },
       "payment": {
         "type": "ON-ORDER",
@@ -118,13 +127,13 @@
         "@ondc/org/settlement_details": [
           {
             "bank_name": "HDFC",
-            "beneficiary_name": "TVSE",
+            "beneficiary_name": "TVS Electronics Ltd",
             "branch_name": "Adayar",
             "settlement_bank_account_no": "1234567890",
             "settlement_counterparty": "seller-app",
             "settlement_ifsc_code": "IFSC00001",
             "settlement_phase": "sale-amount",
-            "settlement_type": "NEFT",
+            "settlement_type": "neft",
             "upi_address": ""
           }
         ]
@@ -133,7 +142,7 @@
         "id": "ondc-preprod.tvs-e.in"
       },
       "provider_location": {
-        "id": "1"
+        "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911"
       }
     }
   }

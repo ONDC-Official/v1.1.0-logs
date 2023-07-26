@@ -2,16 +2,16 @@
   "context": {
     "domain": "nic2004:52110",
     "country": "IND",
-    "city": "std:044",
+    "city": "std:080",
     "action": "on_init",
     "core_version": "1.0.0",
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_id": "ondc-preprod.tvs-e.in",
     "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
-    "message_id": "12775377-fe7e-48d0-81ef-c71ac4585a71",
-    "timestamp": "2023-07-22T16:06:06.733Z",
-    "transaction_id": "6787514a-cff2-44eb-a8aa-3627a8bc7805"
+    "message_id": "381eda23-ae49-474c-b944-f7ce4dba71d9",
+    "timestamp": "2023-07-26T16:04:50.925Z",
+    "transaction_id": "17d1c1d1-29d7-4c98-9877-f09f7baf9897"
   },
   "message": {
     "order": {
@@ -22,7 +22,8 @@
             "count": 1
           },
           "@ondc/org/returnable": true,
-          "@ondc/org/cancellable": true
+          "@ondc/org/cancellable": true,
+          "fulfillment_id": "1"
         },
         {
           "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
@@ -30,7 +31,8 @@
             "count": 1
           },
           "@ondc/org/returnable": true,
-          "@ondc/org/cancellable": true
+          "@ondc/org/cancellable": true,
+          "fulfillment_id": "1"
         }
       ],
       "billing": {
@@ -42,10 +44,13 @@
           "city": "Bengaluru",
           "state": "Karnataka",
           "country": "IND",
-          "area_code": "560036"
+          "area_code": "560034",
+          "locality": "test"
         },
-        "email": "rajasaran22@gmail.com",
-        "phone": "9865569388"
+        "email": "test@gmail.com",
+        "phone": "9865569388",
+        "updated_at": "2023-07-26T16:04:50.135Z",
+        "created_at": "2023-07-26T16:04:50.135Z"
       },
       "fulfillments": [
         {
@@ -62,7 +67,8 @@
                 "city": "Bengaluru",
                 "state": "Karnataka",
                 "country": "IND",
-                "area_code": "560036"
+                "area_code": "560034",
+                "locality": "test"
               }
             },
             "contact": {
@@ -80,61 +86,70 @@
         },
         "breakup": [
           {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "LP 46 Lite Thermal Label Printer",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "12719.49"
+            },
             "item": {
               "price": {
                 "currency": "INR",
                 "value": "12719.49"
               }
-            },
-            "title": "LP 46 Lite Thermal Label Printer",
+            }
+          },
+          {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
             "price": {
               "currency": "INR",
-              "value": "12719.49"
-            },
-            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+              "value": "2289.51"
+            }
+          },
+          {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
             "@ondc/org/item_quantity": {
               "count": 1
             },
-            "@ondc/org/title_type": "Item"
-          },
-          {
+            "title": "MSP 250 Star Dot Matrix Printer",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "10677.12"
+            },
             "item": {
               "price": {
                 "currency": "INR",
                 "value": "10677.12"
               }
-            },
-            "title": "MSP 250 Star Dot Matrix Printer",
-            "price": {
-              "currency": "INR",
-              "value": "10677.12"
-            },
+            }
+          },
+          {
             "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
-            "@ondc/org/item_quantity": {
-              "count": 1
-            },
-            "@ondc/org/title_type": "Item"
-          },
-          {
             "title": "Tax",
+            "@ondc/org/title_type": "tax",
             "price": {
               "currency": "INR",
-              "value": "4211.39"
-            },
-            "@ondc/org/item_id": "Tax",
-            "@ondc/org/title_type": "tax"
+              "value": "1921.88"
+            }
           },
           {
+            "@ondc/org/item_id": "1",
             "title": "Delivery Charge",
+            "@ondc/org/title_type": "delivery",
             "price": {
               "currency": "INR",
               "value": "50"
-            },
-            "@ondc/org/item_id": "Delivery",
-            "@ondc/org/title_type": "delivery"
+            }
           }
         ],
-        "ttl": "PT30M"
+        "ttl": "P4D"
       },
       "payment": {
         "type": "ON-ORDER",
@@ -148,13 +163,13 @@
         "@ondc/org/settlement_details": [
           {
             "bank_name": "HDFC",
-            "beneficiary_name": "TVSE",
+            "beneficiary_name": "TVS Electronics Ltd",
             "branch_name": "Adayar",
             "settlement_bank_account_no": "1234567890",
             "settlement_counterparty": "seller-app",
             "settlement_ifsc_code": "IFSC00001",
             "settlement_phase": "sale-amount",
-            "settlement_type": "NEFT",
+            "settlement_type": "neft",
             "upi_address": ""
           }
         ]
@@ -163,7 +178,7 @@
         "id": "ondc-preprod.tvs-e.in"
       },
       "provider_location": {
-        "id": "1"
+        "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911"
       }
     }
   }
