@@ -1,0 +1,182 @@
+{
+    "context": {
+        "city": "std:080",
+        "action": "on_update",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-04-11T15:58:41.128Z",
+        "message_id": "4f4fa43c-fd2c-4a0b-8386-8b0886fa92e4",
+        "core_version": "1.1.0",
+        "transaction_id": "c4f17caa-bf02-407b-bc34-7d1bcb03d83d"
+    },
+    "message": {
+        "order": {
+            "id": "2023-04-11-544759",
+            "items": [
+                {
+                    "id": "101",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "20971"
+                },
+                {
+                    "id": "219",
+                    "tags": {
+                        "status": "Return_Initiated"
+                    },
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "20971"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "68.33",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "18.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "36.00",
+                            "currency": "INR"
+                        },
+                        "title": "Sunfeast Pasta Treat Instant Masala Pasta 65 g",
+                        "@ondc/org/item_id": "101",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "15.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "30.00",
+                            "currency": "INR"
+                        },
+                        "title": "Saffola Veggie Twist Instant Masala Oats 38 g",
+                        "@ondc/org/item_id": "219",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "101",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "219",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "delivery"
+                    },
+                    {
+                        "price": {
+                            "value": "2.33",
+                            "currency": "INR"
+                        },
+                        "title": "Convenience Fee",
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc"
+                    }
+                ]
+            },
+            "state": "Completed",
+            "fulfillments": [
+                {
+                    "id": "20971",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-04-11T15:57:38.000Z",
+                                "start": "2023-04-11T15:57:27.000Z"
+                            },
+                            "timestamp": "2023-04-11T15:57:38.000Z"
+                        },
+                        "contact": {
+                            "phone": "9629295619"
+                        },
+                        "location": {
+                            "gps": "13.032975, 77.5203490000001",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "Sathish Kumar A",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "building": "Peenya Industrial Area",
+                                "locality": "Post Box No. 5857, 23/24, II Phase",
+                                "area_code": "560058"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-04-11T15:57:27.000Z",
+                                "start": "2023-04-11T15:56:14.000Z"
+                            },
+                            "timestamp": "2023-04-11T15:57:27.000Z"
+                        },
+                        "contact": {
+                            "email": "aleeminuk@gmail.com",
+                            "phone": "9727288181"
+                        },
+                        "location": {
+                            "id": "20971",
+                            "gps": "12.9953402,77.61399999999999",
+                            "descriptor": {
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j27qsnles4kuge.png"
+                                ]
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Evergreen SuperMarket"
+                }
+            ]
+        }
+    }
+}

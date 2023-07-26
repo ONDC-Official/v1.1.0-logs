@@ -1,0 +1,155 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://ondc.hulsecure.in/preprod/v1",
+    "transaction_id": "9703c4aa-51d1-4d82-8515-c0704ad245cb",
+    "message_id": "77628451-df48-4a06-b728-8954757882d5",
+    "timestamp": "2023-04-06T05:57:19.362Z",
+    "bpp_id": "ondc.hulsecure.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "afe44f35-fb0c-527b-8a80-a1b0b839197e"
+      },
+      "provider_location": {
+        "id": "65426587829"
+      },
+      "items": [
+        {
+          "id": "44790345662764",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+        },
+        {
+          "id": "44790345761068",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+        }
+      ],
+      "billing": {
+        "address": {
+          "door": "ENS Enterprises",
+          "building": "ENS Enterprises",
+          "city": "Noida",
+          "state": "Uttar Pradesh",
+          "country": "IND",
+          "area_code": "201309",
+          "locality": "noida A133",
+          "name": "Harish Maurya"
+        },
+        "phone": "6393245616",
+        "name": "Harish Maurya",
+        "email": "harish.maurya@ens.enterprises",
+        "created_at": "2023-04-06T05:57:18.566Z",
+        "updated_at": "2023-04-06T05:57:18.566Z"
+      },
+      "fulfillments": [
+        {
+          "id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e",
+          "type": "Delivery",
+          "end": {
+            "contact": {
+              "email": "harish.maurya@ens.enterprises",
+              "phone": "6393245616"
+            },
+            "location": {
+              "gps": "28.574981, 77.320812",
+              "address": {
+                "building": "ENS Enterprises",
+                "city": "Noida",
+                "state": "Uttar Pradesh",
+                "country": "IND",
+                "area_code": "201309",
+                "locality": "noida A133",
+                "name": "Harish Maurya"
+              }
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "4444"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "44790345761068",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Axe Dark Temptation (Pack Of 2) And Pulse Long-Lasting Deodorant for Men( 3 Items In The Set )",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "2222"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "1111"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "44790345662764",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Axe Chocolate Collection Gift For Men",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "2222"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "1111"
+              }
+            }
+          },
+          {
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "@ondc/org/item_id": "0a4a6c37-7622-46b9-a501-2b48527f4a3e"
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "upi_address": "8860775669@paytm",
+            "settlement_bank_account_no": "623905034810",
+            "settlement_ifsc_code": "ICIC0006239",
+            "beneficiary_name": "JHAKAAS RETAIL PRIVATE LIMITED",
+            "bank_name": "ICICI BANK",
+            "branch_name": "Mumbai Chembur branch"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+	"message": {
+		"order": {
+			"id": "b7bd105b-7f4e-4ec9-8c90-137158f56015",
+			"state": "Cancelled",
+			"provider": {
+				"id": "Delhivery"
+			},
+			"items": [
+				{
+					"descriptor": {
+						"code": "P2H2P"
+					},
+					"category_id": "Express Delivery",
+					"id": "f27a0e45-a47b-4ab2-8679-ba1664fd1e7b"
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1.00"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "f27a0e45-a47b-4ab2-8679-ba1664fd1e7b",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "1.00"
+						}
+					}
+				]
+			},
+			"fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid",
+					"@ondc/org/awb_no": "352030577572",
+					"state": {
+						"descriptor": {
+							"code": "Cancelled",
+							"name": "Cancelled"
+						}
+					},
+					"tracking": true,
+					"start": {
+						"time": {
+							"range": {
+								"start": "2023-05-14T10:03:00.000Z",
+								"end": "2023-05-14T15:03:00.000Z"
+							},
+							"timestamp": ""
+						},
+						"instructions": {
+							"name": "Shipping label or proof of pickup",
+							"short_desc": "Shipping label or proof of delivery details",
+							"long_desc": "Shipping label info or proof of pickup",
+							"images": [
+								"https://s3.ap-southeast-1.amazonaws.com/media.delhivery/tmp/shipping_label_ondc/352030577572.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARIGS3RKBILQEEZEU%2F20230514%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230514T044448Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3f2b26e659aee1426afa7372e399ab1fb1f39cd21d6ece272c0414aeb280d641"
+							]
+						}
+					},
+					"end": {
+						"time": {
+							"range": {
+								"start": "",
+								"end": ""
+							},
+							"timestamp": ""
+						}
+					},
+					"@ondc/org/ewaybillno": "",
+					"@ondc/org/ebnexpirydate": ""
+				}
+			],
+			"payments": {
+				"type": "ON-ORDER",
+				"collected_by": "BAP",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_ifsc_code": "IFSCTEST1234",
+						"beneficiary_name": "DELHIVERY LIMITED",
+						"settlement_bank_account_no": "ACCTEST1234",
+						"settlement_counterparty": "seller-app",
+						"settlement_type": "neft"
+					}
+				]
+			},
+			"billing": {
+				"address": {
+					"country": "India",
+					"city": "Imphal",
+					"area_code": "795146",
+					"name": "BTMC",
+					"locality": "Uripok Kangchup Road, Lamsang",
+					"state": "Manipur",
+					"building": "BTMC"
+				},
+				"updated_at": "2023-05-13T14:05:28.460Z",
+				"phone": "7085097856",
+				"tax_number": "14AAAAA0000A1Z5",
+				"name": "Addble",
+				"created_at": "2023-05-13T14:05:28.460Z",
+				"email": "support.ondc@addble.com"
+			},
+			"updated_at": "2023-05-14T04:44:48.306Z",
+			"tags": {
+				"cancellation_reason_id": "008",
+				"AWB no": "352030577572"
+			}
+		}
+	},
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_status",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.addble.com",
+		"bap_uri": "https://preprod-ondc.addble.com/",
+		"transaction_id": "b733e0ca-2408-4977-9c18-7dc6e36fcb46",
+		"message_id": "c0c33940-47be-4bd1-b915-07e3f6d4ea86",
+		"timestamp": "2023-05-14T04:44:48.306Z",
+		"bpp_id": "ondc-dev.delhivery.com",
+		"bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/"
+	}
+}

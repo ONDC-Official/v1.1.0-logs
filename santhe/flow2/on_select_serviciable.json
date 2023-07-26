@@ -1,0 +1,109 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "ondcstaging.santhe.in",
+    "bap_uri": "https://ondcstaging.santhe.in/santhe/ondc",
+    "bpp_id": "sit.mytra.money",
+    "bpp_uri": "https://sit.mytra.money/api/method/ondc/",
+    "transaction_id": "8dd00d4e-21c7-427d-ae7e-09b82d106d37",
+    "message_id": "224d1455-9c71-48c6-8892-8dee23a1187a",
+    "timestamp": "2023-04-24T08:33:38.288Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "PwcTech Technologies Pvt Ltd",
+        "locations": [{ "id": "Finished Goods - Pwc" }]
+      },
+      "items": [
+        {
+          "id": "iD Homestyle Whole Wheat Paratha",
+          "fulfillment_id": "ONDC-REQ-65407",
+          "location_id": "Finished Goods - Pwc"
+        },
+        {
+          "id": "Sleepy Owl Premium Original Instant Coffee",
+          "fulfillment_id": "ONDC-REQ-65407",
+          "location_id": "Finished Goods - Pwc"
+        }
+      ],
+      "fulfillments": [
+        {
+          "end": {
+            "location": {
+              "gps": "12.975358580353303,77.576089811574",
+              "address": { "area_code": "560001" }
+            }
+          },
+          "id": "ONDC-REQ-65407",
+          "state": { "descriptor": { "code": "Serviceable" } },
+          "@ondc/org/provider_name": "mytra store",
+          "@ondc/org/TAT": "P2D",
+          "@ondc/org/category": "Next Day Delivery"
+        }
+      ],
+      "quote": {
+        "price": { "currency": "INR", "value": "1123.98" },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "iD Homestyle Whole Wheat Paratha",
+            "@ondc/org/item_quantity": { "count": 2 },
+            "@ondc/org/title_type": "item",
+            "title": "iD Homestyle Whole Wheat Paratha",
+            "price": { "currency": "INR", "value": "112.7" },
+            "item": {
+              "quantity": {
+                "available": { "count": "2.0" },
+                "maximum": { "count": "2.0" }
+              },
+              "price": { "currency": "INR", "value": "56.35" }
+            }
+          },
+          {
+            "@ondc/org/item_id": "Sleepy Owl Premium Original Instant Coffee",
+            "@ondc/org/item_quantity": { "count": 2 },
+            "@ondc/org/title_type": "item",
+            "title": "Sleepy Owl Premium Original Instant Coffee",
+            "price": { "currency": "INR", "value": "764.82" },
+            "item": {
+              "quantity": {
+                "available": { "count": "2.0" },
+                "maximum": { "count": "2.0" }
+              },
+              "price": { "currency": "INR", "value": "382.41" }
+            }
+          },
+          {
+            "@ondc/org/item_id": "iD Homestyle Whole Wheat Paratha",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": { "currency": "INR", "value": "20.29" }
+          },
+          {
+            "@ondc/org/item_id": "Sleepy Owl Premium Original Instant Coffee",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": { "currency": "INR", "value": "137.67" }
+          },
+          {
+            "@ondc/org/item_id": "ONDC-REQ-65407",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": { "currency": "INR", "value": "13.5" }
+          },
+          {
+            "@ondc/org/item_id": "ONDC-REQ-65407",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": { "currency": "INR", "value": "75.0" }
+          }
+        ],
+        "ttl": "PT1H"
+      }
+    }
+  }
+}

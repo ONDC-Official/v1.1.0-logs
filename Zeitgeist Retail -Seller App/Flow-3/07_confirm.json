@@ -1,0 +1,252 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "jiomart-buyer.ondcz5.de",
+        "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+        "transaction_id": "60250276-86cb-4412-902d-ad1ae5332c89",
+        "message_id": "8af8c301-a503-4697-b74c-c5a50b78911f",
+        "timestamp": "2023-06-01T07:14:57.403Z",
+        "ttl": "PT30S",
+        "bpp_id": "ondc-preprod.zeppstore.in",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in"
+    },
+    "message": {
+        "order": {
+            "id": "7a4230c5-8aaf-4674-b9a0-96de2c2887fc",
+            "state": "Created",
+            "billing": {
+                "name": "reevant",
+                "address": {
+                    "name": "reevant",
+                    "building": "hebbal",
+                    "locality": "Sector 5",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560102"
+                },
+                "email": "revant@gmail.com",
+                "phone": "9980292362",
+                "created_at": "2023-06-01T07:13:29.547Z",
+                "updated_at": "2023-06-01T07:13:29.547Z"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                    "id": "6328",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "fulfillment_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                    "id": "6327",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "provider": {
+                "id": "ZEPP",
+                "locations": [
+                    {
+                        "id": "wfhlb-1000"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                    "end": {
+                        "person": {
+                            "name": "reevant"
+                        },
+                        "contact": {
+                            "email": "revant@gmail.com",
+                            "phone": "9980292362"
+                        },
+                        "location": {
+                            "gps": "12.911862,77.6445923",
+                            "address": {
+                                "name": "reevant",
+                                "building": "hebbal",
+                                "locality": "Sector 5",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560102"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "params": {
+                    "amount": "1940",
+                    "currency": "INR",
+                    "transaction_id": "20230601011650000871010509326609391"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "2",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "beneficiary_name": "xxxx",
+                        "upi_address": "gft@oksbi",
+                        "settlement_bank_account_no": "xxxx",
+                        "settlement_ifsc_code": "xxxx",
+                        "bank_name": "xxxx",
+                        "branch_name": "xxxx"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1940"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "6327",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 10",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1290"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1290"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6327",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6327",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6328",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 5",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "650"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "650"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6328",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6328",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "created_at": "2023-06-01T07:14:57.403Z",
+            "updated_at": "2023-06-01T07:14:57.403Z"
+        }
+    }
+}

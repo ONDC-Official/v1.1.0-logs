@@ -1,0 +1,122 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_select",
+		"core_version": "1.1.0",
+		"bap_id": "ondc-staging.paytm.com",
+		"bap_uri": "https:\/\/ondc-staging.paytm.com\/retail",
+		"bpp_id": "retailconnect.co.in",
+		"bpp_uri": "https:\/\/retailconnect.co.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "e4ef1d8e-72f9-405b-8852-e81215bb3e40",
+		"message_id": ":SentTimeStamp:1680090536156:",
+		"timestamp": "2023-03-29T11:48:58.241Z"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "ONDC-STORE-BGLR"
+			},
+			"items": [{
+				"fulfillment_id": "9842c136-6f5b-41f9-b4d8-e1150bfdff6b",
+				"id": "QM VEGGIE 70-PK"
+			}, {
+				"fulfillment_id": "9842c136-6f5b-41f9-b4d8-e1150bfdff6b",
+				"id": "MAGIC MASALA 93"
+			}],
+			"fulfillments": [{
+				"id": "9842c136-6f5b-41f9-b4d8-e1150bfdff6b",
+				"@ondc\/org\/provider_name": "ITC Store",
+				"tracking": false,
+				"@ondc\/org\/category": "Standard Delivery",
+				"@ondc\/org\/TAT": "P1D",
+				"state": {
+					"descriptor": {
+						"code": "Serviceable"
+					}
+				}
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "291"
+				},
+				"breakup": [{
+					"@ondc\/org\/item_id": "QM VEGGIE 70-PK",
+					"@ondc\/org\/item_quantity": {
+						"count": 1
+					},
+					"item": {
+						"quantity": {
+							"available": {
+								"count": "1"
+							},
+							"maximum": {
+								"count": "1"
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "45"
+						}
+					},
+					"title": "Sunfeast YiPPee! Quik Mealz Veggie Delight, 70g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "45"
+					}
+				}, {
+					"@ondc\/org\/item_id": "MAGIC MASALA 93",
+					"@ondc\/org\/item_quantity": {
+						"count": 2
+					},
+					"item": {
+						"quantity": {
+							"available": {
+								"count": "2"
+							},
+							"maximum": {
+								"count": "2"
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "98"
+						}
+					},
+					"title": "Sunfeast YiPPee Magic Masala 560g",
+					"@ondc\/org\/title_type": "item",
+					"price": {
+						"currency": "INR",
+						"value": "196"
+					}
+				}, {
+					"@ondc\/org\/item_id": "9842c136-6f5b-41f9-b4d8-e1150bfdff6b",
+					"title": "Delivery charges",
+					"@ondc\/org\/title_type": "delivery",
+					"price": {
+						"currency": "INR",
+						"value": "50.0"
+					}
+				}],
+				"ttl": "P1D"
+			}
+		}
+	},
+	"error": {
+		"type": "DOMAIN-ERROR",
+		"code": "40002",
+		"path": "string",
+		"message": "item quantity unavailable"
+	}
+} 
+
+{
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}

@@ -1,0 +1,162 @@
+{
+    "context": {
+        "transaction_id": "d2e58566-26d7-43c5-a852-727e1b861aca",
+        "message_id": "fae8c51b-dcca-4e66-a4c6-6b42c75c2a57",
+        "bap_id": "jiomart-buyer.ondcz5.de",
+        "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "bpp_id": "ondc-preprod.zeppstore.in",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "ttl": "PT30S",
+        "key": "yoMpOP7a4G+seicCqmYvb52xRFhpYgGtXrss1/6jqg4=",
+        "action": "on_update",
+        "timestamp": "2023-06-02T06:54:38.232Z"
+    },
+    "message": {
+        "order": {
+            "id": "00ec209b-af54-4ad7-8ee2-bf6de9a2f982",
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "6332",
+                    "fulfillment_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                    "quantity": {
+                        "count": 0
+                    }
+                },
+                {
+                    "id": "6333",
+                    "fulfillment_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                    "quantity": {
+                        "count": 3
+                    }
+                },
+                {
+                    "id": "6332",
+                    "fulfillment_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "tags": {
+                        "status": "Liquidated"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "120"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "6332",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "60"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6333",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "120"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "40"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                    "type": "Delivery",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-06-10T06:36:38.000Z",
+                                "end": "2023-06-10T06:36:38.000Z"
+                            },
+                            "timestamp": "2023-06-02T06:54:30.936Z"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-06-10T06:36:38.000Z",
+                                "end": "2023-06-10T06:36:38.000Z"
+                            },
+                            "timestamp": "2023-06-02T06:54:30.936Z"
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "d2e58566-26d7-43c5-a852-727e1b861aca",
+                    "amount": "120"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "upi_address": "gft@oksbi",
+                        "settlement_bank_account_no": "xxxx",
+                        "settlement_ifsc_code": "xxxx",
+                        "beneficiary_name": "xxxx",
+                        "bank_name": "xxxx",
+                        "branch_name": "xxxx"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_search",
+		"core_version": "1.1.0",
+		"bap_id": "b-ondc-seller-bpp.nlincs.in",
+		"bap_uri": "https://b-ondc-seller-bpp.nlincs.in/lbap",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "22035_232116100056_21161_00000000-6d59-29d4-ffff-ffff9abaa189_3jrvlT",
+		"message_id": "Jkza1u6yMrnrv9ZU22DLkziEjKKOE2bW",
+		"timestamp": "2023-05-31T05:37:59.671Z"
+	},
+	"message": {
+		"catalog": {
+			"bpp/fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid"
+				},
+				{
+					"id": "2",
+					"type": "CoD"
+				},
+				{
+					"id": "3",
+					"type": "RTO"
+				}
+			],
+			"bpp/descriptor": {
+				"name": "Grab Logistics"
+			},
+			"bpp/providers": [
+				{
+					"id": "grab-logistics",
+					"descriptor": {
+						"name": "Grab Logistics",
+						"short_desc": "Grab Logistics",
+						"long_desc": "Grab Logistics"
+					},
+					"items": [
+						{
+							"id": "same-day-delivery",
+							"parent_item_id": "",
+							"category_id": "Same Day Delivery",
+							"fulfillment_id": "2",
+							"descriptor": {
+								"code": "P2P",
+								"name": "Same Day Delivery",
+								"short_desc": "Same Day Delivery",
+								"long_desc": "Same Day Delivery"
+							},
+							"price": {
+								"currency": "INR",
+								"value": "1.0"
+							},
+							"time": {
+								"label": "TAT",
+								"duration": "PT45M",
+								"timestamp": "2023-05-31T05:37:59.886Z"
+							}
+						},
+						{
+							"id": "I2",
+							"parent_item_id": "same-day-delivery",
+							"category_id": "Same Day Delivery",
+							"fulfillment_id": "3",
+							"descriptor": {
+								"code": "P2P",
+								"name": "RTO quote",
+								"short_desc": "RTO quote",
+								"long_desc": "RTO quote"
+							},
+							"price": {
+								"currency": "INR",
+								"value": "0"
+							},
+							"time": {
+								"label": "TAT",
+								"duration": "PT45M",
+								"timestamp": "2023-05-31T05:37:59.328Z"
+							}
+						}
+					],
+					"categories": [
+						{
+							"id": "Standard Delivery",
+							"time": {
+								"label": "TAT",
+								"duration": "PT45M"
+							}
+						}
+					]
+				}
+			]
+		}
+	}
+}

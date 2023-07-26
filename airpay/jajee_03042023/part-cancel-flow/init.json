@@ -1,0 +1,48 @@
+{
+        "context": {
+            "domain": "nic2004:52110",
+            "country": "IND",
+            "city": "std:080",
+            "action": "init",
+            "core_version": "1.1.0",
+            "bap_id": "preprod-ondc.airpay.ninja",
+            "bap_uri": "https://preprod-ondc.airpay.ninja/",
+            "bpp_id":"preprod-jajee-bpp.shopalyst.com",
+            "bpp_uri":"https://preprod-jajee-bpp.shopalyst.com/jajee",
+            "transaction_id": "eb6fb5245b973ab481de2341f2d10371zzjs",
+            "message_id": "afdc891a37ffe2ebe0cc000ea96d1e7b",
+            "ttl": "PT30S",
+            "timestamp": "2023-04-03T12:43:09.000Z"
+        },
+        "message": {
+            "order": {
+              "provider": {
+                "id": "preprod-jajee-bpp.shopalyst.com",
+                "locations": [
+                    {
+                      "id": "5692eae837b7a1d2b7ebd8e6bd251b51"
+                    }
+                  ]
+              },
+              "items":[{"id":"55EA20538A3151ABD81510BBB42C9CE3_43540043628803_default","quantity":{"count":5},"provider":{"id":"preprod-jajee-bpp.shopalyst.com","locations":["5692eae837b7a1d2b7ebd8e6bd251b51"]},"fulfillment_id":"1"}],
+              "billing": {"address":{"door":"B123 Raja Apt, Near Post Office","name":"Jamunabai Patel","building":"B123 Raja Apt, Near Post Office","street":"Kandivali West","locality":"Kandivali West","ward":"","city":"Mumbai","state":"Maharashtra","country":"India","area_code":"400099"},"phone":"9619865113","name":"Jamunabai Patel","email":"jpatel@gmail.com","created_at":"2023-04-03T12:43:09.000Z","updated_at":"2023-04-03T12:43:09.000Z"},
+              "fulfillments": [
+                {
+                  "id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
+                  "type": "Delivery",
+                  "end": {
+                    "location": {"gps":"19.0929272, 72.86537679999999","address":{"door":"B123 Raja Apt, Near Post Office","name":"Jamunabai Patel","building":"B123 Raja Apt, Near Post Office","street":"Kandivali West","locality":"Kandivali West","ward":"","city":"Mumbai","state":"Maharashtra","country":"India","area_code":"400099"}},
+                    "contact": {
+                      "phone": "9619865113",
+                      "email": "jpatel@gmail.com"
+                    }
+                  },
+                  "customer": {},
+                  "@ondc/org/category": "",
+                  "@ondc/org/TAT": "",
+                  "@ondc/org/provider_name": ""
+                }
+              ]
+            }
+          }
+    }

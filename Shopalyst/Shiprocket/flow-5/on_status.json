@@ -1,0 +1,161 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "preprod-sellerapp.shiprocket.com",
+        "bpp_uri": "https://preprod-sellerapp.shiprocket.com/shiprocket",
+        "transaction_id": "2a312111-2207-4cd4-9a91-77adfb3dc0e3",
+        "message_id": "fbe2e6fe-7f6f-43a5-a65a-b8ebcd1ede7b",
+        "timestamp": "2023-05-24T20:58:16.290Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-05-24-483501",
+            "state": "Accepted",
+            "provider": {
+                "id": "b083db8904c8bcba29b97f071ba733d5",
+                "locations": [
+                    {
+                        "id": "b083db8904c8bcba29b97f071ba733d5"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
+                    "fulfillment_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1300.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Shanaya Luxury Attar Perfume - 12 ML",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1300.00"
+                        },
+                        "@ondc/org/item_id": "CF2BC92CF8E80AF616531BD09669585E_43914866262275_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "650.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "b083db8904c8bcba29b97f071ba733d5_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "billing": {
+                "name": "Kishor",
+                "address": {
+                    "name": "Kishor",
+                    "building": "Shopalyst",
+                    "locality": "288, 36th Cross road, 7th block Jayanagar",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560070"
+                },
+                "email": "kishor.gandham@gmail.com",
+                "phone": "9123456789",
+                "created_at": "2023-05-24T20:57:58.055Z",
+                "updated_at": "2023-05-24T20:57:58.055Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "b083db8904c8bcba29b97f071ba733d5_1",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "b083db8904c8bcba29b97f071ba733d5"
+                            },
+                            "gps": "12.9236881,77.5750117"
+                        },
+                        "contact": {
+                            "phone": "8128613466",
+                            "email": "info@adilqadri.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.923479, 77.564663",
+                            "address": {
+                                "name": "Kishor",
+                                "building": "Shopalyst",
+                                "locality": "288, 36th Cross road, 7th block Jayanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560070"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9123456789"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "@ondc/org/provider_name": "Adilqadri"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
+                    }
+                ],
+                "params": {
+                    "transaction_id": "ONDC-2a312111-2207-4cd4-9a91-77adfb3dc0e3-1",
+                    "amount": "1300",
+                    "currency": "INR"
+                }
+            },
+            "created_at": "2023-05-24T20:58:10.825Z",
+            "updated_at": "2023-05-24T20:58:13.679Z"
+        }
+    }
+}

@@ -1,0 +1,201 @@
+{
+    "context": {
+        "city": "std:080",
+        "action": "on_update",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondctsp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondctsp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-13T14:58:43.709Z",
+        "message_id": "db56497f-737d-4476-adb2-66ef129d38b0",
+        "core_version": "1.1.0",
+        "transaction_id": "bb9a8af5-3390-4b26-9ba6-07d1d82ce4da"
+    },
+    "message": {
+        "order": {
+            "id": "2023-07-13-164259",
+            "items": [
+                {
+                    "id": "14574",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "21222"
+                },
+                {
+                    "id": "14577",
+                    "tags": {
+                        "status": "Liquidated"
+                    },
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21222"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "400.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "200.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "400.00",
+                            "currency": "INR"
+                        },
+                        "title": "Himalaya Ashvagandha",
+                        "@ondc/org/item_id": "14574",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        }
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "340.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Himalaya gentle baby shampoo",
+                        "@ondc/org/item_id": "14577",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "14574",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "14577",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "0.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "21222",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "Completed",
+            "created_at": "2023-07-13T14:56:24.205Z",
+            "updated_at": "2023-07-13T14:58:43.709Z",
+            "payment": {
+                "uri": "https://juspay.in/",
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "740",
+                    "currency": "INR",
+                    "transaction_id": "bb9a8af5-3390-4b26-9ba6-07d1d82ce4da"
+                },
+                "status": "PAID",
+                "tl_method": "http/get",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "fulfillments": [
+                {
+                    "id": "21222",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-07-13T14:57:24.000Z",
+                                "start": "2023-07-13T14:57:10.000Z"
+                            },
+                            "timestamp": "2023-07-13T14:57:24.000Z"
+                        },
+                        "contact": {
+                            "phone": "9629295619"
+                        },
+                        "location": {
+                            "gps": "13.0096060000001, 80.2113430000001",
+                            "address": {
+                                "city": "Chennai",
+                                "name": "Sathish Kumar",
+                                "state": "Tamil Nadu",
+                                "country": "India",
+                                "building": "maduvinkarai",
+                                "locality": "25/20A",
+                                "area_code": "600032"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-07-13T14:57:10.000Z",
+                                "start": "2023-07-13T14:56:26.000Z"
+                            },
+                            "timestamp": "2023-07-13T14:57:10.000Z"
+                        },
+                        "contact": {
+                            "email": "sathisha@nstore.in",
+                            "phone": "7401117840"
+                        },
+                        "location": {
+                            "id": "21222",
+                            "gps": "13.0412658,80.2338514",
+                            "descriptor": {
+                                "name": "Himalaya store - T.nagar",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/21222/store_logo/21222_b8j2b4n1lj4dqa45.png"
+                                ]
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Himalaya store - T.nagar"
+                }
+            ]
+        }
+    }
+}
