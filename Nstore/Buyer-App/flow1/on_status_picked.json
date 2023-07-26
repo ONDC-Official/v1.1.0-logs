@@ -1,133 +1,200 @@
 {
     "context": {
-        "city": "std:*",
+        "city": "std:080",
+        "transaction_id": "fee18b4ccf03c3f918315cc08575aa00",
+        "message_id": "2bfefbff-bc4a-4f1f-85a9-c199fc61be16",
         "action": "on_status",
         "bap_id": "b-ondcbap.nlincs.in",
-        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
-        "domain": "nic2004:52110",
         "bap_uri": "https://b-ondcbap.nlincs.in/bap",
-        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "domain": "nic2004:52110",
         "country": "IND",
-        "timestamp": "2023-07-11T15:52:50.879Z",
-        "message_id": "045d3b11-8c69-4dd7-b876-88a44883edc0",
         "core_version": "1.1.0",
-        "transaction_id": "8d84179f26bfb963ba977a6a438fa900"
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "timestamp": "2023-07-26T12:46:25.623Z"
     },
     "message": {
         "order": {
-            "id": "2023-36026-76359",
-            "items": [
-                {
-                    "id": "103",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "21165"
-                },
-                {
-                    "id": "104",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "21165"
-                }
-            ],
-            "quote": {
-                "ttl": "PT30M",
-                "price": {
-                    "value": "1900.00",
-                    "currency": "INR"
-                },
-                "breakup": [
+            "id": "2023-54646-83472",
+            "state": "In-progress",
+            "provider": {
+                "id": "21165",
+                "locations": [
                     {
-                        "item": {
-                            "price": {
-                                "value": "1500.00",
-                                "currency": "INR"
-                            }
-                        },
-                        "price": {
-                            "value": "1500.00",
-                            "currency": "INR"
-                        },
-                        "title": "Preethi Zodiac",
-                        "@ondc/org/item_id": "103",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "103",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "item": {
-                            "price": {
-                                "value": "400.00",
-                                "currency": "INR"
-                            }
-                        },
-                        "price": {
-                            "value": "400.00",
-                            "currency": "INR"
-                        },
-                        "title": "Preethi Zodiac Cosmo",
-                        "@ondc/org/item_id": "104",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "104",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Delivery charges",
-                        "@ondc/org/item_id": "21165",
-                        "@ondc/org/title_type": "delivery"
+                        "id": "21165"
                     }
                 ]
             },
-            "state": "In-progress",
+            "items": [
+                {
+                    "id": "102",
+                    "fulfillment_id": "21165",
+                    "quantity": {
+                        "count": 2
+                    }
+                },
+                {
+                    "id": "103",
+                    "fulfillment_id": "21165",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
             "billing": {
                 "name": "Arunraj",
-                "email": "arunraj@nstore.in",
-                "phone": "9840857465",
                 "address": {
-                    "city": "Bengaluru",
-                    "name": "8",
-                    "state": "KA",
-                    "country": "IND",
-                    "building": "Mosque Road",
+                    "name": "105A",
+                    "building": "MM Road",
                     "locality": "Pulikeshi Nagar",
-                    "area_code": "560005"
+                    "city": "Bengaluru",
+                    "state": "KA",
+                    "area_code": "560005",
+                    "country": "IND"
                 },
-                "created_at": "2023-07-11T15:52:01.284Z",
-                "updated_at": "2023-07-11T15:52:01.284Z"
+                "phone": "9840857465",
+                "email": "arunraj@nstore.in",
+                "created_at": "2023-07-26T12:43:49.694Z",
+                "updated_at": "2023-07-26T12:43:49.694Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "21165",
+                    "@ondc/org/provider_name": "Classic Grocery",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "id": "21165",
+                            "descriptor": {
+                                "name": "Classic Grocery",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/21165/store_logo/21165_b8j2337limy40jp.jpeg"
+                                ]
+                            },
+                            "gps": "12.9953231,77.6139826"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-26T12:46:16.000Z",
+                                "end": "2023-07-26T12:46:24.000Z"
+                            },
+                            "timestamp": "2023-07-26T12:46:24.000Z"
+                        },
+                        "contact": {
+                            "phone": "5555544444",
+                            "email": "hariprasa49@gmail.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "address": {
+                                "name": "Pulikeshi Nagar",
+                                "building": "MM Road",
+                                "locality": "",
+                                "city": "Bengaluru",
+                                "state": "KA",
+                                "country": "India",
+                                "area_code": "560005"
+                            },
+                            "gps": "12.9979887, 77.62265119999999"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-26T12:46:24.000Z",
+                                "end": "2023-07-27T12:46:24.000Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9840857465"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "7000.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "102",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Preethi Gas Stove",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "4000.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "2000.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "102",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Preethi Zodiac",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "3000.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1500.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "103",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "21165",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    }
+                ],
+                "ttl": "PT30M"
             },
             "payment": {
                 "uri": "https://api.razorpay.com",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "1900.00",
+                    "amount": "7000.00",
                     "currency": "INR",
-                    "transaction_id": "order_MCYAfJxGDKzYYT"
+                    "transaction_id": "order_MIQz10hfuMW6rU"
                 },
                 "status": "PAID",
                 "tl_method": "http/get",
@@ -147,81 +214,14 @@
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "1"
             },
-            "provider": {
-                "id": "21165",
-                "locations": [
-                    {
-                        "id": "21165"
-                    }
-                ]
-            },
             "documents": [
                 {
-                    "url": "https://betareceipt.nstore.in/invoice/Mzk3NTc=",
+                    "url": "https://betareceipt.nstore.in/invoice/Mzk5OTg=",
                     "label": "Invoice"
                 }
             ],
-            "created_at": "2023-07-11T15:52:15.129Z",
-            "updated_at": "2023-07-11T15:52:50.000Z",
-            "fulfillments": [
-                {
-                    "id": "21165",
-                    "end": {
-                        "time": {
-                            "range": {
-                                "end": "2023-07-12T15:52:50.000Z",
-                                "start": "2023-07-11T15:52:50.000Z"
-                            }
-                        },
-                        "contact": {
-                            "phone": "9840857465"
-                        },
-                        "location": {
-                            "gps": "12.9994421, 77.6197371",
-                            "address": {
-                                "city": "Bengaluru",
-                                "name": "8",
-                                "state": "KA",
-                                "country": "IND",
-                                "building": "Mosque Road",
-                                "locality": "Pulikeshi Nagar",
-                                "area_code": "560005"
-                            }
-                        }
-                    },
-                    "type": "Delivery",
-                    "start": {
-                        "time": {
-                            "range": {
-                                "end": "2023-07-11T15:52:50.000Z",
-                                "start": "2023-07-11T15:52:38.000Z"
-                            },
-                            "timestamp": "2023-07-11T15:52:50.000Z"
-                        },
-                        "contact": {
-                            "email": "hariprasa49@gmail.com",
-                            "phone": "5555544444"
-                        },
-                        "location": {
-                            "id": "21165",
-                            "gps": "12.9953231,77.6139826",
-                            "descriptor": {
-                                "name": "Classic Grocery",
-                                "images": [
-                                    "https://nstoreassets.s3.amazonaws.com/21165/store_logo/21165_b8j2337limy40jp.jpeg"
-                                ]
-                            }
-                        }
-                    },
-                    "state": {
-                        "descriptor": {
-                            "code": "Order-picked-up"
-                        }
-                    },
-                    "tracking": false,
-                    "@ondc/org/provider_name": "Classic Grocery"
-                }
-            ]
+            "created_at": "2023-07-26T12:44:22.275Z",
+            "updated_at": "2023-07-26T12:46:24.000Z"
         }
     }
 }

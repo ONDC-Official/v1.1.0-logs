@@ -1,18 +1,17 @@
-**/on_search**
-- /message/catalog/bpp~1providers/0/items/0/descriptor/images must NOT have fewer than 1 items
-- /message/catalog/bpp~1providers/0/items/0/@ondc~1org~1statutory_reqs_packaged_commodities/manufacturer_or_packer_address must match pattern "^(?!\s*$).+"
-- /message/catalog/bpp~1providers/0/items/0/descriptor/images must NOT have fewer than 1 items
-- /message/catalog/bpp~1providers/0/items/1/descriptor/images must NOT have fewer than 1 items
-- /message/catalog/bpp~1providers/0/items/1/@ondc~1org~1statutory_reqs_packaged_commodities/manufacturer_or_packer_address must match pattern "^(?!\s*$).+"
-- /message/catalog/bpp~1providers/0/items/1/descriptor/images must NOT have fewer than 1 items
-- /message/catalog/bpp~1providers/0/items/2/descriptor/images must NOT have fewer than 1 items
-- /message/catalog/bpp~1providers/0/items/2/@ondc~1org~1statutory_reqs_packaged_commodities/manufacturer_or_packer_address must match pattern "^(?!\s*$).+"
-- /message/catalog/bpp~1providers/0/items/2/descriptor/images must NOT have fewer than 1 items
-
 **/on_select**
 - tax line item should not be present if price=0
 
-**/init**
-- /message/order/fulfillments/0/end/location/address/name must NOT have fewer than 3 characters
-- address.name should be more than 3 chars
+**/on_update (Initiated)**
+-  must have required property 'payment'
+-  must have required property 'created_at'
+-  must have required property 'updated_at'
+- order/updated_at timestamp can't be future dated (should match context/timestamp)
+- order/created_at timestamp can't change (should remain same as in /confirm)
+
+**/on_update (Liquidated)**
+-  must have required property 'payment'
+-  must have required property 'created_at'
+-  must have required property 'updated_at'
+- order/updated_at timestamp can't be future dated (should match context/timestamp)
+- order/created_at timestamp can't change (should remain same as in /confirm)
 
