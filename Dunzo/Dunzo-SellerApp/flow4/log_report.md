@@ -2776,7 +2776,7 @@
 - /message/catalog/bpp~1providers/1/items/64/descriptor/images must NOT have more than 3 items
 
 **/on_select**
-- Warning: Quoted Price in /on_select INR 846 does not match with the total price of items in /select INR 1348
+- Warning: Quoted Price in /on_select INR 846 does not match with the total price of items in /select INR 1494
 
 **/init**
 - Warning: items[0].quantity.count for item 5bc87ae20d298a283c297895 mismatches with the items quantity selected in /select
