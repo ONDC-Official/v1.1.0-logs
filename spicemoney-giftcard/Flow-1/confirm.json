@@ -4,8 +4,8 @@
     "ttl": "PT30S",
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
-    "message_id": "ad37af1a-8f9d-460f-9ebd-7b916972bb05",
-    "transaction_id": "d6f39503-efac-49f3-985c-85b8c84104e5",
+    "message_id": "4872603b-fabd-42a8-94a0-813026a14b38",
+    "transaction_id": "5b47daf8-76bc-4900-89b9-a0508e8e2f04",
     "bpp_id": "ondc.vistar.solutions",
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "location": {
@@ -18,19 +18,21 @@
     },
     "action": "confirm",
     "version": "1.0.0",
-    "timestamp": "2023-07-19T08:46:07.722Z"
+    "timestamp": "2023-07-24T14:55:27.149Z"
   },
   "message": {
     "order": {
-      "id": "9a88ec54-d1ae-4ba8-a22a-27b08ece1e55",
+      "id": "93cecebb-83c3-4e13-b83a-e5da3ed79222",
       "status": "CREATED",
-      "type": "DEFAULT",
+      "provider": {
+        "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
+      },
       "items": [
         {
-          "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89",
+          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
           "price": {
             "currency": "INR",
-            "value": "2500"
+            "value": "1000"
           },
           "quantity": {
             "selected": {
@@ -48,9 +50,9 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "FIXED_AMOUNT"
+                    "code": "CUSTOM_AMOUNT"
                   },
-                  "value": "2500"
+                  "value": "1000"
                 }
               ]
             },
@@ -69,7 +71,7 @@
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Happy Birthday"
+                  "value": "Test"
                 }
               ]
             }
@@ -77,18 +79,18 @@
         }
       ],
       "billing": {
-        "name": "Phani Mahidhar",
-        "address": "Apartment Building",
+        "name": "gari",
+        "address": "aaa",
         "state": {
-          "name": "Telangana",
-          "code": "TE"
+          "name": "Odisha",
+          "code": "OD"
         },
         "city": {
-          "name": "Hyderabad",
-          "code": "HY"
+          "name": "Rourkela",
+          "code": "RO"
         },
-        "email": "sagar.revanna@eminds.ai",
-        "phone": "1234567890"
+        "email": "TestNum@gmail.com",
+        "phone": "7064032212"
       },
       "fulfillments": [
         {
@@ -96,22 +98,22 @@
           "type": "EMAIL",
           "customer": {
             "person": {
-              "name": "Sagar"
+              "name": "chandrasekhar"
             },
             "contact": {
-              "phone": "1234567890",
-              "email": "sagar.revanna@eminds.ai"
+              "phone": "+917064032212",
+              "email": "TestNum@gmail.com"
             }
           },
           "stops": [
             {
               "id": "0",
               "contact": {
-                "phone": "9999888670",
+                "phone": "9988776655",
                 "email": "sagar.revanna@eminds.ai"
               },
               "person": {
-                "name": "Sagar R"
+                "name": "Sagar"
               }
             }
           ]
@@ -120,15 +122,15 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "2250"
+          "value": "900"
         },
         "breakup": [
           {
             "item": {
-              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89",
+              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
               "price": {
                 "currency": "INR",
-                "value": "2500"
+                "value": "1000"
               },
               "quantity": {
                 "selected": {
@@ -139,12 +141,12 @@
             "title": "item",
             "price": {
               "currency": "INR",
-              "value": "2500"
+              "value": "1000"
             }
           },
           {
             "item": {
-              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89"
+              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
             },
             "title": "convenience fee",
             "price": {
@@ -154,22 +156,12 @@
           },
           {
             "item": {
-              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89"
+              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
             },
             "title": "offer",
             "price": {
               "currency": "INR",
-              "value": "-250"
-            }
-          },
-          {
-            "item": {
-              "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89"
-            },
-            "title": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "0"
+              "value": "-100"
             }
           }
         ],
@@ -179,8 +171,8 @@
         {
           "collected_by": "BAP",
           "params": {
-            "transaction_id": "order_MFbBUumfAmld8R",
-            "amount": "2250",
+            "transaction_id": "order_MHg8yXPsCYTVre",
+            "amount": "900",
             "currency": "INR"
           },
           "type": "ON-ORDER",
@@ -251,8 +243,8 @@
           ]
         }
       ],
-      "created_at": "2023-07-19T08:46:07.722Z",
-      "updated_at": "2023-07-19T08:46:07.722Z"
+      "created_at": "2023-07-24T14:55:27.149Z",
+      "updated_at": "2023-07-24T14:55:27.149Z"
     }
   }
 }
