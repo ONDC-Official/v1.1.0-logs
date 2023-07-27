@@ -1,0 +1,116 @@
+"Request": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "issue",
+		"core_version": "1.0.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "03bb5b45-8873-446c-8742-8045d9bca1d5",
+		"message_id": "3f9dab9e-cccb-40c3-9a6b-d2579fab721a",
+		"timestamp": "2023-07-25T07:16:55.473Z",
+		"bpp_id": "stage.pep1.in",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"issue": {
+			"id": "8834086d-9333-4d93-9893-f31e9e1f1ad1",
+			"category": "FULFILLMENT",
+			"sub_category": "FLM02",
+			"complainant_info": {
+				"person": {
+					"name": "Prakash Iyer"
+				},
+				"contact": {
+					"phone": "9818470079",
+					"email": "nandita@technobibble.co.in"
+				}
+			},
+			"order_details": {
+				"id": "2023-07-25-240204",
+				"state": "Accepted",
+				"items": [{
+					"id": "57759",
+					"quantity": 1
+				}, {
+					"id": "59374\/59821\/59910",
+					"quantity": 1
+				}, {
+					"id": "59007",
+					"quantity": 1
+				}],
+				"fulfillments": [{
+					"id": "df72a389-1fa4-4690-82c9-cc566d8ef758",
+					"state": "Pending"
+				}],
+				"provider_id": "0e350d72-fa8f-4d84-a1cd-7fa721aa612d"
+			},
+			"description": {
+				"short_desc": "Order Not delivered ",
+				"long_desc": "My order was suppose to be delivered yesterday. Not delivered. when will be delivered",
+				"additional_desc": {
+					"url": "https:\/\/buyerapp.com\/additonal-details\/desc.txt",
+					"content_type": "text\/plain"
+				},
+				"images": ["https:\/\/buyer-app-preprod.ondc.org\/issueApis\/uploads\/1690269415477.png"]
+			},
+			"source": {
+				"network_participant_id": "buyer-app-preprod.ondc.org",
+				"type": "CONSUMER"
+			},
+			"expected_response_time": {
+				"duration": "PT1H"
+			},
+			"expected_resolution_time": {
+				"duration": "P1D"
+			},
+			"status": "OPEN",
+			"issue_type": "ISSUE",
+			"issue_actions": {
+				"complainant_actions": [{
+					"complainant_action": "OPEN",
+					"short_desc": "Complaint created",
+					"updated_at": "2023-07-25T07:16:55.477Z",
+					"updated_by": {
+						"org": {
+							"name": "buyer-app-preprod.ondc.org::nic2004:52110"
+						},
+						"contact": {
+							"phone": "6239083807",
+							"email": "Rishabhnand.singh@ondc.org"
+						},
+						"person": {
+							"name": "Rishabhnand Singh"
+						}
+					}
+				}],
+				"respondent_actions": []
+			},
+			"created_at": "2023-07-25T07:17:12.454Z",
+			"updated_at": "2023-07-25T07:17:12.454Z"
+		}
+	}
+}
+"Response": {
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "issue",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https:\/\/buyer-app-preprod.ondc.org\/protocol\/v1",
+		"bpp_id": "stage.pep1.in",
+		"bpp_uri": "https:\/\/stage.pep1.in\/ondc\/public\/OndcPreProd\/callback",
+		"transaction_id": "03bb5b45-8873-446c-8742-8045d9bca1d5",
+		"message_id": "3f9dab9e-cccb-40c3-9a6b-d2579fab721a",
+		"timestamp": "2023-07-25T07:16:55.641Z"
+	},
+	"message": {
+		"ack": {
+			"status": "ACK"
+		}
+	}
+}
