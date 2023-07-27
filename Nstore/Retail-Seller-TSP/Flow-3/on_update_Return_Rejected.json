@@ -8,37 +8,37 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://b-ondctsp.nlincs.in/bpp",
         "country": "IND",
-        "timestamp": "2023-07-13T14:47:13.791Z",
-        "message_id": "8340e767-90c3-44ac-b90b-c1dbad1559b8",
+        "timestamp": "2023-07-25T14:01:41.064Z",
+        "message_id": "a4dcee38-586f-4576-a63b-a706e703e38b",
         "core_version": "1.1.0",
-        "transaction_id": "f0ff6464-19ee-42f8-a150-c44f60c6a236"
+        "transaction_id": "5c878d52-7712-47f8-98b1-5c13025b5689"
     },
     "message": {
         "order": {
-            "id": "2023-07-13-150966",
+            "id": "2023-07-25-148092",
             "items": [
                 {
                     "id": "14574",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21222_600017"
+                },
+                {
+                    "id": "14575",
                     "tags": {
                         "status": "Return_Rejected"
                     },
                     "quantity": {
-                        "count": 2
-                    },
-                    "fulfillment_id": "21222"
-                },
-                {
-                    "id": "14577",
-                    "quantity": {
                         "count": 1
                     },
-                    "fulfillment_id": "21222"
+                    "fulfillment_id": "21222_600017"
                 }
             ],
             "quote": {
                 "ttl": "PT30M",
                 "price": {
-                    "value": "740.00",
+                    "value": "200.00",
                     "currency": "INR"
                 },
                 "breakup": [
@@ -50,29 +50,11 @@
                             }
                         },
                         "price": {
-                            "value": "400.00",
+                            "value": "200.00",
                             "currency": "INR"
                         },
                         "title": "Himalaya Ashvagandha",
                         "@ondc/org/item_id": "14574",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        }
-                    },
-                    {
-                        "item": {
-                            "price": {
-                                "value": "340.00",
-                                "currency": "INR"
-                            }
-                        },
-                        "price": {
-                            "value": "340.00",
-                            "currency": "INR"
-                        },
-                        "title": "Himalaya gentle baby shampoo",
-                        "@ondc/org/item_id": "14577",
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_quantity": {
                             "count": 1
@@ -83,40 +65,20 @@
                             "value": "0.00",
                             "currency": "INR"
                         },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "14574",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "14577",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
                         "title": "Delivery charges",
-                        "@ondc/org/item_id": "21222",
+                        "@ondc/org/item_id": "21222_600017",
                         "@ondc/org/title_type": "delivery"
                     }
                 ]
             },
             "state": "Completed",
-            "created_at": "2023-07-13T14:44:47.485Z",
-            "updated_at": "2023-07-13T14:47:13.791Z",
             "payment": {
                 "uri": "https://juspay.in/",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "740",
+                    "amount": "200.00",
                     "currency": "INR",
-                    "transaction_id": "f0ff6464-19ee-42f8-a150-c44f60c6a236"
+                    "transaction_id": "5c878d52-7712-47f8-98b1-5c13025b5689"
                 },
                 "status": "PAID",
                 "tl_method": "http/get",
@@ -136,30 +98,32 @@
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0"
             },
+            "created_at": "2023-07-25T13:59:06.164Z",
+            "updated_at": "2023-07-25T14:01:41.064Z",
             "fulfillments": [
                 {
-                    "id": "21222",
+                    "id": "21222_600017",
                     "end": {
                         "time": {
                             "range": {
-                                "end": "2023-07-13T14:46:29.000Z",
-                                "start": "2023-07-13T14:45:52.000Z"
+                                "end": "2023-07-25T19:59:07.000Z",
+                                "start": "2023-07-25T16:59:07.000Z"
                             },
-                            "timestamp": "2023-07-13T14:46:29.000Z"
+                            "timestamp": "2023-07-25T14:00:48.000Z"
                         },
                         "contact": {
                             "phone": "9629295619"
                         },
                         "location": {
-                            "gps": "13.0096060000001, 80.2113430000001",
+                            "gps": "13.03443, 80.271799",
                             "address": {
                                 "city": "Chennai",
-                                "name": "Sathish Kumar",
+                                "name": "227, kutchery Road, Luz corner",
                                 "state": "Tamil Nadu",
                                 "country": "India",
-                                "building": "maduvinkarai",
-                                "locality": "25/20A",
-                                "area_code": "600032"
+                                "building": "Vinayagar kovil",
+                                "locality": "",
+                                "area_code": "600004"
                             }
                         }
                     },
@@ -167,10 +131,10 @@
                     "start": {
                         "time": {
                             "range": {
-                                "end": "2023-07-13T14:45:52.000Z",
-                                "start": "2023-07-13T14:44:49.000Z"
+                                "end": "2023-07-25T16:59:07.000Z",
+                                "start": "2023-07-25T13:59:07.000Z"
                             },
-                            "timestamp": "2023-07-13T14:45:52.000Z"
+                            "timestamp": "2023-07-25T14:00:22.000Z"
                         },
                         "contact": {
                             "email": "sathisha@nstore.in",
@@ -178,7 +142,7 @@
                         },
                         "location": {
                             "id": "21222",
-                            "gps": "13.0412658,80.2338514",
+                            "gps": "13.041266,80.233851",
                             "descriptor": {
                                 "name": "Himalaya store - T.nagar",
                                 "images": [
