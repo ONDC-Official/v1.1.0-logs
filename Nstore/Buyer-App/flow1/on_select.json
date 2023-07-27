@@ -1,135 +1,135 @@
 {
-    "context": {
-        "city": "std:*",
-        "action": "on_select",
-        "bap_id": "b-ondcbap.nlincs.in",
-        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
-        "domain": "nic2004:52110",
-        "bap_uri": "https://b-ondcbap.nlincs.in/bap",
-        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
-        "country": "IND",
-        "timestamp": "2023-07-11T15:51:56.683Z",
-        "message_id": "LpECbBw1h7o2iejPJUdXhF5Vu0WrTRmu",
-        "core_version": "1.1.0",
-        "transaction_id": "8d84179f26bfb963ba977a6a438fa900"
-    },
-    "message": {
-        "order": {
-            "items": [
-                {
-                    "id": "103",
-                    "fulfillment_id": "21165"
-                },
-                {
-                    "id": "104",
-                    "fulfillment_id": "21165"
-                }
-            ],
-            "quote": {
-                "ttl": "PT30M",
-                "price": {
-                    "value": "1900.00",
-                    "currency": "INR"
-                },
-                "breakup": [
-                    {
-                        "item": {
-                            "price": {
-                                "value": "1500.00",
-                                "currency": "INR"
-                            },
-                            "quantity": {
-                                "maximum": {
-                                    "count": "1"
-                                },
-                                "available": {
-                                    "count": "1"
-                                }
-                            }
-                        },
-                        "price": {
-                            "value": "1500.00",
-                            "currency": "INR"
-                        },
-                        "title": "Preethi Zodiac",
-                        "@ondc/org/item_id": "103",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "103",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "item": {
-                            "price": {
-                                "value": "400.00",
-                                "currency": "INR"
-                            },
-                            "quantity": {
-                                "maximum": {
-                                    "count": "1"
-                                },
-                                "available": {
-                                    "count": "1"
-                                }
-                            }
-                        },
-                        "price": {
-                            "value": "400.00",
-                            "currency": "INR"
-                        },
-                        "title": "Preethi Zodiac Cosmo",
-                        "@ondc/org/item_id": "104",
-                        "@ondc/org/title_type": "item",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        }
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Tax",
-                        "@ondc/org/item_id": "104",
-                        "@ondc/org/title_type": "tax"
-                    },
-                    {
-                        "price": {
-                            "value": "0.00",
-                            "currency": "INR"
-                        },
-                        "title": "Delivery charges",
-                        "@ondc/org/item_id": "21165",
-                        "@ondc/org/title_type": "delivery"
-                    }
-                ]
-            },
-            "provider": {
-                "id": "21165"
-            },
-            "fulfillments": [
-                {
-                    "id": "21165",
-                    "state": {
-                        "descriptor": {
-                            "code": "Serviceable"
-                        }
-                    },
-                    "tracking": false,
-                    "@ondc/org/TAT": "PT6H",
-                    "@ondc/org/category": "Standard Delivery",
-                    "@ondc/org/provider_name": "Classic Grocery"
-                }
-            ]
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_select",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "b-ondcbap.nlincs.in",
+    "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+    "transaction_id": "fee18b4ccf03c3f918315cc08575aa00",
+    "message_id": "sTeoeMLlvtpzPCQer9rGnwR9eFdXDOk8",
+    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+    "timestamp": "2023-07-26T12:42:58.317Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "21165"
+      },
+      "items": [
+        {
+          "fulfillment_id": "21165",
+          "id": "102"
+        },
+        {
+          "fulfillment_id": "21165",
+          "id": "103"
         }
+      ],
+      "fulfillments": [
+        {
+          "id": "21165",
+          "@ondc/org/provider_name": "Classic Grocery",
+          "tracking": false,
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "PT6H",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "7000.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "102",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Preethi Gas Stove",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "4000.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "2"
+                },
+                "maximum": {
+                  "count": "2"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "2000.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "102",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "103",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Preethi Zodiac",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "3000.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "2"
+                },
+                "maximum": {
+                  "count": "2"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "1500.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "103",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "21165",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        ],
+        "ttl": "PT30M"
+      }
     }
+  }
 }

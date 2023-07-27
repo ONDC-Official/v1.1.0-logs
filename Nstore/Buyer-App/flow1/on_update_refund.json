@@ -1,0 +1,49 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "update",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "b-ondcbap.nlincs.in",
+    "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+    "transaction_id": "fee18b4ccf03c3f918315cc08575aa00",
+    "message_id": "eAg3sVliGkl9tRloGx3q4xBzJpzLAvL6",
+    "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+    "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+    "timestamp": "2023-07-26T12:48:35.337Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-54646-83472",
+      "state": "Completed",
+      "provider": {
+        "id": "21165"
+      },
+      "items": [
+        {
+          "id": "102",
+          "quantity": {
+            "count": 2
+          },
+          "tags": {
+            "status": "Liquidated"
+          },
+          "fulfillment_id": "21165"
+        }
+      ],
+      "payment": {
+        "@ondc/org/settlement_details": {
+          "settlement_counterparty": "buyer",
+          "settlement_phase": "refund",
+          "settlement_type": "upi",
+          "upi_address": "nstpl@icici",
+          "settlement_amount": "4000.00",
+          "settlement_timestamp": "2023-07-28T12:48:35.337Z"
+        }
+      }
+    },
+    "update_target": "billing"
+  }
+}
