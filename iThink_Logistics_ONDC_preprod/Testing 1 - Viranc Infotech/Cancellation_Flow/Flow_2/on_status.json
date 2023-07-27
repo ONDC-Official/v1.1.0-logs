@@ -9,14 +9,14 @@
         "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
         "bpp_id": "my.ithinklogistics.com/ondc/preprod",
         "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
-        "transaction_id": "0109470b-d3df-5b3a-aba7-c3d68884896b",
-        "message_id": "1e2dc729-ba7f-4f9a-9378-c4fd20c5de00",
-        "timestamp": "2023-07-13T05:35:40.436Z"
+        "transaction_id": "818a1f56-2aea-5bd1-9cde-b1529de1249c",
+        "message_id": "fe57dad1-6f73-4c1c-8945-0c12cc7aa2cf",
+        "timestamp": "2023-07-25T06:44:27.440Z"
     },
     "message": {
         "order": {
-            "id": "97b4bf78-a9f9-4f21-a08f-b1239e8d996a",
-            "state": "Created",
+            "id": "3af8ca84-75d7-47d2-9cbf-e8108e0d0217",
+            "state": "Accepted",
             "provider": {
                 "id": "3"
             },
@@ -30,12 +30,12 @@
             ],
             "quote": {
                 "price": {
-                    "value": "1032.50",
+                    "value": "828.36",
                     "currency": "INR"
                 },
                 "breakup": [{
                         "price": {
-                            "value": "1032.50",
+                            "value": "828.36",
                             "currency": "INR"
                         },
                         "@ondc/org/item_id": "3I1",
@@ -45,13 +45,39 @@
             },
             "fulfillments": [{
                     "type": "Prepaid",
-                    "@ondc/org/awb_no": "XSE20002122000001",
+                    "@ondc/org/awb_no": "XSE20005876956001",
                     "state": {
                         "descriptor": {
                             "code": "Pending"
                         }
                     },
                     "tracking": true,
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-07-25T9:30:00.000Z",
+                                "end": "2023-07-25T12:30:00.000Z"
+                            }
+                        },
+                        "instructions": {
+                            "name": "Shipping label",
+                            "short_desc": "Shipping label",
+                            "long_desc": "Shipping label",
+                            "images": ["https://itl-uploads.s3.ap-south-1.amazonaws.com/uploads/shipping/71b59fcc787ff5c951d6a3b985c5107b.pdf"],
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://my.ithinklogistics.com/delivery-instructions"
+                            }
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-07-26T3:30:00.000Z",
+                                "end": "2023-07-26T14:30:00.000Z"
+                            }
+                        }
+                    },
                     "@ondc/org/ewaybillno": "",
                     "@ondc/org/ebnexpirydate": ""
                 }
@@ -72,14 +98,14 @@
                     "country": "India",
                     "area_code": "400001"
                 },
-                "tax_number": "gst_number",
+                "tax_number": "22AAAAA0000A1Z5",
                 "phone": "9999999999",
                 "email": "test@gmail.com",
-                "created_at": "2023-07-13T05:35:01.050Z",
-                "updated_at": "2023-07-13T05:35:01.050Z"
+                "created_at": "2023-07-25T05:41:41.957Z",
+                "updated_at": "2023-07-25T05:41:41.957Z"
             },
-            "created_at": "2023-07-13T05:35:28.340Z",
-            "updated_at": "2023-07-13T05:35:29.106Z"
+            "created_at": "2023-07-25T05:41:52.094Z",
+            "updated_at": "2023-07-25T05:43:57.871Z"
         }
     }
 }
