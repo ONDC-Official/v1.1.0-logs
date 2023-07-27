@@ -1,0 +1,214 @@
+{
+    "context": {
+        "action": "on_status",
+        "timestamp": "2023-07-24T12:28:26.705Z",
+        "domain": "nic2004:52110",
+        "bpp_id": "dev-ondc.evitalrx.in",
+        "bpp_uri": "https://dev-ondc.evitalrx.in/",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "message_id": "6f93e3bc-983d-44f9-8bf6-6b030feb8b70",
+        "transaction_id": "72407d05-652f-469f-96ab-b4dbd5f475b1",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "key": "gZFGTih00MIUZbL8u0y+Zaxd2SJRVAyuTTX6s6qD/vY="
+    },
+    "message": {
+        "order": {
+            "id": "2023-07-24-954705",
+            "state": "Completed",
+            "provider": {
+                "id": "YT3/3PEAnmEolCPrStruew==",
+                "locations": [
+                    {
+                        "id": "YT3/3PEAnmEolCPrStruew=="
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "UDls67/FRA0bmeWwUyR+1g==",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "VVcUezjd5avzsdKnK7pJAQ==",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 5
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Arth Raval",
+                "address": {
+                    "name": "Arth Raval",
+                    "door": "Kurubarahalli",
+                    "building": "Kurubarahalli",
+                    "locality": "1st cross, main road",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "562162"
+                },
+                "email": "evital.arth@gmail.com",
+                "phone": "9845746574",
+                "created_at": "2023-07-24T12:23:51.235Z",
+                "updated_at": "2023-07-24T12:23:51.235Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Manav Medical GJ",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "name": "Order delivered",
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "descriptor": {
+                                "name": "Manav Medical GJ",
+                                "images": [
+                                    "https://ondc.evitalrx.in/images/pharmacylogo.png"
+                                ]
+                            },
+                            "gps": "13.0035068,77.5890953"
+                        },
+                        "contact": {
+                            "phone": "7043120038",
+                            "email": "evital.manav@gmail.com"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-24T12:23:53.000Z",
+                                "end": "2023-07-25T12:23:53.000Z"
+                            },
+                            "timestamp": "2023-07-24T12:28:01.000Z"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "13.062801,77.467741",
+                            "address": {
+                                "door": "Kurubarahalli",
+                                "building": "Kurubarahalli",
+                                "name": "Arth Raval",
+                                "locality": "1st Cross, Main Road",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "562162"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9845746574"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-24T12:23:53.000Z",
+                                "end": "2023-07-25T12:23:53.000Z"
+                            },
+                            "timestamp": "2023-07-24T12:28:26.000Z"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "498.25"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "UDls67/FRA0bmeWwUyR+1g==",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "MamyPoko Standard Pants L",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "195"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "VVcUezjd5avzsdKnK7pJAQ==",
+                        "@ondc/org/item_quantity": {
+                            "count": 5
+                        },
+                        "title": "Mamypoko Standard Pants Large",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "303.25"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "60.65"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "498.25",
+                    "currency": "INR",
+                    "transaction_id": "72407d05-652f-469f-96ab-b4dbd5f475b1"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "921020012976061",
+                        "settlement_ifsc_code": "UTIB0003256",
+                        "beneficiary_name": "Equality Healthcare Pvt Ltd",
+                        "bank_name": "Axis Bank",
+                        "branch_name": "SABARMATI AHMEDABAD"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "https://dev.evital.in/invoice/T0dMS0dVQUtZUg==/print/",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-07-24T12:23:53.000Z",
+            "updated_at": "2023-07-24T12:28:26.000Z"
+        }
+    }
+}
