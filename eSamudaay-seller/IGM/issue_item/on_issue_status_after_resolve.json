@@ -1,0 +1,130 @@
+{
+    "context":
+    {
+        "action": "on_issue_status",
+        "transaction_id": "47e1aafb-9d06-4b20-991b-c935138f157f",
+        "message_id": "c54e9215-5c5b-497b-8eaf-260a929f019b",
+        "city": "std:080",
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "core_version": "1.0.0",
+        "timestamp": "2023-07-24T08:54:19.208Z",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay",
+        "bpp_uri": "https://api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay"
+    },
+    "message":
+    {
+        "issue":
+        {
+            "id": "b37e41c0-4c44-40de-8044-07d2b5a92a6d",
+            "created_at": "2023-07-24T08:38:50.547Z",
+            "updated_at": "2023-07-24T08:54:19.208Z",
+            "issue_actions":
+            {
+                "respondent_actions":
+                [
+                    {
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-07-24T08:38:49.933Z",
+                        "updated_by":
+                        {
+                            "org":
+                            {
+                                "name": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay::nic2004:52110"
+                            },
+                            "person":
+                            {
+                                "name": "sherina circle support"
+                            },
+                            "contact":
+                            {
+                                "email": "sherinarodrigues06@gmail.com",
+                                "phone": "8989898988"
+                            }
+                        },
+                        "cascaded_level": 1,
+                        "respondent_action": "PROCESSING"
+                    },
+                    {
+                        "respondent_action": "RESOLVED",
+                        "short_desc": "Complaint resolved",
+                        "updated_at": "2023-07-24T08:54:19.208Z",
+                        "updated_by":
+                        {
+                            "org":
+                            {
+                                "name": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay::nic2004:52110"
+                            },
+                            "contact":
+                            {
+                                "phone": "8989898988",
+                                "email": "sherinarodrigues06@gmail.com"
+                            },
+                            "person":
+                            {
+                                "name": "sherina circle support"
+                            }
+                        },
+                        "cascaded_level": 1
+                    }
+                ]
+            },
+            "resolution":
+            {
+                "short_desc": "Issue is resolved",
+                "long_desc": "Will give partial refund",
+                "action_triggered": "REFUND",
+                "refund_amount": "0.5"
+            },
+            "resolution_provider":
+            {
+                "respondent_info":
+                {
+                    "type": "TRANSACTION-COUNTERPARTY-NP",
+                    "organization":
+                    {
+                        "org":
+                        {
+                            "name": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay::nic2004:52110"
+                        },
+                        "contact":
+                        {
+                            "phone": "7829862689",
+                            "email": "mahori@esamudaay.com"
+                        },
+                        "person":
+                        {
+                            "name": "Ravinder Singh"
+                        }
+                    },
+                    "resolution_support":
+                    {
+                        "respondentEmail": "sherinarodrigues06@gmail.com",
+                        "respondentContact":
+                        {
+                            "phone": "8989898988",
+                            "email": "sherinarodrigues06@gmail.com"
+                        },
+                        "gros":
+                        [
+                            {
+                                "person":
+                                {
+                                    "name": "sherina circle support"
+                                },
+                                "contact":
+                                {
+                                    "phone": "8989898988",
+                                    "email": "sherinarodrigues06@gmail.com"
+                                },
+                                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
