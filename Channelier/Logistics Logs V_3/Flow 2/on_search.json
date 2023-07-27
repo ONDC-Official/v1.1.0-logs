@@ -1,17 +1,18 @@
 {
     "context": {
-        "domain": "nic2004:60232",
-        "country": "IND",
-        "city": "std:080",
-        "core_version": "1.1.0",
-        "bpp_id": "ondcpp.yaarilabs.com",
-        "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
-        "transaction_id": "69cec0bf-3d9e-4d4c-b021-33b3edd9aef7",
-        "message_id": "7e784378-d45f-487b-9477-439ff9e80348",
         "bap_id": "integrations-preprod.channelier.com",
         "bap_uri": "https://integrations-preprod.channelier.com/ondc",
-        "timestamp": "2023-07-12T13:47:50.172Z",
-        "action": "on_search"
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "transaction_id": "d94a553f-f592-4612-a32a-767939e153f7",
+        "message_id": "63ee417b-b691-43c1-8a3a-571adde852f0",
+        "country": "IND",
+        "city": "std:011",
+        "timestamp": "2023-07-27T04:29:10.629Z",
+        "action": "on_search",
+        "bpp_id": "ondc-dev.delhivery.com",
+        "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/"
     },
     "message": {
         "catalog": {
@@ -27,59 +28,63 @@
                 {
                     "id": "3",
                     "type": "RTO"
+                },
+                {
+                    "id": "4",
+                    "type": "Reverse QC"
                 }
             ],
             "bpp/descriptor": {
-                "name": "Shipyaari"
+                "name": "Delhivery"
             },
             "bpp/providers": [
                 {
-                    "id": "2",
+                    "id": "Delhivery",
                     "descriptor": {
-                        "name": "DTDC",
-                        "short_desc": "DTDC",
-                        "long_desc": "DTDC"
+                        "name": "Delhivery",
+                        "short_desc": "Delhivery",
+                        "long_desc": "Delhivery"
                     },
                     "categories": [
                         {
                             "id": "Standard Delivery",
                             "time": {
                                 "label": "TAT",
-                                "duration": "P2D"
+                                "duration": "P4D"
                             }
                         }
                     ],
                     "items": [
                         {
-                            "id": "YAARI-2-3232DC8EGT",
+                            "id": "46a63a79-ebf0-4eef-81f4-f2fcd82e7e51",
                             "parent_item_id": "",
                             "category_id": "Standard Delivery",
                             "fulfillment_id": "1",
                             "descriptor": {
-                                "code": "P2P",
-                                "name": "DTDC",
-                                "short_desc": "DTDC",
-                                "long_desc": "DTDC"
+                                "code": "P2H2P",
+                                "name": "Standard Delivery",
+                                "short_desc": "Delhivery Surface",
+                                "long_desc": "Delhivery Surface"
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "1"
+                                "value": "1.00"
                             }
                         },
                         {
-                            "id": "YAARI-2-3232DC8EGT-RTO",
-                            "parent_item_id": "YAARI-2-3232DC8EGT",
+                            "id": "a9f489c5-7faf-4aa3-bbb5-cb54c059c705",
+                            "parent_item_id": "46a63a79-ebf0-4eef-81f4-f2fcd82e7e51",
                             "category_id": "Standard Delivery",
                             "fulfillment_id": "3",
                             "descriptor": {
-                                "code": "P2P",
-                                "name": "DTDC-RTO quote",
-                                "short_desc": "RTO quote",
-                                "long_desc": "RTO quote"
+                                "code": "P2H2P",
+                                "name": "Standard Delivery",
+                                "short_desc": "Delhivery Surface RTO charge",
+                                "long_desc": "Delhivery Surface RTO charge"
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "1"
+                                "value": "1.00"
                             }
                         }
                     ]
