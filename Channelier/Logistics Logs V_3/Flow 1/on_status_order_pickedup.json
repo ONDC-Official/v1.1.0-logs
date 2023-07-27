@@ -1,28 +1,29 @@
 {
   "context": {
-    "domain": "nic2004:60232",
-    "country": "IND",
-    "city": "std:080",
-    "core_version": "1.1.0",
-    "bpp_id": "ondcpp.yaarilabs.com",
-    "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
-    "transaction_id": "69cec0bf-3d9e-4d4c-b021-33b3edd9aef7",
-    "message_id": "6648c18d-698c-4c62-b7d8-eade15bee519",
     "bap_id": "integrations-preprod.channelier.com",
     "bap_uri": "https://integrations-preprod.channelier.com/ondc",
-    "action": "on_status",
-    "timestamp": "2023-07-12T13:59:43.188Z"
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "ttl": "PT30S",
+    "bpp_id": "ondc-dev.delhivery.com",
+    "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/",
+    "transaction_id": "3212d2ad-1239-4adc-ae7d-eafbb40fa91e",
+    "message_id": "84ce3e58-dcbf-4488-a4d5-79de61cce61f",
+    "country": "IND",
+    "city": "std:011",
+    "timestamp": "2023-07-27T09:21:56.000Z",
+    "action": "on_status"
   },
   "message": {
     "order": {
-      "id": "ed28c662-4afa-4dc9-80ec-9e105b123884",
-      "state": "Completed",
+      "id": "d3a23b3d-1fe8-48e0-9e0f-77036a27cc26",
+      "state": "In-progress",
       "provider": {
-        "id": "2"
+        "id": "Delhivery"
       },
       "items": [
         {
-          "id": "YAARI-2-3232DC8EGT",
+          "id": "e3b754fd-ff45-4139-bb14-ea45f7c6f20b",
           "category_id": "Standard Delivery",
           "descriptor": {
             "code": "P2P"
@@ -34,40 +35,39 @@
           "type": "Prepaid",
           "state": {
             "descriptor": {
-              "code": "Order-delivered"
+              "code": "Order-picked-up"
             }
           },
           "tracking": true,
           "start": {
             "time": {
               "range": {
-                "start": "2023-07-13T01:30:00.000Z",
-                "end": "2023-07-13T16:30:00.000Z"
+                "start": "2023-07-27T09:00:00.000Z",
+                "end": "2023-07-27T10:00:00.000Z"
               },
-              "timestamp": "2023-07-12T13:55:36.288Z"
+              "timestamp": "2023-07-27T09:21:56.000Z"
             }
           },
           "end": {
             "time": {
               "range": {
-                "start": "2023-07-13T01:30:00.000Z",
-                "end": "2023-07-13T16:30:00.000Z"
-              },
-              "timestamp": "2023-07-12T13:59:43.188Z"
+                "start": "2023-07-31T08:00:00.000Z",
+                "end": "2023-07-31T09:00:00.000Z"
+              }
             }
           },
           "agent": {
-            "name": "Ramu",
-            "phone": "74384336824"
+            "name": "Shyam",
+            "phone": "8445448436"
           },
           "vehicle": {
             "category": "TwoWheeler",
-            "size": "500.0000",
-            "registration": "DL05NS8282"
+            "size": "600.0000",
+            "registration": "DL05MP0082"
           },
-          "@ondc/org/awb_no": "X75562993",
           "@ondc/org/ewaybillno": "EBN1",
-          "@ondc/org/ebnexpirydate": "2023-03-31T12:00:00.000Z"
+          "@ondc/org/ebnexpirydate": "2023-08-10T12:00:00.000Z",
+          "@ondc/org/awb_no": "1223344556677"
         }
       ],
       "quote": {
@@ -81,7 +81,7 @@
               "currency": "INR",
               "value": "1"
             },
-            "@ondc/org/item_id": "YAARI-2-3232DC8EGT",
+            "@ondc/org/item_id": "e3b754fd-ff45-4139-bb14-ea45f7c6f20b",
             "@ondc/org/title_type": "Delivery Charge"
           }
         ]
@@ -92,10 +92,10 @@
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "seller-app",
-            "settlement_type": "upi",
-            "settlement_bank_account_no": "XXXXXXXXXX",
-            "settlement_ifsc_code": "XXXXXXXXX",
-            "upi_address": "gft@oksbi"
+            "settlement_type": "neft",
+            "settlement_bank_account_no": "ACCTEST1234",
+            "settlement_ifsc_code": "IFSCTEST1234",
+            "beneficiary_name": "DELHIVERY LIMITED"
           }
         ]
       },
@@ -114,7 +114,6 @@
         "phone": "9886098860",
         "tax_number": "XXXXXXXXXXXXXXX"
       }
-    },
-    "updated_at": "2023-07-12T13:59:43.188Z"
+    }
   }
 }

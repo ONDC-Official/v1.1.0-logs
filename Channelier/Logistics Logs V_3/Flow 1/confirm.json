@@ -5,23 +5,23 @@
         "domain": "nic2004:60232",
         "core_version": "1.1.0",
         "ttl": "PT30S",
-        "bpp_id": "ondcpp.yaarilabs.com",
-        "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
-        "transaction_id": "69cec0bf-3d9e-4d4c-b021-33b3edd9aef7",
-        "message_id": "5e1d5b95-dbf0-41e1-a508-c2bd689f7862",
+        "bpp_id": "ondc-dev.delhivery.com",
+        "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/",
+        "transaction_id": "3212d2ad-1239-4adc-ae7d-eafbb40fa91e",
+        "message_id": "c4738c7b-3a9b-4589-9e51-894e75fc5226",
         "country": "IND",
-        "city": "std:080",
-        "timestamp": "2023-07-12T13:48:18.118Z",
+        "city": "std:011",
+        "timestamp": "2023-07-27T07:55:49.299Z",
         "action": "confirm"
     },
     "message": {
         "order": {
             "provider": {
-                "id": "2"
+                "id": "Delhivery"
             },
             "items": [
                 {
-                    "id": "YAARI-2-3232DC8EGT",
+                    "id": "e3b754fd-ff45-4139-bb14-ea45f7c6f20b",
                     "category_id": "Standard Delivery",
                     "descriptor": {
                         "code": "P2P"
@@ -42,8 +42,8 @@
                 "email": "abcd.efgh@gmail.com",
                 "phone": "9886098860",
                 "tax_number": "XXXXXXXXXXXXXXX",
-                "created_at": "2023-07-12T13:48:10.815Z",
-                "updated_at": "2023-07-12T13:48:10.815Z"
+                "created_at": "2023-07-27T07:54:58.475Z",
+                "updated_at": "2023-07-27T07:54:58.475Z"
             },
             "fulfillments": [
                 {
@@ -54,95 +54,98 @@
                             "name": "Name"
                         },
                         "location": {
-                            "gps": "28.6138954,77.2090057",
+                            "gps": "28.65956883701703, 77.2208449355868",
                             "address": {
-                                "door": "1",
+                                "door": "42",
                                 "name": "My building #",
                                 "building": "My building name",
-                                "street": "Rajpath",
+                                "street": "Tilak Bazaar",
                                 "locality": "My street name",
-                                "ward": "10",
-                                "city": "New Delhi",
+                                "ward": "31",
+                                "city": "Delhi",
                                 "state": "DELHI",
                                 "country": "IND",
-                                "area_code": "110018"
+                                "area_code": "110006"
                             }
                         },
                         "contact": {
-                            "phone": "9479319331",
-                            "email": "techpvec2@gmail.com"
+                            "phone": "9897989798",
+                            "email": "techpvec18@gmail.com"
                         },
                         "instructions": {
                             "short_desc": "XYZ1",
                             "long_desc": "QR code will be attached to package",
                             "images": [
-                                "URL or data string as per spec"
+                                "https://www.techopedia.com/wp-content/uploads/2023/03/aee977ce-f946-4451-8b9e-bba278ba5f13.png"
                             ]
                         }
                     },
                     "end": {
                         "contact": {
-                            "email": "techpvec18@gmail.com",
-                            "phone": "9897989798"
+                            "email": "mktgpvec5@gmail.com",
+                            "phone": "6398356412"
                         },
                         "person": {
-                            "name": "Ravinder"
+                            "name": "Deepa Rana"
                         },
                         "location": {
-                            "gps": "28.513993, 77.1655220000001",
+                            "gps": "12.938208, 77.619106",
                             "address": {
-                                "name": "Ravinder",
-                                "building": "Near Mahipalpur",
-                                "locality": "Vasant Kunj, sector E-2",
-                                "city": "New Delhi",
-                                "state": "Delhi",
+                                "name": "Deepa Rana",
+                                "building": "Near bhawana play school",
+                                "locality": "Delhi",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
                                 "country": "IND",
-                                "area_code": "110070"
+                                "area_code": "560095"
                             }
                         }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "no"
                     }
                 }
             ],
             "payment": {
-                "type": "POST-FULFILLMENT",
+                "type": "ON-ORDER",
                 "collected_by": "BAP",
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
-                        "settlement_type": "upi",
-                        "settlement_bank_account_no": "XXXXXXXXXX",
-                        "settlement_ifsc_code": "XXXXXXXXX",
-                        "upi_address": "gft@oksbi"
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "ACCTEST1234",
+                        "settlement_ifsc_code": "IFSCTEST1234",
+                        "beneficiary_name": "DELHIVERY LIMITED"
                     }
                 ]
             },
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1"
+                    "value": "1.00"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "YAARI-2-3232DC8EGT",
+                        "@ondc/org/item_id": "e3b754fd-ff45-4139-bb14-ea45f7c6f20b",
                         "@ondc/org/title_type": "Delivery Charge",
                         "price": {
                             "currency": "INR",
-                            "value": "1"
+                            "value": "1.00"
                         }
                     }
                 ]
             },
-            "id": "ed28c662-4afa-4dc9-80ec-9e105b123884",
+            "id": "d3a23b3d-1fe8-48e0-9e0f-77036a27cc26",
             "state": "Created",
-            "created_at": "2023-07-12T13:48:18.035Z",
-            "updated_at": "2023-07-12T13:48:18.035Z",
+            "created_at": "2023-07-27T07:55:49.299Z",
+            "updated_at": "2023-07-27T07:55:49.299Z",
             "delivery_type": "Prepaid",
             "@ondc/org/linked_order": {
                 "items": [
                     {
                         "category_id": "Grocery",
                         "descriptor": {
-                            "name": "Agnesi Pasta - Le Penne Rigate N.19, 500 g Pouch"
+                            "name": "Wai Wai Vinegar - Enhances Taste, 180 ml Single"
                         },
                         "quantity": {
                             "count": 1,
@@ -153,21 +156,21 @@
                         },
                         "price": {
                             "currency": "INR",
-                            "value": "299.00"
+                            "value": "50.00"
                         }
                     }
                 ],
                 "provider": {
-                    "name": "Arachnomesh Super Store",
+                    "name": "Channelier Super Store",
                     "symbol": "https://play-lh.googleusercontent.com/4iFePUtS2o6Sw24ogR2ZaQGERUg3rZKN7hYOR6Bn8kJkCTFrfpxJZhwqfMAg5KgS9OY",
-                    "short_desc": "a retail store that primarily retails a general range of food products, which may be fresh or packaged.",
-                    "long_desc": "a retail store that primarily retails a general range of food products, which may be fresh or packaged.",
+                    "short_desc": "We provide all types of groceries",
+                    "long_desc": "We provide all types of groceries",
                     "images": [
                         "https://play-lh.googleusercontent.com/4iFePUtS2o6Sw24ogR2ZaQGERUg3rZKN7hYOR6Bn8kJkCTFrfpxJZhwqfMAg5KgS9OY"
                     ]
                 },
                 "order": {
-                    "id": "2023-07-12-732218",
+                    "id": "2023-07-27-966968",
                     "weight": {
                         "unit": "Gram",
                         "value": 500
