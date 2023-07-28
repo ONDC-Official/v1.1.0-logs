@@ -1,0 +1,65 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "init",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "bpp_uri": "https://uat-api.farmersmandi.in/api/ondc/v1/",
+    "transaction_id": "a9c5820f-7388-458d-96ca-de2dbf50c796",
+    "message_id": "2be42724-d3bd-46d8-9c00-0a4a16173c8e",
+    "timestamp": "2023-07-28T10:07:02.756Z",
+    "bpp_id": "www.farmersmandi.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": { "id": "FM_3", "locations": [{ "id": "L2" }] },
+      "items": [
+        { "id": "FM_31", "quantity": { "count": 1 }, "fulfillment_id": "F1" },
+        { "id": "FM_32", "quantity": { "count": 1 }, "fulfillment_id": "F1" },
+        { "id": "FM_33", "quantity": { "count": 1 }, "fulfillment_id": "F1" }
+      ],
+      "billing": {
+        "address": {
+          "door": "near tankbund",
+          "building": "near tankbund",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560076",
+          "locality": "enathur",
+          "name": "test"
+        },
+        "phone": "9199191991",
+        "name": "test",
+        "email": "test@gmail.com",
+        "created_at": "2023-07-28T10:07:02.756Z",
+        "updated_at": "2023-07-28T10:07:02.756Z"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "end": {
+            "contact": { "email": "test@gmail.com", "phone": "9199191991" },
+            "location": {
+              "gps": "12.898463, 77.600873",
+              "address": {
+                "name": "test",
+                "building": "near tankbund",
+                "locality": "enathur",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560076"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

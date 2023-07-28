@@ -1,0 +1,98 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "ttl": "PT30S",
+    "action": "on_init",
+    "bpp_id": "www.farmersmandi.in",
+    "bpp_uri": "https://uat-api.farmersmandi.in/api/ondc/v1/",
+    "transaction_id": "206915d3-4180-4697-b981-08cc4e796af3",
+    "message_id": "fa5bce12-095a-435c-8259-b55ad9b02ea0",
+    "timestamp": "2023-07-27T04:31:27.549Z"
+  },
+  "message": {
+    "order": {
+      "provider": { "id": "FM_3", "locations": [{ "id": "L2" }] },
+      "items": [
+        { "id": "FM_33", "fulfillment_id": "F1", "quantity": { "count": 2 } }
+      ],
+      "billing": {
+        "name": "test",
+        "address": {
+          "door": "near tankbund",
+          "name": "test",
+          "building": "near tankbund",
+          "locality": "enathur",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560076"
+        },
+        "email": "test@gmail.com",
+        "phone": "9199191991",
+        "created_at": "2023-07-27T04:31:27.476Z",
+        "updated_at": "2023-07-27T04:31:27.476Z"
+      },
+      "quote": {
+        "price": { "currency": "INR", "value": "68.32" },
+        "breakup": [
+          {
+            "item": {
+              "id": "FM_33",
+              "quantity": {
+                "available": { "count": "2" },
+                "maximum": { "count": "2" }
+              },
+              "price": { "currency": "INR", "value": "24.16" }
+            },
+            "title": "BENDI (500 gm)",
+            "price": { "currency": "INR", "value": "48.32" },
+            "@ondc/org/item_id": "FM_33",
+            "@ondc/org/item_quantity": { "count": 2 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery charges",
+            "price": { "currency": "INR", "value": "20.00" },
+            "@ondc/org/item_id": "F1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT1H"
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "end": {
+            "location": {
+              "gps": "12.898463, 77.600873",
+              "address": {
+                "name": "test",
+                "building": "near tankbund",
+                "locality": "enathur",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560076"
+              }
+            },
+            "contact": { "phone": "9199191991", "email": "test@gmail.com" }
+          },
+          "state": { "descriptor": { "code": "Serviceable" } },
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT70M",
+          "@ondc/org/provider_name": "Venkat B2C Farmesr whitefield"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "ttl": "PT30S",
+    "action": "on_search",
+    "bpp_id": "www.farmersmandi.in",
+    "bpp_uri": "https://uat-api.farmersmandi.in/api/ondc/v1/",
+    "transaction_id": "a9c5820f-7388-458d-96ca-de2dbf50c796",
+    "message_id": "d0f99e16-6149-4d13-96d2-f1cdb396d59a",
+    "timestamp": "2023-07-28T09:45:40.592Z"
+  },
+  "message": {
+    "catalog": {
+      "bpp/descriptor": {
+        "name": "FM Mandi",
+        "symbol": "https://uat-api.farmersmandi.in/api/ondc/v1/symbol",
+        "short_desc": "FM Mandi",
+        "long_desc": "FM Mandi",
+        "images": [
+          "https://uat-api.farmersmandi.in/api/ondc/v1/image/1",
+          "https://uat-api.farmersmandi.in/api/ondc/v1/image/2"
+        ]
+      },
+      "bpp/categories": [
+        {
+          "id": "Fruits and Vegetables",
+          "descriptor": {
+            "name": "Fruits and Vegetables",
+            "code": "1",
+            "short_desc": "Fruits and Vegetables",
+            "long_desc": "Fruits and Vegetables"
+          }
+        }
+      ],
+      "bpp/fulfillments": [{ "id": "F1", "type": "Delivery" }],
+      "bpp/providers": [
+        {
+          "id": "FM_3",
+          "descriptor": {
+            "name": "Venkat B2C Farmesr whitefield",
+            "symbol": "image",
+            "short_desc": "Test",
+            "long_desc": "long desc",
+            "images": ["image1,image2"]
+          },
+          "time": {
+            "label": "enable",
+            "timestamp": "2023-07-28T09:45:40.592Z"
+          },
+          "fulfillments": [
+            { "contact": { "phone": "9059375121", "email": "test@temp.com" } }
+          ],
+          "locations": [
+            {
+              "id": "L2",
+              "gps": "77.720946,12.963821",
+              "address": {
+                "street": "Brookefield",
+                "locality": "Brookefield",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "area_code": "560037"
+              },
+              "time": {
+                "range": { "start": "0800", "end": "2300" },
+                "days": "1,2,3,4,5,6,7",
+                "schedule": { "holidays": [] }
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "FM_31",
+              "fulfillment_id": "F1",
+              "location_id": "L2",
+              "quantity": {
+                "available": { "count": "34" },
+                "maximum": { "count": "34" },
+                "minimum": { "count": "1" }
+              },
+              "descriptor": {
+                "name": "Tomato (500 gm)",
+                "symbol": "image",
+                "short_desc": "s",
+                "long_desc": "l",
+                "images": ["image"]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "31.52",
+                "listed_value": "31.52",
+                "maximum_value": "31.52"
+              },
+              "category_id": "Fruits and Vegetables",
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/time_to_ship": "PT30M",
+              "@ondc/org/available_on_cod": false,
+              "@ondc/org/contact_details_consumer_care": "VenkatB2c Seller ,test@temp.com,9059375121",
+              "@ondc/org/mandatory_reqs_veggies_fruits": {
+                "net_quantity": "500 gm"
+              }
+            },
+            {
+              "id": "FM_32",
+              "fulfillment_id": "F1",
+              "location_id": "L2",
+              "quantity": {
+                "available": { "count": "195" },
+                "maximum": { "count": "195" },
+                "minimum": { "count": "1" }
+              },
+              "descriptor": {
+                "name": "Sweet Corn (3 Nos)",
+                "symbol": "image",
+                "short_desc": "s",
+                "long_desc": "l",
+                "images": ["image"]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "15.76",
+                "listed_value": "15.76",
+                "maximum_value": "15.76"
+              },
+              "category_id": "Fruits and Vegetables",
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/time_to_ship": "PT30M",
+              "@ondc/org/available_on_cod": false,
+              "@ondc/org/contact_details_consumer_care": "VenkatB2c Seller ,test@temp.com,9059375121",
+              "@ondc/org/mandatory_reqs_veggies_fruits": {
+                "net_quantity": "3 Nos"
+              }
+            },
+            {
+              "id": "FM_33",
+              "fulfillment_id": "F1",
+              "location_id": "L2",
+              "quantity": {
+                "available": { "count": "14" },
+                "maximum": { "count": "14" },
+                "minimum": { "count": "1" }
+              },
+              "descriptor": {
+                "name": "BENDI (500 gm)",
+                "symbol": "image",
+                "short_desc": "s",
+                "long_desc": "l",
+                "images": ["image"]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "24.16",
+                "listed_value": "24.16",
+                "maximum_value": "24.16"
+              },
+              "category_id": "Fruits and Vegetables",
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/time_to_ship": "PT30M",
+              "@ondc/org/available_on_cod": false,
+              "@ondc/org/contact_details_consumer_care": "VenkatB2c Seller ,test@temp.com,9059375121",
+              "@ondc/org/mandatory_reqs_veggies_fruits": {
+                "net_quantity": "500 gm"
+              }
+            }
+          ],
+          "ttl": "P1D",
+          "tags": [
+            {
+              "code": "serviceability",
+              "list": [
+                { "code": "location", "value": "L2" },
+                { "code": "category", "value": "Fruits and Vegetables" },
+                { "code": "type", "value": "10" },
+                { "code": "val", "value": "15" },
+                { "code": "unit", "value": "km" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "bpp_uri": "https://uat-api.farmersmandi.in/api/ondc/v1/",
+    "transaction_id": "a9c5820f-7388-458d-96ca-de2dbf50c796",
+    "message_id": "d05c5321-e0a2-4de4-9867-2841e30d9558",
+    "timestamp": "2023-07-28T10:07:25.955Z",
+    "bpp_id": "www.farmersmandi.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-07-28-387373",
+      "state": "Created",
+      "billing": {
+        "address": {
+          "name": "test",
+          "building": "near tankbund",
+          "locality": "enathur",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560076"
+        },
+        "phone": "9199191991",
+        "name": "test",
+        "email": "test@gmail.com",
+        "created_at": "2023-07-28T10:07:02.756Z",
+        "updated_at": "2023-07-28T10:07:02.756Z"
+      },
+      "items": [
+        { "id": "FM_31", "quantity": { "count": 1 }, "fulfillment_id": "F1" },
+        { "id": "FM_32", "quantity": { "count": 1 }, "fulfillment_id": "F1" },
+        { "id": "FM_33", "quantity": { "count": 1 }, "fulfillment_id": "F1" }
+      ],
+      "provider": { "id": "FM_3", "locations": [{ "id": "L2" }] },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "end": {
+            "contact": { "email": "test@gmail.com", "phone": "9199191991" },
+            "person": { "name": "test" },
+            "location": {
+              "gps": "12.898463, 77.600873",
+              "address": {
+                "name": "test",
+                "building": "near tankbund",
+                "locality": "enathur",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560076"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "91.44",
+          "currency": "INR",
+          "transaction_id": "a9c5820f-7388-458d-96ca-de2dbf50c796"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+      },
+      "quote": {
+        "price": { "currency": "INR", "value": "91.44" },
+        "breakup": [
+          {
+            "item": {
+              "id": "FM_31",
+              "quantity": {
+                "available": { "count": "34" },
+                "maximum": { "count": "34" }
+              },
+              "price": { "currency": "INR", "value": "31.52" }
+            },
+            "title": "Tomato (500 gm)",
+            "price": { "currency": "INR", "value": "31.52" },
+            "@ondc/org/item_id": "FM_31",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "item": {
+              "id": "FM_32",
+              "quantity": {
+                "available": { "count": "195" },
+                "maximum": { "count": "195" }
+              },
+              "price": { "currency": "INR", "value": "15.76" }
+            },
+            "title": "Sweet Corn (3 Nos)",
+            "price": { "currency": "INR", "value": "15.76" },
+            "@ondc/org/item_id": "FM_32",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "item": {
+              "id": "FM_33",
+              "quantity": {
+                "available": { "count": "14" },
+                "maximum": { "count": "14" }
+              },
+              "price": { "currency": "INR", "value": "24.16" }
+            },
+            "title": "BENDI (500 gm)",
+            "price": { "currency": "INR", "value": "24.16" },
+            "@ondc/org/item_id": "FM_33",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery charges",
+            "price": { "currency": "INR", "value": "20.00" },
+            "@ondc/org/item_id": "F1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT1H"
+      },
+      "created_at": "2023-07-28T10:07:25.955Z",
+      "updated_at": "2023-07-28T10:07:25.955Z"
+    }
+  }
+}

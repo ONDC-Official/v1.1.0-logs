@@ -1,0 +1,155 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "ttl": "PT30S",
+    "action": "on_confirm",
+    "bpp_id": "www.farmersmandi.in",
+    "bpp_uri": "https://uat-api.farmersmandi.in/api/ondc/v1/",
+    "transaction_id": "71413c11-63fb-49a9-b7cb-4e06b2714209",
+    "message_id": "1d88db6c-a0db-467d-8aea-34be545590f7",
+    "timestamp": "2023-07-28T05:58:05.996Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-07-28-497389",
+      "state": "Accepted",
+      "provider": { "id": "FM_3", "locations": [{ "id": "L2" }] },
+      "items": [
+        { "id": "FM_31", "fulfillment_id": "F1", "quantity": { "count": 1 } },
+        { "id": "FM_32", "fulfillment_id": "F1", "quantity": { "count": 1 } },
+        { "id": "FM_33", "fulfillment_id": "F1", "quantity": { "count": 1 } }
+      ],
+      "billing": {
+        "name": "test",
+        "address": {
+          "name": "test",
+          "building": "near tankbund",
+          "locality": "enathur",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560076"
+        },
+        "email": "test@gmail.com",
+        "phone": "9199191991",
+        "created_at": "2023-07-28T05:57:51.619Z",
+        "updated_at": "2023-07-28T05:57:51.619Z"
+      },
+      "quote": {
+        "price": { "currency": "INR", "value": "91.44" },
+        "breakup": [
+          {
+            "item": {
+              "id": "FM_31",
+              "quantity": {
+                "available": { "count": "38" },
+                "maximum": { "count": "38" }
+              },
+              "price": { "currency": "INR", "value": "31.52" }
+            },
+            "title": "Tomato (500 gm)",
+            "price": { "currency": "INR", "value": "31.52" },
+            "@ondc/org/item_id": "FM_31",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "item": {
+              "id": "FM_32",
+              "quantity": {
+                "available": { "count": "198" },
+                "maximum": { "count": "198" }
+              },
+              "price": { "currency": "INR", "value": "15.76" }
+            },
+            "title": "Sweet Corn (3 Nos)",
+            "price": { "currency": "INR", "value": "15.76" },
+            "@ondc/org/item_id": "FM_32",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "item": {
+              "id": "FM_33",
+              "quantity": {
+                "available": { "count": "18" },
+                "maximum": { "count": "18" }
+              },
+              "price": { "currency": "INR", "value": "24.16" }
+            },
+            "title": "BENDI (500 gm)",
+            "price": { "currency": "INR", "value": "24.16" },
+            "@ondc/org/item_id": "FM_33",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery charges",
+            "price": { "currency": "INR", "value": "20.00" },
+            "@ondc/org/item_id": "F1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT1H"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "collected_by": "BAP",
+        "status": "PAID",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "91.44",
+          "currency": "INR",
+          "transaction_id": "71413c11-63fb-49a9-b7cb-4e06b2714209"
+        },
+        "type": "ON-ORDER",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "end": {
+            "location": {
+              "gps": "12.898463, 77.600873",
+              "address": {
+                "name": "test",
+                "building": "near tankbund",
+                "locality": "enathur",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560076"
+              }
+            },
+            "contact": { "phone": "9199191991", "email": "test@gmail.com" },
+            "person": { "name": "test" }
+          },
+          "state": { "descriptor": { "code": "Pending" } },
+          "start": {
+            "location": { "id": "L2", "gps": "12.963821,77.720946" },
+            "time": {
+              "range": {
+                "start": "2023-07-28T11:28:06.028Z",
+                "end": "2023-07-28T11:58:06.028Z"
+              }
+            },
+            "contact": { "phone": "9059375121", "email": "test@temp.com" }
+          },
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT70M",
+          "@ondc/org/provider_name": "Venkat B2C Farmesr whitefield"
+        }
+      ],
+      "created_at": "2023-07-28T05:58:05.913Z",
+      "updated_at": "2023-07-28T05:58:05.913Z"
+    },
+    "update_type": null
+  }
+}

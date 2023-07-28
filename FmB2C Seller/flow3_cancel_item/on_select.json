@@ -1,0 +1,116 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "ttl": "PT30S",
+    "action": "on_select",
+    "bpp_id": "www.farmersmandi.in",
+    "bpp_uri": "https://uat-api.farmersmandi.in/api/ondc/v1/",
+    "transaction_id": "71413c11-63fb-49a9-b7cb-4e06b2714209",
+    "message_id": "b568ce8c-fde7-420a-bbf2-6ca9ddf4afba",
+    "timestamp": "2023-07-28T05:57:30.474Z"
+  },
+  "message": {
+    "order": {
+      "provider": { "id": "FM_3", "locations": [{ "id": "L2" }] },
+      "items": [
+        {
+          "id": "FM_31",
+          "fulfillment_id": "F1",
+          "location_id": "L2",
+          "quantity": { "count": 1 }
+        },
+        {
+          "id": "FM_32",
+          "fulfillment_id": "F1",
+          "location_id": "L2",
+          "quantity": { "count": 1 }
+        },
+        {
+          "id": "FM_33",
+          "fulfillment_id": "F1",
+          "location_id": "L2",
+          "quantity": { "count": 1 }
+        }
+      ],
+      "quote": {
+        "price": { "currency": "INR", "value": "91.44" },
+        "breakup": [
+          {
+            "item": {
+              "id": "FM_31",
+              "quantity": {
+                "available": { "count": "39" },
+                "maximum": { "count": "39" }
+              },
+              "price": { "currency": "INR", "value": "31.52" }
+            },
+            "title": "Tomato (500 gm)",
+            "price": { "currency": "INR", "value": "31.52" },
+            "@ondc/org/item_id": "FM_31",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "item": {
+              "id": "FM_32",
+              "quantity": {
+                "available": { "count": "199" },
+                "maximum": { "count": "199" }
+              },
+              "price": { "currency": "INR", "value": "15.76" }
+            },
+            "title": "Sweet Corn (3 Nos)",
+            "price": { "currency": "INR", "value": "15.76" },
+            "@ondc/org/item_id": "FM_32",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "item": {
+              "id": "FM_33",
+              "quantity": {
+                "available": { "count": "19" },
+                "maximum": { "count": "19" }
+              },
+              "price": { "currency": "INR", "value": "24.16" }
+            },
+            "title": "BENDI (500 gm)",
+            "price": { "currency": "INR", "value": "24.16" },
+            "@ondc/org/item_id": "FM_33",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery charges",
+            "price": { "currency": "INR", "value": "20.00" },
+            "@ondc/org/item_id": "F1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT1H"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "end": {
+            "location": {
+              "gps": "12.898463, 77.600873",
+              "address": { "area_code": "560076" }
+            }
+          },
+          "state": { "descriptor": { "code": "Serviceable" } },
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT70M",
+          "@ondc/org/provider_name": "Venkat B2C Farmesr whitefield"
+        }
+      ]
+    },
+    "update_type": null
+  }
+}

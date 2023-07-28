@@ -1,0 +1,128 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "ttl": "PT30S",
+    "action": "on_status",
+    "bpp_id": "www.farmersmandi.in",
+    "bpp_uri": "https://uat-api.farmersmandi.in/api/ondc/v1/",
+    "transaction_id": "206915d3-4180-4697-b981-08cc4e796af3",
+    "message_id": "3ecc018c-a5c1-41e2-a487-dbe6527c81c2",
+    "timestamp": "2023-07-27T08:03:05.706Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-07-27-605013",
+      "state": "Completed",
+      "provider": { "id": "FM_3", "locations": [{ "id": "L2" }] },
+      "items": [
+        { "id": "FM_33", "fulfillment_id": "F1", "quantity": { "count": 2 } }
+      ],
+      "billing": {
+        "name": "test",
+        "address": {
+          "name": "test",
+          "building": "near tankbund",
+          "locality": "enathur",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560076"
+        },
+        "email": "test@gmail.com",
+        "phone": "9199191991",
+        "created_at": "2023-07-27T04:31:27.476Z",
+        "updated_at": "2023-07-27T04:31:27.476Z"
+      },
+      "quote": {
+        "price": { "currency": "INR", "value": "20.00" },
+        "breakup": [
+          {
+            "item": {
+              "id": "FM_33",
+              "quantity": {
+                "available": { "count": "0" },
+                "maximum": { "count": "0" }
+              },
+              "price": { "currency": "INR", "value": "24.16" }
+            },
+            "title": "BENDI (500 gm)",
+            "price": { "currency": "INR", "value": "0.00" },
+            "@ondc/org/item_id": "FM_33",
+            "@ondc/org/item_quantity": {},
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery charges",
+            "price": { "currency": "INR", "value": "20.00" },
+            "@ondc/org/item_id": "F1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT1H"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "collected_by": "BAP",
+        "status": "PAID",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "68.32",
+          "currency": "INR",
+          "transaction_id": "206915d3-4180-4697-b981-08cc4e796af3"
+        },
+        "type": "ON-ORDER",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "end": {
+            "location": {
+              "gps": "12.898463, 77.600873",
+              "address": {
+                "name": "test",
+                "building": "near tankbund",
+                "locality": "enathur",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560076"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-07-27T10:31:34.000Z",
+                "end": "2023-07-27T13:33:05.697Z"
+              }
+            },
+            "contact": { "phone": "9199191991", "email": "test@gmail.com" },
+            "person": { "name": "test" }
+          },
+          "state": { "descriptor": { "code": "Order-delivered" } },
+          "start": {
+            "location": { "id": "L2", "gps": "12.963821,77.720946" },
+            "time": {
+              "range": {
+                "start": "2023-07-27T10:01:34.000Z",
+                "end": "2023-07-27T13:33:05.643Z"
+              }
+            },
+            "contact": { "phone": "9059375121", "email": "test@temp.com" }
+          },
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT70M",
+          "@ondc/org/provider_name": "Venkat B2C Farmesr whitefield"
+        }
+      ],
+      "created_at": "2023-07-27T04:31:33.449Z",
+      "updated_at": "2023-07-27T08:03:05.706Z"
+    }
+  }
+}

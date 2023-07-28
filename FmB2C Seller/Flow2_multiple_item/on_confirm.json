@@ -1,0 +1,156 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "ttl": "PT30S",
+    "action": "on_confirm",
+    "bpp_id": "www.farmersmandi.in",
+    "bpp_uri": "https://uat-api.farmersmandi.in/api/ondc/v1/",
+    "transaction_id": "44ed0767-d28f-4ded-96e0-b2829a6606f5",
+    "message_id": "819469af-a3fe-4f13-8ca4-e4215b4b3fba",
+    "timestamp": "2023-07-27T12:31:55.856Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-07-27-644556",
+      "state": "Accepted",
+      "provider": { "id": "FM_3", "locations": [{ "id": "L2" }] },
+      "items": [
+        { "id": "FM_31", "fulfillment_id": "F1", "quantity": { "count": 1 } },
+        { "id": "FM_32", "fulfillment_id": "F1", "quantity": { "count": 1 } },
+        { "id": "FM_33", "fulfillment_id": "F1", "quantity": { "count": 1 } }
+      ],
+      "billing": {
+        "name": "Sumit",
+        "address": {
+          "name": "Sumit",
+          "locality": "KTIB",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560076"
+        },
+        "email": "hisumithere@gmail.com",
+        "phone": "7738081080",
+        "created_at": "2023-07-27T12:31:53.250Z",
+        "updated_at": "2023-07-27T12:31:53.250Z"
+      },
+      "quote": {
+        "price": { "currency": "INR", "value": "91.44" },
+        "breakup": [
+          {
+            "item": {
+              "id": "FM_31",
+              "quantity": {
+                "available": { "count": "37" },
+                "maximum": { "count": "37" }
+              },
+              "price": { "currency": "INR", "value": "31.52" }
+            },
+            "title": "Tomato (500 gm)",
+            "price": { "currency": "INR", "value": "31.52" },
+            "@ondc/org/item_id": "FM_31",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "item": {
+              "id": "FM_32",
+              "quantity": {
+                "available": { "count": "199" },
+                "maximum": { "count": "199" }
+              },
+              "price": { "currency": "INR", "value": "15.76" }
+            },
+            "title": "Sweet Corn (3 Nos)",
+            "price": { "currency": "INR", "value": "15.76" },
+            "@ondc/org/item_id": "FM_32",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "item": {
+              "id": "FM_33",
+              "quantity": {
+                "available": { "count": "17" },
+                "maximum": { "count": "17" }
+              },
+              "price": { "currency": "INR", "value": "24.16" }
+            },
+            "title": "BENDI (500 gm)",
+            "price": { "currency": "INR", "value": "24.16" },
+            "@ondc/org/item_id": "FM_33",
+            "@ondc/org/item_quantity": { "count": 1 },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery charges",
+            "price": { "currency": "INR", "value": "20.00" },
+            "@ondc/org/item_id": "F1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT1H"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "collected_by": "BAP",
+        "status": "PAID",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "91.44",
+          "currency": "INR",
+          "transaction_id": "44ed0767-d28f-4ded-96e0-b2829a6606f5"
+        },
+        "type": "ON-ORDER",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "end": {
+            "location": {
+              "gps": "12.898463, 77.600873",
+              "address": {
+                "name": "Sumit",
+                "building": "",
+                "locality": "KTIB",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560076"
+              }
+            },
+            "contact": {
+              "phone": "7738081080",
+              "email": "hisumithere@gmail.com"
+            },
+            "person": { "name": "Sumit" }
+          },
+          "state": { "descriptor": { "code": "Pending" } },
+          "start": {
+            "location": { "id": "L2", "gps": "12.963821,77.720946" },
+            "time": {
+              "range": {
+                "start": "2023-07-27T18:01:55.879Z",
+                "end": "2023-07-27T18:31:55.879Z"
+              }
+            },
+            "contact": { "phone": "9059375121", "email": "test@temp.com" }
+          },
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT70M",
+          "@ondc/org/provider_name": "Venkat B2C Farmesr whitefield"
+        }
+      ],
+      "created_at": "2023-07-27T12:31:55.788Z",
+      "updated_at": "2023-07-27T12:31:55.788Z"
+    }
+  }
+}
