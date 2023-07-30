@@ -4,8 +4,8 @@
     "ttl": "PT30S",
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
-    "message_id": "4872603b-fabd-42a8-94a0-813026a14b38",
-    "transaction_id": "5b47daf8-76bc-4900-89b9-a0508e8e2f04",
+    "message_id": "64806c7e-12a0-485d-97cd-ca7b971f1b2d",
+    "transaction_id": "42d91b07-6ecb-4d17-8ad4-b3bf9ff0f36c",
     "bpp_id": "ondc.vistar.solutions",
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "location": {
@@ -18,11 +18,11 @@
     },
     "action": "confirm",
     "version": "1.0.0",
-    "timestamp": "2023-07-24T14:55:27.149Z"
+    "timestamp": "2023-07-28T17:52:39.109Z"
   },
   "message": {
     "order": {
-      "id": "93cecebb-83c3-4e13-b83a-e5da3ed79222",
+      "id": "55b2daa1-8865-48e1-9511-336e75eb4c2d",
       "status": "CREATED",
       "provider": {
         "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
@@ -42,6 +42,16 @@
           "fulfillment_ids": [
             "F2"
           ],
+          "cancellation_terms": [
+            {
+              "cancel_eligible": false
+            }
+          ],
+          "return_terms": [
+            {
+              "return_eligible": false
+            }
+          ],
           "tags": [
             {
               "descriptor": {
@@ -50,7 +60,7 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "CUSTOM_AMOUNT"
+                    "code": "FIXED_AMOUNT"
                   },
                   "value": "1000"
                 }
@@ -71,7 +81,7 @@
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Test"
+                  "value": "Test for log collection"
                 }
               ]
             }
@@ -79,15 +89,15 @@
         }
       ],
       "billing": {
-        "name": "gari",
-        "address": "aaa",
+        "name": "kunal",
+        "address": "A wing",
         "state": {
-          "name": "Odisha",
-          "code": "OD"
+          "name": "Maharashtra",
+          "code": "MA"
         },
         "city": {
-          "name": "Rourkela",
-          "code": "RO"
+          "name": "Pune",
+          "code": "PU"
         },
         "email": "TestNum@gmail.com",
         "phone": "7064032212"
@@ -163,6 +173,16 @@
               "currency": "INR",
               "value": "-100"
             }
+          },
+          {
+            "item": {
+              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+            },
+            "title": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
           }
         ],
         "ttl": "P1D"
@@ -170,8 +190,9 @@
       "payments": [
         {
           "collected_by": "BAP",
+          "url": "https://razorpay.com/",
           "params": {
-            "transaction_id": "order_MHg8yXPsCYTVre",
+            "transaction_id": "order_MJJIdVGNlQAB7K",
             "amount": "900",
             "currency": "INR"
           },
@@ -212,25 +233,25 @@
                   "descriptor": {
                     "code": "beneficiary_name"
                   },
-                  "value": "1111212122121212121212121212121121212121212221"
+                  "value": "Seller 1"
                 },
                 {
                   "descriptor": {
                     "code": "bank_name"
                   },
-                  "value": "11111111111"
+                  "value": "Icici"
                 },
                 {
                   "descriptor": {
                     "code": "branch_name"
                   },
-                  "value": "rererereff"
+                  "value": "Icici"
                 },
                 {
                   "descriptor": {
                     "code": "ifsc_code"
                   },
-                  "value": "1111111111111111111"
+                  "value": "icici1232"
                 },
                 {
                   "descriptor": {
@@ -243,8 +264,8 @@
           ]
         }
       ],
-      "created_at": "2023-07-24T14:55:27.149Z",
-      "updated_at": "2023-07-24T14:55:27.149Z"
+      "created_at": "2023-07-28T17:52:39.109Z",
+      "updated_at": "2023-07-28T17:52:39.109Z"
     }
   }
 }
