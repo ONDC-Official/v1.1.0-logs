@@ -82,8 +82,11 @@
 - /message/catalog/bpp~1providers/1/items/63/descriptor/images must NOT have more than 3 items
 - /message/catalog/bpp~1providers/1/items/64/descriptor/images must NOT have more than 3 items
 
+**/select**
+- /message/order/billing must have required property 'tax_number'
+
 **/on_select**
-- Warning: Quoted Price in /on_select INR 846 does not match with the total price of items in /select INR 1494
+- Warning: Quoted Price in /on_select INR 846 does not match with the total price of items in /select INR 1062
 
 **/init**
 - Warning: items[0].quantity.count for item 5bc87ae20d298a283c297895 mismatches with the items quantity selected in /select
