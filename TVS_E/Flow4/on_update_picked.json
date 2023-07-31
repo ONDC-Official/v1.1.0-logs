@@ -11,7 +11,7 @@
     "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
     "transaction_id": "6aeed5f8-dc04-4951-a9a3-cb765390ce6d",
     "message_id": "3ac01b79-1c09-45da-84ac-d50918041988",
-    "timestamp": "2023-07-31T13:49:39.415Z"
+    "timestamp": "2023-07-31T13:52:31.845Z"
   },
   "message": {
     "order": {
@@ -36,19 +36,19 @@
         },
         {
           "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
-          "fulfillment_id": "1",
+          "fulfillment_id": "1-Reverse QC",
           "quantity": {
             "count": 2
           },
           "tags": {
-            "status": "Return_Initiated"
+            "status": "Return_Picked"
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "67815.00"
+          "value": "37797.00"
         },
         "ttl": "P1D",
         "breakup": [
@@ -69,24 +69,6 @@
             "@ondc/org/item_quantity": {
               "count": 3
             }
-          },
-          {
-            "item": {
-              "price": {
-                "currency": "INR",
-                "value": "15009.00"
-              }
-            },
-            "price": {
-              "currency": "INR",
-              "value": "30018.00"
-            },
-            "title": "LP 46 Lite Thermal Label Printer",
-            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            }
           }
         ]
       },
@@ -97,7 +79,7 @@
         "params": {
           "currency": "INR",
           "transaction_id": "6aeed5f8-dc04-4951-a9a3-cb765390ce6d",
-          "amount": "67815.00"
+          "amount": "37797.00"
         },
         "type": "ON-ORDER",
         "collected_by": "BAP",
@@ -141,8 +123,8 @@
             },
             "time": {
               "range": {
-                "start": "2023-07-31T19:19:39.700Z",
-                "end": "2023-07-31T19:19:39.700Z"
+                "start": "2023-07-31T19:22:31.885Z",
+                "end": "2023-07-31T19:22:31.885Z"
               },
               "timestamp": "2023-07-31T13:41:11.392Z"
             }
@@ -161,8 +143,8 @@
             },
             "time": {
               "range": {
-                "start": "2023-07-31T19:19:39.700Z",
-                "end": "2023-07-31T19:19:39.700Z"
+                "start": "2023-07-31T19:22:31.885Z",
+                "end": "2023-07-31T19:22:31.885Z"
               },
               "timestamp": "2023-07-31T13:42:00.685Z"
             },
@@ -171,10 +153,37 @@
               "phone": "9865569388"
             }
           }
+        },
+        {
+          "id": "1-Reverse QC",
+          "type": "Reverse QC",
+          "state": {
+            "descriptor": {
+              "code": "Order-picked-up"
+            }
+          },
+          "tracking": false,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-07-31T19:22:31.885Z",
+                "end": "2023-07-31T19:22:31.885Z"
+              },
+			  "timestamp": "2023-07-31T13:52:31.845Z"
+            }			
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-07-31T19:22:31.885Z",
+                "end": "2023-07-31T19:22:31.885Z"
+              }
+            }
+          }
         }
       ],
       "created_at": "2023-07-31T13:37:39.494Z",
-      "updated_at": "2023-07-31T13:49:39.415Z"
+      "updated_at": "2023-07-31T13:52:31.845Z"
     }
   }
 }

@@ -1,15 +1,16 @@
 **/on_search**
-- category in serviceability construct should be one of the category ids bpp/providers[0]/items/category_id
+- context/timestamp difference between /on_search and /search should be smaller than 5 sec
+- Either one of fixed (range) or split (frequency and times) timings should be provided in /bpp/providers[0]/locations[0]/time
 
 **/on_select**
-- Count of item with id: ba3ca63c-927e-4ca3-8694-19e2c7b32911 does not match in select & on_select (suitable domain error should be provided)
-- Warning: Quoted Price in /on_select INR 67815 does not match with the total price of items in /select INR 82824
+- Warning: Quoted Price in /on_select INR 40207 does not match with the total price of items in /select INR 55216
 
 **/init**
 - Warning: items[0].quantity.count for item ba3ca63c-927e-4ca3-8694-19e2c7b32911 mismatches with the items quantity selected in /select
 
 **/on_init**
-- Warning: items[1].quantity.count for item ba3ca63c-927e-4ca3-8694-19e2c7b32911 mismatches with the items quantity selected in /select
+- Warning: items[0].quantity.count for item ba3ca63c-927e-4ca3-8694-19e2c7b32911 mismatches with the items quantity selected in /select
+- Quoted Price 40257 does not match with Net Breakup Price 40257.00000000001 in /on_init
 - Discrepancies between the quote object in /on_select and /on_init
 
 **/confirm**
@@ -39,11 +40,4 @@
 **/on_update (Return_Approved)**
 - /fulfillments/0/end/location/address must have required property 'locality'
 - quote price should not change for return state Return_Approved
-
-**/on_update (Return_Picked)**
-- /fulfillments/0/end/location/address must have required property 'locality'
-
-**/on_update (Return_Delivered)**
-- /fulfillments/0/end/location/address must have required property 'locality'
-- delivery timestamp (/end/time/timestamp) can't change for fulfillment id 1
 
