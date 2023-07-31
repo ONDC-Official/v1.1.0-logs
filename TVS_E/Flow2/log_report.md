@@ -1,7 +1,9 @@
 **/on_search**
-- Either one of fixed (range) or split (frequency and times) timings should be provided in /bpp/providers[0]/locations[0]/time
+- context/timestamp difference between /on_search and /search should be smaller than 5 sec
+- category in serviceability construct should be one of the category ids bpp/providers[0]/items/category_id
 
 **/on_init**
+- Quoted Price 27658 does not match with Net Breakup Price 27658.000000000004 in /on_init
 - Discrepancies between the quote object in /on_select and /on_init
 
 **/confirm**
@@ -9,7 +11,6 @@
 - Discrepancies between the quote object in /on_select and /confirm
 
 **/on_confirm**
-- context/timestamp difference between /on_confirm and /confirm should be smaller than 5 sec
 - address/door mismatches in /billing in /confirm and /on_confirm
 - Discrepancies between the quote object /on_select and /on_confirm
 - payment object mismatches in /confirm & /on_confirm
