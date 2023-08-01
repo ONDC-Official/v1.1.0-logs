@@ -4,8 +4,8 @@
     "ttl": "PT30S",
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
-    "message_id": "31c689bb-4ecf-4dfa-898e-b2a11b2c688b",
-    "transaction_id": "fc92dd03-1d59-4399-b4d1-6e2206d42dd3",
+    "message_id": "5fe11881-530d-471d-a78c-5f4f2bcc07b8",
+    "transaction_id": "0b81cf9f-190d-4705-8b1c-a2a732c2fda0",
     "bpp_id": "ondc.vistar.solutions",
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "location": {
@@ -18,11 +18,11 @@
     },
     "action": "confirm",
     "version": "1.0.0",
-    "timestamp": "2023-07-24T14:59:20.410Z"
+    "timestamp": "2023-07-28T17:55:23.577Z"
   },
   "message": {
     "order": {
-      "id": "9e506c58-016e-477e-9d8a-1df1dde80913",
+      "id": "b7d9493a-8460-49b0-b05b-d436c5da9fb4",
       "status": "CREATED",
       "provider": {
         "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
@@ -42,6 +42,16 @@
           "fulfillment_ids": [
             "F2"
           ],
+          "cancellation_terms": [
+            {
+              "cancel_eligible": false
+            }
+          ],
+          "return_terms": [
+            {
+              "return_eligible": false
+            }
+          ],
           "tags": [
             {
               "descriptor": {
@@ -50,7 +60,7 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "CUSTOM_AMOUNT"
+                    "code": "FIXED_AMOUNT"
                   },
                   "value": "2500"
                 }
@@ -65,13 +75,13 @@
                   "descriptor": {
                     "code": "RECEIVER_NAME"
                   },
-                  "value": "Sagar "
+                  "value": "Sagar"
                 },
                 {
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Test"
+                  "value": "Test for log collection"
                 }
               ]
             }
@@ -79,15 +89,15 @@
         }
       ],
       "billing": {
-        "name": "gari",
-        "address": "aaa",
+        "name": "kunal",
+        "address": "A wing",
         "state": {
-          "name": "Odisha",
-          "code": "OD"
+          "name": "Maharashtra",
+          "code": "MA"
         },
         "city": {
-          "name": "Rourkela",
-          "code": "RO"
+          "name": "Pune",
+          "code": "PU"
         },
         "email": "TestNum@gmail.com",
         "phone": "7064032212"
@@ -109,11 +119,11 @@
             {
               "id": "0",
               "contact": {
-                "phone": "9964453579",
+                "phone": "9988776655",
                 "email": "sagar.revanna@eminds.ai"
               },
               "person": {
-                "name": "Sagar "
+                "name": "Sagar"
               }
             }
           ]
@@ -180,8 +190,9 @@
       "payments": [
         {
           "collected_by": "BAP",
+          "url": "https://razorpay.com/",
           "params": {
-            "transaction_id": "order_MHgD7t5sv2ye0N",
+            "transaction_id": "order_MJJLgIaAQPNuWk",
             "amount": "2250",
             "currency": "INR"
           },
@@ -222,25 +233,25 @@
                   "descriptor": {
                     "code": "beneficiary_name"
                   },
-                  "value": "1111212122121212121212121212121121212121212221"
+                  "value": "Seller 1"
                 },
                 {
                   "descriptor": {
                     "code": "bank_name"
                   },
-                  "value": "11111111111"
+                  "value": "Icici"
                 },
                 {
                   "descriptor": {
                     "code": "branch_name"
                   },
-                  "value": "rererereff"
+                  "value": "Icici"
                 },
                 {
                   "descriptor": {
                     "code": "ifsc_code"
                   },
-                  "value": "1111111111111111111"
+                  "value": "icici1232"
                 },
                 {
                   "descriptor": {
@@ -253,8 +264,8 @@
           ]
         }
       ],
-      "created_at": "2023-07-24T14:59:20.410Z",
-      "updated_at": "2023-07-24T14:59:20.410Z"
+      "created_at": "2023-07-28T17:55:23.577Z",
+      "updated_at": "2023-07-28T17:55:23.577Z"
     }
   }
 }

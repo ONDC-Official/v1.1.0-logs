@@ -3,8 +3,8 @@
     "domain": "FIS10",
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
-    "message_id": "8b2eab16-0501-414b-af48-72ca1d744246",
-    "transaction_id": "f2ec6fb1-4349-47d1-93a5-864d7de01fdb",
+    "message_id": "16c122b8-869a-44aa-9992-5f1ffe67ea79",
+    "transaction_id": "f81916bd-6ceb-48c2-a8dc-520784662b4d",
     "bpp_id": "ondc.vistar.solutions",
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
     "location": {
@@ -17,7 +17,7 @@
     },
     "action": "on_init",
     "version": "1.0.0",
-    "timestamp": "2023-07-24T15:03:28.954Z"
+    "timestamp": "2023-07-28T18:00:12.096Z"
   },
   "message": {
     "order": {
@@ -39,6 +39,16 @@
           "fulfillment_ids": [
             "F2"
           ],
+          "cancellation_terms": [
+            {
+              "cancel_eligible": false
+            }
+          ],
+          "return_terms": [
+            {
+              "return_eligible": false
+            }
+          ],
           "tags": [
             {
               "descriptor": {
@@ -47,7 +57,7 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "CUSTOM_AMOUNT"
+                    "code": "FIXED_AMOUNT"
                   },
                   "value": "1000"
                 }
@@ -68,7 +78,7 @@
                   "descriptor": {
                     "code": "MESSAGE"
                   },
-                  "value": "Test"
+                  "value": "Test for log collection"
                 }
               ]
             }
@@ -76,15 +86,15 @@
         }
       ],
       "billing": {
-        "name": "gari",
-        "address": "aaa",
+        "name": "kunal",
+        "address": "A wing",
         "state": {
-          "name": "Odisha",
-          "code": "OD"
+          "name": "Maharashtra",
+          "code": "MA"
         },
         "city": {
-          "name": "Rourkela",
-          "code": "RO"
+          "name": "Pune",
+          "code": "PU"
         },
         "email": "TestNum@gmail.com",
         "phone": "7064032212"
@@ -107,7 +117,7 @@
               "id": "0",
               "contact": {
                 "phone": "9988776655",
-                "email": "sagar1231231312412@eminds.ai"
+                "email": "sagar.revanna1312323423@eminds.ai"
               },
               "person": {
                 "name": "Sagar"
@@ -160,6 +170,16 @@
               "currency": "INR",
               "value": "-100"
             }
+          },
+          {
+            "item": {
+              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+            },
+            "title": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
           }
         ],
         "ttl": "P1D"
@@ -204,25 +224,25 @@
                   "descriptor": {
                     "code": "beneficiary_name"
                   },
-                  "value": "1111212122121212121212121212121121212121212221"
+                  "value": "Seller 1"
                 },
                 {
                   "descriptor": {
                     "code": "bank_name"
                   },
-                  "value": "11111111111"
+                  "value": "Icici"
                 },
                 {
                   "descriptor": {
                     "code": "branch_name"
                   },
-                  "value": "rererereff"
+                  "value": "Icici"
                 },
                 {
                   "descriptor": {
                     "code": "ifsc_code"
                   },
-                  "value": "1111111111111111111"
+                  "value": "icici1232"
                 },
                 {
                   "descriptor": {
