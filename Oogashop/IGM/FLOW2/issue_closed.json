@@ -1,0 +1,112 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "issue",
+        "core_version": "1.1.0",
+        "bap_id": "buyerapp.com",
+        "bap_uri": "https://buyerapp.com/ondc",
+        "bpp_id": "sellerapp.com",
+        "bpp_uri": "https://sellerapp.com/ondc",
+        "transaction_id": "transaction_id_2",
+        "message_id": "message_id_issue_3",
+        "timestamp": "2023-07-31T16:18:06.765",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "issue": {
+            "id": "56789fg67i",
+            "complainant_info": {
+                "person": {
+                    "name": "Someone"
+                },
+                "contact": {
+                    "phone": "+91999999999",
+                    "email": "someone@gamil.com"
+                }
+            },
+            "order_details": {
+                "id": "ordertransaction_id_2",
+                "state": "Completed",
+                "items": [
+                    {
+                        "id": "OOGASHOP-ONDC-8",
+                        "quantity": 1
+                    }
+                ],
+                "provider_id": "OOGASHOP-ONDC-2",
+                "fulfillments": [
+                    {
+                        "id": "2-2",
+                        "state": "Order-delivered"
+                    }
+                ]
+            },
+            "description": {
+                "short_desc": "Dissatisfied Delivery",
+                "long_desc": "Packaging distorted.",
+                "images": [
+                    "http://someimage1.in/",
+                    "http://someimage2.in",
+                    "http://someimage3.in/"
+                ]
+            },
+            "category": "FULFILLMENT",
+            "sub_category": "FLM01",
+            "issue_type": "ISSUE",
+            "source": {
+                "network_participant_id": "buyerapp.com",
+                "type": "CONSUMER"
+            },
+            "expected_response_time": {
+                "duration": "PT2H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_actions": {
+                "complainant_actions": [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Created",
+                        "updated_at": "2023-07-31T17:20:00.000Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "Ooga"
+                            },
+                            "contact": {
+                                "phone": "+919999999999",
+                                "email": "sha@someone.com"
+                            },
+                            "person": {
+                                "name": "Shashi"
+                            }
+                        }
+                    },
+                    {
+                        "complainant_action": "CLOSE",
+                        "short_desc": "Closed",
+                        "updated_at": "2023-07-31T16:18:06.765",
+                        "updated_by": {
+                            "org": {
+                                "name": "Ooga"
+                            },
+                            "contact": {
+                                "phone": "+919999999999",
+                                "email": "sha@someone.com"
+                            },
+                            "person": {
+                                "name": "Shashi"
+                            }
+                        }
+                    }
+                ]
+            },
+            "rating": "THUMBS-UP",
+            "created_at": "2023-07-31T16:13:32.285Z",
+            "updated_at": "2023-07-31T16:18:06.765"
+        }
+    }
+}
