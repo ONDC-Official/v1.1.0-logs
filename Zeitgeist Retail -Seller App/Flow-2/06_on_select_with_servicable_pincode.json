@@ -1,0 +1,145 @@
+{
+    "context": {
+        "transaction_id": "1a772588-000f-4d98-9a33-cfdfce839af3",
+        "message_id": "635fea8a-886d-4bd7-b451-f8713cc413f5",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "bpp_id": "ondc-preprod.zeppstore.in",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "ttl": "PT30S",
+        "action": "on_select",
+        "timestamp": "2023-08-03T12:49:22.176Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "ZEPP"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "ZRPLdd965a5f-050a-4d46-9829-4ae4f49610d0",
+                    "id": "6327"
+                },
+                {
+                    "fulfillment_id": "ZRPLdd965a5f-050a-4d46-9829-4ae4f49610d0",
+                    "id": "6328"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ZRPLdd965a5f-050a-4d46-9829-4ae4f49610d0",
+                    "@ondc/org/provider_name": "ZRPL",
+                    "tracking": true,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "P8D",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "5190"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "6327",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 10",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "3870"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "3"
+                                },
+                                "maximum": {
+                                    "count": "3"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "1290"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6328",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 5",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1300"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "3"
+                                },
+                                "maximum": {
+                                    "count": "3"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "650"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPLdd965a5f-050a-4d46-9829-4ae4f49610d0",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPLdd965a5f-050a-4d46-9829-4ae4f49610d0",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6328",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6328",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "-10"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}

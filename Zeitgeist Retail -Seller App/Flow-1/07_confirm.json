@@ -5,49 +5,49 @@
         "city": "std:080",
         "action": "confirm",
         "core_version": "1.1.0",
-        "bap_id": "jiomart-buyer.ondcz5.de",
-        "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-        "transaction_id": "75a2aac7-925c-4818-bf06-e5efe57699c2",
-        "message_id": "a49b4311-521d-4309-b7d3-27c45e163db3",
-        "timestamp": "2023-05-31T05:16:58.108Z",
-        "ttl": "PT30S",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "transaction_id": "33b71513-424b-40c1-81dc-7d5c02b94584",
+        "message_id": "ee31dd30-f6fd-4438-a1a4-13a8a87882ee",
+        "timestamp": "2023-08-03T07:00:33.321Z",
         "bpp_id": "ondc-preprod.zeppstore.in",
-        "bpp_uri": "https://ondc-preprod.zeppstore.in"
+        "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "1fde4d7e-8200-44c2-99f7-d506c0ec576e",
+            "id": "2023-08-03-714365",
             "state": "Created",
             "billing": {
-                "name": "rajath",
                 "address": {
-                    "name": "rajath",
-                    "building": "molhalli",
-                    "locality": "panchayat office",
-                    "city": "Kakkunje",
+                    "name": "Sudarshan",
+                    "building": "near bridge",
+                    "locality": "HSR street",
+                    "city": "Bengaluru",
                     "state": "Karnataka",
                     "country": "IND",
-                    "area_code": "576222"
+                    "area_code": "560102"
                 },
-                "email": "ondc@zrpl.co.in",
-                "phone": "9980285954",
-                "created_at": "2023-05-31T05:09:55.946Z",
-                "updated_at": "2023-05-31T05:09:55.946Z"
+                "phone": "6362276770",
+                "name": "Sudarshan",
+                "email": "api@zrpl.co.in",
+                "created_at": "2023-08-03T06:59:42.024Z",
+                "updated_at": "2023-08-03T06:59:42.024Z"
             },
             "items": [
                 {
-                    "fulfillment_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                    "id": "6333",
+                    "id": "6327",
                     "quantity": {
-                        "count": 1
-                    }
+                        "count": 2
+                    },
+                    "fulfillment_id": "ZRPL1dbae1cc-f0e5-473a-9127-33a4cf5c50cf"
                 },
                 {
-                    "fulfillment_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                    "id": "6332",
+                    "id": "6328",
                     "quantity": {
-                        "count": 1
-                    }
+                        "count": 2
+                    },
+                    "fulfillment_id": "ZRPL1dbae1cc-f0e5-473a-9127-33a4cf5c50cf"
                 }
             ],
             "provider": {
@@ -60,25 +60,24 @@
             },
             "fulfillments": [
                 {
-                    "id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
+                    "id": "ZRPL1dbae1cc-f0e5-473a-9127-33a4cf5c50cf",
                     "end": {
-                        "person": {
-                            "name": "rajath"
-                        },
                         "contact": {
-                            "email": "ondc@zrpl.co.in",
-                            "phone": "9980285954"
+                            "phone": "6362276770"
+                        },
+                        "person": {
+                            "name": "Sudarshan"
                         },
                         "location": {
-                            "gps": "13.5740765,74.7863698",
+                            "gps": "12.9140160000001, 77.6371740000001",
                             "address": {
-                                "name": "rajath",
-                                "building": "molhalli",
-                                "locality": "panchayat office",
-                                "city": "Kakkunje",
+                                "name": "Sudarshan",
+                                "building": "near bridge",
+                                "locality": "HSR street",
+                                "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "IND",
-                                "area_code": "576222"
+                                "area_code": "560102"
                             }
                         }
                     },
@@ -86,16 +85,18 @@
                 }
             ],
             "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
                 "params": {
-                    "amount": "100",
+                    "amount": "3900",
                     "currency": "INR",
-                    "transaction_id": "20230531011650000870618366955183807"
+                    "transaction_id": "33b71513-424b-40c1-81dc-7d5c02b94584"
                 },
                 "status": "PAID",
                 "type": "ON-ORDER",
                 "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "2",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
@@ -113,140 +114,86 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "100"
+                    "value": "3900"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "6332",
+                        "@ondc/org/item_id": "6327",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
-                        "title": "Rice Biscuits",
+                        "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 10",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "60"
+                            "value": "2580"
                         },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "60"
+                                "value": "1290"
                             }
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                        "title": "Delivery charges",
-                        "@ondc/org/title_type": "delivery",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                        "title": "Packing charges",
-                        "@ondc/org/title_type": "packing",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "6332",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "6332",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                        "title": "Convenience Fee",
-                        "@ondc/org/title_type": "misc",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "6333",
+                        "@ondc/org/item_id": "6328",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
-                        "title": "Rice Papad",
+                        "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 5",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "40"
+                            "value": "1300"
                         },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "40"
+                                "value": "650"
                             }
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
+                        "@ondc/org/item_id": "ZRPL1dbae1cc-f0e5-473a-9127-33a4cf5c50cf",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "10"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
+                        "@ondc/org/item_id": "ZRPL1dbae1cc-f0e5-473a-9127-33a4cf5c50cf",
                         "title": "Packing charges",
                         "@ondc/org/title_type": "packing",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "10"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "6333",
+                        "@ondc/org/item_id": "6327",
                         "title": "Tax",
                         "@ondc/org/title_type": "tax",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "10"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "6333",
+                        "@ondc/org/item_id": "6327",
                         "title": "Discount",
                         "@ondc/org/title_type": "discount",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                        "title": "Convenience Fee",
-                        "@ondc/org/title_type": "misc",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
+                            "value": "-10"
                         }
                     }
                 ],
                 "ttl": "P1D"
             },
-            "created_at": "2023-05-31T05:16:58.108Z",
-            "updated_at": "2023-05-31T05:16:58.108Z"
+            "created_at": "2023-08-03T07:00:33.321Z",
+            "updated_at": "2023-08-03T07:00:33.321Z"
         }
     }
 }
