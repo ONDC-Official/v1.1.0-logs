@@ -12,6 +12,7 @@
 
 **/on_init**
 - City code mismatch in search & on_init
+- context/timestamp difference between /on_init and /init should be smaller than 5 sec
 
 **/confirm**
 - City code mismatch in /search and /confirm
