@@ -1,0 +1,144 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+        "bpp_id": "api2.kiko.link/ondc-seller",
+        "bpp_uri": "https://api2.kiko.link/ondc-seller",
+        "transaction_id": "7e7835c2-759e-4197-9db9-f3c2981d58ac",
+        "message_id": "fcbd6c7a-bb71-4872-9a56-b36946188faf",
+        "city": "std:022",
+        "country": "IND",
+        "timestamp": "2023-08-02T10:56:55.549Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "648170d3ffeacc1f96700ac6"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "fulfillment-648170d3ffeacc1f96700ac6",
+                    "id": "64b13a737578ca94686a5bd5"
+                },
+                {
+                    "fulfillment_id": "fulfillment-648170d3ffeacc1f96700ac6",
+                    "id": "64a963085a37f9d578bef8f9"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "fulfillment-648170d3ffeacc1f96700ac6",
+                    "@ondc/org/provider_name": "vishal shop",
+                    "tracking": true,
+                    "@ondc/org/category": "Grocery",
+                    "@ondc/org/TAT": "PT90M",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": 537.3726
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "64b13a737578ca94686a5bd5",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Maggie",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "30.40"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "50"
+                                },
+                                "maximum": {
+                                    "count": "50"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "30.40"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "64a963085a37f9d578bef8f9",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Amul Ghee",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "200.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "1505"
+                                },
+                                "maximum": {
+                                    "count": "1505"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "200.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "DEL1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": 55
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "P1",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": 232
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "T1",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": 1.6
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "C1",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": 18.372600000000002
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}
