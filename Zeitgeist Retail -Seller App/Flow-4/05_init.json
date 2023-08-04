@@ -5,14 +5,14 @@
         "city": "std:080",
         "action": "init",
         "core_version": "1.1.0",
-        "bap_id": "jiomart-buyer.ondcz5.de",
-        "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-        "transaction_id": "d2e58566-26d7-43c5-a852-727e1b861aca",
-        "message_id": "f4cfc0c5-0cad-46fb-9c6d-7f8d5bd41bb5",
-        "timestamp": "2023-06-02T06:34:08.848Z",
-        "ttl": "PT30S",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "transaction_id": "a6e91c5a-d232-44bb-a3e8-244bdb34fdc1",
+        "message_id": "31fc808e-789a-46f8-b2dc-42a01bcd640b",
+        "timestamp": "2023-08-03T09:53:25.643Z",
         "bpp_id": "ondc-preprod.zeppstore.in",
-        "bpp_uri": "https://ondc-preprod.zeppstore.in"
+        "ttl": "PT30S"
     },
     "message": {
         "order": {
@@ -26,58 +26,59 @@
             },
             "items": [
                 {
-                    "id": "6332",
+                    "id": "6327",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     },
-                    "fulfillment_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c"
+                    "fulfillment_id": "ZRPL852b486d-4ffb-4c3f-8ddd-0e987a9cb418"
                 },
                 {
-                    "id": "6333",
+                    "id": "6328",
                     "quantity": {
                         "count": 3
                     },
-                    "fulfillment_id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c"
+                    "fulfillment_id": "ZRPL852b486d-4ffb-4c3f-8ddd-0e987a9cb418"
                 }
             ],
             "billing": {
                 "address": {
-                    "name": "reevant",
-                    "building": "hebbal",
-                    "locality": "Sector 5",
+                    "door": "near bridge",
+                    "building": "near bridge",
                     "city": "Bengaluru",
                     "state": "Karnataka",
                     "country": "IND",
-                    "area_code": "560102"
+                    "area_code": "560102",
+                    "locality": "HSR street",
+                    "name": "Sudarshan"
                 },
-                "phone": "9980292362",
-                "name": "reevant",
-                "email": "revant@gmail.com",
-                "created_at": "2023-06-02T06:34:08.848Z",
-                "updated_at": "2023-06-02T06:34:08.848Z"
+                "phone": "6362276770",
+                "name": "Sudarshan",
+                "email": "api@zrpl.co.in",
+                "created_at": "2023-08-03T09:53:25.643Z",
+                "updated_at": "2023-08-03T09:53:25.643Z"
             },
             "fulfillments": [
                 {
-                    "id": "ZRPL04fc5137-f495-48cc-b7bd-54cf05dca58c",
+                    "id": "ZRPL852b486d-4ffb-4c3f-8ddd-0e987a9cb418",
+                    "type": "Delivery",
                     "end": {
                         "contact": {
-                            "phone": "9980292362"
+                            "email": "api@zrpl.co.in",
+                            "phone": "6362276770"
                         },
                         "location": {
-                            "gps": "12.911862,77.6445923",
+                            "gps": "12.9140160000001, 77.6371740000001",
                             "address": {
-                                "name": "reevant",
-                                "building": "hebbal",
-                                "locality": "Sector 5",
+                                "name": "Sudarshan",
+                                "building": "near bridge",
+                                "locality": "HSR street",
                                 "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "IND",
-                                "areaCode": "560102",
                                 "area_code": "560102"
                             }
                         }
-                    },
-                    "type": "Delivery"
+                    }
                 }
             ]
         }
