@@ -1,270 +1,251 @@
 {
   "context": {
-    "domain": "FIS10",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
-    "message_id": "c615434e-3915-4d60-867f-60d9f584f305",
-    "transaction_id": "f81916bd-6ceb-48c2-a8dc-520784662b4d",
-    "bpp_id": "ondc.vistar.solutions",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "location": {
-      "city": {
-        "code": "std:080"
+      "domain": "ONDC:FIS10",
+      "bap_id": "b2bapi-stage.spicesmartshop.com",
+      "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+      "message_id": "13f73f18-4553-453c-95ae-a1c88e463cd8",
+      "transaction_id": "c4774be3-ec51-4f0c-970a-e9d5e15dcd79",
+      "bpp_id": "ondc.vistar.solutions",
+      "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+      "location": {
+          "city": {
+              "code": "std:080"
+          },
+          "country": {
+              "code": "IND"
+          }
       },
-      "country": {
-        "code": "IND"
-      }
-    },
-    "action": "on_confirm",
-    "version": "1.0.0",
-    "timestamp": "2023-07-28T18:00:22.450Z"
+      "action": "on_confirm",
+      "version": "1.0.0",
+      "timestamp": "2023-08-04T15:54:53.561Z"
   },
   "message": {
-    "order": {
-      "id": "9399ac49-c09b-4dc1-8700-5f3383f17f04",
-      "status": "ACCEPTED",
-      "provider": {
-        "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
-      },
-      "items": [
-        {
-          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
-          "price": {
-            "currency": "INR",
-            "value": "1000"
+      "order": {
+          "id": "477c8335-d7d3-4eff-be37-48f914071a7e",
+          "status": "ACCEPTED",
+          "provider": {
+              "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
           },
-          "quantity": {
-            "selected": {
-              "count": 1
-            }
-          },
-          "fulfillment_ids": [
-            "F2"
-          ],
-          "cancellation_terms": [
-            {
-              "cancel_eligible": false
-            }
-          ],
-          "return_terms": [
-            {
-              "return_eligible": false
-            }
-          ],
-          "tags": [
-            {
-              "descriptor": {
-                "code": "DENOMINATION"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "FIXED_AMOUNT"
+          "items": [
+              {
+                  "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+                  "price": {
+                      "currency": "INR",
+                      "value": "1000"
                   },
-                  "value": "1000"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "CUSTOMIZATION"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "RECEIVER_NAME"
+                  "quantity": {
+                      "selected": {
+                          "count": 1
+                      }
                   },
-                  "value": "Sagar"
-                },
-                {
-                  "descriptor": {
-                    "code": "MESSAGE"
-                  },
-                  "value": "Test for log collection"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "billing": {
-        "name": "kunal",
-        "address": "A wing",
-        "state": {
-          "name": "Maharashtra",
-          "code": "MA"
-        },
-        "city": {
-          "name": "Pune",
-          "code": "PU"
-        },
-        "email": "TestNum@gmail.com",
-        "phone": "7064032212"
-      },
-      "fulfillments": [
-        {
-          "id": "F2",
-          "type": "EMAIL",
-          "customer": {
-            "person": {
-              "name": "chandrasekhar"
-            },
-            "contact": {
-              "phone": "+917064032212",
-              "email": "TestNum@gmail.com"
-            }
-          },
-          "stops": [
-            {
-              "id": "0",
-              "contact": {
-                "phone": "9988776655",
-                "email": "sagar.revanna1312323423@eminds.ai"
-              },
-              "person": {
-                "name": "Sagar"
+                  "fulfillment_ids": [
+                      "F2"
+                  ],
+                  "cancellation_terms": [
+                      {
+                          "cancel_eligible": false
+                      }
+                  ],
+                  "return_terms": [
+                      {
+                          "return_eligible": false
+                      }
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "DENOMINATION"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "FIXED_AMOUNT"
+                                  },
+                                  "value": "1000"
+                              }
+                          ]
+                      }
+                  ]
               }
-            }
-          ]
-        }
-      ],
-      "quote": {
-        "price": {
-          "currency": "INR",
-          "value": "900"
-        },
-        "breakup": [
-          {
-            "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+          ],
+          "billing": {
+              "name": "test",
+              "address": "121",
+              "state": {
+                  "name": "Madhya Pradesh",
+                  "code": "MA"
+              },
+              "city": {
+                  "name": "Jabalpur",
+                  "code": "JA"
+              },
+              "email": "chandershekar@gmail.com",
+              "phone": "7064032212"
+          },
+          "fulfillments": [
+              {
+                  "id": "F2",
+                  "type": "EMAIL",
+                  "customer": {
+                      "person": {
+                          "name": "Chandershekhar"
+                      },
+                      "contact": {
+                          "phone": "+917064032212",
+                          "email": "chandershekar@gmail.com"
+                      }
+                  },
+                  "stops": [
+                      {
+                          "id": "0",
+                          "contact": {
+                              "phone": "9988776655",
+                              "email": "sagar.revanna123098654232@eminds.ai"
+                          },
+                          "person": {
+                              "name": "Sagar "
+                          }
+                      }
+                  ]
+              }
+          ],
+          "quote": {
               "price": {
-                "currency": "INR",
-                "value": "1000"
+                  "currency": "INR",
+                  "value": "900"
               },
-              "quantity": {
-                "selected": {
-                  "count": 1
-                }
+              "breakup": [
+                  {
+                      "item": {
+                          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+                          "price": {
+                              "currency": "INR",
+                              "value": "1000"
+                          },
+                          "quantity": {
+                              "selected": {
+                                  "count": 1
+                              }
+                          }
+                      },
+                      "title": "item",
+                      "price": {
+                          "currency": "INR",
+                          "value": "1000"
+                      }
+                  },
+                  {
+                      "item": {
+                          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+                      },
+                      "title": "convenience fee",
+                      "price": {
+                          "currency": "INR",
+                          "value": "0"
+                      }
+                  },
+                  {
+                      "item": {
+                          "id": "4fa84203-b5a3-4ba1-be53-5615f03df271"
+                      },
+                      "title": "offer",
+                      "price": {
+                          "currency": "INR",
+                          "value": "-100"
+                      }
+                  },
+                  {
+                      "item": {
+                          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+                      },
+                      "title": "tax",
+                      "price": {
+                          "currency": "INR",
+                          "value": "0"
+                      }
+                  }
+              ],
+              "ttl": "P1D"
+          },
+          "payments": [
+              {
+                  "collected_by": "BAP",
+                  "url": "https://razorpay.com/",
+                  "params": {
+                      "transaction_id": "order_MM32NUI487qwAQ",
+                      "amount": "900",
+                      "currency": "INR"
+                  },
+                  "type": "ON-ORDER",
+                  "status": "PAID",
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "BUYER_FINDER_FEES"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                                  },
+                                  "value": "3"
+                              }
+                          ]
+                      },
+                      {
+                          "descriptor": {
+                              "code": "SETTLEMENT_DETAILS"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "settlement_type"
+                                  },
+                                  "value": "neft"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "settlement_bank_account_no"
+                                  },
+                                  "value": "11112222333"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "beneficiary_name"
+                                  },
+                                  "value": "test1"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "bank_name"
+                                  },
+                                  "value": "icici"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "branch_name"
+                                  },
+                                  "value": "banglore"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "ifsc_code"
+                                  },
+                                  "value": "ifsc1111"
+                              },
+                              {
+                                  "descriptor": {
+                                      "code": "settlement_counterparty"
+                                  },
+                                  "value": "BPP"
+                              }
+                          ]
+                      }
+                  ]
               }
-            },
-            "title": "item",
-            "price": {
-              "currency": "INR",
-              "value": "1000"
-            }
-          },
-          {
-            "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
-            },
-            "title": "convenience fee",
-            "price": {
-              "currency": "INR",
-              "value": "0"
-            }
-          },
-          {
-            "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
-            },
-            "title": "offer",
-            "price": {
-              "currency": "INR",
-              "value": "-100"
-            }
-          },
-          {
-            "item": {
-              "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264"
-            },
-            "title": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "0"
-            }
-          }
-        ],
-        "ttl": "P1D"
-      },
-      "payments": [
-        {
-          "collected_by": "BAP",
-          "url": "https://razorpay.com/",
-          "params": {
-            "transaction_id": "order_MJJR3AHAiCTdvU",
-            "amount": "900",
-            "currency": "INR"
-          },
-          "type": "ON-ORDER",
-          "status": "PAID",
-          "tags": [
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEES"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "BUYER_FINDER_FEES_PERCENTAGE"
-                  },
-                  "value": "3"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "SETTLEMENT_DETAILS"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "settlement_type"
-                  },
-                  "value": "neft"
-                },
-                {
-                  "descriptor": {
-                    "code": "settlement_bank_account_no"
-                  },
-                  "value": "298201100008016"
-                },
-                {
-                  "descriptor": {
-                    "code": "beneficiary_name"
-                  },
-                  "value": "Seller 1"
-                },
-                {
-                  "descriptor": {
-                    "code": "bank_name"
-                  },
-                  "value": "Icici"
-                },
-                {
-                  "descriptor": {
-                    "code": "branch_name"
-                  },
-                  "value": "Icici"
-                },
-                {
-                  "descriptor": {
-                    "code": "ifsc_code"
-                  },
-                  "value": "icici1232"
-                },
-                {
-                  "descriptor": {
-                    "code": "settlement_counterparty"
-                  },
-                  "value": "BPP"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "created_at": "2023-07-28T18:00:22.353Z",
-      "updated_at": "2023-07-28T18:00:22.450Z"
-    }
+          ],
+          "created_at": "2023-08-04T15:54:53.391Z",
+          "updated_at": "2023-08-04T15:54:53.561Z"
+      }
   }
 }
