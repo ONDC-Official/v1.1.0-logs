@@ -1,0 +1,53 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://shathabdhi-organics.mytra.money/api/method/ondc/",
+        "transaction_id": "71117878-0f2a-446a-87a5-715738c76f80",
+        "message_id": "c56305fe-d48e-4525-8175-0bf87c6f0682",
+        "timestamp": "2023-08-07T13:28:23.172Z",
+        "bpp_id": "shathabdhi-organics.mytra.money",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "update_target": "billing",
+        "order": {
+            "id": "2023-08-07-539245",
+            "state": "Completed",
+            "provider": {
+                "id": "shathabdhi-organics.mytra.money"
+            },
+            "items": [
+                {
+                    "id": "STO-ITEM-2023-00013-500 Gms:Manikonda - S",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "tags": {
+                        "update_type": "return",
+                        "reason_code": "003",
+                        "ttl_approval": "",
+                        "ttl_reverseqc": "P3D",
+                        "image": ""
+                    }
+                }
+            ],
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "buyer",
+                        "settlement_phase": "refund",
+                        "settlement_type": "upi",
+                        "settlement_amount": "140",
+                        "settlement_timestamp": "2023-08-07T13:28:23.174Z"
+                    }
+                ]
+            }
+        }
+    }
+}
