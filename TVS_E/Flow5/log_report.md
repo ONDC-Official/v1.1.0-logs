@@ -1,8 +1,4 @@
-**/on_search**
-- Either one of fixed (range) or split (frequency and times) timings should be provided in /bpp/providers[0]/locations[0]/time
-
 **/on_select**
-- tax line item should not be present if price=0
 - Warning: Quoted Price in /on_select INR 25198 does not match with the total price of items in /select INR 55216
 
 **/on_init**
