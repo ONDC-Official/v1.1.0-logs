@@ -1,0 +1,194 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "api2.kiko.link/ondc-seller",
+        "bpp_uri": "https://api2.kiko.link/ondc-seller",
+        "transaction_id": "8b6a5ff6-000c-4723-bc82-589be9177079",
+        "message_id": "75edfd48-b6cb-4402-a70b-c88404173cdc",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-08-09T10:22:21.330Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-09-144267",
+            "state": "Completed",
+            "items": [
+                {
+                    "quantity": {
+                        "count": 1
+                    },
+                    "id": "64afa8b8682cee3b504c4ac7",
+                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86"
+                },
+                {
+                    "id": "64afa80a682cee3b504c4ab1",
+                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "tags": {
+                        "status": "Return_Initiated"
+                    }
+                },
+                {
+                    "id": "64afa80a682cee3b504c4ab1",
+                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": 326.151
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "64afa8b8682cee3b504c4ac7",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Coca Cola Drink",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "47.50"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "47.50"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "64afa80a682cee3b504c4ab1",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Atta Ashirwad",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "190.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "190.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "DEL1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": 60
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "P1",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": 5
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "T1",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": 12.5
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "C1",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": 11.151
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "fulfilments": [
+                {
+                    "id": "fulfillment-64afa47e682cee3b504c4a86",
+                    "@ondc/org/provider_name": "Gururaj",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": true,
+                    "start": {
+                        "location": {
+                            "id": "location-64afa47e682cee3b504c4a86",
+                            "gps": "19.1726,72.9414",
+                            "descriptor": {
+                                "name": "The Shop"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-09T10:47:28.000+00:00",
+                                "end": "2023-08-09T11:02:28.000+00:00"
+                            }
+                        },
+                        "instructions": {
+                            "name": "Pickup instructions",
+                            "short_desc": "Handle with care."
+                        },
+                        "contact": {
+                            "phone": "9619363677",
+                            "email": "gururaj@gmail.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "19.170492, 72.9536110000001",
+                            "address": {
+                                "name": "varun",
+                                "building": "",
+                                "locality": "615, Avior Corporate Park, P&T Colony LBS Road Mulund West 400080 Opposite Indian Oil Petrol Pump",
+                                "city": "Mumbai",
+                                "state": "Maharashtra",
+                                "country": "IND",
+                                "area_code": "400080"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-09T13:17:28.000+00:00",
+                                "end": "2023-08-09T14:17:28.000+00:00"
+                            }
+                        },
+                        "instructions": {
+                            "name": "Dropoff instructions",
+                            "short_desc": "Leave at the doorstep."
+                        },
+                        "contact": {
+                            "phone": "7047472739",
+                            "email": "varun@mailinator.com"
+                        }
+                    },
+                    "rateable": true
+                }
+            ]
+        }
+    }
+}

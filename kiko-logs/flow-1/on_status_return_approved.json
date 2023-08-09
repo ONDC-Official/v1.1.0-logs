@@ -1,0 +1,209 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "api2.kiko.link/ondc-seller",
+        "bpp_uri": "https://api2.kiko.link/ondc-seller",
+        "transaction_id": "0b4e045d-e6da-4c22-ba9d-07675dc7153c",
+        "message_id": "a9a31bb9-7a04-4f70-9d9b-178fde12d5b9",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-08-09T07:32:32.278Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-09-399459",
+            "state": "Completed",
+            "provider": {
+                "id": "64afa47e682cee3b504c4a86",
+                "locations": [
+                    {
+                        "id": "location-64afa47e682cee3b504c4a86"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "quantity": {
+                        "count": 2
+                    },
+                    "id": "64afa80a682cee3b504c4ab1",
+                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86-ReverseQC",
+                    "tags": {
+                        "status": "Return_Approved"
+                    }
+                },
+                {
+                    "quantity": {
+                        "count": 2
+                    },
+                    "id": "64afa8b8682cee3b504c4ac7",
+                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86"
+                }
+            ],
+            "billing": {
+                "address": {
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "IND",
+                    "area_code": "400080",
+                    "locality": "615, Avior Corporate Park, P&T Colony LBS Road Mulund West 400080 Opposite Indian Oil Petrol Pump",
+                    "name": "varun"
+                },
+                "phone": "7047472739",
+                "name": "varun",
+                "email": "varun@mailinator.com",
+                "created_at": "2023-08-09T06:48:50.933Z",
+                "updated_at": "2023-08-09T06:48:50.933Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "fulfillment-64afa47e682cee3b504c4a86-ReverseQC",
+                    "type": "Reverse QC",
+                    "state": {
+                        "descriptor": {
+                            "code": "Return_Approved"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-08-09T13:31:10.000+05:30",
+                                "end": "2023-08-09T13:46:10.000+05:30"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "XYZ1",
+                            "long_desc": "QR code will be attached to package",
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "URL for instructions"
+                            },
+                            "images": [
+                                "proof of pickup"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": 383.098
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "64afa80a682cee3b504c4ab1",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Atta Ashirwad",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "190.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "190.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "64afa8b8682cee3b504c4ac7",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Coca Cola Drink",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "95.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "95.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "DEL1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": 60
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "P1",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": 10
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "T1",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": 15
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "C1",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": 13.098
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": 383.098,
+                    "currency": "INR"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "beneficiary_name": "Smooth Tag Technologies Pvt. Ltd.",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "50200058582942",
+                        "settlement_ifsc_code": "HDFC0000015",
+                        "settlement_phase": "sale-amount",
+                        "settlement_status": "NOT-PAID",
+                        "bank_name": "HDFC BANK LTD ",
+                        "branch_name": "MUMBAI - MULUND (WEST)"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-08-09T06:48:56.561Z",
+            "updated_at": "2023-08-09T07:31:10.745Z"
+        }
+    }
+}

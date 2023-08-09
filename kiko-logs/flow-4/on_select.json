@@ -1,0 +1,144 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "api2.kiko.link/ondc-seller",
+        "bpp_uri": "https://api2.kiko.link/ondc-seller",
+        "transaction_id": "8b6a5ff6-000c-4723-bc82-589be9177079",
+        "message_id": "d02f152c-7027-4059-a223-0e00afbfc209",
+        "city": "std:022",
+        "country": "IND",
+        "timestamp": "2023-08-09T10:16:58.380Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "64afa47e682cee3b504c4a86"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86",
+                    "id": "64afa8b8682cee3b504c4ac7"
+                },
+                {
+                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86",
+                    "id": "64afa80a682cee3b504c4ab1"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "fulfillment-64afa47e682cee3b504c4a86",
+                    "@ondc/org/provider_name": "The Shop",
+                    "tracking": true,
+                    "@ondc/org/category": "Grocery",
+                    "@ondc/org/TAT": "PT90M",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": 326.151
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "64afa8b8682cee3b504c4ac7",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Coca Cola Drink",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "47.50"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "3"
+                                },
+                                "maximum": {
+                                    "count": "3"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "47.50"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "64afa80a682cee3b504c4ab1",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Atta Ashirwad",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "190.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "79"
+                                },
+                                "maximum": {
+                                    "count": "79"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "190.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "DEL1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": 60
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "P1",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": 5
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "T1",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": 12.5
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "C1",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": 11.151
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}
