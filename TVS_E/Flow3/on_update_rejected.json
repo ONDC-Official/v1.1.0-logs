@@ -1,0 +1,191 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc-preprod.tvs-e.in",
+    "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
+    "transaction_id": "671440f4-f13f-4c02-83c4-cb1bce18fbab",
+    "message_id": "ac116235-437e-46ef-a3cb-dd57076b546a",
+    "timestamp": "2023-08-05T05:06:05.103Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-08-05-466812",
+      "state": "Completed",
+      "provider": {
+        "id": "ondc-preprod.tvs-e.in",
+        "locations": [
+          {
+            "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911"
+          }
+        ],
+        "rateable": false
+      },
+      "items": [
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+          "fulfillment_id": "1",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+          "fulfillment_id": "1",
+          "quantity": {
+            "count": 1
+          },
+          "tags": {
+            "status": "Return_Rejected"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "27658.00"
+        },
+        "ttl": "P1D",
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "12599.00"
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "12599.00"
+            },
+            "title": "MSP 250 Star Dot Matrix Printer",
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "15009.00"
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "15009.00"
+            },
+            "title": "LP 46 Lite Thermal Label Printer",
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "50.00"
+            },
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "status": "PAID",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "671440f4-f13f-4c02-83c4-cb1bce18fbab",
+          "amount": "27658.00"
+        },
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "upi_address": "",
+            "bank_name": "HDFC",
+            "branch_name": "Adayar",
+            "settlement_bank_account_no": "1234567890",
+            "settlement_ifsc_code": "IFSC00001",
+            "beneficiary_name": "TVS Electronics Ltd"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "tracking": false,
+          "start": {
+            "location": {
+              "gps": "13.0899102,77.5844989",
+              "descriptor": {
+                "name": "TVS Electronics Ltd"
+              },
+              "address": {
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "area_code": "560034"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-08-05T10:36:05.135Z",
+                "end": "2023-08-05T10:36:05.135Z"
+              },
+              "timestamp": "2023-08-05T05:01:51.116Z"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "13.006289, 77.699349",
+              "address": {
+                "name": "Rajagopal",
+                "building": "test",
+                "locality": "test",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560036",
+                "door": "test"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-08-05T10:36:05.135Z",
+                "end": "2023-08-05T10:36:05.135Z"
+              },
+              "timestamp": "2023-08-05T05:02:49.995Z"
+            },
+            "contact": {
+              "email": "s.rajagopal@tvs-e.in",
+              "phone": "9865569388"
+            }
+          }
+        }
+      ],
+      "created_at": "2023-08-05T04:58:01.930Z",
+      "updated_at": "2023-08-05T05:06:05.103Z"
+    }
+  }
+}
