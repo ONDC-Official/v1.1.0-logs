@@ -1,0 +1,48 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_init",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.viranc.com/p/v1/store",
+		"bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "b3059732-af0c-560e-ab5f-fe7f4fa54dfe",
+		"message_id": "0568b999-9565-554f-8e93-f6d20bfdf14a",
+		"timestamp": "2023-08-08T07:43:07.749"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "grab-logistics"
+			},
+			"items": [
+				{
+					"id": "G79776-52821H"
+				}
+			],
+			"payment": {
+				"type": "ON-ORDER",
+				"collected_by": "BAP"
+			},
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1.0"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "G79776-52821H",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "1.0"
+						}
+					}
+				]
+			}
+		}
+	}
+}

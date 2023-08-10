@@ -1,0 +1,110 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_status",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.viranc.com/p/v1/store",
+		"bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "b3059732-af0c-560e-ab5f-fe7f4fa54dfe",
+		"message_id": "052e1330-947a-fccd-0e7b-36919e056369",
+		"timestamp": "2023-08-08T08:02:53.184Z"
+	},
+	"message": {
+		"order": {
+			"billing": {
+				"address": {
+					"area_code": "400001",
+					"building": "Fort",
+					"city": "Mumbai",
+					"country": "India",
+					"locality": "Fort",
+					"name": "ONDC Test Seller Store",
+					"state": "Maharashtra"
+				},
+				"email": "test@gmail.com",
+				"name": "ONDC Test Seller Store",
+				"phone": "9999999999",
+				"tax_number": "22AAAAA0000A1Z5"
+			},
+			"fulfillments": [
+				{
+					"tracking": true,
+					"end": {
+						"instructions": {
+							"long_desc": "Proof of delivery details",
+							"name": "Proof of delivery",
+							"short_desc": "Proof of delivery details",
+							"images": [
+								""
+							]
+						},
+						"time": {
+							"range": {
+								"end": "2023-08-08T11:49:14.000Z",
+								"start": "2023-08-08T11:34:14.000Z"
+							},
+							"timestamp": "2023-08-08T08:02:53.184Z"
+						}
+					},
+					"start": {
+						"time": {
+							"range": {
+								"end": "2023-08-08T08:14:14.000Z",
+								"start": "2023-08-08T07:59:14.000Z"
+							},
+							"timestamp": "2023-08-08T07:59:09.000Z"
+						}
+					},
+					"type": "Prepaid",
+					"state": {
+						"descriptor": {
+							"code": "Order-delivered"
+						}
+					},
+					"agent": {
+						"name": "Gayatri Deshmukh",
+						"phone": "8879054410"
+					}
+				}
+			],
+			"items": [
+				{
+					"descriptor": {
+						"code": "P2P"
+					},
+					"category_id": "Same Day Delivery",
+					"id": "G79776-52821H"
+				}
+			],
+			"provider": {
+				"id": "grab-logistics"
+			},
+			"payment": {
+				"type": "ON-ORDER",
+				"collected_by": "BAP"
+			},
+			"id": "e206fdf1-987f-4801-8421-c8e545ce949e",
+			"state": "Completed",
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1.0"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "G79776-52821H",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "1.0"
+						}
+					}
+				]
+			}
+		}
+	}
+}
