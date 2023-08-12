@@ -1,0 +1,199 @@
+"on_cancel": {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_cancel",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.bitsila.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-08-11T13:28:35.114Z",
+      "message_id": "e203938a-354f-45e0-a518-53b9bf00eb95",
+      "core_version": "1.1.0",
+      "transaction_id": "3003d617-5b6e-4000-91f2-de965c4a4ad2"
+    },
+    "message": {
+      "order": {
+        "id": "2023-08-11-970974",
+        "tags": {
+          "cancellation_reason_id": "001"
+        },
+        "items": [
+          {
+            "id": "11131",
+            "quantity": {
+              "count": 2
+            },
+            "fulfillment_id": "FPA:699:::88276"
+          },
+          {
+            "id": "10913",
+            "quantity": {
+              "count": 3
+            },
+            "fulfillment_id": "FPA:699:::88276"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "420.3",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "11131",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "price": {
+                "value": "200.0",
+                "currency": "INR"
+              },
+              "title": "Amul Elaichi Srikhand",
+              "@ondc/org/item_id": "11131",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 2
+              }
+            },
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "10913",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "price": {
+                "value": "210.0",
+                "currency": "INR"
+              },
+              "title": "Amul Gold Homogenised Standardised Milk",
+              "@ondc/org/item_id": "10913",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 3
+              }
+            },
+            {
+              "price": {
+                "value": "10.3",
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:::88276",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "state": "Cancelled",
+        "billing": {
+          "name": "Darshan Hsr Layout",
+          "email": "darshan.s@bitsila.com",
+          "phone": "8151000066",
+          "address": {
+            "city": "Bengaluru",
+            "name": "Darshan Hsr Layout",
+            "state": "Karnataka",
+            "country": "IND",
+            "building": "police station",
+            "locality": "27th Main Rd, 1st Sector, HSR Layout",
+            "area_code": "560102"
+          },
+          "created_at": "2023-08-11T13:25:12.791Z",
+          "updated_at": "2023-08-11T13:25:12.791Z"
+        },
+        "payment": {
+          "uri": "https://juspay.in/",
+          "type": "ON-FULFILLMENT",
+          "params": {
+            "amount": "420.3",
+            "currency": "INR",
+            "transaction_id": "3003d617-5b6e-4000-91f2-de965c4a4ad2"
+          },
+          "status": "NOT-PAID",
+          "tl_method": "http/get",
+          "collected_by": "BPP",
+          "@ondc/org/settlement_details": [
+            {
+              "bank_name": "Axis Bank",
+              "branch_name": "Kathriguppe",
+              "settlement_type": "rtgs",
+              "beneficiary_name": "Innobits Solutions Pvt Ltd Nodal Account",
+              "settlement_phase": "sale-amount",
+              "settlement_ifsc_code": "UTIB0003190",
+              "settlement_counterparty": "seller-app",
+              "settlement_bank_account_no": "922020043291840"
+            }
+          ],
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+        },
+        "provider": {
+          "id": "1016:699",
+          "rateable": true,
+          "locations": [
+            {
+              "id": "L:1016:699"
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:::88276",
+            "end": {
+              "person": {
+                "name": "Darshan Hsr Layout"
+              },
+              "contact": {
+                "email": "darshan.s@bitsila.com",
+                "phone": "8151000066"
+              },
+              "location": {
+                "gps": "12.9140160000001, 77.6371740000001",
+                "address": {
+                  "city": "Bengaluru",
+                  "name": "Darshan Hsr Layout",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "building": "police station",
+                  "locality": "27th Main Rd, 1st Sector, HSR Layout",
+                  "area_code": "560102"
+                }
+              }
+            },
+            "type": "Delivery",
+            "start": {
+              "contact": {
+                "email": "",
+                "phone": "8745784512"
+              },
+              "location": {
+                "id": "L:1016:699",
+                "gps": "12.9120511, 77.64828869999999",
+                "descriptor": {
+                  "name": "DS super market - DS super market hsr layout"
+                }
+              }
+            },
+            "state": {
+              "descriptor": {
+                "code": "Pending",
+                "name": "Pending"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
