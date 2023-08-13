@@ -1,0 +1,88 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "issue",
+		"core_version": "1.0.0",
+		"bap_id": "buyer-app.ondc.org",
+		"bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+		"bpp_uri": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833",
+		"transaction_id": "ab25c751-910e-45b9-8048-bc1bad371d76",
+		"message_id": "0a84af59-c98d-434b-8226-91efd3dad998",
+		"timestamp": "2023-08-10T06:22:12.451Z",
+		"bpp_id": "ushopmicro-stage.hulcd.com",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"issue": {
+			"id": "ac1547fb-a4cc-4b06-9f7c-dfe3a096acaf",
+			"category": "ITEM",
+			"sub_category": "ITM01",
+			"complainant_info": {
+				"person": {
+					"name": "My Shop"
+				},
+				"contact": {
+					"phone": "9123456789",
+					"email": "myshop12@gmail.com"
+				}
+			},
+			"order_details": {
+				"id": "2023-08-10-359554",
+				"state": "Created",
+				"items": [{
+					"id": "10000382",
+					"quantity": 1
+				}],
+				"fulfillments": [{
+					"id": "HUL-330949D-P8056"
+				}],
+				"provider_id": "HUL-330949D-P8056"
+			},
+			"description": {
+				"short_desc": "NA",
+				"long_desc": "NA",
+				"additional_desc": {
+					"url": "https://buyerapp.com/additonal-details/desc.txt",
+					"content_type": "text/plain"
+				},
+				"images": []
+			},
+			"source": {
+				"network_participant_id": "buyer-app.ondc.org",
+				"type": "CONSUMER"
+			},
+			"expected_response_time": {
+				"duration": "PT1H"
+			},
+			"expected_resolution_time": {
+				"duration": "P1D"
+			},
+			"status": "OPEN",
+			"issue_type": "ISSUE",
+			"issue_actions": {
+				"complainant_actions": [{
+					"complainant_action": "OPEN",
+					"short_desc": "Complaint created",
+					"updated_at": "2023-08-10T06:22:12.451Z",
+					"updated_by": {
+						"org": {
+							"name": "buyer-app.ondc.org::nic2004:52110"
+						},
+						"contact": {
+							"phone": "6239083807",
+							"email": "Rishabhnand.singh@ondc.org"
+						},
+						"person": {
+							"name": "Rishabhnand Singh"
+						}
+					}
+				}],
+				"respondent_actions": []
+			},
+			"created_at": "2023-08-10T06:22:12.364Z",
+			"updated_at": "2023-08-10T06:22:12.364Z"
+		}
+	}
+}
