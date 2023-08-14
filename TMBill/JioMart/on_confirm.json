@@ -1,0 +1,147 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "on_confirm",
+    "bap_id": "jiomart-buyer.ondcz5.de",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-14T10:24:11.836Z",
+    "message_id": "aa7ea62c-2034-44d1-a952-f64f9de1afd9",
+    "core_version": "1.1.0",
+    "transaction_id": "40617539-295d-4eb9-aa29-cfdb46558ea3"
+  },
+  "message": {
+    "order": {
+      "id": "26b2ee67-08a0-4b60-b671-c8b7fc4c7969",
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "ttl": "PT1H",
+        "price": { "value": "384.5", "currency": "INR" },
+        "breakup": [
+          {
+            "item": {
+              "price": { "value": "110", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 101 },
+                "available": { "count": 101 }
+              }
+            },
+            "price": { "value": "110", "currency": "INR" },
+            "title": "Egg Curry",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 102 },
+                "available": { "count": 102 }
+              }
+            },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Egg Bhurji",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "15.50", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "59", "currency": "INR" },
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "state": "Created",
+      "billing": {
+        "name": "John Doe",
+        "email": "sid@gmail.com",
+        "phone": "9765995955",
+        "address": {
+          "city": "Bengaluru",
+          "name": "John Doe",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Bangalure",
+          "locality": "Bangalure",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-14T10:23:01.746Z",
+        "updated_at": "2023-08-14T10:23:01.746Z"
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "params": {
+          "amount": "384.5",
+          "currency": "INR",
+          "transaction_id": "20230814011650000897874668441737265"
+        },
+        "status": "PAID",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "upi_address": "BHARATPE5020620068@yesbankltd",
+            "settlement_type": "upi",
+            "settlement_phase": "sale-amount",
+            "settlement_counterparty": "seller-app"
+          }
+        ],
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "2"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "created_at": "2023-08-14T10:24:11.836Z",
+      "updated_at": "2023-08-14T10:24:14.847Z",
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "person": { "name": "John Doe" },
+            "contact": { "email": "sid@gmail.com", "phone": "9765995955" },
+            "location": {
+              "gps": "12.969807,77.749963",
+              "address": {
+                "city": "Bengaluru",
+                "name": "John Doe",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Bangalure",
+                "locality": "Bangalure",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "state": { "descriptor": { "code": "Pending", "name": "Pending" } },
+          "tracking": false
+        }
+      ]
+    }
+  }
+}

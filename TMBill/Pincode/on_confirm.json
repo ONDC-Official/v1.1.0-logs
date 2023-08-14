@@ -1,0 +1,121 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "on_confirm",
+    "bap_id": "shopping-api-testing.phonepe.com",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-14T10:08:54.164Z",
+    "message_id": "CONOMS2308141538540376232757",
+    "core_version": "1.1.0",
+    "transaction_id": "C2308141537062213850222"
+  },
+  "message": {
+    "order": {
+      "id": "OD2308141538537176232561",
+      "items": [
+        {
+          "id": "2775198::901000::G-1",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "price": { "value": "159.00", "currency": "INR" },
+        "breakup": [
+          {
+            "item": { "price": { "value": "95.24", "currency": "INR" } },
+            "price": { "value": "95.24", "currency": "INR" },
+            "title": "Non Veg Biryani (Spl)",
+            "@ondc/org/item_id": "2775198::901000::G-1",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "4.76", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775198::901000::G-1",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "59.00", "currency": "INR" },
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "state": "Created",
+      "billing": {
+        "name": "Hemanth",
+        "phone": "8143353351",
+        "address": {
+          "city": "Bengaluru",
+          "name": "Tell",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Test-Tmbill",
+          "locality": "----",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-14T10:08:50.000Z",
+        "updated_at": "2023-08-14T10:08:50.000Z"
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "params": {
+          "amount": "159.00",
+          "currency": "INR",
+          "transaction_id": "OMT2308141538537176232507",
+          "transaction_status": "COMPLETED"
+        },
+        "status": "PAID",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "upi_address": "BHARATPE5020620068@yesbankltd",
+            "settlement_type": "upi",
+            "settlement_phase": "sale-amount",
+            "settlement_counterparty": "seller-app"
+          }
+        ],
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "created_at": "2023-08-14T10:08:54.164Z",
+      "updated_at": "2023-08-14T10:08:55.439Z",
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "person": { "name": "Hemanth" },
+            "contact": { "phone": "8143353351" },
+            "location": {
+              "gps": "12.969276428223,77.740005493164",
+              "address": {
+                "city": "Bengaluru",
+                "name": "Tell",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Test-Tmbill",
+                "locality": "----",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "state": { "descriptor": { "code": "Pending", "name": "Pending" } },
+          "tracking": true
+        }
+      ]
+    }
+  }
+}

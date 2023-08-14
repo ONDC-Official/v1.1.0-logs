@@ -1,0 +1,75 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "init",
+    "bap_id": "jiomart-buyer.ondcz5.de",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-14T10:23:01.746Z",
+    "message_id": "6c016b56-7def-488b-b412-10ad23ca71c5",
+    "core_version": "1.1.0",
+    "transaction_id": "40617539-295d-4eb9-aa29-cfdb46558ea3"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "billing": {
+        "name": "John Doe",
+        "email": "sid@gmail.com",
+        "phone": "9765995955",
+        "address": {
+          "city": "Bengaluru",
+          "name": "John Doe",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Bangalure",
+          "locality": "Bangalure",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-14T10:23:01.746Z",
+        "updated_at": "2023-08-14T10:23:01.746Z"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "contact": { "phone": "9765995955" },
+            "location": {
+              "gps": "12.969807,77.749963",
+              "address": {
+                "city": "Bengaluru",
+                "name": "John Doe",
+                "state": "Karnataka",
+                "country": "IND",
+                "areaCode": "560066",
+                "building": "Bangalure",
+                "locality": "Bangalure",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ]
+    }
+  }
+}

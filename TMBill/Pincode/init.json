@@ -1,0 +1,69 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "init",
+    "bap_id": "shopping-api-testing.phonepe.com",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc/",
+    "country": "IND",
+    "timestamp": "2023-08-14T10:08:51.229Z",
+    "message_id": "INIM2308141538509556160648",
+    "core_version": "1.1.0",
+    "transaction_id": "C2308141537062213850222"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775198::901000::G-1",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "billing": {
+        "name": "Hemanth",
+        "phone": "8143353351",
+        "address": {
+          "city": "Bengaluru",
+          "name": "Tell",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Test-Tmbill",
+          "locality": "----",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-14T10:08:50.000Z",
+        "updated_at": "2023-08-14T10:08:50.000Z"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "contact": { "phone": "8143353351" },
+            "location": {
+              "gps": "12.969276428223,77.740005493164",
+              "address": {
+                "city": "Bengaluru",
+                "name": "Tell",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Test-Tmbill",
+                "locality": "----",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "provider_id": "staging.tmbill.com/tp/v1/ondc"
+        }
+      ]
+    }
+  }
+}

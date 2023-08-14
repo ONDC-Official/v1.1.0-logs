@@ -1,0 +1,79 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "issue",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-14T10:33:25.475Z",
+    "message_id": "ec0ac19f-8976-4392-9604-607c838514ac",
+    "core_version": "1.0.0",
+    "transaction_id": "4d490e90-3a48-4c2b-9ac6-1cdbf51837e8"
+  },
+  "message": {
+    "issue": {
+      "id": "272650b3-e86c-4ca6-87eb-c0178698c17b",
+      "source": {
+        "type": "CONSUMER",
+        "network_participant_id": "buyer-app-preprod.ondc.org"
+      },
+      "status": "OPEN",
+      "category": "ITEM",
+      "created_at": "2023-08-14T10:33:23.951Z",
+      "issue_type": "ISSUE",
+      "updated_at": "2023-08-14T10:33:23.951Z",
+      "description": {
+        "images": [
+          "https://buyer-app-preprod.ondc.org/issueApis/uploads/1692009205479.png"
+        ],
+        "long_desc": "Need Refund",
+        "short_desc": "Item quality is not upto the mark",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        }
+      },
+      "sub_category": "ITM04",
+      "issue_actions": {
+        "respondent_actions": [],
+        "complainant_actions": [
+          {
+            "short_desc": "Complaint created",
+            "updated_at": "2023-08-14T10:33:25.480Z",
+            "updated_by": {
+              "org": { "name": "buyer-app-preprod.ondc.org::nic2004:52110" },
+              "person": { "name": "Rishabhnand Singh" },
+              "contact": {
+                "email": "Rishabhnand.singh@ondc.org",
+                "phone": "6239083807"
+              }
+            },
+            "complainant_action": "OPEN"
+          }
+        ]
+      },
+      "order_details": {
+        "id": "2023-08-14-908605",
+        "items": [
+          { "id": "2775202::1155941::EP09", "quantity": 1 },
+          { "id": "2775200::1155939::EP07", "quantity": 2 }
+        ],
+        "state": "Completed",
+        "provider_id": "22446688739675",
+        "fulfillments": [
+          { "id": "22446688739675_fulfillment_1", "state": "Pending" }
+        ]
+      },
+      "complainant_info": {
+        "person": { "name": "John Doe" },
+        "contact": { "email": "xifelo7871@fulwark.com", "phone": "9090999900" }
+      },
+      "expected_response_time": { "duration": "PT1H" },
+      "expected_resolution_time": { "duration": "P1D" }
+    }
+  }
+}
