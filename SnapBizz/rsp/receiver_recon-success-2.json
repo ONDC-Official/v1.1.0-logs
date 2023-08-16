@@ -1,0 +1,102 @@
+{
+  "context": {
+    "transaction_id": "57bb380d-9b38-43f0-aa00-2f4d3f530f48",
+    "country": "IND",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "city": "*",
+    "message_id": "61087f44-56f5-4825-8a26-19e3da0631f9",
+    "core_version": "1.0.0",
+    "ttl": "P2D",
+    "bap_id": "rsp.proteantech.in",
+    "domain": "nic2004:12345",
+    "bpp_uri": "stage.pep1.in/ondc/public/OndcPreProd/callback",
+    "action": "receiver_recon",
+    "bap_uri": "https://rsp.proteantech.in",
+    "key": null,
+    "timestamp": "2023-08-04T18:17:28.848Z"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "transaction_id": "157e236f-0430-4c5a-a366-eedc8902ae23",
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "settlement_id": "dd23a552336e4ac1857950aa8e954399",
+          "invoice_no": "SB/2023-24/123-00002",
+          "created_at": "2023-08-04T05:42:54.000Z",
+          "recon_status": null,
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "10.58"
+          },
+          "receiver_app_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+          "settlement_reason_code": "01",
+          "collector_app_id": "cloud-adaptor.proteantech.in/kotak",
+          "updated_at": "2023-08-04T18:17:18.000Z",
+          "provider": {
+            "name": {
+              "code": "code",
+              "name": "Snapbizz ONDC"
+            }
+          },
+          "payerdetails": {
+            "payer_bank_code": "karq0123455",
+            "payer_name": "kotak",
+            "payer_virtual_payment_address": "sri@upi",
+            "payer_address": "inidan",
+            "payer_account_no": "3545785328"
+          },
+          "payment": {
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+            "collected_by": "BAP",
+            "params": {
+              "transaction_id": "6870693889",
+              "amount": "299.0",
+              "transaction_status": "PAID",
+              "currency": "INR"
+            },
+            "type": "ON_ORDER",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "beneficiary_address": "KundanhAli gate Banglore",
+                "settlement_status": "PAID",
+                "settlement_counterparty": "buyer",
+                "settlement_phase": "sale_amount",
+                "branch_name": "Marathalli",
+                "bank_name": "Axis Bank",
+                "settlement_amount": 288.42,
+                "settlement_ifsc_code": "UTIB0000300",
+                "settlement_reference": "AXISET20233",
+                "settlement_timestamp": "2023-08-04T18:17:28.848Z",
+                "settlement_bank_account_no": "923020035581061",
+                "settlement_type": "neft"
+              }
+            ],
+            "@ondc/org/return_window": "0",
+            "@ondc/org/settlement_window": "P2D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/withholding_amount": "0.0",
+            "@ondc/org/collected_by_status": "Assert",
+            "status": "PAID",
+            "tl_method": "HTTP_OR_GET",
+            "@ondc/org/buyer_app_finder_fee_amount": "3"
+          },
+          "id": "123456-brilliquid",
+          "state": "Delivered",
+          "settlement_reference_no": "AXISET20233",
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          }
+        }
+      ]
+    }
+  }
+}

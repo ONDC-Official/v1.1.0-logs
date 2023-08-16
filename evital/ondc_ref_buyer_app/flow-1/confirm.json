@@ -1,0 +1,172 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://dev-ondc.evitalrx.in/",
+        "transaction_id": "68453b08-434a-4307-9d6f-551cd2327d22",
+        "message_id": "6436cb6f-9e03-4332-b4ec-56659272d78a",
+        "timestamp": "2023-07-26T11:01:14.131Z",
+        "bpp_id": "dev-ondc.evitalrx.in",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-07-26-438059",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Arth Raval",
+                    "building": "Kurubarahalli",
+                    "locality": "1st cross, main road",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "562162"
+                },
+                "phone": "9845746574",
+                "name": "Arth Raval",
+                "email": "evital.arth@gmail.com",
+                "created_at": "2023-07-26T11:01:12.216Z",
+                "updated_at": "2023-07-26T11:01:12.216Z"
+            },
+            "items": [
+                {
+                    "id": "OKISf2Q2S3fKI4y+4ud/Uw==",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                },
+                {
+                    "id": "vHrf3oCn0q0/jI7XDnGdlA==",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "1"
+                }
+            ],
+            "provider": {
+                "id": "YT3/3PEAnmEolCPrStruew==",
+                "locations": [
+                    {
+                        "id": "YT3/3PEAnmEolCPrStruew=="
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "end": {
+                        "contact": {
+                            "email": "evital.arth@gmail.com",
+                            "phone": "9845746574"
+                        },
+                        "person": {
+                            "name": "Arth Raval"
+                        },
+                        "location": {
+                            "gps": "13.062801, 77.467741",
+                            "address": {
+                                "name": "Arth Raval",
+                                "building": "Kurubarahalli",
+                                "locality": "1st cross, main road",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "562162"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "610",
+                    "currency": "INR",
+                    "transaction_id": "68453b08-434a-4307-9d6f-551cd2327d22"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "921020012976061",
+                        "settlement_ifsc_code": "UTIB0003256",
+                        "beneficiary_name": "Equality Healthcare Pvt Ltd",
+                        "bank_name": "Axis Bank",
+                        "branch_name": "SABARMATI AHMEDABAD"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "610"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "OKISf2Q2S3fKI4y+4ud/Uw==",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Colorbar Vegan Nail Lacquer (265)",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "250"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "250"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "vHrf3oCn0q0/jI7XDnGdlA==",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Colorbar Xoxo Everlasting Rich Kajal (Black)",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "360"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "180"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "created_at": "2023-07-26T11:01:14.131Z",
+            "updated_at": "2023-07-26T11:01:14.131Z"
+        }
+    }
+}

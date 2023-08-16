@@ -1,0 +1,95 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "init",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.viranc.com/p/v1/store",
+		"bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "920a0d07-ac5a-55eb-b5fe-46c441cb4e54",
+		"message_id": "caaaf2f3-0874-5652-8aac-855314699868",
+		"timestamp": "2023-07-17T05:54:28.444Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "grab-logistics"
+			},
+			"items": [
+				{
+					"id": "G79776-52821H",
+					"category_id": "Same Day Delivery",
+					"descriptor": {
+						"code": "P2P"
+					}
+				}
+			],
+			"fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid",
+					"start": {
+						"location": {
+							"gps": "12.96774,77.588913",
+							"address": {
+								"name": "ONDC Test Seller Store",
+								"building": "Kasturba Rd",
+								"locality": "Kasturba Rd",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "India",
+								"area_code": "560001"
+							}
+						},
+						"contact": {
+							"phone": "9999999999",
+							"email": "test@test.com"
+						}
+					},
+					"end": {
+						"location": {
+							"gps": "12.9140160000001,77.6371740000001",
+							"address": {
+								"name": "Gayatri Deshmukh",
+								"building": "Behind Bank",
+								"locality": "Test",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560102"
+							}
+						},
+						"contact": {
+							"phone": "8879054410",
+							"email": "gayatri.deshmukh@grab.in"
+						}
+					}
+				}
+			],
+			"billing": {
+				"name": "ONDC Test Seller Store",
+				"address": {
+					"name": "ONDC Test Seller Store",
+					"building": "Fort",
+					"locality": "Fort",
+					"city": "Mumbai",
+					"state": "Maharashtra",
+					"country": "India",
+					"area_code": "400001"
+				},
+				"tax_number": "22AAAAA0000A1Z5",
+				"phone": "9999999999",
+				"email": "test@gmail.com",
+				"created_at": "2023-07-17T05:54:28.444Z",
+				"updated_at": "2023-07-17T05:54:28.444Z"
+			},
+			"payment": {
+				"@ondc/org/settlement_details": []
+			}
+		}
+	}
+}

@@ -1,0 +1,186 @@
+{
+    "context": {
+        "transaction_id": "a6e91c5a-d232-44bb-a3e8-244bdb34fdc1",
+        "message_id": "d29564ba-8190-41b6-a493-d4a3478cbe15",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "bpp_id": "ondc-preprod.zeppstore.in",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "ttl": "PT30S",
+        "action": "on_update",
+        "timestamp": "2023-08-03T09:59:57.829Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-03-760462",
+            "state": "Completed",
+            "items": [
+                {
+                    "id": "6327",
+                    "fulfillment_id": "ZRPL852b486d-4ffb-4c3f-8ddd-0e987a9cb418",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "6328",
+                    "fulfillment_id": "ZRPL852b486d-4ffb-4c3f-8ddd-0e987a9cb418",
+                    "quantity": {
+                        "count": 3
+                    }
+                },
+                {
+                    "id": "6327",
+                    "fulfillment_id": "ZRPL852b486d-4ffb-4c3f-8ddd-0e987a9cb418",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "tags": {
+                        "status": "Return_Initiated"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "4550"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "6327",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 10",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2580"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1290"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6328",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 5",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1950"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "650"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL852b486d-4ffb-4c3f-8ddd-0e987a9cb418",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL852b486d-4ffb-4c3f-8ddd-0e987a9cb418",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6328",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "10"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6328",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "-10"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "fulfillments": [
+                {
+                    "id": "ZRPL852b486d-4ffb-4c3f-8ddd-0e987a9cb418",
+                    "type": "Delivery",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-08-11T09:55:52.000Z",
+                                "end": "2023-08-11T09:55:52.000Z"
+                            },
+                            "timestamp": "2023-08-03T09:56:01.690Z"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-08-11T09:55:52.000Z",
+                                "end": "2023-08-11T09:55:52.000Z"
+                            },
+                            "timestamp": "2023-08-03T09:56:11.690Z"
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "a6e91c5a-d232-44bb-a3e8-244bdb34fdc1",
+                    "amount": "4550"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "upi_address": "gft@oksbi",
+                        "settlement_bank_account_no": "xxxx",
+                        "settlement_ifsc_code": "xxxx",
+                        "beneficiary_name": "xxxx",
+                        "bank_name": "xxxx",
+                        "branch_name": "xxxx"
+                    }
+                ]
+            },
+            "created_at": "2023-08-03T09:55:51.690Z",
+            "updated_at": "2023-08-03T09:59:57.389Z"
+        }
+    }
+}

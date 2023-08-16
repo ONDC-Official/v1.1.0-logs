@@ -1,0 +1,216 @@
+{
+	"context":
+	{
+	  "domain":"nic2004:60232",
+	  "country":"IND",
+	  "city":"std:080",
+	  "action":"on_status",
+	  "core_version":"1.1.0",
+	  "bap_id":"logistics_buyer.com",
+	  "bap_uri":"https://logistics_buyer.com/ondc",
+	  "bpp_id":"lsp.com",
+	  "bpp_uri": "https://lsp.com/ondc",
+	  "transaction_id":"9fdb667c-76c6-456a-9742-ba9caa5eb765",
+	  "message_id":"1755281254863",
+	  "timestamp":"2023-02-06T22:30:30.000Z"
+	},
+	"message":
+	{
+	  "order":
+	  {
+		"id":"O2",
+		"state":"Completed",
+		"provider":
+		{
+		  "id":"P1",
+		  "locations":
+		  [
+			{
+			  "id":"L1"
+			}
+		  ]
+		},
+		"items":
+		[
+		  {
+			"id":"I1",
+			"category_id":"Same Day Delivery",
+			"descriptor":
+			{
+			   "code":"P2P"
+			}
+		  }
+		],
+		"quote":
+		{
+		  "price":
+		  {
+			"currency":"INR",
+			"value": "70.0"
+   },
+		  "breakup":
+		  [
+			{
+			  "@ondc/org/item_id":"I1",
+			  "@ondc/org/title_type":"Delivery Charge",
+			  "price":
+			  {
+				"currency":"INR",
+				"value":"50.0"
+			  }
+			},
+			{
+			  "title":"RTO charges",
+			  "@ondc/org/title_type":"RTO Charge",
+			  "price":
+			  {
+				"currency":"INR",
+				"value":"20.0"
+			  }
+			}
+		  ]
+		},
+		"fulfillments":
+		[
+		  {
+			"type":"CoD",
+			"@ondc/org/awb_no":"1227262193237777",
+			"state":
+			{
+			  "descriptor":
+			  {
+				"code":"Order-picked-up"
+			  }
+			},
+			"tracking":false,
+			"start":
+			{
+			  "time":
+			  {
+				"range":
+				{
+				  "start":"2023-02-06T22:30:00.000Z",
+				  "end":"2023-02-06T22:45:00.000Z"
+				},
+				"timestamp":"2023-02-06T22:30:00.000Z"
+			  },
+			  "instructions":
+			  {
+				"name":"Shipping label or proof of pickup",
+				"short_desc":"Shipping label or proof of pickup details",
+				"long_desc":"Shipping label info or proof of pickup",
+				"images":
+   [
+				  "https://lsp.com/images/07.png"
+				]
+			  }
+			},
+			"end":
+			{
+			  "time":
+			  {
+				"range":
+				{
+				  "start":"2023-02-06T23:00:00.000Z",
+				  "end":"2023-02-06T23:15:00.000Z"
+				},
+				"timestamp":"2023-02-06T23:00:00.000Z"
+			  },
+			  "instructions":
+			  {
+				"name":"Proof of delivery",
+				"short_desc":"Proof of delivery details",
+				"long_desc":"Proof of delivery details",
+				"images":
+				[
+				  "https://lsp.com/images/07.png"
+				]
+			  }
+			},
+			"agent":
+			{
+			  "name":"Ramu",
+			  "phone":"9886098860"
+			},
+			"vehicle":
+			{
+			  "category":"mini-truck",
+			  "size":"small",
+			  "registration":"2020"
+			},
+			"@ondc/org/ewaybillno":"EBN1",
+			"@ondc/org/ebnexpirydate":"2023-03-31T12:00:00.000Z"
+		  },
+		  {
+			"type": "RTO",
+			"state":
+			{
+			  "descriptor":
+			  {
+				"code":"RTO-Initiated",
+				"name":"RTO Initiated"
+			  }
+			},
+			"start":
+			{
+   "time":
+			  {
+				"range":
+				{
+				  "start":"2023-02-06T23:00:00.000Z",
+				  "end":"2023-02-06T23:00:00.000Z"
+				},
+				"timestamp":"2023-02-06T23:00:00.000Z"
+			  }
+			},
+			"agent":
+			{
+			  "name":"Ramu",
+			  "phone":"9886098860"
+			}
+		  }
+		],
+		"payment":
+		{
+		  "type":"POST-FULFILLMENT",
+		  "collected_by":"BPP",
+		  "@ondc/org/settlement_details":
+		  [
+			{
+			  "settlement_counterparty":"buyer-app",
+			  "settlement_type":"upi",
+			  "upi_address":"gft@oksbi",
+			  "settlement_bank_account_no":"XXXXXXXXXX",
+			  "settlement_ifsc_code":"XXXXXXXXX",
+			  "settlement_status":"PAID",
+			  "settlement_reference":"XXXXXXXXX",
+			  "settlement_timestamp":"2023-02-10T00:00:00.000Z"
+			}
+		  ]
+		},
+		"billing":
+		{
+		  "name":"ONDC sellerapp",
+		  "address":
+		  {
+			"name":"My building #",
+			"building":"My building name",
+			"locality":"My street name",
+			"city":"Bengaluru",
+			"state":"Karnataka",
+			"country":"India",
+			"area_code":"560076"
+		  },
+		  "tax_number":"XXXXXXXXXXXXXXX",
+		  "phone":"9886098860",
+		  "email":"abcd.efgh@gmail.com"
+		},
+		"tags":
+		{
+		  "cancellation_reason_id":"013",
+	"AWB no":"1227262193237777"
+		}
+	  }
+	}
+  }
+  

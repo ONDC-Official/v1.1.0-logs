@@ -1,0 +1,117 @@
+{
+    "context": {
+        "city": "std:080",
+        "action": "on_select",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondctsp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondctsp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-28T03:18:44.620Z",
+        "message_id": "38d01b2d-916e-48d8-905c-8b3064f503fa",
+        "core_version": "1.1.0",
+        "transaction_id": "73febb76-e02e-436b-950a-c6abe9bd3148"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "102",
+                    "fulfillment_id": "21165_560005"
+                },
+                {
+                    "id": "104",
+                    "fulfillment_id": "21165_560005"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "2420.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "2000.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "2000.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Gas Stove",
+                        "@ondc/org/item_id": "102",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "400.00",
+                                "currency": "INR"
+                            },
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
+                            }
+                        },
+                        "price": {
+                            "value": "400.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Zodiac Cosmo",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "20.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "21165_560005",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "provider": {
+                "id": "21165"
+            },
+            "fulfillments": [
+                {
+                    "id": "21165_560005",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/TAT": "PT4H",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Classic Grocery"
+                }
+            ]
+        }
+    }
+}

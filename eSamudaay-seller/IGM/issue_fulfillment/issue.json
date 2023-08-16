@@ -1,0 +1,117 @@
+{
+    "context":
+    {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "issue",
+        "core_version": "1.0.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay",
+        "transaction_id": "bef8b1e0-4c3f-415a-a9da-024991a3c641",
+        "message_id": "7315d0b2-13a8-4244-97a8-1526c5db7ae6",
+        "timestamp": "2023-07-24T09:12:54.639Z",
+        "bpp_id": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay",
+        "ttl": "PT30S"
+    },
+    "message":
+    {
+        "issue":
+        {
+            "id": "b9bd9c3a-88e9-4328-a873-94bc0c15b714",
+            "category": "FULFILLMENT",
+            "sub_category": "FLM02",
+            "complainant_info":
+            {
+                "person":
+                {
+                    "name": "Sukumara"
+                },
+                "contact":
+                {
+                    "phone": "9743428552",
+                    "email": "sukumara@esamudaay.com"
+                }
+            },
+            "order_details":
+            {
+                "id": "2023-07-24-958304",
+                "state": "Created",
+                "items":
+                [
+                    {
+                        "id": "16363",
+                        "quantity": 1
+                    }
+                ],
+                "fulfillments":
+                [
+                    {
+                        "id": "Fulfillment1",
+                        "state": "Pending"
+                    }
+                ],
+                "provider_id": "0635ecff-8fde-4185-8cd8-167efda42bbc"
+            },
+            "description":
+            {
+                "short_desc": "taking too long",
+                "long_desc": "delivery boy isnt picking up calls, nor has he reached yet.",
+                "additional_desc":
+                {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images":
+                []
+            },
+            "source":
+            {
+                "network_participant_id": "buyer-app-preprod.ondc.org",
+                "type": "CONSUMER"
+            },
+            "expected_response_time":
+            {
+                "duration": "PT1H"
+            },
+            "expected_resolution_time":
+            {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_type": "ISSUE",
+            "issue_actions":
+            {
+                "complainant_actions":
+                [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-07-24T09:12:54.639Z",
+                        "updated_by":
+                        {
+                            "org":
+                            {
+                                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+                            },
+                            "contact":
+                            {
+                                "phone": "6239083807",
+                                "email": "Rishabhnand.singh@ondc.org"
+                            },
+                            "person":
+                            {
+                                "name": "Rishabhnand Singh"
+                            }
+                        }
+                    }
+                ],
+                "respondent_actions":
+                []
+            },
+            "created_at": "2023-07-24T09:12:56.144Z",
+            "updated_at": "2023-07-24T09:12:56.144Z"
+        }
+    }
+}

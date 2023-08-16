@@ -1,52 +1,81 @@
 {
   "context": {
-    "domain": "FIS10",
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
-    "message_id": "b39af991-6789-4733-a40a-b0038a859386",
-    "transaction_id": "2b5bbbff-9d9e-41eb-a388-7e1dce48ceaa",
-    "bpp_id": "ondc.vistar.solutions",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "location": {
-      "city": {
-        "code": "std:080"
+      "domain": "ONDC:FIS10",
+      "ttl": "PT30S",
+      "bap_id": "b2bapi-stage.spicesmartshop.com",
+      "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+      "message_id": "88582ea4-af2f-4dd1-ae3f-3a09fce72972",
+      "transaction_id": "c4774be3-ec51-4f0c-970a-e9d5e15dcd79",
+      "bpp_id": "ondc.vistar.solutions",
+      "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+      "location": {
+          "city": {
+              "code": "std:080"
+          },
+          "country": {
+              "code": "IND"
+          }
       },
-      "country": {
-        "code": "IND"
-      }
-    },
-    "action": "select",
-    "version": "1.0.0",
-    "timestamp": "2023-07-05T13:43:02.383Z"
+      "action": "select",
+      "version": "1.0.0",
+      "timestamp": "2023-08-04T15:54:29.119Z"
   },
   "message": {
-    "order": {
-      "provider": {
-        "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
-      },
-      "items": [
-        {
-          "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
-          "quantity": {
-            "selected": {
-              "count": 1
-            }
+      "order": {
+          "provider": {
+              "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
           },
-          "category_ids": [
-            "C1"
+          "items": [
+              {
+                  "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+                  "quantity": {
+                      "selected": {
+                          "count": 1
+                      }
+                  },
+                  "category_ids": [
+                      "C1"
+                  ],
+                  "fulfillment_ids": [
+                      "F2"
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "DENOMINATION"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "FIXED_AMOUNT"
+                                  },
+                                  "value": "1000"
+                              }
+                          ]
+                      }
+                  ]
+              }
           ],
-          "fulfillment_ids": [
-            "F3"
+          "offers": [
+              {
+                  "id": "4fa84203-b5a3-4ba1-be53-5615f03df271",
+                  "descriptor": {
+                      "name": "Discount",
+                      "code": "BACHAT",
+                      "short_desc": "Get 10% discount",
+                      "long_desc": "Get 10% discount"
+                  },
+                  "item_ids": [
+                      "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+                  ]
+              }
+          ],
+          "fulfillments": [
+              {
+                  "id": "F2",
+                  "type": "EMAIL"
+              }
           ]
-        }
-      ],
-      "fulfillments": [
-        {
-          "id": "F3",
-          "type": "SMS"
-        }
-      ]
-    }
+      }
   }
 }

@@ -3,13 +3,13 @@
         "domain": "nic2004:52110",
         "action": "on_search",
         "core_version": "1.1.0",
-        "bap_id": "jiomart-buyer.ondcz5.de",
-        "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-        "transaction_id": "ce2f9b2d-5334-4a47-9415-2f22b2b4f15a",
-        "message_id": "c1e3808b-0797-4934-9547-42c45bd45fed",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "transaction_id": "1a772588-000f-4d98-9a33-cfdfce839af3",
+        "message_id": "70f7bb49-e010-4b4c-aa05-2d9a774830ce",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2023-06-01T05:10:11.171Z",
+        "timestamp": "2023-08-03T12:43:55.546Z",
         "bpp_id": "ondc-preprod.zeppstore.in",
         "bpp_uri": "https://ondc-preprod.zeppstore.in",
         "ttl": "PT30S"
@@ -37,7 +37,7 @@
                     "ttl": "P1D",
                     "time": {
                         "label": "enable",
-                        "timestamp": "2023-06-01T05:10:11.171Z"
+                        "timestamp": "2023-08-03T12:43:55.547Z"
                     },
                     "descriptor": {
                         "name": "Zeitgeist Retail",
@@ -49,47 +49,32 @@
                         ]
                     },
                     "@ondc/org/fssai_license_no": "12345678901234",
-                    "categories": [
-                        {
-                            "id": "Immediate Delivery",
-                            "time": {
-                                "label": "TAT",
-                                "duration": "PT45M"
-                            }
-                        }
-                    ],
                     "locations": [
                         {
                             "id": "wfhlb-1000",
                             "gps": "12.914261,77.638611",
                             "address": {
-                                "door": "#325/3",
-                                "name": "1st floor",
-                                "building": "Bommanahalli Industrial Area",
                                 "street": "Hosur Main Road",
                                 "locality": "Bommanahalli",
-                                "ward": "",
                                 "city": "Bangalore",
                                 "state": "Karnataka",
-                                "country": "India",
                                 "area_code": "560102"
                             },
                             "circle": {
                                 "gps": "12.914261,77.638611",
                                 "radius": {
                                     "unit": "km",
-                                    "value": "3"
+                                    "value": "country"
                                 }
                             },
                             "time": {
+                                "range": {
+                                    "start": "0000",
+                                    "end": "2359"
+                                },
                                 "days": "1,2,3,4,5,6,7",
                                 "schedule": {
-                                    "holidays": [],
-                                    "frequency": "PT4H",
-                                    "times": [
-                                        "0000",
-                                        "2359"
-                                    ]
+                                    "holidays": []
                                 }
                             }
                         }
@@ -112,10 +97,10 @@
                             },
                             "quantity": {
                                 "available": {
-                                    "count": "10"
+                                    "count": "3"
                                 },
                                 "maximum": {
-                                    "count": "20"
+                                    "count": "3"
                                 }
                             },
                             "price": {
@@ -124,15 +109,14 @@
                                 "maximum_value": "1290"
                             },
                             "category_id": "Fast Food",
-                            "fulfillments_id": "1",
                             "recommended": true,
                             "@ondc/org/returnable": true,
                             "@ondc/org/seller_pickup_return": true,
                             "@ondc/org/return_window": "P7D",
                             "@ondc/org/cancellable": true,
-                            "@ondc/org/time_to_ship": "PT45M",
+                            "@ondc/org/time_to_ship": "P7D",
                             "@ondc/org/available_on_cod": false,
-                            "@ondc/org/contact_details_consumer_care": "support@zrpl.co.in",
+                            "@ondc/org/contact_details_consumer_care": "zrpl,support@zrpl.co.in,9880935416",
                             "@ondc/org/statutory_reqs_packaged_commodities": {
                                 "manufacturer_or_packer_name": "zrpl ondc store",
                                 "manufacturer_or_packer_address": "hsr layout bangalore",
@@ -175,10 +159,10 @@
                             },
                             "quantity": {
                                 "available": {
-                                    "count": "10"
+                                    "count": "3"
                                 },
                                 "maximum": {
-                                    "count": "20"
+                                    "count": "3"
                                 }
                             },
                             "price": {
@@ -187,15 +171,14 @@
                                 "maximum_value": "650"
                             },
                             "category_id": "Fast Food",
-                            "fulfillments_id": "1",
                             "recommended": true,
                             "@ondc/org/returnable": true,
                             "@ondc/org/seller_pickup_return": true,
                             "@ondc/org/return_window": "P7D",
                             "@ondc/org/cancellable": true,
-                            "@ondc/org/time_to_ship": "PT45M",
+                            "@ondc/org/time_to_ship": "P7D",
                             "@ondc/org/available_on_cod": false,
-                            "@ondc/org/contact_details_consumer_care": "support@zrpl.co.in",
+                            "@ondc/org/contact_details_consumer_care": "zrpl,support@zrpl.co.in,9880935416",
                             "@ondc/org/statutory_reqs_packaged_commodities": {
                                 "manufacturer_or_packer_name": "zrpl ondc store",
                                 "manufacturer_or_packer_address": "hsr layout bangalore",
@@ -244,15 +227,15 @@
                                 },
                                 {
                                     "code": "type",
-                                    "value": "12"
+                                    "value": "10"
                                 },
                                 {
                                     "code": "val",
-                                    "value": "IND"
+                                    "value": "5"
                                 },
                                 {
                                     "code": "unit",
-                                    "value": "country"
+                                    "value": "km"
                                 }
                             ]
                         }

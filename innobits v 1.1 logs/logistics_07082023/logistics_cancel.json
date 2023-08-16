@@ -1,0 +1,66 @@
+
+
+  "cancel": {
+    "context": {
+      "key": "",
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "cancel",
+      "bap_id": "biz.test.bitsila.com",
+      "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+      "domain": "nic2004:60232",
+      "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+      "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+      "country": "IND",
+      "timestamp": "2023-08-07T06:27:43.547Z",
+      "message_id": "89105f19-0546-461d-857e-0d1c3bfaa030",
+      "core_version": "1.1.0",
+      "transaction_id": "LOG-036ca18a-6761-43a7-814a-60e70e0a5fa7"
+    },
+    "message": {
+      "order_id": "2023-08-07-315008",
+      "cancellation_reason_id": "004"
+    }
+  },
+  
+
+  "on_cancel": {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_cancel",
+      "bap_id": "biz.test.bitsila.com",
+      "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+      "domain": "nic2004:60232",
+      "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+      "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+      "country": "IND",
+      "timestamp": "2023-08-07T06:27:48.672Z",
+      "message_id": "89105f19-0546-461d-857e-0d1c3bfaa030",
+      "core_version": "1.1.0",
+      "transaction_id": "LOG-036ca18a-6761-43a7-814a-60e70e0a5fa7"
+    },
+    "message": {
+      "order": {
+        "id": "2023-08-07-315008",
+        "state": "Cancelled",
+        "fulfillments": [
+          {
+            "id": "1",
+            "tags": {
+              "AWB no": "2023-08-07-315008",
+              "cancellation_reason_id": "004"
+            },
+            "type": "Prepaid",
+            "state": {
+              "descriptor": {
+                "code": "Cancelled",
+                "name": "Cancelled"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+ 

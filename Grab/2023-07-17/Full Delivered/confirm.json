@@ -1,0 +1,195 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "confirm",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.viranc.com/p/v1/store",
+		"bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "920a0d07-ac5a-55eb-b5fe-46c441cb4e54",
+		"message_id": "ba6433b6-8b1f-5aac-a74f-d7e786e8c89e",
+		"timestamp": "2023-07-17T05:56:27.114Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"id": "18715942-535b-4193-bf78-93346f3531f3",
+			"state": "Created",
+			"provider": {
+				"id": "grab-logistics"
+			},
+			"items": [
+				{
+					"id": "G79776-52821H",
+					"category_id": "Same Day Delivery",
+					"descriptor": {
+						"code": "P2P"
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"value": "1.0",
+					"currency": "INR"
+				},
+				"breakup": [
+					{
+						"price": {
+							"value": "1.0",
+							"currency": "INR"
+						},
+						"@ondc/org/item_id": "G79776-52821H",
+						"@ondc/org/title_type": "Delivery Charge"
+					}
+				]
+			},
+			"fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid",
+					"start": {
+						"person": {
+							"name": "Test"
+						},
+						"location": {
+							"gps": "12.96774,77.588913",
+							"address": {
+								"name": "ONDC Test Seller Store",
+								"building": "Kasturba Rd",
+								"locality": "Kasturba Rd",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "India",
+								"area_code": "560001"
+							}
+						},
+						"contact": {
+							"phone": "9999999999",
+							"email": "test@test.com"
+						},
+						"instructions": {
+							"name": "Status for pickup",
+							"long_desc": "Pickup Confirmation Code",
+							"short_desc": "4637128"
+						}
+					},
+					"end": {
+						"person": {
+							"name": "Gayatri Deshmukh"
+						},
+						"location": {
+							"gps": "12.9140160000001,77.6371740000001",
+							"address": {
+								"name": "Gayatri Deshmukh",
+								"building": "Behind Bank",
+								"locality": "Test",
+								"city": "Bengaluru",
+								"state": "Karnataka",
+								"country": "IND",
+								"area_code": "560102"
+							}
+						},
+						"contact": {
+							"phone": "8879054410",
+							"email": "gayatri.deshmukh@grab.in"
+						},
+						"instructions": {
+							"name": "Status for drop",
+							"long_desc": "Delivery Confirmation Code",
+							"short_desc": "2334020"
+						}
+					},
+					"tags": {
+						"@ondc/org/order_ready_to_ship": "no"
+					}
+				}
+			],
+			"billing": {
+				"name": "ONDC Test Seller Store",
+				"address": {
+					"name": "ONDC Test Seller Store",
+					"building": "Fort",
+					"locality": "Fort",
+					"city": "Mumbai",
+					"state": "Maharashtra",
+					"country": "India",
+					"area_code": "400001"
+				},
+				"tax_number": "22AAAAA0000A1Z5",
+				"phone": "9999999999",
+				"email": "test@gmail.com",
+				"created_at": "2023-07-17T05:54:28.444Z",
+				"updated_at": "2023-07-17T05:54:28.444Z"
+			},
+			"payment": {
+				"@ondc/org/collection_amount": "532.51",
+				"collected_by": "BAP",
+				"type": "ON-ORDER",
+				"@ondc/org/settlement_details": []
+			},
+			"@ondc/org/linked_order": {
+				"items": [
+					{
+						"category_id": "Grocery",
+						"descriptor": {
+							"name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
+						},
+						"quantity": {
+							"count": 1,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 10
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "437.00"
+						}
+					},
+					{
+						"category_id": "Grocery",
+						"descriptor": {
+							"name": "Pillsbury Chakki Fresh Whole Wheat Atta, 1 kg"
+						},
+						"quantity": {
+							"count": 1,
+							"measure": {
+								"unit": "Kilogram",
+								"value": 1
+							}
+						},
+						"price": {
+							"currency": "INR",
+							"value": "79.00"
+						}
+					}
+				],
+				"provider": {
+					"descriptor": {
+						"name": "ONDC Test Seller Store"
+					},
+					"address": {
+						"name": "ONDC Test Seller Store",
+						"street": "Kasturba Rd",
+						"locality": "Kasturba Rd",
+						"city": "Bengaluru",
+						"state": "Karnataka",
+						"area_code": "560001"
+					}
+				},
+				"order": {
+					"id": "2023-07-17-649555",
+					"weight": {
+						"unit": "Kilogram",
+						"value": 11
+					}
+				}
+			},
+			"created_at": "2023-07-17T05:56:27.114Z",
+			"updated_at": "2023-07-17T05:56:27.114Z"
+		}
+	}
+}

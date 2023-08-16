@@ -5,49 +5,49 @@
         "city": "std:080",
         "action": "confirm",
         "core_version": "1.1.0",
-        "bap_id": "jiomart-buyer.ondcz5.de",
-        "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-        "transaction_id": "60250276-86cb-4412-902d-ad1ae5332c89",
-        "message_id": "8af8c301-a503-4697-b74c-c5a50b78911f",
-        "timestamp": "2023-06-01T07:14:57.403Z",
-        "ttl": "PT30S",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "transaction_id": "5094d88a-2f8f-4522-be23-532bdae8ad8a",
+        "message_id": "9045bfd8-9120-4dda-8102-c41117fd2c80",
+        "timestamp": "2023-08-03T07:55:36.748Z",
         "bpp_id": "ondc-preprod.zeppstore.in",
-        "bpp_uri": "https://ondc-preprod.zeppstore.in"
+        "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "7a4230c5-8aaf-4674-b9a0-96de2c2887fc",
+            "id": "2023-08-03-366641",
             "state": "Created",
             "billing": {
-                "name": "reevant",
                 "address": {
-                    "name": "reevant",
-                    "building": "hebbal",
-                    "locality": "Sector 5",
+                    "name": "Sudarshan",
+                    "building": "near bridge",
+                    "locality": "HSR street",
                     "city": "Bengaluru",
                     "state": "Karnataka",
                     "country": "IND",
                     "area_code": "560102"
                 },
-                "email": "revant@gmail.com",
-                "phone": "9980292362",
-                "created_at": "2023-06-01T07:13:29.547Z",
-                "updated_at": "2023-06-01T07:13:29.547Z"
+                "phone": "6362276770",
+                "name": "Sudarshan",
+                "email": "api@zrpl.co.in",
+                "created_at": "2023-08-03T07:55:00.857Z",
+                "updated_at": "2023-08-03T07:55:00.857Z"
             },
             "items": [
                 {
-                    "fulfillment_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
-                    "id": "6328",
-                    "quantity": {
-                        "count": 1
-                    }
-                },
-                {
-                    "fulfillment_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
                     "id": "6327",
                     "quantity": {
-                        "count": 1
-                    }
+                        "count": 2
+                    },
+                    "fulfillment_id": "ZRPL25eaf832-589a-4c05-ab96-85c99bbd3325"
+                },
+                {
+                    "id": "6328",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "ZRPL25eaf832-589a-4c05-ab96-85c99bbd3325"
                 }
             ],
             "provider": {
@@ -60,21 +60,20 @@
             },
             "fulfillments": [
                 {
-                    "id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                    "id": "ZRPL25eaf832-589a-4c05-ab96-85c99bbd3325",
                     "end": {
-                        "person": {
-                            "name": "reevant"
-                        },
                         "contact": {
-                            "email": "revant@gmail.com",
-                            "phone": "9980292362"
+                            "phone": "6362276770"
+                        },
+                        "person": {
+                            "name": "Sudarshan"
                         },
                         "location": {
-                            "gps": "12.911862,77.6445923",
+                            "gps": "12.9140160000001, 77.6371740000001",
                             "address": {
-                                "name": "reevant",
-                                "building": "hebbal",
-                                "locality": "Sector 5",
+                                "name": "Sudarshan",
+                                "building": "near bridge",
+                                "locality": "HSR street",
                                 "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "IND",
@@ -86,16 +85,18 @@
                 }
             ],
             "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
                 "params": {
-                    "amount": "1940",
+                    "amount": "3900",
                     "currency": "INR",
-                    "transaction_id": "20230601011650000871010509326609391"
+                    "transaction_id": "5094d88a-2f8f-4522-be23-532bdae8ad8a"
                 },
                 "status": "PAID",
                 "type": "ON-ORDER",
                 "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "2",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
@@ -113,19 +114,19 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1940"
+                    "value": "3900"
                 },
                 "breakup": [
                     {
                         "@ondc/org/item_id": "6327",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
                         "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 10",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "1290"
+                            "value": "2580"
                         },
                         "item": {
                             "price": {
@@ -135,60 +136,15 @@
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
-                        "title": "Delivery charges",
-                        "@ondc/org/title_type": "delivery",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
-                        "title": "Packing charges",
-                        "@ondc/org/title_type": "packing",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "6327",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "6327",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
-                        "title": "Convenience Fee",
-                        "@ondc/org/title_type": "misc",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
                         "@ondc/org/item_id": "6328",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
                         "title": "Vitharane Packs | Ready-to-give Boxes | Pack of 5",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "650"
+                            "value": "1300"
                         },
                         "item": {
                             "price": {
@@ -198,55 +154,46 @@
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                        "@ondc/org/item_id": "ZRPL25eaf832-589a-4c05-ab96-85c99bbd3325",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "10"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
+                        "@ondc/org/item_id": "ZRPL25eaf832-589a-4c05-ab96-85c99bbd3325",
                         "title": "Packing charges",
                         "@ondc/org/title_type": "packing",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "10"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "6328",
+                        "@ondc/org/item_id": "6327",
                         "title": "Tax",
                         "@ondc/org/title_type": "tax",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "10"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "6328",
+                        "@ondc/org/item_id": "6327",
                         "title": "Discount",
                         "@ondc/org/title_type": "discount",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPL3d8f0224-51df-494f-a511-16d51275fdf6",
-                        "title": "Convenience Fee",
-                        "@ondc/org/title_type": "misc",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
+                            "value": "-10"
                         }
                     }
                 ],
                 "ttl": "P1D"
             },
-            "created_at": "2023-06-01T07:14:57.403Z",
-            "updated_at": "2023-06-01T07:14:57.403Z"
+            "created_at": "2023-08-03T07:55:36.748Z",
+            "updated_at": "2023-08-03T07:55:36.748Z"
         }
     }
 }

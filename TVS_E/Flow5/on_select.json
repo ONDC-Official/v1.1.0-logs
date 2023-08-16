@@ -1,0 +1,141 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
+    "transaction_id": "9520c0d9-5484-4cc8-88df-7c3764f8be78",
+    "message_id": "546c6601-30f2-4f43-8739-3675a2650e12",
+    "timestamp": "2023-07-26T16:43:25.885Z",
+    "bpp_id": "ondc-preprod.tvs-e.in"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "TVS Electronics Ltd",
+          "tracking": true,
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "P2D",
+          "type": "Delivery",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+          "fulfillment_id": "1"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "25248.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+            "@ondc/org/item_quantity": {
+              "count": 0
+            },
+            "title": "LP 46 Lite Thermal Label Printer",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "0"
+                },
+                "maximum": {
+                  "count": "0"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "12719.49"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "MSP 250 Star Dot Matrix Printer",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "21354.24"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "18"
+                },
+                "maximum": {
+                  "count": "18"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "10677.12"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "3843.76"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "50"
+            }
+          }
+        ],
+        "ttl": "P4D"
+      },
+      "provider": {
+        "id": "ondc-preprod.tvs-e.in"
+      }
+    }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "40002",
+    "message": "Item quantity unavailable"
+  }
+}
