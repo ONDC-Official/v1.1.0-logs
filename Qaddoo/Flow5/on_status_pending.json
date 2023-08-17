@@ -3,23 +3,28 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_init",
+        "action": "on_status",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "ondc.uat.medpay.in",
         "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
         "transaction_id": "ad639826-319b-4b7a-9ddc-a76d023b317b",
-        "message_id": "ae58f57a-d03c-4c0e-891b-2fb3360e9dcb",
-        "timestamp": "2023-08-17T10:56:15.443Z"
+        "message_id": "1a908347-3020-4912-9c7e-49b37804bb5b",
+        "timestamp": "2023-08-17T10:59:54.300Z"
     },
     "message": {
         "order": {
+            "id": "100067",
+            "state": "Created",
             "provider": {
-                "id": "1001-3716-9032-6275"
-            },
-            "provider_location": {
-                "id": "1002-4377-0770-0838"
+                "id": "1001-3716-9032-6275",
+                "locations": [
+                    {
+                        "id": "1002-4377-0770-0838"
+                    }
+                ],
+                "rateable": true
             },
             "items": [
                 {
@@ -55,10 +60,28 @@
                     "@ondc/org/provider_name": "Medpay - Vishal Medical Center",
                     "state": {
                         "descriptor": {
-                            "code": "Serviceable"
+                            "code": "Pending"
                         }
                     },
-                    "tracking": true,
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "1002-4377-0770-0838",
+                            "descriptor": {
+                                "name": "Medpay - Vishal Medical Center"
+                            },
+                            "gps": "12.932209,77.633832"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-18T10:57:10.597Z",
+                                "end": "2023-08-18T13:57:10.597Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8861545034"
+                        }
+                    },
                     "end": {
                         "location": {
                             "gps": "12.971888547537276,77.6070088148117",
@@ -72,8 +95,17 @@
                                 "area_code": "560025"
                             }
                         },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-19T10:57:10.597Z",
+                                "end": "2023-08-19T13:57:10.597Z"
+                            }
+                        },
                         "contact": {
                             "phone": "8302010971"
+                        },
+                        "person": {
+                            "name": "Rajiv Singh"
                         }
                     }
                 }
@@ -115,6 +147,14 @@
                 "ttl": "P1D"
             },
             "payment": {
+                "params": {
+                    "transaction_id": "1692269573880",
+                    "amount": "1347.0",
+                    "currency": "INR"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3",
                 "@ondc/org/settlement_details": [
@@ -129,7 +169,9 @@
                         "branch_name": "Andaman Nicobar"
                     }
                 ]
-            }
+            },
+            "created_at": "2023-08-17T10:57:08.548Z",
+            "updated_at": "2023-08-17T10:59:54.300Z"
         }
     }
 }
