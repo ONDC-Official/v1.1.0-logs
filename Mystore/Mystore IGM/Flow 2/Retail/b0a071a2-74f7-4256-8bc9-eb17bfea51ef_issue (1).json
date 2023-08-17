@@ -1,0 +1,111 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "issue",
+      "bap_id": "mystore5.storehippo.manu:3000",
+      "bap_uri": "http://mystore5.storehippo.manu:3000/ondc/1.0/",
+      "bpp_id": "mystore5.storehippo.manu:3000",
+      "bpp_uri": "http://mystore5.storehippo.manu:3000/ondc/1.0",
+      "transaction_id": "b0a071a2-74f7-4256-8bc9-eb17bfea51ef",
+      "message_id": "9b1711e2-c3f7-461e-aa6a-b121d4aba1b3",
+      "timestamp": "2023-08-07T11:09:21.933Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "issue": {
+        "id": "64d085a1f9346591cbe7d305",
+        "category": "FULFILLMENT",
+        "sub_category": "FLM01",
+        "complainant_info": {
+          "person": {
+            "name": "beta.mystore.in",
+            "email": "dummy-bpp-beta-mystore-in@mystore.in"
+          },
+          "contact": {}
+        },
+        "order_details": {
+          "id": "64d085861b673e924732fad7",
+          "state": "Accepted",
+          "items": [
+            {
+              "id": "64b53952886ade3bef992236",
+              "quantity": 1
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "Fulfillment1",
+              "state": "Accepted"
+            }
+          ],
+          "provider_id": "62733ab9f1f53df939f25300"
+        },
+        "description": {
+          "short_desc": "Wrong delivery address",
+          "long_desc": "Wrong delivery address"
+        },
+        "source": {
+          "network_participant_id": "mystore5.storehippo.manu:3000",
+          "issue_source_type": "CONSUMER"
+        },
+        "expected_response_time": {
+          "duration": "PT2H"
+        },
+        "expected_resolution_time": {
+          "duration": "P1D"
+        },
+        "status": "Closed",
+        "issue_type": "ISSUE",
+        "issue_actions": {
+          "complainant_actions": [
+            {
+              "complainant_action": "Closed",
+              "remarks": "Wrong delivery address",
+              "updated_at": "2023-08-07T11:08:39.448Z",
+              "updated_by": {
+                "org": {
+                  "name": "mystore5.storehippo.manu:3000"
+                },
+                "contact": {
+                  "phone": "9450394039",
+                  "email": "buyerapp@interface.com"
+                },
+                "person": {
+                  "name": "Mystore"
+                }
+              }
+            }
+          ]
+        },
+        "created_at": "2023-08-07T05:48:17.471Z",
+        "updated_at": "2023-08-07T11:08:39.448Z"
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "issue",
+      "bap_id": "mystore5.storehippo.manu:3000",
+      "bap_uri": "http://mystore5.storehippo.manu:3000/ondc/1.0/",
+      "bpp_id": "mystore5.storehippo.manu:3000",
+      "bpp_uri": "http://mystore5.storehippo.manu:3000/ondc/1.0",
+      "transaction_id": "b0a071a2-74f7-4256-8bc9-eb17bfea51ef",
+      "message_id": "9b1711e2-c3f7-461e-aa6a-b121d4aba1b3",
+      "timestamp": "2023-08-07T11:09:21.933Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}

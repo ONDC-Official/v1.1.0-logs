@@ -1,0 +1,208 @@
+
+  "select": {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.bitsila.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-08-11T12:17:46.813Z",
+      "message_id": "fbf7a9b9-10e1-43de-a3ca-363cfecbb22e",
+      "core_version": "1.1.0",
+      "transaction_id": "a8d7f7bb-d3fa-4e82-8c73-970cd3c5ae7f"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "7715",
+            "quantity": {
+              "count": 3
+            },
+            "location_id": "L:1016:699"
+          },
+          {
+            "id": "12932",
+            "quantity": {
+              "count": 3
+            },
+            "location_id": "L:1016:699"
+          }
+        ],
+        "provider": {
+          "id": "1016:699",
+          "locations": [
+            {
+              "id": "L:1016:699"
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "end": {
+              "location": {
+                "gps": "12.9140160000001, 77.6371740000001",
+                "address": {
+                  "area_code": "560102"
+                }
+              }
+            },
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+ 
+  "on_select": {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.bitsila.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-08-11T12:17:51.588Z",
+      "message_id": "fbf7a9b9-10e1-43de-a3ca-363cfecbb22e",
+      "core_version": "1.1.0",
+      "transaction_id": "a8d7f7bb-d3fa-4e82-8c73-970cd3c5ae7f"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "7715",
+            "fulfillment_id": "FPA:699:::88276"
+          },
+          {
+            "id": "12932",
+            "fulfillment_id": "FPA:699:::88276"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "70.3",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "7715",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 3,
+                "price": {
+                  "value": "15.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "45.0",
+                "currency": "INR"
+              },
+              "title": "Britannia Yummy Pineapple Cakes",
+              "@ondc/org/item_id": "7715",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 3
+              }
+            },
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "12932",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 3,
+                "price": {
+                  "value": "5.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "15.0",
+                "currency": "INR"
+              },
+              "title": "Britannia Cakes Yummy Fruit",
+              "@ondc/org/item_id": "12932",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 3
+              }
+            },
+            {
+              "price": {
+                "value": "10.3",
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:::88276",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "provider": {
+          "id": "1016:699"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:::88276",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            },
+            "tracking": true,
+            "@ondc/org/TAT": "PT3H",
+            "@ondc/org/category": "Immediate Delivery",
+            "@ondc/org/provider_name": "Bitsila"
+          }
+        ],
+        "provider_location": {
+          "id": "L:1016:699"
+        }
+      }
+    }
+  },
+  
