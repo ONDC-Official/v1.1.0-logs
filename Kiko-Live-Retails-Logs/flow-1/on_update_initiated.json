@@ -7,24 +7,18 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "api2.kiko.link/ondc-seller",
         "bpp_uri": "https://api2.kiko.link/ondc-seller",
-        "transaction_id": "8b6a5ff6-000c-4723-bc82-589be9177079",
-        "message_id": "75edfd48-b6cb-4402-a70b-c88404173cdc",
+        "transaction_id": "a2287975-283a-4400-99ef-b4eb3c32c3c4",
+        "message_id": "01fec259-6308-462a-84fa-a8b4b6c80a4c",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2023-08-09T10:22:21.330Z"
+        "timestamp": "2023-08-17T09:36:35.121Z",
+        "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-08-09-144267",
+            "id": "2023-08-17-454013",
             "state": "Completed",
             "items": [
-                {
-                    "quantity": {
-                        "count": 1
-                    },
-                    "id": "64afa8b8682cee3b504c4ac7",
-                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86"
-                },
                 {
                     "id": "64afa80a682cee3b504c4ab1",
                     "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86",
@@ -36,19 +30,54 @@
                     }
                 },
                 {
-                    "id": "64afa80a682cee3b504c4ab1",
-                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86",
                     "quantity": {
                         "count": 1
-                    }
+                    },
+                    "id": "64afa8b8682cee3b504c4ac7",
+                    "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86"
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": 326.151
+                    "value": "214.33"
                 },
                 "breakup": [
+                    {
+                        "@ondc/org/item_id": "64afa80a682cee3b504c4ab1",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Atta Ashirwad",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "95.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "42"
+                                },
+                                "maximum": {
+                                    "count": "42"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "95.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "64afa80a682cee3b504c4ab1",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.00"
+                        }
+                    },
                     {
                         "@ondc/org/item_id": "64afa8b8682cee3b504c4ac7",
                         "@ondc/org/item_quantity": {
@@ -61,6 +90,14 @@
                             "value": "47.50"
                         },
                         "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            },
                             "price": {
                                 "currency": "INR",
                                 "value": "47.50"
@@ -68,63 +105,45 @@
                         }
                     },
                     {
-                        "@ondc/org/item_id": "64afa80a682cee3b504c4ab1",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "title": "Atta Ashirwad",
-                        "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": "190.00"
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "190.00"
-                            }
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "DEL1",
-                        "title": "Delivery charges",
-                        "@ondc/org/title_type": "delivery",
-                        "price": {
-                            "currency": "INR",
-                            "value": 60
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "P1",
-                        "title": "Packing charges",
-                        "@ondc/org/title_type": "packing",
-                        "price": {
-                            "currency": "INR",
-                            "value": 5
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "T1",
+                        "@ondc/org/item_id": "64afa8b8682cee3b504c4ac7",
                         "title": "Tax",
                         "@ondc/org/title_type": "tax",
                         "price": {
                             "currency": "INR",
-                            "value": 12.5
+                            "value": "2.50"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "C1",
+                        "@ondc/org/item_id": "fulfillment-64afa47e682cee3b504c4a86",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "52.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "fulfillment-64afa47e682cee3b504c4a86",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "fulfillment-64afa47e682cee3b504c4a86",
                         "title": "Convenience Fee",
                         "@ondc/org/title_type": "misc",
                         "price": {
                             "currency": "INR",
-                            "value": 11.151
+                            "value": "7.33"
                         }
                     }
                 ],
                 "ttl": "P1D"
             },
-            "fulfilments": [
+            "fulfillments": [
                 {
                     "id": "fulfillment-64afa47e682cee3b504c4a86",
                     "@ondc/org/provider_name": "Gururaj",
@@ -138,15 +157,10 @@
                     "start": {
                         "location": {
                             "id": "location-64afa47e682cee3b504c4a86",
-                            "gps": "19.1726,72.9414",
+                            "gps": "19.172612,72.941423",
                             "descriptor": {
-                                "name": "The Shop"
-                            }
-                        },
-                        "time": {
-                            "range": {
-                                "start": "2023-08-09T10:47:28.000+00:00",
-                                "end": "2023-08-09T11:02:28.000+00:00"
+                                "name": "The Shop - Old",
+                                "images": []
                             }
                         },
                         "instructions": {
@@ -156,6 +170,13 @@
                         "contact": {
                             "phone": "9619363677",
                             "email": "gururaj@gmail.com"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-17T09:34:32.115Z",
+                                "end": "2023-08-17T09:34:32.115Z"
+                            },
+                            "timestamp": "2023-08-17T09:34:32.115Z"
                         }
                     },
                     "end": {
@@ -171,11 +192,8 @@
                                 "area_code": "400080"
                             }
                         },
-                        "time": {
-                            "range": {
-                                "start": "2023-08-09T13:17:28.000+00:00",
-                                "end": "2023-08-09T14:17:28.000+00:00"
-                            }
+                        "person": {
+                            "name": "varun"
                         },
                         "instructions": {
                             "name": "Dropoff instructions",
@@ -184,11 +202,47 @@
                         "contact": {
                             "phone": "7047472739",
                             "email": "varun@mailinator.com"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-17T09:34:32.115Z",
+                                "end": "2023-08-17T09:35:08.955Z"
+                            },
+                            "timestamp": "2023-08-17T09:35:08.955Z"
                         }
                     },
                     "rateable": true
                 }
-            ]
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "214.33",
+                    "currency": "INR",
+                    "transaction_id": "a2287975-283a-4400-99ef-b4eb3c32c3c4"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "beneficiary_name": "Smooth Tag Technologies Pvt. Ltd.",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "50200058582942",
+                        "settlement_ifsc_code": "HDFC0000015",
+                        "settlement_phase": "sale-amount",
+                        "settlement_status": "NOT-PAID",
+                        "bank_name": "HDFC BANK LTD ",
+                        "branch_name": "MUMBAI - MULUND (WEST)"
+                    }
+                ]
+            },
+            "created_at": "2023-08-17T08:27:22.805Z",
+            "updated_at": "2023-08-17T09:36:35.121Z"
         }
     }
 }

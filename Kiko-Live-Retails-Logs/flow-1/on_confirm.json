@@ -7,15 +7,16 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "api2.kiko.link/ondc-seller",
         "bpp_uri": "https://api2.kiko.link/ondc-seller",
-        "transaction_id": "0b4e045d-e6da-4c22-ba9d-07675dc7153c",
-        "message_id": "e431e4d9-71b1-4896-b4d0-28fe60715406",
-        "city": "std:022",
+        "transaction_id": "a2287975-283a-4400-99ef-b4eb3c32c3c4",
+        "message_id": "c89214c0-c625-4676-a329-d552e60f3714",
+        "city": "std:080",
         "country": "IND",
-        "timestamp": "2023-08-10T06:52:03.389Z"
+        "timestamp": "2023-08-17T08:27:26.805Z",
+        "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-08-09-399459",
+            "id": "2023-08-17-454013",
             "state": "Created",
             "provider": {
                 "id": "64afa47e682cee3b504c4a86",
@@ -31,14 +32,14 @@
                     "id": "64afa80a682cee3b504c4ab1",
                     "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86",
                     "quantity": {
-                        "count": 2
+                        "count": 1
                     }
                 },
                 {
                     "id": "64afa8b8682cee3b504c4ac7",
                     "fulfillment_id": "fulfillment-64afa47e682cee3b504c4a86",
                     "quantity": {
-                        "count": 2
+                        "count": 1
                     }
                 }
             ],
@@ -54,8 +55,8 @@
                 "phone": "7047472739",
                 "name": "varun",
                 "email": "varun@mailinator.com",
-                "created_at": "2023-08-10T06:48:50.933Z",
-                "updated_at": "2023-08-10T06:48:50.933Z"
+                "created_at": "2023-08-17T08:26:59.073Z",
+                "updated_at": "2023-08-17T08:26:59.073Z"
             },
             "fulfillments": [
                 {
@@ -71,15 +72,10 @@
                     "start": {
                         "location": {
                             "id": "location-64afa47e682cee3b504c4a86",
-                            "gps": "19.1726,72.9414",
+                            "gps": "19.172612,72.941423",
                             "descriptor": {
-                                "name": "The Shop"
-                            }
-                        },
-                        "time": {
-                            "range": {
-                                "start": "2023-08-09T07:20:04.000+00:00",
-                                "end": "2023-08-09T07:35:04.000+00:00"
+                                "name": "The Shop - Old",
+                                "images": []
                             }
                         },
                         "instructions": {
@@ -104,11 +100,8 @@
                                 "area_code": "400080"
                             }
                         },
-                        "time": {
-                            "range": {
-                                "start": "2023-08-09T09:50:04.000+00:00",
-                                "end": "2023-08-09fulfillment-64afa47e682cee3b504c4a860:50:04.000+00:00"
-                            }
+                        "person": {
+                            "name": "varun"
                         },
                         "instructions": {
                             "name": "Dropoff instructions",
@@ -127,37 +120,71 @@
                     {
                         "@ondc/org/item_id": "64afa80a682cee3b504c4ab1",
                         "@ondc/org/item_quantity": {
-                            "count": 2
+                            "count": 1
                         },
                         "title": "Atta Ashirwad",
-                        "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": "190.00"
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "190.00"
-                            }
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "64afa8b8682cee3b504c4ac7",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "title": "Coca Cola Drink",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
                             "value": "95.00"
                         },
                         "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "42"
+                                },
+                                "maximum": {
+                                    "count": "42"
+                                }
+                            },
                             "price": {
                                 "currency": "INR",
                                 "value": "95.00"
                             }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "64afa80a682cee3b504c4ab1",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "64afa8b8682cee3b504c4ac7",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Coca Cola Drink",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "47.50"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "47.50"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "64afa8b8682cee3b504c4ac7",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2.50"
                         }
                     },
                     {
@@ -166,7 +193,7 @@
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "60"
+                            "value": "52.00"
                         }
                     },
                     {
@@ -175,16 +202,7 @@
                         "@ondc/org/title_type": "packing",
                         "price": {
                             "currency": "INR",
-                            "value": "10"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "fulfillment-64afa47e682cee3b504c4a86",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "15"
+                            "value": "5.00"
                         }
                     },
                     {
@@ -193,13 +211,13 @@
                         "@ondc/org/title_type": "misc",
                         "price": {
                             "currency": "INR",
-                            "value": "13.098"
+                            "value": "7.33"
                         }
                     }
                 ],
                 "price": {
                     "currency": "INR",
-                    "value": "383.098"
+                    "value": "214.33"
                 },
                 "ttl": "P1D"
             },
@@ -207,9 +225,9 @@
                 "uri": "https://juspay.in/",
                 "tl_method": "http/get",
                 "params": {
-                    "amount": "383.098",
+                    "amount": "214.33",
                     "currency": "INR",
-                    "transaction_id": "0b4e045d-e6da-4c22-ba9d-07675dc7153c"
+                    "transaction_id": "a2287975-283a-4400-99ef-b4eb3c32c3c4"
                 },
                 "status": "PAID",
                 "type": "ON-ORDER",
@@ -230,8 +248,8 @@
                     }
                 ]
             },
-            "created_at": "2023-08-10T06:52:03.389Z",
-            "updated_at": "2023-08-10T06:52:03.389Z"
+            "created_at": "2023-08-17T08:27:22.805Z",
+            "updated_at": "2023-08-17T08:27:26.805Z"
         }
     }
 }
