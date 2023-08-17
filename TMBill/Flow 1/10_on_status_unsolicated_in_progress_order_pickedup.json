@@ -1,0 +1,270 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "on_status",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-17T05:48:39.379Z",
+    "message_id": "68edde82-2cd0-4b60-bc40-8656aaedb207",
+    "core_version": "1.1.0",
+    "transaction_id": "d6a77377-6a66-47cf-8ea7-2ccca47450ca"
+  },
+  "message": {
+    "order": {
+      "id": "2023-08-17-379293",
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2802915::1549408::HAR",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "ttl": "PT1H",
+        "price": {
+          "value": "1216.22",
+          "currency": "INR"
+        },
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "value": "110",
+                "currency": "INR"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 101
+                },
+                "available": {
+                  "count": 101
+                }
+              }
+            },
+            "price": {
+              "value": "110",
+              "currency": "INR"
+            },
+            "title": "Egg Curry",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "item": {
+              "price": {
+                "value": "500",
+                "currency": "INR"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 102
+                },
+                "available": {
+                  "count": 102
+                }
+              }
+            },
+            "price": {
+              "value": "1000",
+              "currency": "INR"
+            },
+            "title": "Egg Masala",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            }
+          },
+          {
+            "item": {
+              "price": {
+                "value": "10",
+                "currency": "INR"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 101
+                },
+                "available": {
+                  "count": 101
+                }
+              }
+            },
+            "price": {
+              "value": "10",
+              "currency": "INR"
+            },
+            "title": "Egg",
+            "@ondc/org/item_id": "2802915::1549408::HAR",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "price": {
+              "value": "-5.50",
+              "currency": "INR"
+            },
+            "title": "Discount",
+            "@ondc/org/item_id": "2802915::1549408::HAR",
+            "@ondc/org/title_type": "discount"
+          },
+          {
+            "price": {
+              "value": "55.72",
+              "currency": "INR"
+            },
+            "title": "Tax",
+            "@ondc/org/item_id": "2802915::1549408::HAR",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": {
+              "value": "46",
+              "currency": "INR"
+            },
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "state": "In-progress",
+      "billing": {
+        "name": "Haridas Shinde",
+        "email": "haridas@tmbill.com",
+        "phone": "9028281468",
+        "address": {
+          "city": "Bengaluru",
+          "name": "Haridas Shinde",
+          "state": "Karnataka",
+          "country": "IND",
+          "locality": "Bangalore",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-17T05:40:53.479Z",
+        "updated_at": "2023-08-17T05:40:53.479Z"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "type": "ON-FULFILLMENT",
+        "params": {
+          "amount": "1216.22",
+          "currency": "INR",
+          "transaction_id": "d6a77377-6a66-47cf-8ea7-2ccca47450ca"
+        },
+        "status": "NOT-PAID",
+        "tl_method": "http/get",
+        "collected_by": "BPP",
+        "@ondc/org/settlement_details": [
+          {
+            "upi_address": "BHARATPE5020620068@yesbankltd",
+            "settlement_type": "upi",
+            "settlement_phase": "sale-amount",
+            "settlement_counterparty": "seller-app"
+          }
+        ],
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "rateable": true,
+        "locations": [
+          {
+            "id": "22446688739675"
+          }
+        ]
+      },
+      "created_at": "2023-08-17T05:40:57.964Z",
+      "updated_at": "2023-08-17T05:48:39.379Z",
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "person": {
+              "name": "Haridas Shinde"
+            },
+            "contact": {
+              "email": "haridas@tmbill.com",
+              "phone": "9028281468"
+            },
+            "location": {
+              "gps": "12.9872810000001, 77.7321000000001",
+              "address": {
+                "city": "Bengaluru",
+                "name": "Haridas Shinde",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "",
+                "locality": "Bangalore",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "agent": {
+            "name": "Tasneem",
+            "phone": "999999999"
+          },
+          "start": {
+            "contact": {
+              "email": "sid@tmbill.com",
+              "phone": "7798548540"
+            },
+            "location": {
+              "id": "22446688739675",
+              "gps": "12.970698591977477,77.7471608509239",
+              "address": {
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "locality": "Whitefield",
+                "area_code": "560066"
+              },
+              "descriptor": {
+                "name": "Eatsy",
+                "images": [
+                  "https://cdn.tmbill.com/backoffice/store-logo/1685511854499.png"
+                ]
+              }
+            }
+          },
+          "state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "name": "Order-picked-up"
+            }
+          },
+          "rateable": true,
+          "tracking": false,
+          "@ondc/org/provider_name": "22446688739675"
+        }
+      ]
+    }
+  }
+}

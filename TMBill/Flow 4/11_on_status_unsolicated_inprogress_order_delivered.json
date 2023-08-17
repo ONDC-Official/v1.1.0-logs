@@ -1,0 +1,200 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "on_status",
+    "bap_id": "jiomart-buyer.ondcz5.de",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-17T10:50:02.718Z",
+    "message_id": "030e0be8-9a89-46fc-9291-301494eb11e4",
+    "core_version": "1.1.0",
+    "transaction_id": "ed326e7a-c03f-4a57-8c23-c6680cfa0792"
+  },
+  "message": {
+    "order": {
+      "id": "d68c6933-6920-4197-8619-beccf07a0073",
+      "items": [
+        {
+          "id": "2775204::1155943::EP11",
+          "quantity": { "count": 3 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775203::1155942::EP10",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775205::1155944::EP12",
+          "quantity": { "count": 4 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "ttl": "PT1H",
+        "price": { "value": "739", "currency": "INR" },
+        "breakup": [
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 101 },
+                "available": { "count": 101 }
+              }
+            },
+            "price": { "value": "100", "currency": "INR" },
+            "title": "Mutton Curry",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 103 },
+                "available": { "count": 103 }
+              }
+            },
+            "price": { "value": "300", "currency": "INR" },
+            "title": "Mutton Masala",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 3 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 2 },
+                "available": { "count": 2 }
+              }
+            },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Mutton Handi",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "40.00", "currency": "INR" },
+            "title": "Packaging Charges",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "packing"
+          },
+          {
+            "price": { "value": "40.00", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "59", "currency": "INR" },
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "state": "Completed",
+      "billing": {
+        "name": "John Doe",
+        "email": "sid@gmail.com",
+        "phone": "9765995955",
+        "address": {
+          "city": "Bengaluru",
+          "name": "John Doe",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Bangalure",
+          "locality": "Bangalure",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-17T10:39:42.986Z",
+        "updated_at": "2023-08-17T10:39:42.986Z"
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "params": {
+          "amount": "739",
+          "currency": "INR",
+          "transaction_id": "20230817011650000898966166260326735"
+        },
+        "status": "PAID",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "upi_address": "BHARATPE5020620068@yesbankltd",
+            "settlement_type": "upi",
+            "settlement_phase": "sale-amount",
+            "settlement_counterparty": "seller-app"
+          }
+        ],
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "2"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "rateable": true,
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "created_at": "2023-08-17T10:41:44.549Z",
+      "updated_at": "2023-08-17T10:50:02.718Z",
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "person": { "name": "John Doe" },
+            "contact": { "email": "sid@gmail.com", "phone": "9765995955" },
+            "location": {
+              "gps": "12.969807,77.749963",
+              "address": {
+                "city": "Bengaluru",
+                "name": "John Doe",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Bangalure",
+                "locality": "Bangalure",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "agent": { "name": "Amit Kumar", "phone": "9898989898" },
+          "start": {
+            "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
+            "location": {
+              "id": "22446688739675",
+              "gps": "12.970698591977477,77.7471608509239",
+              "address": {
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "locality": "Whitefield",
+                "area_code": "560066"
+              },
+              "descriptor": {
+                "name": "Eatsy",
+                "images": [
+                  "https://cdn.tmbill.com/backoffice/store-logo/1685511854499.png"
+                ]
+              }
+            }
+          },
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered",
+              "name": "Order-delivered"
+            }
+          },
+          "rateable": true,
+          "tracking": false,
+          "@ondc/org/provider_name": "22446688739675"
+        }
+      ]
+    }
+  }
+}

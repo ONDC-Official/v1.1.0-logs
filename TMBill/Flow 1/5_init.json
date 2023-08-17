@@ -1,0 +1,78 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "init",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-17T05:40:53.479Z",
+    "message_id": "127c93f9-b037-4d36-940d-58dbd7d47476",
+    "core_version": "1.1.0",
+    "transaction_id": "d6a77377-6a66-47cf-8ea7-2ccca47450ca"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2802915::1549408::HAR",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "billing": {
+        "name": "Haridas Shinde",
+        "email": "haridas@tmbill.com",
+        "phone": "9028281468",
+        "address": {
+          "city": "Bengaluru",
+          "name": "Haridas Shinde",
+          "state": "Karnataka",
+          "country": "IND",
+          "locality": "Bangalore",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-17T05:40:53.479Z",
+        "updated_at": "2023-08-17T05:40:53.479Z"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "contact": { "email": "haridas@tmbill.com", "phone": "9028281468" },
+            "location": {
+              "gps": "12.9872810000001, 77.7321000000001",
+              "address": {
+                "city": "Bengaluru",
+                "name": "Haridas Shinde",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "",
+                "locality": "Bangalore",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ]
+    }
+  }
+}

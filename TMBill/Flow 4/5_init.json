@@ -1,0 +1,80 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "init",
+    "bap_id": "jiomart-buyer.ondcz5.de",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-17T10:39:42.986Z",
+    "message_id": "5006392b-ddfe-4ce0-9a14-2a94e6793047",
+    "core_version": "1.1.0",
+    "transaction_id": "ed326e7a-c03f-4a57-8c23-c6680cfa0792"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775204::1155943::EP11",
+          "quantity": { "count": 3 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775203::1155942::EP10",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775205::1155944::EP12",
+          "quantity": { "count": 4 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "billing": {
+        "name": "John Doe",
+        "email": "sid@gmail.com",
+        "phone": "9765995955",
+        "address": {
+          "city": "Bengaluru",
+          "name": "John Doe",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Bangalure",
+          "locality": "Bangalure",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-17T10:39:42.986Z",
+        "updated_at": "2023-08-17T10:39:42.986Z"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "contact": { "phone": "9765995955" },
+            "location": {
+              "gps": "12.969807,77.749963",
+              "address": {
+                "city": "Bengaluru",
+                "name": "John Doe",
+                "state": "Karnataka",
+                "country": "IND",
+                "areaCode": "560066",
+                "building": "Bangalure",
+                "locality": "Bangalure",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ]
+    }
+  }
+}

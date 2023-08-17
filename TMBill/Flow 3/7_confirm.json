@@ -1,0 +1,181 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "confirm",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-17T08:11:31.781Z",
+    "message_id": "4a3e5924-761a-4ab4-b708-b801b2953f1f",
+    "core_version": "1.1.0",
+    "transaction_id": "8a0730c0-3a6e-4ad7-bf8d-a3d5ce3b303b"
+  },
+  "message": {
+    "order": {
+      "id": "2023-08-17-959456",
+      "items": [
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775203::1155942::EP10",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "ttl": "PT1H",
+        "price": { "value": "480.72", "currency": "INR" },
+        "breakup": [
+          {
+            "item": {
+              "price": { "value": "110", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 101 },
+                "available": { "count": 101 }
+              }
+            },
+            "price": { "value": "110", "currency": "INR" },
+            "title": "Egg Curry",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 101 },
+                "available": { "count": 101 }
+              }
+            },
+            "price": { "value": "100", "currency": "INR" },
+            "title": "Egg Bhurji",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 102 },
+                "available": { "count": 102 }
+              }
+            },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Mutton Curry",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "10.00", "currency": "INR" },
+            "title": "Packaging Charges",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/title_type": "packing"
+          },
+          {
+            "price": { "value": "-5.50", "currency": "INR" },
+            "title": "Discount",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/title_type": "discount"
+          },
+          {
+            "price": { "value": "20.22", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "46", "currency": "INR" },
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "state": "Created",
+      "billing": {
+        "name": "John Doe",
+        "email": "xifelo7871@fulwark.com",
+        "phone": "9090999900",
+        "address": {
+          "city": "Bengaluru",
+          "name": "John Doe",
+          "state": "Karnataka",
+          "country": "IND",
+          "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-17T08:11:26.070Z",
+        "updated_at": "2023-08-17T08:11:26.070Z"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "type": "ON-ORDER",
+        "params": {
+          "amount": "480.72",
+          "currency": "INR",
+          "transaction_id": "8a0730c0-3a6e-4ad7-bf8d-a3d5ce3b303b"
+        },
+        "status": "PAID",
+        "tl_method": "http/get",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "upi_address": "BHARATPE5020620068@yesbankltd",
+            "settlement_type": "upi",
+            "settlement_phase": "sale-amount",
+            "settlement_counterparty": "seller-app"
+          }
+        ],
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "created_at": "2023-08-17T08:11:31.781Z",
+      "updated_at": "2023-08-17T08:11:31.781Z",
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "person": { "name": "John Doe" },
+            "contact": {
+              "email": "xifelo7871@fulwark.com",
+              "phone": "9090999900"
+            },
+            "location": {
+              "gps": "12.9872810000001, 77.7321000000001",
+              "address": {
+                "city": "Bengaluru",
+                "name": "John Doe",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "",
+                "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "tracking": false
+        }
+      ]
+    }
+  }
+}

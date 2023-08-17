@@ -1,0 +1,141 @@
+{
+  "error": {
+    "code": "30011",
+    "path": "string",
+    "type": "DOMAIN-ERROR",
+    "message": "Delivery Partners not available, please try again after some time"
+  },
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "on_select",
+    "bap_id": "shopping-api-testing.phonepe.com",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-17T06:22:28.154Z",
+    "message_id": "SELM2308171152271138335993",
+    "core_version": "1.1.0",
+    "transaction_id": "C2308171147550718335152"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": { "count": 3 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "ttl": "PT1H",
+        "price": { "value": "2038.9", "currency": "INR" },
+        "breakup": [
+          {
+            "item": {
+              "price": { "value": "110", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 102 },
+                "available": { "count": 102 }
+              }
+            },
+            "price": { "value": "220", "currency": "INR" },
+            "title": "Egg Curry",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "9.9", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": {
+              "price": { "value": "500", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 103 },
+                "available": { "count": 103 }
+              }
+            },
+            "price": { "value": "1500", "currency": "INR" },
+            "title": "Egg Masala",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 3 }
+          },
+          {
+            "price": { "value": "75", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": 102 },
+                "available": { "count": 102 }
+              }
+            },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Egg Bhurji",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "10", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "-11.00", "currency": "INR" },
+            "title": "Discount",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "discount"
+          },
+          {
+            "price": { "value": "35", "currency": "INR" },
+            "title": "Delivery Charge",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "provider": { "id": "22446688739675" },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "type": "Delivery",
+          "state": {
+            "descriptor": {
+              "code": "Non-serviceable",
+              "name": "Non-serviceable"
+            }
+          },
+          "tracking": false,
+          "@ondc/org/TAT": "PT60M",
+          "deliveryCharge": "35",
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/provider_name": "22446688739675"
+        }
+      ],
+      "provider_location": { "id": "22446688739675" }
+    }
+  }
+}
