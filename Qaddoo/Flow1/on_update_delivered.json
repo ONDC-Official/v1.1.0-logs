@@ -3,20 +3,20 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "ondc.uat.medpay.in",
         "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
         "transaction_id": "568280a7-9b4d-43fc-b7ee-2ea5fbcc4e37",
-        "message_id": "777d7607-f59e-48c6-81f2-752ffb60020f",
-        "timestamp": "2023-08-17T11:15:22.833Z"
+        "message_id": "ac29a9ce-cc6d-4c12-a575-25d068b5cc5e",
+        "timestamp": "2023-08-17T11:31:06.913Z"
     },
     "message": {
         "order": {
             "id": "100068",
-            "state": "Created",
+            "state": "Completed",
             "provider": {
                 "id": "1001-3716-9032-6275",
                 "locations": [
@@ -36,9 +36,13 @@
                 },
                 {
                     "id": "1002-4377-0770-0838_384255",
-                    "fulfillment_id": "52190637412154954322712521771916523815",
+                    "fulfillment_id": "246183601651150530779725539800053076348",
                     "quantity": {
                         "count": 2
+                    },
+                    "tags": {
+                        "reason_code": "001",
+                        "status": "Return_Delivered"
                     }
                 }
             ],
@@ -67,52 +71,54 @@
                     "@ondc/org/provider_name": "Medpay - Vishal Medical Center",
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
                     "tracking": false,
                     "start": {
-                        "location": {
-                            "id": "1002-4377-0770-0838",
-                            "descriptor": {
-                                "name": "Medpay - Vishal Medical Center"
-                            },
-                            "gps": "12.932209,77.633832"
-                        },
                         "time": {
+                            "timestamp": "2023-08-17T11:23:14.826Z",
                             "range": {
                                 "start": "2023-08-18T11:15:22.882Z",
                                 "end": "2023-08-18T14:15:22.882Z"
                             }
-                        },
-                        "contact": {
-                            "phone": "8861545034"
                         }
                     },
                     "end": {
-                        "location": {
-                            "gps": "12.971888547537276,77.6070088148117",
-                            "address": {
-                                "name": "Rajiv Singh",
-                                "building": "FO1A",
-                                "locality": "War Memorial, Junction of Brigade Road and, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
-                                "city": "Bengaluru",
-                                "state": "Karnataka",
-                                "country": "India",
-                                "area_code": "560025"
-                            }
-                        },
                         "time": {
+                            "timestamp": "2023-08-17T11:23:36.986Z",
                             "range": {
                                 "start": "2023-08-19T11:15:22.882Z",
                                 "end": "2023-08-19T14:15:22.882Z"
                             }
-                        },
-                        "contact": {
-                            "phone": "8302010971"
-                        },
-                        "person": {
-                            "name": "Rajiv Singh"
+                        }
+                    }
+                },
+                {
+                    "id": "246183601651150530779725539800053076348",
+                    "type": "Reverse QC",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "start": {
+                        "time": {
+                            "timestamp": "2023-08-17T11:30:54.124Z",
+                            "range": {
+                                "start": "2023-08-17T23:27:26.713Z",
+                                "end": "2023-08-18T00:27:26.713Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "timestamp": "2023-08-17T11:31:06.913Z",
+                            "range": {
+                                "start": "2023-08-18T02:27:26.713Z",
+                                "end": "2023-08-18T03:27:26.713Z"
+                            }
                         }
                     }
                 }
@@ -120,7 +126,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "2067.0"
+                    "value": "1347.0"
                 },
                 "breakup": [
                     {
@@ -139,24 +145,6 @@
                         "price": {
                             "currency": "INR",
                             "value": "1347.0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "1002-4377-0770-0838_384255",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "360.0"
-                            }
-                        },
-                        "title": "pampers active baby diapers small",
-                        "price": {
-                            "currency": "INR",
-                            "value": "720.0"
                         }
                     },
                     {
@@ -195,8 +183,9 @@
                     }
                 ]
             },
+            "order_ready_to_ship_at": "2023-08-17T11:23:11.729Z",
             "created_at": "2023-08-17T11:15:19.630Z",
-            "updated_at": "2023-08-17T11:15:22.833Z"
+            "updated_at": "2023-08-17T11:31:06.913Z"
         }
     }
 }

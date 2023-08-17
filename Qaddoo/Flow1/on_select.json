@@ -1,112 +1,118 @@
 {
     "context": {
         "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
         "action": "on_select",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "bpp_id": "seller.instastack.io",
-        "bpp_uri": "https://seller.instastack.io/pre-prod",
-        "transaction_id": "75822fce-f6fa-47ee-8eb4-f1f5892c4047",
-        "message_id": "32d6603d-6068-4438-8210-65b59067fb5b",
-        "city": "std:080",
-        "country": "IND",
-        "timestamp": "2023-07-13T17:04:35.122Z"
+        "bpp_id": "ondc.uat.medpay.in",
+        "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+        "transaction_id": "568280a7-9b4d-43fc-b7ee-2ea5fbcc4e37",
+        "message_id": "2e858b99-d08f-48c6-b7cd-f9bb2d6e9fe0",
+        "timestamp": "2023-08-17T11:14:16.187Z"
     },
     "message": {
         "order": {
             "provider": {
-                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7"
+                "id": "1001-3716-9032-6275",
+                "locations": [
+                    {
+                        "id": "1002-4377-0770-0838"
+                    }
+                ]
             },
             "items": [
                 {
-                    "fulfillment_id": "1",
-                    "id": "223251"
+                    "id": "1002-4377-0770-0838_384348",
+                    "fulfillment_id": "52190637412154954322712521771916523815"
                 },
                 {
-                    "fulfillment_id": "1",
-                    "id": "218"
+                    "id": "1002-4377-0770-0838_384255",
+                    "fulfillment_id": "52190637412154954322712521771916523815"
                 }
             ],
             "fulfillments": [
                 {
-                    "id": "1",
-                    "@ondc/org/provider_name": "Dunzo and others",
-                    "tracking": false,
-                    "@ondc/org/category": "Same Day Delivery",
-                    "@ondc/org/TAT": "PT6H",
+                    "id": "52190637412154954322712521771916523815",
+                    "type": "Delivery",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/TAT": "P2D",
+                    "@ondc/org/provider_name": "Medpay - Vishal Medical Center",
                     "state": {
                         "descriptor": {
                             "code": "Serviceable"
                         }
-                    }
+                    },
+                    "tracking": false
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1565.00"
+                    "value": "2067.0"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "223251",
+                        "@ondc/org/item_id": "1002-4377-0770-0838_384348",
                         "@ondc/org/item_quantity": {
-                            "count": 2
+                            "count": 3
                         },
-                        "title": "Seni Care Wet Wipes, 10 pcs",
                         "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": "398.00"
-                        },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "199.00"
+                                "value": "449.0"
                             },
                             "quantity": {
                                 "available": {
-                                    "count": "100"
+                                    "count": "10"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "10"
                                 }
                             }
+                        },
+                        "title": "pampers active baby diapers large",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1347.0"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "218",
+                        "@ondc/org/item_id": "1002-4377-0770-0838_384255",
                         "@ondc/org/item_quantity": {
                             "count": 2
                         },
-                        "title": "Mamaearth Onion Conditioner, 400 ml",
                         "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": "1118.00"
-                        },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "559.00"
+                                "value": "360.0"
                             },
                             "quantity": {
                                 "available": {
-                                    "count": "100"
+                                    "count": "10"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "10"
                                 }
                             }
+                        },
+                        "title": "pampers active baby diapers small",
+                        "price": {
+                            "currency": "INR",
+                            "value": "720.0"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "1",
-                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "52190637412154954322712521771916523815",
                         "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges",
                         "price": {
                             "currency": "INR",
-                            "value": "49.00"
+                            "value": "0.0"
                         }
                     }
                 ],
