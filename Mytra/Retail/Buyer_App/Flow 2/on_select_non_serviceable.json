@@ -1,0 +1,120 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:040",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/buyer_ondc/",
+        "transaction_id": "09522464-fd3a-4b79-9f9e-5d4806701d80",
+        "message_id": "22be6cea0a",
+        "timestamp": "2023-08-18T05:29:11.738Z",
+        "bpp_id": "shathabdhi-organics.mytra.money",
+        "bpp_uri": "https://shathabdhi-organics.mytra.money/api/method/ondc/"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "STO-ITEM-2023-00014-1 KG:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-80922"
+                },
+                {
+                    "id": "STO-ITEM-2023-00015-1 KG:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-80922"
+                }
+            ],
+            "provider": {
+                "id": "shathabdhi-organics.mytra.money",
+                "locations": [
+                    {
+                        "id": "Manikonda - S"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "state": {
+                        "descriptor": {
+                            "code": "Non-serviceable"
+                        }
+                    },
+                    "id": "ONDC-REQ-80922",
+                    "@ondc/org/provider_name": "Shathabdhi Organics",
+                    "@ondc/org/TAT": "PT4H",
+                    "@ondc/org/category": "Same Day Delivery"
+                }
+            ],
+            "payment": {
+                "type": "ON-ORDER"
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1070.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "STO-ITEM-2023-00014-1 KG:Manikonda - S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Unpolished Toor Dal-1 KG",
+                        "price": {
+                            "currency": "INR",
+                            "value": "520.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "260.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "STO-ITEM-2023-00015-1 KG:Manikonda - S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Unpolished Urad Dal-1 KG",
+                        "price": {
+                            "currency": "INR",
+                            "value": "550.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "275.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            }
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "30009",
+        "message": "Location Serviceability Error"
+    }
+}
