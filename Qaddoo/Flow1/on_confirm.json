@@ -7,124 +7,142 @@
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "bpp_id": "seller.instastack.io",
-        "bpp_uri": "https://seller.instastack.io/pre-prod",
-        "transaction_id": "75822fce-f6fa-47ee-8eb4-f1f5892c4047",
-        "message_id": "4ea8341a-c140-4e4c-9c6b-2139d84ce2a8",
-        "timestamp": "2023-07-13T17:05:19.845Z",
-        "ttl": "PT30S"
+        "bpp_id": "ondc.uat.medpay.in",
+        "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+        "transaction_id": "568280a7-9b4d-43fc-b7ee-2ea5fbcc4e37",
+        "message_id": "777d7607-f59e-48c6-81f2-752ffb60020f",
+        "timestamp": "2023-08-17T11:15:22.833Z"
     },
     "message": {
         "order": {
-            "id": "664",
-            "state": "Accepted",
+            "id": "100068",
+            "state": "Created",
+            "provider": {
+                "id": "1001-3716-9032-6275",
+                "locations": [
+                    {
+                        "id": "1002-4377-0770-0838"
+                    }
+                ],
+                "rateable": true
+            },
             "items": [
                 {
-                    "id": "223251",
-                    "fulfillment_id": "1",
+                    "id": "1002-4377-0770-0838_384348",
+                    "fulfillment_id": "52190637412154954322712521771916523815",
                     "quantity": {
-                        "count": 2
+                        "count": 3
                     }
                 },
                 {
-                    "id": "218",
-                    "fulfillment_id": "1",
+                    "id": "1002-4377-0770-0838_384255",
+                    "fulfillment_id": "52190637412154954322712521771916523815",
                     "quantity": {
                         "count": 2
                     }
                 }
             ],
-            "provider": {
-                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
-                "locations": [
-                    {
-                        "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
-                    }
-                ],
-                "rateable": true
-            },
             "billing": {
                 "name": "Rajiv Singh",
                 "address": {
                     "name": "Rajiv Singh",
-                    "building": "15/11",
-                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                    "building": "FO1A",
+                    "locality": "War Memorial, Junction of Brigade Road and, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
                     "city": "Bengaluru",
                     "state": "Karnataka",
                     "country": "India",
-                    "area_code": "560001"
+                    "area_code": "560025"
                 },
                 "phone": "8302010971",
-                "created_at": "2023-07-13T17:04:39.773Z",
-                "updated_at": "2023-07-13T17:04:39.773Z"
+                "created_at": "2023-08-17T11:14:24.669Z",
+                "updated_at": "2023-08-17T11:14:24.669Z"
             },
             "fulfillments": [
                 {
-                    "id": "1",
-                    "@ondc/org/provider_name": "Dunzo and others",
+                    "id": "52190637412154954322712521771916523815",
+                    "type": "Delivery",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/TAT": "P2D",
+                    "provider_id": "1001-3716-9032-6275",
+                    "@ondc/org/provider_name": "Medpay - Vishal Medical Center",
                     "state": {
                         "descriptor": {
                             "code": "Pending"
                         }
                     },
-                    "type": "Delivery",
                     "tracking": false,
                     "start": {
                         "location": {
-                            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
+                            "id": "1002-4377-0770-0838",
                             "descriptor": {
-                                "name": "InstaStack Store Powai",
-                                "images": [
-                                    "https://www.wellnessforever.com/assets/img/logo/cmy_logo_full.webp"
-                                ]
+                                "name": "Medpay - Vishal Medical Center"
                             },
-                            "gps": "19.116802,72.909812"
+                            "gps": "12.932209,77.633832"
                         },
                         "time": {
                             "range": {
-                                "start": "2023-07-13T17:05:19.845Z",
-                                "end": "2023-07-13T18:05:19.845Z"
+                                "start": "2023-08-18T11:15:22.882Z",
+                                "end": "2023-08-18T14:15:22.882Z"
                             }
                         },
                         "contact": {
-                            "phone": "9892216537",
-                            "email": "info@instastack.io"
+                            "phone": "8861545034"
                         }
                     },
                     "end": {
                         "location": {
-                            "gps": "12.971609528512422,77.59456269443035",
+                            "gps": "12.971888547537276,77.6070088148117",
                             "address": {
                                 "name": "Rajiv Singh",
-                                "building": "15/11",
-                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                                "building": "FO1A",
+                                "locality": "War Memorial, Junction of Brigade Road and, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
                                 "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "India",
-                                "area_code": "560001"
+                                "area_code": "560025"
                             }
                         },
                         "time": {
                             "range": {
-                                "start": "2023-07-13T17:05:19.845Z",
-                                "end": "2023-07-13T23:05:19.846Z"
+                                "start": "2023-08-19T11:15:22.882Z",
+                                "end": "2023-08-19T14:15:22.882Z"
                             }
                         },
                         "contact": {
                             "phone": "8302010971"
+                        },
+                        "person": {
+                            "name": "Rajiv Singh"
                         }
-                    },
-                    "rateable": true
+                    }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1565.00"
+                    "value": "2067.0"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "223251",
+                        "@ondc/org/item_id": "1002-4377-0770-0838_384348",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "449.0"
+                            }
+                        },
+                        "title": "pampers active baby diapers large",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1347.0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1002-4377-0770-0838_384255",
                         "@ondc/org/item_quantity": {
                             "count": 2
                         },
@@ -132,40 +150,22 @@
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "199.00"
+                                "value": "360.0"
                             }
                         },
-                        "title": "Seni Care Wet Wipes, 10 pcs",
+                        "title": "pampers active baby diapers small",
                         "price": {
                             "currency": "INR",
-                            "value": "398.00"
+                            "value": "720.0"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "218",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "559.00"
-                            }
-                        },
-                        "title": "Mamaearth Onion Conditioner, 400 ml",
-                        "price": {
-                            "currency": "INR",
-                            "value": "1118.00"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "1",
+                        "@ondc/org/item_id": "52190637412154954322712521771916523815",
                         "@ondc/org/title_type": "delivery",
                         "title": "Delivery charges",
                         "price": {
                             "currency": "INR",
-                            "value": "49.00"
+                            "value": "0.0"
                         }
                     }
                 ],
@@ -173,9 +173,9 @@
             },
             "payment": {
                 "params": {
-                    "amount": "1565.00",
-                    "currency": "INR",
-                    "transaction_id": "1689267914584"
+                    "transaction_id": "1692270662945",
+                    "amount": "2067.0",
+                    "currency": "INR"
                 },
                 "type": "ON-ORDER",
                 "status": "PAID",
@@ -187,17 +187,16 @@
                         "settlement_counterparty": "seller-app",
                         "settlement_phase": "sale-amount",
                         "settlement_type": "upi",
-                        "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
-                        "settlement_ifsc_code": "someIFSC",
-                        "upi_address": "thor@okicicicicic",
-                        "bank_name": "Marvels Bank",
-                        "branch_name": "Asgard",
-                        "beneficiary_name": "Thor"
+                        "settlement_bank_account_no": "29837293879283",
+                        "settlement_ifsc_code": "SBIN0002001",
+                        "upi_address": "72873729780@upi",
+                        "bank_name": "State Bank Of India",
+                        "branch_name": "Andaman Nicobar"
                     }
                 ]
             },
-            "created_at": "2023-07-13T17:05:19.683Z",
-            "updated_at": "2023-07-13T17:05:19.845Z"
+            "created_at": "2023-08-17T11:15:19.630Z",
+            "updated_at": "2023-08-17T11:15:22.833Z"
         }
     }
 }
