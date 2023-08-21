@@ -1,0 +1,111 @@
+{
+    "context": {
+        "action": "on_status",
+        "bap_id": "integrations-preprod.channelier.com",
+        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+        "bpp_id": "shipdh.in",
+        "bpp_uri": "https://shipdh.in/ondc/bpp/api/",
+        "country": "IND",
+        "city": "std:011",
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "transaction_id": "6ccab6bc-a546-4572-aa3d-213dd4a4235f",
+        "message_id": "264b59af-ecb7-4eff-b19d-d63204c7e430",
+        "timestamp": "2023-08-18T13:36:38.020Z"
+    },
+    "message": {
+        "order": {
+            "id": "6ed3730b-0f07-4aa2-8353-e8fc7757e005",
+            "state": "In-progress",
+            "provider": {
+                "id": "1"
+            },
+            "items": [
+                {
+                    "id": "1",
+                    "category_id": "Same Day Delivery",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "30.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "1",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "30.00"
+                        }
+                    }
+                ]
+            },
+            "billing": {
+                "name": "ONDC sellerapp",
+                "address": {
+                    "name": "My house or building no",
+                    "building": "My house or building name",
+                    "locality": "My street name",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560076"
+                },
+                "tax_number": "XXXXXXXXXXXXXXX",
+                "phone": "9886098860",
+                "email": "abcd.efgh@gmail.com",
+                "created_at": "2023-08-18T13:31:11.467Z",
+                "updated_at": "2023-08-18T13:31:11.467Z"
+            },
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "neft",
+                        "upi_address": null,
+                        "settlement_bank_account_no": "917020074322489",
+                        "settlement_ifsc_code": "UTIB0000395"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "type": "Prepaid",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up"
+                        }
+                    },
+                    "@ondc/org/awb_no": "1692365494593363",
+                    "tracking": true,
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-08-18T08:01:02.360Z",
+                                "end": "2023-08-18T08:31:02.360Z"
+                            },
+                            "timestamp": "2023-08-18T13:36:38.020Z"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-08-18T10:01:02.360Z",
+                                "end": "2023-08-18T12:01:02.360Z"
+                            }
+                        }
+                    }
+                }
+            ],
+            "created_at": "2023-08-18T13:31:34.248Z",
+            "updated_at": "2023-08-18T13:36:38.020Z"
+        }
+    }
+}
