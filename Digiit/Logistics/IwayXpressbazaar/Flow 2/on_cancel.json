@@ -7,15 +7,15 @@
     "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
     "bpp_id": "preprod-bpp.iway.digiit.io",
     "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-    "transaction_id": "ea738e6e-5ab9-4542-a4e7-f8dd70f9c846",
-    "message_id": "a8cfb0e1-162d-4f3d-8152-2b4fed523657",
+    "transaction_id": "f8393546-2f88-413c-af02-1e724ea24eef",
+    "message_id": "17b5c582-2b7e-40c4-bfd7-23be08558f82",
     "city": "std:080",
     "country": "IND",
-    "timestamp": "2023-08-09T11:19:34.526Z"
+    "timestamp": "2023-08-18T05:05:05.184Z"
   },
   "message": {
     "order": {
-      "id": "8b5cc37b-bfce-4029-89ca-f7b7f3be70d9",
+      "id": "19da7b0d-743e-44f1-bd94-2f8ea498327d",
       "state": "Cancelled",
       "fulfillments": [
         {
@@ -23,15 +23,98 @@
           "type": "Prepaid",
           "state": {
             "descriptor": {
-              "code": "Cancelled"
+              "code": "Cancelled",
+              "name": "Cancelled"
             }
           },
-          "tags": {
-            "cancellation_reason_id": "016",
-            "AWB no": "2023080902545712"
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-08-18T05:10:59.15Z",
+                "end": "2023-08-18T05:40:59.15Z"
+              }
+            }
+          },
+          "agent": {
+            "name": "Peter",
+            "phone": "7438483828"
+          },
+          "vehicle": {
+            "category": "TwoWheeler",
+            "size": "500.0000",
+            "registration": "TN56NS8282"
+          },
+          "tags": [
+            {
+              "code": "rto",
+              "list": [
+                {
+                  "code": "retry_count",
+                  "value": "3"
+                },
+                {
+                  "code": "rto_id",
+                  "value": "1-RTO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1-RTO",
+          "type": "RTO",
+          "state": {
+            "descriptor": {
+              "code": "RTO-Initiated",
+              "name": "RTO-Initiated"
+            }
+          },
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-08-18T05:05:05.228Z",
+                "end": "2023-08-18T05:35:05.228Z"
+              }
+            }
           }
         }
-      ]
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "180.0"
+        },
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "90.0"
+            },
+            "@ondc/org/item_id": "19",
+            "@ondc/org/title_type": "Delivery Charge"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "90.0"
+            },
+            "@ondc/org/item_id": "19-RTO",
+            "@ondc/org/title_type": "RTO Charge"
+          }
+        ]
+      },
+      "cancellation": {
+        "time": "2023-08-18T05:05:05.292Z",
+        "cancelled_by": "Jagadeesan",
+        "reason": {
+          "id": "013",
+          "additional_description": {
+            "name": "AWB",
+            "code": "2023081841114646"
+          }
+        }
+      }
     }
   }
 }
