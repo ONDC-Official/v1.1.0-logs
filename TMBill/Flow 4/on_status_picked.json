@@ -1,0 +1,227 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "on_status",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-22T05:33:15.048Z",
+    "message_id": "0d734cb1-6a3f-4cd5-b3f2-432975fd3676",
+    "core_version": "1.1.0",
+    "transaction_id": "ffb401c3-d160-4ca7-b5fa-59ff4a791869"
+  },
+  "message": {
+    "order": {
+      "id": "2023-08-22-190415",
+      "items": [
+        {
+          "id": "2775205::1155944::EP12",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775203::1155942::EP10",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775204::1155943::EP11",
+          "quantity": { "count": 3 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "ttl": "PT1H",
+        "price": { "value": "706", "currency": "INR" },
+        "breakup": [
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "101" },
+                "available": { "count": "101" }
+              }
+            },
+            "price": { "value": "100", "currency": "INR" },
+            "title": "Mutton Curry",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "103" },
+                "available": { "count": "103" }
+              }
+            },
+            "price": { "value": "300", "currency": "INR" },
+            "title": "Mutton Masala",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 3 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "102" },
+                "available": { "count": "102" }
+              }
+            },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Mutton Handi",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "30.00", "currency": "INR" },
+            "title": "Packaging Charges",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "packing"
+          },
+          {
+            "price": { "value": "30.00", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "46", "currency": "INR" },
+            "title": "Delivery Charges",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "state": "In-progress",
+      "billing": {
+        "name": "John Doe",
+        "email": "xifelo7871@fulwark.com",
+        "phone": "9090999900",
+        "address": {
+          "city": "Bengaluru",
+          "name": "John Doe",
+          "state": "Karnataka",
+          "country": "IND",
+          "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-22T05:30:01.981Z",
+        "updated_at": "2023-08-22T05:30:01.981Z"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "type": "ON-ORDER",
+        "params": {
+          "amount": "706",
+          "currency": "INR",
+          "transaction_id": "ffb401c3-d160-4ca7-b5fa-59ff4a791869"
+        },
+        "status": "PAID",
+        "tl_method": "http/get",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "bank_name": "HDFC BANK",
+            "branch_name": "SHRIRAMPUR BRANCH",
+            "settlement_type": "neft",
+            "beneficiary_name": "TechMainstay Software Private Limited",
+            "settlement_phase": "sale-amount",
+            "settlement_ifsc_code": "HDFC0000966",
+            "settlement_counterparty": "seller-app",
+            "settlement_bank_account_no": "50200085305869"
+          }
+        ],
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "rateable": true,
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "documents": [
+        {
+          "url": "https://backoffice.tmbill.com/ebill/2023-08-22-190415",
+          "label": "Invoice"
+        }
+      ],
+      "created_at": "2023-08-22T05:30:05.980Z",
+      "updated_at": "2023-08-22T05:33:14.146Z",
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "time": {
+              "range": {
+                "end": "2023-08-22T06:15:05.980Z",
+                "start": "2023-08-22T06:15:05.980Z"
+              }
+            },
+            "person": { "name": "John Doe" },
+            "contact": {
+              "email": "xifelo7871@fulwark.com",
+              "phone": "9090999900"
+            },
+            "location": {
+              "gps": "12.9872810000001, 77.7321000000001",
+              "address": {
+                "city": "Bengaluru",
+                "name": "John Doe",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "",
+                "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "agent": { "name": "Tasneem", "phone": "999999999" },
+          "start": {
+            "time": {
+              "range": {
+                "end": "2023-08-22T06:15:05.980Z",
+                "start": "2023-08-22T06:15:05.980Z"
+              },
+              "timestamp": "2023-08-22T05:30:05.000Z"
+            },
+            "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
+            "location": {
+              "id": "22446688739675",
+              "gps": "12.970698591977477,77.7471608509239",
+              "address": {
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "locality": "Whitefield",
+                "area_code": "560066"
+              },
+              "descriptor": {
+                "name": "Eatsy",
+                "images": [
+                  "https://cdn.tmbill.com/backoffice/store-logo/1685511854499.png"
+                ]
+              }
+            }
+          },
+          "state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "name": "Order-picked-up"
+            }
+          },
+          "rateable": true,
+          "tracking": false,
+          "@ondc/org/provider_name": "22446688739675"
+        }
+      ]
+    }
+  }
+}
