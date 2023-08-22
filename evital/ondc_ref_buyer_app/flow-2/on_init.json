@@ -1,0 +1,171 @@
+{
+    "context": {
+        "action": "on_init",
+        "timestamp": "2023-07-24T11:38:23.546Z",
+        "domain": "nic2004:52110",
+        "bpp_id": "dev-ondc.evitalrx.in",
+        "bpp_uri": "https://dev-ondc.evitalrx.in/",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "transaction_id": "c6a0a4f9-2d49-4993-9e13-2901006d0d7d",
+        "message_id": "8c85ce1a-f893-4725-a682-da0ce9457b8b",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "key": "gZFGTih00MIUZbL8u0y+Zaxd2SJRVAyuTTX6s6qD/vY="
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "YT3/3PEAnmEolCPrStruew=="
+            },
+            "provider_location": {
+                "id": "YT3/3PEAnmEolCPrStruew=="
+            },
+            "items": [
+                {
+                    "id": "UDls67/FRA0bmeWwUyR+1g==",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "1"
+                },
+                {
+                    "id": "Mq22MYifFMezl/djO+9bDw==",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                }
+            ],
+            "billing": {
+                "address": {
+                    "door": "Kurubarahalli",
+                    "building": "Kurubarahalli",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "562162",
+                    "locality": "1st cross, main road",
+                    "name": "Arth Raval"
+                },
+                "phone": "9845746574",
+                "name": "Arth Raval",
+                "email": "evital.arth@gmail.com",
+                "created_at": "2023-07-24T11:38:23.415Z",
+                "updated_at": "2023-07-24T11:38:23.415Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Delivery",
+                    "end": {
+                        "contact": {
+                            "email": "evital.arth@gmail.com",
+                            "phone": "9845746574"
+                        },
+                        "location": {
+                            "gps": "13.062801, 77.467741",
+                            "address": {
+                                "name": "Arth Raval",
+                                "building": "Kurubarahalli",
+                                "locality": "1st cross, main road",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "562162"
+                            }
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "585"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Mq22MYifFMezl/djO+9bDw==",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "MamyPoko Standard Pants Large",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "195"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "5"
+                                },
+                                "maximum": {
+                                    "count": "5"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "UDls67/FRA0bmeWwUyR+1g==",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "MamyPoko Standard Pants L",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "390"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "321"
+                                },
+                                "maximum": {
+                                    "count": "321"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "921020012976061",
+                        "settlement_ifsc_code": "UTIB0003256",
+                        "beneficiary_name": "Equality Healthcare Pvt Ltd",
+                        "bank_name": "Axis Bank",
+                        "branch_name": "SABARMATI AHMEDABAD"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:022",
+		"action": "issue",
+		"core_version": "1.0.0",
+		"bap_id": "buyer-app-preprod.ondc.org",
+		"bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+		"bpp_uri": "https://integrations-preprod.channelier.com/ondc",
+		"transaction_id": "0c8bdf82-3633-4420-9b80-1f588c480d60",
+		"message_id": "dcd94141-c52c-4074-a0ec-0ae71acdd072",
+		"timestamp": "2023-07-29T18:30:47.866Z",
+		"bpp_id": "integrations-preprod.channelier.com",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"issue": {
+			"id": "3e7b6353-327d-481b-9fab-4debd6043f64",
+			"category": "FULFILLMENT",
+			"sub_category": "FLM02",
+			"complainant_info": {
+				"person": {
+					"name": "Ravinder"
+				},
+				"contact": {
+					"phone": "9897989798",
+					"email": "techpvec18@gmail.com"
+				}
+			},
+			"order_details": {
+				"id": "2023-07-29-472188",
+				"state": "Completed",
+				"items": [
+					{
+						"id": "CU0I0",
+						"quantity": 1
+					}
+				],
+				"fulfillments": [
+					{
+						"id": "L-F-1688550282390",
+						"state": "Pending"
+					}
+				],
+				"provider_id": "CU0"
+			},
+			"description": {
+				"short_desc": "Product was delivered too late",
+				"long_desc": "Product was delivered way after promised date and now I dont want it as I have no use for it",
+				"additional_desc": {
+					"url": "https://buyerapp.com/additonal-details/desc.txt",
+					"content_type": "text/plain"
+				},
+				"images": []
+			},
+			"source": {
+				"network_participant_id": "buyer-app-preprod.ondc.org",
+				"type": "CONSUMER"
+			},
+			"expected_response_time": {
+				"duration": "PT1H"
+			},
+			"expected_resolution_time": {
+				"duration": "P1D"
+			},
+			"status": "OPEN",
+			"issue_type": "ISSUE",
+			"issue_actions": {
+				"complainant_actions": [
+					{
+						"complainant_action": "OPEN",
+						"short_desc": "Complaint created",
+						"updated_at": "2023-07-29T18:30:47.866Z",
+						"updated_by": {
+							"org": {
+								"name": "buyer-app-preprod.ondc.org::nic2004:52110"
+							},
+							"contact": {
+								"phone": "6239083807",
+								"email": "Rishabhnand.singh@ondc.org"
+							},
+							"person": {
+								"name": "Rishabhnand Singh"
+							}
+						}
+					}
+				],
+				"respondent_actions": []
+			},
+			"created_at": "2023-07-29T18:30:47.044Z",
+			"updated_at": "2023-07-29T18:30:47.044Z"
+		}
+	}
+}

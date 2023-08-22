@@ -1,0 +1,119 @@
+{
+    "context":
+    {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "issue",
+        "core_version": "1.0.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/seller-app/",
+        "transaction_id": "062d52b8-5f64-4d1b-9003-14f583b5ea25",
+        "message_id": "b1de42db-b12e-493f-a7d5-b3b65b4b82ac",
+        "timestamp": "2023-08-02T07:43:46.001Z",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com/seller-app",
+        "ttl": "PT30S"
+    },
+    "message":
+    {
+        "issue":
+        {
+            "id": "d39e11c7-3747-4722-822b-b08d25fb278c",
+            "category": "ITEM",
+            "sub_category": "ITM04",
+            "complainant_info":
+            {
+                "person":
+                {
+                    "name": "Sample"
+                },
+                "contact":
+                {
+                    "phone": "7985006375",
+                    "email": "ankush.verma@dunzo.in"
+                }
+            },
+            "order_details":
+            {
+                "id": "2023-08-02-184508",
+                "state": "Created",
+                "items":
+                [
+                    {
+                        "id": "5bc87ae10d298a283c2972ea",
+                        "quantity": 1
+                    }
+                ],
+                "fulfillments":
+                [
+                    {
+                        "id": "F-78ea40f5-279b-448d-ad27-41b79b1ffcff",
+                        "state": "Pending"
+                    }
+                ],
+                "provider_id": "78ea40f5-279b-448d-ad27-41b79b1ffcff"
+            },
+            "description":
+            {
+                "short_desc": "issue with item",
+                "long_desc": "issue with item",
+                "additional_desc":
+                {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images":
+                [
+                    "https://buyer-app-preprod.ondc.org/issueApis/uploads/1690962226001.png"
+                ]
+            },
+            "source":
+            {
+                "network_participant_id": "buyer-app-preprod.ondc.org",
+                "type": "CONSUMER"
+            },
+            "expected_response_time":
+            {
+                "duration": "PT1H"
+            },
+            "expected_resolution_time":
+            {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_type": "ISSUE",
+            "issue_actions":
+            {
+                "complainant_actions":
+                [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-08-02T07:43:46.002Z",
+                        "updated_by":
+                        {
+                            "org":
+                            {
+                                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+                            },
+                            "contact":
+                            {
+                                "phone": "6239083807",
+                                "email": "Rishabhnand.singh@ondc.org"
+                            },
+                            "person":
+                            {
+                                "name": "Rishabhnand Singh"
+                            }
+                        }
+                    }
+                ],
+                "respondent_actions":
+                []
+            },
+            "created_at": "2023-08-02T07:43:45.073Z",
+            "updated_at": "2023-08-02T07:43:45.073Z"
+        }
+    }
+}

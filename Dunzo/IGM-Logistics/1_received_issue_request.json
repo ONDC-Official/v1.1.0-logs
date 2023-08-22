@@ -1,0 +1,165 @@
+{
+    "context":
+    {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "issue",
+        "core_version": "1.0.0",
+        "bap_uri": "https://ref-seller-app-preprod.ondc.org/protocol/logistics/v1",
+        "bap_id": "ref-seller-app-preprod.ondc.org",
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+        "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
+        "transaction_id": "178374b7-9dd4-408d-8fb5-2619913a9279",
+        "timestamp": "2023-08-02T12:19:05.465Z",
+        "message_id": "51029b74-50c4-4a4f-8559-5d3bab2843e5",
+        "ttl": "PT30S"
+    },
+    "message":
+    {
+        "issue":
+        {
+            "id": "ac69c153-28ea-46c2-9486-c647bc28ae5f",
+            "category": "ITEM",
+            "sub_category": "ITM04",
+            "complainant_info":
+            {
+                "person":
+                {
+                    "name": "Sample"
+                },
+                "contact":
+                {
+                    "phone": "7985006375",
+                    "email": "ankush.verma@dunzo.in"
+                }
+            },
+            "order_details":
+            {
+                "id": "2023-08-02-283339",
+                "state": "Created",
+                "items":
+                [
+                    {
+                        "id": "19d619cb-3f22-47e6-b9a6-55cbaabfaf60",
+                        "quantity": 1
+                    }
+                ],
+                "fulfillments":
+                [
+                    {
+                        "id": "1",
+                        "state": "Pending"
+                    }
+                ],
+                "provider_id": "0b67b06e-ce5f-4476-982f-2db677f8f649",
+                "merchant_order_id": ""
+            },
+            "description":
+            {
+                "short_desc": "issue with item1",
+                "long_desc": "issue with item1",
+                "additional_desc":
+                {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images":
+                [
+                    "https://buyer-app-preprod.ondc.org/issueApis/uploads/1690977015906.png"
+                ]
+            },
+            "source":
+            {
+                "network_participant_id": "buyer-app-preprod.ondc.org",
+                "type": "SELLER"
+            },
+            "expected_response_time":
+            {
+                "duration": "PT1H"
+            },
+            "expected_resolution_time":
+            {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_type": "ISSUE",
+            "issue_actions":
+            {
+                "complainant_actions":
+                [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-08-02T11:50:15.906Z",
+                        "updated_by":
+                        {
+                            "org":
+                            {
+                                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+                            },
+                            "contact":
+                            {
+                                "phone": "6239083807",
+                                "email": "Rishabhnand.singh@ondc.org"
+                            },
+                            "person":
+                            {
+                                "name": "Rishabhnand Singh"
+                            }
+                        }
+                    }
+                ],
+                "respondent_actions":
+                [
+                    {
+                        "cascaded_level": 1,
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "We are investigating your concern.",
+                        "updated_at": "2023-08-02T11:53:12.427Z",
+                        "updated_by":
+                        {
+                            "contact":
+                            {
+                                "email": "ankush.verma@dunzo.in",
+                                "phone": "7985006375"
+                            },
+                            "org":
+                            {
+                                "name": "https://ref-seller-app-preprod.ondc.org::"
+                            },
+                            "person":
+                            {
+                                "name": "Ankush Verma"
+                            }
+                        }
+                    },
+                    {
+                        "respondent_action": "CASCADED",
+                        "short_desc": "We have sent your request to logistics.",
+                        "updated_at": "2023-08-02T12:19:05.459Z",
+                        "updated_by":
+                        {
+                            "org":
+                            {
+                                "name": "https://ref-seller-app-preprod.ondc.org::"
+                            },
+                            "contact":
+                            {
+                                "phone": "9876543210",
+                                "email": "Rishabhnand.singh@ondc.org"
+                            },
+                            "person":
+                            {
+                                "name": "Rishabhnand Singh"
+                            }
+                        },
+                        "cascaded_level": 2
+                    }
+                ]
+            },
+            "created_at": "2023-08-02T12:19:05.460Z",
+            "updated_at": "2023-08-02T12:19:05.466Z"
+        }
+    }
+}

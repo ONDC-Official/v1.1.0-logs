@@ -1,5 +1,11 @@
+**/search**
+- /message/intent must have required property 'item'
+
+**/on_search**
+- context/timestamp difference between /on_search and /search should be smaller than 5 sec
+
 **/on_select**
-- Warning: Quoted Price in /on_select INR 151.98 does not match with the total price of items in /select INR 722
+- Warning: Quoted Price in /on_select INR 520 does not match with the total price of items in /select INR 1070
 
 **/init**
 - City code mismatch in /search and /init
@@ -15,6 +21,7 @@
 
 **/on_confirm**
 - City code mismatch in /search and /on_confirm
+- context/timestamp difference between /on_confirm and /confirm should be smaller than 5 sec
 - Discrepancies between the quote object /on_select and /on_confirm
 
 **/cancel**

@@ -1,35 +1,41 @@
 {
   "context": {
+    "domain": "ONDC:FIS10",
     "ttl": "PT30S",
     "bap_id": "b2bapi-stage.spicesmartshop.com",
     "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
-    "domain": "FIS10",
-    "message_id": "146e7e5b-59a4-45a8-8a9f-8bc555c7cdda",
-    "transaction_id": "0a6a9ddb-78bc-43a4-8743-25aea8fc965a",
+    "message_id": "caf52449-048c-4a3b-9ca5-6e0569c59f07",
+    "transaction_id": "44a9d01e-9817-416b-b64a-4a5b8a605220",
     "bpp_id": "ondc.vistar.solutions",
     "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "country": "IND",
-    "city": "std:080",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
     "action": "issue",
-    "core_version": "1.0.0",
-    "timestamp": "2023-07-04T17:42:16.616Z"
+    "version": "1.0.0",
+    "timestamp": "2023-08-16T08:22:45.825Z"
   },
   "message": {
     "issue": {
-      "id": "34ea0ac9-203a-45f0-925c-8d22bc819298",
+      "id": "b4d58b2f-079a-4fb2-bbe0-536f1eb50ec4",
       "category": "ITEM",
       "sub_category": "ITM01",
       "complainant_info": {
         "person": {
-          "name": "Sagar"
+          "name": "Chandrasekhar"
         },
         "contact": {
-          "phone": "1234567890",
-          "email": "sagar@google.com"
+          "phone": "+917064032212",
+          "email": "chandrasekhar.jagannath.test@eminds.ai"
         }
       },
       "order_details": {
-        "id": "aab38c3c-e269-431d-a964-b2643e06b250",
+        "id": "bf2a6c97-68cc-4efc-863a-ee7834ad5e3c",
         "state": "COMPLETED",
         "items": [
           {
@@ -46,18 +52,12 @@
         "provider_id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
       },
       "description": {
-        "short_desc": "Damaged product",
-        "long_desc": "Broken piece is delivered",
-        "additional_desc": {
-          "url": "https://buyerapp.com/additonal-details/desc.txt",
-          "content_type": "text/plain"
-        },
-        "images": [
-          "http://buyerapp.com/addtional-details/img1.png"
-        ]
+        "short_desc": "Test logs",
+        "long_desc": "Test for log collections",
+        "additional_desc": {}
       },
       "source": {
-        "network_participant_id": "ondc.vistar.solutions",
+        "network_participant_id": "b2bapi-stage.spicesmartshop.com",
         "type": "CONSUMER"
       },
       "expected_response_time": {
@@ -71,14 +71,26 @@
       "issue_actions": {
         "complainant_actions": [
           {
-            "complainant_action": "OPEN",
-            "short_desc": "New ticket is open",
-            "updated_at": "2023-07-04T22:29:32.202Z"
+            "complainant_action": "open",
+            "short_desc": "Test logs",
+            "updated_at": "2023-08-16T08:22:45.825Z",
+            "updated_by": {
+              "org": {
+                "name": "b2bapi-stage.spicesmartshop.com::ONDC:FIS10"
+              },
+              "contact": {
+                "phone": "+917064032212",
+                "email": "chandrasekhar.jagannath.test@eminds.ai"
+              },
+              "person": {
+                "name": "Chandrasekhar"
+              }
+            }
           }
         ]
       },
-      "created_at": "2023-07-04T23:12:16.580Z",
-      "updated_at": "2023-07-04T23:12:16.580Z"
+      "created_at": "2023-08-16T08:22:45.825Z",
+      "updated_at": "2023-08-16T08:22:45.825Z"
     }
   }
 }

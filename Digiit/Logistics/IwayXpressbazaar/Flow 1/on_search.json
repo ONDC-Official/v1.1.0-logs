@@ -9,10 +9,9 @@
     "city": "std:080",
     "country": "IND",
     "action": "on_search",
-    "transaction_id": "25bfa468-0d45-4a8a-b6e5-43d770d2ed32",
-    "message_id": "e85880b3-e31f-4b66-8f1f-f61e2e9aa7e4",
-    "timestamp": "2023-06-26T07:47:32.511Z",
-    "ttl": "PT30S"
+    "transaction_id": "a183ea30-e831-4b78-8240-377cd5495fdd",
+    "message_id": "d0241e6c-3b00-4fd0-9562-4a0aba679c85",
+    "timestamp": "2023-08-08T16:04:15.895Z"
   },
   "message": {
     "catalog": {
@@ -47,101 +46,21 @@
           },
           "categories": [
             {
-              "id": "Standard Delivery",
+              "id": "Next Day Delivery",
               "time": {
                 "label": "TAT",
                 "duration": "PT1D"
               }
-            }
-          ],
-          "locations": [
+            },
             {
-              "id": "107-41c25527-eafc-42d9-abb2-03",
-              "gps": ",",
-              "address": {
-                "street": "Kings Road",
-                "city": "Trichy",
-                "area_code": "620017",
-                "state": "Tamil Nadu"
-              }
-            }
-          ],
-          "items": [
-            {
-              "id": "18",
-              "parent_item_id": null,
-              "category_id": "Standard Delivery",
-              "fulfillment_id": "d67fbf2a-5fd9-44b4-907e-16486bca56b5",
-              "descriptor": {
-                "code": "P2P",
-                "name": "Next Day Delivery",
-                "short_desc": "Next Day Delivery",
-                "long_desc": "Next Day Delivery"
-              },
-              "price": {
-                "currency": "INR",
-                "value": "1205.0"
-              }
-            }
-          ]
-        },
-        {
-          "id": "107-Account-DER-292",
-          "descriptor": {
-            "name": "Iway Logistics & Delivery",
-            "short_desc": "Iway Logistics & Delivery",
-            "long_desc": "Iway Logistics & Delivery"
-          },
-          "categories": [
-            {
-              "id": "Standard Delivery",
+              "id": "Immediate Delivery",
               "time": {
                 "label": "TAT",
                 "duration": "PT45M"
               }
-            }
-          ],
-          "locations": [
+            },
             {
-              "id": "107-41c25527-eafc-42d9-abb2-03",
-              "gps": ",",
-              "address": {
-                "street": "Kings Road",
-                "city": "Trichy",
-                "area_code": "620017",
-                "state": "Tamil Nadu"
-              }
-            }
-          ],
-          "items": [
-            {
-              "id": "19",
-              "parent_item_id": null,
-              "category_id": "Standard Delivery",
-              "fulfillment_id": "19353def-6014-4d34-afcd-24abbc6d4054",
-              "descriptor": {
-                "code": "P2P",
-                "name": "Immediate Delivery",
-                "short_desc": "Immediate Delivery",
-                "long_desc": "Immediate Delivery"
-              },
-              "price": {
-                "currency": "INR",
-                "value": "1200.0"
-              }
-            }
-          ]
-        },
-        {
-          "id": "107-Account-DER-292",
-          "descriptor": {
-            "name": "Iway Logistics & Delivery",
-            "short_desc": "Iway Logistics & Delivery",
-            "long_desc": "Iway Logistics & Delivery"
-          },
-          "categories": [
-            {
-              "id": "Standard Delivery",
+              "id": "Same Day Delivery",
               "time": {
                 "label": "TAT",
                 "duration": "PT6H"
@@ -151,21 +70,85 @@
           "locations": [
             {
               "id": "107-41c25527-eafc-42d9-abb2-03",
-              "gps": ",",
+              "gps": "12.903722000,77.537638000",
               "address": {
-                "street": "Kings Road",
-                "city": "Trichy",
-                "area_code": "620017",
-                "state": "Tamil Nadu"
+                "street": "SLS SPENCER, Horamavu Agara",
+                "city": "Bangalore",
+                "area_code": "560061",
+                "state": "Karnataka"
               }
             }
           ],
           "items": [
             {
+              "id": "18",
+              "parent_item_id": "",
+              "category_id": "Next Day Delivery",
+              "fulfillment_id": "1",
+              "descriptor": {
+                "code": "P2P",
+                "name": "Next Day Delivery",
+                "short_desc": "Next Day Delivery",
+                "long_desc": "Next Day Delivery"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "985.0"
+              }
+            },
+            {
+              "id": "rto-item-18",
+              "parent_item_id": "18",
+              "category_id": "Next Day Delivery",
+              "fulfillment_id": "3",
+              "descriptor": {
+                "code": "P2P",
+                "name": "RTO quote",
+                "short_desc": "RTO quote",
+                "long_desc": "RTO quote"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "990.0"
+              }
+            },
+            {
+              "id": "19",
+              "parent_item_id": "",
+              "category_id": "Immediate Delivery",
+              "fulfillment_id": "1",
+              "descriptor": {
+                "code": "P2P",
+                "name": "Immediate Delivery",
+                "short_desc": "Immediate Delivery",
+                "long_desc": "Immediate Delivery"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "980.0"
+              }
+            },
+            {
+              "id": "rto-item-19",
+              "parent_item_id": "19",
+              "category_id": "Immediate Delivery",
+              "fulfillment_id": "3",
+              "descriptor": {
+                "code": "P2P",
+                "name": "RTO quote",
+                "short_desc": "RTO quote",
+                "long_desc": "RTO quote"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "980.0"
+              }
+            },
+            {
               "id": "20",
-              "parent_item_id": null,
-              "category_id": "Standard Delivery",
-              "fulfillment_id": "a62c2980-9e5c-4eb7-b507-f3055cd29038",
+              "parent_item_id": "",
+              "category_id": "Same Day Delivery",
+              "fulfillment_id": "1",
               "descriptor": {
                 "code": "P2P",
                 "name": "Same Day Delivery",
@@ -174,7 +157,23 @@
               },
               "price": {
                 "currency": "INR",
-                "value": "1210.0"
+                "value": "990.0"
+              }
+            },
+            {
+              "id": "rto-item-20",
+              "parent_item_id": "20",
+              "category_id": "Same Day Delivery",
+              "fulfillment_id": "3",
+              "descriptor": {
+                "code": "P2P",
+                "name": "RTO quote",
+                "short_desc": "RTO quote",
+                "long_desc": "RTO quote"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "1000.0"
               }
             }
           ]

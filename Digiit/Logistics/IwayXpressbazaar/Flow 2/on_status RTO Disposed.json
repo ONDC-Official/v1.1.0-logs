@@ -1,0 +1,144 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "bap_id": "preprod.xpressbaazaar.com",
+    "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_status",
+    "transaction_id": "f8393546-2f88-413c-af02-1e724ea24eef",
+    "message_id": "5ab16f4e-d274-40ea-bb41-729c1d654892",
+    "timestamp": "2023-08-18T10:35:51.030Z"
+  },
+  "message": {
+    "order": {
+      "id": "19da7b0d-743e-44f1-bd94-2f8ea498327d",
+      "state": "Cancelled",
+      "provider": {
+        "id": "107-Account-DER-292",
+        "locations": [
+          {
+            "id": "107-41c25527-eafc-42d9-abb2-03"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "19",
+          "category_id": "Immediate Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "type": "Prepaid",
+          "@ondc/org/awb_no": "2023081841114646",
+          "state": {
+            "descriptor": {
+              "code": "RTO-Disposed"
+            }
+          },
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-08-17T23:40:59.150Z",
+                "end": "2023-08-18T00:10:59.150Z"
+              }
+            },
+            "instructions": {
+              "name": "Lux Body Wash Velvet Touch with Jasmine And Almond Oil 235ml",
+              "short_desc": "Lux Body Wash Velvet Touch with Jasmine And Almond Oil 235ml",
+              "long_desc": "149997"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-08-18T00:15:59.150Z",
+                "end": "2023-08-18T00:30:59.150Z"
+              }
+            }
+          },
+          "agent": {
+            "name": "Peter",
+            "phone": "7438483828"
+          },
+          "vehicle": {
+            "category": "TwoWheeler",
+            "size": "500.0000",
+            "registration": "TN56NS8282"
+          },
+          "@ondc/org/ewaybillno": "56ce9ceb-47af-48b9-9517-3f7c2820c871",
+          "@ondc/org/ebexpirydate": "2023-08-20T10:30:26.484Z"
+        },
+        {
+          "type": "RTO",
+          "state": {
+            "descriptor": {
+              "code": "RTO-Disposed"
+            }
+          },
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-08-17T18:05:05.228Z",
+                "end": "2023-08-17T18:35:05.228Z"
+              },
+              "timestamp": "2023-08-18T05:05:32.368Z"
+            }
+          },
+          "agent": {
+            "name": "Peter",
+            "phone": "7438483828"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "90.0"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "19",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "90.0"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": []
+      },
+      "billing": {
+        "name": "Yumfood",
+        "address": {
+          "name": "Yumfood",
+          "building": "89 Karishma hills ,Vinayaka Layout, Poornapragna Housing Society Layout",
+          "locality": "89 Karishma hills ,Vinayaka Layout, Poornapragna Housing Society Layout",
+          "city": "Bengaluru",
+          "state": "KA",
+          "country": "India",
+          "area_code": "560061"
+        },
+        "tax_number": "98798798798",
+        "phone": "8978909876",
+        "email": "abcd.efgh@gmail.com"
+      },
+      "tags": {
+        "cancellation_reason_id": "013",
+        "AWB no": "2023081841114646"
+      }
+    }
+  }
+}

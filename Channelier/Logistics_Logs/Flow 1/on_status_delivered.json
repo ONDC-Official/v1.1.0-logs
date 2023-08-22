@@ -1,0 +1,112 @@
+{
+  "context": {
+    "action": "on_status",
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "bpp_id": "shipdh.in",
+    "bpp_uri": "https://shipdh.in/ondc/bpp/api/",
+    "country": "IND",
+    "city": "std:020",
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "transaction_id": "1b9bc9d6-a955-464f-8192-61053800f287",
+    "message_id": "589fc3e5-0f02-434c-a190-0249a103e966",
+    "timestamp": "2023-08-21T08:52:02.096Z"
+  },
+  "message": {
+    "order": {
+      "id": "6c1f4e6b-d8b0-4829-9261-b76a18b9c2bc",
+      "state": "Completed",
+      "provider": {
+        "id": "1"
+      },
+      "items": [
+        {
+          "id": "1",
+          "category_id": "Same Day Delivery",
+          "descriptor": {
+            "code": "P2H2P"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "30.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "30.00"
+            }
+          }
+        ]
+      },
+      "billing": {
+        "name": "ONDC sellerapp",
+        "address": {
+          "name": "My house or building no",
+          "building": "My house or building name",
+          "locality": "My street name",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "India",
+          "area_code": "560076"
+        },
+        "tax_number": "XXXXXXXXXXXXXXX",
+        "phone": "9886098860",
+        "email": "abcd.efgh@gmail.com",
+        "created_at": "2023-08-21T07:14:23.272Z",
+        "updated_at": "2023-08-21T07:14:23.272Z"
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_type": "neft",
+            "upi_address": null,
+            "settlement_bank_account_no": "917020074322489",
+            "settlement_ifsc_code": "UTIB0000395"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "type": "Prepaid",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "@ondc/org/awb_no": "1692602072390405",
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-08-21T01:44:12.999Z",
+                "end": "2023-08-21T02:14:12.999Z"
+              },
+              "timestamp": "2023-08-21T08:51:40.620Z"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-08-21T03:44:12.999Z",
+                "end": "2023-08-21T05:44:12.999Z"
+              },
+              "timestamp": "2023-08-21T08:52:02.096Z"
+            }
+          }
+        }
+      ],
+      "created_at": "2023-08-21T07:14:32.127Z",
+      "updated_at": "2023-08-21T08:52:02.096Z"
+    }
+  }
+}

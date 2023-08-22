@@ -1,0 +1,158 @@
+
+  "search": {
+    "context": {
+      "key": "",
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "search",
+      "bap_id": "biz.test.bitsila.com",
+      "domain": "nic2004:60232",
+      "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+      "country": "IND",
+      "timestamp": "2023-08-07T05:42:23.394Z",
+      "message_id": "889b7d16-dc46-4952-94ac-5a7ab2185eb0",
+      "core_version": "1.1.0",
+      "transaction_id": "LOG-025e18e4-a04f-4964-b1dc-d0dbd059f564"
+    },
+    "message": {
+      "intent": {
+        "payment": {
+          "@ondc/org/collection_amount": "0.0"
+        },
+        "category": {
+          "id": "Standard Delivery"
+        },
+        "provider": {
+          "time": {
+            "days": "1,2,3,4,5,6,7",
+            "range": {
+              "end": "2230",
+              "start": "0700"
+            }
+          }
+        },
+        "fulfillment": {
+          "end": {
+            "location": {
+              "gps": "12.9140160000001, 77.6371740000001",
+              "address": {
+                "area_code": "560102"
+              }
+            }
+          },
+          "type": "Prepaid",
+          "start": {
+            "location": {
+              "id": "1016:699",
+              "gps": "12.912166087942287, 77.64827794511582",
+              "address": {
+                "area_code": "560102"
+              }
+            }
+          }
+        },
+        "@ondc/org/payload_details": {
+          "value": {
+            "value": "87.0",
+            "currency": "INR"
+          },
+          "weight": {
+            "unit": "Kilogram",
+            "value": 0.5
+          },
+          "category": "Grocery",
+          "dimensions": {
+            "height": {
+              "unit": "meter",
+              "value": 0.1
+            },
+            "length": {
+              "unit": "meter",
+              "value": 0.1
+            },
+            "breadth": {
+              "unit": "meter",
+              "value": 0.1
+            }
+          }
+        }
+      }
+    }
+  },
+  
+
+
+  
+  "on_search": {
+    "context": {
+      "key": "",
+      "city": "std:080",
+      "action": "on_search",
+      "bap_id": "biz.test.bitsila.com",
+      "bpp_id": "ondc-preprod.loadshare.net",
+      "domain": "nic2004:60232",
+      "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+      "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+      "country": "IND",
+      "timestamp": "2023-08-07T05:42:24.046Z",
+      "message_id": "889b7d16-dc46-4952-94ac-5a7ab2185eb0",
+      "core_version": "1.1.0",
+      "transaction_id": "LOG-025e18e4-a04f-4964-b1dc-d0dbd059f564"
+    },
+    "message": {
+      "catalog": {
+        "bpp/providers": [
+          {
+            "id": "loadshare@ondc-preprod.loadshare.net",
+            "items": [
+              {
+                "id": "sameday",
+                "time": {
+                  "label": "TAT",
+                  "duration": "PT2H",
+                  "timestamp": "2023-08-07T07:42:23.542Z"
+                },
+                "price": {
+                  "value": "145.00",
+                  "currency": "INR"
+                },
+                "descriptor": {
+                  "code": "P2P",
+                  "name": "Same Day Delivery",
+                  "long_desc": "Upto 2 hours for delivery",
+                  "short_desc": "Upto 2 hours for delivery"
+                },
+                "category_id": "Same Day Delivery",
+                "fulfillment_id": "lsn_prepaid",
+                "parent_item_id": ""
+              }
+            ],
+            "categories": [
+              {
+                "id": "Same Day Delivery",
+                "time": {
+                  "label": "TAT",
+                  "duration": "PT2H"
+                }
+              }
+            ],
+            "descriptor": {
+              "name": "LoadShare Networks",
+              "long_desc": "LoadShare Networks Private Limited",
+              "short_desc": "LoadShare Networks Private Limited"
+            }
+          }
+        ],
+        "bpp/descriptor": {
+          "name": "LoadShare Delivery"
+        },
+        "bpp/fulfillments": [
+          {
+            "id": "lsn_prepaid",
+            "type": "Prepaid"
+          }
+        ]
+      }
+    }
+  },
+ 

@@ -1,0 +1,53 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "update",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "preprod-wow-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
+        "transaction_id": "717b2285-89a7-4928-93ea-3eabb9996c55",
+        "message_id": "abfc9f41-0538-4df6-a922-1474b207f02c",
+        "timestamp": "2023-07-20T03:50:03.386Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "update_target": "item",
+        "order": {
+            "id": "676",
+            "state": "Completed",
+            "provider": {
+                "id": "preprod-wow-bpp.shopalyst.com"
+            },
+            "items": [
+                {
+                    "id": "823F50FA5DB46E4F8B2AF9170EF800A1_43459794534659_default",
+                    "quantity": {
+                        "count": 3
+                    },
+                    "tags": {
+                        "update_type": "return",
+                        "reason_code": "005",
+                        "ttl_approval": "PT24H",
+                        "ttl_reverseqc": "P3D",
+                        "image": "https://d36aq2y4y4uhxn.cloudfront.net/1689824965205_cropped5954830997461764567.jpg"
+                    }
+                }
+            ],
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "buyer",
+                        "settlement_phase": "refund",
+                        "settlement_type": "upi",
+                        "settlement_amount": "897.0",
+                        "settlement_timestamp": "2023-07-20T03:50:02.888Z"
+                    }
+                ]
+            }
+        }
+    }
+}

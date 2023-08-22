@@ -1,0 +1,226 @@
+{
+    "context": {
+        "city": "std:080",
+        "transaction_id": "5bcc0f646ad72007895e682d31948400",
+        "message_id": "b8ebc10b-5996-4f31-8050-8c2b7fddfdf7",
+        "action": "on_status",
+        "bap_id": "b-ondcbap.nlincs.in",
+        "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "core_version": "1.1.0",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "timestamp": "2023-07-27T09:42:56.945Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-64344-70282",
+            "state": "Accepted",
+            "provider": {
+                "id": "21165",
+                "locations": [
+                    {
+                        "id": "21165"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "102",
+                    "fulfillment_id": "21165",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "103",
+                    "fulfillment_id": "21165",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "billing": {
+                "address": {
+                    "name": "105A",
+                    "building": "MM Road",
+                    "locality": "Pulikeshi Nagar",
+                    "city": "Bengaluru",
+                    "state": "KA",
+                    "area_code": "560005",
+                    "country": "IND"
+                },
+                "name": "Arunraj",
+                "phone": "9840857465",
+                "email": "arunraj@nstore.in",
+                "created_at": "2023-07-27T09:41:23.057Z",
+                "updated_at": "2023-07-27T09:41:23.057Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "21165",
+                    "@ondc/org/provider_name": "Classic Grocery",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "id": "21165",
+                            "descriptor": {
+                                "name": "Classic Grocery",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/21165/store_logo/21165_b8j2337limy40jp.jpeg"
+                                ]
+                            },
+                            "gps": "12.9953231,77.6139826"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-27T09:42:08.000Z",
+                                "end": "2023-07-28T09:42:08.000Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "5555544444",
+                            "email": "hariprasa49@gmail.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "address": {
+                                "name": "Pulikeshi Nagar",
+                                "building": "MM Road",
+                                "locality": "",
+                                "city": "Bengaluru",
+                                "state": "KA",
+                                "country": "India",
+                                "area_code": "560005"
+                            },
+                            "gps": "12.9979887, 77.62265119999999"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-07-28T09:42:08.000Z",
+                                "end": "2023-07-28T10:42:08.000Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9840857465"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "5000.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "102",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Preethi Gas Stove",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2000.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "2000.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "102",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "103",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Preethi Zodiac",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "3000.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1500.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "103",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "21165",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    }
+                ],
+                "ttl": "PT30M"
+            },
+            "payment": {
+                "uri": "https://api.razorpay.com",
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "5000.00",
+                    "currency": "INR",
+                    "transaction_id": "order_MImPb4Ch3hM0su"
+                },
+                "status": "PAID",
+                "tl_method": "http/get",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "1"
+            },
+            "documents": [
+                {
+                    "url": "https://betareceipt.nstore.in/invoice/NDAwMDU=",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-07-27T09:42:06.071Z",
+            "updated_at": "2023-07-27T09:42:56.000Z"
+        }
+    }
+}

@@ -1,0 +1,95 @@
+"init": {
+    "context": {
+        "key": "",
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "init",
+        "bap_id": "biz.test.bitsila.com",
+        "bpp_id": "ondc-preprod.loadshare.net",
+        "domain": "nic2004:60232",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+        "country": "IND",
+        "timestamp": "2023-08-11T12:24:34.077Z",
+        "message_id": "c79858c1-27cc-4ef2-a4e7-a9175cf73ee5",
+        "core_version": "1.1.0",
+        "transaction_id": "LOG-1016-1005-1839-hIDM"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "sameday",
+                    "descriptor": {
+                        "code": "P2P"
+                    },
+                    "category_id": "Same Day Delivery"
+                }
+            ],
+            "billing": {
+                "name": "Bitsila",
+                "email": "finance@bitsila.com",
+                "phone": "8951898275",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "221, INNOBITS SOLUTIONS PVT LTD",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
+                    "area_code": "560085"
+                },
+                "created_at": "2023-08-11T12:24:34.077Z",
+                "tax_number": "29AAFCI9011D1ZQ",
+                "updated_at": "2023-08-11T12:24:34.077Z"
+            },
+            "provider": {
+                "id": "loadshare@ondc-preprod.loadshare.net",
+                "locations": null
+            },
+            "fulfillments": [
+                {
+                    "id": "lsn_prepaid",
+                    "end": {
+                        "contact": {
+                            "email": "darshan.s@bitsila.com",
+                            "phone": "8151000066"
+                        },
+                        "location": {
+                            "gps": "12.9140160000001, 77.6371740000001",
+                            "address": {
+                                "city": "Bengaluru",
+                                "door": "Darshan Hsr Layout,27th Main Rd, 1st Sector, HSR Layout,police station",
+                                "name": "Darshan Hsr Layout",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "Darshan Hsr Layout,27th Main Rd, 1st Sector, HSR Layout,police station",
+                                "locality": "Bengaluru",
+                                "area_code": "560102"
+                            }
+                        }
+                    },
+                    "type": "Prepaid",
+                    "start": {
+                        "contact": {
+                            "email": "test1@test.com",
+                            "phone": "9999999998"
+                        },
+                        "location": {
+                            "id": "1016:699",
+                            "gps": "12.9120511, 77.64828869999999",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "DS super market hsr layout",
+                                "state": " karnataka",
+                                "country": "India",
+                                "building": "GLENS BAKEHOUSE, HSR LAYOUT 2337, SECTOR 1, HSR Layout 17th Cross",
+                                "locality": "24th Main Rd, , Karnataka 560102, India",
+                                "area_code": "560102"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

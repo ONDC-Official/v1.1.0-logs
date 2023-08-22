@@ -1,47 +1,78 @@
 {
-  "context": {
-    "domain": "nic2004:60232",
-    "country": "IND",
-    "city": "std:080",
-    "action": "search",
-    "core_version": "1.1.0",
-    "bap_id": "preprod-ondc.viranc.com/p/v1/store",
-    "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
-    "transaction_id": "c49554de-c72e-597b-abc8-1302057015b4",
-    "message_id": "91855b41-9807-5430-83f3-c9fca22cb74f",
-    "timestamp": "2023-06-21T11:03:35.448Z",
-    "ttl": "PT30S"
-  },
-  "message": {
-    "intent": {
-      "category": { "id": "Standard Delivery" },
-      "provider": {
-        "time": {
-          "days": "1,2,3,4,5,6,7",
-          "range": { "end": "2359", "start": "0000" },
-          "schedule": { "holidays": [] }
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+        "transaction_id": "135fa7aa-08f2-59ab-bc2a-798f25fc0f7c",
+        "message_id": "5cd48c30-9973-52e1-89bd-52cb08bab8f9",
+        "timestamp": "2023-08-16T07:45:41.669Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "id": "Standard Delivery"
+            },
+            "provider": {
+                "time": {
+                    "days": "1,2,3,4,5,6,7",
+                    "range": {
+                        "end": "2359",
+                        "start": "0000"
+                    },
+                    "schedule": {
+                        "holidays": []
+                    }
+                }
+            },
+            "fulfillment": {
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "gps": "12.96774,77.588913",
+                        "address": {
+                            "area_code": "560001"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "19.123068,72.8370180000001",
+                        "address": {
+                            "area_code": "400058"
+                        }
+                    }
+                }
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "unit": "Kilogram",
+                    "value": 1
+                },
+                "category": "Grocery",
+                "value": {
+                    "currency": "INR",
+                    "value": "81.37"
+                },
+                "dimensions": {
+                    "height": {
+                        "unit": "centimeter",
+                        "value": 40
+                    },
+                    "length": {
+                        "unit": "centimeter",
+                        "value": 40
+                    },
+                    "breadth": {
+                        "unit": "centimeter",
+                        "value": 40
+                    }
+                }
+            }
         }
-      },
-      "fulfillment": {
-        "type": "Prepaid",
-        "start": {
-          "location": {
-            "gps": "12.96774,77.588913",
-            "address": { "area_code": "560001" }
-          }
-        },
-        "end": {
-          "location": {
-            "gps": "12.938208,77.619106",
-            "address": { "area_code": "560095" }
-          }
-        }
-      },
-      "@ondc/org/payload_details": {
-        "weight": { "unit": "Kilogram", "value": 23 },
-        "category": "Grocery",
-        "value": { "currency": "INR", "value": "1144.33" }
-      }
     }
-  }
 }

@@ -1,0 +1,77 @@
+
+  "update": {
+    "context": {
+      "key": "",
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "update",
+      "bap_id": "biz.test.bitsila.com",
+      "bpp_id": "ondc-preprod.loadshare.net",
+      "domain": "nic2004:60232",
+      "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+      "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+      "country": "IND",
+      "timestamp": "2023-08-07T05:55:14.437Z",
+      "message_id": "2e490a7c-bd01-4491-9c2a-5ca051754f18",
+      "core_version": "1.1.0",
+      "transaction_id": "LOG-025e18e4-a04f-4964-b1dc-d0dbd059f564"
+    },
+    "message": {
+      "order": {
+        "id": "2023-08-07-960021",
+        "items": [
+          {
+            "id": "sameday",
+            "descriptor": {
+              "code": "P2P"
+            },
+            "category_id": "Same Day Delivery"
+          }
+        ],
+        "state": "Created",
+        "updated_at": "2023-08-07T05:55:14.437Z",
+        "fulfillments": [
+          {
+            "id": "lsn_prepaid",
+            "tags": {
+              "@ondc/org/order_ready_to_ship": "yes"
+            },
+            "type": "Prepaid",
+            "start": {
+              "instructions": {
+                "short_desc": "1005-1811"
+              }
+            }
+          }
+        ]
+      },
+      "update_target": "fulfillment"
+    }
+  },
+ 
+
+
+ 
+  "on_update": {
+    "error": {
+      "code": "60007",
+      "type": "CORE-ERROR",
+      "message": "Order could not be shipped. Please try again."
+    },
+    "context": {
+      "key": "",
+      "city": "std:080",
+      "action": "on_update",
+      "bap_id": "biz.test.bitsila.com",
+      "bpp_id": "ondc-preprod.loadshare.net",
+      "domain": "nic2004:60232",
+      "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+      "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+      "country": "IND",
+      "timestamp": "2023-08-07T05:55:15.127Z",
+      "message_id": "2e490a7c-bd01-4491-9c2a-5ca051754f18",
+      "core_version": "1.1.0",
+      "transaction_id": "LOG-025e18e4-a04f-4964-b1dc-d0dbd059f564"
+    }
+  },
+ 

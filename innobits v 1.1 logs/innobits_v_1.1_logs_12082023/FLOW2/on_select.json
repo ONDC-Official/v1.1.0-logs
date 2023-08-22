@@ -1,0 +1,142 @@
+"on_select": {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.bitsila.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-08-11T13:02:27.369Z",
+      "message_id": "1efdf5ca-0826-4451-8568-a44ce8391f2f",
+      "core_version": "1.1.0",
+      "transaction_id": "48d492e0-728f-4fb8-bd2b-5ed7fcc8d630"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "7715",
+            "fulfillment_id": "FPA:699:::88276"
+          },
+          {
+            "id": "12932",
+            "fulfillment_id": "FPA:699:::88276"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "90.3",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "7715",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 4,
+                "price": {
+                  "value": "15.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "60.0",
+                "currency": "INR"
+              },
+              "title": "Britannia Yummy Pineapple Cakes",
+              "@ondc/org/item_id": "7715",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 4
+              }
+            },
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "12932",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 4,
+                "price": {
+                  "value": "5.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "20.0",
+                "currency": "INR"
+              },
+              "title": "Britannia Cakes Yummy Fruit",
+              "@ondc/org/item_id": "12932",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 4
+              }
+            },
+            {
+              "price": {
+                "value": "10.3",
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:::88276",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "provider": {
+          "id": "1016:699"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:::88276",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            },
+            "tracking": true,
+            "@ondc/org/TAT": "PT3H",
+            "@ondc/org/category": "Immediate Delivery",
+            "@ondc/org/provider_name": "Bitsila"
+          }
+        ],
+        "provider_location": {
+          "id": "L:1016:699"
+        }
+      }
+    }
+  },

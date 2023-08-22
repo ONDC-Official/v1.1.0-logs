@@ -1,0 +1,65 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+        "bpp_id": "my.ithinklogistics.com/ondc/preprod",
+        "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
+        "transaction_id": "4e855299-2276-5f2f-b72e-50e11d4ef613",
+        "message_id": "f08a1cb2-894d-4752-a639-38f217cf1a8a",
+        "timestamp": "2023-08-17T05:07:55.584Z"
+    },
+    "message": {
+        "order": {
+            "id": "2bc8d29b-cc7a-4033-8262-b98291cac22f",
+            "state": "Accepted",
+            "items": [{
+                    "id": "3I1",
+                    "category_id": "Next Day Delivery",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    }
+                }
+            ],
+            "fulfillments": [{
+                    "id": "1",
+                    "type": "Prepaid",
+                    "@ondc/org/awb_no": "XSE20013230261001",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-08-17T09:30:00.000Z",
+                                "end": "2023-08-17T12:30:00.000Z"
+                            }
+                        },
+                        "instructions": {
+                            "name": "Shipping label",
+                            "short_desc": "Shipping label",
+                            "long_desc": "Shipping label",
+                            "images": ["https://itl-uploads.s3.ap-south-1.amazonaws.com/uploads/shipping/ee509ca204933099844697441fe4ce38.pdf"],
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://my.ithinklogistics.com/delivery-instructions"
+                            }
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-08-18T03:30:00.000Z",
+                                "end": "2023-08-18T14:30:00.000Z"
+                            }
+                        }
+                    },
+                    "@ondc/org/ewaybillno": "",
+                    "@ondc/org/ebnexpirydate": ""
+                }
+            ],
+            "updated_at": "2023-08-17T05:07:55.584Z"
+        }
+    }
+}

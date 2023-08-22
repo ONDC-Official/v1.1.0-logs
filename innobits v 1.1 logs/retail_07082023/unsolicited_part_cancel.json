@@ -1,0 +1,97 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_update",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "biz.test.bitsila.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-08-07T06:12:15.344Z",
+        "message_id": "8ea1fef9-db55-4aef-8fff-25960c99945b",
+        "core_version": "1.1.0",
+        "transaction_id": "5e37709b-b293-44c7-8e3c-9e170f4b9112"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-07-541960",
+            "items": [
+                {
+                    "id": "10993",
+                    "quantity": {
+                        "count": 1.0
+                    },
+                    "fulfillment_id": "FPA:699:sameday:258:88062"
+                }
+            ],
+            "quote": {
+                "ttl": "PT1H",
+                "price": {
+                    "value": "185.56",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "0.0",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "10993",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "29.0",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "29.0",
+                            "currency": "INR"
+                        },
+                        "title": "Amul Moti Toned Milk Pouch",
+                        "@ondc/org/item_id": "10993",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "156.56",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "FPA:699:sameday:258:88062",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "In-progress",
+            "provider": {
+                "id": "1016:699",
+                "locations": [
+                    {
+                        "id": "L:1016:699"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "FPA:699:sameday:258:88062",
+                    "type": "Prepaid",
+                    "state": {
+                        "descriptor": {
+                            "code": "Packed",
+                            "name": "Packed"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

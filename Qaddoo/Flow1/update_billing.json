@@ -1,0 +1,53 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "update",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "ondc.uat.medpay.in",
+        "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+        "transaction_id": "568280a7-9b4d-43fc-b7ee-2ea5fbcc4e37",
+        "message_id": "ac29a9ce-cc6d-4c12-a575-25d068b5cc5e",
+        "timestamp": "2023-08-17T11:30:55.632Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "update_target": "item",
+        "order": {
+            "id": "100068",
+            "state": "Completed",
+            "provider": {
+                "id": "1001-3716-9032-6275"
+            },
+            "items": [
+                {
+                    "id": "1002-4377-0770-0838_384255",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "tags": {
+                        "update_type": "return",
+                        "reason_code": "001",
+                        "ttl_approval": "PT24H",
+                        "ttl_reverseqc": "P3D",
+                        "image": "https://d36aq2y4y4uhxn.cloudfront.net/1692271498088_cropped2274517555456036515.jpg"
+                    }
+                }
+            ],
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "buyer",
+                        "settlement_phase": "refund",
+                        "settlement_type": "upi",
+                        "settlement_amount": "720.0",
+                        "settlement_timestamp": "2023-08-17T11:30:55.134Z"
+                    }
+                ]
+            }
+        }
+    }
+}

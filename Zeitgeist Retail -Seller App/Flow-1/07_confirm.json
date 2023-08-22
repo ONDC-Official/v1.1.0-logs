@@ -5,49 +5,49 @@
         "city": "std:080",
         "action": "confirm",
         "core_version": "1.1.0",
-        "bap_id": "jiomart-buyer.ondcz5.de",
-        "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-        "transaction_id": "75a2aac7-925c-4818-bf06-e5efe57699c2",
-        "message_id": "a49b4311-521d-4309-b7d3-27c45e163db3",
-        "timestamp": "2023-05-31T05:16:58.108Z",
-        "ttl": "PT30S",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "transaction_id": "a7f96b4a-7ed7-4714-9a8a-5d2892478e33",
+        "message_id": "8c546eb2-7fa6-4357-a4c6-e7584d47bb59",
+        "timestamp": "2023-08-15T11:22:12.625Z",
         "bpp_id": "ondc-preprod.zeppstore.in",
-        "bpp_uri": "https://ondc-preprod.zeppstore.in"
+        "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "1fde4d7e-8200-44c2-99f7-d506c0ec576e",
+            "id": "2023-08-15-242203",
             "state": "Created",
             "billing": {
-                "name": "rajath",
                 "address": {
-                    "name": "rajath",
-                    "building": "molhalli",
-                    "locality": "panchayat office",
-                    "city": "Kakkunje",
+                    "name": "Sudd",
+                    "building": "near Regional passport office",
+                    "locality": "#102, Sapthagiri nivasa building, regional passport office road, Kormangala 8th stage",
+                    "city": "Bengaluru",
                     "state": "Karnataka",
                     "country": "IND",
-                    "area_code": "576222"
+                    "area_code": "560102"
                 },
-                "email": "ondc@zrpl.co.in",
-                "phone": "9980285954",
-                "created_at": "2023-05-31T05:09:55.946Z",
-                "updated_at": "2023-05-31T05:09:55.946Z"
+                "phone": "6362286779",
+                "name": "Sudd",
+                "email": "sirsimattighatta@gmail.com",
+                "created_at": "2023-08-15T11:22:09.717Z",
+                "updated_at": "2023-08-15T11:22:09.717Z"
             },
             "items": [
                 {
-                    "fulfillment_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                    "id": "6333",
+                    "id": "435",
                     "quantity": {
-                        "count": 1
-                    }
+                        "count": 2
+                    },
+                    "fulfillment_id": "ZRPLf58752a4-d0f6-4c3a-8762-1b74a9acfcf1"
                 },
                 {
-                    "fulfillment_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                    "id": "6332",
+                    "id": "404",
                     "quantity": {
-                        "count": 1
-                    }
+                        "count": 2
+                    },
+                    "fulfillment_id": "ZRPLf58752a4-d0f6-4c3a-8762-1b74a9acfcf1"
                 }
             ],
             "provider": {
@@ -60,25 +60,24 @@
             },
             "fulfillments": [
                 {
-                    "id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
+                    "id": "ZRPLf58752a4-d0f6-4c3a-8762-1b74a9acfcf1",
                     "end": {
-                        "person": {
-                            "name": "rajath"
-                        },
                         "contact": {
-                            "email": "ondc@zrpl.co.in",
-                            "phone": "9980285954"
+                            "phone": "6362286779"
+                        },
+                        "person": {
+                            "name": "Sudd"
                         },
                         "location": {
-                            "gps": "13.5740765,74.7863698",
+                            "gps": "12.9140160000001, 77.6371740000001",
                             "address": {
-                                "name": "rajath",
-                                "building": "molhalli",
-                                "locality": "panchayat office",
-                                "city": "Kakkunje",
+                                "name": "Sudd",
+                                "building": "near Regional passport office",
+                                "locality": "#102, Sapthagiri nivasa building, regional passport office road, Kormangala 8th stage",
+                                "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "IND",
-                                "area_code": "576222"
+                                "area_code": "560102"
                             }
                         }
                     },
@@ -86,16 +85,18 @@
                 }
             ],
             "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
                 "params": {
-                    "amount": "100",
+                    "amount": "4216",
                     "currency": "INR",
-                    "transaction_id": "20230531011650000870618366955183807"
+                    "transaction_id": "a7f96b4a-7ed7-4714-9a8a-5d2892478e33"
                 },
                 "status": "PAID",
                 "type": "ON-ORDER",
                 "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "2",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
@@ -113,140 +114,86 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "100"
+                    "value": "4216"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "6332",
+                        "@ondc/org/item_id": "404",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
-                        "title": "Rice Biscuits",
+                        "title": "Ifrogz Audio- Ear pollution plugz mobile with mike-Blue",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "60"
+                            "value": "1598"
                         },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "60"
+                                "value": "799"
                             }
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                        "title": "Delivery charges",
-                        "@ondc/org/title_type": "delivery",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                        "title": "Packing charges",
-                        "@ondc/org/title_type": "packing",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "6332",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "6332",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                        "title": "Convenience Fee",
-                        "@ondc/org/title_type": "misc",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "6333",
+                        "@ondc/org/item_id": "435",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
-                        "title": "Rice Papad",
+                        "title": "Ifrogz Audio Intone with mic-Black",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "40"
+                            "value": "2598"
                         },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "40"
+                                "value": "1299"
                             }
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
+                        "@ondc/org/item_id": "ZRPLf58752a4-d0f6-4c3a-8762-1b74a9acfcf1",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "10"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
+                        "@ondc/org/item_id": "ZRPLf58752a4-d0f6-4c3a-8762-1b74a9acfcf1",
                         "title": "Packing charges",
                         "@ondc/org/title_type": "packing",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "10"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "6333",
+                        "@ondc/org/item_id": "404",
                         "title": "Tax",
                         "@ondc/org/title_type": "tax",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
+                            "value": "10"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "6333",
+                        "@ondc/org/item_id": "404",
                         "title": "Discount",
                         "@ondc/org/title_type": "discount",
                         "price": {
                             "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPL94117c18-e089-4388-b623-e56521f247ed",
-                        "title": "Convenience Fee",
-                        "@ondc/org/title_type": "misc",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
+                            "value": "-10"
                         }
                     }
                 ],
                 "ttl": "P1D"
             },
-            "created_at": "2023-05-31T05:16:58.108Z",
-            "updated_at": "2023-05-31T05:16:58.108Z"
+            "created_at": "2023-08-15T11:22:12.625Z",
+            "updated_at": "2023-08-15T11:22:12.625Z"
         }
     }
 }

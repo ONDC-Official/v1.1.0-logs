@@ -1,0 +1,233 @@
+{
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_status",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "transaction_id": "3f0e6200-d4f1-45f3-b659-0caa4d352c4b",
+      "message_id": "90fd5b19-d7cb-4012-af08-604b56d311c1",
+      "timestamp": "2023-07-12T07:59:47.273Z",
+      "ttl": "PT30S",
+      "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com/seller-app/pincode",
+      "bpp_uri": "https://api-gateway-oak91dye.proxy.dev.dunzo.com/api/gateway/proxy/ondc/v1/seller-app/pincode"
+    },
+    "message": {
+      "order": {
+        "id": "2023-07-12-682705",
+        "state": "Accepted",
+        "provider": {
+          "id": "78ea40f5-279b-448d-ad27-41b79b1ffcff",
+          "locations": [
+            {
+              "id": "78ea40f5-279b-448d-ad27-41b79b1ffcff"
+            }
+          ],
+          "rateable": true
+        },
+        "fulfillments": [
+          {
+            "id": "F-78ea40f5-279b-448d-ad27-41b79b1ffcff",
+            "type": "Delivery",
+            "@ondc/org/provider_name": "Dunzo",
+            "tracking": false,
+            "state": {
+              "descriptor": {
+                "name": "Pending",
+                "code": "Pending"
+              }
+            },
+            "start": {
+              "location": {
+                "id": "78ea40f5-279b-448d-ad27-41b79b1ffcff",
+                "descriptor": {
+                  "name": "Dunzo Test Store - Internal users Indiranagar"
+                },
+                "gps": "12.983461,77.640266",
+                "address": {
+                  "locality": "Indiranagar",
+                  "city": "Bengaluru",
+                  "state": "KA",
+                  "area_code": "560035"
+                }
+              },
+              "contact": {
+                "phone": "9300930000"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-07-12T07:59:47.273Z",
+                  "end": "2023-07-12T08:50:28.000Z"
+                }
+              }
+            },
+            "end": {
+              "location": {
+                "gps": "12.9814010000001, 77.6409810000001",
+                "address": {
+                  "name": "Prajwal Gowda",
+                  "building": "Mi show room",
+                  "locality": "#284, Hothur Square, 1st Floor, 100 Feet Rd",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560038"
+                }
+              },
+              "contact": {
+                "phone": "9113915662"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-07-12T08:50:29.716Z",
+                  "end": "2023-07-12T09:01:29.716Z"
+                }
+              }
+            },
+            "rateable": true
+          }
+        ],
+        "items": [
+          {
+            "fulfillment_id": "F-78ea40f5-279b-448d-ad27-41b79b1ffcff",
+            "id": "5bc87ae10d298a283c2972ea",
+            "quantity": {
+              "count": 1
+            }
+          },
+          {
+            "fulfillment_id": "F-78ea40f5-279b-448d-ad27-41b79b1ffcff",
+            "id": "5bc87ae20d298a283c297eff",
+            "quantity": {
+              "count": 1
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "124"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "5bc87ae10d298a283c2972ea",
+              "title": "Daawat Rozana Basmati Rice",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "99"
+              },
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "20"
+                  },
+                  "maximum": {
+                    "count": "20"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "99"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "5bc87ae20d298a283c297eff",
+              "title": "Paper Boat Alphonso Aam Juice",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "15"
+              },
+              "@ondc/org/item_quantity": {
+                "count": 1
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "20"
+                  },
+                  "maximum": {
+                    "count": "20"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "15"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "F-78ea40f5-279b-448d-ad27-41b79b1ffcff",
+              "title": "Packing charges",
+              "@ondc/org/title_type": "packing",
+              "price": {
+                "currency": "INR",
+                "value": "10.00"
+              }
+            },
+            {
+              "@ondc/org/item_id": "F-78ea40f5-279b-448d-ad27-41b79b1ffcff",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              }
+            }
+          ],
+          "ttl": "PT15M"
+        },
+        "billing": {
+          "name": "Prajwal Gowda",
+          "address": {
+            "name": "Prajwal Gowda",
+            "door": "Mi show room",
+            "building": "Mi show room",
+            "locality": "#284, Hothur Square, 1st Floor, 100 Feet Rd",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "IND",
+            "area_code": "560038"
+          },
+          "email": "prajwal.gowda@ext.dunzo.in",
+          "phone": "9113915662",
+          "created_at": "2023-07-12T07:58:12.755Z",
+          "updated_at": "2023-07-12T07:58:12.755Z"
+        },
+        "payment": {
+          "params": {
+            "currency": "INR",
+            "transaction_id": "3f0e6200-d4f1-45f3-b659-0caa4d352c4b",
+            "amount": "124"
+          },
+          "status": "PAID",
+          "collected_by": "BAP",
+          "type": "ON-ORDER",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "beneficiary_name": "Dunzo Digital Private Limited",
+              "upi_address": "",
+              "settlement_bank_account_no": "016905012511",
+              "settlement_ifsc_code": "ICIC0000169",
+              "bank_name": "ICICI Bank",
+              "branch_name": "Bangalore - Indira Nagar"
+            }
+          ]
+        },
+        "created_at": "2023-07-12T07:59:41.660Z",
+        "updated_at": "2023-07-12T07:59:47.273Z"
+      }
+    }
+  }

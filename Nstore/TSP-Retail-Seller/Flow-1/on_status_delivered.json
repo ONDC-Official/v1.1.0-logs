@@ -1,0 +1,210 @@
+{
+    "context": {
+        "city": "std:080",
+        "action": "on_status",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondctsp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondctsp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-28T02:39:08.000Z",
+        "message_id": "d4c25317-29bc-4259-a10f-c90e073e5778",
+        "core_version": "1.1.0",
+        "transaction_id": "5e24ff8d-348b-4ba8-8ead-545234a6d308"
+    },
+    "message": {
+        "order": {
+            "id": "2023-07-28-801304",
+            "items": [
+                {
+                    "id": "102",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21165_560005"
+                },
+                {
+                    "id": "104",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21165_560005"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "2420.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "2000.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "2000.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Gas Stove",
+                        "@ondc/org/item_id": "102",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "item": {
+                            "price": {
+                                "value": "400.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "400.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Zodiac Cosmo",
+                        "@ondc/org/item_id": "104",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "20.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "21165_560005",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "Completed",
+            "billing": {
+                "name": "Sathish Kumar A",
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "Sathish Kumar A",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "Peenya Industrial Area",
+                    "locality": "Post Box No. 5857, 23/24, II Phase",
+                    "area_code": "560034"
+                },
+                "created_at": "2023-07-28T02:34:40.632Z",
+                "updated_at": "2023-07-28T02:34:40.632Z"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "2420",
+                    "currency": "INR",
+                    "transaction_id": "5e24ff8d-348b-4ba8-8ead-545234a6d308"
+                },
+                "status": "PAID",
+                "tl_method": "http/get",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "provider": {
+                "id": "21165",
+                "locations": [
+                    {
+                        "id": "21165"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "https://betareceipt.nstore.in/invoice/NDAwMTU=",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-07-28T02:34:43.989Z",
+            "updated_at": "2023-07-28T02:39:08.000Z",
+            "fulfillments": [
+                {
+                    "id": "21165_560005",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-07-28T06:34:43.989Z",
+                                "start": "2023-07-28T03:19:43.989Z"
+                            },
+                            "timestamp": "2023-07-28T02:39:08.000Z"
+                        },
+                        "contact": {
+                            "phone": "9629295619"
+                        },
+                        "location": {
+                            "gps": "12.927112, 77.626652",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "Sathish Kumar A",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "Peenya Industrial Area",
+                                "locality": "Post Box No. 5857, 23/24, II Phase",
+                                "area_code": "560034"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-07-28T03:19:43.989Z",
+                                "start": "2023-07-28T02:34:43.989Z"
+                            },
+                            "timestamp": "2023-07-28T02:38:14.000Z"
+                        },
+                        "contact": {
+                            "email": "hariprasa49@gmail.com",
+                            "phone": "5555544444"
+                        },
+                        "location": {
+                            "id": "21165",
+                            "gps": "12.995323,77.613983",
+                            "descriptor": {
+                                "name": "Classic Grocery",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/21165/store_logo/21165_b8j2337limy40jp.jpeg"
+                                ]
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "@ondc/org/provider_name": "Classic Grocery"
+                }
+            ]
+        }
+    }
+}

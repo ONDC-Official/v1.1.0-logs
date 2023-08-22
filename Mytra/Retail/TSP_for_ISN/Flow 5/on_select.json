@@ -7,68 +7,84 @@
         "core_version": "1.1.0",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_uri": "https://sit.mytra.money/api/method/ondc/",
-        "transaction_id": "a761e762-3352-442b-a9cd-2b025bf6f064",
-        "message_id": "a42317c0-61c1-4243-b576-47e305ae8ee4",
-        "timestamp": "2023-07-03T12:22:38.693Z",
-        "bpp_id": "sit.mytra.money"
+        "bpp_uri": "https://shathabdhi-organics.mytra.money/api/method/ondc/",
+        "transaction_id": "f7d3eb89-9f90-446f-8566-40a7017fe145",
+        "message_id": "d19ccc48-1adf-4f0b-b397-fc63059fca3d",
+        "timestamp": "2023-08-03T06:21:53.753Z",
+        "bpp_id": "shathabdhi-organics.mytra.money"
     },
     "message": {
         "order": {
             "items": [
                 {
-                    "id": "Sleepy Owl Hot Brew French Vanilla:Finished Goods - Pwc",
-                    "location_id": "Finished Goods - Pwc",
-                    "fulfillment_id": "ONDC-REQ-124432"
+                    "id": "STO-ITEM-2023-00014-1 KG:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-65690"
                 },
                 {
-                    "id": "Lion Dates, 250g:Finished Goods - Pwc",
-                    "location_id": "Finished Goods - Pwc",
-                    "fulfillment_id": "ONDC-REQ-124432"
+                    "id": "STO-ITEM-2023-00015-1 KG:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-65690"
                 }
             ],
             "provider": {
-                "id": "sit.mytra.money",
+                "id": "shathabdhi-organics.mytra.money",
                 "locations": [
                     {
-                        "id": "Finished Goods - Pwc"
+                        "id": "Manikonda - S"
                     }
                 ]
             },
             "fulfillments": [
                 {
-                    "end": {
-                        "location": {
-                            "gps": "17.4431480000001, 78.3853320000001",
-                            "address": {
-                                "area_code": "500081"
-                            }
-                        }
-                    },
-                    "id": "ONDC-REQ-124432",
+                    "id": "ONDC-REQ-65690",
                     "state": {
                         "descriptor": {
                             "code": "Serviceable"
                         }
                     },
-                    "@ondc/org/provider_name": "mytra store",
-                    "@ondc/org/TAT": "P41670D",
-                    "@ondc/org/category": "Next Day Delivery"
+                    "@ondc/org/provider_name": "Shathabdhi Organics",
+                    "@ondc/org/TAT": "PT4H",
+                    "@ondc/org/category": "Same Day Delivery"
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "269.98"
+                    "value": "579.0"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "Sleepy Owl Hot Brew French Vanilla:Finished Goods - Pwc",
+                        "@ondc/org/item_id": "STO-ITEM-2023-00014-1 KG:Manikonda - S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Unpolished Toor Dal-1 KG",
+                        "price": {
+                            "currency": "INR",
+                            "value": "520.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "260.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "10"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "STO-ITEM-2023-00015-1 KG:Manikonda - S",
                         "@ondc/org/item_quantity": {
                             "count": 0
                         },
                         "@ondc/org/title_type": "item",
-                        "title": "Sleepy Owl Hot Brew French Vanilla",
+                        "title": "Unpolished Urad Dal-1 KG",
                         "price": {
                             "currency": "INR",
                             "value": "0"
@@ -76,7 +92,7 @@
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "0"
+                                "value": "275.0"
                             },
                             "quantity": {
                                 "available": {
@@ -89,38 +105,12 @@
                         }
                     },
                     {
-                        "@ondc/org/item_id": "Lion Dates, 250g:Finished Goods - Pwc",
-                        "@ondc/org/item_quantity": {
-                            "count": 2.0
-                        },
-                        "@ondc/org/title_type": "item",
-                        "title": "Lion Dates, 250g",
-                        "price": {
-                            "currency": "INR",
-                            "value": "151.98"
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "75.99"
-                            },
-                            "quantity": {
-                                "available": {
-                                    "count": "47.0"
-                                },
-                                "maximum": {
-                                    "count": "47.0"
-                                }
-                            }
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ONDC-REQ-124432",
+                        "@ondc/org/item_id": "ONDC-REQ-65690",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "118.0"
+                            "value": "59.0"
                         }
                     }
                 ],

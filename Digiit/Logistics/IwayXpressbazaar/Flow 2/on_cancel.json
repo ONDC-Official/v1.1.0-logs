@@ -7,27 +7,45 @@
     "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
     "bpp_id": "preprod-bpp.iway.digiit.io",
     "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-    "transaction_id": "e27ac51b-81e1-4994-a63d-a3b85fa4e5f3",
-    "message_id": "fb8ad38f-c7bb-4777-816b-ccd158477112",
+    "transaction_id": "f8393546-2f88-413c-af02-1e724ea24eef",
+    "message_id": "17b5c582-2b7e-40c4-bfd7-23be08558f82",
     "city": "std:080",
     "country": "IND",
-    "timestamp": "2023-06-26T08:00:34.746Z"
+    "timestamp": "2023-08-18T05:05:05.184Z"
   },
   "message": {
     "order": {
-      "id": "6a02b598-03db-4467-9182-f6545554e704",
+      "id": "19da7b0d-743e-44f1-bd94-2f8ea498327d",
       "state": "Cancelled",
       "fulfillments": [
         {
-          "id": "4e7c6bee-69f7-4cd9-a9ad-1eb0ab4be887",
+          "id": "1",
           "type": "Prepaid",
           "state": {
             "descriptor": {
-              "name": "Cancelled",
-              "code": "Cancelled"
+              "code": "Cancelled",
+              "name": "Cancelled"
             }
           },
-          "rtOtags": [
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-08-18T05:10:59.15Z",
+                "end": "2023-08-18T05:40:59.15Z"
+              }
+            }
+          },
+          "agent": {
+            "name": "Peter",
+            "phone": "7438483828"
+          },
+          "vehicle": {
+            "category": "TwoWheeler",
+            "size": "500.0000",
+            "registration": "TN56NS8282"
+          },
+          "tags": [
             {
               "code": "rto",
               "list": [
@@ -37,72 +55,63 @@
                 },
                 {
                   "code": "rto_id",
-                  "value": "4e7c6bee-69f7-4cd9-a9ad-1eb0ab4be887-RTO"
+                  "value": "1-RTO"
                 }
               ]
             }
-          ],
-          "start": null,
-          "tags": null
+          ]
         },
         {
-          "id": "4e7c6bee-69f7-4cd9-a9ad-1eb0ab4be887-RTO",
+          "id": "1-RTO",
           "type": "RTO",
           "state": {
             "descriptor": {
-              "name": "RTO Initiated",
-              "code": "RTO-Initiated"
+              "code": "RTO-Initiated",
+              "name": "RTO-Initiated"
             }
           },
-          "rtOtags": null,
           "start": {
-            "location": null,
             "time": {
               "range": {
-                "start": "2023-06-26T02:30:33.8939325Z",
-                "end": "2023-06-26T03:00:33.8939342Z"
-              },
-              "timestamp": null
-            },
-            "contact": null
-          },
-          "tags": null
+                "start": "2023-08-18T05:05:05.228Z",
+                "end": "2023-08-18T05:35:05.228Z"
+              }
+            }
+          }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1250.0"
+          "value": "180.0"
         },
         "breakup": [
           {
-            "title": null,
-            "ondc_org_item_id": "20",
-            "ondc_org_title_type": "Delivery Charge",
             "price": {
               "currency": "INR",
-              "value": "1210.0"
-            }
+              "value": "90.0"
+            },
+            "@ondc/org/item_id": "19",
+            "@ondc/org/title_type": "Delivery Charge"
           },
           {
-            "title": null,
-            "ondc_org_item_id": null,
-            "ondc_org_title_type": "RTO Charge",
             "price": {
               "currency": "INR",
-              "value": "40.0"
-            }
+              "value": "90.0"
+            },
+            "@ondc/org/item_id": "19-RTO",
+            "@ondc/org/title_type": "RTO Charge"
           }
         ]
       },
       "cancellation": {
-        "time": "2023-06-26T08:00:33.8940863",
-        "cancelled_by": "iway_0_InternalAccount",
+        "time": "2023-08-18T05:05:05.292Z",
+        "cancelled_by": "Jagadeesan",
         "reason": {
           "id": "013",
           "additional_description": {
             "name": "AWB",
-            "code": "2023062618840612"
+            "code": "2023081841114646"
           }
         }
       }

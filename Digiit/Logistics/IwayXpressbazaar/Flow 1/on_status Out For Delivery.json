@@ -9,14 +9,13 @@
     "city": "std:080",
     "country": "IND",
     "action": "on_status",
-    "transaction_id": "25bfa468-0d45-4a8a-b6e5-43d770d2ed32",
-    "message_id": "e85880b3-e31f-4b66-8f1f-f61e2e9aa7e4",
-    "timestamp": "2023-06-26T07:53:04.909Z",
-    "ttl": "PT30S"
+    "transaction_id": "a183ea30-e831-4b78-8240-377cd5495fdd",
+    "message_id": "cb390653-9afb-459f-83c9-21b7cabc0a54",
+    "timestamp": "2023-08-08T16:09:05.513Z"
   },
   "message": {
     "order": {
-      "id": "91207a0f-0fca-4706-abf8-00dfa8eec35d",
+      "id": "6467fe28-da05-442e-bce8-c343ad9f1480",
       "state": "In-progress",
       "provider": {
         "id": "107-Account-DER-292",
@@ -28,8 +27,8 @@
       },
       "items": [
         {
-          "id": "20",
-          "category_id": "Standard Delivery",
+          "id": "18",
+          "category_id": "Next Day Delivery",
           "descriptor": {
             "code": "P2P"
           }
@@ -38,27 +37,32 @@
       "fulfillments": [
         {
           "type": "Prepaid",
-          "@ondc/org/awb_no": "2023062632823442",
+          "@ondc/org/awb_no": "2023080860821949",
           "state": {
             "descriptor": {
-              "code": "OutForDelivery"
+              "code": "Out-for-delivery"
             }
           },
           "tracking": true,
           "start": {
             "time": {
               "range": {
-                "start": "2023-06-26T13:28:33.016Z",
-                "end": "2023-06-26T13:48:33.016Z"
+                "start": "2023-08-09T12:05:35.392Z",
+                "end": "2023-08-09T12:35:35.392Z"
               },
-              "timestamp": "2023-06-26T07:52:27.328Z"
+              "timestamp": "2023-08-08T16:07:48.243Z"
+            },
+            "instructions": {
+              "name": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml",
+              "short_desc": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml",
+              "long_desc": "480587"
             }
           },
           "end": {
             "time": {
               "range": {
-                "start": "2023-06-26T14:18:33.016Z",
-                "end": "2023-06-26T14:33:33.016Z"
+                "start": "2023-08-09T16:05:35.396Z",
+                "end": "2023-08-09T16:20:35.396Z"
               }
             }
           },
@@ -71,57 +75,39 @@
             "size": "500.0000",
             "registration": "TN56NS8282"
           },
-          "@ondc/org/ewaybillno": "4f4a753a-2877-415b-bb3b-1a9003e5ff85",
-          "@ondc/org/ebexpirydate": "2023-06-28T07:48:28.199Z"
+          "@ondc/org/ewaybillno": "489260df-01ba-480a-ba6c-85ec5bbbb152",
+          "@ondc/org/ebexpirydate": "2023-08-10T16:04:54.530Z"
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1250.0"
+          "value": "985.0"
         },
         "breakup": [
           {
-            "@ondc/org/item_id": "20",
+            "@ondc/org/item_id": "18",
             "@ondc/org/title_type": "Delivery Charge",
             "price": {
               "currency": "INR",
-              "value": "1210.0"
-            }
-          },
-          {
-            "@ondc/org/title_type": "RTO Charge",
-            "price": {
-              "currency": "INR",
-              "value": "40.0"
+              "value": "985.0"
             }
           }
         ]
       },
       "payment": {
-        "type": "ON_ORDER",
+        "type": "ON-ORDER",
         "collected_by": "BAP",
-        "@ondc/org/settlement_details": [
-          {
-            "settlement_counterparty": "seller-app",
-            "settlement_type": "neft",
-            "upi_address": null,
-            "settlement_bank_account_no": "107_ACCT000001",
-            "settlement_ifsc_code": "HDFC100010",
-            "settlement_status": null,
-            "settlement_reference": null,
-            "settlement_timestamp": null
-          }
-        ]
+        "@ondc/org/settlement_details": []
       },
       "billing": {
         "name": "Yumfood",
         "address": {
           "name": "Yumfood",
-          "building": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
-          "locality": "Visveswarapura, Nelamangala 562123, Karnataka Visveswarapura Nelamangala India",
-          "city": "Nelamangala",
-          "state": "kA",
+          "building": "89 Karishma hills ,Vinayaka Layout, Poornapragna Housing Society Layout",
+          "locality": "89 Karishma hills ,Vinayaka Layout, Poornapragna Housing Society Layout",
+          "city": "Bengaluru",
+          "state": "KA",
           "country": "India",
           "area_code": "560061"
         },

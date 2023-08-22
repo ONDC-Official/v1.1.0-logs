@@ -1,44 +1,35 @@
 {
   "context": {
-    "domain": "FIS10",
-    "location": {
-      "city": {
-        "code": "std:080"
+      "domain": "ONDC:FIS10",
+      "bap_id": "b2bapi-stage.spicesmartshop.com",
+      "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+      "message_id": "e547e638-b5f0-4ee4-b386-250b5fb3537c",
+      "transaction_id": "a040b5c5-8502-4986-bad7-0b7c5ed4b2c8",
+      "bpp_id": "ondc.vistar.solutions",
+      "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+      "location": {
+          "city": {
+              "code": "std:080"
+          },
+          "country": {
+              "code": "IND"
+          }
       },
-      "country": {
-        "code": "IND"
-      }
-    },
-    "action": "on_cancel",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "bpp_id": "ondc.vistar.solutions",
-    "version": "1.0.0",
-    "message_id": "34446408-2e4f-4acb-8330-3772fd0c0876",
-    "timestamp": "2023-07-05T12:53:15.926Z",
-    "transaction_id": "e77343d4-181c-4694-8584-0032f03aa0cf",
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap"
+      "action": "on_cancel",
+      "version": "1.0.0",
+      "timestamp": "2023-08-04T15:51:58.071Z"
   },
   "message": {
-    "order": {
-      "id": null,
-      "status": "CANCELLED",
-      "tags": [
-        {
-          "descriptor": {
-            "code": "CANCELLATION_REASONS"
-          },
-          "lists": [
-            {
-              "descriptor": {
-                "code": "001"
-              },
-              "value": "Order delivery delayed or not possible"
-            }
+      "order": {
+          "id": "81e167b3-f2dd-42ae-9766-20baca57ad0d",
+          "status": "CANCELLED",
+          "tags": [
+              {
+                  "descriptor": {
+                      "code": "CANCELLATION_REASONS"
+                  }
+              }
           ]
-        }
-      ]
-    }
+      }
   }
 }

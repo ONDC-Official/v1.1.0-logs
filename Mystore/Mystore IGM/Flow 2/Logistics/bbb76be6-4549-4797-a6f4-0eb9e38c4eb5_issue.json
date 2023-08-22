@@ -1,0 +1,117 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "issue",
+      "bap_id": "beta.mystore.in",
+      "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+      "bpp_id": "ondc-dev.delhivery.com",
+      "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1",
+      "transaction_id": "bbb76be6-4549-4797-a6f4-0eb9e38c4eb5",
+      "message_id": "986c6e39-8acb-4af2-bbbb-c76bb0bfdc32",
+      "timestamp": "2023-08-07T05:52:22.808Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "issue": {
+        "id": "64d086963fdfeb43cce66849",
+        "category": "FULFILLMENT",
+        "sub_category": "FLM01",
+        "complainant_info": {
+          "person": {
+            "name": "beta.mystore.in",
+            "email": "dummy-bpp-beta-mystore-in@mystore.in"
+          },
+          "contact": {}
+        },
+        "order_details": {
+          "id": "64d085861b673e924732fad7",
+          "state": "Accepted",
+          "items": [
+            {
+              "id": "64b53952886ade3bef992236",
+              "quantity": 1
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "Fulfillment1",
+              "state": "Accepted"
+            }
+          ],
+          "provider_id": "62733ab9f1f53df939f25300"
+        },
+        "description": {
+          "short_desc": "Wrong delivery address",
+          "long_desc": "Wrong delivery address"
+        },
+        "source": {
+          "network_participant_id": "beta.mystore.in",
+          "issue_source_type": "CONSUMER"
+        },
+        "expected_response_time": {
+          "duration": "PT2H"
+        },
+        "expected_resolution_time": {
+          "duration": "P1D"
+        },
+        "status": "Open",
+        "issue_type": "ISSUE",
+        "issue_actions": {
+          "complainant_actions": [
+            {
+              "complainant_action": "Open",
+              "remarks": "Wrong delivery address",
+              "updated_at": "2023-08-07T05:52:22.945Z",
+              "updated_by": {
+                "org": {
+                  "name": "beta.mystore.in"
+                },
+                "contact": {
+                  "phone": "9450394039",
+                  "email": "buyerapp@interface.com"
+                },
+                "person": {
+                  "name": "Mystore"
+                }
+              }
+            }
+          ]
+        },
+        "created_at": "2023-08-07T05:52:22.884Z",
+        "updated_at": "2023-08-07T05:52:22.946Z"
+      }
+    }
+  },
+  "response": {
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    },
+    "error": {
+      "type": {},
+      "code": {},
+      "path": "",
+      "message": ""
+    },
+    "context": {
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "issue",
+      "bap_id": "beta.mystore.in",
+      "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+      "bpp_id": "ondc-dev.delhivery.com",
+      "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1",
+      "transaction_id": "bbb76be6-4549-4797-a6f4-0eb9e38c4eb5",
+      "message_id": "986c6e39-8acb-4af2-bbbb-c76bb0bfdc32",
+      "timestamp": "2023-08-07T05:52:22.808Z",
+      "ttl": "PT30S"
+    }
+  }
+}
