@@ -1,0 +1,275 @@
+{
+	"context": {
+		"domain": "nic2004:52110",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_update",
+		"core_version": "1.1.0",
+		"bap_id": "buyer-app.ondc.org",
+		"bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+		"bpp_id": "ushopmicro-stage.hulcd.com",
+		"bpp_uri": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833",
+		"transaction_id": "f58b347c-06c6-4fab-9e4e-9f0ea110e9e6",
+		"message_id": "04155a3f-d327-4591-b8d1-550d83c1d62e",
+		"timestamp": "2023-08-20T16:29:02.447Z",
+		"key": "ORcFVLPIuaqQll2votGDCJK11rfsvBRcw3yxhBchaXo=",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"id": "2023-08-20-446260",
+			"state": "Completed",
+			"fulfillments": [{
+				"id": "HUL-330949D-P8056-QC",
+				"type": "Reverse QC",
+				"state": {
+					"descriptor": {
+						"code": "Order-picked-up"
+					}
+				},
+				"tracking": false,
+				"start": {
+					"location": {
+						"id": "145",
+						"descriptor": {
+							"name": "SWASTIK KARYANA STORE-D",
+							"images": ["https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/grocery_banner.png"]
+						},
+						"gps": "12.9656845,77.7254876",
+						"rateable": false
+					},
+					"time": {
+						"timestamp": "2023-08-20T16:23:51.096Z",
+						"range": {
+							"start": "2023-08-20T16:23:51.096Z",
+							"end": "2023-08-20T16:24:49.759Z"
+						}
+					},
+					"contact": {
+						"phone": "8499897072",
+						"email": "kalpana.kandathi@gmail.com"
+					}
+				},
+				"end": {
+					"location": {
+						"gps": "12.9949590000001, 77.6989090000001",
+						"address": {
+							"door": "Bren",
+							"name": "weqwe",
+							"building": "Bren",
+							"locality": "dsad",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "India",
+							"area_code": "560048"
+						},
+						"rateable": false
+					},
+					"time": {
+						"timestamp": "2023-08-20T16:27:54.180Z",
+						"range": {
+							"start": "2023-08-20T16:24:51.759Z",
+							"end": "2023-08-20T16:27:54.180Z"
+						}
+					},
+					"contact": {
+						"phone": "9986697491",
+						"email": "kmr.subodh@gmail.com"
+					}
+				}
+			}, {
+				"id": "HUL-330949D-P8056",
+				"type": "Delivery",
+				"state": {
+					"descriptor": {
+						"code": "Order-delivered"
+					}
+				},
+				"tracking": false,
+				"start": {
+					"location": {
+						"id": "145",
+						"descriptor": {
+							"name": "SWASTIK KARYANA STORE-D",
+							"images": ["https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/grocery_banner.png"]
+						},
+						"gps": "12.9656845,77.7254876",
+						"rateable": false
+					},
+					"time": {
+						"timestamp": "2023-08-20T16:23:51.096Z",
+						"range": {
+							"start": "2023-08-20T16:23:51.096Z",
+							"end": "2023-08-20T16:24:49.759Z"
+						}
+					},
+					"contact": {
+						"phone": "8499897072",
+						"email": "kalpana.kandathi@gmail.com"
+					}
+				},
+				"end": {
+					"location": {
+						"gps": "12.9949590000001, 77.6989090000001",
+						"address": {
+							"name": "weqwe",
+							"building": "Bren",
+							"locality": "dsad",
+							"city": "Bengaluru",
+							"state": "Karnataka",
+							"country": "India",
+							"area_code": "560048"
+						},
+						"rateable": false
+					},
+					"time": {
+						"timestamp": "2023-08-20T16:25:17.491Z",
+						"range": {
+							"start": "2023-08-20T16:24:51.759Z",
+							"end": "2023-08-20T16:25:17.491Z"
+						}
+					},
+					"contact": {
+						"phone": "9986697491",
+						"email": "kmr.subodh@gmail.com"
+					}
+				},
+				"@ondc/org/provider_name": "SWASTIK KARYANA STORE-D"
+			}],
+			"payment": {
+				"params": {
+					"transaction_id": "f58b347c-06c6-4fab-9e4e-9f0ea110e9e6",
+					"amount": "473.8",
+					"currency": "INR"
+				},
+				"type": "ON-ORDER",
+				"status": "PAID",
+				"collected_by": "BAP",
+				"@ondc/org/buyer_app_finder_fee_type": "percent",
+				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
+				"@ondc/org/settlement_details": [{
+					"settlement_counterparty": "seller-app",
+					"settlement_phase": "sale-amount",
+					"settlement_type": "neft",
+					"settlement_bank_account_no": "915010038001776",
+					"settlement_ifsc_code": "UTIB0000333",
+					"beneficiary_name": "Jpnagar",
+					"bank_name": "Axis Bank Ltd.",
+					"branch_name": "Jpnagar"
+				}]
+			},
+			"created_at": "2023-08-20T16:23:52.029Z",
+			"updated_at": "2023-08-20T16:27:58.180Z",
+			"items": [{
+				"id": "10000232",
+				"quantity": {
+					"count": 1
+				},
+				"fulfillment_id": "HUL-330949D-P8056",
+				"rating": 5,
+				"rateable": false,
+				"matched": false,
+				"related": false,
+				"recommended": false,
+				"@ondc/org/returnable": false,
+				"@ondc/org/seller_pickup_return": false,
+				"@ondc/org/cancellable": false,
+				"@ondc/org/available_on_cod": false
+			}, {
+				"id": "10000005",
+				"quantity": {
+					"count": 1
+				},
+				"fulfillment_id": "HUL-330949D-P8056-QC",
+				"rating": 5,
+				"rateable": false,
+				"matched": false,
+				"related": false,
+				"recommended": false,
+				"tags": {
+					"status": "Return_Picked"
+				},
+				"@ondc/org/returnable": false,
+				"@ondc/org/seller_pickup_return": false,
+				"@ondc/org/cancellable": false,
+				"@ondc/org/available_on_cod": false
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "198.80"
+				},
+				"breakup": [{
+					"title": "Kwality Walls Party Pack Carton Kulfi 700ml",
+					"price": {
+						"currency": "INR",
+						"value": "185.0"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "185.00"
+						},
+						"rating": 5,
+						"rateable": false,
+						"matched": false,
+						"related": false,
+						"recommended": false,
+						"@ondc/org/returnable": false,
+						"@ondc/org/seller_pickup_return": false,
+						"@ondc/org/cancellable": false,
+						"@ondc/org/available_on_cod": false
+					},
+					"@ondc/org/item_id": "10000232",
+					"@ondc/org/item_quantity": {
+						"count": 1
+					},
+					"@ondc/org/title_type": "item"
+				}, {
+					"title": "Kwality Walls Party Pack Carton Butterscotch 700ml",
+					"price": {
+						"currency": "INR",
+						"value": "0.0"
+					},
+					"item": {
+						"price": {
+							"currency": "INR",
+							"value": "0.0"
+						},
+						"rating": 5,
+						"rateable": false,
+						"matched": false,
+						"related": false,
+						"recommended": false,
+						"@ondc/org/returnable": false,
+						"@ondc/org/seller_pickup_return": false,
+						"@ondc/org/cancellable": false,
+						"@ondc/org/available_on_cod": false
+					},
+					"@ondc/org/item_id": "10000005",
+					"@ondc/org/item_quantity": {
+						"count": 0
+					},
+					"@ondc/org/title_type": "item"
+				}, {
+					"title": "Convenience Fee",
+					"price": {
+						"currency": "INR",
+						"value": "13.80"
+					},
+					"@ondc/org/item_id": "HUL-330949D-P8056",
+					"@ondc/org/title_type": "misc"
+				}, {
+					"title": "Delivery charges",
+					"price": {
+						"currency": "INR",
+						"value": "0.0"
+					},
+					"@ondc/org/item_id": "HUL-330949D-P8056",
+					"@ondc/org/title_type": "delivery"
+				}],
+				"ttl": "P1D"
+			}
+		}
+	}
+}
