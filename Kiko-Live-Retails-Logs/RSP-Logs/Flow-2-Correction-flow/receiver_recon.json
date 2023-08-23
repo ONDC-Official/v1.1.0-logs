@@ -1,0 +1,161 @@
+{
+    "context": {
+        "domain": "ONDC:NTS10",
+        "country": "IND",
+        "city": "*",
+        "action": "receiver_recon",
+        "core_version": "1.0.0",
+        "bap_id": "api.razorpay.com/ondc-rsp-test",
+        "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+        "bpp_id": "api2.kiko.link/ondc-seller",
+        "bpp_uri": "https://api2.kiko.link/ondc-seller",
+        "transaction_id": "e57fdf44-8528-5bc5-e2ff-3470186e68c0",
+        "message_id": "381843a4-417d-11ee-9efd-6ef4664ac987",
+        "timestamp": "2023-08-23T06:20:56.287Z",
+        "ttl": "P2D"
+    },
+    "message": {
+        "orderbook": {
+            "orders": [
+                {
+                    "id": "2023-08-18-585020",
+                    "invoice_no": "NA",
+                    "collector_app_id": "api2.kiko.link/ondc-seller",
+                    "receiver_app_id": "api2.kiko.link/ondc-seller",
+                    "receiver_app_uri": "https://api2.kiko.link/ondc-seller",
+                    "state": "Completed",
+                    "settlement_reason_code": "01",
+                    "created_at": "2023-08-23T06:20:48.667Z",
+                    "updated_at": "2023-08-23T06:20:56.287Z",
+                    "payerdetails": {
+                        "payer_name": "Test Account",
+                        "payer_address": "Test Address",
+                        "payer_account_no": "678000000001",
+                        "payer_bank_code": "ICIC0006780",
+                        "payer_virtual_payment_address": ""
+                    },
+                    "withholding_tax_gst": {
+                        "currency": "INR",
+                        "value": "0"
+                    },
+                    "withholding_tax_tds": {
+                        "currency": "INR",
+                        "value": "0"
+                    },
+                    "deduction_by_collector": {
+                        "currency": "INR",
+                        "value": "0"
+                    },
+                    "provider": {
+                        "name": {
+                            "name": "RANDOM SELLER INCORPORATION PVT LTD",
+                            "code": "SELLER_CODE (RANDOM VALUE)"
+                        },
+                        "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+                    },
+                    "payment": {
+                        "uri": "https://api2.kiko.link/ondc-seller",
+                        "tl_method": "http/get",
+                        "params": {
+                            "transaction_id": "8EB4297C4CC1F1C3F2CDA62C327180B5",
+                            "transaction_status": "PAID",
+                            "currency": "INR",
+                            "amount": "957"
+                        },
+                        "type": "ON-ORDER",
+                        "status": "PAID",
+                        "collected_by": "BAP",
+                        "@ondc/org/collected_by_status": "Assert",
+                        "@ondc/org/buyer_app_finder_fee_type": "Amount",
+                        "@ondc/org/buyer_app_finder_fee_amount": "0",
+                        "@ondc/org/withholding_amount": "0",
+                        "@ondc/org/withholding_amount_status": "Assert",
+                        "@ondc/org/return_window": "P7D",
+                        "@ondc/org/return_window_status": "Assert",
+                        "@ondc/org/settlement_window": "P10D",
+                        "@ondc/org/settlement_window_status": "Assert",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "settlement_counterparty": "buyer-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_amount": "200",
+                                "settlement_type": "neft",
+                                "settlement_bank_account_no": "578000000001",
+                                "settlement_ifsc_code": "ICIC0005780",
+                                "upi_address": "success@upi",
+                                "bank_name": "ICICI",
+                                "branch_name": "Chennai",
+                                "beneficiary_name": "Receiver App Dummy",
+                                "beneficiary_address": "Chennai",
+                                "settlement_status": "PAID",
+                                "settlement_reference": "cjiqai77rsr9jul9hiog",
+                                "settlement_timestamp": "2023-08-23T06:20:56.289Z"
+                            },
+                            {
+                                "settlement_counterparty": "buyer-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_amount": "7",
+                                "settlement_type": "neft",
+                                "settlement_bank_account_no": "578000000001",
+                                "settlement_ifsc_code": "ICIC0005780",
+                                "upi_address": "success@upi",
+                                "bank_name": "ICICI",
+                                "branch_name": "Chennai",
+                                "beneficiary_name": "Receiver App Dummy",
+                                "beneficiary_address": "Chennai",
+                                "settlement_status": "NOT-PAID",
+                                "settlement_reference": "",
+                                "settlement_timestamp": "2023-08-23T06:20:48.667Z"
+                            }
+                        ],
+                        "@ondc/org/settlement_basis": "Collection",
+                        "@ondc/org/settlement_basis_status": "Assert"
+                    },
+                    "transaction_id": "e57fdf44-8528-5bc5-e2ff-3470186e68c0",
+                    "settlement_id": "MTPPPGuIw057Jg",
+                    "settlement_reference_no": "cjiqai77rsr9jul9hiog",
+                    "recon_status": "01",
+                    "order_recon_status": "01",
+                    "message": {
+                        "name": "",
+                        "code": ""
+                    },
+                    "correction": {
+                        "issue_initiator_ref": "123456",
+                        "issue_responder_ref": "1234567",
+                        "issue_type": "01",
+                        "issue_subtype": "01",
+                        "order_id": "2023-08-18-585020",
+                        "order_amount": {
+                            "currency": "INR",
+                            "value": "207"
+                        },
+                        "order_correction_amount": {
+                            "currency": "INR",
+                            "value": "207"
+                        },
+                        "order_state": "Delivered",
+                        "previous_settled_amount": {
+                            "currency": "INR",
+                            "value": "200"
+                        },
+                        "settlement_id": "121313",
+                        "settlement_reference_no": "1234554321",
+                        "prev_settlement_reference_no": [
+                            "12344321"
+                        ],
+                        "recon_status": "01",
+                        "diff_amount": {
+                            "currency": "INR",
+                            "value": "7"
+                        },
+                        "message": {
+                            "name": "",
+                            "code": ""
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
