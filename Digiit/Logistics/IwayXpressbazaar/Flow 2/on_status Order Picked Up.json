@@ -10,13 +10,13 @@
     "country": "IND",
     "action": "on_status",
     "transaction_id": "e48ac3fc-84fe-4f25-b15b-fd1dc0aa01a7",
-    "message_id": "f15cb029-2142-4241-89b3-2c7ebed89c99",
-    "timestamp": "2023-08-23T06:18:35.305Z"
+    "message_id": "0b52ff3d-0f7a-4cbe-94cf-2697cac5a159",
+    "timestamp": "2023-08-23T05:24:28.717Z"
   },
   "message": {
     "order": {
       "id": "dde09f24-2fca-4212-840f-79d4fb986323",
-      "state": "Cancelled",
+      "state": "In-progress",
       "provider": {
         "id": "107-Account-DER-292",
         "locations": [
@@ -40,7 +40,7 @@
           "@ondc/org/awb_no": "2023082257559137",
           "state": {
             "descriptor": {
-              "code": "Cancelled"
+              "code": "Order-picked-up"
             }
           },
           "tracking": true,
@@ -77,43 +77,12 @@
           },
           "@ondc/org/ewaybillno": "9c24cbe1-86eb-4d2c-a7f6-974dda624a82",
           "@ondc/org/ebexpirydate": "2023-08-24T13:33:27.206Z"
-        },
-        {
-          "type": "RTO",
-          "state": {
-            "descriptor": {
-              "code": "RTO-Disposed",
-              "name": "RTO-Disposed"
-            }
-          },
-          "start": {
-            "time": {
-              "range": {
-                "start": "2023-08-23T06:16:50.927Z",
-                "end": "2023-08-23T06:46:50.927Z"
-              },
-              "timestamp": "2023-08-23T06:16:51.220Z"
-            }
-          },
-          "end": {
-            "time": {
-              "range": {
-                "start": "2023-08-24T11:46:51.268Z",
-                "end": "2023-08-24T12:01:51.268Z"
-              },
-              "timestamp": "2023-08-23T06:17:58.783Z"
-            }
-          },
-          "agent": {
-            "name": "Peter",
-            "phone": "7438483828"
-          }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1955.0"
+          "value": "975.0"
         },
         "breakup": [
           {
@@ -122,14 +91,6 @@
             "price": {
               "currency": "INR",
               "value": "975.0"
-            }
-          },
-          {
-            "title": "RTO charges",
-            "@ondc/org/title_type": "RTO Charge",
-            "price": {
-              "currency": "INR",
-              "value": "980.0"
             }
           }
         ]
@@ -153,10 +114,6 @@
         "tax_number": "98798798798",
         "phone": "8978909876",
         "email": "abcd.efgh@gmail.com"
-      },
-      "tags": {
-        "cancellation_reason_id": "013",
-        "AWB no": "2023082257559137"
       }
     }
   }
