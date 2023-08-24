@@ -3,29 +3,20 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
         "bpp_id": "preprod-wow-bpp.shopalyst.com",
         "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
         "transaction_id": "e889fcaa-b08d-4b2b-8dd2-8b27264edba4",
-        "message_id": "ec88f990-ba7a-44e0-8bc0-ddac07321814",
-        "timestamp": "2023-08-24T08:02:36.996Z"
+        "message_id": "f4356ee2-939f-444c-a96d-2f07b9f98a3d",
+        "timestamp": "2023-08-24T08:07:39.792Z"
     },
     "message": {
         "order": {
             "id": "100095",
-            "state": "Accepted",
-            "provider": {
-                "id": "preprod-wow-bpp.shopalyst.com",
-                "locations": [
-                    {
-                        "id": "bcedc450f8481e89b1445069acdc3dd9"
-                    }
-                ],
-                "rateable": true
-            },
+            "state": "Completed",
             "items": [
                 {
                     "id": "7945DA7F78F5CC8879548D89B9540249_43459794338051_default",
@@ -39,13 +30,16 @@
                     "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
                         "count": 2
+                    },
+                    "tags": {
+                        "status": "Liquidated"
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1396.00"
+                    "value": "798.00"
                 },
                 "breakup": [
                     {
@@ -70,17 +64,17 @@
                         "title": "Cherrylicious Body Lotion By Body Cupid - 200 ml",
                         "price": {
                             "currency": "INR",
-                            "value": "598.00"
+                            "value": "0.00"
                         },
                         "@ondc/org/item_id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "299.00"
+                                "value": "0.00"
                             }
                         },
                         "@ondc/org/item_quantity": {
-                            "count": 2
+                            "count": 0
                         },
                         "@ondc/org/title_type": "item"
                     },
@@ -93,36 +87,26 @@
                         "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                         "@ondc/org/title_type": "delivery"
                     }
-                ],
-                "ttl": "PT15M"
-            },
-            "billing": {
-                "name": "Rajiv Singh",
-                "address": {
-                    "name": "Rajiv Singh",
-                    "building": "FO1A",
-                    "locality": "War Memorial, Junction of Brigade Road and, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
-                    "city": "Bengaluru",
-                    "state": "Karnataka",
-                    "country": "India",
-                    "area_code": "560025"
-                },
-                "phone": "8302010971",
-                "created_at": "2023-08-24T08:01:52.934Z",
-                "updated_at": "2023-08-24T08:01:52.934Z"
+                ]
             },
             "fulfillments": [
                 {
                     "id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "type": "Delivery",
-                    "tracking": false,
+                    "tracking": true,
                     "start": {
                         "location": {
-                            "id": "bcedc450f8481e89b1445069acdc3dd9",
                             "descriptor": {
-                                "name": "Wow Skin Science"
+                                "name": "bcedc450f8481e89b1445069acdc3dd9"
                             },
                             "gps": "12.9684397,77.6010378"
+                        },
+                        "time": {
+                            "timestamp": "2023-08-24T08:05:11.568Z",
+                            "range": {
+                                "start": "2023-08-24T08:04:11.568Z",
+                                "end": "2023-08-24T08:05:11.568Z"
+                            }
                         },
                         "contact": {
                             "phone": "8042896000",
@@ -142,20 +126,23 @@
                                 "area_code": "560025"
                             }
                         },
+                        "time": {
+                            "timestamp": "2023-08-24T08:06:01.589Z",
+                            "range": {
+                                "start": "2023-08-24T08:05:34.700Z",
+                                "end": "2023-08-24T08:06:01.589Z"
+                            }
+                        },
                         "contact": {
                             "phone": "8302010971"
-                        },
-                        "person": {
-                            "name": "Rajiv Singh"
                         }
                     },
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
-                    "@ondc/org/provider_name": "Wow Skin Science",
-                    "rateable": true
+                    "@ondc/org/provider_name": "Wow Skin Science"
                 }
             ],
             "payment": {
@@ -183,7 +170,7 @@
                 }
             },
             "created_at": "2023-08-24T08:02:33.579Z",
-            "updated_at": "2023-08-24T08:02:36.982Z"
+            "updated_at": "2023-08-24T08:06:54.099Z"
         }
     }
 }
