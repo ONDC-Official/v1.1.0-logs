@@ -1,0 +1,177 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "ondc.uat.medpay.in",
+        "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+        "transaction_id": "ad639826-319b-4b7a-9ddc-a76d023b317b",
+        "message_id": "1a908347-3020-4912-9c7e-49b37804bb5b",
+        "timestamp": "2023-08-17T10:59:54.300Z"
+    },
+    "message": {
+        "order": {
+            "id": "100067",
+            "state": "Created",
+            "provider": {
+                "id": "1001-3716-9032-6275",
+                "locations": [
+                    {
+                        "id": "1002-4377-0770-0838"
+                    }
+                ],
+                "rateable": true
+            },
+            "items": [
+                {
+                    "id": "1002-4377-0770-0838_384348",
+                    "fulfillment_id": "79866006328391985800759018376162326397",
+                    "quantity": {
+                        "count": 3
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Rajiv Singh",
+                "address": {
+                    "name": "Rajiv Singh",
+                    "building": "FO1A",
+                    "locality": "War Memorial, Junction of Brigade Road and, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560025"
+                },
+                "phone": "8302010971",
+                "created_at": "2023-08-17T10:56:14.525Z",
+                "updated_at": "2023-08-17T10:56:14.525Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "79866006328391985800759018376162326397",
+                    "type": "Delivery",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/TAT": "P2D",
+                    "provider_id": "1001-3716-9032-6275",
+                    "@ondc/org/provider_name": "Medpay - Vishal Medical Center",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "1002-4377-0770-0838",
+                            "descriptor": {
+                                "name": "Medpay - Vishal Medical Center"
+                            },
+                            "gps": "12.932209,77.633832"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-18T10:57:10.597Z",
+                                "end": "2023-08-18T13:57:10.597Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8861545034"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.971888547537276,77.6070088148117",
+                            "address": {
+                                "name": "Rajiv Singh",
+                                "building": "FO1A",
+                                "locality": "War Memorial, Junction of Brigade Road and, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560025"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-19T10:57:10.597Z",
+                                "end": "2023-08-19T13:57:10.597Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8302010971"
+                        },
+                        "person": {
+                            "name": "Rajiv Singh"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1347.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "1002-4377-0770-0838_384348",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "449.0"
+                            }
+                        },
+                        "title": "pampers active baby diapers large",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1347.0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "79866006328391985800759018376162326397",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "params": {
+                    "transaction_id": "1692269573880",
+                    "amount": "1347.0",
+                    "currency": "INR"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "settlement_bank_account_no": "29837293879283",
+                        "settlement_ifsc_code": "SBIN0002001",
+                        "upi_address": "72873729780@upi",
+                        "bank_name": "State Bank Of India",
+                        "branch_name": "Andaman Nicobar"
+                    }
+                ]
+            },
+            "created_at": "2023-08-17T10:57:08.548Z",
+            "updated_at": "2023-08-17T10:59:54.300Z"
+        }
+    }
+}

@@ -1,0 +1,126 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "on_select",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-21T15:44:52.594Z",
+    "message_id": "5e939ab1-16ea-4d9d-a2f8-e14fcb109a32",
+    "core_version": "1.1.0",
+    "transaction_id": "ba9b351b-559d-4abf-a5f1-38c9e1405ef1"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775199::1155936::EP04",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775204::1155943::EP11",
+          "quantity": { "count": 3 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "ttl": "PT1H",
+        "price": { "value": "690", "currency": "INR" },
+        "breakup": [
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "102" },
+                "available": { "count": "102" }
+              }
+            },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Chicken Curry",
+            "@ondc/org/item_id": "2775199::1155936::EP04",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "101" },
+                "available": { "count": "101" }
+              }
+            },
+            "price": { "value": "100", "currency": "INR" },
+            "title": "Egg Bhurji",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "103" },
+                "available": { "count": "103" }
+              }
+            },
+            "price": { "value": "300", "currency": "INR" },
+            "title": "Mutton Masala",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 3 }
+          },
+          {
+            "price": { "value": "25.00", "currency": "INR" },
+            "title": "Packing Charges",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "packing"
+          },
+          {
+            "price": { "value": "-10", "currency": "INR" },
+            "title": "Discount",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/title_type": "discount"
+          },
+          {
+            "price": { "value": "29.00", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "46", "currency": "INR" },
+            "title": "Delivery Charges",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "provider": { "id": "22446688739675" },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "type": "Delivery",
+          "state": {
+            "descriptor": { "code": "Serviceable", "name": "Serviceable" }
+          },
+          "tracking": false,
+          "@ondc/org/TAT": "PT60M",
+          "deliveryCharge": "46",
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/provider_name": "22446688739675"
+        }
+      ],
+      "provider_location": { "id": "22446688739675" }
+    }
+  }
+}

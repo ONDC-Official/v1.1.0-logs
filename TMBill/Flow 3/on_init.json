@@ -1,0 +1,162 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "on_init",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-21T16:07:11.939Z",
+    "message_id": "969db735-4207-4545-a47c-59a3cc1307b3",
+    "core_version": "1.1.0",
+    "transaction_id": "85fe08ea-93ba-4d79-ad0e-0ace2ec30e03"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 4 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "ttl": "PT1H",
+        "price": { "value": "1114.26", "currency": "INR" },
+        "breakup": [
+          {
+            "item": {
+              "price": { "value": "110", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "101" },
+                "available": { "count": "101" }
+              }
+            },
+            "price": { "value": "110", "currency": "INR" },
+            "title": "Egg Curry",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "item": {
+              "price": { "value": "500", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "101" },
+                "available": { "count": "101" }
+              }
+            },
+            "price": { "value": "500", "currency": "INR" },
+            "title": "Egg Masala",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "104" },
+                "available": { "count": "104" }
+              }
+            },
+            "price": { "value": "400", "currency": "INR" },
+            "title": "Egg Bhurji",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 4 }
+          },
+          {
+            "price": { "value": "-5", "currency": "INR" },
+            "title": "Discount",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "discount"
+          },
+          {
+            "price": { "value": "50.26", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "59", "currency": "INR" },
+            "title": "Delivery Charges",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "billing": {
+        "name": "Sid Mane",
+        "email": "sid@tmbill.com",
+        "phone": "9765995955",
+        "address": {
+          "city": "Bengaluru",
+          "door": "Whitefield",
+          "name": "Sid Mane",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Whitefield",
+          "locality": "Near Whitefield Bangalore East",
+          "area_code": "560087"
+        },
+        "created_at": "2023-08-21T16:07:11.206Z",
+        "updated_at": "2023-08-21T16:07:11.206Z"
+      },
+      "payment": {
+        "@ondc/org/settlement_details": [
+          {
+            "bank_name": "HDFC BANK",
+            "branch_name": "SHRIRAMPUR BRANCH",
+            "settlement_type": "neft",
+            "beneficiary_name": "TechMainstay Software Private Limited",
+            "settlement_phase": "sale-amount",
+            "settlement_ifsc_code": "HDFC0000966",
+            "settlement_counterparty": "seller-app",
+            "settlement_bank_account_no": "50200085305869"
+          }
+        ],
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+      },
+      "provider": { "id": "22446688739675" },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "contact": { "email": "sid@tmbill.com", "phone": "9765995955" },
+            "location": {
+              "gps": "12.9413960000001, 77.7465700000001",
+              "address": {
+                "city": "Bengaluru",
+                "name": "Sid Mane",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Whitefield",
+                "locality": "Near Whitefield Bangalore East",
+                "area_code": "560087"
+              }
+            }
+          },
+          "type": "Delivery",
+          "tracking": false,
+          "provider_id": "22446688739675"
+        }
+      ],
+      "provider_location": { "id": "22446688739675" }
+    }
+  }
+}

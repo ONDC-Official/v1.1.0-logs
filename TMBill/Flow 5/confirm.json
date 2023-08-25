@@ -1,0 +1,143 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "confirm",
+    "bap_id": "shopping-api-testing.phonepe.com",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc/",
+    "country": "IND",
+    "timestamp": "2023-08-22T07:38:23.411Z",
+    "message_id": "CONOMS2308221308232817955312",
+    "core_version": "1.1.0",
+    "transaction_id": "C2308212109524894754690"
+  },
+  "message": {
+    "order": {
+      "id": "OD2308221308219457955304",
+      "items": [
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "price": { "value": "689.00", "currency": "INR" },
+        "ttl": "PT1H",
+        "breakup": [
+          {
+            "item": { "price": { "value": "500.00", "currency": "INR" } },
+            "price": { "value": "500.00", "currency": "INR" },
+            "title": "Egg Masala",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "25.00", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": { "price": { "value": "100.00", "currency": "INR" } },
+            "price": { "value": "100.00", "currency": "INR" },
+            "title": "Egg Bhurji",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "5.00", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "59.00", "currency": "INR" },
+            "title": "Delivery Charges",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "state": "Created",
+      "billing": {
+        "name": "Sid Mane",
+        "phone": "9765995955",
+        "address": {
+          "city": "Bengaluru",
+          "name": "BM Glorita Wing C",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Flat no 7",
+          "locality": "----",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-22T07:38:19.000Z",
+        "updated_at": "2023-08-22T07:38:19.000Z"
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "params": {
+          "amount": "689.00",
+          "currency": "INR",
+          "transaction_id": "OMT2308221308219457955904",
+          "transaction_status": "COMPLETED"
+        },
+        "status": "PAID",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "bank_name": "HDFC BANK",
+            "branch_name": "SHRIRAMPUR BRANCH",
+            "settlement_type": "neft",
+            "settlement_phase": "sale-amount",
+            "settlement_ifsc_code": "HDFC0000966",
+            "settlement_counterparty": "seller-app",
+            "settlement_bank_account_no": "50200085305869"
+          }
+        ],
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "created_at": "2023-08-22T07:38:23.411Z",
+      "updated_at": "2023-08-22T07:38:23.411Z",
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "person": { "name": "Sid Mane" },
+            "contact": { "phone": "9765995955" },
+            "location": {
+              "gps": "12.970549349606,77.741021621799",
+              "address": {
+                "city": "Bengaluru",
+                "name": "BM Glorita Wing C",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Flat no 7",
+                "locality": "----",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "tracking": true
+        }
+      ]
+    }
+  }
+}

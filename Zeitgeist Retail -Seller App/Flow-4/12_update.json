@@ -8,35 +8,46 @@
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://ondc-preprod.zeppstore.in",
-        "transaction_id": "a6e91c5a-d232-44bb-a3e8-244bdb34fdc1",
-        "message_id": "d29564ba-8190-41b6-a493-d4a3478cbe15",
-        "timestamp": "2023-08-03T09:59:57.389Z",
+        "transaction_id": "cd2d9855-7d4f-47a9-a1c1-7fedbad77713",
+        "message_id": "d3cb9a0d-e76c-4f67-a683-15132a03c0b1",
+        "timestamp": "2023-08-15T14:09:00.516Z",
         "bpp_id": "ondc-preprod.zeppstore.in",
         "ttl": "PT30S"
     },
     "message": {
-        "update_target": "item",
+        "update_target": "billing",
         "order": {
-            "id": "2023-08-03-760462",
+            "id": "2023-08-15-444739",
             "state": "Completed",
             "provider": {
                 "id": "ZEPP"
             },
             "items": [
                 {
-                    "id": "6327",
+                    "id": "404",
                     "quantity": {
                         "count": 1
                     },
                     "tags": {
                         "update_type": "return",
-                        "reason_code": "003",
+                        "reason_code": "002",
                         "ttl_approval": "P7D",
                         "ttl_reverseqc": "P3D",
                         "image": ""
                     }
                 }
-            ]
+            ],
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "buyer",
+                        "settlement_phase": "refund",
+                        "settlement_type": "upi",
+                        "settlement_amount": "819",
+                        "settlement_timestamp": "2023-08-15T14:09:00.517Z"
+                    }
+                ]
+            }
         }
     }
 }

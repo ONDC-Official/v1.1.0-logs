@@ -1,0 +1,74 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "init",
+    "bap_id": "shopping-api-testing.phonepe.com",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc/",
+    "country": "IND",
+    "timestamp": "2023-08-22T07:38:19.000Z",
+    "message_id": "INIM2308221308194286383145",
+    "core_version": "1.1.0",
+    "transaction_id": "C2308212109524894754690"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "billing": {
+        "name": "Sid Mane",
+        "phone": "9765995955",
+        "address": {
+          "city": "Bengaluru",
+          "name": "BM Glorita Wing C",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Flat no 7",
+          "locality": "----",
+          "area_code": "560066"
+        },
+        "created_at": "2023-08-22T07:38:19.000Z",
+        "updated_at": "2023-08-22T07:38:19.000Z"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "contact": { "phone": "9765995955" },
+            "location": {
+              "gps": "12.970549349606,77.741021621799",
+              "address": {
+                "city": "Bengaluru",
+                "name": "BM Glorita Wing C",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Flat no 7",
+                "locality": "----",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "provider_id": "staging.tmbill.com/tp/v1/ondc"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "update",
+    "core_version": "1.1.0",
+    "bap_id": "preprod.xpressbaazaar.com",
+    "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "transaction_id": "ee0c6b40-e0f8-4ad8-b97d-7bf413df9ac1",
+    "message_id": "51a85b71-acec-4017-8f33-33522c3612fe",
+    "timestamp": "2023-08-24T12:24:08.897Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "c5327783-c4c2-423b-8fb5-401143fb578a",
+      "state": "Accepted",
+      "items": [
+        {
+          "id": "19",
+          "category_id": "Immediate Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid",
+          "@ondc/org/awb_no": "2023082471178967",
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "start": {
+            "instructions": {
+              "short_desc": "Lux Body Wash Velvet Touch with Jasmine And Almond Oil 235ml",
+              "long_desc": "624789",
+              "additional_desc": {
+                "content_type": "image/x-png",
+                "url": "https://shikhar-cms.s3.ap-south-1.amazonaws.com/CMS-PROD-HERO/17210.png"
+              }
+            }
+          },
+          "@ondc/org/ewaybillno": "9a62787e-5145-4572-800b-ea4fea98b203",
+          "@ondc/org/ebnexpirydate": "2023-08-26T12:23:37.613Z"
+        }
+      ],
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Grocery",
+            "descriptor": {
+              "name": "Lux Body Wash Velvet Touch with Jasmine And Almond Oil 235ml"
+            },
+            "quantity": {
+              "count": 1,
+              "measure": {
+                "unit": "Kilogram",
+                "value": 1
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "145"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "Yumfood"
+          },
+          "address": {
+            "name": "Yumfood",
+            "street": "89 Karishma hills ,Vinayaka Layout, Poornapragna Housing Society Layout",
+            "locality": "89 Karishma hills ,Vinayaka Layout, Poornapragna Housing Society Layout",
+            "city": "Bengaluru",
+            "state": "KA",
+            "area_code": "560061"
+          }
+        },
+        "order": {
+          "id": "2023-08-24-192548",
+          "weight": {
+            "unit": "Gram",
+            "value": 111
+          }
+        }
+      },
+      "updated_at": "2023-08-24T12:24:08.897Z"
+    }
+  }
+}
