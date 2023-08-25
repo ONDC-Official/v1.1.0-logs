@@ -5,24 +5,24 @@
         "domain": "nic2004:60232",
         "core_version": "1.1.0",
         "ttl": "PT30S",
-        "bpp_id": "shipdh.in",
-        "bpp_uri": "https://shipdh.in/ondc/bpp/api/",
-        "transaction_id": "6ccab6bc-a546-4572-aa3d-213dd4a4235f",
-        "message_id": "7c08e463-8458-4a35-bea9-7a91e16b72d0",
+        "bpp_id": "ondc-tsp-demo.demoprojectxsandbox2.shipsy.io",
+        "bpp_uri": "https://ondc-tsp-demo.demoprojectxsandbox2.shipsy.io/api/ondc/customerportaldemodtdc/",
+        "transaction_id": "15d970a1-6c26-44f8-b5d8-0956dba57d41",
+        "message_id": "c730770a-5170-4765-8090-2551314cdaaf",
         "country": "IND",
-        "city": "std:011",
-        "timestamp": "2023-08-18T13:31:34.248Z",
+        "city": "std:020",
+        "timestamp": "2023-08-24T11:38:37.255Z",
         "action": "confirm"
     },
     "message": {
         "order": {
             "provider": {
-                "id": "1"
+                "id": "Shipsy NPO ONDC"
             },
             "items": [
                 {
-                    "id": "1",
-                    "category_id": "Same Day Delivery",
+                    "id": "B2C SMART EXPRESS",
+                    "category_id": "Standard Delivery",
                     "descriptor": {
                         "code": "P2H2P"
                     }
@@ -42,8 +42,8 @@
                 "email": "abcd.efgh@gmail.com",
                 "phone": "9886098860",
                 "tax_number": "XXXXXXXXXXXXXXX",
-                "created_at": "2023-08-18T13:31:11.467Z",
-                "updated_at": "2023-08-18T13:31:11.467Z"
+                "created_at": "2023-08-24T11:38:25.037Z",
+                "updated_at": "2023-08-24T11:38:25.037Z"
             },
             "fulfillments": [
                 {
@@ -54,47 +54,44 @@
                             "name": "Name"
                         },
                         "location": {
-                            "gps": "28.659569, 77.220845",
+                            "gps": "18.513400, 73.833100",
                             "address": {
-                                "name": "Channelier Super Store",
-                                "building": "Shopping Arcade",
-                                "locality": "Tilak Bazaar",
-                                "city": "Delhi",
-                                "state": "DELHI",
+                                "name": "SwasthyaBharat Pharmacy",
+                                "building": "Kumar Tower",
+                                "locality": "Lohegaon",
+                                "city": "Pune",
+                                "state": "Maharashtra",
                                 "country": "India",
-                                "area_code": "110006"
+                                "area_code": "411004"
                             }
                         },
                         "contact": {
-                            "phone": "9897989798",
-                            "email": "techpvec18@gmail.com"
+                            "phone": "9479319331",
+                            "email": "techpvec2@gmail.com"
                         },
                         "instructions": {
-                            "short_desc": "XYZ1",
-                            "long_desc": "QR code will be attached to package",
-                            "images": [
-                                "https://www.techopedia.com/wp-content/uploads/2023/03/aee977ce-f946-4451-8b9e-bba278ba5f13.png"
-                            ]
+                            "short_desc": "2234",
+                            "long_desc": "This OTP is to be shared with the Store Manager for pickup of the package"
                         }
                     },
                     "end": {
                         "contact": {
-                            "email": "techpvec18@gmail.com",
-                            "phone": "9897989798"
+                            "email": "techpvec2@gmail.com",
+                            "phone": "9479319331"
                         },
                         "person": {
-                            "name": "Ravinder"
+                            "name": "Rajat Kumar Pune"
                         },
                         "location": {
-                            "gps": "28.513993, 77.165522",
+                            "gps": "18.551649, 73.881106",
                             "address": {
-                                "name": "Ravinder",
-                                "building": "Near Mahipalpur",
-                                "locality": "Vasant Kunj, sector E-2",
-                                "city": "New Delhi",
-                                "state": "Delhi",
+                                "name": "Rajat Kumar Pune",
+                                "building": "Kurvande",
+                                "locality": "INS Shivaji",
+                                "city": "Pune",
+                                "state": "Maharashtra",
                                 "country": "IND",
-                                "area_code": "110070"
+                                "area_code": "411006"
                             }
                         }
                     },
@@ -109,43 +106,39 @@
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
-                        "settlement_type": "neft",
-                        "settlement_bank_account_no": "917020074322489",
-                        "settlement_ifsc_code": "UTIB0000395",
-                        "bank_name": "AXIS BANK LTD",
-                        "branch_name": "MIDC, ANDHERI BRANCH",
-                        "beneficiary_name": "SHIPDELIGHT LOGISTICS TECHNOLOGIES PRIVATE LIMITED",
-                        "beneficiary_address": "MIDC, AKRUTI CENTER GROUND FLOOR NEAR TUNGA HOTEL NEAR MTNL OFFICE MIDC ANDHERI EAST MUMBAI - 400093",
-                        "settlement_status": "NOT-PAID"
+                        "settlement_type": "upi",
+                        "settlement_bank_account_no": "XXXXXXXXXX",
+                        "settlement_ifsc_code": "XXXXXXXXX",
+                        "upi_address": "gft@oksbi"
                     }
                 ]
             },
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "30.00"
+                    "value": "64.00"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "1",
+                        "@ondc/org/item_id": "B2C SMART EXPRESS",
                         "@ondc/org/title_type": "Delivery Charge",
                         "price": {
                             "currency": "INR",
-                            "value": "30.00"
+                            "value": "64.00"
                         }
                     }
                 ]
             },
-            "id": "6ed3730b-0f07-4aa2-8353-e8fc7757e005",
+            "id": "a4c84261-afe2-4921-8400-b2c67a4abb7e",
             "state": "Created",
-            "created_at": "2023-08-18T13:31:34.248Z",
-            "updated_at": "2023-08-18T13:31:34.248Z",
+            "created_at": "2023-08-24T11:38:37.255Z",
+            "updated_at": "2023-08-24T11:38:37.255Z",
             "@ondc/org/linked_order": {
                 "items": [
                     {
                         "category_id": "Grocery",
                         "descriptor": {
-                            "name": "Wai Wai Premium Red Chilli Sauce - With Bhut Jolokia, Rich In Vitamin C, 220 g Single"
+                            "name": "Cipla Excela Moisturiser for Oily & Acne Prone Skin, 50g"
                         },
                         "quantity": {
                             "count": 1,
@@ -156,29 +149,29 @@
                         },
                         "price": {
                             "currency": "INR",
-                            "value": "55.00"
+                            "value": "299.00"
                         }
                     }
                 ],
                 "provider": {
                     "descriptor": {
-                        "name": "Channelier Super Store"
+                        "name": "SwasthyaBharat Pharmacy"
                     },
                     "address": {
-                        "name": "Channelier Super Store",
-                        "street": "Tilak Bazaar",
-                        "building": "Shopping Arcade",
-                        "locality": "Tilak Bazaar",
-                        "city": "Delhi",
-                        "state": "DELHI",
-                        "area_code": "110006"
+                        "name": "SwasthyaBharat Pharmacy",
+                        "street": "Mhada Colony",
+                        "building": "Kumar Tower",
+                        "locality": "Lohegaon",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "area_code": "411004"
                     }
                 },
                 "order": {
-                    "id": "2023-08-18-731641",
+                    "id": "2023-08-24-204266",
                     "weight": {
                         "unit": "Gram",
-                        "value": 500
+                        "value": 50
                     }
                 }
             }
