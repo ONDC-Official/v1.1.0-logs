@@ -1,0 +1,117 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://b8cb-2402-e280-3e33-24e-a0b2-4a7-225c-cafd.ngrok-free.app/protocol/v1",
+        "bpp_id": "preprod-jajee-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
+        "transaction_id": "0c49c69f-9a0a-4234-8ab9-8d3fd56a08cd",
+        "message_id": "528662aa-63e9-424f-8eb3-579447e4e59b",
+        "timestamp": "2023-08-18T18:41:53.810Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "preprod-jajee-bpp.shopalyst.com"
+            },
+            "items": [
+                {
+                    "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043628803_default",
+                    "fulfillment_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1"
+                },
+                {
+                    "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043661571_default",
+                    "fulfillment_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "600.00"
+                },
+                "breakup": [
+                    {
+                        "title": "RAISINS/KHISMISH/MANUKKA 250g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "200.00"
+                        },
+                        "@ondc/org/item_id": "55EA20538A3151ABD81510BBB42C9CE3_43540043628803_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "100.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "2"
+                                },
+                                "maximum": {
+                                    "count": "2"
+                                }
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "RAISINS/KHISMISH/MANUKKA 500g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "400.00"
+                        },
+                        "@ondc/org/item_id": "55EA20538A3151ABD81510BBB42C9CE3_43540043661571_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "200.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "8"
+                                },
+                                "maximum": {
+                                    "count": "8"
+                                }
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "fulfillments": [
+                {
+                    "id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
+                    "tracking": true,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/TAT": "P3D",
+                    "@ondc/org/provider_name": "Jajee"
+                }
+            ]
+        }
+    }
+}
