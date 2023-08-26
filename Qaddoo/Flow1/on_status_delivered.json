@@ -7,44 +7,97 @@
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "bpp_id": "ondc.uat.medpay.in",
-        "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
-        "transaction_id": "568280a7-9b4d-43fc-b7ee-2ea5fbcc4e37",
-        "message_id": "803e45e2-2b5f-445c-93dc-4d9459db3639",
-        "timestamp": "2023-08-17T11:23:36.986Z"
+        "bpp_id": "preprod-wow-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
+        "transaction_id": "e889fcaa-b08d-4b2b-8dd2-8b27264edba4",
+        "message_id": "357ea6d1-d4f1-46b0-ba88-787a81bee2cd",
+        "timestamp": "2023-08-24T08:06:01.610Z"
     },
     "message": {
         "order": {
-            "id": "100068",
+            "id": "100095",
             "state": "Completed",
             "provider": {
-                "id": "1001-3716-9032-6275",
+                "id": "preprod-wow-bpp.shopalyst.com",
                 "locations": [
                     {
-                        "id": "1002-4377-0770-0838"
+                        "id": "bcedc450f8481e89b1445069acdc3dd9"
                     }
-                ],
-                "rateable": true
+                ]
             },
             "items": [
                 {
-                    "id": "1002-4377-0770-0838_384348",
-                    "fulfillment_id": "52190637412154954322712521771916523815",
+                    "id": "7945DA7F78F5CC8879548D89B9540249_43459794338051_default",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
-                        "count": 3
+                        "count": 2
                     }
                 },
                 {
-                    "id": "1002-4377-0770-0838_384255",
-                    "fulfillment_id": "52190637412154954322712521771916523815",
+                    "id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
                         "count": 2
                     }
                 }
             ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1396.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Cherrylicious Bath Salt By Body Cupid - 200 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "798.00"
+                        },
+                        "@ondc/org/item_id": "7945DA7F78F5CC8879548D89B9540249_43459794338051_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "399.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Cherrylicious Body Lotion By Body Cupid - 200 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "598.00"
+                        },
+                        "@ondc/org/item_id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "299.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
             "documents": [
                 {
-                    "url": "https://mdpy.in/zGfvn7rBh4",
+                    "url": "https://static.shopalyst.com/assets/campaigns/invoice_jajee.jpeg",
                     "label": "Invoice"
                 }
             ],
@@ -60,45 +113,36 @@
                     "area_code": "560025"
                 },
                 "phone": "8302010971",
-                "created_at": "2023-08-17T11:14:24.669Z",
-                "updated_at": "2023-08-17T11:14:24.669Z"
+                "created_at": "2023-08-24T08:01:52.934Z",
+                "updated_at": "2023-08-24T08:01:52.934Z"
             },
             "fulfillments": [
                 {
-                    "id": "52190637412154954322712521771916523815",
+                    "id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "type": "Delivery",
-                    "@ondc/org/category": "Standard Delivery",
-                    "@ondc/org/TAT": "P2D",
-                    "provider_id": "1001-3716-9032-6275",
-                    "@ondc/org/provider_name": "Medpay - Vishal Medical Center",
-                    "state": {
-                        "descriptor": {
-                            "code": "Order-delivered"
-                        }
-                    },
-                    "tracking": false,
+                    "tracking": true,
                     "start": {
                         "location": {
-                            "id": "1002-4377-0770-0838",
                             "descriptor": {
-                                "name": "Medpay - Vishal Medical Center"
+                                "name": "bcedc450f8481e89b1445069acdc3dd9"
                             },
-                            "gps": "12.932209,77.633832"
+                            "gps": "12.9684397,77.6010378"
                         },
                         "time": {
-                            "timestamp": "2023-08-17T11:23:14.826Z",
+                            "timestamp": "2023-08-24T08:05:11.568Z",
                             "range": {
-                                "start": "2023-08-18T11:15:22.882Z",
-                                "end": "2023-08-18T14:15:22.882Z"
+                                "start": "2023-08-24T08:04:11.568Z",
+                                "end": "2023-08-24T08:05:11.568Z"
                             }
                         },
                         "contact": {
-                            "phone": "8861545034"
+                            "phone": "8042896000",
+                            "email": "support@buywow.in"
                         }
                     },
                     "end": {
                         "location": {
-                            "gps": "12.971888547537276,77.6070088148117",
+                            "gps": "12.971889,77.607009",
                             "address": {
                                 "name": "Rajiv Singh",
                                 "building": "FO1A",
@@ -110,81 +154,25 @@
                             }
                         },
                         "time": {
-                            "timestamp": "2023-08-17T11:23:36.986Z",
+                            "timestamp": "2023-08-24T08:06:01.589Z",
                             "range": {
-                                "start": "2023-08-19T11:15:22.882Z",
-                                "end": "2023-08-19T14:15:22.882Z"
+                                "start": "2023-08-24T08:05:34.700Z",
+                                "end": "2023-08-24T08:06:01.589Z"
                             }
                         },
                         "contact": {
                             "phone": "8302010971"
-                        },
-                        "person": {
-                            "name": "Rajiv Singh"
                         }
-                    }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "@ondc/org/provider_name": "Wow Skin Science"
                 }
             ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": "2067.0"
-                },
-                "breakup": [
-                    {
-                        "@ondc/org/item_id": "1002-4377-0770-0838_384348",
-                        "@ondc/org/item_quantity": {
-                            "count": 3
-                        },
-                        "@ondc/org/title_type": "item",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "449.0"
-                            }
-                        },
-                        "title": "pampers active baby diapers large",
-                        "price": {
-                            "currency": "INR",
-                            "value": "1347.0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "1002-4377-0770-0838_384255",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "360.0"
-                            }
-                        },
-                        "title": "pampers active baby diapers small",
-                        "price": {
-                            "currency": "INR",
-                            "value": "720.0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "52190637412154954322712521771916523815",
-                        "@ondc/org/title_type": "delivery",
-                        "title": "Delivery charges",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0.0"
-                        }
-                    }
-                ],
-                "ttl": "P1D"
-            },
             "payment": {
-                "params": {
-                    "transaction_id": "1692270662945",
-                    "amount": "2067.0",
-                    "currency": "INR"
-                },
                 "type": "ON-ORDER",
                 "status": "PAID",
                 "collected_by": "BAP",
@@ -194,18 +182,22 @@
                     {
                         "settlement_counterparty": "seller-app",
                         "settlement_phase": "sale-amount",
-                        "settlement_type": "upi",
-                        "settlement_bank_account_no": "29837293879283",
-                        "settlement_ifsc_code": "SBIN0002001",
-                        "upi_address": "72873729780@upi",
-                        "bank_name": "State Bank Of India",
-                        "branch_name": "Andaman Nicobar"
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
                     }
-                ]
+                ],
+                "params": {
+                    "transaction_id": "1692864148893",
+                    "amount": "1396.00",
+                    "currency": "INR"
+                }
             },
-            "order_ready_to_ship_at": "2023-08-17T11:23:11.729Z",
-            "created_at": "2023-08-17T11:15:19.630Z",
-            "updated_at": "2023-08-17T11:23:36.986Z"
+            "created_at": "2023-08-24T08:02:33.579Z",
+            "updated_at": "2023-08-24T08:06:01.589Z"
         }
     }
 }

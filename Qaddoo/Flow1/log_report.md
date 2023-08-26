@@ -1,9 +1,15 @@
 **/on_search**
-- /message/catalog/bpp~1providers/0/items/0/@ondc~1org~1statutory_reqs_packaged_commodities must have required property 'imported_product_country_of_origin'
-- /message/catalog/bpp~1providers/0/items/1/@ondc~1org~1statutory_reqs_packaged_commodities must have required property 'imported_product_country_of_origin'
-- /message/catalog/bpp~1providers/0/items/2/@ondc~1org~1statutory_reqs_packaged_commodities must have required property 'imported_product_country_of_origin'
-- /message/catalog/bpp~1providers/0/items/3/@ondc~1org~1statutory_reqs_packaged_commodities must have required property 'imported_product_country_of_origin'
+- /message/catalog/bpp~1providers/0/items/0/descriptor/images must NOT have more than 3 items
 
-**/on_update (Return_Delivered)**
-- message_id of all unsolicited /on_update calls should be same for a particular /update request
+**/on_confirm**
+- order.updated_at timestamp should be updated as per the context.timestamp (since default fulfillment state is added)
+
+**/on_status (Order-picked-up)**
+- /fulfillments/0/end must have required property 'time'
+
+**/on_update (Initiated)**
+- /quote must have required property 'ttl'
+
+**/on_update (Liquidated)**
+- /quote must have required property 'ttl'
 

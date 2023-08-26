@@ -1,0 +1,80 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "init",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-08-21T16:07:11.206Z",
+    "message_id": "969db735-4207-4545-a47c-59a3cc1307b3",
+    "core_version": "1.1.0",
+    "transaction_id": "85fe08ea-93ba-4d79-ad0e-0ace2ec30e03"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 4 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "billing": {
+        "name": "Sid Mane",
+        "email": "sid@tmbill.com",
+        "phone": "9765995955",
+        "address": {
+          "city": "Bengaluru",
+          "door": "Whitefield",
+          "name": "Sid Mane",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Whitefield",
+          "locality": "Near Whitefield Bangalore East",
+          "area_code": "560087"
+        },
+        "created_at": "2023-08-21T16:07:11.206Z",
+        "updated_at": "2023-08-21T16:07:11.206Z"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "contact": { "email": "sid@tmbill.com", "phone": "9765995955" },
+            "location": {
+              "gps": "12.9413960000001, 77.7465700000001",
+              "address": {
+                "city": "Bengaluru",
+                "name": "Sid Mane",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Whitefield",
+                "locality": "Near Whitefield Bangalore East",
+                "area_code": "560087"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ]
+    }
+  }
+}

@@ -9,13 +9,13 @@
     "city": "std:080",
     "country": "IND",
     "action": "on_status",
-    "transaction_id": "f8393546-2f88-413c-af02-1e724ea24eef",
-    "message_id": "5ab16f4e-d274-40ea-bb41-729c1d654892",
-    "timestamp": "2023-08-18T10:35:51.030Z"
+    "transaction_id": "ee0c6b40-e0f8-4ad8-b97d-7bf413df9ac1",
+    "message_id": "589b242f-c5c1-4405-9045-e1e24e061a0c",
+    "timestamp": "2023-08-24T13:36:41.949Z"
   },
   "message": {
     "order": {
-      "id": "19da7b0d-743e-44f1-bd94-2f8ea498327d",
+      "id": "c5327783-c4c2-423b-8fb5-401143fb578a",
       "state": "Cancelled",
       "provider": {
         "id": "107-Account-DER-292",
@@ -37,31 +37,32 @@
       "fulfillments": [
         {
           "type": "Prepaid",
-          "@ondc/org/awb_no": "2023081841114646",
+          "@ondc/org/awb_no": "2023082471178967",
           "state": {
             "descriptor": {
-              "code": "RTO-Disposed"
+              "code": "Cancelled"
             }
           },
           "tracking": true,
           "start": {
             "time": {
               "range": {
-                "start": "2023-08-17T23:40:59.150Z",
-                "end": "2023-08-18T00:10:59.150Z"
-              }
+                "start": "2023-08-24T18:04:10.547Z",
+                "end": "2023-08-24T18:34:10.547Z"
+              },
+              "timestamp": "2023-08-24T13:29:32.200Z"
             },
             "instructions": {
               "name": "Lux Body Wash Velvet Touch with Jasmine And Almond Oil 235ml",
               "short_desc": "Lux Body Wash Velvet Touch with Jasmine And Almond Oil 235ml",
-              "long_desc": "149997"
+              "long_desc": "624789"
             }
           },
           "end": {
             "time": {
               "range": {
-                "start": "2023-08-18T00:15:59.150Z",
-                "end": "2023-08-18T00:30:59.150Z"
+                "start": "2023-08-24T18:39:10.547Z",
+                "end": "2023-08-24T18:54:10.547Z"
               }
             }
           },
@@ -74,23 +75,33 @@
             "size": "500.0000",
             "registration": "TN56NS8282"
           },
-          "@ondc/org/ewaybillno": "56ce9ceb-47af-48b9-9517-3f7c2820c871",
-          "@ondc/org/ebexpirydate": "2023-08-20T10:30:26.484Z"
+          "@ondc/org/ewaybillno": "9a62787e-5145-4572-800b-ea4fea98b203",
+          "@ondc/org/ebexpirydate": "2023-08-26T12:23:37.613Z"
         },
         {
           "type": "RTO",
           "state": {
             "descriptor": {
-              "code": "RTO-Disposed"
+              "code": "RTO-Disposed",
+              "name": "RTO-Disposed"
             }
           },
           "start": {
             "time": {
               "range": {
-                "start": "2023-08-17T18:05:05.228Z",
-                "end": "2023-08-17T18:35:05.228Z"
+                "start": "2023-08-24T13:33:38.094Z",
+                "end": "2023-08-24T14:03:38.094Z"
               },
-              "timestamp": "2023-08-18T05:05:32.368Z"
+              "timestamp": "2023-08-24T13:33:38.254Z"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-08-24T19:48:38.275Z",
+                "end": "2023-08-24T20:03:38.275Z"
+              },
+              "timestamp": "2023-08-24T13:36:26.705Z"
             }
           },
           "agent": {
@@ -102,7 +113,7 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "90.0"
+          "value": "2160.0"
         },
         "breakup": [
           {
@@ -110,7 +121,15 @@
             "@ondc/org/title_type": "Delivery Charge",
             "price": {
               "currency": "INR",
-              "value": "90.0"
+              "value": "1080.0"
+            }
+          },
+          {
+            "title": "RTO charges",
+            "@ondc/org/title_type": "RTO Charge",
+            "price": {
+              "currency": "INR",
+              "value": "1080.0"
             }
           }
         ]
@@ -137,7 +156,7 @@
       },
       "tags": {
         "cancellation_reason_id": "013",
-        "AWB no": "2023081841114646"
+        "AWB no": "2023082471178967"
       }
     }
   }
