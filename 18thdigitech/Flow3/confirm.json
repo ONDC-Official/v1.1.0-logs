@@ -1,0 +1,164 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "2df59294-b3c1-4689-b5ad-8d8f35bce894",
+        "message_id": "32a6d0f1-36d6-42c9-ba0e-7b8fa6803b38",
+        "timestamp": "2023-08-25T12:14:16.436Z",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-25-687110",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Abhi Chauhan",
+                    "locality": "Street1",
+                    "city": "Noida",
+                    "state": "Uttar Pradesh",
+                    "country": "IND",
+                    "area_code": "201301"
+                },
+                "phone": "8800518689",
+                "name": "Abhi Chauhan",
+                "email": "abhishek.chauhan@18thdigitech.net",
+                "created_at": "2023-08-25T17:44:07.000Z",
+                "updated_at": "2023-08-25T17:44:07.000Z"
+            },
+            "items": [
+                {
+                    "id": "Reyton18TH10005",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                },
+                {
+                    "id": "Campus18TH100060",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                }
+            ],
+            "provider": {
+                "id": "18th_stores",
+                "locations": [
+                    {
+                        "id": "default_loc"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "Fulfillment1",
+                    "end": {
+                        "contact": {
+                            "email": "abhi0001ch+001@gmail.com",
+                            "phone": "8956969969"
+                        },
+                        "person": {
+                            "name": "Abhi Chauhan"
+                        },
+                        "location": {
+                            "gps": "28.574981, 77.320812",
+                            "address": {
+                                "name": "Abhi Chauhan",
+                                "building": "",
+                                "locality": "Street 2",
+                                "city": "Noida",
+                                "state": "Uttar Pradesh",
+                                "country": "IND",
+                                "area_code": "201301"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "2489.01",
+                    "currency": "INR",
+                    "transaction_id": "2df59294-b3c1-4689-b5ad-8d8f35bce894"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "2489.01"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Reyton18TH10005",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "18TH Men's Reyton Navy Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 999
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Campus18TH100060",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Campus 18TH Men's MOXIE White Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 1500
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": 20
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": 94.96
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "-124.95"
+                        }
+                    }
+                ]
+            },
+            "created_at": "2023-08-25T12:14:16.436Z",
+            "updated_at": "2023-08-25T12:14:16.436Z"
+        }
+    }
+}

@@ -1,0 +1,131 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "03cdc275-0efb-4286-952f-3cac2509c281",
+        "message_id": "873d49e8-5a8b-4286-9554-82bc914447f3",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-08-25T17:08:35.000Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-25-830123",
+            "state": "Accepted",
+            "provider": {
+                "id": "18th_stores"
+            },
+            "items": [
+                {
+                    "id": "WJ09-XS-Blue",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": "1.0000"
+                    }
+                },
+                {
+                    "id": "WJ09-XS-Gray",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": "1.0000"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Abhi Chauhan",
+                "email": "abhi0001ch+001@gmail.com",
+                "phone": "8956969969",
+                "address": {
+                    "building": "Street 2",
+                    "name": "Abhi Chauhan",
+                    "city": "Noida",
+                    "state": "Uttar Pradesh",
+                    "country": "IN",
+                    "area_code": "201301"
+                }
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "64.0000"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "WJ09-XS-Blue",
+                        "@ondc/org/item_quantity": {
+                            "count": "1.0000"
+                        },
+                        "title": "Jade Yoga Jacket-XS-Blue",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "32.0000"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "WJ09-XS-Gray",
+                        "@ondc/org/item_quantity": {
+                            "count": "1.0000"
+                        },
+                        "title": "Jade Yoga Jacket-XS-Gray",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "32.0000"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Packing charges",
+                        "@ondc/org/title_type": "packing",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "-0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,164 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "03cdc275-0efb-4286-952f-3cac2509c281",
+        "message_id": "51e79b40-a3ed-4ffc-85c2-92077b1f8dbb",
+        "timestamp": "2023-08-25T11:37:42.116Z",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-25-830123",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Abhi Chauhan",
+                    "locality": "Street 2",
+                    "city": "Noida",
+                    "state": "Uttar Pradesh",
+                    "country": "IND",
+                    "area_code": "201301"
+                },
+                "phone": "8956969969",
+                "name": "Abhi Chauhan",
+                "email": "abhi0001ch+001@gmail.com",
+                "created_at": "2023-08-25T17:07:18.000Z",
+                "updated_at": "2023-08-25T17:07:18.000Z"
+            },
+            "items": [
+                {
+                    "id": "WJ09-XS-Blue",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                },
+                {
+                    "id": "WJ09-XS-Gray",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                }
+            ],
+            "provider": {
+                "id": "18th_stores",
+                "locations": [
+                    {
+                        "id": "default_loc"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "Fulfillment1",
+                    "end": {
+                        "contact": {
+                            "email": "abhi0001ch+001@gmail.com",
+                            "phone": "8956969969"
+                        },
+                        "person": {
+                            "name": "Abhi Chauhan"
+                        },
+                        "location": {
+                            "gps": "28.574981, 77.320812",
+                            "address": {
+                                "name": "Abhi Chauhan",
+                                "building": "",
+                                "locality": "Street 2",
+                                "city": "Noida",
+                                "state": "Uttar Pradesh",
+                                "country": "IND",
+                                "area_code": "201301"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "84",
+                    "currency": "INR",
+                    "transaction_id": "03cdc275-0efb-4286-952f-3cac2509c281"
+                },
+                "status": "NOT-PAID",
+                "type": "ON-FULFILLMENT",
+                "collected_by": "BPP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "84"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "WJ09-XS-Blue",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Jade Yoga Jacket-XS-Blue",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 32
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "WJ09-XS-Gray",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Jade Yoga Jacket-XS-Gray",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 32
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": 20
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": 0
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "-0"
+                        }
+                    }
+                ]
+            },
+            "created_at": "2023-08-25T11:37:42.116Z",
+            "updated_at": "2023-08-25T11:37:42.116Z"
+        }
+    }
+}

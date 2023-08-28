@@ -1,0 +1,139 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "03cdc275-0efb-4286-952f-3cac2509c281",
+        "message_id": "cc7f5dcf-25a4-44ed-859d-919e4ebd7ee1",
+        "timestamp": "2023-08-25T16:56:09.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "18th_stores"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "WJ09-XS-Blue"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "WJ09-XS-Gray"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "Fulfillment1",
+                    "@ondc/org/provider_name": "Loadshare",
+                    "tracking": false,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "PT45M",
+                    "state": {
+                        "descriptor": {
+                            "name": "Non-serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": 64
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "WJ09-XS-Blue",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Jade Yoga Jacket-XS-Blue",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 32
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 98
+                                },
+                                "maximum": {
+                                    "count": 98
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": 32
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "WJ09-XS-Gray",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Jade Yoga Jacket-XS-Gray",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 32
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 100
+                                },
+                                "maximum": {
+                                    "count": 100
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": 32
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "PT30S"
+            }
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "30009"
+    }
+}

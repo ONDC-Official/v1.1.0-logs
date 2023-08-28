@@ -1,0 +1,145 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "c6f35b2b-ae17-4353-814d-2746c22f9665",
+        "message_id": "74285391-f8f3-45bf-9be2-8b82ab0321c1",
+        "timestamp": "2023-08-25T13:00:14.583Z",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-25-682681",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Abhi Chauhan",
+                    "locality": "Street 2",
+                    "city": "Noida",
+                    "state": "Uttar Pradesh",
+                    "country": "IND",
+                    "area_code": "201301"
+                },
+                "phone": "8956969969",
+                "name": "Abhi Chauhan",
+                "email": "abhi0001ch+001@gmail.com",
+                "created_at": "2023-08-25T18:29:58.000Z",
+                "updated_at": "2023-08-25T18:29:58.000Z"
+            },
+            "items": [
+                {
+                    "id": "Proteus18TH10002",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                }
+            ],
+            "provider": {
+                "id": "18th_stores",
+                "locations": [
+                    {
+                        "id": "default_loc"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "Fulfillment1",
+                    "end": {
+                        "contact": {
+                            "email": "abhi0001ch+001@gmail.com",
+                            "phone": "8956969969"
+                        },
+                        "person": {
+                            "name": "Abhi Chauhan"
+                        },
+                        "location": {
+                            "gps": "28.574981, 77.320812",
+                            "address": {
+                                "name": "Abhi Chauhan",
+                                "building": "",
+                                "locality": "Street 2",
+                                "city": "Noida",
+                                "state": "Uttar Pradesh",
+                                "country": "IND",
+                                "area_code": "201301"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "908.21",
+                    "currency": "INR",
+                    "transaction_id": "c6f35b2b-ae17-4353-814d-2746c22f9665"
+                },
+                "status": "NOT-PAID",
+                "type": "ON-FULFILLMENT",
+                "collected_by": "BPP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "908.21"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Proteus18TH10002",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Proteus 18TH Fitness Jacket",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 899
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": 20
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": 34.16
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "-44.95"
+                        }
+                    }
+                ]
+            },
+            "created_at": "2023-08-25T13:00:14.583Z",
+            "updated_at": "2023-08-25T13:00:14.583Z"
+        }
+    }
+}

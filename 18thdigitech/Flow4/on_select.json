@@ -1,0 +1,140 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "331d8f1a-895c-467e-86d3-16a81bf4d7d8",
+        "message_id": "99cb7185-ffa8-434c-bd90-03d6e5e302d8",
+        "timestamp": "2023-08-25T18:14:57.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "18th_stores"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "MH04-XS-Green"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "MH04-XS-White"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "Fulfillment1",
+                    "@ondc/org/provider_name": "Loadshare",
+                    "tracking": false,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "PT45M",
+                    "state": {
+                        "descriptor": {
+                            "name": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": 240
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "MH04-XS-Green",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "title": "Frankie  Sweatshirt-XS-Green",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 180
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 3
+                                },
+                                "maximum": {
+                                    "count": 3
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": 60
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "MH04-XS-White",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Frankie  Sweatshirt-XS-White",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 60
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 100
+                                },
+                                "maximum": {
+                                    "count": 100
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": 60
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "PT30S"
+            }
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "40002",
+        "message": "Item quantity unavailable"
+    }
+}

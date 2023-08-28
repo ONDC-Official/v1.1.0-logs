@@ -1,0 +1,135 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "c6f35b2b-ae17-4353-814d-2746c22f9665",
+        "message_id": "e004703e-1f42-4eab-8422-29e6d3eb1b47",
+        "timestamp": "2023-08-25T18:27:39.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "18th_stores"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "MH04-XS-Green"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "Proteus18TH10002"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "Fulfillment1",
+                    "@ondc/org/provider_name": "Loadshare",
+                    "tracking": false,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "PT45M",
+                    "state": {
+                        "descriptor": {
+                            "name": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": 899
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "MH04-XS-Green",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "title": "Frankie  Sweatshirt-XS-Green",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 0
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 3
+                                },
+                                "maximum": {
+                                    "count": 3
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": 60
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Proteus18TH10002",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Proteus 18TH Fitness Jacket",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": 899
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 988
+                                },
+                                "maximum": {
+                                    "count": 988
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": 899
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Fulfillment1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "title": "Tax",
+                        "@ondc/org/title_type": "tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "title": "Discount",
+                        "@ondc/org/title_type": "discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "PT30S"
+            }
+        }
+    }
+}
