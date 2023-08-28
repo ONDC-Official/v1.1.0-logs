@@ -1,7 +1,7 @@
 {
     "context": {
-        "transaction_id": "9151fede-d477-4c16-bb2b-1b5067580d87",
-        "message_id": "e410a7bf-9a61-4af0-bf7b-f93ce025f70f",
+        "transaction_id": "abcbef5b-7cc4-4011-96db-9bf30ffc8aa8",
+        "message_id": "3a0eb9e0-d599-44b8-9ef7-6a067698bced",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "domain": "nic2004:52110",
@@ -10,77 +10,107 @@
         "core_version": "1.1.0",
         "bpp_id": "ondc-preprod.zeppstore.in",
         "bpp_uri": "https://ondc-preprod.zeppstore.in",
-        "action": "on_init",
-        "timestamp": "2023-08-24T13:03:05.588Z"
+        "action": "on_confirm",
+        "timestamp": "2023-08-24T09:40:33.789Z"
     },
     "message": {
         "order": {
+            "id": "2023-08-24-807843",
+            "state": "Accepted",
             "provider": {
-                "id": "ZEPP"
-            },
-            "provider_location": {
-                "id": "wfhlb-1000"
+                "id": "ZEPP",
+                "locations": [
+                    {
+                        "id": "wfhlb-1000"
+                    }
+                ],
+                "rateable": true
             },
             "items": [
                 {
                     "id": "404",
-                    "fulfillment_id": "ZRPLf551b3ef-0b7f-4048-a39b-230c38663075",
-                    "quantity": {
-                        "count": 2
-                    }
-                },
-                {
-                    "id": "413",
-                    "fulfillment_id": "ZRPLf551b3ef-0b7f-4048-a39b-230c38663075",
+                    "fulfillment_id": "ZRPL4c675af6-66b8-46bf-b31e-6876269be595",
                     "quantity": {
                         "count": 2
                     }
                 }
             ],
             "billing": {
-                "name": "ondc",
+                "name": "Sudd",
                 "address": {
-                    "name": "ondc",
-                    "door": "near btm watertank",
-                    "building": "near btm watertank",
-                    "locality": "btm 2nd stages",
+                    "name": "Sudd",
+                    "building": "near Regional passport office",
+                    "locality": "#102, Sapthagiri nivasa building, regional passport office road, Kormangala 8th stage",
                     "city": "Bengaluru",
                     "state": "Karnataka",
                     "country": "IND",
                     "area_code": "560102"
                 },
-                "email": "ondc@zrpl.co.in",
-                "phone": "7899435269",
-                "created_at": "2023-08-24T13:03:05.255Z",
-                "updated_at": "2023-08-24T13:03:05.255Z"
+                "email": "sirsimattighatta@gmail.com",
+                "phone": "6362286779",
+                "created_at": "2023-08-24T09:38:58.217Z",
+                "updated_at": "2023-08-24T09:38:58.217Z"
             },
             "fulfillments": [
                 {
-                    "id": "ZRPLf551b3ef-0b7f-4048-a39b-230c38663075",
+                    "id": "ZRPL4c675af6-66b8-46bf-b31e-6876269be595",
+                    "@ondc/org/provider_name": "ZRPL",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
                     "type": "Delivery",
+                    "tracking": true,
+                    "start": {
+                        "location": {
+                            "id": "wfhlb-1000",
+                            "descriptor": {
+                                "name": "Zeitgeist Retail"
+                            },
+                            "gps": "12.914261,77.638611"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-24T09:40:32.963Z",
+                                "end": "2023-08-24T12:40:42.963Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9886098860",
+                            "email": "support@zrpl.co.in"
+                        }
+                    },
                     "end": {
                         "location": {
                             "gps": "12.9140160000001, 77.6371740000001",
                             "address": {
-                                "name": "ondc",
-                                "building": "near btm watertank",
-                                "locality": "btm 2nd stages",
+                                "name": "Sudd",
+                                "building": "near Regional passport office",
+                                "locality": "#102, Sapthagiri nivasa building, regional passport office road, Kormangala 8th stage",
                                 "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "IND",
                                 "area_code": "560102"
                             }
                         },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-24T09:40:32.963Z",
+                                "end": "2023-08-25T09:40:32.963Z"
+                            }
+                        },
                         "contact": {
-                            "phone": "7899435269"
+                            "phone": "9886098860"
                         }
-                    }
+                    },
+                    "rateable": true
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "3196"
+                    "value": "1598"
                 },
                 "breakup": [
                     {
@@ -102,25 +132,7 @@
                         }
                     },
                     {
-                        "@ondc/org/item_id": "413",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "title": "Ifrogz Audio- Ear pollution plugz mobile with mike-Red",
-                        "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": "1598"
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "799"
-                            }
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPLf551b3ef-0b7f-4048-a39b-230c38663075",
+                        "@ondc/org/item_id": "ZRPL4c675af6-66b8-46bf-b31e-6876269be595",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
@@ -132,6 +144,16 @@
                 "ttl": "P1D"
             },
             "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "abcbef5b-7cc4-4011-96db-9bf30ffc8aa8",
+                    "amount": "1598"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
                 "@ondc/org/settlement_details": [
@@ -139,15 +161,17 @@
                         "settlement_counterparty": "seller-app",
                         "settlement_phase": "sale-amount",
                         "settlement_type": "upi",
-                        "beneficiary_name": "Zeitgeist Retail",
                         "upi_address": "gft@oksbi",
                         "settlement_bank_account_no": "150994923487",
                         "settlement_ifsc_code": "SBIN004340",
+                        "beneficiary_name": "Zeitgeist Retail",
                         "bank_name": "SBI",
                         "branch_name": "HSR Layout"
                     }
                 ]
-            }
+            },
+            "created_at": "2023-08-24T09:40:32.963Z",
+            "updated_at": "2023-08-24T09:40:33.789Z"
         }
     }
 }
