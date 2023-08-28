@@ -5,25 +5,20 @@
         "city": "std:080",
         "action": "on_update",
         "core_version": "1.1.0",
-        "bap_id": "buyer-app.ondc.org",
-        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "ushopmicro-stage.hulcd.com",
-        "bpp_uri": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833",
-        "transaction_id": "3c108d67-4334-48fa-b0aa-2cf0423a90d0",
-        "message_id": "bf6861fd-0e81-48d6-8910-33833a76868e",
-        "timestamp": "2023-08-21T16:54:12.917Z",
+        "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
+        "transaction_id": "d4ec746a-2cd4-4395-917f-b3a339c15c28",
+        "message_id": "50efeeee-cc6b-4dae-ba20-a9edbab0bdb7",
+        "timestamp": "2023-08-25T10:19:16.501Z",
         "key": "ORcFVLPIuaqQll2votGDCJK11rfsvBRcw3yxhBchaXo=",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-08-21-288249",
+            "id": "2023-08-25-491082",
             "state": "Completed",
-            "documents": [{
-                    "url": "https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/IMAGbde56ab166f6.pdf",
-                    "label": "Invoice"
-                }
-            ],
             "fulfillments": [{
                     "id": "HUL-330949D-P8056",
                     "type": "Delivery",
@@ -44,10 +39,10 @@
                             "rateable": false
                         },
                         "time": {
-                            "timestamp": "2023-08-21T16:52:43.025Z",
+                            "timestamp": "2023-08-25T10:17:51.428Z",
                             "range": {
-                                "start": "2023-08-21T16:52:43.025Z",
-                                "end": "2023-08-21T16:53:46.509Z"
+                                "start": "2023-08-25T10:17:51.428Z",
+                                "end": "2023-08-25T10:18:34.832Z"
                             }
                         },
                         "contact": {
@@ -59,9 +54,9 @@
                         "location": {
                             "gps": "12.9949590000001, 77.6989090000001",
                             "address": {
-                                "name": "weqwe",
-                                "building": "Bren",
-                                "locality": "dsad",
+                                "name": "Subodh Kumar",
+                                "building": "Bren Avalon",
+                                "locality": "chinnapanahalli Main Road",
                                 "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "India",
@@ -70,23 +65,23 @@
                             "rateable": false
                         },
                         "time": {
-                            "timestamp": "2023-08-21T16:54:02.610Z",
+                            "timestamp": "2023-08-25T10:18:51.586Z",
                             "range": {
-                                "start": "2023-08-21T16:53:48.509Z",
-                                "end": "2023-08-21T16:54:02.610Z"
+                                "start": "2023-08-25T10:18:36.832Z",
+                                "end": "2023-08-25T10:18:51.586Z"
                             }
                         },
                         "contact": {
                             "phone": "9986697491",
-                            "email": "kmr.subodh@gmail.com"
+                            "email": "subodh1@gmail.com"
                         }
                     }
                 }
             ],
             "payment": {
                 "params": {
-                    "transaction_id": "3c108d67-4334-48fa-b0aa-2cf0423a90d0",
-                    "amount": "740.57",
+                    "transaction_id": "d4ec746a-2cd4-4395-917f-b3a339c15c28",
+                    "amount": "787.95",
                     "currency": "INR"
                 },
                 "type": "ON-ORDER",
@@ -106,12 +101,27 @@
                     }
                 ]
             },
-            "created_at": "2023-08-21T16:52:45.921Z",
-            "updated_at": "2023-08-21T16:54:12.917Z",
+            "created_at": "2023-08-25T10:17:53.357Z",
+            "updated_at": "2023-08-25T10:19:16.501Z",
             "items": [{
+                    "id": "10000005",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "HUL-330949D-P8056",
+                    "rating": 5,
+                    "rateable": false,
+                    "matched": false,
+                    "related": false,
+                    "recommended": false,
+                    "@ondc/org/returnable": false,
+                    "@ondc/org/seller_pickup_return": false,
+                    "@ondc/org/cancellable": false,
+                    "@ondc/org/available_on_cod": false
+                }, {
                     "id": "10000232",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     },
                     "fulfillment_id": "HUL-330949D-P8056",
                     "rating": 5,
@@ -124,22 +134,7 @@
                     "@ondc/org/cancellable": false,
                     "@ondc/org/available_on_cod": false
                 }, {
-                    "id": "10000186",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "HUL-330949D-P8056",
-                    "rating": 5,
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }, {
-                    "id": "10000005",
+                    "id": "10000197",
                     "quantity": {
                         "count": 1
                     },
@@ -161,61 +156,9 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "740.57"
+                    "value": "787.95"
                 },
                 "breakup": [{
-                        "title": "Kwality Walls Party Pack Carton Kulfi 700ml",
-                        "price": {
-                            "currency": "INR",
-                            "value": "185.00"
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "185.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
-                        },
-                        "@ondc/org/item_id": "10000232",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        },
-                        "@ondc/org/title_type": "item"
-                    }, {
-                        "title": "Kwality Walls Creme Brulee Tub 700ml",
-                        "price": {
-                            "currency": "INR",
-                            "value": "259.00"
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "259.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
-                        },
-                        "@ondc/org/item_id": "10000186",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        },
-                        "@ondc/org/title_type": "item"
-                    }, {
                         "title": "Kwality Walls Party Pack Carton Butterscotch 700ml",
                         "price": {
                             "currency": "INR",
@@ -242,10 +185,70 @@
                         },
                         "@ondc/org/title_type": "item"
                     }, {
+                        "title": "Kwality Walls Party Pack Carton Kulfi 700ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "370.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "185.00"
+                            },
+                            "rating": 5,
+                            "rateable": false,
+                            "matched": false,
+                            "related": false,
+                            "recommended": false,
+                            "@ondc/org/returnable": false,
+                            "@ondc/org/seller_pickup_return": false,
+                            "@ondc/org/cancellable": false,
+                            "@ondc/org/available_on_cod": false
+                        },
+                        "@ondc/org/item_id": "10000232",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Discount",
+                        "price": {
+                            "currency": "INR",
+                            "value": "-10"
+                        },
+                        "@ondc/org/item_id": "10000232",
+                        "@ondc/org/title_type": "discount"
+                    }, {
+                        "title": "Kwality Walls Party Pack Carton Chocolate 700ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "130.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "130.00"
+                            },
+                            "rating": 5,
+                            "rateable": false,
+                            "matched": false,
+                            "related": false,
+                            "recommended": false,
+                            "@ondc/org/returnable": false,
+                            "@ondc/org/seller_pickup_return": false,
+                            "@ondc/org/cancellable": false,
+                            "@ondc/org/available_on_cod": false
+                        },
+                        "@ondc/org/item_id": "10000197",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
                         "title": "Convenience Fee",
                         "price": {
                             "currency": "INR",
-                            "value": "21.57"
+                            "value": "22.95"
                         },
                         "@ondc/org/item_id": "HUL-330949D-P8056",
                         "@ondc/org/title_type": "misc"
