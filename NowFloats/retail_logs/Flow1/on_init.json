@@ -1,86 +1,181 @@
 {
-  "context": {
-    "domain": "nic2004:52110",
-    "country": "IND",
-    "city": "std:080",
-    "action": "init",
-    "core_version": "1.1.0",
-    "bap_id": "buyer-app-preprod.ondc.org",
-    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-    "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
-    "transaction_id": "75c42600-b396-4655-9432-aae0b15df37d",
-    "message_id": "4346db17-2151-4d94-af33-4687a156feaa",
-    "timestamp": "2023-07-13T04:13:31.742Z",
-    "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
-    "ttl": "PT30S"
-  },
-  "message": {
-    "order": {
-      "provider": {
-        "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51",
-        "locations": [
-          {
-            "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51"
-          }
-        ]
-      },
-      "items": [
-        {
-          "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
-          "quantity": {
-            "count": 1
-          },
-          "fulfillment_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb"
-        },
-        {
-          "id": "c71b4800-1e8d-4186-82db-eff8ded9a337",
-          "quantity": {
-            "count": 1
-          },
-          "fulfillment_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb"
-        }
-      ],
-      "billing": {
-        "address": {
-          "door": "Bangalore",
-          "building": "Bangalore",
-          "city": "Bengaluru",
-          "state": "Karnataka",
-          "country": "IND",
-          "area_code": "560001",
-          "locality": "Bangalore",
-          "name": "Soumyadeep Bhadra"
-        },
-        "phone": "9748270530",
-        "name": "Soumyadeep Bhadra",
-        "email": "soumyadeep.bhadra@nowfloats.com",
-        "created_at": "2023-07-13T04:13:31.609Z",
-        "updated_at": "2023-07-13T04:13:31.609Z"
-      },
-      "fulfillments": [
-        {
-          "id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
-          "type": "Delivery",
-          "end": {
-            "contact": {
-              "email": "soumyadeep.bhadra@nowfloats.com",
-              "phone": "9748270530"
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+        "transaction_id": "5356df1e-f60c-476d-9d6d-347a74a4e062",
+        "message_id": "f8aaa41b-bc95-4ad0-82a5-9e1cb1334779",
+        "timestamp": "2023-08-23T04:55:39.723Z",
+        "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51"
             },
-            "location": {
-              "gps": "12.9812430000001, 77.5950340000001",
-              "address": {
+            "provider_location": {
+                "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51"
+            },
+            "items": [
+                {
+                    "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "411660a9-aa0b-4c36-a773-51e769319c12"
+                },
+                {
+                    "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "411660a9-aa0b-4c36-a773-51e769319c12"
+                }
+            ],
+            "billing": {
+                "address": {
+                    "door": "Bangalore",
+                    "building": "Some Building",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560001",
+                    "locality": "Bangalore",
+                    "name": "Soumyadeep Bhadra"
+                },
+                "phone": "9748270530",
                 "name": "Soumyadeep Bhadra",
-                "building": "Bangalore",
-                "locality": "Bangalore",
-                "city": "Bengaluru",
-                "state": "Karnataka",
-                "country": "IND",
-                "area_code": "560001"
-              }
+                "email": "soumyadeep.bhadra@nowfloats.com",
+                "created_at": "2023-08-23T04:55:39.546Z",
+                "updated_at": "2023-08-23T04:55:39.546Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "411660a9-aa0b-4c36-a773-51e769319c12",
+                    "type": "Delivery",
+                    "end": {
+                        "contact": {
+                            "email": "soumyadeep.bhadra@nowfloats.com",
+                            "phone": "9748270530"
+                        },
+                        "location": {
+                            "gps": "12.9812430000001, 77.5950340000001",
+                            "address": {
+                                "name": "Soumyadeep Bhadra",
+                                "building": "Bangalore",
+                                "locality": "Bangalore",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560001"
+                            }
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "233.94"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "parle Chair",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "90"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "111"
+                                },
+                                "maximum": {
+                                    "count": "111"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "90"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "unibic Chair",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "108"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "79"
+                                },
+                                "maximum": {
+                                    "count": "79"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "108"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "411660a9-aa0b-4c36-a773-51e769319c12",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.94"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "411660a9-aa0b-4c36-a773-51e769319c12",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "30"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/withholding_amount": "0.0",
+                "@ondc/org/return_window": "1",
+                "@ondc/org/settlement_basis": "DELIVERY",
+                "@ondc/org/settlement_window": "P1D",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "upi_address": "ankit@success"
+                    }
+                ]
             }
-          }
         }
-      ]
     }
-  }
 }
