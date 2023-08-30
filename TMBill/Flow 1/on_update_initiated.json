@@ -9,17 +9,38 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-21T14:27:42.678Z",
-    "message_id": "d8b02687-8220-4154-9db8-bd5a0fc3b5fb",
+    "timestamp": "2023-08-29T19:02:56.391Z",
+    "message_id": "bb87d652-bd12-4022-815a-e9704987c12d",
     "core_version": "1.1.0",
-    "transaction_id": "26aa089f-92c8-4056-b7c1-5fa00d618be0"
+    "transaction_id": "067b846e-1dc1-4319-959f-fcc538c20176"
   },
   "message": {
     "order": {
-      "id": "2023-08-21-348352",
+      "id": "2023-08-29-967087",
       "items": [
         {
+          "id": "2775201::1155940::EP08",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
           "id": "2775200::1155939::EP07",
+          "quantity": {
+            "count": 2
+          },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2802915::1549408::HAR",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
           "tags": {
             "status": "Return_Initiated"
           },
@@ -27,26 +48,12 @@
             "count": 1
           },
           "fulfillment_id": "22446688739675_fulfillment_1"
-        },
-        {
-          "id": "2775201::1155940::EP08",
-          "quantity": {
-            "count": 2
-          },
-          "fulfillment_id": "22446688739675_fulfillment_1"
-        },
-        {
-          "id": "2775202::1155941::EP09",
-          "quantity": {
-            "count": 3
-          },
-          "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
         "price": {
-          "value": "1521.26",
+          "value": "917.5",
           "currency": "INR"
         },
         "breakup": [
@@ -55,95 +62,107 @@
               "price": {
                 "value": "110",
                 "currency": "INR"
-              },
-              "quantity": {
-                "maximum": {
-                  "count": "101"
-                },
-                "available": {
-                  "count": "101"
-                }
               }
             },
             "price": {
-              "value": "110",
+              "value": "220",
               "currency": "INR"
             },
             "title": "Egg Curry",
             "@ondc/org/item_id": "2775200::1155939::EP07",
             "@ondc/org/title_type": "item",
             "@ondc/org/item_quantity": {
-              "count": 1
+              "count": 2
             }
+          },
+          {
+            "price": {
+              "value": "11",
+              "currency": "INR"
+            },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "tax"
           },
           {
             "item": {
               "price": {
                 "value": "500",
                 "currency": "INR"
-              },
-              "quantity": {
-                "maximum": {
-                  "count": "102"
-                },
-                "available": {
-                  "count": "102"
-                }
               }
             },
             "price": {
-              "value": "1000",
+              "value": "500",
               "currency": "INR"
             },
             "title": "Egg Masala",
             "@ondc/org/item_id": "2775201::1155940::EP08",
             "@ondc/org/title_type": "item",
             "@ondc/org/item_quantity": {
-              "count": 2
+              "count": 1
             }
+          },
+          {
+            "price": {
+              "value": "25",
+              "currency": "INR"
+            },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
           },
           {
             "item": {
               "price": {
                 "value": "100",
                 "currency": "INR"
-              },
-              "quantity": {
-                "maximum": {
-                  "count": "103"
-                },
-                "available": {
-                  "count": "103"
-                }
               }
             },
             "price": {
-              "value": "300",
+              "value": "100",
               "currency": "INR"
             },
             "title": "Egg Bhurji",
             "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "item",
             "@ondc/org/item_quantity": {
-              "count": 3
+              "count": 1
             }
           },
           {
             "price": {
-              "value": "-5",
-              "currency": "INR"
-            },
-            "title": "Discount",
-            "@ondc/org/item_id": "2775202::1155941::EP09",
-            "@ondc/org/title_type": "discount"
-          },
-          {
-            "price": {
-              "value": "70.26",
+              "value": "5",
               "currency": "INR"
             },
             "title": "Tax",
             "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": {
+              "price": {
+                "value": "10",
+                "currency": "INR"
+              }
+            },
+            "price": {
+              "value": "10",
+              "currency": "INR"
+            },
+            "title": "Egg",
+            "@ondc/org/item_id": "2802915::1549408::HAR",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "price": {
+              "value": "0.5",
+              "currency": "INR"
+            },
+            "title": "Tax",
+            "@ondc/org/item_id": "2802915::1549408::HAR",
             "@ondc/org/title_type": "tax"
           },
           {
@@ -167,19 +186,20 @@
           "name": "John Doe",
           "state": "Karnataka",
           "country": "IND",
+          "building": "Whitefield",
           "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
           "area_code": "560066"
         },
-        "created_at": "2023-08-21T14:22:39.746Z",
-        "updated_at": "2023-08-21T14:22:39.746Z"
+        "created_at": "2023-08-29T18:58:58.699Z",
+        "updated_at": "2023-08-29T18:58:58.699Z"
       },
       "payment": {
         "uri": "https://juspay.in/",
         "type": "ON-ORDER",
         "params": {
-          "amount": "1521.26",
+          "amount": "917.5",
           "currency": "INR",
-          "transaction_id": "26aa089f-92c8-4056-b7c1-5fa00d618be0"
+          "transaction_id": "067b846e-1dc1-4319-959f-fcc538c20176"
         },
         "status": "PAID",
         "tl_method": "http/get",
@@ -210,22 +230,22 @@
       },
       "documents": [
         {
-          "url": "https://backoffice.tmbill.com/ebill/2023-08-21-348352",
+          "url": "https://backoffice.tmbill.com/ebill/2023-08-29-967087",
           "label": "Invoice"
         }
       ],
-      "created_at": "2023-08-21T14:22:46.127Z",
-      "updated_at": "2023-08-21T14:27:42.677Z",
+      "created_at": "2023-08-29T18:59:08.937Z",
+      "updated_at": "2023-08-29T18:59:11.934Z",
       "fulfillments": [
         {
           "id": "22446688739675_fulfillment_1",
           "end": {
             "time": {
               "range": {
-                "end": "2023-08-21T15:07:46.127Z",
-                "start": "2023-08-21T15:07:46.127Z"
+                "end": "2023-08-29T19:17:56.320Z",
+                "start": "2023-08-29T19:02:56.320Z"
               },
-              "timestamp": "2023-08-21T14:26:00.192Z"
+              "timestamp": "2023-08-29T19:01:45.144Z"
             },
             "person": {
               "name": "John Doe"
@@ -241,7 +261,7 @@
                 "name": "John Doe",
                 "state": "Karnataka",
                 "country": "IND",
-                "building": "",
+                "building": "Whitefield",
                 "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
                 "area_code": "560066"
               },
@@ -252,17 +272,13 @@
             }
           },
           "type": "Delivery",
-          "agent": {
-            "name": "Tasneem",
-            "phone": "999999999"
-          },
           "start": {
             "time": {
               "range": {
-                "end": "2023-08-21T15:07:46.127Z",
-                "start": "2023-08-21T15:07:46.127Z"
+                "end": "2023-08-29T19:52:56.320Z",
+                "start": "2023-08-29T19:17:56.320Z"
               },
-              "timestamp": "2023-08-21T14:22:46.000Z"
+              "timestamp": "2023-08-29T18:59:09.148Z"
             },
             "person": {
               "name": "Eatsy"
@@ -276,11 +292,11 @@
               "gps": "12.970698591977477,77.7471608509239",
               "address": {
                 "city": "Bengaluru",
-                "name": "John Doe",
+                "name": "",
                 "state": "Karnataka",
                 "country": "IND",
                 "building": "",
-                "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+                "locality": "Whitefield",
                 "area_code": "560066"
               },
               "descriptor": {
@@ -299,7 +315,7 @@
           },
           "rateable": true,
           "tracking": false,
-          "@ondc/org/provider_name": "22446688739675"
+          "@ondc/org/provider_name": "TMBill"
         }
       ]
     }

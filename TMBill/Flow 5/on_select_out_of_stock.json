@@ -1,22 +1,33 @@
 {
+  "error": {
+    "code": "40002",
+    "path": "string",
+    "type": "DOMAIN-ERROR",
+    "message": "When the Seller App is unable to select the specified number in order.items[].quantity"
+  },
   "context": {
     "ttl": "PT30S",
     "city": "std:080",
     "action": "on_select",
-    "bap_id": "shopping-api-testing.phonepe.com",
+    "bap_id": "buyer-app-preprod.ondc.org",
     "bpp_id": "staging.tmbill.com/tp/v1/ondc",
     "domain": "nic2004:52110",
-    "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-22T07:36:46.057Z",
-    "message_id": "SELM2308221306446914754675",
+    "timestamp": "2023-08-30T05:33:20.720Z",
+    "message_id": "e68a69f4-37c0-4826-a6d6-f6b2a1400e55",
     "core_version": "1.1.0",
-    "transaction_id": "C2308212109524894754690"
+    "transaction_id": "88a4f884-a9d9-4c68-994d-fa5c47f1c45b"
   },
   "message": {
     "order": {
       "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
         {
           "id": "2775201::1155940::EP08",
           "quantity": { "count": 1 },
@@ -24,25 +35,45 @@
         },
         {
           "id": "2775202::1155941::EP09",
-          "quantity": { "count": 1 },
+          "quantity": { "count": 2 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
-          "id": "2775205::1155944::EP12",
+          "id": "2802915::1549408::HAR",
           "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "689", "currency": "INR" },
+        "price": { "value": "896.5", "currency": "INR" },
         "breakup": [
+          {
+            "item": {
+              "price": { "value": "110", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "100" },
+                "available": { "count": "100" }
+              }
+            },
+            "price": { "value": "110", "currency": "INR" },
+            "title": "Egg Curry",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "5.5", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "tax"
+          },
           {
             "item": {
               "price": { "value": "500", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "101" },
-                "available": { "count": "101" }
+                "maximum": { "count": "100" },
+                "available": { "count": "100" }
               }
             },
             "price": { "value": "500", "currency": "INR" },
@@ -61,38 +92,38 @@
             "item": {
               "price": { "value": "100", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "101" },
-                "available": { "count": "101" }
+                "maximum": { "count": "100" },
+                "available": { "count": "100" }
               }
             },
-            "price": { "value": "100", "currency": "INR" },
+            "price": { "value": "200", "currency": "INR" },
             "title": "Egg Bhurji",
             "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 1 }
+            "@ondc/org/item_quantity": { "count": 2 }
           },
           {
-            "price": { "value": "5", "currency": "INR" },
+            "price": { "value": "10", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "tax"
           },
           {
             "item": {
-              "price": { "value": "100", "currency": "INR" },
+              "price": { "value": "10", "currency": "INR" },
               "quantity": {
                 "maximum": { "count": "100" },
                 "available": { "count": "100" }
               }
             },
             "price": { "value": "0", "currency": "INR" },
-            "title": "Mutton Handi",
-            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "title": "Egg",
+            "@ondc/org/item_id": "2802915::1549408::HAR",
             "@ondc/org/title_type": "item",
             "@ondc/org/item_quantity": { "count": 0 }
           },
           {
-            "price": { "value": "59", "currency": "INR" },
+            "price": { "value": "46", "currency": "INR" },
             "title": "Delivery Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
             "@ondc/org/title_type": "delivery"
@@ -109,9 +140,8 @@
           },
           "tracking": false,
           "@ondc/org/TAT": "PT60M",
-          "deliveryCharge": "59",
           "@ondc/org/category": "Immediate Delivery",
-          "@ondc/org/provider_name": "22446688739675"
+          "@ondc/org/provider_name": "TMBill"
         }
       ],
       "provider_location": { "id": "22446688739675" }
