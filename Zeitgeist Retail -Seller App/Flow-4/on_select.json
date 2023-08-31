@@ -1,8 +1,7 @@
-
 {
     "context": {
-        "transaction_id": "9151fede-d477-4c16-bb2b-1b5067580d87",
-        "message_id": "ef132364-3803-4b81-a375-b4748708f212",
+        "transaction_id": "d34dd190-876f-43c2-8f52-c4ae135aab61",
+        "message_id": "f02077ef-c439-42b6-9473-0a94139d7bbb",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "domain": "nic2004:52110",
@@ -12,7 +11,7 @@
         "bpp_id": "ondc-preprod.zeppstore.in",
         "bpp_uri": "https://ondc-preprod.zeppstore.in",
         "action": "on_select",
-        "timestamp": "2023-08-24T12:38:23.758Z"
+        "timestamp": "2023-08-24T06:48:11.397Z"
     },
     "message": {
         "order": {
@@ -21,24 +20,24 @@
             },
             "items": [
                 {
-                    "fulfillment_id": "ZRPL7d3f710a-83f4-4950-8e83-9902fe2609b8",
+                    "fulfillment_id": "ZRPL55077c3a-bac8-448b-a872-7e41fd6730df",
                     "id": "404"
                 },
                 {
-                    "fulfillment_id": "ZRPL7d3f710a-83f4-4950-8e83-9902fe2609b8",
-                    "id": "413"
+                    "fulfillment_id": "ZRPL55077c3a-bac8-448b-a872-7e41fd6730df",
+                    "id": "435"
                 }
             ],
             "fulfillments": [
                 {
-                    "id": "ZRPL7d3f710a-83f4-4950-8e83-9902fe2609b8",
+                    "id": "ZRPL55077c3a-bac8-448b-a872-7e41fd6730df",
                     "@ondc/org/provider_name": "ZRPL",
                     "tracking": true,
                     "@ondc/org/category": "Standard Delivery",
                     "@ondc/org/TAT": "P1D",
                     "state": {
                         "descriptor": {
-                            "code": "Non-serviceable"
+                            "code": "Serviceable"
                         }
                     }
                 }
@@ -46,19 +45,19 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "3196"
+                    "value": "4995"
                 },
                 "breakup": [
                     {
                         "@ondc/org/item_id": "404",
                         "@ondc/org/item_quantity": {
-                            "count": 2
+                            "count": 3
                         },
                         "title": "Ifrogz Audio- Ear pollution plugz mobile with mike-Blue",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "1598"
+                            "value": "2397"
                         },
                         "item": {
                             "quantity": {
@@ -76,15 +75,15 @@
                         }
                     },
                     {
-                        "@ondc/org/item_id": "413",
+                        "@ondc/org/item_id": "435",
                         "@ondc/org/item_quantity": {
                             "count": 2
                         },
-                        "title": "Ifrogz Audio- Ear pollution plugz mobile with mike-Red",
+                        "title": "Ifrogz Audio Intone with mic-Black",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "1598"
+                            "value": "2598"
                         },
                         "item": {
                             "quantity": {
@@ -97,18 +96,27 @@
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "799"
+                                "value": "1299"
                             }
                         }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL55077c3a-bac8-448b-a872-7e41fd6730df",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        }
                     }
-                   
                 ],
                 "ttl": "P1D"
             }
         }
     },
-     "error": {
+    "error": {
         "type": "DOMAIN-ERROR",
-        "code": "30009"
+        "code": "40002",
+        "message": "Item quantity unavailable"
     }
 }
