@@ -1,0 +1,216 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_status",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc-preprod.tvs-e.in",
+    "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
+    "message_id": "4c4c241f-12c5-4f09-9ab3-66ad0e21a885",
+    "timestamp": "2023-08-21T05:34:55.369Z",
+    "ttl": "PT30S",
+    "transaction_id": "75698802-2a31-48c7-a16b-26537ef460fa"
+  },
+  "message": {
+    "order": {
+      "id": "2023-08-21-541360",
+      "state": "In-progress",
+      "items": [
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+          "fulfillment_id": "1",
+          "quantity": {
+            "count": 1
+          },
+          "@ondc/org/returnable": true,
+          "@ondc/org/cancellable": true,
+          "state": "Pending"
+        },
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+          "fulfillment_id": "1",
+          "quantity": {
+            "count": 1
+          },
+          "@ondc/org/returnable": true,
+          "@ondc/org/cancellable": true,
+          "state": "Pending"
+        }
+      ],
+      "billing": {
+        "name": "Rajagopal",
+        "address": {
+          "door": "Yelanha",
+          "name": "Rajagopal",
+          "building": "Yelanha",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560036",
+          "locality": "South Street"
+        },
+        "email": "s.rajagopal@tvs-e.in",
+        "phone": "9865569388",
+        "created_at": "2023-08-21T05:24:31.026Z",
+        "updated_at": "2023-08-21T05:24:31.026Z"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "@ondc/org/provider_name": "TVS Electronics Ltd",
+          "ondc/org/category": "Standard Delivery",
+          "type": "Delivery",
+          "tracking": true,
+          "state": {
+            "descriptor": {
+              "code": "Pending"
+            }
+          },
+          "start": {
+            "location": {
+              "descriptor": {
+                "name": "TVS Electronics Ltd"
+              },
+              "gps": "13.0971206,77.5981222",
+              "address": {
+                "door": "1st Floor Nehru Nagar,Airport, Road, Yelahanka",
+                "street": "Commercial Building",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "area_code": "560034"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-08-21T10:00:00.000Z",
+                "end": "2023-08-21T19:00:00.000Z"
+              }
+            },
+            "contact": {
+              "phone": "9865569388",
+              "email": "s.rajagopal@tvs-e.in"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "13.006289, 77.699349",
+              "address": {
+                "name": "Rajagopal",
+                "building": "Yelanha",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560036",
+                "locality": "South Street"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-08-21T10:00:00.000Z",
+                "end": "2023-08-21T19:00:00.000Z"
+              }
+            },
+            "contact": {
+              "phone": "9865569388",
+              "email": "s.rajagopal@tvs-e.in"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "27658.00"
+        },
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "10677.12"
+              }
+            },
+            "title": "LP 46 Lite Thermal Label Printer",
+            "price": {
+              "currency": "INR",
+              "value": "10677.12"
+            },
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "10677.12"
+              }
+            },
+            "title": "MSP 250 Star Dot Matrix Printer",
+            "price": {
+              "currency": "INR",
+              "value": "10677.12"
+            },
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Delivery charges",
+            "price": {
+              "currency": "INR",
+              "value": "50.00"
+            },
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "27658.00",
+          "currency": "INR",
+          "transaction_id": "75698802-2a31-48c7-a16b-26537ef460fa"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00",
+        "@ondc/org/settlement_details": [
+          {
+            "bank_name": "HDFC",
+            "beneficiary_name": "TVS Electronics Ltd",
+            "branch_name": "Adayar",
+            "settlement_bank_account_no": "1234567890",
+            "settlement_counterparty": "seller-app",
+            "settlement_ifsc_code": "IFSC00001",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "upi_address": ""
+          }
+        ]
+      },
+      "provider": {
+        "id": "ondc-preprod.tvs-e.in",
+        "locations": [
+          {
+            "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911"
+          }
+        ]
+      },
+      "created_at": "2023-08-21T05:25:12.845Z",
+      "updated_at": "2023-08-21T05:34:55.369Z"
+    }
+  }
+}

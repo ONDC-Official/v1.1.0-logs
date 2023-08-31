@@ -1,0 +1,120 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "bap_id": "preprod.xpressbaazaar.com",
+    "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_status",
+    "transaction_id": "a183ea30-e831-4b78-8240-377cd5495fdd",
+    "message_id": "cb390653-9afb-459f-83c9-21b7cabc0a54",
+    "timestamp": "2023-08-08T16:09:05.513Z"
+  },
+  "message": {
+    "order": {
+      "id": "6467fe28-da05-442e-bce8-c343ad9f1480",
+      "state": "In-progress",
+      "provider": {
+        "id": "107-Account-DER-292",
+        "locations": [
+          {
+            "id": "107-41c25527-eafc-42d9-abb2-03"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "18",
+          "category_id": "Next Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "type": "Prepaid",
+          "@ondc/org/awb_no": "2023080860821949",
+          "state": {
+            "descriptor": {
+              "code": "Out-for-delivery"
+            }
+          },
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-08-09T12:05:35.392Z",
+                "end": "2023-08-09T12:35:35.392Z"
+              },
+              "timestamp": "2023-08-08T16:07:48.243Z"
+            },
+            "instructions": {
+              "name": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml",
+              "short_desc": "Lux Body Wash Soft Touch with French Rose And Almond Oil 100ml",
+              "long_desc": "480587"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-08-09T16:05:35.396Z",
+                "end": "2023-08-09T16:20:35.396Z"
+              }
+            }
+          },
+          "agent": {
+            "name": "Peter",
+            "phone": "7438483828"
+          },
+          "vehicle": {
+            "category": "TwoWheeler",
+            "size": "500.0000",
+            "registration": "TN56NS8282"
+          },
+          "@ondc/org/ewaybillno": "489260df-01ba-480a-ba6c-85ec5bbbb152",
+          "@ondc/org/ebexpirydate": "2023-08-10T16:04:54.530Z"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "985.0"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "18",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "985.0"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": []
+      },
+      "billing": {
+        "name": "Yumfood",
+        "address": {
+          "name": "Yumfood",
+          "building": "89 Karishma hills ,Vinayaka Layout, Poornapragna Housing Society Layout",
+          "locality": "89 Karishma hills ,Vinayaka Layout, Poornapragna Housing Society Layout",
+          "city": "Bengaluru",
+          "state": "KA",
+          "country": "India",
+          "area_code": "560061"
+        },
+        "tax_number": "98798798798",
+        "phone": "8978909876",
+        "email": "abcd.efgh@gmail.com"
+      }
+    }
+  }
+}

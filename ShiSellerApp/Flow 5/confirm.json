@@ -1,0 +1,214 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ushopmicro-stage.hulcd.com",
+        "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
+        "transaction_id": "8795eb68-807d-4055-9156-898b247f2758",
+        "message_id": "27d3d41d-dfe8-4e4f-9df8-5915ddf46487",
+        "timestamp": "2023-08-25T11:08:23.656Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-25-364789",
+            "state": "Created",
+            "billing": {
+                "name": "Subodh Kumar",
+                "address": {
+                    "name": "Subodh Kumar",
+                    "building": "Bren Avalon",
+                    "locality": "chinnapanahalli Main Road",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560048"
+                },
+                "email": "subodh1@gmail.com",
+                "phone": "9986697491",
+                "created_at": "2023-08-25T11:08:13.515Z",
+                "updated_at": "2023-08-25T11:08:13.515Z"
+            },
+            "fulfillments": [{
+                    "id": "HUL-330949D-P8056",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "end": {
+                        "location": {
+                            "gps": "12.9949590000001, 77.6989090000001",
+                            "address": {
+                                "name": "Subodh Kumar",
+                                "building": "Bren Avalon",
+                                "locality": "chinnapanahalli Main Road",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560048"
+                            },
+                            "rateable": false
+                        },
+                        "contact": {
+                            "phone": "9986697491",
+                            "email": "subodh1@gmail.com"
+                        },
+                        "person": {
+                            "name": "Subodh Kumar"
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "transaction_id": "8795eb68-807d-4055-9156-898b247f2758",
+                    "amount": "417.15",
+                    "currency": "INR"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [{
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "915010038001776",
+                        "settlement_ifsc_code": "UTIB0000333",
+                        "beneficiary_name": "Pushpanjali ",
+                        "bank_name": "Axis Bank Ltd.",
+                        "branch_name": "Jpnagar",
+                        "beneficiary_address": ",,,"
+                    }
+                ]
+            },
+            "created_at": "2023-08-25T11:08:23.656Z",
+            "updated_at": "2023-08-25T11:08:23.656Z",
+            "provider": {
+                "id": "HUL-330949D-P8056",
+                "rating": 0,
+                "locations": [{
+                        "id": "145",
+                        "rateable": false
+                    }
+                ],
+                "rateable": false
+            },
+            "items": [{
+                    "id": "10000005",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "HUL-330949D-P8056",
+                    "rating": 0,
+                    "rateable": false,
+                    "matched": false,
+                    "related": false,
+                    "recommended": false,
+                    "@ondc/org/returnable": false,
+                    "@ondc/org/seller_pickup_return": false,
+                    "@ondc/org/cancellable": false,
+                    "@ondc/org/available_on_cod": false
+                }, {
+                    "id": "10000197",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "HUL-330949D-P8056",
+                    "rating": 0,
+                    "rateable": false,
+                    "matched": false,
+                    "related": false,
+                    "recommended": false,
+                    "@ondc/org/returnable": false,
+                    "@ondc/org/seller_pickup_return": false,
+                    "@ondc/org/cancellable": false,
+                    "@ondc/org/available_on_cod": false
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "417.15"
+                },
+                "breakup": [{
+                        "title": "Kwality Walls Party Pack Carton Butterscotch 700ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "275.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "275.00"
+                            },
+                            "rating": 5,
+                            "rateable": false,
+                            "matched": false,
+                            "related": false,
+                            "recommended": false,
+                            "@ondc/org/returnable": false,
+                            "@ondc/org/seller_pickup_return": false,
+                            "@ondc/org/cancellable": false,
+                            "@ondc/org/available_on_cod": false
+                        },
+                        "@ondc/org/item_id": "10000005",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Kwality Walls Party Pack Carton Chocolate 700ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "130.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "130.00"
+                            },
+                            "rating": 5,
+                            "rateable": false,
+                            "matched": false,
+                            "related": false,
+                            "recommended": false,
+                            "@ondc/org/returnable": false,
+                            "@ondc/org/seller_pickup_return": false,
+                            "@ondc/org/cancellable": false,
+                            "@ondc/org/available_on_cod": false
+                        },
+                        "@ondc/org/item_id": "10000197",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "12.15"
+                        },
+                        "@ondc/org/item_id": "HUL-330949D-P8056",
+                        "@ondc/org/title_type": "misc"
+                    }, {
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        },
+                        "@ondc/org/item_id": "HUL-330949D-P8056",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}

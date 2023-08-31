@@ -1,85 +1,86 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "init",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "transaction_id": "a868600b-7f96-4874-8cf0-ea2242d2a753",
-      "message_id": "3e134177-1b9e-4611-abcf-085b303412a2",
-      "timestamp": "2023-05-30T04:39:26.413Z",
-      "ttl": "PT30S",
-      "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
-          "locations": [
-            {
-              "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
-            }
-          ]
-        },
-        "items": [
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "init",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "b489f50b-ec14-419a-a2d9-0bca88eb1f16",
+    "message_id": "c916de6f-5692-426a-aca0-b846dc54d97d",
+    "timestamp": "2023-07-17T15:54:45.010Z",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "05ff18af-61af-58b2-a809-08a67d09e1f5",
+        "locations": [
           {
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-            "quantity": {
-              "count": 2
-            },
-            "fulfillment_id": "fac6e375-48d1-57ee-a3ab-7f0403a7b8e1"
-          },
-          {
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-            "quantity": {
-              "count": 2
-            },
-            "fulfillment_id": "fac6e375-48d1-57ee-a3ab-7f0403a7b8e1"
-          }
-        ],
-        "billing": {
-          "address": {
-            "name": "bob",
-            "building": "AGS building Mumbai, Maharashtra 400051, India",
-            "locality": "abcd area",
-            "city": "Mumbai",
-            "state": "Maharashtra",
-            "country": "IND",
-            "area_code": "400051"
-          },
-          "phone": "6787644467",
-          "name": "bob",
-          "email": "bob@gmail.com",
-          "created_at": "2023-05-30T04:39:26.413Z",
-          "updated_at": "2023-05-30T04:39:26.413Z"
-        },
-        "fulfillments": [
-          {
-            "id": "fac6e375-48d1-57ee-a3ab-7f0403a7b8e1",
-            "end": {
-              "contact": {
-                "phone": "7627635764"
-              },
-              "location": {
-                "gps": "12.9765944,77.5992708",
-                "address": {
-                  "name": "alice",
-                  "building": "abc building",
-                  "locality": "abc area",
-                  "city": "Bengaluru",
-                  "state": "Karnataka",
-                  "country": "IND",
-                  "areaCode": "560001",
-                  "area_code": "560001"
-                }
-              }
-            },
-            "type": "Delivery"
+            "id": "00000000-61af-58b2-a809-08a67d09e1f5"
           }
         ]
-      }
+      },
+      "items": [
+        {
+          "id": "22222222-616b-5599-87e2-6cb80782d953",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "ab4fbff3-7d31-582b-a07b-b6730a56daac"
+        },
+        {
+          "id": "11111111-616b-5599-87e2-6cb80782d953",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "ab4fbff3-7d31-582b-a07b-b6730a56daac"
+        }
+      ],
+      "billing": {
+        "address": {
+          "door": "Rabit Mall",
+          "building": "Rabit Mall",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560037",
+          "locality": "Bob Street",
+          "name": "Bob Charles"
+        },
+        "phone": "9998887744",
+        "name": "Bob Charles",
+        "email": "bob@gmail.com",
+        "created_at": "2023-07-17T15:54:45.010Z",
+        "updated_at": "2023-07-17T15:54:45.010Z"
+      },
+      "fulfillments": [
+        {
+          "id": "ab4fbff3-7d31-582b-a07b-b6730a56daac",
+          "type": "Delivery",
+          "end": {
+            "contact": {
+              "email": "bob@gmail.com",
+              "phone": "9998887744"
+            },
+            "location": {
+              "gps": "12.964319, 77.6810060000001",
+              "address": {
+                "name": "Bob Charles",
+                "building": "Rabit Mall",
+                "locality": "Bob Street",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560037"
+              }
+            }
+          }
+        }
+      ]
     }
   }
+}

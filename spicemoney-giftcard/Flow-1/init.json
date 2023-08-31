@@ -1,0 +1,107 @@
+{
+  "context": {
+      "domain": "ONDC:FIS10",
+      "ttl": "PT30S",
+      "bap_id": "b2bapi-stage.spicesmartshop.com",
+      "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+      "message_id": "343cbc03-f09c-4f70-8179-35980c452298",
+      "transaction_id": "a040b5c5-8502-4986-bad7-0b7c5ed4b2c8",
+      "bpp_id": "ondc.vistar.solutions",
+      "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+      "location": {
+          "city": {
+              "code": "std:080"
+          },
+          "country": {
+              "code": "IND"
+          }
+      },
+      "action": "init",
+      "version": "1.0.0",
+      "timestamp": "2023-08-04T15:51:34.378Z"
+  },
+  "message": {
+      "order": {
+          "provider": {
+              "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
+          },
+          "items": [
+              {
+                  "id": "bf6506a7-5ff8-47da-8d5a-c3c029414264",
+                  "quantity": {
+                      "selected": {
+                          "count": 1
+                      }
+                  },
+                  "fulfillment_ids": [
+                      "F2"
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "DENOMINATION"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "FIXED_AMOUNT"
+                                  },
+                                  "value": "1000"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "offers": [
+              {
+                  "id": "4fa84203-b5a3-4ba1-be53-5615f03df271",
+                  "item_ids": [
+                      "bf6506a7-5ff8-47da-8d5a-c3c029414264"
+                  ]
+              }
+          ],
+          "billing": {
+              "name": "test",
+              "address": "121",
+              "state": {
+                  "name": "Madhya Pradesh",
+                  "code": "MA"
+              },
+              "city": {
+                  "name": "Jabalpur",
+                  "code": "JA"
+              },
+              "email": "chandershekar@gmail.com",
+              "phone": "7064032212"
+          },
+          "fulfillments": [
+              {
+                  "id": "F2",
+                  "type": "EMAIL",
+                  "customer": {
+                      "person": {
+                          "name": "Chandershekhar"
+                      },
+                      "contact": {
+                          "phone": "+917064032212",
+                          "email": "chandershekar@gmail.com"
+                      }
+                  },
+                  "stops": [
+                      {
+                          "id": "0",
+                          "contact": {
+                              "phone": "+917064032212",
+                              "email": "chandershekar@gmail.com"
+                          },
+                          "person": {
+                              "name": "Chandershekhar"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

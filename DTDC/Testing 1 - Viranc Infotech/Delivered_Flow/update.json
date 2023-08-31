@@ -1,120 +1,97 @@
 {
-    "context": {
-        "domain": "nic2004:60232",
-        "country": "IND",
-        "city": "std:080",
-        "action": "update",
-        "core_version": "1.1.0",
-        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
-        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
-        "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
-        "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
-        "transaction_id": "4c0bd511-010e-5c94-b20c-c3a00348b2b6",
-        "message_id": "a0aa6acc-7b1a-49d8-9c39-b4a399617232",
-        "timestamp": "2023-05-30T05:04:23.014Z",
-        "ttl": "PT30S"
-    },
-    "message": {
-        "update_target": "fulfillment",
-        "order": {
-            "id": "88883de0-f3cb-4dd2-a98a-6adcae5b8c8c",
-            "state": "Accepted",
-            "items": [
-                {
-                    "id": "B2C PRIORITY",
-                    "category_id": "Standard Delivery",
-                    "descriptor": {
-                        "code": "P2H2P"
-                    }
-                }
-            ],
-            "fulfillments": [
-                {
-                    "id": "1",
-                    "type": "Prepaid",
-                    "start": {
-                        "instructions": {
-                            "name": "Status for pickup",
-                            "long_desc": "Pickup Confirmation Code",
-                            "short_desc": "7437374"
-                        }
-                    },
-                    "end": {
-                        "instructions": {
-                            "name": "Status for drop",
-                            "long_desc": "Delivery Confirmation Code",
-                            "short_desc": "5236587"
-                        }
-                    },
-                    "tags": {
-                        "@ondc/org/order_ready_to_ship": "yes"
-                    }
-                }
-            ],
-            "payment": {
-                "@ondc/org/collection_amount": "2509.08",
-                "collected_by": "BAP",
-                "type": "POST-FULFILLMENT"
-            },
-            "@ondc/org/linked_order": {
-                "items": [
-                    {
-                        "category_id": "Grocery",
-                        "descriptor": {
-                            "name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
-                        },
-                        "quantity": {
-                            "count": 3,
-                            "measure": {
-                                "unit": "Kilogram",
-                                "value": 10
-                            }
-                        },
-                        "price": {
-                            "currency": "INR",
-                            "value": "1311.00"
-                        }
-                    },
-                    {
-                        "category_id": "Grocery",
-                        "descriptor": {
-                            "name": "Pillsbury Chakki Fresh Whole Wheat Atta, 1 kg"
-                        },
-                        "quantity": {
-                            "count": 3,
-                            "measure": {
-                                "unit": "Kilogram",
-                                "value": 1
-                            }
-                        },
-                        "price": {
-                            "currency": "INR",
-                            "value": "237.00"
-                        }
-                    }
-                ],
-                "provider": {
-                    "descriptor": {
-                        "name": "ONDC Test Seller Store"
-                    },
-                    "address": {
-                        "name": "ONDC Test Seller Store",
-                        "street": "Kasturba Rd",
-                        "locality": "Kasturba Rd",
-                        "city": "Bengaluru",
-                        "state": "Karnataka",
-                        "area_code": "560001"
-                    }
-                },
-                "order": {
-                    "id": "2023-05-30-255654",
-                    "weight": {
-                        "unit": "Kilogram",
-                        "value": 33
-                    }
-                }
-            },
-            "updated_at": "2023-05-30T05:04:23.014Z"
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "update",
+    "core_version": "1.1.0",
+    "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+    "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+    "bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
+    "bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
+    "transaction_id": "a15a3b32-b58d-5cdb-8a33-94fc02f60b78",
+    "message_id": "d746cc19-3122-4741-814e-80cf92a94e1d",
+    "timestamp": "2023-06-26T07:06:23.605Z",
+    "ttl": "PT30S",
+    "signature": "Signature keyId=\"preprod-ondc.viranc.com/p/v1/store|06f1420b-5430-4b6e-8ffa-56865cf81835|ed25519\",algorithm=\"ed25519\",created=\"1687763183\",expires=\"1687766783\",headers=\"(created) (expires) digest\",signature=\"J+2Psl8wbvGleMZ7wHUZSy7PKnd4DVCGd3XO+uPn1FofCNj9v7lvwNmTUT7tKwdhrEq9oJEDAP0ABaTQeetvDg==\""
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "b83f6783-653c-4f12-a16a-e8f2719abdd9",
+      "state": "Accepted",
+      "items": [
+        {
+          "id": "B2C SMART EXPRESS",
+          "category_id": "Express Delivery",
+          "descriptor": {
+            "code": "P2H2P"
+          }
         }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid",
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "end": {
+            "instructions": {
+              "name": "Status for drop",
+              "long_desc": "Delivery Confirmation Code",
+              "short_desc": "7501115"
+            }
+          }
+        }
+      ],
+      "payment": {
+        "@ondc/org/collection_amount": "516.03",
+        "collected_by": "BAP",
+        "type": "POST-FULFILLMENT"
+      },
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Grocery",
+            "descriptor": {
+              "name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
+            },
+            "quantity": {
+              "count": 1,
+              "measure": {
+                "unit": "Kilogram",
+                "value": 10
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "437.00"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "ONDC Test Seller Store"
+          },
+          "address": {
+            "name": "ONDC Test Seller Store",
+            "street": "Kasturba Rd",
+            "locality": "Kasturba Rd",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "area_code": "560001"
+          }
+        },
+        "order": {
+          "id": "2023-06-26-838058",
+          "weight": {
+            "unit": "Kilogram",
+            "value": 10
+          }
+        }
+      },
+      "updated_at": "2023-06-26T07:06:23.605Z"
     }
+  }
 }

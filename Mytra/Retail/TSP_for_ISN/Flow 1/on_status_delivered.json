@@ -1,0 +1,212 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://shathabdhi-organics.mytra.money/api/method/ondc/",
+        "transaction_id": "71117878-0f2a-446a-87a5-715738c76f80",
+        "message_id": "3f71d82b-0fa8-49b1-a8b3-09751f6315bb",
+        "timestamp": "2023-08-07T13:26:39.402Z",
+        "bpp_id": "shathabdhi-organics.mytra.money"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-07-539245",
+            "state": "Completed",
+            "provider": {
+                "id": "shathabdhi-organics.mytra.money",
+                "locations": [
+                    {
+                        "id": "Manikonda - S"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "STO-ITEM-2023-00013-500 Gms:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-70188",
+                    "quantity": {
+                        "count": 2
+                    }
+                },
+                {
+                    "id": "STO-ITEM-2023-00012-500 Gms:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-70188",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "319.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "STO-ITEM-2023-00013-500 Gms:Manikonda - S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "White Jowar Millet-500 Gms",
+                        "price": {
+                            "currency": "INR",
+                            "value": "140.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "70.0"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "STO-ITEM-2023-00012-500 Gms:Manikonda - S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Pearl Millet-500 Gms",
+                        "price": {
+                            "currency": "INR",
+                            "value": "120.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "60.0"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ONDC-REQ-70188",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "59.0"
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            },
+            "billing": {
+                "address": {
+                    "name": "Pushparekha Pujari",
+                    "building": "Bizness square",
+                    "locality": "Hitec city",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "IND",
+                    "area_code": "500081"
+                },
+                "phone": "9441192970",
+                "name": "Pushparekha Pujari",
+                "email": "pushparekha1999@gmail.com",
+                "created_at": "2023-08-07T13:24:09.841Z",
+                "updated_at": "2023-08-07T13:24:09.841Z"
+            },
+            "created_at": "2023-08-07T13:24:14.157Z",
+            "updated_at": "2023-08-07T13:26:37.775Z",
+            "fulfillments": [
+                {
+                    "id": "ONDC-REQ-70188",
+                    "type": "Delivery",
+                    "@ondc/org/provider_name": "Shathabdhi Organics",
+                    "tracking": false,
+                    "end": {
+                        "contact": {
+                            "email": "pushparekha1999@gmail.com",
+                            "phone": "9441192970"
+                        },
+                        "person": {
+                            "name": "Pushparekha Pujari"
+                        },
+                        "location": {
+                            "gps": "17.4431480000001, 78.3853320000001",
+                            "address": {
+                                "name": "Pushparekha Pujari",
+                                "building": "Bizness square",
+                                "locality": "Hitec city",
+                                "city": "Hyderabad",
+                                "state": "Telangana",
+                                "country": "IND",
+                                "area_code": "500081"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-07T13:55:14.157Z",
+                                "end": "2023-08-07T16:25:14.157Z"
+                            },
+                            "timestamp": "2023-08-07T13:26:28.000Z"
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "id": "Manikonda - S",
+                            "descriptor": {
+                                "name": "Shathabdhi Organics",
+                                "images": []
+                            },
+                            "gps": "17.404074,78.376527"
+                        },
+                        "contact": {
+                            "phone": "6301851597",
+                            "email": "support@shathabdhiorganics.com"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-07T13:25:14.157Z",
+                                "end": "2023-08-07T13:55:14.157Z"
+                            },
+                            "timestamp": "2023-08-07T13:26:06.000Z"
+                        }
+                    }
+                }
+            ],
+            "documents": [
+                {
+                    "url": "http://shathabdhi-organics.mytra.money/files/SINV-23-00084ae5053.pdf",
+                    "label": "Invoice"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "319",
+                    "currency": "INR",
+                    "transaction_id": "71117878-0f2a-446a-87a5-715738c76f80"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "630505034471",
+                        "settlement_ifsc_code": "ICIC0006305",
+                        "beneficiary_name": "Shathabdhi Organics",
+                        "bank_name": "ICICI BANK LIMITED",
+                        "branch_name": "ICICI BANK LIMITED"
+                    }
+                ]
+            }
+        }
+    }
+}

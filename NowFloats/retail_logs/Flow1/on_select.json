@@ -1,0 +1,129 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://jiw-ko-seller-ondc-as-preprod.azurewebsites.net/api/v1/",
+    "transaction_id": "75c42600-b396-4655-9432-aae0b15df37d",
+    "message_id": "6a68f892-3765-485f-9d0f-248f3a653074",
+    "timestamp": "2023-07-13T04:13:26.222Z",
+    "bpp_id": "jiw-ko-seller-ondc-as-preprod.azurewebsites.net",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "5c4b23fd-96ac-4c2d-9bb1-228462caaf51"
+      },
+      "items": [
+        {
+          "fulfillment_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+          "id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8"
+        },
+        {
+          "fulfillment_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+          "id": "c71b4800-1e8d-4186-82db-eff8ded9a337"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+          "@ondc/org/provider_name": "Ankit Grocery",
+          "tracking": true,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT60M",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            },
+            "updated_at": "2023-07-13T04:13:26.702Z",
+            "updated_by": "Customer"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "233.94"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "6d2e0639-7de7-43db-ae2e-0683d1a176f8",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "parle Chair",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "90"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "133"
+                },
+                "maximum": {
+                  "count": "133"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "90"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "c71b4800-1e8d-4186-82db-eff8ded9a337",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "unibic Chair",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "108"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "102"
+                },
+                "maximum": {
+                  "count": "102"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "108"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "5.94"
+            }
+          },
+          {
+            "@ondc/org/item_id": "08f8559d-3d6e-49e1-b39f-0cde7796ecfb",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "30"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      }
+    }
+  }
+}

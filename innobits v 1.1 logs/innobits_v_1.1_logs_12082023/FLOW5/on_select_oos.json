@@ -1,0 +1,188 @@
+"on_select": {
+    "error": {
+      "code": "40002",
+      "path": "string",
+      "type": "DOMAIN-ERROR",
+      "message": "Amul White Butter stock is not available, Stock Unavailable, Oi-11005 Amul White Butter: Oops is no longer available, please remove the item from the cart to place the order"
+    },
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.bitsila.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-08-11T13:19:14.353Z",
+      "message_id": "ecea58ba-1863-471c-a812-f8894878301a",
+      "core_version": "1.1.0",
+      "transaction_id": "a1c5fd5f-5803-4801-94f0-be2db6991567"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "11131",
+            "fulfillment_id": "FPA:699:::88276"
+          },
+          {
+            "id": "10913",
+            "fulfillment_id": "FPA:699:::88276"
+          },
+          {
+            "id": "11005",
+            "fulfillment_id": "FPA:699:::88276"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "1950.3",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "11131",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 11,
+                "price": {
+                  "value": "100.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "1100.0",
+                "currency": "INR"
+              },
+              "title": "Amul Elaichi Srikhand",
+              "@ondc/org/item_id": "11131",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 11
+              }
+            },
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "10913",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 12,
+                "price": {
+                  "value": "70.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "840.0",
+                "currency": "INR"
+              },
+              "title": "Amul Gold Homogenised Standardised Milk",
+              "@ondc/org/item_id": "10913",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 12
+              }
+            },
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "11005",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 0.0,
+                "price": {
+                  "value": "200.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "0"
+                  }
+                }
+              },
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Amul White Butter",
+              "@ondc/org/item_id": "11005",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 0
+              }
+            },
+            {
+              "price": {
+                "value": "10.3",
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:::88276",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "provider": {
+          "id": "1016:699"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:::88276",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            },
+            "tracking": true,
+            "@ondc/org/TAT": "PT3H",
+            "@ondc/org/category": "Immediate Delivery",
+            "@ondc/org/provider_name": "Bitsila"
+          }
+        ],
+        "provider_location": {
+          "id": "L:1016:699"
+        }
+      }
+    }
+  },

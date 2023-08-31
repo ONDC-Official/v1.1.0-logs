@@ -1,0 +1,56 @@
+{
+  "context": {
+    "action": "update",
+    "transaction_id": "d4d11252-f352-4307-afd5-816536ff8ec8",
+    "message_id": "356391c3-5ecd-4ace-a214-d348a164a5a3",
+    "city": "std:080",
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "core_version": "1.1.0",
+    "timestamp": "2023-07-20T07:09:57.616Z",
+    "bap_id": "api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay",
+    "bap_uri": "https://api.test.esamudaay.com/ondc/sdk/bap/logistics/esamudaay/",
+    "bpp_id": "ondc-preprod.loadshare.net",
+    "bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "provider": {
+        "id": "loadshare@ondc-preprod.loadshare.net"
+      },
+      "fulfillments": [
+        {
+          "id": "lsn_prepaid",
+          "type": "Prepaid",
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "start": {
+            "instructions": {
+              "short_desc": "5681",
+              "long_desc": "QR code will be attached to package",
+              "additional_desc": {
+                "content_type": "White building",
+                "url": "https://www.google.com/maps/"
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "nextday",
+          "category_id": "Next Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "id": "4f3aad49-698c-4d8b-9a97-053a0a2dbc85",
+      "state": "Created",
+      "updated_at": "2023-07-20T07:09:57.616Z"
+    }
+  }
+}

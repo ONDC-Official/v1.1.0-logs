@@ -1,123 +1,153 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_select",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "transaction_id": "847c8168-9c01-49a7-8b6e-0a5a2a54e80b",
-      "message_id": "c91d7d67-a54a-40a3-b183-d9b8db7d7952",
-      "timestamp": "2023-05-30T06:42:41.212Z",
-      "key": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "93a6c320-6bc6-48f4-a026-aef97a7a187f",
+    "message_id": "457e7ea3-b29a-4105-a8ad-ecbfaf7e45a9",
+    "timestamp": "2023-07-17T16:34:26.616Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+      },
+      "items": [
+        {
+          "id": "22222222-616b-5599-87e2-6cb80782d953",
+          "fulfillment_id": "01cecebf-1af4-5a08-bbb4-bf41b1a898a3"
         },
-        "items": [
-          {
-            "fulfillment_id": "589dc029-5db9-5b50-b2c9-251e9cfabb7e",
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-            "@ondc/org/returnable": false,
-            "@ondc/org/cancellable": true
-          },
-          {
-            "fulfillment_id": "589dc029-5db9-5b50-b2c9-251e9cfabb7e",
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-            "@ondc/org/returnable": false,
-            "@ondc/org/cancellable": true
-          }
-        ],
-        "fulfillments": [
-          {
-            "id": "589dc029-5db9-5b50-b2c9-251e9cfabb7e",
-            "@ondc/org/provider_name": "Snapbizz Test store",
-            "tracking": false,
-            "@ondc/org/category": "Immediate Delivery",
-            "@ondc/org/TAT": "PT2H",
-            "type": "Delivery",
-            "state": {
-              "descriptor": {
-                "code": "Serviceable"
-              }
-            },
-            "end": {
-              "location": {
-                "gps": "12.9765944,77.5992708",
-                "address": {
-                  "area_code": "560001"
-                }
-              }
-            }
-          }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "280.00"
-          },
-          "ttl": "PT10M",
-          "breakup": [
-            {
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "snapbizz neo",
-              "price": {
-                "currency": "INR",
-                "value": "140.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                },
-                "quantity": {
-                  "available": {
-                    "count": "2"
-                  },
-                  "maximum": {
-                    "count": "2"
-                  }
-                }
-              }
-            },
-            {
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "snapbizz turbo",
-              "price": {
-                "currency": "INR",
-                "value": "0.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                },
-                "quantity": {
-                  "available": {
-                    "count": "0"
-                  },
-                  "maximum": {
-                    "count": "0"
-                  }
-                }
-              }
-            }
-          ]
+        {
+          "id": "11111111-616b-5599-87e2-6cb80782d953",
+          "fulfillment_id": "01cecebf-1af4-5a08-bbb4-bf41b1a898a3"
+        },
+        {
+          "id": "33333333-616b-5599-87e2-6cb80782d953",
+          "fulfillment_id": "01cecebf-1af4-5a08-bbb4-bf41b1a898a3"
         }
+      ],
+      "fulfillments": [
+        {
+          "id": "01cecebf-1af4-5a08-bbb4-bf41b1a898a3",
+          "type": "Delivery",
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "P2D",
+          "@ondc/org/provider_name": "SnapBizz ONDC",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "6588.00"
+        },
+        "ttl": "P1D",
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "value": "5990",
+                "currency": "INR"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": "10"
+                },
+                "available": {
+                  "count": "10"
+                }
+              }
+            },
+            "price": {
+              "value": "5990.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Brilrider AF Balance Bike",
+            "@ondc/org/item_id": "22222222-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "item": {
+              "price": {
+                "value": "299",
+                "currency": "INR"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": "10"
+                },
+                "available": {
+                  "count": "10"
+                }
+              }
+            },
+            "price": {
+              "value": "598.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Bril Liquid Detergent 1 Litre - Buy One Get One",
+            "@ondc/org/item_id": "11111111-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            }
+          },
+          {
+            "item": {
+              "price": {
+                "value": "990",
+                "currency": "INR"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": "0"
+                },
+                "available": {
+                  "count": "0"
+                }
+              }
+            },
+            "price": {
+              "value": "0.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Brilrider Helmet",
+            "@ondc/org/item_id": "33333333-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 0
+            }
+          },
+          {
+            "price": {
+              "value": "0.0",
+              "currency": "INR"
+            },
+            "title": "Delivery charges",
+            "@ondc/org/item_id": "01cecebf-1af4-5a08-bbb4-bf41b1a898a3",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
       }
     }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "40002",
+    "message": "Item quantity unavailable"
   }
+}

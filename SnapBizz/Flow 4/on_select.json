@@ -1,123 +1,123 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_select",
-      "core_version": "1.1.0",
-      "bap_id": "jiomart-buyer.ondcz5.de",
-      "bap_uri": "https://jiomart-buyer.ondcz5.de/protocol/v1",
-      "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "transaction_id": "5792a67d-76db-4ed1-9222-a69b52ae74ae",
-      "message_id": "c2dcaf28-6944-4062-b3fb-c34a36f6d315",
-      "timestamp": "2023-05-30T05:58:32.129Z",
-      "key": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "3a2279ad-8a8c-4db5-b95e-dfc616b68e11",
+    "message_id": "83d4498c-320b-4d83-ab68-9bda18905a65",
+    "timestamp": "2023-07-17T18:06:22.644Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+      },
+      "items": [
+        {
+          "id": "22222222-616b-5599-87e2-6cb80782d953",
+          "fulfillment_id": "871c634f-f1ff-56ad-b23a-f9a0f7b1c9d2"
         },
-        "items": [
-          {
-            "fulfillment_id": "776f457b-0041-533e-99af-3d056bdc8727",
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-            "@ondc/org/returnable": false,
-            "@ondc/org/cancellable": true
-          },
-          {
-            "fulfillment_id": "776f457b-0041-533e-99af-3d056bdc8727",
-            "id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-            "@ondc/org/returnable": false,
-            "@ondc/org/cancellable": true
-          }
-        ],
-        "fulfillments": [
-          {
-            "id": "776f457b-0041-533e-99af-3d056bdc8727",
-            "@ondc/org/provider_name": "Snapbizz Test store",
-            "tracking": false,
-            "@ondc/org/category": "Immediate Delivery",
-            "@ondc/org/TAT": "PT2H",
-            "type": "Delivery",
-            "state": {
-              "descriptor": {
-                "code": "Serviceable"
-              }
-            },
-            "end": {
-              "location": {
-                "gps": "12.9765944,77.5992708",
-                "address": {
-                  "area_code": "560001"
-                }
-              }
-            }
-          }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "280.00"
-          },
-          "ttl": "PT10M",
-          "breakup": [
-            {
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580e",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "snapbizz neo",
-              "price": {
-                "currency": "INR",
-                "value": "140.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                },
-                "quantity": {
-                  "available": {
-                    "count": "2"
-                  },
-                  "maximum": {
-                    "count": "2"
-                  }
-                }
-              }
-            },
-            {
-              "@ondc/org/title_type": "item",
-              "@ondc/org/item_id": "bc64b706-bf1a-5050-bef5-b5fcac37580f",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "snapbizz turbo",
-              "price": {
-                "currency": "INR",
-                "value": "140.00"
-              },
-              "item": {
-                "price": {
-                  "currency": "INR",
-                  "value": "70"
-                },
-                "quantity": {
-                  "available": {
-                    "count": "2"
-                  },
-                  "maximum": {
-                    "count": "2"
-                  }
-                }
-              }
-            }
-          ]
+        {
+          "id": "11111111-616b-5599-87e2-6cb80782d953",
+          "fulfillment_id": "871c634f-f1ff-56ad-b23a-f9a0f7b1c9d2"
         }
+      ],
+      "fulfillments": [
+        {
+          "id": "871c634f-f1ff-56ad-b23a-f9a0f7b1c9d2",
+          "type": "Delivery",
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "P2D",
+          "@ondc/org/provider_name": "SnapBizz ONDC",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "8980.00"
+        },
+        "ttl": "P1D",
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "value": "5990",
+                "currency": "INR"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": "10"
+                },
+                "available": {
+                  "count": "10"
+                }
+              }
+            },
+            "price": {
+              "value": "5990.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Brilrider AF Balance Bike",
+            "@ondc/org/item_id": "22222222-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            }
+          },
+          {
+            "item": {
+              "price": {
+                "value": "299",
+                "currency": "INR"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": "10"
+                },
+                "available": {
+                  "count": "10"
+                }
+              }
+            },
+            "price": {
+              "value": "2990.00",
+              "currency": "INR"
+            },
+            "title": "SnapBizz - Bril Liquid Detergent 1 Litre - Buy One Get One",
+            "@ondc/org/item_id": "11111111-616b-5599-87e2-6cb80782d953",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 10
+            }
+          },
+          {
+            "price": {
+              "value": "0.0",
+              "currency": "INR"
+            },
+            "title": "Delivery charges",
+            "@ondc/org/item_id": "871c634f-f1ff-56ad-b23a-f9a0f7b1c9d2",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
       }
     }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "40002",
+    "message": "Item quantity unavailable"
   }
+}

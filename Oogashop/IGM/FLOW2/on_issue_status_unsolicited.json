@@ -1,0 +1,104 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_issue_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyerapp.com",
+        "bap_uri": "https://buyerapp.com/ondc",
+        "bpp_id": "sellerapp.com",
+        "bpp_uri": "https://sellerapp.com/ondc",
+        "transaction_id": "transaction_id_2",
+        "message_id": "message_id_issue_3",
+        "timestamp": "2023-07-31T16:17:13.876Z"
+    },
+    "message": {
+        "issue": {
+            "id": "56789fg67i",
+            "issue_actions": {
+                "respondant_actions": [
+                    {
+                        "respondant_action": "PROCESSING",
+                        "short_desc": "Complaint is being processed.",
+                        "updated_at": "2023-07-31T16:23:32.285Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "OOGASHOP::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "+918802332116",
+                                "email": "oogashop@paralleldots.com"
+                            },
+                            "person": {
+                                "name": "Nikhil Aggrawal"
+                            }
+                        },
+                        "cascaded_level": 1
+                    },
+                    {
+                        "respondant_action": "RESOLVED",
+                        "short_desc": "Action triggered",
+                        "updated_at": "2023-07-31T16:17:13.876Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "OOGASHOP::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "+919090909090",
+                                "email": "oogashop@paralleldots.com"
+                            },
+                            "person": {
+                                "name": "SK"
+                            }
+                        },
+                        "cascaded_level": 1
+                    }
+                ]
+            },
+            "created_at": "2023-07-31T16:13:32.285Z",
+            "updated_at": "2023-07-31T16:17:13.876Z",
+            "resolution": {
+                "short_desc": "Action triggered",
+                "long_desc": "We are returning that item.",
+                "action_triggered": "RETURN",
+                "resolution_action": "RESOLVE"
+            },
+            "resolution_provider": {
+                "respondant_info": {
+                    "type": "TRANSACTION-COUNTERPARTY-NP",
+                    "organaization": {
+                        "org": {
+                            "name": "OOGASHOP::nic2004:52110"
+                        },
+                        "contact": {
+                            "phone": "+919090909090",
+                            "email": "oogashop@paralleldots.com"
+                        },
+                        "person": {
+                            "name": "SK"
+                        }
+                    },
+                    "resolution_support": {
+                        "contact": {
+                            "phone": "+919090909090",
+                            "email": "oogashop@paralleldots.com"
+                        },
+                        "gros": [
+                            {
+                                "person": {
+                                    "name": "Nikhil Aggrawal"
+                                },
+                                "contact": {
+                                    "phone": "+918802332116",
+                                    "email": "oogashop@paralleldots.com"
+                                },
+                                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

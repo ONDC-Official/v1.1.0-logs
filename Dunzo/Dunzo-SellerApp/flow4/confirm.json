@@ -1,0 +1,188 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "transaction_id": "3f710e6c-3572-4d5c-ac8b-2fe8756af2e4",
+    "message_id": "fb6c7017-fe21-49c7-b001-75dc36e6fc99",
+    "timestamp": "2023-07-31T06:43:10.390Z",
+    "ttl": "PT30S",
+    "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com/seller-app",
+    "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/seller-app/"
+  },
+  "message": {
+    "order": {
+      "id": "2023-07-31-287778",
+      "state": "Created",
+      "provider": {
+        "id": "85a788de-fd19-9039-a0ad-29774e63069b",
+        "locations": [
+          {
+            "id": "85a788de-fd19-9039-a0ad-29774e63069b"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "5bc87ae20d298a283c297895",
+          "location_id": "",
+          "fulfillment_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+          "quantity": {
+            "count": 3
+          },
+          "tags": null
+        },
+        {
+          "id": "5bc87ae20d298a283c2981c9",
+          "location_id": "",
+          "fulfillment_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+          "quantity": {
+            "count": 2
+          },
+          "tags": null
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+          "type": "Delivery",
+          "provider_id": "",
+          "tracking": false,
+          "end": {
+            "location": {
+              "gps": "12.9814010000001, 77.6409810000001",
+              "address": {
+                "name": "Prajwal Gowda",
+                "building": "Mi show room",
+                "locality": "#284, Hothur Square, 1st Floor, 100 Feet Rd",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560038"
+              }
+            },
+            "contact": {
+              "phone": "9113915662"
+            },
+            "person": {
+              "name": "Prajwal Gowda",
+              "phone": ""
+            }
+          }
+        }
+      ],
+      "payment": {
+        "params": {
+          "currency": "INR",
+          "transaction_id": "3f710e6c-3572-4d5c-ac8b-2fe8756af2e4",
+          "amount": "946"
+        },
+        "status": "PAID",
+        "collected_by": "BAP",
+        "type": "ON-ORDER",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "beneficiary_name": "Dunzo Digital Private Limited",
+            "upi_address": "",
+            "settlement_bank_account_no": "026291800001191",
+            "settlement_ifsc_code": "YESB0000262",
+            "bank_name": "ICICI Bank",
+            "branch_name": "Bangalore - Indira Nagar"
+          }
+        ]
+      },
+      "tags": null,
+      "billing": {
+        "name": "Prajwal Gowda",
+        "address": {
+          "name": "Prajwal Gowda",
+          "building": "Mi show room",
+          "locality": "#284, Hothur Square, 1st Floor, 100 Feet Rd",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560038"
+        },
+        "email": "prajwal.gowda@ext.dunzo.in",
+        "phone": "9113915662",
+        "created_at": "2023-07-31T06:41:34.357Z",
+        "updated_at": "2023-07-31T06:41:34.357Z"
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "946"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "5bc87ae20d298a283c297895",
+            "title": "India Gate Classic Basmati Rice",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "648"
+            },
+            "@ondc/org/item_quantity": {
+              "count": 3
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "216"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "5bc87ae20d298a283c2981c9",
+            "title": "Pringles Sour Cream And Onion Crisp Chips",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "198"
+            },
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "99"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "100.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F-85a788de-fd19-9039-a0ad-29774e63069b",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          }
+        ],
+        "ttl": "PT15M"
+      },
+      "created_at": "2023-07-31T06:43:10.390Z",
+      "updated_at": "2023-07-31T06:43:10.390Z"
+    },
+    "order_id": ""
+  }
+}

@@ -1,0 +1,99 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:040",
+        "action": "issue",
+        "core_version": "1.0.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://shathabdhi-organics.mytra.money/api/method/ondc/",
+        "transaction_id": "48cdb035-6590-4c80-bbc1-3a069bf2dc79",
+        "message_id": "d8de2a2d-1a40-478a-a619-32cd04a70e22",
+        "timestamp": "2023-08-09T12:31:58.512Z",
+        "bpp_id": "shathabdhi-organics.mytra.money",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "issue": {
+            "id": "dd1225cb-eb96-42d3-ab30-6c3eb5917560",
+            "category": "FULFILLMENT",
+            "sub_category": "FLM01",
+            "complainant_info": {
+                "person": {
+                    "name": "Juhi Agarwal"
+                },
+                "contact": {
+                    "phone": "9883088662",
+                    "email": "cajuhiagarwal@gmail.com"
+                }
+            },
+            "order_details": {
+                "id": "2023-08-09-957115",
+                "state": "Created",
+                "items": [
+                    {
+                        "id": "STO-ITEM-2023-00014-1 KG:Manikonda - S",
+                        "quantity": 1
+                    },
+                    {
+                        "id": "STO-ITEM-2023-00015-1 KG:Manikonda - S",
+                        "quantity": 1
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "ONDC-REQ-73099",
+                        "state": "Pending"
+                    }
+                ],
+                "provider_id": "shathabdhi-organics.mytra.money"
+            },
+            "description": {
+                "short_desc": "Wrong delivery address",
+                "long_desc": "Wrong Delivery address",
+                "additional_desc": {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images": []
+            },
+            "source": {
+                "network_participant_id": "buyer-app-preprod.ondc.org",
+                "type": "CONSUMER"
+            },
+            "expected_response_time": {
+                "duration": "PT1H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_type": "ISSUE",
+            "issue_actions": {
+                "complainant_actions": [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-08-09T12:31:58.512Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "6239083807",
+                                "email": "Rishabhnand.singh@ondc.org"
+                            },
+                            "person": {
+                                "name": "Rishabhnand Singh"
+                            }
+                        }
+                    }
+                ],
+                "respondent_actions": []
+            },
+            "created_at": "2023-08-09T12:31:54.360Z",
+            "updated_at": "2023-08-09T12:31:54.360Z"
+        }
+    }
+}

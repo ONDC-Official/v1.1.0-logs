@@ -1,0 +1,119 @@
+{
+    "context": {
+        "action": "on_select",
+        "timestamp": "2023-07-24T12:23:49.415Z",
+        "domain": "nic2004:52110",
+        "bpp_id": "dev-ondc.evitalrx.in",
+        "bpp_uri": "https://dev-ondc.evitalrx.in/",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "transaction_id": "72407d05-652f-469f-96ab-b4dbd5f475b1",
+        "message_id": "c9b5028b-6925-46fa-bef6-259c2ac50dfe",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "key": "gZFGTih00MIUZbL8u0y+Zaxd2SJRVAyuTTX6s6qD/vY="
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "YT3/3PEAnmEolCPrStruew=="
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "VVcUezjd5avzsdKnK7pJAQ=="
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "UDls67/FRA0bmeWwUyR+1g=="
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Manav Medical GJ",
+                    "tracking": false,
+                    "@ondc/org/category": "Same Day Delivery",
+                    "@ondc/org/TAT": "P1D",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "498.25"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "VVcUezjd5avzsdKnK7pJAQ==",
+                        "@ondc/org/item_quantity": {
+                            "count": 5
+                        },
+                        "title": "Mamypoko Standard Pants Large",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "303.25"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "5"
+                                },
+                                "maximum": {
+                                    "count": "5"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "60.65"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "UDls67/FRA0bmeWwUyR+1g==",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "MamyPoko Standard Pants L",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "195"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "319"
+                                },
+                                "maximum": {
+                                    "count": "319"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "195"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}
