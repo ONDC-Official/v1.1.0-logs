@@ -3,43 +3,85 @@
         "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
-        "action": "on_status",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "ushopmicro-stage.hulcd.com",
         "bpp_uri": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833",
-        "transaction_id": "3a75ce65-6761-44b1-82b3-bb3ea63c5576",
-        "message_id": "81b4daf3-17c7-38cf-86bf-c55667f6e3dd",
-        "timestamp": "2023-08-31T08:23:25.117Z",
+        "transaction_id": "d588266a-2f3f-46ba-916d-6ed3efb5561f",
+        "message_id": "f2ba10c3-b6f5-4ee4-9161-0ce80836f0cc",
+        "timestamp": "2023-08-31T04:43:08.748Z",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-08-31-465514",
+            "id": "2023-08-31-321642",
             "state": "Completed",
             "documents": [{
-                    "url": "https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/IMAG8397763542070.pdf",
+                    "url": "https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/IMAG15f2d61661c4.pdf",
                     "label": "Invoice"
                 }
             ],
-            "billing": {
-                "name": "Subodh Kmr2",
-                "address": {
-                    "name": "Subodh Kmr2",
-                    "building": "ITPL",
-                    "locality": "ITPL Main Road",
-                    "city": "Bengaluru",
-                    "state": "Karnataka",
-                    "country": "IND",
-                    "area_code": "560066"
-                },
-                "email": "Uscansubodh@gmail.com",
-                "phone": "9986697491",
-                "created_at": "2023-08-31T08:22:47.325Z",
-                "updated_at": "2023-08-31T08:22:47.325Z"
-            },
             "fulfillments": [{
+                    "id": "DE11001860354-QC",
+                    "type": "Reverse QC",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "193",
+                            "descriptor": {
+                                "name": "KAPOOR STORE-D-D",
+                                "images": ["https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/grocery_banner.png"]
+                            },
+                            "gps": "12.9657382,77.7254658",
+                            "rateable": false
+                        },
+                       "time": {
+                            "timestamp": "2023-08-31T04:42:13.764Z",
+                            "range": {
+                                "start": "2023-08-31T04:42:13.764Z",
+                                "end": "2023-08-31T06:42:13.765Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8431460493",
+                            "email": "kapoor7845@gmail.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9949590000001, 77.6989090000001",
+                            "address": {
+                                "name": "Subodh Kumar",
+                                "building": "Bren Avalon",
+                                "locality": "chinnapanahalli Main Road",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560048"
+                            },
+                            "rateable": false
+                        },
+                        "time": {
+                            "timestamp": "2023-08-31T04:43:08.748Z",
+                            "range": {
+                                "start": "2023-08-31T14:48:19.538Z",
+                                "end": "2023-08-31T14:48:19.538Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9986697491",
+                            "email": "subodh1@gmail.com"
+                        }
+                    },
+                    "@ondc/org/provider_name": "KAPOOR STORE-D-D"
+                }, {
                     "id": "DE11001860354",
                     "type": "Delivery",
                     "state": {
@@ -59,10 +101,10 @@
                             "rateable": false
                         },
                         "time": {
-                            "timestamp": "2023-08-31T08:22:57.093Z",
+                            "timestamp": "2023-08-31T04:42:13.764Z",
                             "range": {
-                                "start": "2023-08-31T08:22:57.093Z",
-                                "end": "2023-08-31T10:22:57.093Z"
+                                "start": "2023-08-31T04:42:13.764Z",
+                                "end": "2023-08-31T06:42:13.765Z"
                             }
                         },
                         "contact": {
@@ -72,28 +114,28 @@
                     },
                     "end": {
                         "location": {
-                            "gps": "12.9872810000001, 77.7321000000001",
+                            "gps": "12.9949590000001, 77.6989090000001",
                             "address": {
-                                "name": "Subodh Kmr2",
-                                "building": "ITPL",
-                                "locality": "ITPL Main Road",
+                                "name": "Subodh Kumar",
+                                "building": "Bren Avalon",
+                                "locality": "chinnapanahalli Main Road",
                                 "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "India",
-                                "area_code": "560066"
+                                "area_code": "560048"
                             },
                             "rateable": false
                         },
                         "time": {
-                            "timestamp": "2023-08-31T08:23:25.117Z",
+                            "timestamp": "2023-08-31T04:43:08.748Z",
                             "range": {
-                                "start": "2023-08-31T08:22:57.093Z",
-                                "end": "2023-08-31T13:22:57.093Z"
+                                "start": "2023-08-31T04:42:13.764Z",
+                                "end": "2023-08-31T04:43:08.748Z"
                             }
                         },
                         "contact": {
                             "phone": "9986697491",
-                            "email": "Uscansubodh@gmail.com"
+                            "email": "subodh1@gmail.com"
                         }
                     },
                     "@ondc/org/provider_name": "KAPOOR STORE-D-D"
@@ -101,7 +143,7 @@
             ],
             "payment": {
                 "params": {
-                    "transaction_id": "3a75ce65-6761-44b1-82b3-bb3ea63c5576",
+                    "transaction_id": "d588266a-2f3f-46ba-916d-6ed3efb5561f",
                     "amount": "1086.46",
                     "currency": "INR"
                 },
@@ -122,35 +164,9 @@
                     }
                 ]
             },
-            "created_at": "2023-08-31T08:22:57.020Z",
-            "updated_at": "2023-08-31T08:23:25.117Z",
-            "provider": {
-                "id": "DE11001860354",
-                "rating": 5,
-                "locations": [{
-                        "id": "193",
-                        "rateable": false
-                    }
-                ],
-                "rateable": false,
-                "@ondc/org/provider_name": "KAPOOR STORE-D-D"
-            },
+            "created_at": "2023-08-31T04:42:13.660Z",
+            "updated_at": "2023-08-31T04:43:08.748Z",
             "items": [{
-                    "id": "49355",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "DE11001860354",
-                    "rating": 5,
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }, {
                     "id": "49375",
                     "quantity": {
                         "count": 1
@@ -165,40 +181,32 @@
                     "@ondc/org/seller_pickup_return": false,
                     "@ondc/org/cancellable": false,
                     "@ondc/org/available_on_cod": false
+                }, {
+                    "id": "49355",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "DE11001860354-QC",
+                    "rating": 5,
+                    "rateable": false,
+                    "matched": false,
+                    "related": false,
+                    "recommended": false,
+                    "tags": {
+                        "status": "Return_Delivered"
+                    },
+                    "@ondc/org/returnable": false,
+                    "@ondc/org/seller_pickup_return": false,
+                    "@ondc/org/cancellable": false,
+                    "@ondc/org/available_on_cod": false
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1086.46"
+                    "value": "587.46"
                 },
                 "breakup": [{
-                        "title": "Chicco Baby Learn Together Oral Care Set - Green, 2 pcs",
-                        "price": {
-                            "currency": "INR",
-                            "value": "499.0"
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "499.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
-                        },
-                        "@ondc/org/item_id": "49355",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        },
-                        "@ondc/org/title_type": "item"
-                    }, {
                         "title": "Chicco Baby Moments - Shampoo, Calendula & Hibiscus, For Tangle Free Nourished Hair & Scalp, 500 ml",
                         "price": {
                             "currency": "INR",
@@ -225,6 +233,32 @@
                         },
                         "@ondc/org/title_type": "item"
                     }, {
+                        "title": "Chicco Baby Learn Together Oral Care Set - Green, 2 pcs",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "499.00"
+                            },
+                            "rating": 5,
+                            "rateable": false,
+                            "matched": false,
+                            "related": false,
+                            "recommended": false,
+                            "@ondc/org/returnable": false,
+                            "@ondc/org/seller_pickup_return": false,
+                            "@ondc/org/cancellable": false,
+                            "@ondc/org/available_on_cod": false
+                        },
+                        "@ondc/org/item_id": "49355",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
                         "title": "Convenience Fee",
                         "price": {
                             "currency": "INR",
@@ -243,8 +277,7 @@
                     }
                 ],
                 "ttl": "P1D"
-            },
-            "tags": {}
+            }
         }
     }
 }
