@@ -1,0 +1,91 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "STD:080",
+        "action": "update",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bpp_id": "preprod-bpp.iway.digiit.io",
+        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+        "transaction_id": "9d21505f-650c-4283-a26b-d156a786feb0",
+        "message_id": "861c8037-a682-46b5-89c6-4e0667f4a2d9",
+        "timestamp": "2023-09-05T07:31:17.770Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "update_target": "fulfillment",
+        "order": {
+            "id": "0616cbcd-fa6c-4bdc-980d-2144ca7fbd27",
+            "state": "Accepted",
+            "items": [
+                {
+                    "id": "19",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "start": {
+                        "instructions": {
+                            "short_desc": "Deliver at door-step",
+                            "long_desc": "    61",
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://preprodlogistics.ooga.shop/ondc-site-verification.html"
+                            }
+                        }
+                    },
+                    "end": {
+                        "instructions": {
+                            "short_desc": "Deliver at door-step",
+                            "long_desc": "      61",
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://preprodlogistics.ooga.shop/ondc-site-verification.html"
+                            }
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    }
+                }
+            ],
+            "updated_at": "2023-09-05T07:31:04.672Z",
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "F&B",
+                        "quantity": {
+                            "count": 2,
+                            "measure": {
+                                "value": "2",
+                                "unit": "UNITS"
+                            }
+                        },
+                        "descriptor": {
+                            "name": "Mustard Oil"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "120"
+                        }
+                    }
+                ],
+                "order": {
+                    "id": "145289",
+                    "weight": {
+                        "value": 3,
+                        "unit": "Kilogram"
+                    }
+                }
+            }
+        }
+    }
+}
