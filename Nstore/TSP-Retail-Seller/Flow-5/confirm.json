@@ -1,0 +1,148 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "confirm",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "b-ondctsp.nlincs.in",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://b-ondctsp.nlincs.in/bpp",
+        "country": "IND",
+        "timestamp": "2023-07-28T03:42:30.580Z",
+        "message_id": "f53be9a6-1fa7-4fd1-82d6-022c50a1d243",
+        "core_version": "1.1.0",
+        "transaction_id": "188c8eb1-56d9-48a7-98b4-8adf33b191f9"
+    },
+    "message": {
+        "order": {
+            "id": "2023-07-28-258446",
+            "items": [
+                {
+                    "id": "102",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "21165_560005"
+                }
+            ],
+            "quote": {
+                "ttl": "PT30M",
+                "price": {
+                    "value": "2020.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "price": {
+                                "value": "2000.00",
+                                "currency": "INR"
+                            }
+                        },
+                        "price": {
+                            "value": "2000.00",
+                            "currency": "INR"
+                        },
+                        "title": "Preethi Gas Stove",
+                        "@ondc/org/item_id": "102",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "20.00",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "21165_560005",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "Created",
+            "billing": {
+                "name": "Sathish Kumar A",
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "Sathish Kumar A",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "Peenya Industrial Area",
+                    "locality": "Post Box No. 5857, 23/24, II Phase",
+                    "area_code": "560034"
+                },
+                "created_at": "2023-07-28T03:42:27.126Z",
+                "updated_at": "2023-07-28T03:42:27.126Z"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "type": "ON-ORDER",
+                "params": {
+                    "amount": "2020",
+                    "currency": "INR",
+                    "transaction_id": "188c8eb1-56d9-48a7-98b4-8adf33b191f9"
+                },
+                "status": "PAID",
+                "tl_method": "http/get",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "10112822953"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "provider": {
+                "id": "21165",
+                "locations": [
+                    {
+                        "id": "21165"
+                    }
+                ]
+            },
+            "created_at": "2023-07-28T03:42:30.580Z",
+            "updated_at": "2023-07-28T03:42:30.580Z",
+            "fulfillments": [
+                {
+                    "id": "21165_560005",
+                    "end": {
+                        "person": {
+                            "name": "Sathish Kumar A"
+                        },
+                        "contact": {
+                            "email": "sathisha@nstore.in",
+                            "phone": "9629295619"
+                        },
+                        "location": {
+                            "gps": "12.927112, 77.626652",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "Sathish Kumar A",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "Peenya Industrial Area",
+                                "locality": "Post Box No. 5857, 23/24, II Phase",
+                                "area_code": "560034"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": false
+                }
+            ]
+        }
+    }
+}

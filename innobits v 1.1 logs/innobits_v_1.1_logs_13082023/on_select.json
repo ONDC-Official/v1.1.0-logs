@@ -1,0 +1,142 @@
+  "on_select": {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.bitsila.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-08-13T05:46:37.712Z",
+      "message_id": "f0b68fa9-54f7-4a34-84db-134e998e9417",
+      "core_version": "1.1.0",
+      "transaction_id": "a1e02d1b-ffe4-4590-8b7c-5c7e0e524779"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "7715",
+            "fulfillment_id": "FPA:699:sameday:258:88294"
+          },
+          {
+            "id": "12932",
+            "fulfillment_id": "FPA:699:sameday:258:88294"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "209.35",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "7715",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 3,
+                "price": {
+                  "value": "15.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "45.0",
+                "currency": "INR"
+              },
+              "title": "Britannia Yummy Pineapple Cakes",
+              "@ondc/org/item_id": "7715",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 3
+              }
+            },
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "12932",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 3,
+                "price": {
+                  "value": "5.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "15.0",
+                "currency": "INR"
+              },
+              "title": "Britannia Cakes Yummy Fruit",
+              "@ondc/org/item_id": "12932",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 3
+              }
+            },
+            {
+              "price": {
+                "value": "149.35",
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:sameday:258:88294",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "provider": {
+          "id": "1016:699"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:sameday:258:88294",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            },
+            "tracking": true,
+            "@ondc/org/TAT": "PT3H",
+            "@ondc/org/category": "Same Day Delivery",
+            "@ondc/org/provider_name": "Bitsila"
+          }
+        ],
+        "provider_location": {
+          "id": "L:1016:699"
+        }
+      }
+    }
+  },

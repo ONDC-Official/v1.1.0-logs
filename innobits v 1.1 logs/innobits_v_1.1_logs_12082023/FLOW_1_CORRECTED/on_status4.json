@@ -1,0 +1,220 @@
+{
+    "context": {
+        "ttl": "PT30S",
+        "city": "std:080",
+        "action": "on_status",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bpp_id": "biz.test.bitsila.com",
+        "domain": "nic2004:52110",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+        "country": "IND",
+        "timestamp": "2023-08-12T10:41:58.908Z",
+        "message_id": "2f769797-fcf5-4297-b22e-c8dfcbc8d1ed",
+        "core_version": "1.1.0",
+        "transaction_id": "1a03aa68-81e0-4c27-81ca-0a1a88358cf2"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-12-145845",
+            "items": [
+                {
+                    "id": "7715",
+                    "quantity": {
+                        "count": 3
+                    },
+                    "fulfillment_id": "FPA:699:sameday:258:88292"
+                },
+                {
+                    "id": "12932",
+                    "quantity": {
+                        "count": 3
+                    },
+                    "fulfillment_id": "FPA:699:sameday:258:88292"
+                }
+            ],
+            "quote": {
+                "ttl": "PT1H",
+                "price": {
+                    "value": "209.35",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "0.0",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "7715",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "45.0",
+                            "currency": "INR"
+                        },
+                        "title": "Britannia Yummy Pineapple Cakes",
+                        "@ondc/org/item_id": "7715",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "0.0",
+                            "currency": "INR"
+                        },
+                        "title": "Tax",
+                        "@ondc/org/item_id": "12932",
+                        "@ondc/org/title_type": "tax"
+                    },
+                    {
+                        "price": {
+                            "value": "15.0",
+                            "currency": "INR"
+                        },
+                        "title": "Britannia Cakes Yummy Fruit",
+                        "@ondc/org/item_id": "12932",
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        }
+                    },
+                    {
+                        "price": {
+                            "value": "149.35",
+                            "currency": "INR"
+                        },
+                        "title": "Delivery charges",
+                        "@ondc/org/item_id": "FPA:699:sameday:258:88292",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ]
+            },
+            "state": "In-progress",
+            "billing": {
+                "name": "Darshan Hsr Layout",
+                "email": "darshan.s@bitsila.com",
+                "phone": "8151000066",
+                "address": {
+                    "city": "Bengaluru",
+                    "name": "Darshan Hsr Layout",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "building": "police station",
+                    "locality": "27th Main Rd, 1st Sector, HSR Layout",
+                    "area_code": "560102"
+                },
+                "created_at": "2023-08-12T10:25:27.880Z",
+                "updated_at": "2023-08-12T10:25:27.880Z"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "type": "ON-FULFILLMENT",
+                "params": {
+                    "amount": "209.35",
+                    "currency": "INR",
+                    "transaction_id": "1a03aa68-81e0-4c27-81ca-0a1a88358cf2"
+                },
+                "status": "NOT-PAID",
+                "tl_method": "http/get",
+                "collected_by": "BPP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "bank_name": "Axis Bank",
+                        "branch_name": "Kathriguppe",
+                        "settlement_type": "rtgs",
+                        "beneficiary_name": "Innobits Solutions Pvt Ltd Nodal Account",
+                        "settlement_phase": "sale-amount",
+                        "settlement_ifsc_code": "UTIB0003190",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "922020043291840"
+                    }
+                ],
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            },
+            "provider": {
+                "id": "1016:699",
+                "locations": [
+                    {
+                        "id": "L:1016:699"
+                    }
+                ]
+            },
+            "documents": [
+                {
+                    "url": "https://biz.test.bitsila.com/m/orders/q1M9847Smh/print?_tkn_=gqT6101ZUe",
+                    "label": "Invoice"
+                }
+            ],
+            "created_at": "2023-08-12T10:25:37.949Z",
+            "updated_at": "2023-08-12T10:38:46.447Z",
+            "fulfillments": [
+                {
+                    "id": "FPA:699:sameday:258:88292",
+                    "end": {
+                        "time": {
+                            "range": {
+                                "end": "2023-08-12T11:16:51.971Z",
+                                "start": "2023-08-12T10:55:51.971Z"
+                            }
+                        },
+                        "person": {
+                            "name": "Darshan Hsr Layout"
+                        },
+                        "contact": {
+                            "email": "darshan.s@bitsila.com",
+                            "phone": "8151000066"
+                        },
+                        "location": {
+                            "gps": "12.9140160000001, 77.6371740000001",
+                            "address": {
+                                "city": "Bengaluru",
+                                "name": "Darshan Hsr Layout",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "building": "police station",
+                                "locality": "27th Main Rd, 1st Sector, HSR Layout",
+                                "area_code": "560102"
+                            }
+                        }
+                    },
+                    "type": "Delivery",
+                    "agent": {
+                        "name": "Pradeep Internal",
+                        "phone": "8077564635"
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "end": "2023-08-12T10:41:51.965Z",
+                                "start": "2023-08-12T10:41:51.965Z"
+                            },
+                            "timestamp": "2023-08-12T10:41:52.000Z"
+                        },
+                        "contact": {
+                            "email": "",
+                            "phone": "8745784512"
+                        },
+                        "location": {
+                            "id": "L:1016:699",
+                            "gps": "12.9120511, 77.64828869999999",
+                            "descriptor": {
+                                "name": "DS super market - DS super market hsr layout"
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Out-for-delivery",
+                            "name": "Out-for-delivery"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

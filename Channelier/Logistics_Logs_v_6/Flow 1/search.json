@@ -1,0 +1,78 @@
+{
+    "context": {
+        "bap_id": "integrations-preprod.channelier.com",
+        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "transaction_id": "d99f165a-a602-4ebe-bc02-1ac3d2f53651",
+        "message_id": "6849e133-9c9b-4f5b-ab15-d858ecd6c88e",
+        "country": "IND",
+        "city": "std:020",
+        "timestamp": "2023-08-28T12:15:19.227Z",
+        "action": "search"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "id": "Standard Delivery"
+            },
+            "provider": {
+                "time": {
+                    "range": {
+                        "start": "0600",
+                        "end": "2200"
+                    },
+                    "days": "1,2,3,4,5,6,7",
+                    "schedule": {
+                        "holidays": []
+                    }
+                }
+            },
+            "fulfillment": {
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "gps": "18.513400, 73.833100",
+                        "address": {
+                            "area_code": "411004"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "18.551649, 73.881106",
+                        "address": {
+                            "area_code": "411006"
+                        }
+                    }
+                }
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "unit": "Gram",
+                    "value": 50
+                },
+                "dimensions": {
+                    "length": {
+                        "value": 5,
+                        "unit": "centimeter"
+                    },
+                    "breadth": {
+                        "value": 5,
+                        "unit": "centimeter"
+                    },
+                    "height": {
+                        "value": 12,
+                        "unit": "centimeter"
+                    }
+                },
+                "category": "Grocery",
+                "value": {
+                    "currency": "INR",
+                    "value": "299.00"
+                }
+            }
+        }
+    }
+}

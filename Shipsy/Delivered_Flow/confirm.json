@@ -1,0 +1,181 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+        "bpp_id": "ondc-tsp-demo.demoprojectxsandbox2.shipsy.io",
+        "bpp_uri": "https://ondc-tsp-demo.demoprojectxsandbox2.shipsy.io/api/ondc/customerportaldemodtdc/",
+        "transaction_id": "d9786fe1-1958-529e-8981-1d96346f0973",
+        "message_id": "3d788cde-8eea-5488-a60a-7ae1c0deaa3e",
+        "timestamp": "2023-08-09T11:26:06.522Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "38d3e89f-5b41-4763-8b03-344c88a33ab9",
+            "state": "Created",
+            "provider": {
+                "id": "Shipsy NPO ONDC"
+            },
+            "items": [
+                {
+                    "id": "B2C SMART EXPRESS",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "64.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "64.00",
+                            "currency": "INR"
+                        },
+                        "@ondc/org/item_id": "B2C SMART EXPRESS",
+                        "@ondc/org/title_type": "Delivery Charge"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "start": {
+                        "person": {
+                            "name": "Test"
+                        },
+                        "location": {
+                            "gps": "12.96774,77.588913",
+                            "address": {
+                                "name": "ONDC Test Seller Store",
+                                "building": "Kasturba Rd",
+                                "locality": "Kasturba Rd",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9999999999",
+                            "email": "test@test.com"
+                        }
+                    },
+                    "end": {
+                        "person": {
+                            "name": "sarthak"
+                        },
+                        "location": {
+                            "gps": "18.953447,72.8373750000001",
+                            "address": {
+                                "name": "sarthak",
+                                "building": "OPPOSITE JBC",
+                                "locality": "huda city centre, gurgaon",
+                                "city": "Mumbai",
+                                "state": "Maharashtra",
+                                "country": "IND",
+                                "area_code": "400003"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9650513330",
+                            "email": "sarthak@shipsy.in"
+                        },
+                        "instructions": {
+                            "name": "Status for drop",
+                            "long_desc": "Delivery Confirmation Code",
+                            "short_desc": "2684123"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "no"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "ONDC Test Seller Store",
+                "address": {
+                    "name": "ONDC Test Seller Store",
+                    "building": "Fort",
+                    "locality": "Fort",
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India",
+                    "area_code": "400001"
+                },
+                "tax_number": "22AAAAA0000A1Z5",
+                "phone": "9999999999",
+                "email": "test@gmail.com",
+                "created_at": "2023-08-09T11:26:00.401Z",
+                "updated_at": "2023-08-09T11:26:00.401Z"
+            },
+            "payment": {
+                "@ondc/org/collection_amount": "516.03",
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT",
+                "@ondc/org/settlement_details": [
+                    {
+                        "upi_address": "gft@oksbi",
+                        "settlement_type": "upi",
+                        "settlement_ifsc_code": "XXXXXXXXX",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "XXXXXXXXXX"
+                    }
+                ]
+            },
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "Grocery",
+                        "descriptor": {
+                            "name": "Aashirvaad Shudh Chakki Atta, 10kg Pack"
+                        },
+                        "quantity": {
+                            "count": 1,
+                            "measure": {
+                                "unit": "Kilogram",
+                                "value": 10
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "437.00"
+                        }
+                    }
+                ],
+                "provider": {
+                    "descriptor": {
+                        "name": "ONDC Test Seller Store"
+                    },
+                    "address": {
+                        "name": "ONDC Test Seller Store",
+                        "street": "Kasturba Rd",
+                        "locality": "Kasturba Rd",
+                        "city": "Bengaluru",
+                        "state": "Karnataka",
+                        "area_code": "560001"
+                    }
+                },
+                "order": {
+                    "id": "2023-08-09-558550",
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 10
+                    }
+                }
+            },
+            "created_at": "2023-08-09T11:26:06.522Z",
+            "updated_at": "2023-08-09T11:26:06.522Z"
+        }
+    }
+}
