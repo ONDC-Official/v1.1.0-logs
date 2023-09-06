@@ -9,20 +9,20 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "ushopmicro-stage.hulcd.com",
         "bpp_uri": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833",
-        "transaction_id": "db1f9931-fbaf-40b8-8ed0-e36104625ea1",
-        "message_id": "29fface4-8792-4b67-adf5-3d96102b21e1",
-        "timestamp": "2023-09-05T17:59:09.152Z"
+        "transaction_id": "b9de5127-b2b9-4ba3-bab7-466ddd7fd273",
+        "message_id": "03c6c4e7-20ad-4885-983b-81c49857c988",
+        "timestamp": "2023-09-05T22:23:06.936Z"
     },
     "message": {
         "order": {
-            "id": "2023-09-05-434871",
+            "id": "2023-09-05-697684",
             "state": "Completed",
             "fulfillments": [{
                     "id": "DE11001860354-QC",
                     "type": "Reverse QC",
                     "state": {
                         "descriptor": {
-                            "code": "Order-delivered"
+                            "code": "Pending"
                         }
                     },
                     "start": {
@@ -35,45 +35,23 @@
                             "gps": "12.9657382,77.7254658"
                         },
                         "time": {
-                            "timestamp": "2023-09-05T17:58:43.958Z",
                             "range": {
-                                "start": "2023-09-05T17:57:47.561Z",
-                                "end": "2023-09-05T22:57:47.560Z"
+                                "start": "2023-09-05T22:23:06.936Z",
+                                "end": "2023-09-06T03:23:06.935Z"
                             }
                         },
                         "instructions": {
-                            "short_desc": "Pickup items",
-                            "long_desc": "Please check items for physical damage before pickup.Reach out to merchant teams for confirmation if required.",
+                            "short_desc": "Items delivery",
+                            "long_desc": "Please check items for physical damage before pickup/exhange.Reach out to merchant teams for confirmation if required.",
                             "images": ["https://datalabs.siva3.io/image/Eunimart_groceries_40142684_1-chicco-baby-learn-together-oral-care-set-green.jpg"],
                             "additional_desc": {
                                 "content_type": "text/html",
-                                "url": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833return/delivered/order/1693936021692"
+                                "url": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833return/approved/order/1693951548832"
                             }
                         },
                         "contact": {
                             "phone": "8431460493",
                             "email": "kapoor7845@gmail.com"
-                        }
-                    },
-                    "end": {
-                        "location": {
-                            "gps": "12.9949590000001, 77.6989090000001",
-                            "address": {
-                                "name": "Subodh Kumar",
-                                "building": "Bren Avalon",
-                                "locality": "chinnapanahalli Main Road",
-                                "city": "Bengaluru",
-                                "state": "Karnataka",
-                                "country": "India",
-                                "area_code": "560048"
-                            }
-                        },
-                        "time": {
-                            "timestamp": "2023-09-05T17:59:09.152Z"
-                        },
-                        "contact": {
-                            "phone": "9986697491",
-                            "email": "subodh1@gmail.com"
                         }
                     }
                 }, {
@@ -94,10 +72,10 @@
                             "gps": "12.9657382,77.7254658"
                         },
                         "time": {
-                            "timestamp": "2023-09-05T17:47:01.699Z",
+                            "timestamp": "2023-09-05T22:05:48.840Z",
                             "range": {
-                                "start": "2023-09-05T17:47:01.699Z",
-                                "end": "2023-09-05T19:47:01.699Z"
+                                "start": "2023-09-05T22:05:48.840Z",
+                                "end": "2023-09-06T00:05:48.840Z"
                             }
                         },
                         "contact": {
@@ -119,10 +97,10 @@
                             }
                         },
                         "time": {
-                            "timestamp": "2023-09-05T17:47:45.808Z",
+                            "timestamp": "2023-09-05T22:07:01.373Z",
                             "range": {
-                                "start": "2023-09-05T17:47:01.699Z",
-                                "end": "2023-09-05T22:47:01.699Z"
+                                "start": "2023-09-05T22:05:48.840Z",
+                                "end": "2023-09-06T03:05:48.840Z"
                             }
                         },
                         "contact": {
@@ -134,9 +112,11 @@
                 }
             ],
             "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
                 "params": {
-                    "transaction_id": "db1f9931-fbaf-40b8-8ed0-e36104625ea1",
-                    "amount": "1153.85",
+                    "transaction_id": "b9de5127-b2b9-4ba3-bab7-466ddd7fd273",
+                    "amount": "1790.38",
                     "currency": "INR"
                 },
                 "type": "ON-ORDER",
@@ -156,18 +136,18 @@
                     }
                 ]
             },
-            "created_at": "2023-09-05T17:47:01.602Z",
-            "updated_at": "2023-09-05T17:59:09.152Z",
+            "created_at": "2023-09-05T22:05:48.748Z",
+            "updated_at": "2023-09-05T22:23:06.936Z",
             "items": [{
                     "id": "49375",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     },
                     "fulfillment_id": "DE11001860354"
                 }, {
                     "id": "49376",
                     "quantity": {
-                        "count": 1
+                        "count": 2
                     },
                     "fulfillment_id": "DE11001860354"
                 }, {
@@ -177,20 +157,20 @@
                     },
                     "fulfillment_id": "DE11001860354-QC",
                     "tags": {
-                        "status": "Return_Delivered"
+                        "status": "Return_Approved"
                     }
                 }
             ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "654.85"
+                    "value": "1790.38"
                 },
                 "breakup": [{
                         "title": "Chicco Baby Moments - Shampoo, Calendula & Hibiscus, For Tangle Free Nourished Hair & Scalp, 500 ml",
                         "price": {
                             "currency": "INR",
-                            "value": "549.0"
+                            "value": "1098.0"
                         },
                         "item": {
                             "price": {
@@ -200,14 +180,14 @@
                         },
                         "@ondc/org/item_id": "49375",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
                         "@ondc/org/title_type": "item"
                     }, {
                         "title": "Chicco Baby Moments - Soap, Almond & Olive Oil, For Deep Moisturised Skin & Nourished Skin, 75 g",
                         "price": {
                             "currency": "INR",
-                            "value": "65.0"
+                            "value": "130.0"
                         },
                         "item": {
                             "price": {
@@ -217,6 +197,23 @@
                         },
                         "@ondc/org/item_id": "49376",
                         "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Chicco Baby Learn Together Oral Care Set - Green, 2 pcs",
+                        "price": {
+                            "currency": "INR",
+                            "value": "499.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "499.00"
+                            }
+                        },
+                        "@ondc/org/item_id": "49355",
+                        "@ondc/org/item_quantity": {
                             "count": 1
                         },
                         "@ondc/org/title_type": "item"
@@ -224,7 +221,7 @@
                         "title": "Convenience Fee",
                         "price": {
                             "currency": "INR",
-                            "value": "40.85"
+                            "value": "63.38"
                         },
                         "@ondc/org/item_id": "DE11001860354",
                         "@ondc/org/title_type": "misc"
