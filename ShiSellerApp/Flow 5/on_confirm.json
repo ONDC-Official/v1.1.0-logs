@@ -1,0 +1,202 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ushopmicro-stage.hulcd.com",
+        "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
+        "transaction_id": "030694b1-9f37-4392-9f9c-f6ae0af25b8b",
+        "message_id": "8d99614e-d821-4de3-a0cd-0c187b6d6b5b",
+        "timestamp": "2023-09-06T04:34:23.726Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-09-06-737950",
+            "state": "Created",
+            "billing": {
+                "name": "Subodh Kumar",
+                "address": {
+                    "name": "Subodh Kumar",
+                    "building": "Bren Avalon",
+                    "locality": "chinnapanahalli Main Road",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560048"
+                },
+                "email": "subodh1@gmail.com",
+                "phone": "9986697491",
+                "created_at": "2023-09-06T04:34:01.996Z",
+                "updated_at": "2023-09-06T04:34:01.996Z"
+            },
+            "fulfillments": [{
+                    "id": "DE11001860354",
+                    "type": "Delivery",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "193",
+                            "descriptor": {
+                                "name": "KAPOOR STORE-D-D"
+                            },
+                            "gps": "12.9657382,77.7254658"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-09-06T04:34:23.726Z",
+                                "end": "2023-09-06T06:34:23.726Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8431460493",
+                            "email": "kapoor7845@gmail.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9949590000001, 77.6989090000001",
+                            "address": {
+                                "name": "Subodh Kumar",
+                                "building": "Bren Avalon",
+                                "locality": "chinnapanahalli Main Road",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560048"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-09-06T04:34:23.726Z",
+                                "end": "2023-09-06T09:34:23.726Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9986697491",
+                            "email": "subodh1@gmail.com"
+                        }
+                    },
+                    "@ondc/org/provider_name": "KAPOOR STORE-D-D"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "transaction_id": "030694b1-9f37-4392-9f9c-f6ae0af25b8b",
+                    "amount": "636.53",
+                    "currency": "INR"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [{
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "915010038001776",
+                        "settlement_ifsc_code": "UTIB0000333",
+                        "beneficiary_name": "Pushpanjali ",
+                        "bank_name": "Axis Bank Ltd.",
+                        "branch_name": "Jpnagar",
+                        "beneficiary_address": "Tower-J,REPUBLIC OF WHITEFIELD,Kundlalhalli,Tower-J"
+                    }
+                ]
+            },
+            "created_at": "2023-09-06T04:34:23.640Z",
+            "updated_at": "2023-09-06T04:34:23.726Z",
+            "provider": {
+                "id": "DE11001860354",
+                "locations": [{
+                        "id": "193"
+                    }
+                ],
+                "rateable": true
+            },
+            "items": [{
+                    "id": "49375",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "DE11001860354"
+                }, {
+                    "id": "49376",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "DE11001860354"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "636.53"
+                },
+                "breakup": [{
+                        "title": "Chicco Baby Moments - Shampoo, Calendula & Hibiscus, For Tangle Free Nourished Hair & Scalp, 500 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "549.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "549.00"
+                            }
+                        },
+                        "@ondc/org/item_id": "49375",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Chicco Baby Moments - Soap, Almond & Olive Oil, For Deep Moisturised Skin & Nourished Skin, 75 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "65.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "65.00"
+                            }
+                        },
+                        "@ondc/org/item_id": "49376",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "22.53"
+                        },
+                        "@ondc/org/item_id": "DE11001860354",
+                        "@ondc/org/title_type": "misc"
+                    }, {
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        },
+                        "@ondc/org/item_id": "DE11001860354",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}
