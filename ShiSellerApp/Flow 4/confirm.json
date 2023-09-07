@@ -5,73 +5,99 @@
         "city": "std:080",
         "action": "confirm",
         "core_version": "1.1.0",
-        "bap_id": "buyer-app.ondc.org",
-        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
+        "transaction_id": "b9de5127-b2b9-4ba3-bab7-466ddd7fd273",
+        "message_id": "bdb5fdd0-d3b2-40a3-977f-77c5b42bd8cf",
+        "timestamp": "2023-09-05T22:05:48.748Z",
         "bpp_id": "ushopmicro-stage.hulcd.com",
-        "bpp_uri": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833",
-        "transaction_id": "3c108d67-4334-48fa-b0aa-2cf0423a90d0",
-        "message_id": "36768a94-4a9d-407f-b0fa-2073e867ac57",
-        "timestamp": "2023-08-21T16:52:45.921Z",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-08-21-288249",
+            "id": "2023-09-05-697684",
             "state": "Created",
             "billing": {
-                "name": "weqwe",
                 "address": {
-                    "name": "weqwe",
-                    "building": "Bren",
-                    "locality": "dsad",
+                    "name": "Subodh Kumar",
+                    "building": "Bren Avalon",
+                    "locality": "chinnapanahalli Main Road",
                     "city": "Bengaluru",
                     "state": "Karnataka",
                     "country": "IND",
                     "area_code": "560048"
                 },
-                "email": "kmr.subodh@gmail.com",
                 "phone": "9986697491",
-                "created_at": "2023-08-21T16:52:40.823Z",
-                "updated_at": "2023-08-21T16:52:40.823Z"
+                "name": "Subodh Kumar",
+                "email": "subodh1@gmail.com",
+                "created_at": "2023-09-05T22:05:39.155Z",
+                "updated_at": "2023-09-05T22:05:39.155Z"
+            },
+            "items": [{
+                    "id": "49375",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "DE11001860354"
+                }, {
+                    "id": "49376",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "DE11001860354"
+                }, {
+                    "id": "49355",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "DE11001860354"
+                }
+            ],
+            "provider": {
+                "id": "DE11001860354",
+                "locations": [{
+                        "id": "193"
+                    }
+                ]
             },
             "fulfillments": [{
-                    "id": "HUL-330949D-P8056",
-                    "type": "Delivery",
+                    "id": "DE11001860354",
                     "tracking": false,
                     "end": {
+                        "contact": {
+                            "email": "subodh1@gmail.com",
+                            "phone": "9986697491"
+                        },
+                        "person": {
+                            "name": "Subodh Kumar"
+                        },
                         "location": {
                             "gps": "12.9949590000001, 77.6989090000001",
                             "address": {
-                                "name": "weqwe",
-                                "building": "Bren",
-                                "locality": "dsad",
+                                "name": "Subodh Kumar",
+                                "building": "Bren Avalon",
+                                "locality": "chinnapanahalli Main Road",
                                 "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "IND",
                                 "area_code": "560048"
-                            },
-                            "rateable": false
-                        },
-                        "contact": {
-                            "phone": "9986697491",
-                            "email": "kmr.subodh@gmail.com"
-                        },
-                        "person": {
-                            "name": "weqwe"
+                            }
                         }
-                    }
+                    },
+                    "type": "Delivery"
                 }
             ],
             "payment": {
                 "uri": "https://juspay.in/",
                 "tl_method": "http/get",
                 "params": {
-                    "transaction_id": "3c108d67-4334-48fa-b0aa-2cf0423a90d0",
-                    "amount": "740.57",
-                    "currency": "INR"
+                    "amount": "1790.38",
+                    "currency": "INR",
+                    "transaction_id": "b9de5127-b2b9-4ba3-bab7-466ddd7fd273"
                 },
-                "type": "ON-ORDER",
                 "status": "PAID",
+                "type": "ON-ORDER",
                 "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
@@ -84,148 +110,62 @@
                         "beneficiary_name": "Pushpanjali ",
                         "bank_name": "Axis Bank Ltd.",
                         "branch_name": "Jpnagar",
-                        "beneficiary_address": ",,,"
+                        "beneficiary_address": "Tower-J,REPUBLIC OF WHITEFIELD,Kundlalhalli,Tower-J"
                     }
                 ]
             },
-            "created_at": "2023-08-21T16:52:45.921Z",
-            "updated_at": "2023-08-21T16:52:45.921Z",
-            "provider": {
-                "id": "HUL-330949D-P8056",
-                "rating": 0,
-                "locations": [{
-                        "id": "145",
-                        "rateable": false
-                    }
-                ],
-                "rateable": false
-            },
-            "items": [{
-                    "id": "10000005",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "HUL-330949D-P8056",
-                    "rating": 0,
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }, {
-                    "id": "10000232",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "HUL-330949D-P8056",
-                    "rating": 0,
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }, {
-                    "id": "10000186",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "HUL-330949D-P8056",
-                    "rating": 0,
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }
-            ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "740.57"
+                    "value": "1790.38"
                 },
                 "breakup": [{
-                        "title": "Kwality Walls Party Pack Carton Butterscotch 700ml",
+                        "title": "Chicco Baby Moments - Shampoo, Calendula & Hibiscus, For Tangle Free Nourished Hair & Scalp, 500 ml",
                         "price": {
                             "currency": "INR",
-                            "value": "275.00"
+                            "value": "1098.00"
                         },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "275.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
+                                "value": "549.00"
+                            }
                         },
-                        "@ondc/org/item_id": "10000005",
+                        "@ondc/org/item_id": "49375",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
                         "@ondc/org/title_type": "item"
                     }, {
-                        "title": "Kwality Walls Party Pack Carton Kulfi 700ml",
+                        "title": "Chicco Baby Moments - Soap, Almond & Olive Oil, For Deep Moisturised Skin & Nourished Skin, 75 g",
                         "price": {
                             "currency": "INR",
-                            "value": "185.00"
+                            "value": "130.00"
                         },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "185.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
+                                "value": "65.00"
+                            }
                         },
-                        "@ondc/org/item_id": "10000232",
+                        "@ondc/org/item_id": "49376",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
                         "@ondc/org/title_type": "item"
                     }, {
-                        "title": "Kwality Walls Creme Brulee Tub 700ml",
+                        "title": "Chicco Baby Learn Together Oral Care Set - Green, 2 pcs",
                         "price": {
                             "currency": "INR",
-                            "value": "259.00"
+                            "value": "499.00"
                         },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "259.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
+                                "value": "499.00"
+                            }
                         },
-                        "@ondc/org/item_id": "10000186",
+                        "@ondc/org/item_id": "49355",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         },
@@ -234,9 +174,9 @@
                         "title": "Convenience Fee",
                         "price": {
                             "currency": "INR",
-                            "value": "21.57"
+                            "value": "63.38"
                         },
-                        "@ondc/org/item_id": "HUL-330949D-P8056",
+                        "@ondc/org/item_id": "DE11001860354",
                         "@ondc/org/title_type": "misc"
                     }, {
                         "title": "Delivery charges",
@@ -244,12 +184,14 @@
                             "currency": "INR",
                             "value": "0.0"
                         },
-                        "@ondc/org/item_id": "HUL-330949D-P8056",
+                        "@ondc/org/item_id": "DE11001860354",
                         "@ondc/org/title_type": "delivery"
                     }
                 ],
                 "ttl": "P1D"
-            }
+            },
+            "created_at": "2023-09-05T22:05:48.748Z",
+            "updated_at": "2023-09-05T22:05:48.748Z"
         }
     }
 }

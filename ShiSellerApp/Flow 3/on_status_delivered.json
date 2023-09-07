@@ -1,286 +1,207 @@
 {
-	"context": {
-		"domain": "nic2004:52110",
-		"country": "IND",
-		"city": "std:080",
-		"action": "on_status",
-		"core_version": "1.1.0",
-		"bap_id": "buyer-app.ondc.org",
-		"bap_uri": "https://buyer-app.ondc.org/protocol/v1",
-		"bpp_id": "ushopmicro-stage.hulcd.com",
-		"bpp_uri": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833",
-		"transaction_id": "ba44bfb8-c73d-428d-9624-ec307d24a510",
-		"message_id": "f44bc693-4365-431d-9906-a6e674ab9235",
-		"timestamp": "2023-08-21T12:51:44.919Z",
-		"key": "ORcFVLPIuaqQll2votGDCJK11rfsvBRcw3yxhBchaXo=",
-		"ttl": "PT30S"
-	},
-	"message": {
-		"order": {
-			"id": "2023-08-21-612472",
-			"state": "Completed",
-			"documents": [{
-				"url": "https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/IMAG7f14a3679acf.pdf",
-				"label": "Invoice"
-			}],
-			"billing": {
-				"name": "weqwe",
-				"address": {
-					"name": "weqwe",
-					"building": "Bren",
-					"locality": "dsad",
-					"city": "Bengaluru",
-					"state": "Karnataka",
-					"country": "IND",
-					"area_code": "560048"
-				},
-				"email": "kmr.subodh@gmail.com",
-				"phone": "9986697491",
-				"created_at": "2023-08-21T12:50:18.316Z",
-				"updated_at": "2023-08-21T12:50:18.316Z"
-			},
-			"fulfillments": [{
-				"id": "HUL-330949D-P8056",
-				"type": "Delivery",
-				"state": {
-					"descriptor": {
-						"code": "Order-delivered"
-					}
-				},
-				"tracking": false,
-				"start": {
-					"location": {
-						"id": "145",
-						"descriptor": {
-							"name": "SWASTIK KARYANA STORE-D",
-							"images": ["https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/grocery_banner.png"]
-						},
-						"gps": "12.9656845,77.7254876",
-						"rateable": false
-					},
-					"time": {
-						"timestamp": "2023-08-21T12:50:20.314Z",
-						"range": {
-							"start": "2023-08-21T12:50:20.314Z",
-							"end": "2023-08-21T12:51:06.899Z"
-						}
-					},
-					"contact": {
-						"phone": "8499897072",
-						"email": "kalpana.kandathi@gmail.com"
-					}
-				},
-				"end": {
-					"location": {
-						"gps": "12.9949590000001, 77.6989090000001",
-						"address": {
-							"name": "weqwe",
-							"building": "Bren",
-							"locality": "dsad",
-							"city": "Bengaluru",
-							"state": "Karnataka",
-							"country": "India",
-							"area_code": "560048"
-						},
-						"rateable": false
-					},
-					"time": {
-						"timestamp": "2023-08-21T12:51:32.271Z",
-						"range": {
-							"start": "2023-08-21T12:51:08.899Z",
-							"end": "2023-08-21T12:51:32.271Z"
-						}
-					},
-					"contact": {
-						"phone": "9986697491",
-						"email": "kmr.subodh@gmail.com"
-					}
-				},
-				"@ondc/org/provider_name": "SWASTIK KARYANA STORE-D"
-			}],
-			"payment": {
-				"params": {
-					"transaction_id": "ba44bfb8-c73d-428d-9624-ec307d24a510",
-					"amount": "740.57",
-					"currency": "INR"
-				},
-				"type": "ON-ORDER",
-				"status": "PAID",
-				"collected_by": "BAP",
-				"@ondc/org/buyer_app_finder_fee_type": "percent",
-				"@ondc/org/buyer_app_finder_fee_amount": "3.0",
-				"@ondc/org/settlement_details": [{
-					"settlement_counterparty": "seller-app",
-					"settlement_phase": "sale-amount",
-					"settlement_type": "neft",
-					"settlement_bank_account_no": "915010038001776",
-					"settlement_ifsc_code": "UTIB0000333",
-					"beneficiary_name": "Jpnagar",
-					"bank_name": "Axis Bank Ltd.",
-					"branch_name": "Jpnagar"
-				}]
-			},
-			"created_at": "2023-08-21T12:50:22.241Z",
-			"updated_at": "2023-08-21T12:51:36.271Z",
-			"provider": {
-				"id": "HUL-330949D-P8056",
-				"rating": 5,
-				"locations": [{
-					"id": "145",
-					"rateable": false
-				}],
-				"rateable": false,
-				"@ondc/org/provider_name": "SWASTIK KARYANA STORE-D"
-			},
-			"items": [{
-				"id": "10000005",
-				"quantity": {
-					"count": 1
-				},
-				"fulfillment_id": "HUL-330949D-P8056",
-				"rating": 5,
-				"rateable": false,
-				"matched": false,
-				"related": false,
-				"recommended": false,
-				"@ondc/org/returnable": false,
-				"@ondc/org/seller_pickup_return": false,
-				"@ondc/org/cancellable": false,
-				"@ondc/org/available_on_cod": false
-			}, {
-				"id": "10000232",
-				"quantity": {
-					"count": 1
-				},
-				"fulfillment_id": "HUL-330949D-P8056",
-				"rating": 5,
-				"rateable": false,
-				"matched": false,
-				"related": false,
-				"recommended": false,
-				"@ondc/org/returnable": false,
-				"@ondc/org/seller_pickup_return": false,
-				"@ondc/org/cancellable": false,
-				"@ondc/org/available_on_cod": false
-			}, {
-				"id": "10000186",
-				"quantity": {
-					"count": 1
-				},
-				"fulfillment_id": "HUL-330949D-P8056",
-				"rating": 5,
-				"rateable": false,
-				"matched": false,
-				"related": false,
-				"recommended": false,
-				"@ondc/org/returnable": false,
-				"@ondc/org/seller_pickup_return": false,
-				"@ondc/org/cancellable": false,
-				"@ondc/org/available_on_cod": false
-			}],
-			"quote": {
-				"price": {
-					"currency": "INR",
-					"value": "740.57"
-				},
-				"breakup": [{
-					"title": "Kwality Walls Party Pack Carton Butterscotch 700ml",
-					"price": {
-						"currency": "INR",
-						"value": "275.0"
-					},
-					"item": {
-						"price": {
-							"currency": "INR",
-							"value": "275.00"
-						},
-						"rating": 5,
-						"rateable": false,
-						"matched": false,
-						"related": false,
-						"recommended": false,
-						"@ondc/org/returnable": false,
-						"@ondc/org/seller_pickup_return": false,
-						"@ondc/org/cancellable": false,
-						"@ondc/org/available_on_cod": false
-					},
-					"@ondc/org/item_id": "10000005",
-					"@ondc/org/item_quantity": {
-						"count": 1
-					},
-					"@ondc/org/title_type": "item"
-				}, {
-					"title": "Kwality Walls Party Pack Carton Kulfi 700ml",
-					"price": {
-						"currency": "INR",
-						"value": "185.0"
-					},
-					"item": {
-						"price": {
-							"currency": "INR",
-							"value": "185.00"
-						},
-						"rating": 5,
-						"rateable": false,
-						"matched": false,
-						"related": false,
-						"recommended": false,
-						"@ondc/org/returnable": false,
-						"@ondc/org/seller_pickup_return": false,
-						"@ondc/org/cancellable": false,
-						"@ondc/org/available_on_cod": false
-					},
-					"@ondc/org/item_id": "10000232",
-					"@ondc/org/item_quantity": {
-						"count": 1
-					},
-					"@ondc/org/title_type": "item"
-				}, {
-					"title": "Kwality Walls Creme Brulee Tub 700ml",
-					"price": {
-						"currency": "INR",
-						"value": "259.0"
-					},
-					"item": {
-						"price": {
-							"currency": "INR",
-							"value": "259.00"
-						},
-						"rating": 5,
-						"rateable": false,
-						"matched": false,
-						"related": false,
-						"recommended": false,
-						"@ondc/org/returnable": false,
-						"@ondc/org/seller_pickup_return": false,
-						"@ondc/org/cancellable": false,
-						"@ondc/org/available_on_cod": false
-					},
-					"@ondc/org/item_id": "10000186",
-					"@ondc/org/item_quantity": {
-						"count": 1
-					},
-					"@ondc/org/title_type": "item"
-				}, {
-					"title": "Convenience Fee",
-					"price": {
-						"currency": "INR",
-						"value": "21.57"
-					},
-					"@ondc/org/item_id": "HUL-330949D-P8056",
-					"@ondc/org/title_type": "misc"
-				}, {
-					"title": "Delivery charges",
-					"price": {
-						"currency": "INR",
-						"value": "0.0"
-					},
-					"@ondc/org/item_id": "HUL-330949D-P8056",
-					"@ondc/org/title_type": "delivery"
-				}],
-				"ttl": "P1D"
-			},
-			"tags": {}
-		}
-	}
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ushopmicro-stage.hulcd.com",
+        "bpp_uri": "https://ushopmicro-stage.hulcd.com/ondc/v1/136833",
+        "transaction_id": "d8b4e891-cac6-4feb-b729-95fa88661aa5",
+        "message_id": "a9f12cb4-b24e-36ef-8d7a-1d60104b0658",
+        "timestamp": "2023-09-05T21:00:27.074Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-09-05-954435",
+            "state": "Completed",
+            "documents": [{
+                    "url": "https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/IMAGcce279e8f90b.pdf",
+                    "label": "Invoice"
+                }
+            ],
+            "billing": {
+                "name": "Subodh Kumar",
+                "address": {
+                    "name": "Subodh Kumar",
+                    "building": "AECS",
+                    "locality": "AECS Layout",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560037"
+                },
+                "email": "Uscansubodh@gmail.com",
+                "phone": "9986697491",
+                "created_at": "2023-09-05T20:58:40.823Z",
+                "updated_at": "2023-09-05T20:58:40.823Z"
+            },
+            "fulfillments": [{
+                    "id": "DE11001860354",
+                    "type": "Delivery",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "location": {
+                            "id": "193",
+                            "descriptor": {
+                                "name": "KAPOOR STORE-D-D",
+                                "images": ["https://retailer-propics.s3-ap-south-1.amazonaws.com/ondc/grocery_banner.png"]
+                            },
+                            "gps": "12.9657382,77.7254658"
+                        },
+                        "time": {
+                            "timestamp": "2023-09-05T20:58:50.403Z",
+                            "range": {
+                                "start": "2023-09-05T20:58:50.403Z",
+                                "end": "2023-09-05T22:58:50.403Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8431460493",
+                            "email": "kapoor7845@gmail.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.964319, 77.6810060000001",
+                            "address": {
+                                "name": "Subodh Kumar",
+                                "building": "AECS",
+                                "locality": "AECS Layout",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560037"
+                            }
+                        },
+                        "time": {
+                            "timestamp": "2023-09-05T21:00:27.074Z",
+                            "range": {
+                                "start": "2023-09-05T20:58:50.403Z",
+                                "end": "2023-09-06T01:58:50.403Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9986697491",
+                            "email": "Uscansubodh@gmail.com"
+                        }
+                    },
+                    "@ondc/org/provider_name": "KAPOOR STORE-D-D"
+                }
+            ],
+            "payment": {
+                "params": {
+                    "transaction_id": "d8b4e891-cac6-4feb-b729-95fa88661aa5",
+                    "amount": "584.7",
+                    "currency": "INR"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [{
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "915010038001776",
+                        "settlement_ifsc_code": "UTIB0000333",
+                        "beneficiary_name": "Jpnagar",
+                        "bank_name": "Axis Bank Ltd.",
+                        "branch_name": "Jpnagar"
+                    }
+                ]
+            },
+            "created_at": "2023-09-05T20:58:50.309Z",
+            "updated_at": "2023-09-05T21:00:27.074Z",
+            "provider": {
+                "id": "DE11001860354",
+                "locations": [{
+                        "id": "193"
+                    }
+                ],
+                "@ondc/org/provider_name": "KAPOOR STORE-D-D"
+            },
+            "items": [{
+                    "id": "49355",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "DE11001860354"
+                }, {
+                    "id": "49376",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "DE11001860354"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "584.70"
+                },
+                "breakup": [{
+                        "title": "Chicco Baby Learn Together Oral Care Set - Green, 2 pcs",
+                        "price": {
+                            "currency": "INR",
+                            "value": "499.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "499.00"
+                            }
+                        },
+                        "@ondc/org/item_id": "49355",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Chicco Baby Moments - Soap, Almond & Olive Oil, For Deep Moisturised Skin & Nourished Skin, 75 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "65.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "65.00"
+                            }
+                        },
+                        "@ondc/org/item_id": "49376",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Convenience Fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.70"
+                        },
+                        "@ondc/org/item_id": "DE11001860354",
+                        "@ondc/org/title_type": "misc"
+                    }, {
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        },
+                        "@ondc/org/item_id": "DE11001860354",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "tags": {}
+        }
+    }
 }

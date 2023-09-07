@@ -1,19 +1,18 @@
 {
   "context": {
-    "transaction_id": "5c591552-777a-4891-acb9-d8c49a29b271",
+    "transaction_id": "6e3d8fd8-9f9b-4866-806f-b454de964aa7",
     "country": "IND",
     "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
     "city": "*",
-    "message_id": "11f01f98-56fa-4f94-833c-6e984dfa095f",
+    "message_id": "394ca048-6ce1-4b69-95b2-4d517328070f",
     "core_version": "1.0.0",
     "ttl": "P2D",
     "bap_id": "rsp.proteantech.in",
     "domain": "ONDC:NTS10",
     "bpp_uri": "https://ondc-test.snapbizz.com",
     "action": "receiver_recon",
-    "bap_uri": "https://rsp.proteantech.in",
-    "key": null,
-    "timestamp": "2023-08-21T17:54:05.549Z"
+    "bap_uri": "https://rsp-stag.proteantech.in",
+    "timestamp": "2023-08-26T11:10:51.000Z"
   },
   "message": {
     "orderbook": {
@@ -24,10 +23,11 @@
             "currency": "INR",
             "value": "0"
           },
-          "settlement_id": "6c80a4ad47c14d7abd4961ccff39db8a",
+          "settlement_id": "d67cdaa6b223486b93bc33a22407a13a",
           "invoice_no": "SB/2023-24/123-00003",
-          "created_at": "2023-08-04T05:42:54.000Z",
+          "created_at": "2023-08-25T06:02:52.000Z",
           "recon_status": "01",
+	  "order_recon_status": "01",
           "deduction_by_collector": {
             "currency": "INR",
             "value": "141.6"
@@ -35,12 +35,13 @@
           "receiver_app_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
           "settlement_reason_code": "01",
           "collector_app_id": "cloud-adaptor.proteantech.in/kotak",
-          "updated_at": "2023-08-21T17:51:51.000Z",
+          "updated_at": "2023-08-26T11:10:51.000Z",
           "provider": {
             "name": {
-              "code": "code",
-              "name": "Snapbizz ONDC"
-            }
+              "code": "400001-ONDC-1",
+              "name": "Chetak Xpress PVT LTD"
+            },
+	   "address": "Mumbai"
           },
           "payerdetails": {
             "payer_bank_code": "karq0123455",
@@ -51,7 +52,7 @@
           },
           "payment": {
             "@ondc/org/settlement_window_status": "Assert",
-            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
             "collected_by": "BAP",
             "params": {
               "transaction_id": "6870693890",
@@ -59,20 +60,21 @@
               "transaction_status": "PAID",
               "currency": "INR"
             },
-            "type": "ON_ORDER",
+            "type": "ON-ORDER",
             "@ondc/org/settlement_basis_status": "Assert",
             "@ondc/org/settlement_details": [
               {
                 "beneficiary_address": "KundanhAli gate Banglore",
                 "settlement_status": "PAID",
-                "settlement_counterparty": "buyer",
-                "settlement_phase": "sale_amount",
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
                 "branch_name": "Marathalli",
                 "bank_name": "Axis Bank",
                 "settlement_amount": 3858.4,
+                "beneficiary_name" : "Snapbizz",
                 "settlement_ifsc_code": "UTIB0000300",
                 "settlement_reference": "AXSSET20233",
-                "settlement_timestamp": "2023-08-21T17:54:05.549Z",
+                "settlement_timestamp": "2023-08-26T10:32:20.147Z",
                 "settlement_bank_account_no": "923020035581060",
                 "settlement_type": "neft"
               }
@@ -85,11 +87,11 @@
             "@ondc/org/withholding_amount": "0.0",
             "@ondc/org/collected_by_status": "Assert",
             "status": "PAID",
-            "tl_method": "HTTP_OR_GET",
+            "tl_method": "http/get",
             "@ondc/org/buyer_app_finder_fee_amount": "3"
           },
           "id": "123456789-brillrideBalan",
-          "state": "Delivered",
+          "state": "Completed",
           "settlement_reference_no": "AXSSET20233",
           "withholding_tax_tds": {
             "currency": "INR",

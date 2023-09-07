@@ -1,17 +1,18 @@
+
 {
     "context": {
-        "transaction_id": "673534aa-b06b-4c9c-bc98-521d6b31f680",
-        "message_id": "1bfe6544-b994-4894-b4fe-e3d2ba9aa988",
+        "transaction_id": "9151fede-d477-4c16-bb2b-1b5067580d87",
+        "message_id": "ef132364-3803-4b81-a375-b4748708f212",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "domain": "nic2004:52110",
         "country": "IND",
         "city": "std:080",
         "core_version": "1.1.0",
-        "ttl": "PT30S",
-        "action": "on_select",
-        "timestamp": "2023-08-15T16:35:54.454Z",
         "bpp_id": "ondc-preprod.zeppstore.in",
-        "bpp_uri": "https://ondc-preprod.zeppstore.in"
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "action": "on_select",
+        "timestamp": "2023-08-24T12:38:23.758Z"
     },
     "message": {
         "order": {
@@ -20,21 +21,21 @@
             },
             "items": [
                 {
-                    "fulfillment_id": "ZRPL41224bfd-ae42-4c2d-af8f-47c89c2ef247",
+                    "fulfillment_id": "ZRPL7d3f710a-83f4-4950-8e83-9902fe2609b8",
                     "id": "404"
                 },
                 {
-                    "fulfillment_id": "ZRPL41224bfd-ae42-4c2d-af8f-47c89c2ef247",
+                    "fulfillment_id": "ZRPL7d3f710a-83f4-4950-8e83-9902fe2609b8",
                     "id": "413"
                 }
             ],
             "fulfillments": [
                 {
-                    "id": "ZRPL41224bfd-ae42-4c2d-af8f-47c89c2ef247",
+                    "id": "ZRPL7d3f710a-83f4-4950-8e83-9902fe2609b8",
                     "@ondc/org/provider_name": "ZRPL",
                     "tracking": true,
                     "@ondc/org/category": "Standard Delivery",
-                    "@ondc/org/TAT": "P8D",
+                    "@ondc/org/TAT": "P1D",
                     "state": {
                         "descriptor": {
                             "code": "Non-serviceable"
@@ -45,7 +46,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "3236"
+                    "value": "3196"
                 },
                 "breakup": [
                     {
@@ -62,10 +63,10 @@
                         "item": {
                             "quantity": {
                                 "available": {
-                                    "count": "10"
+                                    "count": "3"
                                 },
                                 "maximum": {
-                                    "count": "10"
+                                    "count": "3"
                                 }
                             },
                             "price": {
@@ -88,10 +89,10 @@
                         "item": {
                             "quantity": {
                                 "available": {
-                                    "count": "10"
+                                    "count": "3"
                                 },
                                 "maximum": {
-                                    "count": "10"
+                                    "count": "3"
                                 }
                             },
                             "price": {
@@ -100,12 +101,13 @@
                             }
                         }
                     }
+                   
                 ],
                 "ttl": "P1D"
             }
         }
     },
-    "error": {
+     "error": {
         "type": "DOMAIN-ERROR",
         "code": "30009"
     }

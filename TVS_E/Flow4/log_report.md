@@ -1,11 +1,14 @@
+**/on_search**
+- /message/catalog/bpp~1providers/0/@ondc~1org~1fssai_license_no must NOT have fewer than 14 characters
+
 **/on_select**
-- Warning: Quoted Price in /on_select INR 67815 does not match with the total price of items in /select INR 82824
+- Warning: Quoted Price in /on_select INR 40207 does not match with the total price of items in /select INR 55216
 
 **/init**
 - Warning: items[0].quantity.count for item ba3ca63c-927e-4ca3-8694-19e2c7b32911 mismatches with the items quantity selected in /select
 
 **/on_init**
-- Warning: items[0].quantity.count for item ba3ca63c-927e-4ca3-8694-19e2c7b32911 mismatches with the items quantity selected in /select
+- Warning: items[1].quantity.count for item ba3ca63c-927e-4ca3-8694-19e2c7b32911 mismatches with the items quantity selected in /select
 - Discrepancies between the quote object in /on_select and /on_init
 
 **/confirm**

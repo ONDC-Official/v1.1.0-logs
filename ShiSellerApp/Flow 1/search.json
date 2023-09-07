@@ -5,42 +5,31 @@
         "city": "std:080",
         "action": "search",
         "core_version": "1.1.0",
-        "bap_id": "buyer-app.ondc.org",
-        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
-        "transaction_id": "f58b347c-06c6-4fab-9e4e-9f0ea110e9e6",
-        "message_id": "52088f62-12e8-4ae2-85ea-55294e11aa61",
-        "timestamp": "2023-08-20T16:23:22.597Z",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "transaction_id": "db1f9931-fbaf-40b8-8ed0-e36104625ea1",
+        "message_id": "1f7842d3-1c29-4c6c-bd20-ad8424d70b68",
+        "timestamp": "2023-09-05T17:46:15.240Z",
         "ttl": "PT30S"
     },
     "message": {
         "intent": {
+            "item": {
+                "descriptor": {
+                    "name": "chicco"
+                }
+            },
             "fulfillment": {
                 "type": "Delivery",
-                "tracking": false,
                 "end": {
                     "location": {
-                        "gps": "12.9949590000001,77.6989090000001",
-                        "rateable": false
+                        "gps": "12.9949590000001,77.6989090000001"
                     }
                 }
             },
             "payment": {
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0"
-            },
-            "item": {
-                "descriptor": {
-                    "name": "kwality"
-                },
-                "rating": 0,
-                "rateable": false,
-                "matched": false,
-                "related": false,
-                "recommended": false,
-                "@ondc/org/returnable": false,
-                "@ondc/org/seller_pickup_return": false,
-                "@ondc/org/cancellable": false,
-                "@ondc/org/available_on_cod": false
             }
         }
     }
