@@ -1,50 +1,85 @@
 {
     "context": {
-        "domain": "nic2004:NTS10",
+        "domain": "ONDC:NTS10",
         "country": "IND",
         "city": "*",
         "action": "on_receiver_recon",
         "core_version": "1.0.0",
-        "bap_id": "rsp.plotch.ai",
-        "bap_uri": "https://rsp.plotch.ai/rsp",
-        "bpp_id": "sit.mytra.money",
-        "bpp_uri": "https://sit.mytra.money/api/method/ondc/",
-        "transaction_id": "ea1822ba-9fdf-4ae7-b607-90b6ffbc79d6",
-        "message_id": "7f114d8a-5033-4f40-bca2-2a269c280600",
-        "timestamp": "2023-08-26T10:47:45.305Z"
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/buyer_ondc/",
+        "bpp_id": "shathabdhi-organics.mytra.money",
+        "bpp_uri": "https://shathabdhi-organics.mytra.money/api/method/ondc/",
+        "transaction_id": "3d2917b8-ab2b-4549-8633-5d0974511f7c",
+        "message_id": "aee69eef-d159-476b-8ec9-0f877b957745",
+        "timestamp": "2023-09-07T08:42:02.953Z"
     },
     "message": {
-        "orderbook": [
-            {
-                "id": "24c25d42-2a6d-4487-a047-d97e906e1280",
-                "collector_app_id": "ondc.indiastack.cloud",
-                "receiver_app_id": "sit.mytra.money",
-                "order_recon_status": "02",
-                "transaction_id": "8a4134ea-ba85-47d0-a1a8-169ee6c99c0e",
-                "settlement_id": "2595c95a-2033-475c-bfba-3b10986757e2",
-                "settlement_reference_no": "202304110010000D",
-                "counterparty_recon_status": "03",
-                "invoice_no": "531465",
-                "counterparty_diff_amount": {
-                    "currency": "INR",
-                    "value": "514.85"
+        "orderbook": {
+            "orders": [
+                {
+                    "id": "e8a632b1d6",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
+                    "order_recon_status": "02",
+                    "transaction_id": "fa1ec73d-9e1f-4881-afb6-edcf023ea930",
+                    "settlement_id": "21e13a4b-5560-4426-96e5-12286b728094",
+                    "settlement_reference_no": "IDFBH23237",
+                    "counterparty_recon_status": "03",
+                    "invoice_no": "ONDC-BUYER-PO-00057",
+                    "counterparty_diff_amount": {
+                        "currency": "INR",
+                        "value": "45.8"
+                    },
+                    "message": {
+                        "name": "lesser amount",
+                        "code": "less"
+                    }
                 },
-                "message": {
-                    "name": "lesser amount",
-                    "code": "less"
+                {
+                    "id": "0dd7a3843a",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
+                    "order_recon_status": "02",
+                    "transaction_id": "048e33af-4305-4558-8962-30fd3741793e",
+                    "settlement_id": "16d22329-bdaf-47fc-8fa9-47cdc4584918",
+                    "settlement_reference_no": "IDFBH23237",
+                    "counterparty_recon_status": "01",
+                    "invoice_no": "ONDC-BUYER-PO-00058"
+                },
+                {
+                    "id": "3a8575727b",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
+                    "order_recon_status": "02",
+                    "transaction_id": "b474ddcc-6762-4c80-9b46-4aec575e3e2d",
+                    "settlement_id": "4d42cca8-7189-4c7d-b2a5-8f3c7f978c6c",
+                    "settlement_reference_no": "IDFBH23237",
+                    "counterparty_recon_status": "01",
+                    "invoice_no": "ONDC-BUYER-PO-00059"
+                },
+                {
+                    "id": "3895512bad",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
+                    "order_recon_status": "02",
+                    "transaction_id": "2a30dfbe-26a3-4c99-9a2c-fec1c48989ed",
+                    "settlement_id": "7ec9eed1-1989-47d9-84d2-38acf8671038",
+                    "settlement_reference_no": "IDFBH23237",
+                    "counterparty_recon_status": "01",
+                    "invoice_no": "ONDC-BUYER-PO-00060"
+                },
+                {
+                    "id": "39f64a4e8b",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
+                    "order_recon_status": "02",
+                    "transaction_id": "29496e80-3faa-42d8-9970-4f17a9ac6f5a",
+                    "settlement_id": "ba3d2cd8-275b-4594-9674-765798f023ef",
+                    "settlement_reference_no": "IDFBH23237",
+                    "counterparty_recon_status": "01",
+                    "invoice_no": "ONDC-BUYER-PO-00061"
                 }
-            },
-            {
-                "id": "ae9955da-3867-4ed2-9fd2-20287949e5ca",
-                "collector_app_id": "ondc.indiastack.cloud",
-                "receiver_app_id": "sit.mytra.money",
-                "order_recon_status": "02",
-                "transaction_id": "8a4134ea-ba85-47d0-a1a8-169ee6c99c0e",
-                "settlement_id": "4a0931d7-1e44-42a5-b131-eccba0f3a869",
-                "settlement_reference_no": "202304110010000D",
-                "counterparty_recon_status": "01",
-                "invoice_no": "531464"
-            }
-        ]
+            ]
+        }
     }
 }
