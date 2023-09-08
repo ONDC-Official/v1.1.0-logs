@@ -7,19 +7,18 @@
         "core_version": "1.1.0",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_id": "ushopmicro-stage.hulcd.com",
         "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
-        "transaction_id": "4159c8c2-4370-43d4-b937-f0f9bf0b5e23",
-        "message_id": "fef6e7da-98b0-4809-becc-f987dafa3260",
-        "timestamp": "2023-08-31T06:43:18.849Z",
+        "transaction_id": "2ece0b0c-b0a2-4d66-89c1-a23703958d19",
+        "message_id": "bee897b3-88b4-4c7b-bb32-9a31d8a3224b",
+        "timestamp": "2023-09-06T21:13:31.188Z",
+        "bpp_id": "ushopmicro-stage.hulcd.com",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-08-31-373045",
+            "id": "2023-09-06-309240",
             "state": "Created",
             "billing": {
-                "name": "Subodh Kumar",
                 "address": {
                     "name": "Subodh Kumar",
                     "building": "Bren Avalon",
@@ -29,16 +28,50 @@
                     "country": "IND",
                     "area_code": "560048"
                 },
-                "email": "subodh1@gmail.com",
                 "phone": "9986697491",
-                "created_at": "2023-08-31T06:43:10.960Z",
-                "updated_at": "2023-08-31T06:43:10.960Z"
+                "name": "Subodh Kumar",
+                "email": "subodh1@gmail.com",
+                "created_at": "2023-09-06T21:13:22.084Z",
+                "updated_at": "2023-09-06T21:13:22.084Z"
+            },
+            "items": [{
+                    "id": "49375",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "444531313030313844"
+                }, {
+                    "id": "49376",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "444531313030313844"
+                }, {
+                    "id": "49355",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "444531313030313844"
+                }
+            ],
+            "provider": {
+                "id": "DE11001860354",
+                "locations": [{
+                        "id": "193"
+                    }
+                ]
             },
             "fulfillments": [{
-                    "id": "DE11001860354",
-                    "type": "Delivery",
+                    "id": "444531313030313844",
                     "tracking": false,
                     "end": {
+                        "contact": {
+                            "email": "subodh1@gmail.com",
+                            "phone": "9986697491"
+                        },
+                        "person": {
+                            "name": "Subodh Kumar"
+                        },
                         "location": {
                             "gps": "12.9949590000001, 77.6989090000001",
                             "address": {
@@ -49,29 +82,22 @@
                                 "state": "Karnataka",
                                 "country": "IND",
                                 "area_code": "560048"
-                            },
-                            "rateable": false
-                        },
-                        "contact": {
-                            "phone": "9986697491",
-                            "email": "subodh1@gmail.com"
-                        },
-                        "person": {
-                            "name": "Subodh Kumar"
+                            }
                         }
-                    }
+                    },
+                    "type": "Delivery"
                 }
             ],
             "payment": {
                 "uri": "https://juspay.in/",
                 "tl_method": "http/get",
                 "params": {
-                    "transaction_id": "4159c8c2-4370-43d4-b937-f0f9bf0b5e23",
-                    "amount": "1086.46",
-                    "currency": "INR"
+                    "amount": "1153.85",
+                    "currency": "INR",
+                    "transaction_id": "2ece0b0c-b0a2-4d66-89c1-a23703958d19"
                 },
-                "type": "ON-ORDER",
                 "status": "PAID",
+                "type": "ON-ORDER",
                 "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
@@ -84,86 +110,16 @@
                         "beneficiary_name": "Pushpanjali ",
                         "bank_name": "Axis Bank Ltd.",
                         "branch_name": "Jpnagar",
-                        "beneficiary_address": "EPIP Zone,ITPL Main Road,Near Vaidehi Hospital,EPIP Zone"
+                        "beneficiary_address": "Tower-J,REPUBLIC OF WHITEFIELD,Kundlalhalli,Tower-J"
                     }
                 ]
             },
-            "created_at": "2023-08-31T06:43:18.849Z",
-            "updated_at": "2023-08-31T06:43:18.849Z",
-            "provider": {
-                "id": "DE11001860354",
-                "rating": 0,
-                "locations": [{
-                        "id": "193",
-                        "rateable": false
-                    }
-                ],
-                "rateable": false
-            },
-            "items": [{
-                    "id": "49355",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "DE11001860354",
-                    "rating": 0,
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }, {
-                    "id": "49375",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "DE11001860354",
-                    "rating": 0,
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }
-            ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1086.46"
+                    "value": "1153.85"
                 },
                 "breakup": [{
-                        "title": "Chicco Baby Learn Together Oral Care Set - Green, 2 pcs",
-                        "price": {
-                            "currency": "INR",
-                            "value": "499.00"
-                        },
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "499.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
-                        },
-                        "@ondc/org/item_id": "49355",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        },
-                        "@ondc/org/title_type": "item"
-                    }, {
                         "title": "Chicco Baby Moments - Shampoo, Calendula & Hibiscus, For Tangle Free Nourished Hair & Scalp, 500 ml",
                         "price": {
                             "currency": "INR",
@@ -173,18 +129,43 @@
                             "price": {
                                 "currency": "INR",
                                 "value": "549.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
+                            }
                         },
                         "@ondc/org/item_id": "49375",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Chicco Baby Moments - Soap, Almond & Olive Oil, For Deep Moisturised Skin & Nourished Skin, 75 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "65.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "65.00"
+                            }
+                        },
+                        "@ondc/org/item_id": "49376",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
+                        "title": "Chicco Baby Learn Together Oral Care Set - Green, 2 pcs",
+                        "price": {
+                            "currency": "INR",
+                            "value": "499.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "499.00"
+                            }
+                        },
+                        "@ondc/org/item_id": "49355",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         },
@@ -193,9 +174,9 @@
                         "title": "Convenience Fee",
                         "price": {
                             "currency": "INR",
-                            "value": "38.46"
+                            "value": "40.85"
                         },
-                        "@ondc/org/item_id": "DE11001860354",
+                        "@ondc/org/item_id": "444531313030313844",
                         "@ondc/org/title_type": "misc"
                     }, {
                         "title": "Delivery charges",
@@ -203,12 +184,14 @@
                             "currency": "INR",
                             "value": "0.0"
                         },
-                        "@ondc/org/item_id": "DE11001860354",
+                        "@ondc/org/item_id": "444531313030313844",
                         "@ondc/org/title_type": "delivery"
                     }
                 ],
                 "ttl": "P1D"
-            }
+            },
+            "created_at": "2023-09-06T21:13:31.188Z",
+            "updated_at": "2023-09-06T21:13:31.188Z"
         }
     }
 }
