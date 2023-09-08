@@ -9,27 +9,22 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-29T19:01:09.347Z",
-    "message_id": "f83e1853-943d-42ec-a184-37b7848aaf8f",
+    "timestamp": "2023-09-07T13:15:55.386Z",
+    "message_id": "6f7dbd63-7856-49da-85b8-fa3c361b0377",
     "core_version": "1.1.0",
-    "transaction_id": "067b846e-1dc1-4319-959f-fcc538c20176"
+    "transaction_id": "75d61e05-7da2-418f-8d86-01960248913f"
   },
   "message": {
     "order": {
-      "id": "2023-08-29-967087",
+      "id": "2023-09-07-655212",
       "items": [
         {
-          "id": "2775201::1155940::EP08",
+          "id": "2775200::1155939::EP07",
           "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
-          "id": "2775200::1155939::EP07",
-          "quantity": { "count": 2 },
-          "fulfillment_id": "22446688739675_fulfillment_1"
-        },
-        {
-          "id": "2802915::1549408::HAR",
+          "id": "2775201::1155940::EP08",
           "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
@@ -41,18 +36,18 @@
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "917.5", "currency": "INR" },
+        "price": { "value": "791.5", "currency": "INR" },
         "breakup": [
           {
             "item": { "price": { "value": "110", "currency": "INR" } },
-            "price": { "value": "220", "currency": "INR" },
+            "price": { "value": "110", "currency": "INR" },
             "title": "Egg Curry",
             "@ondc/org/item_id": "2775200::1155939::EP07",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 2 }
+            "@ondc/org/item_quantity": { "count": 1 }
           },
           {
-            "price": { "value": "11", "currency": "INR" },
+            "price": { "value": "5.5", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775200::1155939::EP07",
             "@ondc/org/title_type": "tax"
@@ -86,20 +81,6 @@
             "@ondc/org/title_type": "tax"
           },
           {
-            "item": { "price": { "value": "10", "currency": "INR" } },
-            "price": { "value": "10", "currency": "INR" },
-            "title": "Egg",
-            "@ondc/org/item_id": "2802915::1549408::HAR",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 1 }
-          },
-          {
-            "price": { "value": "0.5", "currency": "INR" },
-            "title": "Tax",
-            "@ondc/org/item_id": "2802915::1549408::HAR",
-            "@ondc/org/title_type": "tax"
-          },
-          {
             "price": { "value": "46", "currency": "INR" },
             "title": "Delivery Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
@@ -121,16 +102,16 @@
           "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
           "area_code": "560066"
         },
-        "created_at": "2023-08-29T18:58:58.699Z",
-        "updated_at": "2023-08-29T18:58:58.699Z"
+        "created_at": "2023-09-07T13:14:47.509Z",
+        "updated_at": "2023-09-07T13:14:47.509Z"
       },
       "payment": {
         "uri": "https://juspay.in/",
         "type": "ON-ORDER",
         "params": {
-          "amount": "917.5",
+          "amount": "791.5",
           "currency": "INR",
-          "transaction_id": "067b846e-1dc1-4319-959f-fcc538c20176"
+          "transaction_id": "75d61e05-7da2-418f-8d86-01960248913f"
         },
         "status": "PAID",
         "tl_method": "http/get",
@@ -157,20 +138,20 @@
       },
       "documents": [
         {
-          "url": "https://backoffice.tmbill.com/ebill/2023-08-29-967087",
+          "url": "https://backoffice.tmbill.com/ebill/2023-09-07-655212",
           "label": "Invoice"
         }
       ],
-      "created_at": "2023-08-29T18:59:08.937Z",
-      "updated_at": "2023-08-29T19:01:09.347Z",
+      "created_at": "2023-09-07T13:14:51.961Z",
+      "updated_at": "2023-09-07T13:15:55.386Z",
       "fulfillments": [
         {
           "id": "22446688739675_fulfillment_1",
           "end": {
             "time": {
               "range": {
-                "end": "2023-08-29T19:49:08.937Z",
-                "start": "2023-08-29T19:14:08.937Z"
+                "end": "2023-09-07T14:14:00.000Z",
+                "start": "2023-09-07T13:34:00.000Z"
               }
             },
             "person": { "name": "John Doe" },
@@ -196,10 +177,10 @@
           "start": {
             "time": {
               "range": {
-                "end": "2023-08-29T19:14:08.937Z",
-                "start": "2023-08-29T18:59:08.937Z"
+                "end": "2023-09-07T13:34:00.000Z",
+                "start": "2023-09-07T13:14:00.000Z"
               },
-              "timestamp": "2023-08-29T18:59:09.148Z"
+              "timestamp": "2023-09-07T13:15:04.508Z"
             },
             "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
             "location": {

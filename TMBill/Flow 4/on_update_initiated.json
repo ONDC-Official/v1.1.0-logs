@@ -9,14 +9,14 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-29T19:53:19.270Z",
-    "message_id": "c57fd5c9-7aed-44d5-bb78-605faad207ff",
+    "timestamp": "2023-09-08T05:09:18.300Z",
+    "message_id": "55ebaa21-ae88-4748-bfb4-c548035e7507",
     "core_version": "1.1.0",
-    "transaction_id": "c27fdcaf-8516-4693-90f9-e9d93beaae67"
+    "transaction_id": "da99d7a2-f1e0-4655-a76b-540247b76520"
   },
   "message": {
     "order": {
-      "id": "2023-08-29-447028",
+      "id": "2023-09-08-427459",
       "items": [
         {
           "id": "2775203::1155942::EP10",
@@ -28,11 +28,16 @@
           "id": "2775204::1155943::EP11",
           "quantity": { "count": 2 },
           "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775205::1155944::EP12",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "376", "currency": "INR" },
+        "price": { "value": "578", "currency": "INR" },
         "breakup": [
           {
             "item": { "price": { "value": "100", "currency": "INR" } },
@@ -63,7 +68,21 @@
             "@ondc/org/title_type": "tax"
           },
           {
-            "price": { "value": "15.00", "currency": "INR" },
+            "item": { "price": { "value": "100", "currency": "INR" } },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Mutton Handi",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "10", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "7.00", "currency": "INR" },
             "title": "Packing Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
             "@ondc/org/title_type": "packing"
@@ -90,16 +109,16 @@
           "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
           "area_code": "560066"
         },
-        "created_at": "2023-08-29T19:49:49.096Z",
-        "updated_at": "2023-08-29T19:49:49.096Z"
+        "created_at": "2023-09-08T05:05:02.654Z",
+        "updated_at": "2023-09-08T05:05:02.654Z"
       },
       "payment": {
         "uri": "https://juspay.in/",
         "type": "ON-ORDER",
         "params": {
-          "amount": "376",
+          "amount": "578",
           "currency": "INR",
-          "transaction_id": "c27fdcaf-8516-4693-90f9-e9d93beaae67"
+          "transaction_id": "da99d7a2-f1e0-4655-a76b-540247b76520"
         },
         "status": "PAID",
         "tl_method": "http/get",
@@ -126,22 +145,22 @@
       },
       "documents": [
         {
-          "url": "https://backoffice.tmbill.com/ebill/2023-08-29-447028",
+          "url": "https://backoffice.tmbill.com/ebill/2023-09-08-427459",
           "label": "Invoice"
         }
       ],
-      "created_at": "2023-08-29T19:49:55.181Z",
-      "updated_at": "2023-08-29T19:49:57.273Z",
+      "created_at": "2023-09-08T05:05:13.054Z",
+      "updated_at": "2023-09-08T05:05:13.118Z",
       "fulfillments": [
         {
           "id": "22446688739675_fulfillment_1",
           "end": {
             "time": {
               "range": {
-                "end": "2023-08-29T20:08:19.171Z",
-                "start": "2023-08-29T19:53:19.171Z"
+                "end": "2023-09-08T05:31:00.000Z",
+                "start": "2023-09-08T05:11:00.000Z"
               },
-              "timestamp": "2023-08-29T19:52:34.178Z"
+              "timestamp": "2023-09-08T05:08:39.486Z"
             },
             "person": { "name": "John Doe" },
             "contact": {
@@ -166,10 +185,10 @@
           "start": {
             "time": {
               "range": {
-                "end": "2023-08-29T20:43:19.171Z",
-                "start": "2023-08-29T20:08:19.171Z"
+                "end": "2023-09-08T06:11:00.000Z",
+                "start": "2023-09-08T05:31:00.000Z"
               },
-              "timestamp": "2023-08-29T19:49:55.263Z"
+              "timestamp": "2023-09-08T05:05:54.869Z"
             },
             "person": { "name": "Eatsy" },
             "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
