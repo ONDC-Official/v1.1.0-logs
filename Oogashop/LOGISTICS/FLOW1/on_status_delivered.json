@@ -1,0 +1,120 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "STD:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "transaction_id": "9d21505f-650c-4283-a26b-d156a786feb0",
+        "message_id": "659c8037-a682-46b5-89c6-4e0667f4a2d9",
+        "timestamp": "2023-09-05T07:38:35.908Z"
+    },
+    "message": {
+        "order": {
+            "id": "0616cbcd-fa6c-4bdc-980d-2144ca7fbd27",
+            "state": "Completed",
+            "provider": {
+                "id": "107-Account-DER-292",
+                "locations": [
+                    {
+                        "id": "107-41c25527-eafc-42d9-abb2-03",
+                        "code": "P2P"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "19",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "OOGASHOP",
+                "address": {
+                    "name": "502",
+                    "building": "Optum Inclave",
+                    "locality": "Sector-53",
+                    "city": "Gurugram",
+                    "state": "Haryana",
+                    "country": "India",
+                    "area_code": "122002"
+                },
+                "email": "muktabh@paralleldots.com",
+                "phone": "9871764687",
+                "tax_number": "132425"
+            },
+            "fulfillments": [
+                {
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": true,
+                    "agent": {
+                        "phone": "7438483828",
+                        "name": "Peter"
+                    },
+                    "vehicle": {
+                        "category": "TwoWheeler",
+                        "size": "500.0000",
+                        "registration": "TN56NS8282"
+                    },
+                    "start": {
+                        "time": {
+                            "timestamp": "2023-09-05T07:36:11.377Z"
+                        },
+                        "instructions": {
+                            "name": "Deliver at door-step",
+                            "short_desc": "Deliver at door-step",
+                            "long_desc": "    61"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "timestamp": "2023-09-05T07:38:35.908Z"
+                        },
+                        "instructions": {
+                            "short_desc": "Deliver at door-step"
+                        }
+                    },
+                    "awb_number": "STID00253"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "20.0"
+                },
+                "breakup": [
+                    {
+                        "item_id": "19",
+                        "title_type": "DELIVERY",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.0"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "payment_type": "ON-ORDER",
+                "collected_by": "BAP",
+                "settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "upi",
+                        "settlement_bank_account_no": "50200067767476",
+                        "settlement_ifsc_code": "HDFC0004050",
+                        "upi_address": "paralleldotstechnolo.62711297@hdfcbank"
+                    }
+                ]
+            }
+        }
+    }
+}
