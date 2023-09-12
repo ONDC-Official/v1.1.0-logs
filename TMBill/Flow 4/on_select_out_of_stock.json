@@ -1,4 +1,10 @@
 {
+  "error": {
+    "code": "40002",
+    "path": "string",
+    "type": "DOMAIN-ERROR",
+    "message": "When the Seller App is unable to select the specified number in order.items[].quantity"
+  },
   "context": {
     "ttl": "PT30S",
     "city": "std:080",
@@ -9,10 +15,10 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-22T05:27:18.308Z",
-    "message_id": "dc10721a-b378-48f1-8043-1f9cdae6c245",
+    "timestamp": "2023-09-08T05:00:31.984Z",
+    "message_id": "12ec7b74-6c4a-4f18-bbdd-6e9f0fcc14f8",
     "core_version": "1.1.0",
-    "transaction_id": "ffb401c3-d160-4ca7-b5fa-59ff4a791869"
+    "transaction_id": "da99d7a2-f1e0-4655-a76b-540247b76520"
   },
   "message": {
     "order": {
@@ -24,25 +30,25 @@
         },
         {
           "id": "2775204::1155943::EP11",
-          "quantity": { "count": 3 },
+          "quantity": { "count": 2 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775205::1155944::EP12",
-          "quantity": { "count": 3 },
+          "quantity": { "count": 2 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "716", "currency": "INR" },
+        "price": { "value": "578", "currency": "INR" },
         "breakup": [
           {
             "item": {
               "price": { "value": "100", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "101" },
-                "available": { "count": "101" }
+                "maximum": { "count": "99" },
+                "available": { "count": "99" }
               }
             },
             "price": { "value": "100", "currency": "INR" },
@@ -52,25 +58,37 @@
             "@ondc/org/item_quantity": { "count": 1 }
           },
           {
-            "item": {
-              "price": { "value": "100", "currency": "INR" },
-              "quantity": {
-                "maximum": { "count": "103" },
-                "available": { "count": "103" }
-              }
-            },
-            "price": { "value": "300", "currency": "INR" },
-            "title": "Mutton Masala",
-            "@ondc/org/item_id": "2775204::1155943::EP11",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 3 }
+            "price": { "value": "5", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/title_type": "tax"
           },
           {
             "item": {
               "price": { "value": "100", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "2" },
-                "available": { "count": "2" }
+                "maximum": { "count": "98" },
+                "available": { "count": "98" }
+              }
+            },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Mutton Masala",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "10", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "0" },
+                "available": { "count": "0" }
               }
             },
             "price": { "value": "200", "currency": "INR" },
@@ -80,16 +98,16 @@
             "@ondc/org/item_quantity": { "count": 2 }
           },
           {
-            "price": { "value": "35.00", "currency": "INR" },
-            "title": "Packing Charges",
-            "@ondc/org/item_id": "22446688739675_fulfillment_1",
-            "@ondc/org/title_type": "packing"
-          },
-          {
-            "price": { "value": "35.00", "currency": "INR" },
+            "price": { "value": "10", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775205::1155944::EP12",
             "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "7.00", "currency": "INR" },
+            "title": "Packing Charges",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "packing"
           },
           {
             "price": { "value": "46", "currency": "INR" },
@@ -109,12 +127,10 @@
           },
           "tracking": false,
           "@ondc/org/TAT": "PT60M",
-          "deliveryCharge": "46",
           "@ondc/org/category": "Immediate Delivery",
-          "@ondc/org/provider_name": "22446688739675"
+          "@ondc/org/provider_name": "TMBill"
         }
-      ],
-      "provider_location": { "id": "22446688739675" }
+      ]
     }
   }
 }

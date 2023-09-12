@@ -1,0 +1,199 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "STD:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bpp_id": "preprod-bpp.iway.digiit.io",
+        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+        "transaction_id": "aa049a94-183b-4fea-8ae8-91b4bed48609",
+        "message_id": "6c67c008-ddee-41d7-8789-14b14d4e3911",
+        "timestamp": "2023-09-05T07:40:54.995Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "ade99e44-346e-4e04-a67d-805eb40d52f0",
+            "state": "Created",
+            "provider": {
+                "id": "107-Account-DER-292",
+                "locations": [
+                    {
+                        "id": "107-41c25527-eafc-42d9-abb2-03"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "19",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "OOGASHOP",
+                "address": {
+                    "name": "502",
+                    "building": "Optum Inclave",
+                    "locality": "Sector-53",
+                    "city": "Gurugram",
+                    "state": "Haryana",
+                    "country": "India",
+                    "area_code": "122002"
+                },
+                "email": "muktabh@paralleldots.com",
+                "phone": "9871764687",
+                "tax_number": "132425",
+                "created_at": "2023-09-05T07:40:54.995453371Z",
+                "updated_at": "2023-09-05T07:40:54.995453371Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "start": {
+                        "location": {
+                            "gps": "12.910816, 77.546946",
+                            "address": {
+                                "name": "My building #",
+                                "building": "My building name",
+                                "locality": "My street name",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560061"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "Deliver at door-step",
+                            "long_desc": "    73",
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://preprodlogistics.ooga.shop/ondc-site-verification.html"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9625341429",
+                            "email": "raju@gmail.com"
+                        },
+                        "person": {
+                            "name": "Raju1"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.910816, 77.546946",
+                            "address": {
+                                "name": "My building #",
+                                "building": "My building name",
+                                "locality": "My street name",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560061"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "Deliver at door-step",
+                            "long_desc": "      73",
+                            "additional_desc": {
+                                "content_type": "text/html",
+                                "url": "https://preprodlogistics.ooga.shop/ondc-site-verification.html"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9625341429",
+                            "email": "aman@gmail.com"
+                        },
+                        "person": {
+                            "name": "Aman1"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "20.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "19",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.0"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "upi",
+                        "settlement_bank_account_no": "50200067767476",
+                        "settlement_ifsc_code": "HDFC0004050",
+                        "upi_address": "paralleldotstechnolo.62711297@hdfcbank",
+                        "beneficiary_name": "PARALLELDOTS TECHNOLOGY PVT LTD OOGASHOP"
+                    }
+                ],
+                "@ondc/org/collection_amount": "0"
+            },
+            "created_at": "2023-09-05T07:40:54.995Z",
+            "updated_at": "2023-09-05T07:40:54.995Z",
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "F&B",
+                        "quantity": {
+                            "count": 2,
+                            "measure": {
+                                "value": "2",
+                                "unit": "UNITS"
+                            }
+                        },
+                        "descriptor": {
+                            "name": "Mustard Oil"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "120"
+                        }
+                    }
+                ],
+                "provider": {
+                    "descriptor": {
+                        "name": "Test Store"
+                    },
+                    "address": {
+                        "name": "My building #",
+                        "building": "My building name",
+                        "locality": "My street name",
+                        "city": "Bengaluru",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560061"
+                    }
+                },
+                "order": {
+                    "id": "145281",
+                    "weight": {
+                        "value": 3,
+                        "unit": "Kilogram"
+                    }
+                }
+            }
+        }
+    }
+}

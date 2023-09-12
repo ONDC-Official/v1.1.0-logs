@@ -12,7 +12,6 @@
     "bpp_uri": "https://ondc-test.snapbizz.com",
     "action": "receiver_recon",
     "bap_uri": "https://rsp-stag.proteantech.in",
-    "key": null,
     "timestamp": "2023-08-26T11:56:06.000Z"
   },
   "message": {
@@ -60,14 +59,17 @@
               "currency": "INR"
             },
             "type": "ON-ORDER",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
             "@ondc/org/settlement_basis_status": "Assert",
             "@ondc/org/settlement_details": [
               {
                 "beneficiary_address": "KundanhAli gate Banglore",
                 "settlement_status": "PAID",
-                "settlement_counterparty": "buyer-app",
+                "settlement_counterparty": "seller-app",
                 "settlement_phase": "sale-amount",
                 "branch_name": "Marathalli",
+                "beneficiary_name" : "Snapbizz",
                 "bank_name": "Axis Bank",
                 "settlement_amount": 7716.8,
                 "settlement_ifsc_code": "UTIB0000300",

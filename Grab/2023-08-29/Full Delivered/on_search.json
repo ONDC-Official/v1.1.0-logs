@@ -1,0 +1,96 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_search",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.viranc.com/p/v1/store",
+		"bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "4da09feb-c8c2-55bf-869b-ba3d80603bf3",
+		"message_id": "f049499c-d8fb-5407-a385-fabaa32e59ec",
+		"timestamp": "2023-08-29T07:11:53.316Z"
+	},
+	"message": {
+		"catalog": {
+			"bpp/fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid"
+				},
+				{
+					"id": "3",
+					"type": "RTO"
+				}
+			],
+			"bpp/descriptor": {
+				"name": "Grab Logistics"
+			},
+			"bpp/providers": [
+				{
+					"id": "grab-logistics",
+					"descriptor": {
+						"name": "Grab Logistics",
+						"short_desc": "Grab Logistics",
+						"long_desc": "Grab Logistics"
+					},
+					"items": [
+						{
+							"id": "G79776-52821H",
+							"parent_item_id": "",
+							"category_id": "Same Day Delivery",
+							"fulfillment_id": "1",
+							"descriptor": {
+								"code": "P2P",
+								"name": "Same Day Delivery",
+								"short_desc": "Same Day Delivery",
+								"long_desc": "Same Day Delivery"
+							},
+							"price": {
+								"currency": "INR",
+								"value": "1.0"
+							},
+							"time": {
+								"label": "TAT",
+								"duration": "PT4H",
+								"timestamp": "2023-08-29T07:11:54.534Z"
+							}
+						},
+						{
+							"id": "G81730-97632V",
+							"parent_item_id": "G79776-52821H",
+							"category_id": "Same Day Delivery",
+							"fulfillment_id": "3",
+							"descriptor": {
+								"code": "P2P",
+								"name": "RTO quote",
+								"short_desc": "RTO quote",
+								"long_desc": "RTO quote"
+							},
+							"price": {
+								"currency": "INR",
+								"value": "0"
+							},
+							"time": {
+								"label": "TAT",
+								"duration": "PT4H",
+								"timestamp": "2023-08-29T07:11:54.534Z"
+							}
+						}
+					],
+					"categories": [
+						{
+							"id": "Same Day Delivery",
+							"time": {
+								"label": "TAT",
+								"duration": "PT4H"
+							}
+						}
+					]
+				}
+			]
+		}
+	}
+}

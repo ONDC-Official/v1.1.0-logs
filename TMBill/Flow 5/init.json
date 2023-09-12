@@ -3,45 +3,47 @@
     "ttl": "PT30S",
     "city": "std:080",
     "action": "init",
-    "bap_id": "shopping-api-testing.phonepe.com",
+    "bap_id": "buyer-app-preprod.ondc.org",
     "bpp_id": "staging.tmbill.com/tp/v1/ondc",
     "domain": "nic2004:52110",
-    "bap_uri": "https://shopping-api-testing.phonepe.com/apis/ondcConnector/bpp/callback/v1",
-    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc/",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-22T07:38:19.000Z",
-    "message_id": "INIM2308221308194286383145",
+    "timestamp": "2023-09-07T14:09:36.727Z",
+    "message_id": "a32e8bf8-ebd6-429e-bc0f-6aca9324d912",
     "core_version": "1.1.0",
-    "transaction_id": "C2308212109524894754690"
+    "transaction_id": "f0404c76-fe4c-4bdc-93a7-1d6651757233"
   },
   "message": {
     "order": {
       "items": [
         {
-          "id": "2775202::1155941::EP09",
+          "id": "2775203::1155942::EP10",
           "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
-          "id": "2775201::1155940::EP08",
+          "id": "2775204::1155943::EP11",
           "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "billing": {
-        "name": "Sid Mane",
-        "phone": "9765995955",
+        "name": "John Doe",
+        "email": "xifelo7871@fulwark.com",
+        "phone": "9090999900",
         "address": {
           "city": "Bengaluru",
-          "name": "BM Glorita Wing C",
+          "door": "Whitefield",
+          "name": "John Doe",
           "state": "Karnataka",
           "country": "IND",
-          "building": "Flat no 7",
-          "locality": "----",
+          "building": "Whitefield",
+          "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
           "area_code": "560066"
         },
-        "created_at": "2023-08-22T07:38:19.000Z",
-        "updated_at": "2023-08-22T07:38:19.000Z"
+        "created_at": "2023-09-07T14:09:36.727Z",
+        "updated_at": "2023-09-07T14:09:36.727Z"
       },
       "provider": {
         "id": "22446688739675",
@@ -51,22 +53,24 @@
         {
           "id": "22446688739675_fulfillment_1",
           "end": {
-            "contact": { "phone": "9765995955" },
+            "contact": {
+              "email": "xifelo7871@fulwark.com",
+              "phone": "9090999900"
+            },
             "location": {
-              "gps": "12.970549349606,77.741021621799",
+              "gps": "12.9872810000001, 77.7321000000001",
               "address": {
                 "city": "Bengaluru",
-                "name": "BM Glorita Wing C",
+                "name": "John Doe",
                 "state": "Karnataka",
                 "country": "IND",
-                "building": "Flat no 7",
-                "locality": "----",
+                "building": "Whitefield",
+                "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
                 "area_code": "560066"
               }
             }
           },
-          "type": "Delivery",
-          "provider_id": "staging.tmbill.com/tp/v1/ondc"
+          "type": "Delivery"
         }
       ]
     }

@@ -9,10 +9,10 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-21T14:22:27.834Z",
-    "message_id": "977a3f4b-5ddd-4589-b4e8-830a98b35192",
+    "timestamp": "2023-09-07T13:14:43.544Z",
+    "message_id": "5b3e396f-1138-45ff-9fbd-5f58d01ad381",
     "core_version": "1.1.0",
-    "transaction_id": "26aa089f-92c8-4056-b7c1-5fa00d618be0"
+    "transaction_id": "75d61e05-7da2-418f-8d86-01960248913f"
   },
   "message": {
     "order": {
@@ -24,25 +24,25 @@
         },
         {
           "id": "2775201::1155940::EP08",
-          "quantity": { "count": 2 },
+          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775202::1155941::EP09",
-          "quantity": { "count": 3 },
+          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "1521.26", "currency": "INR" },
+        "price": { "value": "791.5", "currency": "INR" },
         "breakup": [
           {
             "item": {
               "price": { "value": "110", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "101" },
-                "available": { "count": "101" }
+                "maximum": { "count": "99" },
+                "available": { "count": "99" }
               }
             },
             "price": { "value": "110", "currency": "INR" },
@@ -52,41 +52,47 @@
             "@ondc/org/item_quantity": { "count": 1 }
           },
           {
+            "price": { "value": "5.5", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "tax"
+          },
+          {
             "item": {
               "price": { "value": "500", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "102" },
-                "available": { "count": "102" }
+                "maximum": { "count": "99" },
+                "available": { "count": "99" }
               }
             },
-            "price": { "value": "1000", "currency": "INR" },
+            "price": { "value": "500", "currency": "INR" },
             "title": "Egg Masala",
             "@ondc/org/item_id": "2775201::1155940::EP08",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 2 }
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "25", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
           },
           {
             "item": {
               "price": { "value": "100", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "103" },
-                "available": { "count": "103" }
+                "maximum": { "count": "99" },
+                "available": { "count": "99" }
               }
             },
-            "price": { "value": "300", "currency": "INR" },
+            "price": { "value": "100", "currency": "INR" },
             "title": "Egg Bhurji",
             "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 3 }
+            "@ondc/org/item_quantity": { "count": 1 }
           },
           {
-            "price": { "value": "-5", "currency": "INR" },
-            "title": "Discount",
-            "@ondc/org/item_id": "2775202::1155941::EP09",
-            "@ondc/org/title_type": "discount"
-          },
-          {
-            "price": { "value": "70.26", "currency": "INR" },
+            "price": { "value": "5", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "tax"
@@ -109,12 +115,10 @@
           },
           "tracking": false,
           "@ondc/org/TAT": "PT60M",
-          "deliveryCharge": "46",
           "@ondc/org/category": "Immediate Delivery",
-          "@ondc/org/provider_name": "22446688739675"
+          "@ondc/org/provider_name": "TMBill"
         }
-      ],
-      "provider_location": { "id": "22446688739675" }
+      ]
     }
   }
 }

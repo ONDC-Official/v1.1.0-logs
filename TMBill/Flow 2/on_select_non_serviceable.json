@@ -1,9 +1,9 @@
 {
   "error": {
-    "code": "30011",
+    "code": "30009",
     "path": "string",
     "type": "DOMAIN-ERROR",
-    "message": "Delivery Partners not available, please try again after some time"
+    "message": "Dropoff location not serviceable by Logistics Provider"
   },
   "context": {
     "ttl": "PT30S",
@@ -15,54 +15,80 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-21T15:43:28.133Z",
-    "message_id": "9e69fd84-d395-4f16-8be2-f5ec8212ace8",
+    "timestamp": "2023-09-07T13:34:06.566Z",
+    "message_id": "f7b0f20e-05b3-4a05-b7d7-2052b0c5de2b",
     "core_version": "1.1.0",
-    "transaction_id": "ba9b351b-559d-4abf-a5f1-38c9e1405ef1"
+    "transaction_id": "d563095a-8435-4048-9a1b-20dfde6b95b7"
   },
   "message": {
     "order": {
       "items": [
         {
-          "id": "2775199::1155936::EP04",
-          "quantity": { "count": 2 },
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775202::1155941::EP09",
           "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
-        },
-        {
-          "id": "2775204::1155943::EP11",
-          "quantity": { "count": 3 },
-          "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "679", "currency": "INR" },
+        "price": { "value": "745.5", "currency": "INR" },
         "breakup": [
           {
             "item": {
-              "price": { "value": "100", "currency": "INR" },
+              "price": { "value": "110", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "102" },
-                "available": { "count": "102" }
+                "maximum": { "count": "99" },
+                "available": { "count": "99" }
               }
             },
-            "price": { "value": "200", "currency": "INR" },
-            "title": "Chicken Curry",
-            "@ondc/org/item_id": "2775199::1155936::EP04",
+            "price": { "value": "110", "currency": "INR" },
+            "title": "Egg Curry",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 2 }
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "5.5", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": {
+              "price": { "value": "500", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "99" },
+                "available": { "count": "99" }
+              }
+            },
+            "price": { "value": "500", "currency": "INR" },
+            "title": "Egg Masala",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "25", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
           },
           {
             "item": {
               "price": { "value": "100", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "101" },
-                "available": { "count": "101" }
+                "maximum": { "count": "99" },
+                "available": { "count": "99" }
               }
             },
             "price": { "value": "100", "currency": "INR" },
@@ -72,42 +98,10 @@
             "@ondc/org/item_quantity": { "count": 1 }
           },
           {
-            "item": {
-              "price": { "value": "100", "currency": "INR" },
-              "quantity": {
-                "maximum": { "count": "103" },
-                "available": { "count": "103" }
-              }
-            },
-            "price": { "value": "300", "currency": "INR" },
-            "title": "Mutton Masala",
-            "@ondc/org/item_id": "2775204::1155943::EP11",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 3 }
-          },
-          {
-            "price": { "value": "25.00", "currency": "INR" },
-            "title": "Packing Charges",
-            "@ondc/org/item_id": "22446688739675_fulfillment_1",
-            "@ondc/org/title_type": "packing"
-          },
-          {
-            "price": { "value": "-10.00", "currency": "INR" },
-            "title": "Discount",
-            "@ondc/org/item_id": "2775204::1155943::EP11",
-            "@ondc/org/title_type": "discount"
-          },
-          {
-            "price": { "value": "29.00", "currency": "INR" },
+            "price": { "value": "5", "currency": "INR" },
             "title": "Tax",
-            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "tax"
-          },
-          {
-            "price": { "value": "35", "currency": "INR" },
-            "title": "Delivery Charges",
-            "@ondc/org/item_id": "22446688739675_fulfillment_1",
-            "@ondc/org/title_type": "delivery"
           }
         ]
       },
@@ -124,12 +118,10 @@
           },
           "tracking": false,
           "@ondc/org/TAT": "PT60M",
-          "deliveryCharge": "35",
           "@ondc/org/category": "Immediate Delivery",
-          "@ondc/org/provider_name": "22446688739675"
+          "@ondc/org/provider_name": "TMBill"
         }
-      ],
-      "provider_location": { "id": "22446688739675" }
+      ]
     }
   }
 }

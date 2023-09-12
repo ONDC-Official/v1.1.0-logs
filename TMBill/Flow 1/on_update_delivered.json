@@ -9,113 +9,66 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-21T14:28:53.587Z",
-    "message_id": "d8b02687-8220-4154-9db8-bd5a0fc3b5fb",
+    "timestamp": "2023-09-07T13:19:08.363Z",
+    "message_id": "e8c2c06c-c3cd-47ea-9a9a-0be21d046b17",
     "core_version": "1.1.0",
-    "transaction_id": "26aa089f-92c8-4056-b7c1-5fa00d618be0"
+    "transaction_id": "75d61e05-7da2-418f-8d86-01960248913f"
   },
   "message": {
     "order": {
-      "id": "2023-08-21-348352",
+      "id": "2023-09-07-655212",
       "items": [
         {
           "id": "2775200::1155939::EP07",
-          "tags": {
-            "status": "Return_Delivered"
-          },
-          "quantity": {
-            "count": 1
-          },
+          "tags": { "status": "Return_Delivered" },
+          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_ReverseQC"
         },
         {
           "id": "2775201::1155940::EP08",
-          "quantity": {
-            "count": 2
-          },
+          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775202::1155941::EP09",
-          "quantity": {
-            "count": 3
-          },
+          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": {
-          "value": "1476",
-          "currency": "INR"
-        },
+        "price": { "value": "676", "currency": "INR" },
         "breakup": [
           {
-            "item": {
-              "price": {
-                "value": "500",
-                "currency": "INR"
-              },
-              "quantity": {
-                "maximum": {
-                  "count": "22"
-                },
-                "available": {
-                  "count": "22"
-                }
-              }
-            },
-            "price": {
-              "value": "1000",
-              "currency": "INR"
-            },
+            "item": { "price": { "value": "500", "currency": "INR" } },
+            "price": { "value": "500", "currency": "INR" },
             "title": "Egg Masala",
             "@ondc/org/item_id": "2775201::1155940::EP08",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            }
+            "@ondc/org/item_quantity": { "count": 1 }
           },
           {
-            "item": {
-              "price": {
-                "value": "100",
-                "currency": "INR"
-              },
-              "quantity": {
-                "maximum": {
-                  "count": "23"
-                },
-                "available": {
-                  "count": "23"
-                }
-              }
-            },
-            "price": {
-              "value": "300",
-              "currency": "INR"
-            },
+            "price": { "value": "25", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": { "price": { "value": "100", "currency": "INR" } },
+            "price": { "value": "100", "currency": "INR" },
             "title": "Egg Bhurji",
             "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": {
-              "count": 3
-            }
+            "@ondc/org/item_quantity": { "count": 1 }
           },
           {
-            "price": {
-              "value": "130",
-              "currency": "INR"
-            },
+            "price": { "value": "5", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "tax"
           },
           {
-            "price": {
-              "value": "46",
-              "currency": "INR"
-            },
+            "price": { "value": "46", "currency": "INR" },
             "title": "Delivery Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
             "@ondc/org/title_type": "delivery"
@@ -132,19 +85,20 @@
           "name": "John Doe",
           "state": "Karnataka",
           "country": "IND",
+          "building": "Whitefield",
           "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
           "area_code": "560066"
         },
-        "created_at": "2023-08-21T14:22:39.746Z",
-        "updated_at": "2023-08-21T14:22:39.746Z"
+        "created_at": "2023-09-07T13:14:47.509Z",
+        "updated_at": "2023-09-07T13:14:47.509Z"
       },
       "payment": {
         "uri": "https://juspay.in/",
         "type": "ON-ORDER",
         "params": {
-          "amount": "1521.26",
+          "amount": "791.5",
           "currency": "INR",
-          "transaction_id": "26aa089f-92c8-4056-b7c1-5fa00d618be0"
+          "transaction_id": "75d61e05-7da2-418f-8d86-01960248913f"
         },
         "status": "PAID",
         "tl_method": "http/get",
@@ -159,6 +113,13 @@
             "settlement_ifsc_code": "HDFC0000966",
             "settlement_counterparty": "seller-app",
             "settlement_bank_account_no": "50200085305869"
+          },
+          {
+            "settlement_type": "upi",
+            "settlement_phase": "refund",
+            "settlement_amount": "115",
+            "settlement_timestamp": "2023-09-07T13:18:30.726Z",
+            "settlement_counterparty": "buyer"
           }
         ],
         "@ondc/org/buyer_app_finder_fee_type": "percent",
@@ -167,34 +128,28 @@
       "provider": {
         "id": "22446688739675",
         "rateable": true,
-        "locations": [
-          {
-            "id": "22446688739675"
-          }
-        ]
+        "locations": [{ "id": "22446688739675" }]
       },
       "documents": [
         {
-          "url": "https://backoffice.tmbill.com/ebill/2023-08-21-348352",
+          "url": "https://backoffice.tmbill.com/ebill/2023-09-07-655212",
           "label": "Invoice"
         }
       ],
-      "created_at": "2023-08-21T14:22:46.127Z",
-      "updated_at": "2023-08-21T14:28:53.587Z",
+      "created_at": "2023-09-07T13:14:51.961Z",
+      "updated_at": "2023-09-07T13:19:08.363Z",
       "fulfillments": [
         {
           "id": "22446688739675_fulfillment_1",
           "end": {
             "time": {
               "range": {
-                "end": "2023-08-21T15:07:46.127Z",
-                "start": "2023-08-21T15:07:46.127Z"
+                "end": "2023-09-07T13:38:00.000Z",
+                "start": "2023-09-07T13:18:00.000Z"
               },
-              "timestamp": "2023-08-21T14:26:00.192Z"
+              "timestamp": "2023-09-07T13:16:27.206Z"
             },
-            "person": {
-              "name": "John Doe"
-            },
+            "person": { "name": "John Doe" },
             "contact": {
               "email": "xifelo7871@fulwark.com",
               "phone": "9090999900"
@@ -206,46 +161,35 @@
                 "name": "John Doe",
                 "state": "Karnataka",
                 "country": "IND",
-                "building": "",
+                "building": "Whitefield",
                 "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
                 "area_code": "560066"
               },
-              "descriptor": {
-                "name": "John Doe",
-                "images": []
-              }
+              "descriptor": { "name": "John Doe", "images": [] }
             }
           },
           "type": "Delivery",
-          "agent": {
-            "name": "Tasneem",
-            "phone": "999999999"
-          },
+          "agent": { "name": "Tasneem", "phone": "999999999" },
           "start": {
             "time": {
               "range": {
-                "end": "2023-08-21T15:07:46.127Z",
-                "start": "2023-08-21T15:07:46.127Z"
+                "end": "2023-09-07T14:18:00.000Z",
+                "start": "2023-09-07T13:38:00.000Z"
               },
-              "timestamp": "2023-08-21T14:22:46.000Z"
+              "timestamp": "2023-09-07T13:15:04.508Z"
             },
-            "person": {
-              "name": "Eatsy"
-            },
-            "contact": {
-              "email": "sid@tmbill.com",
-              "phone": "7798548540"
-            },
+            "person": { "name": "Eatsy" },
+            "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
             "location": {
               "id": "22446688739675",
               "gps": "12.970698591977477,77.7471608509239",
               "address": {
                 "city": "Bengaluru",
-                "name": "John Doe",
+                "name": "",
                 "state": "Karnataka",
                 "country": "IND",
                 "building": "",
-                "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+                "locality": "Whitefield",
                 "area_code": "560066"
               },
               "descriptor": {
@@ -264,32 +208,29 @@
           },
           "rateable": true,
           "tracking": false,
-          "@ondc/org/provider_name": "22446688739675"
+          "@ondc/org/provider_name": "TMBill"
         },
         {
           "id": "22446688739675_fulfillment_ReverseQC",
           "end": {
             "time": {
               "range": {
-                "end": "2023-08-21T15:07:46.127Z",
-                "start": "2023-08-21T15:07:46.127Z"
+                "end": "2023-09-07T14:18:00.000Z",
+                "start": "2023-09-07T13:38:00.000Z"
               },
-              "timestamp": "2023-08-21T14:28:00.192Z"
+              "timestamp": "2023-09-07T13:19:08.363Z"
             },
-            "contact": {
-              "email": "sid@tmbill.com",
-              "phone": "7798548540"
-            },
+            "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
             "location": {
               "id": "22446688739675",
               "gps": "12.970698591977477,77.7471608509239",
               "address": {
                 "city": "Bengaluru",
-                "name": "John Doe",
+                "name": "",
                 "state": "Karnataka",
                 "country": "IND",
                 "building": "",
-                "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+                "locality": "Whitefield",
                 "area_code": "560066"
               },
               "descriptor": {
@@ -301,21 +242,16 @@
             }
           },
           "type": "Reverse QC",
-          "agent": {
-            "name": "Tasneem",
-            "phone": "999999999"
-          },
+          "agent": { "name": "Tasneem", "phone": "999999999" },
           "start": {
             "time": {
               "range": {
-                "end": "2023-08-21T15:07:46.127Z",
-                "start": "2023-08-21T15:07:46.127Z"
+                "end": "2023-09-07T13:38:00.000Z",
+                "start": "2023-09-07T13:18:00.000Z"
               },
-              "timestamp": "2023-08-21T14:26:41.738Z"
+              "timestamp": "2023-09-07T13:18:30.416Z"
             },
-            "person": {
-              "name": "John Doe"
-            },
+            "person": { "name": "John Doe" },
             "contact": {
               "email": "xifelo7871@fulwark.com",
               "phone": "9090999900"
@@ -327,14 +263,11 @@
                 "name": "John Doe",
                 "state": "Karnataka",
                 "country": "IND",
-                "building": "",
+                "building": "Whitefield",
                 "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
                 "area_code": "560066"
               },
-              "descriptor": {
-                "name": "John Doe",
-                "images": []
-              }
+              "descriptor": { "name": "John Doe", "images": [] }
             }
           },
           "state": {

@@ -9,148 +9,86 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-22T06:09:22.932Z",
-    "message_id": "dc0eec20-ba8a-48f8-aa3c-3de4147f6612",
+    "timestamp": "2023-09-08T05:09:18.300Z",
+    "message_id": "55ebaa21-ae88-4748-bfb4-c548035e7507",
     "core_version": "1.1.0",
-    "transaction_id": "ffb401c3-d160-4ca7-b5fa-59ff4a791869"
+    "transaction_id": "da99d7a2-f1e0-4655-a76b-540247b76520"
   },
   "message": {
     "order": {
-      "id": "2023-08-22-190415",
+      "id": "2023-09-08-427459",
       "items": [
         {
-          "id": "2775205::1155944::EP12",
-          "quantity": {
-            "count": 2
-          },
-          "fulfillment_id": "22446688739675_fulfillment_1"
-        },
-        {
           "id": "2775203::1155942::EP10",
-          "tags": {
-            "status": "Return_Initiated"
-          },
-          "quantity": {
-            "count": 1
-          },
+          "tags": { "status": "Return_Initiated" },
+          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775204::1155943::EP11",
-          "quantity": {
-            "count": 3
-          },
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775205::1155944::EP12",
+          "quantity": { "count": 2 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": {
-          "value": "706",
-          "currency": "INR"
-        },
+        "price": { "value": "578", "currency": "INR" },
         "breakup": [
           {
-            "item": {
-              "price": {
-                "value": "100",
-                "currency": "INR"
-              },
-              "quantity": {
-                "maximum": {
-                  "count": "101"
-                },
-                "available": {
-                  "count": "101"
-                }
-              }
-            },
-            "price": {
-              "value": "100",
-              "currency": "INR"
-            },
+            "item": { "price": { "value": "100", "currency": "INR" } },
+            "price": { "value": "100", "currency": "INR" },
             "title": "Mutton Curry",
             "@ondc/org/item_id": "2775203::1155942::EP10",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": {
-              "count": 1
-            }
+            "@ondc/org/item_quantity": { "count": 1 }
           },
           {
-            "item": {
-              "price": {
-                "value": "100",
-                "currency": "INR"
-              },
-              "quantity": {
-                "maximum": {
-                  "count": "103"
-                },
-                "available": {
-                  "count": "103"
-                }
-              }
-            },
-            "price": {
-              "value": "300",
-              "currency": "INR"
-            },
+            "price": { "value": "5", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": { "price": { "value": "100", "currency": "INR" } },
+            "price": { "value": "200", "currency": "INR" },
             "title": "Mutton Masala",
             "@ondc/org/item_id": "2775204::1155943::EP11",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": {
-              "count": 3
-            }
+            "@ondc/org/item_quantity": { "count": 2 }
           },
           {
-            "item": {
-              "price": {
-                "value": "100",
-                "currency": "INR"
-              },
-              "quantity": {
-                "maximum": {
-                  "count": "102"
-                },
-                "available": {
-                  "count": "102"
-                }
-              }
-            },
-            "price": {
-              "value": "200",
-              "currency": "INR"
-            },
+            "price": { "value": "10", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": { "price": { "value": "100", "currency": "INR" } },
+            "price": { "value": "200", "currency": "INR" },
             "title": "Mutton Handi",
             "@ondc/org/item_id": "2775205::1155944::EP12",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            }
+            "@ondc/org/item_quantity": { "count": 2 }
           },
           {
-            "price": {
-              "value": "30.00",
-              "currency": "INR"
-            },
-            "title": "Packaging Charges",
-            "@ondc/org/item_id": "22446688739675_fulfillment_1",
-            "@ondc/org/title_type": "packing"
-          },
-          {
-            "price": {
-              "value": "30.00",
-              "currency": "INR"
-            },
+            "price": { "value": "10", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775205::1155944::EP12",
             "@ondc/org/title_type": "tax"
           },
           {
-            "price": {
-              "value": "46",
-              "currency": "INR"
-            },
+            "price": { "value": "7.00", "currency": "INR" },
+            "title": "Packing Charges",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "packing"
+          },
+          {
+            "price": { "value": "46", "currency": "INR" },
             "title": "Delivery Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
             "@ondc/org/title_type": "delivery"
@@ -167,19 +105,20 @@
           "name": "John Doe",
           "state": "Karnataka",
           "country": "IND",
+          "building": "Whitefield",
           "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
           "area_code": "560066"
         },
-        "created_at": "2023-08-22T05:30:01.981Z",
-        "updated_at": "2023-08-22T05:30:01.981Z"
+        "created_at": "2023-09-08T05:05:02.654Z",
+        "updated_at": "2023-09-08T05:05:02.654Z"
       },
       "payment": {
         "uri": "https://juspay.in/",
         "type": "ON-ORDER",
         "params": {
-          "amount": "706",
+          "amount": "578",
           "currency": "INR",
-          "transaction_id": "ffb401c3-d160-4ca7-b5fa-59ff4a791869"
+          "transaction_id": "da99d7a2-f1e0-4655-a76b-540247b76520"
         },
         "status": "PAID",
         "tl_method": "http/get",
@@ -202,34 +141,28 @@
       "provider": {
         "id": "22446688739675",
         "rateable": true,
-        "locations": [
-          {
-            "id": "22446688739675"
-          }
-        ]
+        "locations": [{ "id": "22446688739675" }]
       },
       "documents": [
         {
-          "url": "https://backoffice.tmbill.com/ebill/2023-08-22-190415",
+          "url": "https://backoffice.tmbill.com/ebill/2023-09-08-427459",
           "label": "Invoice"
         }
       ],
-      "created_at": "2023-08-22T05:30:05.980Z",
-      "updated_at": "2023-08-22T06:09:22.931Z",
+      "created_at": "2023-09-08T05:05:13.054Z",
+      "updated_at": "2023-09-08T05:05:13.118Z",
       "fulfillments": [
         {
           "id": "22446688739675_fulfillment_1",
           "end": {
             "time": {
               "range": {
-                "end": "2023-08-22T06:15:05.980Z",
-                "start": "2023-08-22T06:15:05.980Z"
+                "end": "2023-09-08T05:31:00.000Z",
+                "start": "2023-09-08T05:11:00.000Z"
               },
-              "timestamp": "2023-08-22T05:33:55.126Z"
+              "timestamp": "2023-09-08T05:08:39.486Z"
             },
-            "person": {
-              "name": "John Doe"
-            },
+            "person": { "name": "John Doe" },
             "contact": {
               "email": "xifelo7871@fulwark.com",
               "phone": "9090999900"
@@ -241,46 +174,34 @@
                 "name": "John Doe",
                 "state": "Karnataka",
                 "country": "IND",
-                "building": "",
+                "building": "Whitefield",
                 "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
                 "area_code": "560066"
               },
-              "descriptor": {
-                "name": "John Doe",
-                "images": []
-              }
+              "descriptor": { "name": "John Doe", "images": [] }
             }
           },
           "type": "Delivery",
-          "agent": {
-            "name": "Tasneem",
-            "phone": "999999999"
-          },
           "start": {
             "time": {
               "range": {
-                "end": "2023-08-22T06:15:05.980Z",
-                "start": "2023-08-22T06:15:05.980Z"
+                "end": "2023-09-08T06:11:00.000Z",
+                "start": "2023-09-08T05:31:00.000Z"
               },
-              "timestamp": "2023-08-22T05:30:05.000Z"
+              "timestamp": "2023-09-08T05:05:54.869Z"
             },
-            "person": {
-              "name": "Eatsy"
-            },
-            "contact": {
-              "email": "sid@tmbill.com",
-              "phone": "7798548540"
-            },
+            "person": { "name": "Eatsy" },
+            "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
             "location": {
               "id": "22446688739675",
               "gps": "12.970698591977477,77.7471608509239",
               "address": {
                 "city": "Bengaluru",
-                "name": "John Doe",
+                "name": "",
                 "state": "Karnataka",
                 "country": "IND",
                 "building": "",
-                "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+                "locality": "Whitefield",
                 "area_code": "560066"
               },
               "descriptor": {
@@ -299,7 +220,7 @@
           },
           "rateable": true,
           "tracking": false,
-          "@ondc/org/provider_name": "22446688739675"
+          "@ondc/org/provider_name": "TMBill"
         }
       ]
     }

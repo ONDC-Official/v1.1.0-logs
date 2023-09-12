@@ -1,7 +1,7 @@
 {
     "context": {
-        "transaction_id": "673534aa-b06b-4c9c-bc98-521d6b31f680",
-        "message_id": "a07807d6-bf4d-454d-9e89-29fd472af7e2",
+        "transaction_id": "9151fede-d477-4c16-bb2b-1b5067580d87",
+        "message_id": "e410a7bf-9a61-4af0-bf7b-f93ce025f70f",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "domain": "nic2004:52110",
@@ -10,9 +10,8 @@
         "core_version": "1.1.0",
         "bpp_id": "ondc-preprod.zeppstore.in",
         "bpp_uri": "https://ondc-preprod.zeppstore.in",
-        "ttl": "PT30S",
         "action": "on_init",
-        "timestamp": "2023-08-15T16:40:56.366Z"
+        "timestamp": "2023-08-24T13:03:05.588Z"
     },
     "message": {
         "order": {
@@ -25,14 +24,14 @@
             "items": [
                 {
                     "id": "404",
-                    "fulfillment_id": "ZRPLf25fba31-4ada-4999-8ac0-a064dc8c6b70",
+                    "fulfillment_id": "ZRPLf551b3ef-0b7f-4048-a39b-230c38663075",
                     "quantity": {
                         "count": 2
                     }
                 },
                 {
                     "id": "413",
-                    "fulfillment_id": "ZRPLf25fba31-4ada-4999-8ac0-a064dc8c6b70",
+                    "fulfillment_id": "ZRPLf551b3ef-0b7f-4048-a39b-230c38663075",
                     "quantity": {
                         "count": 2
                     }
@@ -42,6 +41,7 @@
                 "name": "ondc",
                 "address": {
                     "name": "ondc",
+                    "door": "near btm watertank",
                     "building": "near btm watertank",
                     "locality": "btm 2nd stages",
                     "city": "Bengaluru",
@@ -51,12 +51,12 @@
                 },
                 "email": "ondc@zrpl.co.in",
                 "phone": "7899435269",
-                "created_at": "2023-08-15T16:40:56.050Z",
-                "updated_at": "2023-08-15T16:40:56.050Z"
+                "created_at": "2023-08-24T13:03:05.255Z",
+                "updated_at": "2023-08-24T13:03:05.255Z"
             },
             "fulfillments": [
                 {
-                    "id": "ZRPLf25fba31-4ada-4999-8ac0-a064dc8c6b70",
+                    "id": "ZRPLf551b3ef-0b7f-4048-a39b-230c38663075",
                     "type": "Delivery",
                     "end": {
                         "location": {
@@ -80,7 +80,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "3216"
+                    "value": "3196"
                 },
                 "breakup": [
                     {
@@ -120,39 +120,12 @@
                         }
                     },
                     {
-                        "@ondc/org/item_id": "ZRPLf25fba31-4ada-4999-8ac0-a064dc8c6b70",
+                        "@ondc/org/item_id": "ZRPLf551b3ef-0b7f-4048-a39b-230c38663075",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "10"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "ZRPLf25fba31-4ada-4999-8ac0-a064dc8c6b70",
-                        "title": "Packing charges",
-                        "@ondc/org/title_type": "packing",
-                        "price": {
-                            "currency": "INR",
-                            "value": "10"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "404",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "10"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "404",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "-10"
+                            "value": "0.0"
                         }
                     }
                 ],
@@ -166,12 +139,12 @@
                         "settlement_counterparty": "seller-app",
                         "settlement_phase": "sale-amount",
                         "settlement_type": "upi",
-                        "beneficiary_name": "xxxx",
+                        "beneficiary_name": "Zeitgeist Retail",
                         "upi_address": "gft@oksbi",
-                        "settlement_bank_account_no": "xxxx",
-                        "settlement_ifsc_code": "xxxx",
-                        "bank_name": "xxxx",
-                        "branch_name": "xxxx"
+                        "settlement_bank_account_no": "150994923487",
+                        "settlement_ifsc_code": "SBIN004340",
+                        "bank_name": "SBI",
+                        "branch_name": "HSR Layout"
                     }
                 ]
             }

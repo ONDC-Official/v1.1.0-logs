@@ -1,0 +1,90 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+        "bpp_id": "my.ithinklogistics.com/ondc/preprod",
+        "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
+        "transaction_id": "b756cb9a-0c32-5115-bb31-6441800fdb52",
+        "message_id": "1c2dbb75-ab36-5ea6-afdd-740bfd8d0594",
+        "timestamp": "2023-08-26T06:42:51.135Z"
+    },
+    "message": {
+        "catalog": {
+            "bpp/fulfillments": [{
+                    "id": "1",
+                    "type": "Prepaid"
+                }, {
+                    "id": "2",
+                    "type": "RTO"
+                }
+            ],
+            "bpp/descriptor": {
+                "name": "my.ithinklogistics.com"
+            },
+            "bpp/providers": [{
+                    "id": "3",
+                    "descriptor": {
+                        "name": "iThinkLogistics",
+                        "short_desc": "iThinkLogistics",
+                        "long_desc": "iThinkLogistics"
+                    },
+                    "categories": [{
+                            "id": "Next Day Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P1DT7H"
+                            }
+                        }
+                    ],
+                    "items": [{
+                            "id": "3I1",
+                            "parent_item_id": "",
+                            "category_id": "Next Day Delivery",
+                            "fulfillment_id": "1",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "Next Day Delivery",
+                                "short_desc": "Next Day Delivery",
+                                "long_desc": "Next Day Delivery"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "624.22"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P1DT7H",
+                                "timestamp": "2023-08-27T14:30:00.000Z"
+                            }
+                        }, {
+                            "id": "3I2",
+                            "parent_item_id": "3I1",
+                            "category_id": "Next Day Delivery",
+                            "fulfillment_id": "2",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "RTO quote",
+                                "short_desc": "RTO quote",
+                                "long_desc": "RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "183.00"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P1DT7H",
+                                "timestamp": "2023-08-27T14:30:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

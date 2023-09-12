@@ -1,0 +1,79 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "issue",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+    "transaction_id": "04dd2ec3-41b1-4e43-b024-4f04d0957807",
+    "message_id": "00e9b0f5-e550-4b7b-805f-97b3c1f59b61",
+    "timestamp": "2023-09-07T05:58:45.178Z",
+    "bpp_id": "ondc.uat.medpay.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "65aae1e8-b733-4027-9620-046ef6dc7e53",
+      "category": "FULFILLMENT",
+      "sub_category": "FLM01",
+      "complainant_info": {
+        "person": { "name": "Vishal Gupta" },
+        "contact": { "phone": "8178482517", "email": "vishal.kumar@medpay.in" }
+      },
+      "order_details": {
+        "id": "2023-08-11-435196",
+        "state": "Created",
+        "items": [
+          { "id": "1002-3810-3036-9631_408513", "quantity": 1 },
+          { "id": "1002-3810-3036-9631_408514", "quantity": 3 }
+        ],
+        "fulfillments": [
+          { "id": "16953786279381941415305446071010245174", "state": "Pending" }
+        ],
+        "provider_id": "1001-0801-3631-0214"
+      },
+      "description": {
+        "short_desc": "Delivery address change",
+        "long_desc": "New address: B1-H8, Mohan Estate, New Delhi - 110044",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        },
+        "images": [
+          "https://buyer-app-preprod.ondc.org/issueApis/uploads/1694066325182.png"
+        ]
+      },
+      "source": {
+        "network_participant_id": "buyer-app-preprod.ondc.org",
+        "type": "CONSUMER"
+      },
+      "expected_response_time": { "duration": "PT1H" },
+      "expected_resolution_time": { "duration": "P1D" },
+      "status": "OPEN",
+      "issue_type": "ISSUE",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "short_desc": "Complaint created",
+            "updated_at": "2023-09-07T05:58:45.182Z",
+            "updated_by": {
+              "org": { "name": "buyer-app-preprod.ondc.org::nic2004:52110" },
+              "contact": {
+                "phone": "6239083807",
+                "email": "Rishabhnand.singh@ondc.org"
+              },
+              "person": { "name": "Rishabhnand Singh" }
+            }
+          }
+        ],
+        "respondent_actions": []
+      },
+      "created_at": "2023-09-07T05:58:44.610Z",
+      "updated_at": "2023-09-07T05:58:44.610Z"
+    }
+  }
+}
