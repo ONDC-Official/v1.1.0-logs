@@ -1,0 +1,138 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:06188",
+        "action": "issue",
+        "core_version": "1.1.0",
+        "bap_id": "ondcpreprodtest.sellerapp.in",
+        "bap_uri": "https://qa.ondc.sellerapp.in/bapl/u/",
+        "bpp_id": "ondc.shiprocket.in",
+        "bpp_uri": "https://ondc.shiprocket.in/",
+        "transaction_id": "test-igm-log-04",
+        "message_id": "9e13e6dc-bc2e-4276-907c-fb66dd6412ec",
+        "timestamp": "2023-09-12T05:32:48.969Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "issue": {
+            "id": "qa-igm-uat-002",
+            "complainant_info": {
+                "person": {
+                    "name": "Kausic M"
+                },
+                "contact": {
+                    "phone": "9894748270",
+                    "email": "kausic@gmail.com"
+                }
+            },
+            "order_details": {
+                "id": "11834f75f9109061211fe892",
+                "state": "Ready To Ship",
+                "items": [
+                    {
+                        "id": "39",
+                        "category": "Beverages"
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "ON_NETWORK_LOGISTICS_FULFILLMENT-1",
+                        "state": "New"
+                    }
+                ],
+                "provider_id": "SIVA-ONDC-STORE-1032"
+            },
+            "description": {
+                "short_desc": "Test-Delayed delivery",
+                "long_desc": "Delayed delivery plz make sure its on time Testing the",
+                "additional_desc": {
+                    "url": "",
+                    "content_type": "text/plain"
+                },
+                "images": [
+                    ""
+                ]
+            },
+            "category": "FULFILLMENT",
+            "sub_category": "FLM03",
+            "issue_type": "ISSUE",
+            "source": {
+                "network_participant_id": "ondc.eunimart.com",
+                "type": "CONSUMER"
+                
+            },
+            "expected_response_time": {
+                "duration": "PT2H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_actions": {
+                "complainant_actions": [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Delayed delivery plz make sure its on time",
+                        "updated_at": "2023-09-12T16:13:59.574Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.eunimart.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9894748270",
+                                "email": "kausic@gmail.com"
+                            },
+                            "person": {
+                                "name": "Kausic M"
+                            }
+                        }
+                    }
+
+                ],
+                "respondent_actions": [
+                    {
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "plz check this issue",
+                        "updated_at": "2023-09-12T16:14:32.047Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.eunimart.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9894748271",
+                                "email": "igm_seller_agent1@adya.ai"
+                            },
+                            "person": {
+                                "name": "SA agent1"
+                            }
+                        },
+                        "cascaded_level": 1
+                    },
+                    {
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "Investigate issue and assigne it to respected team",
+                        "updated_at": "2023-09-12T16:14:32.047Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.eunimart.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9894748271",
+                                "email": "igm_seller_agent1@adya.ai"
+                            },
+                            "person": {
+                                "name": "SA agent2"
+                            }
+                        },
+                        "cascaded_level": 2
+                    }
+                   
+                ]
+            },
+            "created_at": "2023-09-12T15:13:59.574Z",
+            "updated_at": "2023-09-12T15:15:12.166Z",
+            "additional_info_required": []
+        }
+    }
+}
