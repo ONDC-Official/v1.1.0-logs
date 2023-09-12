@@ -1,36 +1,36 @@
 {
-  "context": {
-    "domain": "nic2004:52110",
-    "country": "IND",
-    "city": "std:080",
-    "action": "search",
-    "core_version": "1.1.0",
-    "bap_id": "buyer-app.ondc.org",
-    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
-    "transaction_id": "e7fe9d89-95d1-4dbe-bf96-a04c83675123",
-    "message_id": "7180bdac-54f7-4a97-a9d6-5d88509bf776",
-    "timestamp": "2023-09-12T03:42:06.797Z",
-    "ttl": "PT30S"
-  },
-  "message": {
-    "intent": {
-      "item": {
-        "descriptor": {
-          "name": "18th"
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "transaction_id": "c4ee23e5-e51e-46ed-aa1f-e2ad12c9dd45",
+        "message_id": "3f1b03f8-e1f5-4b0f-b0ec-35af46aade56",
+        "timestamp": "2023-09-12T10:49:14.811Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "item": {
+                "descriptor": {
+                    "name": "18th"
+                }
+            },
+            "fulfillment": {
+                "type": "Delivery",
+                "end": {
+                    "location": {
+                        "gps": "28.574981,77.320812"
+                    }
+                }
+            },
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            }
         }
-      },
-      "fulfillment": {
-        "type": "Delivery",
-        "end": {
-          "location": {
-            "gps": "28.574981,77.320812"
-          }
-        }
-      },
-      "payment": {
-        "@ondc/org/buyer_app_finder_fee_type": "percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
-      }
     }
-  }
 }

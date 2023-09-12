@@ -3,15 +3,15 @@
     "domain": "nic2004:52110",
     "action": "on_init",
     "core_version": "1.1.0",
-    "bap_id": "ondc-tech-support-buyer-app.ondc.org",
-    "bap_uri": "https://buyer-ref-app-stage.ondc.org/protocol/v1",
-    "bpp_id": "ondcqa.demolocations.com",
-    "bpp_uri": "https://ondcqa.demolocations.com/ondc/api/",
-    "transaction_id": "819ced3c-727d-4916-be80-68130a0eb254",
-    "message_id": "5a7e1f55-eb0b-4ea1-919d-3f2151510a0e",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondcpreprod.demolocations.com",
+    "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+    "transaction_id": "dfc734ae-aee3-4a60-a698-5da3cd9272fe",
+    "message_id": "ff5249ca-4ee0-42be-8a7c-ad597c1bea9e",
     "city": "std:080",
     "country": "IND",
-    "timestamp": "2023-09-11T13:47:58.000Z"
+    "timestamp": "2023-09-12T10:25:19.000Z"
   },
   "message": {
     "order": {
@@ -24,35 +24,33 @@
       "items": [
         {
           "fulfillment_id": "1",
-          "id": "Baby18TH1000",
+          "id": "Reyton18TH10005",
           "quantity": {
-            "count": 1
+            "count": 2
           }
         },
         {
           "fulfillment_id": "1",
-          "id": "Proteus18TH10002",
+          "id": "Baby18TH1000",
           "quantity": {
-            "count": 2
+            "count": 1
           }
         }
       ],
       "billing": {
-        "name": "Test",
+        "name": "Abhi Chauhan",
         "address": {
-          "door": "Landmark 1",
-          "building": "Landmark 1",
           "city": "Noida",
           "state": "Uttar Pradesh",
           "country": "IND",
           "area_code": "201301",
-          "locality": "Street 1",
-          "name": "Test"
+          "locality": "Street1",
+          "name": "Abhi Chauhan"
         },
         "email": "abhishek.chauhan@18thdigitech.net",
         "phone": "8800518689",
-        "created_at": "2023-09-11T13:47:57.866Z",
-        "updated_at": "2023-09-11T13:47:57.866Z"
+        "created_at": "2023-09-12T10:25:18.645Z",
+        "updated_at": "2023-09-12T10:25:18.645Z"
       },
       "fulfillments": [
         {
@@ -60,15 +58,15 @@
           "type": "Delivery",
           "end": {
             "contact": {
-              "email": "abhishek.chauhan@18thdigitech.net",
-              "phone": "8800518689"
+              "email": "abhi0001ch+001@gmail.com",
+              "phone": "8956969969"
             },
             "location": {
               "gps": "28.574981, 77.320812",
               "address": {
-                "name": "Test",
+                "name": "Abhi Chauhan",
                 "building": "Landmark 1",
-                "locality": "Street 1",
+                "locality": "Street 2",
                 "city": "Noida",
                 "state": "Uttar Pradesh",
                 "country": "IND",
@@ -81,9 +79,21 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1834.42"
+          "value": "2032.02"
         },
         "breakup": [
+          {
+            "@ondc/org/item_id": "Reyton18TH10005",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "18TH Men's Reyton Navy Running Shoes",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "1998"
+            }
+          },
           {
             "@ondc/org/item_id": "Baby18TH1000",
             "@ondc/org/item_quantity": {
@@ -94,18 +104,6 @@
             "price": {
               "currency": "INR",
               "value": "40"
-            }
-          },
-          {
-            "@ondc/org/item_id": "Proteus18TH10002",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            },
-            "title": "Proteus 18TH Fitness Jacket",
-            "@ondc/org/title_type": "item",
-            "price": {
-              "currency": "INR",
-              "value": "1798"
             }
           },
           {
@@ -123,7 +121,7 @@
             "@ondc/org/title_type": "tax",
             "price": {
               "currency": "INR",
-              "value": 68.32
+              "value": 75.92
             }
           },
           {
@@ -132,7 +130,7 @@
             "@ondc/org/title_type": "discount",
             "price": {
               "currency": "INR",
-              "value": "-91.9"
+              "value": "-101.9"
             }
           }
         ],
