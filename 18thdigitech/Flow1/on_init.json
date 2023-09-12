@@ -3,15 +3,15 @@
         "domain": "nic2004:52110",
         "action": "on_init",
         "core_version": "1.1.0",
-        "bap_id": "buyer-app-preprod.ondc.org",
-        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_id": "ondcpreprod.demolocations.com",
-        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "a35c445c-60f8-40ae-ab6f-727f3d23b2ef",
-        "message_id": "273ed3d5-a36c-4796-a949-0f4b2afb2e3b",
+        "bap_id": "ondc-tech-support-buyer-app.ondc.org",
+        "bap_uri": "https://buyer-ref-app-stage.ondc.org/protocol/v1",
+        "bpp_id": "ondcqa.demolocations.com",
+        "bpp_uri": "https://ondcqa.demolocations.com/ondc/api/",
+        "transaction_id": "7204c775-854c-4c1b-a90e-e1e2cfa457c8",
+        "message_id": "28d9500f-1c82-46fc-8f40-5530cee9babd",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2023-08-25T16:29:38.000Z"
+        "timestamp": "2023-09-11T11:40:14.000Z"
     },
     "message": {
         "order": {
@@ -23,50 +23,52 @@
             },
             "items": [
                 {
-                    "id": "WJ09-XS-Blue",
+                    "fulfillment_id": "1",
+                    "id": "ROADSTER-MEN-NAVY-M",
                     "quantity": {
                         "count": 1
-                    },
-                    "fulfillment_id": "1"
+                    }
                 },
                 {
-                    "id": "WJ09-XS-Gray",
+                    "fulfillment_id": "1",
+                    "id": "18th_1001001",
                     "quantity": {
                         "count": 1
-                    },
-                    "fulfillment_id": "1"
+                    }
                 }
             ],
             "billing": {
-                "name": "Abhi Chauhan",
+                "name": "Test",
                 "address": {
+                    "door": "Landmark 1",
+                    "building": "Landmark 1",
                     "city": "Noida",
                     "state": "Uttar Pradesh",
                     "country": "IND",
                     "area_code": "201301",
-                    "locality": "Street 2",
-                    "name": "Abhi Chauhan"
+                    "locality": "Street 1",
+                    "name": "Test"
                 },
-                "email": "abhi0001ch+001@gmail.com",
-                "phone": "8956969969",
-                "created_at": "2023-08-25T16:29:38.000Z",
-                "updated_at": "2023-08-25T16:29:38.000Z"
+                "email": "abhishek.chauhan@18thdigitech.net",
+                "phone": "8800518689",
+                "created_at": "2023-09-11T11:40:13.610Z",
+                "updated_at": "2023-09-11T11:40:13.610Z"
             },
             "fulfillments": [
                 {
-                    "id": "Fulfillment1",
+                    "id": "1",
                     "type": "Delivery",
                     "end": {
                         "contact": {
-                            "email": "abhi0001ch+001@gmail.com",
-                            "phone": "8956969969"
+                            "email": "abhishek.chauhan@18thdigitech.net",
+                            "phone": "8800518689"
                         },
                         "location": {
                             "gps": "28.574981, 77.320812",
                             "address": {
-                                "name": "Abhi Chauhan",
-                                "building": "",
-                                "locality": "Street 2",
+                                "name": "Test",
+                                "building": "Landmark 1",
+                                "locality": "Street 1",
                                 "city": "Noida",
                                 "state": "Uttar Pradesh",
                                 "country": "IND",
@@ -79,40 +81,40 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": 84
+                    "value": "1005.34"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "WJ09-XS-Blue",
+                        "@ondc/org/item_id": "ROADSTER-MEN-NAVY-M",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         },
-                        "title": "Jade Yoga Jacket-XS-Blue",
+                        "title": "Roadster 18TH Men Navy Blue Solid Denim Jacket-M",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": 32
+                            "value": "655"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "WJ09-XS-Gray",
+                        "@ondc/org/item_id": "18th_1001001",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         },
-                        "title": "Jade Yoga Jacket-XS-Gray",
+                        "title": "Baby Products 1",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": 32
+                            "value": "356"
                         }
                     },
                     {
-                        "@ondc/org/item_id": "Fulfillment1",
+                        "@ondc/org/item_id": "1",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": 20
+                            "value": "20"
                         }
                     },
                     {
@@ -121,7 +123,7 @@
                         "@ondc/org/title_type": "tax",
                         "price": {
                             "currency": "INR",
-                            "value": 0
+                            "value": 24.89
                         }
                     },
                     {
@@ -130,20 +132,30 @@
                         "@ondc/org/title_type": "discount",
                         "price": {
                             "currency": "INR",
-                            "value": "-0"
+                            "value": "-50.55"
                         }
                     }
-                ]
+                ],
+                "ttl": "P1D"
             },
             "payment": {
                 "type": "ON-ORDER",
                 "collected_by": "BAP",
-                "@ondc/org/buyer_app_finder_fee_type": "Percent",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-                "@ondc/org/withholding_amount": "0.0",
-                "@ondc/org/return_window": "0",
-                "@ondc/org/settlement_basis": "Collection",
-                "@ondc/org/settlement_window": "P2D"
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "18th Digitech",
+                        "upi_address": "",
+                        "settlement_bank_account_no": "156352663663",
+                        "settlement_ifsc_code": "ICIC0000256",
+                        "bank_name": "ICICI Bank",
+                        "branch_name": "Noida"
+                    }
+                ]
             }
         }
     }

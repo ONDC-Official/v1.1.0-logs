@@ -1,131 +1,147 @@
 {
-    "context": {
-        "domain": "nic2004:52110",
-        "action": "on_init",
-        "core_version": "1.1.0",
-        "bap_id": "buyer-app-preprod.ondc.org",
-        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_id": "ondcpreprod.demolocations.com",
-        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "c6f35b2b-ae17-4353-814d-2746c22f9665",
-        "message_id": "0daa391e-2de0-49ec-9d49-5dabce072d1b",
-        "city": "std:080",
-        "country": "IND",
-        "timestamp": "2023-08-25T18:29:58.000Z"
-    },
-    "message": {
-        "order": {
-            "provider": {
-                "id": "18th_stores"
-            },
-            "provider_location": {
-                "id": "default_loc"
-            },
-            "items": [
-                {
-                    "id": "Proteus18TH10002",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "1"
-                }
-            ],
-            "billing": {
-                "name": "Abhi Chauhan",
-                "address": {
-                    "city": "Noida",
-                    "state": "Uttar Pradesh",
-                    "country": "IND",
-                    "area_code": "201301",
-                    "locality": "Street 2",
-                    "name": "Abhi Chauhan"
-                },
-                "email": "abhi0001ch+001@gmail.com",
-                "phone": "8956969969",
-                "created_at": "2023-08-25T18:29:58.000Z",
-                "updated_at": "2023-08-25T18:29:58.000Z"
-            },
-            "fulfillments": [
-                {
-                    "id": "Fulfillment1",
-                    "type": "Delivery",
-                    "end": {
-                        "contact": {
-                            "email": "abhi0001ch+001@gmail.com",
-                            "phone": "8956969969"
-                        },
-                        "location": {
-                            "gps": "28.574981, 77.320812",
-                            "address": {
-                                "name": "Abhi Chauhan",
-                                "building": "",
-                                "locality": "Street 2",
-                                "city": "Noida",
-                                "state": "Uttar Pradesh",
-                                "country": "IND",
-                                "area_code": "201301"
-                            }
-                        }
-                    }
-                }
-            ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": 908.21
-                },
-                "breakup": [
-                    {
-                        "@ondc/org/item_id": "Proteus18TH10002",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        },
-                        "title": "Proteus 18TH Fitness Jacket",
-                        "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": 899
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Delivery charges",
-                        "@ondc/org/title_type": "delivery",
-                        "price": {
-                            "currency": "INR",
-                            "value": 20
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": 34.16
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "-44.95"
-                        }
-                    }
-                ]
-            },
-            "payment": {
-                "type": "ON-ORDER",
-                "collected_by": "BAP",
-                "@ondc/org/buyer_app_finder_fee_type": "Percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-                "@ondc/org/withholding_amount": "0.0",
-                "@ondc/org/return_window": "0",
-                "@ondc/org/settlement_basis": "Collection",
-                "@ondc/org/settlement_window": "P2D"
-            }
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_init",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "bpp_id": "ondcqa.demolocations.com",
+    "bpp_uri": "https://ondcqa.demolocations.com/ondc/api/",
+    "transaction_id": "e7fe9d89-95d1-4dbe-bf96-a04c83675123",
+    "message_id": "df5abacd-3048-48a4-907a-ab9915e77738",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-09-12T03:44:03.000Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "18th_stores"
+      },
+      "provider_location": {
+        "id": "default_loc"
+      },
+      "items": [
+        {
+          "fulfillment_id": "1",
+          "id": "Orion18TH1000",
+          "quantity": {
+            "count": 1
+          }
         }
+      ],
+      "billing": {
+        "name": "Abhi Chauhan",
+        "address": {
+          "door": "Near Building 1",
+          "building": "Near Building 1",
+          "city": "Noida",
+          "state": "Uttar Pradesh",
+          "country": "IND",
+          "area_code": "201301",
+          "locality": "Street 1",
+          "name": "Abhi Chauhan"
+        },
+        "email": "abhi0001ch+001@gmail.com",
+        "phone": "9865636666",
+        "created_at": "2023-09-12T03:44:02.009Z",
+        "updated_at": "2023-09-12T03:44:02.009Z"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "end": {
+            "contact": {
+              "email": "abhi0001ch+001@gmail.com",
+              "phone": "9865636666"
+            },
+            "location": {
+              "gps": "28.574981, 77.320812",
+              "address": {
+                "name": "Abhi Chauhan",
+                "building": "Near Building 1",
+                "locality": "Street 1",
+                "city": "Noida",
+                "state": "Uttar Pradesh",
+                "country": "IND",
+                "area_code": "201301"
+              }
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "513.01"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "Orion18TH1000",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Orion 18TH Two-Tone Fitted Jacket",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "499"
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "20"
+            }
+          },
+          {
+            "@ondc/org/item_id": "Fulfillment1",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": 18.96
+            }
+          },
+          {
+            "@ondc/org/item_id": "Fulfillment1",
+            "title": "Discount",
+            "@ondc/org/title_type": "discount",
+            "price": {
+              "currency": "INR",
+              "value": "-24.95"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/withholding_amount": "0.0",
+        "@ondc/org/return_window": "0",
+        "@ondc/org/settlement_basis": "Collection",
+        "@ondc/org/settlement_window": "P2D",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "beneficiary_name": "18th Digitech",
+            "upi_address": "",
+            "settlement_bank_account_no": "156352663663",
+            "settlement_ifsc_code": "ICIC0000256",
+            "bank_name": "ICICI Bank",
+            "branch_name": "Noida"
+          }
+        ]
+      }
     }
+  }
 }

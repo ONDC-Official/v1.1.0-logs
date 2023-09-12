@@ -1,84 +1,85 @@
 {
-    "context": {
-        "domain": "nic2004:52110",
-        "country": "IND",
-        "city": "std:080",
-        "action": "init",
-        "core_version": "1.1.0",
-        "bap_id": "buyer-app-preprod.ondc.org",
-        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "331d8f1a-895c-467e-86d3-16a81bf4d7d8",
-        "message_id": "0419ed1a-3ced-44a6-9b54-00de496ddc47",
-        "timestamp": "2023-08-25T12:48:08.521Z",
-        "bpp_id": "ondcpreprod.demolocations.com",
-        "ttl": "PT30S"
-    },
-    "message": {
-        "order": {
-            "provider": {
-                "id": "18th_stores",
-                "locations": [
-                    {
-                        "id": "default_loc"
-                    }
-                ]
-            },
-            "items": [
-                {
-                    "id": "MH04-XS-Green",
-                    "quantity": {
-                        "count": 2
-                    },
-                    "fulfillment_id": "1"
-                },
-                {
-                    "id": "MH04-XS-White",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "1"
-                }
-            ],
-            "billing": {
-                "address": {
-                    "city": "Noida",
-                    "state": "Uttar Pradesh",
-                    "country": "IND",
-                    "area_code": "201301",
-                    "locality": "Street 2",
-                    "name": "Abhi Chauhan"
-                },
-                "phone": "8956969969",
-                "name": "Abhi Chauhan",
-                "email": "abhi0001ch+001@gmail.com",
-                "created_at": "2023-08-25T12:48:08.521Z",
-                "updated_at": "2023-08-25T12:48:08.521Z"
-            },
-            "fulfillments": [
-                {
-                    "id": "Fulfillment1",
-                    "type": "Delivery",
-                    "end": {
-                        "contact": {
-                            "email": "abhi0001ch+001@gmail.com",
-                            "phone": "8956969969"
-                        },
-                        "location": {
-                            "gps": "28.574981, 77.320812",
-                            "address": {
-                                "name": "Abhi Chauhan",
-                                "building": "",
-                                "locality": "Street 2",
-                                "city": "Noida",
-                                "state": "Uttar Pradesh",
-                                "country": "IND",
-                                "area_code": "201301"
-                            }
-                        }
-                    }
-                }
-            ]
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "init",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-tech-support-buyer-app.ondc.org",
+    "bap_uri": "https://buyer-ref-app-stage.ondc.org/protocol/v1",
+    "bpp_uri": "https://ondcqa.demolocations.com/ondc/api/",
+    "transaction_id": "819ced3c-727d-4916-be80-68130a0eb254",
+    "message_id": "5a7e1f55-eb0b-4ea1-919d-3f2151510a0e",
+    "timestamp": "2023-09-11T13:47:57.866Z",
+    "bpp_id": "ondcqa.demolocations.com",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "18th_stores",
+        "locations": [
+          {
+            "id": "default_loc"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "Baby18TH1000",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "Proteus18TH10002",
+          "quantity": {
+            "count": 2
+          }
         }
+      ],
+      "billing": {
+        "address": {
+          "door": "Landmark 1",
+          "building": "Landmark 1",
+          "city": "Noida",
+          "state": "Uttar Pradesh",
+          "country": "IND",
+          "area_code": "201301",
+          "locality": "Street 1",
+          "name": "Test"
+        },
+        "phone": "8800518689",
+        "name": "Test",
+        "email": "abhishek.chauhan@18thdigitech.net",
+        "created_at": "2023-09-11T13:47:57.866Z",
+        "updated_at": "2023-09-11T13:47:57.866Z"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "end": {
+            "contact": {
+              "email": "abhishek.chauhan@18thdigitech.net",
+              "phone": "8800518689"
+            },
+            "location": {
+              "gps": "28.574981, 77.320812",
+              "address": {
+                "name": "Test",
+                "building": "Landmark 1",
+                "locality": "Street 1",
+                "city": "Noida",
+                "state": "Uttar Pradesh",
+                "country": "IND",
+                "area_code": "201301"
+              }
+            }
+          }
+        }
+      ]
     }
+  }
 }

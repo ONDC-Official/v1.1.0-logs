@@ -1,164 +1,193 @@
 {
-    "context": {
-        "domain": "nic2004:52110",
-        "action": "on_confirm",
-        "core_version": "1.1.0",
-        "bap_id": "buyer-app-preprod.ondc.org",
-        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_id": "ondcpreprod.demolocations.com",
-        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "331d8f1a-895c-467e-86d3-16a81bf4d7d8",
-        "message_id": "65344408-8359-4de0-812e-4466fa0671a6",
-        "city": "std:080",
-        "country": "IND",
-        "timestamp": "2023-08-25T18:18:24.000Z"
-    },
-    "message": {
-        "order": {
-            "id": "2023-08-25-816491",
-            "state": "Created",
-            "provider": {
-                "id": "18th_stores",
-                "locations": [
-                    {
-                        "id": "default_loc"
-                    }
-                ],
-                "rateable": true
-            },
-            "items": [
-                {
-                    "id": "MH04-XS-Green",
-                    "quantity": {
-                        "count": 2
-                    },
-                    "fulfillment_id": "1"
-                },
-                {
-                    "id": "MH04-XS-White",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "1"
-                }
-            ],
-            "billing": {
-                "name": "Abhi Chauhan",
-                "address": {
-                    "name": "Abhi Chauhan",
-                    "locality": "Street 2",
-                    "city": "Noida",
-                    "state": "Uttar Pradesh",
-                    "country": "IND",
-                    "area_code": "201301"
-                },
-                "email": "abhi0001ch+001@gmail.com",
-                "phone": "8956969969",
-                "created_at": "2023-08-25T18:18:24.000Z",
-                "updated_at": "2023-08-25T18:18:24.000Z"
-            },
-            "fulfillments": [
-                {
-                    "id": "Fulfillment1",
-                    "end": {
-                        "contact": {
-                            "email": "abhi0001ch+001@gmail.com",
-                            "phone": "8956969969"
-                        },
-                        "person": {
-                            "name": "Abhi Chauhan"
-                        },
-                        "location": {
-                            "gps": "28.574981, 77.320812",
-                            "address": {
-                                "name": "Abhi Chauhan",
-                                "building": "",
-                                "locality": "Street 2",
-                                "city": "Noida",
-                                "state": "Uttar Pradesh",
-                                "country": "IND",
-                                "area_code": "201301"
-                            }
-                        }
-                    },
-                    "type": "Delivery"
-                }
-            ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": 191
-                },
-                "breakup": [
-                    {
-                        "@ondc/org/item_id": "MH04-XS-Green",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "title": "Frankie  Sweatshirt-XS-Green",
-                        "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": 120
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "MH04-XS-White",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        },
-                        "title": "Frankie  Sweatshirt-XS-White",
-                        "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": 60
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Delivery charges",
-                        "@ondc/org/title_type": "delivery",
-                        "price": {
-                            "currency": "INR",
-                            "value": 20
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": 0
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "-9"
-                        }
-                    }
-                ]
-            },
-            "payment": {
-                "uri": "https://juspay.in/",
-                "tl_method": "http/get",
-                "params": {
-                    "amount": "191",
-                    "currency": "INR",
-                    "transaction_id": "331d8f1a-895c-467e-86d3-16a81bf4d7d8"
-                },
-                "status": "PAID",
-                "type": "ON-ORDER",
-                "collected_by": "BAP",
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
-            },
-            "created_at": "2023-08-25T18:18:24.000Z",
-            "updated_at": "2023-08-25T18:18:24.000Z"
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_confirm",
+    "core_version": "1.1.0",
+    "bap_id": "ondc-tech-support-buyer-app.ondc.org",
+    "bap_uri": "https://buyer-ref-app-stage.ondc.org/protocol/v1",
+    "bpp_id": "ondcqa.demolocations.com",
+    "bpp_uri": "https://ondcqa.demolocations.com/ondc/api/",
+    "transaction_id": "819ced3c-727d-4916-be80-68130a0eb254",
+    "message_id": "089cf4b6-7903-4549-b1bb-f446a4689cbe",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-09-11T13:48:10.000Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-09-11-326124",
+      "state": "Created",
+      "provider": {
+        "id": "18th_stores",
+        "locations": [
+          {
+            "id": "default_loc"
+          }
+        ],
+        "rateable": true
+      },
+      "items": [
+        {
+          "fulfillment_id": "1",
+          "id": "Baby18TH1000",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "fulfillment_id": "1",
+          "id": "Proteus18TH10002",
+          "quantity": {
+            "count": 2
+          }
         }
+      ],
+      "billing": {
+        "name": "Test",
+        "address": {
+          "name": "Test",
+          "building": "Landmark 1",
+          "locality": "Street 1",
+          "city": "Noida",
+          "state": "Uttar Pradesh",
+          "country": "IND",
+          "area_code": "201301"
+        },
+        "email": "abhishek.chauhan@18thdigitech.net",
+        "phone": "8800518689",
+        "created_at": "2023-09-11T13:48:10.000Z",
+        "updated_at": "2023-09-11T13:48:10.000Z"
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "state": {
+              "descriptor": {
+                  "code": "Pending"
+              }
+          },
+          "start": {
+              "location": {
+                  "id": "L1",
+                  "descriptor": {
+                      "name": "ABC Store"
+                  },
+                  "gps":"28.574981, 77.320812"
+              }
+          },
+          "end": {
+            "contact": {
+              "email": "abhishek.chauhan@18thdigitech.net",
+              "phone": "8800518689"
+            },
+            "person": {
+              "name": "Test"
+            },
+            "location": {
+              "gps": "28.574981, 77.320812",
+              "address": {
+                "name": "Test",
+                "building": "Landmark 1",
+                "locality": "Street 1",
+                "city": "Noida",
+                "state": "Uttar Pradesh",
+                "country": "IND",
+                "area_code": "201301"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1834.42"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "Baby18TH1000",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Baby 18TH Product",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "40"
+            }
+          },
+          {
+            "@ondc/org/item_id": "Proteus18TH10002",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Proteus 18TH Fitness Jacket",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "1798"
+            }
+          },
+          {
+            "@ondc/org/item_id": "Fulfillment1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "20"
+            }
+          },
+          {
+            "@ondc/org/item_id": "Fulfillment1",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "68.32"
+            }
+          },
+          {
+            "@ondc/org/item_id": "Fulfillment1",
+            "title": "Discount",
+            "@ondc/org/title_type": "discount",
+            "price": {
+              "currency": "INR",
+              "value": "-91.9"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "1834.42",
+          "currency": "INR",
+          "transaction_id": "819ced3c-727d-4916-be80-68130a0eb254"
+        },
+        "status": "NOT-PAID",
+        "type": "ON-FULFILLMENT",
+        "collected_by": "BPP",
+        "@ondc/org/buyer_app_finder_fee_type": "Percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "beneficiary_name": "18th Digitech",
+            "upi_address": "",
+            "settlement_bank_account_no": "156352663663",
+            "settlement_ifsc_code": "ICIC0000256",
+            "bank_name": "ICICI Bank",
+            "branch_name": "Noida"
+          }
+        ]
+      },
+      "created_at": "2023-09-11T13:48:10.000Z",
+      "updated_at": "2023-09-11T13:48:10.000Z"
     }
+  }
 }
