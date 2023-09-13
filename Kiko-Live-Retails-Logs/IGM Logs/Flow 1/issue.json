@@ -1,116 +1,97 @@
 {
-    "context": {
-      "domain": "nic2004:52110",
-      "country": "IND",
-      "city": "std:022",
-      "action": "issue",
-      "core_version": "1.0.0",
-      "bap_id": "buyer-app-preprod.ondc.org",
-      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-      "bpp_uri": "https://api2.kiko.link/ondc-seller",
-      "transaction_id": "0cb4aba3-487d-4062-8830-ed6edff5ccf4",
-      "message_id": "00f78abc-d1d1-4a8b-9e5c-fdfb48d639a0",
-      "timestamp": "2023-09-05T13:03:02.506Z",
-      "bpp_id": "api2.kiko.link/ondc-seller",
-      "ttl": "PT30S"
-    },
-    "message": {
-      "issue": {
-        "id": "71cc80b2-b738-400b-a7fd-8dbd8bf29831",
-        "category": "ITEM",
-        "sub_category": "ITM03",
-        "complainant_info": {
-          "person": {
-            "name": "Hemant"
-          },
-          "contact": {
-            "phone": "9039113222",
-            "email": "hmntiet@gmail.com"
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:022",
+    "action": "issue",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://api2.kiko.link/ondc-seller",
+    "transaction_id": "0cb4aba3-487d-4062-8830-ed6edff5ccf4",
+    "message_id": "00f78abc-d1d1-4a8b-9e5c-fdfb48d639a0",
+    "timestamp": "2023-09-05T13:03:02.506Z",
+    "bpp_id": "api2.kiko.link/ondc-seller",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "71cc80b2-b738-400b-a7fd-8dbd8bf29831",
+      "category": "ITEM",
+      "sub_category": "ITM03",
+      "complainant_info": {
+        "person": {
+          "name": "Hemant"
+        },
+        "contact": {
+          "phone": "9039113222",
+          "email": "hmntiet@gmail.com"
+        }
+      },
+      "order_details": {
+        "id": "2023-09-05-908998",
+        "state": "Completed",
+        "items": [
+          {
+            "id": "64d78f95f0d8db64705c8f6a",
+            "quantity": 1
           }
+        ],
+        "fulfillments": [
+          {
+            "id": "fulfillment-64c7861caaf3591b0758c8f0",
+            "state": "Pending"
+          }
+        ],
+        "provider_id": "64c7861caaf3591b0758c8f0"
+      },
+      "description": {
+        "short_desc": "Live: Item mismatch (Order Id: 2023-09-05-908998)",
+        "long_desc": "Live: Item mismatch (Order Id: 2023-09-05-908998)",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
         },
-        "order_details": {
-          "id": "2023-09-05-908998",
-          "state": "Completed",
-          "items": [
-            {
-              "id": "64d78f95f0d8db64705c8f6a",
-              "quantity": 1
-            }
-          ],
-          "fulfillments": [
-            {
-              "id": "fulfillment-64c7861caaf3591b0758c8f0",
-              "state": "Pending"
-            }
-          ],
-          "provider_id": "64c7861caaf3591b0758c8f0"
-        },
-        "description": {
-          "short_desc": "Live: Item mismatch (Order Id: 2023-09-05-908998)",
-          "long_desc": "Live: Item mismatch (Order Id: 2023-09-05-908998)",
-          "additional_desc": {
-            "url": "https://buyerapp.com/additonal-details/desc.txt",
-            "content_type": "text/plain"
-          },
-          "images": [
-            "https://buyer-app-preprod.ondc.org/issueApis/uploads/1693918982506.png"
-          ]
-        },
-        "source": {
-          "network_participant_id": "buyer-app-preprod.ondc.org",
-          "type": "CONSUMER"
-        },
-        "expected_response_time": {
-          "duration": "PT1H"
-        },
-        "expected_resolution_time": {
-          "duration": "P1D"
-        },
-        "status": "OPEN",
-        "issue_type": "ISSUE",
-        "issue_actions": {
-          "complainant_actions": [
-            {
-              "complainant_action": "OPEN",
-              "short_desc": "Complaint created",
-              "updated_at": "2023-09-05T13:03:02.506Z",
-              "updated_by": {
-                "org": {
-                  "name": "buyer-app-preprod.ondc.org::nic2004:52110"
-                },
-                "contact": {
-                  "phone": "6239083807",
-                  "email": "Rishabhnand.singh@ondc.org"
-                },
-                "person": {
-                  "name": "Rishabhnand Singh"
-                }
+        "images": [
+          "https://buyer-app-preprod.ondc.org/issueApis/uploads/1693918982506.png"
+        ]
+      },
+      "source": {
+        "network_participant_id": "buyer-app-preprod.ondc.org",
+        "type": "CONSUMER"
+      },
+      "expected_response_time": {
+        "duration": "PT1H"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      },
+      "status": "OPEN",
+      "issue_type": "ISSUE",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "short_desc": "Complaint created",
+            "updated_at": "2023-09-05T13:03:02.506Z",
+            "updated_by": {
+              "org": {
+                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+              },
+              "contact": {
+                "phone": "6239083807",
+                "email": "Rishabhnand.singh@ondc.org"
+              },
+              "person": {
+                "name": "Rishabhnand Singh"
               }
             }
-          ],
-          "respondent_actions": [
-            {
-              "respondent_action": "PROCESSING",
-              "short_desc": "Complaint is being processed",
-              "updated_at": "2023-09-05T13:03:03.201Z",
-              "updated_by": {
-                "org": {
-                  "name": "api2.kiko.link/ondc-seller::nic2004:52110"
-                },
-                "contact": {
-                  "phone": "9619363677",
-                  "email": "gururaj@kiko.live"
-                },
-                "person": {
-                  "name": "Gururaj Chougule"
-                }
-              },
-              "cascaded_level": 1
-            }
-          ]
-        },
-        "created_at": "2023-09-05T13:03:02.421Z",
-        "updated_at": "2023-09-05T13:03:02.421Z"
-      }
+          }
+        ],
+        "respondent_actions": []
+      },
+      "created_at": "2023-09-05T13:03:02.421Z",
+      "updated_at": "2023-09-05T13:03:02.421Z"
     }
   }
+}
