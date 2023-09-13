@@ -1,0 +1,97 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:022",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+        "bpp_uri": "https://api.lokal.in/ondc/",
+        "transaction_id": "d38b8948-6458-45f0-8ba8-71635e808f8a",
+        "message_id": "42aeefa7-d918-4bcb-aded-1703b0a5d4f4",
+        "timestamp": "2023-09-12T06:58:44.293Z",
+        "bpp_id": "api.lokal.in",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "OM Collection"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "490926"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "OM Collection",
+                    "tracking": false,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "PT45M",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "28.89"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "490926",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Diet PopCorn",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "28.05"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "84"
+                                },
+                                "maximum": {
+                                    "count": "84"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "28.05"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.84"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}

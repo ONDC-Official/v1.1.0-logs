@@ -1,0 +1,198 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:022",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+        "bpp_uri": "https://api.lokal.in/ondc/",
+        "transaction_id": "8a91c75f-0548-435e-88ac-742487db7cd7",
+        "message_id": "1048b0b0-a076-48dc-b466-c4228fd92f57",
+        "timestamp": "2023-09-13T06:28:42.153Z",
+        "bpp_id": "api.lokal.in",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-09-13-632333",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "sherin sha a j",
+                    "building": "near",
+                    "locality": "andheri",
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "IND",
+                    "area_code": "400037"
+                },
+                "phone": "9633432807",
+                "name": "sherin sha a j",
+                "email": "sherinsha.aj@xilligence.com",
+                "created_at": "2023-09-13T06:28:33.707Z",
+                "updated_at": "2023-09-13T06:28:33.707Z"
+            },
+            "items": [
+                {
+                    "id": "490928",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                },
+                {
+                    "id": "490929",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "1"
+                }
+            ],
+            "provider": {
+                "id": "OM Collection",
+                "locations": [
+                    {
+                        "id": "OM Collection_lokal"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "end": {
+                        "contact": {
+                            "email": "sherinsha.aj@xilligence.com",
+                            "phone": "9633432807"
+                        },
+                        "person": {
+                            "name": "sherin sha a j"
+                        },
+                        "location": {
+                            "gps": "19.0179380000001, 72.863005",
+                            "address": {
+                                "name": "sherin sha a j",
+                                "building": "near",
+                                "locality": "andheri",
+                                "city": "Mumbai",
+                                "state": "Maharashtra",
+                                "country": "IND",
+                                "area_code": "400037"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "61.8",
+                    "currency": "INR",
+                    "transaction_id": "8a91c75f-0548-435e-88ac-742487db7cd7"
+                },
+                "status": "NOT-PAID",
+                "type": "ON-FULFILLMENT",
+                "collected_by": "BPP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "123456789087",
+                        "settlement_ifsc_code": "SBIN0070074",
+                        "settlement_timestamp": "2023-09-13T06:28:33.827Z",
+                        "beneficiary_name": "Xilligence PRIVATE LIMITED",
+                        "bank_name": "SBI",
+                        "branch_name": "Andheri"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "61.80"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "490928",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Nice Biscuit ",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 94
+                                },
+                                "maximum": {
+                                    "count": 94
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "25.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "490929",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Bournvita Biscuits",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "35.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 95
+                                },
+                                "maximum": {
+                                    "count": 95
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "35.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1.80"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "created_at": "2023-09-13T06:28:42.153Z",
+            "updated_at": "2023-09-13T06:28:42.153Z"
+        }
+    }
+}

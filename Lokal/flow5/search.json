@@ -1,0 +1,36 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:022",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+        "transaction_id": "63fa1379-a5bb-4827-ab59-61e4a41129ad",
+        "message_id": "c41fa37e-9b18-4653-a66c-cdbf898f59db",
+        "timestamp": "2023-09-13T07:14:10.481Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "item": {
+                "descriptor": {
+                    "name": "popcorn"
+                }
+            },
+            "fulfillment": {
+                "type": "Delivery",
+                "end": {
+                    "location": {
+                        "gps": "19.0179380000001,72.863005"
+                    }
+                }
+            },
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+            }
+        }
+    }
+}

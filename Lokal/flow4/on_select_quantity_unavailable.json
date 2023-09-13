@@ -1,0 +1,132 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:022",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+        "bpp_uri": "https://api.lokal.in/ondc/",
+        "transaction_id": "c72f9da1-6456-47fc-964f-d13ba63fee4e",
+        "message_id": "7858a17f-f741-49fc-9695-837182e7babe",
+        "timestamp": "2023-09-13T05:52:39.849Z",
+        "bpp_id": "api.lokal.in",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "OM Collection"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "490928"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "490929"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "OM Collection",
+                    "tracking": false,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "PT45M",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "61.80"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "490928",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Nice Biscuit ",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "25.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "97"
+                                },
+                                "maximum": {
+                                    "count": "97"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "25.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "490929",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Bournvita Biscuits",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "35.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "1"
+                                },
+                                "maximum": {
+                                    "count": "10"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "35.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1.80"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    },
+    "error":{
+        "code":"40002",
+        "message":"Item quantity unavailable",
+        "type":"CORE-ERROR"
+    }
+}

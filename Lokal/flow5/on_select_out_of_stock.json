@@ -1,0 +1,119 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:022",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+        "bpp_uri": "https://api.lokal.in/ondc/",
+        "transaction_id": "63fa1379-a5bb-4827-ab59-61e4a41129ad",
+        "message_id": "fda43dd1-6f1e-4bc4-9088-3a6c444fa1b9",
+        "timestamp": "2023-09-13T07:14:41.110Z",
+        "bpp_id": "api.lokal.in",
+        "ttl": "PT30S"
+    },
+     "error":{
+        "type":"DOMAIN-ERROR",
+        "code":40002,
+        "path":"",
+        "message":"Some Items not available"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "OM Collection"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "490926"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "490927"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "OM Collection",
+                    "tracking": false,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "PT45M",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "792.74"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "490926",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "title": "Diet PopCorn",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "item": {
+                          
+                            "price": {
+                                "currency": "INR",
+                                "value": "28.05"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "490927",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "title": "Chicken Popcorn",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "713.55"
+                        },
+                        "item": {
+                           
+                            "price": {
+                                "currency": "INR",
+                                "value": "237.85"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "23.09"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    }
+}

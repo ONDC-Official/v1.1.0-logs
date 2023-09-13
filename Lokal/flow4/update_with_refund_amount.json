@@ -1,0 +1,53 @@
+{
+    "context":{
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:022",
+        "action": "update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+        "bpp_uri": "https://api.lokal.in/ondc/",
+        "transaction_id": "8a91c75f-0548-435e-88ac-742487db7cd7",
+        "message_id": "41c58fd8-d9a5-4a98-9d78-095b794da6e1",
+        "timestamp": "2023-09-13T06:55:36.375Z",
+        "bpp_id": "api.lokal.in",
+        "ttl": "PT30S"
+    },
+    "message":{
+        "order":{
+            "id":"2023-09-13-632333",
+            "items":[
+                {
+                    "id":"490928",
+                    "tags":{
+                        "image":"https://firebasestorage.googleapis.com/v0/b/vanghee-ecom.appspot.com/o/2023-04-04%2F515e0a09-901f-453f-866f-a5c1e4dac462%2FScreenshot_20230315-175749.jpg?alt=media&token=f434fbfd-f857-49cf-ab36-2e4400fdb4b9",
+                        "reason_code":"",
+                        "update_type":"return",
+                        "ttl_approval":"P1D",
+                        "ttl_reverseqc":"P3D"
+                    },
+                    "quantity":{
+                        "count":1
+                    }
+                }
+            ],
+            "state":"Delivered",
+            "provider":{
+                "id":"OM Collection"
+            }
+        },
+        "update_target":"item",
+        "payment":{
+            "@ondc/org/settlement_details":[
+                {
+                    "settlement_counterparty":"buyer",
+                    "settlement_phase":"refund",
+                    "settlement_type":"upi",
+                    "settlement_amount":"25.00",
+                    "settlement_timestamp":"2023-09-13T06:28:50.214Z"
+                }
+            ]
+        }
+    }
+}
