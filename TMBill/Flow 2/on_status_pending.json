@@ -9,63 +9,76 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-29T19:24:28.777Z",
-    "message_id": "31e2afe9-4ef1-4275-af99-6b199e9cc958",
+    "timestamp": "2023-09-07T13:35:35.093Z",
+    "message_id": "49209d2e-d3b3-4af8-a62f-47cb310c3f85",
     "core_version": "1.1.0",
-    "transaction_id": "cfbdbcca-09d0-4c09-a66a-6c3fcf9cff1d"
+    "transaction_id": "d563095a-8435-4048-9a1b-20dfde6b95b7"
   },
   "message": {
     "order": {
-      "id": "2023-08-29-524652",
+      "id": "2023-09-07-174090",
       "items": [
         {
-          "id": "2775203::1155942::EP10",
+          "id": "2775202::1155941::EP09",
           "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
-          "id": "2775204::1155943::EP11",
-          "quantity": { "count": 2 },
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "376", "currency": "INR" },
+        "price": { "value": "791.5", "currency": "INR" },
         "breakup": [
+          {
+            "item": { "price": { "value": "110", "currency": "INR" } },
+            "price": { "value": "110", "currency": "INR" },
+            "title": "Egg Curry",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "5.5", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": { "price": { "value": "500", "currency": "INR" } },
+            "price": { "value": "500", "currency": "INR" },
+            "title": "Egg Masala",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "25", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
+          },
           {
             "item": { "price": { "value": "100", "currency": "INR" } },
             "price": { "value": "100", "currency": "INR" },
-            "title": "Mutton Curry",
-            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "title": "Egg Bhurji",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "item",
             "@ondc/org/item_quantity": { "count": 1 }
           },
           {
             "price": { "value": "5", "currency": "INR" },
             "title": "Tax",
-            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "tax"
-          },
-          {
-            "item": { "price": { "value": "100", "currency": "INR" } },
-            "price": { "value": "200", "currency": "INR" },
-            "title": "Mutton Masala",
-            "@ondc/org/item_id": "2775204::1155943::EP11",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 2 }
-          },
-          {
-            "price": { "value": "10", "currency": "INR" },
-            "title": "Tax",
-            "@ondc/org/item_id": "2775204::1155943::EP11",
-            "@ondc/org/title_type": "tax"
-          },
-          {
-            "price": { "value": "15.00", "currency": "INR" },
-            "title": "Packing Charges",
-            "@ondc/org/item_id": "22446688739675_fulfillment_1",
-            "@ondc/org/title_type": "packing"
           },
           {
             "price": { "value": "46", "currency": "INR" },
@@ -89,16 +102,16 @@
           "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
           "area_code": "560066"
         },
-        "created_at": "2023-08-29T19:23:28.616Z",
-        "updated_at": "2023-08-29T19:23:28.616Z"
+        "created_at": "2023-09-07T13:35:20.172Z",
+        "updated_at": "2023-09-07T13:35:20.172Z"
       },
       "payment": {
         "uri": "https://juspay.in/",
         "type": "ON-ORDER",
         "params": {
-          "amount": "376",
+          "amount": "791.5",
           "currency": "INR",
-          "transaction_id": "cfbdbcca-09d0-4c09-a66a-6c3fcf9cff1d"
+          "transaction_id": "d563095a-8435-4048-9a1b-20dfde6b95b7"
         },
         "status": "PAID",
         "tl_method": "http/get",
@@ -123,16 +136,16 @@
         "rateable": true,
         "locations": [{ "id": "22446688739675" }]
       },
-      "created_at": "2023-08-29T19:23:33.869Z",
-      "updated_at": "2023-08-29T19:24:28.777Z",
+      "created_at": "2023-09-07T13:35:23.905Z",
+      "updated_at": "2023-09-07T13:35:35.093Z",
       "fulfillments": [
         {
           "id": "22446688739675_fulfillment_1",
           "end": {
             "time": {
               "range": {
-                "end": "2023-08-29T20:13:33.869Z",
-                "start": "2023-08-29T19:38:33.869Z"
+                "end": "2023-09-07T14:35:00.000Z",
+                "start": "2023-09-07T13:55:00.000Z"
               }
             },
             "person": { "name": "John Doe" },
@@ -157,8 +170,8 @@
           "start": {
             "time": {
               "range": {
-                "end": "2023-08-29T19:38:33.869Z",
-                "start": "2023-08-29T19:23:33.869Z"
+                "end": "2023-09-07T13:55:00.000Z",
+                "start": "2023-09-07T13:35:00.000Z"
               }
             },
             "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },

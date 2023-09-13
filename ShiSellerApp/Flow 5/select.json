@@ -7,53 +7,45 @@
         "core_version": "1.1.0",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_id": "ushopmicro-stage.hulcd.com",
         "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
-        "transaction_id": "9146a576-5e05-4634-abd4-4fdb22a3c80d",
-        "message_id": "0ef0d88c-05f8-4e7d-8974-475a786b2837",
-        "timestamp": "2023-08-31T09:51:53.408Z",
+        "transaction_id": "c9f68a9d-14e2-45ca-942b-44e8c2fcfe9e",
+        "message_id": "00920694-0852-4851-8e36-6871c5c6e257",
+        "timestamp": "2023-09-07T03:13:03.841Z",
+        "bpp_id": "ushopmicro-stage.hulcd.com",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
+            "items": [{
+                    "id": "49375",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "location_id": "193"
+                }, {
+                    "id": "49376",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "location_id": "193"
+                }
+            ],
+            "provider": {
+                "id": "DE11001860354",
+                "locations": [{
+                        "id": "193"
+                    }
+                ]
+            },
             "fulfillments": [{
-                    "tracking": false,
                     "end": {
                         "location": {
                             "gps": "12.9949590000001, 77.6989090000001",
                             "address": {
                                 "area_code": "560048"
-                            },
-                            "rateable": false
+                            }
                         }
                     }
-                }
-            ],
-            "provider": {
-                "id": "DE11001860354",
-                "rating": 0,
-                "locations": [{
-                        "id": "193",
-                        "rateable": false
-                    }
-                ],
-                "rateable": false
-            },
-            "items": [{
-                    "id": "49375",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "rating": 0,
-                    "location_id": "193",
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
                 }
             ]
         }

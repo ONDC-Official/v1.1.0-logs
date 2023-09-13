@@ -7,19 +7,18 @@
         "core_version": "1.1.0",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_id": "ushopmicro-stage.hulcd.com",
         "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
-        "transaction_id": "d588266a-2f3f-46ba-916d-6ed3efb5561f",
-        "message_id": "28e48bd0-1d90-4f5b-af84-1fdbff00622b",
-        "timestamp": "2023-08-31T04:42:13.660Z",
+        "transaction_id": "e2d2c076-1d76-474b-9fda-8d17d9e602a6",
+        "message_id": "04a90f2f-c724-4aa6-a48a-827a8473aab9",
+        "timestamp": "2023-09-09T11:32:50.450Z",
+        "bpp_id": "ushopmicro-stage.hulcd.com",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-08-31-321642",
+            "id": "2023-09-09-284391",
             "state": "Created",
             "billing": {
-                "name": "Subodh Kumar",
                 "address": {
                     "name": "Subodh Kumar",
                     "building": "Bren Avalon",
@@ -29,16 +28,50 @@
                     "country": "IND",
                     "area_code": "560048"
                 },
-                "email": "subodh1@gmail.com",
                 "phone": "9986697491",
-                "created_at": "2023-08-31T04:42:04.462Z",
-                "updated_at": "2023-08-31T04:42:04.462Z"
+                "name": "Subodh Kumar",
+                "email": "subodh1@gmail.com",
+                "created_at": "2023-09-09T11:32:36.841Z",
+                "updated_at": "2023-09-09T11:32:36.841Z"
+            },
+            "items": [{
+                    "id": "49376",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "444531313030313844"
+                }, {
+                    "id": "49355",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "444531313030313844"
+                }, {
+                    "id": "49375",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "444531313030313844"
+                }
+            ],
+            "provider": {
+                "id": "DE11001860354",
+                "locations": [{
+                        "id": "193"
+                    }
+                ]
             },
             "fulfillments": [{
-                    "id": "DE11001860354",
-                    "type": "Delivery",
+                    "id": "444531313030313844",
                     "tracking": false,
                     "end": {
+                        "contact": {
+                            "email": "subodh1@gmail.com",
+                            "phone": "9986697491"
+                        },
+                        "person": {
+                            "name": "Subodh Kumar"
+                        },
                         "location": {
                             "gps": "12.9949590000001, 77.6989090000001",
                             "address": {
@@ -49,29 +82,22 @@
                                 "state": "Karnataka",
                                 "country": "IND",
                                 "area_code": "560048"
-                            },
-                            "rateable": false
-                        },
-                        "contact": {
-                            "phone": "9986697491",
-                            "email": "subodh1@gmail.com"
-                        },
-                        "person": {
-                            "name": "Subodh Kumar"
+                            }
                         }
-                    }
+                    },
+                    "type": "Delivery"
                 }
             ],
             "payment": {
                 "uri": "https://juspay.in/",
                 "tl_method": "http/get",
                 "params": {
-                    "transaction_id": "d588266a-2f3f-46ba-916d-6ed3efb5561f",
-                    "amount": "1086.46",
-                    "currency": "INR"
+                    "amount": "1153.85",
+                    "currency": "INR",
+                    "transaction_id": "e2d2c076-1d76-474b-9fda-8d17d9e602a6"
                 },
-                "type": "ON-ORDER",
                 "status": "PAID",
+                "type": "ON-ORDER",
                 "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
@@ -84,60 +110,33 @@
                         "beneficiary_name": "Pushpanjali ",
                         "bank_name": "Axis Bank Ltd.",
                         "branch_name": "Jpnagar",
-                        "beneficiary_address": "EPIP Zone,ITPL Main Road,Near Vaidehi Hospital,EPIP Zone"
+                        "beneficiary_address": "Tower-J,REPUBLIC OF WHITEFIELD,Kundlalhalli,Tower-J"
                     }
                 ]
             },
-            "created_at": "2023-08-31T04:42:13.660Z",
-            "updated_at": "2023-08-31T04:42:13.660Z",
-            "provider": {
-                "id": "DE11001860354",
-                "rating": 0,
-                "locations": [{
-                        "id": "193",
-                        "rateable": false
-                    }
-                ],
-                "rateable": false
-            },
-            "items": [{
-                    "id": "49355",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "DE11001860354",
-                    "rating": 0,
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }, {
-                    "id": "49375",
-                    "quantity": {
-                        "count": 1
-                    },
-                    "fulfillment_id": "DE11001860354",
-                    "rating": 0,
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }
-            ],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1086.46"
+                    "value": "1153.85"
                 },
                 "breakup": [{
+                        "title": "Chicco Baby Moments - Soap, Almond & Olive Oil, For Deep Moisturised Skin & Nourished Skin, 75 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "65.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "65.00"
+                            }
+                        },
+                        "@ondc/org/item_id": "49376",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    }, {
                         "title": "Chicco Baby Learn Together Oral Care Set - Green, 2 pcs",
                         "price": {
                             "currency": "INR",
@@ -147,16 +146,7 @@
                             "price": {
                                 "currency": "INR",
                                 "value": "499.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
+                            }
                         },
                         "@ondc/org/item_id": "49355",
                         "@ondc/org/item_quantity": {
@@ -173,16 +163,7 @@
                             "price": {
                                 "currency": "INR",
                                 "value": "549.00"
-                            },
-                            "rating": 5,
-                            "rateable": false,
-                            "matched": false,
-                            "related": false,
-                            "recommended": false,
-                            "@ondc/org/returnable": false,
-                            "@ondc/org/seller_pickup_return": false,
-                            "@ondc/org/cancellable": false,
-                            "@ondc/org/available_on_cod": false
+                            }
                         },
                         "@ondc/org/item_id": "49375",
                         "@ondc/org/item_quantity": {
@@ -193,9 +174,9 @@
                         "title": "Convenience Fee",
                         "price": {
                             "currency": "INR",
-                            "value": "38.46"
+                            "value": "40.85"
                         },
-                        "@ondc/org/item_id": "DE11001860354",
+                        "@ondc/org/item_id": "444531313030313844",
                         "@ondc/org/title_type": "misc"
                     }, {
                         "title": "Delivery charges",
@@ -203,12 +184,14 @@
                             "currency": "INR",
                             "value": "0.0"
                         },
-                        "@ondc/org/item_id": "DE11001860354",
+                        "@ondc/org/item_id": "444531313030313844",
                         "@ondc/org/title_type": "delivery"
                     }
                 ],
-                "ttl": "P1D"
-            }
+                "ttl": "PT6H"
+            },
+            "created_at": "2023-09-09T11:32:50.450Z",
+            "updated_at": "2023-09-09T11:32:50.450Z"
         }
     }
 }

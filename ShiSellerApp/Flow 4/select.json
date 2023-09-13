@@ -7,68 +7,51 @@
         "core_version": "1.1.0",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_id": "ushopmicro-stage.hulcd.com",
         "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
-        "transaction_id": "2c32a456-5f41-4c8b-99ec-f1c82075260f",
-        "message_id": "81d7cb70-0cbc-442b-bc79-8644a58d8389",
-        "timestamp": "2023-08-31T07:16:59.987Z",
+        "transaction_id": "b90bd676-e3ba-4ef1-82e6-2452680ce9d3",
+        "message_id": "72b5f0bd-ac70-45ea-82c6-3a08e7157c53",
+        "timestamp": "2023-09-06T22:13:33.518Z",
+        "bpp_id": "ushopmicro-stage.hulcd.com",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
+            "items": [{
+                    "id": "49375",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "location_id": "193"
+                }, {
+                    "id": "49376",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "location_id": "193"
+                }, {
+                    "id": "49355",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "location_id": "193"
+                }
+            ],
+            "provider": {
+                "id": "DE11001860354",
+                "locations": [{
+                        "id": "193"
+                    }
+                ]
+            },
             "fulfillments": [{
-                    "tracking": false,
                     "end": {
                         "location": {
                             "gps": "12.9949590000001, 77.6989090000001",
                             "address": {
                                 "area_code": "560048"
-                            },
-                            "rateable": false
+                            }
                         }
                     }
-                }
-            ],
-            "provider": {
-                "id": "DE11001860354",
-                "rating": 0,
-                "locations": [{
-                        "id": "193",
-                        "rateable": false
-                    }
-                ],
-                "rateable": false
-            },
-            "items": [{
-                    "id": "49355",
-                    "quantity": {
-                        "count": 2
-                    },
-                    "rating": 0,
-                    "location_id": "193",
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
-                }, {
-                    "id": "49375",
-                    "quantity": {
-                        "count": 4
-                    },
-                    "rating": 0,
-                    "location_id": "193",
-                    "rateable": false,
-                    "matched": false,
-                    "related": false,
-                    "recommended": false,
-                    "@ondc/org/returnable": false,
-                    "@ondc/org/seller_pickup_return": false,
-                    "@ondc/org/cancellable": false,
-                    "@ondc/org/available_on_cod": false
                 }
             ]
         }
