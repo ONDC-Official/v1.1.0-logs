@@ -3,7 +3,7 @@
     "code": "30009",
     "path": "string",
     "type": "DOMAIN-ERROR",
-    "message": "Dropoff location not serviceable by Logistics Provider"
+    "message": "Location is not serviceable."
   },
   "context": {
     "ttl": "PT30S",
@@ -15,50 +15,47 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-09-07T13:34:06.566Z",
-    "message_id": "f7b0f20e-05b3-4a05-b7d7-2052b0c5de2b",
+    "timestamp": "2023-09-12T10:16:25.542Z",
+    "message_id": "bd25f5a6-ebe4-4cd8-9643-582c0bdbf487",
     "core_version": "1.1.0",
-    "transaction_id": "d563095a-8435-4048-9a1b-20dfde6b95b7"
+    "transaction_id": "af311f02-f741-4bd4-9005-b56f9aeb77fa"
   },
   "message": {
     "order": {
       "items": [
         {
           "id": "2775200::1155939::EP07",
-          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775201::1155940::EP08",
-          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775202::1155941::EP09",
-          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "745.5", "currency": "INR" },
+        "price": { "value": "966", "currency": "INR" },
         "breakup": [
           {
             "item": {
               "price": { "value": "110", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "99" },
-                "available": { "count": "99" }
+                "maximum": { "count": "98" },
+                "available": { "count": "98" }
               }
             },
-            "price": { "value": "110", "currency": "INR" },
+            "price": { "value": "220", "currency": "INR" },
             "title": "Egg Curry",
             "@ondc/org/item_id": "2775200::1155939::EP07",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 1 }
+            "@ondc/org/item_quantity": { "count": 2 }
           },
           {
-            "price": { "value": "5.5", "currency": "INR" },
+            "price": { "value": "11", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775200::1155939::EP07",
             "@ondc/org/title_type": "tax"
@@ -87,18 +84,18 @@
             "item": {
               "price": { "value": "100", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "99" },
-                "available": { "count": "99" }
+                "maximum": { "count": "98" },
+                "available": { "count": "98" }
               }
             },
-            "price": { "value": "100", "currency": "INR" },
+            "price": { "value": "200", "currency": "INR" },
             "title": "Egg Bhurji",
             "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 1 }
+            "@ondc/org/item_quantity": { "count": 2 }
           },
           {
-            "price": { "value": "5", "currency": "INR" },
+            "price": { "value": "10", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775202::1155941::EP09",
             "@ondc/org/title_type": "tax"

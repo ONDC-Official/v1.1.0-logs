@@ -3,7 +3,7 @@
     "code": "40002",
     "path": "string",
     "type": "DOMAIN-ERROR",
-    "message": "When the Seller App is unable to select the specified number in order.items[].quantity"
+    "message": "Item is out of stock"
   },
   "context": {
     "ttl": "PT30S",
@@ -15,50 +15,47 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-09-07T14:08:52.849Z",
-    "message_id": "2cf78241-3e6c-4404-9aa9-715d66928872",
+    "timestamp": "2023-09-12T13:22:30.637Z",
+    "message_id": "c1cb69fa-ea59-4440-aabe-4d42c6d12d3f",
     "core_version": "1.1.0",
-    "transaction_id": "f0404c76-fe4c-4bdc-93a7-1d6651757233"
+    "transaction_id": "2a608455-0406-4fb7-bcba-0e224f206b70"
   },
   "message": {
     "order": {
       "items": [
         {
           "id": "2775203::1155942::EP10",
-          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775204::1155943::EP11",
-          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775205::1155944::EP12",
-          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "263", "currency": "INR" },
+        "price": { "value": "382", "currency": "INR" },
         "breakup": [
           {
             "item": {
               "price": { "value": "100", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "99" },
-                "available": { "count": "99" }
+                "maximum": { "count": "98" },
+                "available": { "count": "98" }
               }
             },
-            "price": { "value": "100", "currency": "INR" },
+            "price": { "value": "200", "currency": "INR" },
             "title": "Mutton Curry",
             "@ondc/org/item_id": "2775203::1155942::EP10",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 1 }
+            "@ondc/org/item_quantity": { "count": 2 }
           },
           {
-            "price": { "value": "5", "currency": "INR" },
+            "price": { "value": "10", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775203::1155942::EP10",
             "@ondc/org/title_type": "tax"
@@ -87,8 +84,8 @@
             "item": {
               "price": { "value": "100", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "100" },
-                "available": { "count": "100" }
+                "maximum": { "count": "0" },
+                "available": { "count": "0" }
               }
             },
             "price": { "value": "0", "currency": "INR" },
@@ -98,7 +95,7 @@
             "@ondc/org/item_quantity": { "count": 0 }
           },
           {
-            "price": { "value": "7.00", "currency": "INR" },
+            "price": { "value": "21.00", "currency": "INR" },
             "title": "Packing Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
             "@ondc/org/title_type": "packing"
