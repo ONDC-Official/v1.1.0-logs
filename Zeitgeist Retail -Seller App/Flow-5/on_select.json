@@ -1,0 +1,122 @@
+{
+    "context": {
+        "transaction_id": "abcbef5b-7cc4-4011-96db-9bf30ffc8aa8",
+        "message_id": "0d4f780d-e218-40d6-b9d3-bc21ddd9f4da",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "bpp_id": "ondc-preprod.zeppstore.in",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "action": "on_select",
+        "timestamp": "2023-08-24T09:37:19.810Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "ZEPP"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "ZRPL4c675af6-66b8-46bf-b31e-6876269be595",
+                    "id": "404"
+                },
+                {
+                    "fulfillment_id": "ZRPL4c675af6-66b8-46bf-b31e-6876269be595",
+                    "id": "435"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ZRPL4c675af6-66b8-46bf-b31e-6876269be595",
+                    "@ondc/org/provider_name": "ZRPL",
+                    "tracking": true,
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/TAT": "P1D",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1598"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "404",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Ifrogz Audio- Ear pollution plugz mobile with mike-Blue",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1598"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 2
+                                },
+                                "maximum": {
+                                    "count": 2
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "799"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "435",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "title": "Ifrogz Audio Intone with mic-Black",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": 0
+                                },
+                                "maximum": {
+                                    "count": 0
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "1299"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL4c675af6-66b8-46bf-b31e-6876269be595",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            }
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "40002",
+        "message": "Item quantity unavailable"
+    }
+}

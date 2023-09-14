@@ -1,0 +1,166 @@
+
+
+
+  "Select": {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.bitsila.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-08-07T05:42:21.993Z",
+      "message_id": "0e83ca03-25cb-4a97-8952-b6e4b924de02",
+      "core_version": "1.1.0",
+      "transaction_id": "025e18e4-a04f-4964-b1dc-d0dbd059f564"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "10993",
+            "quantity": {
+              "count": 3
+            },
+            "location_id": "L:1016:699"
+          }
+        ],
+        "provider": {
+          "id": "1016:699",
+          "locations": [
+            {
+              "id": "L:1016:699"
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "end": {
+              "location": {
+                "gps": "12.9140160000001, 77.6371740000001",
+                "address": {
+                  "area_code": "560102"
+                }
+              }
+            },
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+
+
+
+  
+  "On_Select": {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_select",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.bitsila.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-08-07T05:42:35.688Z",
+      "message_id": "0e83ca03-25cb-4a97-8952-b6e4b924de02",
+      "core_version": "1.1.0",
+      "transaction_id": "025e18e4-a04f-4964-b1dc-d0dbd059f564"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "10993",
+            "fulfillment_id": "FPA:699:sameday:258:88062"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "243.56",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "10993",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 3,
+                "price": {
+                  "value": "29.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "87.0",
+                "currency": "INR"
+              },
+              "title": "Amul Moti Toned Milk Pouch",
+              "@ondc/org/item_id": "10993",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 3
+              }
+            },
+            {
+              "price": {
+                "value": "156.56",
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:sameday:258:88062",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "provider": {
+          "id": "1016:699"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:sameday:258:88062",
+            "state": {
+              "descriptor": {
+                "code": "Serviceable",
+                "name": "Serviceable"
+              }
+            },
+            "tracking": true,
+            "@ondc/org/TAT": "PT3H",
+            "@ondc/org/category": "Same Day Delivery",
+            "@ondc/org/provider_name": "Bitsila"
+          }
+        ],
+        "provider_location": {
+          "id": "L:1016:699"
+        }
+      }
+    }
+  }
+

@@ -1,0 +1,53 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "update",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://b8cb-2402-e280-3e33-24e-a0b2-4a7-225c-cafd.ngrok-free.app/protocol/v1",
+        "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
+        "transaction_id": "0c49c69f-9a0a-4234-8ab9-8d3fd56a08cd",
+        "message_id": "9142965e-f334-4ae3-b92f-65c3406f7221",
+        "timestamp": "2023-08-18T18:44:26.172Z",
+        "bpp_id": "preprod-jajee-bpp.shopalyst.com",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "update_target": "billing",
+        "order": {
+            "id": "2023-08-19-642417",
+            "state": "Completed",
+            "provider": {
+                "id": "preprod-jajee-bpp.shopalyst.com"
+            },
+            "items": [
+                {
+                    "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043628803_default",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "tags": {
+                        "update_type": "return",
+                        "reason_code": "004",
+                        "ttl_approval": "P7D",
+                        "ttl_reverseqc": "P3D",
+                        "image": ""
+                    }
+                }
+            ],
+            "payment": {
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "buyer",
+                        "settlement_phase": "refund",
+                        "settlement_type": "upi",
+                        "settlement_amount": "200",
+                        "settlement_timestamp": "2023-08-18T18:44:26.175Z"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,9 +1,8 @@
 **/on_search**
-- Either one of fixed (range) or split (frequency and times) timings should be provided in /bpp/providers[0]/locations[0]/time
+- /message/catalog/bpp~1providers/0/@ondc~1org~1fssai_license_no must NOT have fewer than 14 characters
 
 **/on_select**
-- tax line item should not be present if price=0
-- Warning: Quoted Price in /on_select INR 25198 does not match with the total price of items in /select INR 55216
+- Warning: Quoted Price in /on_select INR 12599 does not match with the total price of items in /select INR 27608
 
 **/on_init**
 - Discrepancies between the quote object in /on_select and /on_init

@@ -1,0 +1,202 @@
+{
+    "context": {
+        "transaction_id": "d34dd190-876f-43c2-8f52-c4ae135aab61",
+        "message_id": "8481c408-7e23-4e0f-ae08-43c68d26211f",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "bpp_id": "ondc-preprod.zeppstore.in",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "action": "on_confirm",
+        "timestamp": "2023-08-24T06:53:03.376Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-24-214828",
+            "state": "Accepted",
+            "provider": {
+                "id": "ZEPP",
+                "locations": [
+                    {
+                        "id": "wfhlb-1000"
+                    }
+                ],
+                "rateable": true
+            },
+            "items": [
+                {
+                    "id": "404",
+                    "fulfillment_id": "ZRPL55077c3a-bac8-448b-a872-7e41fd6730df",
+                    "quantity": {
+                        "count": 3
+                    }
+                },
+                {
+                    "id": "435",
+                    "fulfillment_id": "ZRPL55077c3a-bac8-448b-a872-7e41fd6730df",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Sudd",
+                "address": {
+                    "name": "Sudd",
+                    "building": "near Regional passport office",
+                    "locality": "#102, Sapthagiri nivasa building, regional passport office road, Kormangala 8th stage",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560102"
+                },
+                "email": "sirsimattighatta@gmail.com",
+                "phone": "6362286779",
+                "created_at": "2023-08-24T06:51:38.608Z",
+                "updated_at": "2023-08-24T06:51:38.608Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "ZRPL55077c3a-bac8-448b-a872-7e41fd6730df",
+                    "@ondc/org/provider_name": "ZRPL",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "type": "Delivery",
+                    "tracking": true,
+                    "start": {
+                        "location": {
+                            "id": "wfhlb-1000",
+                            "descriptor": {
+                                "name": "Zeitgeist Retail"
+                            },
+                            "gps": "12.914261,77.638611"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-24T06:53:02.346Z",
+                                "end": "2023-08-24T09:53:12.346Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9886098860",
+                            "email": "support@zrpl.co.in"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9140160000001, 77.6371740000001",
+                            "address": {
+                                "name": "Sudd",
+                                "building": "near Regional passport office",
+                                "locality": "#102, Sapthagiri nivasa building, regional passport office road, Kormangala 8th stage",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560102"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-08-24T06:53:02.346Z",
+                                "end": "2023-08-25T06:53:12.346Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9886098860"
+                        }
+                    },
+                    "rateable": true
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "4995"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "404",
+                        "@ondc/org/item_quantity": {
+                            "count": 3
+                        },
+                        "title": "Ifrogz Audio- Ear pollution plugz mobile with mike-Blue",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2397"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "799"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "435",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Ifrogz Audio Intone with mic-Black",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2598"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1299"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPL55077c3a-bac8-448b-a872-7e41fd6730df",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "d34dd190-876f-43c2-8f52-c4ae135aab61",
+                    "amount": "4995"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "upi_address": "gft@oksbi",
+                        "settlement_bank_account_no": "150994923487",
+                        "settlement_ifsc_code": "SBIN004340",
+                        "beneficiary_name": "Zeitgeist Retail",
+                        "bank_name": "SBI",
+                        "branch_name": "HSR Layout"
+                    }
+                ]
+            },
+            "created_at": "2023-08-24T06:53:02.346Z",
+            "updated_at": "2023-08-24T06:53:03.376Z"
+        }
+    }
+}

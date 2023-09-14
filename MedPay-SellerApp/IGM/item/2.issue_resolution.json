@@ -1,0 +1,75 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_issue_status",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc.uat.medpay.in",
+    "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+    "transaction_id": "a659ef10-1d6a-4bbd-8c05-b42a8561355b",
+    "message_id": "74d93c67-0435-4c66-8045-5a3be410fd13",
+    "timestamp": "2023-09-07T05:57:13.793Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "9d883031-c870-447d-b0d3-d5b3c185d6e1",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "updated_at": "2023-09-07T05:56:22.534Z",
+            "updated_by": {
+              "org": { "name": "ondc.uat.medpay.in::nic2004:52110" },
+              "contact": { "phone": "8861545034", "email": "arun@medpay.in" },
+              "person": { "name": "Arun" }
+            },
+            "cascaded_level": 1,
+            "short_desc": "complain is being looked into it"
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "updated_at": "2023-09-07T05:57:13.733Z",
+            "updated_by": {
+              "org": { "name": "ondc.uat.medpay.in::nic2004:52110" },
+              "contact": { "phone": "8861545034", "email": "arun@medpay.in" },
+              "person": { "name": "Arun" }
+            },
+            "cascaded_level": 1,
+            "short_desc": "Replacement"
+          }
+        ]
+      },
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "TRANSACTION-COUNTERPARTY-NP",
+          "organization": {
+            "org": { "name": "ondc.uat.medpay.in::nic2004:52110" },
+            "contact": { "phone": "8861545034", "email": "arun@medpay.in" },
+            "person": { "name": "Arun" }
+          },
+          "resolution_support": {
+            "contact": { "phone": "8861545034", "email": "arun@medpay.in" },
+            "gros": [
+              {
+                "person": { "name": "Arun" },
+                "contact": { "phone": "8861545034", "email": "arun@medpay.in" },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ]
+          }
+        }
+      },
+      "resolution": {
+        "action_triggered": "REPLACEMENT",
+        "short_desc": "Replacement",
+        "long_desc": "Item will be replaced"
+      },
+      "created_at": "2023-09-07T05:56:20.628Z",
+      "updated_at": "2023-09-07T05:57:13.733Z"
+    }
+  }
+}
