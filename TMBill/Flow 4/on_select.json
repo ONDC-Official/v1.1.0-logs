@@ -9,71 +9,93 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-29T19:49:38.048Z",
-    "message_id": "20e621a3-ebc5-4dbe-8179-146420336e6f",
+    "timestamp": "2023-09-12T13:11:20.963Z",
+    "message_id": "2cf50b21-c79c-49f3-b7ce-4c5f6a7ec899",
     "core_version": "1.1.0",
-    "transaction_id": "c27fdcaf-8516-4693-90f9-e9d93beaae67"
+    "transaction_id": "3714ce99-7e73-457c-93f7-6930ee06e82d"
   },
   "message": {
     "order": {
       "items": [
         {
           "id": "2775203::1155942::EP10",
-          "quantity": { "count": 1 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775204::1155943::EP11",
-          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775205::1155944::EP12",
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "376", "currency": "INR" },
+        "price": { "value": "592", "currency": "INR" },
         "breakup": [
           {
             "item": {
               "price": { "value": "100", "currency": "INR" },
               "quantity": {
-                "maximum": { "count": "100" },
-                "available": { "count": "100" }
-              }
-            },
-            "price": { "value": "100", "currency": "INR" },
-            "title": "Mutton Curry",
-            "@ondc/org/item_id": "2775203::1155942::EP10",
-            "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 1 }
-          },
-          {
-            "price": { "value": "5", "currency": "INR" },
-            "title": "Tax",
-            "@ondc/org/item_id": "2775203::1155942::EP10",
-            "@ondc/org/title_type": "tax"
-          },
-          {
-            "item": {
-              "price": { "value": "100", "currency": "INR" },
-              "quantity": {
-                "maximum": { "count": "100" },
-                "available": { "count": "100" }
+                "maximum": { "count": "98" },
+                "available": { "count": "98" }
               }
             },
             "price": { "value": "200", "currency": "INR" },
-            "title": "Mutton Masala",
-            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "title": "Mutton Curry",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
             "@ondc/org/title_type": "item",
             "@ondc/org/item_quantity": { "count": 2 }
           },
           {
             "price": { "value": "10", "currency": "INR" },
             "title": "Tax",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "99" },
+                "available": { "count": "99" }
+              }
+            },
+            "price": { "value": "100", "currency": "INR" },
+            "title": "Mutton Masala",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "5", "currency": "INR" },
+            "title": "Tax",
             "@ondc/org/item_id": "2775204::1155943::EP11",
             "@ondc/org/title_type": "tax"
           },
           {
-            "price": { "value": "15.00", "currency": "INR" },
+            "item": {
+              "price": { "value": "100", "currency": "INR" },
+              "quantity": {
+                "maximum": { "count": "2" },
+                "available": { "count": "2" }
+              }
+            },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Mutton Handi",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "10", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "21.00", "currency": "INR" },
             "title": "Packing Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
             "@ondc/org/title_type": "packing"
@@ -99,8 +121,7 @@
           "@ondc/org/category": "Immediate Delivery",
           "@ondc/org/provider_name": "TMBill"
         }
-      ],
-      "provider_location": { "id": "22446688739675" }
+      ]
     }
   }
 }

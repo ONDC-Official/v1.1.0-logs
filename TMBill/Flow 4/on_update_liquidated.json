@@ -9,102 +9,83 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-08-29T19:54:33.610Z",
-    "message_id": "c57fd5c9-7aed-44d5-bb78-605faad207ff",
+    "timestamp": "2023-09-12T13:16:27.459Z",
+    "message_id": "1702e4fc-43f1-4135-9547-c4ec3e9b7229",
     "core_version": "1.1.0",
-    "transaction_id": "c27fdcaf-8516-4693-90f9-e9d93beaae67"
+    "transaction_id": "3714ce99-7e73-457c-93f7-6930ee06e82d"
   },
   "message": {
     "order": {
-      "id": "2023-08-29-447028",
+      "id": "2023-09-12-900520",
       "items": [
         {
           "id": "2775203::1155942::EP10",
-          "tags": {
-            "status": "Liquidated"
-          },
-          "quantity": {
-            "count": 1
-          },
+          "quantity": { "count": 2 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
           "id": "2775204::1155943::EP11",
-          "quantity": {
-            "count": 2
-          },
+          "tags": { "status": "Liquidated" },
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775205::1155944::EP12",
+          "quantity": { "count": 2 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         }
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": {
-          "value": "266",
-          "currency": "INR"
-        },
+        "price": { "value": "480", "currency": "INR" },
         "breakup": [
           {
-            "item": {
-              "price": {
-                "value": "100",
-                "currency": "INR"
-              }
-            },
-            "price": {
-              "value": "200",
-              "currency": "INR"
-            },
-            "title": "Mutton Masala",
-            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "item": { "price": { "value": "100", "currency": "INR" } },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Mutton Curry",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": {
-              "count": 2
-            }
+            "@ondc/org/item_quantity": { "count": 2 }
           },
           {
-            "price": {
-              "value": "10",
-              "currency": "INR"
-            },
+            "price": { "value": "10", "currency": "INR" },
             "title": "Tax",
-            "@ondc/org/item_id": "2775204::1155943::EP11",
+            "@ondc/org/item_id": "2775203::1155942::EP10",
             "@ondc/org/title_type": "tax"
           },
           {
-            "price": {
-              "value": "10.00",
-              "currency": "INR"
-            },
+            "item": { "price": { "value": "100", "currency": "INR" } },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Mutton Handi",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "10", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775205::1155944::EP12",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "14.00", "currency": "INR" },
             "title": "Packing Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
             "@ondc/org/title_type": "packing"
           },
           {
-            "price": {
-              "value": "46",
-              "currency": "INR"
-            },
+            "price": { "value": "46", "currency": "INR" },
             "title": "Delivery Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
             "@ondc/org/title_type": "delivery"
           },
           {
-            "item": {
-              "price": {
-                "value": "100",
-                "currency": "INR"
-              }
-            },
-            "price": {
-              "value": "0",
-              "currency": "INR"
-            },
-            "title": "Mutton Curry",
-            "@ondc/org/item_id": "2775203::1155942::EP10",
+            "item": { "price": { "value": "100", "currency": "INR" } },
+            "price": { "value": "0", "currency": "INR" },
+            "title": "Mutton Masala",
+            "@ondc/org/item_id": "2775204::1155943::EP11",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": {
-              "count": 0
-            }
+            "@ondc/org/item_quantity": { "count": 0 }
           }
         ]
       },
@@ -122,16 +103,16 @@
           "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
           "area_code": "560066"
         },
-        "created_at": "2023-08-29T19:49:49.096Z",
-        "updated_at": "2023-08-29T19:49:49.096Z"
+        "created_at": "2023-09-12T13:11:51.555Z",
+        "updated_at": "2023-09-12T13:11:51.555Z"
       },
       "payment": {
         "uri": "https://juspay.in/",
         "type": "ON-ORDER",
         "params": {
-          "amount": "376",
+          "amount": "592",
           "currency": "INR",
-          "transaction_id": "c27fdcaf-8516-4693-90f9-e9d93beaae67"
+          "transaction_id": "3714ce99-7e73-457c-93f7-6930ee06e82d"
         },
         "status": "PAID",
         "tl_method": "http/get",
@@ -154,34 +135,28 @@
       "provider": {
         "id": "22446688739675",
         "rateable": true,
-        "locations": [
-          {
-            "id": "22446688739675"
-          }
-        ]
+        "locations": [{ "id": "22446688739675" }]
       },
       "documents": [
         {
-          "url": "https://backoffice.tmbill.com/ebill/2023-08-29-447028",
+          "url": "https://backoffice.tmbill.com/ebill/2023-09-12-900520",
           "label": "Invoice"
         }
       ],
-      "created_at": "2023-08-29T19:49:55.181Z",
-      "updated_at": "2023-08-29T19:54:33.610Z",
+      "created_at": "2023-09-12T13:11:56.903Z",
+      "updated_at": "2023-09-12T13:16:27.459Z",
       "fulfillments": [
         {
           "id": "22446688739675_fulfillment_1",
           "end": {
             "time": {
               "range": {
-                "end": "2023-08-29T20:08:19.171Z",
-                "start": "2023-08-29T19:53:19.171Z"
+                "end": "2023-09-12T13:37:00.000Z",
+                "start": "2023-09-12T13:17:00.000Z"
               },
-              "timestamp": "2023-08-29T19:52:34.178Z"
+              "timestamp": "2023-09-12T13:14:49.622Z"
             },
-            "person": {
-              "name": "John Doe"
-            },
+            "person": { "name": "John Doe" },
             "contact": {
               "email": "xifelo7871@fulwark.com",
               "phone": "9090999900"
@@ -197,32 +172,21 @@
                 "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
                 "area_code": "560066"
               },
-              "descriptor": {
-                "name": "John Doe",
-                "images": []
-              }
+              "descriptor": { "name": "John Doe", "images": [] }
             }
           },
           "type": "Delivery",
-          "agent": {
-            "name": "Tasneem",
-            "phone": "999999999"
-          },
+          "agent": { "name": "Tasneem", "phone": "999999999" },
           "start": {
             "time": {
               "range": {
-                "end": "2023-08-29T20:43:19.171Z",
-                "start": "2023-08-29T20:08:19.171Z"
+                "end": "2023-09-12T14:17:00.000Z",
+                "start": "2023-09-12T13:37:00.000Z"
               },
-              "timestamp": "2023-08-29T19:49:55.263Z"
+              "timestamp": "2023-09-12T13:12:09.454Z"
             },
-            "person": {
-              "name": "Eatsy"
-            },
-            "contact": {
-              "email": "sid@tmbill.com",
-              "phone": "7798548540"
-            },
+            "person": { "name": "Eatsy" },
+            "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
             "location": {
               "id": "22446688739675",
               "gps": "12.970698591977477,77.7471608509239",
