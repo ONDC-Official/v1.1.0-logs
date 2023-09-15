@@ -9,18 +9,18 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-09-07T14:09:39.963Z",
-    "message_id": "3863372a-a16a-4758-84ad-e0ab220459bb",
+    "timestamp": "2023-09-12T13:23:56.809Z",
+    "message_id": "891122fb-831a-4d46-91ec-4f42a25f6a79",
     "core_version": "1.1.0",
-    "transaction_id": "f0404c76-fe4c-4bdc-93a7-1d6651757233"
+    "transaction_id": "2a608455-0406-4fb7-bcba-0e224f206b70"
   },
   "message": {
     "order": {
-      "id": "2023-09-07-829830",
+      "id": "2023-09-12-228089",
       "items": [
         {
           "id": "2775203::1155942::EP10",
-          "quantity": { "count": 1 },
+          "quantity": { "count": 2 },
           "fulfillment_id": "22446688739675_fulfillment_1"
         },
         {
@@ -31,18 +31,18 @@
       ],
       "quote": {
         "ttl": "PT1H",
-        "price": { "value": "263", "currency": "INR" },
+        "price": { "value": "382", "currency": "INR" },
         "breakup": [
           {
             "item": { "price": { "value": "100", "currency": "INR" } },
-            "price": { "value": "100", "currency": "INR" },
+            "price": { "value": "200", "currency": "INR" },
             "title": "Mutton Curry",
             "@ondc/org/item_id": "2775203::1155942::EP10",
             "@ondc/org/title_type": "item",
-            "@ondc/org/item_quantity": { "count": 1 }
+            "@ondc/org/item_quantity": { "count": 2 }
           },
           {
-            "price": { "value": "5", "currency": "INR" },
+            "price": { "value": "10", "currency": "INR" },
             "title": "Tax",
             "@ondc/org/item_id": "2775203::1155942::EP10",
             "@ondc/org/title_type": "tax"
@@ -62,7 +62,7 @@
             "@ondc/org/title_type": "tax"
           },
           {
-            "price": { "value": "7.00", "currency": "INR" },
+            "price": { "value": "21.00", "currency": "INR" },
             "title": "Packing Charges",
             "@ondc/org/item_id": "22446688739675_fulfillment_1",
             "@ondc/org/title_type": "packing"
@@ -89,16 +89,16 @@
           "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
           "area_code": "560066"
         },
-        "created_at": "2023-09-07T14:09:36.727Z",
-        "updated_at": "2023-09-07T14:09:36.727Z"
+        "created_at": "2023-09-12T13:23:52.336Z",
+        "updated_at": "2023-09-12T13:23:52.336Z"
       },
       "payment": {
         "uri": "https://juspay.in/",
         "type": "ON-ORDER",
         "params": {
-          "amount": "263",
+          "amount": "382",
           "currency": "INR",
-          "transaction_id": "f0404c76-fe4c-4bdc-93a7-1d6651757233"
+          "transaction_id": "2a608455-0406-4fb7-bcba-0e224f206b70"
         },
         "status": "PAID",
         "tl_method": "http/get",
@@ -123,16 +123,16 @@
         "rateable": true,
         "locations": [{ "id": "22446688739675" }]
       },
-      "created_at": "2023-09-07T14:09:39.910Z",
-      "updated_at": "2023-09-07T14:09:39.963Z",
+      "created_at": "2023-09-12T13:23:56.751Z",
+      "updated_at": "2023-09-12T13:23:56.809Z",
       "fulfillments": [
         {
           "id": "22446688739675_fulfillment_1",
           "end": {
             "time": {
               "range": {
-                "end": "2023-09-07T15:09:00.000Z",
-                "start": "2023-09-07T14:29:00.000Z"
+                "end": "2023-09-12T14:25:00.000Z",
+                "start": "2023-09-12T13:45:00.000Z"
               }
             },
             "person": { "name": "John Doe" },
@@ -157,8 +157,8 @@
           "start": {
             "time": {
               "range": {
-                "end": "2023-09-07T14:29:00.000Z",
-                "start": "2023-09-07T14:09:00.000Z"
+                "end": "2023-09-12T13:45:00.000Z",
+                "start": "2023-09-12T13:25:00.000Z"
               }
             },
             "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
