@@ -1,0 +1,120 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/buyer_ondc/",
+        "transaction_id": "05c5353f-7d36-4faf-af53-02d57efb42cc",
+        "message_id": "390ae21ac6",
+        "timestamp": "2023-09-14T09:34:06.974Z",
+        "bpp_id": "shathabdhi-organics.mytra.money",
+        "bpp_uri": "https://shathabdhi-organics.mytra.money/api/method/ondc/"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "STO-ITEM-2023-00010-500 Gms:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-116785"
+                },
+                {
+                    "id": "STO-ITEM-2023-00001-1 KG:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-116785"
+                }
+            ],
+            "provider": {
+                "id": "shathabdhi-organics.mytra.money",
+                "locations": [
+                    {
+                        "id": "Manikonda - S"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "state": {
+                        "descriptor": {
+                            "code": "Non-serviceable"
+                        }
+                    },
+                    "id": "ONDC-REQ-116785",
+                    "@ondc/org/provider_name": "Shathabdhi Organics",
+                    "@ondc/org/TAT": "PT4H",
+                    "@ondc/org/category": "Same Day Delivery"
+                }
+            ],
+            "payment": {
+                "type": "ON-ORDER"
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "496.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "STO-ITEM-2023-00010-500 Gms:Manikonda - S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Barnyard Millet-500 Gms",
+                        "price": {
+                            "currency": "INR",
+                            "value": "216.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "108.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "3"
+                                },
+                                "maximum": {
+                                    "count": "3"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "STO-ITEM-2023-00001-1 KG:Manikonda - S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Organic Brown Rice-1 KG",
+                        "price": {
+                            "currency": "INR",
+                            "value": "280.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "140.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "3"
+                                },
+                                "maximum": {
+                                    "count": "3"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            }
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "30009",
+        "message": "Location Serviceability Error"
+    }
+}
