@@ -1,0 +1,45 @@
+{
+    "context": {
+        "bap_id": "integrations-preprod.channelier.com",
+        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "bpp_id": "ondc-tsp-demo.demoprojectxsandbox2.shipsy.io",
+        "bpp_uri": "https://ondc-tsp-demo.demoprojectxsandbox2.shipsy.io/api/ondc/customerportaldemodtdc/",
+        "transaction_id": "d99f165a-a602-4ebe-bc02-1ac3d2f53651",
+        "message_id": "e012cccf-3ccf-428e-87ee-1bf902842200",
+        "country": "IND",
+        "city": "std:020",
+        "timestamp": "2023-08-28T12:17:28.016Z",
+        "action": "update"
+    },
+    "message": {
+        "update_target": "fulfillment",
+        "order": {
+            "id": "9f612366-c695-4c40-add0-de1d9004f6c4",
+            "state": "Accepted",
+            "items": [
+                {
+                    "id": "B2C SMART EXPRESS",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "@ondc/org/awb_no": "7D2321144",
+                    "tracking": false,
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    }
+                }
+            ],
+            "updated_at": "2023-08-28T12:17:28.016Z"
+        }
+    }
+}

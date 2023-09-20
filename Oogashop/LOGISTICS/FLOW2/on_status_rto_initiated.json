@@ -1,0 +1,153 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bpp_id": "preprod-bpp.iway.digiit.io",
+        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+        "city": "STD:080",
+        "country": "IND",
+        "action": "on_status",
+        "transaction_id": "7dc8c4ca-1e0c-4eee-b906-f0eef650d762",
+        "message_id": "56f9029c-f785-4f8a-8a6d-9314c2e4909f",
+        "timestamp": "2023-09-14T09:06:09.291Z"
+    },
+    "message": {
+        "order": {
+            "id": "10cbc0ce-3242-4c28-83a0-6db978ad8a1f",
+            "state": "Cancelled",
+            "provider": {
+                "id": "107-Account-DER-292"
+            },
+            "items": [
+                {
+                    "id": "19",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "type": "Prepaid",
+                    "state": {
+                        "descriptor": {
+                            "code": "Cancelled"
+                        }
+                    },
+                    "tracking": true,
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-09-14T14:41:44.754Z",
+                                "end": "2023-09-14T15:11:44.754Z"
+                            },
+                            "timestamp": "2023-09-14T09:03:53.200Z"
+                        },
+                        "instructions": {
+                            "name": "Deliver at door-step",
+                            "short_desc": "Deliver at door-step",
+                            "long_desc": "    48"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-09-14T15:16:44.754Z",
+                                "end": "2023-09-14T15:31:44.754Z"
+                            }
+                        }
+                    },
+                    "agent": {
+                        "name": "Peter",
+                        "phone": "7438483828"
+                    },
+                    "vehicle": {
+                        "category": "TwoWheeler",
+                        "size": "500.0000",
+                        "registration": "TN56NS8282"
+                    }
+                },
+                {
+                    "type": "RTO",
+                    "state": {
+                        "descriptor": {
+                            "code": "RTO-Initiated",
+                            "name": "RTO-Initiated"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-09-14T09:05:47.643Z",
+                                "end": "2023-09-14T09:35:47.643Z"
+                            },
+                            "timestamp": "2023-09-14T09:05:47.924Z"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-09-14T15:20:47.981Z",
+                                "end": "2023-09-14T15:35:47.981Z"
+                            }
+                        }
+                    },
+                    "agent": {
+                        "name": "Peter",
+                        "phone": "7438483828"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "40.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "19",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.0"
+                        }
+                    },
+                    {
+                        "title": "RTO charges",
+                        "@ondc/org/title_type": "RTO Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.0"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": []
+            },
+            "billing": {
+                "name": "OOGASHOP",
+                "address": {
+                    "name": "502",
+                    "building": "Optum Inclave",
+                    "locality": "Sector-53",
+                    "city": "Gurugram",
+                    "state": "Haryana",
+                    "country": "India",
+                    "area_code": "122002"
+                },
+                "tax_number": "132425",
+                "phone": "9871764687",
+                "email": "muktabh@paralleldots.com"
+            },
+            "tags": {
+                "cancellation_reason_id": "013"
+            }
+        }
+    }
+}

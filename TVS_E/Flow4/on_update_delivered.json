@@ -1,0 +1,175 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_update",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc-preprod.tvs-e.in",
+    "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
+    "transaction_id": "e51c7eb1-0409-4a41-9bcf-4e4bd0226459",
+    "message_id": "153bf0b9-a871-4c3d-a13c-edf1b86073dc",
+    "timestamp": "2023-09-05T05:10:35.779Z"
+  },
+  "message": {
+    "order": {
+      "id": "2023-09-05-542546",
+      "state": "Completed",
+      "items": [
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+          "fulfillment_id": "1",
+          "quantity": {
+            "count": 2
+          }
+        },
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+          "fulfillment_id": "1-Reverse QC",
+          "quantity": {
+            "count": 1
+          },
+          "tags": {
+            "status": "Return_Delivered"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "25248.00"
+        },
+        "ttl": "P1D",
+        "breakup": [
+          {
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "12599.00"
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "25198.00"
+            },
+            "title": "MSP 250 Star Dot Matrix Printer",
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            }
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "50.00"
+            },
+            "title": "Delivery charges",
+            "@ondc/org/item_id": "1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "status": "PAID",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "e51c7eb1-0409-4a41-9bcf-4e4bd0226459",
+          "amount": "25248.00"
+        },
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "upi_address": "",
+            "bank_name": "HDFC",
+            "branch_name": "Adayar",
+            "settlement_bank_account_no": "1234567890",
+            "settlement_ifsc_code": "IFSC00001",
+            "beneficiary_name": "TVS Electronics Ltd"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+         
+          "start": {
+            "location": {
+              "gps": "13.0971206,77.5981222",
+              "descriptor": {
+                "name": "TVS Electronics Ltd"
+              },
+              "address": {
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "area_code": "560064"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2023-09-05T10:40:35.820Z",
+                "end": "2023-09-05T10:40:35.820Z"
+              },
+              "timestamp": "2023-09-05T05:07:25.479Z"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-09-05T10:40:35.820Z",
+                "end": "2023-09-05T10:40:35.820Z"
+              },
+              "timestamp": "2023-09-05T05:07:52.559Z"
+            }
+          }
+        },
+        {
+          "id": "1-Reverse QC",
+          "type": "Reverse QC",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+         
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-09-05T10:40:35.820Z",
+                "end": "2023-09-05T10:40:35.820Z"
+              },
+              "timestamp": "2023-09-05T05:09:45.309Z"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-09-05T10:40:35.820Z",
+                "end": "2023-09-05T10:40:35.820Z"
+              },
+              "timestamp": "2023-09-05T05:10:35.779Z"
+            }
+          }
+        }
+      ],
+      "created_at": "2023-09-05T04:54:16.706Z",
+      "updated_at": "2023-09-05T05:10:35.779Z"
+    }
+  }
+}

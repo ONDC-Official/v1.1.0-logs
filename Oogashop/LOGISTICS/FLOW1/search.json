@@ -1,0 +1,79 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "STD:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "transaction_id": "3b7c250c-be87-46e2-8586-431debe78635",
+        "message_id": "2733dab6-175f-457c-83b7-6a41b37aed1d",
+        "timestamp": "2023-09-14T08:51:48.265Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "provider": {
+                "time": {
+                    "range": {
+                        "start": "1000",
+                        "end": "2000"
+                    },
+                    "days": "1,2,3,4,5,6",
+                    "schedule": {
+                        "holidays": []
+                    }
+                }
+            },
+            "fulfillment": {
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "gps": "12.910816, 77.546946",
+                        "address": {
+                            "area_code": "560061"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.910816, 77.546946",
+                        "address": {
+                            "area_code": "560061"
+                        }
+                    }
+                }
+            },
+            "category": {
+                "id": "Immediate Delivery"
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "unit": "Kilogram",
+                    "value": 3
+                },
+                "dimensions": {
+                    "length": {
+                        "value": 15,
+                        "unit": "centimeter"
+                    },
+                    "breadth": {
+                        "value": 9,
+                        "unit": "centimeter"
+                    },
+                    "height": {
+                        "value": 34,
+                        "unit": "centimeter"
+                    }
+                },
+                "category": "F&B",
+                "dangerous_goods": false,
+                "value": {
+                    "currency": "INR",
+                    "value": "2500"
+                }
+            }
+        }
+    }
+}

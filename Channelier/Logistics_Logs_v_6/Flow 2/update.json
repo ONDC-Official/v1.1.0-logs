@@ -1,0 +1,51 @@
+{
+    "context": {
+        "bap_id": "integrations-preprod.channelier.com",
+        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "bpp_id": "ondc-tsp-demo.demoprojectxsandbox2.shipsy.io",
+        "bpp_uri": "https://ondc-tsp-demo.demoprojectxsandbox2.shipsy.io/api/ondc/customerportaldemodtdc/",
+        "transaction_id": "567b4820-2a4b-47a8-a96e-619471b3e0b7",
+        "message_id": "f82d97f2-9e0c-4837-af1f-01aaf8b6e908",
+        "country": "IND",
+        "city": "std:020",
+        "timestamp": "2023-08-24T11:46:28.366Z",
+        "action": "update"
+    },
+    "message": {
+        "update_target": "fulfillment",
+        "order": {
+            "id": "c76def1d-d730-48e0-bd2b-9ab128ed10b5",
+            "state": "Accepted",
+            "items": [
+                {
+                    "id": "B2C SMART EXPRESS",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "@ondc/org/awb_no": "7D2321119",
+                    "tracking": false,
+                    "start": {
+                        "instructions": {
+                            "short_desc": "0474",
+                            "long_desc": "This OTP is to be shared with the Store Manager for pickup of the package"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    }
+                }
+            ],
+            "updated_at": "2023-08-24T11:46:28.366Z"
+        }
+    }
+}

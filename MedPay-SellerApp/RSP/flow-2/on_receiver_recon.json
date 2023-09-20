@@ -1,0 +1,49 @@
+{
+  "context": {
+    "domain": "ONDC:NTS10",
+    "country": "IND",
+    "city": "*",
+    "action": "on_receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "api.razorpay.com/ondc-rsp-test",
+    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+    "bpp_id": "ondc.uat.medpay.in",
+    "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+    "transaction_id": "3a9cf987-0274-4f96-89bf-017f0b9e1153",
+    "message_id": "a680c5be-a3d1-4f84-a0d4-9be54cf6ee39",
+    "timestamp": "2023-09-16T09:58:39.701Z",
+    "ttl": "P2D"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "id": "ac4861a4-cde9-4a2f-aa1c-7fe6cb406eac",
+          "invoice_no": "bbe007d9-12ca-45b7-a73b-3e5c8a5bdef6",
+          "collector_app_id": "shopping-api-testing.phonepe.com",
+          "receiver_app_id": "ondc.uat.medpay.in",
+          "order_recon_status": "02",
+          "transaction_id": "e6ce4f4a-e68f-436e-ba30-6fe1c54d9806",
+          "settlement_id": "e18fb3f7-a0ca-455d-85b1-091983f5b79c",
+          "settlement_reference_no": "c7bea9d5-5ebf-4943-a4bb-34a6152424c2",
+          "counterparty_recon_status": "03",
+          "counterparty_diff_amount": { "value": "10.0", "currency": "INR" },
+          "message": { "name": "lesser amount", "code": "less" }
+        },
+        {
+          "id": "ea5c2c15-3ad6-4e12-a5b5-6a2a56c26405",
+          "invoice_no": "9374d21e-3637-4dad-907e-3481b73c4b10",
+          "collector_app_id": "shopping-api-testing.phonepe.com",
+          "receiver_app_id": "ondc.uat.medpay.in",
+          "order_recon_status": "02",
+          "transaction_id": "554ebd1b-8728-4119-87c7-392361eb23d6",
+          "settlement_id": "dead4fcf-9eb8-4f78-b76e-528e494e4ba4",
+          "settlement_reference_no": "958941be-824f-4d8b-bb9a-a01e325618c9",
+          "counterparty_recon_status": "02",
+          "counterparty_diff_amount": { "value": "20.0", "currency": "INR" },
+          "message": { "name": "more amount", "code": "more" }
+        }
+      ]
+    }
+  }
+}

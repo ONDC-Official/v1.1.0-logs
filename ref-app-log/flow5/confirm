@@ -1,0 +1,147 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app.ondc.org",
+        "bap_uri": "https://a46f-2402-e280-3e33-24e-a0b2-4a7-225c-cafd.ngrok-free.app/protocol/v1",
+        "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
+        "transaction_id": "f8d48358-c00c-48fe-b787-baffa8425ca9",
+        "message_id": "5ee45b9a-c6c5-46f6-91d1-03a135324d14",
+        "timestamp": "2023-08-18T18:06:53.070Z",
+        "bpp_id": "preprod-jajee-bpp.shopalyst.com",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-18-949003",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Carrot-sygenta",
+                    "building": "pune",
+                    "locality": "ok",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560038"
+                },
+                "phone": "8983796134",
+                "name": "Carrot-sygenta",
+                "email": "akshay+1@wemotiveforge.com",
+                "created_at": "2023-08-18T18:06:45.705Z",
+                "updated_at": "2023-08-18T18:06:45.705Z"
+            },
+            "items": [
+                {
+                    "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043628803_default",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1"
+                }
+            ],
+            "provider": {
+                "id": "preprod-jajee-bpp.shopalyst.com",
+                "locations": [
+                    {
+                        "id": "5692eae837b7a1d2b7ebd8e6bd251b51"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
+                    "tracking": true,
+                    "end": {
+                        "contact": {
+                            "phone": "8983796134"
+                        },
+                        "person": {
+                            "name": "Carrot-sygenta"
+                        },
+                        "location": {
+                            "gps": "12.9814010000001, 77.6409810000001",
+                            "address": {
+                                "name": "Carrot-sygenta",
+                                "building": "pune",
+                                "locality": "ok",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560038"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "220",
+                    "currency": "INR",
+                    "transaction_id": "f8d48358-c00c-48fe-b787-baffa8425ca9"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "220.00"
+                },
+                "breakup": [
+                    {
+                        "title": "RAISINS/KHISMISH/MANUKKA 250g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "200.00"
+                        },
+                        "@ondc/org/item_id": "55EA20538A3151ABD81510BBB42C9CE3_43540043628803_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "100.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.00"
+                        },
+                        "@ondc/org/item_id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "created_at": "2023-08-18T18:06:53.070Z",
+            "updated_at": "2023-08-18T18:06:53.070Z"
+        }
+    }
+}

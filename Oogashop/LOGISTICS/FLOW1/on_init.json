@@ -1,0 +1,49 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bpp_id": "preprod-bpp.iway.digiit.io",
+        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+        "city": "STD:080",
+        "country": "IND",
+        "action": "on_init",
+        "transaction_id": "3b7c250c-be87-46e2-8586-431debe78635",
+        "message_id": "2733dab6-175f-457c-83b7-6a41b37aed1d",
+        "timestamp": "2023-09-14T08:52:50.698Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "107-Account-DER-292"
+            },
+            "items": [
+                {
+                    "id": "19"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "20.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "19",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.0"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": []
+            }
+        }
+    }
+}
