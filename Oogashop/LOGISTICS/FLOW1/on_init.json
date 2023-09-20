@@ -1,25 +1,22 @@
 {
     "context": {
         "domain": "nic2004:60232",
-        "country": "IND",
-        "city": "STD:080",
-        "action": "on_init",
         "core_version": "1.1.0",
         "bap_id": "preprodlogistics.ooga.shop",
         "bap_uri": "https://preprodlogistics.ooga.shop",
         "bpp_id": "preprod-bpp.iway.digiit.io",
         "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-        "transaction_id": "9d21505f-650c-4283-a26b-d156a786feb0",
-        "message_id": "861c8037-a682-46b5-89c6-4e0667f4a2d9",
-        "timestamp": "2023-09-05T07:30:34.596Z"
+        "city": "STD:080",
+        "country": "IND",
+        "action": "on_init",
+        "transaction_id": "3b7c250c-be87-46e2-8586-431debe78635",
+        "message_id": "2733dab6-175f-457c-83b7-6a41b37aed1d",
+        "timestamp": "2023-09-14T08:52:50.698Z"
     },
     "message": {
         "order": {
             "provider": {
                 "id": "107-Account-DER-292"
-            },
-            "provider_location": {
-                "id": "107-41c25527-eafc-42d9-abb2-03"
             },
             "items": [
                 {
@@ -33,8 +30,8 @@
                 },
                 "breakup": [
                     {
-                        "item_id": "19",
-                        "title_type": "DELIVERY",
+                        "@ondc/org/item_id": "19",
+                        "@ondc/org/title_type": "Delivery Charge",
                         "price": {
                             "currency": "INR",
                             "value": "20.0"
@@ -43,17 +40,9 @@
                 ]
             },
             "payment": {
+                "type": "ON-ORDER",
                 "collected_by": "BAP",
-                "settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_type": "upi",
-                        "settlement_bank_account_no": "50200067767476",
-                        "settlement_ifsc_code": "HDFC0004050",
-                        "upi_address": "paralleldotstechnolo.62711297@hdfcbank",
-                        "beneficiary_name": "PARALLELDOTS TECHNOLOGY PVT LTD OOGASHOP"
-                    }
-                ]
+                "@ondc/org/settlement_details": []
             }
         }
     }
