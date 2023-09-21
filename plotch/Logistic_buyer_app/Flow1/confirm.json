@@ -1,0 +1,158 @@
+{
+	"context": {
+		"city": "std:080",
+		"domain": "nic2004:60232",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"core_version": "1.1.0",
+		"country": "IND",
+		"bap_id": "ship.indiastack.cloud",
+		"bpp_id": "ondc-preprod.loadshare.net",
+		"timestamp": "2023-09-20T13:01:35.669Z",
+		"action": "confirm",
+		"bap_uri": "https://ship.indiastack.cloud/ondc/v1/257554/",
+		"message_id": "96e99908-cb5b-4a84-bc9b-05eae3829f97",
+		"transaction_id": "ff108bd6-7457-45e3-a74d-cbcbee87e770",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"order": {
+			"id": "ac7f01aa-53a3-4d35-b2d0-390ba0883dee",
+			"state": "Created",
+			"provider": {
+				"id": "loadshare@ondc-preprod.loadshare.net",
+				"locations": [{
+					"id": ""
+				}]
+			},
+			"items": [{
+				"id": "immediate_delivery-PT1H30M",
+				"category_id": "Immediate Delivery",
+				"descriptor": {
+					"code": "P2P"
+				},
+				"fulfillment_id": "1"
+			}],
+			"quote": {
+				"breakup": [{
+					"@ondc/org/item_id": "immediate_delivery-PT1H30M",
+					"price": {
+						"currency": "INR",
+						"value": "81.00"
+					},
+					"@ondc/org/title_type": "Delivery Charge"
+				}],
+				"price": {
+					"currency": "INR",
+					"value": "81.00"
+				}
+			},
+			"fulfillments": [{
+				"id": "1",
+				"type": "delivery",
+				"start": {
+					"contact": {
+						"phone": "7701991645",
+						"email": "parulsingh2221@gmail.com"
+					},
+					"location": {
+						"address": {
+							"building": "",
+							"city": "Bangalore",
+							"name": "Sakra World Hospital, Devarabisanahalli, Bellandur",
+							"locality": "",
+							"country": "IN",
+							"area_code": "560103",
+							"state": "KARNATAKA"
+						},
+						"gps": "12.9322076,77.6852227"
+					},
+					"person": {
+						"name": "Ethnicall Noida hub"
+					},
+					"instructions": {
+						"code": "2",
+						"short_desc": "value of PCC",
+						"long_desc": "additional instructions for pickup"
+					}
+				},
+				"end": {
+					"contact": {
+						"phone": "8097527450",
+						"email": "dileswarp@gmail.com"
+					},
+					"location": {
+						"address": {
+							"building": "",
+							"city": "Bangalore",
+							"name": "Sakra World Hospital, Devarabisanahalli, Bellandur, Bengaluru, Karnataka",
+							"locality": "",
+							"country": "IN",
+							"area_code": "560103",
+							"state": "KARNATAKA"
+						},
+						"gps": "12.9323275,77.6851886"
+					},
+					"person": {
+						"name": "Dileswar"
+					},
+					"instructions": {
+						"code": "3",
+						"short_desc": "value of DCC",
+						"long_desc": "additional instructions for delivery"
+					}
+				},
+				"tags": {
+					"@ondc/org/order_ready_to_ship": "no"
+				}
+			}],
+			"billing": {
+				"phone": "7701991645",
+				"tax_number": "1234",
+				"name": "Ethnicall",
+				"email": "parulsingh2221@gmail.com",
+				"address": {
+					"building": "",
+					"city": "Bangalore",
+					"name": "Sakra World Hospital, Devarabisanahalli, Bellandur",
+					"locality": "",
+					"country": "IN",
+					"area_code": "560103",
+					"state": "KARNATAKA"
+				},
+				"created_at": "2023-09-20T13:01:35.669Z",
+				"updated_at": "2023-09-20T13:01:35.669Z"
+			},
+			"payment": {
+				"@ondc/org/settlement_details": []
+			},
+			"@ondc/org/linked_order": {
+				"items": [{
+					"category_id": "Ready to cook",
+					"descriptor": {
+						"name": "testing"
+					},
+					"quantity": {
+						"count": "1",
+						"measure": {
+							"unit": "Kilogram",
+							"value": "0.5"
+						}
+					},
+					"price": {
+						"currency": "INR",
+						"value": "200.0"
+					}
+				}],
+				"order": {
+					"id": "532985",
+					"weight": {
+						"unit": "Kilogram",
+						"value": "0.5"
+					}
+				}
+			},
+			"created_at": "2023-09-20T13:01:35.669Z",
+			"updated_at": "2023-09-20T13:01:35.669Z"
+		}
+	}
+}

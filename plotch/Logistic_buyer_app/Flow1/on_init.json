@@ -1,0 +1,45 @@
+{
+	"context": {
+		"city": "std:080",
+		"domain": "nic2004:60232",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"core_version": "1.1.0",
+		"country": "IND",
+		"bap_id": "ship.indiastack.cloud",
+		"bpp_id": "ondc-preprod.loadshare.net",
+		"timestamp": "2023-09-20T13:01:29.447Z",
+		"action": "on_init",
+		"bap_uri": "https://ship.indiastack.cloud/ondc/v1/257554/",
+		"message_id": "f3eb868e-cb5d-40f2-9cc1-8fa0f0214723",
+		"transaction_id": "ff108bd6-7457-45e3-a74d-cbcbee87e770"
+	},
+	"message": {
+		"order": {
+			"provider": {
+				"id": "loadshare@ondc-preprod.loadshare.net"
+			},
+			"items": [{
+				"id": "immediate_delivery-PT1H30M"
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "81.00"
+				},
+				"breakup": [{
+					"@ondc/org/item_id": "immediate_delivery-PT1H30M",
+					"@ondc/org/title_type": "Delivery Charge",
+					"price": {
+						"currency": "INR",
+						"value": "81.00"
+					}
+				}]
+			},
+			"payment": {
+				"type": "POST-FULFILLMENT",
+				"collected_by": "BAP",
+				"@ondc/org/settlement_details": []
+			}
+		}
+	}
+}

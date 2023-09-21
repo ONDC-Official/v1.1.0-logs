@@ -1,0 +1,88 @@
+{
+	"context": {
+		"city": "std:080",
+		"domain": "nic2004:60232",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"core_version": "1.1.0",
+		"country": "IND",
+		"bap_id": "ship.indiastack.cloud",
+		"bpp_id": "ondc-preprod.loadshare.net",
+		"timestamp": "2023-09-20T13:06:07.583Z",
+		"action": "update",
+		"bap_uri": "https://ship.indiastack.cloud/ondc/v1/257554/",
+		"message_id": "2e5cb232-9727-4392-ae3f-3ce1c4896f94",
+		"transaction_id": "ff108bd6-7457-45e3-a74d-cbcbee87e770",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"update_target": "fulfillment",
+		"order": {
+			"id": "ac7f01aa-53a3-4d35-b2d0-390ba0883dee",
+			"state": "Created",
+			"items": [{
+				"id": "immediate_delivery-PT1H30M",
+				"category_id": "Standard Delivery",
+				"descriptor": {
+					"code": "P2P"
+				}
+			}],
+			"fulfillments": [{
+				"id": "1",
+				"type": "Prepaid",
+				"@ondc/org/awb_no": "",
+				"start": {
+					"instructions": {
+						"additional_desc": {
+							"content_type": "text/html",
+							"url": "URL for instructions"
+						},
+						"long_desc": "pickup code",
+						"short_desc": "XYZ1"
+					}
+				},
+				"end": {
+					"instructions": {
+						"additional_desc": {
+							"content_type": "text/html",
+							"url": "URL for instructions"
+						},
+						"long_desc": "delivery code",
+						"short_desc": "XYZ2"
+					}
+				},
+				"tags": {
+					"@ondc/org/order_ready_to_ship": "yes"
+				},
+				"@ondc/org/ewaybillno": "",
+				"@ondc/org/ebnexpirydate": ""
+			}],
+			"@ondc/org/linked_order": {
+				"items": [{
+					"category_id": "Ready to cook",
+					"descriptor": {
+						"name": "testing"
+					},
+					"quantity": {
+						"count": "1",
+						"measure": {
+							"unit": "Kilogram",
+							"value": "0.5"
+						}
+					},
+					"price": {
+						"currency": "INR",
+						"value": "200.0"
+					}
+				}],
+				"order": {
+					"id": "532985",
+					"weight": {
+						"unit": "Kilogram",
+						"value": "0.5"
+					}
+				}
+			},
+			"updated_at": "2023-09-20T13:06:07.583Z"
+		}
+	}
+}

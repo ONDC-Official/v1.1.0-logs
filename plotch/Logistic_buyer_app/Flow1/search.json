@@ -1,0 +1,81 @@
+{
+	"context": {
+		"city": "std:080",
+		"domain": "nic2004:60232",
+		"core_version": "1.1.0",
+		"country": "IND",
+		"bap_id": "ship.indiastack.cloud",
+		"timestamp": "2023-09-20T13:01:14.579Z",
+		"action": "search",
+		"bap_uri": "https://ship.indiastack.cloud/ondc/v1/257554/",
+		"message_id": "05d3a1f1-0dac-4326-9abb-f7e5cc3bd9c5",
+		"transaction_id": "6bc3cd0d-1382-4fc0-9514-24eda16cd18d",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"intent": {
+			"category": {
+				"id": "Standard Delivery"
+			},
+			"provider": {
+				"time": {
+					"days": "1,2,3,4,5,6,7",
+					"schedule": {
+						"holidays": [],
+						"frequency": "PT4H",
+						"times": ["0955", "2212"]
+					},
+					"range": {
+						"start": "0955",
+						"end": "2212"
+					}
+				}
+			},
+			"fulfillment": {
+				"type": "Prepaid",
+				"start": {
+					"location": {
+						"address": {
+							"area_code": "560103"
+						},
+						"gps": "12.9322076,77.6852227"
+					}
+				},
+				"end": {
+					"location": {
+						"address": {
+							"area_code": "560103"
+						},
+						"gps": "12.9323275,77.6851886"
+					}
+				}
+			},
+			"@ondc/org/payload_details": {
+				"weight": {
+					"unit": "Kilogram",
+					"value": "0.5"
+				},
+				"dimensions": {
+					"breadth": {
+						"unit": "centimeter",
+						"value": "1"
+					},
+					"length": {
+						"unit": "centimeter",
+						"value": "1"
+					},
+					"height": {
+						"unit": "centimeter",
+						"value": "1"
+					}
+				},
+				"category": "Ready to cook",
+				"value": {
+					"currency": "INR",
+					"value": "200.0"
+				},
+				"dangerous_goods": false
+			}
+		}
+	}
+}

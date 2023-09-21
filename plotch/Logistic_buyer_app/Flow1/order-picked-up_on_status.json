@@ -1,0 +1,133 @@
+{
+	"context": {
+		"city": "std:080",
+		"domain": "nic2004:60232",
+		"bpp_uri": "https://ondc-preprod.loadshare.net/logistics/bpp",
+		"core_version": "1.1.0",
+		"country": "IND",
+		"bap_id": "ship.indiastack.cloud",
+		"bpp_id": "ondc-preprod.loadshare.net",
+		"timestamp": "2023-09-20T14:02:51.720Z",
+		"action": "on_status",
+		"bap_uri": "https://ship.indiastack.cloud/ondc/v1/257554/",
+		"message_id": "w34akssot3l66ctc",
+		"transaction_id": "ff108bd6-7457-45e3-a74d-cbcbee87e770"
+	},
+	"message": {
+		"order": {
+			"id": "ac7f01aa-53a3-4d35-b2d0-390ba0883dee",
+			"state": "In-progress",
+			"provider": {
+				"id": "loadshare@ondc-preprod.loadshare.net",
+				"locations": [{
+					"id": ""
+				}]
+			},
+			"items": [{
+				"id": "immediate_delivery-PT1H30M",
+				"category_id": "Immediate Delivery",
+				"descriptor": {
+					"code": "P2P"
+				},
+				"fulfillment_id": "1"
+			}],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "81.00"
+				},
+				"breakup": [{
+					"@ondc/org/item_id": "immediate_delivery-PT1H30M",
+					"@ondc/org/title_type": "Delivery Charge",
+					"price": {
+						"currency": "INR",
+						"value": "81.00"
+					}
+				}]
+			},
+			"fulfillments": [{
+				"id": "1",
+				"type": "delivery",
+				"state": {
+					"descriptor": {
+						"code": "Order-picked-up"
+					}
+				},
+				"tracking": true,
+				"start": {
+					"time": {
+						"range": {
+							"start": "2023-09-20T14:02:51.614Z",
+							"end": "2023-09-20T14:02:51.614Z"
+						},
+						"timestamp": "2023-09-20T14:02:51.000Z"
+					}
+				},
+				"end": {
+					"time": {
+						"range": {
+							"start": "2023-09-20T14:09:51.719Z",
+							"end": "2023-09-20T14:27:51.719Z"
+						}
+					}
+				},
+				"tags": {
+					"@ondc/org/order_ready_to_ship": "yes"
+				},
+				"agent": {
+					"name": "SK",
+					"phone": "8105197791"
+				}
+			}],
+			"payment": {
+				"type": "POST-FULFILLMENT",
+				"collected_by": "BAP"
+			},
+			"billing": {
+				"phone": "7701991645",
+				"tax_number": "1234",
+				"name": "Ethnicall",
+				"email": "parulsingh2221@gmail.com",
+				"address": {
+					"building": "",
+					"city": "Bangalore",
+					"name": "Sakra World Hospital, Devarabisanahalli, Bellandur",
+					"locality": "",
+					"country": "IN",
+					"area_code": "560103",
+					"state": "KARNATAKA"
+				},
+				"created_at": "2023-09-20T13:01:35.669Z",
+				"updated_at": "2023-09-20T13:01:35.669Z"
+			},
+			"created_at": "2023-09-20T13:01:35.669Z",
+			"updated_at": "2023-09-20T14:02:51.720Z",
+			"@ondc/org/linked_order": {
+				"items": [{
+					"category_id": "Ready to cook",
+					"descriptor": {
+						"name": "testing"
+					},
+					"quantity": {
+						"count": "1",
+						"measure": {
+							"unit": "Kilogram",
+							"value": "0.5"
+						}
+					},
+					"price": {
+						"currency": "INR",
+						"value": "200.0"
+					}
+				}],
+				"order": {
+					"id": "532985",
+					"weight": {
+						"unit": "Kilogram",
+						"value": "0.5"
+					}
+				}
+			}
+		}
+	}
+}
