@@ -1,0 +1,81 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "on_confirm",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.viranc.com/p/v1/store",
+		"bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "d43ba53f-e0bf-51d9-9c53-b8e18655a5ce",
+		"message_id": "74b27326-a746-5d80-945f-f0acff72450d",
+		"timestamp": "2023-09-11T08:18:36.267Z"
+	},
+	"message": {
+		"order": {
+			"billing": {
+				"address": {
+					"area_code": "400001",
+					"building": "Fort",
+					"city": "Mumbai",
+					"country": "India",
+					"locality": "Fort",
+					"name": "ONDC Test Seller Store",
+					"state": "Maharashtra"
+				},
+				"created_at": "2023-09-11T08:18:23.350Z",
+				"email": "test@gmail.com",
+				"name": "ONDC Test Seller Store",
+				"phone": "9999999999",
+				"tax_number": "22AAAAA0000A1Z5",
+				"updated_at": "2023-09-11T08:18:23.350Z"
+			},
+			"created_at": "2023-09-11T08:18:36.263Z",
+			"fulfillments": [
+				{
+					"id": "1",
+					"type": "Prepaid",
+					"state": {
+						"descriptor": {
+							"code": "Pending"
+						}
+					},
+					"tracking": true
+				}
+			],
+			"items": [
+				{
+					"category_id": "Same Day Delivery",
+					"descriptor": {
+						"code": "P2P"
+					},
+					"id": "G79776-52821H"
+				}
+			],
+			"provider": {
+				"id": "grab-logistics"
+			},
+			"updated_at": "2023-09-11T08:18:36.267Z",
+			"id": "7281d782-a986-4c74-b9bd-1dd0f674c434",
+			"state": "Accepted",
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "1.0"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "G79776-52821H",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "1.0"
+						}
+					}
+				]
+			}
+		}
+	}
+}
