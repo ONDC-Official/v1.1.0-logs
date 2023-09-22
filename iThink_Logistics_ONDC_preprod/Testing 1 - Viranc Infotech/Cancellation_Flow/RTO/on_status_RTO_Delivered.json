@@ -9,13 +9,13 @@
         "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
         "bpp_id": "my.ithinklogistics.com/ondc/preprod",
         "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
-        "transaction_id": "b756cb9a-0c32-5115-bb31-6441800fdb52",
-        "message_id": "m3ja45la-9873-56js-098s-c7e69e036687",
-        "timestamp": "2023-08-28T07:25:23.012Z"
+        "transaction_id": "f6cb548e-7eb9-5c61-b585-2aa4502a6bdb",
+        "message_id": "832b1a73-900a-3d71-920c-fb4bef68e412",
+        "timestamp": "2023-09-11T05:33:18.707Z"
     },
     "message": {
         "order": {
-            "id": "a3917e9f-d23b-4ab4-8025-19a53487dbc8",
+            "id": "db063b0d-c5b7-43ac-9921-8edb4821ea63",
             "state": "Cancelled",
             "provider": {
                 "id": "3"
@@ -51,8 +51,8 @@
                 ]
             },
             "fulfillments": [{
-                    "type": "prepaid",
-                    "@ondc/org/awb_no": "2025666454",
+                    "type": "Prepaid",
+                    "@ondc/org/awb_no": "2025711168",
                     "state": {
                         "descriptor": {
                             "code": "Cancelled",
@@ -63,16 +63,16 @@
                     "start": {
                         "time": {
                             "range": {
-                                "start": "2023-08-26T09:30:00.000Z",
-                                "end": "2023-08-26T12:30:00.000Z"
+                                "start": "2023-09-09T09:30:00.000Z",
+                                "end": "2023-09-09T12:30:00.000Z"
                             },
-                            "timestamp": "2023-08-26T10:40:20.000Z"
+                            "timestamp": "2023-09-09T10:31:15.000Z"
                         },
                         "instructions": {
                             "name": "Shipping label",
                             "short_desc": "Shipping label",
                             "long_desc": "Shipping label",
-                            "images": ["https://itl-uploads.s3.ap-south-1.amazonaws.com/uploads/shipping/92f903ec5c013022ea0ccf6c4695e678.pdf"],
+                            "images": ["https://itl-uploads.s3.ap-south-1.amazonaws.com/uploads/shipping/881ba794cbc39b7ffeeaf432a47f6d66.pdf"],
                             "additional_desc": {
                                 "content_type": "text/html",
                                 "url": "https://my.ithinklogistics.com/delivery-instructions"
@@ -82,8 +82,8 @@
                     "end": {
                         "time": {
                             "range": {
-                                "start": "2023-08-27T03:30:00.000Z",
-                                "end": "2023-08-27T14:30:00.000Z"
+                                "start": "2023-09-10T03:30:00.000Z",
+                                "end": "2023-09-10T14:30:00.000Z"
                             }
                         }
                     }
@@ -91,35 +91,31 @@
                     "type": "RTO",
                     "state": {
                         "descriptor": {
-                            "code": "RTO-Initiated",
-                            "name": "RTO Initiated"
+                            "code": "RTO-Delivered",
+                            "name": "RTO Delivered"
                         }
                     },
                     "tracking": "false",
                     "start": {
                         "time": {
                             "range": {
-                                "start": "2023-08-27T11:50:45.083Z",
-                                "end": "2023-08-27T11:50:45.083Z"
-                            },
-                            "timestamp": "2023-08-27T11:50:45.083Z"
-                        }
+                                "start": "2023-09-10T16:38:39.938Z",
+                                "end": "2023-09-10T16:38:39.938Z"
+                            }
+                        },
+                        "timestamp": "2023-09-10T16:38:39.938Z"
                     },
                     "end": {
                         "time": {
                             "range": {
-                                "start": "2023-08-28T07:22:34.034Z",
-                                "end": "2023-08-28T07:22:34.034Z"
+                                "start": "2023-09-11T05:32:15.000Z",
+                                "end": "2023-09-11T05:32:15.000Z"
                             },
-                            "timestamp": "2023-08-28T07:22:34.034Z"
+                            "timestamp": "2023-09-11T05:32:15.000Z"
                         }
                     }
                 }
             ],
-            "tags": {
-                "AWB no": "2025666454",
-                "cancellation_reason_id": "015"
-            },
             "payment": {
                 "type": "POST-FULFILLMENT",
                 "collected_by": "BAP",
@@ -140,8 +136,12 @@
                 "phone": "9999999999",
                 "email": "test@gmail.com"
             },
-            "created_at": "2023-08-26T06:44:16.726Z",
-            "updated_at": "2023-08-28T07:22:34.034Z"
+            "tags": {
+                "cancellation_reason_id": "013",
+                "AWB no": "2025711168"
+            },
+            "created_at": "2023-09-09T07:38:37.544Z",
+            "updated_at": "2023-09-11T05:32:15.000Z"
         }
     }
 }

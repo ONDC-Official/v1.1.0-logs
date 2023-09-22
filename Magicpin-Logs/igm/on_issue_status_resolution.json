@@ -1,0 +1,129 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "action": "on_issue_status",
+    "core_version": "1.0.0",
+    "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+    "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+    "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc/logistics",
+    "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc/logistics/",
+    "transaction_id": "c67835d8-6b47-5f8a-96f6-1ceca6d29c7a",
+    "message_id": "e21cec4c-ce93-40db-8d6a-86544ae0e379",
+    "timestamp": "2023-09-21T16:40:10.036Z"
+  },
+  "message": {
+    "issue": {
+      "id": "1833a97f-ddc7-492e-add1-17e8abd7f407",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-09-21T11:03:48.168Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-ondc.viranc.com/p/v1/store::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "test@test.com"
+              },
+              "person": {
+                "name": "Test"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "CASCADED",
+            "short_desc": "Complaint cascaded",
+            "updated_at": "2023-09-21T11:03:48.290Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-ondc.viranc.com/p/v1/store::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "test@test.com"
+              },
+              "person": {
+                "name": "Test"
+              }
+            },
+            "cascaded_level": 2
+          },
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-09-21T16:33:49.984Z",
+            "updated_by": {
+              "org": {
+                "name": "ultrontest.magicpin.com/oms_partner/ondc/logistics::nic2004:60232"
+              },
+              "contact": {
+                "phone": "8826372071",
+                "email": "vikas.bhatia@magicpin.in"
+              },
+              "person": {
+                "name": "Vikas Bhatia"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "short_desc": "Complaint resolved",
+            "updated_at": "2023-09-21T16:40:10.024Z",
+            "updated_by": {
+              "org": {
+                "name": "ultrontest.magicpin.com/oms_partner/ondc/logistics::nic2004:60232"
+              },
+              "contact": {
+                "phone": "8826372071",
+                "email": "vikas.bhatia@magicpin.in"
+              },
+              "person": {
+                "name": "Vikas Bhatia"
+              }
+            },
+            "cascaded_level": 1
+          }
+        ]
+      },
+      "created_at": "2023-09-21T16:33:50.000Z",
+      "updated_at": "2023-09-21T16:40:10.036Z",
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "CASCADED-COUNTERPARTY-NP",
+          "organization": {
+            "org": {
+              "name": "ultrontest.magicpin.com/oms_partner/ondc/logistics::nic2004:60232"
+            },
+            "contact": {
+              "phone": "8826372071",
+              "email": "vikas.bhatia@magicpin.in"
+            },
+            "person": {
+              "name": "Christopher Jacksone"
+            }
+          },
+          "resolution_support": {
+            "chat_link": "",
+            "contact": {
+              "phone": "8826372071",
+              "email": "vikas.bhatia@magicpin.in"
+            },
+            "gros": []
+          }
+        }
+      },
+      "resolution": {
+        "short_desc": "Resolved",
+        "long_desc": "Please refund.",
+        "action_triggered": "REFUND",
+        "refund_amount": "2.000000"
+      }
+    }
+  }
+}
