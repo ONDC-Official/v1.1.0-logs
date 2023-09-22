@@ -1,0 +1,81 @@
+{
+	"context": {
+		"city": "std:0124",
+		"domain": "nic2004:60232",
+		"core_version": "1.1.0",
+		"country": "IND",
+		"bap_id": "ship.indiastack.cloud",
+		"timestamp": "2023-09-22T11:46:48.045Z",
+		"action": "search",
+		"bap_uri": "https://ship.indiastack.cloud/ondc/v1/257554/",
+		"message_id": "8d6e1ab0-9649-4736-829f-4bc4e4aa5f47",
+		"transaction_id": "ca2c3a92-66ea-4f45-928e-6d8a72f81101",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"intent": {
+			"category": {
+				"id": "Express Delivery"
+			},
+			"provider": {
+				"time": {
+					"days": "1,2,3,4,5,6,7",
+					"schedule": {
+						"holidays": [],
+						"frequency": "PT4H",
+						"times": ["0001", "2358"]
+					},
+					"range": {
+						"start": "0001",
+						"end": "2358"
+					}
+				}
+			},
+			"fulfillment": {
+				"type": "Prepaid",
+				"start": {
+					"location": {
+						"address": {
+							"area_code": "122003"
+						},
+						"gps": "28.446591,77.0659528"
+					}
+				},
+				"end": {
+					"location": {
+						"address": {
+							"area_code": "110017"
+						},
+						"gps": "28.5064559,77.1983336"
+					}
+				}
+			},
+			"@ondc/org/payload_details": {
+				"weight": {
+					"unit": "Kilogram",
+					"value": 0.5
+				},
+				"dimensions": {
+					"breadth": {
+						"unit": "centimeter",
+						"value": 1
+					},
+					"length": {
+						"unit": "centimeter",
+						"value": 1
+					},
+					"height": {
+						"unit": "centimeter",
+						"value": 1
+					}
+				},
+				"category": "Women Wristband",
+				"value": {
+					"currency": "INR",
+					"value": "100.0"
+				},
+				"dangerous_goods": false
+			}
+		}
+	}
+}

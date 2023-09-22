@@ -1,0 +1,79 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:0124",
+		"action": "on_search",
+		"core_version": "1.1.0",
+		"bap_id": "ship.indiastack.cloud",
+		"bap_uri": "https://ship.indiastack.cloud/ondc/v1/257554",
+		"bpp_id": "ondcpp.yaarilabs.com",
+		"bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+		"transaction_id": "ca2c3a92-66ea-4f45-928e-6d8a72f81101",
+		"message_id": "8d6e1ab0-9649-4736-829f-4bc4e4aa5f47",
+		"timestamp": "2023-09-22T11:46:49.238Z"
+	},
+	"message": {
+		"catalog": {
+			"bpp/fulfillments": [{
+				"id": "1",
+				"type": "Prepaid"
+			}, {
+				"id": "2",
+				"type": "CoD"
+			}, {
+				"id": "3",
+				"type": "RTO"
+			}],
+			"bpp/descriptor": {
+				"name": "Shipyaari"
+			},
+			"bpp/providers": [{
+				"id": "19537",
+				"descriptor": {
+					"name": "Ecom Express",
+					"short_desc": "Ecom Express",
+					"long_desc": "Ecom Express"
+				},
+				"categories": [{
+					"id": "Express Delivery",
+					"time": {
+						"label": "TAT",
+						"duration": "P1D"
+					}
+				}],
+				"items": [{
+					"id": "YAARI-19537-20230922-TKSJUB0K0P",
+					"parent_item_id": "",
+					"category_id": "Express Delivery",
+					"fulfillment_id": "1",
+					"descriptor": {
+						"code": "P2H2P",
+						"name": "Ecom Express",
+						"short_desc": "Ecom Express",
+						"long_desc": "Ecom Express"
+					},
+					"price": {
+						"currency": "INR",
+						"value": "33.04"
+					}
+				}, {
+					"id": "YAARI-19537-20230922-TKSJUB0K0P-RTO",
+					"parent_item_id": "YAARI-19537-20230922-TKSJUB0K0P",
+					"category_id": "Express Delivery",
+					"fulfillment_id": "3",
+					"descriptor": {
+						"code": "P2H2P",
+						"name": "RTO quote",
+						"short_desc": "RTO quote",
+						"long_desc": "RTO quote"
+					},
+					"price": {
+						"currency": "INR",
+						"value": "33.04"
+					}
+				}]
+			}]
+		}
+	}
+}

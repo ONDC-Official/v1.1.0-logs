@@ -1,0 +1,88 @@
+{
+	"context": {
+		"city": "std:0124",
+		"domain": "nic2004:60232",
+		"bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+		"core_version": "1.1.0",
+		"country": "IND",
+		"bap_id": "ship.indiastack.cloud",
+		"bpp_id": "ondcpp.yaarilabs.com",
+		"timestamp": "2023-09-22T12:58:40.327Z",
+		"action": "update",
+		"bap_uri": "https://ship.indiastack.cloud/ondc/v1/257554/",
+		"message_id": "f0ffeb55-f113-42a8-8839-2581c6be239c",
+		"transaction_id": "ca2c3a92-66ea-4f45-928e-6d8a72f81101",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"update_target": "fulfillment",
+		"order": {
+			"id": "39c3f48a-c676-4c2e-9c0d-02a956656ced",
+			"state": "Created",
+			"items": [{
+				"id": "YAARI-19537-20230922-TKSJUB0K0P",
+				"category_id": "Express Delivery",
+				"descriptor": {
+					"code": "P2H2P"
+				}
+			}],
+			"fulfillments": [{
+				"id": "1",
+				"type": "Prepaid",
+				"@ondc/org/awb_no": "",
+				"start": {
+					"instructions": {
+						"additional_desc": {
+							"content_type": "text/html",
+							"url": "URL for instructions"
+						},
+						"long_desc": "pickup code",
+						"short_desc": "XYZ1"
+					}
+				},
+				"end": {
+					"instructions": {
+						"additional_desc": {
+							"content_type": "text/html",
+							"url": "URL for instructions"
+						},
+						"long_desc": "delivery code",
+						"short_desc": "XYZ2"
+					}
+				},
+				"tags": {
+					"@ondc/org/order_ready_to_ship": "yes"
+				},
+				"@ondc/org/ewaybillno": "",
+				"@ondc/org/ebnexpirydate": ""
+			}],
+			"@ondc/org/linked_order": {
+				"items": [{
+					"category_id": "Women Wristband",
+					"descriptor": {
+						"name": "Cotton Saree Test1"
+					},
+					"quantity": {
+						"count": 1,
+						"measure": {
+							"unit": "Kilogram",
+							"value": 0.5
+						}
+					},
+					"price": {
+						"currency": "INR",
+						"value": "100.0"
+					}
+				}],
+				"order": {
+					"id": "533080",
+					"weight": {
+						"unit": "Kilogram",
+						"value": 0.5
+					}
+				}
+			},
+			"updated_at": "2023-09-22T12:58:40.327Z"
+		}
+	}
+}
