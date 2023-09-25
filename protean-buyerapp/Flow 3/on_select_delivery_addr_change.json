@@ -1,0 +1,126 @@
+{
+    "context": {
+        "bap_id": "b2c.ondcbuyer.online",
+        "bap_uri": "https://b2c.ondcbuyer.online",
+        "domain": "nic2004:52110",
+        "message_id": "da95f092-ef7c-4667-b1a6-4a5a34a7ab81",
+        "transaction_id": "c063d9c4-78f0-4b07-b072-0606f6f6929b",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "action": "on_select",
+        "timestamp": "2023-09-25T10:01:45.436Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "20971"
+            },
+            "items": [
+                {
+                    "id": "132",
+                    "fulfillment_id": "20971_560005"
+                },
+                {
+                    "id": "372",
+                    "fulfillment_id": "20971_560005"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "20971_560005",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/TAT": "PT4H",
+                    "@ondc/org/provider_name": "Evergreen SuperMarket",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tracking": false
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "211.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "132",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "83.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": 5
+                                },
+                                "maximum": {
+                                    "count": 10000
+                                }
+                            }
+                        },
+                        "title": "Sunfeast Glucose Plus Biscuits 1 kg",
+                        "price": {
+                            "currency": "INR",
+                            "value": "83.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "372",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "23.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": 5
+                                },
+                                "maximum": {
+                                    "count": 10000
+                                }
+                            }
+                        },
+                        "title": "Sunfeast Moms Magic Cashew and  Almond Biscuits 100 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "23.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "20971_560005",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc",
+                        "title": "Convenience fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.00"
+                        }
+                    }
+                ],
+                "ttl": "PT30M"
+            }
+        }
+    }
+}

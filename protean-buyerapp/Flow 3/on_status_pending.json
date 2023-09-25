@@ -1,0 +1,210 @@
+{
+    "context": {
+        "bap_id": "b2c.ondcbuyer.online",
+        "bap_uri": "https://b2c.ondcbuyer.online",
+        "domain": "nic2004:52110",
+        "message_id": "bb0be39f-dd5b-4708-8300-0b444de66588",
+        "transaction_id": "c063d9c4-78f0-4b07-b072-0606f6f6929b",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "action": "on_status",
+        "timestamp": "2023-09-25T10:02:34.389Z"
+    },
+    "message": {
+        "order": {
+            "id": "a64ae374-6b89-4ec1-abf9-d9ddc46bdcc4",
+            "state": "Created",
+            "provider": {
+                "id": "20971",
+                "locations": [
+                    {
+                        "id": "20971"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "132",
+                    "fulfillment_id": "20971_560005",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "372",
+                    "fulfillment_id": "20971_560005",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Kunal Anarse",
+                "address": {
+                    "door": "A-101",
+                    "name": "Home",
+                    "building": "Apartment Building",
+                    "locality": "koramangala",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560095"
+                },
+                "email": "kunal.anarse@eminds.ai",
+                "phone": "7378736840",
+                "created_at": "2023-09-25T10:02:05.329Z",
+                "updated_at": "2023-09-25T10:02:05.329Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "20971_560005",
+                    "type": "Delivery",
+                    "@ondc/org/provider_name": "Evergreen SuperMarket",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "tracking": false,
+                    "start": {
+                        "location": {
+                            "id": "20971",
+                            "descriptor": {
+                                "name": "Evergreen SuperMarket",
+                                "images": [
+                                    "https://nstoreassets.s3.amazonaws.com/20971/store_logo/20971_b8j29p82lk26ltp6.png"
+                                ]
+                            },
+                            "gps": "12.995323,77.613983"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-09-25T10:02:13.000Z",
+                                "end": "2023-09-25T10:47:13.000Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9727288181",
+                            "email": "aleeminuk@gmail.com"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "13.0281880000001,77.5730610000001",
+                            "address": {
+                                "name": "Home",
+                                "building": "A-101",
+                                "locality": "Akal school road",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560094"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-09-25T10:47:13.000Z",
+                                "end": "2023-09-25T14:02:13.000Z"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8446886840"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "211.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "132",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "74.11"
+                            }
+                        },
+                        "title": "Sunfeast Glucose Plus Biscuits 1 kg",
+                        "price": {
+                            "currency": "INR",
+                            "value": "83.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "372",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "20.54"
+                            }
+                        },
+                        "title": "Sunfeast Moms Magic Cashew and  Almond Biscuits 100 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "23.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "20971_560005",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc",
+                        "title": "Convenience fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.00"
+                        }
+                    }
+                ],
+                "ttl": "PT30M"
+            },
+            "payment": {
+                "params": {
+                    "amount": "211.00",
+                    "currency": "INR",
+                    "transaction_id": "830"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "10112822953",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED"
+                    }
+                ]
+            },
+            "created_at": "2023-09-25T10:02:11.573Z",
+            "updated_at": "2023-09-25T10:02:13.000Z"
+        }
+    }
+}

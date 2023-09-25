@@ -1,0 +1,162 @@
+{
+    "context": {
+        "bap_id": "b2c.ondcbuyer.online",
+        "bap_uri": "https://b2c.ondcbuyer.online",
+        "domain": "nic2004:52110",
+        "message_id": "0fe871c2-2c4c-40ae-9c04-ce150b52a526",
+        "transaction_id": "c671854f-7c0b-46fa-83ad-1de27705b454",
+        "bpp_id": "b-ondc-seller-bpp.nlincs.in",
+        "bpp_uri": "https://b-ondc-seller-bpp.nlincs.in/bpp",
+        "country": "IND",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "action": "on_init",
+        "timestamp": "2023-09-25T09:31:55.285Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "20971"
+            },
+            "items": [
+                {
+                    "id": "132",
+                    "fulfillment_id": "20971_560005",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "372",
+                    "fulfillment_id": "20971_560005",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Kunal Anarse",
+                "address": {
+                    "door": "A-101",
+                    "name": "Home",
+                    "building": "Apartment Building",
+                    "locality": "koramangala",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560095"
+                },
+                "email": "kunal.anarse@eminds.ai",
+                "phone": "7378736840",
+                "created_at": "2023-09-25T09:31:54.413Z",
+                "updated_at": "2023-09-25T09:31:54.413Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "20971_560005",
+                    "type": "Delivery",
+                    "tracking": false,
+                    "end": {
+                        "location": {
+                            "gps": "12.935532,77.6244960000001",
+                            "address": {
+                                "name": "Home",
+                                "building": "A-101",
+                                "locality": "koramangala",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560095"
+                            }
+                        },
+                        "contact": {
+                            "phone": "8446886840"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "211.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "132",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "83.00"
+                            }
+                        },
+                        "title": "Sunfeast Glucose Plus Biscuits 1 kg",
+                        "price": {
+                            "currency": "INR",
+                            "value": "74.11"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "372",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "23.00"
+                            }
+                        },
+                        "title": "Sunfeast Moms Magic Cashew and  Almond Biscuits 100 g",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.54"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "20971_560005",
+                        "@ondc/org/title_type": "delivery",
+                        "title": "Delivery charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "20971",
+                        "@ondc/org/title_type": "misc",
+                        "title": "Convenience fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "5.00"
+                        }
+                    }
+                ],
+                "ttl": "PT30M"
+            },
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "10112822953",
+                        "settlement_ifsc_code": "IDFB0040101",
+                        "bank_name": "IDFC FIRST BANK LIMITED",
+                        "branch_name": "BKC Naman Chambers Branch",
+                        "beneficiary_name": "NSTORE TECHNOLOGIES PRIVATE LIMITED"
+                    }
+                ]
+            },
+            "provider_location": {
+                "id": "20971"
+            }
+        }
+    }
+}
