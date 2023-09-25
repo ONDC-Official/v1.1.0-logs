@@ -7,11 +7,11 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "ondcpreprod.demolocations.com",
         "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "c4ee23e5-e51e-46ed-aa1f-e2ad12c9dd45",
-        "message_id": "a9e00b4a-636d-423b-8943-4f086fe10a3a",
+        "transaction_id": "4ea2ed55-94ff-4f08-a872-d5f6d7825d49",
+        "message_id": "95a4aa5c-d8e7-472e-b158-a30dc2fdeae9",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2023-09-12T10:50:04.000Z"
+        "timestamp": "2023-09-25T05:46:36.000Z"
     },
     "message": {
         "order": {
@@ -28,24 +28,30 @@
                     "quantity": {
                         "count": 2
                     }
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "Reyton18TH10005",
+                    "quantity": {
+                        "count": 2
+                    }
                 }
             ],
             "billing": {
                 "name": "Abhi Chauhan",
                 "address": {
-                    "door": "Landmark 1",
-                    "building": "Landmark 1",
                     "city": "Noida",
                     "state": "Uttar Pradesh",
                     "country": "IND",
                     "area_code": "201301",
-                    "locality": "Street 2",
+                    "building": "Landmark 1",
+                    "locality": "Street1",
                     "name": "Abhi Chauhan"
                 },
-                "email": "abhi0001ch+001@gmail.com",
-                "phone": "8956969969",
-                "created_at": "2023-09-12T10:50:03.262Z",
-                "updated_at": "2023-09-12T10:50:03.262Z"
+                "email": "abhishek.chauhan@18thdigitech.net",
+                "phone": "8800518689",
+                "created_at": "2023-09-25T05:46:35.497Z",
+                "updated_at": "2023-09-25T05:46:35.497Z"
             },
             "fulfillments": [
                 {
@@ -74,7 +80,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "2984"
+                    "value": "4998"
                 },
                 "breakup": [
                     {
@@ -87,6 +93,30 @@
                         "price": {
                             "currency": "INR",
                             "value": "3000"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1500"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Reyton18TH10005",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "18TH Men's Reyton Navy Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1998"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "999"
+                            }
                         }
                     },
                     {
@@ -95,39 +125,15 @@
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "20"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": 114
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "-150"
+                            "value": "0"
                         }
                     }
                 ],
-                "ttl": "P1D"
+                "ttl": "PT30S"
             },
             "payment": {
-                "type": "ON-ORDER",
-                "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
-                "@ondc/org/withholding_amount": "0.0",
-                "@ondc/org/return_window": "0",
-                "@ondc/org/settlement_basis": "Collection",
-                "@ondc/org/settlement_window": "P2D",
                 "@ondc/org/settlement_details": [
                     {
                         "settlement_counterparty": "seller-app",
@@ -135,7 +141,7 @@
                         "settlement_type": "neft",
                         "beneficiary_name": "18th Digitech",
                         "upi_address": "",
-                        "settlement_bank_account_no": "156352663663",
+                        "settlement_bank_account_no": "156352663664",
                         "settlement_ifsc_code": "ICIC0000256",
                         "bank_name": "ICICI Bank",
                         "branch_name": "Noida"

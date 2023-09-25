@@ -8,15 +8,15 @@
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "7577eb56-b633-4a91-b5ee-09a0d2939151",
-        "message_id": "6907aa1c-1b2a-44c3-9e06-7337a2451315",
-        "timestamp": "2023-09-12T09:44:52.171Z",
+        "transaction_id": "9e6c85c2-94b4-49c5-86f4-10282a138704",
+        "message_id": "587c5d47-07f1-4ac7-9cb4-b1a27c591b18",
+        "timestamp": "2023-09-22T06:20:18.598Z",
         "bpp_id": "ondcpreprod.demolocations.com",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "2023-09-12-484067",
+            "id": "2023-09-22-258349",
             "state": "Created",
             "billing": {
                 "address": {
@@ -31,8 +31,8 @@
                 "phone": "8956969969",
                 "name": "Abhi Chauhan",
                 "email": "abhi0001ch+001@gmail.com",
-                "created_at": "2023-09-12T09:44:43.309Z",
-                "updated_at": "2023-09-12T09:44:43.309Z"
+                "created_at": "2023-09-22T06:20:02.858Z",
+                "updated_at": "2023-09-22T06:20:02.858Z"
             },
             "items": [
                 {
@@ -43,7 +43,7 @@
                     "fulfillment_id": "1"
                 },
                 {
-                    "id": "18th_1001101",
+                    "id": "Reyton18TH10005",
                     "quantity": {
                         "count": 1
                     },
@@ -89,13 +89,13 @@
                 "uri": "https://juspay.in/",
                 "tl_method": "http/get",
                 "params": {
-                    "amount": "611.81",
+                    "amount": "1498",
                     "currency": "INR",
-                    "transaction_id": "7577eb56-b633-4a91-b5ee-09a0d2939151"
+                    "transaction_id": "9e6c85c2-94b4-49c5-86f4-10282a138704"
                 },
-                "status": "NOT-PAID",
-                "type": "ON-FULFILLMENT",
-                "collected_by": "BPP",
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
                 "@ondc/org/settlement_details": [
@@ -105,7 +105,7 @@
                         "settlement_type": "neft",
                         "beneficiary_name": "18th Digitech",
                         "upi_address": "",
-                        "settlement_bank_account_no": "156352663663",
+                        "settlement_bank_account_no": "156352663664",
                         "settlement_ifsc_code": "ICIC0000256",
                         "bank_name": "ICICI Bank",
                         "branch_name": "Noida"
@@ -115,7 +115,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "611.81"
+                    "value": "1498"
                 },
                 "breakup": [
                     {
@@ -128,18 +128,30 @@
                         "price": {
                             "currency": "INR",
                             "value": "499"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "499"
+                            }
                         }
                     },
                     {
-                        "@ondc/org/item_id": "18th_1001101",
+                        "@ondc/org/item_id": "Reyton18TH10005",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         },
-                        "title": "Baby Product 1",
+                        "title": "18TH Men's Reyton Navy Running Shoes",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "100"
+                            "value": "999"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "999"
+                            }
                         }
                     },
                     {
@@ -148,32 +160,14 @@
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "20"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": 22.76
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "-29.95"
+                            "value": "0"
                         }
                     }
                 ],
-                "ttl": "P1D"
+                "ttl": "PT30S"
             },
-            "created_at": "2023-09-12T09:44:52.171Z",
-            "updated_at": "2023-09-12T09:44:52.171Z"
+            "created_at": "2023-09-22T06:20:18.598Z",
+            "updated_at": "2023-09-22T06:20:18.598Z"
         }
     }
 }

@@ -7,15 +7,15 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "ondcpreprod.demolocations.com",
         "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "17950959-39a7-4e36-98d2-e4753fabe7ee",
-        "message_id": "133b2300-b1ec-4aae-b4c8-5105cabfc18d",
+        "transaction_id": "2740acf5-e050-47ae-ae44-0cd7f901d4b9",
+        "message_id": "5688fe0d-bda1-4a17-ab11-169f595c07a6",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2023-09-12T09:59:25.000Z"
+        "timestamp": "2023-09-22T12:25:39.000Z"
     },
     "message": {
         "order": {
-            "id": "2023-09-12-892359",
+            "id": "2023-09-22-198002",
             "state": "Created",
             "provider": {
                 "id": "18th_stores",
@@ -36,7 +36,7 @@
                 },
                 {
                     "fulfillment_id": "1",
-                    "id": "Reyton18TH10005",
+                    "id": "ROADSTER-MEN-NAVY-M",
                     "quantity": {
                         "count": 1
                     }
@@ -45,6 +45,7 @@
             "billing": {
                 "name": "Abhi Chauhan",
                 "address": {
+                    "building": "Landmark 1",
                     "name": "Abhi Chauhan",
                     "locality": "Street1",
                     "city": "Noida",
@@ -54,24 +55,29 @@
                 },
                 "email": "abhishek.chauhan@18thdigitech.net",
                 "phone": "8800518689",
-                "created_at": "2023-09-12T09:59:25.000Z",
-                "updated_at": "2023-09-12T09:59:25.000Z"
+                "created_at": "2023-09-22T12:25:27.479Z",
+                "updated_at": "2023-09-22T12:25:27.479Z"
             },
             "fulfillments": [
                 {
                     "id": "1",
+                    "@ondc/org/provider_name": "18TH Shop",
                     "state": {
                         "descriptor": {
                             "code": "Pending"
                         }
                     },
                     "start": {
+                        "contact": {
+                            "email": "support@18thdigitech.com",
+                            "phone": "8563256985"
+                        },
                         "location": {
-                            "id": "L1",
+                            "id": "18th_stores",
                             "descriptor": {
-                                "name": "ABC Store"
+                                "name": "18TH Store PreProd"
                             },
-                            "gps":"28.574981, 77.320812"
+                            "gps": "13.022714275653291,77.64814346152468"
                         }
                     },
                     "end": {
@@ -101,7 +107,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1500.02"
+                    "value": "1154"
                 },
                 "breakup": [
                     {
@@ -114,61 +120,55 @@
                         "price": {
                             "currency": "INR",
                             "value": "499"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "499"
+                            }
                         }
                     },
                     {
-                        "@ondc/org/item_id": "Reyton18TH10005",
+                        "@ondc/org/item_id": "ROADSTER-MEN-NAVY-M",
                         "@ondc/org/item_quantity": {
                             "count": 1
                         },
-                        "title": "18TH Men's Reyton Navy Running Shoes",
+                        "title": "Roadster 18TH Men Navy Blue Solid Denim Jacket-M",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "999"
+                            "value": "655"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "655"
+                            }
                         }
                     },
                     {
-                        "@ondc/org/item_id": "Fulfillment1",
+                        "@ondc/org/item_id": "1",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "20"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "56.92"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "-74.9"
+                            "value": "0"
                         }
                     }
                 ],
-                "ttl": "P1D"
+                "ttl": "PT30S"
             },
             "payment": {
                 "uri": "https://juspay.in/",
                 "tl_method": "http/get",
                 "params": {
-                    "amount": "1500.02",
+                    "amount": "1154",
                     "currency": "INR",
-                    "transaction_id": "17950959-39a7-4e36-98d2-e4753fabe7ee"
+                    "transaction_id": "2740acf5-e050-47ae-ae44-0cd7f901d4b9"
                 },
-                "status": "NOT-PAID",
-                "type": "ON-FULFILLMENT",
-                "collected_by": "BPP",
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
                 "@ondc/org/settlement_details": [
@@ -178,15 +178,15 @@
                         "settlement_type": "neft",
                         "beneficiary_name": "18th Digitech",
                         "upi_address": "",
-                        "settlement_bank_account_no": "156352663663",
+                        "settlement_bank_account_no": "156352663664",
                         "settlement_ifsc_code": "ICIC0000256",
                         "bank_name": "ICICI Bank",
                         "branch_name": "Noida"
                     }
                 ]
             },
-            "created_at": "2023-09-12T09:59:25.000Z",
-            "updated_at": "2023-09-12T09:59:25.000Z"
+            "created_at": "2023-09-22T12:25:38.761Z",
+            "updated_at": "2023-09-22T12:25:39.000Z"
         }
     }
 }

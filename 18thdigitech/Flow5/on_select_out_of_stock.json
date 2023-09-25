@@ -9,9 +9,9 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "ondcpreprod.demolocations.com",
         "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "17950959-39a7-4e36-98d2-e4753fabe7ee",
-        "message_id": "4649960e-55a9-43c5-97c0-72f582d3b806",
-        "timestamp": "2023-09-12T09:57:35.000Z"
+        "transaction_id": "4ea2ed55-94ff-4f08-a872-d5f6d7825d49",
+        "message_id": "3b862968-85e8-42a4-b196-d2a9f8a00198",
+        "timestamp": "2023-09-25T05:46:22.000Z"
     },
     "message": {
         "order": {
@@ -21,11 +21,15 @@
             "items": [
                 {
                     "fulfillment_id": "1",
-                    "id": "Orion18TH1000"
+                    "id": "Campus18TH100060"
                 },
                 {
                     "fulfillment_id": "1",
                     "id": "Baby18TH1000"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "Reyton18TH10005"
                 }
             ],
             "fulfillments": [
@@ -34,10 +38,10 @@
                     "@ondc/org/provider_name": "Loadshare",
                     "tracking": false,
                     "@ondc/org/category": "Immediate Delivery",
-                    "@ondc/org/TAT": "PT50M",
+                    "@ondc/org/TAT": "P10D",
                     "state": {
                         "descriptor": {
-                            "code": "Non-Serviceable"
+                            "code": "Serviceable"
                         }
                     }
                 }
@@ -45,53 +49,53 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "539"
+                    "value": "4998"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "Orion18TH1000",
+                        "@ondc/org/item_id": "Campus18TH100060",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         },
-                        "title": "Orion 18TH Two-Tone Fitted Jacket",
+                        "title": "Campus 18TH Men's MOXIE White Running Shoes",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "499"
+                            "value": "3000"
                         },
                         "item": {
                             "quantity": {
                                 "available": {
-                                    "count": "988"
+                                    "count": "997"
                                 },
                                 "maximum": {
-                                    "count": "988"
+                                    "count": "997"
                                 }
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "499"
+                                "value": "1500"
                             }
                         }
                     },
                     {
                         "@ondc/org/item_id": "Baby18TH1000",
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 0
                         },
                         "title": "Baby 18TH Product",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "40"
+                            "value": "0"
                         },
                         "item": {
                             "quantity": {
                                 "available": {
-                                    "count": "1"
+                                    "count": "0"
                                 },
                                 "maximum": {
-                                    "count": "1"
+                                    "count": "0"
                                 }
                             },
                             "price": {
@@ -101,27 +105,35 @@
                         }
                     },
                     {
+                        "@ondc/org/item_id": "Reyton18TH10005",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "18TH Men's Reyton Navy Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1998"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "996"
+                                },
+                                "maximum": {
+                                    "count": "996"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "999"
+                            }
+                        }
+                    },
+                    {
                         "@ondc/org/item_id": "1",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Orion18TH1000",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Orion18TH1000",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
                         "price": {
                             "currency": "INR",
                             "value": "0"
@@ -134,7 +146,7 @@
     },
     "error": {
         "type": "DOMAIN-ERROR",
-        "code": "30009",
-        "message": "Location Serviceability Error"
+        "code": "40002",
+        "message": "Item quantity unavailable"
     }
 }

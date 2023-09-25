@@ -7,15 +7,15 @@
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "ondcpreprod.demolocations.com",
         "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "3972d66f-14cd-4e4c-b916-78b149d582b3",
-        "message_id": "b94e235d-c7ae-4572-bd17-f89050196f83",
+        "transaction_id": "3f5821ac-ed53-41d8-8139-6b2735fe19e2",
+        "message_id": "3a79c9e8-5531-4592-beb9-51c11481b7c9",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2023-09-12T10:09:55.000Z"
+        "timestamp": "2023-09-22T13:24:51.000Z"
     },
     "message": {
         "order": {
-            "id": "2023-09-12-306058",
+            "id": "2023-09-22-765156",
             "state": "Created",
             "provider": {
                 "id": "18th_stores",
@@ -29,14 +29,14 @@
             "items": [
                 {
                     "fulfillment_id": "1",
-                    "id": "Orion18TH1000",
+                    "id": "ROADSTER-MEN-NAVY-S",
                     "quantity": {
                         "count": 1
                     }
                 },
                 {
                     "fulfillment_id": "1",
-                    "id": "ROADSTER-MEN-NAVY-S",
+                    "id": "Reyton18TH10005",
                     "quantity": {
                         "count": 1
                     }
@@ -46,6 +46,7 @@
                 "name": "Abhi Chauhan",
                 "address": {
                     "name": "Abhi Chauhan",
+                    "building": "Landmark 1",
                     "locality": "Street1",
                     "city": "Noida",
                     "state": "Uttar Pradesh",
@@ -54,24 +55,29 @@
                 },
                 "email": "abhishek.chauhan@18thdigitech.net",
                 "phone": "8800518689",
-                "created_at": "2023-09-12T10:09:55.000Z",
-                "updated_at": "2023-09-12T10:09:55.000Z"
+                "created_at": "2023-09-22T13:24:39.578Z",
+                "updated_at": "2023-09-22T13:24:39.578Z"
             },
             "fulfillments": [
                 {
                     "id": "1",
+                    "@ondc/org/provider_name": "18TH Shop",
                     "state": {
                         "descriptor": {
                             "code": "Pending"
                         }
                     },
                     "start": {
+                        "contact": {
+                            "email": "support@18thdigitech.com",
+                            "phone": "8563256985"
+                        },
                         "location": {
-                            "id": "L1",
+                            "id": "18th_stores",
                             "descriptor": {
-                                "name": "ABC Store"
+                                "name": "18TH Store PreProd"
                             },
-                            "gps":"28.574981, 77.320812"
+                            "gps": "13.022714275653291,77.64814346152468"
                         }
                     },
                     "end": {
@@ -101,21 +107,9 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1160.15"
+                    "value": "1654"
                 },
                 "breakup": [
-                    {
-                        "@ondc/org/item_id": "Orion18TH1000",
-                        "@ondc/org/item_quantity": {
-                            "count": 1
-                        },
-                        "title": "Orion 18TH Two-Tone Fitted Jacket",
-                        "@ondc/org/title_type": "item",
-                        "price": {
-                            "currency": "INR",
-                            "value": "499"
-                        }
-                    },
                     {
                         "@ondc/org/item_id": "ROADSTER-MEN-NAVY-S",
                         "@ondc/org/item_quantity": {
@@ -126,49 +120,55 @@
                         "price": {
                             "currency": "INR",
                             "value": "655"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "655"
+                            }
                         }
                     },
                     {
-                        "@ondc/org/item_id": "Fulfillment1",
+                        "@ondc/org/item_id": "Reyton18TH10005",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "18TH Men's Reyton Navy Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "999"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "999"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
                         "title": "Delivery charges",
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "20"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Tax",
-                        "@ondc/org/title_type": "tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "43.85"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "Fulfillment1",
-                        "title": "Discount",
-                        "@ondc/org/title_type": "discount",
-                        "price": {
-                            "currency": "INR",
-                            "value": "-57.7"
+                            "value": "0"
                         }
                     }
                 ],
-                "ttl": "P1D"
+                "ttl": "PT30S"
             },
             "payment": {
                 "uri": "https://juspay.in/",
                 "tl_method": "http/get",
                 "params": {
-                    "amount": "1160.15",
+                    "amount": "1654",
                     "currency": "INR",
-                    "transaction_id": "3972d66f-14cd-4e4c-b916-78b149d582b3"
+                    "transaction_id": "3f5821ac-ed53-41d8-8139-6b2735fe19e2"
                 },
-                "status": "NOT-PAID",
-                "type": "ON-FULFILLMENT",
-                "collected_by": "BPP",
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
                 "@ondc/org/buyer_app_finder_fee_type": "percent",
                 "@ondc/org/buyer_app_finder_fee_amount": "3.0",
                 "@ondc/org/settlement_details": [
@@ -178,15 +178,15 @@
                         "settlement_type": "neft",
                         "beneficiary_name": "18th Digitech",
                         "upi_address": "",
-                        "settlement_bank_account_no": "156352663663",
+                        "settlement_bank_account_no": "156352663664",
                         "settlement_ifsc_code": "ICIC0000256",
                         "bank_name": "ICICI Bank",
                         "branch_name": "Noida"
                     }
                 ]
             },
-            "created_at": "2023-09-12T10:09:55.000Z",
-            "updated_at": "2023-09-12T10:09:55.000Z"
+            "created_at": "2023-09-22T13:24:50.674Z",
+            "updated_at": "2023-09-22T13:24:51.000Z"
         }
     }
 }
