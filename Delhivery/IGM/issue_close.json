@@ -1,0 +1,88 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "action": "issue",
+    "bap_id": "beta.mystore.in",
+    "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+    "bpp_id": "ondc-dev.delhivery.com",
+    "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1",
+    "transaction_id": "79441c2d-ecf7-4558-8855-f8ba87e0322f",
+    "message_id": "8d86fab2-6dba-4790-86e4-46cf27e0d3fc",
+    "timestamp": "2023-09-18T12:09:32.659Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "6502d82d60a18a35cc86dd45",
+      "category": "FULFILLMENT",
+      "sub_category": "FLM02",
+      "complainant_info": {
+        "person": {
+          "name": "beta.mystore.in"
+        },
+        "contact": {
+          "email": "dummy-bpp-beta-mystore-in@mystore.in"
+        }
+      },
+      "order_details": {
+        "id": "6502d643f99989acea3aeb56",
+        "state": "Accepted",
+        "items": [
+          {
+            "id": "64b53952886ade3bef992236",
+            "quantity": 1
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "Fulfillment1",
+            "state": "Accepted"
+          }
+        ],
+        "provider_id": "62733ab9f1f53df939f25300"
+      },
+      "description": {
+        "short_desc": "testing",
+        "long_desc": "test"
+      },
+      "source": {
+        "network_participant_id": "beta.mystore.in",
+        "issue_source_type": "CONSUMER"
+      },
+      "expected_response_time": {
+        "duration": "PT2H"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      },
+      "status": "CLOSED",
+      "issue_type": "ISSUE",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "Closed",
+            "remarks": "test",
+            "updated_at": "2023-09-18T12:09:29.891Z",
+            "updated_by": {
+              "org": {
+                "name": "beta.mystore.in"
+              },
+              "contact": {
+                "phone": "9450394039",
+                "email": "buyerapp@interface.com"
+              },
+              "person": {
+                "name": "Mystore"
+              }
+            }
+          }
+        ]
+      },
+      "created_at": "2023-09-14T09:53:49.138Z",
+      "updated_at": "2023-09-18T12:09:29.891Z"
+    }
+  }
+}

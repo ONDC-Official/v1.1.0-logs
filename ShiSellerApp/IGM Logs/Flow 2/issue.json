@@ -1,0 +1,96 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "issue",
+        "core_version": "1.0.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
+        "transaction_id": "4f317515-9f1b-4126-afc4-8e0655994e3a",
+        "message_id": "1e2a55bf-d33e-4f40-942e-b4c2d0aab118",
+        "timestamp": "2023-09-19T06:28:29.975Z",
+        "bpp_id": "ushopmicro-stage.hulcd.com",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "issue": {
+            "id": "9ea4a69b-9111-4853-b16c-57bbbcbd2d75",
+            "category": "FULFILLMENT",
+            "sub_category": "FLM07",
+            "complainant_info": {
+                "person": {
+                    "name": "Saira"
+                },
+                "contact": {
+                    "phone": "9876543210",
+                    "email": "saira@gmail.com"
+                }
+            },
+            "order_details": {
+                "id": "2023-09-19-294197",
+                "state": "Completed",
+                "items": [
+                    {
+                        "id": "37345",
+                        "quantity": 1
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "48554C2D3334413044",
+                        "state": "Pending"
+                    }
+                ],
+                "provider_id": "HUL-34A005D-P9968"
+            },
+            "description": {
+                "short_desc": "Package info mismatch ",
+                "long_desc": "Package info mismatch",
+                "additional_desc": {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images": [
+                    "https://buyer-app-preprod.ondc.org/issueApis/uploads/1695104909975.png"
+                ]
+            },
+            "source": {
+                "network_participant_id": "buyer-app-preprod.ondc.org",
+                "type": "CONSUMER"
+            },
+            "expected_response_time": {
+                "duration": "PT1H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_type": "ISSUE",
+            "issue_actions": {
+                "complainant_actions": [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-09-19T06:28:29.975Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "6239083807",
+                                "email": "Rishabhnand.singh@ondc.org"
+                            },
+                            "person": {
+                                "name": "Rishabhnand Singh"
+                            }
+                        }
+                    }
+                ]
+            },
+            "created_at": "2023-09-19T06:28:29.682Z",
+            "updated_at": "2023-09-19T06:28:29.682Z"
+        }
+    }
+}

@@ -1,48 +1,65 @@
 {
     "context": {
-        "domain": "nic2004:NTS10",
+        "domain": "ONDC:NTS10",
         "country": "IND",
         "city": "*",
         "action": "receiver_recon",
         "core_version": "1.0.0",
-        "bap_id": "rsp.plotch.ai",
-        "bap_uri": "https://rsp.plotch.ai/rsp",
-        "bpp_id": "sit.mytra.money",
-        "bpp_uri": "https://sit.mytra.money/api/method/ondc/",
-        "transaction_id": "ea1822ba-9fdf-4ae7-b607-90b6ffbc79d6",
-        "message_id": "7f114d8a-5033-4f40-bca2-2a269c280600",
-        "timestamp": "2023-08-26T16:17:01.848Z",
-        "ttl": "P2D"
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/buyer_ondc/",
+        "bpp_id": "shathabdhi-organics.mytra.money",
+        "bpp_uri": "https://shathabdhi-organics.mytra.money/api/method/ondc/",
+        "ttl": "P2D",
+        "transaction_id": "94d9bde1-1ce2-491a-b8aa-2b7357a0df1b",
+        "message_id": "eef77dbe-368c-4785-9f3d-793833941b7e",
+        "timestamp": "2023-09-15T12:59:51.861Z"
     },
     "message": {
         "orderbook": {
             "orders": [
                 {
-                    "id": "24c25d42-2a6d-4487-a047-d97e906e1280",
-                    "invoice_no": "531465",
-                    "collector_app_id": "ondc.indiastack.cloud",
-                    "receiver_app_id": "sit.mytra.money",
+                    "id": "e8a632b1d6",
+                    "invoice_no": "ONDC-BUYER-PO-00057",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
                     "state": "Completed",
                     "provider": {
                         "name": {
-                            "code": "sit.mytra.money",
-                            "name": "mytra store"
+                            "code": "shathabdhi-organics.mytra.money",
+                            "name": "Shathabdhi Organics"
                         },
-                        "address": "Hyderabad"
+                        "address": "Manikonda - S"
                     },
                     "payment": {
                         "params": {
-                            "transaction_id": "order_MUJtpgrKu2Gzhu",
-                            "transaction_status": "PAID",
-                            "amount": "367.51",
-                            "currency": "INR"
+                            "currency": "INR",
+                            "transaction_id": "7e6d44e2d3",
+                            "amount": "514.0",
+                            "transaction_status": "PAID"
                         },
-                        "type": "ON-ORDER",
                         "status": "PAID",
+                        "type": "ON-ORDER",
                         "collected_by": "BAP",
-                        "@ondc/org/collected_by_status": "Assert",
                         "@ondc/org/buyer_app_finder_fee_type": "percent",
                         "@ondc/org/buyer_app_finder_fee_amount": "3",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_type": "neft",
+                                "settlement_bank_account_no": "630505034471",
+                                "settlement_ifsc_code": "ICIC0006305",
+                                "beneficiary_name": "Shathabdhi Organics",
+                                "bank_name": "ICICI BANK LIMITED",
+                                "branch_name": "ICICI BANK LIMITED",
+                                "beneficiary_address": "Manikonda - S",
+                                "settlement_status": "PAID",
+                                "settlement_amount": 450.0,
+                                "settlement_reference": "IDFBH726396",
+                                "settlement_timestamp": "2023-09-15T12:59:51.840Z"
+                            }
+                        ],
+                        "@ondc/org/collected_by_status": "Assert",
                         "@ondc/org/withholding_amount": null,
                         "@ondc/org/withholding_amount_status": "Assert",
                         "@ondc/org/return_window": null,
@@ -50,83 +67,83 @@
                         "@ondc/org/settlement_basis": null,
                         "@ondc/org/settlement_basis_status": "Assert",
                         "@ondc/org/settlement_window": null,
-                        "@ondc/org/settlement_window_status": "Assert",
-                        "@ondc/org/settlement_details": [
-                            {
-                                "beneficiary_address": "Bizness Square,Hyderabad,Telangana,500081",
-                                "beneficiary_name": "PwcTech Technologies Pvt Ltd",
-                                "settlement_status": "PAID",
-                                "branch_name": "ICICI BANK LIMITED",
-                                "settlement_counterparty": "seller-app",
-                                "settlement_phase": "sale-amount",
-                                "bank_name": "ICICI BANK LIMITED",
-                                "settlement_amount": 354.5,
-                                "settlement_ifsc_code": "ICIC0001112",
-                                "settlement_bank_account_no": "111222333444",
-                                "settlement_type": "neft",
-                                "settlement_reference": "24c25d42-2a6d-4487-a047-d97e906e1280",
-                                "settlement_timestamp": "2023-08-26T16:16:43.739Z"
-                            }
-                        ]
+                        "@ondc/org/settlement_window_status": "Assert"
                     },
                     "withholding_tax_gst": {
                         "currency": "INR",
-                        "value": "0.00"
+                        "value": "0.0"
                     },
                     "withholding_tax_tds": {
                         "currency": "INR",
-                        "value": "0.00"
+                        "value": "0.0"
                     },
                     "deduction_by_collector": {
                         "currency": "INR",
-                        "value": "13.01"
+                        "value": "18.2"
                     },
                     "payerdetails": {
                         "payer_name": "ICICIC Bank Ltd",
-                        "payer_address": "Mumbai",
+                        "payer_address": "Hyderabad",
                         "payer_account_no": "123456789",
-                        "payer_bank_code": "-",
+                        "payer_bank_code": "ICIC0001234",
                         "payer_virtual_payment_address": ""
                     },
                     "settlement_reason_code": "01",
-                    "transaction_id": "8a4134ea-ba85-47d0-a1a8-169ee6c99c0e",
-                    "settlement_id": "2595c95a-2033-475c-bfba-3b10986757e2",
-                    "settlement_reference_no": "202304110010000D",
+                    "transaction_id": "94d9bde1-1ce2-491a-b8aa-2b7357a0df1b",
+                    "settlement_id": "66f8f92782",
+                    "settlement_reference_no": "IDFBH726396",
                     "recon_status": "01",
                     "order_recon_status": "01",
                     "message": {
                         "name": "",
                         "code": ""
                     },
-                    "created_at": "2023-08-26T16:14:01.509Z",
-                    "updated_at": "2023-08-26T16:16:43.739Z"
+                    "created_at": "2023-09-15T12:59:51.840Z",
+                    "updated_at": "2023-09-15T12:59:51.861Z"
                 },
                 {
-                    "id": "ae9955da-3867-4ed2-9fd2-20287949e5ca",
-                    "invoice_no": "531464",
-                    "collector_app_id": "ondc.indiastack.cloud",
-                    "receiver_app_id": "sit.mytra.money",
+                    "id": "0dd7a3843a",
+                    "invoice_no": "ONDC-BUYER-PO-00058",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
                     "state": "Completed",
                     "provider": {
                         "name": {
-                            "code": "sit.mytra.money",
-                            "name": "mytra store"
+                            "code": "shathabdhi-organics.mytra.money",
+                            "name": "Shathabdhi Organics"
                         },
-                        "address": "Hyderabad"
+                        "address": "Manikonda - S"
                     },
                     "payment": {
                         "params": {
-                            "transaction_id": "order_MUJsv57bggKEO7",
-                            "transaction_status": "PAID",
-                            "amount": "301.80",
-                            "currency": "INR"
+                            "currency": "INR",
+                            "transaction_id": "41b1bcf0be",
+                            "amount": "674.0",
+                            "transaction_status": "PAID"
                         },
-                        "type": "ON-ORDER",
                         "status": "PAID",
+                        "type": "ON-ORDER",
                         "collected_by": "BAP",
-                        "@ondc/org/collected_by_status": "Assert",
                         "@ondc/org/buyer_app_finder_fee_type": "percent",
                         "@ondc/org/buyer_app_finder_fee_amount": "3",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_type": "neft",
+                                "settlement_bank_account_no": "630505034471",
+                                "settlement_ifsc_code": "ICIC0006305",
+                                "beneficiary_name": "Shathabdhi Organics",
+                                "bank_name": "ICICI BANK LIMITED",
+                                "branch_name": "ICICI BANK LIMITED",
+                                "beneficiary_address": "Manikonda - S",
+                                "settlement_status": "PAID",
+                                "settlement_amount": 650.14,
+                                "settlement_reference": "IDFBH726396",
+                                "settlement_timestamp": "2023-09-15T12:59:51.840Z"
+                            }
+                        ],
+                        "@ondc/org/collected_by_status": "Assert",
                         "@ondc/org/withholding_amount": null,
                         "@ondc/org/withholding_amount_status": "Assert",
                         "@ondc/org/return_window": null,
@@ -134,56 +151,291 @@
                         "@ondc/org/settlement_basis": null,
                         "@ondc/org/settlement_basis_status": "Assert",
                         "@ondc/org/settlement_window": null,
-                        "@ondc/org/settlement_window_status": "Assert",
-                        "@ondc/org/settlement_details": [
-                            {
-                                "beneficiary_address": "Bizness Square,Hyderabad,Telangana,500081",
-                                "beneficiary_name": "PwcTech Technologies Pvt Ltd",
-                                "settlement_status": "PAID",
-                                "branch_name": "ICICI BANK LIMITED",
-                                "settlement_counterparty": "seller-app",
-                                "settlement_phase": "sale-amount",
-                                "bank_name": "ICICI BANK LIMITED",
-                                "settlement_amount": 291.12,
-                                "settlement_ifsc_code": "ICIC0001112",
-                                "settlement_bank_account_no": "111222333444",
-                                "settlement_type": "neft",
-                                "settlement_reference": "ae9955da-3867-4ed2-9fd2-20287949e5ca",
-                                "settlement_timestamp": "2023-08-26T16:16:43.739Z"
-                            }
-                        ]
+                        "@ondc/org/settlement_window_status": "Assert"
                     },
                     "withholding_tax_gst": {
                         "currency": "INR",
-                        "value": "0.00"
+                        "value": "0.0"
                     },
                     "withholding_tax_tds": {
                         "currency": "INR",
-                        "value": "0.00"
+                        "value": "0.0"
                     },
                     "deduction_by_collector": {
                         "currency": "INR",
-                        "value": "10.68"
+                        "value": "23.86"
                     },
                     "payerdetails": {
                         "payer_name": "ICICIC Bank Ltd",
-                        "payer_address": "Mumbai",
+                        "payer_address": "Hyderabad",
                         "payer_account_no": "123456789",
-                        "payer_bank_code": "-",
+                        "payer_bank_code": "ICIC0001234",
                         "payer_virtual_payment_address": ""
                     },
                     "settlement_reason_code": "01",
-                    "transaction_id": "8a4134ea-ba85-47d0-a1a8-169ee6c99c0e",
-                    "settlement_id": "4a0931d7-1e44-42a5-b131-eccba0f3a869",
-                    "settlement_reference_no": "202304110010000D",
+                    "transaction_id": "94d9bde1-1ce2-491a-b8aa-2b7357a0df1b",
+                    "settlement_id": "f299a9b92a",
+                    "settlement_reference_no": "IDFBH726396",
                     "recon_status": "01",
                     "order_recon_status": "01",
                     "message": {
                         "name": "",
                         "code": ""
                     },
-                    "created_at": "2023-08-26T16:14:01.509Z",
-                    "updated_at": "2023-08-26T16:16:43.739Z"
+                    "created_at": "2023-09-15T12:59:51.840Z",
+                    "updated_at": "2023-09-15T12:59:51.861Z"
+                },
+                {
+                    "id": "3a8575727b",
+                    "invoice_no": "ONDC-BUYER-PO-00059",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
+                    "state": "Completed",
+                    "provider": {
+                        "name": {
+                            "code": "shathabdhi-organics.mytra.money",
+                            "name": "Shathabdhi Organics"
+                        },
+                        "address": "Manikonda - S"
+                    },
+                    "payment": {
+                        "params": {
+                            "currency": "INR",
+                            "transaction_id": "dc13dbaf46",
+                            "amount": "319.0",
+                            "transaction_status": "PAID"
+                        },
+                        "status": "PAID",
+                        "type": "ON-ORDER",
+                        "collected_by": "BAP",
+                        "@ondc/org/buyer_app_finder_fee_type": "percent",
+                        "@ondc/org/buyer_app_finder_fee_amount": "3",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_type": "neft",
+                                "settlement_bank_account_no": "630505034471",
+                                "settlement_ifsc_code": "ICIC0006305",
+                                "beneficiary_name": "Shathabdhi Organics",
+                                "bank_name": "ICICI BANK LIMITED",
+                                "branch_name": "ICICI BANK LIMITED",
+                                "beneficiary_address": "Manikonda - S",
+                                "settlement_status": "PAID",
+                                "settlement_amount": 307.71,
+                                "settlement_reference": "IDFBH726396",
+                                "settlement_timestamp": "2023-09-15T12:59:51.840Z"
+                            }
+                        ],
+                        "@ondc/org/collected_by_status": "Assert",
+                        "@ondc/org/withholding_amount": null,
+                        "@ondc/org/withholding_amount_status": "Assert",
+                        "@ondc/org/return_window": null,
+                        "@ondc/org/return_window_status": "Assert",
+                        "@ondc/org/settlement_basis": null,
+                        "@ondc/org/settlement_basis_status": "Assert",
+                        "@ondc/org/settlement_window": null,
+                        "@ondc/org/settlement_window_status": "Assert"
+                    },
+                    "withholding_tax_gst": {
+                        "currency": "INR",
+                        "value": "0.0"
+                    },
+                    "withholding_tax_tds": {
+                        "currency": "INR",
+                        "value": "0.0"
+                    },
+                    "deduction_by_collector": {
+                        "currency": "INR",
+                        "value": "11.29"
+                    },
+                    "payerdetails": {
+                        "payer_name": "ICICIC Bank Ltd",
+                        "payer_address": "Hyderabad",
+                        "payer_account_no": "123456789",
+                        "payer_bank_code": "ICIC0001234",
+                        "payer_virtual_payment_address": ""
+                    },
+                    "settlement_reason_code": "01",
+                    "transaction_id": "94d9bde1-1ce2-491a-b8aa-2b7357a0df1b",
+                    "settlement_id": "1fffedfa8f",
+                    "settlement_reference_no": "IDFBH726396",
+                    "recon_status": "01",
+                    "order_recon_status": "01",
+                    "message": {
+                        "name": "",
+                        "code": ""
+                    },
+                    "created_at": "2023-09-15T12:59:51.840Z",
+                    "updated_at": "2023-09-15T12:59:51.861Z"
+                },
+                {
+                    "id": "3895512bad",
+                    "invoice_no": "ONDC-BUYER-PO-00060",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
+                    "state": "Completed",
+                    "provider": {
+                        "name": {
+                            "code": "shathabdhi-organics.mytra.money",
+                            "name": "Shathabdhi Organics"
+                        },
+                        "address": "Manikonda - S"
+                    },
+                    "payment": {
+                        "params": {
+                            "currency": "INR",
+                            "transaction_id": "b6b841f651",
+                            "amount": "709.0",
+                            "transaction_status": "PAID"
+                        },
+                        "status": "PAID",
+                        "type": "ON-ORDER",
+                        "collected_by": "BAP",
+                        "@ondc/org/buyer_app_finder_fee_type": "percent",
+                        "@ondc/org/buyer_app_finder_fee_amount": "3",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_type": "neft",
+                                "settlement_bank_account_no": "630505034471",
+                                "settlement_ifsc_code": "ICIC0006305",
+                                "beneficiary_name": "Shathabdhi Organics",
+                                "bank_name": "ICICI BANK LIMITED",
+                                "branch_name": "ICICI BANK LIMITED",
+                                "beneficiary_address": "Manikonda - S",
+                                "settlement_status": "PAID",
+                                "settlement_amount": 683.9,
+                                "settlement_reference": "IDFBH726396",
+                                "settlement_timestamp": "2023-09-15T12:59:51.840Z"
+                            }
+                        ],
+                        "@ondc/org/collected_by_status": "Assert",
+                        "@ondc/org/withholding_amount": null,
+                        "@ondc/org/withholding_amount_status": "Assert",
+                        "@ondc/org/return_window": null,
+                        "@ondc/org/return_window_status": "Assert",
+                        "@ondc/org/settlement_basis": null,
+                        "@ondc/org/settlement_basis_status": "Assert",
+                        "@ondc/org/settlement_window": null,
+                        "@ondc/org/settlement_window_status": "Assert"
+                    },
+                    "withholding_tax_gst": {
+                        "currency": "INR",
+                        "value": "0.0"
+                    },
+                    "withholding_tax_tds": {
+                        "currency": "INR",
+                        "value": "0.0"
+                    },
+                    "deduction_by_collector": {
+                        "currency": "INR",
+                        "value": "25.1"
+                    },
+                    "payerdetails": {
+                        "payer_name": "ICICIC Bank Ltd",
+                        "payer_address": "Hyderabad",
+                        "payer_account_no": "123456789",
+                        "payer_bank_code": "ICIC0001234",
+                        "payer_virtual_payment_address": ""
+                    },
+                    "settlement_reason_code": "01",
+                    "transaction_id": "94d9bde1-1ce2-491a-b8aa-2b7357a0df1b",
+                    "settlement_id": "df28404019",
+                    "settlement_reference_no": "IDFBH726396",
+                    "recon_status": "01",
+                    "order_recon_status": "01",
+                    "message": {
+                        "name": "",
+                        "code": ""
+                    },
+                    "created_at": "2023-09-15T12:59:51.840Z",
+                    "updated_at": "2023-09-15T12:59:51.861Z"
+                },
+                {
+                    "id": "39f64a4e8b",
+                    "invoice_no": "ONDC-BUYER-PO-00061",
+                    "collector_app_id": "sit.mytra.money",
+                    "receiver_app_id": "shathabdhi-organics.mytra.money",
+                    "state": "Completed",
+                    "provider": {
+                        "name": {
+                            "code": "shathabdhi-organics.mytra.money",
+                            "name": "Shathabdhi Organics"
+                        },
+                        "address": "Manikonda - S"
+                    },
+                    "payment": {
+                        "params": {
+                            "currency": "INR",
+                            "transaction_id": "781c67b3f2",
+                            "amount": "1458.98",
+                            "transaction_status": "PAID"
+                        },
+                        "status": "PAID",
+                        "type": "ON-ORDER",
+                        "collected_by": "BAP",
+                        "@ondc/org/buyer_app_finder_fee_type": "percent",
+                        "@ondc/org/buyer_app_finder_fee_amount": "3",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_type": "neft",
+                                "settlement_bank_account_no": "630505034471",
+                                "settlement_ifsc_code": "ICIC0006305",
+                                "beneficiary_name": "Shathabdhi Organics",
+                                "bank_name": "ICICI BANK LIMITED",
+                                "branch_name": "ICICI BANK LIMITED",
+                                "beneficiary_address": "Manikonda - S",
+                                "settlement_status": "PAID",
+                                "settlement_amount": 1407.33,
+                                "settlement_reference": "IDFBH726396",
+                                "settlement_timestamp": "2023-09-15T12:59:51.840Z"
+                            }
+                        ],
+                        "@ondc/org/collected_by_status": "Assert",
+                        "@ondc/org/withholding_amount": null,
+                        "@ondc/org/withholding_amount_status": "Assert",
+                        "@ondc/org/return_window": null,
+                        "@ondc/org/return_window_status": "Assert",
+                        "@ondc/org/settlement_basis": null,
+                        "@ondc/org/settlement_basis_status": "Assert",
+                        "@ondc/org/settlement_window": null,
+                        "@ondc/org/settlement_window_status": "Assert"
+                    },
+                    "withholding_tax_gst": {
+                        "currency": "INR",
+                        "value": "0.0"
+                    },
+                    "withholding_tax_tds": {
+                        "currency": "INR",
+                        "value": "0.0"
+                    },
+                    "deduction_by_collector": {
+                        "currency": "INR",
+                        "value": "51.65"
+                    },
+                    "payerdetails": {
+                        "payer_name": "ICICIC Bank Ltd",
+                        "payer_address": "Hyderabad",
+                        "payer_account_no": "123456789",
+                        "payer_bank_code": "ICIC0001234",
+                        "payer_virtual_payment_address": ""
+                    },
+                    "settlement_reason_code": "01",
+                    "transaction_id": "94d9bde1-1ce2-491a-b8aa-2b7357a0df1b",
+                    "settlement_id": "5e07f7a01e",
+                    "settlement_reference_no": "IDFBH726396",
+                    "recon_status": "01",
+                    "order_recon_status": "01",
+                    "message": {
+                        "name": "",
+                        "code": ""
+                    },
+                    "created_at": "2023-09-15T12:59:51.840Z",
+                    "updated_at": "2023-09-15T12:59:51.861Z"
                 }
             ]
         }

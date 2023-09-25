@@ -1,0 +1,134 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:0124",
+    "action": "issue",
+    "core_version": "1.0.0",
+    "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+    "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+    "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc/logistics",
+    "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc/logistics/",
+    "transaction_id": "c67835d8-6b47-5f8a-96f6-1ceca6d29c7a",
+    "message_id": "e21cec4c-ce93-40db-8d6a-86544ae0e379",
+    "timestamp": "2023-09-21T11:03:48.290Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "1833a97f-ddc7-492e-add1-17e8abd7f407",
+      "category": "FULFILLMENT",
+      "sub_category": "FLM02",
+      "complainant_info": {
+        "person": {
+          "name": "iffco test address sector 28"
+        },
+        "contact": {
+          "phone": "9000000000",
+          "email": "igmbuyerpreprod@gmail.com"
+        }
+      },
+      "order_details": {
+        "id": "2023-09-21-820713",
+        "state": "Accepted",
+        "items": [
+          {
+            "id": "20f4f6c7-b711-49ca-8220-9bea13a35e5d",
+            "quantity": 1
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "c67835d8-6b47-5f8a-96f6-1ceca6d29c7a",
+            "state": "Pending"
+          }
+        ],
+        "provider_id": "85b4ee7c-a9d7-44e5-a2ab-81e03e3b8143"
+      },
+      "description": {
+        "short_desc": "test logisitics short desc",
+        "long_desc": "test logisitics long desc",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        },
+        "images": [
+          "https://buyer-app-preprod.ondc.org/issueApis/uploads/1695294228036.png"
+        ]
+      },
+      "source": {
+        "network_participant_id": "buyer-app-preprod.ondc.org",
+        "type": "CONSUMER"
+      },
+      "expected_response_time": {
+        "duration": "PT45M"
+      },
+      "expected_resolution_time": {
+        "duration": "PT23H45M"
+      },
+      "status": "OPEN",
+      "issue_type": "ISSUE",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "short_desc": "Complaint created",
+            "updated_at": "2023-09-21T11:03:48.036Z",
+            "updated_by": {
+              "org": {
+                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+              },
+              "contact": {
+                "phone": "6239083807",
+                "email": "Rishabhnand.singh@ondc.org"
+              },
+              "person": {
+                "name": "Rishabhnand Singh"
+              }
+            }
+          }
+        ],
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-09-21T11:03:48.168Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-ondc.viranc.com/p/v1/store::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "test@test.com"
+              },
+              "person": {
+                "name": "Test"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "CASCADED",
+            "short_desc": "Complaint cascaded",
+            "updated_at": "2023-09-21T11:03:48.290Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-ondc.viranc.com/p/v1/store::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "test@test.com"
+              },
+              "person": {
+                "name": "Test"
+              }
+            },
+            "cascaded_level": 2
+          }
+        ]
+      },
+      "created_at": "2023-09-21T11:03:47.879Z",
+      "updated_at": "2023-09-21T11:03:48.290Z"
+    }
+  }
+}

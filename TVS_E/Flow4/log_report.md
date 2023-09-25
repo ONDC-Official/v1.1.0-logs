@@ -1,6 +1,3 @@
-**/on_search**
-- /message/catalog/bpp~1providers/0/@ondc~1org~1fssai_license_no must NOT have fewer than 14 characters
-
 **/on_select**
 - Warning: Quoted Price in /on_select INR 40207 does not match with the total price of items in /select INR 55216
 

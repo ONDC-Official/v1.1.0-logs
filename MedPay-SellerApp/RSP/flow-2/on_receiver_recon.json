@@ -1,59 +1,47 @@
 {
   "context": {
-    "bpp_id": "ondc.uat.medpay.in",
-    "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
     "domain": "ONDC:NTS10",
-    "core_version": "1.0.0",
-    "ttl": "P2D",
-    "bap_id": "api.razorpay.com/ondc-rsp-test",
-    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
-    "transaction_id": "68da1f22-5485-4a09-bcf8-759d59ef63ab",
-    "message_id": "289932af-715e-46cb-b05d-4f2090da12b3",
     "country": "IND",
     "city": "*",
-    "timestamp": "2023-09-03T14:10:11.243Z",
-    "action": "on_receiver_recon"
+    "action": "on_receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "api.razorpay.com/ondc-rsp-test",
+    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+    "bpp_id": "ondc.uat.medpay.in",
+    "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+    "transaction_id": "0863cf34-4b50-46f0-80e8-d007fb498d12",
+    "message_id": "5fa76962-9f5e-4600-b6dc-d6104ca17506",
+    "timestamp": "2023-09-20T13:16:03.287Z",
+    "ttl": "P2D"
   },
   "message": {
     "orderbook": {
       "orders": [
         {
-          "id": "e2e8f4df-4265-4814-a84d-5b5c5475d3f3",
-          "invoice_no": "356975c3-09b4-4318-b0d8-a35e4ceea059",
+          "id": "e6718245-f9a8-41f0-b76e-9a0bb28218ea",
+          "invoice_no": "d65a1d73-513a-4301-852e-8ae45961b372",
           "collector_app_id": "shopping-api-testing.phonepe.com",
           "receiver_app_id": "ondc.uat.medpay.in",
           "order_recon_status": "02",
-          "counterparty_diff_amount": {
-            "value": "20",
-            "currency": "INR"
-          },
-          "transaction_id": "6d9b7d06-b25f-4e25-ada4-caadc65ed9fd",
-          "settlement_id": "5cd2211b-5d9b-41ae-befc-411bf9f1c03d",
-          "settlement_reference_no": "b455f491-68d6-4966-9143-016b763322fc",
+          "transaction_id": "1cb012b3-391a-4dc1-8f73-639bd4634ff8",
+          "settlement_id": "d1d7c198-3123-472c-9095-9bbf4db17d2e",
+          "settlement_reference_no": "c2dc1251-cfd1-4e61-a8fd-1136a8a6063d",
           "counterparty_recon_status": "03",
-          "message": {
-            "name": "less",
-            "code": "lesser amount"
-          }
+          "counterparty_diff_amount": { "value": "20.0", "currency": "INR" },
+          "message": { "name": "lesser amount", "code": "less" }
         },
         {
-          "id": "bdd69a23-d9c8-4983-9f1b-0f0be8ce8216",
-          "invoice_no": "c27c44fc-8855-4a40-a978-6073b6d42a39",
+          "id": "3c6be73e-4659-47ed-abf9-a69786a9700c",
+          "invoice_no": "a6f29b1e-0a68-4dea-8ab4-75547fb00d7e",
           "collector_app_id": "shopping-api-testing.phonepe.com",
           "receiver_app_id": "ondc.uat.medpay.in",
           "order_recon_status": "02",
-          "counterparty_diff_amount": {
-            "value": "10",
-            "currency": "INR"
-          },
-          "transaction_id": "0ee40ac5-5d31-43de-b0f2-797faecf8d4b",
-          "settlement_id": "1e8b956c-de58-43a3-ada1-d1ff75c40a78",
-          "settlement_reference_no": "6ea54522-6f50-4857-8c79-f16864ca6bdb",
+          "transaction_id": "1cb012b3-391a-4dc1-8f73-639bd4634ff8",
+          "settlement_id": "11e43aa8-1b4f-4b80-99ff-7dd857248cb0",
+          "settlement_reference_no": "47bfcac7-8418-434e-a304-15d17f6eabc7",
           "counterparty_recon_status": "02",
-          "message": {
-            "name": "more",
-            "code": "more amount"
-          }
+          "counterparty_diff_amount": { "value": "19.0", "currency": "INR" },
+          "message": { "name": "more amount", "code": "more" }
         }
       ]
     }
