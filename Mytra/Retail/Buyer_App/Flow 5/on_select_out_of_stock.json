@@ -1,0 +1,122 @@
+{
+    "context": {
+        "action": "on_select",
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/buyer_ondc/",
+        "bpp_id": "ondc-seller.paytm.com",
+        "bpp_uri": "https://ondc-seller.paytm.com/ondc/v1/249357/bpp",
+        "city": "std:080",
+        "core_version": "1.1.0",
+        "country": "IND",
+        "domain": "nic2004:52110",
+        "message_id": "7a7250b1a3",
+        "timestamp": "2023-09-14T10:19:11.577Z",
+        "transaction_id": "95a1e4f5-b1da-4e6d-a1a6-ec16a4ac091a",
+        "ttl": "PT30S"
+    },
+    "error": {
+        "code": "40002",
+        "type": "DOMAIN-ERROR"
+    },
+    "message": {
+        "order": {
+            "fulfillments": [
+                {
+                    "@ondc/org/TAT": "P4D",
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/provider_name": "Paytm",
+                    "id": "1",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "tracking": true
+                }
+            ],
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "1112164695"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "1113040701"
+                }
+            ],
+            "provider": {
+                "id": "252611"
+            },
+            "quote": {
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "1112164695",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "799.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "1"
+                                },
+                                "maximum": {
+                                    "count": "1"
+                                }
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "799.00"
+                        },
+                        "title": "Set of 6 Brass Fashion Jewelry AD Stone Pear Shape Stud Earrings for Women"
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "title": "Delivery charges"
+                    },
+                    {
+                        "@ondc/org/item_id": "1113040701",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "@ondc/org/title_type": "item",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "499.00"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "0"
+                                },
+                                "maximum": {
+                                    "count": "0"
+                                }
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "00.00"
+                        },
+                        "title": "Women Gold Roman Number Stainless Steel Bangle Spring Clasp Bracelet Jewelry"
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "799.00"
+                },
+                "ttl": "P1D"
+            }
+        }
+    }
+}

@@ -1,6 +1,3 @@
-**/on_search**
-- /message/catalog/bpp~1providers/0/@ondc~1org~1fssai_license_no must NOT have fewer than 14 characters
-
 **/confirm**
 - address/door mismatches in /billing in /init and /confirm
 
