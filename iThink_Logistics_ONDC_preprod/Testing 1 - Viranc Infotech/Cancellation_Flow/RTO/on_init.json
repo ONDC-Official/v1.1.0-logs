@@ -1,47 +1,48 @@
 {
-    "context": {
-        "domain": "nic2004:60232",
-        "country": "IND",
-        "city": "std:080",
-        "action": "on_init",
-        "core_version": "1.1.0",
-        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
-        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
-        "bpp_id": "my.ithinklogistics.com/ondc/preprod",
-        "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
-        "transaction_id": "f6cb548e-7eb9-5c61-b585-2aa4502a6bdb",
-        "message_id": "1bb748c7-6082-5e10-9189-3f561b2149f3",
-        "timestamp": "2023-09-09T07:37:36.704Z"
+    "context":{
+      "domain":"nic2004:60232",
+      "country":"IND",
+      "city":"std:080",
+      "action":"on_init",
+      "core_version":"1.1.0",
+      "bap_id":"preprod-ondc.viranc.com/p/v1/store",
+      "bap_uri":"https://preprod-ondc.viranc.com/p/v1/store/bapl",
+      "bpp_id":"my.ithinklogistics.com/ondc/preprod",
+      "bpp_uri":"https://my.ithinklogistics.com/ondc/preprod",
+      "transaction_id":"bdcc3d23-0f84-5989-a6f2-fc49a2de56d9",
+      "message_id":"811ca61b-b2a0-5784-9731-65b14d630e3c",
+      "timestamp":"2023-09-22T04:42:03.729Z"
     },
-    "message": {
-        "order": {
-            "provider": {
-                "id": "3"
-            },
-            "items": [{
-                    "id": "3I1"
-                }
-            ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": "624.22"
-                },
-                "breakup": [{
-                        "@ondc/org/item_id": "3I1",
-                        "@ondc/org/title_type": "Delivery Charge",
-                        "price": {
-                            "currency": "INR",
-                            "value": "624.22"
-                        }
-                    }
-                ]
-            },
-            "payment": {
-                "type": "POST-FULFILLMENT",
-                "collected_by": "BAP",
-                "@ondc/org/settlement_details": []
-            }
+    "message":{
+      "order":{
+        "provider":{
+          "id":"3"
+        },
+        "items":[
+          {
+            "id":"3I1"
+          }],
+        "quote":{
+          "price":{
+            "currency":"INR",
+            "value":"624.22"
+          },
+          "breakup":[
+            {
+              "@ondc/org/item_id":"3I1",
+              "@ondc/org/title_type":"Delivery Charge",
+              "price":{
+                "currency":"INR",
+                "value":"624.22"
+              }
+            }]
+        },
+        "payment":{
+          "type":"POST-FULFILLMENT",
+          "collected_by":"BAP",
+          "@ondc/org/settlement_details":[
+          ]
         }
+      }
     }
 }

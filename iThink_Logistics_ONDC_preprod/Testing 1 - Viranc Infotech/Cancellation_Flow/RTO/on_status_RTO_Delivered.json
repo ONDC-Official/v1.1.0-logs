@@ -1,147 +1,151 @@
 {
-    "context": {
-        "domain": "nic2004:60232",
-        "country": "IND",
-        "city": "std:080",
-        "action": "on_status",
-        "core_version": "1.1.0",
-        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
-        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
-        "bpp_id": "my.ithinklogistics.com/ondc/preprod",
-        "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
-        "transaction_id": "f6cb548e-7eb9-5c61-b585-2aa4502a6bdb",
-        "message_id": "832b1a73-900a-3d71-920c-fb4bef68e412",
-        "timestamp": "2023-09-11T05:33:18.707Z"
+    "context":{
+      "domain":"nic2004:60232",
+      "country":"IND",
+      "city":"std:080",
+      "action":"on_status",
+      "core_version":"1.1.0",
+      "bap_id":"preprod-ondc.viranc.com/p/v1/store",
+      "bap_uri":"https://preprod-ondc.viranc.com/p/v1/store/bapl",
+      "bpp_id":"my.ithinklogistics.com/ondc/preprod",
+      "bpp_uri":"https://my.ithinklogistics.com/ondc/preprod",
+      "transaction_id":"bdcc3d23-0f84-5989-a6f2-fc49a2de56d9",
+      "message_id":"996f0b9c-b8d0-3216-8457-f11f7dd2ee72",
+      "timestamp":"2023-09-24T08:16:10.949Z"
     },
-    "message": {
-        "order": {
-            "id": "db063b0d-c5b7-43ac-9921-8edb4821ea63",
-            "state": "Cancelled",
-            "provider": {
-                "id": "3"
+    "message":{
+      "order":{
+        "id":"6c4ffd05-e819-420d-a5bf-86ebc5bd49d0",
+        "state":"Cancelled",
+        "provider":{
+          "id":"3"
+        },
+        "items":[
+          {
+            "id":"3I1",
+            "category_id":"Next Day Delivery",
+            "descriptor":{
+              "code":"P2H2P"
+            }
+          }],
+        "quote":{
+          "price":{
+            "value":"807.22",
+            "currency":"INR"
+          },
+          "breakup":[
+            {
+              "price":{
+                "value":"624.22",
+                "currency":"INR"
+              },
+              "@ondc/org/item_id":"3I1",
+              "@ondc/org/title_type":"Delivery Charge"
             },
-            "items": [{
-                    "id": "3I1",
-                    "category_id": "Next Day Delivery",
-                    "descriptor": {
-                        "code": "P2H2P"
-                    }
-                }
-            ],
-            "quote": {
-                "price": {
-                    "value": "807.22",
-                    "currency": "INR"
+            {
+              "title":"RTO Charges",
+              "@ondc/org/title_type":"RTO Charge",
+              "price":{
+                "currency":"INR",
+                "value":"183.00"
+              }
+            }]
+        },
+        "fulfillments":[
+          {
+            "type":"Prepaid",
+            "@ondc/org/awb_no":"XSE20023853130001",
+            "state":{
+              "descriptor":{
+                "code":"Cancelled",
+                "name":"Cancelled"
+              }
+            },
+            "tracking":false,
+            "start":{
+              "time":{
+                "range":{
+                  "start":"2023-09-22T09:30:00.000Z",
+                  "end":"2023-09-22T12:30:00.000Z"
                 },
-                "breakup": [{
-                        "price": {
-                            "value": "624.22",
-                            "currency": "INR"
-                        },
-                        "@ondc/org/item_id": "3I1",
-                        "@ondc/org/title_type": "Delivery Charge"
-                    }, {
-                        "title": "RTO Charges",
-                        "@ondc/org/title_type": "RTO Charge",
-                        "price": {
-                            "currency": "INR",
-                            "value": "183.00"
-                        }
-                    }
-                ]
-            },
-            "fulfillments": [{
-                    "type": "Prepaid",
-                    "@ondc/org/awb_no": "2025711168",
-                    "state": {
-                        "descriptor": {
-                            "code": "Cancelled",
-                            "name": "Cancelled"
-                        }
-                    },
-                    "tracking": false,
-                    "start": {
-                        "time": {
-                            "range": {
-                                "start": "2023-09-09T09:30:00.000Z",
-                                "end": "2023-09-09T12:30:00.000Z"
-                            },
-                            "timestamp": "2023-09-09T10:31:15.000Z"
-                        },
-                        "instructions": {
-                            "name": "Shipping label",
-                            "short_desc": "Shipping label",
-                            "long_desc": "Shipping label",
-                            "images": ["https://itl-uploads.s3.ap-south-1.amazonaws.com/uploads/shipping/881ba794cbc39b7ffeeaf432a47f6d66.pdf"],
-                            "additional_desc": {
-                                "content_type": "text/html",
-                                "url": "https://my.ithinklogistics.com/delivery-instructions"
-                            }
-                        }
-                    },
-                    "end": {
-                        "time": {
-                            "range": {
-                                "start": "2023-09-10T03:30:00.000Z",
-                                "end": "2023-09-10T14:30:00.000Z"
-                            }
-                        }
-                    }
-                }, {
-                    "type": "RTO",
-                    "state": {
-                        "descriptor": {
-                            "code": "RTO-Delivered",
-                            "name": "RTO Delivered"
-                        }
-                    },
-                    "tracking": "false",
-                    "start": {
-                        "time": {
-                            "range": {
-                                "start": "2023-09-10T16:38:39.938Z",
-                                "end": "2023-09-10T16:38:39.938Z"
-                            }
-                        },
-                        "timestamp": "2023-09-10T16:38:39.938Z"
-                    },
-                    "end": {
-                        "time": {
-                            "range": {
-                                "start": "2023-09-11T05:32:15.000Z",
-                                "end": "2023-09-11T05:32:15.000Z"
-                            },
-                            "timestamp": "2023-09-11T05:32:15.000Z"
-                        }
-                    }
+                "timestamp":"2023-09-22T11:25:00.000Z"
+              },
+              "instructions":{
+                "name":"Shipping label",
+                "short_desc":"Shipping label",
+                "long_desc":"Shipping label",
+                "images":[
+                  "https://itl-uploads.s3.ap-south-1.amazonaws.com/uploads/shipping/36fd1fba2a4d7d1e71ca673dcefa408d.pdf"],
+                "additional_desc":{
+                  "content_type":"text/html",
+                  "url":"https://my.ithinklogistics.com/delivery-instructions"
                 }
-            ],
-            "payment": {
-                "type": "POST-FULFILLMENT",
-                "collected_by": "BAP",
-                "@ondc/org/settlement_details": []
+              }
             },
-            "billing": {
-                "name": "ONDC Test Seller Store",
-                "address": {
-                    "name": "ONDC Test Seller Store",
-                    "building": "Fort",
-                    "locality": "Fort",
-                    "city": "Mumbai",
-                    "state": "Maharashtra",
-                    "country": "India",
-                    "area_code": "400001"
+            "end":{
+              "time":{
+                "range":{
+                  "start":"2023-09-23T03:30:00.000Z",
+                  "end":"2023-09-23T14:30:00.000Z"
+                }
+              }
+            }
+          },
+          {
+            "type":"RTO",
+            "state":{
+              "descriptor":{
+                "code":"RTO-Delivered",
+                "name":"RTO Delivered"
+              }
+            },
+            "tracking":false,
+            "start":{
+              "time":{
+                "range":{
+                  "start":"2023-09-23T12:59:46.000Z",
+                  "end":"2023-09-23T12:59:46.000Z"
                 },
-                "tax_number": "22AAAAA0000A1Z5",
-                "phone": "9999999999",
-                "email": "test@gmail.com"
+                "timestamp":"2023-09-23T12:59:46.000Z"
+              }
             },
-            "tags": {
-                "cancellation_reason_id": "013",
-                "AWB no": "2025711168"
-            },
-            "created_at": "2023-09-09T07:38:37.544Z",
-            "updated_at": "2023-09-11T05:32:15.000Z"
-        }
+            "end":{
+              "time":{
+                "range":{
+                  "start":"2023-09-24T08:15:08.000Z",
+                  "end":"2023-09-24T08:15:08.000Z"
+                },
+                "timestamp":"2023-09-24T08:15:08.000Z"
+              }
+            }
+          }],
+        "payment":{
+          "type":"POST-FULFILLMENT",
+          "collected_by":"BAP",
+          "@ondc/org/settlement_details":[
+          ]
+        },
+        "billing":{
+          "name":"ONDC Test Seller Store",
+          "address":{
+            "name":"ONDC Test Seller Store",
+            "building":"Fort",
+            "locality":"Fort",
+            "city":"Mumbai",
+            "state":"Maharashtra",
+            "country":"India",
+            "area_code":"400001"
+          },
+          "tax_number":"22AAAAA0000A1Z5",
+          "phone":"9999999999",
+          "email":"test@gmail.com"
+        },
+        "tags":{
+          "cancellation_reason_id":"013",
+          "AWB no":"XSE20023853130001"
+        },
+        "created_at":"2023-09-22T04:42:17.815Z",
+        "updated_at":"2023-09-24T08:15:08.000Z"
+      }
     }
 }
