@@ -1,0 +1,51 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:040",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "preprod.ondc.adya.ai",
+        "bap_uri": "https://preprod.ondc.adya.ai/api/v1/ondc/lsp_bap/adya_lsp_bap",
+        "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc/logistics",
+        "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc/logistics/",
+        "transaction_id": "bf840fa5-2cd1-41b6-8afe-29e59203b515",
+        "message_id": "4b8325af-9e0e-4ac3-81c0-ee21a40bfb17",
+        "timestamp": "2023-09-27T13:18:33.095Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "P1"
+            },
+            "provider_location": {},
+            "items": [
+                {
+                    "id": "I1",
+                    "parent_item_id": ""
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "I1",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT"
+            }
+        }
+    }
+}

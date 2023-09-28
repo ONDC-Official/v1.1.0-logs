@@ -1,0 +1,90 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:040",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "preprod.ondc.adya.ai",
+        "bap_uri": "https://preprod.ondc.adya.ai/api/v1/ondc/lsp_bap/adya_lsp_bap",
+        "bpp_id": "ondcpp.yaarilabs.com",
+        "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+        "transaction_id": "8ae4309e-6e34-4939-b2f3-12a3b6973bad",
+        "message_id": "fd499443-e1e6-4541-baa2-de79785fcd50",
+        "timestamp": "2023-09-27T11:08:20.400Z"
+    },
+    "message": {
+        "catalog": {
+            "bpp/fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "2",
+                    "type": "CoD"
+                },
+                {
+                    "id": "3",
+                    "type": "RTO"
+                }
+            ],
+            "bpp/descriptor": {
+                "name": "Shipyaari"
+            },
+            "bpp/providers": [
+                {
+                    "id": "19537",
+                    "descriptor": {
+                        "name": "Ecom Express",
+                        "short_desc": "Ecom Express",
+                        "long_desc": "Ecom Express"
+                    },
+                    "categories": [
+                        {
+                            "id": "Express Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "P4D"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "YAARI-19537-20230927-OIYL2X8GZ7",
+                            "parent_item_id": "",
+                            "category_id": "Express Delivery",
+                            "fulfillment_id": "1",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "Ecom Express",
+                                "short_desc": "Ecom Express",
+                                "long_desc": "Ecom Express"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "388.22"
+                            }
+                        },
+                        {
+                            "id": "YAARI-19537-20230927-OIYL2X8GZ7-RTO",
+                            "parent_item_id": "YAARI-19537-20230927-OIYL2X8GZ7",
+                            "category_id": "Express Delivery",
+                            "fulfillment_id": "3",
+                            "descriptor": {
+                                "code": "P2H2P",
+                                "name": "RTO quote",
+                                "short_desc": "RTO quote",
+                                "long_desc": "RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "388.22"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

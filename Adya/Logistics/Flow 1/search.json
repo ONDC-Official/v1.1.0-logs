@@ -1,0 +1,83 @@
+{
+    
+        "context": {
+            "domain": "nic2004:60232",
+            "country": "IND",
+            "city": "std:040",
+            "action": "search",
+            "core_version": "1.1.0",
+            "bap_id": "preprod.ondc.adya.ai",
+            "bap_uri": "https://preprod.ondc.adya.ai/api/v1/ondc/lsp_bap/adya_lsp_bap",
+            "transaction_id": "bf840fa5-2cd1-41b6-8afe-29e59203b515",
+            "message_id": "c21d6e0f-8ae2-43c4-b81f-d8d0149e1247",
+            "timestamp": "2023-09-27T13:17:12.265Z",
+            "ttl": "PT30S"
+        },
+        "message": {
+            "intent": {
+                "category": {
+                    "id": "Standard Delivery"
+                },
+                "provider": {
+                    "time": {
+                        "days": "1,2,3,4,5,6,7",
+                        "schedule": {
+                            "holidays": []
+                        },
+                        "range": {
+                            "start": "0900",
+                            "end": "2350"
+                        }
+                    }
+                },
+                "fulfillment": {
+                    "type": "Prepaid",
+                    "start": {
+                        "location": {
+                            "gps": "28.5279118,77.20889869999999",
+                            "address": {
+                                "area_code": "110017"
+                            }
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "28.5279118,77.20889869999999",
+                            "address": {
+                                "area_code": "110017"
+                            }
+                        }
+                    }
+                },
+                "payment": {
+                    "type": "ON-ORDER"
+                },
+                "@ondc/org/payload_details": {
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 1
+                    },
+                    "category": "Grocery",
+                    "value": {
+                        "currency": "INR",
+                        "value": "66.00"
+                    },
+                    "dangerous_goods": false,
+                    "dimensions": {
+                        "length": {
+                            "unit": "centimeter",
+                            "value": 15
+                        },
+                        "breadth": {
+                            "unit": "centimeter",
+                            "value": 15
+                        },
+                        "height": {
+                            "unit": "centimeter",
+                            "value": 15
+                        }
+                    }
+                }
+            }
+        }
+    }

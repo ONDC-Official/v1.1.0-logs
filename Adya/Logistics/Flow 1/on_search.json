@@ -1,0 +1,89 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:040",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "preprod.ondc.adya.ai",
+        "bap_uri": "https://preprod.ondc.adya.ai/api/v1/ondc/lsp_bap/adya_lsp_bap",
+        "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc/logistics",
+        "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc/logistics/",
+        "transaction_id": "bf840fa5-2cd1-41b6-8afe-29e59203b515",
+        "message_id": "c21d6e0f-8ae2-43c4-b81f-d8d0149e1247",
+        "timestamp": "2023-09-27T13:17:13.051Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "Magicpin",
+                "short_desc": "Magicpin",
+                "long_desc": "Magicpin"
+            },
+            "bpp/fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "3",
+                    "type": "RTO"
+                }
+            ],
+            "bpp/providers": [
+                {
+                    "id": "P1",
+                    "descriptor": {
+                        "name": "Magicpin",
+                        "short_desc": "Magicpin",
+                        "long_desc": "Magicpin"
+                    },
+                    "categories": [
+                        {
+                            "id": "Standard Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT4M"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "I1",
+                            "parent_item_id": "",
+                            "category_id": "Standard Delivery",
+                            "fulfillment_id": "1",
+                            "descriptor": {
+                                "name": "Magicpin",
+                                "code": "P2P",
+                                "short_desc": "Magicpin as a Logistics Provider",
+                                "long_desc": "Magicpin as a Logistics Provider"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "id": "I2",
+                            "parent_item_id": "I1",
+                            "category_id": "Standard Delivery",
+                            "fulfillment_id": "3",
+                            "descriptor": {
+                                "name": "RTO Quote",
+                                "code": "P2P",
+                                "short_desc": "RTO Quote",
+                                "long_desc": "RTO Quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "1"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

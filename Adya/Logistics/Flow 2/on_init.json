@@ -1,0 +1,57 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:040",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "preprod.ondc.adya.ai",
+        "bap_uri": "https://preprod.ondc.adya.ai/api/v1/ondc/lsp_bap/adya_lsp_bap",
+        "bpp_id": "ondcpp.yaarilabs.com",
+        "bpp_uri": "https://ondcpp.yaarilabs.com/api/ondc/preprod",
+        "transaction_id": "8ae4309e-6e34-4939-b2f3-12a3b6973bad",
+        "message_id": "ded74e16-2181-4034-bfc7-8f63f591a3b4",
+        "timestamp": "2023-09-27T11:09:19.331Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "19537"
+            },
+            "items": [
+                {
+                    "id": "YAARI-19537-20230927-OIYL2X8GZ7"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "388.22"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "YAARI-19537-20230927-OIYL2X8GZ7",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "388.22"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "type": "POST-FULFILLMENT",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "AVN Business Solutions Pvt Ltd",
+                        "settlement_bank_account_no": "922020042413467",
+                        "settlement_ifsc_code": "UTIB0000201"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    
+        "context": {
+            "domain": "nic2004:60232",
+            "country": "IND",
+            "city": "std:040",
+            "action": "update",
+            "core_version": "1.1.0",
+            "bap_id": "preprod.ondc.adya.ai",
+            "bap_uri": "https://preprod.ondc.adya.ai/api/v1/ondc/lsp_bap/adya_lsp_bap",
+            "transaction_id": "bf840fa5-2cd1-41b6-8afe-29e59203b515",
+            "message_id": "cfb64c89-f4f6-40e0-842e-6f84fec9913f",
+            "timestamp": "2023-09-27T13:30:37.808Z",
+            "ttl": "PT30S",
+            "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc/logistics",
+            "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc/logistics/"
+        },
+        "message": {
+            "update_target": "fulfillment",
+            "order": {
+                "id": "621bba95-afef-460b-abfc-20c13f7cbbcf",
+                "state": "Accepted",
+                "items": [
+                    {
+                        "id": "I1",
+                        "category_id": "Standard Delivery",
+                        "descriptor": {
+                            "code": "P2P"
+                        }
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "1",
+                        "type": "Prepaid",
+                        "tags": {
+                            "@ondc/org/order_ready_to_ship": "yes"
+                        },
+                        "start": {
+                            "instructions": {
+                                "short_desc": "6482",
+                                "long_desc": "please contact respective person and confirm before taking the parcel",
+                                "additional_desc": {
+                                    "content_type": "text/html",
+                                    "url": "https://adya.start_instructions.html"
+                                }
+                            }
+                        },
+                        "end": {
+                            "instructions": {
+                                "short_desc": "5824",
+                                "long_desc": "please check the information of buyer and deliver the parcel",
+                                "additional_desc": {
+                                    "content_type": "text/html",
+                                    "url": "https://adya.lsp.end_instructions.html"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "updated_at": "2023-09-27T13:30:37.808Z"
+            }
+        }
+    }

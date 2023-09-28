@@ -1,0 +1,83 @@
+{
+    
+        "context": {
+            "domain": "nic2004:60232",
+            "country": "IND",
+            "city": "std:040",
+            "action": "search",
+            "core_version": "1.1.0",
+            "bap_id": "preprod.ondc.adya.ai",
+            "bap_uri": "https://preprod.ondc.adya.ai/api/v1/ondc/lsp_bap/adya_lsp_bap",
+            "transaction_id": "8ae4309e-6e34-4939-b2f3-12a3b6973bad",
+            "message_id": "fd499443-e1e6-4541-baa2-de79785fcd50",
+            "timestamp": "2023-09-27T11:08:19.511Z",
+            "ttl": "PT30S"
+        },
+        "message": {
+            "intent": {
+                "category": {
+                    "id": "Express Delivery"
+                },
+                "provider": {
+                    "time": {
+                        "days": "1,2,3,4,5,6,7",
+                        "schedule": {
+                            "holidays": []
+                        },
+                        "range": {
+                            "start": "0900",
+                            "end": "2350"
+                        }
+                    }
+                },
+                "fulfillment": {
+                    "type": "Prepaid",
+                    "start": {
+                        "location": {
+                            "gps": "28.5279118,77.20889869999999",
+                            "address": {
+                                "area_code": "110017"
+                            }
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "17.4546338,78.4061519",
+                            "address": {
+                                "area_code": "500018"
+                            }
+                        }
+                    }
+                },
+                "payment": {
+                    "type": "ON-ORDER"
+                },
+                "@ondc/org/payload_details": {
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 2
+                    },
+                    "category": "Fashion",
+                    "value": {
+                        "currency": "INR",
+                        "value": "7501.00"
+                    },
+                    "dangerous_goods": false,
+                    "dimensions": {
+                        "length": {
+                            "unit": "centimeter",
+                            "value": 25
+                        },
+                        "breadth": {
+                            "unit": "centimeter",
+                            "value": 35
+                        },
+                        "height": {
+                            "unit": "centimeter",
+                            "value": 20
+                        }
+                    }
+                }
+            }
+        }
+    }

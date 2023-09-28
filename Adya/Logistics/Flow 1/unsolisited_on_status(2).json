@@ -1,0 +1,145 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:040",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "preprod.ondc.adya.ai",
+        "bap_uri": "https://preprod.ondc.adya.ai/api/v1/ondc/lsp_bap/adya_lsp_bap",
+        "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc/logistics",
+        "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc/logistics/",
+        "transaction_id": "bf840fa5-2cd1-41b6-8afe-29e59203b515",
+        "message_id": "5eaeddbc-2f4f-4c94-958e-6292541dd654",
+        "timestamp": "2023-09-27T13:34:50.178Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "621bba95-afef-460b-abfc-20c13f7cbbcf",
+            "state": "In-progress",
+            "provider": {
+                "id": "P1"
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "parent_item_id": "",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Test",
+                "address": {
+                    "name": "Test",
+                    "building": "main road 5 ",
+                    "locality": "3 building",
+                    "city": "New Delhi",
+                    "state": "Delhi",
+                    "country": "INDIA",
+                    "area_code": "110017"
+                },
+                "email": "testbuyer@tmail.com",
+                "phone": "7569316675",
+                "tax_number": "29GGGGG1314R9Z6",
+                "created_at": "2023-09-27T13:18:32.900Z",
+                "updated_at": "2023-09-27T13:18:32.900Z"
+            },
+            "fulfillments": [
+                {
+                    "type": "1",
+                    "start": {
+                        "time": {
+                            "timestamp": "2023-09-27T13:34:50.178Z",
+                            "range": {
+                                "start": "2023-09-27T13:49:50.178Z",
+                                "end": "2023-09-27T14:04:50.178Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-09-27T14:19:50.178Z",
+                                "end": "2023-09-27T14:34:50.178Z"
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up"
+                        }
+                    },
+                    "tracking": true
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "I1",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT"
+            },
+            "created_at": "2023-09-27T13:19:04.088Z",
+            "updated_at": "2023-09-27T13:19:04.088Z",
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "parent_item_id": "",
+                        "category_id": "Grocery",
+                        "descriptor": {
+                            "name": "Fresho Capsicum - Green (Loose), 250 g"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "65.00"
+                        },
+                        "quantity": {
+                            "count": 1,
+                            "measure": {
+                                "unit": "Kilogram",
+                                "value": 0.1
+                            }
+                        }
+                    }
+                ],
+                "provider": {
+                    "descriptor": {
+                        "name": "Saira"
+                    },
+                    "address": {
+                        "name": "Saira",
+                        "street": "sector 5",
+                        "locality": "line 4",
+                        "city": "New Delhi",
+                        "state": "Delhi",
+                        "area_code": "110017"
+                    }
+                },
+                "order": {
+                    "id": "383f8b03-5749-4e28-928d-5b7dfff43169",
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 1
+                    }
+                }
+            }
+        }
+    }
+}
