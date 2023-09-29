@@ -1,0 +1,70 @@
+{
+  "context": {
+    "city": "std:080",
+    "action": "on_issue_status",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-09-25T05:07:57.464Z",
+    "message_id": "93eb7eee-b49d-4c48-afce-ba0380819993",
+    "core_version": "1.0.0",
+    "transaction_id": "e8cb9e4d-d010-471b-8813-8254ad7db8b4"
+  },
+  "message": {
+    "issue": {
+      "id": "d4048a69-435e-436a-b807-57c0481c61cf",
+      "created_at": "2023-09-25T05:05:45.596Z",
+      "updated_at": "2023-09-25T05:07:57.000Z",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "short_desc": "Sorry for the delay. We will make sure this won't happen again",
+            "updated_at": "2023-09-25T05:07:57.000Z",
+            "updated_by": {
+              "org": { "name": "staging.tmbill.com/tp/v1/ondc::nic2004:52110" },
+              "person": { "name": "Eatsy" },
+              "contact": { "email": "sid@tmbill.com", "phone": "7798548540" }
+            },
+            "cascaded_level": 1,
+            "respondent_action": "RESOLVED"
+          },
+          {
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-09-25T05:05:47.093Z",
+            "updated_by": {
+              "org": { "name": "staging.tmbill.com/tp/v1/ondc::nic2004:52110" },
+              "person": { "name": "Eatsy" },
+              "contact": { "email": "sid@tmbill.com", "phone": "7798548540" }
+            },
+            "cascaded_level": 1,
+            "respondent_action": "PROCESSING"
+          }
+        ]
+      },
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "TRANSACTION-COUNTERPARTY-NP",
+          "organization": {
+            "org": { "name": "staging.tmbill.com/tp/v1/ondc::nic2004:52110" },
+            "person": { "name": "Eatsy" },
+            "contact": { "email": "sid@tmbill.com", "phone": "7798548540" }
+          },
+          "resolution_support": {
+            "gros": [
+              {
+                "person": { "name": "Eatsy" },
+                "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ],
+            "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
+            "chat_link": "https://wa.me/7798548540?text="
+          }
+        }
+      }
+    }
+  }
+}
