@@ -1,1 +1,463 @@
-{"context":{"domain":"ONDC:NTS10","country":"IND","city":"*","action":"receiver_recon","core_version":"1.0.0","bap_id":"api.razorpay.com/ondc-rsp-test","bap_uri":"https://api.razorpay.com/ondc-rsp-test","bpp_id":"api2.kiko.link/ondc-seller","bpp_uri":"https://api2.kiko.link/ondc-seller","transaction_id":"53f54e47-85ac-3364-597c-b0d60c1e8418","message_id":"90a084d9-56f3-11ee-9cbe-96667b45aa52","timestamp":"2023-09-19T13:50:59.85Z","ttl":"P2D"},"message":{"orderbook":{"orders":[{"id":"2023-08-18-585020","invoice_no":"200101","collector_app_id":"ondc-staging.paytm.com","receiver_app_id":"api2.kiko.link/ondc-seller","receiver_app_uri":"https://api2.kiko.link/ondc-seller","state":"Completed","settlement_reason_code":"01","created_at":"2023-09-19T13:50:48.172Z","updated_at":"2023-09-19T13:50:59.85Z","payerdetails":{"payer_name":"Test Account","payer_address":"Test Address","payer_account_no":"678000000001","payer_bank_code":"ICIC0006780","payer_virtual_payment_address":""},"withholding_tax_gst":{"currency":"INR","value":"0"},"withholding_tax_tds":{"currency":"INR","value":"0"},"deduction_by_collector":{"currency":"INR","value":"0"},"provider":{"name":{"name":"Kiko Live","code":"Kiko"},"address":"LBS Marg, Mulund West, Mumbai 400080, Maharashtra, India."},"payment":{"uri":"https://api2.kiko.link/ondc-seller","tl_method":"http/get","params":{"transaction_id":"0F38E8B1AD796E8582FFFA2B9DDBF2EC","transaction_status":"PAID","currency":"INR","amount":"681"},"type":"ON-ORDER","status":"PAID","collected_by":"BAP","@ondc/org/collected_by_status":"Assert","@ondc/org/buyer_app_finder_fee_type":"Amount","@ondc/org/buyer_app_finder_fee_amount":"0","@ondc/org/withholding_amount":"0","@ondc/org/withholding_amount_status":"Assert","@ondc/org/return_window":"P7D","@ondc/org/return_window_status":"Assert","@ondc/org/settlement_window":"P7D","@ondc/org/settlement_window_status":"Assert","@ondc/org/settlement_details":[{"settlement_counterparty":"seller-app","settlement_phase":"sale-amount","settlement_amount":"200","settlement_type":"neft","settlement_bank_account_no":"578000000001","settlement_ifsc_code":"ICIC0005780","upi_address":"success@upi","bank_name":"ICICI","branch_name":"Chennai","beneficiary_name":"Receiver App Dummy","beneficiary_address":"Chennai","settlement_status":"PAID","settlement_reference":"ck4qegiuq8biqt0rbheg","settlement_timestamp":"2023-09-19T13:50:58.878Z"},{"settlement_counterparty":"buyer-app","settlement_phase":"sale-amount","settlement_amount":"7","settlement_type":"neft","settlement_bank_account_no":"578000000001","settlement_ifsc_code":"ICIC0005780","upi_address":"success@upi","bank_name":"ICICI","branch_name":"Chennai","beneficiary_name":"Receiver App Dummy","beneficiary_address":"Chennai","settlement_status":"PAID","settlement_reference":"","settlement_timestamp":"2023-09-19T13:50:48.172Z"}],"@ondc/org/settlement_basis":"Collection","@ondc/org/settlement_basis_status":"Assert"},"transaction_id":"53f54e47-85ac-3364-597c-b0d60c1e8418","settlement_id":"MeDUzkdxwyv37o","settlement_reference_no":"ck4qegiuq8biqt0rbheg","recon_status":"01","order_recon_status":"01","message":{"name":"","code":""},"correction":{"issue_initiator_ref":"123456","issue_responder_ref":"1234567","issue_type":"01","issue_subtype":"01","order_id":"2023-09-18-585020","order_amount":{"currency":"INR","value":"207"},"order_correction_amount":{"currency":"INR","value":"207"},"order_state":"Delivered","previous_settled_amount":{"currency":"INR","value":"200"},"settlement_id":"A46518B416AD8A3EC7545DD79BD6F008","settlement_reference_no":"1234554321","prev_settlement_reference_no":["12344321"],"recon_status":"01","diff_amount":{"currency":"INR","value":"7"},"message":{"name":"","code":""}}}]}}}
+{
+  "context": {
+    "domain": "ONDC:NTS10",
+    "country": "IND",
+    "city": "*",
+    "action": "receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "api.razorpay.com/ondc-rsp-test",
+    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+    "bpp_id": "api2.kiko.link/ondc-seller",
+    "bpp_uri": "https://api2.kiko.link/ondc-seller",
+    "transaction_id": "ff79dfc2-df40-fdfb-9db3-cc532723497e",
+    "message_id": "0da5210e-5e12-11ee-835c-8a7d102df4b1",
+    "timestamp": "2023-09-28T15:16:52.635Z",
+    "ttl": "P2D"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "id": "2023-09-20-585022",
+          "invoice_no": "200202",
+          "collector_app_id": "ondc-staging.paytm.com",
+          "receiver_app_id": "api2.kiko.link/ondc-seller",
+          "receiver_app_uri": "https://api2.kiko.link/ondc-seller",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-09-28T15:16:43.352Z",
+          "updated_at": "2023-09-28T15:16:52.635Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "7.33"
+          },
+          "provider": {
+            "name": {
+              "name": "Kiko Live",
+              "code": "Kiko"
+            },
+            "address": "LBS Marg, Mulund West, Mumbai 400080, Maharashtra, India."
+          },
+          "payment": {
+            "uri": "https://api2.kiko.link/ondc-seller",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "CE2CA5F59B378ADC4DD9E0A6B9A4C82E",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "207"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P7D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "199.67",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "success@upi",
+                "bank_name": "ICICI",
+                "branch_name": "Chennai",
+                "beneficiary_name": "Receiver App Dummy",
+                "beneficiary_address": "Chennai",
+                "settlement_status": "PAID",
+                "settlement_reference": "ckaphp2nit2bhg8csv2g",
+                "settlement_timestamp": "2023-09-28T15:16:52.41Z "
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "ff79dfc2-df40-fdfb-9db3-cc532723497e",
+          "settlement_id": "MhnlpaVNBEpRhe",
+          "settlement_reference_no": "ckaphp2nit2bhg8csv2g",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "2023-09-21-585023",
+          "invoice_no": "200203",
+          "collector_app_id": "ondc-staging.paytm.com",
+          "receiver_app_id": "api2.kiko.link/ondc-seller",
+          "receiver_app_uri": "https://api2.kiko.link/ondc-seller",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-09-28T15:16:43.352Z",
+          "updated_at": "2023-09-28T15:16:52.635Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "7.43"
+          },
+          "provider": {
+            "name": {
+              "name": "Kiko Live",
+              "code": "Kiko"
+            },
+            "address": "LBS Marg, Mulund West, Mumbai 400080, Maharashtra, India."
+          },
+          "payment": {
+            "uri": "https://api2.kiko.link/ondc-seller",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "86727DF0CEF4DD91EED131F59F39A5A8",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "210"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P7D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "202.57",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "success@upi",
+                "bank_name": "ICICI",
+                "branch_name": "Chennai",
+                "beneficiary_name": "Receiver App Dummy",
+                "beneficiary_address": "Chennai",
+                "settlement_status": "PAID",
+                "settlement_reference": "ckaphp2nit2bhg8csv2g",
+                "settlement_timestamp": "2023-09-28T15:16:52.41Z "
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "ff79dfc2-df40-fdfb-9db3-cc532723497e",
+          "settlement_id": "MhnlpaVNBEpRhe",
+          "settlement_reference_no": "ckaphp2nit2bhg8csv2g",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "2023-09-22-585033",
+          "invoice_no": "200204",
+          "collector_app_id": "ondc-staging.paytm.com",
+          "receiver_app_id": "api2.kiko.link/ondc-seller",
+          "receiver_app_uri": "https://api2.kiko.link/ondc-seller",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-09-28T15:16:43.352Z",
+          "updated_at": "2023-09-28T15:16:52.635Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "11.68"
+          },
+          "provider": {
+            "name": {
+              "name": "Kiko Live",
+              "code": "Kiko"
+            },
+            "address": "LBS Marg, Mulund West, Mumbai 400080, Maharashtra, India."
+          },
+          "payment": {
+            "uri": "https://api2.kiko.link/ondc-seller",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "A0FFF02AB1F144AB46AE07BB6FE29BE6",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "330"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P7D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "318.32",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "success@upi",
+                "bank_name": "ICICI",
+                "branch_name": "Chennai",
+                "beneficiary_name": "Receiver App Dummy",
+                "beneficiary_address": "Chennai",
+                "settlement_status": "PAID",
+                "settlement_reference": "ckaphp2nit2bhg8csv2g",
+                "settlement_timestamp": "2023-09-28T15:16:52.41Z "
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "ff79dfc2-df40-fdfb-9db3-cc532723497e",
+          "settlement_id": "MhnlpaVNBEpRhe",
+          "settlement_reference_no": "ckaphp2nit2bhg8csv2g",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "2023-09-22-585034",
+          "invoice_no": "200205",
+          "collector_app_id": "ondc-staging.paytm.com",
+          "receiver_app_id": "api2.kiko.link/ondc-seller",
+          "receiver_app_uri": "https://api2.kiko.link/ondc-seller",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-09-28T15:16:43.353Z",
+          "updated_at": "2023-09-28T15:16:52.635Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "15.93"
+          },
+          "provider": {
+            "name": {
+              "name": "Kiko Live",
+              "code": "Kiko"
+            },
+            "address": "LBS Marg, Mulund West, Mumbai 400080, Maharashtra, India."
+          },
+          "payment": {
+            "uri": "https://api2.kiko.link/ondc-seller",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "69313637643922B4F89FB56034E5F945",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "450"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P7D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "434.07",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "success@upi",
+                "bank_name": "ICICI",
+                "branch_name": "Chennai",
+                "beneficiary_name": "Receiver App Dummy",
+                "beneficiary_address": "Chennai",
+                "settlement_status": "PAID",
+                "settlement_reference": "ckaphp2nit2bhg8csv2g",
+                "settlement_timestamp": "2023-09-28T15:16:52.41Z "
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "ff79dfc2-df40-fdfb-9db3-cc532723497e",
+          "settlement_id": "MhnlpaVNBEpRhe",
+          "settlement_reference_no": "ckaphp2nit2bhg8csv2g",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "2023-09-23-585045",
+          "invoice_no": "200207",
+          "collector_app_id": "ondc-staging.paytm.com",
+          "receiver_app_id": "api2.kiko.link/ondc-seller",
+          "receiver_app_uri": "https://api2.kiko.link/ondc-seller",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-09-28T15:16:43.353Z",
+          "updated_at": "2023-09-28T15:16:52.635Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "12.04"
+          },
+          "provider": {
+            "name": {
+              "name": "Kiko Live",
+              "code": "Kiko"
+            },
+            "address": "LBS Marg, Mulund West, Mumbai 400080, Maharashtra, India."
+          },
+          "payment": {
+            "uri": "https://api2.kiko.link/ondc-seller",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "745B5E2B29C63FEF5632F5F5263A8476",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "340"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P7D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "327.96",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "success@upi",
+                "bank_name": "ICICI",
+                "branch_name": "Chennai",
+                "beneficiary_name": "Receiver App Dummy",
+                "beneficiary_address": "Chennai",
+                "settlement_status": "PAID",
+                "settlement_reference": "ckaphp2nit2bhg8csv2g",
+                "settlement_timestamp": "2023-09-28T15:16:52.41Z "
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "ff79dfc2-df40-fdfb-9db3-cc532723497e",
+          "settlement_id": "MhnlpaVNBEpRhe",
+          "settlement_reference_no": "ckaphp2nit2bhg8csv2g",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        }
+      ]
+    }
+  }
+}
