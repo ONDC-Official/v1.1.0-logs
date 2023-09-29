@@ -1,0 +1,104 @@
+{
+    "context": {
+        "transaction_id": "fbd850de-a2ce-4bf8-9780-79bc4ca43893",
+        "country": "IND",
+        "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/paralleldots/",
+        "city": "*",
+        "message_id": "6596edd0-bc40-46d0-b2d1-bba50d55370a",
+        "core_version": "1.0.0",
+        "ttl": "P2D",
+        "bap_id": "rsp.proteantech.in",
+        "domain": "ONDC:NTS10",
+        "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/paralleldots/",
+        "action": "receiver_recon",
+        "bap_uri": "https://rsp.proteantech.in",
+        "timestamp": "2023-09-29T17:14:06.000Z"
+    },
+    "message": {
+        "orderbook": {
+            "orders": [
+                {
+                    "transaction_id": "75d80c5f-318b-4929-9211-6c35114f3c8c",
+                    "withholding_tax_gst": {
+                        "currency": "INR",
+                        "value": "0"
+                    },
+                    "settlement_id": "5af82b3d-4096-4567-ad4c-b22e07fa0cec",
+                    "invoice_no": "0ee2ca19-011c-4a49-adf6-51f8aca7429e",
+                    "created_at": "2023-09-29T17:14:06.000Z",
+                    "recon_status": "01",
+                    "order_recon_status": "01",
+                    "deduction_by_collector": {
+                        "currency": "INR",
+                        "value": "283.2"
+                    },
+                    "receiver_app_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/paral/leldots",
+                    "settlement_reason_code": "01",
+                    "collector_app_id": "cloud-adaptor.proteantech.in/kotak",
+                    "updated_at": "2023-09-29T17:14:06.000Z",
+                    "provider": {
+                        "name": {
+                            "code": "OOGASHOP-ONDC-5",
+                            "name": "SK Store"
+                        },
+                        "address": "Bengaluru"
+                    },
+                    "payerdetails": {
+                        "payer_bank_code": "karq0123455",
+                        "payer_name": "kotak",
+                        "payer_virtual_payment_address": "sri@upi",
+                        "payer_address": "inidan",
+                        "payer_account_no": "3545785328"
+                    },
+                    "payment": {
+                        "collected_by": "BAP",
+                        "params": {
+                            "transaction_id": "d12ee3b5-bc6e-4bf8-b209-4446fda7dd46",
+                            "amount": "8000.0",
+                            "transaction_status": "PAID",
+                            "currency": "INR"
+                        },
+                        "type": "ON-ORDER",
+                        "@ondc/org/settlement_window_status": "Assert",
+                        "@ondc/org/buyer_app_finder_fee_type": "percent",
+                        "@ondc/org/settlement_basis_status": "Assert",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "beneficiary_address": "13th flat at Bahubali Building, Raja mauli street, Bengaluru",
+                                "settlement_status": "PAID",
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "branch_name": "Marathalli",
+                                "beneficiary_name": "PARALLELDOTS PVT LTD ONDC",
+                                "bank_name": "IDFC First Bank",
+                                "settlement_amount": 7716.8,
+                                "settlement_ifsc_code": "IDFB0021001",
+                                "settlement_reference": "IDFB1234123",
+                                "settlement_timestamp": "2023-09-29T17:14:03.123Z",
+                                "settlement_bank_account_no": "10144124257",
+                                "settlement_type": "neft"
+                            }
+                        ],
+                        "@ondc/org/return_window": "0",
+                        "@ondc/org/settlement_window": "P2D",
+                        "@ondc/org/settlement_basis": "Collection",
+                        "@ondc/org/withholding_amount_status": "Assert",
+                        "@ondc/org/return_window_status": "Assert",
+                        "@ondc/org/withholding_amount": "0.0",
+                        "@ondc/org/collected_by_status": "Assert",
+                        "status": "PAID",
+                        "tl_method": "http/get",
+                        "@ondc/org/buyer_app_finder_fee_amount": "3"
+                    },
+                    "id": "61467187-58af-42d7-8446-6964a48fcee2",
+                    "state": "Completed",
+                    "settlement_reference_no": "IDFB1234123",
+                    "withholding_tax_tds": {
+                        "currency": "INR",
+                        "value": "0"
+                    }
+                }
+            ]
+        }
+    }
+}
