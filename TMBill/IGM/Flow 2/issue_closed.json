@@ -9,23 +9,39 @@
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "country": "IND",
-    "timestamp": "2023-09-25T05:10:14.346Z",
-    "message_id": "2639b275-4604-4a91-81bc-693fa238f82c",
+    "timestamp": "2023-10-03T15:16:59.003Z",
+    "message_id": "e1f6e0ea-b20b-465f-9062-e0dbda67000b",
     "core_version": "1.0.0",
-    "transaction_id": "e8cb9e4d-d010-471b-8813-8254ad7db8b4"
+    "transaction_id": "8a83af56-07e2-4e69-90e3-e634b90e0b84"
   },
   "message": {
     "issue": {
-      "id": "d4048a69-435e-436a-b807-57c0481c61cf",
-      "rating": "THUMBS-UP",
-      "status": "CLOSED",
-      "created_at": "2023-09-25T05:05:45.596Z",
-      "updated_at": "2023-09-25T05:10:12.846Z",
+      "id": "0677ba7c-1920-4525-b878-1497a8243d13",
+      "source": {
+        "type": "CONSUMER",
+        "network_participant_id": "buyer-app-preprod.ondc.org"
+      },
+      "status": "OPEN",
+      "category": "FULFILLMENT",
+      "created_at": "2023-10-03T15:16:58.914Z",
+      "issue_type": "ISSUE",
+      "updated_at": "2023-10-03T15:16:58.914Z",
+      "description": {
+        "images": [],
+        "long_desc": "Delay in delivery need refund",
+        "short_desc": "Delay in delivery",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        }
+      },
+      "sub_category": "FLM02",
       "issue_actions": {
+        "respondent_actions": [],
         "complainant_actions": [
           {
             "short_desc": "Complaint created",
-            "updated_at": "2023-09-25T05:05:47.045Z",
+            "updated_at": "2023-10-03T15:16:59.004Z",
             "updated_by": {
               "org": { "name": "buyer-app-preprod.ondc.org::nic2004:52110" },
               "person": { "name": "Rishabhnand Singh" },
@@ -35,22 +51,28 @@
               }
             },
             "complainant_action": "OPEN"
-          },
-          {
-            "short_desc": "Complaint closed",
-            "updated_at": "2023-09-25T05:10:12.846Z",
-            "updated_by": {
-              "org": { "name": "buyer-app-preprod.ondc.org::nic2004:52110" },
-              "person": { "name": "Rishabhnand Singh" },
-              "contact": {
-                "email": "Rishabhnand.singh@ondc.org",
-                "phone": "6239083807"
-              }
-            },
-            "complainant_action": "CLOSE"
           }
         ]
-      }
+      },
+      "order_details": {
+        "id": "2023-10-03-499001",
+        "items": [
+          { "id": "2775201::1155940::EP08", "quantity": 1 },
+          { "id": "2775202::1155941::EP09", "quantity": 2 },
+          { "id": "2775200::1155939::EP07", "quantity": 4 }
+        ],
+        "state": "Completed",
+        "provider_id": "22446688739675",
+        "fulfillments": [
+          { "id": "22446688739675_fulfillment_1", "state": "Pending" }
+        ]
+      },
+      "complainant_info": {
+        "person": { "name": "John Doe" },
+        "contact": { "email": "xifelo7871@fulwark.com", "phone": "9090999900" }
+      },
+      "expected_response_time": { "duration": "PT1H" },
+      "expected_resolution_time": { "duration": "P1D" }
     }
   }
 }
