@@ -1,92 +1,89 @@
 {
     "context": {
-        "bpp_id": "integrations-preprod.channelier.com",
-        "bpp_uri": "https://integrations-preprod.channelier.com/ondc",
         "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:011",
+        "action": "on_issue_status",
         "core_version": "1.0.0",
-        "ttl": "PT30S",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "transaction_id": "e36461fa-a9c0-4be2-a050-c196ad9da239",
-        "message_id": "2faaa0cb-5c5f-46fe-b5ba-f6733beab06d",
-        "country": "IND",
-        "city": "std:080",
-        "timestamp": "2023-09-19T08:35:13.193Z",
-        "action": "on_issue_status"
+        "bpp_id": "ondc.uat.medpay.in",
+        "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+        "transaction_id": "1c0713f7-ff50-4144-a4e7-d2e229fef023",
+        "message_id": "182073406416991406379642465470624868852",
+        "timestamp": "2023-09-28T05:57:41.615Z"
     },
     "message": {
         "issue": {
-            "id": "94",
+            "id": "103",
             "issue_actions": {
                 "respondent_actions": [
                     {
                         "respondent_action": "PROCESSING",
+                        "updated_at": "2023-09-28T05:33:18.400Z",
                         "updated_by": {
                             "org": {
-                                "name": "integrations-preprod.channelier.com::nic2004:52110"
+                                "name": "ondc.uat.medpay.in::nic2004:52110"
                             },
                             "contact": {
-                                "phone": "9999999999",
-                                "email": "respondent@channelier.com"
+                                "phone": "8861545034",
+                                "email": "arun@medpay.in"
                             },
                             "person": {
-                                "name": "John discovery"
+                                "name": "Arun"
                             }
                         },
-                        "short_desc": "Complaint is being processed",
                         "cascaded_level": 1,
-                        "updated_at": "2023-09-19T08:19:25.765Z"
+                        "short_desc": "complain is being looked into it"
                     },
                     {
                         "respondent_action": "RESOLVED",
-                        "short_desc": "the amount will be refund",
+                        "updated_at": "2023-09-28T05:57:41.615Z",
                         "updated_by": {
                             "org": {
-                                "name": "integrations-preprod.channelier.com::undefined"
+                                "name": "ondc.uat.medpay.in::nic2004:52110"
                             },
                             "contact": {
-                                "phone": "9738200900",
-                                "email": "online@cropino.com"
+                                "phone": "8861545034",
+                                "email": "arun@medpay.in"
                             },
                             "person": {
-                                "name": "Cropino "
+                                "name": "Arun"
                             }
                         },
                         "cascaded_level": 1,
-                        "updated_at": "2023-09-19T08:35:13.192Z"
+                        "short_desc": "Replacement"
                     }
                 ]
             },
-            "created_at": "2023-09-19T08:19:25.508Z",
-            "updated_at": "2023-09-19T08:35:13.192Z",
             "resolution_provider": {
                 "respondent_info": {
                     "type": "TRANSACTION-COUNTERPARTY-NP",
                     "organization": {
                         "org": {
-                            "name": "integrations-preprod.channelier.com::undefined"
+                            "name": "ondc.uat.medpay.in::nic2004:52110"
                         },
                         "contact": {
-                            "phone": "9738200900",
-                            "email": "online@cropino.com"
+                            "phone": "8861545034",
+                            "email": "arun@medpay.in"
                         },
                         "person": {
-                            "name": "Cropino "
+                            "name": "Arun"
                         }
                     },
                     "resolution_support": {
                         "contact": {
-                            "phone": "9738200900",
-                            "email": "online@cropino.com"
+                            "phone": "8861545034",
+                            "email": "arun@medpay.in"
                         },
                         "gros": [
                             {
-                                "contact": {
-                                    "phone": "9999999999",
-                                    "email": "respondent@channelier.com"
-                                },
                                 "person": {
-                                    "name": "John discovery"
+                                    "name": "Arun"
+                                },
+                                "contact": {
+                                    "phone": "8861545034",
+                                    "email": "arun@medpay.in"
                                 },
                                 "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
                             }
@@ -95,12 +92,12 @@
                 }
             },
             "resolution": {
-                "action_triggered": "REFUND",
-                "resolution_action": "RESOLVE",
-                "short_desc": "the amount will be refund",
-                "long_desc": "the amount will be refund",
-                "refund_amount": "792"
-            }
+                "action_triggered": "REPLACEMENT",
+                "short_desc": "Replacement",
+                "long_desc": "Replacement will be intitated"
+            },
+            "created_at": "2023-09-28T05:33:16.771Z",
+            "updated_at": "2023-09-28T05:57:41.615Z"
         }
     }
 }
