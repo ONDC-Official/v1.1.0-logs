@@ -1,93 +1,110 @@
 {
-    "context": {
-        "domain": "nic2004:60232",
-        "country": "IND",
-        "city": "std:080",
-        "action": "update",
-        "core_version": "1.1.0",
-        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
-        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
-        "bpp_id": "my.ithinklogistics.com/ondc/preprod",
-        "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
-        "transaction_id": "135fa7aa-08f2-59ab-bc2a-798f25fc0f7c",
-        "message_id": "83b513ae-d894-4b95-9f4a-371a90ee8cc2",
-        "timestamp": "2023-08-16T07:48:03.937Z",
-        "ttl": "PT30S"
+    "context":{
+      "domain":"nic2004:60232",
+      "country":"IND",
+      "city":"std:080",
+      "action":"update",
+      "core_version":"1.1.0",
+      "bap_id":"preprod-ondc.viranc.com/p/v1/store",
+      "bap_uri":"https://preprod-ondc.viranc.com/p/v1/store/bapl",
+      "bpp_id":"my.ithinklogistics.com/ondc/preprod",
+      "bpp_uri":"https://my.ithinklogistics.com/ondc/preprod",
+      "transaction_id":"d1e5cf26-56d7-5e98-8780-dc28868e7773",
+      "message_id":"cb25e74d-2ba9-48b1-b143-4017ce25d59a",
+      "timestamp":"2023-09-22T04:43:13.668Z",
+      "ttl":"PT30S"
     },
-    "message": {
-        "update_target": "fulfillment",
-        "order": {
-            "id": "60cf67a2-eb09-4f62-a150-da9a0a8a700f",
-            "state": "Created",
-            "items": [{
-                    "id": "18I1",
-                    "category_id": "Next Day Delivery",
-                    "descriptor": {
-                        "code": "P2H2P"
-                    }
-                }
-            ],
-            "fulfillments": [{
-                    "id": "1",
-                    "type": "Prepaid",
-                    "tags": {
-                        "@ondc/org/order_ready_to_ship": "yes"
-                    },
-                    "end": {
-                        "instructions": {
-                            "name": "Status for drop",
-                            "long_desc": "Delivery Confirmation Code",
-                            "short_desc": "4944248"
-                        }
-                    }
-                }
-            ],
-            "payment": {
-                "@ondc/org/collection_amount": "1505.82",
-                "collected_by": "BAP",
-                "type": "POST-FULFILLMENT"
+    "message":{
+      "update_target":"fulfillment",
+      "order":{
+        "id":"9db2f32b-3379-4997-a68e-41bfea9eb6b6",
+        "state":"Created",
+        "items":[
+          {
+            "id":"3I1",
+            "category_id":"Next Day Delivery",
+            "descriptor":{
+              "code":"P2H2P"
+            }
+          }],
+        "fulfillments":[
+          {
+            "id":"1",
+            "type":"Prepaid",
+            "tags":{
+              "@ondc/org/order_ready_to_ship":"yes"
             },
-            "@ondc/org/linked_order": {
-                "items": [{
-                        "category_id": "Grocery",
-                        "descriptor": {
-                            "name": "Pillsbury Chakki Fresh Whole Wheat Atta, 1 kg"
-                        },
-                        "quantity": {
-                            "count": 1,
-                            "measure": {
-                                "unit": "Kilogram",
-                                "value": 1
-                            }
-                        },
-                        "price": {
-                            "currency": "INR",
-                            "value": "79.00"
-                        }
-                    }
-                ],
-                "provider": {
-                    "descriptor": {
-                        "name": "ONDC Test Seller Store"
-                    },
-                    "address": {
-                        "name": "ONDC Test Seller Store",
-                        "street": "Kasturba Rd",
-                        "locality": "Kasturba Rd",
-                        "city": "Bengaluru",
-                        "state": "Karnataka",
-                        "area_code": "560001"
-                    }
-                },
-                "order": {
-                    "id": "2023-08-16-837471",
-                    "weight": {
-                        "unit": "Kilogram",
-                        "value": 1
-                    }
+            "end":{
+              "instructions":{
+                "name":"Status for drop",
+                "long_desc":"Delivery Confirmation Code",
+                "short_desc":"9731598"
+              }
+            }
+          }],
+        "payment":{
+          "@ondc/org/collection_amount":"1174.43",
+          "collected_by":"BAP",
+          "type":"POST-FULFILLMENT"
+        },
+        "@ondc/org/linked_order":{
+          "items":[
+            {
+              "category_id":"Grocery",
+              "descriptor":{
+                "name":"Aashirvaad Shudh Chakki Atta, 10kg Pack"
+              },
+              "quantity":{
+                "count":1,
+                "measure":{
+                  "unit":"Kilogram",
+                  "value":10
                 }
+              },
+              "price":{
+                "currency":"INR",
+                "value":"437.00"
+              }
             },
-            "updated_at": "2023-08-16T07:48:03.937Z"
-        }
+            {
+              "category_id":"Grocery",
+              "descriptor":{
+                "name":"Pillsbury Chakki Fresh Whole Wheat Atta, 1 kg"
+              },
+              "quantity":{
+                "count":1,
+                "measure":{
+                  "unit":"Kilogram",
+                  "value":1
+                }
+              },
+              "price":{
+                "currency":"INR",
+                "value":"79.00"
+              }
+            }],
+          "provider":{
+            "descriptor":{
+              "name":"ONDC Test Seller Store"
+            },
+            "address":{
+              "name":"ONDC Test Seller Store",
+              "street":"Kasturba Rd",
+              "locality":"Kasturba Rd",
+              "city":"Bengaluru",
+              "state":"Karnataka",
+              "area_code":"560001"
+            }
+          },
+          "order":{
+            "id":"2023-09-22-941902",
+            "weight":{
+              "unit":"Kilogram",
+              "value":11
+            }
+          }
+        },
+        "updated_at":"2023-09-22T04:43:13.668Z"
+      }
     }
 }
