@@ -1,0 +1,117 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "3f5821ac-ed53-41d8-8139-6b2735fe19e2",
+        "message_id": "edfc90fc-1219-432e-ba6a-211b8e096f92",
+        "timestamp": "2023-09-22T13:24:29.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "18th_stores"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "ROADSTER-MEN-NAVY-S"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "Reyton18TH10005"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Loadshare",
+                    "tracking": false,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "P10D",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1654"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "ROADSTER-MEN-NAVY-S",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Roadster 18TH Men Navy Blue Solid Denim Jacket-S",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "655"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "994"
+                                },
+                                "maximum": {
+                                    "count": "994"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "655"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Reyton18TH10005",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "18TH Men's Reyton Navy Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "999"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "997"
+                                },
+                                "maximum": {
+                                    "count": "997"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "999"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "PT30S"
+            }
+        }
+    }
+}
