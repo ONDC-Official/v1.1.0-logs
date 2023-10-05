@@ -1,0 +1,182 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:022",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://api2.kiko.link/ondc-seller",
+        "transaction_id": "f89cb504-1027-444b-a34d-d58d20bad8f1",
+        "message_id": "e522b8f7-6d3a-4ec8-8cdb-9d1f992a2c9c",
+        "timestamp": "2023-10-05T03:51:23.529Z",
+        "bpp_id": "api2.kiko.link/ondc-seller",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-10-05-509214",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "varun",
+                    "locality": "615, Avior Corporate Park, P&T Colony LBS Road Mulund West 400080 Opposite Indian Oil Petrol Pump",
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "IND",
+                    "area_code": "400080"
+                },
+                "phone": "7047472739",
+                "name": "varun",
+                "email": "varun@mailinator.com",
+                "created_at": "2023-10-05T03:51:09.524Z",
+                "updated_at": "2023-10-05T03:51:09.524Z"
+            },
+            "items": [
+                {
+                    "id": "65140576b5cf6f8afaed8b07",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "fulfillment-648170d3ffeacc1f96700ac6"
+                },
+                {
+                    "id": "65140695b5cf6f8afaed8b12",
+                    "quantity": {
+                        "count": 1
+                    },
+                    "fulfillment_id": "fulfillment-648170d3ffeacc1f96700ac6"
+                }
+            ],
+            "provider": {
+                "id": "648170d3ffeacc1f96700ac6",
+                "locations": [
+                    {
+                        "id": "location-648170d3ffeacc1f96700ac6"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "fulfillment-648170d3ffeacc1f96700ac6",
+                    "tracking": true,
+                    "end": {
+                        "contact": {
+                            "email": "varun@mailinator.com",
+                            "phone": "7047472739"
+                        },
+                        "person": {
+                            "name": "varun"
+                        },
+                        "location": {
+                            "gps": "19.170492, 72.9536110000001",
+                            "address": {
+                                "name": "varun",
+                                "building": "",
+                                "locality": "615, Avior Corporate Park, P&T Colony LBS Road Mulund West 400080 Opposite Indian Oil Petrol Pump",
+                                "city": "Mumbai",
+                                "state": "Maharashtra",
+                                "country": "IND",
+                                "area_code": "400080"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "778.62",
+                    "currency": "INR",
+                    "transaction_id": "f89cb504-1027-444b-a34d-d58d20bad8f1"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "beneficiary_name": "Smooth Tag Technologies Pvt. Ltd.",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "50200058582942",
+                        "settlement_ifsc_code": "HDFC0000015",
+                        "settlement_phase": "sale-amount",
+                        "settlement_status": "NOT-PAID",
+                        "bank_name": "HDFC BANK LTD ",
+                        "branch_name": "MUMBAI - MULUND (WEST)"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "778.62"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "65140576b5cf6f8afaed8b07",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "arhar dal",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "200.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "200.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "65140695b5cf6f8afaed8b12",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "aashriwaad dal",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "500.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "500.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "fulfillment-648170d3ffeacc1f96700ac6",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "52.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "fulfillment-648170d3ffeacc1f96700ac6",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "26.62"
+                        }
+                    }
+                ],
+                "ttl": "PT6H"
+            },
+            "created_at": "2023-10-05T03:51:23.529Z",
+            "updated_at": "2023-10-05T03:51:23.529Z"
+        }
+    }
+}
