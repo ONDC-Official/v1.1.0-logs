@@ -1,0 +1,158 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_select",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "owner.waayu.app/ondc",
+    "bpp_uri": "owner.waayu.app/ondcpreprod",
+    "transaction_id": "7015cc52-b1ee-4d0d-983c-43a1ffedcc4e",
+    "message_id": "bbf42a05-c006-4d77-b7bf-d584493864ae",
+    "city": "std:022",
+    "country": "IND",
+    "timestamp": "2023-10-05T12:07:56.730Z"
+  },
+  "message": {
+    "order": {
+      "provider": { "id": "1", "locations": [{ "id": "L1" }] },
+      "items": [
+        { "fulfillment_id": "F1", "id": "34324" },
+        { "fulfillment_id": "F1", "id": "34115" },
+        { "fulfillment_id": "F1", "id": "34325" }
+      ],
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "Surti",
+          "tracking": true,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT90M",
+          "state": { "descriptor": { "code": "Serviceable" } }
+        }
+      ],
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "34324",
+            "@ondc/org/item_quantity": { "count": 2 },
+            "title": "Veg. Pizza",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "286" },
+            "item": {
+              "quantity": {
+                "available": { "count": "98" },
+                "maximum": { "count": "99" }
+              },
+              "price": { "currency": "INR", "value": "143" }
+            }
+          },
+          {
+            "@ondc/org/item_id": "34115",
+            "title": "Veg Cheese Pizza",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "162" },
+            "@ondc/org/item_quantity": { "count": 1 },
+            "item": {
+              "quantity": {
+                "available": { "count": "98" },
+                "maximum": { "count": "99" }
+              },
+              "price": { "currency": "INR", "value": "162" }
+            }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Paneer Pizza",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "648" },
+            "@ondc/org/item_quantity": { "count": 4 },
+            "item": {
+              "quantity": {
+                "available": { "count": "98" },
+                "maximum": { "count": "99" }
+              },
+              "price": { "currency": "INR", "value": "162" }
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": { "currency": "INR", "value": "50" }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": { "currency": "INR", "value": "0" }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": { "currency": "INR", "value": "54.8" }
+          }
+        ],
+        "price": { "currency": "INR", "value": "1200.80" },
+        "ttl": "P1D"
+      }
+    }
+  },
+  "gateway_response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "on_select",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "owner.waayu.app/ondc",
+      "bpp_uri": "owner.waayu.app/ondcpreprod",
+      "transaction_id": "7015cc52-b1ee-4d0d-983c-43a1ffedcc4e",
+      "message_id": "bbf42a05-c006-4d77-b7bf-d584493864ae",
+      "city": "std:022",
+      "country": "IND",
+      "timestamp": "2023-10-05T12:07:56.730Z"
+    },
+    "message": { "ack": { "status": "ACK" } }
+  },
+  "generated_signature": "Signature keyId=\"owner.waayu.app/ondc|656|ed25519\",algorithm=\"ed25519\",created=\"1696507675\",expires=\"1696511275\",headers=\"(created) (expires) digest\",signature=\"Za1tnIMdV4j24C4QvBqkAmBYYMgD6Bumqku4IfWY+gXi9f4os8h98cruMxJX04aTdwWtjtkvBaXrWhgp/KbOAg==\"",
+  "bap_payload": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:022",
+      "action": "select",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://owner.waayu.app/ondcpreprod/",
+      "transaction_id": "7015cc52-b1ee-4d0d-983c-43a1ffedcc4e",
+      "message_id": "bbf42a05-c006-4d77-b7bf-d584493864ae",
+      "timestamp": "2023-10-05T12:07:54.730Z",
+      "bpp_id": "owner.waayu.app/ondcpreprod",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "items": [
+          { "id": "34324", "quantity": { "count": 2 }, "location_id": "L1" },
+          { "id": "34115", "quantity": { "count": 1 }, "location_id": "L1" },
+          { "id": "34325", "quantity": { "count": 4 }, "location_id": "L1" }
+        ],
+        "provider": { "id": "1", "locations": [{ "id": "L1" }] },
+        "fulfillments": [
+          {
+            "end": {
+              "location": {
+                "gps": "18.965586, 72.816646",
+                "address": { "area_code": "400007" }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

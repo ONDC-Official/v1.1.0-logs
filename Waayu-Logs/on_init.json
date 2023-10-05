@@ -1,0 +1,292 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_init",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "owner.waayu.app/ondcpreprod",
+    "bpp_uri": "https://owner.waayu.app/ondcpreprod/",
+    "transaction_id": "7015cc52-b1ee-4d0d-983c-43a1ffedcc4e",
+    "message_id": "f00670ff-cabe-4e6e-b02f-14fc3738672b",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-10-05T12:08:46.094Z"
+  },
+  "message": {
+    "order": {
+      "provider": { "id": "1", "locations": [{ "id": "L1" }] },
+      "provider_location": { "id": "L1" },
+      "items": [
+        { "id": "34324", "fulfillment_id": "F1", "quantity": { "count": 2 } },
+        { "id": "34115", "fulfillment_id": "F1", "quantity": { "count": 1 } },
+        { "id": "34325", "fulfillment_id": "F1", "quantity": { "count": 4 } }
+      ],
+      "billing": {
+        "name": "Pankaj Dhote",
+        "address": {
+          "name": "Pankaj Dhote",
+          "building": "Pankaj Dhote",
+          "locality": "Tardeo",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400007"
+        },
+        "email": "pankaj.dhote@desteksolutions.com",
+        "phone": "9579269452",
+        "created_at": "2023-10-05T12:08:44.094Z",
+        "updated_at": "2023-10-05T12:08:44.094Z"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "tracking": true,
+          "end": {
+            "location": {
+              "gps": "18.965586, 72.816646",
+              "address": {
+                "name": "Pankaj Dhote",
+                "building": "",
+                "locality": "Tardeo",
+                "city": "Mumbai",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400007"
+              }
+            },
+            "contact": { "phone": "9579269452" }
+          }
+        }
+      ],
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "34324",
+            "@ondc/org/item_quantity": { "count": 2 },
+            "title": "Veg. Pizza",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "286" },
+            "item": { "price": { "currency": "INR", "value": "143" } }
+          },
+          {
+            "@ondc/org/item_id": "34115",
+            "title": "Veg Cheese Pizza",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "162" },
+            "@ondc/org/item_quantity": { "count": 1 },
+            "item": { "price": { "currency": "INR", "value": "162" } }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Paneer Pizza",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "648" },
+            "@ondc/org/item_quantity": { "count": 4 },
+            "item": { "price": { "currency": "INR", "value": "162" } }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": { "currency": "INR", "value": "50" }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": { "currency": "INR", "value": "0" }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": { "currency": "INR", "value": "54.8" }
+          }
+        ],
+        "price": { "currency": "INR", "value": "1200.8" },
+        "ttl": "P1D"
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "uri": "https://snp.com/pg",
+        "status": "PAID",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3",
+        "@ondc/org/settlement_basis": "delivery",
+        "@ondc/org/settlement_window": "P1D",
+        "@ondc/org/withholding_amount": "10.00",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "beneficiary_name": "Pankaj",
+            "upi_address": "gft@oksbi",
+            "settlement_bank_account_no": "3308693014",
+            "settlement_ifsc_code": "ICICI23D",
+            "bank_name": "ICICI",
+            "branch_name": "Pune"
+          }
+        ]
+      },
+      "cancellation_terms": [
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Pending",
+              "short_desc": "002,003,005,011,012,013,014,015,018,019,020"
+            }
+          },
+          "refund_eligible": true,
+          "reason_required": false,
+          "cancellation_fee": {
+            "percentage": "0.00",
+            "amount": { "currency": "INR", "value": "0.00" }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Packed",
+              "short_desc": "002,003,005,011,012,013,014,015,018,019,020"
+            }
+          },
+          "refund_eligible": true,
+          "reason_required": false,
+          "cancellation_fee": {
+            "percentage": "10.00",
+            "amount": { "currency": "INR", "value": "50.00" }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "short_desc": "002,003,005,011,012,013,014,015,018,019,020"
+            }
+          },
+          "refund_eligible": true,
+          "reason_required": false,
+          "cancellation_fee": {
+            "percentage": "10.00",
+            "amount": { "currency": "INR", "value": "50.00" }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Out-for-delivery",
+              "short_desc": "002,003,005,011,012,013,014,015,018,019,020"
+            }
+          },
+          "refund_eligible": true,
+          "reason_required": false,
+          "cancellation_fee": {
+            "percentage": "20.00",
+            "amount": { "currency": "INR", "value": "100.00" }
+          }
+        }
+      ],
+      "tags": [
+        {
+          "code": "bpp-terms",
+          "list": [
+            { "code": "max_liability", "value": "2" },
+            { "code": "max_liability_cap", "value": "10000.00" },
+            { "code": "mandatory_arbitration", "value": false },
+            { "code": "court_jurisdiction", "value": "Bengaluru" },
+            { "code": "delay_interest", "value": "1000.00" },
+            { "code": "tax_number", "value": "GSTNUMSELLER" }
+          ]
+        }
+      ]
+    }
+  },
+  "gateway_response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "action": "on_init",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_id": "owner.waayu.app/ondcpreprod",
+      "bpp_uri": "https://owner.waayu.app/ondcpreprod/",
+      "transaction_id": "7015cc52-b1ee-4d0d-983c-43a1ffedcc4e",
+      "message_id": "f00670ff-cabe-4e6e-b02f-14fc3738672b",
+      "city": "std:080",
+      "country": "IND",
+      "timestamp": "2023-10-05T12:08:46.094Z"
+    },
+    "message": { "ack": { "status": "ACK" } }
+  },
+  "generated_signature": "Signature keyId=\"owner.waayu.app/ondc|656|ed25519\",algorithm=\"ed25519\",created=\"1696507726\",expires=\"1696511326\",headers=\"(created) (expires) digest\",signature=\"n6Nu66Vop8RoduL9nS/3gdN8GaOTTy6W2qwtwmTIDVGaWQ6Xcg/nv3/i7PXv645JzOuW/KNREZdBGU5zuCeQDQ==\"",
+  "bap_payload": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "init",
+      "core_version": "1.1.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://owner.waayu.app/ondcpreprod/",
+      "transaction_id": "7015cc52-b1ee-4d0d-983c-43a1ffedcc4e",
+      "message_id": "f00670ff-cabe-4e6e-b02f-14fc3738672b",
+      "timestamp": "2023-10-05T12:08:44.094Z",
+      "bpp_id": "owner.waayu.app/ondcpreprod",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order": {
+        "provider": { "id": "1", "locations": [{ "id": "L1" }] },
+        "items": [
+          { "id": "34324", "quantity": { "count": 2 }, "fulfillment_id": "F1" },
+          { "id": "34115", "quantity": { "count": 1 }, "fulfillment_id": "F1" },
+          { "id": "34325", "quantity": { "count": 4 }, "fulfillment_id": "F1" }
+        ],
+        "billing": {
+          "address": {
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "IND",
+            "area_code": "400007",
+            "locality": "Tardeo",
+            "name": "Pankaj Dhote"
+          },
+          "phone": "9579269452",
+          "name": "Pankaj Dhote",
+          "email": "pankaj.dhote@desteksolutions.com",
+          "created_at": "2023-10-05T12:08:44.094Z",
+          "updated_at": "2023-10-05T12:08:44.094Z"
+        },
+        "fulfillments": [
+          {
+            "id": "F1",
+            "type": "Delivery",
+            "end": {
+              "contact": {
+                "email": "pankaj.dhote@desteksolutions.com",
+                "phone": "9579269452"
+              },
+              "location": {
+                "gps": "18.965586, 72.816646",
+                "address": {
+                  "name": "Pankaj Dhote",
+                  "building": "",
+                  "locality": "Tardeo",
+                  "city": "Mumbai",
+                  "state": "Maharashtra",
+                  "country": "IND",
+                  "area_code": "400007"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

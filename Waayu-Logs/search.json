@@ -1,0 +1,28 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:022",
+    "action": "search",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "transaction_id": "7015cc52-b1ee-4d0d-983c-43a1ffedcc4e",
+    "message_id": "c76e7b30-c586-4198-8c35-268eba55b0c4",
+    "timestamp": "2023-10-05T12:06:22.151Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "item": { "descriptor": { "name": "pizza" } },
+      "fulfillment": {
+        "type": "Delivery",
+        "end": { "location": { "gps": "18.965586,72.816646" } }
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+      }
+    }
+  }
+}

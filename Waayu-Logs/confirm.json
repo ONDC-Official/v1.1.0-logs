@@ -1,0 +1,145 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://owner.waayu.app/ondcpreprod/",
+    "transaction_id": "7015cc52-b1ee-4d0d-983c-43a1ffedcc4e",
+    "message_id": "44c53ad2-acdc-41e0-8a50-c6171775c12f",
+    "timestamp": "2023-10-05T12:09:31.967Z",
+    "bpp_id": "owner.waayu.app/ondcpreprod",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-10-05-884169",
+      "state": "Created",
+      "billing": {
+        "address": {
+          "name": "Pankaj Dhote",
+          "building": "Pankaj Dhote",
+          "locality": "Tardeo",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400007"
+        },
+        "phone": "9579269452",
+        "name": "Pankaj Dhote",
+        "email": "pankaj.dhote@desteksolutions.com",
+        "created_at": "2023-10-05T12:08:44.094Z",
+        "updated_at": "2023-10-05T12:08:44.094Z"
+      },
+      "items": [
+        { "id": "34324", "quantity": { "count": 2 }, "fulfillment_id": "F1" },
+        { "id": "34115", "quantity": { "count": 1 }, "fulfillment_id": "F1" },
+        { "id": "34325", "quantity": { "count": 4 }, "fulfillment_id": "F1" }
+      ],
+      "provider": { "id": "1", "locations": [{ "id": "L1" }] },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "tracking": true,
+          "end": {
+            "contact": { "phone": "9579269452" },
+            "person": { "name": "Pankaj Dhote" },
+            "location": {
+              "gps": "18.965586, 72.816646",
+              "address": {
+                "name": "Pankaj Dhote",
+                "building": "",
+                "locality": "Tardeo",
+                "city": "Mumbai",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400007"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "1200.8",
+          "currency": "INR",
+          "transaction_id": "7015cc52-b1ee-4d0d-983c-43a1ffedcc4e"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "upi",
+            "beneficiary_name": "Pankaj",
+            "upi_address": "gft@oksbi",
+            "settlement_bank_account_no": "3308693014",
+            "settlement_ifsc_code": "ICICI23D",
+            "bank_name": "ICICI",
+            "branch_name": "Pune"
+          }
+        ]
+      },
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "34324",
+            "@ondc/org/item_quantity": { "count": 2 },
+            "title": "Veg. Pizza",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "286" },
+            "item": { "price": { "currency": "INR", "value": "143" } }
+          },
+          {
+            "@ondc/org/item_id": "34115",
+            "title": "Veg Cheese Pizza",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "162" },
+            "@ondc/org/item_quantity": { "count": 1 },
+            "item": { "price": { "currency": "INR", "value": "162" } }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Paneer Pizza",
+            "@ondc/org/title_type": "item",
+            "price": { "currency": "INR", "value": "648" },
+            "@ondc/org/item_quantity": { "count": 4 },
+            "item": { "price": { "currency": "INR", "value": "162" } }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": { "currency": "INR", "value": "50" }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": { "currency": "INR", "value": "0" }
+          },
+          {
+            "@ondc/org/item_id": "34325",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": { "currency": "INR", "value": "54.8" }
+          }
+        ],
+        "price": { "currency": "INR", "value": "1200.8" },
+        "ttl": "P1D"
+      },
+      "created_at": "2023-10-05T12:09:31.967Z",
+      "updated_at": "2023-10-05T12:09:31.967Z"
+    }
+  }
+}
