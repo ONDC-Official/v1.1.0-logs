@@ -1,0 +1,197 @@
+{
+  "context": {
+    "domain": "ONDC:NTS10",
+    "country": "IND",
+    "city": "*",
+    "action": "receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "api.razorpay.com/ondc-rsp-test",
+    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+    "bpp_id": "ondc.uat.medpay.in",
+    "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+    "transaction_id": "0863cf34-4b50-46f0-80e8-d007fb498d12",
+    "message_id": "5fa76962-9f5e-4600-b6dc-d6104ca17506",
+    "timestamp": "2023-09-20T13:16:01.900Z",
+    "ttl": "P2D"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "id": "e6718245-f9a8-41f0-b76e-9a0bb28218ea",
+          "invoice_no": "d65a1d73-513a-4301-852e-8ae45961b372",
+          "collector_app_id": "shopping-api-testing.phonepe.com",
+          "receiver_app_id": "ondc.uat.medpay.in",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-09-16T08:46:41.466Z",
+          "updated_at": "2023-09-20T13:15:59.895Z",
+          "payerdetails": {
+            "payer_name": "Mohan",
+            "payer_address": "Bengaluru",
+            "payer_account_no": "28736827637698",
+            "payer_bank_code": "ICIC0006765",
+            "payer_virtual_payment_address": "8787876746@upi"
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "45.32"
+          },
+          "provider": {
+            "name": {
+              "name": "Amit Medical",
+              "code": "OG_125"
+            },
+            "address": "B1-H6, Mohan Estate, Delhi - 110044"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "ea81fa0d-6375-4d47-8811-73ae3aa0acb5",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "844"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": 798.68,
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "8346984928720",
+                "settlement_ifsc_code": "ICIC0007865",
+                "upi_address": "7876564763@upi",
+                "bank_name": "ICICI Bank",
+                "branch_name": "Mohan Estate",
+                "beneficiary_name": "Amit",
+                "beneficiary_address": "Mohan Estate",
+                "settlement_status": "PAID",
+                "settlement_reference": "c2dc1251-cfd1-4e61-a8fd-1136a8a6063d",
+                "settlement_timestamp": "2023-09-20T13:15:59.895Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "1cb012b3-391a-4dc1-8f73-639bd4634ff8",
+          "settlement_id": "d1d7c198-3123-472c-9095-9bbf4db17d2e",
+          "settlement_reference_no": "c2dc1251-cfd1-4e61-a8fd-1136a8a6063d",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "3c6be73e-4659-47ed-abf9-a69786a9700c",
+          "invoice_no": "a6f29b1e-0a68-4dea-8ab4-75547fb00d7e",
+          "collector_app_id": "shopping-api-testing.phonepe.com",
+          "receiver_app_id": "ondc.uat.medpay.in",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-09-16T09:12:23.746Z",
+          "updated_at": "2023-09-20T13:15:59.895Z",
+          "payerdetails": {
+            "payer_name": "Mohan",
+            "payer_address": "Bengaluru",
+            "payer_account_no": "28736827637698",
+            "payer_bank_code": "ICIC0006765",
+            "payer_virtual_payment_address": "8787876746@upi"
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.22"
+          },
+          "provider": {
+            "name": {
+              "name": "Amit Medical",
+              "code": "OG_125"
+            },
+            "address": "B1-H6, Mohan Estate, Delhi - 110044"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "4eefe30e-a687-444b-8593-7f85fbdd6766",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "674"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": 672.78,
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "8346984928720",
+                "settlement_ifsc_code": "ICIC0007865",
+                "upi_address": "7876564763@upi",
+                "bank_name": "ICICI Bank",
+                "branch_name": "Mohan Estate",
+                "beneficiary_name": "Amit",
+                "beneficiary_address": "Mohan Estate",
+                "settlement_status": "PAID",
+                "settlement_reference": "47bfcac7-8418-434e-a304-15d17f6eabc7",
+                "settlement_timestamp": "2023-09-20T13:15:59.895Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "1cb012b3-391a-4dc1-8f73-639bd4634ff8",
+          "settlement_id": "11e43aa8-1b4f-4b80-99ff-7dd857248cb0",
+          "settlement_reference_no": "47bfcac7-8418-434e-a304-15d17f6eabc7",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        }
+      ]
+    }
+  }
+}

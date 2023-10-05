@@ -1,0 +1,190 @@
+  "on_init": {
+    "context": {
+      "ttl": "PT30S",
+      "city": "std:080",
+      "action": "on_init",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bpp_id": "biz.test.bitsila.com",
+      "domain": "nic2004:52110",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://biz.test.bitsila.com/ecc/ondc/retail-bpp",
+      "country": "IND",
+      "timestamp": "2023-08-13T05:46:43.429Z",
+      "message_id": "01f827a9-8e5a-43e8-973c-237a0eedb151",
+      "core_version": "1.1.0",
+      "transaction_id": "a1e02d1b-ffe4-4590-8b7c-5c7e0e524779"
+    },
+    "message": {
+      "order": {
+        "items": [
+          {
+            "id": "7715",
+            "quantity": {
+              "count": 3
+            },
+            "fulfillment_id": "FPA:699:sameday:258:88294"
+          },
+          {
+            "id": "12932",
+            "quantity": {
+              "count": 3
+            },
+            "fulfillment_id": "FPA:699:sameday:258:88294"
+          }
+        ],
+        "quote": {
+          "ttl": "PT1H",
+          "price": {
+            "value": "209.35",
+            "currency": "INR"
+          },
+          "breakup": [
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "7715",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 3,
+                "price": {
+                  "value": "15.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "45.0",
+                "currency": "INR"
+              },
+              "title": "Britannia Yummy Pineapple Cakes",
+              "@ondc/org/item_id": "7715",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 3
+              }
+            },
+            {
+              "price": {
+                "value": "0.0",
+                "currency": "INR"
+              },
+              "title": "Tax",
+              "@ondc/org/item_id": "12932",
+              "@ondc/org/title_type": "tax"
+            },
+            {
+              "item": {
+                "count": 3,
+                "price": {
+                  "value": "5.0",
+                  "currency": "INR"
+                },
+                "quantity": {
+                  "maximum": {
+                    "count": "24"
+                  },
+                  "available": {
+                    "count": "24"
+                  }
+                }
+              },
+              "price": {
+                "value": "15.0",
+                "currency": "INR"
+              },
+              "title": "Britannia Cakes Yummy Fruit",
+              "@ondc/org/item_id": "12932",
+              "@ondc/org/title_type": "item",
+              "@ondc/org/item_quantity": {
+                "count": 3
+              }
+            },
+            {
+              "price": {
+                "value": "149.35",
+                "currency": "INR"
+              },
+              "title": "Delivery charges",
+              "@ondc/org/item_id": "FPA:699:sameday:258:88294",
+              "@ondc/org/title_type": "delivery"
+            }
+          ]
+        },
+        "billing": {
+          "name": "Darshan Hsr Layout",
+          "email": "darshan.s@bitsila.com",
+          "phone": "8151000066",
+          "address": {
+            "city": "Bengaluru",
+            "door": "police station",
+            "name": "Darshan Hsr Layout",
+            "state": "Karnataka",
+            "country": "IND",
+            "building": "police station",
+            "locality": "27th Main Rd, 1st Sector, HSR Layout",
+            "area_code": "560102"
+          },
+          "created_at": "2023-08-13T05:46:41.618Z",
+          "updated_at": "2023-08-13T05:46:41.618Z"
+        },
+        "payment": {
+          "@ondc/org/settlement_details": [
+            {
+              "bank_name": "Axis Bank",
+              "branch_name": "Kathriguppe",
+              "settlement_type": "rtgs",
+              "beneficiary_name": "Innobits Solutions Pvt Ltd Nodal Account",
+              "settlement_phase": "sale-amount",
+              "settlement_ifsc_code": "UTIB0003190",
+              "settlement_counterparty": "seller-app",
+              "settlement_bank_account_no": "922020043291840"
+            }
+          ],
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+        },
+        "provider": {
+          "id": "1016:699"
+        },
+        "fulfillments": [
+          {
+            "id": "FPA:699:sameday:258:88294",
+            "end": {
+              "contact": {
+                "email": "darshan.s@bitsila.com",
+                "phone": "8151000066"
+              },
+              "location": {
+                "gps": "12.9140160000001, 77.6371740000001",
+                "address": {
+                  "city": "Bengaluru",
+                  "name": "Darshan Hsr Layout",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "building": "police station",
+                  "locality": "27th Main Rd, 1st Sector, HSR Layout",
+                  "area_code": "560102"
+                }
+              }
+            },
+            "type": "Delivery"
+          }
+        ],
+        "provider_location": {
+          "id": "L:1016:699"
+        }
+      }
+    }
+  },

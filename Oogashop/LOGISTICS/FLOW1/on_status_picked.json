@@ -1,0 +1,107 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bpp_id": "preprod-bpp.iway.digiit.io",
+        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+        "city": "STD:080",
+        "country": "IND",
+        "action": "on_status",
+        "transaction_id": "3a62aaf5-b8c0-4ce6-a392-5ef21bed893b",
+        "message_id": "73bc7f64-deb3-47d7-92e0-af4ee0f1c78c",
+        "timestamp": "2023-09-28T11:39:43.923Z"
+    },
+    "message": {
+        "order": {
+            "id": "0f8dd01c-ffe1-4ce0-adf6-2d4bdd9f788a",
+            "state": "In-progress",
+            "provider": {
+                "id": "107-Account-DER-292"
+            },
+            "items": [
+                {
+                    "id": "19",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "type": "Prepaid",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-picked-up"
+                        }
+                    },
+                    "tracking": true,
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-09-28T17:17:25.403Z",
+                                "end": "2023-09-28T17:47:25.403Z"
+                            },
+                            "timestamp": "2023-09-28T11:39:43.923Z"
+                        },
+                        "instructions": {
+                            "name": "Pickup from door-step",
+                            "short_desc": "Pickup from door-step",
+                            "long_desc": "000002"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-09-28T17:52:25.403Z",
+                                "end": "2023-09-28T18:07:25.403Z"
+                            }
+                        }
+                    },
+                    "agent": {
+                        "name": "Peter",
+                        "phone": "7438483828"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "20.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "19",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.0"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": []
+            },
+            "billing": {
+                "name": "OOGASHOP",
+                "address": {
+                    "name": "502",
+                    "building": "Optum Inclave",
+                    "locality": "Sector-53",
+                    "city": "Gurugram",
+                    "state": "Haryana",
+                    "country": "India",
+                    "area_code": "122002"
+                },
+                "tax_number": "07AAGFF2194N1Z1",
+                "phone": "9871764687",
+                "email": "muktabh@paralleldots.com"
+            }
+        }
+    }
+}

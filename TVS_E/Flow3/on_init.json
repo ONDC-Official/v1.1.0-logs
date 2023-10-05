@@ -1,0 +1,157 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ondc-preprod.tvs-e.in",
+    "bpp_uri": "https://ondc-preprod.tvs-e.in/sellerapp/api/v1/",
+    "message_id": "1ae914e0-192a-4f37-8e33-a5dbe5bc1340",
+    "timestamp": "2023-10-02T12:36:37.907Z",
+    "transaction_id": "7de914ca-f4e2-4613-9ea1-4b4d2a916393"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "1"
+        },
+        {
+          "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "1"
+        }
+      ],
+      "billing": {
+        "name": "Raghu",
+        "address": {
+          "door": "South Cornor",
+          "name": "Raghu",
+          "building": "South Cornor",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560036",
+          "locality": "South Street"
+        },
+        "email": "raghu@gmail.com",
+        "phone": "9865569388",
+        "updated_at": "2023-10-02T12:36:37.262Z",
+        "created_at": "2023-10-02T12:36:37.262Z"
+      },
+      "fulfillments": [
+        {
+          "type": "Delivery",
+          "provider_id": "ondc-preprod.tvs-e.in",
+          "tracking": true,
+          "end": {
+            "location": {
+              "gps": "13.006289, 77.699349",
+              "address": {
+                "door": "South Cornor",
+                "name": "Raghu",
+                "building": "South Cornor",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560036",
+                "locality": "South Street"
+              }
+            },
+            "contact": {
+              "phone": "9865569388",
+              "email": "raghu@gmail.com"
+            }
+          },
+          "id": "1"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "27658.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32912",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "MSP 250 Star Dot Matrix Printer",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "12599.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "12599.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "LP 46 Lite Thermal Label Printer",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "15009.00"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "15009.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "50"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payment": {
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.00",
+        "@ondc/org/settlement_details": [
+          {
+            "bank_name": "HDFC",
+            "beneficiary_name": "TVS Electronics Ltd",
+            "branch_name": "Adayar",
+            "settlement_bank_account_no": "1234567890",
+            "settlement_counterparty": "seller-app",
+            "settlement_ifsc_code": "IFSC00001",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "upi_address": ""
+          }
+        ]
+      },
+      "provider": {
+        "id": "ondc-preprod.tvs-e.in"
+      },
+      "provider_location": {
+        "id": "ba3ca63c-927e-4ca3-8694-19e2c7b32911"
+      }
+    }
+  }
+}

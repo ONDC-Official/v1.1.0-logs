@@ -1,0 +1,79 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "issue",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-10-03T15:07:33.974Z",
+    "message_id": "02a924be-e427-4595-91e6-aada1a170794",
+    "core_version": "1.0.0",
+    "transaction_id": "66cf8610-e4f5-412e-836e-836da4eb5183"
+  },
+  "message": {
+    "issue": {
+      "id": "fbe6d889-1ca6-4ee3-a0a2-31c752015714",
+      "source": {
+        "type": "CONSUMER",
+        "network_participant_id": "buyer-app-preprod.ondc.org"
+      },
+      "status": "OPEN",
+      "category": "ITEM",
+      "created_at": "2023-10-03T15:07:33.704Z",
+      "issue_type": "ISSUE",
+      "updated_at": "2023-10-03T15:07:33.704Z",
+      "description": {
+        "images": [
+          "https://buyer-app-preprod.ondc.org/issueApis/uploads/1696345653979.png"
+        ],
+        "long_desc": "Quality Issue",
+        "short_desc": "Quality Issue",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        }
+      },
+      "sub_category": "ITM02",
+      "issue_actions": {
+        "respondent_actions": [],
+        "complainant_actions": [
+          {
+            "short_desc": "Complaint created",
+            "updated_at": "2023-10-03T15:07:33.979Z",
+            "updated_by": {
+              "org": { "name": "buyer-app-preprod.ondc.org::nic2004:52110" },
+              "person": { "name": "Rishabhnand Singh" },
+              "contact": {
+                "email": "Rishabhnand.singh@ondc.org",
+                "phone": "6239083807"
+              }
+            },
+            "complainant_action": "OPEN"
+          }
+        ]
+      },
+      "order_details": {
+        "id": "2023-10-03-255243",
+        "items": [
+          { "id": "2775199::1155936::EP04", "quantity": 1 },
+          { "id": "2775200::1155939::EP07", "quantity": 2 }
+        ],
+        "state": "Completed",
+        "provider_id": "22446688739675",
+        "fulfillments": [
+          { "id": "22446688739675_fulfillment_1", "state": "Pending" }
+        ]
+      },
+      "complainant_info": {
+        "person": { "name": "John Doe" },
+        "contact": { "email": "xifelo7871@fulwark.com", "phone": "9090999900" }
+      },
+      "expected_response_time": { "duration": "PT1H" },
+      "expected_resolution_time": { "duration": "P1D" }
+    }
+  }
+}

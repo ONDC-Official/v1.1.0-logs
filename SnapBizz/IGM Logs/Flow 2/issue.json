@@ -1,0 +1,76 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "issue",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "transaction_id": "fb0eb853-41cf-4e60-aa21-bb527529a39e",
+    "message_id": "63dc7d25-bb8d-4751-8fae-58fcd4901a8b",
+    "timestamp": "2023-09-04T21:03:31.829Z",
+    "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/snapbizz",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "7c79d1ba-acf1-41da-9439-03381bebe5f5",
+      "category": "FULFILLMENT",
+      "sub_category": "FLM02",
+      "complainant_info": {
+        "person": { "name": "Krishna B" },
+        "contact": { "phone": "9916784000", "email": "krishna.b@snapbizz.com" }
+      },
+      "order_details": {
+        "id": "2023-09-04-490178",
+        "state": "Completed",
+        "items": [
+          { "id": "55444444-616b-5599-87e2-6cb80782d953", "quantity": 1 }
+        ],
+        "fulfillments": [
+          { "id": "6d82645a-97bd-573e-bc33-d022012b728d", "state": "Pending" }
+        ],
+        "provider_id": "05ff18af-61af-58b2-a809-08a67d09e1f5"
+      },
+      "description": {
+        "short_desc": "Delayed delivery",
+        "long_desc": "Delivery delayed for 2 days now",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        },
+        "images": []
+      },
+      "source": {
+        "network_participant_id": "buyer-app-preprod.ondc.org",
+        "type": "CONSUMER"
+      },
+      "expected_response_time": { "duration": "PT1H" },
+      "expected_resolution_time": { "duration": "P1D" },
+      "status": "OPEN",
+      "issue_type": "ISSUE",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "short_desc": "Complaint created",
+            "updated_at": "2023-09-04T21:03:31.829Z",
+            "updated_by": {
+              "org": { "name": "buyer-app-preprod.ondc.org::nic2004:52110" },
+              "contact": {
+                "phone": "6239083807",
+                "email": "Rishabhnand.singh@ondc.org"
+              },
+              "person": { "name": "Rishabhnand Singh" }
+            }
+          }
+        ],
+        "respondent_actions": []
+      },
+      "created_at": "2023-09-04T21:03:31.568Z",
+      "updated_at": "2023-09-04T21:03:31.568Z"
+    }
+  }
+}

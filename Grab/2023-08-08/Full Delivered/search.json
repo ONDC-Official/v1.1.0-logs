@@ -1,0 +1,64 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "search",
+		"core_version": "1.1.0",
+		"bap_id": "preprod-ondc.viranc.com/p/v1/store",
+		"bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+		"transaction_id": "b3059732-af0c-560e-ab5f-fe7f4fa54dfe",
+		"message_id": "25bfb87b-0cce-554f-ab82-8d07b0daa18a",
+		"timestamp": "2023-08-08T07:35:28.989Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"intent": {
+			"category": {
+				"id": "Standard Delivery"
+			},
+			"provider": {
+				"time": {
+					"days": "1,2,3,4,5,6,7",
+					"range": {
+						"end": "2359",
+						"start": "0000"
+					},
+					"schedule": {
+						"holidays": []
+					}
+				}
+			},
+			"fulfillment": {
+				"type": "Prepaid",
+				"start": {
+					"location": {
+						"gps": "12.96774,77.588913",
+						"address": {
+							"area_code": "560001"
+						}
+					}
+				},
+				"end": {
+					"location": {
+						"gps": "12.9140160000001,77.6371740000001",
+						"address": {
+							"area_code": "560102"
+						}
+					}
+				}
+			},
+			"@ondc/org/payload_details": {
+				"weight": {
+					"unit": "Kilogram",
+					"value": 11
+				},
+				"category": "Grocery",
+				"value": {
+					"currency": "INR",
+					"value": "531.48"
+				}
+			}
+		}
+	}
+}

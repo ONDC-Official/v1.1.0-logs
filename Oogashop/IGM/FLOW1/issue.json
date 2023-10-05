@@ -4,63 +4,61 @@
         "country": "IND",
         "city": "std:080",
         "action": "issue",
-        "core_version": "1.1.0",
-        "bap_id": "buyerapp.com",
-        "bap_uri": "https://buyerapp.com/ondc",
-        "bpp_id": "sellerapp.com",
-        "bpp_uri": "https://sellerapp.com/ondc",
-        "transaction_id": "transaction_id_2",
-        "message_id": "message_id_issue_1",
-        "timestamp": "2023-07-31T13:09:00.123Z",
+        "core_version": "1.0.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/paralleldots",
+        "bpp_uri": "https://pilot-gateway-1.beckn.nsdl.co.in/preprod/seller/adaptor/paralleldots/",
+        "transaction_id": "d70f655d-c9ff-46c4-9d4c-ceedf365f777",
+        "message_id": "b7566227-5654-45ee-ad84-35578c551cfb",
+        "timestamp": "2023-09-13T09:51:00.358Z",
         "ttl": "PT30S"
     },
     "message": {
         "issue": {
-            "id": "hkhioyufjkniu",
+            "id": "27f419f9-56e2-414a-9442-a23beab4a9f1",
             "complainant_info": {
                 "person": {
-                    "name": "Someone"
+                    "name": "Hardik"
                 },
                 "contact": {
-                    "phone": "+91999999999",
-                    "email": "someone@gamil.com"
+                    "phone": "9090909090",
+                    "email": "hardik@paralleldots.com"
                 }
             },
             "order_details": {
-                "id": "ordertransaction_id_2",
-                "state": "Completed",
+                "id": "2023-09-13-903112",
+                "state": "Accepted",
                 "items": [
                     {
-                        "id": "OOGASHOP-ONDC-8",
+                        "id": "OOGASHOP-ONDC-6",
                         "quantity": 1
                     }
                 ],
-                "provider_id": "OOGASHOP-ONDC-2",
+                "provider_id": "OOGASHOP-ONDC-5",
                 "fulfillments": [
                     {
-                        "id": "2-2",
-                        "state": "Order-delivered"
+                        "id": "2077-5",
+                        "state": "Pending"
                     }
                 ]
             },
             "description": {
-                "short_desc": "Item Damaged",
-                "long_desc": "The item I got with price 123 has very useless and damaged product.",
+                "short_desc": "Not of good quality",
+                "long_desc": "Please return it",
                 "images": [
-                    "http://someimage1.in/",
-                    "http://someimage2.in",
-                    "http://someimage3.in/"
+                    "https://buyer-app-preprod.ondc.org/issueApis/uploads/1694598660367.png"
                 ]
             },
             "category": "ITEM",
-            "sub_category": "ITM01",
+            "sub_category": "ITM04",
             "issue_type": "ISSUE",
             "source": {
-                "network_participant_id": "buyerapp.com",
+                "network_participant_id": "buyer-app-preprod.ondc.org",
                 "type": "CONSUMER"
             },
             "expected_response_time": {
-                "duration": "PT2H"
+                "duration": "PT1H"
             },
             "expected_resolution_time": {
                 "duration": "P1D"
@@ -70,25 +68,26 @@
                 "complainant_actions": [
                     {
                         "complainant_action": "OPEN",
-                        "short_desc": "Created",
-                        "updated_at": "2023-07-31T13:09:00.123Z",
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-09-13T09:51:00.369Z",
                         "updated_by": {
                             "org": {
-                                "name": "Ooga"
+                                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
                             },
                             "contact": {
-                                "phone": "+919999999999",
-                                "email": "sha@someone.com"
+                                "phone": "6239083807",
+                                "email": "Rishabhnand.singh@ondc.org"
                             },
                             "person": {
-                                "name": "Shashi"
+                                "name": "Rishabhnand Singh"
                             }
                         }
                     }
-                ]
+                ],
+                "respondent_actions": []
             },
-            "created_at": "2023-07-31T13:09:00.123Z",
-            "updated_at": "2023-07-31T13:09:00.123Z"
+            "created_at": "2023-09-13T09:50:56.975Z",
+            "updated_at": "2023-09-13T09:50:56.975Z"
         }
     }
 }

@@ -1,0 +1,78 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "init",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-09-12T11:38:35.945Z",
+    "message_id": "4f561f19-dab3-4d60-b06b-e31f3c9b96ef",
+    "core_version": "1.1.0",
+    "transaction_id": "5b93728e-7c5d-42fc-b044-c3ef5792cf27"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 3 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "billing": {
+        "name": "John Doe",
+        "email": "xifelo7871@fulwark.com",
+        "phone": "9090999900",
+        "address": {
+          "city": "Bengaluru",
+          "door": "Whitefield",
+          "name": "John Doe",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Whitefield",
+          "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+          "area_code": "560066"
+        },
+        "created_at": "2023-09-12T11:38:35.945Z",
+        "updated_at": "2023-09-12T11:38:35.945Z"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "contact": {
+              "email": "xifelo7871@fulwark.com",
+              "phone": "9090999900"
+            },
+            "location": {
+              "gps": "12.9872810000001, 77.7321000000001",
+              "address": {
+                "city": "Bengaluru",
+                "name": "John Doe",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Whitefield",
+                "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ]
+    }
+  }
+}

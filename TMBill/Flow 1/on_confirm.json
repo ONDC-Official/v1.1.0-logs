@@ -1,0 +1,197 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "on_confirm",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "country": "IND",
+    "timestamp": "2023-09-12T10:04:02.510Z",
+    "message_id": "a7ccd7d3-aab7-409f-aaa5-4086127fc00b",
+    "core_version": "1.1.0",
+    "transaction_id": "b0b7b7c7-eadb-4be1-906e-63645dac197e"
+  },
+  "message": {
+    "order": {
+      "id": "2023-09-12-650673",
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "quantity": { "count": 1 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775202::1155941::EP09",
+          "quantity": { "count": 2 },
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "ttl": "PT1H",
+        "price": { "value": "896.5", "currency": "INR" },
+        "breakup": [
+          {
+            "item": { "price": { "value": "110", "currency": "INR" } },
+            "price": { "value": "110", "currency": "INR" },
+            "title": "Egg Curry",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "5.5", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": { "price": { "value": "500", "currency": "INR" } },
+            "price": { "value": "500", "currency": "INR" },
+            "title": "Egg Masala",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 1 }
+          },
+          {
+            "price": { "value": "25", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "item": { "price": { "value": "100", "currency": "INR" } },
+            "price": { "value": "200", "currency": "INR" },
+            "title": "Egg Bhurji",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "item",
+            "@ondc/org/item_quantity": { "count": 2 }
+          },
+          {
+            "price": { "value": "10", "currency": "INR" },
+            "title": "Tax",
+            "@ondc/org/item_id": "2775202::1155941::EP09",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": { "value": "46", "currency": "INR" },
+            "title": "Delivery Charges",
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ]
+      },
+      "state": "Created",
+      "billing": {
+        "name": "John Doe",
+        "email": "xifelo7871@fulwark.com",
+        "phone": "9090999900",
+        "address": {
+          "city": "Bengaluru",
+          "name": "John Doe",
+          "state": "Karnataka",
+          "country": "IND",
+          "building": "Whitefield",
+          "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+          "area_code": "560066"
+        },
+        "created_at": "2023-09-12T10:03:57.324Z",
+        "updated_at": "2023-09-12T10:03:57.324Z"
+      },
+      "payment": {
+        "uri": "https://juspay.in/",
+        "type": "ON-ORDER",
+        "params": {
+          "amount": "896.5",
+          "currency": "INR",
+          "transaction_id": "b0b7b7c7-eadb-4be1-906e-63645dac197e"
+        },
+        "status": "PAID",
+        "tl_method": "http/get",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": [
+          {
+            "bank_name": "HDFC BANK",
+            "branch_name": "SHRIRAMPUR BRANCH",
+            "settlement_type": "neft",
+            "beneficiary_name": "TechMainstay Software Private Limited",
+            "settlement_phase": "sale-amount",
+            "settlement_ifsc_code": "HDFC0000966",
+            "settlement_counterparty": "seller-app",
+            "settlement_bank_account_no": "50200085305869"
+          }
+        ],
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0"
+      },
+      "provider": {
+        "id": "22446688739675",
+        "rateable": true,
+        "locations": [{ "id": "22446688739675" }]
+      },
+      "created_at": "2023-09-12T10:04:02.458Z",
+      "updated_at": "2023-09-12T10:04:02.510Z",
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "end": {
+            "time": {
+              "range": {
+                "end": "2023-09-12T11:06:00.000Z",
+                "start": "2023-09-12T10:26:00.000Z"
+              }
+            },
+            "person": { "name": "John Doe" },
+            "contact": {
+              "email": "xifelo7871@fulwark.com",
+              "phone": "9090999900"
+            },
+            "location": {
+              "gps": "12.9872810000001, 77.7321000000001",
+              "address": {
+                "city": "Bengaluru",
+                "name": "John Doe",
+                "state": "Karnataka",
+                "country": "IND",
+                "building": "Whitefield",
+                "locality": "Ramani Orthopaedic Hospital, 5/19 Dattatreya Temple Street",
+                "area_code": "560066"
+              }
+            }
+          },
+          "type": "Delivery",
+          "start": {
+            "time": {
+              "range": {
+                "end": "2023-09-12T10:26:00.000Z",
+                "start": "2023-09-12T10:06:00.000Z"
+              }
+            },
+            "contact": { "email": "sid@tmbill.com", "phone": "7798548540" },
+            "location": {
+              "id": "22446688739675",
+              "gps": "12.970698591977477,77.7471608509239",
+              "descriptor": {
+                "name": "Eatsy",
+                "images": [
+                  "https://cdn.tmbill.com/backoffice/store-logo/1685511854499.png"
+                ]
+              }
+            }
+          },
+          "state": { "descriptor": { "code": "Pending", "name": "Pending" } },
+          "rateable": true,
+          "tracking": false,
+          "@ondc/org/provider_name": "TMBill"
+        }
+      ]
+    }
+  }
+}

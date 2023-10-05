@@ -1,0 +1,192 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "84196d9b-3d3d-4273-a2ff-a51917e32705",
+        "message_id": "c3849e43-c491-4b2a-871b-2fd0faf68f21",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-09-25T04:02:45.000Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-09-25-258955",
+            "state": "Created",
+            "provider": {
+                "id": "18th_stores",
+                "locations": [
+                    {
+                        "id": "default_loc"
+                    }
+                ],
+                "rateable": true
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "Orion18TH1000",
+                    "quantity": {
+                        "count": 2
+                    }
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "Baby18TH1000",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Abhi Chauhan",
+                "address": {
+                    "name": "Abhi Chauhan",
+                    "building": "Landmark 1",
+                    "locality": "Street1",
+                    "city": "Noida",
+                    "state": "Uttar Pradesh",
+                    "country": "IND",
+                    "area_code": "201301"
+                },
+                "email": "abhishek.chauhan@18thdigitech.net",
+                "phone": "8800518689",
+                "created_at": "2023-09-25T04:02:34.616Z",
+                "updated_at": "2023-09-25T04:02:34.616Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "18TH Shop",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "start": {
+                        "contact": {
+                            "email": "support@18thdigitech.com",
+                            "phone": "8563256985"
+                        },
+                        "location": {
+                            "id": "18th_stores",
+                            "descriptor": {
+                                "name": "18TH Store PreProd"
+                            },
+                            "gps": "13.022714275653291,77.64814346152468"
+                        }
+                    },
+                    "end": {
+                        "contact": {
+                            "email": "abhi0001ch+001@gmail.com",
+                            "phone": "8956969969"
+                        },
+                        "person": {
+                            "name": "Abhi Chauhan"
+                        },
+                        "location": {
+                            "gps": "28.574981, 77.320812",
+                            "address": {
+                                "name": "Abhi Chauhan",
+                                "building": "Landmark 1",
+                                "locality": "Street 2",
+                                "city": "Noida",
+                                "state": "Uttar Pradesh",
+                                "country": "IND",
+                                "area_code": "201301"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1038"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Orion 18TH Two-Tone Fitted Jacket",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "998"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "499"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Baby18TH1000",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Baby 18TH Product",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "40"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "40"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "PT30S"
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "1038",
+                    "currency": "INR",
+                    "transaction_id": "84196d9b-3d3d-4273-a2ff-a51917e32705"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "18th Digitech",
+                        "upi_address": "",
+                        "settlement_bank_account_no": "156352663664",
+                        "settlement_ifsc_code": "ICIC0000256",
+                        "bank_name": "ICICI Bank",
+                        "branch_name": "Noida"
+                    }
+                ]
+            },
+            "created_at": "2023-09-25T04:02:44.408Z",
+            "updated_at": "2023-09-25T04:02:45.000Z"
+        }
+    }
+}

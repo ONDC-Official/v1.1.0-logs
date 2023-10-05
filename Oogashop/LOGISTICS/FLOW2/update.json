@@ -1,0 +1,77 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "STD:080",
+        "action": "update",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bpp_id": "preprod-bpp.iway.digiit.io",
+        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+        "transaction_id": "c75d7da2-06b5-4d00-978f-72e09ddeaf96",
+        "message_id": "2d4d5934-2504-46ae-9f05-f22a23d638e3",
+        "timestamp": "2023-09-28T11:58:29.860Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "update_target": "fulfillment",
+        "order": {
+            "id": "fab9cef2-ce75-4853-981a-398a5bf7568b",
+            "state": "Accepted",
+            "items": [
+                {
+                    "id": "19",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "start": {
+                        "instructions": {
+                            "short_desc": "0000026",
+                            "long_desc": "Pickup from door-step"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    }
+                }
+            ],
+            "updated_at": "2023-09-28T11:58:29.860Z",
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "F&B",
+                        "quantity": {
+                            "count": 2,
+                            "measure": {
+                                "value": 4,
+                                "unit": "Kilogram"
+                            }
+                        },
+                        "descriptor": {
+                            "name": "Mustard Oil"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "120"
+                        }
+                    }
+                ],
+                "order": {
+                    "id": "1939939",
+                    "weight": {
+                        "value": 4,
+                        "unit": "Kilogram"
+                    }
+                }
+            }
+        }
+    }
+}

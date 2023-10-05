@@ -1,0 +1,176 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "STD:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bpp_id": "preprod-bpp.iway.digiit.io",
+        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+        "transaction_id": "3a62aaf5-b8c0-4ce6-a392-5ef21bed893b",
+        "message_id": "83c2df1b-fee4-44a8-a168-d8d122277367",
+        "timestamp": "2023-09-28T11:37:07.467Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "0f8dd01c-ffe1-4ce0-adf6-2d4bdd9f788a",
+            "state": "Created",
+            "provider": {
+                "id": "107-Account-DER-292"
+            },
+            "items": [
+                {
+                    "id": "19",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "OOGASHOP",
+                "address": {
+                    "name": "502",
+                    "building": "Optum Inclave",
+                    "locality": "Sector-53",
+                    "city": "Gurugram",
+                    "state": "Haryana",
+                    "country": "India",
+                    "area_code": "122002"
+                },
+                "email": "muktabh@paralleldots.com",
+                "phone": "9871764687",
+                "tax_number": "07AAGFF2194N1Z1",
+                "created_at": "2023-09-28T11:36:38.270Z",
+                "updated_at": "2023-09-28T11:36:38.270Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid",
+                    "start": {
+                        "location": {
+                            "gps": "12.911677720642919, 77.55801616377255",
+                            "address": {
+                                "name": "Grocery Store",
+                                "building": "Subramanya Pura Rd",
+                                "locality": " Telecom Layout, Padmanabhanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560061"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "000002",
+                            "long_desc": "Pickup from door-step"
+                        },
+                        "contact": {
+                            "phone": "9753241111",
+                            "email": "raju@gmail.com"
+                        },
+                        "person": {
+                            "name": "Raju1"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.907143446932903, 77.55253742420648",
+                            "address": {
+                                "name": "391-64",
+                                "building": "1st Cross Rd, BHCS Layout",
+                                "locality": "Canara Bank Colony, Uttarahalli Hobli",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560061"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "0000002",
+                            "long_desc": "Deliver at door-step"
+                        },
+                        "contact": {
+                            "phone": "9786654512",
+                            "email": "aman@gmail.com"
+                        },
+                        "person": {
+                            "name": "Aman"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "no"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "20.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "19",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "20.0"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/settlement_details": []
+            },
+            "created_at": "2023-09-28T11:37:07.467Z",
+            "updated_at": "2023-09-28T11:37:07.467Z",
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "F&B",
+                        "quantity": {
+                            "count": 2,
+                            "measure": {
+                                "value": 2,
+                                "unit": "Kilogram"
+                            }
+                        },
+                        "descriptor": {
+                            "name": "Mustard Oil"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "120"
+                        }
+                    }
+                ],
+                "provider": {
+                    "descriptor": {
+                        "name": "Test Store"
+                    },
+                    "address": {
+                        "name": "Grocery Store",
+                        "building": "Subramanya Pura Rd",
+                        "locality": " Telecom Layout, Padmanabhanagar",
+                        "city": "Bengaluru",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560061"
+                    }
+                },
+                "order": {
+                    "id": "1239239",
+                    "weight": {
+                        "value": 4,
+                        "unit": "Kilogram"
+                    }
+                }
+            }
+        }
+    }
+}

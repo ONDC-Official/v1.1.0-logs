@@ -1,183 +1,178 @@
 {
     "context": {
         "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
         "action": "on_status",
         "core_version": "1.1.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "bpp_id": "seller.instastack.io",
-        "bpp_uri": "https://seller.instastack.io/pre-prod",
-        "transaction_id": "75822fce-f6fa-47ee-8eb4-f1f5892c4047",
-        "message_id": "1e67df98-ad58-43a5-ba28-0349880d6d89",
-        "city": "std:080",
-        "country": "IND",
-        "timestamp": "2023-07-13T17:05:59.946Z"
+        "bpp_id": "preprod-wow-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-wow-bpp.shopalyst.com/wow",
+        "transaction_id": "e889fcaa-b08d-4b2b-8dd2-8b27264edba4",
+        "message_id": "357ea6d1-d4f1-46b0-ba88-787a81bee2cd",
+        "timestamp": "2023-08-24T08:06:01.610Z"
     },
     "message": {
         "order": {
-            "id": "664",
+            "id": "100095",
             "state": "Completed",
             "provider": {
-                "id": "e649c7a6-7cce-48bb-82bb-8d5341a0a9c7",
+                "id": "preprod-wow-bpp.shopalyst.com",
                 "locations": [
                     {
-                        "id": "f5f41af3-30ec-41be-bace-880c96e5f59e"
+                        "id": "bcedc450f8481e89b1445069acdc3dd9"
                     }
-                ],
-                "rateable": true
+                ]
             },
             "items": [
                 {
-                    "id": "223251",
-                    "fulfillment_id": "1",
+                    "id": "7945DA7F78F5CC8879548D89B9540249_43459794338051_default",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
                         "count": 2
                     }
                 },
                 {
-                    "id": "218",
-                    "fulfillment_id": "1",
+                    "id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
+                    "fulfillment_id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "quantity": {
                         "count": 2
                     }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1396.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Cherrylicious Bath Salt By Body Cupid - 200 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "798.00"
+                        },
+                        "@ondc/org/item_id": "7945DA7F78F5CC8879548D89B9540249_43459794338051_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "399.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Cherrylicious Body Lotion By Body Cupid - 200 ml",
+                        "price": {
+                            "currency": "INR",
+                            "value": "598.00"
+                        },
+                        "@ondc/org/item_id": "C53BF99BB15B84986237CEB6A616E9C0_43459794403587_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "299.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "bcedc450f8481e89b1445069acdc3dd9_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "documents": [
+                {
+                    "url": "https://static.shopalyst.com/assets/campaigns/invoice_jajee.jpeg",
+                    "label": "Invoice"
                 }
             ],
             "billing": {
                 "name": "Rajiv Singh",
                 "address": {
                     "name": "Rajiv Singh",
-                    "building": "15/11",
-                    "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                    "building": "FO1A",
+                    "locality": "War Memorial, Junction of Brigade Road and, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
                     "city": "Bengaluru",
                     "state": "Karnataka",
                     "country": "India",
-                    "area_code": "560001"
+                    "area_code": "560025"
                 },
                 "phone": "8302010971",
-                "created_at": "2023-07-13T17:04:39.773Z",
-                "updated_at": "2023-07-13T17:04:39.773Z"
+                "created_at": "2023-08-24T08:01:52.934Z",
+                "updated_at": "2023-08-24T08:01:52.934Z"
             },
             "fulfillments": [
                 {
-                    "id": "1",
-                    "@ondc/org/provider_name": "Dunzo and others",
-                    "state": {
-                        "descriptor": {
-                            "code": "Order-delivered"
-                        }
-                    },
+                    "id": "bcedc450f8481e89b1445069acdc3dd9_1",
                     "type": "Delivery",
-                    "tracking": false,
+                    "tracking": true,
                     "start": {
                         "location": {
-                            "id": "f5f41af3-30ec-41be-bace-880c96e5f59e",
                             "descriptor": {
-                                "name": "InstaStack Store Powai",
-                                "images": [
-                                    "https://www.wellnessforever.com/assets/img/logo/cmy_logo_full.webp"
-                                ]
+                                "name": "bcedc450f8481e89b1445069acdc3dd9"
                             },
-                            "gps": "19.116802,72.909812"
+                            "gps": "12.9684397,77.6010378"
                         },
                         "time": {
+                            "timestamp": "2023-08-24T08:05:11.568Z",
                             "range": {
-                                "start": "2023-07-13T17:05:19.845Z",
-                                "end": "2023-07-13T18:05:19.845Z"
-                            },
-                            "timestamp": "2023-07-13T17:05:45.147Z"
+                                "start": "2023-08-24T08:04:11.568Z",
+                                "end": "2023-08-24T08:05:11.568Z"
+                            }
                         },
                         "contact": {
-                            "phone": "9892216537",
-                            "email": "info@instastack.io"
+                            "phone": "8042896000",
+                            "email": "support@buywow.in"
                         }
                     },
                     "end": {
                         "location": {
-                            "gps": "12.971609528512422,77.59456269443035",
+                            "gps": "12.971889,77.607009",
                             "address": {
                                 "name": "Rajiv Singh",
-                                "building": "15/11",
-                                "locality": "KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+                                "building": "FO1A",
+                                "locality": "War Memorial, Junction of Brigade Road and, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",
                                 "city": "Bengaluru",
                                 "state": "Karnataka",
                                 "country": "India",
-                                "area_code": "560001"
+                                "area_code": "560025"
                             }
                         },
                         "time": {
+                            "timestamp": "2023-08-24T08:06:01.589Z",
                             "range": {
-                                "start": "2023-07-13T17:05:19.845Z",
-                                "end": "2023-07-13T23:05:19.846Z"
-                            },
-                            "timestamp": "2023-07-13T17:05:59.946Z"
+                                "start": "2023-08-24T08:05:34.700Z",
+                                "end": "2023-08-24T08:06:01.589Z"
+                            }
                         },
                         "contact": {
                             "phone": "8302010971"
                         }
                     },
-                    "rateable": true
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "@ondc/org/provider_name": "Wow Skin Science"
                 }
             ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": "1565.00"
-                },
-                "breakup": [
-                    {
-                        "@ondc/org/item_id": "223251",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "199.00"
-                            }
-                        },
-                        "title": "Seni Care Wet Wipes, 10 pcs",
-                        "price": {
-                            "currency": "INR",
-                            "value": "398.00"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "218",
-                        "@ondc/org/item_quantity": {
-                            "count": 2
-                        },
-                        "@ondc/org/title_type": "item",
-                        "item": {
-                            "price": {
-                                "currency": "INR",
-                                "value": "559.00"
-                            }
-                        },
-                        "title": "Mamaearth Onion Conditioner, 400 ml",
-                        "price": {
-                            "currency": "INR",
-                            "value": "1118.00"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "1",
-                        "@ondc/org/title_type": "delivery",
-                        "title": "Delivery charges",
-                        "price": {
-                            "currency": "INR",
-                            "value": "49.00"
-                        }
-                    }
-                ],
-                "ttl": "P1D"
-            },
             "payment": {
-                "params": {
-                    "amount": "1565.00",
-                    "currency": "INR",
-                    "transaction_id": "1689267914584"
-                },
                 "type": "ON-ORDER",
                 "status": "PAID",
                 "collected_by": "BAP",
@@ -187,25 +182,22 @@
                     {
                         "settlement_counterparty": "seller-app",
                         "settlement_phase": "sale-amount",
-                        "settlement_type": "upi",
-                        "settlement_bank_account_no": "thor_does_not_have_a_bank_account",
-                        "settlement_ifsc_code": "someIFSC",
-                        "upi_address": "thor@okicicicicic",
-                        "bank_name": "Marvels Bank",
-                        "branch_name": "Asgard",
-                        "beneficiary_name": "Thor"
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "sate bank of india",
+                        "branch_name": "manikonda"
                     }
-                ]
-            },
-            "documents": [
-                {
-                    "url": "https://seller.instastack.io/invoice/664",
-                    "label": "Invoice"
+                ],
+                "params": {
+                    "transaction_id": "1692864148893",
+                    "amount": "1396.00",
+                    "currency": "INR"
                 }
-            ],
-            "tags": {},
-            "created_at": "2023-07-13T17:05:19.683Z",
-            "updated_at": "2023-07-13T17:05:59.946Z"
+            },
+            "created_at": "2023-08-24T08:02:33.579Z",
+            "updated_at": "2023-08-24T08:06:01.589Z"
         }
     }
 }

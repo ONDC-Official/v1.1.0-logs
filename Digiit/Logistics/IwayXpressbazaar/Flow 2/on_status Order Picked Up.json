@@ -1,0 +1,107 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "bap_id": "preprod.xpressbaazaar.com",
+    "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_status",
+    "transaction_id": "d856568a-abf2-42d2-8107-de1fd99408b9",
+    "message_id": "ea0e1e64-d4b4-41d1-955b-9ad6c8cad0db",
+    "timestamp": "2023-09-28T15:15:48.773Z"
+  },
+  "message": {
+    "order": {
+      "id": "51989300-76b8-4731-b090-43f23ba0ac93",
+      "state": "In-progress",
+      "provider": {
+        "id": "107-Account-DER-292"
+      },
+      "items": [
+        {
+          "id": "18",
+          "category_id": "Next Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "type": "Prepaid",
+          "state": {
+            "descriptor": {
+              "code": "Order-picked-up"
+            }
+          },
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-09-29T16:40:58.049Z",
+                "end": "2023-09-29T17:10:58.049Z"
+              },
+              "timestamp": "2023-09-28T15:15:48.773Z"
+            },
+            "instructions": {
+              "name": "Lux Body Wash Magical Spell with Black Orchids And Juniper Oil 245ml",
+              "short_desc": "Lux Body Wash Magical Spell with Black Orchids And Juniper Oil 245ml",
+              "long_desc": "368124"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-09-29T20:40:58.049Z",
+                "end": "2023-09-29T20:55:58.049Z"
+              }
+            }
+          },
+          "agent": {
+            "name": "Peter",
+            "phone": "7438483828"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "20.0"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "18",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "20.0"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_details": []
+      },
+      "billing": {
+        "name": "Yumfood",
+        "address": {
+          "name": "Yumfood",
+          "building": "BLOCK-A, ROSHAN GARDENIA, Vinayaka Layout, Poornapragna Housing Society Layout, Bengaluru",
+          "locality": "BLOCK-A, ROSHAN GARDENIA, Vinayaka Layout, Poornapragna Housing Society Layout, Bengaluru",
+          "city": "Bengaluru",
+          "state": "KA",
+          "country": "India",
+          "area_code": "560061"
+        },
+        "tax_number": "07AAGFF2194N1Z1",
+        "phone": "8923791501",
+        "email": "abcd.efgh@gmail.com"
+      }
+    }
+  }
+}

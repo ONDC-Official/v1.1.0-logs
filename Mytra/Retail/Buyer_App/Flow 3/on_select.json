@@ -1,0 +1,124 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "sit.mytra.money",
+        "bap_uri": "https://sit.mytra.money/api/method/buyer_ondc/",
+        "transaction_id": "57ba7947-7f8c-4b65-a8fc-9355771729f7",
+        "message_id": "08d07887dd",
+        "timestamp": "2023-09-14T09:43:29.221Z",
+        "bpp_id": "shathabdhi-organics.mytra.money",
+        "bpp_uri": "https://shathabdhi-organics.mytra.money/api/method/ondc/"
+    },
+    "message": {
+        "order": {
+            "items": [
+                {
+                    "id": "STO-ITEM-2023-00010-500 Gms:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-116814"
+                },
+                {
+                    "id": "STO-ITEM-2023-00001-1 KG:Manikonda - S",
+                    "fulfillment_id": "ONDC-REQ-116814"
+                }
+            ],
+            "provider": {
+                "id": "shathabdhi-organics.mytra.money",
+                "locations": [
+                    {
+                        "id": "Manikonda - S"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "id": "ONDC-REQ-116814",
+                    "@ondc/org/provider_name": "Shathabdhi Organics",
+                    "@ondc/org/TAT": "PT4H",
+                    "@ondc/org/category": "Same Day Delivery"
+                }
+            ],
+            "payment": {
+                "type": "ON-ORDER"
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "555.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "STO-ITEM-2023-00010-500 Gms:Manikonda - S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Barnyard Millet-500 Gms",
+                        "price": {
+                            "currency": "INR",
+                            "value": "216.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "108.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "3"
+                                },
+                                "maximum": {
+                                    "count": "3"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "STO-ITEM-2023-00001-1 KG:Manikonda - S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "@ondc/org/title_type": "item",
+                        "title": "Organic Brown Rice-1 KG",
+                        "price": {
+                            "currency": "INR",
+                            "value": "280.0"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "140.0"
+                            },
+                            "quantity": {
+                                "available": {
+                                    "count": "3"
+                                },
+                                "maximum": {
+                                    "count": "3"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ONDC-REQ-116814",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "59.0"
+                        }
+                    }
+                ],
+                "ttl": "PT1H"
+            }
+        }
+    }
+}

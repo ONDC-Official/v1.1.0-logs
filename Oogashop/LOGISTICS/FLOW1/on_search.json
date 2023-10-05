@@ -1,0 +1,94 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bpp_id": "preprod-bpp.iway.digiit.io",
+        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+        "city": "STD:080",
+        "country": "IND",
+        "action": "on_search",
+        "transaction_id": "3a62aaf5-b8c0-4ce6-a392-5ef21bed893b",
+        "message_id": "9bb7eb34-71cc-4d74-9469-88373286f2b9",
+        "timestamp": "2023-09-28T11:35:26.262Z"
+    },
+    "message": {
+        "catalog": {
+            "bpp/fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "2",
+                    "type": "CoD"
+                },
+                {
+                    "id": "3",
+                    "type": "RTO"
+                },
+                {
+                    "id": "4",
+                    "type": "Reverse QC"
+                }
+            ],
+            "bpp/descriptor": {
+                "name": "iway"
+            },
+            "bpp/providers": [
+                {
+                    "id": "107-Account-DER-292",
+                    "descriptor": {
+                        "name": "Iway Logistics & Delivery",
+                        "short_desc": "Iway Logistics & Delivery",
+                        "long_desc": "Iway Logistics & Delivery"
+                    },
+                    "categories": [
+                        {
+                            "id": "Immediate Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT45M"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "19",
+                            "parent_item_id": "",
+                            "category_id": "Immediate Delivery",
+                            "fulfillment_id": "1",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "Immediate Delivery",
+                                "short_desc": "Immediate Delivery",
+                                "long_desc": "Immediate Delivery"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "20.0"
+                            }
+                        },
+                        {
+                            "id": "rto-item-19",
+                            "parent_item_id": "19",
+                            "category_id": "Immediate Delivery",
+                            "fulfillment_id": "3",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "RTO quote",
+                                "short_desc": "RTO quote",
+                                "long_desc": "RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "20.0"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
