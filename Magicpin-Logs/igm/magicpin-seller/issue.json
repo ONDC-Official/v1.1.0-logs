@@ -1,0 +1,95 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "issue",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc",
+    "transaction_id": "1bc1f6d7-4478-46cd-9e58-a692c1eb948f",
+    "message_id": "07b2d5dd-f790-48c3-8d4c-81ab9d14d701",
+    "timestamp": "2023-10-06T12:31:25.850Z",
+    "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "8ba46398-86dc-48b1-9046-630726e9ad6a",
+      "category": "ITEM",
+      "sub_category": "ITM01",
+      "complainant_info": {
+        "person": {
+          "name": "HSR bangalore"
+        },
+        "contact": {
+          "phone": "9000000000",
+          "email": "test@test.com"
+        }
+      },
+      "order_details": {
+        "id": "2023-10-06-708737",
+        "state": "Created",
+        "items": [
+          {
+            "id": "52418778",
+            "quantity": 1
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "058c8dbd-8172-42b4-887f-7d04106a016b",
+            "state": "Pending"
+          }
+        ],
+        "provider_id": "45949808"
+      },
+      "description": {
+        "short_desc": "test missing items",
+        "long_desc": "test missing long desc",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        },
+        "images": []
+      },
+      "source": {
+        "network_participant_id": "buyer-app-preprod.ondc.org",
+        "type": "CONSUMER"
+      },
+      "expected_response_time": {
+        "duration": "PT1H"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      },
+      "status": "OPEN",
+      "issue_type": "ISSUE",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "short_desc": "Complaint created",
+            "updated_at": "2023-10-06T12:31:25.850Z",
+            "updated_by": {
+              "org": {
+                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+              },
+              "contact": {
+                "phone": "6239083807",
+                "email": "Rishabhnand.singh@ondc.org"
+              },
+              "person": {
+                "name": "Rishabhnand Singh"
+              }
+            }
+          }
+        ],
+        "respondent_actions": []
+      },
+      "created_at": "2023-10-06T12:31:25.624Z",
+      "updated_at": "2023-10-06T12:31:25.624Z"
+    }
+  }
+}
