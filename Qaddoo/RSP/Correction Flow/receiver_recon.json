@@ -1,0 +1,113 @@
+{
+    "context": {
+        "domain": "ONDC:NTS10",
+        "country": "IND",
+        "city": "*",
+        "action": "receiver_recon",
+        "core_version": "1.0.0",
+        "bap_id": "pre-prod.qaddoo.com",
+        "bap_uri": "https://pre-prod.qaddoo.com/ondc",
+        "bpp_id": "ondc.uat.medpay.in",
+        "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+        "transaction_id": "5f1ce2da-25c4-403c-b60d-76ade6eb6b2f",
+        "message_id": "27396faf-cdd0-4142-bab9-d6ac862d5ff4",
+        "timestamp": "2023-10-09T11:31:46.591Z",
+        "ttl": "PT2D"
+    },
+    "message": {
+        "orderbook": {
+            "orders": [
+                {
+                    "id": "100357",
+                    "invoice_no": "100357",
+                    "collector_app_id": "pre-prod.qaddoo.com",
+                    "receiver_app_id": "ondc.uat.medpay.in",
+                    "receiver_app_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+                    "state": "Completed",
+                    "provider": {
+                        "name": {
+                            "name": "Medpay - Vishal Medical Center JP Nagar",
+                            "code": "1001-3716-9032-6275"
+                        },
+                        "address": "Bengaluru Urban"
+                    },
+                    "payment": {
+                        "tl_method": "http/get",
+                        "params": {
+                            "transaction_id": "1695193980217",
+                            "amount": "1485.0",
+                            "currency": "INR",
+                            "transaction_status": "PAID"
+                        },
+                        "type": "ON-ORDER",
+                        "status": "PAID",
+                        "collected_by": "BAP",
+                        "@ondc/org/collected_by_status": "Assert",
+                        "@ondc/org/buyer_app_finder_fee_type": "percent",
+                        "@ondc/org/buyer_app_finder_fee_amount": "3",
+                        "@ondc/org/withholding_amount": "0",
+                        "@ondc/org/withholding_amount_status": "Assert",
+                        "@ondc/org/return_window": "T6D",
+                        "@ondc/org/return_window_status": "Assert",
+                        "@ondc/org/settlement_basis": "Collection",
+                        "@ondc/org/settlement_basis_status": "Assert",
+                        "@ondc/org/settlement_window": "T5D",
+                        "@ondc/org/settlement_window_status": "Assert",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_amount": 1432.43,
+                                "settlement_type": "upi",
+                                "settlement_bank_account_no": "29837293879283",
+                                "settlement_ifsc_code": "SBIN0002001",
+                                "upi_address": "72873729780@upi",
+                                "bank_name": "State Bank Of India",
+                                "branch_name": "Andaman Nicobar",
+                                "beneficiary_name": "Vishal",
+                                "beneficiary_address": "Bengaluru Urban",
+                                "settlement_status": "PAID",
+                                "settlement_reference": "234504345087891A",
+                                "settlement_timestamp": "2023-10-09T11:30:56.959Z"
+                            }
+                        ]
+                    },
+                    "withholding_tax_gst": {
+                        "currency": "INR",
+                        "value": "0"
+                    },
+                    "withholding_tax_tds": {
+                        "currency": "INR",
+                        "value": "0.0"
+                    },
+                    "deduction_by_collector": {
+                        "currency": "INR",
+                        "value": "52.57"
+                    },
+                    "order_recon_status": null,
+                    "payerdetails": {
+                        "payer_name": "ShopQ Pvt Ltd",
+                        "payer_address": "New Delhi",
+                        "payer_account_no": "123456789",
+                        "payer_bank_code": "IFSC00198",
+                        "payer_virtual_payment_address": "abc@okcici"
+                    },
+                    "settlement_reason_code": "01",
+                    "transaction_id": "aa9d871e-bab6-48d4-8063-7596442d5434",
+                    "settlement_id": "f3da1606-e36a-4112-a846-625bbe929390",
+                    "settlement_reference_no": "234504345087891A",
+                    "recon_status": "01",
+                    "diff_amount": null,
+                    "counterparty_recon_status": null,
+                    "counterparty_diff_amount": null,
+                    "message": {
+                        "name": "Please settle payment with seller",
+                        "code": "PAYMENT"
+                    },
+                    "created_at": "2023-10-09T11:30:56.974Z",
+                    "updated_at": "2023-10-09T11:30:56.974Z"
+                }
+            ]
+        }
+    }
+}
