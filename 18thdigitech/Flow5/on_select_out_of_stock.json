@@ -1,0 +1,152 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "4ea2ed55-94ff-4f08-a872-d5f6d7825d49",
+        "message_id": "3b862968-85e8-42a4-b196-d2a9f8a00198",
+        "timestamp": "2023-09-25T05:46:22.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "18th_stores"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "Campus18TH100060"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "Baby18TH1000"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "Reyton18TH10005"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Loadshare",
+                    "tracking": false,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "P10D",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "4998"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Campus18TH100060",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Campus 18TH Men's MOXIE White Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "3000"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "997"
+                                },
+                                "maximum": {
+                                    "count": "997"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "1500"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Baby18TH1000",
+                        "@ondc/org/item_quantity": {
+                            "count": 0
+                        },
+                        "title": "Baby 18TH Product",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "0"
+                                },
+                                "maximum": {
+                                    "count": "0"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "40"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Reyton18TH10005",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "18TH Men's Reyton Navy Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1998"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "996"
+                                },
+                                "maximum": {
+                                    "count": "996"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "999"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "PT30S"
+            }
+        }
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "40002",
+        "message": "Item quantity unavailable"
+    }
+}

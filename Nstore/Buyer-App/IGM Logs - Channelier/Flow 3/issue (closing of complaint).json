@@ -1,0 +1,206 @@
+{
+  "context": {
+    "bpp_id": "integrations-preprod.channelier.com",
+    "bpp_uri": "https://integrations-preprod.channelier.com/ondc",
+    "domain": "nic2004:52110",
+    "core_version": "1.1.0",
+    "ttl": "PT30S",
+    "bap_id": "b-ondcbap.nlincs.in",
+    "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+    "transaction_id": "0cb0d9d5fde78010893e322476bdec00",
+    "message_id": "oLpV6XqAg4B6eL48ya5KpxYkrJAB3NuK",
+    "country": "IND",
+    "city": "std:080",
+    "timestamp": "2023-09-29T11:25:28.092Z",
+    "action": "issue"
+  },
+  "message": {
+    "issue": {
+      "id": "jVxuZuBrmf5v7huL7iUnF6e4",
+      "category": "FULFILLMENT",
+      "sub_category": "FLM04",
+      "complainant_info": {
+        "person": {
+          "name": "Arunraj Selvam"
+        },
+        "contact": {
+          "phone": "9840857465",
+          "email": "arunraj@nstore.in"
+        }
+      },
+      "order_details": {
+        "id": "2023-52858-85630",
+        "state": "Completed",
+        "provider_id": "CU0",
+        "items": [
+          {
+            "id": "CU0I0",
+            "quantity": 5
+          }
+        ],
+        "fulfillments": [
+          {
+            "id": "L-F-1695985902742",
+            "state": "Order-delivered"
+          }
+        ]
+      },
+      "description": {
+        "short_desc": "Packaging not good",
+        "long_desc": "Packaging not good",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        },
+        "images": [
+          "https://nstoreassets.s3.amazonaws.com/ondc/preprod/issues/jVxuZuBrmf5v7huL7iUnF6e4/img_1.png"
+        ]
+      },
+      "source": {
+        "network_participant_id": "b-ondcbap.nlincs.in",
+        "type": "CONSUMER"
+      },
+      "expected_response_time": {
+        "duration": "PT2H"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      },
+      "status": "CLOSED",
+      "issue_type": "ISSUE",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "short_desc": "Complaint created",
+            "updated_at": "2023-09-29T11:15:03.649Z",
+            "updated_by": {
+              "org": {
+                "name": "b-ondcbap.nlincs.in::nic2004:52110"
+              },
+              "person": {
+                "name": "Arunraj Selvam"
+              },
+              "contact": {
+                "phone": "9840857465",
+                "email": "arunraj@nstore.in"
+              }
+            }
+          },
+          {
+            "complainant_action": "CLOSE",
+            "short_desc": "Complaint Closed",
+            "updated_at": "2023-09-29T11:25:28.092Z",
+            "updated_by": {
+              "org": {
+                "name": "b-ondcbap.nlincs.in::nic2004:52110"
+              },
+              "person": {
+                "name": "Arunraj Selvam"
+              },
+              "contact": {
+                "phone": "9840857465",
+                "email": "arunraj@nstore.in"
+              }
+            }
+          }
+        ],
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "respondent@channelier.com"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            },
+            "short_desc": "Complaint is being processed",
+            "cascaded_level": 1,
+            "updated_at": "2023-09-29T11:15:03.996Z"
+          },
+          {
+            "respondent_action": "CASCADED",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "respondent@channelier.com"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            },
+            "short_desc": "Complaint cascaded to transaction counterparty",
+            "cascaded_level": 2,
+            "updated_at": "2023-09-29T11:15:04.013Z"
+          },
+          {
+            "respondent_action": "PROCESSING",
+            "updated_by": {
+              "org": {
+                "name": "shipdh.in::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9875082482",
+                "email": "pratham@shipdelight.com"
+              },
+              "person": {
+                "name": "Pratham Sharma"
+              }
+            },
+            "short_desc": "Complaint is being processed",
+            "cascaded_level": 2,
+            "updated_at": "2023-09-29T11:15:04.227Z"
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "updated_by": {
+              "org": {
+                "name": "shipdh.in::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9875082482",
+                "email": "pratham@shipdelight.com"
+              },
+              "person": {
+                "name": "Pratham Sharma"
+              }
+            },
+            "short_desc": "Complaint resolved",
+            "cascaded_level": 2,
+            "updated_at": "2023-09-29T11:21:40.287Z"
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "short_desc": "refund will be initiated for this order",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::undefined"
+              },
+              "contact": {
+                "phone": "9897989798",
+                "email": "techpvec18@gmail.com"
+              },
+              "person": {
+                "name": "Channelier Super Store"
+              }
+            },
+            "cascaded_level": 1,
+            "updated_at": "2023-09-29T11:22:12.968Z"
+          }
+        ]
+      },
+      "created_at": "2023-09-29T11:15:03.649Z",
+      "updated_at": "2023-09-29T11:25:28.092Z",
+      "rating": "THUMBS-UP"
+    }
+  }
+}

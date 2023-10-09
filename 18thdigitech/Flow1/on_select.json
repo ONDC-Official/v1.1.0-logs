@@ -1,0 +1,117 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "9e6c85c2-94b4-49c5-86f4-10282a138704",
+        "message_id": "963c8de7-e8b1-4e16-a85f-67dad4995792",
+        "timestamp": "2023-09-22T06:19:40.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "18th_stores"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "Orion18TH1000"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "Reyton18TH10005"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "Loadshare",
+                    "tracking": false,
+                    "@ondc/org/category": "Immediate Delivery",
+                    "@ondc/org/TAT": "P10D",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1498"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Orion18TH1000",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Orion 18TH Two-Tone Fitted Jacket",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "499"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "963"
+                                },
+                                "maximum": {
+                                    "count": "963"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "499"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Reyton18TH10005",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "18TH Men's Reyton Navy Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "999"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "998"
+                                },
+                                "maximum": {
+                                    "count": "998"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "999"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "PT30S"
+            }
+        }
+    }
+}
