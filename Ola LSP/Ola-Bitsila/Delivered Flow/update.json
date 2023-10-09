@@ -1,0 +1,48 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "update",
+        "bap_id": "biz.test.bitsila.com",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
+        "transaction_id": "LOG-3040-1001-1046-stbq",
+        "message_id": "406c8e2e-d758-448b-be11-0e2af36a0700",
+        "timestamp": "2023-10-09T14:33:14.218Z",
+        "key": "",
+        "ttl": "PT30S",
+        "core_version": "1.1.0"
+    },
+    "message": {
+        "update_target": "fulfillment",
+        "order": {
+            "id": "3040-1001-1046",
+            "state": "Created",
+            "fulfillments": [
+                {
+                    "id": "ola_express_f1",
+                    "type": "Prepaid",
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    },
+                    "start": {
+                        "instructions": {
+                            "short_desc": "1001-1046"
+                        }
+                    }
+                }
+            ],
+            "updated_at": "2023-10-09T14:33:14.218Z",
+            "items": [
+                {
+                    "id": "ola_express",
+                    "descriptor": {
+                        "code": "P2P"
+                    },
+                    "category_id": "Immediate Delivery"
+                }
+            ]
+        }
+    }
+}

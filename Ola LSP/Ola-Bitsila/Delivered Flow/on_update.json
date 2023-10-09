@@ -1,0 +1,68 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "biz.test.bitsila.com",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "bpp_id": "ondc-preprod-lsp.olacabs.com",
+        "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
+        "transaction_id": "LOG-3040-1001-1046-stbq",
+        "message_id": "406c8e2e-d758-448b-be11-0e2af36a0700",
+        "timestamp": "2023-10-09T14:33:14.402Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "3040-1001-1046",
+            "items": [
+                {
+                    "id": "ola_express",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ola_express_f1",
+                    "type": "Prepaid",
+                    "@ondc/org/awb_no": null,
+                    "start": {
+                        "instructions": {
+                            "short_desc": "1001-1046",
+                            "long_desc": null,
+                            "additional_desc": null
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-10-09T14:48:14.402Z",
+                                "end": "2023-10-09T15:03:14.403Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-10-09T15:18:14.403Z",
+                                "end": "2023-10-09T15:33:14.403Z"
+                            }
+                        }
+                    },
+                    "@ondc/org/ewaybillno": null,
+                    "@ondc/org/ebnexpirydate": null,
+                    "state": {
+                        "descriptor": {
+                            "code": "Searching-for-Agent"
+                        }
+                    }
+                }
+            ],
+            "state": "Accepted",
+            "updated_at": "2023-10-09T14:33:14.000Z"
+        }
+    }
+}

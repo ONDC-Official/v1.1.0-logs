@@ -1,0 +1,97 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "biz.test.bitsila.com",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "transaction_id": "LOG-3040-1001-1046-stbq",
+        "message_id": "072eff51-0645-4edf-8e56-6b0048c8b797",
+        "timestamp": "2023-10-09T14:32:42.094Z",
+        "ttl": "PT30S",
+        "bpp_id": "ondc-preprod-lsp.olacabs.com",
+        "bpp_uri": "https://ondc-preprod-lsp.olacabs.com"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "OLA"
+            },
+            "bpp/fulfillments": [
+                {
+                    "id": "ola_express_f1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "ola_express_f1-RTO",
+                    "type": "RTO"
+                }
+            ],
+            "bpp/providers": [
+                {
+                    "id": "OLA",
+                    "descriptor": {
+                        "name": "OLA",
+                        "short_desc": "OLA for immediate delivery",
+                        "long_desc": "OLA for immediate delivery"
+                    },
+                    "categories": [
+                        {
+                            "id": "Immediate Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT55M"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "ola_express",
+                            "parent_item_id": "",
+                            "category_id": "Immediate Delivery",
+                            "fulfillment_id": "ola_express_f1",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "Ola delivery",
+                                "short_desc": "Ola delivery for F&B",
+                                "long_desc": "Ola delivery for F&B"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "0.1"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT55M",
+                                "timestamp": "2023-10-09T15:17:42.326Z"
+                            }
+                        },
+                        {
+                            "id": "ola_express-RTO",
+                            "parent_item_id": "ola_express",
+                            "category_id": "Immediate Delivery",
+                            "fulfillment_id": "ola_express_f1-RTO",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "RTO quote",
+                                "short_desc": "RTO quote",
+                                "long_desc": "RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "0"
+                            },
+                            "time": {
+                                "label": " TAT",
+                                "duration": "PT55M",
+                                "timestamp": "2023-10-09T15:17:42.326Z"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

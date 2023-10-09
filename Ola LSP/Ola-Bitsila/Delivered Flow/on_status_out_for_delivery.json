@@ -1,0 +1,128 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "biz.test.bitsila.com",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "bpp_id": "ondc-preprod-lsp.olacabs.com",
+        "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
+        "transaction_id": "LOG-3040-1001-1046-stbq",
+        "message_id": "honilbo4fzxo",
+        "timestamp": "2023-10-09T14:33:27.107Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "3040-1001-1046",
+            "state": "In-progress",
+            "provider": {
+                "id": "OLA",
+                "locations": null
+            },
+            "items": [
+                {
+                    "id": "ola_express",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "0.1"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "ola_express",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.08800000000000001"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ola_express",
+                        "@ondc/org/title_type": "Tax",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.012"
+                        }
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "type": "Prepaid",
+                    "@ondc/org/awb_no": null,
+                    "state": {
+                        "descriptor": {
+                            "code": "Out-for-delivery"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-10-09T14:48:26.495Z",
+                                "end": "2023-10-09T15:03:26.495Z"
+                            },
+                            "timestamp": "2023-10-09T14:33:19.000Z"
+                        },
+                        "instructions": {
+                            "name": "1001-1046",
+                            "short_desc": "1001-1046",
+                            "long_desc": null
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-10-09T15:18:26.495Z",
+                                "end": "2023-10-09T15:33:26.495Z"
+                            }
+                        },
+                        "instructions": {
+                            "name": "",
+                            "short_desc": "",
+                            "long_desc": ""
+                        }
+                    },
+                    "tracking": 1,
+                    "@ondc/org/ewaybillno": null,
+                    "@ondc/org/ebnexpirydate": null,
+                    "agent": {
+                        "name": "DCO",
+                        "phone": "8022830796"
+                    }
+                }
+            ],
+            "payment": {
+                "@ondc/org/collection_amount": "0.0",
+                "collected_by": "BAP",
+                "type": "ON-ORDER",
+                "@ondc/org/settlement_details": null
+            },
+            "billing": {
+                "name": "Bitsila",
+                "address": {
+                    "name": "221, INNOBITS SOLUTIONS PVT LTD",
+                    "building": "",
+                    "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "India",
+                    "area_code": "560085"
+                },
+                "tax_number": "29AAFCI9011D1ZQ",
+                "phone": "8951898275",
+                "email": "finance@bitsila.com",
+                "created_at": "2023-10-09T14:32:52.282Z",
+                "updated_at": "2023-10-09T14:32:52.282Z"
+            }
+        }
+    }
+}
