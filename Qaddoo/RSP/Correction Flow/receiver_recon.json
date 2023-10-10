@@ -3,40 +3,39 @@
         "domain": "ONDC:NTS10",
         "country": "IND",
         "city": "*",
-        "action": "collector_recon",
-        "core_version": "1.1.0",
+        "action": "receiver_recon",
+        "core_version": "1.0.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "bpp_id": "ondc-seller.paytm.com",
-        "bpp_uri": "https://ondc-seller.paytm.com/ondc/v1/249357/bpp",
-        "transaction_id": "13662727-fcae-433a-ad09-2fab8eb0aa6f",
-        "message_id": "bc6eb1c4-861b-4b5e-add9-2269dab49c98",
-        "timestamp": "2023-09-06T09:53:48.785Z",
-        "ttl": "PT3D"
+        "bpp_id": "ondc.uat.medpay.in",
+        "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+        "transaction_id": "5f1ce2da-25c4-403c-b60d-76ade6eb6b2f",
+        "message_id": "27396faf-cdd0-4142-bab9-d6ac862d5ff4",
+        "timestamp": "2023-10-09T11:31:46.591Z",
+        "ttl": "PT2D"
     },
     "message": {
         "orderbook": {
             "orders": [
                 {
-                    "id": "100221",
-                    "invoice_no": "100221",
+                    "id": "100357",
+                    "invoice_no": "100357",
                     "collector_app_id": "pre-prod.qaddoo.com",
-                    "receiver_app_id": "ondc-seller.paytm.com",
-                    "receiver_app_uri": "https://ondc-seller.paytm.com/ondc/v1/249357/bpp",
+                    "receiver_app_id": "ondc.uat.medpay.in",
+                    "receiver_app_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
                     "state": "Completed",
                     "provider": {
                         "name": {
-                            "name": "Paytm Testing",
-                            "code": "243587"
+                            "name": "Medpay - Vishal Medical Center JP Nagar",
+                            "code": "1001-3716-9032-6275"
                         },
-                        "address": "Noida"
+                        "address": "Bengaluru Urban"
                     },
                     "payment": {
-                        "uri": "",
                         "tl_method": "http/get",
                         "params": {
-                            "transaction_id": "1693993450731",
-                            "amount": "850.00",
+                            "transaction_id": "1695193980217",
+                            "amount": "1485.0",
                             "currency": "INR",
                             "transaction_status": "PAID"
                         },
@@ -58,18 +57,18 @@
                             {
                                 "settlement_counterparty": "seller-app",
                                 "settlement_phase": "sale-amount",
-                                "settlement_amount": 409.955,
+                                "settlement_amount": 1432.43,
                                 "settlement_type": "upi",
-                                "settlement_bank_account_no": "003105030573",
-                                "settlement_ifsc_code": "ICIC0000031",
-                                "upi_address": "gft@oksbi",
-                                "bank_name": "ICICI Bank",
-                                "branch_name": "Senior mall noida",
-                                "beneficiary_name": "PAYTM E-COMMERCE PRIVATE LIMITED",
-                                "beneficiary_address": "Noida",
-                                "settlement_status": "READY",
-                                "settlement_reference": "23383738",
-                                "settlement_timestamp": "2023-09-06T09:53:48.779Z"
+                                "settlement_bank_account_no": "29837293879283",
+                                "settlement_ifsc_code": "SBIN0002001",
+                                "upi_address": "72873729780@upi",
+                                "bank_name": "State Bank Of India",
+                                "branch_name": "Andaman Nicobar",
+                                "beneficiary_name": "Vishal",
+                                "beneficiary_address": "Bengaluru Urban",
+                                "settlement_status": "PAID",
+                                "settlement_reference": "234504345087891A",
+                                "settlement_timestamp": "2023-10-09T11:30:56.959Z"
                             }
                         ]
                     },
@@ -83,21 +82,21 @@
                     },
                     "deduction_by_collector": {
                         "currency": "INR",
-                        "value": "25.5"
+                        "value": "52.57"
                     },
                     "order_recon_status": null,
                     "payerdetails": {
-                        "payer_name": "ShopQ Pvt ltd",
+                        "payer_name": "ShopQ Pvt Ltd",
                         "payer_address": "New Delhi",
                         "payer_account_no": "123456789",
                         "payer_bank_code": "IFSC00198",
-                        "payer_virtual_payment_address": null
+                        "payer_virtual_payment_address": "abc@okcici"
                     },
                     "settlement_reason_code": "01",
-                    "transaction_id": "13662727-fcae-433a-ad09-2fab8eb0aa6f",
-                    "settlement_id": null,
-                    "settlement_reference_no": null,
-                    "recon_status": null,
+                    "transaction_id": "aa9d871e-bab6-48d4-8063-7596442d5434",
+                    "settlement_id": "f3da1606-e36a-4112-a846-625bbe929390",
+                    "settlement_reference_no": "234504345087891A",
+                    "recon_status": "01",
                     "diff_amount": null,
                     "counterparty_recon_status": null,
                     "counterparty_diff_amount": null,
@@ -105,8 +104,8 @@
                         "name": "Please settle payment with seller",
                         "code": "PAYMENT"
                     },
-                    "created_at": "2023-09-06T09:53:48.785Z",
-                    "updated_at": "2023-09-06T09:53:48.785Z"
+                    "created_at": "2023-10-09T11:30:56.974Z",
+                    "updated_at": "2023-10-09T11:30:56.974Z"
                 }
             ]
         }

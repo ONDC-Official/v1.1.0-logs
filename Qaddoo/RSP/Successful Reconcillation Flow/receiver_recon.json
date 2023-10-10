@@ -3,40 +3,39 @@
         "domain": "ONDC:NTS10",
         "country": "IND",
         "city": "*",
-        "action": "collector_recon",
-        "core_version": "1.1.0",
+        "action": "receiver_recon",
+        "core_version": "1.0.0",
         "bap_id": "pre-prod.qaddoo.com",
         "bap_uri": "https://pre-prod.qaddoo.com/ondc",
-        "bpp_id": "ondc-seller.paytm.com",
-        "bpp_uri": "https://ondc-seller.paytm.com/ondc/v1/249357/bpp",
-        "transaction_id": "8759202d-60d0-4826-836d-8ff14cbeea9b",
-        "message_id": "8b29dd17-be42-44ad-9027-7a276cd4c80d",
-        "timestamp": "2023-08-30T06:37:58.323Z",
-        "ttl": "PT3D"
+        "bpp_id": "ondc.uat.medpay.in",
+        "bpp_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
+        "transaction_id": "11746dcd-283f-4fe9-9594-4cc436c07d95",
+        "message_id": "c34e8487-ca1c-4914-af1f-e525312c248f",
+        "timestamp": "2023-10-09T11:05:59.975Z",
+        "ttl": "PT2D"
     },
     "message": {
         "orderbook": {
             "orders": [
                 {
-                    "id": "100131",
-                    "invoice_no": "100131",
+                    "id": "100521",
+                    "invoice_no": "100521",
                     "collector_app_id": "pre-prod.qaddoo.com",
-                    "receiver_app_id": "ondc-seller.paytm.com",
-                    "receiver_app_uri": "https://ondc-seller.paytm.com/ondc/v1/249357/bpp",
+                    "receiver_app_id": "ondc.uat.medpay.in",
+                    "receiver_app_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
                     "state": "Completed",
                     "provider": {
                         "name": {
-                            "name": "Paytm Testing",
-                            "code": "243587"
+                            "name": "Medpay - Vishal Medical Center JP Nagar",
+                            "code": "1001-3716-9032-6275"
                         },
-                        "address": "Noida"
+                        "address": "Bengaluru Urban"
                     },
                     "payment": {
-                        "uri": "",
                         "tl_method": "http/get",
                         "params": {
-                            "transaction_id": "1693366089518",
-                            "amount": "850.00",
+                            "transaction_id": "1696843382690",
+                            "amount": "7589.0",
                             "currency": "INR",
                             "transaction_status": "PAID"
                         },
@@ -58,18 +57,18 @@
                             {
                                 "settlement_counterparty": "seller-app",
                                 "settlement_phase": "sale-amount",
-                                "settlement_amount": 824.5,
+                                "settlement_amount": 7361.33,
                                 "settlement_type": "upi",
-                                "settlement_bank_account_no": "003105030573",
-                                "settlement_ifsc_code": "ICIC0000031",
-                                "upi_address": "gft@oksbi",
-                                "bank_name": "ICICI Bank",
-                                "branch_name": "Senior mall noida",
-                                "beneficiary_name": "PAYTM E-COMMERCE PRIVATE LIMITED",
-                                "beneficiary_address": "Noida",
-                                "settlement_status": "READY",
-                                "settlement_reference": "60872602",
-                                "settlement_timestamp": "2023-08-30T06:37:58.255Z"
+                                "settlement_bank_account_no": "29837293879283",
+                                "settlement_ifsc_code": "SBIN0002001",
+                                "upi_address": "72873729780@upi",
+                                "bank_name": "State Bank Of India",
+                                "branch_name": "Andaman Nicobar",
+                                "beneficiary_name": "Arun",
+                                "beneficiary_address": "Bengaluru Urban",
+                                "settlement_status": "PAID",
+                                "settlement_reference": "234504345089081A",
+                                "settlement_timestamp": "2023-10-09T11:04:54.283Z"
                             }
                         ]
                     },
@@ -83,21 +82,21 @@
                     },
                     "deduction_by_collector": {
                         "currency": "INR",
-                        "value": "25.5"
+                        "value": "227.67"
                     },
                     "order_recon_status": null,
                     "payerdetails": {
-                        "payer_name": "ShopQ Pvt ltd",
+                        "payer_name": "ShopQ Pvt Ltd",
                         "payer_address": "New Delhi",
                         "payer_account_no": "123456789",
                         "payer_bank_code": "IFSC00198",
-                        "payer_virtual_payment_address": null
+                        "payer_virtual_payment_address": "abc@okcici"
                     },
                     "settlement_reason_code": "01",
-                    "transaction_id": "8759202d-60d0-4826-836d-8ff14cbeea9b",
-                    "settlement_id": null,
-                    "settlement_reference_no": null,
-                    "recon_status": null,
+                    "transaction_id": "6871a795-f9c8-4541-8e39-810c719a5a41",
+                    "settlement_id": "51c83972-dad0-4d71-9a19-568ba64f7d38",
+                    "settlement_reference_no": "234504345089081A",
+                    "recon_status": "01",
                     "diff_amount": null,
                     "counterparty_recon_status": null,
                     "counterparty_diff_amount": null,
@@ -105,29 +104,28 @@
                         "name": "Please settle payment with seller",
                         "code": "PAYMENT"
                     },
-                    "created_at": "2023-08-30T06:37:58.323Z",
-                    "updated_at": "2023-08-30T06:37:58.323Z"
+                    "created_at": "2023-10-09T11:04:54.494Z",
+                    "updated_at": "2023-10-09T11:04:54.494Z"
                 },
                 {
-                    "id": "100132",
-                    "invoice_no": "100132",
+                    "id": "100522",
+                    "invoice_no": "100522",
                     "collector_app_id": "pre-prod.qaddoo.com",
-                    "receiver_app_id": "ondc-seller.paytm.com",
-                    "receiver_app_uri": "https://ondc-seller.paytm.com/ondc/v1/249357/bpp",
+                    "receiver_app_id": "ondc.uat.medpay.in",
+                    "receiver_app_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
                     "state": "Completed",
                     "provider": {
                         "name": {
-                            "name": "Paytm Testing",
-                            "code": "243587"
+                            "name": "Medpay - Vishal Medical Center JP Nagar",
+                            "code": "1001-3716-9032-6275"
                         },
-                        "address": "Noida"
+                        "address": "Bengaluru Urban"
                     },
                     "payment": {
-                        "uri": "",
                         "tl_method": "http/get",
                         "params": {
-                            "transaction_id": "1693366229883",
-                            "amount": "850.00",
+                            "transaction_id": "1696843485092",
+                            "amount": "33957.0",
                             "currency": "INR",
                             "transaction_status": "PAID"
                         },
@@ -149,18 +147,18 @@
                             {
                                 "settlement_counterparty": "seller-app",
                                 "settlement_phase": "sale-amount",
-                                "settlement_amount": 824.5,
+                                "settlement_amount": 32938.29,
                                 "settlement_type": "upi",
-                                "settlement_bank_account_no": "003105030573",
-                                "settlement_ifsc_code": "ICIC0000031",
-                                "upi_address": "gft@oksbi",
-                                "bank_name": "ICICI Bank",
-                                "branch_name": "Senior mall noida",
-                                "beneficiary_name": "PAYTM E-COMMERCE PRIVATE LIMITED",
-                                "beneficiary_address": "Noida",
-                                "settlement_status": "READY",
-                                "settlement_reference": "18302730",
-                                "settlement_timestamp": "2023-08-30T06:37:58.277Z"
+                                "settlement_bank_account_no": "29837293879283",
+                                "settlement_ifsc_code": "SBIN0002001",
+                                "upi_address": "72873729780@upi",
+                                "bank_name": "State Bank Of India",
+                                "branch_name": "Andaman Nicobar",
+                                "beneficiary_name": "Arun",
+                                "beneficiary_address": "Bengaluru Urban",
+                                "settlement_status": "PAID",
+                                "settlement_reference": "234504345089081A",
+                                "settlement_timestamp": "2023-10-09T11:04:54.335Z"
                             }
                         ]
                     },
@@ -174,21 +172,21 @@
                     },
                     "deduction_by_collector": {
                         "currency": "INR",
-                        "value": "25.5"
+                        "value": "1018.71"
                     },
                     "order_recon_status": null,
                     "payerdetails": {
-                        "payer_name": "ShopQ Pvt ltd",
+                        "payer_name": "ShopQ Pvt Ltd",
                         "payer_address": "New Delhi",
                         "payer_account_no": "123456789",
                         "payer_bank_code": "IFSC00198",
-                        "payer_virtual_payment_address": null
+                        "payer_virtual_payment_address": "abc@okcici"
                     },
                     "settlement_reason_code": "01",
-                    "transaction_id": "8759202d-60d0-4826-836d-8ff14cbeea9b",
-                    "settlement_id": null,
-                    "settlement_reference_no": null,
-                    "recon_status": null,
+                    "transaction_id": "6871a795-f9c8-4541-8e39-810c719a5a41",
+                    "settlement_id": "51c83972-dad0-4d71-9a19-568ba64f7d38",
+                    "settlement_reference_no": "234504345089081A",
+                    "recon_status": "01",
                     "diff_amount": null,
                     "counterparty_recon_status": null,
                     "counterparty_diff_amount": null,
@@ -196,29 +194,28 @@
                         "name": "Please settle payment with seller",
                         "code": "PAYMENT"
                     },
-                    "created_at": "2023-08-30T06:37:58.323Z",
-                    "updated_at": "2023-08-30T06:37:58.323Z"
+                    "created_at": "2023-10-09T11:04:54.494Z",
+                    "updated_at": "2023-10-09T11:04:54.494Z"
                 },
                 {
-                    "id": "100133",
-                    "invoice_no": "100133",
+                    "id": "100523",
+                    "invoice_no": "100523",
                     "collector_app_id": "pre-prod.qaddoo.com",
-                    "receiver_app_id": "ondc-seller.paytm.com",
-                    "receiver_app_uri": "https://ondc-seller.paytm.com/ondc/v1/249357/bpp",
+                    "receiver_app_id": "ondc.uat.medpay.in",
+                    "receiver_app_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
                     "state": "Completed",
                     "provider": {
                         "name": {
-                            "name": "Paytm Testing",
-                            "code": "243587"
+                            "name": "Medpay - Vishal Medical Center JP Nagar",
+                            "code": "1001-3716-9032-6275"
                         },
-                        "address": "Noida"
+                        "address": "Bengaluru Urban"
                     },
                     "payment": {
-                        "uri": "",
                         "tl_method": "http/get",
                         "params": {
-                            "transaction_id": "1693366367589",
-                            "amount": "1650.00",
+                            "transaction_id": "1696843588468",
+                            "amount": "3829.0",
                             "currency": "INR",
                             "transaction_status": "PAID"
                         },
@@ -240,18 +237,18 @@
                             {
                                 "settlement_counterparty": "seller-app",
                                 "settlement_phase": "sale-amount",
-                                "settlement_amount": 1600.5,
+                                "settlement_amount": 3714.13,
                                 "settlement_type": "upi",
-                                "settlement_bank_account_no": "003105030573",
-                                "settlement_ifsc_code": "ICIC0000031",
-                                "upi_address": "gft@oksbi",
-                                "bank_name": "ICICI Bank",
-                                "branch_name": "Senior mall noida",
-                                "beneficiary_name": "PAYTM E-COMMERCE PRIVATE LIMITED",
-                                "beneficiary_address": "Noida",
-                                "settlement_status": "READY",
-                                "settlement_reference": "87136184",
-                                "settlement_timestamp": "2023-08-30T06:37:58.291Z"
+                                "settlement_bank_account_no": "29837293879283",
+                                "settlement_ifsc_code": "SBIN0002001",
+                                "upi_address": "72873729780@upi",
+                                "bank_name": "State Bank Of India",
+                                "branch_name": "Andaman Nicobar",
+                                "beneficiary_name": "Arun",
+                                "beneficiary_address": "Bengaluru Urban",
+                                "settlement_status": "PAID",
+                                "settlement_reference": "234504345089081A",
+                                "settlement_timestamp": "2023-10-09T11:04:54.384Z"
                             }
                         ]
                     },
@@ -265,21 +262,21 @@
                     },
                     "deduction_by_collector": {
                         "currency": "INR",
-                        "value": "49.5"
+                        "value": "114.87"
                     },
                     "order_recon_status": null,
                     "payerdetails": {
-                        "payer_name": "ShopQ Pvt ltd",
+                        "payer_name": "ShopQ Pvt Ltd",
                         "payer_address": "New Delhi",
                         "payer_account_no": "123456789",
                         "payer_bank_code": "IFSC00198",
-                        "payer_virtual_payment_address": null
+                        "payer_virtual_payment_address": "abc@okcici"
                     },
                     "settlement_reason_code": "01",
-                    "transaction_id": "8759202d-60d0-4826-836d-8ff14cbeea9b",
-                    "settlement_id": null,
-                    "settlement_reference_no": null,
-                    "recon_status": null,
+                    "transaction_id": "6871a795-f9c8-4541-8e39-810c719a5a41",
+                    "settlement_id": "51c83972-dad0-4d71-9a19-568ba64f7d38",
+                    "settlement_reference_no": "234504345089081A",
+                    "recon_status": "01",
                     "diff_amount": null,
                     "counterparty_recon_status": null,
                     "counterparty_diff_amount": null,
@@ -287,29 +284,28 @@
                         "name": "Please settle payment with seller",
                         "code": "PAYMENT"
                     },
-                    "created_at": "2023-08-30T06:37:58.323Z",
-                    "updated_at": "2023-08-30T06:37:58.323Z"
+                    "created_at": "2023-10-09T11:04:54.494Z",
+                    "updated_at": "2023-10-09T11:04:54.494Z"
                 },
                 {
-                    "id": "100134",
-                    "invoice_no": "100134",
+                    "id": "100524",
+                    "invoice_no": "100524",
                     "collector_app_id": "pre-prod.qaddoo.com",
-                    "receiver_app_id": "ondc-seller.paytm.com",
-                    "receiver_app_uri": "https://ondc-seller.paytm.com/ondc/v1/249357/bpp",
+                    "receiver_app_id": "ondc.uat.medpay.in",
+                    "receiver_app_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
                     "state": "Completed",
                     "provider": {
                         "name": {
-                            "name": "Paytm Testing",
-                            "code": "243587"
+                            "name": "Medpay - Vishal Medical Center JP Nagar",
+                            "code": "1001-3716-9032-6275"
                         },
-                        "address": "Noida"
+                        "address": "Bengaluru Urban"
                     },
                     "payment": {
-                        "uri": "",
                         "tl_method": "http/get",
                         "params": {
-                            "transaction_id": "1693366447091",
-                            "amount": "850.00",
+                            "transaction_id": "1696843680578",
+                            "amount": "17005.0",
                             "currency": "INR",
                             "transaction_status": "PAID"
                         },
@@ -331,18 +327,18 @@
                             {
                                 "settlement_counterparty": "seller-app",
                                 "settlement_phase": "sale-amount",
-                                "settlement_amount": 824.5,
+                                "settlement_amount": 16494.85,
                                 "settlement_type": "upi",
-                                "settlement_bank_account_no": "003105030573",
-                                "settlement_ifsc_code": "ICIC0000031",
-                                "upi_address": "gft@oksbi",
-                                "bank_name": "ICICI Bank",
-                                "branch_name": "Senior mall noida",
-                                "beneficiary_name": "PAYTM E-COMMERCE PRIVATE LIMITED",
-                                "beneficiary_address": "Noida",
-                                "settlement_status": "READY",
-                                "settlement_reference": "75664274",
-                                "settlement_timestamp": "2023-08-30T06:37:58.305Z"
+                                "settlement_bank_account_no": "29837293879283",
+                                "settlement_ifsc_code": "SBIN0002001",
+                                "upi_address": "72873729780@upi",
+                                "bank_name": "State Bank Of India",
+                                "branch_name": "Andaman Nicobar",
+                                "beneficiary_name": "Arun",
+                                "beneficiary_address": "Bengaluru Urban",
+                                "settlement_status": "PAID",
+                                "settlement_reference": "234504345089081A",
+                                "settlement_timestamp": "2023-10-09T11:04:54.434Z"
                             }
                         ]
                     },
@@ -356,21 +352,21 @@
                     },
                     "deduction_by_collector": {
                         "currency": "INR",
-                        "value": "25.5"
+                        "value": "510.15"
                     },
                     "order_recon_status": null,
                     "payerdetails": {
-                        "payer_name": "ShopQ Pvt ltd",
+                        "payer_name": "ShopQ Pvt Ltd",
                         "payer_address": "New Delhi",
                         "payer_account_no": "123456789",
                         "payer_bank_code": "IFSC00198",
-                        "payer_virtual_payment_address": null
+                        "payer_virtual_payment_address": "abc@okcici"
                     },
                     "settlement_reason_code": "01",
-                    "transaction_id": "8759202d-60d0-4826-836d-8ff14cbeea9b",
-                    "settlement_id": null,
-                    "settlement_reference_no": null,
-                    "recon_status": null,
+                    "transaction_id": "6871a795-f9c8-4541-8e39-810c719a5a41",
+                    "settlement_id": "51c83972-dad0-4d71-9a19-568ba64f7d38",
+                    "settlement_reference_no": "234504345089081A",
+                    "recon_status": "01",
                     "diff_amount": null,
                     "counterparty_recon_status": null,
                     "counterparty_diff_amount": null,
@@ -378,29 +374,28 @@
                         "name": "Please settle payment with seller",
                         "code": "PAYMENT"
                     },
-                    "created_at": "2023-08-30T06:37:58.323Z",
-                    "updated_at": "2023-08-30T06:37:58.323Z"
+                    "created_at": "2023-10-09T11:04:54.494Z",
+                    "updated_at": "2023-10-09T11:04:54.494Z"
                 },
                 {
-                    "id": "100135",
-                    "invoice_no": "100135",
+                    "id": "100520",
+                    "invoice_no": "100520",
                     "collector_app_id": "pre-prod.qaddoo.com",
-                    "receiver_app_id": "ondc-seller.paytm.com",
-                    "receiver_app_uri": "https://ondc-seller.paytm.com/ondc/v1/249357/bpp",
+                    "receiver_app_id": "ondc.uat.medpay.in",
+                    "receiver_app_uri": "https://ondc.uat.medpay.in/ecommerce/ondc",
                     "state": "Completed",
                     "provider": {
                         "name": {
-                            "name": "Paytm Testing",
-                            "code": "243587"
+                            "name": "Medpay - Vishal Medical Center JP Nagar",
+                            "code": "1001-3716-9032-6275"
                         },
-                        "address": "Noida"
+                        "address": "Bengaluru Urban"
                     },
                     "payment": {
-                        "uri": "",
                         "tl_method": "http/get",
                         "params": {
-                            "transaction_id": "1693366554470",
-                            "amount": "1650.00",
+                            "transaction_id": "1696843295392",
+                            "amount": "31795.0",
                             "currency": "INR",
                             "transaction_status": "PAID"
                         },
@@ -422,18 +417,18 @@
                             {
                                 "settlement_counterparty": "seller-app",
                                 "settlement_phase": "sale-amount",
-                                "settlement_amount": 1600.5,
+                                "settlement_amount": 30841.15,
                                 "settlement_type": "upi",
-                                "settlement_bank_account_no": "003105030573",
-                                "settlement_ifsc_code": "ICIC0000031",
-                                "upi_address": "gft@oksbi",
-                                "bank_name": "ICICI Bank",
-                                "branch_name": "Senior mall noida",
-                                "beneficiary_name": "PAYTM E-COMMERCE PRIVATE LIMITED",
-                                "beneficiary_address": "Noida",
-                                "settlement_status": "READY",
-                                "settlement_reference": "31070584",
-                                "settlement_timestamp": "2023-08-30T06:37:58.314Z"
+                                "settlement_bank_account_no": "29837293879283",
+                                "settlement_ifsc_code": "SBIN0002001",
+                                "upi_address": "72873729780@upi",
+                                "bank_name": "State Bank Of India",
+                                "branch_name": "Andaman Nicobar",
+                                "beneficiary_name": "Arun",
+                                "beneficiary_address": "Bengaluru Urban",
+                                "settlement_status": "PAID",
+                                "settlement_reference": "234504345089081A",
+                                "settlement_timestamp": "2023-10-09T11:04:54.475Z"
                             }
                         ]
                     },
@@ -447,21 +442,21 @@
                     },
                     "deduction_by_collector": {
                         "currency": "INR",
-                        "value": "49.5"
+                        "value": "953.85"
                     },
                     "order_recon_status": null,
                     "payerdetails": {
-                        "payer_name": "ShopQ Pvt ltd",
+                        "payer_name": "ShopQ Pvt Ltd",
                         "payer_address": "New Delhi",
                         "payer_account_no": "123456789",
                         "payer_bank_code": "IFSC00198",
-                        "payer_virtual_payment_address": null
+                        "payer_virtual_payment_address": "abc@okcici"
                     },
                     "settlement_reason_code": "01",
-                    "transaction_id": "8759202d-60d0-4826-836d-8ff14cbeea9b",
-                    "settlement_id": null,
-                    "settlement_reference_no": null,
-                    "recon_status": null,
+                    "transaction_id": "6871a795-f9c8-4541-8e39-810c719a5a41",
+                    "settlement_id": "51c83972-dad0-4d71-9a19-568ba64f7d38",
+                    "settlement_reference_no": "234504345089081A",
+                    "recon_status": "01",
                     "diff_amount": null,
                     "counterparty_recon_status": null,
                     "counterparty_diff_amount": null,
@@ -469,8 +464,8 @@
                         "name": "Please settle payment with seller",
                         "code": "PAYMENT"
                     },
-                    "created_at": "2023-08-30T06:37:58.323Z",
-                    "updated_at": "2023-08-30T06:37:58.323Z"
+                    "created_at": "2023-10-09T11:04:54.494Z",
+                    "updated_at": "2023-10-09T11:04:54.494Z"
                 }
             ]
         }
