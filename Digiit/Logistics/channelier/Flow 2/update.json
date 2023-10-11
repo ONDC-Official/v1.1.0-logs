@@ -1,0 +1,49 @@
+{
+  "context": {
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "ttl": "PT30S",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "transaction_id": "619cd3f2-c650-445b-b95e-9e5b0f03b47c",
+    "message_id": "64279549-4052-40e1-8ec4-bbb68c9ebb31",
+    "country": "IND",
+    "city": "std:080",
+    "timestamp": "2023-10-06T09:19:35.269Z",
+    "action": "update"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "d4d48761-0ddb-4823-8eff-f9d39673f089",
+      "state": "Accepted",
+      "items": [
+        {
+          "id": "18",
+          "category_id": "Next Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid",
+          "start": {
+            "instructions": {
+              "short_desc": "7204",
+              "long_desc": "This OTP is to be shared with the Store Manager for pickup of the package"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          }
+        }
+      ],
+      "updated_at": "2023-10-06T09:19:35.269Z"
+    }
+  }
+}
