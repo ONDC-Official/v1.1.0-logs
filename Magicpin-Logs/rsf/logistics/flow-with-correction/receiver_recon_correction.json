@@ -1,0 +1,126 @@
+{
+  "context": {
+    "domain": "ONDC:NTS10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "rsp-standalone.eunimart.com",
+    "bap_uri": "https://rsp-standalone.eunimart.com/api/v1/ondc/rsp/eunimart_rsp",
+    "bpp_id": "ultrontest.magicpin.com",
+    "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc/logistics" ,
+    "transaction_id": "4a934053-f902-43d3-8088-3636de0af443",
+    "ttl": "P2D",
+    "message_id": "1gf55e6-a2b1-41c5-9d49-ccf02b28845g",
+    "timestamp": "2023-10-11T13:18:01.078Z"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "invoice_no": "dbe44662-febd-4fbc-8361-29bca685b58e",
+          "created_at": "2023-10-11T12:58:47.522Z",
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "settlement_reason_code": "01",
+          "collector_app_id": "preprod.ondc.adya.ai",
+          "provider": {
+            "name": {
+              "code": "P22",
+              "name": "sushma_store"
+            },
+            "address": "Visakhapatnam"
+          },
+          "payerdetails": {
+            "payer_bank_code": "IDFB0080151",
+            "payer_name": "Shayak Mazumder",
+            "payer_address": "SHAYR OMNICHANNEL PRIVATE LIMITED ONDC",
+            "payer_account_no": 10147175877
+          },
+          "id": "dbe44662-febd-4fbc-8361-29bca685b58e",
+          "state": "Completed",
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "payment": {
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "collected_by": "BAP",
+            "params": {
+              "amount": "1",
+              "currency": "INR"
+            },
+            "type": "ON-ORDER",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_type": "neft",
+                "settlement_reference": "2023101100958660C",
+                "settlement_status": "PAID",
+                "settlement_timestamp": "2023-10-11T18:48:00.411Z",
+                "settlement_amount": 2
+              }
+            ],
+            "@ondc/org/settlement_window": "P2D",
+            "@ondc/org/settlement_basis": "Delivery",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/collected_by_status": "PAID",
+            "status": "PAID",
+            "@ondc/org/buyer_app_finder_fee_amount": "0"
+          },
+          "updated_at": "2023-10-11T13:06:50.273Z",
+          "settlement_id": "5a6c52ae-e2ab-44d3-9606-89aa033475cc",
+          "settlement_reference_no": "2023101100958660C",
+          "transaction_id": "832c4ea6-dfdd-4c9b-bcb9-25a79e5e7a61",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "correction": {
+            "issue_initiator_ref": "e6c1dd97-8f37-485d-8033-3d7610c2ba5e",
+            "issue_responder_ref": "716036d6-9de8-4ec5-b7b1-cf3b89e1a871",
+            "issue_type": "PAYMENT",
+            "issue_subtype": "PTM02",
+            "order_id": "dbe44662-febd-4fbc-8361-29bca685b58e",
+            "order_amount": {
+              "currency": "INR",
+              "value": 3
+            },
+            "order_correction_amount": {
+              "currency": "INR",
+              "value": 2
+            },
+            "order_state": "Completed",
+            "previous_settled_amount": {
+              "currency": "INR",
+              "value": 1
+            },
+            "settlement_id": [
+              "5a6c52ae-e2ab-44d3-9606-89aa033475cc"
+            ],
+            "settlement_reference_no": [
+              "2023101100978660C"
+            ],
+            "prev_settlement_reference_no": [
+              "2023101100958660C"
+            ],
+            "recon_status": "01",
+            "diff_amount": {
+              "currency": "INR",
+              "value": "2"
+            },
+            "message": {
+              "name": "NA",
+              "code": "NA"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "context": {
+    "domain": "ONDC:NTS10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "rsp-standalone.eunimart.com",
+    "bap_uri": "https://rsp-standalone.eunimart.com/api/v1/ondc/rsp/eunimart_rsp",
+    "bpp_id": "ultrontest.magicpin.com",
+    "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc/logistics",
+    "transaction_id": "ff1f55e6-a2b1-41c5-9d49-ccf02b28845g",
+    "message_id": "6c847843-900e-4a6b-8a23-ffcaddb8fc5c",
+    "timestamp": "2023-10-11T13:18:01.078Z",
+    "ttl": "P2D"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "id": "dbe44662-febd-4fbc-8361-29bca685b58e",
+          "invoice_no": "dbe44662-febd-4fbc-8361-29bca685b58e",
+          "collector_app_id": "preprod.ondc.adya.ai",
+          "receiver_app_id": "ultrontest.magicpin.com",
+          "state": "Completed",
+          "provider": {
+            "name": {
+              "name": "sushma_store",
+              "code": "P22"
+            },
+            "adress": ""
+          },
+          "payment": {
+            "uri": "",
+            "tl_method": "",
+            "params": {
+              "transaction_id": "",
+              "transaction_status": "",
+              "amount": "1",
+              "currency": "INR"
+            },
+            "type": "ON-ORDER",
+            "status": "NOT-PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "PAID",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "0",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "",
+            "@ondc/org/return_window": "",
+            "@ondc/org/return_window_status": "",
+            "@ondc/org/settlement_basis": "Delivery",
+            "@ondc/org/settlement_basis_status": "",
+            "@ondc/org/settlement_window": "P2D",
+            "@ondc/org/settlement_window_status": "",
+            "settlement_details": null
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "payerdetails": {
+            "payer_name": "Shayak Mazumder",
+            "payer_address": "SHAYR OMNICHANNEL PRIVATE LIMITED ONDC",
+            "payer_account_no": 10147175877,
+            "payer_bank_code": "IDFB0080151"
+          },
+          "settlement_reason_code": "01",
+          "transaction_id": "832c4ea6-dfdd-4c9b-bcb9-25a79e5e7a61",
+          "settlement_id": "0f9d7c26-5d63-446f-b1f0-9901c7852116",
+          "settlement_reference_no": "2023101100958660C",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "created_at": "2023-10-11T12:58:47.522Z",
+          "updated_at": "2023-10-11T13:06:50.273Z"
+        }
+      ]
+    }
+  }
+}
