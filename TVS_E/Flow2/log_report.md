@@ -1,3 +1,6 @@
+**/on_search**
+- context/timestamp difference between /on_search and /search should be smaller than 5 sec
+
 **/on_init**
 - Discrepancies between the quote object in /on_select and /on_init
 

@@ -1,64 +1,63 @@
 {
-    "context":{
-      "domain":"nic2004:60232",
-      "country":"IND",
-      "city":"std:080",
-      "action":"on_update",
-      "core_version":"1.1.0",
-      "bap_id":"preprod-ondc.viranc.com/p/v1/store",
-      "bap_uri":"https://preprod-ondc.viranc.com/p/v1/store/bapl",
-      "bpp_id":"my.ithinklogistics.com/ondc/preprod",
-      "bpp_uri":"https://my.ithinklogistics.com/ondc/preprod",
-      "transaction_id":"d1e5cf26-56d7-5e98-8780-dc28868e7773",
-      "message_id":"cb25e74d-2ba9-48b1-b143-4017ce25d59a",
-      "timestamp":"2023-09-22T04:43:14.069Z"
-    },
-    "message":{
-      "order":{
-        "id":"9db2f32b-3379-4997-a68e-41bfea9eb6b6",
-        "state":"Accepted",
-        "items":[
-          {
-            "id":"3I1",
-            "category_id":"Next Day Delivery",
-            "descriptor":{
-              "code":"P2H2P"
-            }
-          }],
-        "fulfillments":[
-          {
-            "id":"1",
-            "type":"Prepaid",
-            "@ondc/org/awb_no":"XSE20023852937001",
-            "start":{
-              "time":{
-                "range":{
-                  "start":"2023-09-22T09:30:00.000Z",
-                  "end":"2023-09-22T12:30:00.000Z"
-                }
-              },
-              "instructions":{
-                "name":"Shipping label",
-                "short_desc":"Shipping label",
-                "long_desc":"Shipping label",
-                "images":[
-                  "https://itl-uploads.s3.ap-south-1.amazonaws.com/uploads/shipping/ad161f9a80e3ec38283efc133905f6ed.pdf"],
-                "additional_desc":{
-                  "content_type":"text/html",
-                  "url":"https://my.ithinklogistics.com/delivery-instructions"
-                }
+  "context": {
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_update",
+      "core_version": "1.1.0",
+      "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+      "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+      "bpp_id": "my.ithinklogistics.com/ondc/preprod",
+      "bpp_uri": "https://my.ithinklogistics.com/ondc/preprod",
+      "transaction_id": "fa389615-678b-5222-9fff-eadddac9b2a1",
+      "message_id": "2c6f31bc-c3f6-4720-b227-8203bf4b7976",
+      "timestamp": "2023-09-28T05:37:37.499Z"
+  },
+  "message": {
+      "order": {
+          "id": "ba84b8fb-44d7-4915-bad9-68c3d6f15f05",
+          "state": "Accepted",
+          "items": [{
+                  "id": "3I1",
+                  "category_id": "Next Day Delivery",
+                  "descriptor": {
+                      "code": "P2H2P"
+                  }
               }
-            },
-            "end":{
-              "time":{
-                "range":{
-                  "start":"2023-09-23T03:30:00.000Z",
-                  "end":"2023-09-23T14:30:00.000Z"
-                }
+          ],
+          "fulfillments": [{
+                  "id": "1",
+                  "type": "Prepaid",
+                  "@ondc/org/awb_no": "XSE20025726175001",
+                  "start": {
+                      "time": {
+                          "range": {
+                              "start": "2023-09-28T09:30:00.000Z",
+                              "end": "2023-09-28T12:30:00.000Z"
+                          }
+                      },
+                      "instructions": {
+                          "name": "Shipping label",
+                          "short_desc": "Shipping label",
+                          "long_desc": "Shipping label",
+                          "images": ["https://itl-uploads.s3.ap-south-1.amazonaws.com/uploads/shipping/f431f446e7fce46b34af2d6787094c78.pdf"],
+                          "additional_desc": {
+                              "content_type": "text/html",
+                              "url": "https://my.ithinklogistics.com/delivery-instructions"
+                          }
+                      }
+                  },
+                  "end": {
+                      "time": {
+                          "range": {
+                              "start": "2023-09-29T03:30:00.000Z",
+                              "end": "2023-09-29T14:30:00.000Z"
+                          }
+                      }
+                  }
               }
-            }
-          }],
-        "updated_at":"2023-09-22T04:43:14.069Z"
+          ],
+          "updated_at": "2023-09-28T05:37:37.499Z"
       }
-    }
+  }
 }
