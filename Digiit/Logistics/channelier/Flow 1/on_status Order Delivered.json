@@ -1,0 +1,107 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_status",
+    "transaction_id": "4e75388c-4360-437c-94ca-961d8fe12ae4",
+    "message_id": "k5c7f43a-f80d-4862-97b7-16adc7d47fec",
+    "timestamp": "2023-10-06T09:14:19.237Z"
+  },
+  "message": {
+    "order": {
+      "id": "622afb4b-85ac-4d74-97ef-dc3d86ac2efc",
+      "state": "Completed",
+      "provider": {
+        "id": "107-Account-DER-292"
+      },
+      "items": [
+        {
+          "id": "18",
+          "category_id": "Next Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "type": "Prepaid",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-10-07T10:27:34.595Z",
+                "end": "2023-10-07T10:57:34.595Z"
+              },
+              "timestamp": "2023-10-06T08:59:41.843Z"
+            },
+            "instructions": {
+              "name": "2195",
+              "short_desc": "2195",
+              "long_desc": "This OTP is to be shared with the Store Manager for pickup of the package"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-10-07T14:27:34.595Z",
+                "end": "2023-10-07T14:42:34.595Z"
+              },
+              "timestamp": "2023-10-06T09:14:19.237Z"
+            }
+          },
+          "agent": {
+            "name": "Peter",
+            "phone": "7438483828"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "20.0"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "18",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "20.0"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP"
+      },
+      "billing": {
+        "name": "Arachnomesh Technologies Pvt Ltd",
+        "address": {
+          "name": "PF-43, B-Wing",
+          "building": "Crystal Plaza",
+          "locality": "Sector-7, Kharghar",
+          "city": "Navi Mumbai",
+          "state": "Maharashtra",
+          "country": "India",
+          "area_code": "410210"
+        },
+        "tax_number": "27AAMCA8667N1ZQ",
+        "phone": "7291085339",
+        "email": "info@channelier.com"
+      }
+    }
+  }
+}

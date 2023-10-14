@@ -1,0 +1,127 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "api2.kiko.link/ondc-seller",
+        "bpp_uri": "https://api2.kiko.link/ondc-seller",
+        "transaction_id": "f89cb504-1027-444b-a34d-d58d20bad8f1",
+        "message_id": "b06023fe-6ffe-4be0-9bd6-8a4888f5c2d8",
+        "city": "std:022",
+        "country": "IND",
+        "timestamp": "2023-10-05T03:50:23.761Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "648170d3ffeacc1f96700ac6"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "fulfillment-648170d3ffeacc1f96700ac6",
+                    "id": "65140576b5cf6f8afaed8b07"
+                },
+                {
+                    "fulfillment_id": "fulfillment-648170d3ffeacc1f96700ac6",
+                    "id": "65140695b5cf6f8afaed8b12"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "fulfillment-648170d3ffeacc1f96700ac6",
+                    "@ondc/org/provider_name": "vishal shop11",
+                    "tracking": true,
+                    "@ondc/org/category": "Standard Delivery",
+                    "@ondc/org/TAT": "PT10H",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "778.62"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "65140576b5cf6f8afaed8b07",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "arhar dal",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "200.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "8"
+                                },
+                                "maximum": {
+                                    "count": "8"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "200.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "65140695b5cf6f8afaed8b12",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "aashriwaad dal",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "500.00"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "9"
+                                },
+                                "maximum": {
+                                    "count": "9"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "500.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "fulfillment-648170d3ffeacc1f96700ac6",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "52.00"
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "fulfillment-648170d3ffeacc1f96700ac6",
+                        "title": "Convenience Fee",
+                        "@ondc/org/title_type": "misc",
+                        "price": {
+                            "currency": "INR",
+                            "value": "26.62"
+                        }
+                    }
+                ],
+                "ttl": "PT6H"
+            }
+        }
+    }
+}
