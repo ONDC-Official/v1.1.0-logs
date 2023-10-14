@@ -1,81 +1,81 @@
 {
     "context": {
-        "domain": "nic2004:60232",
-        "core_version": "1.1.0",
-        "bap_id": "preprodlogistics.ooga.shop",
-        "bap_uri": "https://preprodlogistics.ooga.shop",
-        "bpp_id": "preprod-bpp.iway.digiit.io",
-        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-        "city": "STD:080",
+        "transaction_id": "2c5a7a40-7640-4fe9-ac59-695a544bc687",
         "country": "IND",
+        "bpp_id": "ondc.whizzard.in",
+        "city": "STD:080",
+        "domain": "nic2004:60232",
+        "bpp_uri": "https://ondc.whizzard.in/api/integration",
         "action": "on_confirm",
-        "transaction_id": "c75d7da2-06b5-4d00-978f-72e09ddeaf96",
-        "message_id": "c8599ac2-4396-4190-a515-316933d85f91",
-        "timestamp": "2023-09-28T11:58:16.106Z"
+        "message_id": "d266ccff-c4c2-4331-b837-4c4adf096280",
+        "core_version": "1.1.0",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "timestamp": "2023-10-14T12:06:29.469Z"
     },
     "message": {
         "order": {
-            "id": "fab9cef2-ce75-4853-981a-398a5bf7568b",
-            "state": "Accepted",
-            "provider": {
-                "id": "107-Account-DER-292"
-            },
-            "items": [
-                {
-                    "id": "19",
-                    "category_id": "Immediate Delivery",
-                    "descriptor": {
-                        "code": "P2P"
-                    }
-                }
-            ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": "20.0"
-                },
-                "breakup": [
-                    {
-                        "@ondc/org/item_id": "19",
-                        "@ondc/org/title_type": "Delivery Charge",
-                        "price": {
-                            "currency": "INR",
-                            "value": "20.0"
-                        }
-                    }
-                ]
-            },
             "fulfillments": [
                 {
                     "id": "1",
-                    "type": "Prepaid",
                     "state": {
                         "descriptor": {
                             "code": "Pending"
                         }
                     },
+                    "type": "Prepaid",
                     "tracking": true
                 }
             ],
-            "billing": {
-                "name": "OOGASHOP",
-                "address": {
-                    "name": "502",
-                    "building": "Optum Inclave",
-                    "locality": "Sector-53",
-                    "city": "Gurugram",
-                    "state": "Haryana",
-                    "country": "India",
-                    "area_code": "122002"
-                },
-                "tax_number": "07AAGFF2194N1Z1",
-                "phone": "9871764687",
-                "email": "muktabh@paralleldots.com",
-                "created_at": "2023-09-28T11:57:39.078Z",
-                "updated_at": "2023-09-28T11:57:39.078Z"
+            "quote": {
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "I1",
+                        "price": {
+                            "currency": "INR",
+                            "value": "30.0"
+                        },
+                        "@ondc/org/title_type": "Delivery Charge"
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "30.0"
+                }
             },
-            "created_at": "2023-09-28T11:58:15.930Z",
-            "updated_at": "2023-09-28T11:58:16.106Z"
+            "updated_at": "2023-10-14T12:06:29.469Z",
+            "provider": {
+                "id": "MLL"
+            },
+            "created_at": "2023-10-14T12:06:29.390Z",
+            "id": "OOGASHOP-60",
+            "state": "Created",
+            "items": [
+                {
+                    "category_id": "Immediate Delivery",
+                    "id": "I1",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "billing": {
+                "address": {
+                    "country": "India",
+                    "city": "Gurugram",
+                    "area_code": "122002",
+                    "name": "502",
+                    "locality": "Sector-53",
+                    "state": "Haryana",
+                    "building": "Optum Inclave"
+                },
+                "updated_at": "2023-10-14T12:06:29.390Z",
+                "phone": "9871764687",
+                "tax_number": "132425",
+                "name": "OOGASHOP",
+                "created_at": "2023-10-14T12:06:29.390Z",
+                "email": "muktabh@paralleldots.com"
+            }
         }
     }
 }

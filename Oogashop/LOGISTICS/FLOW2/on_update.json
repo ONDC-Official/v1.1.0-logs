@@ -1,61 +1,55 @@
 {
     "context": {
-        "domain": "nic2004:60232",
-        "core_version": "1.1.0",
-        "bap_id": "preprodlogistics.ooga.shop",
-        "bap_uri": "https://preprodlogistics.ooga.shop",
-        "bpp_id": "preprod-bpp.iway.digiit.io",
-        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-        "city": "STD:080",
+        "transaction_id": "2c5a7a40-7640-4fe9-ac59-695a544bc687",
         "country": "IND",
+        "bpp_id": "ondc.whizzard.in",
+        "city": "STD:080",
+        "domain": "nic2004:60232",
+        "bpp_uri": "https://ondc.whizzard.in/api/integration",
         "action": "on_update",
-        "transaction_id": "c75d7da2-06b5-4d00-978f-72e09ddeaf96",
-        "message_id": "2d4d5934-2504-46ae-9f05-f22a23d638e3",
-        "timestamp": "2023-09-28T11:58:29.945Z"
+        "message_id": "d266ccff-c4c2-4331-b837-4c4adf096280",
+        "core_version": "1.1.0",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "timestamp": "2023-10-14T12:07:00.119Z"
     },
     "message": {
         "order": {
-            "id": "fab9cef2-ce75-4853-981a-398a5bf7568b",
-            "state": "Accepted",
-            "items": [
-                {
-                    "id": "19",
-                    "category_id": "Immediate Delivery",
-                    "descriptor": {
-                        "code": "P2P"
-                    }
-                }
-            ],
             "fulfillments": [
                 {
-                    "id": "1",
-                    "type": "Prepaid",
                     "start": {
                         "time": {
                             "range": {
-                                "start": "2023-09-28T17:38:29.838Z",
-                                "end": "2023-09-28T18:08:29.838Z"
+                                "start": "2023-10-14T12:07:00.050Z",
+                                "end": "2023-10-14T12:16:00.050Z"
                             }
-                        },
-                        "instructions": {
-                            "short_desc": "000026"
                         }
                     },
                     "end": {
                         "time": {
                             "range": {
-                                "start": "2023-09-28T18:13:29.838Z",
-                                "end": "2023-09-28T18:28:29.838Z"
+                                "start": "2023-10-14T12:16:00.050Z",
+                                "end": "2023-10-14T12:26:00.050Z"
                             }
                         }
                     },
-                    "agent": {
-                        "name": "Peter",
-                        "phone": "7438483828"
-                    }
+                    "id": "Fulfillment1",
+                    "type": "Prepaid"
                 }
             ],
-            "updated_at": "2023-09-28T11:58:29.966Z"
+            "updated_at": "2023-10-14T12:06:29.390Z",
+            "created_at": "2023-10-14T12:06:29.390Z",
+            "id": "OOGASHOP-60",
+            "state": "In-progress",
+            "items": [
+                {
+                    "category_id": "Immediate Delivery",
+                    "id": "I1",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ]
         }
     }
 }
