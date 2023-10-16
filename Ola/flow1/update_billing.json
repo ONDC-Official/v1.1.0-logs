@@ -1,0 +1,53 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "update",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "olamoney-website-3000a.stg.corp.olacabs.com",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "bap_uri": "https://olamoney-website-3000a.stg.corp.olacabs.com/ondc",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "transaction_id": "1bc49e1b-39fc-46cd-ba2d-0a5c5ec2b9a2",
+    "message_id": "50b0ee26-c8b1-45b8-bc35-3cef4b4351ab",
+    "timestamp": "2023-10-16T11:47:18.896Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "ONDC_1927702vpGSl",
+      "state": "Completed",
+      "provider": {
+        "id": "22446688739675",
+        "rateable": false
+      },
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "quantity": {
+            "count": 1
+          },
+          "tags": {
+            "update_type": "return",
+            "reason_code": "003",
+            "ttl_approval": "P1D",
+            "ttl_reverseqc": "P3D"
+          }
+        }
+      ],
+      "payment": {
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "buyer",
+            "settlement_phase": "refund",
+            "settlement_type": "netbanking",
+            "settlement_amount": "105.0",
+            "settlement_timestamp": "2023-10-16T11:47:18.896Z"
+          }
+        ]
+      }
+    },
+    "update_target": "billing"
+  }
+}
