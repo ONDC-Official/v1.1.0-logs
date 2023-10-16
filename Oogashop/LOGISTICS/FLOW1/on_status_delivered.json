@@ -1,93 +1,34 @@
 {
     "context": {
         "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "STD:080",
+        "action": "on_status",
         "core_version": "1.1.0",
         "bap_id": "preprodlogistics.ooga.shop",
         "bap_uri": "https://preprodlogistics.ooga.shop",
-        "bpp_id": "preprod-bpp.iway.digiit.io",
-        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-        "city": "STD:080",
-        "country": "IND",
-        "action": "on_status",
-        "transaction_id": "3a62aaf5-b8c0-4ce6-a392-5ef21bed893b",
-        "message_id": "d24e4f3c-0b3b-4b8a-87a8-9909197719b0",
-        "timestamp": "2023-09-28T11:43:11.211Z"
+        "bpp_id": "ondc.whizzard.in",
+        "bpp_uri": "https://ondc.whizzard.in/api/integration",
+        "transaction_id": "e5c98d77-92c0-4d22-93d0-1e11891c7c2e",
+        "message_id": "652a831a7aef57c20b629896",
+        "timestamp": "2023-10-14T12:01:30.069Z"
     },
     "message": {
         "order": {
-            "id": "0f8dd01c-ffe1-4ce0-adf6-2d4bdd9f788a",
+            "id": "OOGASHOP-43",
             "state": "Completed",
             "provider": {
-                "id": "107-Account-DER-292"
+                "id": "MLL"
             },
             "items": [
                 {
-                    "id": "19",
+                    "id": "I1",
                     "category_id": "Immediate Delivery",
                     "descriptor": {
                         "code": "P2P"
                     }
                 }
             ],
-            "fulfillments": [
-                {
-                    "type": "Prepaid",
-                    "state": {
-                        "descriptor": {
-                            "code": "Order-delivered"
-                        }
-                    },
-                    "tracking": true,
-                    "start": {
-                        "time": {
-                            "range": {
-                                "start": "2023-09-28T17:17:25.403Z",
-                                "end": "2023-09-28T17:47:25.403Z"
-                            },
-                            "timestamp": "2023-09-28T11:39:43.923Z"
-                        },
-                        "instructions": {
-                            "name": "Pickup from door-step",
-                            "short_desc": "Pickup from door-step",
-                            "long_desc": "000002"
-                        }
-                    },
-                    "end": {
-                        "time": {
-                            "range": {
-                                "start": "2023-09-28T17:52:25.403Z",
-                                "end": "2023-09-28T18:07:25.403Z"
-                            },
-                            "timestamp": "2023-09-28T11:43:11.211Z"
-                        }
-                    },
-                    "agent": {
-                        "name": "Peter",
-                        "phone": "7438483828"
-                    }
-                }
-            ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": "20.0"
-                },
-                "breakup": [
-                    {
-                        "@ondc/org/item_id": "19",
-                        "@ondc/org/title_type": "Delivery Charge",
-                        "price": {
-                            "currency": "INR",
-                            "value": "20.0"
-                        }
-                    }
-                ]
-            },
-            "payment": {
-                "type": "ON-ORDER",
-                "collected_by": "BAP",
-                "@ondc/org/settlement_details": []
-            },
             "billing": {
                 "name": "OOGASHOP",
                 "address": {
@@ -99,9 +40,75 @@
                     "country": "India",
                     "area_code": "122002"
                 },
-                "tax_number": "07AAGFF2194N1Z1",
+                "tax_number": "132425",
                 "phone": "9871764687",
                 "email": "muktabh@paralleldots.com"
+            },
+            "fulfillments": [
+                {
+                    "type": "Prepaid",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "tracking": true,
+                    "agent": {
+                        "phone": "8499954583",
+                        "name": "Jeevan M"
+                    },
+                    "vehicle": {
+                        "category": "Bike",
+                        "size": "small",
+                        "registration": "AP03 223 34"
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-10-14T11:55:23.463Z",
+                                "end": "2023-10-14T12:04:23.463Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-10-14T12:04:23.463Z",
+                                "end": "2023-10-14T12:14:23.463Z"
+                            }
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "30.0"
+                },
+                "breakup": [
+                    {
+                        "item_id": "I1",
+                        "title_type": "DELIVERY",
+                        "price": {
+                            "currency": "INR",
+                            "value": "30"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "payment_type": "ON-ORDER",
+                "collected_by": "BAP",
+                "settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_type": "upi",
+                        "settlement_bank_account_no": "123239845757",
+                        "settlement_ifsc_code": "SBIN0000123",
+                        "upi_address": "jeavan@ybl",
+                        "beneficiary_name": "Jeevan"
+                    }
+                ]
             }
         }
     }

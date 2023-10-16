@@ -7,21 +7,21 @@
         "core_version": "1.1.0",
         "bap_id": "preprodlogistics.ooga.shop",
         "bap_uri": "https://preprodlogistics.ooga.shop",
-        "bpp_id": "preprod-bpp.iway.digiit.io",
-        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-        "transaction_id": "c75d7da2-06b5-4d00-978f-72e09ddeaf96",
-        "message_id": "2d4d5934-2504-46ae-9f05-f22a23d638e3",
-        "timestamp": "2023-09-28T11:58:29.860Z",
-        "ttl": "PT30S"
+        "bpp_id": "ondc.whizzard.in",
+        "bpp_uri": "https://ondc.whizzard.in/api/integration",
+        "transaction_id": "2c5a7a40-7640-4fe9-ac59-695a544bc687",
+        "message_id": "d266ccff-c4c2-4331-b837-4c4adf096280",
+        "timestamp": "2023-10-14T12:07:00.022Z"
     },
     "message": {
         "update_target": "fulfillment",
         "order": {
-            "id": "fab9cef2-ce75-4853-981a-398a5bf7568b",
-            "state": "Accepted",
+            "id": "OOGASHOP-60",
+            "state": "Created",
+            "provider": null,
             "items": [
                 {
-                    "id": "19",
+                    "id": "I1",
                     "category_id": "Immediate Delivery",
                     "descriptor": {
                         "code": "P2P"
@@ -33,9 +33,53 @@
                     "id": "1",
                     "type": "Prepaid",
                     "start": {
+                        "location": {
+                            "gps": "12.910816, 77.546946",
+                            "address": {
+                                "name": "Grocery Store",
+                                "building": "Subramanya Pura Rd",
+                                "locality": " Telecom Layout, Padmanabhanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560061"
+                            }
+                        },
                         "instructions": {
-                            "short_desc": "0000026",
-                            "long_desc": "Pickup from door-step"
+                            "short_desc": "000060",
+                            "long_desc": "Deliver at door-step"
+                        },
+                        "contact": {
+                            "phone": "9753241111",
+                            "email": "raju@gmail.com"
+                        },
+                        "person": {
+                            "name": "Raju1"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.910900, 77.546787",
+                            "address": {
+                                "name": "391-64",
+                                "building": "1st Cross Rd, BHCS Layout",
+                                "locality": "Canara Bank Colony, Uttarahalli Hobli",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "India",
+                                "area_code": "560061"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "0000060",
+                            "long_desc": "Deliver at door-step"
+                        },
+                        "contact": {
+                            "phone": "9786654512",
+                            "email": "shashi@gmail.com"
+                        },
+                        "person": {
+                            "name": "Shashi"
                         }
                     },
                     "tags": {
@@ -43,7 +87,7 @@
                     }
                 }
             ],
-            "updated_at": "2023-09-28T11:58:29.860Z",
+            "updated_at": "2023-10-14T12:06:29.390Z",
             "@ondc/org/linked_order": {
                 "items": [
                     {
@@ -51,7 +95,7 @@
                         "quantity": {
                             "count": 2,
                             "measure": {
-                                "value": 4,
+                                "value": "2",
                                 "unit": "Kilogram"
                             }
                         },
@@ -64,10 +108,24 @@
                         }
                     }
                 ],
+                "provider": {
+                    "descriptor": {
+                        "name": "Test Store"
+                    },
+                    "address": {
+                        "name": "Grocery Store",
+                        "building": "Subramanya Pura Rd",
+                        "locality": " Telecom Layout, Padmanabhanagar",
+                        "city": "Bengaluru",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560061"
+                    }
+                },
                 "order": {
-                    "id": "1939939",
+                    "id": "1939941",
                     "weight": {
-                        "value": 4,
+                        "value": "4",
                         "unit": "Kilogram"
                     }
                 }
