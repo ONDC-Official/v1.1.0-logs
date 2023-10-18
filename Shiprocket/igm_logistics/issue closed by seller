@@ -1,0 +1,241 @@
+issue_status_closed by sellerapp
+
+
+
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:06188",
+        "action": "issue",
+        "core_version": "1.0.0",
+        "bap_id": "ondcpreprodtest.sellerapp.in",
+        "bap_uri": "https://qa.ondc.sellerapp.in/bapl/u/",
+        "bpp_id": "ondc.shiprocket.in",
+        "bpp_uri": "https://ondc.shiprocket.in/",
+        "transaction_id": "09a10j20a23yMonday01Test",
+        "message_id": "9e13e6dc-bc2e-4276-907c-fb66dd6412ec",
+        "timestamp": "2023-10-09T12:45:21.276Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "issue": {
+            "id": "test-09a10j20a23yMonday01Test",
+            "category": "FULFILLMENT",
+            "sub_category": "FLM03",
+            "complainant_info": {
+                "person": {
+                    "name": "Ajay Dubey"
+                },
+                "contact": {
+                    "phone": "9879879870",
+                    "email": "ajay.dubey@yahoo.com"
+                }
+            },
+            "order_details": {
+                "id": "test-odr-007",
+                "state": "Ready To Ship",
+                "items": [
+                    {
+                        "id": "39",
+                        "quantity": 1
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "ON_NETWORK_LOGISTICS_FULFILLMENT-1",
+                        "state": "Pick Up scheduled"
+                    }
+                ],
+                "provider_id": "39",
+                "merchant_order_id": "101"
+            },
+            "description": {
+                "short_desc": "Test-> Test-Delayed delivery",
+                "long_desc": "Test -->> Delayed delivery plz make sure its on time",
+                "additional_desc": {
+                    "url": "https://interfac-app/igm/additonal-desc/user/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images": [
+                    "http://interfacing.app/addtional-details/img1.png"
+                ]
+            },
+            "source": {
+                "network_participant_id": "ondc.eunimart.com",
+                "type": "CONSUMER"
+            },
+            "expected_response_time": {
+                "duration": "PT2H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_type": "ISSUE",
+            "issue_actions": {
+                "complainant_actions": [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-10-09T11:29:21.276Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.eunimart.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9894748270",
+                                "email": "interfacingapp@interface.com"
+                            },
+                            "person": {
+                                "name": "Ayush Singh"
+                            }
+                        }
+                    },
+                    {
+                        "complainant_action": "CLOSE",
+                        "short_desc": "Complaint closed",
+                        "updated_at": "2023-10-09T12:45:21.276Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.eunimart.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9894748270",
+                                "email": "interfacingapp@interface.com"
+                            },
+                            "person": {
+                                "name": "Ayush Singh"
+                            }
+                        }
+                    }
+                ],
+                "respondent_actions": [
+                    {
+                        "respondent_action": "PROCESSING",
+                        "updated_at": "2023-10-09T11:29:21.276Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.eunimart.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9999988880",
+                                "email": "transactioncounterpartyapp@tcapp.com"
+                            },
+                            "person": {
+                                "name": "Test User"
+                            }
+                        },
+                        "short_desc": "Complaint is being processed",
+                        "cascaded_level": 1
+                    },
+                    {
+                        "respondent_action": "CASCADED",
+                        "updated_at": "2023-10-09T11:29:22.276Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.eunimart.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9999988880",
+                                "email": "transactioncounterpartyapp@tcapp.com"
+                            },
+                            "person": {
+                                "name": "Test User"
+                            }
+                        },
+                        "short_desc": "Cascaded to relevant team",
+                        "cascaded_level": 2
+                    },
+                    {
+                        "respondent_action": "PROCESSING",
+                        "updated_at": "2023-10-09T11:29:23.075Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.shiprocket.in::nic2004:60232"
+                            },
+                            "contact": {
+                                "phone": "8860542050",
+                                "email": "supportondc@shiprocket.com"
+                            },
+                            "person": {
+                                "name": "Shiprocket Support"
+                            }
+                        },
+                        "short_desc": "We have acknowledged the issue. Your request is being processed.",
+                        "cascaded_level": 2
+                    },
+                    {
+                        "respondent_action": "NEED-MORE-INFO",
+                        "updated_at": "2023-10-09T11:29:25.250Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.shiprocket.in::nic2004:60232??"
+                            },
+                            "contact": {
+                                "phone": "8860542050",
+                                "email": "supportondc@shiprocket.com"
+                            },
+                            "person": {
+                                "name": "Shiprocket Support"
+                            }
+                        },
+                        "short_desc": "Can you please share the following for investigate issues Receipt Id, Reg Number",
+                        "cascaded_level": 3
+                    },
+                    {
+                        "respondent_action": "RESOLVED",
+                        "updated_at": "2023-10-09T12:05:28.060Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.shiprocket.in::nic2004:60232??"
+                            },
+                            "contact": {
+                                "phone": "8860542050",
+                                "email": "supportondc@shiprocket.com"
+                            },
+                            "person": {
+                                "name": "Shiprocket Support"
+                            }
+                        },
+                        "short_desc": "As Discussed with the team over a call. The ticket is resolved for now.",
+                        "cascaded_level": 4
+                    }
+                ]
+            },
+            "created_at": "2023-10-09T11:29:22.276Z",
+            "updated_at": "2023-10-09T12:05:28.060Z",
+            "rating": "THUMBS-UP"
+        }
+    }
+}
+
+
+
+
+
+------------------------------------------------------------------------------------
+ack
+
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:06188",
+        "action": "issue",
+        "core_version": "1.0.0",
+        "bap_id": "ondcpreprodtest.sellerapp.in",
+        "bap_uri": "https://qa.ondc.sellerapp.in/bapl/u/",
+        "bpp_id": "ondc.shiprocket.in",
+        "bpp_uri": "https://ondc.shiprocket.in/",
+        "transaction_id": "09a10j20a23yMonday01Test",
+        "message_id": "9e13e6dc-bc2e-4276-907c-fb66dd6412ec",
+        "timestamp": "2023-10-09T12:45:21.576Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
+    }
+}
