@@ -1,58 +1,58 @@
 {
   "context": {
-    "domain": "nic2004:60232",
-    "core_version": "1.1.0",
-    "bap_id": "preprodlogistics.ooga.shop",
-    "bap_uri": "https://preprodlogistics.ooga.shop",
-    "city": "STD:080",
+    "transaction_id": "0581b458-4a12-459b-a580-92d8c6cd4837",
     "country": "IND",
-    "action": "on_init",
     "bpp_id": "ondc.whizzard.in",
+    "city": "STD:080",
+    "domain": "nic2004:60232",
     "bpp_uri": "https://ondc.whizzard.in/api/integration",
-    "transaction_id": "2c5a7a40-7640-4fe9-ac59-695a544bc687",
-    "message_id": "d266ccff-c4c2-4331-b837-4c4adf096280",
-    "timestamp": "2023-10-14T12:05:21.980Z"
+    "action": "on_init",
+    "message_id": "8267f41d-14ab-4e06-962f-b6fd6104fa1e",
+    "core_version": "1.1.0",
+    "bap_uri": "https://preprodlogistics.ooga.shop",
+    "bap_id": "preprodlogistics.ooga.shop",
+    "timestamp": "2023-10-18T18:38:35.410Z"
   },
   "message": {
     "order": {
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "I1",
+            "price": {
+              "currency": "INR",
+              "value": "30"
+            },
+            "@ondc/org/title_type": "Delivery Charge"
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "30"
+        }
+      },
       "provider": {
         "id": "MLL"
+      },
+      "payment": {
+        "collected_by": "BAP",
+        "type": "ON-ORDER",
+        "@ondc/org/settlement_details": [
+          {
+            "beneficiary_name": "Jeevan",
+            "settlement_counterparty": "seller-app",
+            "settlement_ifsc_code": "SBIN0000123",
+            "settlement_bank_account_no": "123239845757",
+            "upi_address": "jeavan@ybl",
+            "settlement_type": "upi"
+          }
+        ]
       },
       "items": [
         {
           "id": "I1"
         }
-      ],
-      "quote": {
-        "price": {
-          "currency": "INR",
-          "value": "30"
-        },
-        "breakup": [
-          {
-            "@ondc/org/item_id": "I1",
-            "@ondc/org/title_type": "Delivery Charge",
-            "price": {
-              "currency": "INR",
-              "value": "30"
-            }
-          }
-        ]
-      },
-      "payment": {
-        "type": "ON-ORDER",
-        "collected_by": "BAP",
-        "@ondc/org/settlement_details": [
-          {
-            "settlement_counterparty": "seller-app",
-            "settlement_type": "upi",
-            "settlement_bank_account_no": "123239845757",
-            "settlement_ifsc_code": "SBIN0000123",
-            "upi_address": "jeavan@ybl",
-            "beneficiary_name": "Jeevan"
-          }
-        ]
-      }
+      ]
     }
   }
 }
