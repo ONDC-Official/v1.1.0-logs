@@ -1,0 +1,78 @@
+{
+    "context": {
+        "bap_id": "integrations-preprod.channelier.com",
+        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+        "domain": "nic2004:60232",
+        "core_version": "1.1.0",
+        "ttl": "PT30S",
+        "transaction_id": "4519459a-e04f-4440-b43a-84bb7d854d16",
+        "message_id": "54d3ba3e-1976-443c-8edb-bb9bb372a859",
+        "country": "IND",
+        "city": "std:080",
+        "timestamp": "2023-10-19T03:04:57.794Z",
+        "action": "search"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "id": "Immediate Delivery"
+            },
+            "provider": {
+                "time": {
+                    "range": {
+                        "start": "0600",
+                        "end": "2200"
+                    },
+                    "days": "1,2,3,4,5,6,7",
+                    "schedule": {
+                        "holidays": []
+                    }
+                }
+            },
+            "fulfillment": {
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "gps": "12.932463, 77.685220",
+                        "address": {
+                            "area_code": "560103"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.930037, 77.675391",
+                        "address": {
+                            "area_code": "560103"
+                        }
+                    }
+                }
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "unit": "Gram",
+                    "value": 475
+                },
+                "dimensions": {
+                    "length": {
+                        "value": 11,
+                        "unit": "centimeter"
+                    },
+                    "breadth": {
+                        "value": 9.5,
+                        "unit": "centimeter"
+                    },
+                    "height": {
+                        "value": 11,
+                        "unit": "centimeter"
+                    }
+                },
+                "category": "F&B",
+                "value": {
+                    "currency": "INR",
+                    "value": "900.00"
+                }
+            }
+        }
+    }
+}'
