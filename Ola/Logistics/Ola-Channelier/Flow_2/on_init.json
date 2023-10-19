@@ -1,0 +1,48 @@
+{
+    "context": {
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_init",
+      "core_version": "1.1.0",
+      "bap_id": "integrations-preprod.channelier.com",
+      "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+      "bpp_id": "ondc-preprod-lsp.olacabs.com",
+      "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
+      "transaction_id": "0ea9f14e-a9d6-42ea-95cd-50f2b8de07e9",
+      "message_id": "20544d94-4d24-44ca-9b0f-8a77289d2f5e",
+      "timestamp": "2023-10-19T08:12:46.124Z"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "OLA Mobility"
+        },
+        "items": [
+          {
+            "id": "ola_express"
+          }
+        ],
+        "payment": {
+          "type": "ON-ORDER",
+          "collected_by": "BAP"
+        },
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "40.0"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "ola_express",
+              "@ondc/org/title_type": "Delivery Charge",
+              "price": {
+                "currency": "INR",
+                "value": "40.0"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
