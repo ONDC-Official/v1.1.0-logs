@@ -1,0 +1,35 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.1.0",
+      "action": "issue_status",
+      "bap_id": "beta.mystore.in",
+      "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+      "bpp_id": "preprod-jajee-bpp.shopalyst.com",
+      "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
+      "transaction_id": "ef53f271-1f4a-46fe-a5ae-2324d0bad0f9",
+      "message_id": "cbb71252-c833-4cb4-b14c-afb605169fa1",
+      "timestamp": "2023-10-16T10:28:29.376Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "order_id": "652ce680d729bd59116767ae"
+    }
+  },
+  "response": {
+    "message": {
+      "ack": {
+        "status": "NACK"
+      }
+    },
+    "error": {
+      "type": "JSON-SCHEMA-ERROR",
+      "code": "30000",
+      "path": "message.issue_id",
+      "message": "Missing issue id in message"
+    }
+  }
+}
