@@ -1,189 +1,142 @@
 {
     "context": {
-        "domain": "nic2004:60232",
-        "country": "IND",
-        "city": "std:080",
-        "action": "on_confirm",
-        "core_version": "1.1.0",
-        "bap_id": "integrations-preprod.channelier.com",
-        "bap_uri": "https://integrations-preprod.channelier.com/ondc",
-        "bpp_id": "ondc-preprod-lsp.olacabs.com",
-        "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
-        "transaction_id": "4519459a-e04f-4440-b43a-84bb7d854d16",
-        "message_id": "23f384d0-2bc1-4c71-97e2-ed5420c5c5f4",
-        "timestamp": "2023-10-19T03:09:18.822Z"
+      "domain": "nic2004:60232",
+      "country": "IND",
+      "city": "std:080",
+      "action": "on_confirm",
+      "core_version": "1.1.0",
+      "bap_id": "integrations-preprod.channelier.com",
+      "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+      "bpp_id": "ondc-preprod-lsp.olacabs.com",
+      "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
+      "transaction_id": "c2be0b44-fbaa-4384-8771-75d409e8fc5a",
+      "message_id": "57967b09-84ef-4213-ada5-db2ca0ef6a79",
+      "timestamp": "2023-10-19T11:00:48.459Z"
     },
     "message": {
-        "order": {
-            "id": "fb95b097-0009-4f6c-b8fe-a1c6325d7759",
-            "state": "Accepted",
-            "provider": {
-                "id": "OLA Mobility"
+      "order": {
+        "id": "e8c5b34d-ff1b-4c0f-bf05-0679197a9a06",
+        "state": "Accepted",
+        "provider": {
+          "id": "OLA Mobility"
+        },
+        "items": [
+          {
+            "id": "ola_express",
+            "category_id": "Immediate Delivery",
+            "descriptor": {
+              "code": "P2P"
+            }
+          }
+        ],
+        "quote": {
+          "price": {
+            "currency": "INR",
+            "value": "40.0"
+          },
+          "breakup": [
+            {
+              "@ondc/org/item_id": "ola_express",
+              "@ondc/org/title_type": "Delivery Charge",
+              "price": {
+                "currency": "INR",
+                "value": "40.0"
+              }
+            }
+          ]
+        },
+        "fulfillments": [
+          {
+            "id": "ola_express_f1",
+            "type": "Prepaid",
+            "state": {
+              "descriptor": {
+                "code": "Pending"
+              }
             },
-            "items": [
-                {
-                    "id": "ola_express",
-                    "category_id": "Immediate Delivery",
-                    "descriptor": {
-                        "code": "P2P"
-                    }
-                }
-            ],
-            "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": "40.0"
-                },
-                "breakup": [
-                    {
-                        "@ondc/org/item_id": "ola_express",
-                        "@ondc/org/title_type": "Delivery Charge",
-                        "price": {
-                            "currency": "INR",
-                            "value": "40.0"
-                        }
-                    }
-                ]
-            },
-            "fulfillments": [
-                {
-                    "id": "ola_express_f1",
-                    "type": "Prepaid",
-                    "state": {
-                        "descriptor": {
-                            "code": "Pending"
-                        }
-                    },
-                    "start": {
-                        "person": {
-                            "name": "PapaCream"
-                        },
-                        "location": {
-                            "gps": "12.932463, 77.685220",
-                            "address": {
-                                "name": "PapaCream",
-                                "building": "10",
-                                "locality": "Devarabisanahalli, Bellandur",
-                                "city": "Bengaluru",
-                                "state": "Karnataka",
-                                "country": "India",
-                                "area_code": "560103"
-                            }
-                        },
-                        "contact": {
-                            "phone": "9167226737",
-                            "email": "sales@papacream.com"
-                        },
-                        "instructions": {
-                            "short_desc": "0666",
-                            "long_desc": "This OTP is to be shared with the Store Manager for pickup of the package"
-                        },
-                        "time": {
-                            "range": {
-                                "start": "2023-10-19T03:24:18.822Z",
-                                "end": "2023-10-19T03:39:18.822Z"
-                            }
-                        }
-                    },
-                    "end": {
-                        "person": {
-                            "name": "Poornima"
-                        },
-                        "location": {
-                            "gps": "12.930037, 77.675391",
-                            "address": {
-                                "name": "Poornima",
-                                "building": "Near Signal",
-                                "locality": "Sakra Hospital",
-                                "city": "Bengaluru",
-                                "state": "Karnataka",
-                                "country": "IND",
-                                "area_code": "560103"
-                            }
-                        },
-                        "contact": {
-                            "phone": "9980659465",
-                            "email": "poornima@mp2.in"
-                        },
-                        "instructions": null,
-                        "time": {
-                            "range": {
-                                "start": "2023-10-19T03:54:18.822Z",
-                                "end": "2023-10-19T04:09:18.822Z"
-                            }
-                        }
-                    },
-                    "tags": {
-                        "@ondc/org/order_ready_to_ship": "yes"
-                    },
-                    "tracking": false
-                }
-            ],
-            "billing": {
-                "name": "Arachnomesh Technologies Pvt Ltd",
+            "start": {
+              "person": {
+                "name": "PapaCream"
+              },
+              "location": {
+                "gps": "12.932463, 77.685220",
                 "address": {
-                    "name": "PF-43, B-Wing",
-                    "building": "Crystal Plaza",
-                    "locality": "Sector-7, Kharghar",
-                    "city": "Navi Mumbai",
-                    "state": "Maharashtra",
-                    "country": "India",
-                    "area_code": "410210"
-                },
-                "tax_number": "27AAMCA8667N1ZQ",
-                "phone": "7291085339",
-                "email": "info@channelier.com",
-                "created_at": "2023-10-19T03:07:56.631Z",
-                "updated_at": "2023-10-19T03:07:56.631Z"
-            },
-            "payment": {
-                "collected_by": "BAP",
-                "type": "ON-ORDER"
-            },
-            "@ondc/org/linked_order": {
-                "items": [
-                    {
-                        "category_id": "Grocery",
-                        "descriptor": {
-                            "name": "Papacream Vegan Chocofudgy Cake 475Ml"
-                        },
-                        "quantity": {
-                            "count": 2,
-                            "measure": {
-                                "unit": "Gram",
-                                "value": 950.0
-                            }
-                        },
-                        "price": {
-                            "currency": "INR",
-                            "value": "450.00"
-                        }
-                    }
-                ],
-                "provider": {
-                    "descriptor": {
-                        "name": "PapaCream"
-                    },
-                    "address": {
-                        "name": "PapaCream",
-                        "street": "Sakra World Hospital",
-                        "building": "10",
-                        "locality": "Devarabisanahalli, Bellandur",
-                        "city": "Bengaluru",
-                        "state": "Karnataka",
-                        "area_code": "560103"
-                    }
-                },
-                "order": {
-                    "id": "2023-10-19-416970",
-                    "weight": {
-                        "unit": "Gram",
-                        "value": 475.0
-                    }
+                  "name": "PapaCream",
+                  "building": "10",
+                  "locality": "Devarabisanahalli, Bellandur",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560103"
                 }
+              },
+              "contact": {
+                "phone": "9167226737",
+                "email": "sales@papacream.com"
+              },
+              "instructions": {
+                "short_desc": "4374",
+                "long_desc": "This OTP is to be shared with the Store Manager for pickup of the package"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-10-19T11:15:48.459Z",
+                  "end": "2023-10-19T11:30:48.459Z"
+                }
+              }
             },
-            "created_at": "2023-10-19T03:09:18.566Z",
-            "updated_at": "2023-10-19T03:09:18.822Z"
-        }
+            "end": {
+              "person": {
+                "name": "Poornima"
+              },
+              "location": {
+                "gps": "12.930037, 77.675391",
+                "address": {
+                  "name": "Poornima",
+                  "building": "Near Signal",
+                  "locality": "Sakra Hospital",
+                  "city": "Bengaluru",
+                  "state": "Karnataka",
+                  "country": "IND",
+                  "area_code": "560103"
+                }
+              },
+              "contact": {
+                "phone": "9980659465",
+                "email": "poornima@mp2.in"
+              },
+              "time": {
+                "range": {
+                  "start": "2023-10-19T11:45:48.459Z",
+                  "end": "2023-10-19T12:00:48.459Z"
+                }
+              }
+            },
+            "tags": {
+              "@ondc/org/order_ready_to_ship": "yes"
+            },
+            "tracking": false
+          }
+        ],
+        "billing": {
+          "name": "Arachnomesh Technologies Pvt Ltd",
+          "address": {
+            "name": "PF-43, B-Wing",
+            "building": "Crystal Plaza",
+            "locality": "Sector-7, Kharghar",
+            "city": "Navi Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "area_code": "410210"
+          },
+          "tax_number": "27AAMCA8667N1ZQ",
+          "phone": "7291085339",
+          "email": "info@channelier.com",
+          "created_at": "2023-10-19T11:00:38.192Z",
+          "updated_at": "2023-10-19T11:00:38.192Z"
+        },
+        "created_at": "2023-10-19T11:00:47.903Z",
+        "updated_at": "2023-10-19T11:00:48.459Z"
+      }
     }
-}
+  }
