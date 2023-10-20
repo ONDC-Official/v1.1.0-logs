@@ -1,0 +1,64 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_update",
+        "core_version": "1.1.0",
+        "bap_id": "biz.test.bitsila.com",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "bpp_id": "ondc-preprod-lsp.olacabs.com",
+        "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
+        "transaction_id": "LOG-3040-1001-1121-poDc",
+        "message_id": "7e0f71c1-e97f-4c89-a03d-32ba0b04ebcd",
+        "timestamp": "2023-10-11T15:02:08.000Z"
+    },
+    "message": {
+        "order": {
+            "id": "3040-1001-1121",
+            "items": [
+                {
+                    "id": "ola_express",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "ola_express_f1",
+                    "type": "Prepaid",
+                    "start": {
+                        "instructions": {
+                            "short_desc": "1001-1121",
+                            "long_desc": null,
+                            "additional_desc": null
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-10-11T15:17:07.596Z",
+                                "end": "2023-10-11T15:32:07.596Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-10-11T15:47:07.596Z",
+                                "end": "2023-10-11T16:02:07.596Z"
+                            }
+                        }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Searching-for-Agent"
+                        }
+                    }
+                }
+            ],
+            "state": "Accepted",
+            "updated_at": "2023-10-11T15:02:08.000Z"
+        }
+    }
+}
