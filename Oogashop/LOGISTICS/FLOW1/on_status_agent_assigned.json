@@ -1,114 +1,114 @@
 {
     "context": {
-        "domain": "nic2004:60232",
+        "transaction_id": "27f4b602-5a38-43a5-85c4-76c14632d8fc",
         "country": "IND",
-        "city": "STD:080",
-        "action": "on_status",
-        "core_version": "1.1.0",
-        "bap_id": "preprodlogistics.ooga.shop",
-        "bap_uri": "https://preprodlogistics.ooga.shop",
         "bpp_id": "ondc.whizzard.in",
+        "city": "STD:080",
+        "domain": "nic2004:60232",
         "bpp_uri": "https://ondc.whizzard.in/api/integration",
-        "transaction_id": "e5c98d77-92c0-4d22-93d0-1e11891c7c2e",
-        "message_id": "652a82017aef57c20b62988a",
-        "timestamp": "2023-10-14T11:56:49.477Z"
+        "action": "on_status",
+        "message_id": "6530254f7aef57eed41fed8b",
+        "core_version": "1.1.0",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "timestamp": "2023-10-18T18:34:55.048Z"
     },
     "message": {
         "order": {
-            "id": "OOGASHOP-43",
-            "state": "Progress",
-            "provider": {
-                "id": "MLL"
-            },
-            "items": [
-                {
-                    "id": "I1",
-                    "category_id": "Immediate Delivery",
-                    "descriptor": {
-                        "code": "P2P"
-                    }
-                }
-            ],
-            "billing": {
-                "name": "OOGASHOP",
-                "address": {
-                    "name": "502",
-                    "building": "Optum Inclave",
-                    "locality": "Sector-53",
-                    "city": "Gurugram",
-                    "state": "Haryana",
-                    "country": "India",
-                    "area_code": "122002"
-                },
-                "tax_number": "132425",
-                "phone": "9871764687",
-                "email": "muktabh@paralleldots.com"
-            },
             "fulfillments": [
                 {
-                    "type": "Prepaid",
-                    "state": {
-                        "descriptor": {
-                            "code": "Agent-assigned"
-                        }
-                    },
-                    "tracking": true,
                     "agent": {
-                        "name": "Jeevan M",
-                        "phone": "8499954583"
-                    },
-                    "vehicle": {
-                        "category": "Bike",
-                        "size": "small",
-                        "registration": "AP03 223 34"
+                        "phone": "8499954583",
+                        "name": "Jeevan M"
                     },
                     "start": {
                         "time": {
                             "range": {
-                                "start": "2023-10-14T11:55:23.463Z",
-                                "end": "2023-10-14T12:04:23.463Z"
+                                "start": "2023-10-18T18:34:30.464Z",
+                                "end": "2023-10-18T18:43:30.464Z"
                             }
                         }
                     },
                     "end": {
                         "time": {
                             "range": {
-                                "start": "2023-10-14T12:04:23.463Z",
-                                "end": "2023-10-14T12:14:23.463Z"
+                                "start": "2023-10-18T18:43:30.464Z",
+                                "end": "2023-10-18T18:53:30.464Z"
                             }
                         }
+                    },
+                    "state": {
+                        "descriptor": {
+                            "code": "Agent-assigned"
+                        }
+                    },
+                    "type": "Prepaid",
+                    "tracking": true,
+                    "vehicle": {
+                        "size": "small",
+                        "registration": "AP03 223 34",
+                        "category": "Bike"
                     }
                 }
             ],
             "quote": {
-                "price": {
-                    "currency": "INR",
-                    "value": "30.0"
-                },
                 "breakup": [
                     {
-                        "item_id": "I1",
-                        "title_type": "DELIVERY",
+                        "@ondc/org/item_id": "I1",
                         "price": {
                             "currency": "INR",
                             "value": "30"
-                        }
+                        },
+                        "@ondc/org/title_type": "Delivery Charge"
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "30.0"
+                }
+            },
+            "provider": {
+                "id": "MLL"
+            },
+            "payment": {
+                "collected_by": "BAP",
+                "type": "ON-ORDER",
+                "@ondc/org/settlement_details": [
+                    {
+                        "beneficiary_name": "Jeevan",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_ifsc_code": "SBIN0000123",
+                        "settlement_bank_account_no": "123239845757",
+                        "upi_address": "jeavan@ybl",
+                        "settlement_type": "upi"
                     }
                 ]
             },
-            "payment": {
-                "payment_type": "ON-ORDER",
-                "collected_by": "BAP",
-                "settlement_details": [
-                    {
-                        "settlement_counterparty": "seller-app",
-                        "settlement_type": "upi",
-                        "settlement_bank_account_no": "123239845757",
-                        "settlement_ifsc_code": "SBIN0000123",
-                        "upi_address": "jeavan@ybl",
-                        "beneficiary_name": "Jeevan"
+            "id": "OOGASHOP-90",
+            "state": "In-progress",
+            "items": [
+                {
+                    "category_id": "Immediate Delivery",
+                    "id": "I1",
+                    "descriptor": {
+                        "code": "P2P"
                     }
-                ]
+                }
+            ],
+            "billing": {
+                "address": {
+                    "country": "India",
+                    "city": "Gurugram",
+                    "area_code": "122002",
+                    "name": "502",
+                    "locality": "Sector-53",
+                    "state": "Haryana",
+                    "building": "Optum Inclave"
+                },
+                "phone": "9871764687",
+                "tax_number": "132425",
+                "name": "OOGASHOP",
+                "email": "muktabh@paralleldots.com"
             }
         }
     }
