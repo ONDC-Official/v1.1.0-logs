@@ -10,8 +10,8 @@
     "bap_uri": "https://olamoney-website-3000a.stg.corp.olacabs.com/ondc",
     "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
     "transaction_id": "45b80bb8-2819-4175-86ae-73baea704c4e",
-    "message_id": "72ce57a4-fc64-4049-93cf-6772851d2c0d",
-    "timestamp": "2023-10-26T11:20:43.783Z",
+    "message_id": "2ff6fb8d-c19e-4cf0-9a84-7abeff8deac3",
+    "timestamp": "2023-10-26T11:24:36.277Z",
     "ttl": "PT30S"
   },
   "message": {
@@ -30,12 +30,24 @@
           },
           "tags": {
             "update_type": "return",
-            "reason_code": "002",
+            "reason_code": "003",
             "ttl_approval": "P1D",
-            "ttl_reverseqc": "P3D"
+            "ttl_reverseqc": "P3D",
+            "image": ""
           }
         }
-      ]
+      ],
+      "payment": {
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "buyer",
+            "settlement_phase": "refund",
+            "settlement_type": "neft",
+            "settlement_amount": "20.00999999999999",
+            "settlement_timestamp": "2023-10-26T11:24:36.277Z"
+          }
+        ]
+      }
     },
     "update_target": "item"
   }
