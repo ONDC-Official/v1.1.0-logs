@@ -1,29 +1,24 @@
 {
     "context": {
         "domain": "nic2004:52110",
-        "action": "on_status",
+        "action": "on_update",
         "core_version": "1.1.0",
         "bap_id": "buyer-app-preprod.ondc.org",
         "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
         "bpp_id": "ondcpreprod.demolocations.com",
         "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
-        "transaction_id": "411b238a-88d1-4a3e-b08e-c08c1dfc9b5c",
-        "message_id": "c55dabf3-c727-416f-b794-7ce7fc5e44c8",
+        "transaction_id": "e234d08c-2a15-48b9-a8b9-aec28b4d0468",
+        "message_id": "618b5c08-0a1c-42e8-9438-7c76f1af70e8",
         "city": "std:080",
         "country": "IND",
-        "timestamp": "2023-10-26T06:30:42.000Z"
+        "timestamp": "2023-10-26T05:42:57.000Z"
     },
     "message": {
         "order": {
-            "id": "2023-10-26-702212",
-            "state": "Accepted",
+            "id": "2023-10-26-577566",
+            "state": "Completed",
             "provider": {
-                "id": "18th_stores",
-                "locations": [
-                    {
-                        "id": "default_loc"
-                    }
-                ]
+                "id": "18th_stores"
             },
             "fulfillments": [
                 {
@@ -31,7 +26,7 @@
                     "@ondc/org/provider_name": "18th_stores",
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-delivered"
                         }
                     },
                     "start": {
@@ -47,9 +42,10 @@
                             "gps":"28.574981, 77.320812"
                         },
                         "time": {
+                            "timestamp": "2023-10-26T05:39:31.000Z",
                             "range": {
-                                "start": "2023-10-26T06:30:42.000Z",
-                                "end": "2023-10-26T06:30:42.000Z"
+                                "start": "2023-10-26T05:38:23.000Z",
+                                "end": "2023-10-26T05:38:23.000Z"
                             }
                         }
                     },
@@ -74,21 +70,90 @@
                             }
                         },
                         "time": {
+                            "timestamp": "2023-10-26T05:40:00.000Z",
                             "range": {
-                                "start": "2023-10-26T07:30:42.000Z",
-                                "end": "2023-10-26T07:30:42.000Z"
+                                "start": "2023-10-26T05:38:23.000Z",
+                                "end": "2023-10-26T05:38:23.000Z"
                             }
                         }
                     },
                     "type": "Delivery"
+                },
+                {
+                    "id": "1-ReverseQC",
+                    "type": "Reverse QC",
+                    "@ondc/org/provider_name": "18th_stores",
+                    "state": {
+                        "descriptor": {
+                            "code": "Order-delivered"
+                        }
+                    },
+                    "start": {
+                        "contact": {
+                            "email": "abhi0001ch+001@gmail.com",
+                            "phone": "8956969969"
+                        },
+                        "location": {
+                            "id": "L1",
+                            "descriptor": {
+                                "name": "ABC Store"
+                            },
+                            "gps":"28.574981, 77.320812"
+                        },
+                        "time": {
+                            "timestamp": "2023-10-26T05:42:15.000Z",
+                            "range": {
+                                "start": "2023-10-26T05:41:50.000Z",
+                                "end": "2023-10-26T05:41:50.000Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "contact": {
+                            "email": "abhi0001ch+001@gmail.com",
+                            "phone": "8956969969"
+                        },
+                        "person": {
+                            "name": "Abhi Chauhan"
+                        },
+                        "location": {
+                            "gps": "28.574981, 77.320812",
+                            "address": {
+                                "name": "Abhi Chauhan",
+                                "building": "Landmark 1",
+                                "locality": "Street 2",
+                                "city": "Noida",
+                                "state": "Uttar Pradesh",
+                                "country": "IND",
+                                "area_code": "201301"
+                            }
+                        },
+                        "time": {
+                            "timestamp": "2023-10-26T05:42:57.000Z",
+                            "range": {
+                                "start": "2023-10-26T06:41:50.000Z",
+                                "end": "2023-10-26T06:41:50.000Z"
+                            }
+                        }
+                    }
                 }
             ],
             "items": [
                 {
-                    "id": "Proteus18TH10002",
+                    "id": "Baby18TH1000",
                     "fulfillment_id": "1",
                     "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "ROADSTER-MEN-NAVY-S",
+                    "fulfillment_id": "1-ReverseQC",
+                    "quantity": {
                         "count": 2
+                    },
+                    "tags": {
+                        "status": "Return_Delivered"
                     }
                 }
             ],
@@ -97,39 +162,54 @@
                 "email": "abhi0001ch+001@gmail.com",
                 "phone": "8956969969",
                 "address": {
-                    "building": "Landmark 1",
-                    "locality": "Street 2",
+                    "building": "Street 2",
                     "name": "Abhi Chauhan",
                     "city": "Noida",
                     "state": "Uttar Pradesh",
-                    "country": "IND",
+                    "country": "IN",
                     "area_code": "201301"
-                },
-                "created_at": "2023-10-26T06:29:37.516Z",
-                "updated_at": "2023-10-26T06:29:37.516Z"
+                }
             },
             "quote": {
-                "ttl": "PT30S",
+                "ttl": "PT6H",
                 "price": {
                     "currency": "INR",
-                    "value": "1798.00"
+                    "value": "1350.00"
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "Proteus18TH10002",
+                        "@ondc/org/item_id": "Baby18TH1000",
                         "@ondc/org/item_quantity": {
-                            "count": 2
+                            "count": 1
                         },
-                        "title": "Proteus 18TH Fitness Jacket",
+                        "title": "Baby 18TH Product",
                         "@ondc/org/title_type": "item",
                         "price": {
                             "currency": "INR",
-                            "value": "1798.00"
+                            "value": "40.00"
                         },
                         "item": {
                             "price": {
                                 "currency": "INR",
-                                "value": "899.00"
+                                "value": "40.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ROADSTER-MEN-NAVY-S",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Roadster 18TH Men Navy Blue Solid Denim Jacket-S",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1310.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "655.00"
                             }
                         }
                     },
@@ -139,7 +219,7 @@
                         "@ondc/org/title_type": "delivery",
                         "price": {
                             "currency": "INR",
-                            "value": "0.00"
+                            "value": "0"
                         }
                     }
                 ]
@@ -148,9 +228,9 @@
                 "uri": "https://juspay.in/",
                 "tl_method": "http/get",
                 "params": {
-                    "amount": "1798.00",
+                    "amount": "1350.00",
                     "currency": "INR",
-                    "transaction_id": "411b238a-88d1-4a3e-b08e-c08c1dfc9b5c"
+                    "transaction_id": ""
                 },
                 "status": "PAID",
                 "type": "ON-ORDER",
@@ -171,8 +251,8 @@
                     }
                 ]
             },
-            "created_at": "2023-10-26T06:29:59.889Z",
-            "updated_at": "2023-10-26T06:30:42.000Z"
+            "created_at": "2023-10-26T05:38:11.193Z",
+            "updated_at": "2023-10-26T05:42:57.000Z"
         }
     }
 }
