@@ -6,19 +6,19 @@
     "city": "std:080",
     "core_version": "1.0.0",
     "bap_id": "olamoney-website-3000a.stg.corp.olacabs.com",
-    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "bpp_id": "integrations-preprod.channelier.com",
     "bap_uri": "https://olamoney-website-3000a.stg.corp.olacabs.com/ondc",
-    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
-    "transaction_id": "0d0c1635-8c14-4d9c-815d-e22387fcabc1",
-    "message_id": "8444016c-76c9-40fc-a20f-97f9b845f7bd",
-    "timestamp": "2023-10-20T09:52:07.037Z",
+    "bpp_uri": "https://integrations-preprod.channelier.com/ondc",
+    "transaction_id": "5da57de0-aa62-4126-8093-db36a4ff291b",
+    "message_id": "9c2a8e53-3618-4916-84a3-c2bb7d30f8c1",
+    "timestamp": "2023-10-27T13:00:52.612Z",
     "ttl": "PT30S"
   },
   "message": {
     "issue": {
-      "id": "28738",
-      "category": "ITEM",
-      "sub_category": "ITM01",
+      "id": "28784",
+      "category": "FULFILLMENT",
+      "sub_category": "FLM02",
       "complainant_info": {
         "person": {
           "name": "Name Unavailable"
@@ -29,33 +29,22 @@
         }
       },
       "order_details": {
-        "id": "ONDC_094714yMig7X",
-        "state": "Completed",
-        "items": [
-          {
-            "id": "2775204::1155943::EP11",
-            "quantity": 2
-          },
-          {
-            "id": "2775200::1155939::EP07",
-            "quantity": 1
-          }
-        ],
+        "id": "ONDC_613407OcRrWo",
+        "state": "CREATED",
+        "items": [],
         "fulfillments": [
           {
-            "id": "22446688739675_fulfillment_1",
+            "id": "L-F-1698411607177",
             "state": "Pending"
           }
         ],
-        "provider_id": "22446688739675"
+        "provider_id": "CU14"
       },
       "description": {
-        "short_desc": "I have item/items missing in my order",
-        "long_desc": "Item missing in order",
+        "short_desc": "My order is delayed",
+        "long_desc": "Vvyvgggggggggggggggggg",
         "images": [
-          "http://docyard-9000a.stg.corp.olacabs.com/documents/ola-staging/3e53af8c-ee75-4011-813e-513f69e9c165/display",
-          "http://docyard-9000a.stg.corp.olacabs.com/documents/ola-staging/a2bbf2b1-8184-44a9-937d-8e98628f6437/display",
-          "http://docyard-9000a.stg.corp.olacabs.com/documents/ola-staging/08fca9ec-327d-48cb-b14f-f9b9e6fb2065/display"
+          "http://docyard-9000a.stg.corp.olacabs.com/documents/ola-staging/25426f82-f2b3-4bbe-8a73-c747eb083f46/display"
         ]
       },
       "source": {
@@ -68,19 +57,20 @@
       "expected_resolution_time": {
         "duration": "P1D"
       },
-      "status": "Open",
+      "status": "OPEN",
       "issue_type": "ISSUE",
       "issue_actions": {
         "complainant_actions": [
           {
             "complainant_action": "OPEN",
             "short_desc": "complaint created",
-            "updated_at": "2023-10-20T09:52:04Z",
+            "updated_at": "2023-10-27T13:00:50Z",
             "updated_by": {
               "org": {
-                "name": "https://olamoney-website-3000a.stg.corp.olacabs.com/ondc::nic2004:52110"
+                "name": "olamoney-website-3000a.stg.corp.olacabs.com::nic2004:52110"
               },
               "contact": {
+                "phone": "8050037671",
                 "email": "udaykumar.kurma@olacabs.com"
               },
               "person": {
@@ -90,8 +80,8 @@
           }
         ]
       },
-      "created_at": "2023-10-20T09:52:04Z",
-      "updated_at": "2023-10-20T09:52:04Z"
+      "created_at": "2023-10-27T13:00:50Z",
+      "updated_at": "2023-10-27T13:00:50Z"
     }
   }
 }

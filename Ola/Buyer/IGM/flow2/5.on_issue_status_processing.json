@@ -1,0 +1,82 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_issue_status",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.0.0",
+    "bap_id": "olamoney-website-3000a.stg.corp.olacabs.com",
+    "bpp_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://olamoney-website-3000a.stg.corp.olacabs.com/ondc",
+    "bpp_uri": "https://integrations-preprod.channelier.com/ondc",
+    "transaction_id": "5da57de0-aa62-4126-8093-db36a4ff291b",
+    "message_id": "7c7a4000-6983-4c19-b582-147291e6fa5d",
+    "timestamp": "2023-10-27T13:07:37.831Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "28784",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-10-27T13:00:52.654Z",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "respondent@channelier.com"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "CASCADED",
+            "short_desc": "Complaint cascaded to transaction counterparty",
+            "updated_at": "2023-10-27T13:00:52.658Z",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "respondent@channelier.com"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            },
+            "cascaded_level": 2
+          },
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-10-27T13:00:54.006Z",
+            "updated_by": {
+              "org": {
+                "name": "ondc-preprod-lsp.olacabs.com::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9987303443",
+                "email": "pendyala.srinivas@olacabs.com"
+              },
+              "person": {
+                "name": "Pendyala Srinivas"
+              }
+            },
+            "cascaded_level": 2
+          }
+        ]
+      },
+      "created_at": "2023-10-27T13:00:50Z",
+      "updated_at": "2023-10-27T13:07:37.831Z"
+    }
+  }
+}
