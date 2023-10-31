@@ -1,0 +1,78 @@
+{
+  "context": {
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "ttl": "PT30S",
+    "transaction_id": "f2372967-7529-4322-9fb8-41fdb36d3dba",
+    "message_id": "b679e823-0b82-4af2-bc2f-f43fd3624597",
+    "country": "IND",
+    "city": "std:080",
+    "timestamp": "2023-10-25T04:23:05.131Z",
+    "action": "search"
+  },
+  "message": {
+    "intent": {
+      "category": {
+        "id": "Immediate Delivery"
+      },
+      "provider": {
+        "time": {
+          "range": {
+            "start": "0600",
+            "end": "2200"
+          },
+          "days": "1,2,3,4,5,6,7",
+          "schedule": {
+            "holidays": []
+          }
+        }
+      },
+      "fulfillment": {
+        "type": "Prepaid",
+        "start": {
+          "location": {
+            "gps": "12.932463, 77.685220",
+            "address": {
+              "area_code": "560103"
+            }
+          }
+        },
+        "end": {
+          "location": {
+            "gps": "12.930037, 77.675391",
+            "address": {
+              "area_code": "560103"
+            }
+          }
+        }
+      },
+      "@ondc/org/payload_details": {
+        "weight": {
+          "unit": "Gram",
+          "value": 475
+        },
+        "dimensions": {
+          "length": {
+            "value": 11,
+            "unit": "centimeter"
+          },
+          "breadth": {
+            "value": 9.5,
+            "unit": "centimeter"
+          },
+          "height": {
+            "value": 11,
+            "unit": "centimeter"
+          }
+        },
+        "category": "F&B",
+        "value": {
+          "currency": "INR",
+          "value": "450.00"
+        }
+      }
+    }
+  }
+}

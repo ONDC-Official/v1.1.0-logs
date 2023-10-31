@@ -1,0 +1,151 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_issue_status",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.0.0",
+    "bap_id": "olamoney-website-3000a.stg.corp.olacabs.com",
+    "bpp_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://olamoney-website-3000a.stg.corp.olacabs.com/ondc",
+    "bpp_uri": "https://integrations-preprod.channelier.com/ondc",
+    "transaction_id": "5da57de0-aa62-4126-8093-db36a4ff291b",
+    "message_id": "9c2a8e53-3618-4916-84a3-c2bb7d30f8c1",
+    "timestamp": "2023-10-27T13:10:22.714Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "28784",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-10-27T13:00:52.654Z",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "respondent@channelier.com"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "CASCADED",
+            "short_desc": "Complaint cascaded to transaction counterparty",
+            "updated_at": "2023-10-27T13:00:52.658Z",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "respondent@channelier.com"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            },
+            "cascaded_level": 2
+          },
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-10-27T13:00:54.006Z",
+            "updated_by": {
+              "org": {
+                "name": "ondc-preprod-lsp.olacabs.com::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9987303443",
+                "email": "pendyala.srinivas@olacabs.com"
+              },
+              "person": {
+                "name": "Pendyala Srinivas"
+              }
+            },
+            "cascaded_level": 2
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "short_desc": "resolving again",
+            "updated_at": "2023-10-27T13:07:39.423Z",
+            "updated_by": {
+              "org": {
+                "name": "ondc-preprod-lsp.olacabs.com::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9987303443",
+                "email": "pendyala.srinivas@olacabs.com"
+              },
+              "person": {
+                "name": "Pendyala Srinivas"
+              }
+            },
+            "cascaded_level": 2
+          }
+        ]
+      },
+      "created_at": "2023-10-27T13:00:50Z",
+      "updated_at": "2023-10-27T13:10:22.714Z",
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "CASCADED-COUNTERPARTY-NP",
+          "organization": {
+            "person": {
+              "name": "Pendyala Srinivas"
+            },
+            "contact": {
+              "phone": "9987303443",
+              "email": "pendyala.srinivas@olacabs.com"
+            },
+            "org": {
+              "name": "ondc-preprod-lsp.olacabs.com::nic2004:60232"
+            }
+          },
+          "resolution_support": {
+            "contact": {
+              "phone": "9987303443",
+              "email": "pendyala.srinivas@olacabs.com"
+            },
+            "gros": [
+              {
+                "person": {
+                  "name": "Pendyala Srinivas"
+                },
+                "contact": {
+                  "phone": "9987303443",
+                  "email": "pendyala.srinivas@olacabs.com"
+                },
+                "gro_type": "CASCADED-COUNTERPARTY-NP-GRO"
+              },
+              {
+                "person": {
+                  "name": "John discovery"
+                },
+                "contact": {
+                  "phone": "9999999999",
+                  "email": "respondent@channelier.com"
+                },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ]
+          }
+        }
+      },
+      "resolution": {
+        "short_desc": "resolving again",
+        "long_desc": "resolving again. Refund amount: 845.0",
+        "action_triggered": "REFUND",
+        "refund_amount": "845"
+      }
+    }
+  }
+}
