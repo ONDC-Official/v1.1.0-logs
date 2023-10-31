@@ -1,0 +1,140 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_select",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "olamoney-website-3000a.stg.corp.olacabs.com",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "bap_uri": "https://olamoney-website-3000a.stg.corp.olacabs.com/ondc",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "transaction_id": "ea9fad25-7c39-413a-8496-b782474efa68",
+    "message_id": "7c3621c1-c43f-414e-a3ce-f91aa072c93a",
+    "timestamp": "2023-10-16T15:50:35.995Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "22446688739675",
+        "rateable": false
+      },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "type": "Delivery",
+          "tracking": true,
+          "state": {
+            "descriptor": {
+              "code": "Serviceable",
+              "name": "Serviceable"
+            }
+          },
+          "rateable": false,
+          "@ondc/org/provider_name": "TMBill",
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT60M"
+        }
+      ],
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "fulfillment_id": "22446688739675_fulfillment_1"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1319"
+        },
+        "breakup": [
+          {
+            "title": "Egg Curry",
+            "price": {
+              "currency": "INR",
+              "value": "200"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "3"
+                },
+                "maximum": {
+                  "count": "3"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "100"
+              }
+            },
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "10"
+            },
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "title": "Egg Masala",
+            "price": {
+              "currency": "INR",
+              "value": "1000"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "98"
+                },
+                "maximum": {
+                  "count": "98"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "500"
+              }
+            },
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "50"
+            },
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "title": "Delivery Charges",
+            "price": {
+              "currency": "INR",
+              "value": "59"
+            },
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT1H"
+      }
+    }
+  }
+}
