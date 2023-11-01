@@ -1,0 +1,105 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "on_issue_status",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.0.0",
+    "bap_id": "olamoney-website-3000a.stg.corp.olacabs.com",
+    "bpp_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://olamoney-website-3000a.stg.corp.olacabs.com/ondc",
+    "bpp_uri": "https://integrations-preprod.channelier.com/ondc",
+    "transaction_id": "e457abd3-d8a7-44a1-9c70-06d0ca8d6f69",
+    "message_id": "00a2b7d3-f6ff-4488-8d04-9e4195d03dc0",
+    "timestamp": "2023-10-27T08:08:27.056Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "id": "28753",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-10-27T07:46:34.347Z",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "respondent@channelier.com"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "short_desc": "we will refund for this missing item.",
+            "updated_at": "2023-10-27T08:08:27.055Z",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::undefined"
+              },
+              "contact": {
+                "phone": "9167226737",
+                "email": "sales@papacream.com"
+              },
+              "person": {
+                "name": "PapaCream"
+              }
+            },
+            "cascaded_level": 1
+          }
+        ]
+      },
+      "created_at": "2023-10-27T07:46:32Z",
+      "updated_at": "2023-10-27T08:08:27.056Z",
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "TRANSACTION-COUNTERPARTY-NP",
+          "organization": {
+            "person": {
+              "name": "PapaCream"
+            },
+            "contact": {
+              "phone": "9167226737",
+              "email": "sales@papacream.com"
+            },
+            "org": {
+              "name": "integrations-preprod.channelier.com::undefined"
+            }
+          },
+          "resolution_support": {
+            "contact": {
+              "phone": "9167226737",
+              "email": "sales@papacream.com"
+            },
+            "gros": [
+              {
+                "person": {
+                  "name": "John discovery"
+                },
+                "contact": {
+                  "phone": "9999999999",
+                  "email": "respondent@channelier.com"
+                },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ]
+          }
+        }
+      },
+      "resolution": {
+        "short_desc": "we will refund for this missing item.",
+        "long_desc": "we will refund for this missing item.",
+        "action_triggered": "REFUND",
+        "refund_amount": "450"
+      }
+    }
+  }
+}
