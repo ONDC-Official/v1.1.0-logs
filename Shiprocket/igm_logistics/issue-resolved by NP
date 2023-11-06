@@ -1,26 +1,24 @@
-issue_status_closed by sellerapp
-
-
+--------------------- + issue Resolved by NP +-------------------------------
 
 {
     "context": {
         "domain": "nic2004:60232",
         "country": "IND",
-        "city": "std:06188",
+        "city": "std:080",
         "action": "issue",
         "core_version": "1.0.0",
         "bap_id": "ondcpreprodtest.sellerapp.in",
         "bap_uri": "https://qa.ondc.sellerapp.in/bapl/u/",
         "bpp_id": "ondc.shiprocket.in",
         "bpp_uri": "https://ondc.shiprocket.in/",
-        "transaction_id": "09a10j20a23yMonday01Test",
+        "transaction_id": "txn3535350002",
         "message_id": "9e13e6dc-bc2e-4276-907c-fb66dd6412ec",
-        "timestamp": "2023-10-09T12:45:21.276Z",
+        "timestamp": "2023-11-01T12:18:11.212Z",
         "ttl": "PT30S"
     },
     "message": {
         "issue": {
-            "id": "test-09a10j20a23yMonday01Test",
+            "id": "ISSUNO-3256",
             "category": "FULFILLMENT",
             "sub_category": "FLM03",
             "complainant_info": {
@@ -33,11 +31,11 @@ issue_status_closed by sellerapp
                 }
             },
             "order_details": {
-                "id": "test-odr-007",
+                "id": "ODR-AJ-0034",
                 "state": "Ready To Ship",
                 "items": [
                     {
-                        "id": "39",
+                        "id": "24",
                         "quantity": 1
                     }
                 ],
@@ -47,7 +45,7 @@ issue_status_closed by sellerapp
                         "state": "Pick Up scheduled"
                     }
                 ],
-                "provider_id": "39",
+                "provider_id": "24",
                 "merchant_order_id": "101"
             },
             "description": {
@@ -78,7 +76,7 @@ issue_status_closed by sellerapp
                     {
                         "complainant_action": "OPEN",
                         "short_desc": "Complaint created",
-                        "updated_at": "2023-10-09T11:29:21.276Z",
+                        "updated_at": "2023-11-01T12:16:10.166Z",
                         "updated_by": {
                             "org": {
                                 "name": "ondc.eunimart.com::nic2004:52110"
@@ -92,10 +90,11 @@ issue_status_closed by sellerapp
                             }
                         }
                     },
+
                     {
                         "complainant_action": "CLOSE",
                         "short_desc": "Complaint closed",
-                        "updated_at": "2023-10-09T12:45:21.276Z",
+                        "updated_at": "2023-11-01T12:18:11.212Z",
                         "updated_by": {
                             "org": {
                                 "name": "ondc.eunimart.com::nic2004:52110"
@@ -109,11 +108,13 @@ issue_status_closed by sellerapp
                             }
                         }
                     }
+                    
                 ],
                 "respondent_actions": [
                     {
                         "respondent_action": "PROCESSING",
-                        "updated_at": "2023-10-09T11:29:21.276Z",
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-11-01T12:16:10.166Z",
                         "updated_by": {
                             "org": {
                                 "name": "ondc.eunimart.com::nic2004:52110"
@@ -126,12 +127,12 @@ issue_status_closed by sellerapp
                                 "name": "Test User"
                             }
                         },
-                        "short_desc": "Complaint is being processed",
                         "cascaded_level": 1
                     },
                     {
                         "respondent_action": "CASCADED",
-                        "updated_at": "2023-10-09T11:29:22.276Z",
+                        "short_desc": "Cascaded to relevant team",
+                        "updated_at": "2023-11-01T12:16:10.166Z",
                         "updated_by": {
                             "org": {
                                 "name": "ondc.eunimart.com::nic2004:52110"
@@ -144,68 +145,12 @@ issue_status_closed by sellerapp
                                 "name": "Test User"
                             }
                         },
-                        "short_desc": "Cascaded to relevant team",
                         "cascaded_level": 2
-                    },
-                    {
-                        "respondent_action": "PROCESSING",
-                        "updated_at": "2023-10-09T11:29:23.075Z",
-                        "updated_by": {
-                            "org": {
-                                "name": "ondc.shiprocket.in::nic2004:60232"
-                            },
-                            "contact": {
-                                "phone": "8860542050",
-                                "email": "supportondc@shiprocket.com"
-                            },
-                            "person": {
-                                "name": "Shiprocket Support"
-                            }
-                        },
-                        "short_desc": "We have acknowledged the issue. Your request is being processed.",
-                        "cascaded_level": 2
-                    },
-                    {
-                        "respondent_action": "NEED-MORE-INFO",
-                        "updated_at": "2023-10-09T11:29:25.250Z",
-                        "updated_by": {
-                            "org": {
-                                "name": "ondc.shiprocket.in::nic2004:60232??"
-                            },
-                            "contact": {
-                                "phone": "8860542050",
-                                "email": "supportondc@shiprocket.com"
-                            },
-                            "person": {
-                                "name": "Shiprocket Support"
-                            }
-                        },
-                        "short_desc": "Can you please share the following for investigate issues Receipt Id, Reg Number",
-                        "cascaded_level": 3
-                    },
-                    {
-                        "respondent_action": "RESOLVED",
-                        "updated_at": "2023-10-09T12:05:28.060Z",
-                        "updated_by": {
-                            "org": {
-                                "name": "ondc.shiprocket.in::nic2004:60232??"
-                            },
-                            "contact": {
-                                "phone": "8860542050",
-                                "email": "supportondc@shiprocket.com"
-                            },
-                            "person": {
-                                "name": "Shiprocket Support"
-                            }
-                        },
-                        "short_desc": "As Discussed with the team over a call. The ticket is resolved for now.",
-                        "cascaded_level": 4
                     }
                 ]
             },
-            "created_at": "2023-10-09T11:29:22.276Z",
-            "updated_at": "2023-10-09T12:05:28.060Z",
-            "rating": "THUMBS-UP"
+            "created_at": "2023-11-01T12:16:10.166Z",
+            "updated_at": "2023-11-01T12:18:11.212Z"
         }
     }
 }
@@ -214,23 +159,23 @@ issue_status_closed by sellerapp
 
 
 
-------------------------------------------------------------------------------------
-ack
+// ----------------------------------------Ack--------------------------------------------------------------
+
 
 {
     "context": {
         "domain": "nic2004:60232",
         "country": "IND",
-        "city": "std:06188",
+        "city": "std:080",
         "action": "issue",
         "core_version": "1.0.0",
         "bap_id": "ondcpreprodtest.sellerapp.in",
         "bap_uri": "https://qa.ondc.sellerapp.in/bapl/u/",
         "bpp_id": "ondc.shiprocket.in",
         "bpp_uri": "https://ondc.shiprocket.in/",
-        "transaction_id": "09a10j20a23yMonday01Test",
+        "transaction_id": "txn3535350002",
         "message_id": "9e13e6dc-bc2e-4276-907c-fb66dd6412ec",
-        "timestamp": "2023-10-09T12:45:21.576Z",
+        "timestamp": "2023-11-01T12:18:10.341Z",
         "ttl": "PT30S"
     },
     "message": {
