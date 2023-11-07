@@ -1,0 +1,78 @@
+{
+  "context": {
+    "action": "search",
+    "bap_id": "biz.test.bitsila.com",
+    "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "7b1b9d6a-1ccd-457f-863e-c357947f942e",
+    "timestamp": "2023-11-06T09:37:13.676Z",
+    "transaction_id": "LOG-3040-1001-1215-t8lG",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "@ondc/org/payload_details": {
+        "dimensions": {
+          "breadth": {
+            "unit": "meter",
+            "value": 0.1
+          },
+          "height": {
+            "unit": "meter",
+            "value": 0.1
+          },
+          "length": {
+            "unit": "meter",
+            "value": 0.1
+          }
+        },
+        "value": {
+          "currency": "INR",
+          "value": "282.66"
+        },
+        "weight": {
+          "unit": "Kilogram",
+          "value": 0.5
+        }
+      },
+      "category": {
+        "id": "Standard Delivery"
+      },
+      "fulfillment": {
+        "end": {
+          "location": {
+            "address": {
+              "area_code": "560095"
+            },
+            "gps": "12.938208, 77.619106"
+          }
+        },
+        "start": {
+          "location": {
+            "address": {
+              "area_code": "560095"
+            },
+            "gps": "12.931233398766624, 77.61628451114609",
+            "id": "3040:1669"
+          }
+        },
+        "type": "Prepaid"
+      },
+      "payment": {
+        "@ondc/org/collection_amount": "0.0"
+      },
+      "provider": {
+        "time": {
+          "days": "1,2,3,4,5,6,7",
+          "range": {
+            "end": "2355",
+            "start": "0700"
+          }
+        }
+      }
+    }
+  }
+}

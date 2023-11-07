@@ -1,0 +1,48 @@
+{
+  "context": {
+    "action": "update",
+    "bap_id": "biz.test.bitsila.com",
+    "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+    "bpp_id": "uat-store.pidge.in",
+    "bpp_uri": "https://uat-store.pidge.in/v1/ondc",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "5d030af7-fb16-46d4-a1e7-90afd622789a",
+    "timestamp": "2023-11-06T09:38:15.615Z",
+    "transaction_id": "LOG-3040-1001-1215-t8lG",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "id": "3",
+          "start": {
+            "instructions": {
+              "short_desc": "1001-1215"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "type": "Prepaid"
+        }
+      ],
+      "id": "3040-1001-1215",
+      "items": [
+        {
+          "category_id": "Same Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "id": "02"
+        }
+      ],
+      "state": "Created",
+      "updated_at": "2023-11-06T09:38:15.615Z"
+    },
+    "update_target": "fulfillment"
+  }
+}

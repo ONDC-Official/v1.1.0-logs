@@ -1,0 +1,108 @@
+{
+  "context": {
+    "action": "on_status",
+    "bap_id": "biz.test.bitsila.com",
+    "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+    "bpp_id": "uat-store.pidge.in",
+    "bpp_uri": "https://uat-store.pidge.in/v1/ondc",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "nPnCVSecIQq59O2XkmeqA",
+    "timestamp": "2023-11-06T09:37:59.818Z",
+    "transaction_id": "LOG-3040-1001-1215-t8lG"
+  },
+  "message": {
+    "order": {
+      "billing": {
+        "address": {
+          "area_code": "560085",
+          "city": "Bengaluru",
+          "country": "India",
+          "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
+          "name": "221, INNOBITS SOLUTIONS PVT LTD",
+          "state": "Karnataka"
+        },
+        "email": "finance@bitsila.com",
+        "name": "Bitsila",
+        "phone": "8951898275",
+        "tax_number": "29AAFCI9011D1ZQ"
+      },
+      "created_at": "2023-11-06T09:38:02.810Z",
+      "fulfillments": [
+        {
+          "agent": {
+            "name": "shabbir ondc_T",
+            "phone": "1239912399"
+          },
+          "end": {
+            "time": {
+              "range": {
+                "end": "2023-11-06T10:56:57.942Z",
+                "start": "2023-11-06T09:56:57.942Z"
+              }
+            },
+            "timestamp": "2023-11-06T09:56:57.942Z"
+          },
+          "start": {
+            "instructions": {
+              "long_desc": "Bengaluru",
+              "short_desc": "Bengaluru"
+            },
+            "time": {
+              "range": {
+                "end": "2023-11-06T10:38:02.810Z",
+                "start": "2023-11-06T09:38:02.810Z"
+              },
+              "timestamp": "2023-11-06T09:38:02.810Z"
+            }
+          },
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "tracking": false,
+          "type": "Prepaid"
+        }
+      ],
+      "id": "3040-1001-1215",
+      "items": [
+        {
+          "category_id": "Same Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "id": "02"
+        }
+      ],
+      "payment": {
+        "collected_by": "BPP",
+        "type": "POST-FULFILLMENT"
+      },
+      "provider": {
+        "id": "107",
+        "locations": []
+      },
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "02",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "59.00"
+        }
+      },
+      "state": "Completed",
+      "updated_at": "2023-11-06T09:56:57.942Z"
+    }
+  }
+}

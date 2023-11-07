@@ -1,0 +1,49 @@
+{
+  "context": {
+    "action": "on_init",
+    "bap_id": "biz.test.bitsila.com",
+    "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+    "bpp_id": "uat-store.pidge.in",
+    "bpp_uri": "https://uat-store.pidge.in/v1/ondc",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "68c565a2-5ea2-41e2-8e57-a3fff000ea34",
+    "timestamp": "2023-11-06T09:37:47.172Z",
+    "transaction_id": "LOG-3040-1001-1215-t8lG"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "02"
+        }
+      ],
+      "payment": {
+        "collected_by": "BPP",
+        "type": "POST-FULFILLMENT"
+      },
+      "provider": {
+        "id": "107",
+        "locations": []
+      },
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "02",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "59.00"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "context": {
+    "action": "on_search",
+    "bap_id": "biz.test.bitsila.com",
+    "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+    "bpp_id": "uat-store.pidge.in",
+    "bpp_uri": "https://uat-store.pidge.in/v1/ondc",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "7b1b9d6a-1ccd-457f-863e-c357947f942e",
+    "timestamp": "2023-11-06T09:37:13.965Z",
+    "transaction_id": "LOG-3040-1001-1215-t8lG"
+  },
+  "message": {
+    "catalog": {
+      "bpp/descriptor": {
+        "name": "Pidge Inadventures Inc"
+      },
+      "bpp/fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid"
+        },
+        {
+          "id": "3",
+          "type": "RTO"
+        }
+      ],
+      "bpp/providers": [
+        {
+          "categories": [
+            {
+              "id": "Same Day Delivery",
+              "time": {
+                "duration": "P1D",
+                "label": "TAT"
+              }
+            }
+          ],
+          "descriptor": {
+            "long_desc": "SDD network for ONDC deliveries",
+            "name": "ONDC Marbeloz SDD",
+            "short_desc": "ONDC Marbeloz SDD"
+          },
+          "id": "107",
+          "items": [
+            {
+              "category_id": "Same Day Delivery",
+              "descriptor": {
+                "code": "P2P",
+                "long_desc": "Same Day Delivery",
+                "name": "Same Day Delivery",
+                "short_desc": "Same Day Delivery"
+              },
+              "fulfillment_id": "1",
+              "id": "2",
+              "parent_item_id": "",
+              "price": {
+                "currency": "INR",
+                "value": "59.00"
+              },
+              "time": {
+                "duration": "PT45M",
+                "label": "TAT",
+                "timestamp": "2023-11-06T10:22:13.965Z"
+              }
+            },
+            {
+              "category_id": "Same Day Delivery",
+              "descriptor": {
+                "code": "P2P",
+                "long_desc": "RTO quote",
+                "name": "RTO quote",
+                "short_desc": "RTO quote"
+              },
+              "fulfillment_id": "3",
+              "id": "02",
+              "parent_item_id": "2",
+              "price": {
+                "currency": "INR",
+                "value": "59.00"
+              },
+              "time": {
+                "duration": "PT45M",
+                "label": "TAT",
+                "timestamp": "2023-11-06T10:22:13.965Z"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "context": {
+    "action": "confirm",
+    "bap_id": "biz.test.bitsila.com",
+    "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+    "bpp_id": "uat-store.pidge.in",
+    "bpp_uri": "https://uat-store.pidge.in/v1/ondc",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "f2ee9729-04c8-4010-b835-2a2ffc5340dd",
+    "timestamp": "2023-11-06T09:37:59.818Z",
+    "transaction_id": "LOG-3040-1001-1215-t8lG",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "F&B",
+            "descriptor": {
+              "name": "Chicken Curry"
+            },
+            "price": {
+              "currency": "INR",
+              "value": "260.0"
+            },
+            "quantity": {
+              "count": 1,
+              "measure": {
+                "unit": "Kilogram",
+                "value": 0.5
+              }
+            }
+          }
+        ],
+        "order": {
+          "id": "3040-1001-1215",
+          "weight": {
+            "unit": "Kilogram",
+            "value": 0.5
+          }
+        },
+        "provider": {
+          "address": {
+            "area_code": "560095",
+            "city": "Bangalore",
+            "locality": "KHB Colony, 5th Block, Koramangala",
+            "name": "Ola Cafe Koramangala",
+            "state": "Karnataka",
+            "street": "124, 1st A cross Rd 124, 1st A cross Rd, near Jyoti Nivas College Road"
+          },
+          "descriptor": {
+            "name": "Ola ondc test - Ola Cafe Koramangala"
+          }
+        }
+      },
+      "billing": {
+        "address": {
+          "area_code": "560085",
+          "city": "Bengaluru",
+          "country": "India",
+          "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
+          "name": "221, INNOBITS SOLUTIONS PVT LTD",
+          "state": "Karnataka"
+        },
+        "created_at": "2023-11-06T09:37:46.912Z",
+        "email": "finance@bitsila.com",
+        "name": "Bitsila",
+        "phone": "8951898275",
+        "tax_number": "29AAFCI9011D1ZQ",
+        "updated_at": "2023-11-06T09:37:46.912Z"
+      },
+      "created_at": "2023-11-06T09:37:59.817Z",
+      "fulfillments": [
+        {
+          "end": {
+            "contact": {
+              "email": "mahesh.herle@olacabs.com",
+              "phone": "9900163002"
+            },
+            "instructions": {
+              "long_desc": "Bengaluru",
+              "short_desc": "Bengaluru"
+            },
+            "location": {
+              "address": {
+                "area_code": "560095",
+                "building": "Mahesh,dadas,adsfd",
+                "city": "Bengaluru",
+                "country": "IND",
+                "door": "Mahesh,dadas,adsfd",
+                "locality": "Bengaluru",
+                "name": "Mahesh",
+                "state": "Karnataka"
+              },
+              "gps": "12.938208, 77.619106",
+              "id": null
+            },
+            "person": {
+              "name": "Mahesh"
+            }
+          },
+          "id": "3",
+          "start": {
+            "contact": {
+              "email": "test1@test.com",
+              "phone": "9999999998"
+            },
+            "instructions": {
+              "long_desc": "",
+              "short_desc": ""
+            },
+            "location": {
+              "address": {
+                "area_code": "560095",
+                "building": "124, 1st A cross Rd 124, 1st A cross Rd, near Jyoti Nivas College Road",
+                "city": "Bangalore",
+                "country": "India",
+                "locality": "KHB Colony, 5th Block, Koramangala",
+                "name": "Ola Cafe Koramangala",
+                "state": " Karnataka"
+              },
+              "gps": "12.931233398766624, 77.61628451114609",
+              "id": "3040:1669"
+            },
+            "person": {
+              "name": "Ola ondc test"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "no"
+          },
+          "tracking": true,
+          "type": "Prepaid"
+        }
+      ],
+      "id": "3040-1001-1215",
+      "items": [
+        {
+          "category_id": "Same Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "id": "02"
+        }
+      ],
+      "payment": {
+        "@ondc/org/collection_amount": "0.0",
+        "collected_by": "BPP",
+        "type": "POST-FULFILLMENT"
+      },
+      "provider": {
+        "id": "107",
+        "locations": []
+      },
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "02",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "59.00"
+        }
+      },
+      "state": "Created",
+      "updated_at": "2023-11-06T09:37:59.817Z"
+    }
+  }
+}
