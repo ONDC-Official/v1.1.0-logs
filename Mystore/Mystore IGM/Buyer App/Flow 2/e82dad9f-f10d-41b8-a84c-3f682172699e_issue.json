@@ -10,13 +10,14 @@
       "bap_uri": "https://beta.mystore.in/ondc/1.0/",
       "bpp_id": "preprod-jajee-bpp.shopalyst.com",
       "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
-      "transaction_id": "6baef465-4182-4d15-b146-2924f09b00a1",
-      "message_id": "d58e56e0-7969-496c-9d5c-3d16f4f8e31e",
-      "timestamp": "2023-10-28T18:37:23.404Z"
+      "transaction_id": "e82dad9f-f10d-41b8-a84c-3f682172699e",
+      "message_id": "9ff1fbda-6ef6-4697-a996-690a7f88feee",
+      "timestamp": "2023-11-06T11:59:32.682Z",
+      "ttl": "PT30S"
     },
     "message": {
       "issue": {
-        "id": "653d545e7510f018ea07af58",
+        "id": "6548d52431b2966b8b8afd9e",
         "category": "FULFILLMENT",
         "sub_category": "FLM01",
         "complainant_info": {
@@ -29,25 +30,25 @@
           }
         },
         "order_details": {
-          "id": "653d538a249d97ae7e424b99",
+          "id": "6548d43831b2966b8b8af9a3",
           "state": "Accepted",
           "items": [
             {
-              "id": "55EA20538A3151ABD81510BBB42C9CE3_43540043596035_default",
+              "id": "60B506E4F5FCC23F76C70525EE2B2A9E_43540044644611_default",
               "quantity": 1
             }
           ],
           "fulfillments": [
             {
               "id": "5692eae837b7a1d2b7ebd8e6bd251b51_1",
-              "state": "Accepted"
+              "state": "Pending"
             }
           ],
           "provider_id": "preprod-jajee-bpp.shopalyst.com"
         },
         "description": {
-          "short_desc": "wrong delivery address",
-          "long_desc": "wrong delivery address"
+          "short_desc": "Fufillment issue",
+          "long_desc": "Fufillment issue"
         },
         "source": {
           "network_participant_id": "beta.mystore.in",
@@ -59,21 +60,21 @@
         "expected_resolution_time": {
           "duration": "P1D"
         },
-        "status": "CLOSED",
+        "status": "OPEN",
         "issue_type": "ISSUE",
         "issue_actions": {
           "complainant_actions": [
             {
-              "complainant_action": "Closed",
-              "remarks": "wrong delivery address",
-              "updated_at": "2023-10-28T18:37:22.645Z",
+              "complainant_action": "Open",
+              "short_desc": "Fufillment issue",
+              "updated_at": "2023-11-06T11:59:32.835Z",
               "updated_by": {
                 "org": {
                   "name": "beta.mystore.in::nic2004:52110"
                 },
                 "contact": {
                   "phone": "9450394039",
-                  "email": "buyerapp@interface.com"
+                  "email": "ops@mystore.in"
                 },
                 "person": {
                   "name": "Mystore"
@@ -82,9 +83,31 @@
             }
           ]
         },
-        "created_at": "2023-10-28T18:35:10.152Z",
-        "updated_at": "2023-10-28T18:37:22.645Z"
+        "created_at": "2023-11-06T11:59:32.536Z",
+        "updated_at": "2023-11-06T11:59:32.536Z"
       }
+    }
+  },
+  "response": {
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    },
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "core_version": "1.0.0",
+      "action": "issue",
+      "bap_id": "beta.mystore.in",
+      "bap_uri": "https://beta.mystore.in/ondc/1.0/",
+      "bpp_id": "preprod-jajee-bpp.shopalyst.com",
+      "bpp_uri": "https://preprod-jajee-bpp.shopalyst.com/jajee",
+      "transaction_id": "e82dad9f-f10d-41b8-a84c-3f682172699e",
+      "message_id": "9ff1fbda-6ef6-4697-a996-690a7f88feee",
+      "timestamp": "2023-11-06T11:59:32.682Z",
+      "ttl": "PT30S"
     }
   }
 }
