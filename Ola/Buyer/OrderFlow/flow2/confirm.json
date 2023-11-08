@@ -1,0 +1,192 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "action": "confirm",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "bap_id": "olamoney-website-3000a.stg.corp.olacabs.com",
+    "bpp_id": "staging.tmbill.com/tp/v1/ondc",
+    "bap_uri": "https://olamoney-website-3000a.stg.corp.olacabs.com/ondc",
+    "bpp_uri": "https://staging.tmbill.com/tp/v1/ondc",
+    "transaction_id": "ea9fad25-7c39-413a-8496-b782474efa68",
+    "message_id": "d025dfb9-6051-46cf-9e76-3f8cd32f5c96",
+    "timestamp": "2023-10-16T15:52:53.759Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "ONDC_557633sDoRmK",
+      "created_at": "2023-10-16T15:52:53.759Z",
+      "updated_at": "2023-10-16T15:52:53.759Z",
+      "state": "Created",
+      "provider": {
+        "id": "22446688739675",
+        "rateable": false,
+        "locations": [
+          {
+            "id": "22446688739675"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "22446688739675_fulfillment_1",
+          "type": "Delivery",
+          "end": {
+            "location": {
+              "gps": "12.969195,77.74394299999994",
+              "address": {
+                "country": "IND",
+                "door": "test",
+                "city": "Bengaluru",
+                "area_code": "560066",
+                "name": "test landmark",
+                "locality": "area locality 7, 8 & 9, Whitefield, Dodsworth Layout, Bengaluru",
+                "state": "Karnataka",
+                "building": "test building"
+              }
+            },
+            "contact": {
+              "phone": "9886264264",
+              "email": "9886264264@travelraahi.com"
+            },
+            "person": {
+              "name": "Name Unavailable"
+            }
+          },
+          "rateable": false
+        }
+      ],
+      "billing": {
+        "name": "Name Unavailable",
+        "address": {
+          "country": "IND",
+          "door": "test",
+          "city": "Bengaluru",
+          "area_code": "560066",
+          "name": "test landmark",
+          "locality": "area locality 7, 8 & 9, Whitefield, Dodsworth Layout, Bengaluru",
+          "state": "Karnataka",
+          "building": "test building"
+        },
+        "email": "9886264264@travelraahi.com",
+        "phone": "9886264264",
+        "created_at": "2023-10-16T15:52:36.005Z",
+        "updated_at": "2023-10-16T15:52:36.005Z"
+      },
+      "items": [
+        {
+          "id": "2775200::1155939::EP07",
+          "fulfillment_id": "22446688739675_fulfillment_1",
+          "quantity": {
+            "count": 2
+          }
+        },
+        {
+          "id": "2775201::1155940::EP08",
+          "fulfillment_id": "22446688739675_fulfillment_1",
+          "quantity": {
+            "count": 2
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "1319"
+        },
+        "breakup": [
+          {
+            "title": "Egg Curry",
+            "price": {
+              "currency": "INR",
+              "value": "200"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "100"
+              }
+            },
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "10"
+            },
+            "@ondc/org/item_id": "2775200::1155939::EP07",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "title": "Egg Masala",
+            "price": {
+              "currency": "INR",
+              "value": "1000"
+            },
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "500"
+              }
+            },
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "@ondc/org/title_type": "item"
+          },
+          {
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "50"
+            },
+            "@ondc/org/item_id": "2775201::1155940::EP08",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "title": "Delivery Charges",
+            "price": {
+              "currency": "INR",
+              "value": "59"
+            },
+            "@ondc/org/item_id": "22446688739675_fulfillment_1",
+            "@ondc/org/title_type": "delivery"
+          }
+        ],
+        "ttl": "PT1H"
+      },
+      "payment": {
+        "collected_by": "BAP",
+        "type": "ON-ORDER",
+        "status": "PAID",
+        "params": {
+          "currency": "INR",
+          "transaction_id": "ea9fad25-7c39-413a-8496-b782474efa68",
+          "amount": "1319"
+        },
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "beneficiary_name": "TechMainstay Software Private Limited",
+            "settlement_bank_account_no": "50200085305869",
+            "settlement_ifsc_code": "HDFC0000966",
+            "bank_name": "HDFC BANK",
+            "branch_name": "SHRIRAMPUR BRANCH"
+          }
+        ]
+      }
+    }
+  }
+}

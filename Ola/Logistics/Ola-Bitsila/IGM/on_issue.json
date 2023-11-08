@@ -1,0 +1,81 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_issue",
+        "bap_id": "biz.test.bitsila.com",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
+        "transaction_id": "LOG-b0dac05a-a6c3-4063-94f4-02e102b852ba",
+        "message_id": "f9555763-530e-4369-a67d-77c79836271c",
+        "timestamp": "2023-10-12T16:27:44.785Z",
+        "core_version": "1.0.0",
+        "bpp_id": "ondc-preprod-lsp.olacabs.com"
+    },
+    "message": {
+        "issue": {
+            "id": "c97a4e3a-2710-45b5-acf8-c8e1fd731b84",
+            "created_at": "2023-10-12T16:27:29.684Z",
+            "updated_at": "2023-10-12T16:27:44.785Z",
+            "issue_actions": {
+                "respondent_actions": [
+                    {
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-10-12T16:27:33.277Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "biz.test.bitsila.com::nic2004:52110"
+                            },
+                            "person": {
+                                "name": "Subash Kumar"
+                            },
+                            "contact": {
+                                "email": "support@bitsila.com",
+                                "phone": "9632056194"
+                            }
+                        },
+                        "cascaded_level": 1,
+                        "respondent_action": "PROCESSING"
+                    },
+                    {
+                        "respondent_action": "CASCADED",
+                        "short_desc": "Complaint cascaded",
+                        "updated_at": "2023-10-12T16:27:44.432Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "biz.test.bitsila.com::nic2004:52110"
+                            },
+                            "person": {
+                                "name": "Subash Kumar"
+                            },
+                            "contact": {
+                                "email": "support@bitsila.com",
+                                "phone": "9632056194"
+                            }
+                        },
+                        "cascaded_level": 2
+                    },
+                    {
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-10-12T16:27:45.949Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "Olacabs"
+                            },
+                            "contact": {
+                                "phone": "9987303443",
+                                "email": "mahesh.herle@olacabs.com"
+                            },
+                            "person": {
+                                "name": "Olacabs Support"
+                            }
+                        },
+                        "cascaded_level": 2
+                    }
+                ]
+            }
+        }
+    }
+}

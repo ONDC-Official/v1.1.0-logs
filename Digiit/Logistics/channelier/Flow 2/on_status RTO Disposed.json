@@ -1,0 +1,140 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_status",
+    "transaction_id": "2bd5e6ee-892e-4814-b227-965136d55e2d",
+    "message_id": "41h45ea8-5fd8-473d-8006-81550cc8ce6c",
+    "timestamp": "2023-10-12T11:06:13.983Z"
+  },
+  "message": {
+    "order": {
+      "id": "ae02d660-5723-4187-a341-4b66b496ffc7",
+      "state": "Cancelled",
+      "provider": {
+        "id": "107-Account-DER-292"
+      },
+      "items": [
+        {
+          "id": "18",
+          "category_id": "Next Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "type": "Prepaid",
+          "state": {
+            "descriptor": {
+              "code": "Cancelled"
+            }
+          },
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-10-13T12:29:24.339Z",
+                "end": "2023-10-13T12:59:24.339Z"
+              },
+              "timestamp": "2023-10-12T11:02:46.093Z"
+            },
+            "instructions": {
+              "name": "3858",
+              "short_desc": "3858",
+              "long_desc": "This OTP is to be shared with the Store Manager for pickup of the package"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-10-13T16:29:24.339Z",
+                "end": "2023-10-13T16:44:24.339Z"
+              }
+            }
+          },
+          "agent": {
+            "name": "Peter",
+            "phone": "7438483828"
+          }
+        },
+        {
+          "type": "RTO",
+          "state": {
+            "descriptor": {
+              "code": "RTO-Disposed",
+              "name": "RTO-Disposed"
+            }
+          },
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-10-12T11:04:32.534Z",
+                "end": "2023-10-12T11:34:32.534Z"
+              },
+              "timestamp": "2023-10-12T11:04:32.722Z"
+            }
+          },
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-10-13T16:34:32.769Z",
+                "end": "2023-10-13T16:49:32.769Z"
+              },
+              "timestamp": "2023-10-12T11:06:07.556Z"
+            }
+          },
+          "agent": {
+            "name": "Peter",
+            "phone": "7438483828"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "20.0"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "18",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "20.0"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP"
+      },
+      "billing": {
+        "name": "Arachnomesh Technologies Pvt Ltd",
+        "address": {
+          "name": "PF-43, B-Wing",
+          "building": "Crystal Plaza",
+          "locality": "Sector-7, Kharghar",
+          "city": "Navi Mumbai",
+          "state": "Maharashtra",
+          "country": "India",
+          "area_code": "410210"
+        },
+        "tax_number": "27AAMCA8667N1ZQ",
+        "phone": "7291085339",
+        "email": "info@channelier.com"
+      },
+      "tags": {
+        "cancellation_reason_id": "013"
+      }
+    }
+  }
+}

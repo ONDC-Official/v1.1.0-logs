@@ -1,0 +1,48 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "core_version": "1.1.0",
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_init",
+    "transaction_id": "2bd5e6ee-892e-4814-b227-965136d55e2d",
+    "message_id": "21baf0cd-f9a8-445f-a587-553634db40d7",
+    "timestamp": "2023-10-12T10:48:37.820Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "107-Account-DER-292"
+      },
+      "items": [
+        {
+          "id": "18"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "20.0"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "18",
+            "@ondc/org/title_type": "Delivery Charge",
+            "price": {
+              "currency": "INR",
+              "value": "20.0"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP"
+      }
+    }
+  }
+}

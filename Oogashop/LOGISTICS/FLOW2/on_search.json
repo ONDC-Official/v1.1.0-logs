@@ -1,17 +1,17 @@
 {
     "context": {
-        "domain": "nic2004:60232",
-        "core_version": "1.1.0",
-        "bap_id": "preprodlogistics.ooga.shop",
-        "bap_uri": "https://preprodlogistics.ooga.shop",
-        "bpp_id": "preprod-bpp.iway.digiit.io",
-        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-        "city": "STD:080",
+        "transaction_id": "0581b458-4a12-459b-a580-92d8c6cd4837",
         "country": "IND",
+        "bpp_id": "ondc.whizzard.in",
+        "city": "STD:080",
+        "domain": "nic2004:60232",
+        "bpp_uri": "https://ondc.whizzard.in/api/integration",
         "action": "on_search",
-        "transaction_id": "c75d7da2-06b5-4d00-978f-72e09ddeaf96",
-        "message_id": "cccf8cce-940a-4f1e-9fdb-b3fb93408dff",
-        "timestamp": "2023-09-28T11:56:58.337Z"
+        "message_id": "02a16188-04a1-484b-a129-424710488fa3",
+        "core_version": "1.1.0",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "timestamp": "2023-10-18T18:37:43.049Z"
     },
     "message": {
         "catalog": {
@@ -27,68 +27,116 @@
                 {
                     "id": "3",
                     "type": "RTO"
-                },
-                {
-                    "id": "4",
-                    "type": "Reverse QC"
                 }
             ],
-            "bpp/descriptor": {
-                "name": "iway"
-            },
             "bpp/providers": [
                 {
-                    "id": "107-Account-DER-292",
+                    "id": "MLL",
                     "descriptor": {
-                        "name": "Iway Logistics & Delivery",
-                        "short_desc": "Iway Logistics & Delivery",
-                        "long_desc": "Iway Logistics & Delivery"
+                        "name": "Mahindra Logistics",
+                        "short_desc": "MLL",
+                        "long_desc": "Mahindra Logistics Ltd."
                     },
                     "categories": [
                         {
                             "id": "Immediate Delivery",
                             "time": {
-                                "label": "TAT",
-                                "duration": "PT45M"
+                                "duration": "PT20M",
+                                "label": "TAT"
                             }
                         }
                     ],
                     "items": [
                         {
-                            "id": "19",
-                            "parent_item_id": "",
                             "category_id": "Immediate Delivery",
-                            "fulfillment_id": "1",
-                            "descriptor": {
-                                "code": "P2P",
-                                "name": "Immediate Delivery",
-                                "short_desc": "Immediate Delivery",
-                                "long_desc": "Immediate Delivery"
-                            },
+                            "parent_item_id": "",
                             "price": {
                                 "currency": "INR",
-                                "value": "20.0"
-                            }
+                                "value": "30"
+                            },
+                            "id": "I1",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "20 min delivery",
+                                "short_desc": "20 min delivery",
+                                "long_desc": "20 min delivery"
+                            },
+                            "time": {
+                                "duration": "PT20M",
+                                "label": "TAT",
+                                "timestamp": "2023-10-18T18:37:43.049Z"
+                            },
+                            "fulfillment_id": "1"
                         },
                         {
-                            "id": "rto-item-19",
-                            "parent_item_id": "19",
                             "category_id": "Immediate Delivery",
-                            "fulfillment_id": "3",
+                            "parent_item_id": "",
+                            "price": {
+                                "currency": "INR",
+                                "value": "30"
+                            },
+                            "id": "I2",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "20 min delivery",
+                                "short_desc": "20 min delivery",
+                                "long_desc": "20 min delivery"
+                            },
+                            "time": {
+                                "duration": "PT20M",
+                                "label": "TAT",
+                                "timestamp": "2023-10-18T18:37:43.049Z"
+                            },
+                            "fulfillment_id": "2"
+                        },
+                        {
+                            "category_id": "Immediate Delivery",
+                            "parent_item_id": "I2",
+                            "price": {
+                                "currency": "INR",
+                                "value": "30"
+                            },
+                            "id": "I4",
                             "descriptor": {
                                 "code": "P2P",
                                 "name": "RTO quote",
                                 "short_desc": "RTO quote",
-                                "long_desc": "RTO quote"
+                                "long_desc": "RTO quote for Immediate Delivery"
                             },
+                            "time": {
+                                "duration": "PT20M",
+                                "label": "TAT",
+                                "timestamp": "2023-10-18T18:37:43.049Z"
+                            },
+                            "fulfillment_id": "3"
+                        },
+                        {
+                            "category_id": "Immediate Delivery",
+                            "parent_item_id": "I1",
                             "price": {
                                 "currency": "INR",
-                                "value": "20.0"
-                            }
+                                "value": "30"
+                            },
+                            "id": "I3",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "RTO quote",
+                                "short_desc": "RTO quote",
+                                "long_desc": "RTO quote for Immediate Delivery"
+                            },
+                            "time": {
+                                "duration": "PT20M",
+                                "label": "TAT",
+                                "timestamp": "2023-10-18T18:37:43.049Z"
+                            },
+                            "fulfillment_id": "3"
                         }
                     ]
                 }
-            ]
+            ],
+            "bpp/descriptor": {
+                "name": "Mahindra Logistics"
+            }
         }
     }
 }

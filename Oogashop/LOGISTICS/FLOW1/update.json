@@ -7,21 +7,22 @@
         "core_version": "1.1.0",
         "bap_id": "preprodlogistics.ooga.shop",
         "bap_uri": "https://preprodlogistics.ooga.shop",
-        "bpp_id": "preprod-bpp.iway.digiit.io",
-        "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-        "transaction_id": "3a62aaf5-b8c0-4ce6-a392-5ef21bed893b",
-        "message_id": "0f7c3441-899f-4d99-82eb-62b6a318a5b7",
-        "timestamp": "2023-09-28T11:37:24.881Z",
+        "bpp_id": "ondc.whizzard.in",
+        "bpp_uri": "https://ondc.whizzard.in/api/integration",
+        "transaction_id": "27f4b602-5a38-43a5-85c4-76c14632d8fc",
+        "message_id": "cff8fb24-0899-4e24-a012-5501c45d4bce",
+        "timestamp": "2023-10-18T18:34:30.378Z",
         "ttl": "PT30S"
     },
     "message": {
         "update_target": "fulfillment",
         "order": {
-            "id": "0f8dd01c-ffe1-4ce0-adf6-2d4bdd9f788a",
-            "state": "Accepted",
+            "id": "OOGASHOP-90",
+            "state": "Created",
+            "provider": null,
             "items": [
                 {
-                    "id": "19",
+                    "id": "I1",
                     "category_id": "Immediate Delivery",
                     "descriptor": {
                         "code": "P2P"
@@ -34,8 +35,14 @@
                     "type": "Prepaid",
                     "start": {
                         "instructions": {
-                            "short_desc": "000002",
-                            "long_desc": "Pickup from door-step"
+                            "short_desc": "000090",
+                            "long_desc": "Deliver at door-step"
+                        }
+                    },
+                    "end": {
+                        "instructions": {
+                            "short_desc": "0000090",
+                            "long_desc": "Deliver at door-step"
                         }
                     },
                     "tags": {
@@ -43,7 +50,7 @@
                     }
                 }
             ],
-            "updated_at": "2023-09-28T11:37:24.881Z",
+            "updated_at": "2023-10-18T18:34:30.378Z",
             "@ondc/org/linked_order": {
                 "items": [
                     {
@@ -51,7 +58,7 @@
                         "quantity": {
                             "count": 2,
                             "measure": {
-                                "value": 4,
+                                "value": 2,
                                 "unit": "Kilogram"
                             }
                         },
@@ -64,8 +71,22 @@
                         }
                     }
                 ],
+                "provider": {
+                    "descriptor": {
+                        "name": "Test Store"
+                    },
+                    "address": {
+                        "name": "Grocery Store",
+                        "building": "Subramanya Pura Rd",
+                        "locality": " Telecom Layout, Padmanabhanagar",
+                        "city": "Bengaluru",
+                        "state": "Karnataka",
+                        "country": "India",
+                        "area_code": "560061"
+                    }
+                },
                 "order": {
-                    "id": "1239239",
+                    "id": "1939943",
                     "weight": {
                         "value": 4,
                         "unit": "Kilogram"
