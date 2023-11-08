@@ -1,0 +1,125 @@
+{
+  "context": {
+    "domain": "ONDC:NTS10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "ultrontest.magicpin.com/oms_partner/ondc_proxy/tataneu",
+    "bap_uri": "https://ultrontest.magicpin.com/oms_partner/ondc_proxy/tataneu",
+    "transaction_id": "04f5f2d2-adc5-47d8-b599-d5bd8fe3b3fa",
+    "ttl": "P2D",
+    "message_id": "0ece7819-3cc0-44e3-9ead-df5cae74035c",
+    "timestamp": "2023-11-01T09:01:01.235Z",
+    "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc",
+    "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "invoice_no": "76930302",
+          "created_at": "2023-11-01T07:52:33.232Z",
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "settlement_reason_code": "01",
+          "collector_app_id": "ultrontest.magicpin.com/oms_partner/ondc_proxy/tataneu",
+          "receiver_app_id": "ultrontest.magicpin.com/oms_partner/ondc",
+          "receiver_app_uri": "https://ultrontest.magicpin.com/oms_partner/ondc",
+          "provider": {
+            "name": {
+              "code": "45949808",
+              "name": "ONDC_TEST1"
+            },
+            "address": "HSR, Bangalore"
+          },
+          "payerdetails": {
+            "payer_bank_code": "ICICI0000106",
+            "payer_name": "M/S. Tata Digital Private Limited",
+            "payer_address": "163, HT Parekh Marg, Backbay Reclamation, Churchgate, Mumbai-400020",
+            "payer_account_no": "TATADIFD"
+          },
+          "id": "76930302",
+          "state": "Completed",
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "payment": {
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "collected_by": "BAP",
+            "params": {
+              "amount": "250.00",
+              "currency": "INR",
+              "transaction_id": "76930302_txn"
+            },
+            "type": "ON-ORDER",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_type": "neft",
+                "settlement_reference": "412148231236",
+                "settlement_status": "PAID",
+                "settlement_timestamp": "2023-11-01T07:12:15.332Z",
+                "settlement_amount": 240.00
+              }
+            ],
+            "@ondc/org/settlement_window": "P2D",
+            "@ondc/org/settlement_basis": "Delivery",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/collected_by_status": "PAID",
+            "status": "PAID",
+            "@ondc/org/buyer_app_finder_fee_amount": "0"
+          },
+          "updated_at": "2023-11-01T09:00:13.233Z",
+          "settlement_id": "9d24eaa8-c519-4d79-ad42-bfbe926c58d6",
+          "settlement_reference_no": "412148231236",
+          "transaction_id": "f098a3b2-85e2-48ca-902f-336637696f4a",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "correction": {
+            "issue_initiator_ref": "d4670869-71f0-40d2-b81d-fbed73de0653",
+            "issue_responder_ref": "d4670869-71f0-40d2-b81d-fbed73de0653",
+            "issue_type": "PAYMENT",
+            "issue_subtype": "PTM02",
+            "order_id": "76930302",
+            "order_amount": {
+              "currency": "INR",
+              "value": 250.00
+            },
+            "order_correction_amount": {
+              "currency": "INR",
+              "value": 250.00
+            },
+            "order_state": "Completed",
+            "previous_settled_amount": {
+              "currency": "INR",
+              "value": 240.00
+            },
+            "settlement_id": [
+              "ea8db4a7-5e52-400e-823b-e561e69fe4ef"
+            ],
+            "settlement_reference_no": [
+              "390234123421"
+            ],
+            "prev_settlement_reference_no": [
+              "412148231236"
+            ],
+            "recon_status": "01",
+            "diff_amount": {
+              "currency": "INR",
+              "value": "10"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
