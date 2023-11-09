@@ -9,106 +9,135 @@
     "core_version": "1.1.0",
     "country": "IND",
     "domain": "nic2004:60232",
-    "message_id": "O5uyvd8Z401zEoRYWGzbC",
-    "timestamp": "2023-11-09T13:01:05.515Z",
+    "message_id": "xJf9z6X3hfCjZajkReoLN",
+    "timestamp": "2023-11-09T13:40:35.775Z",
     "transaction_id": "ed92de1a-4b0e-46ab-b906-7aa547075ce2"
   },
   "message": {
     "order": {
-      "billing": {
-        "address": {
-          "area_code": "410210",
-          "building": "Crystal Plaza",
-          "city": "Navi Mumbai",
-          "country": "India",
-          "locality": "Sector-7, Kharghar",
-          "name": "PF-43, B-Wing",
-          "state": "Maharashtra"
-        },
-        "created_at": "2023-11-09T12:35:59.611Z",
-        "email": "info@channelier.com",
-        "name": "Arachnomesh Technologies Pvt Ltd",
-        "phone": "7291085339",
-        "tax_number": "27AAMCA8667N1ZQ",
-        "updated_at": "2023-11-09T12:35:59.611Z"
+      "id": "4fa9077b-bbfa-4750-afd1-8a9a7fd8e98e",
+      "state": "Cancelled",
+      "provider": {
+        "id": "107"
       },
       "created_at": "2023-11-09T12:36:01.191Z",
+      "updated_at": "2023-11-09T13:40:35.775Z",
       "fulfillments": [
         {
-          "agent": { "name": "shabbir ondc_T", "phone": "1239912399" },
+          "type": "Prepaid",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Cancelled"
+            }
+          },
+          "agent": {
+            "phone": "1239912399",
+            "name": "shabbir ondc_T"
+          },
+          "start": {
+            "time": {
+              "range": {
+                "start": "2023-11-09T12:36:01.373Z",
+                "end": "2023-11-09T13:36:01.373Z"
+              },
+              "timestamp": "2023-11-09T12:51:39.132Z"
+            }
+          },
           "end": {
             "time": {
               "range": {
-                "end": "2023-11-09T13:55:22.708Z",
-                "start": "2023-11-09T12:55:22.708Z"
+                "start": "2023-11-09T12:55:22.708Z",
+                "end": "2023-11-09T13:55:22.708Z"
               }
             }
-          },
-          "start": {
-            "time": {
-              "range": {
-                "end": "2023-11-09T13:36:01.373Z",
-                "start": "2023-11-09T12:36:01.373Z"
-              },
-              "timestamp": "2023-11-09T12:36:01.373Z"
-            }
-          },
-          "state": { "descriptor": { "code": "Cancelled" } },
-          "tracking": false,
-          "type": "Prepaid"
+          }
         },
         {
-          "end": {
-            "time": {
-              "range": {
-                "end": "2023-11-09T13:01:05.514Z",
-                "start": "2023-11-09T12:55:22.708Z"
-              },
-              "timestamp": "2023-11-09T13:01:05.514Z"
+          "type": "RTO",
+          "state": {
+            "descriptor": {
+              "code": "RTO-Delivered"
             }
           },
           "start": {
             "time": {
               "range": {
-                "end": "2023-11-09T12:55:22.708Z",
-                "start": "2023-11-09T12:55:22.708Z"
+                "start": "2023-11-09T12:55:22.708Z",
+                "end": "2023-11-09T12:55:22.708Z"
               },
               "timestamp": "2023-11-09T12:55:22.708Z"
             }
           },
-          "state": { "descriptor": { "code": "RTO-Delivered" } },
-          "type": "RTO"
+          "end": {
+            "time": {
+              "range": {
+                "start": "2023-11-09T12:55:22.708Z",
+                "end": "2023-11-09T13:40:35.775Z"
+              },
+              "timestamp": "2023-11-09T13:40:35.775Z"
+            }
+          }
         }
       ],
-      "id": "4fa9077b-bbfa-4750-afd1-8a9a7fd8e98e",
-      "items": [
-        {
-          "category_id": "Same Day Delivery",
-          "descriptor": { "code": "P2P" },
-          "id": "2"
-        }
-      ],
-      "payment": { "collected_by": "BPP", "type": "POST-FULFILLMENT" },
-      "provider": { "id": "107" },
+      "billing": {
+        "name": "Arachnomesh Technologies Pvt Ltd",
+        "address": {
+          "name": "PF-43, B-Wing",
+          "building": "Crystal Plaza",
+          "locality": "Sector-7, Kharghar",
+          "city": "Navi Mumbai",
+          "state": "Maharashtra",
+          "country": "India",
+          "area_code": "410210"
+        },
+        "email": "info@channelier.com",
+        "phone": "7291085339",
+        "tax_number": "27AAMCA8667N1ZQ",
+        "created_at": "2023-11-09T12:35:59.611Z",
+        "updated_at": "2023-11-09T12:35:59.611Z"
+      },
       "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "59.00"
+        },
         "breakup": [
           {
             "@ondc/org/item_id": "2",
             "@ondc/org/title_type": "Delivery Charge",
-            "price": { "currency": "INR", "value": "59.00" }
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
           },
           {
             "@ondc/org/item_id": "3",
+            "title": "RTO charges",
             "@ondc/org/title_type": "RTO Charge",
-            "price": { "currency": "INR", "value": "59.00" },
-            "title": "RTO charges"
+            "price": {
+              "currency": "INR",
+              "value": "59.00"
+            }
           }
-        ],
-        "price": { "currency": "INR", "value": "59.00" }
+        ]
       },
-      "state": "Cancelled",
-      "tags": { "cancellation_reason_id": "015" },
-      "updated_at": "2023-11-09T13:01:05.514Z"
+      "items": [
+        {
+          "id": "2",
+          "category_id": "Same Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BPP"
+      },
+      "tags": {
+        "cancellation_reason_id": "015"
+      }
     }
   }
 }
