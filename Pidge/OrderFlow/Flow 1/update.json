@@ -1,0 +1,48 @@
+{
+  "context": {
+    "action": "on_confirm",
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "bpp_id": "uat-store.pidge.in",
+    "bpp_uri": "https://uat-store.pidge.in/v1/ondc",
+    "city": "std:080",
+    "core_version": "1.1.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "fec75f86-b4fb-496b-a751-47e1e0cbe6112312d",
+    "timestamp": "2023-11-09T13:59:53.350Z",
+    "transaction_id": "54da0ae9-bfbe-4fd3-a7ce-5891dd2ebcc3"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "id": "1",
+          "start": {
+            "instructions": {
+              "long_desc": "This OTP is to be shared with the Store Manager for pickup of the package",
+              "short_desc": "3837"
+            }
+          },
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "type": "Prepaid"
+        }
+      ],
+      "id": "5dcdfb46-f692-45f3-bfd0-fd5804d47ada",
+      "items": [
+        {
+          "category_id": "Same Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          },
+          "id": "2"
+        }
+      ],
+      "state": "Accepted",
+      "updated_at": "2023-11-09T13:59:53.350Z"
+    },
+    "update_target": "fulfillment"
+  }
+}
