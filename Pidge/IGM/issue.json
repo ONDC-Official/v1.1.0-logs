@@ -1,0 +1,132 @@
+{
+  "context": {
+    "action": "issue",
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "bpp_id": "uat-store.pidge.in",
+    "bpp_uri": "https://uat-store.pidge.in/v1/ondc",
+    "city": "std:080",
+    "core_version": "1.0.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "db1f8e98-8593-4459-9af4-d337d17f57e6",
+    "timestamp": "2023-11-09T06:44:29.346Z",
+    "transaction_id": "1637bbb6-cf1b-4c48-9676-094c4e60ff7f",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "issue": {
+      "category": "FULFILLMENT",
+      "complainant_info": {
+        "contact": {
+          "email": "raman.kumar@pidge.in",
+          "phone": "8684892130"
+        },
+        "person": {
+          "name": "Raman"
+        }
+      },
+      "created_at": "2023-11-09T06:44:29.207Z",
+      "description": {
+        "additional_desc": {
+          "content_type": "text/plain",
+          "url": "https://buyerapp.com/additonal-details/desc.txt"
+        },
+        "images": [],
+        "long_desc": "Delivery in delayed by 1hr",
+        "short_desc": "Delivery is delayed"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      },
+      "expected_response_time": {
+        "duration": "PT1H"
+      },
+      "id": "61275039-a4d6-4827-b8ab-ab6772f6c913",
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "short_desc": "Complaint created",
+            "updated_at": "2023-11-09T06:44:29.288Z",
+            "updated_by": {
+              "contact": {
+                "email": "Rishabhnand.singh@ondc.org",
+                "phone": "6239083807"
+              },
+              "org": {
+                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+              },
+              "person": {
+                "name": "Rishabhnand Singh"
+              }
+            }
+          }
+        ],
+        "respondent_actions": [
+          {
+            "cascaded_level": 1,
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-11-09T06:44:29.329Z",
+            "updated_by": {
+              "contact": {
+                "email": "respondent@channelier.com",
+                "phone": "9999999999"
+              },
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:52110"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            }
+          },
+          {
+            "cascaded_level": 2,
+            "respondent_action": "CASCADED",
+            "short_desc": "Complaint cascaded to transaction counterparty",
+            "updated_at": "2023-11-09T06:44:29.346Z",
+            "updated_by": {
+              "contact": {
+                "email": "respondent@channelier.com",
+                "phone": "9999999999"
+              },
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:60232"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            }
+          }
+        ]
+      },
+      "issue_type": "ISSUE",
+      "order_details": {
+        "fulfillments": [
+          {
+            "id": "L-F-1699512034788",
+            "state": "Pending"
+          }
+        ],
+        "id": "2023-11-09-810318",
+        "items": [
+          {
+            "id": "CU1I0",
+            "quantity": 1
+          }
+        ],
+        "provider_id": "CU1",
+        "state": "Created"
+      },
+      "source": {
+        "network_participant_id": "buyer-app-preprod.ondc.org",
+        "type": "CONSUMER"
+      },
+      "status": "OPEN",
+      "sub_category": "FLM02",
+      "updated_at": "2023-11-09T06:44:29.207Z"
+    }
+  }
+}
