@@ -1,0 +1,122 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "preprod-bpp.dbs.digiit.io",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_issue_status",
+    "transaction_id": "7f4f29cf-f77f-4ee2-b85c-eedf4d43753e",
+    "message_id": "2da3ffe1-0a37-4463-bc04-9ff53f8163d1",
+    "timestamp": "2023-11-06T13:06:09.884Z"
+  },
+  "message": {
+    "issue": {
+      "id": "6d67036b-e8d9-4c42-8090-a6d2b79c054c",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "<p>Dear Customer,</p><p>We'll check it.</p>",
+            "updated_at": "2023-11-06T07:07:26.591Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9591865541",
+                "email": "vayuvah@gmail.com"
+              },
+              "person": {
+                "name": "vayclenz"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "CASCADED",
+            "short_desc": "<p>Dear LSP,</p><p>Kindly check why order is not picked from us. </p>",
+            "updated_at": "2023-11-06T07:08:47.221Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9591865541",
+                "email": "vayuvah@gmail.com"
+              },
+              "person": {
+                "name": "vayclenz"
+              }
+            },
+            "cascaded_level": 2
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "short_desc": "<p>Dear Customer,</p><p>Your order will be delivered shortly</p>",
+            "updated_at": "2023-11-06T07:23:12.738Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9591865541",
+                "email": "vayuvah@gmail.com"
+              },
+              "person": {
+                "name": "vayclenz"
+              }
+            },
+            "cascaded_level": 1
+          }
+        ]
+      },
+      "created_at": "2023-11-06T12:34:06.671Z",
+      "updated_at": "2023-11-06T07:23:12.738Z",
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "TRANSACTION-COUNTERPARTY-NP",
+          "organization": {
+            "org": {
+              "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
+            },
+            "contact": {
+              "phone": "9591865541",
+              "email": "vayuvah@gmail.com"
+            },
+            "person": {
+              "name": "vayclenz"
+            }
+          },
+          "resolution_support": {
+            "chat_link": "https://wa.me/9591865541",
+            "contact": {
+              "phone": "9591865541",
+              "email": "vayuvah@gmail.com"
+            },
+            "gros": [
+              {
+                "person": {
+                  "name": "Siva"
+                },
+                "contact": {
+                  "phone": "72597 65765",
+                  "email": "siva.t@digiit.biz"
+                },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ]
+          }
+        }
+      },
+      "resolution": {
+        "short_desc": "Order Delayed",
+        "long_desc": "<p>Dear Customer,</p><p>Your order will be delivered shortly</p>",
+        "action_triggered": "NO-ACTION"
+      }
+    }
+  }
+}
