@@ -1,0 +1,134 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "issue",
+		"core_version": "1.0.0",
+		"bap_id": "logistics.ondc.digiledge.in",
+		"bap_uri": "https://logistics.ondc.digiledge.in",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp/",
+		"transaction_id": "36e82c48-8020-412b-b807-0bfd517921b4",
+		"message_id": "c21d5384-6115-485b-9eb1-f5d46dad9938",
+		"timestamp": "2023-11-17T05:59:25.244Z",
+		"ttl": "PT30S"
+	},
+	"message": {
+		"issue": {
+			"id": "368c696a-646f-4030-9ee0-c88ba8df04f1",
+			"complainant_info": {
+				"person": {
+					"name": "Testing Gayatri12"
+				},
+				"contact": {
+					"phone": "7786865678",
+					"email": "gayu1234@gmail.com"
+				}
+			},
+			"order_details": {
+				"id": "2023-11-17-656652",
+				"state": "Accepted",
+				"items": [
+					{
+						"id": "a7447338-f5dc-4e11-b0ab-941bdc2c016d",
+						"quantity": 1
+					}
+				],
+				"fulfillments": [
+					{
+						"id": "b1385351-c3f6-4893-a088-653da97f91cd",
+						"state": "Pending"
+					}
+				],
+				"provider_id": "SRISA971913613"
+			},
+			"description": {
+				"short_desc": "Delivered on wrong address",
+				"long_desc": "Wrong address",
+				"images": [
+					"https://buyer-app-preprod.ondc.org/issueApis/uploads/1700200630618.png"
+				],
+				"additional_desc": {
+					"content_type": "text/plain",
+					"url": "https://buyerapp.com/additonal-details/desc.txt"
+				}
+			},
+			"category": "FULFILLMENT",
+			"sub_category": "FLM01",
+			"issue_type": "ISSUE",
+			"source": {
+				"network_participant_id": "buyer-app-preprod.ondc.org",
+				"type": "CONSUMER"
+			},
+			"expected_response_time": {
+				"duration": "PT1H"
+			},
+			"expected_resolution_time": {
+				"duration": "P1D"
+			},
+			"status": "OPEN",
+			"issue_actions": {
+				"complainant_actions": [
+					{
+						"complainant_action": "OPEN",
+						"updated_at": "2023-11-17T05:57:10.618Z",
+						"updated_by": {
+							"org": {
+								"name": "buyer-app-preprod.ondc.org::nic2004:52110"
+							},
+							"contact": {
+								"phone": "6239083807",
+								"email": "Rishabhnand.singh@ondc.org"
+							},
+							"person": {
+								"name": "Rishabhnand Singh"
+							}
+						},
+						"short_desc": "Complaint created"
+					}
+				],
+				"respondent_actions": [
+					{
+						"respondent_action": "PROCESSING",
+						"updated_at": "2023-11-17T05:57:10.713Z",
+						"updated_by": {
+							"org": {
+								"name": "seller.ondc.digiledge.in::nic2004:52110"
+							},
+							"contact": {
+								"phone": "8610136676",
+								"email": "vishnu@gmail.com"
+							},
+							"person": {
+								"name": "Vishnu"
+							}
+						},
+						"short_desc": "Complaint is being processed",
+						"cascaded_level": 1
+					},
+					{
+						"respondent_action": "CASCADED",
+						"updated_at": "2023-11-17T05:59:25.244Z",
+						"updated_by": {
+							"org": {
+								"name": "logistics.ondc.digiledge.in::nic2004:60232"
+							},
+							"contact": {
+								"phone": "8610136676",
+								"email": "vishnu@gmail.com"
+							},
+							"person": {
+								"name": "Vishnu"
+							}
+						},
+						"short_desc": "Complaint cascaded",
+						"cascaded_level": 2
+					}
+				]
+			},
+			"created_at": "2023-11-17T05:57:10.337Z",
+			"updated_at": "2023-11-17T05:59:25.244Z"
+		}
+	}
+}
