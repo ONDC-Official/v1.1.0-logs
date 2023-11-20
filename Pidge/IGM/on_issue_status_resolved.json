@@ -1,0 +1,139 @@
+{
+  "context": {
+    "action": "on_issue_status",
+    "bap_id": "integrations-preprod.channelier.com",
+    "bap_uri": "https://integrations-preprod.channelier.com/ondc",
+    "bpp_id": "uat-store.pidge.in",
+    "bpp_uri": "https://uat-store.pidge.in/v1/ondc",
+    "city": "std:080",
+    "core_version": "1.0.0",
+    "country": "IND",
+    "domain": "nic2004:60232",
+    "message_id": "vJFbuH7_QBGtYVZXVp6Zr",
+    "timestamp": "2023-11-09T09:36:51.432Z",
+    "transaction_id": "be2dbd41-f131-43cc-a1d0-7252421cb8ed"
+  },
+  "message": {
+    "issue": {
+      "created_at": "2023-11-09T09:32:08.746Z",
+      "id": "19d66b9d-5e78-4f04-95bd-e0e0702517e1",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "cascaded_level": 1,
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-11-09T09:32:08.867Z",
+            "updated_by": {
+              "contact": {
+                "email": "respondent@channelier.com",
+                "phone": "9999999999"
+              },
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:52110"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            }
+          },
+          {
+            "cascaded_level": 2,
+            "respondent_action": "CASCADED",
+            "short_desc": "Complaint cascaded to transaction counterparty",
+            "updated_at": "2023-11-09T09:32:08.871Z",
+            "updated_by": {
+              "contact": {
+                "email": "respondent@channelier.com",
+                "phone": "9999999999"
+              },
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:60232"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            }
+          },
+          {
+            "cascaded_level": 2,
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-11-09T09:32:08.918Z",
+            "updated_by": {
+              "contact": {
+                "email": "ondcmarbeloz@pidge.in",
+                "phone": "8888999900"
+              },
+              "org": {
+                "name": "uat-store.pidge.in::nic2004:60232"
+              },
+              "person": {
+                "name": "ondc mb sdd"
+              }
+            }
+          },
+          {
+            "cascaded_level": 2,
+            "respondent_action": "RESOLVED",
+            "short_desc": "The delivery is on the way",
+            "updated_at": "2023-11-09T09:36:51.381Z",
+            "updated_by": {
+              "contact": {
+                "email": "ondcmarbeloz@pidge.in",
+                "phone": "8888999900"
+              },
+              "org": {
+                "name": "uat-store.pidge.in::nic2004:60232"
+              },
+              "person": {
+                "name": "ondc mb sdd"
+              }
+            }
+          }
+        ]
+      },
+      "resolution": {
+        "action_triggered": "NO_ACTION",
+        "long_desc": "THe product is already out for delivery, will be delivered within 10 minutes.",
+        "short_desc": "The delivery is on the way"
+      },
+      "resolution_provider": {
+        "respondent_info": {
+          "organization": {
+            "contact": {
+              "email": "ondcmarbeloz@pidge.in",
+              "phone": "8888999900"
+            },
+            "org": {
+              "name": "uat-store.pidge.in::nic2004:60232"
+            },
+            "person": {
+              "name": "ondc mb sdd"
+            }
+          },
+          "resolution_support": {
+            "contact": {
+              "email": "ondcmarbeloz@pidge.in",
+              "phone": "8888999900"
+            },
+            "gros": [
+              {
+                "contact": {
+                  "email": "ondcmarbeloz@pidge.in",
+                  "phone": "8888999900"
+                },
+                "gro_type": "CASCADED-COUNTERPARTY-NP-GRO",
+                "person": {
+                  "name": "ondc mb sdd"
+                }
+              }
+            ]
+          },
+          "type": "CASCADED-COUNTERPARTY-NP"
+        }
+      },
+      "updated_at": "2023-11-09T09:36:51.381Z"
+    }
+  }
+}
