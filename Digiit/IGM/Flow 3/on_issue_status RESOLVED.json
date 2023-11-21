@@ -1,27 +1,27 @@
 {
   "context": {
     "domain": "nic2004:52110",
-    "core_version": "1.0.0",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_issue_status",
+    "core_version": "1.1.0",
     "bap_id": "buyer-app-preprod.ondc.org",
     "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-    "bpp_id": "preprod-bpp.dbs.digiit.io",
     "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
-    "city": "std:080",
-    "country": "IND",
-    "action": "on_issue_status",
-    "transaction_id": "d0e73649-07b4-429c-867f-2637c91b983d",
-    "message_id": "bd8d6b05-1337-4460-8f46-a6f4a3362a79",
-    "timestamp": "2023-11-21T06:32:14.279Z"
+    "transaction_id": "5446505f-5807-43f4-9c67-f4a33cd44990",
+    "message_id": "7834d621-8beb-41a9-a9e2-7bd2da1d3710",
+    "timestamp": "2023-11-21T07:08:28.101Z",
+    "bpp_id": "preprod-bpp.dbs.digiit.io"
   },
   "message": {
     "issue": {
-      "id": "0b16fcfe-3a18-41ca-9f35-f200239420a6",
+      "id": "b0a3b504-4571-4a0b-bdfa-01fe5551e0e2",
       "issue_actions": {
         "respondent_actions": [
           {
             "respondent_action": "PROCESSING",
             "short_desc": "<p>Dear Customer,</p><p>We're checking it</p>",
-            "updated_at": "2023-11-21T06:23:09.969Z",
+            "updated_at": "2023-11-21T06:55:42.706Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
@@ -38,8 +38,8 @@
           },
           {
             "respondent_action": "CASCADED",
-            "short_desc": "<p>Dear LSP,</p><p>Kindly check and update regarding this issue</p>",
-            "updated_at": "2023-11-21T06:24:35.664Z",
+            "short_desc": "<p>Dear LSP,</p><p>Order item is missing, kindly check from your side.</p>",
+            "updated_at": "2023-11-21T06:56:50.680Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
@@ -56,8 +56,8 @@
           },
           {
             "respondent_action": "RESOLVED",
-            "short_desc": "<p>Dear Customer,</p><p>Your order will be picked and delivered shortly</p>",
-            "updated_at": "2023-11-21T06:31:30.433",
+            "short_desc": "<p>Dear Customer,</p><p>We'll deliver the missing item asap</p>",
+            "updated_at": "2023-11-21T07:07:41.231Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
@@ -74,8 +74,8 @@
           }
         ]
       },
-      "created_at": "2023-11-21T06:21:30.732Z",
-      "updated_at": "2023-11-21T06:31:30.433Z",
+      "created_at": "2023-11-21T06:54:11.040Z",
+      "updated_at": "2023-11-21T07:07:41.231Z",
       "resolution_provider": {
         "respondent_info": {
           "type": "TRANSACTION-COUNTERPARTY-NP",
@@ -113,8 +113,8 @@
         }
       },
       "resolution": {
-        "short_desc": "Delay in Delivery",
-        "long_desc": "<p>Dear Customer,</p><p>Your order will be picked and delivered shortly</p>",
+        "short_desc": "Missing Item",
+        "long_desc": "<p>Dear Customer,</p><p>We'll deliver the missing item asap</p>",
         "action_triggered": "NO-ACTION"
       }
     }
