@@ -1,0 +1,128 @@
+{
+  "context": {
+    "city": "std:080",
+    "action": "on_issue_status",
+    "bap_id": "b-ondc-seller-bpp.nlincs.in",
+    "bpp_id": "shipdh.in",
+    "domain": "nic2004:60232",
+    "bap_uri": "https://b-ondc-seller-bpp.nlincs.in/lbap",
+    "bpp_uri": "https://shipdh.in/ondc/bpp/api/",
+    "country": "IND",
+    "timestamp": "2023-11-20T12:53:56.811Z",
+    "message_id": "njUeaQqfwze5ACghcFdt0imHxxozR4vZ",
+    "core_version": "1.0.0",
+    "transaction_id": "b93559ab-cab7-40cb-ad8d-2ce8ee5cbc9f"
+  },
+  "message": {
+    "issue": {
+      "id": "DPHKl4LDxfsGw8WHMNCdGsqf",
+      "created_at": "2023-11-20T07:50:03.049Z",
+      "resolution": {
+        "long_desc": "all money is refunded",
+        "short_desc": "Refund has been made",
+        "refund_amount": "109.74",
+        "action_triggered": "REFUND"
+      },
+      "updated_at": "2023-11-20T12:35:57.393Z",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-11-20T07:51:02.773Z",
+            "updated_by": {
+              "org": { "name": "b-ondctsp.nlincs.in::nic2004:52110" },
+              "person": { "name": "Sathish Kumar" },
+              "contact": {
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619"
+              }
+            },
+            "cascaded_level": 1,
+            "respondent_action": "PROCESSING"
+          },
+          {
+            "short_desc": "Complaint cascaded",
+            "updated_at": "2023-11-20T10:04:29.729Z",
+            "updated_by": {
+              "org": { "name": "b-ondc-seller-bpp.nlincs.in::nic2004:60232" },
+              "person": { "name": "Sathish Kumar" },
+              "contact": {
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619"
+              }
+            },
+            "cascaded_level": 2,
+            "respondent_action": "CASCADED"
+          },
+          {
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-11-20T10:04:30.160Z",
+            "updated_by": {
+              "org": { "name": "shipdh.in::nic2004:60232" },
+              "person": { "name": "Pratham Sharma" },
+              "contact": {
+                "email": "pratham@shipdelight.com",
+                "phone": "9875082482"
+              }
+            },
+            "cascaded_level": 2,
+            "respondent_action": "PROCESSING"
+          },
+          {
+            "short_desc": "Complaint resolved",
+            "updated_at": "2023-11-20T12:35:57.393Z",
+            "updated_by": {
+              "org": { "name": "shipdh.in::nic2004:60232" },
+              "person": { "name": "Pratham Sharma" },
+              "contact": {
+                "email": "pratham@shipdelight.com",
+                "phone": "9875082482"
+              }
+            },
+            "cascaded_level": 2,
+            "respondent_action": "RESOLVED"
+          }
+        ]
+      },
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "CASCADED-COUNTERPARTY-NP",
+          "organization": {
+            "org": { "name": "shipdh.in::nic2004:60232" },
+            "contact": {
+                "phone": "9875082482",
+                "email": "pratham@shipdelight.com"
+              },
+              "person": {
+                "name": "Pratham Sharma"
+              }
+          },
+          "resolution_support": {
+            "gros": [
+              {
+                "person": { "name": "Hanmanta A" },
+                "contact": {
+                  "email": "hanmanta@shipdelight.com",
+                  "phone": "7059551100"
+                },
+                "gro_type": "CASCADED-COUNTERPARTY-NP-GRO"
+              },
+              {
+                "person": { "name": "Sathish Kumar" },
+                "contact": {
+                  "email": "sathisha@nstore.in",
+                  "phone": "9629295619"
+                },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ],
+            "contact": {
+                "phone": "9875082482",
+                "email": "pratham@shipdelight.com"
+            }
+          }
+        }
+      }
+    }
+  }
+}
