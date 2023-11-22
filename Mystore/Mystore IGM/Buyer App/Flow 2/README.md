@@ -1,1 +1,1 @@
-Flow 2 buyer app
+Flow 2 IGM
