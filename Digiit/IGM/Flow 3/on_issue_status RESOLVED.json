@@ -1,27 +1,27 @@
 {
   "context": {
     "domain": "nic2004:52110",
-    "core_version": "1.0.0",
-    "bap_id": "preprod-bpp.dbs.digiit.io",
-    "bap_uri": "https://preprod-bpp.dbs.digiit.io/logistics/bap",
-    "bpp_id": "preprod-bpp.iway.digiit.io",
-    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
-    "city": "std:080",
     "country": "IND",
+    "city": "std:080",
     "action": "on_issue_status",
-    "transaction_id": "e89d10f0-08ea-4177-94ad-c75d3351cb83",
-    "message_id": "9e9dd316-0e7e-449c-b0df-d5e579e64c68",
-    "timestamp": "2023-11-14T09:04:41.707Z"
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "transaction_id": "5446505f-5807-43f4-9c67-f4a33cd44990",
+    "message_id": "7834d621-8beb-41a9-a9e2-7bd2da1d3710",
+    "timestamp": "2023-11-21T07:08:28.101Z",
+    "bpp_id": "preprod-bpp.dbs.digiit.io"
   },
   "message": {
     "issue": {
-      "id": "e8ac0777-dd4c-4406-8e22-f94a0e6ef61a",
+      "id": "b0a3b504-4571-4a0b-bdfa-01fe5551e0e2",
       "issue_actions": {
         "respondent_actions": [
           {
             "respondent_action": "PROCESSING",
             "short_desc": "<p>Dear Customer,</p><p>We're checking it</p>",
-            "updated_at": "2023-11-14T03:04:07.802Z",
+            "updated_at": "2023-11-21T06:55:42.706Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
@@ -38,8 +38,8 @@
           },
           {
             "respondent_action": "CASCADED",
-            "short_desc": "<p>Dear LSP,</p><p>order item is missing, kindly check from your side</p>",
-            "updated_at": "2023-11-14T03:05:11.696Z",
+            "short_desc": "<p>Dear LSP,</p><p>Order item is missing, kindly check from your side.</p>",
+            "updated_at": "2023-11-21T06:56:50.680Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
@@ -55,65 +55,47 @@
             "cascaded_level": 2
           },
           {
-            "respondent_action": "PROCESSING",
-            "short_desc": "<p>Dear Seller,</p><p>We'll check it</p>",
-            "updated_at": "2023-11-14T03:07:25.097Z",
-            "updated_by": {
-              "org": {
-                "name": "preprod-bpp.iway.digiit.io::nic2004:52110"
-              },
-              "contact": {
-                "phone": "9597053612",
-                "email": "iway@digiit.biz"
-              },
-              "person": {
-                "name": "Jagadeesan"
-              }
-            },
-            "cascaded_level": 2
-          },
-          {
             "respondent_action": "RESOLVED",
-            "short_desc": "<p>Dear Seller,</p><p>We've checked it, no missing item found on our side</p>",
-            "updated_at": "2023-11-14T03:10:27.610Z",
+            "short_desc": "<p>Dear Customer,</p><p>We'll deliver the missing item asap</p>",
+            "updated_at": "2023-11-21T07:07:41.231Z",
             "updated_by": {
               "org": {
-                "name": "preprod-bpp.iway.digiit.io::nic2004:52110"
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
               },
               "contact": {
-                "phone": "9597053612",
-                "email": "iway@digiit.biz"
+                "phone": "9591865541",
+                "email": "vayuvah@gmail.com"
               },
               "person": {
-                "name": "Jagadeesan"
+                "name": "vayclenz"
               }
             },
-            "cascaded_level": 2
+            "cascaded_level": 1
           }
         ]
       },
-      "created_at": "2023-11-14T08:35:14.182Z",
-      "updated_at": "2023-11-14T08:40:27.656Z",
+      "created_at": "2023-11-21T06:54:11.040Z",
+      "updated_at": "2023-11-21T07:07:41.231Z",
       "resolution_provider": {
         "respondent_info": {
           "type": "TRANSACTION-COUNTERPARTY-NP",
           "organization": {
             "org": {
-              "name": "preprod-bpp.iway.digiit.io::nic2004:52110"
+              "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
             },
             "contact": {
-              "phone": "9597053612",
-              "email": "iway@digiit.biz"
+              "phone": "9591865541",
+              "email": "vayuvah@gmail.com"
             },
             "person": {
-              "name": "Jagadeesan"
+              "name": "vayclenz"
             }
           },
           "resolution_support": {
-            "chat_link": "https://wa.me/9597053612",
+            "chat_link": "https://wa.me/9591865541",
             "contact": {
-              "phone": "9597053612",
-              "email": "iway@digiit.biz"
+              "phone": "9591865541",
+              "email": "vayuvah@gmail.com"
             },
             "gros": [
               {
@@ -132,7 +114,7 @@
       },
       "resolution": {
         "short_desc": "Missing Item",
-        "long_desc": "<p>Dear Seller,</p><p>We've checked it, no missing item found on our side</p>",
+        "long_desc": "<p>Dear Customer,</p><p>We'll deliver the missing item asap</p>",
         "action_triggered": "NO-ACTION"
       }
     }
