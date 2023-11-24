@@ -1,0 +1,111 @@
+{
+  "context": {
+    "domain": "ONDC:NTS10",
+    "country": "IND",
+    "city": "*",
+    "action": "receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "api.razorpay.com/ondc-rsp-test",
+    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+    "bpp_id": "preprod-bpp.dbs.digiit.io",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "transaction_id": "9ab3731b-b2bf-4036-9216-17b9de5e4ea5",
+    "message_id": "c5951553-7d11-11ee-b3ea-cee1072bf482",
+    "timestamp": "2023-11-07T02:03:01.450Z",
+    "ttl": "P2D"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "id": "2023-11-03-243200",
+          "invoice_no": "INV10101276_1185",
+          "collector_app_id": "preprod-bpp.dbs.digiit.io",
+          "receiver_app_id": "preprod-bpp.dbs.digiit.io",
+          "receiver_app_uri": "https://preprod-bpp.dbs.digiit.io",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-11-07T02:02:35.327Z",
+          "updated_at": "2023-11-07T02:02:57.783Z",
+          "payerdetails": {
+            "payer_name": "Paytm",
+            "payer_address": "Bangalore",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": "paytmmall@paytm"
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "10.86"
+          },
+          "provider": {
+            "name": {
+              "name": "Vayclenz",
+              "code": "170"
+            },
+            "address": "Shriram Adithya Apartment-Gate-I, 4th cross, Ittamadu PO, Banashankari 3rd Stage,Subramanyapura, Bangalore - 560061"
+          },
+          "payment": {
+            "uri": "https://paytm.com/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "d6e553ce-5f2b-402e-b080-588c4d854c47",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "223.88"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/buyer_app_finder_fee_amount": "10.86",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P6D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "buyer-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "206.31",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "HDFC",
+                "branch_name": "Trichy main",
+                "beneficiary_name": " M/S. DIGIIT BUSINESS SERVICES PRIVATE LIMITED",
+                "beneficiary_address": "# 24/12 SRINIVASA NAGAR,VAYALUR MAIN RD, TRICHY",
+                "settlement_status": "PAID",
+                "settlement_reference": "cl4pljqpg7iqtkt70620",
+                "settlement_timestamp": "2023-11-07T02:02:55.923Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "9ab3731b-b2bf-4036-9216-17b9de5e4ea5",
+          "settlement_id": "MxPbz8b0kvBmCI",
+          "settlement_reference_no": "cl4pljqpg7iqtkt70620",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        }
+      ]
+    }
+  }
+}

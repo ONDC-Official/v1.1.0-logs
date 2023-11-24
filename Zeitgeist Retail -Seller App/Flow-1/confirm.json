@@ -1,0 +1,172 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_uri": "https://ondc-preprod.zeppstore.in",
+        "transaction_id": "91353f58-d2ad-4833-ad5f-206e1222630f",
+        "message_id": "1ddd3b30-afa2-49b5-b122-ee700cdd4ff6",
+        "timestamp": "2023-08-24T06:12:12.209Z",
+        "bpp_id": "ondc-preprod.zeppstore.in",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "2023-08-24-319235",
+            "state": "Created",
+            "billing": {
+                "address": {
+                    "name": "Sudd",
+                    "building": "near Regional passport office",
+                    "locality": "#102, Sapthagiri nivasa building, regional passport office road, Kormangala 8th stage",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560102"
+                },
+                "phone": "6362286779",
+                "name": "Sudd",
+                "email": "sirsimattighatta@gmail.com",
+                "created_at": "2023-08-24T06:11:15.999Z",
+                "updated_at": "2023-08-24T06:11:15.999Z"
+            },
+            "items": [
+                {
+                    "id": "404",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "ZRPLfdb7f487-8bcc-49a5-abf4-3fee979b4a03"
+                },
+                {
+                    "id": "435",
+                    "quantity": {
+                        "count": 2
+                    },
+                    "fulfillment_id": "ZRPLfdb7f487-8bcc-49a5-abf4-3fee979b4a03"
+                }
+            ],
+            "provider": {
+                "id": "ZEPP",
+                "locations": [
+                    {
+                        "id": "wfhlb-1000"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "ZRPLfdb7f487-8bcc-49a5-abf4-3fee979b4a03",
+                    "end": {
+                        "contact": {
+                            "phone": "6362286779"
+                        },
+                        "person": {
+                            "name": "Sudd"
+                        },
+                        "location": {
+                            "gps": "12.9140160000001, 77.6371740000001",
+                            "address": {
+                                "name": "Sudd",
+                                "building": "near Regional passport office",
+                                "locality": "#102, Sapthagiri nivasa building, regional passport office road, Kormangala 8th stage",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560102"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "4196",
+                    "currency": "INR",
+                    "transaction_id": "91353f58-d2ad-4833-ad5f-206e1222630f"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "upi",
+                        "beneficiary_name": "Zeitgeist Retail",
+                        "upi_address": "gft@oksbi",
+                        "settlement_bank_account_no": "150994923487",
+                        "settlement_ifsc_code": "SBIN004340",
+                        "bank_name": "SBI",
+                        "branch_name": "HSR Layout"
+                    }
+                ]
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "4196"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "404",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Ifrogz Audio- Ear pollution plugz mobile with mike-Blue",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1598"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "799"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "435",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Ifrogz Audio Intone with mic-Black",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "2598"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1299"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "ZRPLfdb7f487-8bcc-49a5-abf4-3fee979b4a03",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.0"
+                        }
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "created_at": "2023-08-24T06:12:12.209Z",
+            "updated_at": "2023-08-24T06:12:12.209Z"
+        }
+    }
+}

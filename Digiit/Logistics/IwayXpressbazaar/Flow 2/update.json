@@ -1,0 +1,94 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:080",
+    "action": "update",
+    "core_version": "1.1.0",
+    "bap_id": "preprod.xpressbaazaar.com",
+    "bap_uri": "https://preprod.xpressbaazaar.com/logistics/v1/",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "transaction_id": "d856568a-abf2-42d2-8107-de1fd99408b9",
+    "message_id": "4de69f63-4760-4c5a-895e-6486bbf2f208",
+    "timestamp": "2023-09-28T15:10:57.024Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "51989300-76b8-4731-b090-43f23ba0ac93",
+      "state": "Accepted",
+      "items": [
+        {
+          "id": "18",
+          "category_id": "Next Day Delivery",
+          "descriptor": {
+            "code": "P2P"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Prepaid",
+          "tags": {
+            "@ondc/org/order_ready_to_ship": "yes"
+          },
+          "start": {
+            "instructions": {
+              "short_desc": "Lux Body Wash Magical Spell with Black Orchids And Juniper Oil 245ml",
+              "long_desc": "368124",
+              "additional_desc": {
+                "content_type": "image/x-png",
+                "url": "https://shikhar-cms.s3.ap-south-1.amazonaws.com/CMS-PROD-HERO/17216.png"
+              }
+            }
+          }
+        }
+      ],
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Grocery",
+            "descriptor": {
+              "name": "Lux Body Wash Magical Spell with Black Orchids And Juniper Oil 245ml"
+            },
+            "quantity": {
+              "count": 1,
+              "measure": {
+                "unit": "Kilogram",
+                "value": 1
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "160"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "Yumfood"
+          },
+          "address": {
+            "name": "Yumfood",
+            "street": "BLOCK-A, ROSHAN GARDENIA, Vinayaka Layout, Poornapragna Housing Society Layout, Bengaluru",
+            "locality": "BLOCK-A, ROSHAN GARDENIA, Vinayaka Layout, Poornapragna Housing Society Layout, Bengaluru",
+            "city": "Bengaluru",
+            "state": "KA",
+            "area_code": "560061"
+          }
+        },
+        "order": {
+          "id": "2023-09-28-384647",
+          "weight": {
+            "unit": "Kilogram",
+            "value": 1
+          }
+        }
+      },
+      "updated_at": "2023-09-28T15:10:57.024Z"
+    }
+  }
+}

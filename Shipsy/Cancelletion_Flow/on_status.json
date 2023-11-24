@@ -1,0 +1,99 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.viranc.com/p/v1/store",
+        "bap_uri": "https://preprod-ondc.viranc.com/p/v1/store/bapl",
+        "bpp_id": "ondc-tsp-demo.demoprojectxsandbox2.shipsy.io",
+        "bpp_uri": "https://ondc-tsp-demo.demoprojectxsandbox2.shipsy.io/api/ondc/customerportaldemodtdc/",
+        "transaction_id": "4c272eea-df78-572d-973a-061b697d9961",
+        "message_id": "9de108f0-e618-469c-8ee1-b4051d6574e9",
+        "timestamp": "2023-08-24T12:59:34.265Z"
+    },
+    "message": {
+        "order": {
+            "id": "34ff3dc1-5cce-4906-985d-989b0f101ec8",
+            "state": "Accepted",
+            "provider": {
+                "id": "Shipsy NPO ONDC"
+            },
+            "items": [
+                {
+                    "id": "B2C SMART EXPRESS",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                        "code": "P2H2P"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "value": "64.00",
+                    "currency": "INR"
+                },
+                "breakup": [
+                    {
+                        "price": {
+                            "value": "64.00",
+                            "currency": "INR"
+                        },
+                        "@ondc/org/item_id": "B2C SMART EXPRESS",
+                        "@ondc/org/title_type": "Delivery Charge"
+                    }
+                ]
+            },
+            "billing": {
+                "name": "ONDC Test Seller Store",
+                "address": {
+                    "name": "ONDC Test Seller Store",
+                    "building": "Fort",
+                    "locality": "Fort",
+                    "city": "Mumbai",
+                    "state": "Maharashtra",
+                    "country": "India",
+                    "area_code": "400001"
+                },
+                "tax_number": "22AAAAA0000A1Z5",
+                "phone": "9999999999",
+                "email": "test@gmail.com",
+                "created_at": "2023-08-24T12:58:05.507Z",
+                "updated_at": "2023-08-24T12:58:05.507Z"
+            },
+            "payment": {
+                "@ondc/org/collection_amount": "516.03",
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT",
+                "@ondc/org/settlement_details": [
+                    {
+                        "upi_address": "gft@oksbi",
+                        "settlement_type": "upi",
+                        "settlement_ifsc_code": "XXXXXXXXX",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_bank_account_no": "XXXXXXXXXX"
+                    }
+                ]
+            },
+            "tags": {},
+            "created_at": "2023-08-24T12:58:12.063Z",
+            "updated_at": "2023-08-24T12:58:54.441Z",
+            "fulfillments": [
+                {
+                    "type": "Prepaid",
+                    "@ondc/org/awb_no": "7D2321121",
+                    "tracking": false,
+                    "start": {},
+                    "end": {},
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending",
+                            "name": "Pending"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,957 @@
+{
+  "context": {
+    "domain": "ONDC:NTS10",
+    "country": "IND",
+    "city": "*",
+    "action": "receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "api.razorpay.com/ondc-rsp-test",
+    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+    "bpp_id": "ondc-preprod-lsp.olacabs.com",
+    "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
+    "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+    "message_id": "ba1a77f4-7302-11ee-9a5f-8637d8dde13e",
+    "timestamp": "2023-10-25T13:22:21.011Z",
+    "ttl": "P2D"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "id": "2741b1c2-b00c-4df1-b7bb-bbcb15c5894d",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-22T07:19:29.199Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "38ef70c0-1da2-4cb4-b668-905f0202227e",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "6e037b91-8e62-4513-a6a6-d5a39e87570f",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Cancelled",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-22T04:49:47.918Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "b59205b8-a8b2-46c9-817a-2d12428c4468",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              },
+              {
+                "settlement_counterparty": "buyer",
+                "settlement_phase": "refund",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "NOT-PAID",
+                "settlement_reference": "",
+                "settlement_timestamp": "2023-10-22T04:52:47.000Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "92663175-9dad-4a12-899a-9b44fde1524a",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-24T16:28:21.123Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "198d03a4-e521-43fa-aae2-e7c570682b33",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "94937d7a-22db-4f74-b8a3-35f70528fd24",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Accepted",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-23T04:01:11.973Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "3aa54d5e-8764-49c0-a801-7b89a6b1ba6f",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "fb340ad2-0649-4569-8886-556569a9f59b",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Accepted",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-22T05:52:31.638Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "388d2d85-dd1f-41db-9b8b-30304783f322",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        }
+      ]
+    }
+  }
+}{
+  "context": {
+    "domain": "ONDC:NTS10",
+    "country": "IND",
+    "city": "*",
+    "action": "receiver_recon",
+    "core_version": "1.0.0",
+    "bap_id": "api.razorpay.com/ondc-rsp-test",
+    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+    "bpp_id": "ondc-preprod-lsp.olacabs.com",
+    "bpp_uri": "https://ondc-preprod-lsp.olacabs.com",
+    "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+    "message_id": "ba1a77f4-7302-11ee-9a5f-8637d8dde13e",
+    "timestamp": "2023-10-25T13:22:21.011Z",
+    "ttl": "P2D"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "id": "2741b1c2-b00c-4df1-b7bb-bbcb15c5894d",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-22T07:19:29.199Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "38ef70c0-1da2-4cb4-b668-905f0202227e",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "6e037b91-8e62-4513-a6a6-d5a39e87570f",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Cancelled",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-22T04:49:47.918Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "b59205b8-a8b2-46c9-817a-2d12428c4468",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              },
+              {
+                "settlement_counterparty": "buyer",
+                "settlement_phase": "refund",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "NOT-PAID",
+                "settlement_reference": "",
+                "settlement_timestamp": "2023-10-22T04:52:47.000Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "92663175-9dad-4a12-899a-9b44fde1524a",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Completed",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-24T16:28:21.123Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "198d03a4-e521-43fa-aae2-e7c570682b33",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "94937d7a-22db-4f74-b8a3-35f70528fd24",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Accepted",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-23T04:01:11.973Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "3aa54d5e-8764-49c0-a801-7b89a6b1ba6f",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        },
+        {
+          "id": "fb340ad2-0649-4569-8886-556569a9f59b",
+          "invoice_no": "NA",
+          "collector_app_id": "integrations-preprod.channelier.com",
+          "receiver_app_id": "ondc-preprod-lsp.olacabs.com",
+          "receiver_app_uri": "https://ondc-preprod-lsp.olacabs.com",
+          "state": "Accepted",
+          "settlement_reason_code": "01",
+          "created_at": "2023-10-22T05:52:31.638Z",
+          "updated_at": "2023-10-25T06:50:04.428Z",
+          "payerdetails": {
+            "payer_name": "Test Account",
+            "payer_address": "Test Address",
+            "payer_account_no": "678000000001",
+            "payer_bank_code": "ICIC0006780",
+            "payer_virtual_payment_address": ""
+          },
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.22"
+          },
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0"
+          },
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1.42"
+          },
+          "provider": {
+            "name": {
+              "name": "RANDOM SELLER INCORPORATION PVT LTD",
+              "code": "SELLER_CODE (RANDOM VALUE)"
+            },
+            "address": "123, MEERA HOMES, MANDIR MODE CIRCLE, JODHPUR, RAJASTHAN 342001"
+          },
+          "payment": {
+            "uri": "https://juspay.in/",
+            "tl_method": "http/get",
+            "params": {
+              "transaction_id": "388d2d85-dd1f-41db-9b8b-30304783f322",
+              "transaction_status": "PAID",
+              "currency": "INR",
+              "amount": "40"
+            },
+            "type": "ON-ORDER",
+            "status": "PAID",
+            "collected_by": "BAP",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "percent",
+            "@ondc/org/buyer_app_finder_fee_amount": "3",
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window": "P7D",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "38.58",
+                "settlement_type": "neft",
+                "settlement_bank_account_no": "578000000001",
+                "settlement_ifsc_code": "ICIC0005780",
+                "upi_address": "",
+                "bank_name": "IDFC Bank Limited",
+                "branch_name": "BKC-NAMAN CHAMBERS BRANCH",
+                "beneficiary_name": "ARACHNOMESH TECHNOLOGIES PRIVATE LIMITED ONDC",
+                "beneficiary_address": "Mumbai",
+                "settlement_status": "PAID",
+                "settlement_reference": "cksbl6urtsr65ueq00ng",
+                "settlement_timestamp": "2023-10-25T06:50:03.102Z"
+              }
+            ],
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_basis_status": "Assert"
+          },
+          "transaction_id": "c7d208ce-455b-40b0-ec80-082404d0f29d",
+          "settlement_id": "MsLYhxe8l8Ynl7",
+          "settlement_reference_no": "cksbl6urtsr65ueq00ng",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "message": {
+            "name": "",
+            "code": ""
+          }
+        }
+      ]
+    }
+  }
+}

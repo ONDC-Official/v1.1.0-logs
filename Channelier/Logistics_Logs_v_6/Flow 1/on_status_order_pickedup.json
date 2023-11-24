@@ -1,0 +1,118 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:020",
+		"action": "on_status",
+		"core_version": "1.1.0",
+		"bap_id": "integrations-preprod.channelier.com",
+		"bap_uri": "https://integrations-preprod.channelier.com/ondc",
+		"bpp_id": "dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io",
+		"bpp_uri": "https://dtdc-ondc-integration-preprod-demo.demoprojectxsandbox3.shipsy.io/api/ondc/customerportaldemodtdc/",
+		"transaction_id": "d99f165a-a602-4ebe-bc02-1ac3d2f53651",
+		"message_id": "1693225642051",
+		"timestamp": "2023-08-28T12:27:22.107Z"
+	},
+	"message": {
+		"order": {
+			"id": "9f612366-c695-4c40-add0-de1d9004f6c4",
+			"state": "In-progress",
+			"provider": {
+				"id": "Shipsy NPO ONDC"
+			},
+			"items": [
+				{
+					"id": "B2C SMART EXPRESS",
+					"category_id": "Standard Delivery",
+					"descriptor": {
+						"code": "P2H2P"
+					}
+				}
+			],
+			"quote": {
+				"price": {
+					"currency": "INR",
+					"value": "64.00"
+				},
+				"breakup": [
+					{
+						"@ondc/org/item_id": "B2C SMART EXPRESS",
+						"@ondc/org/title_type": "Delivery Charge",
+						"price": {
+							"currency": "INR",
+							"value": "64.00"
+						}
+					}
+				]
+			},
+			"billing": {
+				"name": "ONDC sellerapp",
+				"address": {
+					"name": "My house or building no",
+					"building": "My house or building name",
+					"locality": "My street name",
+					"city": "Bengaluru",
+					"state": "Karnataka",
+					"country": "India",
+					"area_code": "560076"
+				},
+				"email": "abcd.efgh@gmail.com",
+				"phone": "9886098860",
+				"tax_number": "XXXXXXXXXXXXXXX",
+				"created_at": "2023-08-28T12:15:36.011Z",
+				"updated_at": "2023-08-28T12:15:36.011Z"
+			},
+			"payment": {
+				"type": "POST-FULFILLMENT",
+				"collected_by": "BAP",
+				"@ondc/org/settlement_details": [
+					{
+						"settlement_counterparty": "seller-app",
+						"settlement_type": "upi",
+						"settlement_bank_account_no": "XXXXXXXXXX",
+						"settlement_ifsc_code": "XXXXXXXXX",
+						"upi_address": "gft@oksbi"
+					}
+				]
+			},
+			"created_at": "2023-08-28T12:15:46.362Z",
+			"updated_at": "2023-08-28T12:27:21.828Z",
+			"fulfillments": [
+				{
+					"type": "Prepaid",
+					"@ondc/org/awb_no": "7D2321144",
+					"tracking": false,
+					"start": {
+						"time": {
+							"range": {
+								"start": "2023-08-28T12:22:00.016Z",
+								"end": "2023-08-28T17:30:00.016Z"
+							},
+							"timestamp": "2023-08-28T12:27:19.907Z"
+						},
+						"instructions": {
+							"name": "Proof Of Pickup",
+							"images": [
+								"https://shipsy.s3.amazonaws.com/1/poc/2023-08-28/pickupcompleted/poc_dehsqe_1693225641661"
+							]
+						}
+					},
+					"end": {
+						"time": {
+							"range": {
+								"start": "2023-08-30T12:22:00.016Z",
+								"end": "2023-08-30T17:30:00.016Z"
+							}
+						}
+					},
+					"state": {
+						"descriptor": {
+							"code": "Order-picked-up",
+							"name": "Order picked up"
+						}
+					}
+				}
+			]
+		}
+	}
+}

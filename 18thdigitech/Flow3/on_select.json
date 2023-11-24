@@ -1,0 +1,117 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_select",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "dae67ed0-da46-4324-a1c9-099fe620bf52",
+        "message_id": "aa5d964c-15a7-4517-8b3e-6ff5c0e74310",
+        "timestamp": "2023-10-26T04:05:44.000Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "18th_stores"
+            },
+            "items": [
+                {
+                    "fulfillment_id": "1",
+                    "id": "Campus18TH100060"
+                },
+                {
+                    "fulfillment_id": "1",
+                    "id": "Reyton18TH10005"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "18TH Shop",
+                    "tracking": false,
+                    "@ondc/org/category": "Next Day Delivery",
+                    "@ondc/org/TAT": "P2D",
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "2499"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Campus18TH100060",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "Campus 18TH Men's MOXIE White Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1500"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "996"
+                                },
+                                "maximum": {
+                                    "count": "996"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "1500"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "Reyton18TH10005",
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "title": "18TH Men's Reyton Navy Running Shoes",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "999"
+                        },
+                        "item": {
+                            "quantity": {
+                                "available": {
+                                    "count": "993"
+                                },
+                                "maximum": {
+                                    "count": "993"
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "999"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "ttl": "PT30S"
+            }
+        }
+    }
+}

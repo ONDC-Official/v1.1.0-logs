@@ -1,118 +1,107 @@
 {
   "context": {
-    "domain": "FIS10",
-    "ttl": "PT30S",
-    "bap_id": "b2bapi-stage.spicesmartshop.com",
-    "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
-    "message_id": "066aeffd-d264-4de7-8403-9a2662dcd57a",
-    "transaction_id": "0b81cf9f-190d-4705-8b1c-a2a732c2fda0",
-    "bpp_id": "ondc.vistar.solutions",
-    "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
-    "location": {
-      "city": {
-        "code": "std:080"
+      "domain": "ONDC:FIS10",
+      "ttl": "PT30S",
+      "bap_id": "b2bapi-stage.spicesmartshop.com",
+      "bap_uri": "https://b2bapi-stage.spicesmartshop.com/bap",
+      "message_id": "6f97309a-718b-4094-a94c-84e98d1544d7",
+      "transaction_id": "9ba2565a-e66f-4ada-bf29-acd9fa3d586b",
+      "bpp_id": "ondc.vistar.solutions",
+      "bpp_uri": "https://ondc.vistar.solutions/v1/bpp",
+      "location": {
+          "city": {
+              "code": "std:080"
+          },
+          "country": {
+              "code": "IND"
+          }
       },
-      "country": {
-        "code": "IND"
-      }
-    },
-    "action": "init",
-    "version": "1.0.0",
-    "timestamp": "2023-07-28T17:55:06.837Z"
+      "action": "init",
+      "version": "1.0.0",
+      "timestamp": "2023-08-04T15:52:57.097Z"
   },
   "message": {
-    "order": {
-      "provider": {
-        "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
-      },
-      "items": [
-        {
-          "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89",
-          "quantity": {
-            "selected": {
-              "count": 1
-            }
+      "order": {
+          "provider": {
+              "id": "48e5d0f1-6255-4f22-8b06-ed16951aa4ec"
           },
-          "fulfillment_ids": [
-            "F2"
-          ],
-          "tags": [
-            {
-              "descriptor": {
-                "code": "DENOMINATION"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "FIXED_AMOUNT"
+          "items": [
+              {
+                  "id": "b88e30b4-72b6-4ef8-a488-007f308f5c89",
+                  "quantity": {
+                      "selected": {
+                          "count": 1
+                      }
                   },
-                  "value": "2500"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "CUSTOMIZATION"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "RECEIVER_NAME"
-                  },
-                  "value": "Sagar"
-                },
-                {
-                  "descriptor": {
-                    "code": "MESSAGE"
-                  },
-                  "value": "Test for log collection"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "billing": {
-        "name": "kunal",
-        "address": "A wing",
-        "state": {
-          "name": "Maharashtra",
-          "code": "MA"
-        },
-        "city": {
-          "name": "Pune",
-          "code": "PU"
-        },
-        "email": "TestNum@gmail.com",
-        "phone": "7064032212"
-      },
-      "fulfillments": [
-        {
-          "id": "F2",
-          "type": "EMAIL",
-          "customer": {
-            "person": {
-              "name": "chandrasekhar"
-            },
-            "contact": {
-              "phone": "+917064032212",
-              "email": "TestNum@gmail.com"
-            }
-          },
-          "stops": [
-            {
-              "id": "0",
-              "contact": {
-                "phone": "9988776655",
-                "email": "sagar.revanna@eminds.ai"
-              },
-              "person": {
-                "name": "Sagar"
+                  "fulfillment_ids": [
+                      "F2"
+                  ],
+                  "tags": [
+                      {
+                          "descriptor": {
+                              "code": "DENOMINATION"
+                          },
+                          "list": [
+                              {
+                                  "descriptor": {
+                                      "code": "FIXED_AMOUNT"
+                                  },
+                                  "value": "2500"
+                              }
+                          ]
+                      }
+                  ]
               }
-            }
+          ],
+          "offers": [
+              {
+                  "id": "4e13ce34-b7c4-4a50-a37e-b75532b283d1",
+                  "item_ids": [
+                      "b88e30b4-72b6-4ef8-a488-007f308f5c89"
+                  ]
+              }
+          ],
+          "billing": {
+              "name": "test",
+              "address": "121",
+              "state": {
+                  "name": "Madhya Pradesh",
+                  "code": "MA"
+              },
+              "city": {
+                  "name": "Jabalpur",
+                  "code": "JA"
+              },
+              "email": "chandershekar@gmail.com",
+              "phone": "7064032212"
+          },
+          "fulfillments": [
+              {
+                  "id": "F2",
+                  "type": "EMAIL",
+                  "customer": {
+                      "person": {
+                          "name": "Chandershekhar"
+                      },
+                      "contact": {
+                          "phone": "+917064032212",
+                          "email": "chandershekar@gmail.com"
+                      }
+                  },
+                  "stops": [
+                      {
+                          "id": "0",
+                          "contact": {
+                              "phone": "+917064032212",
+                              "email": "chandershekar@gmail.com"
+                          },
+                          "person": {
+                              "name": "Chandershekhar"
+                          }
+                      }
+                  ]
+              }
           ]
-        }
-      ]
-    }
+      }
   }
 }

@@ -1,0 +1,178 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "buyer-app-preprod.ondc.org",
+        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+        "bpp_id": "ondcpreprod.demolocations.com",
+        "bpp_uri": "https://ondcpreprod.demolocations.com/ondc/api/",
+        "transaction_id": "411b238a-88d1-4a3e-b08e-c08c1dfc9b5c",
+        "message_id": "c55dabf3-c727-416f-b794-7ce7fc5e44c8",
+        "city": "std:080",
+        "country": "IND",
+        "timestamp": "2023-10-26T06:30:42.000Z"
+    },
+    "message": {
+        "order": {
+            "id": "2023-10-26-702212",
+            "state": "Accepted",
+            "provider": {
+                "id": "18th_stores",
+                "locations": [
+                    {
+                        "id": "default_loc"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "@ondc/org/provider_name": "18th_stores",
+                    "state": {
+                        "descriptor": {
+                            "code": "Pending"
+                        }
+                    },
+                    "start": {
+                        "contact": {
+                            "email": "abhi0001ch+001@gmail.com",
+                            "phone": "8956969969"
+                        },
+                        "location": {
+                            "id": "L1",
+                            "descriptor": {
+                                "name": "ABC Store"
+                            },
+                            "gps":"28.574981, 77.320812"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-10-26T06:30:42.000Z",
+                                "end": "2023-10-26T06:30:42.000Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "contact": {
+                            "email": "abhi0001ch+001@gmail.com",
+                            "phone": "8956969969"
+                        },
+                        "person": {
+                            "name": "Abhi Chauhan"
+                        },
+                        "location": {
+                            "gps": "28.574981, 77.320812",
+                            "address": {
+                                "name": "Abhi Chauhan",
+                                "building": "Landmark 1",
+                                "locality": "Street 2",
+                                "city": "Noida",
+                                "state": "Uttar Pradesh",
+                                "country": "IND",
+                                "area_code": "201301"
+                            }
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2023-10-26T07:30:42.000Z",
+                                "end": "2023-10-26T07:30:42.000Z"
+                            }
+                        }
+                    },
+                    "type": "Delivery"
+                }
+            ],
+            "items": [
+                {
+                    "id": "Proteus18TH10002",
+                    "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Abhi Chauhan",
+                "email": "abhi0001ch+001@gmail.com",
+                "phone": "8956969969",
+                "address": {
+                    "building": "Landmark 1",
+                    "locality": "Street 2",
+                    "name": "Abhi Chauhan",
+                    "city": "Noida",
+                    "state": "Uttar Pradesh",
+                    "country": "IND",
+                    "area_code": "201301"
+                },
+                "created_at": "2023-10-26T06:29:37.516Z",
+                "updated_at": "2023-10-26T06:29:37.516Z"
+            },
+            "quote": {
+                "ttl": "PT30S",
+                "price": {
+                    "currency": "INR",
+                    "value": "1798.00"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "Proteus18TH10002",
+                        "@ondc/org/item_quantity": {
+                            "count": 2
+                        },
+                        "title": "Proteus 18TH Fitness Jacket",
+                        "@ondc/org/title_type": "item",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1798.00"
+                        },
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "899.00"
+                            }
+                        }
+                    },
+                    {
+                        "@ondc/org/item_id": "1",
+                        "title": "Delivery charges",
+                        "@ondc/org/title_type": "delivery",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        }
+                    }
+                ]
+            },
+            "payment": {
+                "uri": "https://juspay.in/",
+                "tl_method": "http/get",
+                "params": {
+                    "amount": "1798.00",
+                    "currency": "INR",
+                    "transaction_id": "411b238a-88d1-4a3e-b08e-c08c1dfc9b5c"
+                },
+                "status": "PAID",
+                "type": "ON-ORDER",
+                "collected_by": "BAP",
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "beneficiary_name": "18th Digitech",
+                        "upi_address": "",
+                        "settlement_bank_account_no": "156352663664",
+                        "settlement_ifsc_code": "ICIC0000256",
+                        "bank_name": "ICICI Bank",
+                        "branch_name": "Noida"
+                    }
+                ]
+            },
+            "created_at": "2023-10-26T06:29:59.889Z",
+            "updated_at": "2023-10-26T06:30:42.000Z"
+        }
+    }
+}

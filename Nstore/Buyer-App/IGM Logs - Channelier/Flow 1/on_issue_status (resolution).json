@@ -1,0 +1,106 @@
+{
+  "context": {
+    "bpp_id": "integrations-preprod.channelier.com",
+    "bpp_uri": "https://integrations-preprod.channelier.com/ondc",
+    "domain": "nic2004:52110",
+    "core_version": "1.0.0",
+    "ttl": "PT30S",
+    "bap_id": "b-ondcbap.nlincs.in",
+    "bap_uri": "https://b-ondcbap.nlincs.in/bap",
+    "transaction_id": "423ed3fb7753056130f001de7b5e5f00",
+    "message_id": "vPzDKHmVnJo51WUjCIB7f6nwqhgFgAeI",
+    "country": "IND",
+    "city": "std:080",
+    "timestamp": "2023-10-09T11:27:13.516Z",
+    "action": "on_issue_status"
+  },
+  "message": {
+    "issue": {
+      "id": "79UIze3ChFWcPlKsaD3qKT5j",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "respondent@channelier.com"
+              },
+              "person": {
+                "name": "John discovery"
+              }
+            },
+            "short_desc": "Complaint is being processed",
+            "cascaded_level": 1,
+            "updated_at": "2023-10-09T11:25:55.488Z"
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "updated_by": {
+              "org": {
+                "name": "integrations-preprod.channelier.com::undefined"
+              },
+              "contact": {
+                "phone": "9897989798",
+                "email": "techpvec18@gmail.com"
+              },
+              "person": {
+                "name": "Channelier Super Store"
+              }
+            },
+            "short_desc": "the amount will we refunded",
+            "cascaded_level": 1,
+            "updated_at": "2023-10-09T11:26:42.741Z"
+          }
+        ]
+      },
+      "created_at": "2023-10-09T11:25:55.336Z",
+      "updated_at": "2023-10-09T11:27:13.522Z",
+      "resolution": {
+        "resolution_action": "RESOLVE",
+        "action_triggered": "REFUND",
+        "refund_amount": "150",
+        "short_desc": "the amount will we refunded",
+        "long_desc": "the amount will we refunded"
+      },
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "TRANSACTION-COUNTERPARTY-NP",
+          "organization": {
+            "org": {
+              "name": "integrations-preprod.channelier.com::undefined"
+            },
+            "contact": {
+              "phone": "9897989798",
+              "email": "techpvec18@gmail.com"
+            },
+            "person": {
+              "name": "Channelier Super Store"
+            }
+          },
+          "resolution_support": {
+            "contact": {
+              "phone": "9897989798",
+              "email": "techpvec18@gmail.com"
+            },
+            "gros": [
+              {
+                "person": {
+                  "name": "John discovery"
+                },
+                "contact": {
+                  "phone": "9999999999",
+                  "email": "respondent@channelier.com"
+                },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

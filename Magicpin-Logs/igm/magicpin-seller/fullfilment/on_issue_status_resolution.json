@@ -1,0 +1,104 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_issue_status",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "ultrontest.magicpin.com/oms_partner/ondc",
+    "bpp_uri": "https://ultrontest.magicpin.com/oms_partner/ondc",
+    "transaction_id": "364c4bcb-98c8-40f1-9a5e-d365222cdd4c",
+    "message_id": "ad55ad7f-707e-4c16-93f5-b564119c4263",
+    "timestamp": "2023-10-20T10:56:42.066Z"
+  },
+  "message": {
+    "issue": {
+      "id": "1f7539f5-0287-4b9c-9ff0-3a224f66f923",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-10-20T10:55:36.706Z",
+            "updated_by": {
+              "org": {
+                "name": "ultrontest.magicpin.com/oms_partner/ondc::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "care@magicpin.in"
+              },
+              "person": {
+                "name": "magicpin Care"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "short_desc": "Complaint resolved",
+            "updated_at": "2023-10-20T10:56:42.050Z",
+            "updated_by": {
+              "org": {
+                "name": "ultrontest.magicpin.com/oms_partner/ondc::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999999999",
+                "email": "care@magicpin.in"
+              },
+              "person": {
+                "name": "magicpin Care"
+              }
+            },
+            "cascaded_level": 1
+          }
+        ]
+      },
+      "created_at": "2023-10-20T10:55:35.548Z",
+      "updated_at": "2023-10-20T10:56:42.050Z",
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "TRANSACTION-COUNTERPARTY-NP",
+          "organization": {
+            "org": {
+              "name": "ultrontest.magicpin.com/oms_partner/ondc::nic2004:52110"
+            },
+            "contact": {
+              "phone": "9999999999",
+              "email": "care@magicpin.in"
+            },
+            "person": {
+              "name": "magicpin Care"
+            }
+          },
+          "resolution_support": {
+            "contact": {
+              "phone": "9999999999",
+              "email": "care@magicpin.in"
+            },
+            "gros": [
+              {
+                "person": {
+                  "name": "magicpin Care"
+                },
+                "contact": {
+                  "phone": "9999999999",
+                  "email": "care@magicpin.in"
+                },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ]
+          }
+        }
+      },
+      "resolution": {
+        "short_desc": "Resolved",
+        "long_desc": "Test refund long desc",
+        "action_triggered": "REFUND",
+        "refund_amount": "10.00"
+      }
+    }
+  }
+}

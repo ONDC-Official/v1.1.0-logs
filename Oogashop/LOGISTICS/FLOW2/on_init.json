@@ -1,0 +1,58 @@
+{
+    "context": {
+        "transaction_id": "9afc0f2e-48cc-4f77-ad2a-9fecc9c86e89",
+        "country": "IND",
+        "bpp_id": "ondc.whizzard.in",
+        "city": "STD:080",
+        "domain": "nic2004:60232",
+        "bpp_uri": "https://ondc.whizzard.in/api/integration",
+        "action": "on_init",
+        "message_id": "4bf277cc-498e-4b00-89bc-e94d449b9666",
+        "core_version": "1.1.0",
+        "bap_uri": "https://preprodlogistics.ooga.shop",
+        "bap_id": "preprodlogistics.ooga.shop",
+        "timestamp": "2023-10-30T13:38:32.584Z"
+    },
+    "message": {
+        "order": {
+            "quote": {
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "I1",
+                        "price": {
+                            "currency": "INR",
+                            "value": "30"
+                        },
+                        "@ondc/org/title_type": "Delivery Charge"
+                    }
+                ],
+                "price": {
+                    "currency": "INR",
+                    "value": "30"
+                }
+            },
+            "provider": {
+                "id": "MLL"
+            },
+            "payment": {
+                "collected_by": "BAP",
+                "type": "ON-ORDER",
+                "@ondc/org/settlement_details": [
+                    {
+                        "beneficiary_name": "Jeevan",
+                        "settlement_counterparty": "seller-app",
+                        "settlement_ifsc_code": "SBIN0000123",
+                        "settlement_bank_account_no": "123239845757",
+                        "upi_address": "jeavan@ybl",
+                        "settlement_type": "upi"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "I1"
+                }
+            ]
+        }
+    }
+}
