@@ -1,0 +1,428 @@
+{
+  "context": {
+    "transaction_id": "639dd94b-ff69-48b6-827b-c3ce63760b41",
+    "country": "IND",
+    "bpp_id": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay",
+    "city": "*",
+    "message_id": "8e78685e-72bf-44ec-8dd3-a92cbe9744fc",
+    "core_version": "1.0.0",
+    "ttl": "P2D",
+    "bap_id": "rsp-stag.proteantech.in",
+    "domain": "ONDC:NTS10",
+    "bpp_uri": "https://api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay",
+    "action": "receiver_recon",
+    "bap_uri": "https://rsp-stag.proteantech.in",
+    "timestamp": "2023-12-05T10:26:01.737Z"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "transaction_id": "c00bf7a334e9a998d61c641457664b02",
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.00"
+          },
+          "settlement_id": "e09bfb8a86c145b5b1a832a3953f1aa8",
+          "invoice_no": "2023-23280-75847-INV",
+          "created_at": "2023-11-03T10:09:14.000Z",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "1172.00"
+          },
+          "receiver_app_id": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay/sampletest",
+          "settlement_reason_code": "01",
+          "collector_app_id": "b-ondcbap.nlincs.in",
+          "updated_at": "2023-11-24T15:06:08.000Z",
+          "provider": {
+            "address": "NewDelhi",
+            "name": {
+              "code": "21312",
+              "name": "Adidas Store - Bengaluru"
+            }
+          },
+          "payerdetails": {
+            "payer_bank_code": "idfb0040101",
+            "payer_name": "nstore technologies private limited",
+            "payer_address": "idfc first bank limited - bkc naman chambers branch",
+            "payer_account_no": "10112822953"
+          },
+          "payment": {
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+            "collected_by": "BAP",
+            "params": {
+              "transaction_id": "order_MvxhvHhBOVGvkK",
+              "amount": "23456.00",
+              "transaction_status": "PAID",
+              "currency": "INR"
+            },
+            "type": "ON-ORDER",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "uri": "https://api.razorpay.com",
+            "@ondc/org/settlement_details": [
+              {
+                "beneficiary_address": null,
+                "settlement_status": "PAID",
+                "settlement_ifsc_code": "IDFB0040101",
+                "beneficiary_name": null,
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "branch_name": "BKC Naman Chambers Branch",
+                "bank_name": "IDFC FIRST BANK LIMITED",
+                "settlement_amount": 22284.0,
+                "settlement_reference": "IDFCSET2023",
+                "settlement_timestamp": "2023-11-03 10:09:15",
+                "settlement_bank_account_no": "10112822953",
+                "settlement_type": "neft"
+              }
+            ],
+            "@ondc/org/return_window": "P1D",
+            "@ondc/org/settlement_window": "P3D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/withholding_amount": "0.00",
+            "@ondc/org/collected_by_status": "Assert",
+            "status": "PAID",
+            "tl_method": "HTTP_OR_GET",
+            "@ondc/org/buyer_app_finder_fee_amount": "5"
+          },
+          "id": "2023-23280-75847",
+          "state": "Completed",
+          "settlement_reference_no": "IDFCSET2023",
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0.00"
+          }
+        },
+        {
+          "transaction_id": "c00bf7a334e9a998d61c641457664b02",
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.00"
+          },
+          "settlement_id": "e09bfb8a86c145b5b1a832a3953f1aa8",
+          "invoice_no": "2023-23280-99862-INV",
+          "created_at": "2023-11-03T10:09:43.000Z",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "101.00"
+          },
+          "receiver_app_id": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay/sampletest",
+          "settlement_reason_code": "01",
+          "collector_app_id": "b-ondcbap.nlincs.in",
+          "updated_at": "2023-11-24T15:06:08.000Z",
+          "provider": {
+            "address": "NewDelhi",
+            "name": {
+              "code": "21312",
+              "name": "Adidas Store - Bengaluru"
+            }
+          },
+          "payerdetails": {
+            "payer_bank_code": "idfb0040101",
+            "payer_name": "nstore technologies private limited",
+            "payer_address": "idfc first bank limited - bkc naman chambers branch",
+            "payer_account_no": "10112822953"
+          },
+          "payment": {
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+            "collected_by": "BAP",
+            "params": {
+              "transaction_id": "order_MvxiWtgYq3FFK2",
+              "amount": "2020.00",
+              "transaction_status": "PAID",
+              "currency": "INR"
+            },
+            "type": "ON-ORDER",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "uri": "https://api.razorpay.com",
+            "@ondc/org/settlement_details": [
+              {
+                "beneficiary_address": null,
+                "settlement_status": "PAID",
+                "settlement_ifsc_code": "IDFB0040101",
+                "beneficiary_name": null,
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "branch_name": "BKC Naman Chambers Branch",
+                "bank_name": "IDFC FIRST BANK LIMITED",
+                "settlement_amount": 1919.0,
+                "settlement_reference": "IDFCSET2023",
+                "settlement_timestamp": "2023-11-03 10:09:44",
+                "settlement_bank_account_no": "10112822953",
+                "settlement_type": "neft"
+              }
+            ],
+            "@ondc/org/return_window": "P1D",
+            "@ondc/org/settlement_window": "P3D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/withholding_amount": "0.00",
+            "@ondc/org/collected_by_status": "Assert",
+            "status": "PAID",
+            "tl_method": "HTTP_OR_GET",
+            "@ondc/org/buyer_app_finder_fee_amount": "5"
+          },
+          "id": "2023-23280-99862",
+          "state": "Completed",
+          "settlement_reference_no": "IDFCSET2023",
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0.00"
+          }
+        },
+        {
+          "transaction_id": "c00bf7a334e9a998d61c641457664b02",
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.00"
+          },
+          "settlement_id": "e09bfb8a86c145b5b1a832a3953f1aa8",
+          "invoice_no": "2023-23281-00409-INV",
+          "created_at": "2023-11-03T10:09:59.000Z",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "384.38"
+          },
+          "receiver_app_id": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay/sampletest",
+          "settlement_reason_code": "01",
+          "collector_app_id": "b-ondcbap.nlincs.in",
+          "updated_at": "2023-11-24T15:06:08.000Z",
+          "provider": {
+            "address": "NewDelhi",
+            "name": {
+              "code": "21312",
+              "name": "Adidas Store - Bengaluru"
+            }
+          },
+          "payerdetails": {
+            "payer_bank_code": "idfb0040101",
+            "payer_name": "nstore technologies private limited",
+            "payer_address": "idfc first bank limited - bkc naman chambers branch",
+            "payer_account_no": "10112822953"
+          },
+          "payment": {
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+            "collected_by": "BAP",
+            "params": {
+              "transaction_id": "order_MvxjEMsSvzgwWX",
+              "amount": "7687.50",
+              "transaction_status": "PAID",
+              "currency": "INR"
+            },
+            "type": "ON-ORDER",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "uri": "https://api.razorpay.com",
+            "@ondc/org/settlement_details": [
+              {
+                "beneficiary_address": null,
+                "settlement_status": "PAID",
+                "settlement_ifsc_code": "IDFB0040101",
+                "beneficiary_name": null,
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "branch_name": "BKC Naman Chambers Branch",
+                "bank_name": "IDFC FIRST BANK LIMITED",
+                "settlement_amount": 7303.12,
+                "settlement_reference": "IDFCSET2023",
+                "settlement_timestamp": "2023-11-03 10:10:01",
+                "settlement_bank_account_no": "10112822953",
+                "settlement_type": "neft"
+              }
+            ],
+            "@ondc/org/return_window": "P1D",
+            "@ondc/org/settlement_window": "P3D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/withholding_amount": "0.00",
+            "@ondc/org/collected_by_status": "Assert",
+            "status": "PAID",
+            "tl_method": "HTTP_OR_GET",
+            "@ondc/org/buyer_app_finder_fee_amount": "5"
+          },
+          "id": "2023-23281-00409",
+          "state": "Completed",
+          "settlement_reference_no": "IDFCSET2023",
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0.00"
+          }
+        },
+        {
+          "transaction_id": "c00bf7a334e9a998d61c641457664b02",
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.00"
+          },
+          "settlement_id": "e09bfb8a86c145b5b1a832a3953f1aa8",
+          "invoice_no": "2023-23282-47721-INV",
+          "created_at": "2023-11-03T10:10:15.000Z",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "151.5"
+          },
+          "receiver_app_id": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay/sampletest",
+          "settlement_reason_code": "01",
+          "collector_app_id": "b-ondcbap.nlincs.in",
+          "updated_at": "2023-11-24T15:06:08.000Z",
+          "provider": {
+            "address": "NewDelhi",
+            "name": {
+              "code": "21312",
+              "name": "Adidas Store - Bengaluru"
+            }
+          },
+          "payerdetails": {
+            "payer_bank_code": "idfb0040101",
+            "payer_name": "nstore technologies private limited",
+            "payer_address": "idfc first bank limited - bkc naman chambers branch",
+            "payer_account_no": "10112822953"
+          },
+          "payment": {
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+            "collected_by": "BAP",
+            "params": {
+              "transaction_id": "order_MvxjyO5RkruDM2",
+              "amount": "3030.00",
+              "transaction_status": "PAID",
+              "currency": "INR"
+            },
+            "type": "ON-ORDER",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "uri": "https://api.razorpay.com",
+            "@ondc/org/settlement_details": [
+              {
+                "beneficiary_address": null,
+                "settlement_status": "PAID",
+                "settlement_ifsc_code": "IDFB0040101",
+                "beneficiary_name": null,
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "branch_name": "BKC Naman Chambers Branch",
+                "bank_name": "IDFC FIRST BANK LIMITED",
+                "settlement_amount": 2878.5,
+                "settlement_reference": "IDFCSET2023",
+                "settlement_timestamp": "2023-11-03 10:10:16",
+                "settlement_bank_account_no": "10112822953",
+                "settlement_type": "neft"
+              }
+            ],
+            "@ondc/org/return_window": "P1D",
+            "@ondc/org/settlement_window": "P3D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/withholding_amount": "0.00",
+            "@ondc/org/collected_by_status": "Assert",
+            "status": "PAID",
+            "tl_method": "HTTP_OR_GET",
+            "@ondc/org/buyer_app_finder_fee_amount": "5"
+          },
+          "id": "2023-23282-47721",
+          "state": "Completed",
+          "settlement_reference_no": "IDFCSET2023",
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0.00"
+          }
+        },
+        {
+          "transaction_id": "c00bf7a334e9a998d61c641457664b02",
+          "withholding_tax_gst": {
+            "currency": "INR",
+            "value": "0.00"
+          },
+          "settlement_id": "e09bfb8a86c145b5b1a832a3953f1aa8",
+          "invoice_no": "2023-23282-39231-INV",
+          "created_at": "2023-11-03T10:10:33.000Z",
+          "recon_status": "01",
+          "order_recon_status": "01",
+          "deduction_by_collector": {
+            "currency": "INR",
+            "value": "50.53"
+          },
+          "receiver_app_id": "api.test.esamudaay.com/ondc/sdk/bpp/retail/esamudaay/sampletest",
+          "settlement_reason_code": "01",
+          "collector_app_id": "b-ondcbap.nlincs.in",
+          "updated_at": "2023-11-24T15:06:08.000Z",
+          "provider": {
+            "address": "NewDelhi",
+            "name": {
+              "code": "21312",
+              "name": "Adidas Store - Bengaluru"
+            }
+          },
+          "payerdetails": {
+            "payer_bank_code": "idfb0040101",
+            "payer_name": "nstore technologies private limited",
+            "payer_address": "idfc first bank limited - bkc naman chambers branch",
+            "payer_account_no": "10112822953"
+          },
+          "payment": {
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Percent",
+            "collected_by": "BAP",
+            "params": {
+              "transaction_id": "order_MvxkeXTVMZeB8C",
+              "amount": "1010.50",
+              "transaction_status": "PAID",
+              "currency": "INR"
+            },
+            "type": "ON-ORDER",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "uri": "https://api.razorpay.com",
+            "@ondc/org/settlement_details": [
+              {
+                "beneficiary_address": null,
+                "settlement_status": "PAID",
+                "settlement_ifsc_code": "IDFB0040101",
+                "beneficiary_name": null,
+                "settlement_counterparty": "seller-app",
+                "settlement_phase": "sale-amount",
+                "branch_name": "BKC Naman Chambers Branch",
+                "bank_name": "IDFC FIRST BANK LIMITED",
+                "settlement_amount": 959.97,
+                "settlement_reference": "IDFCSET2023",
+                "settlement_timestamp": "2023-11-03 10:10:34",
+                "settlement_bank_account_no": "10112822953",
+                "settlement_type": "neft"
+              }
+            ],
+            "@ondc/org/return_window": "P1D",
+            "@ondc/org/settlement_window": "P3D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/withholding_amount": "0.00",
+            "@ondc/org/collected_by_status": "Assert",
+            "status": "PAID",
+            "tl_method": "HTTP_OR_GET",
+            "@ondc/org/buyer_app_finder_fee_amount": "5"
+          },
+          "id": "2023-23282-39231",
+          "state": "Completed",
+          "settlement_reference_no": "IDFCSET2023",
+          "withholding_tax_tds": {
+            "currency": "INR",
+            "value": "0.00"
+          }
+        }
+      ]
+    }
+  }
+}
