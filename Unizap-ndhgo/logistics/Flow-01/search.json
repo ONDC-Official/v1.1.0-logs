@@ -1,0 +1,80 @@
+{
+  "context" : {
+    "domain" : "nic2004:60232",
+    "country" : "IND",
+    "city" : "std:080",
+    "action" : "search",
+    "core_version" : "1.1.0",
+    "bap_id" : "ondc.ndh01.com",
+    "bap_uri" : "https://ondc.ndh01.com/logistics/buyer",
+    "transaction_id" : "45758b4e-04f8-4d69-91a1-8115da442a52",
+    "message_id" : "7d9b8504-0a6b-49af-ba69-e55bc6d9946d",
+    "timestamp" : "2023-12-06T07:48:04.910Z",
+    "ttl" : "PT30S"
+  },
+  "message" : {
+    "intent" : {
+      "provider" : {
+        "time" : {
+          "range" : {
+            "start" : "1200",
+            "end" : "2359"
+          },
+          "days" : "1,2,3,4,5,6,7",
+          "schedule" : {
+            "frequency" : "",
+            "holidays" : [ ],
+            "times" : [ ]
+          }
+        }
+      },
+      "fulfillment" : {
+        "type" : "Prepaid",
+        "start" : {
+          "location" : {
+            "gps" : "30.721416600000012,76.65383680635985",
+            "address" : {
+              "area_code" : "140301"
+            }
+          }
+        },
+        "end" : {
+          "location" : {
+            "gps" : "30.764099, 76.659412",
+            "address" : {
+              "area_code" : "140301"
+            }
+          }
+        }
+      },
+      "category" : {
+        "id" : "Standard Delivery"
+      },
+      "@ondc/org/payload_details" : {
+        "weight" : {
+          "value" : 0.5,
+          "unit" : "Kilogram"
+        },
+        "dimensions" : {
+          "length" : {
+            "value" : 0.0,
+            "unit" : "centimeter"
+          },
+          "breadth" : {
+            "value" : 0.0,
+            "unit" : "centimeter"
+          },
+          "height" : {
+            "value" : 0.0,
+            "unit" : "centimeter"
+          }
+        },
+        "category" : "nic2004:52110",
+        "value" : {
+          "currency" : "INR",
+          "value" : "2000.00"
+        }
+      }
+    }
+  }
+}

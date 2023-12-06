@@ -1,0 +1,48 @@
+{
+  "context" : {
+    "domain" : "nic2004:60232",
+    "country" : "IND",
+    "city" : "std:080",
+    "action" : "on_init",
+    "core_version" : "1.1.0",
+    "bap_id" : "ondc.ndh01.com",
+    "bap_uri" : "https://ondc.ndh01.com/logistics/buyer",
+    "bpp_id" : "ref-logistics-app-stage.ondc.org",
+    "bpp_uri" : "https://ref-logistics-app-stage.ondc.org",
+    "transaction_id" : "a34e3c54-c88d-41f9-8704-8156c53f1b5e",
+    "message_id" : "d1e90492-5548-4cb8-95f8-2672568cde2c",
+    "timestamp" : "2023-12-06T06:38:05.235Z"
+  },
+  "message" : {
+    "order" : {
+      "provider" : {
+        "id" : "581b59f9-4078-4548-bc63-134d5af51cbf"
+      },
+      "quote" : {
+        "price" : {
+          "currency" : "INR",
+          "value" : "189.75"
+        },
+        "breakup" : [ {
+          "@ondc/org/item_id" : "express",
+          "@ondc/org/title_type" : "Delivery Charge",
+          "price" : {
+            "currency" : "INR",
+            "value" : "172.50"
+          }
+        }, {
+          "@ondc/org/item_id" : "express",
+          "@ondc/org/title_type" : "Tax",
+          "price" : {
+            "currency" : "INR",
+            "value" : "17.25"
+          }
+        } ]
+      },
+      "payment" : {
+        "type" : "ON-FULFILLMENT",
+        "collected_by" : "BPP"
+      }
+    }
+  }
+}

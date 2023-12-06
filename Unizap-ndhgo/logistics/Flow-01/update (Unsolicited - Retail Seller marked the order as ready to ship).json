@@ -1,0 +1,119 @@
+{
+  "context" : {
+    "domain" : "nic2004:60232",
+    "country" : "IND",
+    "city" : "std:080",
+    "action" : "update",
+    "core_version" : "1.1.0",
+    "bap_id" : "ondc.ndh01.com",
+    "bap_uri" : "https://ondc.ndh01.com/logistics/buyer",
+    "bpp_id" : "ref-logistics-app-stage.ondc.org",
+    "bpp_uri" : "https://ref-logistics-app-stage.ondc.org",
+    "transaction_id" : "45758b4e-04f8-4d69-91a1-8115da442a52",
+    "message_id" : "2e48dd7d-7288-42ee-911d-ab8ea3684041",
+    "timestamp" : "2023-12-06T07:53:16.430Z",
+    "ttl" : "PT30S"
+  },
+  "message" : {
+    "update_target" : "fulfillment",
+    "order" : {
+      "id" : "2023-12-06-626887",
+      "state" : "Accepted",
+      "items" : [ {
+        "id" : "",
+        "category_id" : "Immediate Delivery",
+        "descriptor" : {
+          "code" : "P2P"
+        }
+      } ],
+      "fulfillments" : [ {
+        "id" : "5f0162d2-46ac-4067-a6d5-6e2abe422054",
+        "type" : "Prepaid",
+        "@ondc/org/awb_no" : "",
+        "@ondc/org/ewaybillno" : "",
+        "start" : {
+          "instructions" : {
+            "short_desc" : "PCC_Code",
+            "long_desc" : "",
+            "additional_desc" : {
+              "content_type" : "text/html",
+              "url" : ""
+            }
+          }
+        },
+        "end" : {
+          "instructions" : {
+            "short_desc" : "DCC_Code",
+            "long_desc" : "",
+            "additional_desc" : {
+              "content_type" : "text/html",
+              "url" : ""
+            }
+          }
+        },
+        "tags" : {
+          "@ondc/org/order_ready_to_ship" : "yes"
+        }
+      } ],
+      "updated_at" : "2023-12-06T07:53:16.430Z",
+      "@ondc/org/linked_order" : {
+        "items" : [ {
+          "category_id" : "Grocery",
+          "descriptor" : {
+            "name" : "Chocolate Milk Shake"
+          },
+          "quantity" : {
+            "count" : 1,
+            "measure" : {
+              "value" : 0,
+              "unit" : "Kilogram"
+            }
+          },
+          "price" : {
+            "currency" : "INR",
+            "value" : "1000.00"
+          }
+        }, {
+          "category_id" : "Grocery",
+          "descriptor" : {
+            "name" : "Cran Berries"
+          },
+          "quantity" : {
+            "count" : 1,
+            "measure" : {
+              "value" : 0,
+              "unit" : "Kilogram"
+            }
+          },
+          "price" : {
+            "currency" : "INR",
+            "value" : "500.00"
+          }
+        }, {
+          "category_id" : "Grocery",
+          "descriptor" : {
+            "name" : "Blue Berries"
+          },
+          "quantity" : {
+            "count" : 1,
+            "measure" : {
+              "value" : 0,
+              "unit" : "Kilogram"
+            }
+          },
+          "price" : {
+            "currency" : "INR",
+            "value" : "500.00"
+          }
+        } ],
+        "order" : {
+          "id" : "NDH42RCT57OYQEBWBFGUSEVPY",
+          "weight" : {
+            "value" : 0.5,
+            "unit" : "Kilogram"
+          }
+        }
+      }
+    }
+  }
+}

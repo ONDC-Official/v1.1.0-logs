@@ -1,0 +1,96 @@
+{
+  "context" : {
+    "domain" : "nic2004:60232",
+    "country" : "IND",
+    "city" : "std:080",
+    "action" : "on_search",
+    "core_version" : "1.1.0",
+    "bap_id" : "ondc.ndh01.com",
+    "bap_uri" : "https://ondc.ndh01.com/logistics/buyer",
+    "bpp_id" : "ref-logistics-app-stage.ondc.org",
+    "bpp_uri" : "https://ref-logistics-app-stage.ondc.org",
+    "transaction_id" : "45758b4e-04f8-4d69-91a1-8115da442a52",
+    "message_id" : "7d9b8504-0a6b-49af-ba69-e55bc6d9946d",
+    "timestamp" : "2023-12-06T07:48:05.887Z"
+  },
+  "message" : {
+    "catalog" : {
+      "bpp/descriptor" : {
+        "name" : "WITS Project Ref Logistic"
+      },
+      "bpp/fulfillments" : [ {
+        "id" : "5f0162d2-46ac-4067-a6d5-6e2abe422054",
+        "type" : "Prepaid",
+        "tracking" : false
+      }, {
+        "id" : "5f0162d2-46ac-4067-a6d5-6e2abe422054",
+        "type" : "CoD",
+        "tracking" : false
+      }, {
+        "id" : "d3fd102c-994a-411f-9e17-831f4c87e5ab",
+        "type" : "RTO",
+        "tracking" : false
+      }, {
+        "id" : "a695cc78-9983-4cc6-bd8a-296608329de0",
+        "type" : "Reverse QC",
+        "tracking" : false
+      } ],
+      "bpp/providers" : [ {
+        "id" : "581b59f9-4078-4548-bc63-134d5af51cbf",
+        "descriptor" : {
+          "name" : "Kavya Singhania",
+          "short_desc" : "WITS Project Ref Logistic",
+          "long_desc" : "WITS Project Ref Logistic"
+        },
+        "categories" : [ {
+          "id" : "Immediate Delivery",
+          "time" : {
+            "label" : "TAT",
+            "duration" : "PT60M"
+          }
+        } ],
+        "items" : [ {
+          "id" : "express",
+          "parent_item_id" : "",
+          "descriptor" : {
+            "name" : "Immediate Delivery",
+            "code" : "P2P",
+            "short_desc" : "Upto 60 mins for Delivery",
+            "long_desc" : "Upto 60 mins for Delivery"
+          },
+          "price" : {
+            "currency" : "INR",
+            "value" : "189.75"
+          },
+          "category_id" : "Immediate Delivery",
+          "fulfillment_id" : "5f0162d2-46ac-4067-a6d5-6e2abe422054",
+          "time" : {
+            "label" : "TAT",
+            "timestamp" : "2023-12-06T07:48:05.887Z",
+            "duration" : "PT40M"
+          }
+        }, {
+          "id" : "rto",
+          "parent_item_id" : "I1",
+          "descriptor" : {
+            "name" : "RTO quote",
+            "code" : "P2P",
+            "short_desc" : "RTO quote",
+            "long_desc" : "RTO quote"
+          },
+          "price" : {
+            "currency" : "INR",
+            "value" : "56.92"
+          },
+          "category_id" : "Immediate Delivery",
+          "fulfillment_id" : "d3fd102c-994a-411f-9e17-831f4c87e5ab",
+          "time" : {
+            "label" : "TAT",
+            "timestamp" : "2023-12-06T07:48:05.887Z",
+            "duration" : "PT60M"
+          }
+        } ]
+      } ]
+    }
+  }
+}
