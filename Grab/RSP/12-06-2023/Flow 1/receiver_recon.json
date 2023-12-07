@@ -1,0 +1,94 @@
+{
+	"context": {
+		"domain": "ONDC:NTS10",
+		"country": "IND",
+		"city": "std:080",
+		"action": "receiver_recon",
+		"core_version": "1.0.0",
+		"bap_id": "rsp.ondc.digiledge.in",
+		"bap_uri": "http://10.1.22.4:9003",
+		"bpp_id": "uat.grab.in",
+		"bpp_uri": "https://uat.grab.in/beckn/bpp",
+		"transaction_id": "d78f7fad-a7e4-4cde-9baf-c18602426726",
+		"message_id": "77d91307-f742-4625-9495-0c3e52383317",
+		"timestamp": "2023-12-06T10:57:11.738Z",
+		"ttl": "P2D"
+	},
+	"message": {
+		"orderbook": {
+			"orders": [
+				{
+					"id": "2023-12-06-787253",
+					"collector_app_id": "logistics.ondc.digiledge.in",
+					"receiver_app_id": "uat.grab.in",
+					"state": "Completed",
+					"provider": {
+						"name": {
+							"name": "Grab Logistics",
+							"code": "grab-logistics"
+						},
+						"address": null
+					},
+					"payment": {
+						"uri": "https://ondc.transaction.com/payment",
+						"tl_method": "http/get",
+						"params": {
+							"transaction_id": "dabec898-38f2-4705-a293-cc22abfad195",
+							"amount": "45.00",
+							"currency": "INR"
+						},
+						"type": "ON-ORDER",
+						"status": "PAID",
+						"collected_by": "BAP",
+						"@ondc/org/collected_by_status": "assert",
+						"@ondc/org/return_window": "P6D",
+						"@ondc/org/return_window_status": "assert",
+						"@ondc/org/settlement_basis": "Collection",
+						"@ondc/org/settlement_basis_status": "assert",
+						"@ondc/org/settlement_window_status": "assert",
+						"@ondc/org/settlement_details": [
+							{
+								"settlement_counterparty": "BPP",
+								"settlement_amount": "45.00",
+								"settlement_type": "upi",
+								"settlement_bank_account_no": "18004253800",
+								"settlement_ifsc_code": "SBIN0032277",
+								"upi_address": "8888888888@oksbi",
+								"beneficiary_name": "grab-logistics",
+								"settlement_status": "PAID",
+								"settlement_reference": "aaa19a17-0a3e-4169-a0c1-905f1b698d5f",
+								"settlement_timestamp": "2023-12-06T10:57:11.734Z"
+							}
+						]
+					},
+					"withholding_tax_gst": {
+						"currency": "INR",
+						"value": "0"
+					},
+					"withholding_tax_tds": {
+						"currency": "INR",
+						"value": "0"
+					},
+					"deduction_by_collector": {
+						"currency": "INR",
+						"value": "0"
+					},
+					"order_recon_status": "01",
+					"payerdetails": {
+						"payer_name": "Digiledge",
+						"payer_address": "Bengaluru",
+						"payer_account_no": 879929882798,
+						"payer_bank_code": "HDFBH20901"
+					},
+					"settlement_reason_code": "01",
+					"transaction_id": "d78f7fad-a7e4-4cde-9baf-c18602426726",
+					"settlement_id": "3305f656-1fb6-44d0-8a0a-c1ff9526de70",
+					"settlement_reference_no": "aaa19a17-0a3e-4169-a0c1-905f1b698d5f",
+					"recon_status": "01",
+					"created_at": "2023-12-06T10:57:11.719Z",
+					"updated_at": "2023-12-06T10:57:11.734Z"
+				}
+			]
+		}
+	}
+}
