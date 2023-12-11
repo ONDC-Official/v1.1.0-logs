@@ -1,27 +1,27 @@
 {
   "context": {
-    "domain": "nic2004:60232",
-    "core_version": "1.0.0",
-    "bap_id": "preprod-bpp.dbs.digiit.io",
-    "bap_uri": "https://preprod-bpp.dbs.digiit.io/logistics/bap",
-    "bpp_id": "preprod-bpp.iway.digiit.io",
-    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "domain": "nic2004:52110",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "preprod-bpp.dbs.digiit.io",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
     "city": "std:080",
     "country": "IND",
     "action": "on_issue_status",
-    "transaction_id": "f11c2c35-dcdc-4a59-bf58-0b90895a259d",
-    "message_id": "de46af4f-1f6d-4c64-bf9a-862203c16499",
-    "timestamp": "2023-11-30T04:08:32.486Z"
+    "transaction_id": "93cbf7be-617f-40b2-9f42-078d50d3452d",
+    "message_id": "1a69f1a8-f3b0-4607-8d09-c18b67bf20e0",
+    "timestamp": "2023-12-09T11:34:13.789Z"
   },
   "message": {
     "issue": {
-      "id": "73d06569-d607-4ecd-824a-19ffc0f7c165",
+      "id": "a30df44f-c0f6-4b5b-bada-dbead4afc9bf",
       "issue_actions": {
         "respondent_actions": [
           {
             "respondent_action": "PROCESSING",
-            "short_desc": "<p>Dear Customer,</p><p>We'll check this complaint</p>",
-            "updated_at": "2023-11-30T03:54:56.858",
+            "short_desc": "<p>Dear Customer,</p><p>We will check it</p>",
+            "updated_at": "2023-12-09T11:04:45.590Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
@@ -38,11 +38,11 @@
           },
           {
             "respondent_action": "CASCADED",
-            "short_desc": "<p>Dear LSP,</p><p>Product seems to be damaged, Kindly confirm why damage was occurred.</p>",
-            "updated_at": "2023-11-30T03:56:53.514",
+            "short_desc": "<p>Dear LSP,</p><p>Kindly look into this issue</p>",
+            "updated_at": "2023-12-09T11:07:07.505Z",
             "updated_by": {
               "org": {
-                "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
               },
               "contact": {
                 "phone": "9591865541",
@@ -56,8 +56,8 @@
           },
           {
             "respondent_action": "PROCESSING",
-            "short_desc": "<p>Dear Retailer,</p><p>we're checking it</p>",
-            "updated_at": "2023-11-30T04:00:20.588",
+            "short_desc": "<p>Dear Retailer,</p><p>We're checking it</p>",
+            "updated_at": "2023-12-09T11:10:08.045Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
@@ -74,8 +74,8 @@
           },
           {
             "respondent_action": "RESOLVED",
-            "short_desc": "<p>Dear Retailer,</p><p>We've confirmed with agent that order was packed well, Inside of the package we didn't notice any damage.</p>",
-            "updated_at": "2023-11-30T04:08:07.603",
+            "short_desc": "<p>Dear Retailer,</p><p>we're facing some vehicle issue, we'll pick the order and deliver it shortly</p>",
+            "updated_at": "2023-12-09T11:25:34.906Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
@@ -92,11 +92,11 @@
           }
         ]
       },
-      "created_at": "2023-11-30T03:53:38.798Z",
-      "updated_at": "2023-11-30T04:08:07.720Z",
+      "created_at": "2023-12-09T11:02:27.226Z",
+      "updated_at": "2023-12-09T11:34:05.709Z",
       "resolution_provider": {
         "respondent_info": {
-          "type": "TRANSACTION-COUNTERPARTY-NP",
+          "type": "CASCADED-COUNTERPARTY-NP",
           "organization": {
             "org": {
               "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
@@ -124,15 +124,15 @@
                   "phone": "72597 65765",
                   "email": "siva.t@digiit.biz"
                 },
-                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+                "gro_type": "CASCADED-COUNTERPARTY-NP-GRO"
               }
             ]
           }
         }
       },
       "resolution": {
-        "short_desc": "Damaged Product",
-        "long_desc": "<p>Dear Retailer,</p><p>We've confirmed with agent that order was packed well, Inside of the package we didn't notice any damage.</p>",
+        "short_desc": "Delay in Delivery",
+        "long_desc": "<p>Dear Retailer,</p><p>we're facing some vehicle issue, we'll pick the order and deliver it shortly</p>",
         "action_triggered": "NO-ACTION"
       }
     }

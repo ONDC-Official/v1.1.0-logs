@@ -1,0 +1,140 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "core_version": "1.0.0",
+    "bap_id": "preprod-bpp.dbs.digiit.io",
+    "bap_uri": "https://preprod-bpp.dbs.digiit.io/logistics/bap",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "city": "std:080",
+    "country": "IND",
+    "action": "on_issue_status",
+    "transaction_id": "c73068e3-c2eb-4d47-ad45-363ec937990d",
+    "message_id": "4ha3d1ca-c4da-4cc5-8709-5fccccd7ccdf",
+    "timestamp": "2023-12-09T12:44:54.108Z"
+  },
+  "message": {
+    "issue": {
+      "id": "6c1a6faf-6171-43ef-987e-d4708ed5bb6e",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "<p>Dear Customer,</p><p>We will check it</p>",
+            "updated_at": "2023-12-09T12:22:41.645Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9591865541",
+                "email": "vayuvah@gmail.com"
+              },
+              "person": {
+                "name": "vayclenz"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "CASCADED",
+            "short_desc": "<p>Dear LSP,</p><p>Kindly check the issue</p>",
+            "updated_at": "2023-12-09T12:24:14.748Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9591865541",
+                "email": "vayuvah@gmail.com"
+              },
+              "person": {
+                "name": "vayclenz"
+              }
+            },
+            "cascaded_level": 2
+          },
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "<p>Dear Retailer,</p><p>Let us check it</p>",
+            "updated_at": "2023-12-09T12:26:45.3Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9597053612",
+                "email": "iway@digiit.biz"
+              },
+              "person": {
+                "name": "Jagadeesan"
+              }
+            },
+            "cascaded_level": 2
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "short_desc": "<p>Dear Retailer,</p><p>We've found the packaging was done correctly, we didnt noticed any damages outside.</p>",
+            "updated_at": "2023-12-09T12:41:32.041Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9597053612",
+                "email": "iway@digiit.biz"
+              },
+              "person": {
+                "name": "Jagadeesan"
+              }
+            },
+            "cascaded_level": 2
+          }
+        ]
+      },
+      "created_at": "2023-12-09T12:20:52.358Z",
+      "updated_at": "2023-12-09T12:41:32.210Z",
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "CASCADED-COUNTERPARTY-NP",
+          "organization": {
+            "org": {
+              "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
+            },
+            "contact": {
+              "phone": "9597053612",
+              "email": "iway@digiit.biz"
+            },
+            "person": {
+              "name": "Jagadeesan"
+            }
+          },
+          "resolution_support": {
+            "chat_link": "https://wa.me/9597053612",
+            "contact": {
+              "phone": "9597053612",
+              "email": "iway@digiit.biz"
+            },
+            "gros": [
+              {
+                "person": {
+                  "name": "Siva"
+                },
+                "contact": {
+                  "phone": "72597 65765",
+                  "email": "siva.t@digiit.biz"
+                },
+                "gro_type": "CASCADED-COUNTERPARTY-NP-GRO"
+              }
+            ]
+          }
+        }
+      },
+      "resolution": {
+        "short_desc": "Damaged Product Delivery",
+        "long_desc": "<p>Dear Retailer,</p><p>We've found the packaging was done correctly, we didnt noticed any damages outside.</p>",
+        "action_triggered": "NO-ACTION"
+      }
+    }
+  }
+}
