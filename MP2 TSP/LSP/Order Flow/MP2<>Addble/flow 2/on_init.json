@@ -1,0 +1,48 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "bpp_id": "preprod.logistics-seller.mp2.in",
+        "bpp_uri": "https://preprod.logistics-seller.mp2.in/ondc",
+        "transaction_id": "b01a4659-d94e-4c74-8f74-0f8314e9c70f",
+        "message_id": "d2db1ec2-e6f9-4f0d-a882-77b84d206aaa",
+        "timestamp": "2023-12-13T10:47:43.587Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "MP2 LSP"
+            },
+            "items": [
+                {
+                    "id": "mp2_express"
+                }
+            ],
+            "payment": {
+                "type": "ON-ORDER",
+                "collected_by": "BAP"
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "mp2_express",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1.0"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

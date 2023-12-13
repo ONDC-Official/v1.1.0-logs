@@ -1,0 +1,175 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "transaction_id": "0884dd39-24b4-41c7-869f-087a91454413",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "message_id": "9d1c90cb-c011-4125-8205-2e002edb715c",
+        "timestamp": "2023-12-13T10:37:48.404Z",
+        "ttl": "PT30S",
+        "bpp_id": "preprod.logistics-seller.mp2.in",
+        "bpp_uri": "https://preprod.logistics-seller.mp2.in/ondc"
+    },
+    "message": {
+        "order": {
+            "id": "3599cd66-802b-49d7-9aa4-6170316ccca3",
+            "state": "Created",
+            "provider": {
+                "id": "MP2 LSP"
+            },
+            "items": [
+                {
+                    "id": "mp2_express",
+                    "category_id": "Immediate Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Addble",
+                "address": {
+                    "name": "BTMC",
+                    "building": "BTMC",
+                    "locality": "Uripok Kangchup Road, Lamdeng Khunou, Lamsang",
+                    "city": "Imphal",
+                    "state": "Manipur",
+                    "country": "India",
+                    "area_code": "795146"
+                },
+                "tax_number": "14A00000001G1Z4",
+                "phone": "7085097856",
+                "email": "ondcsupport@addble.com",
+                "created_at": "2023-12-13T10:37:37.589Z",
+                "updated_at": "2023-12-13T10:37:37.589Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "mp2_express_f1",
+                    "type": "Prepaid",
+                    "start": {
+                        "location": {
+                            "gps": "12.962629784285113,77.641461789608",
+                            "address": {
+                                "building": "4005",
+                                "street": "100 Feet Road",
+                                "locality": "HAL 2nd Stage, Indiranaga",
+                                "state": "Karnataka",
+                                "area_code": "560038",
+                                "city": "Bangalore",
+                                "country": "India",
+                                "name": "Cafe Shop Indiranagar"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9954780440",
+                            "email": "jane@addble.com"
+                        },
+                        "person": {
+                            "name": "Jane"
+                        },
+                        "instructions": {
+                            "short_desc": "160978",
+                            "long_desc": "Pick up code"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9814010000001, 77.6409810000001",
+                            "address": {
+                                "name": "Poornima",
+                                "building": "Landmark",
+                                "locality": "Jayanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560038"
+                            }
+                        },
+                        "contact": {
+                            "email": "poornima@mp2.in",
+                            "phone": "9900163002"
+                        },
+                        "person": {
+                            "name": "Poornima"
+                        },
+                        "instructions": {
+                            "short_desc": "844773",
+                            "long_desc": "Delivery code"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "Yes"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "mp2_express",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1.0"
+                        }
+                    }
+                ]
+            },
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "F&B",
+                        "descriptor": {
+                            "name": "Kosha Mangsho Plate"
+                        },
+                        "quantity": {
+                            "count": 1,
+                            "measure": {
+                                "unit": "Kilogram",
+                                "value": 0.1
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "230"
+                        }
+                    }
+                ],
+                "provider": {
+                    "descriptor": {
+                        "name": "Cafe Shop Indiranagar"
+                    },
+                    "address": {
+                        "name": "Cafe Shop Indiranagar",
+                        "locality": "HAL 2nd Stage, Indiranaga",
+                        "street": "HAL 2nd Stage, Indiranaga",
+                        "area_code": "560038",
+                        "city": "Bangalore",
+                        "state": "Karnataka"
+                    }
+                },
+                "order": {
+                    "id": "2023-12-13-709157",
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 0.1
+                    }
+                }
+            },
+            "payment": {
+                "collected_by": "BAP",
+                "type": "ON-ORDER"
+            },
+            "created_at": "2023-12-13T10:37:48.404Z",
+            "updated_at": "2023-12-13T10:37:48.404Z"
+        }
+    }
+}

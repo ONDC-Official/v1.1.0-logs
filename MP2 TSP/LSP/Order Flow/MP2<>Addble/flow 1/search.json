@@ -1,0 +1,76 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "transaction_id": "0884dd39-24b4-41c7-869f-087a91454413",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "message_id": "0e5c12bf-6454-43fe-abff-d777c77ba869",
+        "timestamp": "2023-12-13T10:37:17.206Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "id": "Immediate Delivery"
+            },
+            "provider": {
+                "time": {
+                    "days": "1,2,3,4,5,6,7",
+                    "time": {
+                        "range": {
+                            "start": "0000",
+                            "end": "2359"
+                        },
+                        "schedule": {
+                            "holidays": []
+                        }
+                    },
+                    "range": {
+                        "end": "1800",
+                        "start": "0900"
+                    },
+                    "schedule": {
+                        "holidays": [
+                            "2023-10-8",
+                            "2023-10-16"
+                        ]
+                    }
+                }
+            },
+            "fulfillment": {
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "gps": "12.962629784285113,77.641461789608",
+                        "address": {
+                            "area_code": "560038"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.9814010000001, 77.6409810000001",
+                        "address": {
+                            "area_code": "560038"
+                        }
+                    }
+                }
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "unit": "Kilogram",
+                    "value": 0.1
+                },
+                "category": "F&B",
+                "value": {
+                    "currency": "INR",
+                    "value": "230"
+                }
+            }
+        }
+    }
+}
