@@ -7,9 +7,9 @@
         "core_version": "1.1.0",
         "bap_id": "preprod-ondc.addble.com",
         "bap_uri": "https://preprod-ondc.addble.com/",
-        "transaction_id": "0884dd39-24b4-41c7-869f-087a91454413",
-        "message_id": "0e5c12bf-6454-43fe-abff-d777c77ba869",
-        "timestamp": "2023-12-13T10:37:23.661Z",
+        "transaction_id": "9bf623a7-57e4-41c5-9069-95e3f3a01a3e",
+        "message_id": "8a258c04-299c-4840-a4ee-b51c15d425ff",
+        "timestamp": "2023-12-14T06:34:34.565Z",
         "bpp_id": "preprod.logistics-seller.mp2.in",
         "bpp_uri": "https://preprod.logistics-seller.mp2.in/ondc"
     },
@@ -28,24 +28,24 @@
                     },
                     "categories": [
                         {
-                            "id": "Immediate Delivery",
+                            "id": "Same Day Delivery",
                             "time": {
                                 "label": "TAT",
-                                "duration": "PT55M"
+                                "duration": "PT4H"
                             }
                         }
                     ],
                     "items": [
                         {
-                            "id": "mp2_express",
+                            "id": "mp2_sdd",
                             "parent_item_id": "",
-                            "category_id": "Immediate Delivery",
-                            "fulfillment_id": "mp2_express_f1",
+                            "category_id": "Same Day Delivery",
+                            "fulfillment_id": "mp2_sdd_f1",
                             "descriptor": {
                                 "code": "P2P",
-                                "name": "MP2 Express Delivery",
-                                "short_desc": "40 min delivery for FNB",
-                                "long_desc": "40 min delivery for FNB"
+                                "name": "MP2 SDD Delivery",
+                                "short_desc": "Same Day Delivery",
+                                "long_desc": "Same Day Delivery"
                             },
                             "price": {
                                 "currency": "INR",
@@ -53,15 +53,15 @@
                             },
                             "time": {
                                 "label": "TAT",
-                                "duration": "PT55M",
-                                "timestamp": "2023-12-13T10:37:23.662Z"
+                                "duration": "PT4H",
+                                "timestamp": "2023-12-14T06:34:34.566Z"
                             }
                         },
                         {
-                            "id": "mp2_express-RTO",
-                            "parent_item_id": "mp2_express",
-                            "category_id": "Immediate Delivery",
-                            "fulfillment_id": "mp2_express_f1-RTO",
+                            "id": "mp2_sdd-RTO",
+                            "parent_item_id": "mp2_sdd",
+                            "category_id": "Same Day Delivery",
+                            "fulfillment_id": "mp2_sdd_f1-RTO",
                             "descriptor": {
                                 "code": "P2P",
                                 "name": "RTO quote",
@@ -74,8 +74,8 @@
                             },
                             "time": {
                                 "label": "TAT",
-                                "duration": "PT55M",
-                                "timestamp": "2023-12-13T10:37:23.662Z"
+                                "duration": "PT4H",
+                                "timestamp": "2023-12-14T06:34:34.566Z"
                             }
                         }
                     ]
@@ -83,11 +83,11 @@
             ],
             "bpp/fulfillments": [
                 {
-                    "id": "mp2_express_f1",
+                    "id": "mp2_sdd_f1",
                     "type": "Prepaid"
                 },
                 {
-                    "id": "mp2_express_f1-RTO",
+                    "id": "mp2_sdd_f1-RTO",
                     "type": "RTO"
                 }
             ]

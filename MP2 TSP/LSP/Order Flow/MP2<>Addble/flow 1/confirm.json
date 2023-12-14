@@ -5,26 +5,26 @@
         "city": "std:080",
         "action": "confirm",
         "core_version": "1.1.0",
-        "transaction_id": "0884dd39-24b4-41c7-869f-087a91454413",
+        "transaction_id": "9bf623a7-57e4-41c5-9069-95e3f3a01a3e",
         "bap_id": "preprod-ondc.addble.com",
         "bap_uri": "https://preprod-ondc.addble.com/",
-        "message_id": "9d1c90cb-c011-4125-8205-2e002edb715c",
-        "timestamp": "2023-12-13T10:37:48.404Z",
+        "message_id": "1d6b3dff-0ad9-46dc-8f6e-e6ae6036f317",
+        "timestamp": "2023-12-14T06:34:59.395Z",
         "ttl": "PT30S",
         "bpp_id": "preprod.logistics-seller.mp2.in",
         "bpp_uri": "https://preprod.logistics-seller.mp2.in/ondc"
     },
     "message": {
         "order": {
-            "id": "3599cd66-802b-49d7-9aa4-6170316ccca3",
+            "id": "538e0f11-f630-4487-af99-a83a1008b5ad",
             "state": "Created",
             "provider": {
                 "id": "MP2 LSP"
             },
             "items": [
                 {
-                    "id": "mp2_express",
-                    "category_id": "Immediate Delivery",
+                    "id": "mp2_sdd",
+                    "category_id": "Same Day Delivery",
                     "descriptor": {
                         "code": "P2P"
                     }
@@ -44,25 +44,27 @@
                 "tax_number": "14A00000001G1Z4",
                 "phone": "7085097856",
                 "email": "ondcsupport@addble.com",
-                "created_at": "2023-12-13T10:37:37.589Z",
-                "updated_at": "2023-12-13T10:37:37.589Z"
+                "created_at": "2023-12-14T06:34:52.676Z",
+                "updated_at": "2023-12-14T06:34:52.676Z"
             },
             "fulfillments": [
                 {
-                    "id": "mp2_express_f1",
+                    "id": "mp2_sdd_f1",
                     "type": "Prepaid",
                     "start": {
                         "location": {
-                            "gps": "12.962629784285113,77.641461789608",
+                            "gps": "12.91414122848031,77.63768276727586",
                             "address": {
-                                "building": "4005",
-                                "street": "100 Feet Road",
-                                "locality": "HAL 2nd Stage, Indiranaga",
+                                "building": "BDA Complex",
+                                "street": "14th Main Road",
+                                "locality": "Sector 6, HSR Layout",
                                 "state": "Karnataka",
-                                "area_code": "560038",
-                                "city": "Bangalore",
+                                "area_code": "560095",
+                                "city": "BENGALURU",
                                 "country": "India",
-                                "name": "Cafe Shop Indiranagar"
+                                "door": "35/A",
+                                "landmark": "Near DTDC Courier HSR Layout",
+                                "name": "Syngenta Store"
                             }
                         },
                         "contact": {
@@ -73,7 +75,7 @@
                             "name": "Jane"
                         },
                         "instructions": {
-                            "short_desc": "160978",
+                            "short_desc": "074812",
                             "long_desc": "Pick up code"
                         }
                     },
@@ -98,12 +100,12 @@
                             "name": "Poornima"
                         },
                         "instructions": {
-                            "short_desc": "844773",
+                            "short_desc": "753316",
                             "long_desc": "Delivery code"
                         }
                     },
                     "tags": {
-                        "@ondc/org/order_ready_to_ship": "Yes"
+                        "@ondc/org/order_ready_to_ship": "No"
                     }
                 }
             ],
@@ -114,7 +116,7 @@
                 },
                 "breakup": [
                     {
-                        "@ondc/org/item_id": "mp2_express",
+                        "@ondc/org/item_id": "mp2_sdd",
                         "@ondc/org/title_type": "Delivery Charge",
                         "price": {
                             "currency": "INR",
@@ -126,9 +128,9 @@
             "@ondc/org/linked_order": {
                 "items": [
                     {
-                        "category_id": "F&B",
+                        "category_id": "Grocery",
                         "descriptor": {
-                            "name": "Kosha Mangsho Plate"
+                            "name": "CARROT Seeds 100 gm"
                         },
                         "quantity": {
                             "count": 1,
@@ -139,25 +141,25 @@
                         },
                         "price": {
                             "currency": "INR",
-                            "value": "230"
+                            "value": "148"
                         }
                     }
                 ],
                 "provider": {
                     "descriptor": {
-                        "name": "Cafe Shop Indiranagar"
+                        "name": "Syngenta Store"
                     },
                     "address": {
-                        "name": "Cafe Shop Indiranagar",
-                        "locality": "HAL 2nd Stage, Indiranaga",
-                        "street": "HAL 2nd Stage, Indiranaga",
-                        "area_code": "560038",
-                        "city": "Bangalore",
+                        "name": "Syngenta Store",
+                        "locality": "Sector 6, HSR Layout",
+                        "street": "Sector 6, HSR Layout",
+                        "area_code": "560095",
+                        "city": "BENGALURU",
                         "state": "Karnataka"
                     }
                 },
                 "order": {
-                    "id": "2023-12-13-709157",
+                    "id": "2023-12-14-147160",
                     "weight": {
                         "unit": "Kilogram",
                         "value": 0.1
@@ -166,10 +168,10 @@
             },
             "payment": {
                 "collected_by": "BAP",
-                "type": "ON-ORDER"
+                "type": "POST-FULFILLMENT"
             },
-            "created_at": "2023-12-13T10:37:48.404Z",
-            "updated_at": "2023-12-13T10:37:48.404Z"
+            "created_at": "2023-12-14T06:34:59.395Z",
+            "updated_at": "2023-12-14T06:34:59.395Z"
         }
     }
 }
