@@ -1,0 +1,49 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "update",
+        "core_version": "1.1.0",
+        "transaction_id": "84468e7b-8214-4fb2-b204-0d796eb22226",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "message_id": "b0665829-989f-485a-b052-ccdb425f37c0",
+        "timestamp": "2023-12-14T07:35:37.457Z",
+        "ttl": "PT30S",
+        "bpp_id": "preprod.logistics-seller.mp2.in",
+        "bpp_uri": "https://preprod.logistics-seller.mp2.in/ondc"
+    },
+    "message": {
+        "update_target": "fulfillment",
+        "order": {
+            "id": "7e37d3f6-1b29-4044-b800-6dd5713ee9cc",
+            "state": "Accepted",
+            "fulfillments": [
+                {
+                    "id": "mp2_sdd_f1",
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "yes"
+                    },
+                    "type": "Prepaid",
+                    "start": {
+                        "instructions": {
+                            "short_desc": "469736",
+                            "long_desc": "Pick up code"
+                        }
+                    }
+                }
+            ],
+            "items": [
+                {
+                    "id": "mp2_sdd",
+                    "category_id": "Same Day Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "updated_at": "2023-12-14T07:35:37.457Z"
+        }
+    }
+}
