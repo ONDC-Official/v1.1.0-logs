@@ -1,0 +1,136 @@
+{
+	"context": {
+		"domain": "nic2004:60232",
+		"country": "IND",
+		"city": "std:080",
+		"action": "issue",
+		"core_version": "1.0.0",
+		"transaction_id": "2bb227ea-587e-4025-b774-a939b37eafe3",
+		"bap_id": "preprod-ondc.neorigins.com",
+		"bap_uri": "https://preprod-ondc.neorigins.com/",
+		"message_id": "142b9e15-6c55-41e5-bebb-16ce9b87d777",
+		"timestamp": "2023-12-15T13:28:27.508Z",
+		"ttl": "PT30S",
+		"bpp_id": "preprod.logistics-seller.mp2.in",
+		"bpp_uri": "https://preprod.logistics-seller.mp2.in/ondc"
+	},
+	"message": {
+		"issue": {
+			"category": "FULFILLMENT",
+			"complainant_info": {
+				"person": {
+					"name": "Yaikhomba Blr"
+				},
+				"contact": {
+					"phone": "6362944815",
+					"email": "adden.company@gmail.com"
+				}
+			},
+			"created_at": "2023-12-15T13:27:31.364Z",
+			"description": {
+				"short_desc": "Where is my order?",
+				"long_desc": "Delivery has not happened for last 3 hours",
+				"additional_desc": {
+					"url": "https://buyerapp.com/additonal-details/desc.txt",
+					"content_type": "text/plain"
+				},
+				"images": []
+			},
+			"expected_resolution_time": {
+				"duration": "P1D"
+			},
+			"expected_response_time": {
+				"duration": "PT1H"
+			},
+			"id": "82e0eaf5-0977-433b-bfcb-f84fb30c62e6",
+			"issue_type": "ISSUE",
+			"order_details": {
+				"id": "8f56b1c2-eda6-4e4d-a0c9-f033becbb64f",
+				"state": "In-progress",
+				"items": [
+					{
+						"id": "IYOvQbPDrvT8HKetGqw2",
+						"quantity": 1
+					},
+					{
+						"id": "NcLBUcHKiNKYP5WGvAnk",
+						"quantity": 1
+					}
+				],
+				"fulfillments": [
+					{
+						"id": "805dfad3-282a-4e4c-ad34-4da9c98eac27",
+						"state": "Pending"
+					}
+				],
+				"provider_id": "AQXSLFIGS2bFCQsAv9Sy"
+			},
+			"source": {
+				"network_participant_id": "buyer-app-preprod.ondc.org",
+				"type": "CONSUMER"
+			},
+			"status": "OPEN",
+			"sub_category": "FLM03",
+			"updated_at": "2023-12-15T13:28:27.508Z",
+			"issue_actions": {
+				"complainant_actions": [
+					{
+						"complainant_action": "OPEN",
+						"short_desc": "Complaint created",
+						"updated_at": "2023-12-15T13:27:27.472Z",
+						"updated_by": {
+							"org": {
+								"name": "buyer-app-preprod.ondc.org::nic2004:52110"
+							},
+							"contact": {
+								"phone": "6239083807",
+								"email": "Rishabhnand.singh@ondc.org"
+							},
+							"person": {
+								"name": "Rishabhnand Singh"
+							}
+						}
+					}
+				],
+				"respondent_actions": [
+					{
+						"respondent_action": "PROCESSING",
+						"short_desc": "Complaint is being processed with Ticket No 657c54418b93703c13033019",
+						"updated_at": "2023-12-15T13:27:29.083Z",
+						"updated_by": {
+							"org": {
+								"name": "preprod-ondc.neorigins.com::nic2004:52110"
+							},
+							"contact": {
+								"email": "support@neorigins.com",
+								"phone": "6362963629"
+							},
+							"person": {
+								"name": "Venus"
+							}
+						},
+						"cascaded_level": 1
+					},
+					{
+						"respondent_action": "CASCADED",
+						"short_desc": "Please look into this issue",
+						"updated_at": "2023-12-15T13:28:27.508Z",
+						"updated_by": {
+							"org": {
+								"name": "preprod-ondc.addble.com::nic2004:60232"
+							},
+							"contact": {
+								"phone": "6362963629",
+								"email": "support@addble.com"
+							},
+							"person": {
+								"name": "Venus"
+							}
+						},
+						"cascaded_level": 2
+					}
+				]
+			}
+		}
+	}
+}
