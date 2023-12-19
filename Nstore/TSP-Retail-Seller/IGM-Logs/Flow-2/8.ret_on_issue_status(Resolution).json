@@ -1,0 +1,149 @@
+{
+  "context": {
+    "city": "std:080",
+    "action": "on_issue_status",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "b-ondctsp.nlincs.in",
+    "domain": "nic2004:52110",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_uri": "https://b-ondctsp.nlincs.in/bpp",
+    "country": "IND",
+    "timestamp": "2023-12-18T11:24:16.467Z",
+    "message_id": "853987f9-a1a1-43d6-a524-77719f2c1bb0",
+    "core_version": "1.1.0",
+    "transaction_id": "517bd051-20c9-4405-b40b-af0f9e61c372"
+  },
+  "message": {
+    "issue": {
+      "id": "f91061c7-4f59-4ea6-a580-6cb4253a0c3c",
+      "created_at": "2023-12-18T10:20:27.461Z",
+      "resolution": {
+        "long_desc": "marking resolved",
+        "short_desc": "Request has been resolved",
+        "action_triggered": "NO-ACTION"
+      },
+      "updated_at": "2023-12-18T10:21:39.121Z",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-12-18T10:20:55.263Z",
+            "updated_by": {
+              "org": {
+                "name": "b-ondctsp.nlincs.in::nic2004:52110"
+              },
+              "person": {
+                "name": "Sathish Kumar"
+              },
+              "contact": {
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619"
+              }
+            },
+            "cascaded_level": 1,
+            "respondent_action": "PROCESSING"
+          },
+          {
+            "short_desc": "Complaint cascaded",
+            "updated_at": "2023-12-18T10:21:37.848Z",
+            "updated_by": {
+              "org": {
+                "name": "b-ondc-seller-bpp.nlincs.in::nic2004:60232"
+              },
+              "person": {
+                "name": "Sathish Kumar"
+              },
+              "contact": {
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619"
+              }
+            },
+            "cascaded_level": 2,
+            "respondent_action": "CASCADED"
+          },
+          {
+            "short_desc": "Complaint is being processed with Ticket-66958787",
+            "updated_at": "2023-12-18T10:21:38.203Z",
+            "updated_by": {
+              "org": {
+                "name": "ondc-dev.delhivery.com::nic2004:60232"
+              },
+              "person": {
+                "name": "Delhivery ONDC Support"
+              },
+              "contact": {
+                "email": "ondc_support@delhivery.com",
+                "phone": "+911246719510"
+              }
+            },
+            "cascaded_level": 2,
+            "respondent_action": "PROCESSING"
+          },
+          {
+            "short_desc": "Complaint is being resolved",
+            "updated_at": "2023-12-18T10:21:39.121Z",
+            "updated_by": {
+              "org": {
+                "name": "ondc-dev.delhivery.com::nic2004:60232"
+              },
+              "person": {
+                "name": "Delhivery ONDC Support"
+              },
+              "contact": {
+                "email": "ondc_support@delhivery.com",
+                "phone": "+911246719510"
+              }
+            },
+            "cascaded_level": 2,
+            "respondent_action": "RESOLVED"
+          }
+        ]
+      },
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "CASCADED-COUNTERPARTY-NP-GRO",
+          "organization": {
+            "org": {
+              "name": "b-ondctsp.nlincs.in::nic2004:52110"
+            },
+            "person": {
+                  "name": "Delhivery ONDC Support"
+            },
+            "contact": {
+              "email": "ondc_support@delhivery.com",
+              "phone": "+911246719510"
+            }
+          },
+          "resolution_support": {
+            "gro": [
+              {
+                "person": {
+                  "name": "Delhivery ONDC Support"
+                },
+                "contact": {
+                  "email": "ondc_support@delhivery.com",
+                  "phone": "+911246719510"
+                },
+                "gro_type": "CASCADED-COUNTERPARTY-NP-GRO"
+              },
+              {
+                "person": {
+                  "name": "Sathish Kumar"
+                },
+                "contact": {
+                  "email": "sathisha@nstore.in",
+                  "phone": "9629295619"
+                },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ],
+            "contact": {
+               "email": "sathisha@nstore.in",
+               "phone": "9629295619"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,41 +4,45 @@
     "city": "std:080",
     "action": "issue",
     "bap_id": "b-ondc-seller-bpp.nlincs.in",
-    "bpp_id": "shipdh.in",
+    "bpp_id": "ondc-dev.delhivery.com",
     "domain": "nic2004:60232",
     "bap_uri": "https://b-ondc-seller-bpp.nlincs.in/lbap",
-    "bpp_uri": "https://shipdh.in/ondc/bpp/api/",
+    "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/",
     "country": "IND",
-    "timestamp": "2023-11-17T05:57:35.080Z",
-    "message_id": "I24e8MhtCp9gburwUyiaD4Ar7R4w3WuQ",
+    "timestamp": "2023-12-19T10:58:10.793Z",
+    "message_id": "MWQkubS5SwG6GUUjZz92UAzIryfqfeIF",
     "core_version": "1.0.0",
-    "transaction_id": "eec63e8f-59aa-41a4-a2cf-25e7ba70bac6"
+    "transaction_id": "1d235575-d82a-4c87-a29e-f7074d05cc98"
   },
   "message": {
     "issue": {
-      "id": "ReOGPkoVRQ96KXlDB50oRild",
+      "id": "aacdefc6-5982-4fe0-a210-c0f5e05b12e9",
       "source": {
         "type": "CONSUMER",
-        "network_participant_id": "b-ondcbap.nlincs.in"
+        "network_participant_id": "buyer-app-preprod.ondc.org"
       },
       "status": "OPEN",
       "category": "FULFILLMENT",
-      "created_at": "2023-11-17T05:54:01.638Z",
+      "created_at": "2023-12-19T10:56:29.489Z",
       "issue_type": "ISSUE",
-      "updated_at": "2023-11-17T05:57:35.080Z",
+      "updated_at": "2023-12-19T10:58:10.793Z",
       "description": {
         "images": [
-          
+          "https://buyer-app-preprod.ondc.org/issueApis/uploads/1702983389736.png"
         ],
-        "long_desc": "product not received yet",
-        "short_desc": "product not received yet"
+        "long_desc": "Spillage/ Improper packaging",
+        "short_desc": "Spillage/ Improper packaging",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        }
       },
-      "sub_category": "FLM02",
+      "sub_category": "FLM04",
       "issue_actions": {
         "respondent_actions": [
           {
             "short_desc": "Complaint is being processed",
-            "updated_at": "2023-11-17T05:54:52.160Z",
+            "updated_at": "2023-12-19T10:56:58.309Z",
             "updated_by": {
               "org": {
                 "name": "b-ondctsp.nlincs.in::nic2004:52110"
@@ -56,7 +60,7 @@
           },
           {
             "short_desc": "Complaint cascaded",
-            "updated_at": "2023-11-17T05:57:34.993Z",
+            "updated_at": "2023-12-19T10:58:10.560Z",
             "updated_by": {
               "org": {
                 "name": "b-ondc-seller-bpp.nlincs.in::nic2004:60232"
@@ -76,17 +80,17 @@
         "complainant_actions": [
           {
             "short_desc": "Complaint created",
-            "updated_at": "2023-11-17T05:54:01.638Z",
+            "updated_at": "2023-12-19T10:56:29.736Z",
             "updated_by": {
               "org": {
-                "name": "b-ondcbap.nlincs.in::nic2004:52110"
+                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
               },
               "person": {
-                "name": "Sathish"
+                "name": "Rishabhnand Singh"
               },
               "contact": {
-                "email": "sathisha@nstore.in",
-                "phone": "9629295619"
+                "email": "Rishabhnand.singh@ondc.org",
+                "phone": "6239083807"
               }
             },
             "complainant_action": "OPEN"
@@ -94,25 +98,26 @@
         ]
       },
       "order_details": {
-        "id": "2023-31791-36629",
+        "id": "27858_232131200335_21312_1qj3kb",
         "items": [
           {
-            "id": "14612",
+            "id": "6fd305b8-9a7d-49dc-be2b-b4f09bccea0e",
             "quantity": 1
           }
         ],
-        "state": "In-progress",
-        "provider_id": "21312",
+        "state": "Completed",
+        "provider_id": "Delhivery",
         "fulfillments": [
           {
-            "id": "21312_560034",
-            "state": "Order-picked-up"
+            "id": "1",
+            "state": "Order-delivered"
           }
-        ]
+        ],
+        "merchant_order_id": "2023-12-19-876383"
       },
       "complainant_info": {
         "person": {
-          "name": "Sathish"
+          "name": "Sathish Kumar A"
         },
         "contact": {
           "email": "sathisha@nstore.in",
@@ -120,7 +125,7 @@
         }
       },
       "expected_response_time": {
-        "duration": "PT2H"
+        "duration": "PT1H"
       },
       "expected_resolution_time": {
         "duration": "P1D"
