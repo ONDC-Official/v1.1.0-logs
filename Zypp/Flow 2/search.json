@@ -1,0 +1,64 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "1.1.0",
+        "transaction_id": "1161a921-8629-4f5b-b7a9-842e9ff3d4a0",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "message_id": "099d8c08-3b5c-4fff-ad76-d99b74aeb3c7",
+        "timestamp": "2023-12-19T06:27:03.165Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "id": "Standard Delivery"
+            },
+            "provider": {
+                "time": {
+                    "days": "1,2,3,4,5,6,7",
+                    "range": {
+                        "start": "0000",
+                        "end": "2359"
+                    },
+                    "schedule": {
+                        "holidays": []
+                    }
+                }
+            },
+            "fulfillment": {
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "gps": "12.91414122848031,77.63768276727586",
+                        "address": {
+                            "area_code": "560095"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.9140160000001, 77.6371740000001",
+                        "address": {
+                            "area_code": "560102"
+                        }
+                    }
+                }
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "unit": "Kilogram",
+                    "value": 0.1
+                },
+                "category": "Grocery",
+                "value": {
+                    "currency": "INR",
+                    "value": "148"
+                }
+            }
+        }
+    }
+}

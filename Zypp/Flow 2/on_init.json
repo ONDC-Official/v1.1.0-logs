@@ -1,0 +1,48 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_init",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "bpp_id": "preprod.zypp-lsp.mp2.in",
+        "bpp_uri": "https://preprod.zypp-lsp.mp2.in/ondc",
+        "transaction_id": "1161a921-8629-4f5b-b7a9-842e9ff3d4a0",
+        "message_id": "2f04c260-bbb9-499a-9edf-a5952bd173d1",
+        "timestamp": "2023-12-19T06:27:13.823Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "Zypp LSP"
+            },
+            "items": [
+                {
+                    "id": "zypp_std"
+                }
+            ],
+            "payment": {
+                "type": "ON-ORDER",
+                "collected_by": "BAP"
+            },
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "zypp_std",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1.0"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

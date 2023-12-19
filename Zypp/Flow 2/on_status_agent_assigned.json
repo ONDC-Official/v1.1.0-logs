@@ -1,0 +1,112 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "bpp_id": "preprod.zypp-lsp.mp2.in",
+        "bpp_uri": "https://preprod.zypp-lsp.mp2.in/ondc",
+        "transaction_id": "1161a921-8629-4f5b-b7a9-842e9ff3d4a0",
+        "message_id": "msg_uu5te7l3ihc2hcn7",
+        "timestamp": "2023-12-19T06:33:43.431Z"
+    },
+    "message": {
+        "order": {
+            "id": "3643e986-3bb3-4984-8998-de7aa4e6f975",
+            "state": "In-progress",
+            "provider": {
+                "id": "Zypp LSP"
+            },
+            "items": [
+                {
+                    "id": "zypp_std",
+                    "category_id": "Same Day Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "zypp_std",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1.0"
+                        }
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "type": "Prepaid",
+                    "state": {
+                        "descriptor": {
+                            "code": "Agent-assigned"
+                        }
+                    },
+                    "start": {
+                        "time": {
+                            "range": {
+                                "start": "2023-12-19T06:33:32.364Z",
+                                "end": "2023-12-19T07:33:32.364Z"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "396948",
+                            "long_desc": "Pick up code"
+                        }
+                    },
+                    "end": {
+                        "time": {
+                            "range": {
+                                "start": "2023-12-19T07:33:32.364Z",
+                                "end": "2023-12-19T09:33:32.364Z"
+                            }
+                        },
+                        "instructions": {
+                            "short_desc": "108490",
+                            "long_desc": "Delivery code"
+                        }
+                    },
+                    "tracking": false,
+                    "agent": {
+                        "name": "Abhishek M",
+                        "phone": "9019589515"
+                    }
+                }
+            ],
+            "payment": {
+                "collected_by": "BAP",
+                "type": "ON-ORDER"
+            },
+            "billing": {
+                "name": "Addble",
+                "address": {
+                    "name": "BTMC",
+                    "building": "BTMC",
+                    "locality": "Uripok Kangchup Road, Lamdeng Khunou, Lamsang",
+                    "city": "Imphal",
+                    "state": "Manipur",
+                    "country": "India",
+                    "area_code": "795146"
+                },
+                "tax_number": "14A00000001G1Z4",
+                "phone": "7085097856",
+                "email": "ondcsupport@addble.com",
+                "created_at": "2023-12-19T06:27:13.055Z",
+                "updated_at": "2023-12-19T06:27:13.055Z"
+            },
+            "created_at": "2023-12-19T06:27:22.009Z",
+            "updated_at": "2023-12-19T06:33:43.414Z"
+        }
+    }
+}

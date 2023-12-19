@@ -1,0 +1,96 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "transaction_id": "1161a921-8629-4f5b-b7a9-842e9ff3d4a0",
+        "message_id": "099d8c08-3b5c-4fff-ad76-d99b74aeb3c7",
+        "timestamp": "2023-12-19T06:27:03.758Z",
+        "bpp_id": "preprod.zypp-lsp.mp2.in",
+        "bpp_uri": "https://preprod.zypp-lsp.mp2.in/ondc"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "Zypp LSP"
+            },
+            "bpp/providers": [
+                {
+                    "id": "Zypp LSP",
+                    "descriptor": {
+                        "name": "Zypp LSP",
+                        "short_desc": "Zypp LSP",
+                        "long_desc": "Zypp Logistics Provider"
+                    },
+                    "categories": [
+                        {
+                            "id": "Same Day Delivery",
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT4H"
+                            }
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "zypp_std",
+                            "parent_item_id": "",
+                            "category_id": "Same Day Delivery",
+                            "fulfillment_id": "zypp_std_f1",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "Zypp Same Day Delivery",
+                                "short_desc": "Quick delivery for Grocery",
+                                "long_desc": "Quick delivery for Grocery"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "1.0"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT4H",
+                                "timestamp": "2023-12-19T06:27:03.759Z"
+                            }
+                        },
+                        {
+                            "id": "zypp_std-RTO",
+                            "parent_item_id": "zypp_std",
+                            "category_id": "Same Day Delivery",
+                            "fulfillment_id": "zypp_std_f1-RTO",
+                            "descriptor": {
+                                "code": "P2P",
+                                "name": "RTO quote",
+                                "short_desc": "RTO quote",
+                                "long_desc": "RTO quote"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "0"
+                            },
+                            "time": {
+                                "label": "TAT",
+                                "duration": "PT4H",
+                                "timestamp": "2023-12-19T06:27:03.759Z"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "bpp/fulfillments": [
+                {
+                    "id": "zypp_std_f1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "zypp_std_f1-RTO",
+                    "type": "RTO"
+                }
+            ]
+        }
+    }
+}
