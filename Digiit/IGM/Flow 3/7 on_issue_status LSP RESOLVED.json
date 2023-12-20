@@ -1,63 +1,27 @@
 {
   "context": {
-    "domain": "nic2004:52110",
+    "domain": "nic2004:60232",
     "core_version": "1.0.0",
-    "bap_id": "buyer-app-preprod.ondc.org",
-    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-    "bpp_id": "preprod-bpp.dbs.digiit.io",
-    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
+    "bap_id": "preprod-bpp.dbs.digiit.io",
+    "bap_uri": "https://preprod-bpp.dbs.digiit.io/logistics/bap",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
     "city": "std:080",
     "country": "IND",
     "action": "on_issue_status",
-    "transaction_id": "2da797d6-dadf-4c1b-9dfd-75a199bea0c2",
-    "message_id": "9d55d10d-6e91-4038-9aa1-c01e94731c62",
-    "timestamp": "2023-12-19T12:09:35.661Z"
+    "transaction_id": "9f2b9738-0008-4750-bfe8-bbc5fda13cca",
+    "message_id": "fe200a78-9311-4bbe-8810-4f4fff63c3ac",
+    "timestamp": "2023-12-20T11:14:25.371Z"
   },
   "message": {
     "issue": {
-      "id": "3f676115-772f-45f0-80d9-a9f4349e8456",
+      "id": "9ca1094e-bb9a-4b13-841f-9f336631292f",
       "issue_actions": {
         "respondent_actions": [
           {
             "respondent_action": "PROCESSING",
-            "short_desc": "<p>Dear Customer,</p><p>We'll check it</p>",
-            "updated_at": "2023-12-19T11:42:32.064Z",
-            "updated_by": {
-              "org": {
-                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
-              },
-              "contact": {
-                "phone": "9591865541",
-                "email": "vayuvah@gmail.com"
-              },
-              "person": {
-                "name": "vayclenz"
-              }
-            },
-            "cascaded_level": 1
-          },
-          {
-            "respondent_action": "CASCADED",
-            "short_desc": "<p>Dear LSP,</p><p>Confirm the Damage from your side</p>",
-            "updated_at": "2023-12-19T11:43:17.291Z",
-            "updated_by": {
-              "org": {
-                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
-              },
-              "contact": {
-                "phone": "9591865541",
-                "email": "vayuvah@gmail.com"
-              },
-              "person": {
-                "name": "vayclenz"
-              }
-            },
-            "cascaded_level": 2
-          },
-          {
-            "respondent_action": "PROCESSING",
-            "short_desc": "<p>Dear Retailer,</p><p>We're checking it</p>",
-            "updated_at": "2023-12-19T11:51:43.258Z",
+            "short_desc": "<p>Dear Retailer,</p><p>We're looking into this</p>",
+            "updated_at": "2023-12-20T11:12:00.634Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
@@ -73,9 +37,45 @@
             "cascaded_level": 2
           },
           {
+            "respondent_action": "CASCADED",
+            "short_desc": "<p>Dear LSP,</p><p>Kindly confirm the damage from your side</p>",
+            "updated_at": "2023-12-20T11:10:43.902Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9591865541",
+                "email": "vayuvah@gmail.com"
+              },
+              "person": {
+                "name": "vayclenz"
+              }
+            },
+            "cascaded_level": 2
+          },
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "<p>Dear Customer,</p><p>We're checking it</p>",
+            "updated_at": "2023-12-20T11:09:43.577Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9591865541",
+                "email": "vayuvah@gmail.com"
+              },
+              "person": {
+                "name": "vayclenz"
+              }
+            },
+            "cascaded_level": 1
+          },
+          {
             "respondent_action": "RESOLVED",
-            "short_desc": "<p>Dear Customer,</p><p>We'll initiate the replacement for damaged product</p>",
-            "updated_at": "2023-12-19T12:02:41.593Z",
+            "short_desc": "<p>Dear Retailer,</p><p>We've found that product is packed well, no damages found outside, Kindly check with fulfillment.</p>",
+            "updated_at": "2023-12-20T11:14:25.214Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
@@ -92,8 +92,8 @@
           }
         ]
       },
-      "created_at": "2023-12-19T11:41:43.951Z",
-      "updated_at": "2023-12-19T12:07:53.763Z",
+      "created_at": "2023-12-20T11:08:41.839Z",
+      "updated_at": "2023-12-20T11:14:25.324Z",
       "resolution_provider": {
         "respondent_info": {
           "type": "CASCADED-COUNTERPARTY-NP",
@@ -118,23 +118,13 @@
             "gros": [
               {
                 "person": {
-                  "name": "Siva"
+                  "name": "Vignesh"
                 },
                 "contact": {
-                  "phone": "72597 65765",
-                  "email": "siva.t@digiit.biz"
+                  "phone": "89758 43258",
+                  "email": "vignesh.a@digiit.biz"
                 },
                 "gro_type": "CASCADED-COUNTERPARTY-NP-GRO"
-              },
-              {
-                "person": {
-                  "name": "Siva"
-                },
-                "contact": {
-                  "phone": "72597 65765",
-                  "email": "siva.t@digiit.biz"
-                },
-                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
               }
             ]
           }
@@ -142,7 +132,7 @@
       },
       "resolution": {
         "short_desc": "Damaged Product",
-        "long_desc": "<p>Dear Customer,</p><p>We'll initiate the replacement for damaged product</p>",
+        "long_desc": "<p>Dear Retailer,</p><p>We've found that product is packed well, no damages found outside, Kindly check with fulfillment.</p>",
         "action_triggered": "NO-ACTION"
       }
     }
