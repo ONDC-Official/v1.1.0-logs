@@ -1,46 +1,27 @@
 {
   "context": {
-    "domain": "nic2004:60232",
+    "domain": "nic2004:52110",
     "core_version": "1.0.0",
-    "bap_id": "preprod-bpp.dbs.digiit.io",
-    "bap_uri": "https://preprod-bpp.dbs.digiit.io/logistics/bap",
-    "bpp_id": "preprod-bpp.iway.digiit.io",
-    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "bpp_id": "preprod-bpp.dbs.digiit.io",
+    "bpp_uri": "https://preprod-bpp.dbs.digiit.io",
     "city": "std:080",
     "country": "IND",
-    "action": "on_issue",
-    "transaction_id": "f11c2c35-dcdc-4a59-bf58-0b90895a259d",
-    "message_id": "b53c9211-b2f1-4dc6-b38e-3a30e1991edb",
-    "timestamp": "2023-11-30T04:00:20.701Z",
-    "ttl": "PT30S"
+    "action": "on_issue_status",
+    "transaction_id": "9f2b9738-0008-4750-bfe8-bbc5fda13cca",
+    "message_id": "02161c23-862c-49fb-b880-9ffa98378ed6",
+    "timestamp": "2023-12-20T11:12:40.457Z"
   },
   "message": {
     "issue": {
-      "id": "73d06569-d607-4ecd-824a-19ffc0f7c165",
+      "id": "9ca1094e-bb9a-4b13-841f-9f336631292f",
       "issue_actions": {
         "respondent_actions": [
           {
-            "respondent_action": "CASCADED",
-            "short_desc": "<p>Dear LSP,</p><p>Product seems to be damaged, Kindly confirm why damage was occurred.</p>",
-            "updated_at": "2023-11-30T03:56:53.514Z",
-            "updated_by": {
-              "org": {
-                "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
-              },
-              "contact": {
-                "phone": "9591865541",
-                "email": "vayuvah@gmail.com"
-              },
-              "person": {
-                "name": "vayclenz"
-              }
-            },
-            "cascaded_level": 2
-          },
-          {
             "respondent_action": "PROCESSING",
-            "short_desc": "<p>Dear Customer,</p><p>We'll check this complaint</p>",
-            "updated_at": "2023-11-30T03:54:56.858Z",
+            "short_desc": "<p>Dear Customer,</p><p>We're checking it</p>",
+            "updated_at": "2023-12-20T11:09:43.577Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
@@ -56,9 +37,27 @@
             "cascaded_level": 1
           },
           {
+            "respondent_action": "CASCADED",
+            "short_desc": "<p>Dear LSP,</p><p>Kindly confirm the damage from your side</p>",
+            "updated_at": "2023-12-20T11:10:43.902Z",
+            "updated_by": {
+              "org": {
+                "name": "preprod-bpp.dbs.digiit.io::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9591865541",
+                "email": "vayuvah@gmail.com"
+              },
+              "person": {
+                "name": "vayclenz"
+              }
+            },
+            "cascaded_level": 2
+          },
+          {
             "respondent_action": "PROCESSING",
-            "short_desc": "<p>Dear Retailer,</p><p>we're checking it</p>",
-            "updated_at": "2023-11-30T04:00:20.588Z",
+            "short_desc": "<p>Dear Retailer,</p><p>We're looking into this</p>",
+            "updated_at": "2023-12-20T11:12:00.634Z",
             "updated_by": {
               "org": {
                 "name": "preprod-bpp.iway.digiit.io::nic2004:60232"
@@ -75,8 +74,8 @@
           }
         ]
       },
-      "created_at": "2023-11-30T03:53:38.798Z",
-      "updated_at": "2023-11-30T04:00:20.678Z"
+      "created_at": "2023-12-20T11:08:41.839Z",
+      "updated_at": "2023-12-20T11:10:44.049Z"
     }
   }
 }
