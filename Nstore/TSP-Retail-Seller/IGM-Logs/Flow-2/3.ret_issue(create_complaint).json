@@ -1,0 +1,135 @@
+{
+  "context": {
+    "ttl": "PT30S",
+    "city": "std:080",
+    "action": "issue",
+    "bap_id": "b-ondc-seller-bpp.nlincs.in",
+    "bpp_id": "ondc-dev.delhivery.com",
+    "domain": "nic2004:60232",
+    "bap_uri": "https://b-ondc-seller-bpp.nlincs.in/lbap",
+    "bpp_uri": "https://ondc-dev.delhivery.com/delhivery/v1/",
+    "country": "IND",
+    "timestamp": "2023-12-18T10:21:38.193Z",
+    "message_id": "TO2EuFCdEdKtfbUofYz44ca9wYD81keZ",
+    "core_version": "1.0.0",
+    "transaction_id": "a9963602-382d-4833-9ded-160f55e91acb"
+  },
+  "message": {
+    "issue": {
+      "id": "f91061c7-4f59-4ea6-a580-6cb4253a0c3c",
+      "source": {
+        "type": "CONSUMER",
+        "network_participant_id": "buyer-app-preprod.ondc.org"
+      },
+      "status": "OPEN",
+      "category": "FULFILLMENT",
+      "created_at": "2023-12-18T10:20:27.461Z",
+      "issue_type": "ISSUE",
+      "updated_at": "2023-12-18T10:21:37.848Z",
+      "description": {
+        "images": [
+          "https://buyer-app-preprod.ondc.org/issueApis/uploads/1702894827805.png"
+        ],
+        "long_desc": "Order was not delivered yet. pls update",
+        "short_desc": "Order was not delivered yet",
+        "additional_desc": {
+          "url": "https://buyerapp.com/additonal-details/desc.txt",
+          "content_type": "text/plain"
+        }
+      },
+      "sub_category": "FLM03",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2023-12-18T10:20:55.263Z",
+            "updated_by": {
+              "org": {
+                "name": "b-ondctsp.nlincs.in::nic2004:52110"
+              },
+              "person": {
+                "name": "Sathish Kumar"
+              },
+              "contact": {
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619"
+              }
+            },
+            "cascaded_level": 1,
+            "respondent_action": "PROCESSING"
+          },
+          {
+            "short_desc": "Complaint cascaded",
+            "updated_at": "2023-12-18T10:21:37.848Z",
+            "updated_by": {
+              "org": {
+                "name": "b-ondc-seller-bpp.nlincs.in::nic2004:60232"
+              },
+              "person": {
+                "name": "Sathish Kumar"
+              },
+              "contact": {
+                "email": "sathisha@nstore.in",
+                "phone": "9629295619"
+              }
+            },
+            "cascaded_level": 2,
+            "respondent_action": "CASCADED"
+          }
+        ],
+        "complainant_actions": [
+          {
+            "short_desc": "Complaint created",
+            "updated_at": "2023-12-18T10:20:27.461Z",
+            "updated_by": {
+              "org": {
+                "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+              },
+              "person": {
+                "name": "Rishabhnand Singh"
+              },
+              "contact": {
+                "email": "Rishabhnand.singh@ondc.org",
+                "phone": "6239083807"
+              }
+            },
+            "complainant_action": "OPEN"
+          }
+        ]
+      },
+      "order_details": {
+        "id": "27857_232131200334_21312_gz3eaa",
+        "items": [
+          {
+            "id": "0874965e-5c22-4803-97b2-0b406d3ea7df",
+            "quantity": 1
+          }
+        ],
+        "state": "Accepted",
+        "provider_id": "Delhivery",
+        "fulfillments": [
+          {
+            "id": "1",
+            "state": "Pending"
+          }
+        ],
+        "merchant_order_id": "2023-12-18-160756"
+      },
+      "complainant_info": {
+        "person": {
+          "name": "Sathish Kumar"
+        },
+        "contact": {
+          "email": "sathisha@nstore.in",
+          "phone": "9629295619"
+        }
+      },
+      "expected_response_time": {
+        "duration": "PT1H"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      }
+    }
+  }
+}

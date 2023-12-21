@@ -1,0 +1,97 @@
+ {
+            "context": {
+                "ttl": "PT30S",
+                "city": "std:044",
+                "action": "issue",
+                "bap_id": "buyer-app-preprod.ondc.org",
+                "bpp_id": "b-ondctsp.nlincs.in",
+                "domain": "nic2004:52110",
+                "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+                "bpp_uri": "https://b-ondctsp.nlincs.in/bpp",
+                "country": "IND",
+                "timestamp": "2023-12-18T10:20:27.805Z",
+                "message_id": "ee87539d-8562-4b64-b68c-008c6e537f1e",
+                "core_version": "1.0.0",
+                "transaction_id": "517bd051-20c9-4405-b40b-af0f9e61c372"
+            },
+            "message": {
+                "issue": {
+                    "id": "f91061c7-4f59-4ea6-a580-6cb4253a0c3c",
+                    "source": {
+                        "type": "CONSUMER",
+                        "network_participant_id": "buyer-app-preprod.ondc.org"
+                    },
+                    "status": "OPEN",
+                    "category": "FULFILLMENT",
+                    "created_at": "2023-12-18T10:20:27.461Z",
+                    "issue_type": "ISSUE",
+                    "updated_at": "2023-12-18T10:20:27.461Z",
+                    "description": {
+                        "images": [
+                            "https://buyer-app-preprod.ondc.org/issueApis/uploads/1702894827805.png"
+                        ],
+                        "long_desc": "Order was not delivered yet. pls update",
+                        "short_desc": "Order was not delivered yet",
+                        "additional_desc": {
+                            "url": "https://buyerapp.com/additonal-details/desc.txt",
+                            "content_type": "text/plain"
+                        }
+                    },
+                    "sub_category": "FLM03",
+                    "issue_actions": {
+                        "respondent_actions": [],
+                        "complainant_actions": [
+                            {
+                                "short_desc": "Complaint created",
+                                "updated_at": "2023-12-18T10:20:27.805Z",
+                                "updated_by": {
+                                    "org": {
+                                        "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+                                    },
+                                    "person": {
+                                        "name": "Rishabhnand Singh"
+                                    },
+                                    "contact": {
+                                        "email": "Rishabhnand.singh@ondc.org",
+                                        "phone": "6239083807"
+                                    }
+                                },
+                                "complainant_action": "OPEN"
+                            }
+                        ]
+                    },
+                    "order_details": {
+                        "id": "2023-12-18-160756",
+                        "items": [
+                            {
+                                "id": "14601",
+                                "quantity": 1
+                            }
+                        ],
+                        "state": "In-progress",
+                        "provider_id": "21312",
+                        "fulfillments": [
+                            {
+                                "id": "21312_560034",
+                                "state": "Pending"
+                            }
+                        ]
+                    },
+                    "complainant_info": {
+                        "person": {
+                            "name": "Sathish Kumar"
+                        },
+                        "contact": {
+                            "email": "sathisha@nstore.in",
+                            "phone": "9629295619"
+                        }
+                    },
+                    "expected_response_time": {
+                        "duration": "PT1H"
+                    },
+                    "expected_resolution_time": {
+                        "duration": "P1D"
+                    }
+                }
+            }
+        }
