@@ -5,74 +5,74 @@
         "country": "IND",
         "city": "std:080",
         "action": "issue",
-        "core_version": "1.0.0",
-        "bap_uri": "https://ref-seller-app-preprod.ondc.org/protocol/logistics/v1",
-        "bap_id": "ref-seller-app-preprod.ondc.org",
-        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+        "bap_id": "biz.test.bitsila.com",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
         "bpp_id": "ondc-wrapper-ondc.proxy.dev.dunzo.com",
-        "transaction_id": "b953f9ec-6dc2-4387-ad7b-a90779bf0d65",
-        "timestamp": "2023-10-23T10:50:39.079Z",
-        "message_id": "57da8a94-e89b-498a-ae3d-014b094aed8a",
-        "ttl": "PT30S"
+        "bpp_uri": "https://ondc-wrapper-ondc.proxy.dev.dunzo.com/",
+        "transaction_id": "LOG-2859-1001-1013-X58l",
+        "message_id": "22c04186-b4a3-4786-a2c4-47b9c093e5d4",
+        "timestamp": "2023-12-14T10:06:20.437Z",
+        "ttl": "PT30S",
+        "core_version": "1.0.0"
     },
     "message":
     {
         "issue":
         {
-            "id": "4d33b442-493a-4d12-8f2a-f74a50805e47",
-            "category": "ITEM",
-            "sub_category": "ITM04",
+            "id": "f9737052-d37f-4fea-89c9-98bfd2d12c72",
+            "category": "FULFILLMENT",
+            "sub_category": "FLM02",
             "complainant_info":
             {
                 "person":
                 {
-                    "name": "Sample"
+                    "name": "Smruti Ranjan"
                 },
                 "contact":
                 {
-                    "phone": "7985006375",
-                    "email": "rahul12@gmail.com"
+                    "email": "srb13456123456@gmail.com",
+                    "phone": "7207734015"
                 }
             },
             "order_details":
             {
-                "id": "2023-10-23-355770",
-                "state": "Created",
+                "id": "2859-1001-1013",
                 "items":
                 [
                     {
-                        "id": "19d619cb-3f22-47e6-b9a6-55cbaabfaf60",
-                        "quantity": 2
+                        "id": "1033743",
+                        "quantity": 1
                     }
                 ],
+                "state": "In-progress",
+                "provider_id": "2859:1456",
                 "fulfillments":
                 [
                     {
-                        "id": "1",
+                        "id": "FPA:1456:::256292:NAD",
                         "state": "Pending"
                     }
                 ],
-                "provider_id": "0b67b06e-ce5f-4476-982f-2db677f8f649",
-                "merchant_order_id": ""
+                "merchant_order_id": "1001-1013"
             },
             "description":
             {
-                "short_desc": "quality is not good",
-                "long_desc": "quality is not good as shown in app",
+                "images":
+                [
+                    "https://buyer-app-preprod.ondc.org/issueApis/uploads/1702548363276.png"
+                ],
+                "long_desc": "Delay in delivery",
+                "short_desc": "Delay in delivery",
                 "additional_desc":
                 {
                     "url": "https://buyerapp.com/additonal-details/desc.txt",
                     "content_type": "text/plain"
-                },
-                "images":
-                [
-                    "https://buyer-app-preprod.ondc.org/issueApis/uploads/1698058163599.png"
-                ]
+                }
             },
             "source":
             {
                 "network_participant_id": "buyer-app-preprod.ondc.org",
-                "type": "SELLER"
+                "type": "CONSUMER"
             },
             "expected_response_time":
             {
@@ -89,77 +89,77 @@
                 "complainant_actions":
                 [
                     {
-                        "complainant_action": "OPEN",
                         "short_desc": "Complaint created",
-                        "updated_at": "2023-10-23T10:49:23.600Z",
+                        "updated_at": "2023-12-14T10:06:03.277Z",
                         "updated_by":
                         {
                             "org":
                             {
                                 "name": "buyer-app-preprod.ondc.org::nic2004:52110"
                             },
-                            "contact":
-                            {
-                                "phone": "6239083807",
-                                "email": "Rishabhnand.singh@ondc.org"
-                            },
                             "person":
                             {
                                 "name": "Rishabhnand Singh"
+                            },
+                            "contact":
+                            {
+                                "email": "Rishabhnand.singh@ondc.org",
+                                "phone": "6239083807"
                             }
-                        }
+                        },
+                        "complainant_action": "OPEN"
                     }
                 ],
                 "respondent_actions":
                 [
                     {
-                        "cascaded_level": 1,
-                        "respondent_action": "PROCESSING",
-                        "short_desc": "We are investigating your concern.",
-                        "updated_at": "2023-10-23T10:50:22.563Z",
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-12-14T10:06:07.661Z",
                         "updated_by":
                         {
-                            "contact":
-                            {
-                                "email": "ankush.verma@dunzo.in",
-                                "phone": "7985006375"
-                            },
                             "org":
                             {
-                                "name": "https://ref-seller-app-preprod.ondc.org::"
+                                "name": "biz.test.bitsila.com::nic2004:52110"
                             },
                             "person":
                             {
-                                "name": "Ankush Verma"
+                                "name": "Subash Kumar"
+                            },
+                            "contact":
+                            {
+                                "email": "support@bitsila.com",
+                                "phone": "9632056194"
                             }
-                        }
+                        },
+                        "cascaded_level": 1,
+                        "respondent_action": "PROCESSING"
                     },
                     {
                         "respondent_action": "CASCADED",
-                        "short_desc": "We have sent your request to logistics.",
-                        "updated_at": "2023-10-23T10:50:39.076Z",
+                        "short_desc": "Complaint cascaded",
+                        "updated_at": "2023-12-14T10:06:20.429Z",
                         "updated_by":
                         {
                             "org":
                             {
-                                "name": "https://ref-seller-app-preprod.ondc.org::"
-                            },
-                            "contact":
-                            {
-                                "phone": "9876543210",
-                                "email": "Rishabhnand.singh@ondc.org"
+                                "name": "biz.test.bitsila.com::nic2004:52110"
                             },
                             "person":
                             {
-                                "name": "Rishabhnand Singh"
+                                "name": "Subash Kumar"
+                            },
+                            "contact":
+                            {
+                                "email": "support@bitsila.com",
+                                "phone": "9632056194"
                             }
                         },
                         "cascaded_level": 2
                     }
                 ]
             },
-            "created_at": "2023-10-23T10:50:39.076Z",
-            "updated_at": "2023-10-23T10:50:39.080Z"
+            "created_at": "2023-12-14T10:06:02.406Z",
+            "updated_at": "2023-12-14T10:06:20.429Z"
         }
     }
 }
