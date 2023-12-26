@@ -1,1 +1,1 @@
-Mystore seller App IGM
+Seller app IGM mystore
