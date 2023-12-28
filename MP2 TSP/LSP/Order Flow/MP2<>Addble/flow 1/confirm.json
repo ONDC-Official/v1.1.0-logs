@@ -1,0 +1,177 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "transaction_id": "9bf623a7-57e4-41c5-9069-95e3f3a01a3e",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "message_id": "1d6b3dff-0ad9-46dc-8f6e-e6ae6036f317",
+        "timestamp": "2023-12-14T06:34:59.395Z",
+        "ttl": "PT30S",
+        "bpp_id": "preprod.logistics-seller.mp2.in",
+        "bpp_uri": "https://preprod.logistics-seller.mp2.in/ondc"
+    },
+    "message": {
+        "order": {
+            "id": "538e0f11-f630-4487-af99-a83a1008b5ad",
+            "state": "Created",
+            "provider": {
+                "id": "MP2 LSP"
+            },
+            "items": [
+                {
+                    "id": "mp2_sdd",
+                    "category_id": "Same Day Delivery",
+                    "descriptor": {
+                        "code": "P2P"
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Addble",
+                "address": {
+                    "name": "BTMC",
+                    "building": "BTMC",
+                    "locality": "Uripok Kangchup Road, Lamdeng Khunou, Lamsang",
+                    "city": "Imphal",
+                    "state": "Manipur",
+                    "country": "India",
+                    "area_code": "795146"
+                },
+                "tax_number": "14A00000001G1Z4",
+                "phone": "7085097856",
+                "email": "ondcsupport@addble.com",
+                "created_at": "2023-12-14T06:34:52.676Z",
+                "updated_at": "2023-12-14T06:34:52.676Z"
+            },
+            "fulfillments": [
+                {
+                    "id": "mp2_sdd_f1",
+                    "type": "Prepaid",
+                    "start": {
+                        "location": {
+                            "gps": "12.91414122848031,77.63768276727586",
+                            "address": {
+                                "building": "BDA Complex",
+                                "street": "14th Main Road",
+                                "locality": "Sector 6, HSR Layout",
+                                "state": "Karnataka",
+                                "area_code": "560095",
+                                "city": "BENGALURU",
+                                "country": "India",
+                                "door": "35/A",
+                                "landmark": "Near DTDC Courier HSR Layout",
+                                "name": "Syngenta Store"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9954780440",
+                            "email": "jane@addble.com"
+                        },
+                        "person": {
+                            "name": "Jane"
+                        },
+                        "instructions": {
+                            "short_desc": "074812",
+                            "long_desc": "Pick up code"
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "gps": "12.9814010000001, 77.6409810000001",
+                            "address": {
+                                "name": "Poornima",
+                                "building": "Landmark",
+                                "locality": "Jayanagar",
+                                "city": "Bengaluru",
+                                "state": "Karnataka",
+                                "country": "IND",
+                                "area_code": "560038"
+                            }
+                        },
+                        "contact": {
+                            "email": "poornima@mp2.in",
+                            "phone": "9900163002"
+                        },
+                        "person": {
+                            "name": "Poornima"
+                        },
+                        "instructions": {
+                            "short_desc": "753316",
+                            "long_desc": "Delivery code"
+                        }
+                    },
+                    "tags": {
+                        "@ondc/org/order_ready_to_ship": "No"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1.0"
+                },
+                "breakup": [
+                    {
+                        "@ondc/org/item_id": "mp2_sdd",
+                        "@ondc/org/title_type": "Delivery Charge",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1.0"
+                        }
+                    }
+                ]
+            },
+            "@ondc/org/linked_order": {
+                "items": [
+                    {
+                        "category_id": "Grocery",
+                        "descriptor": {
+                            "name": "CARROT Seeds 100 gm"
+                        },
+                        "quantity": {
+                            "count": 1,
+                            "measure": {
+                                "unit": "Kilogram",
+                                "value": 0.1
+                            }
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "148"
+                        }
+                    }
+                ],
+                "provider": {
+                    "descriptor": {
+                        "name": "Syngenta Store"
+                    },
+                    "address": {
+                        "name": "Syngenta Store",
+                        "locality": "Sector 6, HSR Layout",
+                        "street": "Sector 6, HSR Layout",
+                        "area_code": "560095",
+                        "city": "BENGALURU",
+                        "state": "Karnataka"
+                    }
+                },
+                "order": {
+                    "id": "2023-12-14-147160",
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 0.1
+                    }
+                }
+            },
+            "payment": {
+                "collected_by": "BAP",
+                "type": "POST-FULFILLMENT"
+            },
+            "created_at": "2023-12-14T06:34:59.395Z",
+            "updated_at": "2023-12-14T06:34:59.395Z"
+        }
+    }
+}
