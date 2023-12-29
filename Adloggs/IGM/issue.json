@@ -1,0 +1,128 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "issue",
+        "bap_id": "biz.test.bitsila.com",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "bpp_id": "preprod.ondc.adloggs.com",
+        "bpp_uri": "https://preprod.ondc.adloggs.com/ondcapi",
+        "transaction_id": "LOG-3147-1001-1016-CyXP",
+        "message_id": "e5fee186-adb4-4f68-9231-d04f02e2897a",
+        "timestamp": "2023-12-29T12:04:56.795Z",
+        "ttl": "PT30S",
+        "core_version": "1.0.0"
+    },
+    "message": {
+        "issue": {
+            "id": "c5dc693a-903b-48a9-a2d1-2e9f08cd7337",
+            "category": "FULFILLMENT",
+            "sub_category": "FLM02",
+            "complainant_info": {
+                "person": {
+                    "name": "Smruti Ranjan"
+                },
+                "contact": {
+                    "email": "srb13456123456@gmail.com",
+                    "phone": "7207734015"
+                }
+            },
+            "order_details": {
+                "id": "3147-1001-1016",
+                "items": [{
+                    "id": "1302384",
+                    "quantity": 1
+                }],
+                "state": "In-progress",
+                "provider_id": "3147:2091",
+                "fulfillments": [{
+                    "id": "FPA:2091:::296690:NAD",
+                    "state": "Pending"
+                }],
+                "merchant_order_id": "1001-1016"
+            },
+            "description": {
+                "images": [
+                    "https://buyer-app-preprod.ondc.org/issueApis/uploads/1703851473401.png"
+                ],
+                "long_desc": "Delay in delivery",
+                "short_desc": "Delay in delivery",
+                "additional_desc": {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                }
+            },
+            "source": {
+                "network_participant_id": "buyer-app-preprod.ondc.org",
+                "type": "CONSUMER"
+            },
+            "expected_response_time": {
+                "duration": "PT1H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "status": "OPEN",
+            "issue_type": "ISSUE",
+            "issue_actions": {
+                "complainant_actions": [{
+                    "short_desc": "Complaint created",
+                    "updated_at": "2023-12-29T12:04:33.401Z",
+                    "updated_by": {
+                        "org": {
+                            "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+                        },
+                        "person": {
+                            "name": "Rishabhnand Singh"
+                        },
+                        "contact": {
+                            "email": "Rishabhnand.singh@ondc.org",
+                            "phone": "6239083807"
+                        }
+                    },
+                    "complainant_action": "OPEN"
+                }],
+                "respondent_actions": [{
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-12-29T12:04:42.055Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "biz.test.bitsila.com::nic2004:52110"
+                            },
+                            "person": {
+                                "name": "Subash Kumar"
+                            },
+                            "contact": {
+                                "email": "support@bitsila.com",
+                                "phone": "9632056194"
+                            }
+                        },
+                        "cascaded_level": 1,
+                        "respondent_action": "PROCESSING"
+                    },
+                    {
+                        "respondent_action": "CASCADED",
+                        "short_desc": "Complaint cascaded",
+                        "updated_at": "2023-12-29T12:04:56.751Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "biz.test.bitsila.com::nic2004:52110"
+                            },
+                            "person": {
+                                "name": "Subash Kumar"
+                            },
+                            "contact": {
+                                "email": "support@bitsila.com",
+                                "phone": "9632056194"
+                            }
+                        },
+                        "cascaded_level": 2
+                    }
+                ]
+            },
+            "created_at": "2023-12-29T12:04:32.425Z",
+            "updated_at": "2023-12-29T12:04:56.751Z"
+        }
+    }
+}
