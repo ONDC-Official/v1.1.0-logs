@@ -1,0 +1,82 @@
+
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "country": "IND",
+    "city": "std:06188",
+    "action": "on_issue",
+    "core_version": "1.0.0",
+    "bap_id": "ondcpreprodtest.sellerapp.in",
+    "bap_uri": "https://qa.ondc.sellerapp.in/bapl/u/",
+    "bpp_id": "dev-ondc.shiprocket.in",
+    "bpp_uri": "https://dev-ondc.shiprocket.in/",
+    "transaction_id": "testingtxn-000012346568934566",
+    "message_id": "9e13e6dc-bc2e-4276-907c-fb66dd6412ec",
+    "timestamp": "2023-12-25T07:44:32.416Z"
+  },
+  "message": {
+    "issue": {
+      "id": "SR-FD-Test-000344",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "updated_at": "2023-12-25T07:44:17.962Z",
+            "updated_by": {
+              "org": {
+                "name": "ondcpreprodtest.sellerapp.in::nic2004:52110"
+              },
+              "contact": {
+                "phone": "9999988880",
+                "email": "test@test.com"
+              },
+              "person": {
+                "name": "Test User"
+              }
+            },
+            "short_desc": "Complaint is being processed",
+            "cascaded_level": 1
+          },
+          {
+            "respondent_action": "CASCADED",
+            "updated_at": "2023-12-25T07:44:18.283Z",
+            "updated_by": {
+              "org": {
+                "name": "ondcpreprodtest.sellerapp.in::nic2004:60232"
+              },
+              "contact": {
+                "phone": "9999988880",
+                "email": "test@test.com"
+              },
+              "person": {
+                "name": "Test User"
+              }
+            },
+            "short_desc": "Cascaded",
+            "cascaded_level": 2
+          },
+          {
+            "respondent_action": "PROCESSING",
+            "updated_at": "2023-12-25T07:44:31.375Z",
+            "updated_by": {
+              "org": {
+                "name": "ondc.shiprocket.in::nic2004:60232"
+              },
+              "contact": {
+                "phone": "8860542050",
+                "email": "supportondc@shiprocket.com"
+              },
+              "person": {
+                "name": "Shiprocket Support"
+              }
+            },
+            "short_desc": "We have acknowledged the issue. Your request is being processed.",
+            "cascaded_level": 2
+          }
+        ]
+      },
+      "created_at": "2023-12-25T07:44:17.752Z",
+      "updated_at": "2023-12-25T07:44:31.375Z"
+    }
+  }
+}

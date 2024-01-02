@@ -1,1 +1,1 @@
-IGM flow 2 seller app mystore
+Flow 2 seller app IGM

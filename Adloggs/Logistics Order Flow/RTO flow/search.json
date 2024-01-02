@@ -1,0 +1,79 @@
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "bap_id": "biz.test.bitsila.com",
+        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "transaction_id": "LOG-e6d7a15e-9a78-4572-8d77-d2bfdb673698",
+        "message_id": "c85a62b6-44b1-4a04-b401-491982f0c7a9",
+        "timestamp": "2023-12-28T13:31:08.371Z",
+        "ttl": "PT30S",
+        "core_version": "1.1.0"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "id": "Standard Delivery"
+            },
+            "payment": {
+                "@ondc/org/collection_amount": "0.0"
+            },
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "unit": "Kilogram",
+                    "value": 0.5
+                },
+                "value": {
+                    "currency": "INR",
+                    "value": "256.0"
+                },
+                "dimensions": {
+                    "length": {
+                        "unit": "meter",
+                        "value": 0.1
+                    },
+                    "breadth": {
+                        "unit": "meter",
+                        "value": 0.1
+                    },
+                    "height": {
+                        "unit": "meter",
+                        "value": 0.1
+                    }
+                },
+                "category": "Grocery"
+            },
+            "fulfillment": {
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "id": "1016:717",
+                        "gps": "13.011526, 77.6459584",
+                        "address": {
+                            "area_code": "560043"
+                        }
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.9814010000001, 77.6409810000001",
+                        "address": {
+                            "area_code": "560038"
+                        }
+                    }
+                }
+            },
+            "provider": {
+                "time": {
+                    "days": "1,2,3,4,5,6,7",
+                    "range": {
+                        "start": "0700",
+                        "end": "2350"
+                    }
+                }
+            }
+        }
+    }
+}
