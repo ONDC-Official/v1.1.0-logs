@@ -1,0 +1,154 @@
+
+
+{
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:06188",
+        "action": "issue",
+        "core_version": "1.0.0",
+        "bap_id": "ondcpreprodtest.sellerapp.in",
+        "bap_uri": "https://qa.ondc.sellerapp.in/bapl/u/",
+        "bpp_id": "dev-ondc.shiprocket.in",
+        "bpp_uri": "https://dev-ondc.shiprocket.in/",
+        "transaction_id": "testingtxn-000012346568934566",
+        "message_id": "9e13e6dc-bc2e-4276-907c-fb66dd6412ec",
+        "timestamp": "2023-12-25T08:03:55.199Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+       "issue": {
+            "id": "SR-FD-Test-000344",
+            "category": "FULFILLMENT",
+            "sub_category": "FLM03",
+            "complainant_info": {
+                "person": {
+                    "name": "Ajay Dubey"
+                },
+                "contact": {
+                    "phone": "9879879870",
+                    "email": "ajay.dubey@yahoo.com"
+                }
+            },
+            "order_details": {
+                "id": "Test-Order-abcd-0054",
+                "state": "In-progress",
+                "items": [
+                    {
+                        "id": "54",
+                        "quantity": 1
+                    }
+                ],
+                "fulfillments": [
+                    {
+                        "id": "ON_NETWORK_LOGISTICS_FULFILLMENT-1",
+                        "state": "Order-picked-up"
+                    }
+                ],
+                "provider_id": "54",
+                "merchant_order_id": "101"
+            },
+            "description": {
+                "short_desc": "Test::-Test-Delayed delivery",
+                "long_desc": "Test::-Delayed delivery plz make sure its on time",
+                "additional_desc": {
+                    "url": "https://interfac-app/igm/additonal-desc/user/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images": [
+                    "http://interfacing.app/addtional-details/img1.png"
+                ]
+            },
+            "source": {
+                "network_participant_id": "ondc.eunimart.com",
+                "type": "CONSUMER"
+            },
+            "expected_response_time": {
+                "duration": "PT2H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "status": "CLOSED",
+            "issue_type": "ISSUE",
+            "issue_actions": {
+                "complainant_actions": [
+                    {
+                        "complainant_action": "OPEN",
+                        "short_desc": "Complaint created",
+                        "updated_at": "2023-12-25T07:44:17.642Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.eunimart.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9894748270",
+                                "email": "interfacingapp@interface.com"
+                            },
+                            "person": {
+                                "name": "Ayush Singh"
+                            }
+                        }
+                    },
+                     {
+                        "complainant_action": "CLOSE",
+                        "short_desc": "Complaint Closed",
+                        "updated_at": "2023-12-25T08:03:54.974Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondc.eunimart.com::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9894748270",
+                                "email": "interfacingapp@interface.com"
+                            },
+                            "person": {
+                                "name": "Ayush Singh"
+                            }
+                        }
+                    }
+                ],
+                "respondent_actions": [
+                    {
+                        "respondent_action": "PROCESSING",
+                        "short_desc": "Complaint is being processed",
+                        "updated_at": "2023-12-25T07:44:17.962Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondcpreprodtest.sellerapp.in::nic2004:52110"
+                            },
+                            "contact": {
+                                "phone": "9999988880",
+                                "email": "test@test.com"
+                            },
+                            "person": {
+                                "name": "Test User"
+                            }
+                        },
+                        "cascaded_level": 1
+                    },
+                    {
+                        "respondent_action": "CASCADED",
+                        "short_desc": "Cascaded",
+                        "updated_at": "2023-12-25T07:44:18.283Z",
+                        "updated_by": {
+                            "org": {
+                                "name": "ondcpreprodtest.sellerapp.in::nic2004:60232"
+                            },
+                            "contact": {
+                                "phone": "9999988880",
+                                "email": "test@test.com"
+                            },
+                            "person": {
+                                "name": "Test User"
+                            }
+                        },
+                        "cascaded_level": 2
+                    }
+                ]
+            },
+            "created_at": "2023-12-25T07:44:17.752Z",
+            "updated_at": "2023-12-25T08:03:54.974Z"
+        }
+    }
+}
