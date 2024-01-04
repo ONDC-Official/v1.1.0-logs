@@ -1,0 +1,438 @@
+{
+  "context": {
+    "ttl": "P2D",
+    "city": "*",
+    "action": "receiver_recon",
+    "bap_id": "api.razorpay.com/ondc-rsp-test",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "domain": "ONDC:NTS10",
+    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "country": "IND",
+    "timestamp": "2024-01-04T03:41:31.502Z",
+    "message_id": "99e65bbd-a002-410a-b02e-0e0ef3654c32",
+    "core_version": "1.0.0",
+    "transaction_id": "947fecd8-a244-438d-93f5-491443fced06"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "id": "dbs_2023-12-05-996424",
+          "state": "Completed",
+          "payment": {
+            "uri": "https://api.razorpay.com/rsp",
+            "type": "ON-ORDER",
+            "params": {
+              "amount": "30",
+              "currency": "INR",
+              "transaction_id": "49c8b4ab-ac10-4507-b837-5bc9d4c2de4a",
+              "transaction_status": "PAID"
+            },
+            "status": "PAID",
+            "tl_method": "http/get",
+            "collected_by": "BAP",
+            "@ondc/org/return_window": "P6D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_details": [
+              {
+                "bank_name": "ICICI Bank",
+                "branch_name": "Trichy main",
+                "upi_address": "",
+                "settlement_type": "neft",
+                "beneficiary_name": "I way pickup and delivery services private limited",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "30",
+                "settlement_status": "PAID",
+                "beneficiary_address": "2A,MALAR VALAGAM,VICTORIAROAD,WORAIYUR,TIRUCHIRAPALLI,620003,TAMIL NADU,INDIA",
+                "settlement_ifsc_code": "ICIC0006609",
+                "settlement_reference": "byEg_ZwAPgEgMNt",
+                "settlement_timestamp": "2024-01-04T03:41:30.735Z",
+                "settlement_counterparty": "buyer-app",
+                "settlement_bank_account_no": "613205040412"
+              }
+            ],
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_amount": "0"
+          },
+          "provider": {
+            "name": {
+              "code": "107-Account-DER-292",
+              "name": "Iway Logistics & Delivery"
+            },
+            "address": "SLS SPENCER, Horamavu Agara, Bangalore, 560061"
+          },
+          "created_at": "2024-01-04T03:41:30.735Z",
+          "invoice_no": "SINV00401",
+          "updated_at": "2024-01-04T03:41:30.735Z",
+          "payerdetails": {
+            "payer_name": "M/S. DIGIIT BUSINESS SERVICES PRIVATE LIMITED",
+            "payer_address": "Bangalore",
+            "payer_bank_code": "HDFC0004824",
+            "payer_account_no": "578000000001",
+            "payer_virtual_payment_address": "digiit@paytm"
+          },
+          "recon_status": "01",
+          "settlement_id": "kplE87H1MTMeina",
+          "transaction_id": "376a0fdd-17b4-47b9-b538-c46bacbe65a7",
+          "receiver_app_id": "preprod-bpp.iway.digiit.io",
+          "collector_app_id": "preprod-bpp.dbs.digiit.io",
+          "withholding_tax_gst": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "withholding_tax_tds": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "deduction_by_collector": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "settlement_reason_code": "01",
+          "settlement_reference_no": "byEg_ZwAPgEgMNt",
+          "order_recon_status": "01"
+        },
+        {
+          "id": "dbs_2023-12-05-858146",
+          "state": "Completed",
+          "payment": {
+            "uri": "https://api.razorpay.com/rsp",
+            "type": "ON-ORDER",
+            "params": {
+              "amount": "30",
+              "currency": "INR",
+              "transaction_id": "af10a6c7-7150-4957-835f-eea9db334449",
+              "transaction_status": "PAID"
+            },
+            "status": "PAID",
+            "tl_method": "http/get",
+            "collected_by": "BAP",
+            "@ondc/org/return_window": "P6D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_details": [
+              {
+                "bank_name": "ICICI Bank",
+                "branch_name": "Trichy main",
+                "upi_address": "",
+                "settlement_type": "neft",
+                "beneficiary_name": "I way pickup and delivery services private limited",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "30",
+                "settlement_status": "PAID",
+                "beneficiary_address": "2A,MALAR VALAGAM,VICTORIAROAD,WORAIYUR,TIRUCHIRAPALLI,620003,TAMIL NADU,INDIA",
+                "settlement_ifsc_code": "ICIC0006609",
+                "settlement_reference": "byEg_ZwAPgEgMNt",
+                "settlement_timestamp": "2024-01-04T03:41:30.735Z",
+                "settlement_counterparty": "buyer-app",
+                "settlement_bank_account_no": "613205040412"
+              }
+            ],
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_amount": "0"
+          },
+          "provider": {
+            "name": {
+              "code": "107-Account-DER-292",
+              "name": "Iway Logistics & Delivery"
+            },
+            "address": "SLS SPENCER, Horamavu Agara, Bangalore, 560061"
+          },
+          "created_at": "2024-01-04T03:41:30.735Z",
+          "invoice_no": "SINV00402",
+          "updated_at": "2024-01-04T03:41:30.735Z",
+          "payerdetails": {
+            "payer_name": "M/S. DIGIIT BUSINESS SERVICES PRIVATE LIMITED",
+            "payer_address": "Bangalore",
+            "payer_bank_code": "HDFC0004824",
+            "payer_account_no": "578000000001",
+            "payer_virtual_payment_address": "digiit@paytm"
+          },
+          "recon_status": "01",
+          "settlement_id": "kplE87H1MTMeina",
+          "transaction_id": "62fc30ca-85d6-4510-8d8c-a30c031e37e1",
+          "receiver_app_id": "preprod-bpp.iway.digiit.io",
+          "collector_app_id": "preprod-bpp.dbs.digiit.io",
+          "withholding_tax_gst": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "withholding_tax_tds": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "deduction_by_collector": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "settlement_reason_code": "01",
+          "settlement_reference_no": "byEg_ZwAPgEgMNt",
+          "order_recon_status": "01"
+        },
+        {
+          "id": "dbs_2023-12-05-779001",
+          "state": "Completed",
+          "payment": {
+            "uri": "https://api.razorpay.com/rsp",
+            "type": "ON-ORDER",
+            "params": {
+              "amount": "30",
+              "currency": "INR",
+              "transaction_id": "8ed5a385-d8e3-49ed-b2ac-aa9ffe4da50b",
+              "transaction_status": "PAID"
+            },
+            "status": "PAID",
+            "tl_method": "http/get",
+            "collected_by": "BAP",
+            "@ondc/org/return_window": "P6D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_details": [
+              {
+                "bank_name": "ICICI Bank",
+                "branch_name": "Trichy main",
+                "upi_address": "",
+                "settlement_type": "neft",
+                "beneficiary_name": "I way pickup and delivery services private limited",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "30",
+                "settlement_status": "PAID",
+                "beneficiary_address": "2A,MALAR VALAGAM,VICTORIAROAD,WORAIYUR,TIRUCHIRAPALLI,620003,TAMIL NADU,INDIA",
+                "settlement_ifsc_code": "ICIC0006609",
+                "settlement_reference": "byEg_ZwAPgEgMNt",
+                "settlement_timestamp": "2024-01-04T03:41:30.735Z",
+                "settlement_counterparty": "buyer-app",
+                "settlement_bank_account_no": "613205040412"
+              }
+            ],
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_amount": "0"
+          },
+          "provider": {
+            "name": {
+              "code": "107-Account-DER-292",
+              "name": "Iway Logistics & Delivery"
+            },
+            "address": "SLS SPENCER, Horamavu Agara, Bangalore, 560061"
+          },
+          "created_at": "2024-01-04T03:41:30.735Z",
+          "invoice_no": "SINV00403",
+          "updated_at": "2024-01-04T03:41:30.735Z",
+          "payerdetails": {
+            "payer_name": "M/S. DIGIIT BUSINESS SERVICES PRIVATE LIMITED",
+            "payer_address": "Bangalore",
+            "payer_bank_code": "HDFC0004824",
+            "payer_account_no": "578000000001",
+            "payer_virtual_payment_address": "digiit@paytm"
+          },
+          "recon_status": "01",
+          "settlement_id": "kplE87H1MTMeina",
+          "transaction_id": "68627790-f920-4ecd-9e85-fc07a7285ecc",
+          "receiver_app_id": "preprod-bpp.iway.digiit.io",
+          "collector_app_id": "preprod-bpp.dbs.digiit.io",
+          "withholding_tax_gst": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "withholding_tax_tds": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "deduction_by_collector": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "settlement_reason_code": "01",
+          "settlement_reference_no": "byEg_ZwAPgEgMNt",
+          "order_recon_status": "01"
+        },
+        {
+          "id": "dbs_2023-12-05-524793",
+          "state": "Completed",
+          "payment": {
+            "uri": "https://api.razorpay.com/rsp",
+            "type": "ON-ORDER",
+            "params": {
+              "amount": "30",
+              "currency": "INR",
+              "transaction_id": "c957533a-e5c4-4014-834d-19ef14cdbabf",
+              "transaction_status": "PAID"
+            },
+            "status": "PAID",
+            "tl_method": "http/get",
+            "collected_by": "BAP",
+            "@ondc/org/return_window": "P6D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_details": [
+              {
+                "bank_name": "ICICI Bank",
+                "branch_name": "Trichy main",
+                "upi_address": "",
+                "settlement_type": "neft",
+                "beneficiary_name": "I way pickup and delivery services private limited",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "30",
+                "settlement_status": "PAID",
+                "beneficiary_address": "2A,MALAR VALAGAM,VICTORIAROAD,WORAIYUR,TIRUCHIRAPALLI,620003,TAMIL NADU,INDIA",
+                "settlement_ifsc_code": "ICIC0006609",
+                "settlement_reference": "byEg_ZwAPgEgMNt",
+                "settlement_timestamp": "2024-01-04T03:41:30.735Z",
+                "settlement_counterparty": "buyer-app",
+                "settlement_bank_account_no": "613205040412"
+              }
+            ],
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_amount": "0"
+          },
+          "provider": {
+            "name": {
+              "code": "107-Account-DER-292",
+              "name": "Iway Logistics & Delivery"
+            },
+            "address": "SLS SPENCER, Horamavu Agara, Bangalore, 560061"
+          },
+          "created_at": "2024-01-04T03:41:30.735Z",
+          "invoice_no": "SINV00404",
+          "updated_at": "2024-01-04T03:41:30.735Z",
+          "payerdetails": {
+            "payer_name": "M/S. DIGIIT BUSINESS SERVICES PRIVATE LIMITED",
+            "payer_address": "Bangalore",
+            "payer_bank_code": "HDFC0004824",
+            "payer_account_no": "578000000001",
+            "payer_virtual_payment_address": "digiit@paytm"
+          },
+          "recon_status": "01",
+          "settlement_id": "kplE87H1MTMeina",
+          "transaction_id": "d7f65d94-34de-4cbb-aef3-7ecc9852aff9",
+          "receiver_app_id": "preprod-bpp.iway.digiit.io",
+          "collector_app_id": "preprod-bpp.dbs.digiit.io",
+          "withholding_tax_gst": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "withholding_tax_tds": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "deduction_by_collector": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "settlement_reason_code": "01",
+          "settlement_reference_no": "byEg_ZwAPgEgMNt",
+          "order_recon_status": "01"
+        },
+        {
+          "id": "dbs_2023-12-05-671576",
+          "state": "Completed",
+          "payment": {
+            "uri": "https://api.razorpay.com/rsp",
+            "type": "ON-ORDER",
+            "params": {
+              "amount": "30",
+              "currency": "INR",
+              "transaction_id": "eacdd7b2-e7a9-4cb4-aa26-eab749468756",
+              "transaction_status": "PAID"
+            },
+            "status": "PAID",
+            "tl_method": "http/get",
+            "collected_by": "BAP",
+            "@ondc/org/return_window": "P6D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_details": [
+              {
+                "bank_name": "ICICI Bank",
+                "branch_name": "Trichy main",
+                "upi_address": "",
+                "settlement_type": "neft",
+                "beneficiary_name": "I way pickup and delivery services private limited",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "30",
+                "settlement_status": "PAID",
+                "beneficiary_address": "2A,MALAR VALAGAM,VICTORIAROAD,WORAIYUR,TIRUCHIRAPALLI,620003,TAMIL NADU,INDIA",
+                "settlement_ifsc_code": "ICIC0006609",
+                "settlement_reference": "byEg_ZwAPgEgMNt",
+                "settlement_timestamp": "2024-01-04T03:41:30.735Z",
+                "settlement_counterparty": "buyer-app",
+                "settlement_bank_account_no": "613205040412"
+              }
+            ],
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_amount": "0"
+          },
+          "provider": {
+            "name": {
+              "code": "107-Account-DER-292",
+              "name": "Iway Logistics & Delivery"
+            },
+            "address": "SLS SPENCER, Horamavu Agara, Bangalore, 560061"
+          },
+          "created_at": "2024-01-04T03:41:30.735Z",
+          "invoice_no": "SINV00405",
+          "updated_at": "2024-01-04T03:41:30.735Z",
+          "payerdetails": {
+            "payer_name": "M/S. DIGIIT BUSINESS SERVICES PRIVATE LIMITED",
+            "payer_address": "Bangalore",
+            "payer_bank_code": "HDFC0004824",
+            "payer_account_no": "578000000001",
+            "payer_virtual_payment_address": "digiit@paytm"
+          },
+          "recon_status": "01",
+          "settlement_id": "kplE87H1MTMeina",
+          "transaction_id": "bdee3e95-6241-4c56-acd7-67a8e7fb6a68",
+          "receiver_app_id": "preprod-bpp.iway.digiit.io",
+          "collector_app_id": "preprod-bpp.dbs.digiit.io",
+          "withholding_tax_gst": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "withholding_tax_tds": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "deduction_by_collector": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "settlement_reason_code": "01",
+          "settlement_reference_no": "byEg_ZwAPgEgMNt",
+          "order_recon_status": "01"
+        }
+      ]
+    }
+  }
+}
