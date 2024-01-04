@@ -5,27 +5,39 @@
         "city": "std:080",
         "action": "search",
         "core_version": "1.1.0",
-        "transaction_id": "3dc7f5f6-9d72-4324-bab7-c2d84d31ec4d",
+        "transaction_id": "28e393ae-fc47-4e91-8401-f7591800b174",
         "bap_id": "preprod-ondc.addble.com",
         "bap_uri": "https://preprod-ondc.addble.com/",
-        "message_id": "212e20e4-bce0-4de8-89a2-3a152199cca6",
-        "timestamp": "2023-12-28T11:24:24.016Z",
+        "message_id": "4c0864b9-d752-4c47-855c-c2f51c6753d9",
+        "timestamp": "2024-01-02T10:00:29.532Z",
         "ttl": "PT30S"
     },
     "message": {
         "intent": {
             "category": {
-                "id": "Standard Delivery"
+                "id": "Immediate Delivery"
             },
             "provider": {
                 "time": {
                     "days": "1,2,3,4,5,6,7",
+                    "time": {
+                        "range": {
+                            "start": "0000",
+                            "end": "2359"
+                        },
+                        "schedule": {
+                            "holidays": []
+                        }
+                    },
                     "range": {
-                        "start": "0000",
-                        "end": "2359"
+                        "end": "1800",
+                        "start": "0900"
                     },
                     "schedule": {
-                        "holidays": []
+                        "holidays": [
+                            "2023-10-8",
+                            "2023-10-16"
+                        ]
                     }
                 }
             },
@@ -33,9 +45,9 @@
                 "type": "Prepaid",
                 "start": {
                     "location": {
-                        "gps": "12.91414122848031,77.63768276727586",
+                        "gps": "12.962629784285113,77.641461789608",
                         "address": {
-                            "area_code": "560095"
+                            "area_code": "560038"
                         }
                     }
                 },
@@ -53,10 +65,10 @@
                     "unit": "Kilogram",
                     "value": 0.1
                 },
-                "category": "Grocery",
+                "category": "F&B",
                 "value": {
                     "currency": "INR",
-                    "value": "49"
+                    "value": "230"
                 }
             }
         }
