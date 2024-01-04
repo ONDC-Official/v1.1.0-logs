@@ -1,0 +1,106 @@
+{
+  "context": {
+    "ttl": "P2D",
+    "city": "*",
+    "action": "receiver_recon",
+    "bap_id": "api.razorpay.com/ondc-rsp-test",
+    "bpp_id": "preprod-bpp.iway.digiit.io",
+    "domain": "ONDC:NTS10",
+    "bap_uri": "https://api.razorpay.com/ondc-rsp-test",
+    "bpp_uri": "https://preprod-bpp.iway.digiit.io",
+    "country": "IND",
+    "timestamp": "2024-01-04T03:42:48.066Z",
+    "message_id": "eb32752e-b69e-4561-b9fc-79f2fbede342",
+    "core_version": "1.0.0",
+    "transaction_id": "17bc2f08-ac0e-4087-a7b2-9ad0fe250814"
+  },
+  "message": {
+    "orderbook": {
+      "orders": [
+        {
+          "id": "dbs_2023-12-05-495151",
+          "state": "Completed",
+          "payment": {
+            "uri": "https://api.razorpay.com/rsp",
+            "type": "ON-ORDER",
+            "params": {
+              "amount": "30",
+              "currency": "INR",
+              "transaction_id": "16e14577-6185-4b3c-9074-ffacb220e95f",
+              "transaction_status": "PAID"
+            },
+            "status": "PAID",
+            "tl_method": "http/get",
+            "collected_by": "BAP",
+            "@ondc/org/return_window": "P6D",
+            "@ondc/org/settlement_basis": "Collection",
+            "@ondc/org/settlement_window": "P10D",
+            "@ondc/org/settlement_details": [
+              {
+                "bank_name": "ICICI Bank",
+                "branch_name": "Trichy main",
+                "upi_address": "",
+                "settlement_type": "neft",
+                "beneficiary_name": "I way pickup and delivery services private limited",
+                "settlement_phase": "sale-amount",
+                "settlement_amount": "29.10",
+                "settlement_status": "PAID",
+                "beneficiary_address": "2A,MALAR VALAGAM,VICTORIA\\\\\\\\nROAD,WORAIYUR,TIRUCHIRAPALLI,620\\\\\\\\n003,TAMIL NADU,INDIA",
+                "settlement_ifsc_code": "ICIC0006609",
+                "settlement_reference": "5gZyUXrIzTj0R6M",
+                "settlement_timestamp": "2024-01-04T03:42:47.609Z",
+                "settlement_counterparty": "buyer-app",
+                "settlement_bank_account_no": "613205040412"
+              }
+            ],
+            "@ondc/org/withholding_amount": "0",
+            "@ondc/org/collected_by_status": "Assert",
+            "@ondc/org/return_window_status": "Assert",
+            "@ondc/org/settlement_basis_status": "Assert",
+            "@ondc/org/settlement_window_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_type": "Amount",
+            "@ondc/org/withholding_amount_status": "Assert",
+            "@ondc/org/buyer_app_finder_fee_amount": "0.90"
+          },
+          "provider": {
+            "name": {
+              "code": "107-Account-DER-292",
+              "name": "Iway Logistics & Delivery"
+            },
+            "address": "SLS SPENCER, Horamavu Agara, Bangalore, 560061"
+          },
+          "created_at": "2024-01-04T03:42:47.609Z",
+          "invoice_no": "SINV00406",
+          "updated_at": "2024-01-04T03:42:47.609Z",
+          "payerdetails": {
+            "payer_name": "M/S. DIGIIT BUSINESS SERVICES PRIVATE LIMITED",
+            "payer_address": "Bangalore",
+            "payer_bank_code": "HDFC0004824",
+            "payer_account_no": "578000000001",
+            "payer_virtual_payment_address": "digiit@paytm"
+          },
+          "recon_status": "01",
+          "settlement_id": "DUr63k5nI9uVi1h",
+          "transaction_id": "6ab29a65-3b61-4724-9efd-e66b20f3513c",
+          "receiver_app_id": "preprod-bpp.iway.digiit.io",
+          "collector_app_id": "preprod-bpp.dbs.digiit.io",
+          "withholding_tax_gst": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "withholding_tax_tds": {
+            "value": "0",
+            "currency": "INR"
+          },
+          "deduction_by_collector": {
+            "value": "0.90",
+            "currency": "INR"
+          },
+          "settlement_reason_code": "01",
+          "settlement_reference_no": "5gZyUXrIzTj0R6M",
+          "order_recon_status": "01"
+        }
+      ]
+    }
+  }
+}
