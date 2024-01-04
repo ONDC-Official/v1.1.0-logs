@@ -1,0 +1,122 @@
+{
+  "request": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "issue",
+      "core_version": "1.0.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "995e1104-6076-4f80-8da8-6719f084c07c",
+      "message_id": "c8d750b9-a532-458f-b858-fd95a0507ddd",
+      "timestamp": "2024-01-04T11:26:09.969Z",
+      "bpp_id": "beta.mystore.in",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "issue": {
+        "id": "f49c9dfa-0ff9-4e1b-8a80-9dce9a8d80f9",
+        "category": "FULFILLMENT",
+        "sub_category": "FLM07",
+        "complainant_info": {
+          "person": {
+            "name": "Abhay"
+          },
+          "contact": {
+            "phone": "9876543210",
+            "email": "test@test.com"
+          }
+        },
+        "order_details": {
+          "id": "2024-01-04-496360",
+          "state": "Accepted",
+          "items": [
+            {
+              "id": "64d9d8a356e0a23d9e61141e",
+              "quantity": 1
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "6ms632182de73ddd2001adf06811e2",
+              "state": "Pending"
+            }
+          ],
+          "provider_id": "632182de73ddd2001adf0681"
+        },
+        "description": {
+          "short_desc": "Package info mismatch of the order testing",
+          "long_desc": "Package info mismatch of the order testing",
+          "additional_desc": {
+            "url": "https://buyerapp.com/additonal-details/desc.txt",
+            "content_type": "text/plain"
+          },
+          "images": [
+            "https://buyer-app-preprod.ondc.org/issueApis/uploads/1704367569969.png"
+          ]
+        },
+        "source": {
+          "network_participant_id": "buyer-app-preprod.ondc.org",
+          "type": "CONSUMER"
+        },
+        "expected_response_time": {
+          "duration": "PT1H"
+        },
+        "expected_resolution_time": {
+          "duration": "P1D"
+        },
+        "status": "OPEN",
+        "issue_type": "ISSUE",
+        "issue_actions": {
+          "complainant_actions": [
+            {
+              "complainant_action": "OPEN",
+              "short_desc": "Complaint created",
+              "updated_at": "2024-01-04T11:26:09.970Z",
+              "updated_by": {
+                "org": {
+                  "name": "buyer-app-preprod.ondc.org::nic2004:52110"
+                },
+                "contact": {
+                  "phone": "6239083807",
+                  "email": "Rishabhnand.singh@ondc.org"
+                },
+                "person": {
+                  "name": "Rishabhnand Singh"
+                }
+              }
+            }
+          ],
+          "respondent_actions": []
+        },
+        "created_at": "2024-01-04T11:26:10.578Z",
+        "updated_at": "2024-01-04T11:26:10.578Z"
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "domain": "nic2004:52110",
+      "country": "IND",
+      "city": "std:080",
+      "action": "issue",
+      "core_version": "1.0.0",
+      "bap_id": "buyer-app-preprod.ondc.org",
+      "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+      "bpp_uri": "https://beta.mystore.in/ondc/1.0/",
+      "transaction_id": "995e1104-6076-4f80-8da8-6719f084c07c",
+      "message_id": "c8d750b9-a532-458f-b858-fd95a0507ddd",
+      "timestamp": "2024-01-04T11:26:09.969Z",
+      "bpp_id": "beta.mystore.in",
+      "ttl": "PT30S",
+      "is_igm": 1
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}
