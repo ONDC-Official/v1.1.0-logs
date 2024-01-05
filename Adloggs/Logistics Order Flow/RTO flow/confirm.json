@@ -1,191 +1,169 @@
 {
-  "context": {
-    "domain": "nic2004:60232",
-    "country": "IND",
-    "city": "std:080",
-    "action": "confirm",
-    "bap_id": "biz.test.bitsila.com",
-    "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
-    "bpp_id": "preprod.ondc.adloggs.com",
-    "bpp_uri": "https://preprod.ondc.adloggs.com/ondcapi",
-    "transaction_id": "LOG-e6d7a15e-9a78-4572-8d77-d2bfdb673698",
-    "message_id": "6fd36a77-83d7-4849-a060-d053ac83fa7e",
-    "timestamp": "2023-12-28T13:32:19.640Z",
-    "ttl": "PT30S",
-    "core_version": "1.1.0"
-  },
-  "message": {
-    "order": {
-      "id": "2023-12-28-164913",
-      "state": "Created",
-      "provider": {
-        "id": "P1",
-        "locations": [
-          
-        ]
-      },
-      "items": [
-        {
-          "id": "I1",
-          "descriptor": {
-            "code": "P2P"
-          },
-          "category_id": "Immediate Delivery"
-        }
-      ],
-      "quote": {
-        "price": {
-          "value": "1.18",
-          "currency": "INR"
-        },
-        "breakup": [
-          {
-            "price": {
-              "value": "1.00",
-              "currency": "INR"
-            },
-            "@ondc/org/item_id": "I1",
-            "@ondc/org/title_type": "Delivery Charge"
-          },
-          {
-            "price": {
-              "value": "0.18",
-              "currency": "INR"
-            },
-            "@ondc/org/item_id": "I1",
-            "@ondc/org/title_type": "Tax"
-          }
-        ]
-      },
-      "fulfillments": [
-        {
-          "id": "1",
-          "type": "Prepaid",
-          "tags": {
-            "@ondc/org/order_ready_to_ship": "no"
-          },
-          "tracking": true,
-          "start": {
-            "person": {
-              "name": "Store manager"
-            },
-            "location": {
-              "id": "1016:717",
-              "gps": "13.011526, 77.6459584",
-              "address": {
-                "city": "Bengaluru",
-                "name": "DS das banaswadi new",
-                "state": " Karnataka",
-                "country": "India",
-                "building": "Banaswadi Fire Station 2J5X+33V, 157/3, 2nd C Cross Rd, HRBR Layout 1st Block, Balaji Layout",
-                "locality": "Subbaiahnapalya, Banaswadi",
-                "area_code": "560043"
-              }
-            },
-            "contact": {
-              "email": "test1@test.com",
-              "phone": "9999999998"
-            },
-            "instructions": {
-              "short_desc": "",
-              "long_desc": ""
-            }
-          },
-          "end": {
-            "person": {
-              "name": "Smruti Ranjan"
-            },
-            "location": {
-              "gps": "12.9814010000001, 77.6409810000001",
-              "address": {
-                "city": "Bengaluru",
-                "door": "",
-                "name": "Smruti Ranjan",
-                "state": "Karnataka",
-                "country": "IND",
-                "building": "Krishnarajapura",
-                "locality": "37, Sunshine Paradise Layout 2nd Cross Rd, Sonnenahalli Colony",
-                "area_code": "560038"
-              }
-            },
-            "contact": {
-              "email": "srb13456123456@gmail.com",
-              "phone": "7207734015"
-            },
-            "instructions": {
-              "short_desc": "37, Sunshine Paradise Layout 2nd Cross Rd, Sonnenahalli Colony",
-              "long_desc": "37, Sunshine Paradise Layout 2nd Cross Rd, Sonnenahalli Colony"
-            }
-          }
-        }
-      ],
-      "billing": {
-        "name": "Bitsila",
-        "address": {
-          "name": "221, INNOBITS SOLUTIONS PVT LTD",
-          "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
-          "city": "Bengaluru",
-          "state": "Karnataka",
-          "country": "India",
-          "area_code": "560085"
-        },
-        "tax_number": "29AAFCI9011D1ZQ",
-        "phone": "8951898275",
-        "email": "finance@bitsila.com",
-        "created_at": "2023-12-28T13:32:08.818Z",
-        "updated_at": "2023-12-28T13:32:08.818Z"
-      },
-      "payment": {
-        "type": "ON-ORDER",
-        "collected_by": "BAP",
-        "@ondc/org/settlement_details": [
-          
-        ],
-        "@ondc/org/collection_amount": "0.0"
-      },
-      "@ondc/org/linked_order": {
-        "items": [
-          {
-            "category_id": "Grocery",
-            "descriptor": {
-              "name": "Nivea Men 42K2 For Runners Shower Gel"
-            },
-            "quantity": {
-              "count": 1,
-              "measure": {
-                "unit": "Kilogram",
-                "value": 0.5
-              }
-            },
-            "price": {
-              "currency": "INR",
-              "value": "250.0"
-            }
-          }
-        ],
-        "provider": {
-          "descriptor": {
-            "name": "Ds Super Market - DS das banaswadi new"
-          },
-          "address": {
-            "name": "",
-            "street": "Banaswadi Fire Station 2J5X+33V, 157/3, 2nd C Cross Rd, HRBR Layout 1st Block, Balaji Layout",
-            "locality": "Subbaiahnapalya, Banaswadi",
-            "city": "Bengaluru",
-            "state": "Karnataka",
-            "area_code": "560043"
-          }
-        },
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "confirm",
+        "core_version": "1.1.0",
+        "transaction_id": "bb1cd1cb-1868-4c20-9aec-b18cb078275f",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "message_id": "c75ca83d-b3a2-4260-9a01-a3b37f3189f6",
+        "timestamp": "2024-01-04T13:27:42.741Z",
+        "ttl": "PT30S",
+        "bpp_id": "preprod.ondc.adloggs.com",
+        "bpp_uri": "https://preprod.ondc.adloggs.com/ondcapi"
+    },
+    "message": {
         "order": {
-          "id": "2023-12-28-164913",
-          "weight": {
-            "unit": "Kilogram",
-            "value": 0.5
-          }
+            "id": "fb5c6161-2bd9-47ca-919c-532ab1776255",
+            "state": "Created",
+            "provider": {
+                "id": "P1"
+            },
+            "items": [{
+                "id": "I1",
+                "category_id": "Immediate Delivery",
+                "descriptor": {
+                    "code": "P2P"
+                }
+            }],
+            "billing": {
+                "name": "Addble",
+                "address": {
+                    "name": "BTMC",
+                    "building": "BTMC",
+                    "locality": "Uripok Kangchup Road, Lamdeng Khunou, Lamsang",
+                    "city": "Imphal",
+                    "state": "Manipur",
+                    "country": "India",
+                    "area_code": "795146"
+                },
+                "tax_number": "14A00000001G1Z4",
+                "phone": "7085097856",
+                "email": "ondcsupport@addble.com",
+                "created_at": "2024-01-04T13:27:30.980Z",
+                "updated_at": "2024-01-04T13:27:30.980Z"
+            },
+            "fulfillments": [{
+                "id": "1",
+                "type": "Prepaid",
+                "start": {
+                    "location": {
+                        "gps": "12.91414122848031,77.63768276727586",
+                        "address": {
+                            "building": "BDA Complex",
+                            "street": "14th Main Road",
+                            "locality": "Sector 6, HSR Layout",
+                            "state": "Karnataka",
+                            "area_code": "560095",
+                            "city": "BENGALURU",
+                            "country": "India",
+                            "door": "35/A",
+                            "landmark": "Near DTDC Courier HSR Layout",
+                            "name": "Syngenta Store"
+                        }
+                    },
+                    "contact": {
+                        "phone": "9954780440",
+                        "email": "jane@addble.com"
+                    },
+                    "person": {
+                        "name": "Jane"
+                    },
+                    "instructions": {
+                        "short_desc": "681952",
+                        "long_desc": "Pick up code"
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.9814010000001, 77.6409810000001",
+                        "address": {
+                            "name": "kumar212",
+                            "building": "",
+                            "locality": "1213",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560038"
+                        }
+                    },
+                    "contact": {
+                        "email": "ranjith@adloggs.com",
+                        "phone": "9655714482"
+                    },
+                    "person": {
+                        "name": "kumar212"
+                    },
+                    "instructions": {
+                        "short_desc": "801563",
+                        "long_desc": "Delivery code"
+                    }
+                },
+                "tags": {
+                    "@ondc/org/order_ready_to_ship": "yes"
+                }
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "11.80"
+                },
+                "breakup": [{
+                    "@ondc/org/item_id": "I1",
+                    "@ondc/org/title_type": "Delivery Charge",
+                    "price": {
+                        "currency": "INR",
+                        "value": "11.80"
+                    }
+                }]
+            },
+            "@ondc/org/linked_order": {
+                "items": [{
+                    "category_id": "Grocery",
+                    "descriptor": {
+                        "name": "PEA Seeds 100 gm"
+                    },
+                    "quantity": {
+                        "count": 1,
+                        "measure": {
+                            "unit": "Kilogram",
+                            "value": 0.1
+                        }
+                    },
+                    "price": {
+                        "currency": "INR",
+                        "value": "20"
+                    }
+                }],
+                "provider": {
+                    "descriptor": {
+                        "name": "Syngenta Store"
+                    },
+                    "address": {
+                        "name": "Syngenta Store",
+                        "locality": "Sector 6, HSR Layout",
+                        "street": "Sector 6, HSR Layout",
+                        "area_code": "560095",
+                        "city": "BENGALURU",
+                        "state": "Karnataka"
+                    }
+                },
+                "order": {
+                    "id": "2024-01-04-352702",
+                    "weight": {
+                        "unit": "Kilogram",
+                        "value": 0.1
+                    }
+                }
+            },
+            "payment": {
+                "collected_by": "BAP",
+                "type": "ON-ORDER"
+            },
+            "created_at": "2024-01-04T13:27:42.741Z",
+            "updated_at": "2024-01-04T13:27:42.741Z"
         }
-      },
-      "created_at": "2023-12-28T13:32:19.640Z",
-      "updated_at": "2023-12-28T13:32:19.640Z"
     }
-  }
 }

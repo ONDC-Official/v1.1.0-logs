@@ -5,50 +5,41 @@
         "city": "std:080",
         "action": "on_confirm",
         "core_version": "1.1.0",
-        "bap_id": "biz.test.bitsila.com",
-        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
         "bpp_id": "preprod.ondc.adloggs.com",
         "bpp_uri": "https://preprod.ondc.adloggs.com/ondcapi",
-        "transaction_id": "LOG-e6d7a15e-9a78-4572-8d77-d2bfdb673698",
-        "message_id": "6fd36a77-83d7-4849-a060-d053ac83fa7e",
-        "timestamp": "2023-12-28T13:32:20.765Z"
+        "transaction_id": "bb1cd1cb-1868-4c20-9aec-b18cb078275f",
+        "message_id": "c75ca83d-b3a2-4260-9a01-a3b37f3189f6",
+        "timestamp": "2024-01-04T13:27:44.368Z"
     },
     "message": {
         "order": {
-            "id": "2023-12-28-164913",
+            "id": "fb5c6161-2bd9-47ca-919c-532ab1776255",
             "state": "Accepted",
             "provider": {
                 "id": "P1"
             },
             "items": [{
                 "id": "I1",
+                "category_id": "Immediate Delivery",
                 "descriptor": {
                     "code": "P2P"
-                },
-                "category_id": "Immediate Delivery"
+                }
             }],
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "1.18"
+                    "value": "11.80"
                 },
                 "breakup": [{
-                        "@ondc/org/item_id": "I1",
-                        "@ondc/org/title_type": "Delivery Charge",
-                        "price": {
-                            "currency": "INR",
-                            "value": "1.00"
-                        }
-                    },
-                    {
-                        "@ondc/org/item_id": "I1",
-                        "@ondc/org/title_type": "Tax",
-                        "price": {
-                            "currency": "INR",
-                            "value": "0.18"
-                        }
+                    "@ondc/org/item_id": "I1",
+                    "@ondc/org/title_type": "Delivery Charge",
+                    "price": {
+                        "currency": "INR",
+                        "value": "11.80"
                     }
-                ]
+                }]
             },
             "fulfillments": [{
                 "id": "1",
@@ -58,26 +49,43 @@
                         "code": "Pending"
                     }
                 },
-                "tracking": true
+                "tracking": true,
+                "start": {
+                    "time": {
+                        "range": {
+                            "start": "2024-01-04T13:32:43.000Z",
+                            "end": "2024-01-04T13:47:43.000Z"
+                        }
+                    }
+                },
+                "end": {
+                    "time": {
+                        "range": {
+                            "start": "2024-01-04T13:47:43.000Z",
+                            "end": "2024-01-04T14:02:43.000Z"
+                        }
+                    }
+                }
             }],
             "billing": {
-                "name": "Bitsila",
+                "name": "Addble",
                 "address": {
-                    "name": "221, INNOBITS SOLUTIONS PVT LTD",
-                    "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
-                    "city": "Bengaluru",
-                    "state": "Karnataka",
+                    "name": "BTMC",
+                    "building": "BTMC",
+                    "locality": "Uripok Kangchup Road, Lamdeng Khunou, Lamsang",
+                    "city": "Imphal",
+                    "state": "Manipur",
                     "country": "India",
-                    "area_code": "560085"
+                    "area_code": "795146"
                 },
-                "tax_number": "29AAFCI9011D1ZQ",
-                "phone": "8951898275",
-                "email": "finance@bitsila.com",
-                "created_at": "2023-12-28T13:32:08.818Z",
-                "updated_at": "2023-12-28T13:32:08.818Z"
+                "tax_number": "14A00000001G1Z4",
+                "phone": "7085097856",
+                "email": "ondcsupport@addble.com",
+                "created_at": "2024-01-04T13:27:30.980Z",
+                "updated_at": "2024-01-04T13:27:30.980Z"
             },
-            "created_at": "2023-12-28T13:32:19.640Z",
-            "updated_at": "2023-12-28T13:32:20.765Z"
+            "created_at": "2024-01-04T13:27:42.741Z",
+            "updated_at": "2024-01-04T13:27:44.368Z"
         }
     }
 }

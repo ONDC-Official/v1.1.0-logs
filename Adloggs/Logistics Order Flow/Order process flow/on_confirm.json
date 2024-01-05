@@ -1,88 +1,91 @@
 {
     "context": {
-      "domain": "nic2004:60232",
-      "country": "IND",
-      "city": "std:080",
-      "action": "on_confirm",
-      "core_version": "1.1.0",
-      "bap_id": "biz.test.bitsila.com",
-      "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
-      "bpp_id": "preprod.ondc.adloggs.com",
-      "bpp_uri": "https://preprod.ondc.adloggs.com/ondcapi",
-      "transaction_id": "LOG-1016-1009-1063-OHW8",
-      "message_id": "3fdb7cbf-a41f-438f-9a90-3e0d93933a7c",
-      "timestamp": "2023-12-28T13:32:00.572Z"
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_confirm",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "bpp_id": "preprod.ondc.adloggs.com",
+        "bpp_uri": "https://preprod.ondc.adloggs.com/ondcapi",
+        "transaction_id": "e3de0cb3-0095-4e5f-888e-0a0364918b7b",
+        "message_id": "67e9f237-4bad-456c-9d45-a120562639e6",
+        "timestamp": "2024-01-04T13:19:23.034Z"
     },
     "message": {
-      "order": {
-        "id": "1016-1009-1063",
-        "state": "Accepted",
-        "provider": {
-          "id": "P1"
-        },
-        "items": [
-          {
-            "id": "I1",
-            "descriptor": {
-              "code": "P2P"
+        "order": {
+            "id": "09f68f41-4d6b-4c6d-96ee-6faa88a54f96",
+            "state": "Accepted",
+            "provider": {
+                "id": "P1"
             },
-            "category_id": "Immediate Delivery"
-          }
-        ],
-        "quote": {
-          "price": {
-            "currency": "INR",
-            "value": "1.18"
-          },
-          "breakup": [
-            {
-              "@ondc/org/item_id": "I1",
-              "@ondc/org/title_type": "Delivery Charge",
-              "price": {
-                "currency": "INR",
-                "value": "1.00"
-              }
+            "items": [{
+                "id": "I1",
+                "category_id": "Immediate Delivery",
+                "descriptor": {
+                    "code": "P2P"
+                }
+            }],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "11.80"
+                },
+                "breakup": [{
+                    "@ondc/org/item_id": "I1",
+                    "@ondc/org/title_type": "Delivery Charge",
+                    "price": {
+                        "currency": "INR",
+                        "value": "11.80"
+                    }
+                }]
             },
-            {
-              "@ondc/org/item_id": "I1",
-              "@ondc/org/title_type": "Tax",
-              "price": {
-                "currency": "INR",
-                "value": "0.18"
-              }
-            }
-          ]
-        },
-        "fulfillments": [
-          {
-            "id": "1",
-            "type": "Prepaid",
-            "state": {
-              "descriptor": {
-                "code": "Pending"
-              }
+            "fulfillments": [{
+                "id": "1",
+                "type": "Prepaid",
+                "state": {
+                    "descriptor": {
+                        "code": "Pending"
+                    }
+                },
+                "tracking": true,
+                "start": {
+                    "time": {
+                        "range": {
+                            "start": "2024-01-04T13:24:22.000Z",
+                            "end": "2024-01-04T13:39:22.000Z"
+                        }
+                    }
+                },
+                "end": {
+                    "time": {
+                        "range": {
+                            "start": "2024-01-04T13:39:22.000Z",
+                            "end": "2024-01-04T13:54:22.000Z"
+                        }
+                    }
+                }
+            }],
+            "billing": {
+                "name": "Addble",
+                "address": {
+                    "name": "BTMC",
+                    "building": "BTMC",
+                    "locality": "Uripok Kangchup Road, Lamdeng Khunou, Lamsang",
+                    "city": "Imphal",
+                    "state": "Manipur",
+                    "country": "India",
+                    "area_code": "795146"
+                },
+                "tax_number": "29AAFCI9011D1ZQ",
+                "phone": "7085097856",
+                "email": "ondcsupport@addble.com",
+                "created_at": "2024-01-04T13:19:17.160Z",
+                "updated_at": "2024-01-04T13:19:17.160Z"
             },
-            "tracking": true
-          }
-        ],
-        "billing": {
-          "name": "Bitsila",
-          "address": {
-            "name": "221, INNOBITS SOLUTIONS PVT LTD",
-            "locality": "Level 3, Kempa Plaza, Dr.Puneet Rajkumar Road",
-            "city": "Bengaluru",
-            "state": "Karnataka",
-            "country": "India",
-            "area_code": "560085"
-          },
-          "tax_number": "29AAFCI9011D1ZQ",
-          "phone": "8951898275",
-          "email": "finance@bitsila.com",
-          "created_at": "2023-12-28T13:31:58.468Z",
-          "updated_at": "2023-12-28T13:31:58.468Z"
-        },
-        "created_at": "2023-12-28T13:31:59.158Z",
-        "updated_at": "2023-12-28T13:32:00.572Z"
-      }
+            "created_at": "2024-01-04T13:19:21.836Z",
+            "updated_at": "2024-01-04T13:19:23.034Z"
+        }
     }
-  }
+}
