@@ -1,96 +1,90 @@
 {
-  "context": {
-    "domain": "nic2004:60232",
-    "country": "IND",
-    "city": "std:080",
-    "action": "on_search",
-    "core_version": "1.1.0",
-    "bap_id": "biz.test.bitsila.com",
-    "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
-    "bpp_id": "preprod.ondc.adloggs.com",
-    "bpp_uri": "https://preprod.ondc.adloggs.com/ondcapi",
-    "transaction_id": "LOG-e6d7a15e-9a78-4572-8d77-d2bfdb673698",
-    "message_id": "c85a62b6-44b1-4a04-b401-491982f0c7a9",
-    "timestamp": "2023-12-28T13:31:10.344Z"
-  },
-  "message": {
-    "catalog": {
-      "bpp/fulfillments": [
-        {
-          "id": "1",
-          "type": "Prepaid"
-        },
-        {
-          "id": "3",
-          "type": "RTO"
-        }
-      ],
-      "bpp/descriptor": {
-        "name": "Adloggs"
-      },
-      "bpp/providers": [
-        {
-          "id": "P1",
-          "descriptor": {
-            "name": "Adloggs",
-            "short_desc": "Adloggs",
-            "long_desc": "Adloggs"
-          },
-          "categories": [
-            {
-              "id": "Immediate Delivery",
-              "time": {
-                "label": "TAT",
-                "duration": "PT45M"
-              }
-            }
-          ],
-          "items": [
-            {
-              "id": "I1",
-              "parent_item_id": "",
-              "category_id": "Immediate Delivery",
-              "fulfillment_id": "1",
-              "descriptor": {
-                "code": "P2P",
-                "name": "45 min delivery",
-                "short_desc": "45 min delivery for F&B",
-                "long_desc": "45 min delivery for F&B"
-              },
-              "price": {
-                "currency": "INR",
-                "value": "1.18"
-              },
-              "time": {
-                "label": "TAT",
-                "duration": "PT45M",
-                "timestamp": "2023-12-28T13:31:10.344Z"
-              }
+    "context": {
+        "domain": "nic2004:60232",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "1.1.0",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "bpp_id": "preprod.ondc.adloggs.com",
+        "bpp_uri": "https://preprod.ondc.adloggs.com/ondcapi",
+        "transaction_id": "bb1cd1cb-1868-4c20-9aec-b18cb078275f",
+        "message_id": "8c8e84ed-30d0-4805-b8ff-775bef2f7217",
+        "timestamp": "2024-01-04T13:27:03.697Z"
+    },
+    "message": {
+        "catalog": {
+            "bpp/fulfillments": [{
+                    "id": "1",
+                    "type": "Prepaid"
+                },
+                {
+                    "id": "3",
+                    "type": "RTO"
+                }
+            ],
+            "bpp/descriptor": {
+                "name": "Adloggs"
             },
-            {
-              "id": "I2",
-              "parent_item_id": "I1",
-              "category_id": "Immediate Delivery",
-              "fulfillment_id": "3",
-              "descriptor": {
-                "code": "P2P",
-                "name": "RTO quote",
-                "short_desc": "RTO quote",
-                "long_desc": "RTO quote"
-              },
-              "price": {
-                "currency": "INR",
-                "value": "1.18"
-              },
-              "time": {
-                "label": "TAT",
-                "duration": "PT45M",
-                "timestamp": "2023-12-28T13:31:10.344Z"
-              }
-            }
-          ]
+            "bpp/providers": [{
+                "id": "P1",
+                "descriptor": {
+                    "name": "Adloggs",
+                    "short_desc": "Adloggs",
+                    "long_desc": "Adloggs"
+                },
+                "categories": [{
+                    "id": "Immediate Delivery",
+                    "time": {
+                        "label": "TAT",
+                        "duration": "PT45M"
+                    }
+                }],
+                "items": [{
+                        "id": "I1",
+                        "parent_item_id": "",
+                        "category_id": "Immediate Delivery",
+                        "fulfillment_id": "1",
+                        "descriptor": {
+                            "code": "P2P",
+                            "name": "45 min delivery",
+                            "short_desc": "45 min delivery for F&B",
+                            "long_desc": "45 min delivery for F&B"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "11.80"
+                        },
+                        "time": {
+                            "label": "TAT",
+                            "duration": "PT45M",
+                            "timestamp": "2024-01-04T13:27:03.696Z"
+                        }
+                    },
+                    {
+                        "id": "I2",
+                        "parent_item_id": "I1",
+                        "category_id": "Immediate Delivery",
+                        "fulfillment_id": "3",
+                        "descriptor": {
+                            "code": "P2P",
+                            "name": "RTO quote",
+                            "short_desc": "RTO quote",
+                            "long_desc": "RTO quote"
+                        },
+                        "price": {
+                            "currency": "INR",
+                            "value": "11.80"
+                        },
+                        "time": {
+                            "label": "TAT",
+                            "duration": "PT45M",
+                            "timestamp": "2024-01-04T13:27:03.696Z"
+                        }
+                    }
+                ]
+            }]
         }
-      ]
     }
-  }
 }

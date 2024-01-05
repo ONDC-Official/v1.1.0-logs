@@ -4,55 +4,40 @@
         "country": "IND",
         "city": "std:080",
         "action": "search",
-        "bap_id": "biz.test.bitsila.com",
-        "bap_uri": "https://biz.test.bitsila.com/ecc/ondc/logistics-bap",
-        "transaction_id": "LOG-e6d7a15e-9a78-4572-8d77-d2bfdb673698",
-        "message_id": "c85a62b6-44b1-4a04-b401-491982f0c7a9",
-        "timestamp": "2023-12-28T13:31:08.371Z",
-        "ttl": "PT30S",
-        "core_version": "1.1.0"
+        "core_version": "1.1.0",
+        "transaction_id": "bb1cd1cb-1868-4c20-9aec-b18cb078275f",
+        "bap_id": "preprod-ondc.addble.com",
+        "bap_uri": "https://preprod-ondc.addble.com/",
+        "message_id": "8c8e84ed-30d0-4805-b8ff-775bef2f7217",
+        "timestamp": "2024-01-04T13:26:59.999Z",
+        "ttl": "PT30S"
     },
     "message": {
         "intent": {
             "category": {
                 "id": "Standard Delivery"
             },
-            "payment": {
-                "@ondc/org/collection_amount": "0.0"
-            },
-            "@ondc/org/payload_details": {
-                "weight": {
-                    "unit": "Kilogram",
-                    "value": 0.5
-                },
-                "value": {
-                    "currency": "INR",
-                    "value": "256.0"
-                },
-                "dimensions": {
-                    "length": {
-                        "unit": "meter",
-                        "value": 0.1
+            "provider": {
+                "time": {
+                    "days": "1,2,3,4,5,6,7",
+                    "range": {
+                        "start": "0000",
+                        "end": "2359"
                     },
-                    "breadth": {
-                        "unit": "meter",
-                        "value": 0.1
-                    },
-                    "height": {
-                        "unit": "meter",
-                        "value": 0.1
+                    "schedule": {
+                        "holidays": [
+
+                        ]
                     }
-                },
-                "category": "Grocery"
+                }
             },
             "fulfillment": {
                 "type": "Prepaid",
                 "start": {
                     "location": {
-                        "id": "1016:717",
-                        "gps": "13.011526, 77.6459584",
+                        "gps": "12.91414122848031,77.63768276727586",
                         "address": {
-                            "area_code": "560043"
+                            "area_code": "560095"
                         }
                     }
                 },
@@ -65,12 +50,28 @@
                     }
                 }
             },
-            "provider": {
-                "time": {
-                    "days": "1,2,3,4,5,6,7",
-                    "range": {
-                        "start": "0700",
-                        "end": "2350"
+            "@ondc/org/payload_details": {
+                "weight": {
+                    "unit": "Kilogram",
+                    "value": 0.1
+                },
+                "category": "Grocery",
+                "value": {
+                    "currency": "INR",
+                    "value": "20"
+                },
+                "dimensions": {
+                    "breadth": {
+                        "unit": "centimeter",
+                        "value": 10
+                    },
+                    "height": {
+                        "unit": "centimeter",
+                        "value": 17
+                    },
+                    "length": {
+                        "unit": "centimeter",
+                        "value": 18
                     }
                 }
             }
