@@ -16,7 +16,7 @@
 [info]: {"valid":true,"SUCCESS":"Context Valid"}
 [info]: Comparing city of /search and /on_search
 [info]: Comparing timestamp of /search and /on_search
-[info]: 565
+[info]: 784
 [info]: Comparing transaction Ids of /search and /on_search
 [info]: Comparing Message Ids of /search and /on_search
 [info]: Saving static fulfillment ids in /on_search
@@ -72,13 +72,20 @@
 [info]: Checking location_id for item id: ROADSTER-MEN-NAVY-M
 [info]: Checking consumer care details for item id: ROADSTER-MEN-NAVY-M
 [info]: Validating uniqueness for item id in bpp/providers[0].items[6]...
+[info]: Checking available and maximum count for item id: Baby18TH1000
+[info]: Checking selling price and maximum price for item id: Baby18TH1000
+[info]: Checking category_id for item id: Baby18TH1000
+[info]: Checking fulfillment_id for item id: Baby18TH1000
+[info]: Checking location_id for item id: Baby18TH1000
+[info]: Checking consumer care details for item id: Baby18TH1000
+[info]: Validating uniqueness for item id in bpp/providers[0].items[7]...
 [info]: Checking available and maximum count for item id: 18th_1001101
 [info]: Checking selling price and maximum price for item id: 18th_1001101
 [info]: Checking category_id for item id: 18th_1001101
 [info]: Checking fulfillment_id for item id: 18th_1001101
 [info]: Checking location_id for item id: 18th_1001101
 [info]: Checking consumer care details for item id: 18th_1001101
-[info]: Validating uniqueness for item id in bpp/providers[0].items[7]...
+[info]: Validating uniqueness for item id in bpp/providers[0].items[8]...
 [info]: Checking available and maximum count for item id: 18th_1001001
 [info]: Checking selling price and maximum price for item id: 18th_1001001
 [info]: Checking category_id for item id: 18th_1001001
@@ -98,8 +105,8 @@
 [info]: Comparing Message Ids of /on_search and /select
 [info]: Comparing provider location in /on_search and /select
 [info]: Mapping Item Ids with their counts, categories and prices /on_search and /select
+[info]: ITEM ID: Proteus18TH10002, Price: 899, Count: 1
 [info]: ITEM ID: Campus18TH100060, Price: 1500, Count: 1
-[info]: ITEM ID: Reyton18TH10005, Price: 999, Count: 1
 [info]: Saving time_to_ship in /on_search
 [info]: ITEMSDKJDKLSJF
 [info]: 86400
@@ -116,7 +123,7 @@
 [info]: Inside Schema Validation for domain: retail, api: on_select
 [info]: Comparing city of /search and /on_select
 [info]: Comparing timestamp of /select and /on_select
-[info]: 362
+[info]: 156
 [info]: Comparing transaction Ids of /select and /on_select
 [info]: Comparing Message Ids of /select and /on_select
 [info]: Checking domain-error in /on_select
@@ -129,18 +136,18 @@
 [info]: Comparing count of items in select and on_select
 [info]: [object Object]
 [info]: -x-x-x-x-Quote Breakup on_select all checks-x-x-x-x
-[info]: Calculating quoted Price Breakup for element Campus 18TH Men's MOXIE White Running Shoes
+[info]: Calculating quoted Price Breakup for element Proteus 18TH Fitness Jacket
 [info]: Comparing individual item's total price and unit price 
 [info]: checking available and maximum count in on_select
 [info]: Calculating Items' prices in /on_select
-[info]: Calculating quoted Price Breakup for element 18TH Men's Reyton Navy Running Shoes
+[info]: Calculating quoted Price Breakup for element Campus 18TH Men's MOXIE White Running Shoes
 [info]: Comparing individual item's total price and unit price 
 [info]: checking available and maximum count in on_select
 [info]: Calculating Items' prices in /on_select
 [info]: Calculating quoted Price Breakup for element Delivery charges
 [info]: Calculating Items' prices in /on_select
-[info]: Matching quoted Price 2499 with Breakup Price 2499.00
-[info]: Matching price breakup of items 2499 (/on_select) with selected items price 2499 (select)
+[info]: Matching quoted Price 2399 with Breakup Price 2399.00
+[info]: Matching price breakup of items 2399 (/on_select) with selected items price 2399 (select)
 [info]: Checking payment breakup title & type in /on_select
 [info]: Checking Fulfillment TAT...
 [info]: Checking quote validity quote.ttl
@@ -168,7 +175,7 @@
 [info]: {"valid":true,"SUCCESS":"Context Valid"}
 [info]: Comparing city of search & on_init
 [info]: Comparing timestamp of init & on_init
-[info]: 963
+[info]: 986
 [info]: Comparing transaction Ids of /select & /on_init
 [info]: Comparing Message Ids of /init and /on_init
 [info]: Checking provider Id and provider_location Id in /on_search and /on_init
@@ -176,8 +183,8 @@
 [info]: Comparing billing object in /init and /on_init
 [info]: Checking fulfillments objects in /on_init
 [info]: Calculating Net /on_init Price breakup
-[info]: /on_init Price Breakup: 2499
-[info]: /on_init Quoted Price: 2499
+[info]: /on_init Price Breakup: 2399
+[info]: /on_init Quoted Price: 2399
 [info]: Comparing /on_init Quoted Price and Net Price Breakup
 [info]: Comparing /on_init Quoted Price and /on_select Quoted Price
 [info]: Checking Payment Object for  /on_init
@@ -214,7 +221,7 @@
 [info]: {"valid":true,"SUCCESS":"Context Valid"}
 [info]: Comparing city of /search and /on_confirm
 [info]: Comparing timestamp of /confirm and /on_confirm
-[info]: 426
+[info]: 314
 [info]: Comparing transaction Ids of /select and /on_confirm
 [info]: Comparing Message Ids of /confirm and /on_confirm
 [info]: Comparing order ids in /confirm and /on_confirm
@@ -229,7 +236,17 @@
 [info]: Comparing order price value in /on_select and /on_confirm
 [info]: Comparing payment object in /confirm & /on_confirm
 [info]: Checking Buyer App finder fee amount in /on_confirm
-[info]: !!File not found for /status API!
+[info]: Validating Schema for status API
+[info]: Inside Schema Validation for domain: retail, api: status
+[info]: Checking context for /status API
+[info]: Inside Context Validation Check....
+*** Validating context for status ***
+[info]: {"valid":true,"SUCCESS":"Context Valid"}
+[info]: Comparing city of /search and /status
+[info]: Comparing timestamp of /status and /on_confirm
+[info]: Comparing transaction Ids of /select and /status
+[info]: Checking Message Id of /status
+[info]: Comparing order id for /confirm and /status
 [info]: Validating Schema for /on_status_pending API
 [info]: Inside Schema Validation for domain: retail, api: on_status
 [info]: Checking context for /on_status_pending API
@@ -303,14 +320,14 @@
 [info]: Checking items update status
 [info]: Checking order/updated_at timestamp in /on_update_Return_Initiated
 [info]: Quote Breakup on_update_Return_Initiated all checks
+[info]: Calculating quoted Price Breakup for element Proteus 18TH Fitness Jacket
+[info]: Comparing individual item's total price and unit price 
+[info]: checking available and maximum count in on_update_Return_Initiated
 [info]: Calculating quoted Price Breakup for element Campus 18TH Men's MOXIE White Running Shoes
 [info]: Comparing individual item's total price and unit price 
 [info]: checking available and maximum count in on_update_Return_Initiated
-[info]: Calculating quoted Price Breakup for element 18TH Men's Reyton Navy Running Shoes
-[info]: Comparing individual item's total price and unit price 
-[info]: checking available and maximum count in on_update_Return_Initiated
 [info]: Calculating quoted Price Breakup for element Delivery charges
-[info]: Matching quoted Price 2499 with Breakup Price 2499
+[info]: Matching quoted Price 2399 with Breakup Price 2399
 [info]: Comparing timestamp of on_status_delivered  and /on_update_Return_Initiated API
 [error]: !!File not found for /on_update_Liquidated API!
 [info]: Validating Schema for /on_update_Return_Rejected API
@@ -328,14 +345,14 @@
 [info]: Checking items update status
 [info]: Checking order/updated_at timestamp in /on_update_Return_Rejected
 [info]: Quote Breakup on_update_Return_Rejected all checks
+[info]: Calculating quoted Price Breakup for element Proteus 18TH Fitness Jacket
+[info]: Comparing individual item's total price and unit price 
+[info]: checking available and maximum count in on_update_Return_Rejected
 [info]: Calculating quoted Price Breakup for element Campus 18TH Men's MOXIE White Running Shoes
 [info]: Comparing individual item's total price and unit price 
 [info]: checking available and maximum count in on_update_Return_Rejected
-[info]: Calculating quoted Price Breakup for element 18TH Men's Reyton Navy Running Shoes
-[info]: Comparing individual item's total price and unit price 
-[info]: checking available and maximum count in on_update_Return_Rejected
 [info]: Calculating quoted Price Breakup for element Delivery charges
-[info]: Matching quoted Price 2499 with Breakup Price 2499
+[info]: Matching quoted Price 2399 with Breakup Price 2399
 [info]: Comparing timestamp of /on_update_initiated  and /on_update_Return_Rejected API
 [error]: !!File not found for /on_update_Return_Approved API!
 [error]: !!File not found for /on_update_Return_Picked API!
