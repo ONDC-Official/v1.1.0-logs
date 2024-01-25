@@ -1,0 +1,157 @@
+{
+    "context": {
+        "domain": "ONDC:NTS10",
+        "country": "IND",
+        "city": "std:080",
+        "action": "receiver_recon",
+        "core_version": "1.0.0",
+        "bap_id": "rsp-standalone.eunimart.com",
+        "bap_uri": "https://rsp-standalone.eunimart.com/api/v1/ondc/rsp/eunimart_rsp",
+        "transaction_id": "588941a7-1ae4-47e4-a182-575179db771e",
+        "ttl": "P2D",
+        "message_id": "371616be-82a4-4db1-825c-c440e21245b7",
+        "timestamp": "2024-01-24T11:50:15.856Z",
+        "bpp_id": "ushopmicro-stage.hulcd.com",
+        "bpp_uri": "https://ushopmicro-stage.hulcd.com/bppnp"
+    },
+    "message": {
+        "orderbook": {
+            "orders": [
+                {
+                    "id": "c0ef6a8f-d017-454a-95d6-a320195e2131",
+                    "invoice_no": "c0ef6a8f-d017-454a-95d6-a320195e2131",
+                    "collector_app_id": "preprod.ondc.adya.ai",
+                    "receiver_app_id": "ushopmicro-stage.hulcd.com",
+                    "receiver_app_uri": "https://ushopmicro-stage.hulcd.com/bppnp",
+                    "state": "Completed",
+                    "provider": {
+                        "name": {
+                            "code": "HUL-3708490901",
+                            "name": "Chabra Khoobsurat"
+                        },
+                        "address": "Delhi"
+                    },
+                    "payment": {
+                        "@ondc/org/settlement_window_status": "Assert",
+                        "@ondc/org/buyer_app_finder_fee_type": "percent",
+                        "collected_by": "BAP",
+                        "uri": "",
+                        "tl_method": "",
+                        "params": {
+                            "transaction_id": "pay_NSPdMmmOb3hGUu",
+                            "amount": "563.96",
+                            "transaction_status": "",
+                            "currency": "INR"
+                        },
+                        "type": "ON-ORDER",
+                        "@ondc/org/settlement_basis_status": "Assert",
+                        "@ondc/org/settlement_details": [
+                            {
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_type": "neft",
+                                "beneficiary_name": "Shayak Mazumder",
+                                "upi_address": "",
+                                "settlement_bank_account_no": "10147175877",
+                                "settlement_ifsc_code": "IDFB0080151",
+                                "bank_name": "",
+                                "branch_name": "",
+                                "settlement_reference": "e6865cf4-46fd-43f8-8cee-bfe3af7edb73",
+                                "settlement_status": "PAID",
+                                "settlement_timestamp": "2024-01-24T11:44:07.767Z",
+                                "settlement_amount": 534,
+                                "beneficiary_address": "SHAYR OMNICHANNEL PRIVATE LIMITED ONDC"
+                            },
+                            {
+                                "settlement_counterparty": "seller-app",
+                                "settlement_phase": "sale-amount",
+                                "settlement_type": "neft",
+                                "beneficiary_name": "Shayak Mazumder",
+                                "upi_address": "",
+                                "settlement_bank_account_no": "10147175877",
+                                "settlement_ifsc_code": "IDFB0080151",
+                                "bank_name": "",
+                                "branch_name": "",
+                                "settlement_reference": "d582ca39-4a3d-4366-a8f0-d4774f13e38f",
+                                "settlement_status": "PAID",
+                                "settlement_timestamp": "2024-01-24T11:49:55.772Z",
+                                "settlement_amount": 10,
+                                "beneficiary_address": "SHAYR OMNICHANNEL PRIVATE LIMITED ONDC"
+                            }
+                        ],
+                        "@ondc/org/return_window": "P1D",
+                        "@ondc/org/settlement_window": "P2D",
+                        "@ondc/org/settlement_basis": "return_window_expiry",
+                        "@ondc/org/withholding_amount_status": "",
+                        "@ondc/org/return_window_status": "Assert",
+                        "@ondc/org/withholding_amount": "0.00",
+                        "@ondc/org/collected_by_status": "",
+                        "status": "PAID",
+                        "@ondc/org/buyer_app_finder_fee_amount": "3"
+                    },
+                    "withholding_tax_gst": {
+                        "currency": "INR",
+                        "value": "0.00"
+                    },
+                    "withholding_tax_tds": {
+                        "currency": "INR",
+                        "value": "0.00"
+                    },
+                    "deduction_by_collector": {
+                        "currency": "INR",
+                        "value": "19.97"
+                    },
+                    "payerdetails": {
+                        "payer_bank_code": "IDFB0080151",
+                        "payer_name": "Shayak Mazumder",
+                        "payer_address": "SHAYR OMNICHANNEL PRIVATE LIMITED ONDC",
+                        "payer_account_no": "10147175877",
+                        "payer_virtual_payment_address": ""
+                    },
+                    "settlement_reason_code": "01",
+                    "transaction_id": "588941a7-1ae4-47e4-a182-575179db771e",
+                    "settlement_id": "dabddd6b-9d61-472b-9e32-35ad568a7083",
+                    "settlement_reference_no": "d582ca39-4a3d-4366-a8f0-d4774f13e38f",
+                    "recon_status": "01",
+                    "order_recon_status": "02",
+                    "created_at": "2024-01-24T11:43:07.023Z",
+                    "updated_at": "2024-01-24T11:49:55.772Z",
+                    "correction": {
+                        "issue_initiator_ref": "a420192f-9245-4032-8382-9290ba0f9148",
+                        "issue_responder_ref": "",
+                        "issue_type": "07",
+                        "issue_subtype": "02",
+                        "order_id": "c0ef6a8f-d017-454a-95d6-a320195e2131",
+                        "order_amount": {
+                            "currency": "INR",
+                            "value": "544"
+                        },
+                        "order_correction_amount": {
+                            "currency": "INR",
+                            "value": "544"
+                        },
+                        "order_state": "Completed",
+                        "previous_settled_amount": {
+                            "currency": "INR",
+                            "value": "534"
+                        },
+                        "settlement_id": "6f1b73ea-e5c5-4751-968d-bd61637416fc",
+                        "settlement_reference_no": "e6865cf4-46fd-43f8-8cee-bfe3af7edb73",
+                        "prev_settlement_reference_no": [
+                            "e6865cf4-46fd-43f8-8cee-bfe3af7edb73"
+                        ],
+                        "recon_status": "01",
+                        "diff_amount": {
+                            "currency": "INR",
+                            "value": "10"
+                        },
+                        "message": {
+                            "name": "NA",
+                            "code": "NA"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
