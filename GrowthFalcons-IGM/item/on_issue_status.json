@@ -1,85 +1,103 @@
 {
-    "context": {
-        "action": "on_issue_status",
-        "bap_id": "buyer-app-preprod.ondc.org",
-        "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
-        "bpp_id": "falconsai.com",
-        "bpp_uri": "https://falconsai.com/v1/ondc/ecomm/fnb",
-        "city": "std:080",
-        "core_version": "1.0.0",
-        "country": "IND",
-        "domain": "nic2004:52110",
-        "message_id": "e1a9a444-7c1a-4949-b585-3d2964519bda",
-        "timestamp": "2024-01-29T14:10:02.769Z",
-        "transaction_id": "50062cc2-08e8-4b10-a111-23cb88ba4053"
-    },
-    "message": {
-        "issue": {
-            "created_at": "2024-01-29T14:00:38.450Z",
-            "id": "671454c8-217a-4dc9-95f0-e98d716b829d",
-            "issue_actions": {
-                "respondent_actions": [
-                    {
-                        "cascaded_level": 1,
-                        "respondent_action": "PROCESSING",
-                        "short_desc": "Complaint is being processed",
-                        "updated_at": "2024-01-29T14:10:02.769Z",
-                        "updated_by": {
-                            "contact": {
-                                "email": "sandeep@growthfalcons.com",
-                                "phone": "7019540003"
-                            },
-                            "org": {
-                                "name": "falconsai.com::nic2004:52110"
-                            },
-                            "person": {
-                                "name": "Sandeep Rai"
-                            }
-                        }
-                    }
-                ]
+  "message": {
+    "issue": {
+      "created_at": "2024-03-01T06:19:40.028Z",
+      "updated_at": "2024-03-01T06:21:59.871Z",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "cascaded_level": 1,
+            "short_desc": "Complaint resolved",
+            "updated_at": "2024-03-01T06:21:59.871Z",
+            "respondent_action": "RESOLVED",
+            "updated_by": {
+              "org": {
+                "name": "falconsai.com::nic2004:52110"
+              },
+              "contact": {
+                "phone": "7019540003",
+                "email": "sandeep@growthfalcons.com"
+              },
+              "person": {
+                "name": "Sandeep Rai"
+              }
+            }
+          },
+          {
+            "cascaded_level": 1,
+            "short_desc": "Complaint is being processed",
+            "updated_at": "2024-03-01T06:19:45.264Z",
+            "respondent_action": "PROCESSING",
+            "updated_by": {
+              "org": {
+                "name": "falconsai.com::nic2004:52110"
+              },
+              "contact": {
+                "phone": "7019540003",
+                "email": "sandeep@growthfalcons.com"
+              },
+              "person": {
+                "name": "Sandeep Rai"
+              }
+            }
+          }
+        ]
+      },
+      "resolution_provider": {
+        "respondent_info": {
+          "organization": {
+            "org": {
+              "name": "falconsai.com::nic2004:52110"
             },
-            "resolution": {
-                "action_triggered": "REFUND",
-                "long_desc": "For this complaint Please Refund the amount&nbsp;",
-                "short_desc": "Please Refund the amount&nbsp;"
+            "contact": {
+              "phone": "7019540003",
+              "email": "sandeep@growthfalcons.com"
             },
-            "resolution_provider": {
-                "respondent_info": {
-                    "organization": {
-                        "contact": {
-                            "email": "sandeep@growthfalcons.com",
-                            "phone": "7019540003"
-                        },
-                        "org": {
-                            "name": "falconsai.com::nic2004:52110"
-                        },
-                        "person": {
-                            "name": "Sandeep Rai"
-                        }
-                    },
-                    "resolution_support": {
-                        "contact": {
-                            "email": "sandeep@growthfalcons.com",
-                            "phone": "7019540003"
-                        },
-                        "gros": [
-                            {
-                                "contact": {
-                                    "email": "sandeep@growthfalcons.com",
-                                    "phone": "7019540003"
-                                },
-                                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO",
-                                "person": {
-                                    "name": "Sandeep Rai"
-                                }
-                            }
-                        ]
-                    },
-                    "type": "TRANSACTION-COUNTERPARTY-NP"
-                }
-            },
-            "updated_at": "2024-01-29T14:10:02.769Z"
+            "person": {
+              "name": "Sandeep Rai"
+            }
+          },
+          "type": "TRANSACTION-COUNTERPARTY-NP",
+          "resolution_support": {
+            "gros": [
+              {
+                "person": {
+                  "name": "Sandeep Rai"
+                },
+                "contact": {
+                  "phone": "7019540003",
+                  "email": "sandeep@growthfalcons.com"
+                },
+                "gro_type": "TRANSACTION-COUNTERPARTY-NP-GRO"
+              }
+            ],
+            "contact": {
+              "phone": "7019540003",
+              "email": "sandeep@growthfalcons.com"
+            }
+          }
         }
+      },
+      "resolution": {
+        "action_triggered": "CANCEL",
+        "long_desc": "For this complaint Cannot refund for this",
+        "short_desc": "Cannot refund for this"
+      },
+      "id": "04322f51-47c5-4e0b-93dc-f37c9b1d5a9c"
     }
+  },
+  "context": {
+    "city": "std:080",
+    "domain": "nic2004:52110",
+    "bpp_uri": "https://falconsai.com/v1/ondc/ecomm/fnb",
+    "core_version": "1.0.0",
+    "bap_id": "buyer-app-preprod.ondc.org",
+    "bpp_id": "falconsai.com",
+    "timestamp": "2024-03-01T06:21:59.871Z",
+    "action": "on_issue_status",
+    "bap_uri": "https://buyer-app-preprod.ondc.org/protocol/v1",
+    "country": "IND",
+    "message_id": "0a51e386-5b78-4fa3-a1e8-374c602556fb",
+    "transaction_id": "d5112bc1-665e-4f08-a9a6-a6e5ec3696ef"
+  }
 }
